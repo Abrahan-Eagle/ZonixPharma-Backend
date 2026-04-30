@@ -1,0 +1,60 @@
+{
+  "name": "Zonix Eats - Delivery de Comida",
+  "short_name": "Zonix Eats",
+  "description": "Zonix Eats es tu plataforma de delivery favorita en Venezuela. Pide comida de los mejores restaurantes, desde hamburguesas y pizza hasta sushi y postres. Entregas rápidas y seguras.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff3d40",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "es",
+  "categories": ["food", "delivery", "shopping", "lifestyle"],
+  "keywords": ["delivery", "comida", "venezuela", "hamburguesas", "pizza", "sushi", "restaurantes", "domicilio", "zonix eats", "zonix"],
+  "icons": [
+    {
+      "src": "/assets/img/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/img/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/img/hero/desktop-pizza.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Pedir Comida",
+      "short_name": "Pedir",
+      "description": "Explora restaurantes y pide ahora",
+      "url": "/",
+      "icons": [
+        {
+          "src": "/assets/img/logo.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://zonixeats.com"
+    }
+  ],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  }
+}
