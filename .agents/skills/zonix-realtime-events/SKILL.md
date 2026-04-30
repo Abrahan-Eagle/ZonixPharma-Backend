@@ -7,6 +7,7 @@ author: Zonix Team
 version: 2.0
 ---
 
+> **Zonix Pharma:** eventos en tiempo real incluyen `PrescriptionUploaded`, `PrescriptionValidated`, `PrescriptionRejected` y canales `private-commerce.*`. Ver `zonix-prescriptions` y `AGENTS.md`.
 # 📡 Eventos en Tiempo Real - Zonix Eats
 
 > **⚠️ NO se usa WebSocket directo.** Se usa Pusher Channels (broadcasting) + FCM (push).

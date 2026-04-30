@@ -52,6 +52,7 @@ Route::middleware(['auth:sanctum'])->group(function () {
 
     Route::prefix('buyer/search')->middleware('role:users')->group(function () {
         Route::get('/restaurants', [App\Http\Controllers\Buyer\SearchController::class, 'searchRestaurants']);
+        Route::get('/pharmacies', [App\Http\Controllers\Buyer\SearchController::class, 'searchRestaurants']);
         Route::get('/products', [App\Http\Controllers\Buyer\SearchController::class, 'searchProducts']);
         Route::get('/categories', [App\Http\Controllers\Buyer\SearchController::class, 'getCategories']);
         Route::get('/business-types', function () {

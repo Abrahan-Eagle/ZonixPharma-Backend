@@ -54,7 +54,9 @@ return new class extends Migration
                 ->comment('Tiempo medio de despacho en minutos (medicina lista en mostrador / a entregar).');
 
             // Datos farmacéuticos del establecimiento
-            $table->unsignedBigInteger('pharmacist_in_charge_profile_id')->nullable()
+            $table->foreignId('pharmacist_in_charge_profile_id')->nullable()
+                ->constrained('profiles')
+                ->nullOnDelete()
                 ->comment('Profile.id del farmacéutico responsable colegiado.');
             $table->string('health_permit_number')->nullable()
                 ->comment('Número del permiso sanitario MPPS / municipal.');
@@ -63,7 +65,6 @@ return new class extends Migration
             $table->timestamps();
 
             $table->index('night_shift_open', 'commerces_night_shift_open_index');
-            $table->index('pharmacist_in_charge_profile_id', 'commerces_pharmacist_index');
         });
     }
 

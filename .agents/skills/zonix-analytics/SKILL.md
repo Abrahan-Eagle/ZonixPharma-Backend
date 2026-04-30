@@ -7,6 +7,7 @@ author: Zonix Team
 version: 1.0
 ---
 
+> **Zonix Pharma:** KPIs y reportes para farmacias y admin; agregaciones sobre órdenes Pharma (incl. estados Rx). Ver `AGENTS.md`.
 # 📈 Analytics & Reportes - Zonix Eats
 
 ## 1. KPIs Clave

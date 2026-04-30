@@ -252,8 +252,6 @@ class DeliveryController extends Controller
                 $order->orderDelivery->update(['status' => 'delivered']);
             }
 
-            event(new \App\Events\OrderStatusChanged($order->fresh()));
-
             return response()->json([
                 'success' => true,
                 'message' => 'Pedido marcado como entregado',
@@ -549,7 +547,6 @@ class DeliveryController extends Controller
             ]);
 
             $freshOrder = $order->fresh();
-            event(new \App\Events\OrderStatusChanged($freshOrder));
 
             $commerce = $freshOrder->commerce;
             if ($commerce && $commerce->profile_id) {
@@ -616,7 +613,6 @@ class DeliveryController extends Controller
             }
 
             $freshOrder = $order->fresh();
-            event(new \App\Events\OrderStatusChanged($freshOrder));
 
             $commerce = $freshOrder->commerce;
             if ($commerce && $commerce->profile_id) {

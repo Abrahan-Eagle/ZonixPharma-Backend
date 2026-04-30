@@ -13,10 +13,10 @@ class IndexController extends Controller
      */
     public function index()
     {
-        \App\Helpers\SeoHelper::setTitle('Tu comida favorita en minutos');
+        \App\Helpers\SeoHelper::setTitle('Tu farmacia en minutos');
         \App\Helpers\SeoHelper::setDescription(
-            'Pide comida a domicilio de tus restaurantes favoritos en Caracas, Maracaibo, Valencia y más. '.
-            'Los mejores precios y delivery rápido con Zonix Pharma.'
+            'Medicamentos OTC y con receta, entrega a domicilio o retiro en farmacia en Caracas, Maracaibo, Valencia y más. '.
+            'Precios claros y seguimiento con Zonix Pharma.'
         );
 
         $schema = [

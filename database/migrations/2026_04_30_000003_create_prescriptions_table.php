@@ -22,9 +22,13 @@ return new class extends Migration
             $table->id();
             $table->foreignId('patient_profile_id')->constrained('profiles')->onDelete('cascade')
                 ->comment('Perfil del comprador / paciente que sube la receta.');
-            $table->unsignedBigInteger('order_id')->nullable()
-                ->comment('Pedido al que se vincula (puede crearse antes de existir el pedido).');
-            $table->unsignedBigInteger('commerce_id')->nullable()
+            $table->foreignId('order_id')->nullable()
+                ->constrained('orders')
+                ->nullOnDelete()
+                ->comment('Pedido al que se vincula.');
+            $table->foreignId('commerce_id')->nullable()
+                ->constrained('commerces')
+                ->nullOnDelete()
                 ->comment('Farmacia despachadora (validar receta solo desde el farmacéutico de esa farmacia).');
 
             $table->string('prescribing_doctor_name');
@@ -40,7 +44,9 @@ return new class extends Migration
             $table->enum('status', ['pending_validation', 'approved', 'rejected', 'expired'])
                 ->default('pending_validation');
 
-            $table->unsignedBigInteger('validated_by_profile_id')->nullable()
+            $table->foreignId('validated_by_profile_id')->nullable()
+                ->constrained('profiles')
+                ->nullOnDelete()
                 ->comment('Profile.id del farmacéutico colegiado que validó.');
             $table->timestamp('validated_at')->nullable();
             $table->text('rejection_reason')->nullable();
@@ -49,15 +55,28 @@ return new class extends Migration
 
             $table->timestamps();
 
-            $table->index('order_id', 'prescriptions_order_index');
-            $table->index('commerce_id', 'prescriptions_commerce_index');
             $table->index(['commerce_id', 'status'], 'prescriptions_commerce_status_index');
             $table->index(['patient_profile_id', 'created_at'], 'prescriptions_patient_created_index');
+        });
+
+        Schema::table('orders', function (Blueprint $table) {
+            $table->foreign('prescription_id')
+                ->references('id')
+                ->on('prescriptions')
+                ->nullOnDelete();
         });
     }
 
     public function down(): void
     {
+        $isSqlite = Schema::getConnection()->getDriverName() === 'sqlite';
+
+        if (! $isSqlite && Schema::hasColumn('orders', 'prescription_id')) {
+            Schema::table('orders', function (Blueprint $table) {
+                $table->dropForeign(['prescription_id']);
+            });
+        }
+
         Schema::dropIfExists('prescriptions');
     }
 };

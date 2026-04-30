@@ -170,8 +170,6 @@ class OrderController extends Controller
                 }
             }
 
-            $this->broadcastOrderStatusChanged($order);
-
             return response()->json(['success' => true, 'message' => 'Estado de la orden actualizado']);
         } catch (\Exception $e) {
             Log::error('Error al actualizar estado de orden de comercio: '.$e->getMessage());
@@ -361,7 +359,6 @@ class OrderController extends Controller
                     }
 
                     $message = 'Pago rechazado';
-                    $this->broadcastOrderStatusChanged($order);
                     Log::warning('payment_food_rejected', [
                         'order_id' => $order->id,
                         'validated_by' => $profile->id,
@@ -533,8 +530,6 @@ class OrderController extends Controller
                     ],
                 ], $decision['http_status']);
             }
-
-            $this->broadcastOrderStatusChanged($order);
 
             return response()->json([
                 'success' => true,

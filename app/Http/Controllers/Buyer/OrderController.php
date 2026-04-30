@@ -1046,8 +1046,6 @@ class OrderController extends Controller
                 ]);
             });
 
-            event(new OrderStatusChanged($order->fresh()));
-
             return response()->json(['success' => true, 'message' => 'Orden cancelada exitosamente']);
         } catch (\Exception $e) {
             Log::error('Error al cancelar orden: '.$e->getMessage());

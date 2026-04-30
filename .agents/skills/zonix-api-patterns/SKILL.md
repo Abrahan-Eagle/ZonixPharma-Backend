@@ -7,6 +7,7 @@ author: Zonix Team
 version: 2.0
 ---
 
+> **Zonix Pharma:** API REST del marketplace farmacéutico — prefijos buyer/commerce/pharmacist, respuesta `{ success, data, message }`, roles en `AGENTS.md`.
 # 🔌 Patrones de API - Zonix Eats
 
 ## Roles (Terminología Estándar)

@@ -184,7 +184,7 @@
                         <div class="bg-gradient-glass"></div>
                         <div class="card-content">
                             <div class="card-audience-icon hover-lift-icon bg-red-50 text-primary-zonix">
-                                <span class="material-symbols-outlined fs-2">restaurant</span>
+                                <span class="material-symbols-outlined fs-2">local_pharmacy</span>
                             </div>
                             <h3 class="text-2xl font-bold text-navy mb-2">Pide ahora en la App</h3>
                             <p class="text-slate-600 mb-4 flex-grow-1">Accede a farmacias verificadas y recibe tus medicinas en minutos.</p>
@@ -395,8 +395,8 @@
                              <div><h3 class="text-xl font-bold text-navy mb-2">1. Descarga la App</h3><p class="text-slate-600">Disponible gratis para iOS y Android. Crea tu cuenta en segundos.</p></div>
                         </div>
                         <div class="d-flex gap-4">
-                             <div class="flex-shrink-0"><div class="rounded-circle bg-yellow-10 text-yellow d-flex align-items-center justify-content-center" style="width: 3.5rem; height: 3.5rem;"><span class="material-symbols-outlined text-3xl">restaurant_menu</span></div></div>
-                             <div><h3 class="text-xl font-bold text-navy mb-2">2. Elige tus favoritos</h3><p class="text-slate-600">Explora menús, personaliza tu orden y paga de forma segura en la app.</p></div>
+                             <div class="flex-shrink-0"><div class="rounded-circle bg-yellow-10 text-yellow d-flex align-items-center justify-content-center" style="width: 3.5rem; height: 3.5rem;"><span class="material-symbols-outlined text-3xl">medication</span></div></div>
+                             <div><h3 class="text-xl font-bold text-navy mb-2">2. Arma tu pedido</h3><p class="text-slate-600">Explora el catálogo, revisa indicaciones OTC o receta, y paga de forma segura en la app.</p></div>
                         </div>
                         <div class="d-flex gap-4">
                              <div class="flex-shrink-0"><div class="rounded-circle bg-blue-10 text-blue-zonix d-flex align-items-center justify-content-center" style="width: 3.5rem; height: 3.5rem;"><span class="material-symbols-outlined text-3xl">location_on</span></div></div>

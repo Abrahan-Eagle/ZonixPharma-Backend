@@ -30,9 +30,9 @@ class NotificationFactory extends Factory
             ],
             'promotion' => [
                 '¡Oferta especial! 20% de descuento',
-                'Nuevo restaurante disponible',
+                'Nueva farmacia disponible',
                 'Cupón de descuento disponible',
-                'Happy Hour activo',
+                'Promoción activa en OTC',
             ],
             'delivery_update' => [
                 'Tu repartidor está en camino',
@@ -56,19 +56,19 @@ class NotificationFactory extends Factory
 
         $bodies = [
             'order_status' => [
-                'Tu pedido #{{order_id}} está siendo preparado por el restaurante. Te notificaremos cuando esté listo para entrega.',
+                'Tu pedido #{{order_id}} está siendo preparado por la farmacia. Te notificaremos cuando esté listo para entrega.',
                 '¡Tu pedido #{{order_id}} está en camino! El repartidor llegará en aproximadamente {{time}} minutos.',
-                'Tu pedido #{{order_id}} ha sido entregado exitosamente. ¡Disfruta tu comida!',
+                'Tu pedido #{{order_id}} ha sido entregado exitosamente. ¡Gracias por confiar en Zonix Pharma!',
                 'Tu pedido #{{order_id}} ha sido cancelado. El reembolso será procesado en 3-5 días hábiles.',
             ],
             'promotion' => [
                 '¡Aprovecha esta oferta especial! Usa el código {{code}} para obtener 20% de descuento en tu próxima orden.',
-                'Un nuevo restaurante se ha unido a Zonix Eats. ¡Explora su menú ahora!',
+                'Una nueva farmacia se ha unido a Zonix Pharma. ¡Explora su catálogo!',
                 'Tienes un cupón de descuento disponible. Revisa tu perfil para más detalles.',
-                'Happy Hour activo en varios restaurantes. ¡Aprovecha los precios especiales!',
+                'Promociones vigentes en productos seleccionados. Revisa el marketplace.',
             ],
             'delivery_update' => [
-                'Tu repartidor {{driver_name}} está en camino hacia el restaurante para recoger tu pedido.',
+                'Tu repartidor {{driver_name}} está en camino hacia la farmacia para recoger tu pedido.',
                 'Tu pedido ha sido recogido y está siendo entregado. Tiempo estimado: {{time}} minutos.',
                 'Tu pedido llegará en aproximadamente {{time}} minutos. ¡Prepárate!',
                 'Se ha asignado un repartidor a tu pedido. Recibirás actualizaciones en tiempo real.',
@@ -159,9 +159,9 @@ class NotificationFactory extends Factory
             'type' => 'promotion',
             'title' => $this->faker->randomElement([
                 '¡Oferta especial! 20% de descuento',
-                'Nuevo restaurante disponible',
+                'Nueva farmacia disponible',
                 'Cupón de descuento disponible',
-                'Happy Hour activo',
+                'Promoción en OTC',
             ]),
         ]);
     }

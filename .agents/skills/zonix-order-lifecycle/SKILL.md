@@ -7,6 +7,7 @@ author: Zonix Team
 version: 2.0
 ---
 
+> **Zonix Pharma:** ciclo de vida de órdenes incluye `pending_prescription_validation` y reglas Rx/TTL en `PrescriptionService` / `config/zonix.php`.
 # 🔄 Ciclo de Vida de Órdenes - Zonix Eats
 
 ## Roles (Terminología Estándar)

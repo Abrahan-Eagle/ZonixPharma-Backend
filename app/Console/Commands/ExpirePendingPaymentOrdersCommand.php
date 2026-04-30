@@ -2,7 +2,6 @@
 
 namespace App\Console\Commands;
 
-use App\Events\OrderStatusChanged;
 use App\Models\Order;
 use App\Services\OrderStateMachineService;
 use Illuminate\Console\Command;
@@ -107,7 +106,6 @@ class ExpirePendingPaymentOrdersCommand extends Command
                         }
                     });
 
-                    event(new OrderStatusChanged($order->fresh()));
                     $cancelled++;
 
                     Log::info('order_expired_pending_payment', [

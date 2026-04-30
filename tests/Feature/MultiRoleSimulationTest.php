@@ -71,11 +71,11 @@ class MultiRoleSimulationTest extends TestCase
         // Crear COMMERCE
         $this->commerceUser = User::factory()->commerce()->create([
             'email' => 'commerce@test.com',
-            'name' => 'Restaurante El Buen Sabor',
+            'name' => 'Farmacia El Buen Cuidado',
         ]);
         $this->commerceProfile = Profile::factory()->create([
             'user_id' => $this->commerceUser->id,
-            'firstName' => 'Restaurante',
+            'firstName' => 'Farmacia',
             'lastName' => 'El Buen Sabor',
             'status' => 'completeData',
         ]);

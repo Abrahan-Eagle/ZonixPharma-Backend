@@ -76,8 +76,6 @@ class AdminOrderController extends Controller
             ], $decision['http_status']);
         }
 
-        event(new \App\Events\OrderStatusChanged($order->fresh()));
-
         return response()->json([
             'success' => true,
             'message' => 'Estado actualizado',

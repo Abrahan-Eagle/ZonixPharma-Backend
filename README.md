@@ -1,34 +1,39 @@
-# Zonix Eats Backend - API Laravel
+# Zonix Pharma — API Backend (Laravel)
 
-## 📋 Descripción
+## Descripción
 
-Backend de la aplicación Zonix Eats desarrollado en Laravel 10. Proporciona una API REST completa para la gestión de pedidos, productos, usuarios y comunicación en tiempo real mediante Firebase Cloud Messaging (FCM) y Pusher.
+**Zonix Pharma** es el marketplace farmacéutico (OTC + recetas) de Zonix para Venezuela. Este repositorio es la **API REST** en **Laravel 10** / PHP 8.1+ con **MySQL**, autenticación **Sanctum**, tiempo real vía **Pusher** y **FCM**, y reglas de negocio Pharma (validación de recetas por farmacéutico colegiado, lotes, cadena de frío, etc.).
 
-## 📊 Estado del Proyecto (Actualizado: 12 Feb 2026)
+## Documentación técnica
 
-| Métrica           | Valor                                              |
-| ----------------- | -------------------------------------------------- |
-| **Versión**       | 1.0.0                                              |
-| **Laravel**       | 10.x / PHP 8.1+                                    |
-| **Endpoints**     | 233+ rutas REST                                    |
-| **Controladores** | 54                                                 |
-| **Modelos**       | 35                                                 |
-| **Migraciones**   | 51                                                 |
-| **Tests**         | 269 pasaron ✅, 0 fallaron                         |
-| **Seguridad**     | Sanctum + RBAC + Rate Limiting + Upload validation |
+- **[AGENTS.md](AGENTS.md)** — instrucciones para agentes y desarrollo (roles, rutas, skills, convenciones).
+- **[README.md](README.md)** (continuación) — documentación histórica detallada y lógica de negocio; puede contener secciones heredadas de la migración desde Eats; la fuente de verdad de producto es **Zonix Pharma**.
 
-### Cambios Recientes (Feb 2026)
+## Setup rápido
 
-- ✅ Validación `max:5120` (5MB) en todas las subidas de archivos
-- ✅ Tokens Sanctum con expiración 24h (configurable vía `SANCTUM_TOKEN_EXPIRATION`)
-- ✅ `APP_DEBUG=false` en CI/CD de producción
-- ✅ `env()` → `config()` en controladores (compatible con `config:cache`)
-- ✅ Nuevo endpoint `POST /api/commerce/logo` para subida de logo de comercio
-- ✅ Código comentado eliminado de `routes/api.php` (~64 líneas)
-- ✅ CI/CD workflow limpiado (código duplicado eliminado, typo corregido)
-- ✅ Typo `$photo_usersxxx` → `$photoUsersPath` en ProfileController
+```bash
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate:fresh --seed
+php artisan serve
+php artisan test
+```
+
+## Estado (referencia)
+
+| Métrica     | Valor              |
+| ----------- | ------------------ |
+| Producto    | Zonix Pharma       |
+| Framework   | Laravel 10 / PHP 8.1+ |
+| Base de datos | MySQL           |
+| Versión app | 1.0.0              |
+
+---
 
 ## 📋 LÓGICA DE NEGOCIO Y DATOS REQUERIDOS POR ROL - MVP
+
+*(Contenido detallado y tablas extensas siguen a continuación en este archivo.)*
 
 ### ❓ DECISIONES TOMADAS SEGÚN MEJORES PRÁCTICAS DE ECOMMERCE
 

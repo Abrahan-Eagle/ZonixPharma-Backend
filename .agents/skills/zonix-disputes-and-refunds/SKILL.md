@@ -7,6 +7,7 @@ author: Zonix Team
 version: 1.0
 ---
 
+> **Zonix Pharma:** disputas y reembolsos en pedidos de medicamentos y comercio; mismos patrones de resolución con contexto regulatorio VE según docs.
 # ⚖️ Disputas y Reembolsos - Zonix Eats
 
 ## 1. Conceptos Clave

@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Events\OrderStatusChanged;
 use App\Models\Order;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
@@ -224,6 +225,15 @@ class OrderStateMachineService
             'source' => $source,
             'reason' => $reason,
         ]);
+
+        try {
+            event(new OrderStatusChanged($order->fresh()));
+        } catch (\Throwable $e) {
+            Log::warning('order_transition_broadcast_failed', [
+                'order_id' => $order->id,
+                'message' => $e->getMessage(),
+            ]);
+        }
 
         return $decision;
     }

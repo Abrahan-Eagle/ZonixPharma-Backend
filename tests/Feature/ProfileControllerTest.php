@@ -115,8 +115,8 @@ class ProfileControllerTest extends TestCase
         $profile = Profile::factory()->create(['user_id' => $this->user->id]);
         $payload = [
             'profile_id' => $profile->id,
-            'business_name' => 'Mi Restaurante',
-            'business_type' => 'Restaurante',
+            'business_name' => 'Mi Farmacia',
+            'business_type' => 'Farmacia',
             'tax_id' => 'J-12345678-9',
             'address' => 'Av. Principal 123',
             'open' => true,
@@ -131,14 +131,14 @@ class ProfileControllerTest extends TestCase
                 'success' => true,
                 'data' => [
                     'id' => $profile->fresh()->commerce->id,
-                    'business_name' => 'Mi Restaurante',
+                    'business_name' => 'Mi Farmacia',
                     'address' => 'Av. Principal 123',
                     'open' => true,
                 ],
             ]);
         $this->assertDatabaseHas('commerces', [
             'profile_id' => $profile->id,
-            'business_name' => 'Mi Restaurante',
+            'business_name' => 'Mi Farmacia',
         ]);
     }
 
@@ -150,8 +150,8 @@ class ProfileControllerTest extends TestCase
         $profile = Profile::factory()->create(['user_id' => $this->user->id]);
         $payload = [
             'profile_id' => $profile->id,
-            'business_name' => 'Otro Restaurante',
-            'business_type' => 'Restaurante',
+            'business_name' => 'Otra Farmacia',
+            'business_type' => 'Farmacia',
             'tax_id' => 'J-87654321-1',
             'address' => 'Calle Secundaria 456',
             'open' => false,
@@ -168,7 +168,7 @@ class ProfileControllerTest extends TestCase
             ->assertJsonValidationErrors(['schedule']);
         $this->assertDatabaseMissing('commerces', [
             'profile_id' => $profile->id,
-            'business_name' => 'Otro Restaurante',
+            'business_name' => 'Otra Farmacia',
         ]);
     }
 
@@ -180,7 +180,7 @@ class ProfileControllerTest extends TestCase
         $payload = [
             'profile_id' => $foreignProfile->id,
             'business_name' => 'Comercio Ajeno',
-            'business_type' => 'Restaurante',
+            'business_type' => 'Farmacia',
             'tax_id' => 'J-11111111-1',
             'address' => 'Dirección X',
             'open' => false,
@@ -233,7 +233,7 @@ class ProfileControllerTest extends TestCase
                 'photo_users' => UploadedFile::fake()->image('owner.jpg'),
                 'phone' => '04121234567',
                 'business_name' => 'Comercio Test',
-                'business_type' => 'Restaurante',
+                'business_type' => 'Farmacia',
                 'tax_id' => 'J-12345678-9',
                 'address' => 'Av. Principal',
             ]);

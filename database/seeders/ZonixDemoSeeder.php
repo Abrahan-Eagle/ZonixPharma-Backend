@@ -22,6 +22,7 @@ use App\Models\DeliverySetting;
 use App\Models\DeliveryZone;
 use App\Models\Dispute;
 use App\Models\Document;
+use App\Models\MedicineLot;
 use App\Models\Notification;
 use App\Models\OperatorCode;
 use App\Models\Order;
@@ -44,7 +45,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
 /**
- * Seeder único para demo Zonix Eats — simula el marketplace completo entre roles (misma BD que usarán las apps).
+ * Seeder único para demo Zonix Pharma — simula el marketplace farmacéutico entre roles (misma BD que usarán las apps).
  *
  * Objetivo: tras `migrate:fresh --seed` (o `db:seed --class=ZonixDemoSeeder`), cada rol tiene datos coherentes
  * y relaciones cruzadas (comprador ↔ comercio ↔ reparto empresa ↔ reparto independiente ↔ admin).
@@ -120,21 +121,19 @@ class ZonixDemoSeeder extends Seeder
         ['name' => 'Santa Rosa', 'street' => 'Calle 86 Sucre, Santa Rosa', 'lat' => 10.16561, 'lng' => -68.000375],
     ];
 
-    /** Imágenes de productos (comida) - Themealdb */
+    /** Imágenes de referencia (medicamentos / farmacia) — placeholders demo */
     private const PRODUCT_IMAGES = [
-        'https://www.themealdb.com/images/media/meals/wxywrq1468235067.jpg',
-        'https://www.themealdb.com/images/media/meals/xvsurr1511719182.jpg',
-        'https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg',
-        'https://www.themealdb.com/images/media/meals/1550441275.jpg',
-        'https://www.themealdb.com/images/media/meals/1520084413.jpg',
-        'https://www.themealdb.com/images/media/meals/1529446352.jpg',
-        'https://www.themealdb.com/images/media/meals/1529444830.jpg',
-        'https://www.themealdb.com/images/media/meals/1550441883.jpg',
-        'https://www.themealdb.com/images/media/meals/1529444830.jpg',
-        'https://www.themealdb.com/images/media/meals/1550441275.jpg',
+        'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400',
+        'https://images.unsplash.com/photo-1550572017-697da7eaebb3?w=400',
+        'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400',
+        'https://images.unsplash.com/photo-1626285861696-9b0b5a1f5c0d?w=400',
+        'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400',
+        'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400',
+        'https://images.unsplash.com/photo-1550572017-697da7eaebb3?w=400',
+        'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400',
     ];
 
-    /** Imágenes de comercios / restaurantes */
+    /** Imágenes de fachada de farmacias (placeholders) */
     private const COMMERCE_IMAGES = [
         'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800',
         'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800',
@@ -761,20 +760,133 @@ class ZonixDemoSeeder extends Seeder
 
     private function seedProducts(array $commerces): void
     {
-        $names = ['Arepa Reina Pepiada', 'Pizza Margarita', 'Hamburguesa Clásica', 'Pabellón Criollo', 'Jugo de Parchita', 'Cachapa con Queso', 'Empanada de Carne', 'Tostadas', 'Café Marrón', 'Tequeno'];
+        $catalog = [
+            [
+                'name' => 'Ibuprofeno 400 mg',
+                'active_ingredient' => 'Ibuprofeno',
+                'dosage_form' => 'tablet',
+                'concentration' => '400 mg',
+                'presentation' => 'Caja 20 tabletas',
+                'requires_prescription' => false,
+                'cold_chain' => false,
+                'health_registry' => 'DEMO-INHRR-IBU-001',
+            ],
+            [
+                'name' => 'Paracetamol 500 mg',
+                'active_ingredient' => 'Paracetamol',
+                'dosage_form' => 'tablet',
+                'concentration' => '500 mg',
+                'presentation' => 'Blíster 10 tabletas',
+                'requires_prescription' => false,
+                'cold_chain' => false,
+                'health_registry' => 'DEMO-INHRR-PAR-002',
+            ],
+            [
+                'name' => 'Amoxicilina 500 mg',
+                'active_ingredient' => 'Amoxicilina',
+                'dosage_form' => 'capsule',
+                'concentration' => '500 mg',
+                'presentation' => 'Caja 15 cápsulas',
+                'requires_prescription' => true,
+                'prescription_type' => 'common',
+                'cold_chain' => false,
+                'health_registry' => 'DEMO-INHRR-AMX-003',
+            ],
+            [
+                'name' => 'Loratadina 10 mg',
+                'active_ingredient' => 'Loratadina',
+                'dosage_form' => 'tablet',
+                'concentration' => '10 mg',
+                'presentation' => 'Caja 10 tabletas',
+                'requires_prescription' => false,
+                'cold_chain' => false,
+                'health_registry' => 'DEMO-INHRR-LOR-004',
+            ],
+            [
+                'name' => 'Insulina glargina 100 UI/ml',
+                'active_ingredient' => 'Insulina glargina',
+                'dosage_form' => 'injectable',
+                'concentration' => '100 UI/ml',
+                'presentation' => 'Frasco 10 ml',
+                'requires_prescription' => true,
+                'prescription_type' => 'common',
+                'cold_chain' => true,
+                'health_registry' => 'DEMO-INHRR-INS-005',
+            ],
+            [
+                'name' => 'Omeprazol 20 mg',
+                'active_ingredient' => 'Omeprazol',
+                'dosage_form' => 'capsule',
+                'concentration' => '20 mg',
+                'presentation' => 'Caja 14 cápsulas',
+                'requires_prescription' => false,
+                'cold_chain' => false,
+                'health_registry' => 'DEMO-INHRR-OME-006',
+            ],
+            [
+                'name' => 'Azitromicina 500 mg',
+                'active_ingredient' => 'Azitromicina',
+                'dosage_form' => 'tablet',
+                'concentration' => '500 mg',
+                'presentation' => 'Caja 3 tabletas',
+                'requires_prescription' => true,
+                'prescription_type' => 'common',
+                'cold_chain' => false,
+                'health_registry' => 'DEMO-INHRR-AZI-007',
+            ],
+            [
+                'name' => 'Vitamina D3 2000 UI',
+                'active_ingredient' => 'Colecalciferol',
+                'dosage_form' => 'capsule',
+                'concentration' => '2000 UI',
+                'presentation' => 'Frasco 60 cápsulas',
+                'requires_prescription' => false,
+                'cold_chain' => false,
+                'health_registry' => 'DEMO-INHRR-VD3-008',
+            ],
+        ];
+
+        $catKeys = array_values($this->categoryIds);
+        $catCount = max(1, count($catKeys));
         $imgIndex = 0;
+
         foreach ($commerces as $commerce) {
-            for ($j = 0; $j < 8; $j++) {
-                Product::create([
+            foreach ($catalog as $idx => $row) {
+                $product = Product::create([
                     'commerce_id' => $commerce->id,
-                    'category_id' => array_values($this->categoryIds)[$j % count($this->categoryIds)],
-                    'name' => $names[$j % count($names)].' '.($j + 1),
-                    'description' => 'Producto de calidad Valencia.',
-                    'price' => round(rand(5, 25) + rand(0, 99) / 100, 2),
+                    'category_id' => $catKeys[$idx % $catCount],
+                    'name' => $row['name'],
+                    'description' => 'Producto demo Zonix Pharma — solo referencia, no sustituir indicación médica.',
+                    'price' => round(rand(2, 45) + rand(0, 99) / 100, 2),
                     'image' => self::PRODUCT_IMAGES[$imgIndex % count(self::PRODUCT_IMAGES)],
                     'available' => true,
-                    'stock_quantity' => rand(20, 100),
+                    'stock_quantity' => rand(30, 200),
+                    'active_ingredient' => $row['active_ingredient'],
+                    'dosage_form' => $row['dosage_form'],
+                    'concentration' => $row['concentration'],
+                    'presentation' => $row['presentation'],
+                    'manufacturer' => 'Demo Pharma VE S.A.',
+                    'health_registry' => $row['health_registry'],
+                    'barcode' => '770'.str_pad((string) random_int(100000000, 999999999), 9, '0', STR_PAD_LEFT),
+                    'atc_code' => 'DEMO',
+                    'requires_prescription' => $row['requires_prescription'],
+                    'prescription_type' => $row['prescription_type'] ?? 'common',
+                    'controlled_substance' => false,
+                    'cold_chain' => $row['cold_chain'],
                 ]);
+
+                MedicineLot::create([
+                    'product_id' => $product->id,
+                    'lot_number' => 'LOT-'.$commerce->id.'-'.$product->id,
+                    'expiry_date' => now()->addMonths(6 + ($idx % 12))->toDateString(),
+                    'manufactured_at' => now()->subMonths(2)->toDateString(),
+                    'quantity_received' => 500,
+                    'quantity_available' => rand(40, 350),
+                    'received_at' => now()->subWeeks(2)->toDateString(),
+                    'supplier' => 'Distribuidora demo',
+                    'notes' => 'Lote semilla migrate:fresh --seed',
+                ]);
+
                 $imgIndex++;
             }
         }

@@ -7,6 +7,8 @@ author: Zonix Team
 version: 2.0
 ---
 
+> **Zonix Pharma:** marketplace farmacéutico; delivery incluye cadena de frío y restricciones Pharma cuando aplique (`config/zonix.php`). Ver `AGENTS.md`.
+
 **Módulo tarifa de delivery (futuro):** Si se va a implementar el módulo de tarifa (config Admin, CRUD zonas, cálculo en backend), leer y seguir [docs/PLAN_MODULO_TARIFA_DELIVERY.md](../../../docs/PLAN_MODULO_TARIFA_DELIVERY.md).
 
 # 🛵 Sistema de Delivery - Zonix Eats

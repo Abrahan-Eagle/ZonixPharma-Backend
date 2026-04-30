@@ -6,6 +6,8 @@ scope: app/Services/Payment, app/Models/PaymentMethod.php, app/Models/Bank.php
 version: 2.0
 ---
 
+> **Zonix Pharma:** vertical farmacéutica del ecosistema Zonix. Esta skill documenta patrones del core (pagos, comisiones, delivery_fee); el producto activo es **Zonix Pharma** — ver `AGENTS.md` y `docs/` para reglas Rx, recetas y farmacia.
+
 **Módulo tarifa de delivery (futuro):** Para implementar la configuración de tarifa de delivery por Admin (base + $/km, zonas), leer y seguir [docs/PLAN_MODULO_TARIFA_DELIVERY.md](../../docs/PLAN_MODULO_TARIFA_DELIVERY.md).
 
 # 💸 Sistema de Pagos Zonix (Venezuela/Global)
