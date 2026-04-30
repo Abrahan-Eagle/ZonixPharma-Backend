@@ -32,8 +32,6 @@ use App\Models\Phone;
 use App\Models\Post;
 use App\Models\PostLike;
 use App\Models\Product;
-use App\Models\ProductExtra;
-use App\Models\ProductPreference;
 use App\Models\Profile;
 use App\Models\Promotion;
 use App\Models\Review;
@@ -174,8 +172,6 @@ class ZonixDemoSeeder extends Seeder
         $this->ensureUser1AndUser6AddressesAndData($users);
         $commerces = $this->seedCommerces($users);
         $this->seedProducts($commerces);
-        $this->seedProductExtras();
-        $this->seedProductPreferences();
         [$deliveryCompany, $agents] = $this->seedDelivery($users);
         $orders = $this->seedOrders($users, $commerces, $agents);
         $this->seedCarts($users);
@@ -1014,49 +1010,6 @@ class ZonixDemoSeeder extends Seeder
                 ['profile_id' => $profile->id],
                 ['notes' => null]
             );
-        }
-    }
-
-    private function seedProductExtras(): void
-    {
-        $extrasPool = [
-            ['name' => 'Extra Queso Cheddar', 'price' => 1.00],
-            ['name' => 'Doble Carne', 'price' => 3.50],
-            ['name' => 'Tocino Extra', 'price' => 1.50],
-            ['name' => 'Queso Mozzarella', 'price' => 2.00],
-            ['name' => 'Guacamole', 'price' => 2.50],
-            ['name' => 'Huevo', 'price' => 1.00],
-            ['name' => 'Champiñones', 'price' => 1.25],
-            ['name' => 'Jalapeños', 'price' => 0.75],
-            ['name' => 'Extra Salsa', 'price' => 0.50],
-        ];
-        $products = Product::all();
-        foreach ($products as $product) {
-            $selected = collect($extrasPool)->random(min(3, count($extrasPool)))->values()->all();
-            foreach ($selected as $i => $extra) {
-                ProductExtra::create([
-                    'product_id' => $product->id,
-                    'name' => $extra['name'],
-                    'price' => $extra['price'],
-                    'sort_order' => $i,
-                ]);
-            }
-        }
-    }
-
-    private function seedProductPreferences(): void
-    {
-        $preferencesPool = ['Sin Cebolla', 'Sin Tomate', 'Bien cocido', 'Poco cocido', 'Sin picante', 'Extra picante', 'Salsa aparte', 'Sin sal'];
-        $products = Product::all();
-        foreach ($products as $product) {
-            $selected = collect($preferencesPool)->random(min(2, count($preferencesPool)))->values()->all();
-            foreach ($selected as $i => $name) {
-                ProductPreference::create([
-                    'product_id' => $product->id,
-                    'name' => $name,
-                    'sort_order' => $i,
-                ]);
-            }
         }
     }
 

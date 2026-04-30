@@ -258,9 +258,30 @@ class CartService
             return $this->formatCartItem($item);
         })->values()->toArray();
 
+        $requiresPrescription = $validItems->contains(
+            fn ($item) => (bool) ($item->product->requires_prescription ?? false)
+        );
+        $rxItems = $validItems
+            ->filter(fn ($item) => (bool) ($item->product->requires_prescription ?? false))
+            ->map(fn ($item) => [
+                'product_id' => $item->product_id,
+                'name' => $item->product->name,
+                'prescription_type' => $item->product->prescription_type,
+                'controlled_substance' => (bool) $item->product->controlled_substance,
+            ])
+            ->values()
+            ->toArray();
+
+        $coldChain = $validItems->contains(
+            fn ($item) => (bool) ($item->product->cold_chain ?? false)
+        );
+
         return [
             'items' => $formattedItems,
             'notes' => $cart->notes,
+            'requires_prescription' => $requiresPrescription,
+            'prescription_required_items' => $rxItems,
+            'cold_chain_required' => $coldChain,
         ];
     }
 
@@ -282,6 +303,14 @@ class CartService
             'category' => $product->category?->name,
             'commerce_id' => $product->commerce_id,
             'notes' => $item->notes,
+            // Pharma: información farmacéutica (para UI de carrito).
+            'requires_prescription' => (bool) ($product->requires_prescription ?? false),
+            'prescription_type' => $product->prescription_type,
+            'controlled_substance' => (bool) ($product->controlled_substance ?? false),
+            'cold_chain' => (bool) ($product->cold_chain ?? false),
+            'active_ingredient' => $product->active_ingredient,
+            'concentration' => $product->concentration,
+            'presentation' => $product->presentation,
         ];
     }
 

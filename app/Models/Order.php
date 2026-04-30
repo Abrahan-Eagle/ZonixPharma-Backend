@@ -9,6 +9,14 @@ class Order extends Model
 {
     use HasFactory;
 
+    public const STATUS_PENDING_PRESCRIPTION = 'pending_prescription_validation';
+    public const STATUS_PENDING_PAYMENT = 'pending_payment';
+    public const STATUS_PAID = 'paid';
+    public const STATUS_PROCESSING = 'processing';
+    public const STATUS_SHIPPED = 'shipped';
+    public const STATUS_DELIVERED = 'delivered';
+    public const STATUS_CANCELLED = 'cancelled';
+
     protected $fillable = [
         'profile_id',
         'commerce_id',
@@ -38,6 +46,11 @@ class Order extends Model
         'agent_accepted_at',
         'pickup_token',
         'delivery_token',
+        // Pharma
+        'requires_prescription',
+        'prescription_id',
+        'prescription_validated_at',
+        'cold_chain_required',
     ];
 
     protected $casts = [
@@ -52,6 +65,9 @@ class Order extends Model
         'payment_validated_at' => 'datetime',
         'payment_proof_uploaded_at' => 'datetime',
         'agent_accepted_at' => 'datetime',
+        'requires_prescription' => 'boolean',
+        'cold_chain_required' => 'boolean',
+        'prescription_validated_at' => 'datetime',
     ];
 
     /**
@@ -173,6 +189,35 @@ class Order extends Model
     public function orderPayments()
     {
         return $this->hasMany(OrderPayment::class);
+    }
+
+    /**
+     * Receta médica vinculada al pedido (cuando hay productos Rx).
+     */
+    public function prescription()
+    {
+        return $this->belongsTo(Prescription::class, 'prescription_id');
+    }
+
+    /**
+     * Todas las recetas asociadas (incluyendo intentos previos rechazados).
+     */
+    public function prescriptions()
+    {
+        return $this->hasMany(Prescription::class, 'order_id');
+    }
+
+    /**
+     * Indica si el pedido contiene al menos un producto Rx.
+     */
+    public function needsPrescriptionApproval(): bool
+    {
+        if ($this->requires_prescription) {
+            return $this->prescription_validated_at === null;
+        }
+        return $this->orderItems()
+            ->whereHas('product', fn ($q) => $q->where('requires_prescription', true))
+            ->exists();
     }
 
     public function foodPayment()

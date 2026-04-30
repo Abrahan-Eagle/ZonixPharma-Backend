@@ -93,7 +93,7 @@ class LocationController extends Controller
     private function reverseGeocode(float $latitude, float $longitude): ?string
     {
         try {
-            $userAgent = config('app.name', 'ZonixEats').' App';
+            $userAgent = config('app.name', 'ZonixPharma').' App';
 
             $response = Http::withHeaders([
                 'User-Agent' => $userAgent,
@@ -336,7 +336,7 @@ class LocationController extends Controller
         $address = $request->address;
 
         try {
-            $userAgent = config('app.name', 'ZonixEats').' App';
+            $userAgent = config('app.name', 'ZonixPharma').' App';
 
             $response = Http::withHeaders([
                 'User-Agent' => $userAgent,

@@ -3,23 +3,16 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class StoreProductRequest extends FormRequest
 {
-    /**
-     * Determine if the user is authorized to make this request.
-     */
     public function authorize(): bool
     {
-        // Permitir a cualquier usuario autenticado (rol commerce) crear productos
+        // Solo el comercio (farmacia) puede crear productos en su catálogo.
         return auth()->check() && auth()->user()->role === 'commerce';
     }
 
-    /**
-     * Get the validation rules that apply to the request.
-     *
-     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
-     */
     public function rules(): array
     {
         return [
@@ -28,29 +21,66 @@ class StoreProductRequest extends FormRequest
             'price' => 'required|numeric|min:0|max:999999.99',
             'available' => 'boolean',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:5120',
-            // Campos adicionales si los tienes
             'stock' => 'nullable|integer|min:0',
             'category' => 'nullable|string|max:100',
+            'category_id' => 'nullable|integer|exists:categories,id',
+
+            // Identificación farmacéutica
+            'active_ingredient' => 'nullable|string|max:160',
+            'dosage_form' => [
+                'nullable',
+                Rule::in([
+                    'tablet', 'capsule', 'syrup', 'suspension', 'injection',
+                    'cream', 'ointment', 'gel', 'drops', 'patch',
+                    'suppository', 'inhaler', 'powder', 'solution', 'spray',
+                    'device', 'other',
+                ]),
+            ],
+            'concentration' => 'nullable|string|max:80',
+            'presentation' => 'nullable|string|max:160',
+            'manufacturer' => 'nullable|string|max:160',
+
+            // Regulación / trazabilidad
+            'health_registry' => 'nullable|string|max:80',
+            'barcode' => 'nullable|string|max:32',
+            'atc_code' => 'nullable|string|max:16',
+
+            // Reglas Rx / cadena de frío
+            'requires_prescription' => 'sometimes|boolean',
+            'prescription_type' => [
+                'nullable',
+                'required_if:requires_prescription,1',
+                'required_if:requires_prescription,true',
+                Rule::in(['common', 'retained', 'special']),
+            ],
+            'controlled_substance' => 'sometimes|boolean',
+            'cold_chain' => 'sometimes|boolean',
         ];
     }
 
     public function messages(): array
     {
         return [
-            'name.required' => 'The product name is required',
-            'name.max' => 'The name cannot exceed 255 characters',
-            'description.required' => 'The description is required',
-            'description.max' => 'The description cannot exceed 1000 characters',
-            'price.required' => 'The price is required',
-            'price.numeric' => 'The price must be a number',
-            'price.min' => 'The price cannot be negative',
-            'price.max' => 'The price cannot exceed 999,999.99',
-            'available.boolean' => 'The availability must be true or false',
-            'image.image' => 'The file must be an image',
-            'image.mimes' => 'The image must be jpeg, png, jpg or gif',
-            'image.max' => 'The image cannot exceed 5MB',
-            'stock.integer' => 'The stock must be an integer',
-            'stock.min' => 'The stock cannot be negative',
+            'name.required' => 'El nombre del producto es obligatorio.',
+            'name.max' => 'El nombre no puede tener más de 255 caracteres.',
+            'description.required' => 'La descripción es obligatoria.',
+            'description.max' => 'La descripción no puede superar 1000 caracteres.',
+            'price.required' => 'El precio es obligatorio.',
+            'price.numeric' => 'El precio debe ser numérico.',
+            'price.min' => 'El precio no puede ser negativo.',
+            'price.max' => 'El precio no puede superar 999,999.99.',
+            'available.boolean' => 'La disponibilidad debe ser verdadero o falso.',
+            'image.image' => 'El archivo debe ser una imagen.',
+            'image.mimes' => 'La imagen debe ser jpeg, png, jpg o gif.',
+            'image.max' => 'La imagen no puede superar 5MB.',
+            'stock.integer' => 'El stock debe ser un entero.',
+            'stock.min' => 'El stock no puede ser negativo.',
+            'prescription_type.required_if' =>
+                'Cuando el producto requiere receta, el tipo de receta es obligatorio.',
+            'prescription_type.in' =>
+                'El tipo de receta debe ser common, retained o special.',
+            'dosage_form.in' =>
+                'La forma farmacéutica seleccionada no es válida.',
         ];
     }
 }

@@ -216,8 +216,11 @@ class PrivacyController extends Controller
         <h2>5. Seguridad</h2>
         <p>Implementamos medidas de seguridad técnicas y organizativas apropiadas para proteger tu información personal.</p>
         
-        <h2>6. Contacto</h2>
-        <p>Si tienes preguntas sobre esta política de privacidad, contáctanos en privacy@zonix-eats.com</p>
+        <h2>6. Datos de salud</h2>
+        <p>Si subes recetas médicas o información sobre alergias y condiciones, esos datos se consideran sensibles y se almacenan cifrados, con acceso limitado al farmacéutico responsable de la farmacia despachadora y al equipo autorizado de Zonix Pharma.</p>
+
+        <h2>7. Contacto</h2>
+        <p>Si tienes preguntas sobre esta política de privacidad, contáctanos en privacy@zonixpharma.com</p>
         ';
     }
 
@@ -233,31 +236,31 @@ class PrivacyController extends Controller
         <p>Al utilizar nuestros servicios, aceptas estar sujeto a estos términos de servicio.</p>
         
         <h2>2. Descripción del servicio</h2>
-        <p>Zonix Eats es una plataforma que conecta usuarios con restaurantes para la entrega de alimentos.</p>
-        
+        <p>Zonix Pharma es una plataforma que conecta usuarios con farmacias y droguerías para la venta y entrega de medicamentos OTC, productos de farmacia y, cuando corresponde, medicamentos bajo prescripción médica (Rx) validados por farmacéutico colegiado.</p>
+
         <h2>3. Cuenta de usuario</h2>
         <p>Eres responsable de mantener la confidencialidad de tu cuenta y contraseña.</p>
-        
+
         <h2>4. Uso aceptable</h2>
-        <p>Te comprometes a usar nuestros servicios solo para fines legales y de acuerdo con estos términos.</p>
-        
+        <p>Te comprometes a usar nuestros servicios solo para fines legales y de acuerdo con estos términos. La compra de medicamentos Rx requiere la presentación de una receta médica vigente emitida por un profesional habilitado.</p>
+
         <h2>5. Pedidos y pagos</h2>
-        <p>Los precios mostrados incluyen todos los impuestos aplicables. Los pagos se procesan de forma segura.</p>
-        
-        <h2>6. Entrega</h2>
-        <p>Nos esforzamos por entregar tus pedidos en el tiempo estimado, pero no garantizamos tiempos específicos.</p>
-        
+        <p>Los precios mostrados incluyen todos los impuestos aplicables. Los pagos se procesan según los métodos habilitados por cada farmacia (pago móvil, transferencia, Zelle, Binance Pay, efectivo, tarjeta).</p>
+
+        <h2>6. Entrega y retiro</h2>
+        <p>Nos esforzamos por entregar los pedidos en el tiempo estimado. Para ciertos medicamentos controlados o de cadena de frío puede ser obligatorio el retiro en farmacia con verificación física de receta o documento de identidad.</p>
+
         <h2>7. Cancelaciones y reembolsos</h2>
-        <p>Las políticas de cancelación y reembolso varían según el restaurante y las circunstancias.</p>
-        
+        <p>Las políticas de cancelación y reembolso varían según la farmacia y la naturaleza del producto. Los medicamentos Rx ya despachados no son retornables, salvo defecto del producto.</p>
+
         <h2>8. Limitación de responsabilidad</h2>
-        <p>Nuestra responsabilidad está limitada al monto pagado por el servicio.</p>
-        
+        <p>Nuestra responsabilidad está limitada al monto pagado por el servicio. Zonix Pharma no sustituye la consulta médica ni la indicación profesional del farmacéutico.</p>
+
         <h2>9. Modificaciones</h2>
         <p>Nos reservamos el derecho de modificar estos términos en cualquier momento.</p>
-        
+
         <h2>10. Contacto</h2>
-        <p>Para preguntas sobre estos términos, contáctanos en legal@zonix-eats.com</p>
+        <p>Para preguntas sobre estos términos, contáctanos en legal@zonixpharma.com</p>
         ';
     }
 }

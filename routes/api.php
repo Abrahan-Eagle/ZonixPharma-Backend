@@ -23,5 +23,6 @@ require __DIR__.'/api/buyer.php';
 require __DIR__.'/api/commerce.php';
 require __DIR__.'/api/delivery.php';
 require __DIR__.'/api/delivery-company.php';
+require __DIR__.'/api/pharmacist.php';
 require __DIR__.'/api/admin.php';
 require __DIR__.'/api/common.php';

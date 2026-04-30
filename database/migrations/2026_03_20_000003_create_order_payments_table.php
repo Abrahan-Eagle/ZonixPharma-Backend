@@ -11,6 +11,12 @@ return new class extends Migration
         Schema::create('order_payments', function (Blueprint $table) {
             $table->id();
             $table->foreignId('order_id')->constrained()->onDelete('cascade');
+            // Tipos de cobro asociados a la orden:
+            //   - 'food' (legacy Eats; en Zonix Pharma representa el subtotal
+            //     de productos / medicamentos a pagar a la farmacia).
+            //   - 'delivery' (cobro al delivery_company por el envío).
+            // Se conserva 'food' como tipo canónico para no romper relaciones
+            // existentes (Order::foodPayment, scopes en OrderPayment).
             $table->enum('type', ['food', 'delivery']);
             $table->decimal('amount', 10, 2);
             $table->string('payee_type', 50)->nullable(); // commerce | delivery_company

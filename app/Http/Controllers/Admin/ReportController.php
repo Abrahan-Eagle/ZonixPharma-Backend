@@ -316,7 +316,7 @@ class ReportController extends Controller
             : [];
 
         return response()->json([
-            'app_name' => $persistedSettings['app_name'] ?? config('app.name', 'ZONIX EATS'),
+            'app_name' => $persistedSettings['app_name'] ?? config('app.name', 'ZONIX PHARMA'),
             'app_version' => '1.0.0',
             'maintenance_mode' => $persistedSettings['maintenance_mode'] ?? config('app.maintenance_mode', false),
             'registration_enabled' => $persistedSettings['registration_enabled'] ?? env('REGISTRATION_ENABLED', true),

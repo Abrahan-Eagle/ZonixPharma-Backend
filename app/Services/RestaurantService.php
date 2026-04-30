@@ -2,51 +2,28 @@
 
 namespace App\Services;
 
-use App\Models\Commerce;
-
-class RestaurantService
+/**
+ * @deprecated Renombrado a {@see \App\Services\PharmacyService} en la migración
+ *             Eats → Pharma. Esta clase queda como puente para tests
+ *             legacy (`RestaurantControllerTest`) hasta su retiro definitivo.
+ */
+class RestaurantService extends PharmacyService
 {
-    /**
-     * Obtener todos los restaurantes (comercios).
-     *
-     * @param  int  $perPage
-     * @return \Illuminate\Contracts\Pagination\LengthAwarePaginator
-     */
-    public function getAllRestaurants($perPage = 15)
+    /** @deprecated usar {@see PharmacyService::getAllPharmacies()} */
+    public function getAllRestaurants(int $perPage = 15)
     {
-        return Commerce::where('status', 'approved')
-            ->where('open', true)
-            ->with(['profile', 'addresses', 'businessTypeRelation', 'phones'])
-            ->paginate($perPage);
+        return $this->getAllPharmacies($perPage);
     }
 
-    /**
-     * Obtener un restaurante específico por ID.
-     *
-     * @param  int  $id
-     * @return Commerce|null
-     */
-    public function getRestaurantById($id)
+    /** @deprecated usar {@see PharmacyService::getPharmacyById()} */
+    public function getRestaurantById(int $id)
     {
-        return Commerce::with(['profile', 'products.category', 'addresses', 'businessTypeRelation', 'phones'])->find($id);
+        return $this->getPharmacyById($id);
     }
 
-    /**
-     * Obtener restaurante visible en catalogo publico buyer.
-     *
-     * Reglas:
-     * - Comercio aprobado
-     * - Comercio abierto
-     *
-     * @param  int  $id
-     * @return Commerce|null
-     */
-    public function getCatalogVisibleRestaurantById($id)
+    /** @deprecated usar {@see PharmacyService::getCatalogVisiblePharmacyById()} */
+    public function getCatalogVisibleRestaurantById(int $id)
     {
-        return Commerce::where('id', $id)
-            ->where('status', 'approved')
-            ->where('open', true)
-            ->with(['profile', 'products.category', 'addresses', 'businessTypeRelation', 'phones'])
-            ->first();
+        return $this->getCatalogVisiblePharmacyById($id);
     }
 }

@@ -1,7 +1,7 @@
 @extends('front.layouts.zonix')
 
-@section('title', 'Política de Cookies - Zonix Eats')
-@section('meta_description', 'Información sobre el uso de cookies en Zonix Eats.')
+@section('title', 'Política de Cookies - Zonix Pharma')
+@section('meta_description', 'Información sobre el uso de cookies en Zonix Pharma.')
 
 @section('content')
 <!-- Hero Header -->

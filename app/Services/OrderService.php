@@ -88,7 +88,8 @@ class OrderService
         if (! $order) {
             return 'Orden no encontrada';
         }
-        if ($order->status === 'pending_payment') {
+        $cancellable = ['pending_payment', 'pending_prescription_validation'];
+        if (in_array($order->status, $cancellable, true)) {
             $order->update([
                 'status' => 'cancelled',
                 'cancellation_reason' => 'Customer requested cancellation',

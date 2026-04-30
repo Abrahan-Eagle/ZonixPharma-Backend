@@ -1,7 +1,7 @@
 @extends('front.layouts.zonix')
 
-@section('title', 'Términos y Condiciones - Zonix Eats')
-@section('meta_description', 'Términos y condiciones de uso de la plataforma Zonix Eats.')
+@section('title', 'Términos y Condiciones - Zonix Pharma')
+@section('meta_description', 'Términos y condiciones de uso de la plataforma Zonix Pharma.')
 
 @section('content')
 <!-- Hero Header -->
@@ -41,7 +41,7 @@
                     <div class="bg-navy bg-opacity-5 p-4 rounded-xl mt-4 border border-navy border-opacity-5">
                         <h6 class="font-bold text-navy mb-2">¿Necesitas ayuda?</h6>
                         <p class="text-sm text-slate-500 mb-3">Si tienes dudas sobre nuestros términos, contáctanos.</p>
-                        <a href="mailto:legal@zonixeats.com" class="text-primary-zonix font-bold text-sm text-decoration-none">legal@zonixeats.com &rarr;</a>
+                        <a href="mailto:legal@zonixpharma.com" class="text-primary-zonix font-bold text-sm text-decoration-none">legal@zonixpharma.com &rarr;</a>
                     </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@
                     <div class="prose max-w-none text-slate-600 leading-relaxed">
                         <div id="intro" class="scroll-mt-24">
                             <p class="lead font-medium text-navy mb-4">
-                                Bienvenido a <strong>Zonix Eats</strong>. Al acceder y utilizar nuestra aplicación móvil y sitio web, aceptas cumplir con los siguientes términos y condiciones. Te recomendamos leerlos detenidamente antes de utilizar nuestros servicios.
+                                Bienvenido a <strong>Zonix Pharma</strong>. Al acceder y utilizar nuestra aplicación móvil y sitio web, aceptas cumplir con los siguientes términos y condiciones. Te recomendamos leerlos detenidamente antes de utilizar nuestros servicios.
                             </p>
                         </div>
                         
@@ -65,7 +65,7 @@
                                 </div>
                                 <h3 class="text-2xl font-bold text-navy m-0">1. Uso de la Plataforma</h3>
                             </div>
-                            <p class="mb-4">Zonix Eats es una plataforma tecnológica que actúa como intermediario entre usuarios, comercios aliados (restaurantes, tiendas) y repartidores independientes.</p>
+                            <p class="mb-4">Zonix Pharma es una plataforma tecnológica que actúa como intermediario entre usuarios, farmacias y droguerías aliadas, farmacéuticos colegiados y repartidores independientes.</p>
                             <div class="bg-slate-50 p-4 rounded-lg border-start border-4 border-primary-zonix">
                                 <ul class="list-none space-y-2 mb-0 ps-0">
                                     <li class="d-flex gap-2">
@@ -91,7 +91,7 @@
                                 </div>
                                 <h3 class="text-2xl font-bold text-navy m-0">2. Pedidos y Pagos</h3>
                             </div>
-                            <p>Los precios de los productos son establecidos directamente por los comercios aliados. Zonix Eats cobra una tarifa de servicio y/o envío por el uso de la plataforma.</p>
+                            <p>Los precios de los productos son establecidos directamente por los comercios aliados. Zonix Pharma cobra una tarifa de servicio y/o envío por el uso de la plataforma.</p>
                             <p>Aceptamos los siguientes métodos de pago:</p>
                             <div class="d-flex gap-2 mb-3">
                                 <span class="badge bg-light text-navy border">Pago Móvil</span>
@@ -117,7 +117,7 @@
                                 </div>
                                 <h3 class="text-2xl font-bold text-navy m-0">4. Limitación de Responsabilidad</h3>
                             </div>
-                            <p>Zonix Eats no prepara ni manipula alimentos. La responsabilidad sobre la calidad e higiene de los productos recae exclusivamente en el comercio aliado. Sin embargo, gestionaremos cualquier reclamo para asegurar tu satisfacción.</p>
+                            <p>Zonix Pharma no prepara ni manipula alimentos. La responsabilidad sobre la calidad e higiene de los productos recae exclusivamente en el comercio aliado. Sin embargo, gestionaremos cualquier reclamo para asegurar tu satisfacción.</p>
                         </div>
 
                     </div>

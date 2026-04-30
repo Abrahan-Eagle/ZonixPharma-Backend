@@ -17,7 +17,7 @@ class AdminOperationalHardeningTest extends TestCase
         Sanctum::actingAs($admin);
 
         $payload = [
-            'app_name' => 'Zonix Eats Ops',
+            'app_name' => 'Zonix Pharma Ops',
             'maintenance_mode' => true,
             'registration_enabled' => false,
             'email_verification_required' => true,
@@ -30,7 +30,7 @@ class AdminOperationalHardeningTest extends TestCase
 
         $this->getJson('/api/admin/settings')
             ->assertStatus(200)
-            ->assertJsonPath('app_name', 'Zonix Eats Ops')
+            ->assertJsonPath('app_name', 'Zonix Pharma Ops')
             ->assertJsonPath('maintenance_mode', true)
             ->assertJsonPath('registration_enabled', false)
             ->assertJsonPath('email_verification_required', true)

@@ -19,6 +19,7 @@ class Commerce extends Model
         'image',
         'address',
         'open',
+        'night_shift_open',
         'schedule',
         'membership_type',
         'membership_monthly_fee',
@@ -29,6 +30,10 @@ class Commerce extends Model
         'preparation_time',
         'status',
         'rejection_reason',
+        // Datos farmacéuticos del establecimiento
+        'pharmacist_in_charge_profile_id',
+        'health_permit_number',
+        'health_permit_expires_at',
     ];
 
     protected $appends = ['phone', 'latitude', 'longitude'];
@@ -39,6 +44,7 @@ class Commerce extends Model
     protected $casts = [
         'is_primary' => 'boolean',
         'open' => 'boolean',
+        'night_shift_open' => 'boolean',
         'schedule' => 'array',
         'membership_monthly_fee' => 'decimal:2',
         'commission_percentage' => 'decimal:2',
@@ -46,6 +52,7 @@ class Commerce extends Model
         'last_cancellation_date' => 'datetime',
         'cancellation_count' => 'integer',
         'preparation_time' => 'integer',
+        'health_permit_expires_at' => 'date',
     ];
 
     /**
@@ -191,5 +198,22 @@ class Commerce extends Model
     public function businessTypeRelation()
     {
         return $this->belongsTo(BusinessType::class, 'business_type_id');
+    }
+
+    /**
+     * Farmacéutico colegiado responsable de la farmacia (Profile con rol pharmacist).
+     */
+    public function pharmacistInCharge()
+    {
+        return $this->belongsTo(Profile::class, 'pharmacist_in_charge_profile_id');
+    }
+
+    /**
+     * Recetas pendientes de validación que llegaron a esta farmacia.
+     */
+    public function pendingPrescriptions()
+    {
+        return $this->hasMany(Prescription::class)
+            ->where('status', Prescription::STATUS_PENDING_VALIDATION);
     }
 }

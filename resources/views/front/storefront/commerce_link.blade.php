@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ $commerce->business_name }} — Zonix Eats</title>
-    <meta name="description" content="Tu restaurante en Zonix Eats">
-    <meta property="og:title" content="{{ $commerce->business_name }} — Zonix Eats">
-    <meta property="og:description" content="Tu restaurante en Zonix Eats">
+    <title>{{ $commerce->business_name }} — Zonix Pharma</title>
+    <meta name="description" content="Tu farmacia en Zonix Pharma">
+    <meta property="og:title" content="{{ $commerce->business_name }} — Zonix Pharma">
+    <meta property="og:description" content="Tu farmacia en Zonix Pharma">
     <meta property="og:url" content="{{ $pageUrl }}">
     <meta property="og:type" content="website">
     <style>
-        :root { --bg:#0f1923; --card:#fff; --text:#0f172a; --muted:#64748b; --accent:#3399ff; }
+        :root { --bg:#142033; --card:#fff; --text:#1E2A5A; --muted:#64748b; --accent:#56C7B8; }
         * { box-sizing: border-box; }
         body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
             background: var(--bg); color: var(--text); min-height: 100vh;
@@ -36,9 +36,9 @@
 <body>
     <div class="card">
         <h1>{{ $commerce->business_name }}</h1>
-        <p class="sub">Tu restaurante en Zonix Eats</p>
+        <p class="sub">Tu farmacia en Zonix Pharma</p>
         <p><a class="btn" href="{{ $deepLink }}">Abrir en la app</a></p>
-        <p class="hint">Si no se abre sola, pulsa el botón. Necesitas tener Zonix Eats instalada.</p>
+        <p class="hint">Si no se abre sola, pulsa el botón. Necesitas tener Zonix Pharma instalada.</p>
         <p class="hint"><code>{{ $pageUrl }}</code></p>
     </div>
 </body>

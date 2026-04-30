@@ -7,80 +7,47 @@ use App\Models\Product;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
+ * Factory de Product (medicamento / producto de farmacia).
+ *
+ * Por default crea OTC sin Rx, sin cadena de frío y sin sustancia
+ * controlada. Tests que necesiten Rx pueden encadenar `->state(fn() => [
+ *   'requires_prescription' => true,
+ *   'prescription_type' => 'common',
+ * ])`.
+ *
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Product>
  */
 class ProductFactory extends Factory
 {
-    /**
-     * Define the model's default state.
-     *
-     * @return array<string, mixed>
-     */
     public function definition(): array
     {
-        $foodImages = [
-            'https://www.themealdb.com/images/media/meals/wxywrq1468235067.jpg', // Apple Frangipan Tart
-            'https://www.themealdb.com/images/media/meals/xvsurr1511719182.jpg', // Apple & Blackberry Crumble
-            'https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg', // Apam balik
-            'https://www.themealdb.com/images/media/meals/20z181619788503.jpg', // Ayam Percik
-            'https://www.themealdb.com/images/media/meals/1550441275.jpg', // Baked salmon with fennel & tomatoes
-            'https://www.themealdb.com/images/media/meals/1520084413.jpg', // Beef and Mustard Pie
-            'https://www.themealdb.com/images/media/meals/1529446352.jpg', // Beef and Oyster pie
-            'https://www.themealdb.com/images/media/meals/1550441883.jpg', // Beef Dumpling Stew
-            'https://www.themealdb.com/images/media/meals/1529444830.jpg', // Beef Sunday Roast
-            'https://www.themealdb.com/images/media/meals/1550441275.jpg', // Big Mac
-            'https://www.themealdb.com/images/media/meals/1520084413.jpg', // Chicken & mushroom Hotpot
-            'https://www.themealdb.com/images/media/meals/1529446352.jpg', // Chicken Alfredo Primavera
-            'https://www.themealdb.com/images/media/meals/1550441883.jpg', // Chicken Couscous
-            'https://www.themealdb.com/images/media/meals/1529444830.jpg', // Chicken Fajita Mac and Cheese
-            'https://www.themealdb.com/images/media/meals/1550441275.jpg', // Chicken Ham and Leek Pie
-            'https://www.themealdb.com/images/media/meals/1520084413.jpg', // Chicken Quinoa Greek Bowl
-            'https://www.themealdb.com/images/media/meals/1529446352.jpg', // Chocolate Raspberry Tarts
-            'https://www.themealdb.com/images/media/meals/1550441883.jpg', // Classic Christmas pudding
-            'https://www.themealdb.com/images/media/meals/1529444830.jpg', // Creamy Tomato Soup
-            'https://www.themealdb.com/images/media/meals/1550441275.jpg', // Dal fry
-            'https://www.themealdb.com/images/media/meals/1520084413.jpg', // Duck Confit
-            'https://www.themealdb.com/images/media/meals/1529446352.jpg', // English Breakfast
-            'https://www.themealdb.com/images/media/meals/1550441883.jpg', // French Onion Chicken with Roasted Carrots & Mashed Potatoes
-            'https://www.themealdb.com/images/media/meals/1529444830.jpg', // French Onion Soup
-            'https://www.themealdb.com/images/media/meals/1550441275.jpg', // Full English Breakfast
-            'https://www.themealdb.com/images/media/meals/1520084413.jpg', // Hot Chocolate Fudge
-            'https://www.themealdb.com/images/media/meals/1529446352.jpg', // Katsu Chicken curry
-            'https://www.themealdb.com/images/media/meals/1550441883.jpg', // Lamb and Potato pie
-            'https://www.themealdb.com/images/media/meals/1529444830.jpg', // Lasagna Sandwiches
-            'https://www.themealdb.com/images/media/meals/1550441275.jpg', // Massaman Beef curry
-            'https://www.themealdb.com/images/media/meals/1520084413.jpg', // Minced Beef Pie
-            'https://www.themealdb.com/images/media/meals/1529446352.jpg', // Mushroom soup with buckwheat
-            'https://www.themealdb.com/images/media/meals/1550441883.jpg', // New York cheesecake
-            'https://www.themealdb.com/images/media/meals/1529444830.jpg', // Pad See Ew
-            'https://www.themealdb.com/images/media/meals/1550441275.jpg', // Pancakes
-            'https://www.themealdb.com/images/media/meals/1520084413.jpg', // Pasta and Beans
-            'https://www.themealdb.com/images/media/meals/1529446352.jpg', // Peanut Butter Cheesecake
-            'https://www.themealdb.com/images/media/meals/1550441883.jpg', // Pizza Express Margherita
-            'https://www.themealdb.com/images/media/meals/1529444830.jpg', // Pork Cassoulet
-            'https://www.themealdb.com/images/media/meals/1550441275.jpg', // Pork Dumplings
-            'https://www.themealdb.com/images/media/meals/1520084413.jpg', // Portuguese prego with green piri-piri
-            'https://www.themealdb.com/images/media/meals/1529446352.jpg', // Potato Gratin with Chicken
-            'https://www.themealdb.com/images/media/meals/1550441883.jpg', // Pumpkin Pie
-            'https://www.themealdb.com/images/media/meals/1529444830.jpg', // Red Peas Soup
-            'https://www.themealdb.com/images/media/meals/1550441275.jpg', // Roast fennel and aubergine paella
-            'https://www.themealdb.com/images/media/meals/1520084413.jpg', // Salmon Avocado Salad
-            'https://www.themealdb.com/images/media/meals/1529446352.jpg', // Salmon Prawn Risotto
-            'https://www.themealdb.com/images/media/meals/1550441883.jpg', // Salted Caramel Cheescake
-            'https://www.themealdb.com/images/media/meals/1529444830.jpg', // Seafood fideuà
-            'https://www.themealdb.com/images/media/meals/1550441275.jpg', // Smoky Lentil Chili with Squash
-            'https://www.themealdb.com/images/media/meals/1520084413.jpg', // Spanish Tortilla
-            'https://www.themealdb.com/images/media/meals/1529446352.jpg', // Spicy Arrabiata Penne
-            'https://www.themealdb.com/images/media/meals/1550441883.jpg', // Spicy North African Potato Salad
-            'https://www.themealdb.com/images/media/meals/1529444830.jpg', // Sticky Toffee Pudding
-            'https://www.themealdb.com/images/media/meals/1550441275.jpg', // Summer Pistou
-            'https://www.themealdb.com/images/media/meals/1520084413.jpg', // Tandoori chicken pizza
-            'https://www.themealdb.com/images/media/meals/1529446352.jpg', // Teriyaki Chicken Casserole
-            'https://www.themealdb.com/images/media/meals/1550441883.jpg', // Three Fish Pie
-            'https://www.themealdb.com/images/media/meals/1529444830.jpg', // Toad In The Hole
-            'https://www.themealdb.com/images/media/meals/1550441275.jpg', // Treacle Tart
-            'https://www.themealdb.com/images/media/meals/1520084413.jpg', // Tuna and Egg Briks
-            'https://www.themealdb.com/images/media/meals/1529446352.jpg', // White chocolate creme brulee
+        // Imágenes ilustrativas neutras (placeholders). En producción
+        // cada farmacia subirá la foto real del producto. Las URLs
+        // vienen de Unsplash (banco libre) con keywords farmacéuticas.
+        $pharmaImages = [
+            'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=600&q=80',
+            'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=600&q=80',
+            'https://images.unsplash.com/photo-1587854680352-936b22b91030?auto=format&fit=crop&w=600&q=80',
+            'https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&w=600&q=80',
+            'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80',
+            'https://images.unsplash.com/photo-1559757175-08d6f6c4e3a4?auto=format&fit=crop&w=600&q=80',
+        ];
+
+        $dosageForms = [
+            'tablet', 'capsule', 'syrup', 'suspension', 'cream', 'drops',
+            'solution', 'spray', 'ointment',
+        ];
+
+        $activeIngredients = [
+            'paracetamol', 'ibuprofeno', 'acetaminofén', 'amoxicilina',
+            'loratadina', 'omeprazol', 'metformina', 'losartán',
+            'azitromicina', 'cetirizina', 'salbutamol', 'vitamina C',
+            'multivitamínico', 'sulfato ferroso',
+        ];
+
+        $manufacturers = [
+            'Laboratorios Vargas', 'Genven', 'Calox', 'Elmor',
+            'Behrens', 'Belfar', 'Drogueria Nena',
         ];
 
         $testing = app()->environment('testing');
@@ -88,21 +55,63 @@ class ProductFactory extends Factory
         return [
             'commerce_id' => Commerce::factory(),
             'category_id' => \App\Models\Category::inRandomOrder()->first()?->id,
-            'name' => $this->faker->words(3, true),
+            'name' => ucfirst($this->faker->word()).' '.$this->faker->numberBetween(100, 1000).'mg',
             'description' => $this->faker->paragraph(),
-            'price' => $this->faker->randomFloat(2, 5, 50),
-            'image' => $this->faker->randomElement($foodImages),
-            // En testing: disponible y con stock para evitar flakes en buyer/cart sin overrides explícitos.
-            'available' => $testing ? true : $this->faker->boolean(80),
+            'price' => $this->faker->randomFloat(2, 1.5, 60),
+            'image' => $this->faker->randomElement($pharmaImages),
+            // En testing: disponible y con stock para evitar flakes en buyer/cart.
+            'available' => $testing ? true : $this->faker->boolean(85),
             'stock_quantity' => $testing
                 ? 100
-                : $this->faker->optional(0.6)->numberBetween(0, 100), // 60% con stock, 40% solo available
+                : $this->faker->optional(0.7)->numberBetween(0, 100),
+            'active_ingredient' => $this->faker->randomElement($activeIngredients),
+            'dosage_form' => $this->faker->randomElement($dosageForms),
+            'concentration' => $this->faker->numberBetween(50, 1000).'mg',
+            'presentation' => 'Caja x '.$this->faker->numberBetween(10, 30).' unidades',
+            'manufacturer' => $this->faker->randomElement($manufacturers),
+            'health_registry' => 'E.F. '.$this->faker->numberBetween(10000, 99999),
+            'requires_prescription' => false,
+            'prescription_type' => null,
+            'controlled_substance' => false,
+            'cold_chain' => false,
         ];
     }
 
     /**
-     * Indicate that the product should be created with a commerce.
+     * State: medicamento Rx común (antibiótico, antihipertensivo, etc.).
      */
+    public function rx(): self
+    {
+        return $this->state(fn () => [
+            'requires_prescription' => true,
+            'prescription_type' => 'common',
+        ]);
+    }
+
+    /**
+     * State: medicamento controlado (psicotrópico/opioide). Receta retenida.
+     */
+    public function controlled(): self
+    {
+        return $this->state(fn () => [
+            'requires_prescription' => true,
+            'prescription_type' => 'retained',
+            'controlled_substance' => true,
+        ]);
+    }
+
+    /**
+     * State: producto que requiere cadena de frío (insulina, vacunas, biológicos).
+     */
+    public function coldChain(): self
+    {
+        return $this->state(fn () => [
+            'cold_chain' => true,
+            'requires_prescription' => true,
+            'prescription_type' => 'common',
+        ]);
+    }
+
     public function withCommerce()
     {
         return $this->afterCreating(function (Product $product) {

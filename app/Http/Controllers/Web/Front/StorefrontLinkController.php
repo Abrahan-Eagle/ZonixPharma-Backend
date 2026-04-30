@@ -7,7 +7,8 @@ use App\Models\Commerce;
 use Illuminate\View\View;
 
 /**
- * Enlace público compartido desde la app: GET /r/{id} → abre Zonix con el comercio (deep link).
+ * Enlace público compartido desde la app:
+ *   GET /r/{id}  →  abre Zonix Pharma con la farmacia (deep link `zonix://pharmacy/{id}`).
  */
 class StorefrontLinkController extends Controller
 {
@@ -19,7 +20,7 @@ class StorefrontLinkController extends Controller
             abort(404);
         }
 
-        $deepLink = 'zonix://restaurant/'.$model->id;
+        $deepLink = 'zonix://pharmacy/'.$model->id;
 
         return view('front.storefront.commerce_link', [
             'commerce' => $model,

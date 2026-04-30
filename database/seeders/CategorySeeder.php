@@ -5,46 +5,47 @@ namespace Database\Seeders;
 use App\Models\Category;
 use Illuminate\Database\Seeder;
 
+/**
+ * Categorías base del catálogo Zonix Pharma.
+ *
+ * Mezcla terapéuticas (analgésicos, antibióticos…) y comerciales
+ * (cuidado infantil, higiene…) para reflejar tanto medicamentos
+ * como productos de farmacia general.
+ */
 class CategorySeeder extends Seeder
 {
-    public function run()
+    public function run(): void
     {
         $categories = [
-            ['name' => 'Arepas', 'description' => 'Tradicionales arepas venezolanas rellenas de diversos ingredientes.'],
-            ['name' => 'Empanadas', 'description' => 'Empanadas de maíz fritas, típicas en desayunos y meriendas.'],
-            ['name' => 'Pizzas', 'description' => 'Pizzas artesanales y comerciales, con variedad de ingredientes.'],
-            ['name' => 'Hamburguesas', 'description' => 'Hamburguesas al estilo venezolano, con salsas y papas.'],
-            ['name' => 'Perros Calientes', 'description' => 'Hot dogs con toppings criollos: papitas, salsas y más.'],
-            ['name' => 'Pollo Frito', 'description' => 'Pollo frito crujiente, pieza clave de la comida rápida local.'],
-            ['name' => 'Comida China', 'description' => 'Arroz frito, lumpias y platos chinos adaptados al gusto venezolano.'],
-            ['name' => 'Comida Criolla', 'description' => 'Pabellón, asado negro, caraotas y platos típicos venezolanos.'],
-            ['name' => 'Parrillas', 'description' => 'Carnes a la parrilla, chorizos, morcillas y guarniciones.'],
-            ['name' => 'Sushi', 'description' => 'Sushi y comida japonesa, con opciones tradicionales y fusión.'],
-            ['name' => 'Cachapas', 'description' => 'Cachapas de maíz tierno con queso de mano y rellenos variados.'],
-            ['name' => 'Pastas', 'description' => 'Pastas italianas y pastichos, muy populares en Venezuela.'],
-            ['name' => 'Ensaladas', 'description' => 'Ensaladas frescas, César, de gallina y más.'],
-            ['name' => 'Jugos Naturales', 'description' => 'Jugos de frutas tropicales: parchita, guanábana, mango, etc.'],
-            ['name' => 'Bebidas Gaseosas', 'description' => 'Refrescos y sodas populares como Frescolita, Pepsi, Coca-Cola.'],
-            ['name' => 'Cervezas', 'description' => 'Cervezas nacionales e importadas: Polar, Zulia, Regional, etc.'],
-            ['name' => 'Helados', 'description' => 'Helados artesanales e industriales, paletas y barquillas.'],
-            ['name' => 'Postres', 'description' => 'Dulces criollos, tortas, quesillos y golosinas.'],
-            ['name' => 'Cafés', 'description' => 'Café venezolano, espresso, marrón, guayoyo y más.'],
-            ['name' => 'Té y Aromáticas', 'description' => 'Tés calientes y fríos, infusiones naturales y aromáticas.'],
-            ['name' => 'Sandwiches', 'description' => 'Sandwiches variados, club house, pepitos y más.'],
-            ['name' => 'Panadería', 'description' => 'Pan canilla, campesino, dulces y productos de panadería.'],
-            ['name' => 'Charcutería', 'description' => 'Quesos, jamones, embutidos y productos de charcutería.'],
-            ['name' => 'Comida Mexicana', 'description' => 'Tacos, burritos, nachos y platos mexicanos populares.'],
-            ['name' => 'Comida Italiana', 'description' => 'Pastas, pizzas, lasañas y gastronomía italiana.'],
-            ['name' => 'Comida Árabe', 'description' => 'Shawarma, falafel, kibbe y platos árabes.'],
-            ['name' => 'Comida Vegetariana', 'description' => 'Opciones vegetarianas y saludables.'],
-            ['name' => 'Comida Vegana', 'description' => 'Platos 100% vegetales, sin ingredientes de origen animal.'],
-            ['name' => 'Marisquería', 'description' => 'Pescados y mariscos frescos, ceviches y cocteles.'],
-            ['name' => 'Pescados', 'description' => 'Pescados preparados al gusto local.'],
-            ['name' => 'Churros', 'description' => 'Churros rellenos y tradicionales, dulces populares.'],
-            ['name' => 'Chocolatería', 'description' => 'Bombones, tabletas y postres de chocolate venezolano.'],
-            ['name' => 'Bebidas Energéticas', 'description' => 'Bebidas energizantes y rehidratantes.'],
-            ['name' => 'Bebidas Alcohólicas', 'description' => 'Licores, ron, whisky y otras bebidas alcohólicas.'],
-            ['name' => 'Bodegón', 'description' => 'Productos importados, snacks, golosinas y bebidas.'],
+            // Medicamentos OTC y Rx (terapéuticas)
+            ['name' => 'Analgésicos y antipiréticos', 'description' => 'Paracetamol, ibuprofeno, ácido acetilsalicílico y similares.'],
+            ['name' => 'Antigripales y resfriado', 'description' => 'Antigripales combinados, descongestionantes y antitusivos.'],
+            ['name' => 'Antialérgicos', 'description' => 'Antihistamínicos para alergias, rinitis y reacciones cutáneas.'],
+            ['name' => 'Antibióticos', 'description' => 'Antibióticos sistémicos (Rx). Requieren receta médica vigente.'],
+            ['name' => 'Antifúngicos', 'description' => 'Antimicóticos tópicos y sistémicos.'],
+            ['name' => 'Antivirales', 'description' => 'Antivirales para herpes, gripe y otros (varios Rx).'],
+            ['name' => 'Antihipertensivos', 'description' => 'Tratamiento de hipertensión arterial (Rx).'],
+            ['name' => 'Antidiabéticos', 'description' => 'Hipoglucemiantes orales e insulinas (Rx, varios cadena de frío).'],
+            ['name' => 'Cardiovasculares', 'description' => 'Antiagregantes, anticoagulantes y otros (Rx).'],
+            ['name' => 'Sistema digestivo', 'description' => 'Antiácidos, antieméticos, antidiarreicos, laxantes.'],
+            ['name' => 'Vitaminas y suplementos', 'description' => 'Multivitamínicos, hierro, calcio, vitamina C, vitamina D, omega 3.'],
+            ['name' => 'Sistema respiratorio', 'description' => 'Broncodilatadores, mucolíticos e inhaladores.'],
+            ['name' => 'Salud mental y nervioso', 'description' => 'Ansiolíticos, antidepresivos y otros (Rx, varios controlados).'],
+            ['name' => 'Dermatológicos', 'description' => 'Cremas, lociones y tratamientos para la piel.'],
+            ['name' => 'Salud sexual y reproductiva', 'description' => 'Anticonceptivos, pruebas de embarazo, lubricantes.'],
+            ['name' => 'Salud ocular', 'description' => 'Lágrimas artificiales, soluciones para lentes, gotas.'],
+            ['name' => 'Salud bucal', 'description' => 'Cremas dentales, enjuagues, hilo dental, anestésicos tópicos.'],
+            ['name' => 'Primeros auxilios', 'description' => 'Vendas, gasas, antisépticos, alcohol, agua oxigenada.'],
+
+            // Productos de farmacia general
+            ['name' => 'Cuidado infantil', 'description' => 'Pañales, fórmulas infantiles, cuidado del bebé, pediátrico.'],
+            ['name' => 'Higiene personal', 'description' => 'Jabones, champús, desodorantes, productos de aseo.'],
+            ['name' => 'Cuidado femenino', 'description' => 'Productos de higiene íntima, toallas, copas menstruales.'],
+            ['name' => 'Cuidado capilar', 'description' => 'Champús medicados, anti-caspa, tratamientos.'],
+            ['name' => 'Dispositivos médicos', 'description' => 'Termómetros, tensiómetros, glucómetros, oxímetros.'],
+            ['name' => 'Adulto mayor', 'description' => 'Pañales para adultos, suplementos y productos geriátricos.'],
+            ['name' => 'Nutrición clínica', 'description' => 'Fórmulas nutricionales y suplementos de uso clínico.'],
+            ['name' => 'Cuidado de heridas', 'description' => 'Apósitos, cicatrizantes y productos de curación.'],
         ];
 
         foreach ($categories as $category) {

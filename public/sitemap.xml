@@ -6,7 +6,7 @@
   
   <!-- Página Principal -->
   <url>
-    <loc>https://zonixeats.com/</loc>
+    <loc>https://zonixpharma.com/</loc>
     <lastmod>2026-02-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -14,21 +14,21 @@
   
   <!-- Páginas legales -->
   <url>
-    <loc>https://zonixeats.com/politica-privacidad</loc>
+    <loc>https://zonixpharma.com/politica-privacidad</loc>
     <lastmod>2026-02-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   
   <url>
-    <loc>https://zonixeats.com/terminos-condiciones</loc>
+    <loc>https://zonixpharma.com/terminos-condiciones</loc>
     <lastmod>2026-02-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   
   <url>
-    <loc>https://zonixeats.com/eliminar-cuenta</loc>
+    <loc>https://zonixpharma.com/eliminar-cuenta</loc>
     <lastmod>2026-02-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>

@@ -34,9 +34,25 @@ Broadcast::channel('orders.{orderId}', function ($user, $orderId) {
            $order->orderDelivery?->agent_id === $user->profile?->deliveryAgent?->id;
 });
 
-// Canal para comercio específico
+// Canal para una farmacia específica (rol commerce y farmacéutico colegiado responsable).
 Broadcast::channel('commerce.{commerceId}', function ($user, $commerceId) {
-    return $user->role === 'commerce' && $user->profile?->commerce?->id === (int) $commerceId;
+    $commerceIdInt = (int) $commerceId;
+
+    if ($user->role === 'commerce' && $user->profile?->commerce?->id === $commerceIdInt) {
+        return true;
+    }
+
+    // En Zonix Pharma, el farmacéutico colegiado responsable de la farmacia
+    // (`commerces.pharmacist_in_charge_profile_id`) escucha eventos de validación
+    // de receta (PrescriptionUploaded/Validated/Rejected) en este canal.
+    if ($user->role === 'pharmacist' && $user->profile?->id !== null) {
+        return \App\Models\Commerce::query()
+            ->where('id', $commerceIdInt)
+            ->where('pharmacist_in_charge_profile_id', $user->profile->id)
+            ->exists();
+    }
+
+    return false;
 });
 
 // Canal para empresa de delivery (notificaciones de órdenes pendientes de asignación)

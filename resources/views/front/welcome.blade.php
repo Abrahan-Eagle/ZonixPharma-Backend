@@ -14,8 +14,8 @@
         <div class="d-flex align-items-center gap-2">
             <img src="{{ asset('assets/img/logo.png') }}" alt="Zonix" style="height: 2.5rem;">
             <div>
-                <p class="mb-0 font-black text-navy leading-none">Zonix EATS</p>
-                <p class="mb-0 text-xs text-slate-500">Pide lo que quieras 🍔</p>
+                <p class="mb-0 font-black text-navy leading-none">Zonix Pharma</p>
+                <p class="mb-0 text-xs text-slate-500">Tus medicinas a un clic 💊</p>
             </div>
         </div>
         <button class="btn btn-zonix-primary rounded-pill px-4 font-bold small shadow-md" data-bs-toggle="modal" data-bs-target="#registerModal">
@@ -28,8 +28,8 @@
         <div class="container-zonix w-100 d-flex align-items-center justify-content-between">
             <!-- Brand -->
             <a class="navbar-brand d-flex align-items-center gap-1" href="{{ url('/') }}">
-                <img src="{{ asset('assets/img/logo.png') }}" alt="Zonix EATS" class="navbar-brand-logo">
-                <span class="navbar-brand-text fs-3 font-black tracking-tighter leading-none">Zonix<span class="text-primary-zonix">EATS</span></span>
+                <img src="{{ asset('assets/img/logo.png') }}" alt="Zonix Pharma" class="navbar-brand-logo">
+                <span class="navbar-brand-text fs-3 font-black tracking-tighter leading-none">Zonix<span class="text-primary-zonix">PHARMA</span></span>
             </a>
 
             <!-- Search Removed for Landing Page -->
@@ -39,7 +39,7 @@
 
             <!-- Desktop Menu -->
             <div class="d-none d-lg-flex align-items-center gap-4">
-                <a href="#categories" class="nav-link font-bold text-navy">Restaurantes</a>
+                <a href="#categories" class="nav-link font-bold text-navy">Farmacias</a>
                 <a href="#offers" class="nav-link font-bold text-navy">Ofertas</a>
                 <a href="#become-partner" class="nav-link font-bold text-navy">Ser Aliado</a>
             </div>
@@ -70,12 +70,12 @@
                     🚀 Entregas en 15 minutos
                 </span>
                 <h1 class="text-hero-zonix font-black leading-none tracking-tight text-white mb-4 reveal">
-                    El Marketplace de comida <br>
+                    Tu farmacia, ahora <br>
                     <span class="text-primary-zonix">más grande</span> <br>
                     en tu bolsillo.
                 </h1>
                 <p class="text-slate-300 text-lg text-sm-xl mb-5 leading-relaxed font-medium reveal reveal-delay-100" style="margin-bottom: 2.5rem !important;">
-                    Descarga la App y accede a miles de restaurantes, ofertas exclusivas y entregas rápidas. Todo en un solo lugar.
+                    Descarga la App y accede a farmacias verificadas, ofertas en productos OTC y entregas rápidas. Todo en un solo lugar.
                 </p>
 
                 <div class="d-flex flex-wrap gap-3">
@@ -158,7 +158,7 @@
                         <span class="material-symbols-outlined fs-1 text-slate-300">store</span>
                         <div>
                             <div class="social-stat-number">+5k</div>
-                            <div class="social-stat-label">Restaurantes<br>Aliados</div>
+                            <div class="social-stat-label">Farmacias<br>Aliados</div>
                         </div>
                     </div>
                 </div>
@@ -187,7 +187,7 @@
                                 <span class="material-symbols-outlined fs-2">restaurant</span>
                             </div>
                             <h3 class="text-2xl font-bold text-navy mb-2">Pide ahora en la App</h3>
-                            <p class="text-slate-600 mb-4 flex-grow-1">Accede a miles de restaurantes y recibe tu comida en minutos.</p>
+                            <p class="text-slate-600 mb-4 flex-grow-1">Accede a farmacias verificadas y recibe tus medicinas en minutos.</p>
                             <button class="btn w-100 py-3 rounded-xl bg-slate-100 text-navy font-bold hover:bg-primary-zonix hover:text-white transition-colors border-0" data-bs-toggle="modal" data-bs-target="#registerModal">
                                 Pedir Ahora
                             </button>
@@ -217,9 +217,9 @@
                                 <span class="material-symbols-outlined fs-2 text-yellow">storefront</span>
                             </div>
                             <h3 class="text-2xl font-bold text-navy mb-2">Vende más con Zonix</h3>
-                            <p class="text-slate-600 mb-4 flex-grow-1">Digitaliza tu restaurante y llega a nuevos clientes hoy mismo.</p>
+                            <p class="text-slate-600 mb-4 flex-grow-1">Digitaliza tu farmacia y llega a nuevos pacientes hoy mismo.</p>
                             <button class="btn w-100 py-3 rounded-xl bg-slate-100 text-navy font-bold hover:bg-yellow hover:text-navy transition-colors border-0" onclick="alert('Próximamente: Registro de Aliados')">
-                                Registrar Restaurante
+                                Registrar Farmacia
                             </button>
                         </div>
                     </div>
@@ -359,7 +359,7 @@
                          <div class="bg-primary-zonix p-3 pt-5 text-white">
                             <div class="d-flex justify-content-between align-items-center mb-3">
                                 <span class="material-symbols-outlined">menu</span>
-                                <span class="font-bold">Zonix EATS</span>
+                                <span class="font-bold">Zonix Pharma</span>
                                 <span class="material-symbols-outlined">shopping_cart</span>
                             </div>
                             <div class="bg-white bg-opacity-25 p-2 rounded d-flex align-items-center text-sm text-white">
@@ -388,7 +388,7 @@
                 </div>
                 <div class="col-lg-zonix-6 ps-lg-5">
                     <span class="text-primary-zonix font-bold tracking-wider text-uppercase text-sm d-block mb-2 reveal">¿Cómo funciona?</span>
-                    <h2 class="text-3xl text-md-5xl font-black text-navy mb-5 reveal">Tu comida favorita en 3 simples pasos</h2>
+                    <h2 class="text-3xl text-md-5xl font-black text-navy mb-5 reveal">Tu farmacia favorita en 3 simples pasos</h2>
                     <div class="d-flex flex-column" style="gap: 2.5rem;">
                         <div class="d-flex gap-4 reveal reveal-delay-100">
                              <div class="flex-shrink-0"><div class="rounded-circle bg-primary-10 text-primary-zonix d-flex align-items-center justify-content-center" style="width: 3.5rem; height: 3.5rem;"><span class="material-symbols-outlined text-3xl">touch_app</span></div></div>
@@ -412,9 +412,9 @@
     <section id="about" class="py-5 bg-light border-top border-bottom border-slate-100">
         <div class="container-zonix text-center" style="max-width: 800px;">
             <span class="text-primary-zonix font-bold tracking-wider text-uppercase text-sm d-block mb-3 reveal">Sobre Nosotros</span>
-            <h2 class="text-3xl font-black text-navy mb-4 reveal">¿Qué es Zonix Eats?</h2>
+            <h2 class="text-3xl font-black text-navy mb-4 reveal">¿Qué es Zonix Pharma?</h2>
             <p class="text-slate-600 text-lg leading-relaxed reveal reveal-delay-100">
-                <strong>Zonix Eats</strong> es la plataforma tecnológica de delivery líder en Venezuela que conecta a usuarios con los mejores restaurantes, farmacias y comercios locales. 
+                <strong>Zonix Pharma</strong> es la plataforma tecnológica de delivery líder en Venezuela que conecta a usuarios con las mejores farmacias y droguerías locales. 
                 A diferencia de otras apps, ofrecemos <strong>entregas en 15 minutos</strong>, soporte al cliente 100% humano y métodos de pago adaptados a la realidad local (Bolívares, Dólares en efectivo, Zelle, PayPal).
             </p>
         </div>
@@ -513,12 +513,12 @@
                 <div class="accordion-item border-0 mb-3 bg-slate-50 rounded-xl overflow-hidden reveal reveal-delay-100">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed bg-transparent shadow-none font-bold text-navy py-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                            ¿Cuánto tarda en llegar mi pedido con Zonix Eats?
+                            ¿Cuánto tarda en llegar mi pedido con Zonix Pharma?
                         </button>
                     </h2>
                     <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                         <div class="accordion-body text-slate-600 pb-4">
-                            El tiempo promedio de entrega en Zonix Eats es de <strong>15 a 30 minutos</strong>, gracias a nuestra tecnología de despacho inteligente y flota de repartidores locales. Priorizamos la rapidez para que tu comida llegue caliente y fresca.
+                            El tiempo promedio de entrega en Zonix Pharma es de <strong>15 a 30 minutos</strong>, gracias a nuestra tecnología de despacho inteligente y flota de repartidores locales. Priorizamos la rapidez para que tus medicinas lleguen rápido y en condiciones óptimas.
                         </div>
                     </div>
                 </div>
@@ -527,7 +527,7 @@
                 <div class="accordion-item border-0 mb-3 bg-slate-50 rounded-xl overflow-hidden reveal reveal-delay-200">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed bg-transparent shadow-none font-bold text-navy py-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                            ¿Qué métodos de pago acepta Zonix Eats?
+                            ¿Qué métodos de pago acepta Zonix Pharma?
                         </button>
                     </h2>
                     <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
@@ -541,7 +541,7 @@
                 <div class="accordion-item border-0 mb-3 bg-slate-50 rounded-xl overflow-hidden reveal reveal-delay-300">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed bg-transparent shadow-none font-bold text-navy py-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                            ¿En qué ciudades de Venezuela opera Zonix Eats?
+                            ¿En qué ciudades de Venezuela opera Zonix Pharma?
                         </button>
                     </h2>
                     <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
@@ -560,7 +560,7 @@
             <div class="cta-banner shadow-primary reveal">
                 <div>
                     <h2 class="text-3xl text-md-4xl font-black text-white mb-3">¿Qué esperas?</h2>
-                    <p class="text-white text-opacity-75 text-lg mb-4 mb-md-0">Únete a la comunidad de comida más grande. Descarga la App hoy.</p>
+                    <p class="text-white text-opacity-75 text-lg mb-4 mb-md-0">Únete a la comunidad farmacéutica más grande. Descarga la App hoy.</p>
                 </div>
                 <div class="d-flex flex-wrap gap-3">
                     <a href="javascript:void(0)" class="app-badge" onclick="alert('Disponible pronto en App Store')">
@@ -598,7 +598,7 @@
                 <span class="material-symbols-outlined text-white">lunch_dining</span>
             </div>
             <div>
-                <p class="font-bold text-navy text-sm mb-0">Zonix EATS</p>
+                <p class="font-bold text-navy text-sm mb-0">Zonix Pharma</p>
                 <p class="text-xs text-slate-500 mb-0">Gratis en App Store</p>
             </div>
         </div>
@@ -622,24 +622,24 @@
                 <div class="col-lg-4">
                     <div class="mb-4">
                         <div class="d-flex align-items-center gap-1">
-                            <img src="{{ asset('assets/img/logo.png') }}" alt="Zonix EATS" style="height: 4rem; filter: none !important;">
-                            <span class="text-white fs-3 font-black tracking-tighter leading-none">Zonix<span class="text-primary-zonix">EATS</span></span>
+                            <img src="{{ asset('assets/img/logo.png') }}" alt="Zonix Pharma" style="height: 4rem; filter: none !important;">
+                            <span class="text-white fs-3 font-black tracking-tighter leading-none">Zonix<span class="text-primary-zonix">PHARMA</span></span>
                         </div>
                     </div>
                     <p class="text-slate-400 mb-4 bg-transparent border-0 p-0">
-                        La plataforma tecnológica que conecta a usuarios, restaurantes y repartidores para transformar la experiencia gastronómica.
+                        La plataforma tecnológica que conecta a usuarios, farmacias y repartidores para acercarte la salud.
                     </p>
                     <div class="d-flex gap-3">
                         <!-- Facebook -->
-                        <a href="https://facebook.com/zonixeats" target="_blank" class="social-icon-btn" aria-label="Facebook">
+                        <a href="https://facebook.com/zonixpharma" target="_blank" class="social-icon-btn" aria-label="Facebook">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/></svg>
                         </a>
                         <!-- Instagram -->
-                        <a href="https://instagram.com/zonixeats" target="_blank" class="social-icon-btn" aria-label="Instagram">
+                        <a href="https://instagram.com/zonixpharma" target="_blank" class="social-icon-btn" aria-label="Instagram">
                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                         </a>
                         <!-- TikTok -->
-                        <a href="https://tiktok.com/@zonixeats" target="_blank" class="social-icon-btn" aria-label="TikTok">
+                        <a href="https://tiktok.com/@zonixpharma" target="_blank" class="social-icon-btn" aria-label="TikTok">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
                         </a>
                     </div>
@@ -691,8 +691,8 @@
     <div class="offcanvas-menu" id="offcanvasMenu">
         <div class="d-flex justify-content-between align-items-center mb-5">
             <div class="d-flex align-items-center gap-1">
-                <img src="{{ asset('assets/img/logo.png') }}" alt="Zonix EATS" style="height: 3rem;">
-                <span class="text-navy fs-3 font-black tracking-tighter leading-none">Zonix<span class="text-primary-zonix">EATS</span></span>
+                <img src="{{ asset('assets/img/logo.png') }}" alt="Zonix Pharma" style="height: 3rem;">
+                <span class="text-navy fs-3 font-black tracking-tighter leading-none">Zonix<span class="text-primary-zonix">PHARMA</span></span>
             </div>
             <button class="btn btn-icon" id="closeMenuBtn">
                 <span class="material-symbols-outlined fs-2 text-slate-400">close</span>
@@ -704,7 +704,7 @@
                 <span class="material-symbols-outlined">home</span> Inicio
             </a>
             <a href="#categories" class="nav-link-mobile">
-                <span class="material-symbols-outlined">restaurant</span> Restaurantes
+                <span class="material-symbols-outlined">local_pharmacy</span> Farmacias
             </a>
             <a href="#offers" class="nav-link-mobile">
                 <span class="material-symbols-outlined">percent</span> Ofertas
@@ -770,7 +770,7 @@
                 <div class="modal-body p-5 text-center">
                     <img src="{{ asset('assets/img/logo.png') }}" alt="Zonix" style="height: 3rem;" class="mb-4">
                     <h3 class="font-black text-navy mb-2">Crea tu cuenta</h3>
-                    <p class="text-slate-500 mb-4">Empieza a disfrutar Zonix EATS</p>
+                    <p class="text-slate-500 mb-4">Empieza a disfrutar Zonix Pharma</p>
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
                         <input type="text" name="name" class="form-control form-control-lg bg-slate-50 border-0 mb-3" placeholder="Nombre completo" required>

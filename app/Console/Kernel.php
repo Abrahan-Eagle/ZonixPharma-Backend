@@ -16,10 +16,13 @@ class Kernel extends ConsoleKernel
         $schedule->command('zonix:observability-alerts-disputes')->everyFiveMinutes();
         // En local: cada minuto para que TTL cortos (.env) y `schedule:work` prueben sin esperar 5 min.
         // En el resto de entornos: cada 5 min (en prod sigue haciendo falta cron: * * * * * schedule:run).
-        if ($this->app->environment('local')) {
+        if ($this->app->environment(['local', 'testing'])) {
             $schedule->command('zonix:expire-pending-payment-orders')->everyMinute();
+            // Pharma: caducar recetas en pending_validation cuando TTL vence.
+            $schedule->command('zonix:expire-pending-prescriptions')->everyMinute();
         } else {
             $schedule->command('zonix:expire-pending-payment-orders')->everyFiveMinutes();
+            $schedule->command('zonix:expire-pending-prescriptions')->everyFiveMinutes();
         }
         $schedule->command('zonix:observability-snapshots-delivery')->hourly();
     }

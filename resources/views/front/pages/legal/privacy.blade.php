@@ -1,7 +1,7 @@
 @extends('front.layouts.zonix')
 
-@section('title', 'Política de Privacidad - Zonix Eats')
-@section('meta_description', 'Política de privacidad y protección de datos de Zonix Eats.')
+@section('title', 'Política de Privacidad - Zonix Pharma')
+@section('meta_description', 'Política de privacidad y protección de datos de Zonix Pharma.')
 
 @section('content')
 <!-- Hero Header -->
@@ -40,7 +40,7 @@
                     <div class="bg-navy bg-opacity-5 p-4 rounded-xl mt-4 border border-navy border-opacity-5">
                         <h6 class="font-bold text-navy mb-2">Oficial de Privacidad</h6>
                         <p class="text-sm text-slate-500 mb-3">Para consultas sobre tus datos personales.</p>
-                        <a href="mailto:privacidad@zonixeats.com" class="text-blue-zonix font-bold text-sm text-decoration-none">privacidad@zonixeats.com &rarr;</a>
+                        <a href="mailto:privacidad@zonixpharma.com" class="text-blue-zonix font-bold text-sm text-decoration-none">privacidad@zonixpharma.com &rarr;</a>
                     </div>
                 </div>
             </div>
@@ -84,7 +84,7 @@
                             <ul class="list-none space-y-2 mb-0 ps-0">
                                 <li class="d-flex gap-2 align-items-start">
                                     <span class="material-symbols-outlined text-blue-zonix fs-6 mt-1">arrow_forward</span>
-                                    <span>Procesar y entregar tus pedidos de comida y productos.</span>
+                                    <span>Procesar y entregar tus pedidos de medicamentos y productos farmacéuticos.</span>
                                 </li>
                                 <li class="d-flex gap-2 align-items-start">
                                     <span class="material-symbols-outlined text-blue-zonix fs-6 mt-1">arrow_forward</span>

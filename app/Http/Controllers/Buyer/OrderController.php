@@ -465,20 +465,51 @@ class OrderController extends Controller
                 }
             }
 
+            // ── Pharma: detectar productos Rx y cadena de frío ──────────────
+            // Si al menos un ítem es Rx, el pedido inicia en
+            // `pending_prescription_validation` y queda bloqueado hasta que
+            // el farmacéutico colegiado apruebe la receta (PrescriptionService).
+            $requiresPrescription = false;
+            $coldChainRequired = false;
+            foreach ($productModels as $entry) {
+                $pm = $entry['model'];
+                if ($pm->requires_prescription ?? false) {
+                    $requiresPrescription = true;
+                }
+                if ($pm->cold_chain ?? false) {
+                    $coldChainRequired = true;
+                }
+            }
+            $initialStatus = $requiresPrescription
+                ? \App\Models\Order::STATUS_PENDING_PRESCRIPTION
+                : 'pending_payment';
+
             // Crear orden en transacción
-            $order = DB::transaction(function () use ($validated, $profile, $orderTotal, $deliveryCompanyId, $commerce, $appliedCoupon) {
+            $order = DB::transaction(function () use (
+                $validated,
+                $profile,
+                $orderTotal,
+                $deliveryCompanyId,
+                $commerce,
+                $appliedCoupon,
+                $initialStatus,
+                $requiresPrescription,
+                $coldChainRequired
+            ) {
                 $order = \App\Models\Order::create([
                     'profile_id' => $profile->id,
                     'commerce_id' => $validated['commerce_id'],
                     'delivery_company_id' => $deliveryCompanyId,
                     'delivery_type' => $validated['delivery_type'],
-                    'status' => 'pending_payment',
+                    'status' => $initialStatus,
                     'total' => $orderTotal,
                     'delivery_fee' => $validated['delivery_fee'],
                     'notes' => $validated['notes'] ?? null,
                     'delivery_address' => $validated['delivery_address'] ?? null,
                     'delivery_latitude' => isset($validated['delivery_latitude']) ? (float) $validated['delivery_latitude'] : null,
                     'delivery_longitude' => isset($validated['delivery_longitude']) ? (float) $validated['delivery_longitude'] : null,
+                    'requires_prescription' => $requiresPrescription,
+                    'cold_chain_required' => $coldChainRequired,
                 ]);
 
                 foreach ($validated['products'] as $item) {
@@ -515,7 +546,11 @@ class OrderController extends Controller
                     }
                 }
 
-                // Crear registros de pago: siempre food, y delivery si aplica
+                // Crear registros de pago.
+                // 'food' es el tipo canónico legacy para el subtotal de productos
+                // pagado a la farmacia (commerce). En Zonix Pharma representa
+                // medicinas + productos farmacéuticos. Se conserva el nombre
+                // por compatibilidad con relaciones (Order::foodPayment).
                 $subtotal = $orderTotal - $validated['delivery_fee'];
                 \App\Models\OrderPayment::create([
                     'order_id' => $order->id,
@@ -954,18 +989,26 @@ class OrderController extends Controller
 
             $order = \App\Models\Order::where('profile_id', $profile->id)->findOrFail($id);
 
-            // Validar que puede cancelar (solo en pending_payment y dentro del tiempo límite)
-            if ($order->status !== 'pending_payment') {
+            // Validar que puede cancelar:
+            //   - `pending_payment` (5 minutos desde creación)
+            //   - `pending_prescription_validation` (cualquier momento; aún no se cobró)
+            $cancellable = ['pending_payment', 'pending_prescription_validation'];
+            if (! in_array($order->status, $cancellable, true)) {
                 return response()->json([
                     'success' => false,
-                    'message' => 'Solo puedes cancelar órdenes pendientes de pago',
+                    'message' => 'Solo puedes cancelar pedidos pendientes de pago o de validación de receta.',
                 ], 400);
             }
 
-            // Validar límite de tiempo: 5 minutos después de crear la orden O hasta que el comercio valide el pago
-            // Si el comercio ya validó el pago (status = 'paid'), no se puede cancelar
+            // Para pendiente de pago aplica el TTL de 5 minutos.
+            // Para pendiente de validación de receta no se cobra todavía,
+            // así que el comprador puede cancelar mientras la receta no
+            // haya sido aprobada por el farmacéutico.
             $timeLimit = $order->created_at->addMinutes(5);
-            if (now()->greaterThan($timeLimit)) {
+            if (
+                $order->status === 'pending_payment'
+                && now()->greaterThan($timeLimit)
+            ) {
                 return response()->json([
                     'success' => false,
                     'message' => 'El tiempo límite para cancelar esta orden ha expirado (5 minutos)',

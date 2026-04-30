@@ -1,16 +1,16 @@
 {
-  "name": "Zonix Eats - Delivery de Comida",
-  "short_name": "Zonix Eats",
-  "description": "Zonix Eats es tu plataforma de delivery favorita en Venezuela. Pide comida de los mejores restaurantes, desde hamburguesas y pizza hasta sushi y postres. Entregas rápidas y seguras.",
+  "name": "Zonix Pharma - Marketplace farmacéutico",
+  "short_name": "Zonix Pharma",
+  "description": "Zonix Pharma conecta a usuarios con farmacias y droguerías en Venezuela. Compra medicamentos OTC y, con receta médica, productos Rx, con delivery o retiro en farmacia.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#ff3d40",
+  "background_color": "#F5F7FA",
+  "theme_color": "#1E2A5A",
   "orientation": "portrait-primary",
   "scope": "/",
   "lang": "es",
-  "categories": ["food", "delivery", "shopping", "lifestyle"],
-  "keywords": ["delivery", "comida", "venezuela", "hamburguesas", "pizza", "sushi", "restaurantes", "domicilio", "zonix eats", "zonix"],
+  "categories": ["health", "medical", "shopping", "lifestyle"],
+  "keywords": ["farmacia", "medicinas", "medicamentos", "OTC", "receta", "venezuela", "salud", "vitaminas", "zonix pharma", "zonix"],
   "icons": [
     {
       "src": "/assets/img/logo.png",
@@ -27,7 +27,7 @@
   ],
   "screenshots": [
     {
-      "src": "/assets/img/hero/desktop-pizza.jpg",
+      "src": "/assets/img/zonix-pharma-cover.jpg",
       "sizes": "1280x720",
       "type": "image/jpeg",
       "form_factor": "wide"
@@ -35,9 +35,9 @@
   ],
   "shortcuts": [
     {
-      "name": "Pedir Comida",
-      "short_name": "Pedir",
-      "description": "Explora restaurantes y pide ahora",
+      "name": "Buscar medicinas",
+      "short_name": "Buscar",
+      "description": "Explora farmacias cercanas y compra ahora",
       "url": "/",
       "icons": [
         {
@@ -50,7 +50,7 @@
   "related_applications": [
     {
       "platform": "webapp",
-      "url": "https://zonixeats.com"
+      "url": "https://zonixpharma.com"
     }
   ],
   "prefer_related_applications": false,

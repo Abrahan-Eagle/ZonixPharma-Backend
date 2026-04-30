@@ -1,5 +1,5 @@
-# robots.txt para Zonix Eats
-# https://zonixeats.com/robots.txt
+# robots.txt para Zonix Pharma
+# https://zonixpharma.com/robots.txt
 
 User-agent: *
 Allow: /
@@ -12,7 +12,7 @@ Disallow: /users
 Disallow: /roles
 
 # Sitemap
-Sitemap: https://zonixeats.com/sitemap.xml
+Sitemap: https://zonixpharma.com/sitemap.xml
 
 # Bots específicos (Google, Bing, Yahoo)
 User-agent: Googlebot
@@ -39,4 +39,3 @@ Disallow: /
 
 User-agent: DotBot
 Disallow: /
-

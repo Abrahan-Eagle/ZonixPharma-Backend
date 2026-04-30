@@ -5,10 +5,10 @@ namespace App\Helpers;
 class SeoHelper
 {
     protected static $data = [
-        'title' => 'Zonix EATS - Delivery de Comida en Venezuela',
-        'description' => 'Pide comida a domicilio de tus restaurantes favoritos en Caracas, Maracaibo, Valencia y más. Los mejores precios y delivery rápido con Zonix EATS.',
-        'keywords' => 'delivery, comida, venezuela, zonix, hamburguesas, pizza, sushi, caracas, maracaibo',
-        'image' => 'assets/img/hero/desktop-pizza.jpg', // Default image
+        'title' => 'Zonix Pharma - Marketplace farmacéutico en Venezuela',
+        'description' => 'Compra medicinas, vitaminas y productos de farmacia con delivery o retiro en farmacias aliadas en Caracas, Maracaibo, Valencia y más, con Zonix Pharma.',
+        'keywords' => 'farmacia, medicinas, medicamentos, OTC, receta, venezuela, zonix, pharma, vitaminas, salud, delivery farmacia',
+        'image' => 'assets/img/zonix-pharma-cover.jpg',
         'url' => '',
         'type' => 'website',
         'robots' => 'index, follow',
@@ -16,7 +16,7 @@ class SeoHelper
 
     public static function setTitle($title)
     {
-        self::$data['title'] = $title.' | Zonix EATS';
+        self::$data['title'] = $title.' | Zonix Pharma';
     }
 
     public static function setDescription($description)
@@ -46,12 +46,10 @@ class SeoHelper
 
     public static function meta()
     {
-        // Ensure URL is set to current if empty
         if (empty(self::$data['url'])) {
             self::$data['url'] = url()->current();
         }
 
-        // Fix image URL if relative
         if (! filter_var(self::$data['image'], FILTER_VALIDATE_URL)) {
             self::$data['image'] = asset(self::$data['image']);
         }
@@ -66,7 +64,7 @@ class SeoHelper
         $schema = [
             '@context' => 'https://schema.org',
             '@type' => 'WebSite',
-            'name' => 'Zonix EATS',
+            'name' => 'Zonix Pharma',
             'url' => $data['url'],
             'description' => $data['description'],
             'potentialAction' => [
@@ -84,8 +82,8 @@ class SeoHelper
         $schema = [
             '@context' => 'https://schema.org',
             '@type' => 'SoftwareApplication',
-            'name' => 'Zonix EATS',
-            'applicationCategory' => 'FoodDeliveryApplication',
+            'name' => 'Zonix Pharma',
+            'applicationCategory' => 'HealthApplication',
             'operatingSystem' => 'Android, iOS',
             'offers' => [
                 '@type' => 'Offer',
@@ -107,13 +105,13 @@ class SeoHelper
         $schema = [
             '@context' => 'https://schema.org',
             '@type' => 'Organization',
-            'name' => 'Zonix EATS',
+            'name' => 'Zonix Pharma',
             'url' => url('/'),
             'logo' => asset('assets/img/logo.png'),
             'sameAs' => [
-                'https://www.facebook.com/zonixeats',
-                'https://www.instagram.com/zonixeats',
-                'https://twitter.com/zonixeats',
+                'https://www.facebook.com/zonixpharma',
+                'https://www.instagram.com/zonixpharma',
+                'https://twitter.com/zonixpharma',
             ],
             'contactPoint' => [
                 '@type' => 'ContactPoint',
@@ -135,26 +133,26 @@ class SeoHelper
             'mainEntity' => [
                 [
                     '@type' => 'Question',
-                    'name' => '¿Cuánto tarda en llegar mi pedido con Zonix Eats?',
+                    'name' => '¿Cuánto tarda en llegar mi pedido con Zonix Pharma?',
                     'acceptedAnswer' => [
                         '@type' => 'Answer',
-                        'text' => 'El tiempo promedio de entrega en Zonix Eats es de 15 a 30 minutos, gracias a nuestra tecnología de despacho inteligente y flota de repartidores locales.',
+                        'text' => 'El tiempo promedio de entrega en Zonix Pharma es de 20 a 45 minutos, según la disponibilidad de la farmacia más cercana y la logística de delivery.',
                     ],
                 ],
                 [
                     '@type' => 'Question',
-                    'name' => '¿Qué métodos de pago acepta Zonix Eats?',
+                    'name' => '¿Qué métodos de pago acepta Zonix Pharma?',
                     'acceptedAnswer' => [
                         '@type' => 'Answer',
-                        'text' => 'Aceptamos pagos en Bolívares (Pago Móvil, Transferencia), Dólares (Efectivo, Zelle), PayPal y Tarjetas de Crédito/Débito internacionales.',
+                        'text' => 'Aceptamos pagos en Bolívares (Pago Móvil, Transferencia), Dólares (Efectivo, Zelle, Binance Pay), tarjetas y otros medios habilitados por la farmacia.',
                     ],
                 ],
                 [
                     '@type' => 'Question',
-                    'name' => '¿En qué ciudades de Venezuela opera Zonix Eats?',
+                    'name' => '¿Necesito receta médica para comprar medicamentos en Zonix Pharma?',
                     'acceptedAnswer' => [
                         '@type' => 'Answer',
-                        'text' => 'Actualmente operamos en Caracas, Maracaibo, Valencia, Barquisimeto y Lechería, expandiéndonos próximamente a más ciudades del país.',
+                        'text' => 'Los productos de venta libre (OTC) no requieren receta. Los medicamentos bajo prescripción (Rx) requieren la carga de una receta válida que es revisada por el farmacéutico colegiado de la farmacia despachadora.',
                     ],
                 ],
             ],

@@ -1,5 +1,5 @@
 ---
-description: "Guía de desarrollo Backend (Laravel) para Zonix Eats"
+description: "Guía de desarrollo Backend (Laravel) para Zonix Pharma"
 alwaysApply: true
 ---
 
@@ -11,10 +11,17 @@ alwaysApply: true
 
 ---
 
+## Brand canónico
+
+> Brand: **Zonix Pharma** (vertical farmacia/digital del ecosistema Zonix). Visual: símbolo Z geométrico (parte superior marina + diagonal + base teal con nodo), wordmark bold + PHARMA en caps teal con tracking amplio.
+> Colores HEX: Primary #1E2A5A, Deep teal #0F4C5C, Teal accent #56C7B8, Light mint #A8DCCB, Canvas #F5F7FA, Muted gray #C7CFD9, Dark surface #142033, Optional CTA #F2A65A.
+> Principios UX: modo tech-pharma ordenado — claridad regulatoria-amigable sin clichés médicos ruidosos; alta legibilidad móvil; no mezclar con Zonix Eats assets/claims en pantallas pharma.
+
+---
+
 ## Instrucciones Completas
 
-Para instrucciones completas del proyecto, arquitectura, convenciones, skills disponibles
-y reglas de negocio, consulta el archivo `AGENTS.md` en la raíz del proyecto.
+Para instrucciones completas del proyecto, arquitectura, convenciones, skills disponibles y reglas de negocio, consulta el archivo `AGENTS.md` en la raíz del proyecto.
 
 Cursor lee `AGENTS.md` automáticamente. Toda la información de desarrollo está centralizada allí.
 
@@ -22,13 +29,11 @@ Cursor lee `AGENTS.md` automáticamente. Toda la información de desarrollo est�
 
 **Sugerencias proactivas:** La IA debe ofrecer sugerencias de forma habitual: siguiente paso, mejoras posibles, preguntas de clarificación o recordatorios de reglas/docs relevantes.
 
-**Contexto entre herramientas (Cursor, Angravity, Copilot):** Ver [docs/CONTEXTO_IA.md](docs/CONTEXTO_IA.md) para orden de lectura y sincronización.
-
 ---
 
-## Reglas de Colaboración (Cursor-Específicas)
+## Reglas de Colaboración
 
-**IMPORTANTE: El usuario es el líder del proyecto. No soy un autómata que ejecuta sin pensar.**
+**IMPORTANTE: El usuario es el líder del proyecto.**
 
 1. **SIEMPRE PREGUNTAR** antes de realizar cualquier acción
 2. **NUNCA crear archivos nuevos** si es para editar código existente
@@ -36,30 +41,15 @@ Cursor lee `AGENTS.md` automáticamente. Toda la información de desarrollo est�
 4. **NUNCA hacer push/merge a git** sin orden explícita del usuario
 5. **Solo hacer commits locales** cuando se realicen cambios
 6. **El usuario prueba primero** y da la orden cuando está seguro
-7. **Documentar avances:** Usar la skill **documentar-avances**: al finalizar una tarea relevante, proponer el párrafo para "Cambios recientes" (AGENTS.md/README); el usuario aprueba antes de escribir. Al cerrar una sesión con cambios relevantes, usar la skill **context-updater** para actualizar `docs/active_context.md`. Si el cambio afecta una skill de dominio, actualizar la skill y su fecha.
+7. **Documentar avances:** Usar la skill `documentar-avances` al cerrar tarea relevante; al cerrar sesión usar `context-updater` para actualizar `docs/active_context.md`.
 
 ### Cierre de módulo y subida a GitHub
 
-**La decisión de subir actualizaciones a GitHub la toma siempre el usuario.** La IA no hace commit/push/merge sin que el usuario lo autorice.
+La decisión de subir actualizaciones a GitHub la toma siempre el usuario. La IA no hace commit/push/merge sin que el usuario lo autorice.
 
-**Documentar siempre los cambios antes de hacer commit y push**, para que la documentación se guarde en el mismo commit (AGENTS.md, README, `docs/active_context.md`, skills si aplica).
-
-Cuando se termine un módulo o tarea:
-
-1. **Documentar:** Proponer y escribir (con aprobación del usuario) "Cambios recientes" en AGENTS.md/README, actualizar `docs/active_context.md` si la sesión lo amerita, y actualizar skills de dominio si aplica. Así el commit incluirá código + documentación.
-2. **Ejecutar tests** del proyecto (ej. `php artisan test` en backend).
-3. **Si los tests pasan:** Preguntar al usuario: _"Los tests pasaron. ¿Quieres que haga commit y push a la rama [ej. dev]?"_ Solo si el usuario dice que sí, hacer commit y push a esa rama (incluyendo los archivos de documentación ya actualizados).
-4. **Después de actualizar la rama:** Preguntar: _"¿Quieres actualizar la rama main? (sí/no)"_. Si dice **sí**, hacer merge de la rama actual en `main` y push de `main`. Si dice **no**, no tocar `main`.
-5. Nunca asumir que debe subir o actualizar main; siempre preguntar y actuar según la respuesta del usuario.
-
-### Convención de Respuesta
-
-```
-1. Explicar qué se va a hacer y por qué
-2. Mostrar código específico con contexto
-3. Esperar confirmación antes de implementar
-4. Reportar resultado después de implementar
-```
+1. **Documentar primero**, luego ejecutar tests, luego preguntar si hacer commit/push.
+2. **Si los tests pasan:** preguntar al usuario antes de hacer commit/push.
+3. **Después de actualizar `dev`**: preguntar si actualizar `main`.
 
 ---
 
@@ -67,30 +57,29 @@ Cuando se termine un módulo o tarea:
 
 ### Stack
 
-- **Laravel 10.x** / PHP 8.1+ / MySQL
+- **Laravel 10.x / PHP 8.1+ / MySQL**
 - **Sanctum** para autenticación
 - **Pusher + FCM** para eventos (NO WebSocket)
 
-### Roles (6 — Terminología Estándar)
+### Roles (7 — Terminología Zonix Pharma)
 
-| Código en BD       | Nombre Estándar      | Descripción                                               |
-| ------------------ | -------------------- | --------------------------------------------------------- |
-| `users`            | **Buyer**            | Comprador, Cliente                                        |
-| `commerce`         | **Commerce**         | Comercio, Restaurante                                     |
-| `delivery_company` | **Delivery Company** | Empresa que administra repartidores (motorizados)         |
-| `delivery_agent`   | **Delivery Agent**   | Repartidor vinculado a una empresa (`company_id` no nulo) |
-| `delivery`         | **Delivery**         | Repartidor autónomo (sin empresa, `company_id` nulo)      |
-| `admin`            | **Admin**            | Administrador                                             |
-
-Rutas `/api/delivery/*` permiten **delivery_agent** y **delivery** (motorizados).
+| Código en BD | Nombre Estándar | Descripción |
+| ------------------ | ----------------------- | --------------------------------------------------------- |
+| `users` | **Buyer** | Comprador / paciente |
+| `commerce` | **Pharmacy** | Farmacia / Droguería / Boticario |
+| `pharmacist` | **Pharmacist** | Farmacéutico colegiado responsable (valida recetas) |
+| `delivery_company` | **Delivery Company** | Empresa que administra repartidores |
+| `delivery_agent` | **Delivery Agent** | Repartidor vinculado a una empresa (`company_id` no nulo) |
+| `delivery` | **Delivery** | Repartidor autónomo (sin empresa, `company_id` nulo) |
+| `admin` | **Admin** | Administrador |
 
 ### Patrón de Respuesta API
 
 ```php
 return response()->json([
-    'success' => true|false,
-    'data' => $data,
-    'message' => 'mensaje'
+ 'success' => true|false,
+ 'data' => $data,
+ 'message' => 'mensaje'
 ], $statusCode);
 ```
 
@@ -107,31 +96,41 @@ return response()->json([
 
 - **NUNCA** crear migraciones tipo `add_*_to_*`, `change_*`, etc. para tablas que ya existen.
 - **Tabla nueva** → única migración `create_*_table`.
-- **Tabla existente que hay que actualizar** → **editar la migración create** de esa tabla (añadir/quitar columnas ahí). No crear una migración aparte "add" ni "change".
-- Resumen: o creas la tabla (create) o actualizas la create; nada de add/change sueltos.
+- **Tabla existente que hay que actualizar** → **editar la migración create** de esa tabla. No crear add/change sueltos.
+
+### Reglas farmacéuticas (Pharma específicas)
+
+- **Productos Rx**: campo `requires_prescription = true`. Bloquean checkout sin receta válida (`ZONIX_PHARMA_BLOCK_RX_WITHOUT_PRESCRIPTION`).
+- **Receta médica**: tabla `prescriptions`, validada por farmacéutico colegiado de la farmacia despachadora; TTL configurable.
+- **Lotes**: tabla `medicine_lots` para FIFO por `expiry_date`.
+- **Promociones**: NO aplicar descuentos a líneas Rx (`ZONIX_PHARMA_DISALLOW_PROMOTIONS_ON_RX`).
+- **Sustancias controladas**: receta retenida + pickup recomendado.
+- **Cadena de frío**: `cold_chain = true` restringe modos de delivery.
+- **Datos de salud**: cifrado, acceso limitado, retención limitada, audit log.
 
 ### Skills de dominio recomendadas
 
-- **zonix-api-patterns**: para crear o modificar endpoints, controladores, rutas y middleware (`routes/api.php`, `app/Http/Controllers`, `app/Http/Middleware`).
-- **zonix-order-lifecycle**: para cualquier cambio en órdenes, estados, cancelaciones o reglas de flujo de pedido.
-- **zonix-delivery-system**: para lógica de geolocalización, Haversine, OSRM, zonas de entrega y tracking de delivery.
-- **zonix-realtime-events**: para eventos broadcast, Pusher, FCM, canales y notificaciones en tiempo real.
+- **zonix-api-patterns**: para crear o modificar endpoints, controladores, rutas y middleware.
+- **zonix-order-lifecycle**: para cualquier cambio en órdenes, estados (incluyendo `pending_prescription_validation`), cancelaciones o reglas de flujo.
+- **zonix-delivery-system**: para lógica de geolocalización, Haversine, OSRM, zonas de entrega y tracking.
+- **zonix-realtime-events**: para eventos broadcast, Pusher, FCM, canales y notificaciones.
 - **zonix-payments**: para comisiones, delivery_fee, totales y reglas de negocio de pagos.
 
-### Planes futuros (documentos a leer cuando se vaya a implementar)
+### Documentos clave (Pharma)
 
-- **Módulo tarifa de delivery:** Si el usuario pide implementar o diseñar el "módulo de tarifa de delivery" (config Admin, cálculo backend, zonas), **leer primero** `docs/PLAN_MODULO_TARIFA_DELIVERY.md` y usarlo como base para proponer y refinar la implementación. No preguntar si existe el plan; consultarlo y seguirlo.
-- **Métodos de pago Venezuela:** Si el usuario pide agregar métodos de pago, modificar el enum `payment_methods`, integrar Zelle/Binance/C2P, o cualquier cambio en el flujo de pagos, **leer primero** `docs/PLAN_METODOS_PAGO_VENEZUELA.md`. Contiene: investigación de cada método, regulación Sudeban/Sunacrip (caso Yummy), comisiones, requisitos, y fases de implementación. CRITICO: Zonix Eats NO debe ser intermediario de pagos (ver alerta regulatoria en el documento).
-- **Requisitos para operar en Venezuela:** Si se discute lanzamiento, constitución legal, facturación, impuestos, permisos, datos personales, relación laboral con delivery, o cualquier tema regulatorio, **leer primero** `docs/REQUISITOS_OPERAR_VENEZUELA.md`. Incluye checklist de lanzamiento completo.
+- **[docs/BRAND_ZONIX_PHARMA.md](docs/BRAND_ZONIX_PHARMA.md)**: paleta, tipografía, do/don't, tokens.
+- **[docs/PLAN_RX_VALIDATION.md](docs/PLAN_RX_VALIDATION.md)**: flujo de validación de receta y endpoints.
+- **[docs/PLAN_REGULATORIO_PHARMA_VE.md](docs/PLAN_REGULATORIO_PHARMA_VE.md)**: regulación VE, MPPS, INHRR, datos de salud.
+- **[docs/MIGRACION_EATS_PHARMA.md](docs/MIGRACION_EATS_PHARMA.md)**: qué cambió en la transformación Eats → Pharma.
 
 ### Tests
 
 ```bash
-php artisan test                      # Todos (269+)
-php artisan test --filter=NombreTest  # Específico
+php artisan test                    # Todos
+php artisan test --filter=NombreTest # Específico
 ```
 
 ---
 
-**Última actualización:** 31 Marzo 2026
+**Última actualización:** 30 abril 2026
 **Para instrucciones completas:** Ver `AGENTS.md`

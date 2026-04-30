@@ -1,5 +1,5 @@
 /* 
-   ZONIX EATS - Pixel Perfect Migration Styles 
+   Zonix Pharma - Pixel Perfect Migration Styles 
    Protocol Phase 1 & 2: Token Mapping & Semantic Architecture
 */
 
@@ -1211,7 +1211,7 @@ h6 {
 }
 
 /* 3. Footer Logo */
-footer img[alt="Zonix EATS"] {
+footer img[alt="Zonix Pharma"] {
     filter: brightness(0) invert(1) !important; /* Check if footer background is dark */
 }
 
@@ -1328,7 +1328,7 @@ footer .col-lg-4 img {
 /* FOOTER LOGO - DARK MODE NATIVE */
 /* Remove previous container styles if any remain generic */
 /* Ensure footer image is NOT inverted anymore, we want color */
-footer img[alt="Zonix EATS"] {
+footer img[alt="Zonix Pharma"] {
     filter: none !important; 
 }
 

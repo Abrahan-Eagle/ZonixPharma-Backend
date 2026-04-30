@@ -3,7 +3,8 @@
 use App\Http\Controllers\Buyer\BuyerProfileController;
 use App\Http\Controllers\Buyer\CartController;
 use App\Http\Controllers\Buyer\OrderController as BuyerOrderController;
-use App\Http\Controllers\Buyer\RestaurantController;
+use App\Http\Controllers\Buyer\PharmacyController;
+use App\Http\Controllers\Buyer\PrescriptionController as BuyerPrescriptionController;
 use App\Http\Controllers\Profiles\PhoneController;
 use Illuminate\Support\Facades\Route;
 
@@ -130,8 +131,19 @@ Route::middleware(['auth:sanctum'])->group(function () {
 });
 
 Route::middleware(['auth:sanctum', 'role:users'])->prefix('buyer')->group(function () {
-    Route::get('/restaurants', [RestaurantController::class, 'index']);
-    Route::get('/restaurants/{id}', [RestaurantController::class, 'show']);
+    // Catálogo público de farmacias (canónico Zonix Pharma).
+    Route::get('/pharmacies', [PharmacyController::class, 'index']);
+    Route::get('/pharmacies/{id}', [PharmacyController::class, 'show']);
+    // Aliases legacy mantenidos para clientes Eats; mismo controlador.
+    Route::get('/restaurants', [PharmacyController::class, 'index']);
+    Route::get('/restaurants/{id}', [PharmacyController::class, 'show']);
+
+    // Recetas médicas (Rx) del comprador.
+    Route::get('/prescriptions', [BuyerPrescriptionController::class, 'index']);
+    Route::post('/prescriptions', [BuyerPrescriptionController::class, 'store']);
+    Route::get('/prescriptions/{prescription}', [BuyerPrescriptionController::class, 'show']);
+    Route::delete('/prescriptions/{prescription}', [BuyerPrescriptionController::class, 'destroy']);
+
     Route::post('/cart/add', [CartController::class, 'add']);
     Route::get('/cart', [CartController::class, 'show']);
     Route::delete('/cart', [CartController::class, 'clear']);

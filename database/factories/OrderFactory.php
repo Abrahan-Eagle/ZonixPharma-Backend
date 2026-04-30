@@ -77,6 +77,9 @@ class OrderFactory extends Factory
             'delivery_latitude' => $deliveryType === 'delivery' ? $this->faker->latitude(10.0, 10.2) : null,
             'delivery_longitude' => $deliveryType === 'delivery' ? $this->faker->longitude(-68.1, -67.9) : null,
             'notes' => $this->faker->optional(0.3)->sentence(),
+            // Pharma: por defecto pedidos OTC. Tests Rx usan ->withRx() abajo.
+            'requires_prescription' => false,
+            'cold_chain_required' => false,
         ];
     }
 
@@ -93,6 +96,27 @@ class OrderFactory extends Factory
         return $this->state(fn (array $attributes) => [
             'delivery_type' => 'delivery',
             'delivery_company_id' => $deliveryCompanyId ?? DeliveryCompany::factory(),
+        ]);
+    }
+
+    /**
+     * State: pedido con productos Rx esperando validación de receta.
+     */
+    public function withRx(): static
+    {
+        return $this->state(fn (array $attributes) => [
+            'status' => 'pending_prescription_validation',
+            'requires_prescription' => true,
+        ]);
+    }
+
+    /**
+     * State: pedido con cadena de frío.
+     */
+    public function withColdChain(): static
+    {
+        return $this->state(fn (array $attributes) => [
+            'cold_chain_required' => true,
         ]);
     }
 }

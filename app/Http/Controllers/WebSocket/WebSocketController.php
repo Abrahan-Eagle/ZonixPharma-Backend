@@ -19,7 +19,7 @@ class WebSocketController extends Controller
         ]);
 
         // Validar credenciales de WebSocket
-        if ($request->app_id !== 'zonix-eats-app' || $request->key !== 'zonix-eats-key') {
+        if ($request->app_id !== 'zonix-pharma-app' || $request->key !== 'zonix-pharma-key') {
             return response()->json(['error' => 'Invalid credentials'], 401);
         }
 

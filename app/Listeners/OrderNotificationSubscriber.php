@@ -5,60 +5,68 @@ namespace App\Listeners;
 use App\Events\OrderCreated;
 use App\Events\OrderStatusChanged;
 use App\Events\PaymentValidated;
+use App\Events\PrescriptionRejected;
+use App\Events\PrescriptionUploaded;
+use App\Events\PrescriptionValidated;
+use App\Models\Commerce;
 use App\Services\NotificationService;
 use Illuminate\Events\Dispatcher;
 use Illuminate\Support\Facades\Log;
 
 class OrderNotificationSubscriber
 {
-    protected $notificationService;
+    protected NotificationService $notificationService;
 
     public function __construct(NotificationService $notificationService)
     {
         $this->notificationService = $notificationService;
     }
 
-    /**
-     * Handle order created events.
-     */
-    public function onOrderCreated(OrderCreated $event)
+    public function onOrderCreated(OrderCreated $event): void
     {
-        Log::debug('OrderNotificationSubscriber: Handling OrderCreated event', ['order_id' => $event->order->id]);
+        Log::debug('OrderNotificationSubscriber: OrderCreated', ['order_id' => $event->order->id]);
         $order = $event->order;
-
         $commerce = $order->commerce;
 
         if ($commerce && $commerce->profile_id) {
             $orderNumber = $order->order_number ?? $order->id;
             $this->notificationService->notify(
                 $commerce->profile_id,
-                'Nuevo Pedido Recibido',
+                'Nuevo pedido recibido',
                 "Has recibido un nuevo pedido #{$orderNumber}.",
                 'commerce_order',
-                ['order_id' => (string) $order->id, 'order_number' => $order->order_number ?? (string) $order->id]
+                [
+                    'order_id' => (string) $order->id,
+                    'order_number' => $order->order_number ?? (string) $order->id,
+                ]
             );
         }
     }
 
-    /**
-     * Handle order status changed events.
-     */
-    public function onOrderStatusChanged(OrderStatusChanged $event)
+    public function onOrderStatusChanged(OrderStatusChanged $event): void
     {
         $order = $event->order;
         $status = $order->status;
         $profileId = $order->profile_id;
 
         $messages = [
-            'pending_payment' => 'Tu pedido fue creado. Por favor sube el comprobante de pago.',
-            'paid' => 'Tu pago ha sido confirmado. El comercio procesará tu pedido.',
-            'processing' => 'Tu pedido está siendo preparado.',
-            'shipped' => 'Tu pedido va en camino.',
-            'delivered' => '¡Pedido entregado! Esperamos que lo disfrutes.',
-            'cancelled' => 'Tu pedido ha sido cancelado.',
+            'pending_prescription_validation' =>
+                'Tu pedido contiene medicamentos con receta. El farmacéutico la validará en breve.',
+            'pending_payment' =>
+                'Tu pedido está listo para pagar. Sube el comprobante para continuar.',
+            'paid' =>
+                'Tu pago fue confirmado. La farmacia preparará tu pedido.',
+            'processing' =>
+                'La farmacia está preparando tu pedido.',
+            'shipped' =>
+                'Tu pedido va en camino.',
+            'delivered' =>
+                'Pedido entregado. Cuídate mucho y sigue las indicaciones.',
+            'cancelled' =>
+                'Tu pedido ha sido cancelado.',
         ];
 
-        Log::debug('OrderNotificationSubscriber: Handling OrderStatusChanged event', [
+        Log::debug('OrderNotificationSubscriber: OrderStatusChanged', [
             'order_id' => $order->id,
             'status' => $status,
             'has_message' => isset($messages[$status]),
@@ -67,65 +75,130 @@ class OrderNotificationSubscriber
         if (isset($messages[$status])) {
             $body = $messages[$status];
             if ($status === 'shipped' && ($order->delivery_type ?? '') === 'pickup') {
-                $body = 'Tu pedido está listo para recoger en el comercio.';
+                $body = 'Tu pedido está listo para retirar en la farmacia.';
             }
 
             $this->notificationService->notify(
                 $profileId,
-                'Actualización de Pedido',
+                'Actualización de pedido',
                 $body,
                 'order',
                 ['order_id' => (string) $order->id, 'status' => $status]
             );
         }
-
     }
 
-    /**
-     * Handle payment validated events.
-     */
-    public function onPaymentValidated(PaymentValidated $event)
+    public function onPaymentValidated(PaymentValidated $event): void
     {
-        Log::debug('OrderNotificationSubscriber: Handling PaymentValidated event', [
+        Log::debug('OrderNotificationSubscriber: PaymentValidated', [
             'order_id' => $event->order->id,
             'is_validated' => $event->isValidated,
         ]);
         $order = $event->order;
-
-        $isValidated = $event->isValidated;
         $orderNumber = $order->order_number ?? $order->id;
 
-        if ($isValidated) {
+        if ($event->isValidated) {
             $this->notificationService->notify(
                 $order->profile_id,
-                'Pago Validado',
-                "El pago de tu pedido #{$orderNumber} ha sido validado correctamente.",
+                'Pago validado',
+                "El pago de tu pedido #{$orderNumber} fue validado correctamente.",
                 'order',
                 ['order_id' => (string) $order->id]
             );
         } else {
-            // Si el pago es rechazado, el controlador suele pasar una razón opcional o podemos sacarla del pedido si se guardó
             $this->notificationService->notify(
                 $order->profile_id,
-                'Pago Rechazado',
-                "El comprobante de pago de tu pedido #{$orderNumber} ha sido rechazado.",
+                'Pago rechazado',
+                "El comprobante de tu pedido #{$orderNumber} fue rechazado.",
                 'order',
                 ['order_id' => (string) $order->id]
             );
         }
     }
 
-    /**
-     * Register the listeners for the subscriber.
-     *
-     * @return void
-     */
+    public function onPrescriptionUploaded(PrescriptionUploaded $event): void
+    {
+        $prescription = $event->prescription;
+        Log::debug('OrderNotificationSubscriber: PrescriptionUploaded', [
+            'prescription_id' => $prescription->id,
+            'commerce_id' => $prescription->commerce_id,
+        ]);
+
+        // Notificar al farmacéutico colegiado responsable de la farmacia
+        // (si la farmacia tiene asignado uno) para que valide la receta.
+        if ($prescription->commerce_id) {
+            $commerce = Commerce::find($prescription->commerce_id);
+            $pharmacistProfileId = $commerce?->pharmacist_in_charge_profile_id;
+            if ($pharmacistProfileId) {
+                $this->notificationService->notify(
+                    $pharmacistProfileId,
+                    'Nueva receta para validar',
+                    "Receta #{$prescription->id} pendiente de validación.",
+                    'prescription',
+                    [
+                        'prescription_id' => (string) $prescription->id,
+                        'order_id' => (string) ($prescription->order_id ?? ''),
+                    ]
+                );
+            }
+        }
+    }
+
+    public function onPrescriptionValidated(PrescriptionValidated $event): void
+    {
+        $prescription = $event->prescription;
+        Log::debug('OrderNotificationSubscriber: PrescriptionValidated', [
+            'prescription_id' => $prescription->id,
+        ]);
+
+        $patientProfileId = $prescription->patient_profile_id;
+        if ($patientProfileId) {
+            $this->notificationService->notify(
+                $patientProfileId,
+                'Receta aprobada',
+                'Tu receta fue aprobada. Continúa con el pago para que tu pedido sea preparado.',
+                'prescription',
+                [
+                    'prescription_id' => (string) $prescription->id,
+                    'order_id' => (string) ($prescription->order_id ?? ''),
+                ]
+            );
+        }
+    }
+
+    public function onPrescriptionRejected(PrescriptionRejected $event): void
+    {
+        $prescription = $event->prescription;
+        Log::debug('OrderNotificationSubscriber: PrescriptionRejected', [
+            'prescription_id' => $prescription->id,
+        ]);
+
+        $patientProfileId = $prescription->patient_profile_id;
+        if ($patientProfileId) {
+            $reason = $prescription->rejection_reason
+                ?: 'Sin detalles. Contacta a la farmacia para más información.';
+            $this->notificationService->notify(
+                $patientProfileId,
+                'Receta rechazada',
+                "El farmacéutico rechazó tu receta. Motivo: {$reason}",
+                'prescription',
+                [
+                    'prescription_id' => (string) $prescription->id,
+                    'order_id' => (string) ($prescription->order_id ?? ''),
+                ]
+            );
+        }
+    }
+
     public function subscribe(Dispatcher $events): array
     {
         return [
             OrderCreated::class => 'onOrderCreated',
             OrderStatusChanged::class => 'onOrderStatusChanged',
             PaymentValidated::class => 'onPaymentValidated',
+            PrescriptionUploaded::class => 'onPrescriptionUploaded',
+            PrescriptionValidated::class => 'onPrescriptionValidated',
+            PrescriptionRejected::class => 'onPrescriptionRejected',
         ];
     }
 }

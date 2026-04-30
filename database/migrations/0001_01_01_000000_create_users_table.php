@@ -22,7 +22,15 @@ return new class extends Migration
             $table->string('family_name')->nullable(); // Agregar campo para el apellido
             $table->string('profile_pic')->nullable(); // Agregar campo para la foto de perfil
             $table->boolean('completed_onboarding')->default(false);
-            $table->enum('role', ['admin', 'users', 'commerce', 'delivery_company', 'delivery_agent', 'delivery'])->default('users');
+            $table->enum('role', [
+                'admin',
+                'users',
+                'commerce',
+                'pharmacist',
+                'delivery_company',
+                'delivery_agent',
+                'delivery',
+            ])->default('users');
             $table->rememberToken();
             $table->string('light')->default('1')->nullable();
             $table->timestamps();

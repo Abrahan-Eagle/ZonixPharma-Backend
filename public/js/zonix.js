@@ -1,5 +1,5 @@
-// Zonix EATS - Scripts
-console.log("Zonix EATS Loaded");
+// Zonix Pharma - Scripts
+console.log("Zonix Pharma Loaded");
 
 document.addEventListener("DOMContentLoaded", function () {
     

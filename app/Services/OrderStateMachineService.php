@@ -13,6 +13,7 @@ class OrderStateMachineService
     public const ERROR_INVALID_STATUS = 'ORDER_INVALID_STATUS';
 
     private const VALID_STATUSES = [
+        'pending_prescription_validation',
         'pending_payment',
         'paid',
         'processing',
@@ -23,6 +24,8 @@ class OrderStateMachineService
 
     private const ALIASES = [
         'pending' => 'pending_payment',
+        'awaiting_prescription' => 'pending_prescription_validation',
+        'rx_pending' => 'pending_prescription_validation',
         'confirmed' => 'paid',
         'preparing' => 'processing',
         'ready' => 'processing',
@@ -32,12 +35,18 @@ class OrderStateMachineService
 
     private const TRANSITIONS = [
         'buyer' => [
+            'pending_prescription_validation' => ['cancelled'],
             'pending_payment' => ['cancelled'],
         ],
         'commerce' => [
             'pending_payment' => ['paid', 'cancelled'],
             'paid' => ['processing', 'cancelled'],
             'processing' => ['shipped', 'cancelled'],
+        ],
+        'pharmacist' => [
+            // Validar/rechazar receta cambia el estado del pedido al aprobar
+            // (a pending_payment) o al rechazar (a cancelled).
+            'pending_prescription_validation' => ['pending_payment', 'cancelled'],
         ],
         'delivery' => [
             'shipped' => ['delivered'],
@@ -47,6 +56,7 @@ class OrderStateMachineService
             'pending_payment' => ['paid'],
         ],
         'admin' => [
+            'pending_prescription_validation' => ['pending_payment', 'cancelled'],
             'pending_payment' => ['cancelled'],
             'paid' => ['processing', 'cancelled'],
             'processing' => ['shipped', 'cancelled'],
@@ -131,7 +141,7 @@ class OrderStateMachineService
     }
 
     /**
-     * El comercio puede pasar shipped → delivered solo para pedidos pickup (entrega en mostrador).
+     * El comercio puede pasar shipped → delivered solo para pedidos pickup (retiro en farmacia).
      */
     private function allowsCommercePickupDelivered(string $role, string $from, string $to, ?Order $order): bool
     {
@@ -143,6 +153,18 @@ class OrderStateMachineService
         }
 
         return $order->delivery_type === 'pickup';
+    }
+
+    /**
+     * Estado inicial del pedido al crearse.
+     * Pharma: si hay productos Rx → `pending_prescription_validation`.
+     */
+    public function initialStatusForOrder(Order $order): string
+    {
+        if ($order->requires_prescription) {
+            return 'pending_prescription_validation';
+        }
+        return 'pending_payment';
     }
 
     public function applyTransition(

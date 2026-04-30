@@ -26,7 +26,7 @@ Auth::routes();
 
 // Ruta dinámica para robots.txt
 Route::get('/robots.txt', function () {
-    $isTestEnvironment = str_contains(request()->getHost(), 'test.zonixeats.com');
+    $isTestEnvironment = str_contains(request()->getHost(), 'test.zonixpharma.com');
 
     if ($isTestEnvironment) {
         return response("User-agent: *\nDisallow: /", 200)

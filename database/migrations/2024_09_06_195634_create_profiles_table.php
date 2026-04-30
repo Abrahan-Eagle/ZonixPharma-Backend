@@ -31,6 +31,20 @@ return new class extends Migration
             // Campos de notificaciones
             $table->text('fcm_device_token')->nullable();
             $table->json('notification_preferences')->nullable();
+            // ── Pharma: información médica opcional del comprador ─────────
+            // Se llenan en un paso OPCIONAL del onboarding buyer y son
+            // datos sensibles de salud (Ley Protección Datos VE 2025):
+            // acceso restringido al paciente, farmacia despachadora y
+            // administrador, retención limitada.
+            $table->text('allergies')->nullable()
+                ->comment('Alergias del paciente (texto libre, opcional).');
+            $table->text('medical_notes')->nullable()
+                ->comment('Notas médicas relevantes del paciente (opcional).');
+            $table->string('emergency_contact_name')->nullable();
+            $table->string('emergency_contact_phone', 32)->nullable();
+            $table->boolean('medical_consent_given')->default(false)
+                ->comment('Consentimiento del paciente para guardar datos de salud.');
+            $table->timestamp('medical_consent_at')->nullable();
             $table->timestamps();
 
             // Índices de performance (consolidados desde add_performance_indexes)

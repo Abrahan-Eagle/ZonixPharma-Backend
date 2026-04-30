@@ -1,7 +1,7 @@
 @extends('front.layouts.zonix')
 
-@section('title', 'Seguridad - Zonix Eats')
-@section('meta_description', 'Medidas de seguridad y protección en Zonix Eats.')
+@section('title', 'Seguridad - Zonix Pharma')
+@section('meta_description', 'Medidas de seguridad y protección en Zonix Pharma.')
 
 @section('content')
 <!-- Hero Header -->
@@ -77,7 +77,7 @@
                              <ul class="list-none space-y-3 mb-0 ps-0">
                                 <li class="d-flex gap-3 align-items-center bg-white border border-slate-100 p-3 rounded-lg">
                                     <span class="material-symbols-outlined text-yellow fs-5">password</span>
-                                    <span>Usa una contraseña única y compleja para Zonix Eats.</span>
+                                    <span>Usa una contraseña única y compleja para Zonix Pharma.</span>
                                 </li>
                                 <li class="d-flex gap-3 align-items-center bg-white border border-slate-100 p-3 rounded-lg">
                                     <span class="material-symbols-outlined text-yellow fs-5">phishing</span>
@@ -94,7 +94,7 @@
                                 <h3 class="text-2xl font-bold text-navy m-0">Reportar Incidentes</h3>
                             </div>
                             <p>Si crees que has encontrado una vulnerabilidad de seguridad, por favor repórtala de inmediato a nuestro equipo de seguridad.</p>
-                            <a href="mailto:seguridad@zonixeats.com" class="btn btn-navy rounded-pill px-4 mt-2">
+                            <a href="mailto:seguridad@zonixpharma.com" class="btn btn-navy rounded-pill px-4 mt-2">
                                 Contactar Seguridad
                             </a>
                         </div>

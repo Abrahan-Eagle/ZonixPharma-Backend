@@ -24,6 +24,6 @@ class StorefrontLinkTest extends TestCase
 
         $response->assertOk();
         $response->assertSee($commerce->business_name, false);
-        $response->assertSee('zonix://restaurant/'.$commerce->id, false);
+        $response->assertSee('zonix://pharmacy/'.$commerce->id, false);
     }
 }

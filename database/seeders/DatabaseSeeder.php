@@ -21,6 +21,9 @@ class DatabaseSeeder extends Seeder
             CountriesSeeder::class,
             StatesSeeder::class,
             CitiesSeeder::class,
+            // Roles primero: necesario para que `pharmacist` y permisos
+            // estén disponibles antes del demo seed (que crea farmacéuticos).
+            RoleSeeder::class,
             CategorySeeder::class,
             BusinessTypeSeeder::class,
 

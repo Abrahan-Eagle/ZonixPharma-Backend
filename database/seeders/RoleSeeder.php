@@ -27,21 +27,34 @@ class RoleSeeder extends Seeder
             ],
             [
                 'name' => 'users',
-                'description' => 'Usuario cliente',
+                'description' => 'Comprador / paciente',
                 'permissions' => [
                     'place_orders',
                     'view_orders',
+                    'upload_prescriptions',
                     'manage_profile',
                     'write_reviews',
                 ],
             ],
             [
                 'name' => 'commerce',
-                'description' => 'Comercio/Restaurante',
+                'description' => 'Farmacia / Droguería',
                 'permissions' => [
                     'manage_products',
+                    'manage_lots',
                     'manage_orders',
                     'view_reports',
+                    'manage_profile',
+                ],
+            ],
+            [
+                'name' => 'pharmacist',
+                'description' => 'Farmacéutico colegiado responsable',
+                'permissions' => [
+                    'validate_prescriptions',
+                    'reject_prescriptions',
+                    'view_prescriptions',
+                    'view_orders_with_prescription',
                     'manage_profile',
                 ],
             ],
