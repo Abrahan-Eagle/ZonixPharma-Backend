@@ -656,6 +656,6 @@ class OrderPaymentTest extends TestCase
         ]);
 
         $response->assertStatus(400)
-            ->assertJson(['message' => 'Solo puedes cancelar órdenes pendientes de pago']);
+            ->assertJson(['message' => 'Solo puedes cancelar pedidos pendientes de pago o de validación de receta.']);
     }
 }

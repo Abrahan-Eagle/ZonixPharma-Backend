@@ -19,7 +19,7 @@ class ProductService
      */
     public function getProductById($id)
     {
-        return Product::with(['category', 'extras', 'preferences'])->find($id);
+        return Product::with(['category', 'commerce', 'activeLots'])->find($id);
     }
 
     /**
@@ -34,7 +34,7 @@ class ProductService
      */
     public function getCatalogVisibleProductById($id)
     {
-        return Product::with(['category', 'extras', 'preferences'])
+        return Product::with(['category', 'commerce', 'activeLots'])
             ->where('id', $id)
             ->where('available', true)
             ->whereHas('commerce', function ($commerceQuery) {
@@ -52,7 +52,7 @@ class ProductService
      */
     public function getProductsByCommerce($commerceId)
     {
-        return Product::where('commerce_id', $commerceId)->with(['category', 'extras', 'preferences'])->get();
+        return Product::where('commerce_id', $commerceId)->with(['category', 'commerce', 'activeLots'])->get();
     }
 
     /**
@@ -78,7 +78,7 @@ class ProductService
         }
 
         return $query
-            ->with(['category', 'extras', 'preferences', 'commerce'])
+            ->with(['category', 'commerce', 'activeLots'])
             ->paginate($perPage);
     }
 }
