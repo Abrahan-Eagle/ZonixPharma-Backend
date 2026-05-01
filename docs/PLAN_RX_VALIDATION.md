@@ -16,6 +16,30 @@ controladas y cadena de frío.
 - **Farmacia** (rol `commerce`): despacha el pedido una vez aprobada la receta y validado el pago.
 - **Admin**: supervisa, audita y verifica licencias del farmacéutico.
 
+## Políticas configurables (checkout y cupones)
+
+### `ZONIX_PHARMA_BLOCK_RX_WITHOUT_PRESCRIPTION` (default **false**)
+
+- **Permisivo (default):** el comprador puede crear el pedido con ítems Rx sin enviar `prescription_id`. La orden inicia en `pending_prescription_validation` y la receta se sube después con `POST /api/buyer/prescriptions` (MVP).
+- **Estricto (`true`):** si hay productos Rx, el `POST /api/buyer/orders` debe incluir `prescription_id` de una receta en estado `approved`, del mismo `commerce_id`, `patient_profile_id` del comprador y sin `order_id` previo. La orden inicia en `pending_payment` y queda vinculada a esa receta.
+
+### `ZONIX_PHARMA_PRESCRIPTION_VALIDATION_TTL_MINUTES`
+
+- Valor **> 0:** al subir receta se asigna `expires_at`; el comando `zonix:expire-pending-prescriptions` caduca pendientes y cancela el pedido si sigue en validación.
+- Valor **≤ 0:** no se asigna `expires_at` (sin caducidad por TTL). Se registra **warning** en log al subir receta y el comando de expiración no procesa por tiempo (ver comentario en `config/zonix.php`).
+
+### `ZONIX_PHARMA_DISALLOW_PROMOTIONS_ON_RX` (default **true**)
+
+El descuento del cupón se calcula solo sobre el subtotal de líneas **no** Rx. Si el carrito es 100 % Rx, el cupón devuelve error `ORDER_COUPON_RX_ONLY_CART`.
+
+### `ZONIX_PHARMA_REQUIRE_COLD_CHAIN_HANDLING` (default **true**)
+
+Si hay productos `cold_chain = true`, no se permite `delivery_type = delivery` en checkout: error `ORDER_COLD_CHAIN_DELIVERY_NOT_ALLOWED` (retiro en farmacia).
+
+### Subida de receta (idempotencia)
+
+Mientras la receta vinculada al pedido esté en `pending_validation` o `approved`, un segundo `POST /api/buyer/prescriptions` para el mismo pedido responde **409**. Solo se permite nueva subida si la anterior está `rejected` o `expired`. El pedido debe estar en `pending_prescription_validation` (no en `pending_payment`).
+
 ## Reglas de negocio
 
 1. Si el carrito tiene al menos un producto con `requires_prescription = true`,
@@ -39,9 +63,10 @@ controladas y cadena de frío.
    validar al recibir.
 9. Promociones y cupones NO se aplican a líneas con `requires_prescription`
    (ver `ZONIX_PHARMA_DISALLOW_PROMOTIONS_ON_RX`).
-10. Productos `cold_chain = true` requieren delivery con cadena de frío o
-    pickup; el frontend muestra advertencia y el backend marca el pedido con
-    `cold_chain_required = true`.
+10. Productos `cold_chain = true`: el backend **bloquea** delivery si
+    `require_cold_chain_handling` está activo; el pedido se marca con
+    `cold_chain_required = true`. El frontend deshabilita “Domicilio” y
+    sugiere retiro en farmacia.
 
 ## Diagrama de estados de orden con Rx
 

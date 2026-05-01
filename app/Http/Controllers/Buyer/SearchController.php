@@ -31,20 +31,24 @@ class SearchController extends Controller
                 'per_page' => 'nullable|integer|min:1|max:100',
             ]);
 
+            // Solo columnas reales de `commerces` (phone/delivery_fee/minimum_order son legacy Eats;
+            // teléfono viene del accessor vía relación `phones`).
             $query = Commerce::query()
                 ->select([
                     'id',
+                    'profile_id',
                     'business_name',
                     'business_type',
                     'business_type_id',
                     'address',
-                    'phone',
                     'image',
                     'open',
-                    'delivery_fee',
-                    'minimum_order',
                     'preparation_time',
                     'status',
+                    'pharmacist_in_charge_profile_id',
+                    'health_permit_number',
+                    'health_permit_expires_at',
+                    'night_shift_open',
                 ])
                 ->with([
                     'products' => function ($productQuery) {
@@ -65,7 +69,9 @@ class SearchController extends Controller
                     $q->where('business_name', 'LIKE', "%{$searchTerm}%")
                         ->orWhere('business_type', 'LIKE', "%{$searchTerm}%")
                         ->orWhereHas('products', function ($productQuery) use ($searchTerm) {
-                            $productQuery->where('name', 'LIKE', "%{$searchTerm}%");
+                            $productQuery->where('name', 'LIKE', "%{$searchTerm}%")
+                                ->orWhere('active_ingredient', 'LIKE', "%{$searchTerm}%")
+                                ->orWhere('description', 'LIKE', "%{$searchTerm}%");
                         });
                 });
             }
@@ -155,8 +161,12 @@ class SearchController extends Controller
                     'average_rating' => $restaurant->reviews_avg_rating ? round((float) $restaurant->reviews_avg_rating, 1) : 0,
                     'total_reviews' => (int) ($restaurant->reviews_count ?? 0),
                     'estimated_delivery_time' => $restaurant->preparation_time ?? 30,
-                    'delivery_fee' => $restaurant->delivery_fee ?? 0,
-                    'minimum_order' => $restaurant->minimum_order ?? 0,
+                    'delivery_fee' => 0,
+                    'minimum_order' => 0,
+                    'pharmacist_in_charge_profile_id' => $restaurant->pharmacist_in_charge_profile_id,
+                    'health_permit_number' => $restaurant->health_permit_number,
+                    'health_permit_expires_at' => $restaurant->health_permit_expires_at?->toDateString(),
+                    'night_shift_open' => (bool) $restaurant->night_shift_open,
                     'is_open' => (bool) $restaurant->open,
                     'is_favorite' => in_array($restaurant->id, $favoriteIds, true),
                     'total_products' => $restaurant->products->count(),
@@ -202,7 +212,7 @@ class SearchController extends Controller
                         'sort_order' => $request->sort_order,
                     ],
                 ],
-                'message' => 'Restaurantes encontrados exitosamente',
+                'message' => 'Farmacias encontradas exitosamente',
             ]);
         } catch (\Illuminate\Validation\ValidationException $e) {
             return response()->json([
@@ -217,7 +227,7 @@ class SearchController extends Controller
             return response()->json([
                 'success' => false,
                 'data' => null,
-                'message' => 'Error al buscar restaurantes',
+                'message' => 'Error al buscar farmacias',
             ], 500);
         }
     }
@@ -251,11 +261,12 @@ class SearchController extends Controller
                 $searchTerm = $request->search;
                 $query->where(function ($q) use ($searchTerm) {
                     $q->where('name', 'LIKE', "%{$searchTerm}%")
-                        ->orWhere('description', 'LIKE', "%{$searchTerm}%");
+                        ->orWhere('description', 'LIKE', "%{$searchTerm}%")
+                        ->orWhere('active_ingredient', 'LIKE', "%{$searchTerm}%");
                 });
             }
 
-            // Filtro por restaurante
+            // Filtro por farmacia (comercio)
             if ($request->filled('commerce_id')) {
                 $query->where('commerce_id', $request->commerce_id);
             }
@@ -318,6 +329,18 @@ class SearchController extends Controller
                     'available' => (bool) $product->available,
                     'is_available' => (bool) $product->available,
                     'stock_quantity' => $product->stock_quantity,
+                    'active_ingredient' => $product->active_ingredient,
+                    'dosage_form' => $product->dosage_form,
+                    'concentration' => $product->concentration,
+                    'presentation' => $product->presentation,
+                    'manufacturer' => $product->manufacturer,
+                    'health_registry' => $product->health_registry,
+                    'barcode' => $product->barcode,
+                    'atc_code' => $product->atc_code,
+                    'requires_prescription' => (bool) $product->requires_prescription,
+                    'prescription_type' => $product->prescription_type,
+                    'controlled_substance' => (bool) $product->controlled_substance,
+                    'cold_chain' => (bool) $product->cold_chain,
                     'commerce' => [
                         'id' => $product->commerce->id,
                         'name' => $product->commerce->business_name,

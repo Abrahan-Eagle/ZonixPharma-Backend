@@ -82,10 +82,10 @@ class PrescriptionController extends Controller
             ], 404);
         }
 
-        if (! in_array($order->status, [Order::STATUS_PENDING_PRESCRIPTION, Order::STATUS_PENDING_PAYMENT], true)) {
+        if ($order->status !== Order::STATUS_PENDING_PRESCRIPTION) {
             return response()->json([
                 'success' => false,
-                'message' => 'No se puede subir receta para este pedido en su estado actual.',
+                'message' => 'Solo puedes subir receta mientras el pedido espera validación de receta.',
                 'error_code' => 'PRESCRIPTION_NOT_ALLOWED_FOR_STATUS',
             ], 422);
         }

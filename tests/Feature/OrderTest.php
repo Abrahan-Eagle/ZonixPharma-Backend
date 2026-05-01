@@ -7,13 +7,16 @@ use App\Models\Coupon;
 use App\Models\OperatorCode;
 use App\Models\Order;
 use App\Models\Phone;
+use App\Models\Prescription;
 use App\Models\Product;
 use App\Models\Profile;
 use App\Models\User;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Storage;
+use App\Events\PaymentProofUploaded;
 use Tests\TestCase;
 
 class OrderTest extends TestCase
@@ -367,6 +370,7 @@ class OrderTest extends TestCase
             'delivery_address' => $payload['delivery_address'],
             'delivery_latitude' => null,
             'delivery_longitude' => null,
+            'prescription_id' => null,
         ]));
 
         DB::table('order_idempotency_keys')->insert([
@@ -544,5 +548,298 @@ class OrderTest extends TestCase
                     'timeline',
                 ],
             ]);
+    }
+
+    public function test_create_order_with_rx_succeeds_without_prescription_when_block_rx_is_off(): void
+    {
+        config(['zonix.pharma.block_rx_without_prescription' => false]);
+
+        $user = User::factory()->create(['role' => 'users']);
+        $profile = Profile::factory()->create([
+            'user_id' => $user->id,
+            'firstName' => 'Cliente',
+            'lastName' => 'Test',
+            'photo_users' => 'https://via.placeholder.com/150',
+            'status' => 'completeData',
+        ]);
+        $commerce = Commerce::factory()->create(['profile_id' => $profile->id, 'open' => true]);
+        $product = Product::factory()->create([
+            'commerce_id' => $commerce->id,
+            'available' => true,
+            'stock_quantity' => 10,
+            'price' => 50,
+            'requires_prescription' => true,
+            'cold_chain' => false,
+        ]);
+        $operatorCode = OperatorCode::firstOrCreate(['code' => 412], ['name' => '0412']);
+        Phone::create([
+            'profile_id' => $profile->id,
+            'operator_code_id' => $operatorCode->id,
+            'number' => '1234567',
+            'is_primary' => true,
+            'status' => true,
+        ]);
+        $this->actingAs($user, 'sanctum');
+
+        $this->postJson('/api/buyer/orders', [
+            'commerce_id' => $commerce->id,
+            'products' => [['id' => $product->id, 'quantity' => 1]],
+            'delivery_type' => 'pickup',
+            'total' => 50,
+            'delivery_fee' => 0,
+            'delivery_address' => 'Calle 123',
+        ])->assertStatus(201)
+            ->assertJsonPath('data.status', Order::STATUS_PENDING_PRESCRIPTION);
+    }
+
+    public function test_create_order_with_rx_fails_when_block_rx_on_without_prescription(): void
+    {
+        config(['zonix.pharma.block_rx_without_prescription' => true]);
+
+        $user = User::factory()->create(['role' => 'users']);
+        $profile = Profile::factory()->create([
+            'user_id' => $user->id,
+            'firstName' => 'Cliente',
+            'lastName' => 'Test',
+            'photo_users' => 'https://via.placeholder.com/150',
+            'status' => 'completeData',
+        ]);
+        $commerce = Commerce::factory()->create(['profile_id' => $profile->id, 'open' => true]);
+        $product = Product::factory()->create([
+            'commerce_id' => $commerce->id,
+            'available' => true,
+            'stock_quantity' => 10,
+            'price' => 50,
+            'requires_prescription' => true,
+        ]);
+        $operatorCode = OperatorCode::firstOrCreate(['code' => 412], ['name' => '0412']);
+        Phone::create([
+            'profile_id' => $profile->id,
+            'operator_code_id' => $operatorCode->id,
+            'number' => '1234567',
+            'is_primary' => true,
+            'status' => true,
+        ]);
+        $this->actingAs($user, 'sanctum');
+
+        $this->postJson('/api/buyer/orders', [
+            'commerce_id' => $commerce->id,
+            'products' => [['id' => $product->id, 'quantity' => 1]],
+            'delivery_type' => 'pickup',
+            'total' => 50,
+            'delivery_fee' => 0,
+            'delivery_address' => 'Calle 123',
+        ])->assertStatus(422)
+            ->assertJsonPath('error_code', 'ORDER_RX_PRESCRIPTION_REQUIRED');
+    }
+
+    public function test_create_order_with_rx_succeeds_when_block_rx_on_with_approved_prescription(): void
+    {
+        config(['zonix.pharma.block_rx_without_prescription' => true]);
+
+        $user = User::factory()->create(['role' => 'users']);
+        $profile = Profile::factory()->create([
+            'user_id' => $user->id,
+            'firstName' => 'Cliente',
+            'lastName' => 'Test',
+            'photo_users' => 'https://via.placeholder.com/150',
+            'status' => 'completeData',
+        ]);
+        $commerce = Commerce::factory()->create(['profile_id' => $profile->id, 'open' => true]);
+        $product = Product::factory()->create([
+            'commerce_id' => $commerce->id,
+            'available' => true,
+            'stock_quantity' => 10,
+            'price' => 50,
+            'requires_prescription' => true,
+        ]);
+        $operatorCode = OperatorCode::firstOrCreate(['code' => 412], ['name' => '0412']);
+        Phone::create([
+            'profile_id' => $profile->id,
+            'operator_code_id' => $operatorCode->id,
+            'number' => '1234567',
+            'is_primary' => true,
+            'status' => true,
+        ]);
+
+        $rx = Prescription::create([
+            'patient_profile_id' => $profile->id,
+            'order_id' => null,
+            'commerce_id' => $commerce->id,
+            'prescribing_doctor_name' => 'Dr. Demo',
+            'prescribing_doctor_license' => null,
+            'prescribing_doctor_specialty' => null,
+            'issued_at' => now()->toDateString(),
+            'image_url' => 'prescriptions/demo-rx.jpg',
+            'prescription_type' => Prescription::TYPE_COMMON,
+            'status' => Prescription::STATUS_APPROVED,
+            'validated_by_profile_id' => null,
+            'validated_at' => now(),
+            'expires_at' => now()->addDay(),
+        ]);
+
+        $this->actingAs($user, 'sanctum');
+
+        $res = $this->postJson('/api/buyer/orders', [
+            'commerce_id' => $commerce->id,
+            'products' => [['id' => $product->id, 'quantity' => 1]],
+            'delivery_type' => 'pickup',
+            'total' => 50,
+            'delivery_fee' => 0,
+            'delivery_address' => 'Calle 123',
+            'prescription_id' => $rx->id,
+        ]);
+        $res->assertStatus(201)
+            ->assertJsonPath('data.status', Order::STATUS_PENDING_PAYMENT)
+            ->assertJsonPath('data.prescription_id', $rx->id);
+
+        $this->assertSame((int) $res->json('data.id'), (int) $rx->fresh()->order_id);
+    }
+
+    public function test_create_order_rejects_delivery_for_cold_chain_when_handling_required(): void
+    {
+        config(['zonix.pharma.require_cold_chain_handling' => true]);
+
+        $user = User::factory()->create(['role' => 'users']);
+        $profile = Profile::factory()->create([
+            'user_id' => $user->id,
+            'firstName' => 'Cliente',
+            'lastName' => 'Test',
+            'photo_users' => 'https://via.placeholder.com/150',
+            'status' => 'completeData',
+        ]);
+        $commerce = Commerce::factory()->create(['profile_id' => $profile->id, 'open' => true]);
+        $product = Product::factory()->create([
+            'commerce_id' => $commerce->id,
+            'available' => true,
+            'stock_quantity' => 10,
+            'price' => 30,
+            'requires_prescription' => false,
+            'cold_chain' => true,
+        ]);
+        $operatorCode = OperatorCode::firstOrCreate(['code' => 412], ['name' => '0412']);
+        Phone::create([
+            'profile_id' => $profile->id,
+            'operator_code_id' => $operatorCode->id,
+            'number' => '1234567',
+            'is_primary' => true,
+            'status' => true,
+        ]);
+        $this->actingAs($user, 'sanctum');
+
+        $this->postJson('/api/buyer/orders', [
+            'commerce_id' => $commerce->id,
+            'products' => [['id' => $product->id, 'quantity' => 1]],
+            'delivery_type' => 'delivery',
+            'total' => 35,
+            'delivery_fee' => 5,
+            'delivery_address' => 'Av. Principal',
+        ])->assertStatus(422)
+            ->assertJsonPath('error_code', 'ORDER_COLD_CHAIN_DELIVERY_NOT_ALLOWED');
+    }
+
+    public function test_create_order_mixed_cart_coupon_discount_applies_only_to_otc_subtotal(): void
+    {
+        config(['zonix.pharma.disallow_promotions_on_rx' => true]);
+
+        $user = User::factory()->create(['role' => 'users']);
+        $profile = Profile::factory()->create([
+            'user_id' => $user->id,
+            'firstName' => 'Cliente',
+            'lastName' => 'Test',
+            'photo_users' => 'https://via.placeholder.com/150',
+            'status' => 'completeData',
+        ]);
+        $commerce = Commerce::factory()->create(['profile_id' => $profile->id, 'open' => true]);
+        $otc = Product::factory()->create([
+            'commerce_id' => $commerce->id,
+            'available' => true,
+            'stock_quantity' => 10,
+            'price' => 100,
+            'requires_prescription' => false,
+        ]);
+        $rx = Product::factory()->create([
+            'commerce_id' => $commerce->id,
+            'available' => true,
+            'stock_quantity' => 10,
+            'price' => 100,
+            'requires_prescription' => true,
+        ]);
+        $coupon = Coupon::factory()->public()->create([
+            'code' => 'MIXED10',
+            'is_active' => true,
+            'discount_type' => 'percentage',
+            'discount_value' => 10,
+            'minimum_order' => 0,
+            'usage_limit' => 10,
+            'start_date' => now()->subDay(),
+            'end_date' => now()->addDay(),
+        ]);
+        $operatorCode = OperatorCode::firstOrCreate(['code' => 412], ['name' => '0412']);
+        Phone::create([
+            'profile_id' => $profile->id,
+            'operator_code_id' => $operatorCode->id,
+            'number' => '1234567',
+            'is_primary' => true,
+            'status' => true,
+        ]);
+        $this->actingAs($user, 'sanctum');
+
+        $this->postJson('/api/buyer/orders', [
+            'commerce_id' => $commerce->id,
+            'products' => [
+                ['id' => $otc->id, 'quantity' => 1],
+                ['id' => $rx->id, 'quantity' => 1],
+            ],
+            'delivery_type' => 'pickup',
+            'total' => 200,
+            'delivery_fee' => 0,
+            'coupon_code' => $coupon->code,
+            'delivery_address' => 'Calle 123',
+        ])->assertStatus(201)
+            ->assertJsonPath('pricing_breakdown.coupon_discount', 10)
+            ->assertJsonPath('pricing_breakdown.final_total', 190);
+    }
+
+    public function test_upload_payment_proof_dispatches_payment_proof_uploaded_event(): void
+    {
+        Event::fake([PaymentProofUploaded::class]);
+        Storage::fake('public');
+
+        $user = User::factory()->create(['role' => 'users']);
+        $profile = Profile::factory()->create([
+            'user_id' => $user->id,
+            'firstName' => 'Cliente',
+            'lastName' => 'Test',
+            'photo_users' => 'https://via.placeholder.com/150',
+            'status' => 'completeData',
+        ]);
+        $commerce = Commerce::factory()->create(['profile_id' => $profile->id, 'open' => true]);
+        $operatorCode = OperatorCode::firstOrCreate(['code' => 412], ['name' => '0412']);
+        Phone::create([
+            'profile_id' => $profile->id,
+            'operator_code_id' => $operatorCode->id,
+            'number' => '1234567',
+            'is_primary' => true,
+            'status' => true,
+        ]);
+        $order = Order::factory()->create([
+            'profile_id' => $profile->id,
+            'commerce_id' => $commerce->id,
+            'status' => 'pending_payment',
+            'approved_for_payment' => true,
+        ]);
+
+        $this->actingAs($user, 'sanctum');
+        $file = UploadedFile::fake()->image('proof.jpg');
+        $this->postJson("/api/buyer/orders/{$order->id}/payment-proof", [
+            'payment_proof' => $file,
+            'payment_method' => 'pago_movil',
+            'reference_number' => 'REF-1',
+        ])->assertStatus(200);
+
+        Event::assertDispatched(PaymentProofUploaded::class, function (PaymentProofUploaded $e) use ($order) {
+            return (int) $e->order->id === (int) $order->id && $e->paymentType === 'food';
+        });
     }
 }

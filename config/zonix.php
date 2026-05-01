@@ -124,18 +124,19 @@ return [
     | Reglas farmacéuticas Zonix Pharma
     |--------------------------------------------------------------------------
     |
-    |  - block_rx_without_prescription: si true, el checkout falla si el
-    |    carrito tiene productos requires_prescription y no hay receta
-    |    aprobada vinculada al pedido.
+    |  - block_rx_without_prescription: default false (flujo permisivo MVP).
+    |    Si true (opt-in), el checkout falla si el carrito tiene productos Rx
+    |    y no se envía prescription_id de una receta approved sin otro pedido.
     |  - prescription_validation_ttl_minutes: vida de una receta pendiente
-    |    de validación; al vencer se cancela el pedido asociado.
+    |    de validación; al vencer se cancela el pedido asociado. Valor <= 0
+    |    desactiva expires_at (sin caducidad automática por TTL; ver warning en log).
     |  - disallow_promotions_on_rx: si true, ninguna promoción/cupón se
     |    aplica a líneas con requires_prescription = true.
     |  - require_cold_chain_handling: si true, los productos cold_chain
     |    no permiten ciertos modos de delivery sin trazabilidad.
     */
     'pharma' => [
-        'block_rx_without_prescription' => filter_var(env('ZONIX_PHARMA_BLOCK_RX_WITHOUT_PRESCRIPTION', true), FILTER_VALIDATE_BOOLEAN),
+        'block_rx_without_prescription' => filter_var(env('ZONIX_PHARMA_BLOCK_RX_WITHOUT_PRESCRIPTION', false), FILTER_VALIDATE_BOOLEAN),
         'prescription_validation_ttl_minutes' => (int) env('ZONIX_PHARMA_PRESCRIPTION_VALIDATION_TTL_MINUTES', 60),
         'disallow_promotions_on_rx' => filter_var(env('ZONIX_PHARMA_DISALLOW_PROMOTIONS_ON_RX', true), FILTER_VALIDATE_BOOLEAN),
         'require_cold_chain_handling' => filter_var(env('ZONIX_PHARMA_REQUIRE_COLD_CHAIN_HANDLING', true), FILTER_VALIDATE_BOOLEAN),

@@ -3,15 +3,18 @@
 namespace App\Http\Controllers\Buyer;
 
 use App\Events\OrderCreated;
+use App\Events\PaymentProofUploaded;
 use App\Events\OrderStatusChanged;
 use App\Http\Controllers\Controller;
 use App\Models\Coupon;
 use App\Models\Order;
+use App\Models\Prescription;
 use App\Services\DeliveryFeeService;
 use App\Services\NotificationService;
 use App\Services\OrderService;
 use App\Services\OrderStateMachineService;
 use Illuminate\Http\Request;
+use Illuminate\Validation\ValidationException;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
@@ -160,6 +163,7 @@ class OrderController extends Controller
                 'delivery_address' => 'required_if:delivery_type,delivery|nullable|string|max:500',
                 'delivery_latitude' => 'nullable|numeric|between:-90,90',
                 'delivery_longitude' => 'nullable|numeric|between:-180,180',
+                'prescription_id' => 'nullable|integer|exists:prescriptions,id',
             ]);
             $validated['delivery_fee'] = (float) ($validated['delivery_fee'] ?? 0);
 
@@ -237,6 +241,7 @@ class OrderController extends Controller
                 'delivery_address' => $validated['delivery_address'] ?? null,
                 'delivery_latitude' => $validated['delivery_latitude'] ?? null,
                 'delivery_longitude' => $validated['delivery_longitude'] ?? null,
+                'prescription_id' => $validated['prescription_id'] ?? null,
             ]));
 
             if ($idempotencyKey !== '') {
@@ -328,8 +333,11 @@ class OrderController extends Controller
                 $validated['delivery_fee'] = $serverFee;
             }
 
-            // Validar productos y calcular total
+            // Validar productos y calcular total (subtotales OTC/Rx para cupones y flags Pharma)
             $calculatedTotal = 0;
+            $otcSubtotal = 0.0;
+            $rxSubtotal = 0.0;
+            $coldChainRequired = false;
             $productModels = [];
 
             foreach ($validated['products'] as $product) {
@@ -368,6 +376,14 @@ class OrderController extends Controller
                 // Calcular subtotal
                 $subtotal = $productModel->price * $product['quantity'];
                 $calculatedTotal += $subtotal;
+                if ($productModel->requires_prescription ?? false) {
+                    $rxSubtotal += $subtotal;
+                } else {
+                    $otcSubtotal += $subtotal;
+                }
+                if ($productModel->cold_chain ?? false) {
+                    $coldChainRequired = true;
+                }
                 $productModels[] = [
                     'model' => $productModel,
                     'data' => $product,
@@ -404,6 +420,49 @@ class OrderController extends Controller
                     ]
                 );
             }
+
+            $pharmaCfg = config('zonix.pharma', []);
+
+            if (
+                ($pharmaCfg['require_cold_chain_handling'] ?? true)
+                && $coldChainRequired
+                && $validated['delivery_type'] === 'delivery'
+            ) {
+                return $this->errorResponse(
+                    'Los productos con cadena de frío no admiten envío a domicilio en este momento. Elige retiro en farmacia.',
+                    'ORDER_COLD_CHAIN_DELIVERY_NOT_ALLOWED',
+                    422
+                );
+            }
+
+            $requiresPrescription = $rxSubtotal > 0;
+            $preApprovedPrescriptionId = null;
+            if (($pharmaCfg['block_rx_without_prescription'] ?? false) && $requiresPrescription) {
+                $pid = isset($validated['prescription_id']) ? (int) $validated['prescription_id'] : 0;
+                if ($pid < 1) {
+                    return $this->errorResponse(
+                        'Este pedido incluye medicamentos con receta. Debes enviar prescription_id de una receta ya aprobada por esta farmacia, o desactivar el modo estricto (ZONIX_PHARMA_BLOCK_RX_WITHOUT_PRESCRIPTION).',
+                        'ORDER_RX_PRESCRIPTION_REQUIRED',
+                        422
+                    );
+                }
+                $rxCandidate = Prescription::query()
+                    ->whereKey($pid)
+                    ->where('patient_profile_id', $profile->id)
+                    ->where('commerce_id', (int) $validated['commerce_id'])
+                    ->where('status', Prescription::STATUS_APPROVED)
+                    ->whereNull('order_id')
+                    ->first();
+                if (! $rxCandidate) {
+                    return $this->errorResponse(
+                        'La receta indicada no es válida: debe estar aprobada, pertenecer a esta farmacia, ser tuya y no estar vinculada a otro pedido.',
+                        'ORDER_RX_PRESCRIPTION_INVALID',
+                        422
+                    );
+                }
+                $preApprovedPrescriptionId = (int) $rxCandidate->id;
+            }
+
             $orderTotal = $expectedTotal;
 
             $appliedCoupon = null;
@@ -447,8 +506,22 @@ class OrderController extends Controller
                     );
                 }
 
-                $discount = $this->calculateCouponDiscount($coupon, $orderTotal);
-                $orderTotal = max(0, $orderTotal - $discount);
+                $disallowRxPromo = (bool) ($pharmaCfg['disallow_promotions_on_rx'] ?? true);
+                if ($disallowRxPromo && $requiresPrescription) {
+                    if ($otcSubtotal <= 0) {
+                        return $this->errorResponse(
+                            'Este cupón no aplica cuando el carrito solo contiene medicamentos con receta.',
+                            'ORDER_COUPON_RX_ONLY_CART',
+                            422
+                        );
+                    }
+                    $discountBase = $otcSubtotal;
+                } else {
+                    $discountBase = $orderTotal;
+                }
+
+                $discount = $this->calculateCouponDiscount($coupon, $discountBase);
+                $orderTotal = max(0, $expectedTotal - $discount);
                 $appliedCoupon = [
                     'id' => $coupon->id,
                     'code' => $coupon->code,
@@ -465,24 +538,10 @@ class OrderController extends Controller
                 }
             }
 
-            // ── Pharma: detectar productos Rx y cadena de frío ──────────────
-            // Si al menos un ítem es Rx, el pedido inicia en
-            // `pending_prescription_validation` y queda bloqueado hasta que
-            // el farmacéutico colegiado apruebe la receta (PrescriptionService).
-            $requiresPrescription = false;
-            $coldChainRequired = false;
-            foreach ($productModels as $entry) {
-                $pm = $entry['model'];
-                if ($pm->requires_prescription ?? false) {
-                    $requiresPrescription = true;
-                }
-                if ($pm->cold_chain ?? false) {
-                    $coldChainRequired = true;
-                }
-            }
+            // Pharma: Rx sin receta preaprobada → pending_prescription_validation; modo estricto con receta approved → pending_payment.
             $initialStatus = $requiresPrescription
-                ? \App\Models\Order::STATUS_PENDING_PRESCRIPTION
-                : 'pending_payment';
+                ? ($preApprovedPrescriptionId !== null ? Order::STATUS_PENDING_PAYMENT : Order::STATUS_PENDING_PRESCRIPTION)
+                : Order::STATUS_PENDING_PAYMENT;
 
             // Crear orden en transacción
             $order = DB::transaction(function () use (
@@ -494,8 +553,27 @@ class OrderController extends Controller
                 $appliedCoupon,
                 $initialStatus,
                 $requiresPrescription,
-                $coldChainRequired
+                $coldChainRequired,
+                $preApprovedPrescriptionId
             ) {
+                if ($preApprovedPrescriptionId !== null) {
+                    $lockedRx = Prescription::query()
+                        ->whereKey($preApprovedPrescriptionId)
+                        ->lockForUpdate()
+                        ->first();
+                    if (
+                        ! $lockedRx
+                        || (int) $lockedRx->patient_profile_id !== (int) $profile->id
+                        || (int) $lockedRx->commerce_id !== (int) $validated['commerce_id']
+                        || $lockedRx->status !== Prescription::STATUS_APPROVED
+                        || $lockedRx->order_id !== null
+                    ) {
+                        throw ValidationException::withMessages([
+                            'prescription_id' => ['La receta ya no está disponible para vincularla a este pedido.'],
+                        ]);
+                    }
+                }
+
                 $order = \App\Models\Order::create([
                     'profile_id' => $profile->id,
                     'commerce_id' => $validated['commerce_id'],
@@ -510,6 +588,7 @@ class OrderController extends Controller
                     'delivery_longitude' => isset($validated['delivery_longitude']) ? (float) $validated['delivery_longitude'] : null,
                     'requires_prescription' => $requiresPrescription,
                     'cold_chain_required' => $coldChainRequired,
+                    'prescription_id' => $preApprovedPrescriptionId,
                 ]);
 
                 foreach ($validated['products'] as $item) {
@@ -544,6 +623,10 @@ class OrderController extends Controller
                             $lockedProduct->update(['available' => false]);
                         }
                     }
+                }
+
+                if ($preApprovedPrescriptionId !== null) {
+                    Prescription::whereKey($preApprovedPrescriptionId)->update(['order_id' => $order->id]);
                 }
 
                 // Crear registros de pago.
@@ -920,7 +1003,7 @@ class OrderController extends Controller
             ]);
 
             $order = $order->fresh();
-            event(new OrderStatusChanged($order));
+            event(new PaymentProofUploaded($order, $paymentType));
 
             // Notificar al destinatario del pago
             $orderNumber = $order->order_number ?? (string) $order->id;
@@ -930,7 +1013,7 @@ class OrderController extends Controller
                     $this->notificationService->notify(
                         (int) $commerce->profile_id,
                         'Comprobante de pago subido',
-                        "Orden #{$orderNumber}: el cliente subió comprobante de la comida. Valida o rechaza.",
+                        "Orden #{$orderNumber}: el cliente subió comprobante del pedido (farmacia). Valida o rechaza.",
                         'commerce_order',
                         ['order_id' => (string) $order->id]
                     );

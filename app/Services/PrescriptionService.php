@@ -9,6 +9,7 @@ use App\Models\Order;
 use App\Models\Prescription;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
+use Symfony\Component\HttpKernel\Exception\ConflictHttpException;
 
 /**
  * Lógica de negocio de recetas médicas (Rx) en Zonix Pharma.
@@ -32,7 +33,30 @@ class PrescriptionService
     public function upload(array $data, Order $order): Prescription
     {
         return DB::transaction(function () use ($data, $order) {
+            $order = Order::query()->whereKey($order->id)->lockForUpdate()->firstOrFail();
+
+            if ($order->prescription_id) {
+                $existing = Prescription::query()
+                    ->whereKey($order->prescription_id)
+                    ->lockForUpdate()
+                    ->first();
+                if ($existing && in_array($existing->status, [
+                    Prescription::STATUS_PENDING_VALIDATION,
+                    Prescription::STATUS_APPROVED,
+                ], true)) {
+                    throw new ConflictHttpException(
+                        'Ya hay una receta activa para este pedido. Espera la validación del farmacéutico o, si la receta fue rechazada o expiró, vuelve a intentar.'
+                    );
+                }
+            }
+
             $ttlMinutes = (int) config('zonix.pharma.prescription_validation_ttl_minutes', 60);
+            if ($ttlMinutes <= 0) {
+                Log::warning('pharma_prescription_ttl_disabled', [
+                    'order_id' => $order->id,
+                    'hint' => 'ZONIX_PHARMA_PRESCRIPTION_VALIDATION_TTL_MINUTES<=0 desactiva expires_at; el comando zonix:expire-pending-prescriptions no caduca por TTL.',
+                ]);
+            }
 
             $prescription = Prescription::create([
                 'patient_profile_id' => $order->profile_id,

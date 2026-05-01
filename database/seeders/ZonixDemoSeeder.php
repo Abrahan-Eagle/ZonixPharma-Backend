@@ -92,7 +92,7 @@ use Illuminate\Support\Facades\Hash;
  * - Review: buyer → Commerce y buyer → DeliveryAgent en órdenes delivered.
  * - Dispute: buyer → commerce (orden delivered/cancelled).
  * - DeliveryPayment: por OrderDelivery (pago al motorizado).
- * - ChatMessage: órdenes delivered (customer + restaurant + delivery_agent).
+ * - ChatMessage: órdenes delivered (customer + commerce vía sender_type legacy `restaurant` + delivery_agent).
  * - Admin: perfil + documentos; gestión vía APIs admin (usuarios, disputas, etc.).
  * - Notificaciones: perfiles buyer 1, commerce 6, cada DeliveryAgent, delivery_company 16.
  *
@@ -228,11 +228,11 @@ class ZonixDemoSeeder extends Seeder
         $this->operatorCodeId = (int) $defaultOperator->id;
 
         $categories = [
-            ['name' => 'Arepas', 'description' => 'Arepas venezolanas'],
-            ['name' => 'Pizzas', 'description' => 'Pizzas artesanales'],
-            ['name' => 'Hamburguesas', 'description' => 'Hamburguesas'],
-            ['name' => 'Comida Criolla', 'description' => 'Platos típicos'],
-            ['name' => 'Bebidas', 'description' => 'Jugos y refrescos'],
+            ['name' => 'Analgésicos y antiinflamatorios', 'description' => 'Alivio del dolor y fiebre'],
+            ['name' => 'Antialérgicos', 'description' => 'Alergias y resfriado'],
+            ['name' => 'Vitaminas y suplementos', 'description' => 'Bienestar general'],
+            ['name' => 'Cuidado personal', 'description' => 'Higiene y dermocosmética'],
+            ['name' => 'Primera ayuda', 'description' => 'Vendajes y antisépticos'],
         ];
         foreach ($categories as $cat) {
             $c = Category::updateOrCreate(['name' => $cat['name']], $cat);
@@ -240,12 +240,12 @@ class ZonixDemoSeeder extends Seeder
         }
 
         $types = [
-            ['name' => 'Restaurant', 'icon' => 'restaurant', 'description' => 'Restaurantes'],
-            ['name' => 'Comida Rápida', 'icon' => 'fastfood', 'description' => 'Comida rápida'],
-            ['name' => 'Pizzería', 'icon' => 'local_pizza', 'description' => 'Pizzerías'],
-            ['name' => 'Cafetería', 'icon' => 'coffee', 'description' => 'Cafeterías'],
-            ['name' => 'Panadería', 'icon' => 'bakery_dining', 'description' => 'Panaderías'],
-            ['name' => 'Sushi Bar', 'icon' => 'restaurant', 'description' => 'Sushi y comida japonesa'],
+            ['name' => 'Farmacia', 'icon' => 'local_pharmacy', 'description' => 'Farmacias y droguerías'],
+            ['name' => 'Droguería', 'icon' => 'local_pharmacy', 'description' => 'Droguerías'],
+            ['name' => 'Boticario', 'icon' => 'local_pharmacy', 'description' => 'Boticas tradicionales'],
+            ['name' => 'Farmacia 24h', 'icon' => 'local_pharmacy', 'description' => 'Farmacia horario extendido'],
+            ['name' => 'Ortopedia', 'icon' => 'accessibility', 'description' => 'Ayudas técnicas'],
+            ['name' => 'Óptica', 'icon' => 'visibility', 'description' => 'Salud visual'],
         ];
         foreach ($types as $t) {
             $bt = BusinessType::updateOrCreate(['name' => $t['name']], $t);
@@ -717,11 +717,11 @@ class ZonixDemoSeeder extends Seeder
     {
         $commerces = [];
         $zonas = self::ZONAS;
-        $types = ['Restaurant', 'Pizzería', 'Cafetería', 'Panadería', 'Comida Rápida', 'Sushi Bar', 'Restaurant', 'Comida Rápida', 'Restaurant', 'Cafetería'];
+        $types = ['Farmacia', 'Droguería', 'Farmacia 24h', 'Boticario', 'Farmacia', 'Óptica', 'Droguería', 'Farmacia', 'Ortopedia', 'Farmacia'];
         $names = [
-            'Restaurante El Socorro Grill', 'Pizzería Los Chorritos', 'Café Bella Florida', 'Panadería Mayorista',
-            'Comedor San Diego Express', 'Sushi San Diego', 'Restaurante Santa Rosa', 'Arepera El Socorro',
-            'Parrilla Los Chorritos', 'Cafetería Bella Florida',
+            'Farmacia El Socorro', 'Droguería Los Chorritos', 'Farmacia 24h Bella Florida', 'Botica Mayorista',
+            'Farmacia San Diego', 'Óptica San Diego', 'Farmacia Santa Rosa', 'Droguería El Socorro',
+            'Ortopedia Los Chorritos', 'Farmacia Bella Florida',
         ];
         foreach ($users['commerce'] as $i => $profile) {
             $zone = $zonas[$i % count($zonas)];
@@ -1276,11 +1276,9 @@ class ZonixDemoSeeder extends Seeder
     private function seedReviews(): void
     {
         $commerceComments = [
-            5 => 'Excelente comida, la mejor de Valencia.',
-            4 => 'Buena comida, pedido correcto.',
-            3 => 'Regular, la comida llegó tibia.',
-            5 => '10/10, sabor y presentación impecables.',
-            4 => 'Buena relación calidad-precio.',
+            5 => 'Excelente atención farmacéutica y productos en buen estado.',
+            4 => 'Buen servicio; pedido correcto y embalaje adecuado.',
+            3 => 'Regular: hubo demora en el despacho.',
         ];
         $deliveryComments = [
             5 => 'Llegó súper rápido, muy amable.',
@@ -1594,10 +1592,10 @@ class ZonixDemoSeeder extends Seeder
 
         // Comprador (Abrahan): notificaciones variadas para pantalla "Hoy" / "Ayer"
         $buyerItems = [
-            ['title' => 'Pedido entregado', 'body' => '¡Buen provecho! Tu pedido de Burger King ha llegado a su destino.', 'type' => 'order', 'at' => $today, 'read' => true],
-            ['title' => 'Promoción activa: 30% OFF', 'body' => 'Disfruta de un descuento exclusivo en restaurantes seleccionados solo por hoy.', 'type' => 'promotion', 'at' => $today, 'read' => false],
+            ['title' => 'Pedido entregado', 'body' => 'Tu pedido de Farmacia El Socorro ha llegado a su destino.', 'type' => 'order', 'at' => $today, 'read' => true],
+            ['title' => 'Promoción activa: 30% OFF', 'body' => 'Descuento exclusivo en farmacias seleccionadas solo por hoy.', 'type' => 'promotion', 'at' => $today, 'read' => false],
             ['title' => 'Nuevos Zonix Points', 'body' => '¡Felicidades! Has ganado 150 puntos por tu última compra. ¡Canjéalos pronto!', 'type' => 'points', 'at' => $today, 'read' => true],
-            ['title' => 'Pedido confirmado', 'body' => 'Pizzería Napoli ha recibido tu pedido y ya está en preparación.', 'type' => 'order', 'at' => $yesterday, 'read' => true],
+            ['title' => 'Pedido confirmado', 'body' => 'Farmacia demo ha recibido tu pedido y ya está en preparación.', 'type' => 'order', 'at' => $yesterday, 'read' => true],
             ['title' => 'Consulta resuelta', 'body' => 'Tu solicitud de soporte #8821 ha sido finalizada con éxito.', 'type' => 'support', 'at' => $yesterday, 'read' => true],
             ['title' => 'Tu pedido está en camino', 'body' => 'Tu pedido está en camino. Llegará en unos 15 min.', 'type' => 'order', 'at' => $today->copy()->subHours(1), 'read' => false],
             ['title' => '20% en tu próxima orden', 'body' => 'Usa el código ZONIX20 en tu próximo pedido.', 'type' => 'promotion', 'at' => $yesterday, 'read' => true],
@@ -1715,7 +1713,7 @@ class ZonixDemoSeeder extends Seeder
         }
     }
 
-    /** Mensajes de chat en órdenes entregadas (cliente, restaurante, repartidor). */
+    /** Mensajes de chat en órdenes entregadas (cliente, farmacia vía sender_type legacy `restaurant`, repartidor). */
     private function seedChatMessages(): void
     {
         $orders = Order::with(['profile', 'commerce', 'orderDelivery.agent'])

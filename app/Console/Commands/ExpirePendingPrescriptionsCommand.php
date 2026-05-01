@@ -30,7 +30,11 @@ class ExpirePendingPrescriptionsCommand extends Command
     {
         $ttl = (int) config('zonix.pharma.prescription_validation_ttl_minutes', 0);
         if ($ttl <= 0) {
-            $this->info('TTL de recetas en 0; nada que hacer.');
+            Log::warning('zonix_expire_pending_prescriptions_skipped', [
+                'reason' => 'prescription_validation_ttl_minutes <= 0',
+                'hint' => 'Sin TTL no se asigna expires_at al subir recetas; este comando no caduca recetas por tiempo.',
+            ]);
+            $this->warn('TTL de validación de recetas desactivado (<=0): no se caducan recetas por tiempo. Ver config zonix.pharma.prescription_validation_ttl_minutes.');
 
             return self::SUCCESS;
         }

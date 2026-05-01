@@ -247,4 +247,30 @@ class SearchControllerTest extends TestCase
             ->assertJsonPath('success', true)
             ->assertJsonCount(1, 'data.products');
     }
+
+    public function test_search_products_finds_by_active_ingredient(): void
+    {
+        $user = User::factory()->create(['role' => 'users']);
+        Profile::factory()->create(['user_id' => $user->id]);
+        Sanctum::actingAs($user);
+
+        $owner = Profile::factory()->create();
+        $commerce = Commerce::factory()->create([
+            'profile_id' => $owner->id,
+            'open' => true,
+            'status' => 'approved',
+        ]);
+        Product::factory()->create([
+            'commerce_id' => $commerce->id,
+            'name' => 'Antialérgico X',
+            'active_ingredient' => 'loratadina',
+            'available' => true,
+        ]);
+
+        $response = $this->getJson('/api/buyer/search/products?search=loratadina&commerce_id='.$commerce->id);
+
+        $response->assertStatus(200)
+            ->assertJsonPath('success', true)
+            ->assertJsonCount(1, 'data.products');
+    }
 }

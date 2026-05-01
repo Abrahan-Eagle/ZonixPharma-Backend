@@ -86,6 +86,43 @@ class PrescriptionFlowTest extends TestCase
         );
     }
 
+    public function test_second_prescription_upload_while_pending_returns_409(): void
+    {
+        Storage::fake('local');
+
+        [$buyer, $buyerProfile] = $this->makeBuyer();
+        $commerce = Commerce::factory()->withProfile()->create([
+            'open' => true,
+            'status' => 'approved',
+        ]);
+
+        $order = Order::create([
+            'profile_id' => $buyerProfile->id,
+            'commerce_id' => $commerce->id,
+            'delivery_type' => 'pickup',
+            'status' => Order::STATUS_PENDING_PRESCRIPTION,
+            'requires_prescription' => true,
+            'total' => 25.00,
+            'delivery_fee' => 0,
+        ]);
+
+        Sanctum::actingAs($buyer);
+        $payload = [
+            'order_id' => $order->id,
+            'prescribing_doctor_name' => 'Dr. Primera',
+            'prescription_type' => Prescription::TYPE_COMMON,
+            'image' => UploadedFile::fake()->image('rx1.jpg'),
+        ];
+        $this->postJson('/api/buyer/prescriptions', $payload)->assertStatus(201);
+
+        $this->postJson('/api/buyer/prescriptions', [
+            'order_id' => $order->id,
+            'prescribing_doctor_name' => 'Dr. Segunda',
+            'prescription_type' => Prescription::TYPE_COMMON,
+            'image' => UploadedFile::fake()->image('rx2.jpg'),
+        ])->assertStatus(409);
+    }
+
     public function test_pharmacist_rejects_prescription_cancels_order(): void
     {
         Storage::fake('local');
