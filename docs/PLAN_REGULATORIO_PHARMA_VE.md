@@ -80,6 +80,21 @@ Resumen legal:
 - Consentimiento explícito del paciente al subir información médica
   (checkbox en onboarding y en pantalla de upload).
 
+### 5.1 Auditoría puntual · implementación vs §5 (abril 2026)
+
+Revisión técnica no legal: estado del código y configuración frente a los requisitos del §5.
+
+| Requisito (§5) | Estado | Evidencia / notas |
+| ---------------- | ------ | ----------------- |
+| Acceso limitado (paciente) | **Cumple** | Buyer: `PrescriptionController` filtra por `patient_profile_id` del perfil autenticado (`index`, `show`, `destroy`). |
+| Acceso limitado (farmacéutico despachador) | **Cumple** | `Pharmacist/PrescriptionController`: `canAccess` acota por `commerce_id` vinculado al farmacéutico (`commerceIdsForPharmacist`). Rutas con `role:pharmacist`. |
+| Cifrado en disco (recetas) | **Brecha** | Archivos en `Storage::disk('local')` → `prescriptions/` (`PrescriptionController::store`). No hay capa explícita de cifrado de blobs sensibles documentada en servicio; depender de cifrado del volumen del servidor (LUKS / cloud disk encryption) es decisión de ops, no sustituto de política app-level si el plan exige “cifrado en disco” como requisito de producto. **Pendiente:** política `FILESYSTEM_DISK` + SSE-KMS o paquete de cifrado por archivo para objetos de receta. |
+| Retención limitada (p. ej. 90 días post-cierre) | **Parcial** | TTL de validación en `config/zonix.php` (`prescription_validation_ttl_minutes`); expiración de pedido pendiente. **No verificado en esta auditoría:** job de purga de archivos `image_url` / filas `prescriptions` tras N días del cierre de orden. Documentar e implementar si aplica Ley 2025. |
+| Audit log de accesos a datos de salud | **Parcial / no mapeado** | Eventos de negocio (`PrescriptionUploaded`, etc.) y logs Laravel. **Pendiente:** trazabilidad inmutable (quién abrió qué receta, cuándo) si el compliance lo exige explícitamente. |
+| Consentimiento explícito (checkbox) | **Requiere verificación UX** | Backend asume solicitud validada; confirmar en Flutter onboarding + `PrescriptionUploadPage` textos legales enlazados a política. |
+
+**Conclusión:** el **control de acceso por rol y perfil** está alineado con §5. Las mayores brechas son **cifrado explícito de adjuntos**, **retención/purga documentada** y **audit trail de acceso** granular. Priorizar antes de go-live con asesoría legal/DPO.
+
 ## 6. Facturación y SENIAT
 
 - Cada farmacia aliada emite su propia factura digital al paciente

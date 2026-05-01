@@ -49,10 +49,10 @@ Variables CSS en `[public/css/zonix.css](../public/css/zonix.css)`.
 - Cuerpo: 14–16 px, line-height 1.4–1.5.
 - Encabezados: weights 700–900.
 
-## 4. Iconografía
+## 4. Iconografía y densidad
 
-- 24 px grid.
-- Esquinas alineadas con la rounded square del app icon.
+- **Grid base 24 px** (tamaño táctil estándar): iconos de barra, listas y acciones primarias en múltiplos de 24 (24, 48…) salvo micro-iconos de estado (16) con área táctil mínima 48 px si son clicables.
+- **Esquinas:** usar el mismo radio de “rounded square” que el **adaptive icon / launcher** de la app (configurado en `flutter_launcher_icons` y `mipmap` Android / `AppIcon` iOS). En UI interna, alinear `BorderRadius` de cards/botones con esa familia de radios (p. ej. 12 / 16 px lógicos en Flutter si el icono de tienda usa ~22% del lado del icono — ajustar al asset final exportado).
 - Estilo de línea limpio (Material Symbols Outlined).
 - Para iconos de productos farmacéuticos preferir Material Symbols:
   `local_pharmacy`, `medication`, `medication_liquid`, `vaccines`, `health_and_safety`,
@@ -61,8 +61,22 @@ Variables CSS en `[public/css/zonix.css](../public/css/zonix.css)`.
 ## 5. Modo oscuro
 
 - Base `#142033`, texto claro, acentos `#56C7B8` / `#A8DCCB`.
-- Verificar contraste 4.5:1 en texto y 3:1 en iconos.
-- AppBar dark: usa el mismo color que el canvas para fundir, sin elevación.
+- AppBar dark: mismo color que el canvas para fundir, sin elevación artificial.
+
+### Checklist WCAG (modo oscuro · referencia rápida)
+
+Ejecutar sobre `app_theme.dart` (dark) y pantallas críticas: checkout, subida de receta, validación farmacéutico, login.
+
+| Comprobación | Criterio (orientativo) | Notas |
+| ------------ | ---------------------- | ----- |
+| Texto normal / fondo `#142033` | Contraste ≥ **4.5:1** (WCAG 2.1 AA) | Probar `onSurface` / `bodyLarge` vs `brandSurfaceDark`. |
+| Texto grande (≥18 pt regular o ≥14 pt bold) | ≥ **3:1** si se aplica como “large text” | Títulos de sección. |
+| Iconos y gráficos informativos | ≥ **3:1** frente al fondo | Iconos `#56C7B8` sobre `#142033`; si falla, aclarar icono o usar `#A8DCCB`. |
+| CTA y enlaces | ≥ **4.5:1** para texto en botón; estado focus visible | `#56C7B8` sobre navy/teal oscuro; evitar solo color para estado (añadir icono o subrayado donde aplique). |
+| `brandMint` (`#A8DCCB`) como texto sobre `#142033` | Verificar por tamaño | Mint claro suele servir para texto secundario; validar con contrast checker. |
+| `brandCtaAccent` (`#F2A65A`) | Uso puntual; verificar contraste si hay texto encima | Preferir texto navy/blanco según fondo del botón. |
+
+Herramientas: WebAIM Contrast Checker, inspección “Color contrast” en DevTools, o `flutter_accessibility_test` / golden tests si se automatiza.
 
 ## 6. Do / Don't
 

@@ -31,6 +31,21 @@ Fecha de migración: **30 abril 2026**.
 | `RestaurantController` y `RestaurantService` | `PharmacyController` y `PharmacyService` (con shim `RestaurantController`/`RestaurantService` deprecado para tests). |
 | Rutas `/api/buyer/restaurants` | `/api/buyer/pharmacies` (alias `/restaurants` se mantiene). |
 
+## Matriz API: canónico (Pharma) vs legacy (Eats)
+
+Uso recomendado para clientes nuevos, OpenAPI y SDK: **siempre la columna “Canónico”**. Los alias existen para apps Eats antiguas y tests de compatibilidad; no añadir nuevos alias sin revisión.
+
+| Ámbito | Canónico (Zonix Pharma) | Legacy / alias (Eats) | Mismo handler / notas |
+| ------ | ------------------------ | ---------------------- | --------------------- |
+| Listado / detalle farmacia (buyer) | `GET /api/buyer/pharmacies`, `GET /api/buyer/pharmacies/{id}` | `GET /api/buyer/restaurants`, `GET /api/buyer/restaurants/{id}` | `PharmacyController` |
+| Búsqueda de establecimientos | `GET /api/buyer/search/pharmacies` | `GET /api/buyer/search/restaurants` | `SearchController::searchRestaurants` (método compartido) |
+| Reviews de comercio | `POST /api/buyer/reviews`, `GET /api/buyer/reviews/{reviewableId}/{reviewableType}`, etc. | `POST /api/buyer/reviews/restaurant`, `GET /api/buyer/reviews/restaurant/{commerceId}` | Genérico vs grupo legacy `buyer/reviews/*` con segmento `restaurant` |
+| Pagos de pedido (subtotal comercio) | En payloads nuevos, interpretar `food_methods` como **“métodos de pago del comercio (farmacia)”** | Claves JSON `food_methods`, `foodPayment`, `type: food` en `order_payments` / validaciones | Legacy Eats: “food” = línea de pago del comercio, no comida. Ver `Buyer/OrderController` (`syncLegacy`, `Order::foodPayment`). |
+| Chat / emisor comercio | — | `sender_type` / valores `restaurant` en seeders o histórico | Semántica histórica; en UI Pharma mostrar “farmacia”. |
+| Deep link storefront | `zonix://pharmacy/{id}` | `zonix://restaurant/{id}` | Parser Flutter documentado (`storefront_qr_parser`) |
+
+**Deprecación futura (opcional):** cuando no queden clientes Eats, exponer `Sunset` / `Deprecation` HTTP en rutas `*restaurant*` y retirar alias en versión mayor de API.
+
 ## Qué se eliminó
 
 - Modelos `ProductExtra` y `ProductPreference` (extras tipo "Extra Queso" no aplican a fármacos).

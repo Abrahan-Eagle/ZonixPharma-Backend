@@ -7,6 +7,13 @@
 
 ## Última actualización de contexto
 
+- **Fecha:** 30 abril 2026 (auditoría segunda pasada — implementación en código)
+- **Resumen breve:** Gobernanza Jarvis: marca canónica en `AGENTS.md` + `.cursorrules` remiten a `BRAND_ZONIX_PHARMA.md`; matriz API canónico/legacy en `MIGRACION_EATS_PHARMA.md`; BRAND ampliado (grid 24px, esquinas, checklist WCAG dark); auditoría datos sensibles §5.1 en `PLAN_REGULATORIO_PHARMA_VE.md`; CI documentado en `AGENTS.md` y workflow Flutter en `ZonixPharma-Front/.github/workflows/ci.yml`. Políticas Pharma en `Buyer/OrderController@store` (`block_rx_without_prescription` default false, cupón solo OTC cuando `disallow_promotions_on_rx`, bloqueo delivery + cold chain), idempotencia de subida de receta (409 si hay receta activa), `Buyer/PrescriptionController` solo en `pending_prescription_validation`, TTL≤0 documentado + warning en log/comando, evento `PaymentProofUploaded` al subir comprobante, fingerprint idempotencia órdenes con `prescription_id`, tests Order/Prescription/Search ampliados. Flutter: `OrderConfirmationPage` (rama Rx), checkout cadena de frío + chips Rx, `cart_service` legacy → `fromJson`, modelos `Restaurant` pharma, `Order` getters `commerce*`, `MedicineLot` fecha opcional, `Product.pharmaSummary` con `dosageForm`, copy onboarding/ratings/QR, mounted/Pusher en farmacéutico. Docs: `PLAN_RX_VALIDATION.md`, `TECH_DEBT.md` (Firebase/keystore).
+
+---
+
+## Última actualización de contexto (histórico)
+
 - **Fecha:** 30 abril 2026 (segunda sesión, remediación post-migración)
 - **Resumen:** **Remediación completa post-migración Eats → Pharma** sobre la base ya migrada. Forense detectó errores reales (compilación Flutter rota por campos de Product eliminados, enum `users.role` sin `pharmacist`, checkout buyer ignorando flujo Rx, autorización Pusher excluyendo farmacéutico, TTL recetas sin schedule, migración legacy que recortaba el enum de orders, formularios de producto sin campos farmacéuticos, MainRouter sin shell pharmacist) y se corrigió todo. Detalle por bloques:
   - **A1**: `product_detail_page.dart` reescrito con sección Pharma (badges Rx / cadena de frío / controlado, bloque "Información farmacéutica" con principio activo, presentación, INHRR, etc.). `products_page.dart` ya no usa `preparationTime`. Test legacy `client_products_page_test.dart` reescrito con productos OTC + Rx demo.

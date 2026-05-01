@@ -10,6 +10,16 @@
 
 ---
 
+## Brand y experiencia (fuente canónica)
+
+**Nombre en UI:** Zonix Pharma (no variantes coloquiales). **Producto:** marketplace farmacéutico digital del ecosistema Zonix (vertical **Pharma**, no Eats).
+
+**Identidad visual:** símbolo Z geométrico (zona superior marina + diagonal + base teal con nodo), wordmark en negrita + **PHARMA** en mayúsculas teal con tracking amplio. **Paleta y principios UX** (tech-pharma, legibilidad móvil, sin clichés médicos ruidosos, no mezclar claims/assets de Zonix Eats en pantallas Pharma): todo el detalle, tokens, do/don’t, grid de iconos y checklist de contraste en **[docs/BRAND_ZONIX_PHARMA.md](docs/BRAND_ZONIX_PHARMA.md)**.
+
+`.cursorrules` remite aquí: no mantener un segundo párrafo de marca duplicado fuera de BRAND + esta sección.
+
+---
+
 ## Project Overview
 
 | Métrica | Valor |
@@ -68,6 +78,17 @@ php artisan test
 
 ---
 
+## CI y quality gates
+
+| Repo | Workflow / comando | Qué valida |
+| ---- | ------------------- | ---------- |
+| **Backend** | [`.github/workflows/ci.yml`](.github/workflows/ci.yml) en push/PR a `main`, `develop`, `dev` | Laravel Pint (`./vendor/bin/pint --test`) y `php artisan test --parallel` tras `composer install` y `php artisan key:generate`. |
+| **Frontend** | [`.github/workflows/ci.yml`](../ZonixPharma-Front/.github/workflows/ci.yml) o local | `flutter pub get`, `flutter analyze --no-fatal-infos` (el job falla con error/warning; infos heredados se van cerrando), `flutter test`. |
+
+**Umbral recomendado (PRs Pharma):** backend en verde según CI; Flutter: no introducir **warnings** nuevos; objetivo final **cero infos** en `lib/features/screens/**`. Nuevas pantallas: sin `Color(0x…)` ni `Colors.*` fuera de `AppColors` / `Theme` (ver `.cursorrules`).
+
+---
+
 ## Roles y rutas (Pharma)
 
 | Rol | Prefijo principal | Notas |
@@ -85,7 +106,7 @@ php artisan test
 
 Configurables en `config/zonix.php` (sección `pharma`):
 
-- `block_rx_without_prescription` (default true): el checkout falla si el carrito tiene productos `requires_prescription` y no hay receta aprobada.
+- `block_rx_without_prescription` (default **false**, opt-in `true`): en modo estricto el checkout exige `prescription_id` aprobada; en default el pedido entra en `pending_prescription_validation` sin receta previa.
 - `prescription_validation_ttl_minutes` (default 60): TTL de receta pendiente; al vencer cancela el pedido.
 - `disallow_promotions_on_rx` (default true): no aplicar descuentos a líneas Rx.
 - `require_cold_chain_handling` (default true): `cold_chain = true` restringe modos de delivery.
