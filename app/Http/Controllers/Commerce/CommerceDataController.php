@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Commerce;
 
 use App\Http\Controllers\Controller;
+use App\Models\Commerce;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
@@ -11,8 +13,9 @@ class CommerceDataController extends Controller
 {
     /**
      * Resolver el comercio: por commerce_id (query/header) o principal.
+     * Si se envía commerce_id y no pertenece al perfil, responde 403 (sin fallback al comercio principal).
      */
-    protected function resolveCommerce(Request $request): ?\App\Models\Commerce
+    protected function resolveCommerce(Request $request): Commerce|JsonResponse|null
     {
         $profile = Auth::user()->profile;
         if (! $profile) {
@@ -21,8 +24,14 @@ class CommerceDataController extends Controller
         $commerceId = $request->query('commerce_id') ?? $request->header('X-Commerce-Id') ?? $request->input('commerce_id');
         if ($commerceId) {
             $commerce = $profile->commerces()->find($commerceId);
+            if (! $commerce) {
+                return response()->json([
+                    'success' => false,
+                    'message' => 'No autorizado para operar esta farmacia o el identificador no existe.',
+                ], 403);
+            }
 
-            return $commerce ?? $profile->getPrimaryCommerce();
+            return $commerce;
         }
 
         return $profile->getPrimaryCommerce();
@@ -35,6 +44,9 @@ class CommerceDataController extends Controller
     public function show(Request $request)
     {
         $commerce = $this->resolveCommerce($request);
+        if ($commerce instanceof JsonResponse) {
+            return $commerce;
+        }
         if (! $commerce) {
             return response()->json([
                 'success' => false,
@@ -55,6 +67,9 @@ class CommerceDataController extends Controller
     public function update(Request $request)
     {
         $commerce = $this->resolveCommerce($request);
+        if ($commerce instanceof JsonResponse) {
+            return $commerce;
+        }
         if (! $commerce) {
             return response()->json([
                 'success' => false,
@@ -95,6 +110,9 @@ class CommerceDataController extends Controller
         ]);
 
         $commerce = $this->resolveCommerce($request);
+        if ($commerce instanceof JsonResponse) {
+            return $commerce;
+        }
         if (! $commerce) {
             return response()->json([
                 'success' => false,

@@ -456,7 +456,7 @@ class ReportController extends Controller
 
             return response()->json([
                 'success' => false,
-                'message' => 'Error enviando notificación: '.$e->getMessage(),
+                'message' => 'Error interno al enviar la notificación.',
             ], 500);
         }
     }

@@ -178,10 +178,17 @@ class AuthController extends Controller
                 ],
             ], 200);
         } catch (\Throwable $th) {
-            // Manejo de errores en caso de excepciones
-            return response()->json([
-                'status' => false,
+            Log::error('google_auth_failed', [
+                'exception' => get_class($th),
                 'message' => $th->getMessage(),
+                'file' => $th->getFile(),
+                'line' => $th->getLine(),
+            ]);
+
+            return response()->json([
+                'success' => false,
+                'message' => 'No se pudo completar el inicio de sesión con Google. Intente de nuevo.',
+                'data' => null,
             ], 500);
         }
     }

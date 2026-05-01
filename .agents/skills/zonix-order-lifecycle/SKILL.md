@@ -2,7 +2,7 @@
 name: zonix-order-lifecycle
 description: Ciclo de vida completo de órdenes en Zonix Eats. Estados, transiciones válidas, reglas de cancelación, penalidades, y eventos.
 trigger: Cuando se trabaje con órdenes, cambios de estado, cancelaciones, tracking de pedidos, o lógica de flujo de compra.
-scope: app/Models/Order.php, app/Http/Controllers/Commerce/OrderController.php, app/Http/Controllers/Delivery/OrderController.php, app/Http/Controllers/Buyer/OrderController.php
+scope: app/Models/Order.php, app/Http/Controllers/Commerce/OrderController.php, app/Http/Controllers/Delivery/DeliveryController.php, app/Http/Controllers/Buyer/OrderController.php
 author: Zonix Team
 version: 2.0
 ---

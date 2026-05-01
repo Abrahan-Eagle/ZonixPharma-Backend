@@ -382,6 +382,41 @@ class ReviewController extends Controller
             );
         }
 
+        $profileId = auth()->user()?->profile?->id;
+        if (! $profileId) {
+            return $this->errorResponse(
+                'Debes iniciar sesión',
+                'UNAUTHENTICATED',
+                401
+            );
+        }
+
+        if (! $review->order_id) {
+            return $this->errorResponse(
+                'No se puede reportar esta reseña.',
+                'REVIEWS_REPORT_NOT_ALLOWED',
+                403
+            );
+        }
+
+        $isOrderBuyer = Order::where('id', $review->order_id)
+            ->where('profile_id', $profileId)
+            ->exists();
+
+        $hasCommerceRelation = $review->reviewable_type === 'App\\Models\\Commerce'
+            && Order::where('profile_id', $profileId)
+                ->where('commerce_id', $review->reviewable_id)
+                ->where('status', 'delivered')
+                ->exists();
+
+        if (! $isOrderBuyer && ! $hasCommerceRelation) {
+            return $this->errorResponse(
+                'No autorizado para reportar esta reseña.',
+                'REVIEWS_FORBIDDEN',
+                403
+            );
+        }
+
         $updatePayload = [];
         if (Schema::hasColumn('reviews', 'moderation_status')) {
             $updatePayload['moderation_status'] = 'reported';

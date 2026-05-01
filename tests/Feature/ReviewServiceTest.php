@@ -370,6 +370,15 @@ class ReviewServiceTest extends TestCase
             'notes' => 'Order for report',
         ]);
 
+        Order::create([
+            'profile_id' => $reporterProfile->id,
+            'commerce_id' => $commerce->id,
+            'delivery_type' => 'pickup',
+            'status' => 'delivered',
+            'total' => 25.00,
+            'notes' => 'Reporter prior order same pharmacy',
+        ]);
+
         $review = Review::create([
             'profile_id' => $authorProfile->id,
             'order_id' => $order->id,

@@ -7,7 +7,9 @@ use Illuminate\Auth\AuthenticationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Validation\ValidationException;
+use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
 use Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Throwable;
@@ -41,7 +43,7 @@ class Handler extends ExceptionHandler
         if ($e instanceof ValidationException) {
             return response()->json([
                 'success' => false,
-                'message' => $e->getMessage(),
+                'message' => 'Los datos proporcionados no son válidos.',
                 'errors' => $e->errors(),
             ], 422);
         }
@@ -84,14 +86,35 @@ class Handler extends ExceptionHandler
             ], 401);
         }
 
-        $status = method_exists($e, 'getStatusCode') ? $e->getStatusCode() : 500;
+        $status = method_exists($e, 'getStatusCode') ? (int) $e->getStatusCode() : 500;
+        if ($status < 100 || $status > 599) {
+            $status = 500;
+        }
+
+        Log::error('[API] '.$e->getMessage(), [
+            'exception' => get_class($e),
+            'file' => $e->getFile(),
+            'line' => $e->getLine(),
+            'url' => $request->fullUrl(),
+        ]);
+
+        $debug = config('app.debug');
+        if ($debug) {
+            $clientMessage = $e->getMessage();
+        } elseif ($status >= 500) {
+            $clientMessage = 'Error interno del servidor.';
+        } elseif ($e instanceof HttpExceptionInterface && $e->getMessage() !== '') {
+            $clientMessage = $e->getMessage();
+        } else {
+            $clientMessage = 'No se pudo procesar la solicitud.';
+        }
 
         $response = [
             'success' => false,
-            'message' => $status >= 500 ? 'Error interno del servidor.' : $e->getMessage(),
+            'message' => $clientMessage,
         ];
 
-        if (config('app.debug')) {
+        if ($debug) {
             $response['debug'] = [
                 'exception' => get_class($e),
                 'message' => $e->getMessage(),
