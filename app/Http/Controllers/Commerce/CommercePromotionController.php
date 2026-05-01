@@ -116,7 +116,7 @@ class CommercePromotionController extends Controller
      *
      * @param  int  $id
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, string|int $id)
     {
         $promotion = Promotion::findOrFail($id);
         $user = Auth::user();
@@ -172,7 +172,7 @@ class CommercePromotionController extends Controller
      *
      * @param  int  $id
      */
-    public function destroy($id)
+    public function destroy(string|int $id)
     {
         $promotion = Promotion::findOrFail($id);
         $user = Auth::user();
@@ -192,7 +192,7 @@ class CommercePromotionController extends Controller
      *
      * @param  int  $id
      */
-    public function toggle($id)
+    public function toggle(string|int $id)
     {
         $promotion = Promotion::findOrFail($id);
         $user = Auth::user();

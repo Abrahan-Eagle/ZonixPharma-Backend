@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -10,11 +11,17 @@ class Order extends Model
     use HasFactory;
 
     public const STATUS_PENDING_PRESCRIPTION = 'pending_prescription_validation';
+
     public const STATUS_PENDING_PAYMENT = 'pending_payment';
+
     public const STATUS_PAID = 'paid';
+
     public const STATUS_PROCESSING = 'processing';
+
     public const STATUS_SHIPPED = 'shipped';
+
     public const STATUS_DELIVERED = 'delivered';
+
     public const STATUS_CANCELLED = 'cancelled';
 
     protected $fillable = [
@@ -108,7 +115,7 @@ class Order extends Model
     public function products()
     {
         return $this->belongsToMany(Product::class, 'order_items')
-            ->withPivot('quantity', 'unit_price')
+            ->withPivot(['quantity', 'unit_price'])
             ->withTimestamps();
     }
 
@@ -215,6 +222,7 @@ class Order extends Model
         if ($this->requires_prescription) {
             return $this->prescription_validated_at === null;
         }
+
         return $this->orderItems()
             ->whereHas('product', fn ($q) => $q->where('requires_prescription', true))
             ->exists();
@@ -259,7 +267,7 @@ class Order extends Model
      * Sin comprobante a la espera de decisión del comercio: ni columnas legacy en `orders` ni filas en `order_payments`.
      * Usado por el comando de expiración cuando `skip_if_proof_pending` está activo.
      */
-    public function scopeWithoutAwaitingProofValidation($query)
+    public function scopeWithoutAwaitingProofValidation(Builder $query): Builder
     {
         return $query
             ->where(function ($legacy) {
@@ -274,7 +282,7 @@ class Order extends Model
     /**
      * Reglas de vencimiento por TTL para órdenes pending_payment (edad desde creación y/o desde approved_for_payment_at).
      */
-    public function scopeWherePendingPaymentTtlExceeded($query, int $maxAgeMinutes, int $afterApprovalMinutes)
+    public function scopeWherePendingPaymentTtlExceeded(Builder $query, int $maxAgeMinutes, int $afterApprovalMinutes): Builder
     {
         return $query->where(function ($q) use ($maxAgeMinutes, $afterApprovalMinutes) {
             if ($maxAgeMinutes > 0 && $afterApprovalMinutes > 0) {

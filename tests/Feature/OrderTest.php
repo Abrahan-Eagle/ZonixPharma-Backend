@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Events\PaymentProofUploaded;
 use App\Models\Commerce;
 use App\Models\Coupon;
 use App\Models\OperatorCode;
@@ -16,7 +17,6 @@ use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Storage;
-use App\Events\PaymentProofUploaded;
 use Tests\TestCase;
 
 class OrderTest extends TestCase

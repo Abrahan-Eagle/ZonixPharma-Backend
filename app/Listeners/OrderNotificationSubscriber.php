@@ -50,20 +50,13 @@ class OrderNotificationSubscriber
         $profileId = $order->profile_id;
 
         $messages = [
-            'pending_prescription_validation' =>
-                'Tu pedido contiene medicamentos con receta. El farmacéutico la validará en breve.',
-            'pending_payment' =>
-                'Tu pedido está listo para pagar. Sube el comprobante para continuar.',
-            'paid' =>
-                'Tu pago fue confirmado. La farmacia preparará tu pedido.',
-            'processing' =>
-                'La farmacia está preparando tu pedido.',
-            'shipped' =>
-                'Tu pedido va en camino.',
-            'delivered' =>
-                'Pedido entregado. Cuídate mucho y sigue las indicaciones.',
-            'cancelled' =>
-                'Tu pedido ha sido cancelado.',
+            'pending_prescription_validation' => 'Tu pedido contiene medicamentos con receta. El farmacéutico la validará en breve.',
+            'pending_payment' => 'Tu pedido está listo para pagar. Sube el comprobante para continuar.',
+            'paid' => 'Tu pago fue confirmado. La farmacia preparará tu pedido.',
+            'processing' => 'La farmacia está preparando tu pedido.',
+            'shipped' => 'Tu pedido va en camino.',
+            'delivered' => 'Pedido entregado. Cuídate mucho y sigue las indicaciones.',
+            'cancelled' => 'Tu pedido ha sido cancelado.',
         ];
 
         Log::debug('OrderNotificationSubscriber: OrderStatusChanged', [

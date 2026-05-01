@@ -17,7 +17,7 @@ class OrderTrackingController extends Controller
     /**
      * Obtener estado actual del pedido
      */
-    public function getOrderStatus($orderId): JsonResponse
+    public function getOrderStatus(string|int $orderId): JsonResponse
     {
         try {
             $profileId = auth()->user()?->profile?->id;
@@ -54,7 +54,7 @@ class OrderTrackingController extends Controller
                     ],
                 ] : null,
                 'order_details' => [
-                    'total_items' => $order->items->count(),
+                    'total_items' => $order->items()->count(),
                     'total_amount' => (float) $order->total,
                     'delivery_address' => $order->delivery_address,
                     'special_instructions' => $order->notes ?? '',
@@ -80,7 +80,7 @@ class OrderTrackingController extends Controller
      * Datos completos del repartidor para la vista "Detalle del Repartidor".
      * Incluye: foto, nombre, rating real, verified, entregas, años, puntualidad, vehículo, reseñas.
      */
-    public function getDeliveryAgentLocation($orderId): JsonResponse
+    public function getDeliveryAgentLocation(string|int $orderId): JsonResponse
     {
         try {
             $profileId = auth()->user()?->profile?->id;
@@ -190,7 +190,7 @@ class OrderTrackingController extends Controller
     /**
      * Actualizar estado del pedido (para testing)
      */
-    public function updateOrderStatus(Request $request, $orderId): JsonResponse
+    public function updateOrderStatus(Request $request, string|int $orderId): JsonResponse
     {
         return response()->json([
             'success' => false,

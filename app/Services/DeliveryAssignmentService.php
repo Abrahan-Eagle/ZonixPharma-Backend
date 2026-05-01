@@ -7,7 +7,7 @@ use App\Models\Order;
 
 class DeliveryAssignmentService
 {
-    protected $trackingService;
+    protected TrackingService $trackingService;
 
     public function __construct(TrackingService $trackingService)
     {
@@ -95,12 +95,10 @@ class DeliveryAssignmentService
     /**
      * Obtener delivery agents cercanos a una ubicación.
      *
-     * @param  float  $lat
-     * @param  float  $lng
      * @param  float  $maxDistance  Distancia máxima en km
      * @return \Illuminate\Database\Eloquent\Collection
      */
-    public function getNearbyAgents($lat, $lng, $maxDistance = 10)
+    public function getNearbyAgents(float $lat, float $lng, float $maxDistance = 10)
     {
         $agents = DeliveryAgent::where('working', true)
             ->where('status', 'active')

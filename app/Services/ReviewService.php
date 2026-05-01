@@ -14,10 +14,9 @@ class ReviewService
     /**
      * Crear una nueva calificación.
      *
-     * @param  array  $data
-     * @return array
+     * @param  array<string, mixed>  $data
      */
-    public function createReview($data)
+    public function createReview(array $data): Review
     {
         // Obtener el usuario
         $user = isset($data['user_id']) ? User::find($data['user_id']) : Auth::user();
@@ -106,7 +105,7 @@ class ReviewService
      * @param  int  $userId
      * @return bool
      */
-    public function canUserReview($orderId, $userId)
+    public function canUserReview(string|int $orderId, string|int $userId)
     {
         $profile = Profile::where('user_id', $userId)->first();
 
@@ -195,10 +194,9 @@ class ReviewService
      * Actualizar una calificación existente.
      *
      * @param  int  $reviewId
-     * @param  array  $data
      * @return array
      */
-    public function updateReview($reviewId, $data)
+    public function updateReview(string|int $reviewId, array $data)
     {
         $user = Auth::user();
         $profile = Profile::where('user_id', $user->id)->first();

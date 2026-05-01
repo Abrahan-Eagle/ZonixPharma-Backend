@@ -186,7 +186,7 @@ class DeliveryController extends Controller
     /**
      * Show a single order assigned to the authenticated delivery agent.
      */
-    public function show($id)
+    public function show(string|int $id)
     {
         try {
             $agent = $this->getAuthAgent();
@@ -216,7 +216,7 @@ class DeliveryController extends Controller
     /**
      * Update order status to delivered (only for assigned agent).
      */
-    public function updateStatus(Request $request, $id)
+    public function updateStatus(Request $request, string|int $id)
     {
         try {
             $agent = $this->getAuthAgent();
@@ -298,7 +298,7 @@ class DeliveryController extends Controller
     /**
      * Get orders assigned to delivery agent
      */
-    public function getAssignedOrders($deliveryAgentId)
+    public function getAssignedOrders(string|int $deliveryAgentId)
     {
         try {
             $perPage = max(1, min((int) request()->input('per_page', 15), 100));
@@ -333,7 +333,7 @@ class DeliveryController extends Controller
     /**
      * Accept order for delivery
      */
-    public function acceptOrder(Request $request, $orderId)
+    public function acceptOrder(Request $request, string|int $orderId)
     {
         try {
             $deliveryAgent = $this->getAuthAgent();
@@ -430,7 +430,7 @@ class DeliveryController extends Controller
     /**
      * POST /api/delivery/orders/{orderId}/reject — Rechazar una orden asignada.
      */
-    public function rejectOrder(Request $request, $orderId)
+    public function rejectOrder(Request $request, string|int $orderId)
     {
         try {
             $order = Order::findOrFail($orderId);
@@ -473,7 +473,7 @@ class DeliveryController extends Controller
     /**
      * POST /api/delivery/orders/{orderId}/scan-pickup — Escanear QR de recogida en el comercio.
      */
-    public function scanPickup(Request $request, $orderId, RouteCalculationService $routing)
+    public function scanPickup(Request $request, string|int $orderId, RouteCalculationService $routing)
     {
         try {
             $request->validate(['token' => 'required|string']);
@@ -574,7 +574,7 @@ class DeliveryController extends Controller
     /**
      * POST /api/delivery/orders/{orderId}/scan-delivery — Escanear QR de entrega al buyer.
      */
-    public function scanDelivery(Request $request, $orderId)
+    public function scanDelivery(Request $request, string|int $orderId)
     {
         try {
             $request->validate(['token' => 'required|string']);
@@ -641,7 +641,7 @@ class DeliveryController extends Controller
      * POST /api/delivery/orders/{orderId}/arrived — El agente notifica que llegó al destino.
      * Dispara evento Pusher + notificación FCM al buyer para que muestre el QR de entrega.
      */
-    public function arrived($orderId)
+    public function arrived(string|int $orderId)
     {
         try {
             $order = Order::findOrFail($orderId);
@@ -850,7 +850,7 @@ class DeliveryController extends Controller
     /**
      * Get delivery statistics
      */
-    public function getStatistics($deliveryAgentId)
+    public function getStatistics(string|int $deliveryAgentId)
     {
         try {
             if (! $this->canAccessAgent($deliveryAgentId)) {
@@ -949,7 +949,7 @@ class DeliveryController extends Controller
     /**
      * Report delivery issue
      */
-    public function reportIssue(Request $request, $orderId)
+    public function reportIssue(Request $request, string|int $orderId)
     {
         try {
             $request->validate([
@@ -1003,7 +1003,7 @@ class DeliveryController extends Controller
     /**
      * Get delivery history for a delivery agent
      */
-    public function getHistory($deliveryAgentId, Request $request)
+    public function getHistory(string|int $deliveryAgentId, Request $request)
     {
         try {
             if (! $this->canAccessAgent($deliveryAgentId)) {
@@ -1065,7 +1065,7 @@ class DeliveryController extends Controller
     /**
      * Get delivery earnings for a delivery agent
      */
-    public function getEarnings($deliveryAgentId, Request $request)
+    public function getEarnings(string|int $deliveryAgentId, Request $request)
     {
         try {
             if (! $this->canAccessAgent($deliveryAgentId)) {
@@ -1156,7 +1156,7 @@ class DeliveryController extends Controller
     /**
      * Get delivery routes for a delivery agent
      */
-    public function getRoutes($deliveryAgentId, RouteCalculationService $routing, Request $request)
+    public function getRoutes(string|int $deliveryAgentId, RouteCalculationService $routing, Request $request)
     {
         try {
             $perPage = max(1, min((int) $request->input('per_page', 20), 100));

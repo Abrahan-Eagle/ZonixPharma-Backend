@@ -318,7 +318,7 @@ class PaymentController extends Controller
     /**
      * Refund payment
      */
-    public function refundPayment(Request $request, $transactionId)
+    public function refundPayment(Request $request, string|int $transactionId)
     {
         try {
             $request->validate([

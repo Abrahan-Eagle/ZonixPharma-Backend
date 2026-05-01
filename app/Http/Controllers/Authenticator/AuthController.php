@@ -242,7 +242,7 @@ class AuthController extends Controller
      * Actualizar usuario: completed_onboarding y opcionalmente role (al final del onboarding).
      * Solo el usuario autenticado puede actualizar su propio registro.
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, string|int $id)
     {
         $authUser = $request->user();
         if ((int) $id !== (int) $authUser->id) {

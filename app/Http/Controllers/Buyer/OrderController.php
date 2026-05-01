@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Buyer;
 
 use App\Events\OrderCreated;
 use App\Events\PaymentProofUploaded;
-use App\Events\OrderStatusChanged;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreBuyerOrderRequest;
 use App\Models\Coupon;
@@ -15,10 +14,10 @@ use App\Services\NotificationService;
 use App\Services\OrderService;
 use App\Services\OrderStateMachineService;
 use Illuminate\Http\Request;
-use Illuminate\Validation\ValidationException;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Validation\ValidationException;
 
 /**
  * Controlador para gestionar las órdenes del comprador.
@@ -911,7 +910,7 @@ class OrderController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\JsonResponse
      */
-    public function uploadPaymentProof(Request $request, $id)
+    public function uploadPaymentProof(Request $request, string|int $id)
     {
         try {
             $request->validate([
@@ -1041,7 +1040,7 @@ class OrderController extends Controller
      *
      * @param  int  $id
      */
-    public function uploadComprobante(Request $request, $id)
+    public function uploadComprobante(Request $request, string|int $id)
     {
         return $this->uploadPaymentProof($request, $id);
     }
@@ -1052,7 +1051,7 @@ class OrderController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\JsonResponse
      */
-    public function cancelOrder(Request $request, $id)
+    public function cancelOrder(Request $request, string|int $id)
     {
         try {
             $request->validate([

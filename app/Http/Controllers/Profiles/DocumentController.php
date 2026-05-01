@@ -87,7 +87,7 @@ class DocumentController extends Controller
     /**
      * @param  int  $id  User ID
      */
-    public function show(Request $request, $id)
+    public function show(Request $request, string|int $id)
     {
         $profile = Profile::where('user_id', $id)->firstOrFail();
         if (! $this->canAccessProfile($request, $profile)) {
@@ -111,7 +111,7 @@ class DocumentController extends Controller
     /**
      * @param  int  $id  Document ID
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, string|int $id)
     {
         $document = Document::find($id);
 
@@ -157,7 +157,7 @@ class DocumentController extends Controller
     /**
      * @param  int  $id  Document ID
      */
-    public function destroy(Request $request, $id)
+    public function destroy(Request $request, string|int $id)
     {
         $document = Document::find($id);
 

@@ -187,7 +187,7 @@ class OrderController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\JsonResponse
      */
-    public function validatePayment(Request $request, $id)
+    public function validatePayment(Request $request, string|int $id)
     {
         try {
             $stateMachine = app(OrderStateMachineService::class);
@@ -399,7 +399,7 @@ class OrderController extends Controller
      *
      * @deprecated Usar validatePayment() en su lugar
      */
-    public function validarComprobante(Request $request, $id)
+    public function validarComprobante(Request $request, string|int $id)
     {
         return $this->validatePayment($request, $id);
     }
@@ -412,7 +412,7 @@ class OrderController extends Controller
      * - La orden debe estar en estado pending_payment.
      * - Puede aprobarse aunque el comprador ya haya subido comprobante.
      */
-    public function approveForPayment($id)
+    public function approveForPayment(string|int $id)
     {
         try {
             $order = Order::findOrFail($id);
@@ -472,7 +472,7 @@ class OrderController extends Controller
      * Rechazar (cancelar) una orden en pending_payment.
      * El comercio rechaza la orden cuando no puede atenderla o no hay acuerdo con el cliente.
      */
-    public function rejectOrder(Request $request, $id)
+    public function rejectOrder(Request $request, string|int $id)
     {
         try {
             $validated = $request->validate([
@@ -551,7 +551,7 @@ class OrderController extends Controller
     /**
      * GET /api/commerce/orders/{id}/pickup-qr — QR para que el repartidor escanee al recoger.
      */
-    public function pickupQr($id)
+    public function pickupQr(string|int $id)
     {
         try {
             $order = Order::findOrFail($id);
@@ -597,7 +597,7 @@ class OrderController extends Controller
         }
     }
 
-    private function broadcastPaymentValidated(Order $order, bool $isValidated, $validatedBy): void
+    private function broadcastPaymentValidated(Order $order, bool $isValidated, string|int|null $validatedBy): void
     {
         try {
             event(new PaymentValidated($order->fresh(), $isValidated, $validatedBy));

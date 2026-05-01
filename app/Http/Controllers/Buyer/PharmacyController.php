@@ -20,9 +20,7 @@ use Illuminate\Http\Request;
  */
 class PharmacyController extends Controller
 {
-    public function __construct(protected PharmacyService $pharmacyService)
-    {
-    }
+    public function __construct(protected PharmacyService $pharmacyService) {}
 
     public function index(Request $request): JsonResponse
     {
@@ -50,7 +48,7 @@ class PharmacyController extends Controller
         ]);
     }
 
-    public function show($id): JsonResponse
+    public function show(string|int $id): JsonResponse
     {
         $pharmacy = $this->pharmacyService->getCatalogVisiblePharmacyById((int) $id);
         if (! $pharmacy) {

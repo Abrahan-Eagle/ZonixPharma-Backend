@@ -41,7 +41,7 @@ class DisputeController extends Controller
         ]);
     }
 
-    public function show($id)
+    public function show(string|int $id)
     {
         $dispute = Dispute::with(['order', 'reportedBy', 'reportedAgainst'])->find($id);
 
@@ -52,7 +52,7 @@ class DisputeController extends Controller
         return response()->json(['success' => true, 'data' => $dispute]);
     }
 
-    public function resolve(Request $request, $id)
+    public function resolve(Request $request, string|int $id)
     {
         $request->validate([
             'resolution' => 'required|in:refund,penalty,warning,closed',

@@ -70,10 +70,8 @@ class UpdateProductRequest extends FormRequest
             'image.max' => 'La imagen no puede superar 5MB.',
             'stock.integer' => 'El stock debe ser un entero.',
             'stock.min' => 'El stock no puede ser negativo.',
-            'prescription_type.required_if' =>
-                'Cuando el producto requiere receta, el tipo de receta es obligatorio.',
-            'prescription_type.in' =>
-                'El tipo de receta debe ser common, retained o special.',
+            'prescription_type.required_if' => 'Cuando el producto requiere receta, el tipo de receta es obligatorio.',
+            'prescription_type.in' => 'El tipo de receta debe ser common, retained o special.',
         ];
     }
 }

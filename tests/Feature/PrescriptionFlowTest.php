@@ -179,6 +179,7 @@ class PrescriptionFlowTest extends TestCase
     {
         $user = User::factory()->create(['role' => 'users']);
         $profile = Profile::factory()->create(['user_id' => $user->id]);
+
         return [$user, $profile];
     }
 
@@ -187,6 +188,7 @@ class PrescriptionFlowTest extends TestCase
     {
         $user = User::factory()->create(['role' => 'pharmacist']);
         $profile = Profile::factory()->create(['user_id' => $user->id]);
+
         return [$user, $profile];
     }
 }

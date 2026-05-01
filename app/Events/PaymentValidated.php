@@ -14,11 +14,11 @@ class PaymentValidated implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    public $order;
+    public Order $order;
 
-    public $isValidated;
+    public bool $isValidated;
 
-    public $validatedBy;
+    public string|int|null $validatedBy;
 
     private string $eventId;
 
@@ -27,7 +27,7 @@ class PaymentValidated implements ShouldBroadcast
     /**
      * Create a new event instance.
      */
-    public function __construct(Order $order, bool $isValidated, $validatedBy = null)
+    public function __construct(Order $order, bool $isValidated, string|int|null $validatedBy = null)
     {
         $this->order = $order;
         $this->isValidated = $isValidated;

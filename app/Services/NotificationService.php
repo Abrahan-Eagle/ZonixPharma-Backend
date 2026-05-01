@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Log;
 
 class NotificationService
 {
-    protected $firebaseService;
+    protected FirebaseService $firebaseService;
 
     public function __construct(FirebaseService $firebaseService)
     {
@@ -21,13 +21,9 @@ class NotificationService
      * Create a notification and dispatch events/push
      *
      * @param  int  $profileId
-     * @param  string  $title
-     * @param  string  $body
-     * @param  string  $type
-     * @param  array  $data
      * @return \App\Models\Notification|null
      */
-    public function notify($profileId, $title, $body, $type = 'system', $data = [])
+    public function notify(string|int $profileId, string $title, string $body, string $type = 'system', array $data = [])
     {
         try {
             $profile = Profile::find($profileId);
@@ -78,13 +74,9 @@ class NotificationService
     /**
      * Send push notification based on user preferences
      *
-     * @param  string  $title
-     * @param  string  $body
-     * @param  string  $type
-     * @param  array  $data
      * @return bool
      */
-    protected function sendPushIfEnabled(Profile $profile, $title, $body, $type, $data)
+    protected function sendPushIfEnabled(Profile $profile, string $title, string $body, string $type, array $data)
     {
         if (! $profile->fcm_device_token) {
             Cache::increment('metrics:realtime:fcm_skipped_no_token_total');

@@ -96,7 +96,7 @@ class ActivityController extends Controller
     /**
      * Generar datos mock de actividad
      */
-    private function generateMockActivities($userId, $activityType = null, $startDate = null, $endDate = null)
+    private function generateMockActivities(string|int $userId, ?string $activityType = null, ?string $startDate = null, ?string $endDate = null)
     {
         $activities = [
             [

@@ -165,6 +165,7 @@ class OrderStateMachineService
         if ($order->requires_prescription) {
             return 'pending_prescription_validation';
         }
+
         return 'pending_payment';
     }
 

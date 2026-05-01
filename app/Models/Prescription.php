@@ -16,12 +16,17 @@ class Prescription extends Model
     use HasFactory;
 
     public const STATUS_PENDING_VALIDATION = 'pending_validation';
+
     public const STATUS_APPROVED = 'approved';
+
     public const STATUS_REJECTED = 'rejected';
+
     public const STATUS_EXPIRED = 'expired';
 
     public const TYPE_COMMON = 'common';
+
     public const TYPE_RETAINED = 'retained';
+
     public const TYPE_SPECIAL = 'special';
 
     protected $fillable = [

@@ -164,7 +164,7 @@ class ProfileController extends Controller
     /**
      * @param  int  $id  Profile ID
      */
-    public function update(UpdateProfileRequest $request, $id)
+    public function update(UpdateProfileRequest $request, string|int $id)
     {
         // Buscar el perfil por ID o devolver error 404.
         $profile = Profile::findOrFail($id);
@@ -238,7 +238,7 @@ class ProfileController extends Controller
      *
      * @param  int  $id  Profile ID
      */
-    public function destroy(Request $request, $id)
+    public function destroy(Request $request, string|int $id)
     {
         $profile = Profile::find($id);
 
@@ -267,7 +267,7 @@ class ProfileController extends Controller
      *
      * @param  int  $id  User ID
      */
-    public function getProfileId($id)
+    public function getProfileId(string|int $id)
     {
         $profile = Profile::where('user_id', $id)->first();
         if ($profile) {

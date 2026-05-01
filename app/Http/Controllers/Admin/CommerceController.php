@@ -45,7 +45,7 @@ class CommerceController extends Controller
         ]);
     }
 
-    public function show($id)
+    public function show(string|int $id)
     {
         $commerce = Commerce::with(['profile.user', 'profile.phones', 'profile.addresses'])->findOrFail($id);
 
@@ -55,7 +55,7 @@ class CommerceController extends Controller
         ]);
     }
 
-    public function updateStatus(Request $request, $id)
+    public function updateStatus(Request $request, string|int $id)
     {
         $request->validate([
             'status' => 'required|in:pending_review,approved,rejected,suspended',
@@ -98,7 +98,7 @@ class CommerceController extends Controller
         ]);
     }
 
-    public function toggleOpen(Request $request, $id)
+    public function toggleOpen(Request $request, string|int $id)
     {
         $request->validate([
             'open' => 'required|boolean',

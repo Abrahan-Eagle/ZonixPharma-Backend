@@ -48,6 +48,7 @@ class MedicineLot extends Model
         if ($this->expiry_date === null) {
             return false;
         }
+
         return $this->expiry_date->lte(now()->addDays($days));
     }
 }

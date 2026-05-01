@@ -7,13 +7,9 @@ class TrackingService
     /**
      * Calcular distancia entre dos puntos usando la fórmula de Haversine.
      *
-     * @param  float  $lat1
-     * @param  float  $lon1
-     * @param  float  $lat2
-     * @param  float  $lon2
      * @return float Distancia en kilómetros
      */
-    public function calculateDistance($lat1, $lon1, $lat2, $lon2)
+    public function calculateDistance(float $lat1, float $lon1, float $lat2, float $lon2)
     {
         $earthRadius = 6371; // Radio de la Tierra en kilómetros
 
@@ -36,7 +32,7 @@ class TrackingService
      * @param  string  $vehicleType  Tipo de vehículo (bike, car, motorcycle)
      * @return int Tiempo estimado en minutos
      */
-    public function calculateEstimatedTime($distance, $vehicleType = 'bike')
+    public function calculateEstimatedTime(float $distance, string $vehicleType = 'bike')
     {
         $averageSpeeds = [
             'bike' => 15,      // 15 km/h en bicicleta
@@ -56,14 +52,10 @@ class TrackingService
     /**
      * Generar coordenadas de ruta interpolada (linea recta sin ruido aleatorio).
      *
-     * @param  float  $startLat
-     * @param  float  $startLon
-     * @param  float  $endLat
-     * @param  float  $endLon
      * @param  int  $steps  Número de puntos intermedios
      * @return array Array de coordenadas
      */
-    public function generateRouteCoordinates($startLat, $startLon, $endLat, $endLon, $steps = 10)
+    public function generateRouteCoordinates(float $startLat, float $startLon, float $endLat, float $endLon, int $steps = 10)
     {
         $coordinates = [];
 

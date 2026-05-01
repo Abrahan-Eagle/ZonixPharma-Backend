@@ -7,6 +7,15 @@
 
 ## Última actualización de contexto
 
+### Verificación local CI (1 mayo 2026)
+
+- **Backend (este repo):** `php artisan test` → **397 passed** (1636 assertions). `./vendor/bin/pint --test` → **PASS** en árbol completo (433 archivos en última pasada de sesión).
+- **Frontend (repo hermano):** `flutter analyze lib` → sin issues; `flutter test` → **216 passed** (~1 skipped). Mismo resumen en [`../ZonixPharma-Front/docs/active_context.md`](../ZonixPharma-Front/docs/active_context.md).
+- **Higiene Intelephense / tipado reciente:** un solo `use App\Events\PaymentProofUploaded` en `tests/Feature/OrderTest.php`; `Buyer/PharmacyController::show(string|int $id)`; modelo `Order` (`withPivot(['quantity', 'unit_price'])`, scopes `scopeWithoutAwaitingProofValidation` / `scopeWherePendingPaymentTtlExceeded` con `Builder $query`); `Buyer/TrackingController::getOrderTracking(string|int $orderId)`.
+- **Nota:** sin commit/push automático desde la IA en esta verificación.
+
+### Auditoría API + quick wins (1 mayo 2026)
+
 - **Fecha:** 1 mayo 2026 (auditoría API patterns + quick wins en código)
 - **Resumen breve:** Auditoría de **63 controladores** contra la skill `zonix-api-patterns` documentada en [`docs/AUDIT_API_PATTERNS_2026-05-01.md`](AUDIT_API_PATTERNS_2026-05-01.md) (15 P0 detectados, deuda sistémica en envelope JSON, paginación, Form Requests y exposición de `$e->getMessage()`). **Remediación aplicada:** `Handler::handleApiException` ahora registra `\Log::error` en excepciones no manejadas, endurece mensaje de `ValidationException` y evita filtrar detalles internos en producción salvo `HttpException` con mensaje explícito; `CommerceDataController` devuelve **403** si `commerce_id`/`X-Commerce-Id` no pertenece al perfil (sin fallback silencioso al comercio principal); `Buyer/ReviewController::reportReview` exige que la reseña esté ligada a una **orden del comprador** (`orders.profile_id`); `Authenticator/AuthController::googleUser` y `Admin/ReportController::sendSystemNotification` dejan de exponer `getMessage()` al cliente y loguean el fallo; eliminados controladores muertos/legado no enrutados: `Delivery/OrderController`, `ChatController` (raíz), `HomeController` (raíz), `WebSocket/WebSocketController`. Prompt reutilizable de auditoría forense: [`docs/PROMPT_AUDIT_FORENSE.md`](PROMPT_AUDIT_FORENSE.md). **Pendiente:** backlog P0 restante en doc (Payment idempotencia, ProfileController transacciones, sweep masivo de controllers).
 

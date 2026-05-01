@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Buyer;
 
 use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -223,7 +224,7 @@ class AccountDeletionController extends Controller
     /**
      * Obtener solicitud mock de eliminación
      */
-    private function getMockDeletionRequest($userId)
+    private function getMockDeletionRequest(string|int $userId): ?array
     {
         return self::$mockDeletionRequest[$userId] ?? null;
     }
@@ -231,7 +232,7 @@ class AccountDeletionController extends Controller
     /**
      * Enviar email de confirmación (simulado)
      */
-    private function sendConfirmationEmail($email, $confirmationCode)
+    private function sendConfirmationEmail(string $email, string $confirmationCode)
     {
         // En producción, usar Laravel Mail
         Log::debug("Email de confirmación enviado a {$email} con código: {$confirmationCode}");
@@ -264,7 +265,7 @@ class AccountDeletionController extends Controller
     /**
      * Procesar eliminación de cuenta: revocar tokens y borrar usuario (cascada a profile y datos).
      */
-    private function processAccountDeletion($user)
+    private function processAccountDeletion(User $user): void
     {
         DB::transaction(function () use ($user) {
             $userId = $user->id;
@@ -278,6 +279,6 @@ class AccountDeletionController extends Controller
         });
     }
 
-    // Variable estática para simular el estado de la solicitud de eliminación en memoria de test
-    private static $mockDeletionRequest = [];
+    /** @var array<int|string, array<string, mixed>> */
+    private static array $mockDeletionRequest = [];
 }

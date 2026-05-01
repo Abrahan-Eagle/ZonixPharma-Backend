@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -56,7 +57,7 @@ class PaymentMethod extends Model
     /**
      * Scope para métodos activos
      */
-    public function scopeActive($query)
+    public function scopeActive(Builder $query)
     {
         return $query->where('is_active', true);
     }
@@ -64,7 +65,7 @@ class PaymentMethod extends Model
     /**
      * Scope para métodos por tipo
      */
-    public function scopeByType($query, $type)
+    public function scopeByType(Builder $query, string $type)
     {
         return $query->where('type', $type);
     }
@@ -72,7 +73,7 @@ class PaymentMethod extends Model
     /**
      * Scope para método por defecto
      */
-    public function scopeDefault($query)
+    public function scopeDefault(Builder $query)
     {
         return $query->where('is_default', true);
     }

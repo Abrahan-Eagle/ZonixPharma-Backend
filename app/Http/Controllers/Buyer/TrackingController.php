@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Log;
 
 class TrackingController extends Controller
 {
-    protected $trackingService;
+    protected TrackingService $trackingService;
 
     protected RouteCalculationService $routeCalculation;
 
@@ -35,10 +35,9 @@ class TrackingController extends Controller
      * No se usan coordenadas fijas para usuarios reales; los fallbacks solo aplican cuando
      * no hay datos en BD (ej. comercio sin dirección guardada).
      *
-     * @param  int  $orderId
      * @return \Illuminate\Http\JsonResponse
      */
-    public function getOrderTracking($orderId)
+    public function getOrderTracking(string|int $orderId)
     {
         $user = Auth::user();
         if (! $user?->profile) {
@@ -244,7 +243,7 @@ class TrackingController extends Controller
      * @param  int  $orderId
      * @return \Illuminate\Http\JsonResponse
      */
-    public function updateDeliveryLocation(Request $request, $orderId)
+    public function updateDeliveryLocation(Request $request, string|int $orderId)
     {
         $lat = $request->input('lat') ?? $request->input('latitude');
         $lng = $request->input('lng') ?? $request->input('longitude');

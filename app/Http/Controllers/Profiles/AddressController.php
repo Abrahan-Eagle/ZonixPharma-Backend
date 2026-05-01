@@ -152,7 +152,7 @@ class AddressController extends Controller
     /**
      * Display the specified address.
      */
-    public function show(Request $request, $id)
+    public function show(Request $request, string|int $id)
     {
         $address = Address::with(['city.state.country', 'profile'])->find($id);
         if (! $address) {
@@ -168,7 +168,7 @@ class AddressController extends Controller
     /**
      * Update the specified address in storage.
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, string|int $id)
     {
         // Buscar la dirección por ID
         $address = Address::find($id);
@@ -217,7 +217,7 @@ class AddressController extends Controller
     /**
      * Remove the specified address from storage.
      */
-    public function destroy(Request $request, $id)
+    public function destroy(Request $request, string|int $id)
     {
         // Buscar la dirección por ID
         $address = Address::find($id);
@@ -266,7 +266,7 @@ class AddressController extends Controller
         return $this->jsonSuccess($cities);
     }
 
-    public function getCityById($id)
+    public function getCityById(string|int $id)
     {
         $city = City::find($id);
         if (! $city) {

@@ -384,7 +384,7 @@ class AnalyticsController extends Controller
     /**
      * Descargar archivo exportado
      */
-    public function downloadExport($filename)
+    public function downloadExport(string $filename)
     {
         try {
             $filepath = storage_path('app/exports/'.$filename);
@@ -775,7 +775,7 @@ class AnalyticsController extends Controller
     }
 
     // Helper methods (compatibles MySQL y SQLite para tests)
-    private function getDailyRevenue($startDate = null, $endDate = null)
+    private function getDailyRevenue(?string $startDate = null, ?string $endDate = null)
     {
         $query = Order::where('status', 'delivered');
         if ($startDate) {

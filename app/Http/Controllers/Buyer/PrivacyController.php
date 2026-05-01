@@ -142,7 +142,7 @@ class PrivacyController extends Controller
     /**
      * Obtener configuración mock de privacidad
      */
-    private function getMockPrivacySettings($userId)
+    private function getMockPrivacySettings(string|int $userId)
     {
         return [
             'user_id' => $userId,
@@ -161,7 +161,7 @@ class PrivacyController extends Controller
     /**
      * Actualizar configuración mock de privacidad
      */
-    private function updateMockPrivacySettings($userId, $updates)
+    private function updateMockPrivacySettings(string|int $userId, array $updates)
     {
         $currentSettings = $this->getMockPrivacySettings($userId);
 

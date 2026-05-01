@@ -112,7 +112,7 @@ class CartController extends Controller
      * @param  int  $productId
      * @return \Illuminate\Http\JsonResponse
      */
-    public function remove(Request $request, $productId)
+    public function remove(Request $request, string|int $productId)
     {
         try {
             $lineId = $request->query('line_id');

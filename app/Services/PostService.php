@@ -81,7 +81,7 @@ class PostService
      * @param  int  $userId
      * @return array
      */
-    public function toggleFavorite($postId, $userId)
+    public function toggleFavorite(string|int $postId, string|int $userId)
     {
         $profile = \App\Models\Profile::where('user_id', $userId)->first();
 

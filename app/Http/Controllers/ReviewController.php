@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class ReviewController extends Controller
 {
-    protected $reviewService;
+    protected ReviewService $reviewService;
 
     public function __construct(ReviewService $reviewService)
     {
@@ -66,10 +66,9 @@ class ReviewController extends Controller
      * Obtener calificaciones de un elemento.
      *
      * @param  int  $reviewableId
-     * @param  string  $reviewableType
      * @return \Illuminate\Http\JsonResponse
      */
-    public function index($reviewableId, $reviewableType)
+    public function index(string|int $reviewableId, string $reviewableType)
     {
         if ($reviewableType === 'App\\Models\\Commerce') {
             $reviews = $this->reviewService->getRestaurantReviews($reviewableId);
@@ -103,7 +102,7 @@ class ReviewController extends Controller
      * @param  int  $reviewId
      * @return \Illuminate\Http\JsonResponse
      */
-    public function update(Request $request, $reviewId)
+    public function update(Request $request, string|int $reviewId)
     {
         $validated = $request->validate([
             'rating' => 'required|integer|between:1,5',
@@ -121,7 +120,7 @@ class ReviewController extends Controller
      * @param  int  $reviewId
      * @return \Illuminate\Http\JsonResponse
      */
-    public function destroy($reviewId)
+    public function destroy(string|int $reviewId)
     {
         $result = $this->reviewService->deleteReview($reviewId);
 
@@ -132,10 +131,9 @@ class ReviewController extends Controller
      * Verificar si un usuario puede calificar.
      *
      * @param  int  $reviewableId
-     * @param  string  $reviewableType
      * @return \Illuminate\Http\JsonResponse
      */
-    public function canReview($reviewableId, $reviewableType)
+    public function canReview(string|int $reviewableId, string $reviewableType)
     {
         $user = auth()->user();
         $orderId = (int) $reviewableId;

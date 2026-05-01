@@ -49,6 +49,7 @@ class PharmacistProfile extends Model
         if ($this->license_expires_at === null) {
             return true;
         }
+
         return $this->license_expires_at->isFuture();
     }
 }

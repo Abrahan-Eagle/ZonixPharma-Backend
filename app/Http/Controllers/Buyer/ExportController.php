@@ -58,7 +58,7 @@ class ExportController extends Controller
         }
     }
 
-    private function getProfileDataForExport($user, $profile)
+    private function getProfileDataForExport(?\App\Models\User $user, ?\App\Models\Profile $profile)
     {
         $p = $profile ? $profile->toArray() : [];
         $p['email'] = $user->email ?? null;
@@ -81,7 +81,7 @@ class ExportController extends Controller
         return $p;
     }
 
-    private function getOrdersDataForExport($user)
+    private function getOrdersDataForExport(User $user)
     {
         if (! $user->profile) {
             return [];
@@ -100,7 +100,7 @@ class ExportController extends Controller
             ->toArray();
     }
 
-    private function getAddressesDataForExport($user)
+    private function getAddressesDataForExport(User $user)
     {
         if (! $user->profile) {
             return [];
@@ -185,7 +185,7 @@ class ExportController extends Controller
     /**
      * Verificar estado de la exportación
      */
-    public function getExportStatus($exportId)
+    public function getExportStatus(string $exportId)
     {
         try {
             $user = Auth::user();
@@ -217,7 +217,7 @@ class ExportController extends Controller
     /**
      * Descargar archivo exportado
      */
-    public function downloadExport($exportId)
+    public function downloadExport(string $exportId)
     {
         try {
             $user = Auth::user();
@@ -283,7 +283,7 @@ class ExportController extends Controller
     /**
      * Generar datos de exportación
      */
-    private function generateExportData($user, $dataTypes, $format)
+    private function generateExportData(User $user, array $dataTypes, string $format)
     {
         $data = [];
 
@@ -325,7 +325,7 @@ class ExportController extends Controller
     /**
      * Obtener datos del perfil
      */
-    private function getProfileData($user)
+    private function getProfileData(User $user)
     {
         return [
             'id' => $user->id,
@@ -339,7 +339,7 @@ class ExportController extends Controller
     /**
      * Obtener datos de pedidos
      */
-    private function getOrdersData($user)
+    private function getOrdersData(User $user)
     {
         // Simular datos de pedidos
         return [
@@ -363,7 +363,7 @@ class ExportController extends Controller
     /**
      * Obtener datos de actividad
      */
-    private function getActivityData($user)
+    private function getActivityData(User $user)
     {
         return [
             [
@@ -384,7 +384,7 @@ class ExportController extends Controller
     /**
      * Obtener datos de reseñas
      */
-    private function getReviewsData($user)
+    private function getReviewsData(User $user)
     {
         return [
             [
@@ -399,7 +399,7 @@ class ExportController extends Controller
     /**
      * Obtener datos de direcciones
      */
-    private function getAddressesData($user)
+    private function getAddressesData(User $user)
     {
         return [
             [
@@ -415,7 +415,7 @@ class ExportController extends Controller
     /**
      * Obtener datos de notificaciones
      */
-    private function getNotificationsData($user)
+    private function getNotificationsData(User $user)
     {
         return [
             [
@@ -431,7 +431,7 @@ class ExportController extends Controller
     /**
      * Convertir a CSV
      */
-    private function convertToCsv($data)
+    private function convertToCsv(array $data)
     {
         $csv = '';
         foreach ($data as $section => $items) {
@@ -469,7 +469,7 @@ class ExportController extends Controller
     /**
      * Convertir a PDF (simulado)
      */
-    private function convertToPdf($data)
+    private function convertToPdf(array $data)
     {
         // En producción, usar una librería como DomPDF
         return 'PDF content for export: '.json_encode($data);
@@ -478,7 +478,7 @@ class ExportController extends Controller
     /**
      * Obtener tipo de contenido
      */
-    private function getContentType($format)
+    private function getContentType(string $format)
     {
         switch ($format) {
             case 'json':
@@ -495,7 +495,7 @@ class ExportController extends Controller
     /**
      * Obtener registro mock de exportación
      */
-    private function getMockExportRecord($exportId, $userId)
+    private function getMockExportRecord(string $exportId, string|int $userId)
     {
         $exports = [
             '123e4567-e89b-12d3-a456-426614174000' => [
@@ -516,7 +516,7 @@ class ExportController extends Controller
     /**
      * Generar historial mock de exportaciones
      */
-    private function generateMockExportHistory($userId)
+    private function generateMockExportHistory(string|int $userId)
     {
         return [
             [

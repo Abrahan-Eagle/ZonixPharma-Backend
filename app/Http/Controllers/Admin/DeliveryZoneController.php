@@ -55,7 +55,7 @@ class DeliveryZoneController extends Controller
         ], 201);
     }
 
-    public function show($id)
+    public function show(string|int $id)
     {
         $zone = DeliveryZone::findOrFail($id);
 
@@ -65,7 +65,7 @@ class DeliveryZoneController extends Controller
         ]);
     }
 
-    public function update(Request $request, $id)
+    public function update(Request $request, string|int $id)
     {
         $zone = DeliveryZone::findOrFail($id);
 
@@ -89,7 +89,7 @@ class DeliveryZoneController extends Controller
         ]);
     }
 
-    public function destroy($id)
+    public function destroy(string|int $id)
     {
         $zone = DeliveryZone::findOrFail($id);
         $zone->delete();

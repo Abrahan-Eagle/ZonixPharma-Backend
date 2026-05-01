@@ -24,8 +24,7 @@ class PrescriptionService
 {
     public function __construct(
         private readonly OrderStateMachineService $stateMachine,
-    ) {
-    }
+    ) {}
 
     /**
      * Subir una receta. Crea la entrada `prescriptions` y la vincula al pedido.

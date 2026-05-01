@@ -13,23 +13,23 @@ class DeliveryLocationUpdated implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    public $orderId;
+    public string|int|null $orderId;
 
-    public $deliveryAgentId;
+    public string|int $deliveryAgentId;
 
-    public $companyId;
+    public string|int|null $companyId;
 
-    public $latitude;
+    public float|int|string $latitude;
 
-    public $longitude;
+    public float|int|string $longitude;
 
-    public $estimatedArrival;
+    public ?string $estimatedArrival;
 
     private string $eventId;
 
     private string $occurredAt;
 
-    public function __construct($orderId, $deliveryAgentId, $latitude, $longitude, $estimatedArrival = null, $companyId = null)
+    public function __construct(string|int|null $orderId, string|int $deliveryAgentId, float|int|string $latitude, float|int|string $longitude, ?string $estimatedArrival = null, string|int|null $companyId = null)
     {
         $this->orderId = $orderId;
         $this->deliveryAgentId = $deliveryAgentId;

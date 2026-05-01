@@ -323,7 +323,7 @@ class AnalyticsController extends Controller
     }
 
     // Helper methods (compatibles MySQL y SQLite para tests)
-    private function getDailyRevenue($commerceId, $startDate = null, $endDate = null)
+    private function getDailyRevenue(string|int $commerceId, ?string $startDate = null, ?string $endDate = null)
     {
         $query = Order::where('commerce_id', $commerceId)
             ->where('status', 'delivered');
@@ -350,7 +350,7 @@ class AnalyticsController extends Controller
         })->toArray();
     }
 
-    private function getMonthlyRevenue($commerceId)
+    private function getMonthlyRevenue(string|int $commerceId)
     {
         $driver = DB::connection()->getDriverName();
         $months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
@@ -378,16 +378,19 @@ class AnalyticsController extends Controller
         })->toArray();
     }
 
-    private function getRevenueByProduct($commerceId)
+    private function getRevenueByProduct(string|int $commerceId)
     {
         $productRevenue = DB::table('order_items')
             ->join('orders', 'order_items.order_id', '=', 'orders.id')
             ->join('products', 'order_items.product_id', '=', 'products.id')
             ->where('orders.commerce_id', $commerceId)
             ->where('orders.status', 'delivered')
-            ->select('products.id', 'products.name',
+            ->select([
+                'products.id',
+                'products.name',
                 DB::raw('SUM(order_items.quantity * order_items.unit_price) as revenue'),
-                DB::raw('SUM(order_items.quantity) as quantity'))
+                DB::raw('SUM(order_items.quantity) as quantity'),
+            ])
             ->groupBy('products.id', 'products.name')
             ->orderByDesc('revenue')
             ->limit(10)
@@ -403,7 +406,7 @@ class AnalyticsController extends Controller
         })->toArray();
     }
 
-    private function getOrderStatusDistribution($commerceId)
+    private function getOrderStatusDistribution(string|int $commerceId)
     {
         $statuses = Order::where('commerce_id', $commerceId)
             ->selectRaw('status, COUNT(*) as count')
@@ -421,7 +424,7 @@ class AnalyticsController extends Controller
         })->toArray();
     }
 
-    private function getOrdersByDay($commerceId)
+    private function getOrdersByDay(string|int $commerceId)
     {
         $driver = DB::connection()->getDriverName();
         $dayNames = [
@@ -452,7 +455,7 @@ class AnalyticsController extends Controller
         })->toArray();
     }
 
-    private function getPeakHours($commerceId)
+    private function getPeakHours(string|int $commerceId)
     {
         $driver = DB::connection()->getDriverName();
         $hours = $driver === 'mysql'
@@ -470,16 +473,19 @@ class AnalyticsController extends Controller
         })->toArray();
     }
 
-    private function getTopProducts($commerceId)
+    private function getTopProducts(string|int $commerceId)
     {
         $topProducts = DB::table('order_items')
             ->join('orders', 'order_items.order_id', '=', 'orders.id')
             ->join('products', 'order_items.product_id', '=', 'products.id')
             ->where('orders.commerce_id', $commerceId)
             ->where('orders.status', 'delivered')
-            ->select('products.id', 'products.name',
+            ->select([
+                'products.id',
+                'products.name',
                 DB::raw('SUM(order_items.quantity) as sales'),
-                DB::raw('SUM(order_items.quantity * order_items.unit_price) as revenue'))
+                DB::raw('SUM(order_items.quantity * order_items.unit_price) as revenue'),
+            ])
             ->groupBy('products.id', 'products.name')
             ->orderByDesc('sales')
             ->limit(10)
@@ -495,14 +501,14 @@ class AnalyticsController extends Controller
         })->toArray();
     }
 
-    private function getProductsByCategory($commerceId)
+    private function getProductsByCategory(string|int $commerceId)
     {
         // Por ahora retornar estructura básica
         // TODO: Implementar cuando haya categorías en productos
         return [];
     }
 
-    private function getNewVsReturningCustomers($commerceId)
+    private function getNewVsReturningCustomers(string|int $commerceId)
     {
         $totalCustomers = Order::where('commerce_id', $commerceId)
             ->distinct('profile_id')
@@ -522,7 +528,7 @@ class AnalyticsController extends Controller
         ];
     }
 
-    private function getTopCustomers($commerceId)
+    private function getTopCustomers(string|int $commerceId)
     {
         $topCustomers = Order::where('commerce_id', $commerceId)
             ->where('status', 'delivered')
@@ -546,7 +552,7 @@ class AnalyticsController extends Controller
         })->toArray();
     }
 
-    private function getAveragePreparationTime($commerceId)
+    private function getAveragePreparationTime(string|int $commerceId)
     {
         // Calcular tiempo promedio entre 'paid' y 'shipped'
         // Por ahora retornar estimado basado en timestamps

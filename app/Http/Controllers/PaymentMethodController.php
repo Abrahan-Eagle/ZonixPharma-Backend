@@ -143,7 +143,7 @@ class PaymentMethodController extends Controller
     /**
      * Actualizar método de pago
      */
-    public function update(UpdatePaymentMethodRequest $request, $id)
+    public function update(UpdatePaymentMethodRequest $request, string|int $id)
     {
         try {
             $owner = $this->getPayableOwner();
@@ -182,7 +182,7 @@ class PaymentMethodController extends Controller
     /**
      * Eliminar método de pago
      */
-    public function destroy($id)
+    public function destroy(string|int $id)
     {
         try {
             $owner = $this->getPayableOwner();
@@ -220,7 +220,7 @@ class PaymentMethodController extends Controller
     /**
      * Establecer método de pago por defecto
      */
-    public function setDefault($id)
+    public function setDefault(string|int $id)
     {
         try {
             $owner = $this->getPayableOwner();

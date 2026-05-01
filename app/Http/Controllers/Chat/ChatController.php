@@ -97,7 +97,7 @@ class ChatController extends Controller
     /**
      * Get messages for a conversation (order)
      */
-    public function getMessages($conversationId)
+    public function getMessages(string|int $conversationId)
     {
         try {
             $user = Auth::user();
@@ -154,7 +154,7 @@ class ChatController extends Controller
     /**
      * Send message in a conversation (order)
      */
-    public function sendMessage(Request $request, $conversationId)
+    public function sendMessage(Request $request, string|int $conversationId)
     {
         try {
             $request->validate([
@@ -245,7 +245,7 @@ class ChatController extends Controller
     /**
      * Mark messages as read
      */
-    public function markMessagesAsRead($conversationId)
+    public function markMessagesAsRead(string|int $conversationId)
     {
         try {
             $user = Auth::user();
@@ -340,7 +340,7 @@ class ChatController extends Controller
     /**
      * Delete conversation (eliminar mensajes de una orden)
      */
-    public function deleteConversation($conversationId)
+    public function deleteConversation(string|int $conversationId)
     {
         try {
             $user = Auth::user();
@@ -473,7 +473,7 @@ class ChatController extends Controller
     /**
      * Unblock user
      */
-    public function unblockUser($userId)
+    public function unblockUser(string|int $userId)
     {
         try {
             BlockedUser::where('blocker_id', Auth::id())
@@ -515,7 +515,7 @@ class ChatController extends Controller
     /**
      * Helper: Verificar si el usuario tiene acceso a una orden
      */
-    private function hasAccessToOrder(Order $order, $profileId): bool
+    private function hasAccessToOrder(Order $order, string|int|null $profileId): bool
     {
         // Cliente de la orden
         if ($order->profile_id == $profileId) {
@@ -538,7 +538,7 @@ class ChatController extends Controller
     /**
      * Helper: Obtener tipo de remitente basado en rol
      */
-    private function getSenderType($user, Order $order, $profileId): string
+    private function getSenderType(\App\Models\User $user, Order $order, string|int|null $profileId): string
     {
         if ($order->profile_id == $profileId) {
             return 'customer';
@@ -668,7 +668,7 @@ class ChatController extends Controller
     /**
      * Enviar notificación push al receptor del mensaje
      */
-    private function sendPushNotification(Order $order, ChatMessage $message, $senderId)
+    private function sendPushNotification(Order $order, ChatMessage $message, string|int $senderId)
     {
         Log::debug('sendPushNotification inicio', [
             'order_id' => $order->id,
@@ -750,7 +750,7 @@ class ChatController extends Controller
     /**
      * Helper: Obtener el receptor del mensaje (el otro participante de la orden)
      */
-    private function getReceiverForOrder(Order $order, $senderId)
+    private function getReceiverForOrder(Order $order, string|int $senderId)
     {
         // Si el remitente es el cliente, el receptor puede ser el comercio o el delivery
         if ($order->profile_id == $senderId) {

@@ -8,6 +8,4 @@ namespace App\Http\Controllers\Buyer;
  *             temporal: las rutas legacy `/api/buyer/restaurants` siguen
  *             funcionando con el contrato canónico de farmacias.
  */
-class RestaurantController extends PharmacyController
-{
-}
+class RestaurantController extends PharmacyController {}

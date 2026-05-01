@@ -133,7 +133,7 @@ class ProductController extends Controller
         }
     }
 
-    public function show($id)
+    public function show(string|int $id)
     {
         try {
             $user = Auth::user();
@@ -164,7 +164,7 @@ class ProductController extends Controller
         }
     }
 
-    public function update(UpdateProductRequest $request, $id)
+    public function update(UpdateProductRequest $request, string|int $id)
     {
         try {
             $user = Auth::user();
@@ -215,7 +215,7 @@ class ProductController extends Controller
         }
     }
 
-    public function destroy($id)
+    public function destroy(string|int $id)
     {
         try {
             $user = Auth::user();
@@ -255,7 +255,7 @@ class ProductController extends Controller
     /**
      * Cambiar disponibilidad del producto
      */
-    public function toggleDisponible($id)
+    public function toggleDisponible(string|int $id)
     {
         try {
             $user = Auth::user();

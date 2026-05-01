@@ -32,14 +32,14 @@ class UserController extends Controller
         return response()->json($users);
     }
 
-    public function show($id)
+    public function show(string|int $id)
     {
         $user = User::with(['profile', 'orders', 'commerce', 'deliveryAgent'])->findOrFail($id);
 
         return response()->json($user);
     }
 
-    public function updateStatus(Request $request, $id)
+    public function updateStatus(Request $request, string|int $id)
     {
         $request->validate([
             'status' => 'required|string|in:active,suspended,banned',
@@ -59,7 +59,7 @@ class UserController extends Controller
         ]);
     }
 
-    public function getUserActivity($id)
+    public function getUserActivity(string|int $id)
     {
         $user = User::findOrFail($id);
 
@@ -73,7 +73,7 @@ class UserController extends Controller
         return response()->json($activity);
     }
 
-    public function updateRole(Request $request, $id)
+    public function updateRole(Request $request, string|int $id)
     {
         $request->validate([
             'role' => 'required|string|in:users,commerce,delivery_company,delivery_agent,delivery,admin',
@@ -86,7 +86,7 @@ class UserController extends Controller
         return response()->json(['message' => 'Rol actualizado correctamente']);
     }
 
-    public function destroy($id)
+    public function destroy(string|int $id)
     {
         User::findOrFail($id)->delete();
 

@@ -286,7 +286,7 @@ class CompanyController extends Controller
     /**
      * PATCH /api/delivery-company/agents/{id} — Actualizar estado del agente (activo/inactivo/suspendido).
      */
-    public function updateAgentStatus(Request $request, $id)
+    public function updateAgentStatus(Request $request, string|int $id)
     {
         $validator = Validator::make($request->all(), [
             'status' => 'required|in:activo,inactivo,suspendido',
@@ -318,7 +318,7 @@ class CompanyController extends Controller
     /**
      * PATCH /api/delivery-company/agents/{id}/payout — Cambiar porcentaje de pago del agente.
      */
-    public function updateAgentPayout(Request $request, $id)
+    public function updateAgentPayout(Request $request, string|int $id)
     {
         $validator = Validator::make($request->all(), [
             'payout_percentage' => 'required|numeric|min:0|max:100',
@@ -380,7 +380,7 @@ class CompanyController extends Controller
     /**
      * GET /api/delivery-company/orders/{id}/available-agents — Agentes de la empresa ordenados por distancia al comercio.
      */
-    public function availableAgentsForOrder($orderId)
+    public function availableAgentsForOrder(string|int $orderId)
     {
         $company = $this->getAuthCompany();
         if (! $company) {
@@ -447,7 +447,7 @@ class CompanyController extends Controller
     /**
      * POST /api/delivery-company/orders/{id}/assign — Asignar orden a un agente de la empresa.
      */
-    public function assignOrder(Request $request, $orderId)
+    public function assignOrder(Request $request, string|int $orderId)
     {
         $request->validate(['agent_id' => 'required|exists:delivery_agents,id']);
 
@@ -650,7 +650,7 @@ class CompanyController extends Controller
     /**
      * GET /api/delivery-company/agents/{id}
      */
-    public function agentDetail($id)
+    public function agentDetail(string|int $id)
     {
         try {
             $company = $this->getAuthCompany();
@@ -862,7 +862,7 @@ class CompanyController extends Controller
     /**
      * POST /api/delivery-company/orders/{id}/validate-delivery-payment — Validar o rechazar pago de envío.
      */
-    public function validateDeliveryPayment(Request $request, $orderId)
+    public function validateDeliveryPayment(Request $request, string|int $orderId)
     {
         try {
             $request->validate([

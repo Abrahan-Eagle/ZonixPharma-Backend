@@ -61,7 +61,7 @@ class AddressController extends Controller
     }
 
     /**
-     * Crear nueva dirección
+     * Crear nueva direcci?n
      */
     public function createAddress(Request $request): JsonResponse
     {
@@ -85,7 +85,7 @@ class AddressController extends Controller
         if ($validator->fails()) {
             return response()->json([
                 'success' => false,
-                'message' => 'Datos inválidos',
+                'message' => 'Datos inv?lidos',
                 'errors' => $validator->errors(),
             ], 422);
         }
@@ -100,7 +100,7 @@ class AddressController extends Controller
                 ], 422);
             }
 
-            // Si se marca como predeterminada, quitar la marca de las demás
+            // Si se marca como predeterminada, quitar la marca de las dem?s
             if ($request->is_default) {
                 Address::where('profile_id', $profile->id)
                     ->where('is_default', true)
@@ -122,7 +122,7 @@ class AddressController extends Controller
 
             return response()->json([
                 'success' => true,
-                'message' => 'Dirección creada exitosamente',
+                'message' => 'Direcci?n creada exitosamente',
                 'data' => [
                     'id' => $address->id,
                     'name' => $request->name ?? $address->street,
@@ -144,15 +144,15 @@ class AddressController extends Controller
 
             return response()->json([
                 'success' => false,
-                'message' => 'Error al crear la dirección',
+                'message' => 'Error al crear la direcci?n',
             ], 500);
         }
     }
 
     /**
-     * Actualizar dirección
+     * Actualizar direcci?n
      */
-    public function updateAddress(Request $request, $addressId): JsonResponse
+    public function updateAddress(Request $request, string|int $addressId): JsonResponse
     {
         $validator = Validator::make($request->all(), [
             'name' => 'nullable|string|max:100',
@@ -174,7 +174,7 @@ class AddressController extends Controller
         if ($validator->fails()) {
             return response()->json([
                 'success' => false,
-                'message' => 'Datos inválidos',
+                'message' => 'Datos inv?lidos',
                 'errors' => $validator->errors(),
             ], 422);
         }
@@ -192,7 +192,7 @@ class AddressController extends Controller
                 ], 422);
             }
 
-            // Si se marca como predeterminada, quitar la marca de las demás
+            // Si se marca como predeterminada, quitar la marca de las dem?s
             if ($request->is_default) {
                 Address::where('profile_id', $profile->id)
                     ->where('id', '!=', $addressId)
@@ -212,7 +212,7 @@ class AddressController extends Controller
 
             return response()->json([
                 'success' => true,
-                'message' => 'Dirección actualizada exitosamente',
+                'message' => 'Direcci?n actualizada exitosamente',
                 'data' => [
                     'id' => $address->id,
                     'name' => $request->name ?? $address->street,
@@ -234,15 +234,15 @@ class AddressController extends Controller
 
             return response()->json([
                 'success' => false,
-                'message' => 'Error al actualizar la dirección',
+                'message' => 'Error al actualizar la direcci?n',
             ], 500);
         }
     }
 
     /**
-     * Eliminar dirección
+     * Eliminar direcci?n
      */
-    public function deleteAddress($addressId): JsonResponse
+    public function deleteAddress(string|int $addressId): JsonResponse
     {
         try {
             $profile = auth()->user()->profile;
@@ -250,20 +250,20 @@ class AddressController extends Controller
                 ->where('profile_id', $profile->id)
                 ->firstOrFail();
 
-            // No permitir eliminar la dirección predeterminada si es la única
+            // No permitir eliminar la direcci?n predeterminada si es la ?nica
             if ($address->is_default) {
                 $totalAddresses = Address::where('profile_id', $profile->id)->count();
                 if ($totalAddresses === 1) {
                     return response()->json([
                         'success' => false,
-                        'message' => 'No puedes eliminar la única dirección disponible',
+                        'message' => 'No puedes eliminar la ?nica direcci?n disponible',
                     ], 400);
                 }
             }
 
             $address->delete();
 
-            // Si se eliminó la dirección predeterminada, marcar otra como predeterminada
+            // Si se elimin? la direcci?n predeterminada, marcar otra como predeterminada
             if ($address->is_default) {
                 $newDefault = Address::where('profile_id', $profile->id)
                     ->orderBy('created_at', 'desc')
@@ -276,22 +276,22 @@ class AddressController extends Controller
 
             return response()->json([
                 'success' => true,
-                'message' => 'Dirección eliminada exitosamente',
+                'message' => 'Direcci?n eliminada exitosamente',
             ]);
         } catch (\Exception $e) {
             Log::error('Error deleting address: '.$e->getMessage());
 
             return response()->json([
                 'success' => false,
-                'message' => 'Error al eliminar la dirección',
+                'message' => 'Error al eliminar la direcci?n',
             ], 500);
         }
     }
 
     /**
-     * Establecer dirección como predeterminada
+     * Establecer direcci?n como predeterminada
      */
-    public function setDefaultAddress($addressId): JsonResponse
+    public function setDefaultAddress(string|int $addressId): JsonResponse
     {
         try {
             $profile = auth()->user()->profile;
@@ -303,25 +303,25 @@ class AddressController extends Controller
             Address::where('profile_id', $profile->id)
                 ->update(['is_default' => false]);
 
-            // Marcar esta dirección como predeterminada
+            // Marcar esta direcci?n como predeterminada
             $address->update(['is_default' => true]);
 
             return response()->json([
                 'success' => true,
-                'message' => 'Dirección establecida como predeterminada',
+                'message' => 'Direcci?n establecida como predeterminada',
             ]);
         } catch (\Exception $e) {
             Log::error('Error setting default address: '.$e->getMessage());
 
             return response()->json([
                 'success' => false,
-                'message' => 'Error al establecer la dirección predeterminada',
+                'message' => 'Error al establecer la direcci?n predeterminada',
             ], 500);
         }
     }
 
     /**
-     * Obtener dirección predeterminada
+     * Obtener direcci?n predeterminada
      */
     public function getDefaultAddress(): JsonResponse
     {
@@ -335,7 +335,7 @@ class AddressController extends Controller
             if (! $address) {
                 return response()->json([
                     'success' => false,
-                    'message' => 'No hay dirección predeterminada',
+                    'message' => 'No hay direcci?n predeterminada',
                 ], 404);
             }
 
@@ -362,13 +362,13 @@ class AddressController extends Controller
 
             return response()->json([
                 'success' => false,
-                'message' => 'Error al obtener la dirección predeterminada',
+                'message' => 'Error al obtener la direcci?n predeterminada',
             ], 500);
         }
     }
 
     /**
-     * Formatear dirección para mostrar
+     * Formatear direcci?n para mostrar
      */
     private function formatAddress(Address $address): string
     {

@@ -45,7 +45,7 @@ class OrderService
      * @param  int  $userId
      * @return \App\Models\Order|null
      */
-    public function getOrderDetails($orderId, $userId)
+    public function getOrderDetails(string|int $orderId, string|int $userId)
     {
         $user = \App\Models\User::with('profile')->find($userId);
         $profile = $user ? $user->profile : null;
@@ -75,7 +75,7 @@ class OrderService
      * @param  int  $userId
      * @return true|string True si se cancela, mensaje de error si no.
      */
-    public function cancelOrder($orderId, $userId)
+    public function cancelOrder(string|int $orderId, string|int $userId)
     {
         $user = \App\Models\User::find($userId);
         $profile = $user ? $user->profile : null;

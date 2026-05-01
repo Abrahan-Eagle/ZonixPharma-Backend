@@ -140,10 +140,9 @@ class CartService
      * Actualizar cantidad de un producto.
      *
      * @param  int  $productId
-     * @param  int  $quantity
      * @return array
      */
-    public function updateQuantity($productId, $quantity, $lineId = null)
+    public function updateQuantity(string|int $productId, int $quantity, ?string $lineId = null)
     {
         // Validar cantidad
         if ($quantity < 1 || $quantity > 100) {
@@ -188,7 +187,7 @@ class CartService
      * @param  int  $productId
      * @return array
      */
-    public function removeFromCart($productId, $lineId = null)
+    public function removeFromCart(string|int $productId, ?string $lineId = null)
     {
         $cart = $this->getOrCreateCart();
 
@@ -314,7 +313,7 @@ class CartService
         ];
     }
 
-    private function makeLineId(int $productId, string $notes, $explicitLineId = null): string
+    private function makeLineId(int $productId, string $notes, ?string $explicitLineId = null): string
     {
         $candidate = trim((string) ($explicitLineId ?? ''));
         if ($candidate !== '') {

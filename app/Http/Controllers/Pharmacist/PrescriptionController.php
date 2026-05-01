@@ -30,8 +30,7 @@ class PrescriptionController extends Controller
     public function __construct(
         private readonly PrescriptionService $prescriptions,
         private readonly PrescriptionFileStorageService $prescriptionFiles,
-    ) {
-    }
+    ) {}
 
     public function pendingIndex(Request $request): JsonResponse
     {
