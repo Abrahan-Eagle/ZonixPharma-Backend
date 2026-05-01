@@ -42,6 +42,15 @@ class RouteServiceProvider extends ServiceProvider
             return Limit::perMinute((int) $createLimit)->by($request->user()?->id ?: $request->ip());
         });
 
+        $rxUploadPerMinute = (int) env('ZONIX_PHARMA_PRESCRIPTION_UPLOAD_PER_MINUTE', 8);
+        RateLimiter::for('prescription-upload', function (Request $request) use ($rxUploadPerMinute) {
+            return Limit::perMinute(max(1, $rxUploadPerMinute))->by($request->user()?->id ?: $request->ip());
+        });
+
+        RateLimiter::for('prescription-download', function (Request $request) {
+            return Limit::perMinute(40)->by($request->user()?->id ?: $request->ip());
+        });
+
         $this->routes(function () {
             Route::middleware('api')
                 ->prefix('api')

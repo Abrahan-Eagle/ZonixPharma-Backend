@@ -18,6 +18,8 @@ Route::middleware(['auth:sanctum', 'role:pharmacist'])->prefix('pharmacist')->gr
     Route::prefix('prescriptions')->group(function () {
         Route::get('/pending', [PharmacistPrescriptionController::class, 'pendingIndex']);
         Route::get('/{prescription}', [PharmacistPrescriptionController::class, 'show']);
+        Route::get('/{prescription}/file', [PharmacistPrescriptionController::class, 'downloadFile'])
+            ->middleware('throttle:prescription-download');
         Route::post('/{prescription}/approve', [PharmacistPrescriptionController::class, 'approve']);
         Route::post('/{prescription}/reject', [PharmacistPrescriptionController::class, 'reject']);
     });

@@ -10,11 +10,18 @@ use App\Http\Controllers\Profiles\DocumentController;
 use App\Http\Controllers\Profiles\ProfileController;
 use Illuminate\Support\Facades\Route;
 
+/**
+ * Rutas transversales autenticadas (perfiles multi-rol, documentos, ubicación, chat…).
+ * Seguridad por controlador (p. ej. ProfileController valida admin vs self).
+ * Las rutas legacy de órdenes del comprador exigen rol `users` explícitamente.
+ */
 Route::middleware('auth:sanctum')->group(function () {
 
-    // Legacy compat: /api/orders (sin prefijo buyer) — usada por tests y versiones anteriores
-    Route::get('/orders', [\App\Http\Controllers\Buyer\OrderController::class, 'index']);
-    Route::post('/orders', [\App\Http\Controllers\Buyer\OrderController::class, 'store'])->middleware('throttle:create');
+    // Legacy compat: /api/orders (sin prefijo buyer) — solo comprador (rol users).
+    Route::middleware('role:users')->group(function () {
+        Route::get('/orders', [\App\Http\Controllers\Buyer\OrderController::class, 'index']);
+        Route::post('/orders', [\App\Http\Controllers\Buyer\OrderController::class, 'store'])->middleware('throttle:create');
+    });
 
     Route::prefix('onboarding')->group(function () {
         Route::put('/{id}', [AuthController::class, 'update']);

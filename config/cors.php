@@ -42,7 +42,13 @@ return [
 
     'allowed_origins_patterns' => [],
 
-    'allowed_headers' => ['*'],
+    'allowed_headers' => array_values(array_filter(array_map(
+        'trim',
+        explode(',', (string) env(
+            'CORS_ALLOWED_HEADERS',
+            'Authorization,Content-Type,Accept,X-Requested-With,X-XSRF-TOKEN,X-CSRF-TOKEN'
+        ))
+    ))),
 
     'exposed_headers' => [],
 

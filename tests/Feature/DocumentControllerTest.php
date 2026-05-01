@@ -76,8 +76,8 @@ class DocumentControllerTest extends TestCase
             'number_ci' => 12345678,
         ]);
 
-        $response->assertStatus(400)
-            ->assertJsonFragment(['error' => 'Invalid document type. Only CI and RIF are allowed.']);
+        $response->assertStatus(422)
+            ->assertJsonValidationErrors(['type']);
     }
 
     public function test_store_rejects_duplicate_type_per_profile(): void

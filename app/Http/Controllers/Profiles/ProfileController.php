@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Profiles;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreProfileRequest;
+use App\Http\Requests\UpdateProfileRequest;
 use App\Http\Traits\ApiResponse;
 use App\Models\OperatorCode;
 use App\Models\Phone;
@@ -33,9 +35,18 @@ class ProfileController extends Controller
     public function index(Request $request)
     {
         if ($this->isAdmin($request)) {
-            $profiles = Profile::with(['user', 'addresses'])->get();
+            $perPage = min(max((int) $request->input('per_page', 20), 1), 100);
+            $paginated = Profile::with(['user', 'addresses'])->paginate($perPage);
 
-            return $this->jsonSuccess($profiles);
+            return $this->jsonSuccess([
+                'items' => $paginated->items(),
+                'pagination' => [
+                    'total' => $paginated->total(),
+                    'per_page' => $paginated->perPage(),
+                    'current_page' => $paginated->currentPage(),
+                    'last_page' => $paginated->lastPage(),
+                ],
+            ]);
         }
 
         $profile = Profile::with(['user', 'addresses'])
@@ -48,25 +59,8 @@ class ProfileController extends Controller
     /**
      * Crear un nuevo perfil.
      */
-    public function store(Request $request)
+    public function store(StoreProfileRequest $request)
     {
-        // Validación de los datos de entrada.
-        $validator = Validator::make($request->all(), [
-            'user_id' => 'required|exists:users,id',
-            'firstName' => 'required|string|max:255',
-            'middleName' => 'nullable|string|max:255',
-            'lastName' => 'required|string|max:255',
-            'secondLastName' => 'nullable|string|max:255',
-            'photo_users' => 'nullable|image|mimes:jpeg,png,jpg|max:5120',
-            'date_of_birth' => 'required|date',
-            'maritalStatus' => 'required|in:married,divorced,single',
-            'sex' => 'required|in:F,M',
-        ]);
-
-        if ($validator->fails()) {
-            return $this->jsonError('Error de validación', 400, 'VALIDATION_ERROR', $validator->errors());
-        }
-
         if (! $this->isAdmin($request) && (int) $request->user_id !== (int) $request->user()->id) {
             return $this->jsonForbidden('No autorizado');
         }
@@ -84,13 +78,19 @@ class ProfileController extends Controller
             );
         }
 
-        $profileData = $request->only([
-            'user_id', 'firstName', 'lastName', 'date_of_birth', 'maritalStatus', 'sex',
-        ]);
+        $validated = $request->validated();
+        $profileData = [
+            'user_id' => $validated['user_id'],
+            'firstName' => $validated['firstName'],
+            'lastName' => $validated['lastName'],
+            'date_of_birth' => $validated['date_of_birth'],
+            'maritalStatus' => $validated['maritalStatus'],
+            'sex' => $validated['sex'],
+        ];
 
         // Establecer valores predeterminados para campos opcionales.
-        $profileData['middleName'] = $request->middleName ?? '';
-        $profileData['secondLastName'] = $request->secondLastName ?? '';
+        $profileData['middleName'] = $validated['middleName'] ?? '';
+        $profileData['secondLastName'] = $validated['secondLastName'] ?? '';
         $profileData['status'] = 'notverified'; // Estado inicial.
 
         // Manejar la carga de la imagen (required para delivery agent).
@@ -131,7 +131,7 @@ class ProfileController extends Controller
     /**
      * Mostrar un perfil específico por ID.
      */
-    public function show(Request $request, $id = null)
+    public function show(Request $request, string|int|null $id = null)
     {
         if ($id === null || $id === '' || (is_string($id) && trim($id) === '')) {
             return $this->jsonError('ID de perfil requerido', 400, 'PROFILE_ID_REQUIRED');
@@ -150,7 +150,7 @@ class ProfileController extends Controller
     /**
      * PUT /api/profile — actualizar el perfil del usuario autenticado.
      */
-    public function updateCurrent(Request $request)
+    public function updateCurrent(UpdateProfileRequest $request)
     {
         $user = $request->user();
         $profile = Profile::where('user_id', $user->id)->first();
@@ -161,7 +161,10 @@ class ProfileController extends Controller
         return $this->update($request, $profile->id);
     }
 
-    public function update(Request $request, $id)
+    /**
+     * @param  int  $id  Profile ID
+     */
+    public function update(UpdateProfileRequest $request, $id)
     {
         // Buscar el perfil por ID o devolver error 404.
         $profile = Profile::findOrFail($id);
@@ -169,17 +172,7 @@ class ProfileController extends Controller
             return $this->jsonForbidden();
         }
 
-        // Validar los datos recibidos (date_of_birth nullable para perfiles sin fecha).
-        $validatedData = $request->validate([
-            'firstName' => 'required|string|max:255',
-            'middleName' => 'nullable|string|max:255',
-            'lastName' => 'required|string|max:255',
-            'secondLastName' => 'nullable|string|max:255',
-            'photo_users' => 'nullable|image|mimes:jpeg,png,jpg|max:5120',
-            'date_of_birth' => 'nullable|date',
-            'maritalStatus' => 'required|in:married,divorced,single',
-            'sex' => 'required|in:F,M',
-        ]);
+        $validatedData = $request->validated();
 
         // Si no se envía date_of_birth, mantener la existente o usar valor por defecto para nombre de imagen
         if (empty($validatedData['date_of_birth'])) {
@@ -242,6 +235,8 @@ class ProfileController extends Controller
 
     /**
      * Eliminar un perfil.
+     *
+     * @param  int  $id  Profile ID
      */
     public function destroy(Request $request, $id)
     {
@@ -267,10 +262,13 @@ class ProfileController extends Controller
         return $this->jsonSuccess(null, 'Perfil eliminado exitosamente.');
     }
 
-    // En tu controlador (UserController)
+    /**
+     * Devuelve el profile_id asociado a un user_id.
+     *
+     * @param  int  $id  User ID
+     */
     public function getProfileId($id)
     {
-
         $profile = Profile::where('user_id', $id)->first();
         if ($profile) {
             return $this->jsonSuccess(['profileId' => $profile->id]);

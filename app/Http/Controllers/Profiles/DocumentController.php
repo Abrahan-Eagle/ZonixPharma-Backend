@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Profiles;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreDocumentRequest;
 use App\Models\Document;
 use App\Models\Profile;
 use Illuminate\Http\Request;
@@ -45,45 +46,33 @@ class DocumentController extends Controller
         return response()->json($documents);
     }
 
-    public function store(Request $request)
+    public function store(StoreDocumentRequest $request)
     {
-        // Log::info('Datos recibidos:', $request->all());
-        // Datos recibidos: {"profile_id":"3","type":"ci","issued_at":"2024-12-21T00:00:00.000","expires_at":"2024-12-21T00:00:00.000","number_ci":"94646464","front_image":{"Illuminate\\Http\\UploadedFile":"/tmp/php9hrbPi"}}
+        $validated = $request->validated();
 
-        // Solo se permiten CI y RIF
-        if (! in_array($request->type, ['ci', 'rif'])) {
-            return response()->json(['error' => 'Invalid document type. Only CI and RIF are allowed.'], 400);
-        }
-
-        $profile = Profile::find((int) $request->profile_id)
-            ?? Profile::where('user_id', (int) $request->profile_id)->firstOrFail();
+        $profile = Profile::find((int) $validated['profile_id'])
+            ?? Profile::where('user_id', (int) $validated['profile_id'])->firstOrFail();
         if (! $this->canAccessProfile($request, $profile)) {
             return response()->json(['message' => 'No autorizado'], 403);
         }
 
         // CI y RIF son únicos por perfil (normativa Venezuela: un RIF/identificador por contribuyente).
         $existingDocument = Document::where('profile_id', $profile->id)
-            ->where('type', $request->type)
+            ->where('type', $validated['type'])
             ->first();
 
         if ($existingDocument) {
-            return response()->json(['error' => 'A document of type '.$request->type.' already exists for this profile.'], 400);
-        }
-
-        $validator = $this->getValidator($request->all(), $request->type);
-
-        if ($validator->fails()) {
-            return response()->json(['error' => $validator->errors()], 400);
+            return response()->json(['error' => 'A document of type '.$validated['type'].' already exists for this profile.'], 400);
         }
 
         $paths = $this->handleImageUpload($request);
 
         // Crear el documento con valores predeterminados
         $document = Document::create(array_merge(
-            $request->only([
+            collect($validated)->only([
                 'type', 'number_ci', 'rif_number', 'taxDomicile',
                 'issued_at', 'expires_at',
-            ]),
+            ])->all(),
             $paths,
             [
                 'profile_id' => $profile->id,
@@ -95,6 +84,9 @@ class DocumentController extends Controller
         return response()->json(['message' => 'Document created successfully', 'document' => $document], 201);
     }
 
+    /**
+     * @param  int  $id  User ID
+     */
     public function show(Request $request, $id)
     {
         $profile = Profile::where('user_id', $id)->firstOrFail();
@@ -116,6 +108,9 @@ class DocumentController extends Controller
         return response()->json($document);
     }
 
+    /**
+     * @param  int  $id  Document ID
+     */
     public function update(Request $request, $id)
     {
         $document = Document::find($id);
@@ -159,6 +154,9 @@ class DocumentController extends Controller
         return response()->json(['message' => 'Document updated successfully', 'document' => $document]);
     }
 
+    /**
+     * @param  int  $id  Document ID
+     */
     public function destroy(Request $request, $id)
     {
         $document = Document::find($id);

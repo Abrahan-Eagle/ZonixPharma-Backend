@@ -6,11 +6,13 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\StorePrescriptionRequest;
 use App\Models\Order;
 use App\Models\Prescription;
+use App\Services\PrescriptionAuditLogger;
+use App\Services\PrescriptionFileStorageService;
 use App\Services\PrescriptionService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Storage;
+use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Endpoints buyer para subir y consultar recetas médicas.
@@ -19,12 +21,15 @@ use Illuminate\Support\Facades\Storage;
  *   POST   /api/buyer/prescriptions
  *   GET    /api/buyer/prescriptions
  *   GET    /api/buyer/prescriptions/{prescription}
+ *   GET    /api/buyer/prescriptions/{prescription}/file
  *   DELETE /api/buyer/prescriptions/{prescription}   (solo si pending_validation)
  */
 class PrescriptionController extends Controller
 {
-    public function __construct(private readonly PrescriptionService $prescriptions)
-    {
+    public function __construct(
+        private readonly PrescriptionService $prescriptions,
+        private readonly PrescriptionFileStorageService $prescriptionFiles,
+    ) {
     }
 
     public function index(Request $request): JsonResponse
@@ -39,9 +44,11 @@ class PrescriptionController extends Controller
             ->orderByDesc('created_at')
             ->paginate((int) min($request->input('per_page', 20), 100));
 
+        $mapped = collect($items->items())->map(fn (Prescription $p) => $this->serializePrescription($p, $request))->all();
+
         return response()->json([
             'success' => true,
-            'data' => $items->items(),
+            'data' => $mapped,
             'pagination' => [
                 'total' => $items->total(),
                 'per_page' => $items->perPage(),
@@ -51,7 +58,7 @@ class PrescriptionController extends Controller
         ]);
     }
 
-    public function show(Prescription $prescription): JsonResponse
+    public function show(Request $request, Prescription $prescription): JsonResponse
     {
         $profile = $this->resolveProfile();
         if (! $profile || $prescription->patient_profile_id !== $profile->id) {
@@ -61,9 +68,56 @@ class PrescriptionController extends Controller
             ], 404);
         }
 
+        $prescription->load(['order', 'commerce']);
+        PrescriptionAuditLogger::log(
+            $prescription,
+            'buyer_view_json',
+            $request,
+            'users',
+            $profile->id,
+        );
+
         return response()->json([
             'success' => true,
-            'data' => $prescription->load(['order', 'commerce']),
+            'data' => $this->serializePrescription($prescription, $request),
+        ]);
+    }
+
+    public function downloadFile(Request $request, Prescription $prescription): Response
+    {
+        $profile = $this->resolveProfile();
+        if (! $profile || $prescription->patient_profile_id !== $profile->id) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Receta no encontrada.',
+            ], 404);
+        }
+
+        $url = (string) $prescription->image_url;
+        if ($url === '') {
+            return response()->json(['success' => false, 'message' => 'Sin adjunto.'], 404);
+        }
+
+        if (str_starts_with($url, 'http://') || str_starts_with($url, 'https://')) {
+            PrescriptionAuditLogger::log($prescription, 'buyer_redirect_external', $request, 'users', $profile->id);
+
+            return redirect()->away($url);
+        }
+
+        try {
+            $payload = $this->prescriptionFiles->getBinaryForDownload($url);
+        } catch (\Throwable $e) {
+            return response()->json([
+                'success' => false,
+                'message' => 'No se pudo recuperar el archivo de la receta.',
+            ], 404);
+        }
+
+        PrescriptionAuditLogger::log($prescription, 'buyer_download_file', $request, 'users', $profile->id);
+
+        return response($payload['binary'], 200, [
+            'Content-Type' => $payload['mime'],
+            'Content-Disposition' => 'inline; filename="prescription-'.$prescription->id.'"',
         ]);
     }
 
@@ -92,8 +146,7 @@ class PrescriptionController extends Controller
 
         $imageUrl = $request->input('image_url');
         if ($request->hasFile('image')) {
-            $stored = $request->file('image')->store('prescriptions', 'local');
-            $imageUrl = Storage::url($stored);
+            $imageUrl = $this->prescriptionFiles->storeFromUpload($request->file('image'));
         }
 
         if (! $imageUrl) {
@@ -111,7 +164,7 @@ class PrescriptionController extends Controller
         return response()->json([
             'success' => true,
             'message' => 'Receta enviada para validación.',
-            'data' => $prescription->fresh(['order', 'commerce']),
+            'data' => $this->serializePrescription($prescription->fresh(['order', 'commerce']), $request),
         ], 201);
     }
 
@@ -133,6 +186,7 @@ class PrescriptionController extends Controller
             ], 422);
         }
 
+        $this->prescriptionFiles->deleteByReference($prescription->image_url);
         $prescription->delete();
 
         return response()->json([
@@ -141,9 +195,25 @@ class PrescriptionController extends Controller
         ]);
     }
 
+    private function serializePrescription(Prescription $prescription, Request $request): array
+    {
+        $arr = $prescription->toArray();
+        $url = (string) ($arr['image_url'] ?? '');
+        if (str_starts_with($url, 'http://') || str_starts_with($url, 'https://')) {
+            return $arr;
+        }
+        if ($this->prescriptionFiles->isSecureOrLegacyFile($url)) {
+            $arr['image_url'] = null;
+            $arr['prescription_file_download_url'] = url('/api/buyer/prescriptions/'.$prescription->id.'/file');
+        }
+
+        return $arr;
+    }
+
     private function resolveProfile(): ?\App\Models\Profile
     {
         $user = Auth::user();
+
         return $user?->profile;
     }
 

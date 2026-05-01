@@ -57,7 +57,7 @@ class CommerceListController extends Controller
 
         return response()->json([
             'success' => true,
-            'message' => 'Restaurante creado correctamente',
+            'message' => 'Farmacia creada correctamente',
             'data' => $commerce,
         ], 201);
     }
@@ -66,7 +66,7 @@ class CommerceListController extends Controller
      * Listar todos los comercios del perfil (multi-restaurante).
      * GET /api/commerce/commerces
      */
-    public function index()
+    public function index(Request $request)
     {
         $profile = Auth::user()->profile;
         if (! $profile) {
@@ -76,10 +76,12 @@ class CommerceListController extends Controller
             ], 404);
         }
 
-        $commerces = $profile->commerces()
+        $perPage = min(max((int) $request->input('per_page', 50), 1), 100);
+        $paginated = $profile->commerces()
             ->orderByRaw('is_primary DESC, id ASC')
-            ->get();
+            ->paginate($perPage);
 
+        $commerces = $paginated->getCollection();
         $commerceIds = $commerces->pluck('id')->all();
         $productCounts = Product::whereIn('commerce_id', $commerceIds)
             ->selectRaw('commerce_id, count(*) as c')
@@ -105,11 +107,17 @@ class CommerceListController extends Controller
             ];
 
             return $arr;
-        });
+        })->values();
 
         return response()->json([
             'success' => true,
             'data' => $data,
+            'pagination' => [
+                'total' => $paginated->total(),
+                'per_page' => $paginated->perPage(),
+                'current_page' => $paginated->currentPage(),
+                'last_page' => $paginated->lastPage(),
+            ],
         ]);
     }
 

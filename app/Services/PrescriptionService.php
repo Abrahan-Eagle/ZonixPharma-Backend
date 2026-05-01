@@ -164,11 +164,12 @@ class PrescriptionService
 
             event(new PrescriptionRejected($prescription));
 
+            // No registrar texto libre del motivo (puede contener datos clínicos).
             Log::info('prescription_rejected', [
                 'prescription_id' => $prescription->id,
                 'order_id' => $prescription->order_id,
                 'pharmacist_profile_id' => $pharmacistProfileId,
-                'reason' => $reason,
+                'reason_length' => strlen($reason),
             ]);
 
             return $prescription;

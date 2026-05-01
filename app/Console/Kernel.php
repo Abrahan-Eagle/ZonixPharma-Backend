@@ -25,6 +25,9 @@ class Kernel extends ConsoleKernel
             $schedule->command('zonix:expire-pending-prescriptions')->everyFiveMinutes();
         }
         $schedule->command('zonix:observability-snapshots-delivery')->hourly();
+
+        // Pharma: purga de adjuntos y anonimización tras retención (pedidos terminales).
+        $schedule->command('zonix:purge-prescription-personal-data')->dailyAt('03:15');
     }
 
     /**

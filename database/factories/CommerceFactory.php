@@ -18,17 +18,11 @@ class CommerceFactory extends Factory
      */
     public function definition(): array
     {
-        $restaurantImages = [
-            'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500&h=300&fit=crop',
-            'https://images.unsplash.com/photo-1552566626-52f8b828add9?w=500&h=300&fit=crop',
-            'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=500&h=300&fit=crop',
-            'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=500&h=300&fit=crop',
-            'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop',
-            'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=500&h=300&fit=crop',
-            'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=500&h=300&fit=crop',
-            'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500&h=300&fit=crop',
-            'https://images.unsplash.com/photo-1552566626-52f8b828add9?w=500&h=300&fit=crop',
-            'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=500&h=300&fit=crop',
+        $pharmacyImages = [
+            'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=500&h=300&fit=crop',
+            'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=500&h=300&fit=crop',
+            'https://images.unsplash.com/photo-1584308666744-24d5c474f87a?w=500&h=300&fit=crop',
+            'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=500&h=300&fit=crop',
         ];
 
         $membershipType = $this->faker->randomElement(['basic', 'premium', 'enterprise']);
@@ -39,9 +33,11 @@ class CommerceFactory extends Factory
             'profile_id' => Profile::factory(),
             'is_primary' => true,
             'business_name' => $this->faker->company,
-            'business_type' => $this->faker->randomElement(['restaurant', 'cafe', 'bakery', 'fast_food', 'pizzeria', 'bar', 'food_truck']),
+            'business_type' => $this->faker->randomElement([
+                'pharmacy', 'drogueria', 'botica', 'cadena_farmacia', 'optica_farmacia',
+            ]),
             'tax_id' => $this->faker->numerify('J-########-#'),
-            'image' => $this->faker->randomElement($restaurantImages),
+            'image' => $this->faker->randomElement($pharmacyImages),
             'address' => $this->faker->address,
             // En testing: abierto por defecto (listados buyer, pedidos). Tests de cerrado pasan open => false.
             'open' => $testing ? true : $this->faker->boolean(70),
@@ -61,6 +57,9 @@ class CommerceFactory extends Factory
             'cancellation_count' => $this->faker->numberBetween(0, 5),
             'last_cancellation_date' => $this->faker->optional(0.3)->dateTimeBetween('-6 months', 'now'),
             'status' => 'approved',
+            'pharmacist_in_charge_profile_id' => null,
+            'health_permit_number' => $this->faker->optional(0.6)->numerify('PS-######'),
+            'health_permit_expires_at' => $this->faker->optional(0.6)->dateTimeBetween('+6 months', '+3 years'),
         ];
     }
 

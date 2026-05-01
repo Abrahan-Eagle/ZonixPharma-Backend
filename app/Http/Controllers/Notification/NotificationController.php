@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Log;
 class NotificationController extends Controller
 {
     // Listar notificaciones del usuario autenticado
-    public function getNotifications()
+    public function getNotifications(Request $request)
     {
         /** @var \App\Models\User|null $authUser */
         $authUser = Auth::user();
@@ -22,11 +22,30 @@ class NotificationController extends Controller
         }
         $authUser->load('profile');
         $profile = $authUser->profile;
-        $notifications = Notification::where('profile_id', $profile->id)
-            ->orderBy('created_at', 'desc')
-            ->get();
+        if (! $profile) {
+            return response()->json(['success' => true, 'data' => [], 'pagination' => [
+                'total' => 0,
+                'per_page' => 20,
+                'current_page' => 1,
+                'last_page' => 1,
+            ]]);
+        }
 
-        return response()->json(['success' => true, 'data' => $notifications]);
+        $perPage = min(max((int) $request->input('per_page', 20), 1), 100);
+        $paginated = Notification::where('profile_id', $profile->id)
+            ->orderBy('created_at', 'desc')
+            ->paginate($perPage);
+
+        return response()->json([
+            'success' => true,
+            'data' => $paginated->items(),
+            'pagination' => [
+                'total' => $paginated->total(),
+                'per_page' => $paginated->perPage(),
+                'current_page' => $paginated->currentPage(),
+                'last_page' => $paginated->lastPage(),
+            ],
+        ]);
     }
 
     // Estadísticas de notificaciones (unread count)
@@ -49,7 +68,11 @@ class NotificationController extends Controller
         ]);
     }
 
-    // Marcar una notificación como leída
+    /**
+     * Marcar una notificación como leída.
+     *
+     * @param  int  $notificationId
+     */
     public function markAsRead($notificationId)
     {
         /** @var \App\Models\User|null $authUser */
@@ -115,7 +138,11 @@ class NotificationController extends Controller
         return response()->json(['success' => true]);
     }
 
-    // Eliminar notificación
+    /**
+     * Eliminar notificación.
+     *
+     * @param  int  $notificationId
+     */
     public function delete($notificationId)
     {
         /** @var \App\Models\User|null $authUser */

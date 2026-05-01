@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
  * Receta médica adjunta a un pedido cuando hay productos Rx.
@@ -66,6 +67,11 @@ class Prescription extends Model
         return $this->belongsTo(Profile::class, 'validated_by_profile_id');
     }
 
+    public function accessLogs(): HasMany
+    {
+        return $this->hasMany(PrescriptionAccessLog::class);
+    }
+
     public function isPending(): bool
     {
         return $this->status === self::STATUS_PENDING_VALIDATION;
@@ -87,11 +93,17 @@ class Prescription extends Model
             || ($this->expires_at !== null && $this->expires_at->isPast());
     }
 
+    /**
+     * @param  \Illuminate\Database\Eloquent\Builder<self>  $query
+     */
     public function scopePending($query)
     {
         return $query->where('status', self::STATUS_PENDING_VALIDATION);
     }
 
+    /**
+     * @param  \Illuminate\Database\Eloquent\Builder<self>  $query
+     */
     public function scopeForCommerce($query, int $commerceId)
     {
         return $query->where('commerce_id', $commerceId);

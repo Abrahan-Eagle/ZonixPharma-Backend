@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Log;
 class SearchController extends Controller
 {
     /**
-     * Búsqueda avanzada de restaurantes
+     * Búsqueda avanzada de farmacias / comercios Pharma (canónico).
      */
-    public function searchRestaurants(Request $request): JsonResponse
+    public function searchPharmacies(Request $request): JsonResponse
     {
         try {
             $request->validate([
@@ -314,7 +314,7 @@ class SearchController extends Controller
             $perPage = min(max((int) ($request->per_page ?? 20), 1), 100);
             $products = $query->paginate($perPage);
 
-            $productsData = $products->map(function ($product) {
+            $productsData = collect($products->items())->map(function ($product) {
                 return [
                     'id' => $product->id,
                     'commerce_id' => $product->commerce_id,
@@ -460,7 +460,9 @@ class SearchController extends Controller
     }
 
     /**
-     * Verificar si un restaurante está en favoritos
+     * Verificar si una farmacia está en favoritos.
+     *
+     * @param  int  $commerceId
      */
     private function isFavorite($commerceId): bool
     {
@@ -469,5 +471,13 @@ class SearchController extends Controller
         return $profile->favorites()
             ->where('commerce_id', $commerceId)
             ->exists();
+    }
+
+    /**
+     * @deprecated Alias de compatibilidad; usar {@see searchPharmacies()}.
+     */
+    public function searchRestaurants(Request $request): JsonResponse
+    {
+        return $this->searchPharmacies($request);
     }
 }

@@ -41,6 +41,7 @@ class Kernel extends HttpKernel
         'api' => [
             // \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class, //se activo si funciona algo mal desactivalo
             \Illuminate\Routing\Middleware\ThrottleRequests::class.':api',
+            \App\Http\Middleware\SecurityHeadersMiddleware::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
 
@@ -70,5 +71,6 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'role' => \App\Http\Middleware\RoleMiddleware::class,
+        'deprecate.legacy' => \App\Http\Middleware\DeprecationHeadersMiddleware::class,
     ];
 }

@@ -28,6 +28,8 @@ return new class extends Migration
             $table->integer('priority')->default(0);
             $table->boolean('is_active')->default(true);
             $table->timestamps();
+
+            $table->index(['commerce_id', 'is_active', 'start_date'], 'promotions_commerce_active_start_index');
         });
     }
 

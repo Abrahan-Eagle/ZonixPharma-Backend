@@ -57,6 +57,7 @@ return new class extends Migration
 
             $table->index(['commerce_id', 'status'], 'prescriptions_commerce_status_index');
             $table->index(['patient_profile_id', 'created_at'], 'prescriptions_patient_created_index');
+            $table->index(['status', 'validated_at'], 'prescriptions_status_validated_index');
         });
 
         Schema::table('orders', function (Blueprint $table) {

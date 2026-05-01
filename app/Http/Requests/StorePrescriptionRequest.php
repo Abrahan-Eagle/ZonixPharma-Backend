@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Validator;
 
 class StorePrescriptionRequest extends FormRequest
 {
@@ -28,5 +29,34 @@ class StorePrescriptionRequest extends FormRequest
             ],
             'image_url' => ['nullable', 'string', 'max:500'],
         ];
+    }
+
+    public function withValidator(Validator $validator): void
+    {
+        $validator->after(function (Validator $validator): void {
+            $url = $this->input('image_url');
+            if (! is_string($url) || $url === '') {
+                return;
+            }
+            if (! str_starts_with($url, 'http://') && ! str_starts_with($url, 'https://')) {
+                return;
+            }
+            $allowed = config('zonix.pharma.prescription_allowed_image_hosts', []);
+            if ($allowed === []) {
+                $validator->errors()->add('image_url', 'Las URLs externas de receta están deshabilitadas. Sube el archivo como multipart o configura ZONIX_PHARMA_PRESCRIPTION_IMAGE_HOSTS.');
+
+                return;
+            }
+            $host = strtolower((string) (parse_url($url, PHP_URL_HOST) ?: ''));
+            if ($host === '') {
+                $validator->errors()->add('image_url', 'URL de imagen inválida.');
+
+                return;
+            }
+            $normalized = array_map('strtolower', $allowed);
+            if (! in_array($host, $normalized, true)) {
+                $validator->errors()->add('image_url', 'El dominio de la URL no está en la lista permitida para recetas.');
+            }
+        });
     }
 }

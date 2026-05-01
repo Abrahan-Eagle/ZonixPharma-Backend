@@ -28,13 +28,26 @@ class CommercePromotionController extends Controller
         }
 
         $query->orderByDesc('created_at');
-        $promotions = $query->get();
 
-        return response()->json($promotions);
+        $perPage = min(max((int) $request->input('per_page', 20), 1), 100);
+        $paginated = $query->paginate($perPage);
+
+        return response()->json([
+            'success' => true,
+            'data' => $paginated->items(),
+            'pagination' => [
+                'total' => $paginated->total(),
+                'per_page' => $paginated->perPage(),
+                'current_page' => $paginated->currentPage(),
+                'last_page' => $paginated->lastPage(),
+            ],
+        ]);
     }
 
     /**
      * Mostrar una promoción.
+     *
+     * @param  int  $id
      */
     public function show($id)
     {
@@ -100,6 +113,8 @@ class CommercePromotionController extends Controller
 
     /**
      * Actualizar promoción.
+     *
+     * @param  int  $id
      */
     public function update(Request $request, $id)
     {
@@ -154,6 +169,8 @@ class CommercePromotionController extends Controller
 
     /**
      * Eliminar promoción.
+     *
+     * @param  int  $id
      */
     public function destroy($id)
     {
@@ -172,6 +189,8 @@ class CommercePromotionController extends Controller
 
     /**
      * Activar/desactivar promoción.
+     *
+     * @param  int  $id
      */
     public function toggle($id)
     {

@@ -60,19 +60,19 @@ use Illuminate\Support\Facades\Hash;
  *
  * --- Simulación con 4 usuarios reales (Google) ---
  * Los ids 1, 6, 16 y 17 son usuarios reales para pruebas: login con Google, password null, datos y foto reales.
- * El resto son usuarios demo (@demo.zonix.eats) con password común "password".
+ * El resto son usuarios demo (@demo.zonix.pharma) con password común "password".
  *
  * Rol                | user_id | Email / acceso                              | Acceso
  * ------------------|---------|-----------------------------------------------|----------------------
  * Buyer (principal)  | 1       | ing.pulido.abrahan@gmail.com                 | Google (Abrahan)
- * Buyers demo        | 2–5     | maria.gonzalez@… / carlos… @demo.zonix.eats  | password
+ * Buyers demo        | 2–5     | maria.gonzalez@… / carlos… @demo.zonix.pharma  | password
  * Commerce (principal)| 6      | wistremiropulido@gmail.com                   | Google (Wistremiro)
  *
- * Commerce demo      | 7–15   | comercio*@demo.zonix.eats                   | password
+ * Commerce demo      | 7–15   | comercio*@demo.zonix.pharma                   | password
  * Delivery company   | 16     | towdah.yadah@gmail.com                       | Google (TOWDAH YADAH)
  * Delivery agent     | 17     | jarvispulido1@gmail.com                      | Google (Jarvis)
- * Delivery agent     | 18     | repartidor2@demo.zonix.eats                 | password
- * Delivery independ. | 19     | delivery.independent@demo.zonix.eats        | password
+ * Delivery agent     | 18     | repartidor2@demo.zonix.pharma                 | password
+ * Delivery independ. | 19     | delivery.independent@demo.zonix.pharma        | password
  * Admin              | 20     | jarvispulido5@gmail.com                      | Google (Jarvis Pulido5)
  *
  * Usuarios reales (no cambiar ids): 1 Abrahan, 6 Wistremiro, 16 TOWDAH YADAH, 17 Jarvis, 20 Jarvis Pulido5 (Admin). Resto: demo.
@@ -299,10 +299,10 @@ class ZonixDemoSeeder extends Seeder
 
         // 2-5. Cuatro compradores más (users)
         $buyers = [
-            ['name' => 'María González', 'email' => 'maria.gonzalez@demo.zonix.eats', 'first' => 'María', 'last' => 'González'],
-            ['name' => 'Carlos Rodríguez', 'email' => 'carlos.rodriguez@demo.zonix.eats', 'first' => 'Carlos', 'last' => 'Rodríguez'],
-            ['name' => 'Ana Martínez', 'email' => 'ana.martinez@demo.zonix.eats', 'first' => 'Ana', 'last' => 'Martínez'],
-            ['name' => 'Luis Pérez', 'email' => 'luis.perez@demo.zonix.eats', 'first' => 'Luis', 'last' => 'Pérez'],
+            ['name' => 'María González', 'email' => 'maria.gonzalez@demo.zonix.pharma', 'first' => 'María', 'last' => 'González'],
+            ['name' => 'Carlos Rodríguez', 'email' => 'carlos.rodriguez@demo.zonix.pharma', 'first' => 'Carlos', 'last' => 'Rodríguez'],
+            ['name' => 'Ana Martínez', 'email' => 'ana.martinez@demo.zonix.pharma', 'first' => 'Ana', 'last' => 'Martínez'],
+            ['name' => 'Luis Pérez', 'email' => 'luis.perez@demo.zonix.pharma', 'first' => 'Luis', 'last' => 'Pérez'],
         ];
         $buyerPhones = [['1234567', 4], ['7654321', 2], ['5544332', 4], ['9988776', 2]]; // [7 dígitos, operator_id] → 0416/0414
         foreach ($buyers as $i => $b) {
@@ -364,7 +364,7 @@ class ZonixDemoSeeder extends Seeder
         ];
         $commerceTypes = ['Restaurant', 'Pizzería', 'Cafetería', 'Panadería', 'Comida Rápida', 'Sushi Bar', 'Restaurant', 'Comida Rápida', 'Restaurant', 'Cafetería'];
         for ($i = 1; $i < 10; $i++) {
-            $email = 'comercio'.($i + 1).'@demo.zonix.eats';
+            $email = 'comercio'.($i + 1).'@demo.zonix.pharma';
             $u = User::updateOrCreate(
                 ['email' => $email],
                 [
@@ -455,7 +455,7 @@ class ZonixDemoSeeder extends Seeder
             ['id' => 18],
             [
                 'name' => 'Pedro Motorizado',
-                'email' => 'repartidor2@demo.zonix.eats',
+                'email' => 'repartidor2@demo.zonix.pharma',
                 'email_verified_at' => now(),
                 'password' => $password,
                 'completed_onboarding' => true,
@@ -484,7 +484,7 @@ class ZonixDemoSeeder extends Seeder
             ['Andrés', 'Rojas', 'M'], ['Valentina', 'López', 'F'],
         ];
         foreach ($demoAgents as $idx => $da) {
-            $email = strtolower($da[0]).'.'.strtolower($da[1]).'@demo.zonix.eats';
+            $email = strtolower($da[0]).'.'.strtolower($da[1]).'@demo.zonix.pharma';
             $u = User::updateOrCreate(
                 ['email' => $email],
                 [
@@ -514,7 +514,7 @@ class ZonixDemoSeeder extends Seeder
 
         // 19. Repartidor independiente
         $u = User::updateOrCreate(
-            ['email' => 'delivery.independent@demo.zonix.eats'],
+            ['email' => 'delivery.independent@demo.zonix.pharma'],
             [
                 'name' => 'Miguel Independiente',
                 'email_verified_at' => now(),
@@ -805,7 +805,7 @@ class ZonixDemoSeeder extends Seeder
             [
                 'name' => 'Insulina glargina 100 UI/ml',
                 'active_ingredient' => 'Insulina glargina',
-                'dosage_form' => 'injectable',
+                'dosage_form' => 'injection',
                 'concentration' => '100 UI/ml',
                 'presentation' => 'Frasco 10 ml',
                 'requires_prescription' => true,
@@ -1280,17 +1280,18 @@ class ZonixDemoSeeder extends Seeder
             4 => 'Buen servicio; pedido correcto y embalaje adecuado.',
             3 => 'Regular: hubo demora en el despacho.',
         ];
-        $deliveryComments = [
-            5 => 'Llegó súper rápido, muy amable.',
-            4 => 'Buen servicio, puntual.',
-            3 => 'Tardó un poco pero todo correcto.',
-            5 => 'Excelente motorizado, muy profesional.',
-            4 => 'Sin problemas, entrega rápida.',
+        // Lista de pares [rating, comment] para soportar varios comentarios
+        // por el mismo rating sin duplicar claves de array asociativo.
+        $deliveryReviews = [
+            [5, 'Llegó súper rápido, muy amable.'],
+            [4, 'Buen servicio, puntual.'],
+            [3, 'Tardó un poco pero todo correcto.'],
+            [5, 'Excelente motorizado, muy profesional.'],
+            [4, 'Sin problemas, entrega rápida.'],
         ];
 
         $orders = Order::where('status', 'delivered')->get();
         $cRatings = array_keys($commerceComments);
-        $dRatings = array_keys($deliveryComments);
         foreach ($orders as $i => $order) {
             $cRating = $cRatings[$i % count($cRatings)];
             Review::firstOrCreate(
@@ -1299,10 +1300,10 @@ class ZonixDemoSeeder extends Seeder
             );
             $od = $order->orderDelivery;
             if ($od && $od->agent) {
-                $dRating = $dRatings[$i % count($dRatings)];
+                [$dRating, $dComment] = $deliveryReviews[$i % count($deliveryReviews)];
                 Review::firstOrCreate(
                     ['profile_id' => $order->profile_id, 'order_id' => $order->id, 'reviewable_type' => DeliveryAgent::class, 'reviewable_id' => $od->agent->id],
-                    ['rating' => $dRating, 'comment' => $deliveryComments[$dRating]]
+                    ['rating' => $dRating, 'comment' => $dComment]
                 );
             }
         }

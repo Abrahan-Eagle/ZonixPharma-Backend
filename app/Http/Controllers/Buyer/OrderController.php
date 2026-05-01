@@ -6,6 +6,7 @@ use App\Events\OrderCreated;
 use App\Events\PaymentProofUploaded;
 use App\Events\OrderStatusChanged;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreBuyerOrderRequest;
 use App\Models\Coupon;
 use App\Models\Order;
 use App\Models\Prescription;
@@ -146,25 +147,10 @@ class OrderController extends Controller
      *
      * @return \Illuminate\Http\JsonResponse
      */
-    public function store(Request $request)
+    public function store(StoreBuyerOrderRequest $request)
     {
         try {
-            // Validación inicial de datos
-            $validated = $request->validate([
-                'commerce_id' => 'required|exists:commerces,id',
-                'products' => 'required|array|min:1',
-                'products.*.id' => 'required|exists:products,id',
-                'products.*.quantity' => 'required|integer|min:1|max:100',
-                'delivery_type' => 'required|in:pickup,delivery',
-                'total' => 'required|numeric|min:0',
-                'delivery_fee' => 'nullable|numeric|min:0',
-                'coupon_code' => 'nullable|string|max:20',
-                'notes' => 'nullable|string|max:500',
-                'delivery_address' => 'required_if:delivery_type,delivery|nullable|string|max:500',
-                'delivery_latitude' => 'nullable|numeric|between:-90,90',
-                'delivery_longitude' => 'nullable|numeric|between:-180,180',
-                'prescription_id' => 'nullable|integer|exists:prescriptions,id',
-            ]);
+            $validated = $request->validated();
             $validated['delivery_fee'] = (float) ($validated['delivery_fee'] ?? 0);
 
             $user = Auth::user();
@@ -796,6 +782,7 @@ class OrderController extends Controller
     /**
      * Muestra los detalles de una orden específica.
      *
+     * @param  int  $id
      * @return \Illuminate\Http\JsonResponse
      */
     public function show($id)
@@ -833,6 +820,8 @@ class OrderController extends Controller
     /**
      * GET /api/buyer/orders/{id}/payment-info — Métodos de pago del comercio Y de la empresa de delivery.
      * Devuelve { food_methods: [...], delivery_methods: [...], order_payments: [...] }
+     *
+     * @param  int  $id
      */
     public function getPaymentInfo($id)
     {
@@ -875,6 +864,9 @@ class OrderController extends Controller
         ]);
     }
 
+    /**
+     * @param  \Illuminate\Support\Collection  $methods
+     */
     private function formatPaymentMethods($methods): array
     {
         return $methods->map(function ($m) {
@@ -900,6 +892,7 @@ class OrderController extends Controller
     /**
      * Cancela una orden pendiente.
      *
+     * @param  int  $id
      * @return \Illuminate\Http\JsonResponse
      */
     public function cancel($id)
@@ -1043,7 +1036,11 @@ class OrderController extends Controller
         }
     }
 
-    // Alias para compatibilidad con tests: /buyer/orders/{id}/comprobante
+    /**
+     * Alias para compatibilidad con tests: /buyer/orders/{id}/comprobante
+     *
+     * @param  int  $id
+     */
     public function uploadComprobante(Request $request, $id)
     {
         return $this->uploadPaymentProof($request, $id);
@@ -1139,6 +1136,8 @@ class OrderController extends Controller
 
     /**
      * GET /api/buyer/orders/{id}/delivery-qr — QR para que el repartidor escanee al entregar.
+     *
+     * @param  int  $id
      */
     public function deliveryQr($id)
     {

@@ -140,6 +140,10 @@ return [
         'prescription_validation_ttl_minutes' => (int) env('ZONIX_PHARMA_PRESCRIPTION_VALIDATION_TTL_MINUTES', 60),
         'disallow_promotions_on_rx' => filter_var(env('ZONIX_PHARMA_DISALLOW_PROMOTIONS_ON_RX', true), FILTER_VALIDATE_BOOLEAN),
         'require_cold_chain_handling' => filter_var(env('ZONIX_PHARMA_REQUIRE_COLD_CHAIN_HANDLING', true), FILTER_VALIDATE_BOOLEAN),
+        /** Hostnames permitidos para `image_url` externa (coma-separados). Vacío = solo adjunto multipart cifrado. */
+        'prescription_allowed_image_hosts' => array_values(array_filter(array_map('trim', explode(',', (string) env('ZONIX_PHARMA_PRESCRIPTION_IMAGE_HOSTS', ''))))),
+        /** Días tras estado terminal del pedido antes de purgar adjunto y anonimizar metadatos de receta. */
+        'prescription_retention_days_after_terminal' => (int) env('ZONIX_PHARMA_PRESCRIPTION_RETENTION_DAYS', 90),
     ],
 
 ];
