@@ -1,0 +1,379 @@
+# Plan del módulo operativo clave: validación Rx por farmacéutico colegiado
+
+> **Última actualización:** 5 mayo 2026.
+> Documento que detalla el flujo central diferenciador de Zonix Pharma: la **validación de receta médica (Rx) por farmacéutico colegiado** dentro de la app.
+> Este flujo está parcialmente implementado en backend; ver [`../PLAN_RX_VALIDATION.md`](../PLAN_RX_VALIDATION.md) para detalle técnico.
+
+## 1. Por qué este módulo es crítico
+
+1. **Es el diferenciador legal:** Rappi y PedidosYa NO validan recetas digitalmente en VE. Farmatodo y Locatel hacen validación física en sucursal.
+2. **Cumple regulación:** la Ley del Ejercicio de la Farmacia VE exige validación por farmacéutico colegiado.
+3. **Genera trazabilidad:** quién validó, cuándo, qué medicamento, qué receta, qué paciente. Fundamental ante MPPS.
+4. **Habilita el segmento Rx (48,3% del mercado farmacéutico VE):** sin esto, Zonix solo opera OTC + cuidado personal.
+5. **Reduce riesgo de mal uso:** Rx retenida, sustancias controladas, dosis verificada.
+
+## 2. Roles involucrados
+
+| Rol | Acción |
+|---|---|
+| Paciente (`users`) | Sube foto/PDF de receta + crea orden |
+| Farmacéutico colegiado (`pharmacist`) | Valida o rechaza receta digital |
+| Farmacia (`commerce`) | Despacha medicamento |
+| Repartidor (`delivery` o `delivery_agent`) | Entrega en domicilio o pickup en sucursal |
+| Customer Support de Zonix | Media en disputas y casos límite |
+
+## 3. Tipos de receta soportados
+
+### 3.1 Receta común (mayoría de Rx)
+
+- Medicamento genérico o de marca, no controlado, no retenido.
+- Validación digital por farmacéutico colegiado de la farmacia despachadora.
+- Despacho normal: a domicilio o pickup.
+
+### 3.2 Receta retenida
+
+- Categoría según legislación: psicotrópicos clase II-IV, opiáceos, otros con orden de retención.
+- **Obligatorio:** retención física de la receta original en la farmacia.
+- Despacho **solo pickup en sucursal**, no a domicilio.
+- El paciente debe presentar la receta original al recoger.
+
+### 3.3 Receta especial (sustancias controladas)
+
+- Categoría según legislación: estupefacientes y psicotrópicos clase I.
+- **Obligatorio:** retención física + libro de control de la farmacia.
+- Despacho **solo pickup en sucursal con identificación del paciente**.
+- Validación digital + revisión de identidad obligatoria.
+- En piloto: opcional. Activar en mes 4-6 con asesoría regulatoria.
+
+## 4. Flujo operativo paso a paso
+
+```mermaid
+sequenceDiagram
+    participant P as Paciente
+    participant Z as Zonix App
+    participant F as Farmacia
+    participant Ph as Farmaceutico colegiado
+    participant R as Repartidor
+
+    P->>Z: Crea orden (medicamento Rx + dirección)
+    Z->>P: Solicita subir receta (foto/PDF)
+    P->>Z: Sube receta
+    Z->>F: Notifica orden con receta
+    Z->>Ph: Push: receta pendiente de validacion
+    Note over Ph,Z: SLA 60 min en horario operativo
+    Ph->>Z: Valida (aprobada/rechazada/pendiente)
+
+    alt Aprobada
+        Z->>P: Push: receta aprobada
+        Z->>P: Solicita pago
+        P->>F: Realiza pago (PMC2P/Zelle/etc.)
+        P->>Z: Sube comprobante
+        F->>Z: Confirma pago
+        F->>Z: Marca orden lista
+        F->>R: Asigna repartidor
+        R->>P: Entrega medicamento
+    else Rechazada
+        Z->>P: Push: receta rechazada con motivo
+        Z->>P: Permite resubir o cancelar
+    else Sin validar (TTL excedido)
+        Z->>P: Push: validacion demorada
+        Z->>P: Cancelacion automatica + reembolso si pago hecho
+    end
+```
+
+## 5. Estados de la orden Rx
+
+| Estado | Descripción |
+|---|---|
+| `pending_prescription_validation` | Receta subida, esperando validación. |
+| `prescription_approved` | Validada. Pasa a `pending_payment`. |
+| `prescription_rejected` | Rechazada. Paciente puede resubir o cancelar. |
+| `prescription_expired` | TTL excedido (60 min sin validación). Cancelación automática. |
+| `pending_payment` | Lista para pagar. |
+| `pending_dispatch` | Pagada, en preparación. |
+| `dispatched` | Salió de la farmacia. |
+| `in_transit` | En ruta del repartidor. |
+| `delivered` | Entregada. |
+| `cancelled` | Cancelada por cualquier motivo. |
+| `returned` | Devuelta (medicamento equivocado, vencido, etc.). |
+
+Detalle técnico de transiciones en backend: skill `zonix-order-lifecycle` (ver [.agents/skills/zonix-order-lifecycle/SKILL.md](../../.agents/skills/zonix-order-lifecycle/SKILL.md)).
+
+## 6. SLA de validación
+
+| Horario | SLA Validación |
+|---|---|
+| Horario operativo (8:00 - 20:00) | ≤ 60 minutos |
+| Fuera de horario operativo | Pendiente al siguiente horario operativo + notificación al paciente |
+
+**Si excede 60 min:**
+- Push al paciente: "Validación demorada. Reintentando..."
+- Push al farmacéutico colegiado: "Receta vencida pronto, validar urgente."
+
+**Si excede 120 min:**
+- Cancelación automática.
+- Notificación al paciente.
+- Reembolso si ya pagó.
+- Métrica negativa para la farmacia (cuenta como SLA missed).
+
+## 7. Onboarding del farmacéutico colegiado
+
+### 7.1 Pasos
+
+| Paso | Tiempo |
+|---|---|
+| Farmacia añade pharmacist a su cuenta | 5 min |
+| KYC del pharmacist: cédula + foto + número MPPS + registro INHRR | 10 min (paciente) + 24-48h (verificación Zonix) |
+| Customer Support verifica número MPPS (ver **§7.4**) | Async, 1-2 días hábiles |
+| Capacitación: video tutorial 20 min + manual PDF | 30 min |
+| Test operativo: validar 3 recetas de prueba | 30 min |
+| Activación cuenta | Inmediato post-test |
+
+### 7.2 Materiales de capacitación
+
+- **Video tutorial:** screencast de 15-20 min con flujo completo.
+- **Manual PDF:** 8-12 páginas con casos comunes y casos límite.
+- **FAQ:** 30+ preguntas comunes con respuestas.
+- **Soporte directo:** WhatsApp del Customer Support de Zonix para dudas.
+
+### 7.3 Compromisos del pharmacist
+
+- Cumplir SLA de 60 min en horario operativo.
+- Actualizar estado de la receta en máximo 24h fuera de horario operativo.
+- Reportar inmediatamente cualquier sospecha de receta falsificada.
+- Mantener su número MPPS vigente.
+- Responder ante MPPS si se requiere auditoría (Zonix entrega historial).
+
+### 7.4 Verificación del número MPPS (fuente y contingencia)
+
+| Paso | Acción |
+|---|---|
+| 1 | Customer Support introduce número MPPS del pharmacist en flujo interno. |
+| 2 | **Contraste con fuente oficial** disponible al momento del onboarding: portal o consulta del **MPPS** y/o **colegio farmacéutico regional**, según acceso vigente (los portales cambian; mantener URL de referencia actualizada en runbook interno). |
+| 3 | Si la consulta en línea **falla** o no devuelve match | Verificación **manual** en 48-72h hábiles; cuenta pharmacist en estado **pendiente** sin validar recetas reales hasta aprobación. |
+| 4 | Evidencia | Captura o registro de consulta archivado (audit trail) asociado al `pharmacist_id`. |
+
+## 8. Auditoría y trazabilidad
+
+### 8.1 Audit log
+
+Cada validación queda registrada en backend con:
+
+- `prescription_id`
+- `pharmacist_id` y `pharmacist_mpps_number`
+- `pharmacy_id`
+- `order_id`
+- `patient_id`
+- `validation_result` (`approved` / `rejected` / `expired`)
+- `rejection_reason` (si aplica)
+- `validation_timestamp`
+- `validator_ip` y `user_agent`
+- `prescription_url` (storage S3 con tiempo de retención según ley)
+- `digital_signature` (hash SHA256 de la validación)
+
+### 8.2 Retención
+
+- **Recetas comunes:** 10 años (estándar farmacéutico).
+- **Recetas retenidas / controladas:** 10 años + retención física en la farmacia.
+
+### 8.2.1 Sustento normativo y responsabilidad (revisión profesional)
+
+- Los plazos de **conservación digital** en la plataforma (p. ej. 10 años para trazabilidad de receta validada) **alinean con práctica de expediente y fiscalización** del sector; la **custodia física** de recetas **retenidas / controladas** y los **libros de control** son **obligación de la farmacia** como establecimiento farmacéutico.
+- **Antes del lanzamiento público (Day-D):** dictamen escrito de **abogado en farmacia y datos de salud VE** + revisión de **farmacéutico asesor** que cite **normativa aplicable** (Ley del Ejercicio de la Farmacia, resoluciones MPPS/INHRR vigentes, instructivos sobre psicotrópicos/estupefacientes) y ajuste, si hace falta, plazos y textos en T&C y política de privacidad.
+- Cualquier cifra de años en este pack es **hipótesis operativa** hasta esa validación.
+
+### 8.3 Exportación a MPPS
+
+- Botón en dashboard del pharmacist: "Exportar mis validaciones del mes".
+- Genera PDF con audit log filtrado.
+- Listo para entregar a MPPS si se requiere auditoría.
+
+## 9. Manejo de casos límite
+
+### 9.1 Receta no legible
+
+- Pharmacist marca como "rechazada — receta ilegible".
+- Paciente recibe push con motivo + opción de resubir.
+
+### 9.2 Receta vencida
+
+- TTL receta médica VE: depende del tipo, generalmente 30 días desde emisión.
+- Si la receta tiene fecha > 30 días: pharmacist rechaza con motivo.
+
+### 9.3 Receta de medicamento sin INHRR
+
+- Sistema detecta automáticamente: medicamento solicitado no está en catálogo INHRR vigente.
+- Farmacia y pharmacist rechazan.
+
+### 9.4 Receta para sustancia controlada
+
+- Sistema detecta: medicamento controlado.
+- Sistema obliga modo pickup (no delivery).
+- Pharmacist verifica adicionalmente identidad del paciente al despachar.
+
+### 9.5 Receta sospechosa de falsificación
+
+- Pharmacist marca como "rechazada — sospecha falsificación".
+- Sistema notifica a Customer Support de Zonix.
+- Customer Support contacta al paciente para investigar.
+- Si confirma: cuenta del paciente suspendida 90 días o permanente según gravedad.
+- Audit log se entrega a MPPS si lo solicitan.
+
+### 9.6 Sustancias controladas y nomenclatura legal (disclaimer)
+
+Las etiquetas de producto en la app (**`common` / `retained` / `special`**, controlados, cadena de frío) deben **mapearse** a listados y requisitos **vigentes en Venezuela** (estupefacientes, psicotrópicos, recetas oficiales, libros de control). **Mes 0-3 del piloto:** priorizar recetas **comunes** y flujo operativo estable; antes de escalar volumen en **controlados**, publicar **tabla de equivalencias** aprobada por **farmacéutico asesor + abogado** y ajustar UX (mensajes obligatorios, pickup, identificación).
+
+## 10. Cadena de frío
+
+### 10.1 Productos con `cold_chain = true`
+
+- Insulinas, vacunas, biológicos, ciertos sueros.
+- Sistema bloquea modos de delivery sin equipo de refrigeración.
+- Solo se asigna a:
+  - Pickup en sucursal con caja térmica entregada al paciente.
+  - Repartidor con equipo de cadena de frío validado por la farmacia.
+
+### 10.2 Verificación
+
+- Repartidor sube foto del termómetro al recoger y al entregar.
+- Si temperatura excede umbrales: alerta automática.
+- Política de reembolso si se rompe cadena de frío.
+
+## 11. Métricas operativas del módulo
+
+| Métrica | Meta mes 6 | Meta mes 12 |
+|---|---|---|
+| Tiempo promedio validación Rx | 35 min | 25 min |
+| Tasa de aprobación primera vez | 85% | 90% |
+| Tasa de TTL excedido | < 5% | < 3% |
+| Tasa de receta detectada falsa | < 0,5% | < 0,3% |
+| Tasa de quejas de paciente sobre validación | < 4% | < 2% |
+| Pharmacists activos | 8-15 | 35-45 |
+| Recetas validadas mes | 200 | 1.500+ |
+
+## 12. Riesgos del módulo
+
+| Riesgo | Mitigación |
+|---|---|
+| Pharmacist se rehúsa a validar digital | Capacitación + soporte. La farmacia decide si lo capacita o cambia. |
+| Pharmacist excede SLA frecuentemente | Alertas + escalamiento a la farmacia. Si crónico, suspender afiliación. |
+| Receta falsa pasa la validación | Audit log + Zonix Customer Support investiga. Programa de fraud detection con ML en año 2. |
+| MPPS audita y encuentra fallas | Trazabilidad completa + asesor regulatorio externo. |
+| Paciente sube datos personales sensibles fuera de la receta | Política de privacidad + cifrado en reposo + audit log. |
+
+## 13. Seguridad y privacidad de datos médicos (ALTA #2 forense)
+
+Datos de salud son categoría especial bajo la **Ley de Protección de Datos Personales VE 2025**. Zonix Pharma cumple con:
+
+### 13.1 Almacenamiento
+
+- **Recetas (foto/PDF):** S3 cifrado en reposo (AES-256). Bucket privado, acceso solo vía signed URL con TTL ≤ 60 min.
+- **Cédulas KYC del pharmacist y repartidor:** mismo S3 cifrado, política de retención 5 años o lo que exija ley aplicable.
+- **Comprobantes de pago:** S3 cifrado, retención 10 años (ley contable VE).
+- **Datos médicos del paciente** (medicamento comprado, frecuencia, condición indirecta): MySQL cifrado en reposo. Acceso vía API solo con sesión autenticada del paciente o con sesión del pharmacist responsable de su orden.
+
+### 13.2 Transmisión
+
+- TLS 1.3 obligatorio en toda comunicación cliente-servidor.
+- Sin endpoints HTTP no encriptados.
+- Headers de seguridad (HSTS, CSP) configurados.
+
+### 13.3 Acceso
+
+- Audit log de todo acceso a datos sensibles.
+- Principle of Least Privilege: el pharmacist solo ve recetas asignadas a SU farmacia.
+- Customer Support de Zonix solo accede a datos sensibles vía herramienta auditada cuando hay disputa abierta.
+
+### 13.4 Retención
+
+- **Receta común (digital en plataforma):** **hasta 10 años** como hipótesis de trazabilidad y defensa ante disputas; **ajustar** tras dictamen legal/farmacéutico (ver §8.2.1).
+- **Receta retenida / controlada:** conservación digital coherente con lo anterior + **retención física y libros** en la farmacia (responsabilidad del establecimiento).
+- **Datos personales paciente sin actividad:** anonimización después de 3 años de inactividad (política interna; validar plazo con abogado).
+- **Comprobantes de pago:** 10 años (marco contable VE; validar con contador).
+
+### 13.5 Consentimiento
+
+- Onboarding del paciente requiere consentimiento explícito a la política de privacidad antes de subir receta.
+- El paciente puede solicitar exportación de sus datos en cualquier momento (RGPD-like).
+- El paciente puede solicitar eliminación de su cuenta y datos (con excepción de los retenidos por ley contable o farmacéutica).
+
+### 13.6 Incidentes de seguridad
+
+- Plan de respuesta documentado.
+- Notificación al paciente afectado dentro de 72h si hay leak material.
+- Notificación a autoridad VE de protección de datos.
+
+## 14. Capacidad operativa fuera de horario y picos (ALTA #8 forense)
+
+### 14.1 Horario operativo estándar
+
+- **Lunes-Sábado 08:00-20:00:** SLA validación Rx 60 min.
+- **Domingos y feriados:** SLA validación Rx 120 min (operación reducida).
+
+### 14.2 Capacidad de Customer Support
+
+- **Mes 1-3:** 1 persona Customer Support 8h/día Lun-Sáb. Founder cubre fines de semana y emergencias.
+- **Mes 4-6:** Customer Support extiende a 12h/día Lun-Sáb. Marketing Lead cubre 2-3h Domingo en horario pico.
+- **Mes 7-12:** Si volumen lo justifica, contratar 2do Customer Support part-time (USD 150-200/mes adicional, no presupuestado en Base; Growth lo absorbe).
+
+### 14.3 Plan ante picos (feriados, fines de semana, eventos)
+
+- Notificación previa al equipo: programación de turnos.
+- Comunicación previa a farmacias activas: capacidad reducida → mejorar SLA acuerdos.
+- Buffer de Sales B2B y Delivery Ops como respaldo de Customer Support si excede 50 tickets/día (raro).
+
+### 14.4 Plan ante incidente técnico (servidor caído)
+
+- DigitalOcean SLA 99,9%.
+- Si caída > 1h: notificación push a paciente + farmacia.
+- Plan B operativo: pickup en sucursal con orden manual mientras se restaura.
+- Founder es el único responsable técnico. Si la indisponibilidad supera 1 semana, contratar consultor externo.
+
+## 15. Playbook de incidencias operativas (COO / Customer Support)
+
+Objetivo: **tiempo a resolución (TTR)** predecible y registro en ticket para aprendizaje y due diligence.
+
+| Tipo | Síntoma | Escalamiento | TTR objetivo |
+|---|---|---|---|
+| P0 — Caída de API / app | Errores masivos, órdenes no creadas | Founder + proveedor nube | < 2 h |
+| P1 — Rx atascada sin validar | SLA > 45 min | Push farmacia + teléfono a sucursal | < 90 min |
+| P2 — Catálogo mal cargado | Precio o stock incorrecto | Customer Support → farmacia admin | < 24 h |
+| P3 — Disputa pago | Comprobante no coincide | Customer Support → farmacia + paciente | < 48 h |
+| P4 — Delivery frío roto | Foto termómetro fuera de rango | Customer Support → política de reembolso farmacia | < 72 h |
+| P5 — Farmacia sin pharmacist de guardia | Cola de validaciones | Acuerdo previo con farmacia (suplente MPPS) | según contrato |
+
+**Métricas Customer Support (objetivo mes 6):** primera respuesta **< 15 min** horario laboral; **> 85%** tickets cerrados sin reabrir; backlog **< 48 h** salvo P0.
+
+## 16. Modelo de amenazas abreviado (AppSec / CTO)
+
+| Amenaza | Superficie | Mitigación en producto |
+|---|---|---|
+| Robo de sesión / token | API móvil | Sanctum, rotación, rate limit, HTTPS only |
+| IDOR en recetas u órdenes | IDs en URL/body | Autorización por rol + `pharmacy_id` scope en cada query |
+| Upload malicioso (PDF/foto) | Receta | Tipo MIME, tamaño máx, antivirus server-side, almacenamiento privado |
+| URL firmada filtrada | S3 signed URLs | TTL corto (≤ 60 min), sin listados públicos |
+| Webhooks pagos / OTP | Integraciones | Firma HMAC secreto, replay window, IP allowlist si aplica |
+| Insider Support | Herramientas internas | Acceso solo con ticket + audit log de cada vista |
+
+**DR / continuidad:** backups automáticos BD + snapshots configuración; prueba de restore **trimestral**; RPO objetivo **≤ 24 h**, RTO **≤ 4 h** para servicio core (ajustar con proveedor).
+
+## 17. QA y definición de “listo para piloto” (SDET / CTO)
+
+| Capa | Qué se exige antes de Day-D |
+|---|---|
+| Automatizado | `php artisan test` en verde en CI; smoke API auth + orden OTC |
+| Manual | Flujo completo: registro buyer → carrito Rx → subida receta → validación pharmacist test → pago comprobante → dispatch |
+| Seguridad | Revisión checklist §16; sin secretos en repo; headers TLS |
+| Datos | Política de privacidad y consentimientos visibles en build de tienda |
+| Legal | Contrato marco farmacia + avisos revisados por abogado (ver [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §4.4.5) |
+
+**Regresión:** antes de cada release a producción, ejecutar suite automatizada + smoke manual de 30 min (script en runbook interno).
+
+## 18. Documentos hermanos
+
+- [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md): rol del farmacéutico colegiado.
+- [PROPUESTA_VALOR_USUARIO_FINAL.md](PROPUESTA_VALOR_USUARIO_FINAL.md): cómo el paciente sube receta.
+- [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md): qué le ofrece a la farmacia.
+- [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md): pago después de la validación.
+- [`../PLAN_RX_VALIDATION.md`](../PLAN_RX_VALIDATION.md): detalle técnico backend.
+- [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md): regulación VE detallada.
