@@ -1,6 +1,6 @@
 # Propuesta de valor — Tercer lado (Delivery, Delivery Company, Pharmacist colegiado)
 
-> **Última actualización:** 5 mayo 2026.
+> **Última actualización:** 10 mayo 2026.
 > Documento que captura el pitch a los tres roles que sostienen la operación: repartidor autónomo (`delivery`), empresa de delivery (`delivery_company` + sus `delivery_agent`), y farmacéutico colegiado (`pharmacist`).
 > Cada uno tiene flujo distinto. Esta propuesta los cubre por separado.
 
@@ -24,7 +24,7 @@
 
 ### A.3 Lo que Zonix le ofrece
 
-- **Comisión Zonix: 0% sobre fee de entrega.** El repartidor cobra el delivery fee completo. Zonix solo monetiza por membresía B2B.
+- **Comisión Zonix: 0% sobre fee de entrega** (política repartidor autónomo en piloto). El repartidor cobra el delivery fee completo. **Monetización Zonix vs farmacia:** cuota plataforma **fija + % sobre GMV** del pedido ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5), no sobre el delivery fee del repartidor.
 - **Pago diario** vía Pago Móvil C2P o Binance Pay USDT.
 - **Estimación de ganancia visible** antes de aceptar la orden.
 - **Asignación geo-inteligente:** la app le asigna órdenes cerca de su ubicación actual.
@@ -40,7 +40,8 @@
 
 ### A.5 Cuántos hay y cuántos necesitamos
 
-- **Año 1 zona piloto:** 10-15 repartidores autónomos activos.
+- **Piloto T+30 / T+50:** **5–8** repartidores autónomos onboarded ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §3.2).
+- **Cierre año 1 zona piloto:** **10–15** repartidores autónomos **activos** (stock estable post Day-D).
 - **Año 1 Valencia metro:** 25-35.
 - **Año 2 Carabobo + Aragua:** 60-80.
 
@@ -80,7 +81,7 @@
 
 ### B.4 Pricing a la empresa
 
-- **Membresía empresa:** USD 0 (gratis durante el piloto, después USD 50/mes para empresas con > 10 agentes activos).
+- **Membresía empresa:** USD 0 (gratis durante el piloto; después USD 50/mes para empresas con > 10 agentes activos) **— post-piloto, no incluido en proyecciones financieras año 1** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)).
 - **Delivery fee:** USD 1,50 - USD 3,50 por orden (cobrada al paciente, transferida a la empresa).
 - **Comisión Zonix:** 8% del delivery fee (cubrir asignación, tracking, dispute resolution).
 - **Pago semanal** a la empresa vía transferencia bancaria.
@@ -106,7 +107,7 @@
 ### B.7 SLA con terceros y cadena de frío (logística)
 
 - **SLA de entrega** negociado por escrito en anexo B2B: tiempo objetivo alineado con lo que promete la app al paciente (p. ej. 60-90 min en zona piloto), con **exclusiones** (lluvia, cortes de luz, seguridad).
-- **Responsabilidad en cadena de frío:** la **farmacia** empaqueta y documenta salida; el **repartidor / empresa** mantiene cadena según checklist (fotos termómetro en app); Zonix **media** disputas según [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) §15.
+- **Responsabilidad en cadena de frío:** la **farmacia** empaqueta y documenta salida; el **repartidor / empresa** mantiene cadena según checklist (fotos termómetro en app); Zonix **media** disputas según [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) §16.
 - **Seguro y daños:** cada empresa de delivery declara cobertura civil básica o asume riesgo contractual; Zonix no es asegurador.
 
 ---
@@ -132,12 +133,12 @@
 - **Auditoría ante MPPS lista en 1 click:** exporta historial de validaciones cuando se lo pidan.
 - **Reconocimiento profesional:** su nombre aparece en el ticket del paciente como "validado por Lic. X, MPPS XXXXX".
 - **Carga operativa baja:** solo valida o rechaza, no procesa el resto del flujo.
-- **Sin costo extra:** el rol pharmacist viene incluido en la membresía de la farmacia.
+- **Sin costo extra:** el rol pharmacist viene incluido en el **servicio de plataforma** contratado por la farmacia (mismo tier B2B).
 - **Onboarding sin compromiso individual:** el contrato lo tiene la farmacia, no el farmacéutico personal.
 
 ### C.4 Pricing al farmacéutico
 
-- **Costo:** USD 0 (incluido en la membresía Basic / Pro / Enterprise de la farmacia).
+- **Costo:** USD 0 (incluido en el contrato de plataforma Basic / Pro / Enterprise de la farmacia).
 - **No es empleado de Zonix.** Sigue siendo empleado o dueño de la farmacia.
 
 ### C.5 Onboarding del pharmacist

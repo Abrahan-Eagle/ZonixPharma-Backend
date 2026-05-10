@@ -1,8 +1,10 @@
 # Estructura legal y equity (SAFE + cap table)
 
-> **Última actualización:** 5 mayo 2026.
+> **Última actualización:** 10 mayo 2026.
 > Documento que captura el vehículo legal, instrumento de inversión y cap table de Zonix Pharma.
 > Para detalle del marco regulatorio venezolano más amplio, ver [`../REQUISITOS_OPERAR_VENEZUELA.md`](../REQUISITOS_OPERAR_VENEZUELA.md).
+
+**Roles operativos vs gobernanza:** el pack usa **Co-CEO / CEO operativo** junto al **CEO+CTO (founder)** como **rótulos de trabajo** (comercial / operación vs producto-tech). El **representante legal**, **junta**, **relación laboral** y el **SAFE** siguen lo que acuerden **abogado + partes**; no se asume que “dos CEO” dupliquen obligaciones legales sin documentarlo.
 
 ## 1. Vehículo legal
 
@@ -49,7 +51,7 @@
 | Registro de marca SAPI (paralelo) | 60-90 días | 350 |
 | **Total** | **~30 días + 60-90 marca SAPI** | **~1.450** |
 
-> **Nota:** los USD 1.450 son el rango medio. El presupuesto Lean usa USD 1.150 (sin asesor adicional para acta constitutiva).
+> **Nota:** la tabla suma **~USD 1.450** (rango medio con sello digital + SAPI en la misma lista). El **pack Lean** usa **USD 1.150** como one-shot de constitución operativa (ver [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.1): agrupa partidas sin duplicar el desglose línea a línea de esta tabla. No es contradicción: es el mismo orden de magnitud con distinto nivel de detalle.
 
 ## 2. Instrumento de inversión: SAFE post-money cap
 
@@ -57,7 +59,7 @@
 
 **SAFE** = Simple Agreement for Future Equity. Es un contrato de Y Combinator (template público y gratuito en [`https://www.ycombinator.com/documents`](https://www.ycombinator.com/documents)) que dice:
 
-> "Yo, inversor, te doy USD 75.000 hoy. Tú, founder, prometes que cuando levantes la próxima ronda con valuación de mercado, mi inversión convierte automáticamente en acciones, con un cap (techo de valuación) o un descuento — lo que me dé más equity."
+> "Yo, inversor, te doy USD 101.000 hoy (escenario Base). Tú, founder, prometes que cuando levantes la próxima ronda con valuación de mercado, mi inversión convierte automáticamente en acciones, con un cap (techo de valuación) o un descuento — lo que me dé más equity."
 
 **Por qué post-money cap (no pre-money):**
 - Versión moderna del SAFE (YC 2018 onwards). Más clara para founder e inversor.
@@ -67,30 +69,30 @@
 
 | Término | Valor (escenario Base) |
 |---|---|
-| Monto SAFE | **USD 75.000** |
-| Post-money valuation cap | **USD 550.000** |
-| Equity implícito si cap aplica | **13,64%** |
+| Monto SAFE | **USD 101.000** |
+| Post-money valuation cap | **USD 600.000** |
+| Equity implícito si cap aplica | **16,83%** *(101k / 600k)* |
 | Discount | 0% (sin descuento adicional al cap) |
 | Most Favored Nation (MFN) | Sí (cláusula estándar) |
 | Pro-rata rights | Opcional, según preferencia del inversor |
 
 **Lectura para el inversor:**
-- Si la próxima ronda valora Zonix Pharma en USD 1.000.000, el SAFE convierte como si la valuación fuera **USD 550.000** → el inversor recibe ~**13,64%** del equity post-conversión.
-- Si la próxima ronda valora < USD 550.000, el SAFE convierte a la valuación de mercado y el inversor recibe MENOS del 13,64% (caso poco probable, pero posible).
+- Si la próxima ronda valora Zonix Pharma en USD 1.000.000, el SAFE convierte como si la valuación fuera **USD 600.000** → el inversor recibe ~**16,83%** del equity post-conversión.
+- Si la próxima ronda valora < USD 600.000, el SAFE convierte a la valuación de mercado y el inversor recibe MENOS del 16,83% (caso poco probable, pero posible).
 
 ### 2.3 Términos por escenario
 
 | Escenario | Monto SAFE | Cap post-money | Equity implícito |
 |---|---|---|---|
 | Lean | USD 60.000 | USD 450.000 | 13,33% |
-| **Base** | **USD 75.000** | **USD 550.000** | **13,64%** |
+| **Base** | **USD 101.000** | **USD 600.000** | **16,83%** |
 | Growth | USD 90.000 | USD 650.000 | 13,85% |
 
-**Lectura:** los tres escenarios tienen un equity implícito muy similar (~13-14%), preservando dilución consistente independiente del ticket. El cap se ajusta proporcionalmente.
+**Lectura:** Lean y Growth quedan **~13%** implícito; **Base ~16,83%** refleja ticket **101k** (incluye **Co-CEO** en costo fijo — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3) con el mismo formato SAFE+cap. El cap se ajusta por escenario.
 
 ### 2.3.1 Nota sobre el cap (ALTA #4 forense)
 
-El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está en torno a **10-12% equity** ([fuente: LatAm VC Report 2024-2025](https://www.endeavor.org.mx/) y reportes Crunchbase). El cap de Zonix Pharma da **13,64%** (Base), ligeramente más generoso para el inversor.
+El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está en torno a **10-12% equity** ([fuente: LatAm VC Report 2024-2025](https://www.endeavor.org.mx/) y reportes Crunchbase). El cap de Zonix Pharma (Base **USD 101k** / cap **USD 600k**) da **~16,83%**, algo más alto que el benchmark medio — coherente con ticket, **Co-CEO** y costo fijo del replante operativo (ver [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §6.1).
 
 **Decisión consciente del founder:** este cap es **intencional como señal de confianza al primer inversor** (lead investor del SAFE). El piloto tiene mucho más riesgo que un negocio post-PMF; el inversor que entra ahora merece compensación por el riesgo asumido.
 
@@ -99,10 +101,12 @@ El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está 
 ### 2.4 Cláusulas adicionales recomendadas
 
 1. **Vesting del founder:** cláusula de re-vesting si Zonix levanta Serie A (founder vesteando 4 años con cliff 1 año desde la Serie A). Protege al inversor.
-2. **Información mensual:** primer 6 meses + trimestral después.
-3. **Right of First Refusal (ROFR):** el inversor del SAFE tiene derecho a participar en la siguiente ronda hasta mantener su % proporcional.
-4. **MFN (Most Favored Nation):** si Zonix emite un SAFE futuro con mejores términos, el inversor actual recibe los mismos términos. Estándar.
-5. **Restricciones de transferencia:** el SAFE no se puede vender a terceros sin consentimiento del founder.
+2. **Información al inversor (information rights):** reportes **mensuales** los **primeros 6 meses** pos-cierre; **trimestrales** después. Formato: email + adjuntos acordados (métricas §6 [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)).
+3. **Derechos de observación (opcional):** **board observer** sin voto en junta — solo si el ticket ≥ umbral acordado (ej. lead USD 50k+); no administración operativa diaria.
+4. **Asuntos reservados** (requieren notificación previa al inversor por escrito si impactan valor/dilución): cambio de control; nueva emisión que diluya **> 10%** pre-money en una sola ronda; remuneración anual del founder por encima de umbral definido; pivot que abandone vertical farmacéutico.
+5. **Right of First Refusal (ROFR):** el inversor del SAFE tiene derecho a participar en la siguiente ronda hasta mantener su % proporcional.
+6. **MFN (Most Favored Nation):** si Zonix emite un SAFE futuro con mejores términos, el inversor actual recibe los mismos términos. Estándar.
+7. **Restricciones de transferencia:** el SAFE no se puede vender a terceros sin consentimiento del founder.
 
 ### 2.5 Documento físico
 
@@ -119,29 +123,30 @@ El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está 
 |---|---|---|
 | Founder | 1.000.000 | 100,00% |
 
-### 3.2 Post-SAFE (escenario Base, USD 75k cap USD 550k)
+### 3.2 Post-SAFE (escenario Base, USD 101k cap USD 600k)
 
 > **Nota:** el SAFE NO crea acciones hoy. Sólo al momento de conversión (próxima ronda con valuación de mercado).
 
 | Stakeholder | Acciones | % equity hoy | % equity post-conversión SAFE |
 |---|---|---|---|
-| Founder | 1.000.000 | 100,00% | ~86,36% (si cap aplica) |
-| Inversor SAFE | 0 (todavía) | 0,00% | ~13,64% (al momento de conversión) |
+| Founder | 1.000.000 | 100,00% | ~83,17% (si cap aplica) |
+| Inversor SAFE | 0 (todavía) | 0,00% | ~16,83% (al momento de conversión) |
 
 ### 3.3 Cap table en próxima ronda Serie A (escenario hipotético, mes 24)
 
 **Hipótesis Serie A:** USD 500.000 a valuación pre-money USD 2.000.000 → post-money USD 2.500.000.
 
-| Stakeholder | Acciones nuevas | % equity post Serie A |
-|---|---|---|
-| Founder (1.000.000 originales + dilución) | 1.000.000 | 64,00% |
-| Inversor SAFE Base (convierte al cap USD 550k) | 213.235 | 13,64% |
-| Inversor Serie A (USD 500k) | 312.500 | 20,00% |
-| Pool de empleados / advisors (10% reservado) | 156.250 | 10,00% |
-| **Diluciones aplicadas** | | |
-| **Founder post Serie A** | | **52,36%** |
+**Interpretación SAFE post-money cap (YC estándar):** el inversor del SAFE convierte a un **% fijo** del cap table (aquí **16,83%** = USD 101k / USD 600k cap) y **no se diluye** con la Serie A por el cap; la dilución del pool y de la nueva ronda la absorbe principalmente el founder. Los **números exactos de acciones** y el orden de emisión (pool pre/post money) los cierra el **abogado** al redactar el SAFE y la Serie A.
 
-**Lectura:** el founder mantiene > 50% post Serie A, lo que es saludable y permite seguir liderando el negocio. El inversor del SAFE mantiene su 13,64% (no se diluye más por el cap).
+| Stakeholder | % equity post Serie A (ilustrativo) |
+|---|---|
+| Founder | **53,17%** |
+| Inversor SAFE Base (cap USD 600k) | **16,83%** |
+| Inversor Serie A (USD 500k / post-money USD 2,5M) | **20,00%** |
+| Pool de empleados / advisors (10% reservado) | **10,00%** |
+| **Total** | **100,00%** |
+
+**Lectura:** el founder mantiene **> 50%** post Serie A (**53,17%** en este ejemplo), lo que es saludable y permite seguir liderando el negocio. El inversor del SAFE mantiene su **16,83%** (no se diluye más por el cap).
 
 ### 3.4 Cap table en escenario optimista (Serie B + IPO o exit en año 5)
 
@@ -153,7 +158,7 @@ El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está 
 | Inversor Serie B | ~15-20% |
 | Pool empleados (acumulado) | ~15-20% |
 
-**Lectura:** un inversor de SAFE Base USD 75k en exit a USD 50M tendría ~USD 3,5-5M (40-65x retorno). En exit a USD 100M: USD 7-10M (90-130x).
+**Lectura:** un inversor de SAFE Base USD 101k en exit a USD 50M tendría ~USD 4,7-6,7M (órden de magnitud; con dilución de rondas posteriores menos). En exit a USD 100M: orden ~USD 9-14M (ilustrativo).
 
 ## 4. Marco legal venezolano (resumen)
 
@@ -184,7 +189,8 @@ El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está 
 
 ### 4.4 Datos personales y datos de salud (ALTA #2 forense + revisión profesional)
 
-- **Ley de Protección de Datos Personales VE 2025:** vigente. Define consentimiento, finalidades y derechos de los titulares. **Textos legales** (aviso de privacidad, T&C app, contrato marco farmacia) deben ser **revisados y firmados** por abogado antes de Day-D público.
+- **Ley de Protección de Datos Personales (Venezuela):** existe **proyecto de ley** en discusión / tramitación en **2025-2026**; **confirmar estado de promulgación** con abogado antes de citar “vigencia”. **Mientras tanto:** aplicar **buenas prácticas** alineadas a estándares internacionales (consentimiento, minimización, seguridad, derechos titular, encargados/DPA) como ya describe el pack operativo.
+- **Textos legales** (aviso de privacidad, T&C app, contrato marco farmacia) deben ser **revisados y firmados** por abogado antes de Day-D público.
 - Datos de salud (recetas, historial de medicamentos, inferencias): **categoría sensible**; consentimiento explícito, minimización, retención acotada, medidas técnicas y **registro de tratamiento**.
 - Implementación técnica y operativa: [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) secciones **13** (seguridad), **15** (playbook incidencias), **16** (modelo de amenazas) y **17** (QA / listo para piloto).
 
@@ -229,6 +235,20 @@ El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está 
 - **Tiempo:** 60-90 días desde solicitud.
 - **Vigencia:** 10 años renovables.
 
+### 4.6 KYC / AML y rol eventual como agregador de pagos (Sudeban)
+
+**Piloto (mes 0-6):** Zonix **no** recauda del paciente en nombre de terceros de forma centralizada — flujo documentado en [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md); riesgo PSP limitado.
+
+**Triggers para plan formal mes 6+** (activar con abogado + especialista Sudeban):
+
+| Trigger | Umbral orientativo | Acción |
+|---|---|---|
+| Volumen mensual agregado de fondos que transitan por cuentas Zonix | > orden **USD X** / mes (definir con contador y banco) | Evaluación licencia / figura adaptada |
+| % de transacciones **cross-border** (Zelle/USDT) sobre total | > **30-40%** sostenido 3 meses | Refuerzo KYC contrapartes + política AML escrita |
+| Zonix pasa a liquidar **directamente** a farmacias/repartidores como intermediario | Cualquier volumen | Due diligence Sudeban antes de encender |
+
+**Componentes del programa:** KYC de farmacias (ya previsto onboarding), lista restrictiva interna, monitoreo de tickets fraud, conservación de evidencias, designación de **responsable compliance** (part-time CFO/legal hasta hire dedicado).
+
 ## 5. Equity de futuros empleados / advisors (ALTA #9 forense)
 
 ### 5.0 Single-founder y plan de mitigación
@@ -236,7 +256,7 @@ El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está 
 Zonix Pharma arranca con **un solo founder técnico** (CEO + CTO en la misma persona). Esto es válido para pre-seed pero merece transparencia:
 
 - **Riesgo:** dependencia técnica + decisional en un único individuo.
-- **Mitigación pre-PMF:** rol de CEO interino delegado en el Marketing Lead, ya documentado en [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) y [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md).
+- **Mitigación pre-PMF:** **Co-CEO** para dirección general + **Marketing Lead** para creatividad/campañas, documentado en [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) y [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md).
 - **Mitigación post-PMF (post-Serie A):** primer hire es un **CTO o Head of Engineering** que asume el stack mientras el founder se mueve a CEO 100%.
 - **Advisors potenciales en mes 6-12:** un advisor regulatorio farmacéutico VE (0,5%-1% equity vesting 2 años) y un advisor comercial con experiencia retail VE (0,25%-0,5% equity).
 
@@ -285,7 +305,7 @@ Al cierre de la inversión, el inversor recibe:
 
 | Mes | Hito |
 |---|---|
-| 0 (cierre inversión) | Firma SAFE. Transferencia USD 75k a cuenta personal del founder (transitoria). |
+| 0 (cierre inversión) | Firma SAFE. Transferencia **USD 101k** (Base) a cuenta personal del founder (transitoria) o cuenta empresa. |
 | 1 | Constitución legal C.A. completa. Apertura cuenta bancaria empresa. Transferencia interna founder → C.A. |
 | 1-2 | RIF + factura digital SENIAT habilitados. |
 | 2-3 | Marca SAPI registrada (paralelo). |

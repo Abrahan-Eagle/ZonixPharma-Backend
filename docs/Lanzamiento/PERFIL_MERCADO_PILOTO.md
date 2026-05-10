@@ -1,6 +1,6 @@
 # Perfil de mercado y zona piloto
 
-> **Última actualización:** 4 mayo 2026.
+> **Última actualización:** 10 mayo 2026.
 > Documento de mercado: TAM / SAM / SOM, demografía Carabobo, benchmarks competitivos.
 > Todas las cifras citadas tienen fuente web pública. Las fuentes están en [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md).
 
@@ -8,14 +8,16 @@
 
 | Métrica | Valor 2025 | Fuente |
 |---|---|---|
-| Tamaño del mercado | **USD 1.638 millones / año** | IMS Health VE / Cifar (Cámara Industria Farmacéutica) |
-| Unidades vendidas | 389 millones de unidades | IMS Health VE 2025 |
+| Tamaño del mercado | **USD 1.638 millones / año** | **Cifar VE** (datos **IMS/IQVIA**) |
+| Unidades vendidas | 389 millones de unidades | Cifar VE / IMS-IQVIA 2025 |
 | Precio promedio por unidad | USD 4,21 | Derivado de las dos cifras anteriores |
-| Crecimiento anual en unidades | +17,49% YoY | IMS Health VE 2025 |
+| Crecimiento anual en unidades | +17,49% YoY | Cifar VE (IMS/IQVIA) 2025 |
 | CAGR proyectado 2026-2032 | 6,1% anual | Statista / Mordor Intelligence |
 | Genéricos Rx | 48,3% del total | Cifar |
 | OTC | 35,2% del total | Cifar |
 | Marcas Rx originales | 16,5% del total | Cifar |
+
+**Nota Cifar (2025):** +**20,66%** YoY ene-ago; proyección anual **+17,7%**; **H1 2025** ~**+23,4%** según prensa especializada — validar con comunicados oficiales de la cámara.
 
 **Lectura para el inversor:** Venezuela tiene un mercado farmacéutico de USD 1.638M. Está creciendo en unidades a doble dígito (recuperación post-pandemia y post-crisis). Casi la mitad es Rx genérico — exactamente el segmento donde la validación digital de receta tiene más fricción.
 
@@ -26,7 +28,7 @@
 | Población Carabobo | ~2,1 millones | INE 2024 |
 | Población Valencia metro | ~1,4 millones | Valencia + Naguanagua + San Diego + Los Guayos |
 | Farmacias en Valencia metro | **226** | Suma de directorios públicos: Saas, Farmatodo, Locatel, Farmahorro, Drogueria Nena + farmacias independientes |
-| Farmacias en zona piloto inicial (Bella Florida + El Socorro) | 30-50 | Estimación por densidad, requiere visita real |
+| Farmacias en zona piloto inicial (Bella Florida + El Socorro) | 30-50 | Estimación por densidad en **dos focos** del área metropolitana (no un solo radio); requiere visita y listado real |
 | Farmacias en Carabobo total | 350-450 | Incluye Puerto Cabello, Tocuyito, Mariara, Guacara |
 
 **Segmentación de farmacias:**
@@ -47,7 +49,7 @@ Construido bottom-up, no top-down.
 | 3 | 8 | 4,5% del piloto inicial | USD 200 |
 | 6 | 38 | 21% del piloto inicial / 17% SAM extendido | USD 1.515 |
 | 9 | 78 | 43% SAM extendido | USD 3.276 |
-| **11** | **107** | **59% SAM extendido / 47% Valencia metro** | **USD 4.815 (break-even)** |
+| **11** | **107** | **59% SAM extendido / 47% Valencia metro** | **USD 4.815** *(revenue; burn mes 11 **7.371** — no equilibrio mensual)* |
 | 12 | 120 | 67% SAM extendido | USD 5.400 |
 
 **Año 2:** expansión a Maracay y Maracaibo. SOM proyectado 200-220 farmacias activas, revenue mensual USD 8.000-9.000 (anual USD 96k-108k).
@@ -83,20 +85,20 @@ Detalle del modelo en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.m
 - App propia, sin marketplace.
 - Mismo diferencial que Farmatodo: target distinto.
 
-### 5.3 Farmalisto (México + Colombia)
+### 5.3 Farmalisto (México + Colombia + Perú)
 
 - Marketplace farmacéutico LatAm más comparable. **Comparable directo internacional.**
-- Revenue 2024: **USD 32 millones** ([Crunchbase](https://www.crunchbase.com/organization/farmalisto)).
-- VC raised: **USD 33 millones** en 5 rondas ([PitchBook](https://pitchbook.com/profiles/company/210015-91)).
+- Revenue 2024 (e-commerce MX): **~USD 32,3 millones** ([eCommerceDB](https://ecommercedb.com/store/farmalisto.com.mx) / Crunchbase orden similar).
+- VC raised total: **~USD 22M** reportado en agregadores (Tracxn, LeadIQ); **hasta ~USD 33M** en algunas bases (PitchBook, varias rondas).
 - Modelo: comisión sobre ventas + delivery. NO membresía fija.
-- Lectura para el inversor: el modelo marketplace farmacéutico LatAm ES financiable a esa escala, y Zonix tiene ventaja por modelo de cobro.
+- Lectura para el inversor: el modelo marketplace farmacéutico LatAm ES financiable a esa escala. Zonix Pharma se posiciona con **modelo híbrido** (cuota fija baja + % moderado sobre GMV en la app) frente al take-rate típico por venta de modelos tipo Farmalisto o agregadores de delivery.
 
 ### 5.4 Rappi Pharmacy
 
 - Vertical farmacéutico de Rappi, presente en VE desde 2022.
 - Modelo: comisión 25-35% sobre GMV.
 - Cobertura: solo cadenas premium (Farmatodo, Locatel) y algunas independientes grandes.
-- Lectura para el inversor: una farmacia que vende USD 5.000/mes en Rappi paga USD 1.250-1.750. Con Zonix Pharma paga USD 60-120. **Ahorro 90%.**
+- Lectura para el inversor: una farmacia que vende USD 5.000/mes en Rappi paga USD 1.250-1.750 en comisión típica. Con Zonix Pharma paga **cuota fija + % moderado sobre GMV en la app** ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5); el costo total para la farmacia suele ser **órden de magnitud menor** que el take-rate del agregador.
 
 ### 5.5 PedidosYa Pharmacy
 
@@ -110,7 +112,7 @@ Detalle del modelo en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.m
 |---|---|---|---|---|
 | Tipo | Cadena propia | Marketplace generalista | Marketplace farmacéutico | **Marketplace farmacéutico VE** |
 | Target VE | Clase media-alta | Cadenas premium | No opera VE | **Farmacias independientes y cadenas pequeñas-medianas** |
-| Modelo cobro | Margen de venta | 25-35% comisión GMV | Comisión + delivery | **Membresía fija USD 25/60/120** |
+| Modelo cobro | Margen de venta | 25-35% comisión GMV | Comisión + delivery | **Cuota fija + % GMV moderado (Zonix)** |
 | Validación Rx digital | No | No | Parcial | **Sí — farmacéutico colegiado de la propia farmacia** |
 | Cadena de frío | No | No | Parcial | **Sí — flag operativo restringe modos delivery** |
 | Multi-sucursal con un solo onboarding | N/A | No | No | **Sí — Enterprise tier** |
@@ -118,19 +120,21 @@ Detalle del modelo en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.m
 
 ## 6. Por qué Bella Florida + El Socorro como zona piloto
 
+El piloto combina **dos focos geográficos** dentro de Valencia metro: **Urb. Bella Florida** (sur-oeste de la ciudad) y el barrio **El Socorro** en el **corredor vía Tocuyito** (referencias de campo indicadas por el founder). La logística y el marketing se calibran como **polos acotados**, no como un único círculo de 4 km obligatorio.
+
 ### 6.1 Bella Florida
 
-- Sector residencial clase media-alta en el sur-oeste de Valencia.
-- ~12-15 farmacias en un radio de 1,5 km.
-- Mercado con alto poder adquisitivo y digitalización avanzada.
-- Cercana al CC La Granja y al CC Concresa.
+- Urbanización / sector residencial clase media-alta en el **sur-oeste de Valencia**.
+- Orden de **~12-15 farmacias** en un radio acotado alrededor del núcleo residencial (validar con mapa y visita).
+- Mercado con buen poder adquisitivo y adopción de smartphone / pagos digitales.
+- **Corrección editorial (mayo 2026):** versiones anteriores del pack citaban centros comerciales con nombres que **no corresponden** a la realidad local; **no** se usan aquí. Las anclas comerciales exactas (cruces, plazas, CC) deben **confirmarse en campo** antes de materiales impresos o OOH.
 
 ### 6.2 El Socorro
 
-- Sector residencial clase media en el norte-centro de Valencia.
-- ~15-20 farmacias en un radio de 2 km.
-- Conexión vial buena con Naguanagua y San Diego (expansión natural).
-- Mercado familiar con alto consumo de OTC y crónicos.
+- **No** corresponde a “norte-centro de Valencia” en el sentido del casco urbano densificado al norte; según conocimiento de **terreno del founder**, el **El Socorro** del piloto es un **barrio en el corredor de la vía hacia Tocuyito**, **frente a Ferretería Valcro**, **antes** de llegar a **Distribuidor San Luis** y al **mercado mayorista** en esa misma traza.
+- Tráfico mixto (particular + comercial ligado al corredor): alta necesidad de **OTC**, abasto frecuente y **medicación crónica** en familias que transitan o residen en la zona.
+- Orden de **~15-20 farmacias** en el corredor útil para captación (cifra orientativa hasta conteo en visita).
+- Conexión vial: enlaza con **resto de Valencia metro**, **Tocuyito** y rutas de abasto; encaja con expansión posterior documentada (Naguanagua, San Diego, SAM extendido).
 
 ### 6.3 San Diego (zona alterna del founder)
 
@@ -164,7 +168,7 @@ Basado en benchmarks LatAm (mercados B2B SaaS para SMB):
 - **Mes 10-12:** 107-120 farmacias activas (59-67%).
 
 Estos números asumen:
-- Sales B2B firmando 8-12 farmacias/mes desde mes 4.
+- Sales B2B (2 reps, **firmas/mes en total**): ~**5-6** mes 1, **8-12** meses 4-6, **~14** meses 7-11 (ritmo medio anual **~10,7**/mes — coherente con [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1).
 - Marketing digital + valla + referencias generan 3-5 leads orgánicos/mes desde mes 6.
 - Churn 5% mensual (la farmacia que no vende suficientemente cierra cuenta).
 
@@ -174,14 +178,14 @@ Estos números asumen:
 |---|---|---|
 | Devaluación bolívar > 100% trimestral | Media | Buffer 20%. Plan contingencia documentado. |
 | Regulación nueva sobre marketplaces | Baja-media | Asesor regulatorio externo USD 120/mes en Growth. Founder revisa Gaceta semanalmente. |
-| Rappi o PedidosYa hace agresivo el descuento | Media | Nuestro modelo de membresía fija es estructuralmente más barato; no podemos perder en precio. |
+| Rappi o PedidosYa hace agresivo el descuento | Media | Nuestro modelo (fija + % bajo sobre GMV app) es estructuralmente más barato que su comisión plena; no podemos perder en precio vs agregador. |
 | Farmatodo lanza marketplace propio | Baja | Su DNA es retail propio, no marketplace. Tomarían 18-24 meses construirlo y entonces nosotros ya tenemos PMF. |
 | Adopción inicial < 50% del plan | Media | Pivote táctico: bajamos Sales B2B fijo, subimos comisión por farmacia firmada. |
 | Inflación supera el buffer 20% | Media-alta | Plan: cortar valla publicitaria primero, bajar 1 hire, renegociar coworking. Mantiene runway 9-10 meses en lugar de 12. |
 
 ## 10. Resumen para el inversor
 
-> Mercado farmacéutico VE: USD 1.638M/año, creciendo +17,49% en unidades. 226 farmacias en Valencia metro, 30-50 en la zona piloto inicial. Comparable internacional (Farmalisto): USD 32M revenue con USD 33M VC raised. Diferencial: membresía fija en USD vs. comisión 25-35% de Rappi. Validación Rx digital + soporte cadena de frío + multi-sucursal son ventajas que ningún competidor en VE tiene hoy.
+> Mercado farmacéutico VE: USD 1.638M/año (Cifar / IMS-IQVIA), creciendo +17,49% en unidades. 226 farmacias en Valencia metro, 30-50 en la zona piloto inicial. Comparable internacional (Farmalisto): ~USD 32M revenue; funding reportado ~USD 22M (hasta ~USD 33M según fuente). Diferencial: **cuota plataforma + % GMV moderado** vs. comisión 25-35% de Rappi. Unit economics resumidos en [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) (CAC **109**, LTV/CAC **~8,3x** con ARPF placeholder). Validación Rx digital + soporte cadena de frío + multi-sucursal son ventajas que ningún competidor en VE tiene hoy.
 
 Documentos hermanos relevantes:
 - [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md): qué decir a la farmacia.

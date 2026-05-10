@@ -1,6 +1,6 @@
 # Supuesto de marketing offline
 
-> **Última actualización:** 5 mayo 2026.
+> **Última actualización:** 10 mayo 2026.
 > Documento que justifica el rol del marketing offline (vallas, radio, flyers) en el plan, y por qué la **prioridad principal es marketing digital**.
 
 ## 1. Filosofía del pack: digital primero, offline complementario
@@ -43,7 +43,7 @@
 | Radio FM AM (mención 30s) | USD 0 | USD 0 | USD 250/mes desde mes 4 |
 | Flyers + brochures | USD 50/mes | USD 100/mes | USD 150/mes |
 | Eventos locales / patrocinios pequeños | USD 0 | USD 50/mes desde mes 6 | USD 100/mes desde mes 4 |
-| **Total offline mensual** | **USD 50** | **USD 150-200** | **USD 1.200** |
+| **Total offline mensual** | **USD 50** | **USD 350-550/mes** *(según mes: brochures M1-2, valla activa M3+, eventos M6+ — §4.1)* | **USD 1.200** |
 
 ## 3. Detalle por canal
 
@@ -74,7 +74,7 @@ Detalle de marca en [`../BRAND_ZONIX_PHARMA.md`](../BRAND_ZONIX_PHARMA.md).
 
 | Ubicación | Razón | Tráfico estimado/día |
 |---|---|---|
-| Av. Bolívar Norte (entre CC La Granja y CC Concresa) | Clase media-alta, tráfico denso, alta conversión | 18-22k |
+| Av. Bolívar Norte (**tramo de alto flujo a cotizar** con proveedor / permiso — **sin** anclar a nombres de CC no verificados en documentación) | Clase media-alta, tráfico denso, alta conversión | 18-22k |
 | Av. Cedeño (frente a CC Las Trinitarias) | Cruce noroeste-noreste, tráfico mixto | 15-18k |
 | Av. Andrés Eloy Blanco (San Diego) | Clase media-alta, residencial, tráfico mañana y tarde | 12-15k |
 
@@ -141,7 +141,7 @@ Detalle de marca en [`../BRAND_ZONIX_PHARMA.md`](../BRAND_ZONIX_PHARMA.md).
 
 #### 3.4.1 Tipos de eventos
 
-- Ferias de salud en CC La Granja, Concresa, Las Trinitarias.
+- Ferias de salud en **plazas, iglesias o sedes comunitarias** del corredor piloto (**Bella Florida**, **vía Tocuyito / El Socorro**, **San Diego**) y, si aplica, **CC Las Trinitarias** (Av. Cedeño — **validar** nombre y disponibilidad con calendario local).
 - Charlas en escuelas o centros comunitarios sobre uso responsable de medicamentos.
 - Patrocinios pequeños a equipos deportivos comunitarios (logo en camiseta).
 - Mes saludable: actividades gratuitas en parques de Bella Florida.
@@ -156,9 +156,13 @@ Detalle de marca en [`../BRAND_ZONIX_PHARMA.md`](../BRAND_ZONIX_PHARMA.md).
 - Asistentes que descargan app: meta 5-15% del público.
 - Tickets de soporte mencionando el evento: indicador de éxito.
 
+### 3.5 Marketing digital (Meta Ads) — escenario Base
+
+**Curva acordada en el pack:** **USD 800/mes en meses 1–6** + **USD 500/mes en meses 7–12** → promedio anual **~USD 650/mes** sobre línea Meta (coherente con [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.1 y §3.3). Versiones previas del pack citaban **USD 500/mes** plano — **obsoleto** frente a esta curva.
+
 ## 4. Asignación temporal del presupuesto offline
 
-### 4.1 Escenario Base USD 150-200/mes promedio
+### 4.1 Escenario Base USD 350-550/mes promedio
 
 | Mes | Items activos | USD aproximado |
 |---|---|---|
@@ -166,7 +170,7 @@ Detalle de marca en [`../BRAND_ZONIX_PHARMA.md`](../BRAND_ZONIX_PHARMA.md).
 | 3-5 | Valla + flyers + brochures | USD 450-500 |
 | 6+ | Valla + flyers + brochures + eventos pequeños | USD 500-550 |
 
-**Promedio anual:** USD 350-450/mes (incluye valla USD 350 + brochures + eventos), pero la cifra que aparece en el [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) ya combina valla + material en una sola línea.
+**Promedio anual:** **USD 350-550/mes** (incluye valla USD 350 + material + eventos según tramo), alineado con la línea agregada de material + valla en [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3.
 
 ## 5. KPIs de marketing offline
 
@@ -196,7 +200,7 @@ Detalle de marca en [`../BRAND_ZONIX_PHARMA.md`](../BRAND_ZONIX_PHARMA.md).
 Triggers para subir de Base USD 350 valla → Growth USD 700 valla:
 
 1. Adopción supera 130% del plan.
-2. Cash en banco > USD 50k después del mes 6.
+2. Cash en banco al cierre del mes **6 ≥ ~USD 49.000** (coherente con escenario Base **USD 101k** + **Co-CEO** + **Meta + 2 Sales** — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3 y DoD en [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md)); **no** usar umbral fijo **USD 50k** sin recalibrar el modelo.
 3. CAC orgánico (offline + boca en boca) supera CAC digital en farmacias firmadas.
 4. Serie A levantada o en proceso.
 
@@ -208,7 +212,7 @@ Si los datos reales se desvían del CPL planificado USD 0,15-0,60, el plan se re
 |---|---|
 | < USD 0,15 (mejor que plan) | Mantener presupuesto. Reasignar surplus a TikTok Ads o material orgánico. |
 | USD 0,15 - 0,60 (en rango) | Mantener plan. |
-| **USD 0,60 - 1,00 (peor que plan)** | **Subir presupuesto digital de USD 500 a USD 700/mes en Base.** Recortar valla durante 1-2 meses para liberar fondos. |
+| **USD 0,60 - 1,00 (peor que plan)** | **Reasignar dentro del presupuesto Base** (curva Meta **800/500** + valla — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3): subir fase digital **temporalmente** y **recortar valla** 1-2 meses para liberar caja. |
 | **> USD 1,00 (mucho peor que plan)** | **Pausar gasto en Meta Ads. Reasignar a TikTok Ads + WhatsApp Business + alianzas con farmacias afiliadas para distribución orgánica.** Revisión completa de creativos + segmentación. |
 
 **Frecuencia de revisión:** primer mes semanal, después mensual.
@@ -224,6 +228,8 @@ Si Meta Ads se satura o el CPL sube > USD 0,40, activar TikTok Ads como segundo 
 TikTok Ads es especialmente útil para captar el persona "Diego, 34 años" (joven profesional) y "hijo en exterior".
 
 ## 8. Documentos hermanos
+
+**Decisión del pack — presupuesto digital Base (Meta Ads):** **USD 800/mes M1–6** + **USD 500/mes M7–12** (promedio **~USD 650/mes** anual) — alineado a [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.1 / §3.3 y a la §**3.5** de este documento.
 
 - [PROPUESTA_VALOR_USUARIO_FINAL.md](PROPUESTA_VALOR_USUARIO_FINAL.md): mensaje del marketing al paciente.
 - [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md): mensaje del marketing a la farmacia.

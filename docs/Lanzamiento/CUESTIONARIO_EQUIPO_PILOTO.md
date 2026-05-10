@@ -1,7 +1,7 @@
 # Cuestionario para el equipo del piloto
 
-> **Última actualización:** 4 mayo 2026.
-> Documento operacional para entrevistar a candidatos a los 4 roles full-time (Sales B2B, Customer Support, Marketing Lead, Delivery Ops Coordinator) y a los freelance (Contador, Abogado).
+> **Última actualización:** 10 mayo 2026.
+> Documento operacional para entrevistar a candidatos a los **6 roles full-time** (**Co-CEO / CEO operativo**, **2× Sales B2B**, Customer Support + Community Manager, Marketing Lead, Delivery Ops Coordinator) y a los freelance (Contador, Abogado). El **founder** y el **Co-CEO** usan cuestionario **ad hoc** (track record, visión, % dedicación) — no están en las plantillas §2–§6 salvo referencia cruzada. **Compensaciones alineadas al escenario Base USD 101k** ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3).
 > Las respuestas se vuelcan en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md).
 
 ## 1. Cuestionario común a todos los roles
@@ -90,12 +90,12 @@
 
 ### 3.4 Compensación
 
-- USD 300/mes fijo.
-- Bono USD 50 si NPS > 50 mensual.
+- **USD 350/mes** fijo (Customer Support + Community Manager).
+- Bono **USD 50** si NPS > 50 mensual (KPI → **USD 400/mes** total).
 
 ¿Aceptas?
 
-## 4. Cuestionario específico — Marketing Lead + CEO interino delegado
+## 4. Cuestionario específico — Marketing Lead + apoyo a dirección
 
 ### 4.1 Track record
 
@@ -113,16 +113,16 @@
 
 ### 4.3 Caso práctico
 
-> Tienes USD 500/mes para captar pacientes en Bella Florida y El Socorro durante el mes 4 del piloto. ¿Cómo lo distribuyes (Meta / Google / TikTok / WhatsApp / contenido orgánico)?
+> Tienes **~USD 650/mes** de referencia digital Base (Meta **800** M1–6 / **500** M7–12 en promedio anual; mes 4 suele estar en fase alta) más material offline según plan. ¿Cómo lo distribuyes (Meta / Google / TikTok / WhatsApp / contenido orgánico)?
 
-### 4.4 Rol CEO interino
+### 4.4 Apoyo a dirección cuando el founder viaja
 
-> En semanas que el founder está fuera (visitas a inversores, eventos), serías el CEO interino delegado. Esto significa: tomar decisiones operativas urgentes, comunicar al equipo, mantener moral. ¿Te sientes cómodo?
+> En semanas que el founder está fuera (visitas a inversores, eventos), la **dirección general** la cubre el **Co-CEO** contratado; Marketing lidera **creatividad, campañas y coordinación** y apoya **comunicación interna** y moral del equipo. ¿Te sientes cómodo coordinando con **Co-CEO** sin duplicar decisiones de producto técnico?
 
 ### 4.5 Compensación
 
-- USD 500/mes fijo.
-- Bono USD 100 si supera 1.500 leads B2C en mes.
+- **USD 400/mes** fijo (Marketing Lead + apoyo a dirección).
+- Bono **USD 100** si KPI acordado (p. ej. **≥1.500 leads B2C** en mes o meta CPL/ROAS equivalente).
 
 ¿Aceptas?
 
@@ -147,8 +147,8 @@
 
 ### 5.4 Compensación
 
-- USD 400/mes fijo.
-- Bono USD 50 si tiempo promedio de entrega < 75 min.
+- **USD 300/mes** fijo (Delivery Ops Coordinator).
+- Bono **USD 100** si KPI (p. ej. tiempo promedio entrega **< 75 min** en mes) → **USD 400/mes** total.
 
 ¿Aceptas?
 

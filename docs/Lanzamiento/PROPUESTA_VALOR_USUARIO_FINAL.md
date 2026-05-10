@@ -1,6 +1,6 @@
 # Propuesta de valor — Usuario final (Paciente / Buyer)
 
-> **Última actualización:** 5 mayo 2026.
+> **Última actualización:** 10 mayo 2026.
 > Documento que captura el pitch al usuario final que descarga la app o entra a la web.
 > El paciente es el rol `users` (Buyer) en el backend.
 
@@ -17,7 +17,7 @@
 
 ### 1.2 Persona secundaria — "Diego, 34 años"
 
-- Profesional joven, vive en El Socorro.
+- Profesional joven, vive en **El Socorro** del piloto (barrio en **corredor vía Tocuyito**, referencia de campo frente a **Ferretería Valcro**; alineado con [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md) §6.2).
 - Compra OTC ocasional (analgésicos, vitaminas, cuidado personal).
 - A veces compra Rx para alergias o antibióticos.
 - Móvil-first, paga con Zelle o Binance Pay USDT.
@@ -39,6 +39,8 @@
 4. **Pago presencial obligatorio:** "no puedo pagar a distancia para que mi mamá reciba".
 5. **Sin trazabilidad:** "compré en un sitio nuevo y nunca llegó; no tengo a quién reclamar".
 6. **Adultos mayores con poca movilidad:** "mi mamá no puede salir y la cadena no entrega medicamentos Rx".
+7. **Sin seguimiento del repartidor:** "dijeron que ya salió pero no sé dónde está ni cuándo llega".
+8. **Dudas farmacológicas sin canal rápido:** "¿puedo tomar esto con lo que ya tomo?", "¿hay genérico más barato equivalente?" — antes de pedir no tiene a quién preguntar de forma inmediata y trazable.
 
 ## 2.1 Avisos legales y de comunicación (marketing + salud)
 
@@ -72,16 +74,27 @@
 
 - Delivery autónomo o de empresa de delivery.
 - Tiempo promedio prometido: 60-90 minutos en Bella Florida y El Socorro.
-- Tracking en mapa con ubicación del repartidor (módulo ya construido en backend).
 - Pickup en sucursal opcional para Rx retenida o sustancias controladas.
 
-### 3.5 Cadena de frío respetada
+### 3.5 Tracking del repartidor en tiempo real
+
+- Mapa en vivo con la ubicación del repartidor mientras el pedido está **en ruta** (módulo ya construido en backend).
+- Notificaciones push en cada cambio de estado (salida, en camino, entregado).
+- Conexión directa con el flujo de delivery: el paciente ve el mismo estado que la farmacia y el repartidor, sin llamadas intermedias.
+
+### 3.6 Cadena de frío respetada
 
 - Si el medicamento requiere cadena de frío (insulina, vacunas), la app marca el producto.
 - Solo se asigna a delivery con equipo de cadena de frío o pickup.
 - El paciente sabe explícitamente si su pedido requiere refrigeración.
 
-### 3.6 Histórico de compras y recetas
+### 3.7 Asistente de consulta farmacológica con IA *(roadmap Año 1 — no disponible en piloto)*
+
+- Orientación **informativa** sobre indicaciones habituales, equivalentes genéricos, advertencias generales e interacciones frecuentes **antes** de armar el carrito.
+- **No sustituye** la consulta médica ni la validación del farmacéutico colegiado; la receta Rx sigue siendo obligatoria cuando corresponde.
+- Microcopy y límites del asistente alineados con **§2.1** (avisos legales y comunicación en salud): sin promesas de cura ni diagnóstico.
+
+### 3.8 Histórico de compras y recetas
 
 - "Volver a pedir" en un click.
 - Recordatorios mensuales para crónicos (opt-in).
@@ -200,7 +213,7 @@ Estos KPIs se reportan trimestralmente al inversor.
 
 | Riesgo | Probabilidad | Plan B |
 |---|---|---|
-| Descargas < 1.500 en mes 6 | Media | Subir CPL Meta Ads a USD 0,80; activar TikTok Ads; promociones de delivery gratis primer pedido. |
+| Descargas < 1.500 en mes 6 | Media | Tolerar CPL Meta Ads hasta **USD 0,80** / aumentar presupuesto Meta hasta saturar curva; activar **TikTok Ads**; promociones de **delivery gratis** primer pedido. |
 | Conversión registro → primer pedido < 15% | Media | Llamada de Customer Support a usuarios registrados sin pedido. Encuesta para entender fricción. |
 | NPS < 25 | Media-baja | Encuesta cualitativa. Probable causa: tiempo de entrega o validación Rx. Plan: subir tarifa delivery o ampliar farmacias en zona. |
 

@@ -1,6 +1,6 @@
 # Plan de lanzamiento comercial
 
-> **Última actualización:** 5 mayo 2026.
+> **Última actualización:** 10 mayo 2026.
 > Documento que detalla el calendario operativo desde el cierre de inversión hasta el Day-D del piloto y los primeros 90 días post-lanzamiento.
 > El calendario es **relativo a T+0 = cierre de inversión**, ya que la fecha absoluta depende de cuándo entre el dinero.
 
@@ -8,8 +8,8 @@
 
 **Eventos:**
 - Firma del SAFE.
-- Transferencia USD 75.000 (Base) a cuenta personal del founder (transitoria) o cuenta empresa si ya está abierta.
-- Reunión kick-off del founder con abogado y contador.
+- Transferencia **USD 101.000** (Base) a cuenta personal del founder (transitoria) o cuenta empresa si ya está abierta.
+- Reunión kick-off **founder + Co-CEO** con abogado y contador.
 - Comunicación al inversor: confirmación de recepción + plan de los próximos 30 días.
 
 **Entregables día T+0:**
@@ -34,7 +34,7 @@
 
 | Hito | Status |
 |---|---|
-| Publicación de vacantes (Sales B2B, Customer Support, Marketing Lead, Delivery Ops) | T+0 a T+5 |
+| Publicación de vacantes (**Co-CEO / CEO operativo**, **2× Sales B2B**, Customer Support, Marketing Lead, Delivery Ops) | T+0 a T+5 |
 | Entrevistas y selección | T+5 a T+20 |
 | Contratación + onboarding | T+20 a T+28 |
 | Capacitación inicial (producto + procesos) | T+28 a T+30 |
@@ -45,7 +45,7 @@
 |---|---|
 | Visitas a 3-5 oficinas / coworkings en Bella Florida y San Diego | T+0 a T+5 |
 | Selección + cotización formal | T+5 a T+10 |
-| Firma contrato + depósito | T+10 a T+15 |
+| Firma contrato + depósito (**Base:** alquiler **HQ tipo casa USD 500/mes** — sustituye coworking/oficina del escenario Lean; [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3 / §6.1) | T+10 a T+15 |
 | Adecuación (pintura, instalación) | T+15 a T+25 |
 | Equipamiento (escritorios, sillas, internet) | T+25 a T+30 |
 
@@ -93,22 +93,26 @@
 | Onboarding 5-8 repartidores autónomos | T+30 a T+50 |
 | KYC de cada repartidor | T+30 a T+55 |
 | Test entrega real con órdenes internas | T+55 a T+60 |
-| Definición de zona inicial de cobertura (radio 4 km del centro Bella Florida) | T+30 |
+| Definición de zona inicial de cobertura por **polos acotados** (Bella Florida + corredor vía Tocuyito hacia El Socorro); radios operativos por polo según **mapa real**, no un único círculo fijo | T+30 |
 
 ### 3.3 Hitos de marketing (T+30 a T+60)
 
+**Orden de prioridad (coherente con [CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md) §2.3 y [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md)):** **Meta Ads** (Instagram/Facebook) es el **canal principal** de awareness y captación; la **valla** es **refuerzo offline** y activación coordinada hacia el Day-D.
+
 | Hito | Status |
 |---|---|
-| Diseño + producción de valla publicitaria 3m×2m | T+30 a T+50 |
+| **Meta Business**: cuenta, píxel/app events, públicos geo Carabobo/Valencia, línea creativa aprobada (marca [BRAND_ZONIX_PHARMA.md](../BRAND_ZONIX_PHARMA.md)) | T+30 a T+45 |
+| **Campañas Meta Ads** en entorno de prueba + presupuesto según tramo año 1 (**USD 800/mes** equivalente en ventana operativa inicial) | T+40 a T+55 |
+| Estrategia digital geo-targeted Bella Florida + El Socorro (B2C + apoyo B2B según campaña) | T+30 a T+45 |
+| Material de pre-lanzamiento (post Instagram, video TikTok, assets pagados) | T+50 a T+60 |
+| Diseño + producción **valla** 3m×2m (refuerzo; instalación suele activarse hacia **Day-D** / mes calendario ~3 según contrato) | T+30 a T+50 |
 | Contrato con proveedor de valla + ubicación av. Bolívar Norte | T+30 a T+50 |
-| Estrategia digital geo-targeted Bella Florida + El Socorro | T+30 a T+45 |
-| Cuentas Meta Ads + Google Ads activas | T+45 a T+55 |
-| Material de pre-lanzamiento (post Instagram, video TikTok) | T+50 a T+60 |
+| Google Ads u otros canales solo si complementan remarketing / search local acordado | T+45 a T+60 |
 
 **Hito de cierre T+60:**
 - 5-8 farmacias con catálogo cargado y operativas.
 - 5-8 repartidores con KYC aprobado.
-- Marketing digital listo para campaña pre-lanzamiento.
+- **Meta Ads** operativo para pre-lanzamiento; valla en instalación o lista para activar en **Day-D**.
 
 ## 4. T+90 — DAY-D del piloto
 
@@ -127,7 +131,7 @@
 | Hora | Acción |
 |---|---|
 | 06:00 | Equipo en oficina. Verificación final de servicios. |
-| 07:00 | Activación valla + boost Meta Ads |
+| 07:00 | **Boost Meta Ads** (canal principal) + **activación valla** (refuerzo offline, si contrato lo calendariza en Day-D) |
 | 08:00 | App pública en Play Store y App Store. Primera orden simulada por equipo interno. |
 | 09:00 | Comunicación oficial: Instagram, TikTok, Twitter, WhatsApp. |
 | 11:00 | Visita presencial a las 5-8 farmacias para confirmación operativa. |
@@ -137,7 +141,7 @@
 
 ### 4.3 Días T+91 a T+100 — Estabilización
 
-- Customer Support 24/7 los primeros 10 días (turnos del founder + Customer Support + Sales B2B en standby).
+- Customer Support 24/7 los primeros 10 días (turnos del founder + Customer Support + **equipo Sales B2B (2)** en standby).
 - Bug fixing prioritario.
 - Iteración rápida basada en feedback de paciente y farmacia.
 
@@ -156,7 +160,7 @@ Criterios para considerar el piloto exitoso:
 | Tasa cancelación de orden | ≤ 8% |
 | Tasa de comprobante falso | ≤ 0,5% |
 | Revenue mensual | ≥ USD 1.500 |
-| Cash en banco | ≥ USD 45.000 |
+| Cash en banco | ≥ **~USD 49.000** (alineado a proyección Base **USD 101k** + **Co-CEO** — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3: cash final mes **6 ~USD 49.041**) |
 
 **Si NO se alcanzan estos criterios:** activar plan de contingencia documentado en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) sección 4.
 

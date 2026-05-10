@@ -7,54 +7,23 @@
 
 ## Última actualización de contexto
 
-### Pack lanzamiento inversor — Zonix Pharma (4–5 mayo 2026)
+### Pack Lanzamiento — modelo Base **USD 101k** + **Co-CEO** (10 mayo 2026)
 
-- **Fecha:** 4 mayo 2026.
-- **Resumen breve:** generado **data room ligero + plan operativo** completo en [`docs/Lanzamiento/`](Lanzamiento/) (21 archivos: README + 20 documentos navegables + análisis forense). Pack pensado para presentar a inversionista pre-seed VE.
-- **Estructura:**
-  - **Cimientos:** [README.md](Lanzamiento/README.md) (índice navegable + cifras ancla), [BRIEF_UNA_PAGINA.md](Lanzamiento/BRIEF_UNA_PAGINA.md), [CONTEXTO_PITCH_Y_DECISIONES.md](Lanzamiento/CONTEXTO_PITCH_Y_DECISIONES.md).
-  - **Mercado y propuesta de valor:** [PERFIL_MERCADO_PILOTO.md](Lanzamiento/PERFIL_MERCADO_PILOTO.md), [PROPUESTA_VALOR_CLIENTE_B2B.md](Lanzamiento/PROPUESTA_VALOR_CLIENTE_B2B.md), [PROPUESTA_VALOR_USUARIO_FINAL.md](Lanzamiento/PROPUESTA_VALOR_USUARIO_FINAL.md), [PROPUESTA_VALOR_TERCER_LADO.md](Lanzamiento/PROPUESTA_VALOR_TERCER_LADO.md).
-  - **Economía:** [UNIT_ECONOMICS.md](Lanzamiento/UNIT_ECONOMICS.md), [PRESUPUESTO_12_MESES_REFERENCIA.md](Lanzamiento/PRESUPUESTO_12_MESES_REFERENCIA.md), [PROYECCION_FINANCIERA_12M.md](Lanzamiento/PROYECCION_FINANCIERA_12M.md), [MONTOS_REFERENCIA_INTERNET.md](Lanzamiento/MONTOS_REFERENCIA_INTERNET.md) (40+ URLs validadas).
-  - **Legal y operativo:** [ESTRUCTURA_LEGAL_Y_EQUITY.md](Lanzamiento/ESTRUCTURA_LEGAL_Y_EQUITY.md), [PLAN_METODOS_PAGO.md](Lanzamiento/PLAN_METODOS_PAGO.md), [PLAN_LANZAMIENTO_COMERCIAL.md](Lanzamiento/PLAN_LANZAMIENTO_COMERCIAL.md), [PLAN_MODULO_OPERATIVO_CLAVE.md](Lanzamiento/PLAN_MODULO_OPERATIVO_CLAVE.md), [SUPUESTO_MARKETING_OFFLINE.md](Lanzamiento/SUPUESTO_MARKETING_OFFLINE.md).
-  - **Inversor y equipo:** [CHECKLIST_PRE_INVERSOR.md](Lanzamiento/CHECKLIST_PRE_INVERSOR.md), [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](Lanzamiento/MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md), [CUESTIONARIO_EQUIPO_PILOTO.md](Lanzamiento/CUESTIONARIO_EQUIPO_PILOTO.md), [VOLCADO_RESPUESTAS_CUESTIONARIO.md](Lanzamiento/VOLCADO_RESPUESTAS_CUESTIONARIO.md).
-  - **Auditoría:** [ANALISIS_FORENSE.md](Lanzamiento/ANALISIS_FORENSE.md) (6 perspectivas: CEO, economista, marketing, paciente, operador tercero, inversor; 3 CRÍTICAS + 10 ALTAS aplicadas).
-- **Cifras ancla del pack (escenario Base):**
-  - Capital pedido **USD 75.000** vía SAFE post-money cap **USD 550.000** (~13,64% equity implícito).
-  - Burn promedio **USD 4.521/mes** con buffer 20% por inflación VE 387-618%.
-  - Equipo: 5 full-time (Founder + Sales + Customer Support + Marketing + Delivery Ops) + 2 freelance (Contador + Abogado).
-  - ARPF **USD 45/mes** (mix 60/30/10 Basic/Pro/Enterprise dinámico).
-  - CAC **USD 94**, churn 5%/mes, LTV **USD 900**, **LTV/CAC 9,6x**, payback 2,1 meses.
-  - Break-even **mes 11** con **107 farmacias activas**.
-  - TAM Venezuela **USD 1.638M/año** (IMS Health 2025), SAM Valencia metro **226 farmacias**.
-  - Comparable internacional: Farmalisto (USD 32M revenue 2024 / USD 33M VC raised).
-- **Decisiones del usuario aplicadas:**
-  - Zona piloto: Bella Florida + El Socorro (Valencia, Carabobo) durante T+0 a T+90.
-  - Tier dinámico Basic 25 / Pro 60 / Enterprise 120 con multi-sucursal.
-  - Alcance completo desde día 1 (Buyer + Pharmacy + Pharmacist + Delivery + Delivery Company).
-  - Sin pharmacist liaison interno (cada farmacia aporta su colegiado MPPS).
-  - Sin diseñador UI/UX (founder cubre tech y marca canónica en [`BRAND_ZONIX_PHARMA.md`](BRAND_ZONIX_PHARMA.md)).
-  - Founder sin sueldo en Lean y Base (USD 250/mes desde mes 4 solo en Growth).
-  - Inmueble Base: oficina propia 34-38m² USD 280/mes en Bella Florida o San Diego.
-  - Valla publicitaria: NO en Lean, pequeña 3m×2m USD 350/mes en Base, mediana 6m×4m USD 700/mes en Growth.
-  - Día D: T+90 desde cierre de inversión (calendario relativo).
-- **Análisis forense aplicado:** 3 CRÍTICAS (burn año 1 corregido, waiver 2 meses, **C3 founder** volcado parcial mayo 2026 — Abrahan Pulido en VOLCADO/CHECKLIST/MENSAJE/BRIEF; subsisten GitHub/referencias/% tiempo) + 10 ALTAS (conteo roles, seguridad/privacidad datos médicos, sensibilidad en brief, cap SAFE justificado, triggers digital/offline, TikTok Ads, onboarding paciente, capacidad operativa, single-founder + advisors post-Serie A, «por qué ahora»).
-- **Revisión profesional multi-rol (5 mayo 2026):** ampliación legal/datos (`ESTRUCTURA_LEGAL_Y_EQUITY` §4.4, labor freelance, contrato marco, SAFE); operación y regulación (`PLAN_MODULO_OPERATIVO_CLAVE` §8.2.1, §7.4, §9.6, §15 playbook, §16 amenazas, §17 QA); marketing salud (`SUPUESTO_MARKETING_OFFLINE` §1.1, `PROPUESTA_VALOR_USUARIO_FINAL` §2.1 y TTL); B2B/objeciones y SLA terceros (`PROPUESTA_VALOR_CLIENTE_B2B`, `PROPUESTA_VALOR_TERCER_LADO`); plantilla investor update (`PROYECCION_FINANCIERA_12M` §6.3); OTP/DPIA en `PLAN_LANZAMIENTO_COMERCIAL`; tabla resumen en `ANALISIS_FORENSE` §11.1. **Pendiente humano:** dictamen abogado + farmacéutico asesor sobre textos y plazos antes de tráfico masivo.
-- **Pendientes humanos** (marcados explícitamente con `[PENDIENTE]` en el pack):
-  1. **Founder — parcialmente completado (mayo 2026):** volcados en pack **Abrahan Pulido** (CV + LinkedIn): nombre, email `ing.pulido.abrahan@gmail.com`, tel +58 412 4352014, LinkedIn, aiblockweb.com, proyectos (Zonix Eats, Corral X, Zonix, Zonix Imports), párrafo «por qué yo» en [`docs/Lanzamiento/VOLCADO_RESPUESTAS_CUESTIONARIO.md`](Lanzamiento/VOLCADO_RESPUESTAS_CUESTIONARIO.md). **Siguen pendientes antes de reunión institucional:** URL GitHub o acceso repo bajo NDA, 2–3 referencias con permiso, declaración % dedicación Zonix Pharma vs. CETIAC/otros, métricas tracción por producto (opcional), cédula solo en sala (no en PDF público).
-  2. Lista real de 5-8 farmacias prospecto en Bella Florida + El Socorro con contactos.
-  3. Cotización formal del coworking u oficina elegida.
-  4. Cotización formal de la valla con proveedor específico.
-  5. Datos del primer inversor candidato (nombre, ticket, ángel/fondo).
-  6. Fecha real de cierre de inversión (activa T+30 / T+60 / T+90 absolutos).
-  7. Nombre y cotización formal del abogado y contador venezolanos.
-  8. Nombres reales del equipo (Sales B2B, Customer Support, Marketing Lead, Delivery Ops Coordinator).
-- **Sin commits ni push automáticos:** pack creado en local, esperando aprobación del usuario para commit.
+- **Resumen:** el escenario **Base** subió de **USD 95k** a **USD 101k** para incorporar **Co-CEO / CEO operativo USD 1.000/mes** en burn sin romper el cierre contable del presupuesto. Documentos alineados en `docs/Lanzamiento/` (README, BRIEF, PROYECCION, PRESUPUESTO, ESTRUCTURA, MENSAJE, CHECKLIST, UNIT_ECONOMICS, ANALISIS_FORENSE, etc.).
+- **Cifras ancla Base (fuente [PROYECCION_FINANCIERA_12M.md](Lanzamiento/PROYECCION_FINANCIERA_12M.md) §1.1–1.3, [PRESUPUESTO_12_MESES_REFERENCIA.md](Lanzamiento/PRESUPUESTO_12_MESES_REFERENCIA.md) §3):** capital **USD 101.000**; SAFE cap **USD 600.000**; equity implícito **~16,83%**; one-shots M1 **~USD 10.408**; burn tramos **7.402 / 7.738 / 7.371**; burn año 1 **89.982**; cash cierre año 1 **~USD 27.045** (sin waiver); cash mes **6 ~USD 49.041**; **equilibrio mensual post-M12** con ARPF 45 salvo mitigaciones (§1.4); **~167** farmacias orden de magnitud para cubrir burn con placeholder.
+- **Equipo Base:** **Co-CEO** + **2× Sales B2B** + CS+CM + Marketing + Delivery Ops + **founder** CEO+CTO; **2** freelance (Contador, Abogado). «Co-CEO» es **rótulo operativo**; legal/junta/SAFE = dictamen abogado ([ESTRUCTURA_LEGAL_Y_EQUITY.md](Lanzamiento/ESTRUCTURA_LEGAL_Y_EQUITY.md), [README.md](Lanzamiento/README.md)).
+- **Waiver B2B vs. proyección:** tabla §1.1 = caso **central sin** waiver de cuota; fila «con waiver» ≈ **−USD 200** ingreso año 1; **§1.3** documenta caja **~26.845** si aplica esa variante. Promesa comercial más amplia → recalcular con FP&A ([PROPUESTA_VALOR_CLIENTE_B2B.md](Lanzamiento/PROPUESTA_VALOR_CLIENTE_B2B.md) §11, [ANALISIS_FORENSE.md](Lanzamiento/ANALISIS_FORENSE.md) §8.1).
+- **Growth (USD 90k):** one-shots alineados a Base §3.2; burn §4.3 **aún no** unificado con Co-CEO + IA del Base — nota de reconciliación en [PRESUPUESTO_12_MESES_REFERENCIA.md](Lanzamiento/PRESUPUESTO_12_MESES_REFERENCIA.md) §4.1 y §5.
+- **Forense multi-rol:** [ANALISIS_FORENSE.md](Lanzamiento/ANALISIS_FORENSE.md) §11.1 tabla «lentes ejecutivos» (CEO, CFO, COO, CTO/CISO, CPO, clínico/RA/QA-PV, Compliance/DPO/Legal, ventas/marketing/CHRO, supply, riesgos/IR); §11.2–11.3 conclusión y próximos pasos.
+- **Obsoleto para materiales inversor:** cifras **95k**, burn **6.402 / 6.738 / 6.371**, cash **~33k**, DoD mes 6 **~41k**, equity **15,83%** — no usar; el histórico de proceso queda en entradas antiguas más abajo si aplica.
+- **Pendientes humanos** (igual que pack — [VOLCADO_RESPUESTAS_CUESTIONARIO.md](Lanzamiento/VOLCADO_RESPUESTAS_CUESTIONARIO.md), [CHECKLIST_PRE_INVERSOR.md](Lanzamiento/CHECKLIST_PRE_INVERSOR.md)): GitHub/NDA, referencias, % dedicación, farmacias prospecto, cotizaciones, abogado/farmacéutico, nombres equipo.
+- **Sin commit/push desde la IA** salvo orden explícita del usuario.
 
 ---
 
-### Verificación local CI (1 mayo 2026)
+### Verificación local CI (10 mayo 2026)
 
-- **Backend (este repo):** `php artisan test` → **397 passed** (1636 assertions). `./vendor/bin/pint --test` → **PASS** en árbol completo (433 archivos en última pasada de sesión).
+- **Backend (este repo):** `php artisan test` → **397 passed** (1636 assertions). Última pasada **Pint** en contexto histórico: **PASS** (433 archivos — ver entrada 1 mayo si se requiere re-ejecutar).
 - **Frontend (repo hermano):** `flutter analyze lib` → sin issues; `flutter test` → **216 passed** (~1 skipped). Mismo resumen en [`../ZonixPharma-Front/docs/active_context.md`](../ZonixPharma-Front/docs/active_context.md).
 - **Higiene Intelephense / tipado reciente:** un solo `use App\Events\PaymentProofUploaded` en `tests/Feature/OrderTest.php`; `Buyer/PharmacyController::show(string|int $id)`; modelo `Order` (`withPivot(['quantity', 'unit_price'])`, scopes `scopeWithoutAwaitingProofValidation` / `scopeWherePendingPaymentTtlExceeded` con `Builder $query`); `Buyer/TrackingController::getOrderTracking(string|int $orderId)`.
 - **Nota:** sin commit/push automático desde la IA en esta verificación.

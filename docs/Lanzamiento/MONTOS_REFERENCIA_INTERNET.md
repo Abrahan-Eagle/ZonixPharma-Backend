@@ -1,33 +1,36 @@
 # Montos de referencia validados con fuentes de internet
 
-> **Última actualización:** 4 mayo 2026.
+> **Última actualización:** 10 mayo 2026.
 > Documento que lista las fuentes web públicas de cada cifra utilizada en el pack.
-> Cada precio o métrica venezolana puede variar mensualmente por la inflación 387-618% proyectada para 2026. **Reconfirmar trimestralmente.**
+> Cada precio o métrica venezolana puede variar mensualmente por inflación (macro 2026: **desaceleración oficial BCV** vs. escenarios externos pesimistas 387-618%). **Reconfirmar trimestralmente.**
 
 ## 1. Mercado farmacéutico venezolano (TAM)
 
 | Dato | Valor | Fuente |
 |---|---|---|
-| Tamaño mercado farmacéutico VE 2025 | **USD 1.638 millones / año** | IMS Health Venezuela 2025 (citado en [Cifar - Cámara de la Industria Farmacéutica VE](https://cifar.com.ve/)) |
-| Unidades vendidas anual VE | **389 millones** | IMS Health VE 2025 |
-| Crecimiento en unidades 2024-2025 | **+17,49%** YoY | IMS Health VE / Cifar 2025 |
+| Tamaño mercado farmacéutico VE 2025 | **USD 1.638 millones / año** | **Cifar VE** (datos **IMS/IQVIA**) — [Cámara Industria Farmacéutica VE](https://cifar.com.ve/) |
+| Unidades vendidas anual VE | **389 millones** | Cifar VE / IMS-IQVIA 2025 |
+| Crecimiento en unidades 2024-2025 | **+17,49%** YoY | Cifar VE (IMS-IQVIA) 2025 |
 | CAGR 2026-2032 | **6,1%** anual | [Statista Venezuela Pharmaceutical Market](https://www.statista.com/study/47924/pharmaceutical-market-in-latin-america/) |
 | Genéricos Rx % del total | **48,3%** | Cifar 2025 |
 | OTC % del total | **35,2%** | Cifar 2025 |
 
-**Nota:** Cifar es el organismo gremial oficial. Los números están reportados en mensajes públicos de la cámara y publicaciones de prensa especializada. Para el data room del inversor se recomienda anexar PDF original de Cifar al cierre.
+**Nota:** **Cifar** publica las series del mercado VE citando datos **IMS/IQVIA**. En agosto 2025 reportó **+20,66% YoY** ene-ago y proyección anual **+17,7%**; el **H1 2025** superó la proyección con **+23,4%** (prensa especializada). Para el data room del inversor se recomienda anexar comunicados Cifar originales al cierre.
 
 ## 2. Inflación y devaluación VE 2026
 
 | Dato | Valor | Fuente |
 |---|---|---|
 | Inflación oficial 2025 (cierre) | ~190% | [BCV Venezuela](https://www.bcv.org.ve/) |
-| Inflación proyectada 2026 (Anova) | **387% - 618%** | [Anova Policy Research](https://anova-policy.org/) |
-| Inflación proyectada 2026 (Cendas-FVM) | ~450% | [Cendas-FVM](https://www.cendasfvm.com/) |
-| Inflación proyectada 2026 (Ecoanalítica) | 400-550% | Ecoanalítica reportes mensuales 2025-2026 |
+| **Inflación mensual observada 2026 (BCV, hasta abril)** | **ene +32,6% / feb +14,7% / mar +13,1% / abr +10,6%** | Comunicados BCV / prensa económica VE mayo 2026 |
+| **Proyección oficial BCV mayo 2026** | **Inflación mensual de un dígito desde mayo 2026** | [Banca y Negocios — presidente BCV](https://www.bancaynegocios.com/presidente-e-bcv-podemos-esperar-que-a-partir-de-mayo-empecemos-a-tener-inflacion-de-un-digito-en-el-pais/), [El Nacional](https://www.elnacional.com/2026/05/bcv-proyecta-inflacion-de-un-digito-en-venezuela-a-partir-de-mayo/) |
+| Lectura macro base (orden de magnitud) | Si la trayectoria oficial se mantiene, **acumulado anual 2026** puede ubicarse en **orden ~134-220%** (vs. escenarios externos pesimistas 387-618%). | Consolidación pack — contrastar trimestralmente con BCV |
+| Inflación proyectada 2026 — escenario **pesimista** (Anova) | **387% - 618%** | [Anova Policy Research](https://anova-policy.org/) |
+| Inflación proyectada 2026 — escenario **pesimista** (Cendas-FVM) | ~450% | [Cendas-FVM](https://www.cendasfvm.com/) |
+| Inflación proyectada 2026 — escenario **pesimista** (Ecoanalítica) | 400-550% | Ecoanalítica reportes mensuales 2025-2026 |
 | Devaluación bolívar 2025 (cierre) | ~73% | BCV vs. paralelo |
 
-**Lectura:** el rango 387-618% es la mediana ponderada de tres fuentes serias VE. Buffer 20% en costos absorbe ±25% de variación, que es el escenario base de devaluación trimestral.
+**Lectura:** el escenario **base conservador del pack** sigue siendo el buffer **20%** sobre costos en bolívares. Las cifras **387-618%** y similares se mantienen como **escenario pesimista / stress** (Anova, Cendas, Ecoanalítica), no como proyección única. La lectura oficial BCV mayo 2026 (**desaceleración a inflación mensual de un dígito**) **refuerza** el runway si se materializa; el buffer absorbe aún desviaciones y el escenario pesimista sigue cubierto en sensibilidades.
 
 ## 3. Salarios profesionales VE 2026 (sector privado, USD)
 
@@ -70,10 +73,12 @@
 | Oficina propia 34-38m² | 2 ambientes + baño | USD 280-380 | Mismo |
 | Oficina propia 40-50m² | Sala recepción + 2 oficinas | USD 380-550 | Mismo |
 
-**Decisión del pack:**
+**Decisión del pack (tablas históricas §3.3 PRESUPUESTO):**
 - Lean: coworking básico USD 100/mes.
 - Base: oficina 34-38m² USD 280/mes.
 - Growth: oficina 34-38m² USD 280/mes (igual que Base).
+
+**Decisión operativa founder (mayo 2026 — pendiente recalibrar FP&A):** HQ tipo **casa en alquiler USD 500/mes** (sustituye la línea 280 en el próximo cierre numérico). Ver [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §6.1.
 
 ## 6. Servicios públicos VE 2026
 
@@ -145,9 +150,9 @@ Detalle en [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md).
 
 | Dato | Valor | Fuente |
 |---|---|---|
-| Revenue 2024 | **USD 32 millones** | [Crunchbase Farmalisto](https://www.crunchbase.com/organization/farmalisto) |
-| VC raised total | **USD 33 millones** en 5 rondas | [PitchBook Farmalisto](https://pitchbook.com/profiles/company/210015-91), última ronda Series C USD 12M en 2023 |
-| País origen | México (operación México + Colombia) | Crunchbase |
+| Revenue 2024 (México, e-commerce) | **~USD 32,3 millones** | [eCommerceDB / informes sector](https://ecommercedb.com/store/farmalisto.com.mx), alineado con Crunchbase ~USD 32M |
+| VC raised total (estimado) | **~USD 22M** reportado en agregadores (Tracxn, LeadIQ, EquityZen 2025-2026); **hasta ~USD 33M** en algunas bases (ej. PitchBook, 5 rondas) | [Tracxn](https://tracxn.com/d/companies/farmalisto/), [PitchBook](https://pitchbook.com/profiles/company/210015-91) |
+| País origen | México (**operación MX + CO + PE**) | Crunchbase / sitio corporativo |
 | Año fundación | 2012 | Crunchbase |
 | Modelo | Marketplace farmacéutico + delivery propio | Web Farmalisto |
 | Comisión sobre ventas (estimada) | 12-18% | Industry estimates |
@@ -179,6 +184,18 @@ Detalle en [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md).
 | Bottom quartile churn (peor 25%) | > 8% mensual | ChartMogul |
 
 **Decisión del pack:** churn 5% mensual = lifetime 20 meses. Conservador y dentro del rango mediano.
+
+## 11A. Herramientas IA — Cursor, Claude, Seedance 2.0 (precios públicos USD)
+
+Referencias para el stack acordado en [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §6.1. **No** se modelan Gemini, Runway ni Midjourney en ese stack.
+
+| Herramienta | Plan / referencia | USD/mes | Fuente |
+|-------------|-------------------|---------|--------|
+| **Cursor** | Ultra | **200** | [Cursor Pricing](https://cursor.com/pricing) |
+| **Claude** (Anthropic) | Max 20× (uso alto) | **200** | [Anthropic Claude pricing](https://www.anthropic.com/pricing) — verificar tier exacto en checkout |
+| **Seedance 2.0** | Suscripción (tier variable) | **~15–50** *(confirmar en el sitio donde se contrate)* | Buscar pricing oficial del proveedor elegido; hay varios dominios comerciales — **cotizar antes de fijar en proyección** |
+
+**Total suscripciones IA (ancla conservadora Seedance ~25):** **~425 USD/mes** (200 + 200 + 25).
 
 ## 12. Directorio de farmacias en Valencia
 

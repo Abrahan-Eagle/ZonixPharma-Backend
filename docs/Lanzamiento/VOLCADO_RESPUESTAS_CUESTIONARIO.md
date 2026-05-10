@@ -1,6 +1,6 @@
 # Volcado de respuestas del cuestionario + datos pendientes del founder
 
-> **Última actualización:** 4 mayo 2026.
+> **Última actualización:** 10 mayo 2026.
 > Plantilla para el founder. Llenar a medida que se entreviste al equipo y se cierren contrataciones.
 > Cada celda con `[PENDIENTE]` debe llenarse antes de la primera reunión con un inversor.
 
@@ -29,6 +29,17 @@
 
 Ingeniero en Informática (IUTVAL, 2013–2018) con **más de 8 años** construyendo productos web y móviles end-to-end. He fundado y desarrollado **Zonix Eats** (Laravel + Flutter + Firebase — mismo núcleo técnico que Zonix Pharma), **Corral X** (marketplace Laravel 10 + Flutter), **Zonix** y **Zonix Imports**, con foco en arquitectura escalable, **TDD**, **CI/CD** y entrega de MVP a producción. Lideré equipos (p. ej. Mekautos, 5 devs) y combino producto con docencia en **CETIAC**. Zonix Pharma no es un experimento desde cero: es la verticalización del stack y del aprendizaje operativo de Zonix Eats hacia farmacia, con **backend ya probado** (suite de tests del repo) y regulación VE documentada en el mismo repositorio.
 
+## 1.5 Co-CEO / CEO operativo (segundo al mando)
+
+| Dato | Valor |
+|---|---|
+| Nombre legal completo | [PENDIENTE] |
+| Rol en pack | **Co-CEO / CEO operativo** (comercial / operación / corporate — **rótulo operativo**; legal/junta según abogado) |
+| Sueldo Base modelado | **USD 1.000/mes** fijo ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3) |
+| % dedicación Zonix Pharma vs otros ingresos | [PENDIENTE] |
+| LinkedIn / referencias | [PENDIENTE] |
+| Fecha incorporación prevista (T+X) | [PENDIENTE] |
+
 ## 2. Datos del primer inversor candidato
 
 | Dato | Valor |
@@ -37,7 +48,7 @@ Ingeniero en Informática (IUTVAL, 2013–2018) con **más de 8 años** construy
 | Tipo (ángel / fondo / family office) | [PENDIENTE] |
 | Inversiones previas en LatAm | [PENDIENTE] |
 | Inversiones en farmacéutico o salud | [PENDIENTE] |
-| Ticket esperado (USD) | [PENDIENTE — entre USD 25k-75k esperado] |
+| Ticket esperado (USD) | [PENDIENTE — p. ej. USD 25k / 50k / **101k** (Base) / mayor] |
 | Disponibilidad para reunión | [PENDIENTE] |
 | Cómo lo conoces | [PENDIENTE — referido / contacto frío / etc.] |
 | Próximo paso confirmado | [PENDIENTE] |
@@ -74,7 +85,9 @@ Ingeniero en Informática (IUTVAL, 2013–2018) con **más de 8 años** construy
 
 ## 5. Equipo contratado o en proceso
 
-### 5.1 Sales B2B
+### 5.1 Rol comercial B2B (**2 ejecutivos** — modelo Base)
+
+Contratar **dos** personas en este rol (tercera columna opcional si se evalúa refuerzo futuro). Compensación: USD **120** fijo c/u + USD **30** por farmacia firmada (**al rep que la firmó**; no duplicado entre reps) ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) / pack económico).
 
 | Dato | Candidato 1 | Candidato 2 | Candidato 3 |
 |---|---|---|---|
@@ -94,7 +107,7 @@ Ingeniero en Informática (IUTVAL, 2013–2018) con **más de 8 años** construy
 | Salario esperado | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
 | Decisión | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
 
-### 5.3 Marketing Lead + CEO interino
+### 5.3 Marketing Lead + apoyo a dirección
 
 | Dato | Candidato 1 | Candidato 2 | Candidato 3 |
 |---|---|---|---|

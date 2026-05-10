@@ -1,6 +1,6 @@
 # Plan del módulo operativo clave: validación Rx por farmacéutico colegiado
 
-> **Última actualización:** 5 mayo 2026.
+> **Última actualización:** 10 mayo 2026.
 > Documento que detalla el flujo central diferenciador de Zonix Pharma: la **validación de receta médica (Rx) por farmacéutico colegiado** dentro de la app.
 > Este flujo está parcialmente implementado en backend; ver [`../PLAN_RX_VALIDATION.md`](../PLAN_RX_VALIDATION.md) para detalle técnico.
 
@@ -44,6 +44,8 @@
 - Despacho **solo pickup en sucursal con identificación del paciente**.
 - Validación digital + revisión de identidad obligatoria.
 - En piloto: opcional. Activar en mes 4-6 con asesoría regulatoria.
+
+**Referencia normativa:** clasificación exacta **común / retenida / especial** y listados de sustancias deben alinearse a **resoluciones MPPS / normativa vigente** — **[PENDIENTE]** adjuntar número de resolución y fecha en data room tras dictamen **farmacéutico asesor + abogado** (no inventar cita).
 
 ## 4. Flujo operativo paso a paso
 
@@ -197,8 +199,8 @@ Cada validación queda registrada en backend con:
 
 ### 9.2 Receta vencida
 
-- TTL receta médica VE: depende del tipo, generalmente 30 días desde emisión.
-- Si la receta tiene fecha > 30 días: pharmacist rechaza con motivo.
+- TTL receta médica VE: depende del tipo; **referencia habitual** muchas recetas comunes **30 días** desde emisión — **confirmar** con normativa aplicable y criterio del farmacéutico colegiado (**[PENDIENTE]** cita MPPS/COFV si se usa en comunicación al paciente).
+- Si la receta tiene fecha > umbral válido: pharmacist rechaza con motivo.
 
 ### 9.3 Receta de medicamento sin INHRR
 
@@ -221,7 +223,7 @@ Cada validación queda registrada en backend con:
 
 ### 9.6 Sustancias controladas y nomenclatura legal (disclaimer)
 
-Las etiquetas de producto en la app (**`common` / `retained` / `special`**, controlados, cadena de frío) deben **mapearse** a listados y requisitos **vigentes en Venezuela** (estupefacientes, psicotrópicos, recetas oficiales, libros de control). **Mes 0-3 del piloto:** priorizar recetas **comunes** y flujo operativo estable; antes de escalar volumen en **controlados**, publicar **tabla de equivalencias** aprobada por **farmacéutico asesor + abogado** y ajustar UX (mensajes obligatorios, pickup, identificación).
+Las etiquetas de producto en la app (**`common` / `retained` / `special`**, controlados, cadena de frío) deben **mapearse** a listados y requisitos **vigentes en Venezuela** (estupefacientes, psicotrópicos, recetas oficiales, libros de control). **Mes 0-3 del piloto:** priorizar recetas **comunes** y flujo operativo estable; antes de escalar volumen en **controlados**, publicar **tabla de equivalencias** aprobada por **farmacéutico asesor + abogado** y ajustar UX (mensajes obligatorios, pickup, identificación). **Resolución(es) MPPS de referencia:** **[PENDIENTE]** anexar en data room.
 
 ## 10. Cadena de frío
 
@@ -239,7 +241,21 @@ Las etiquetas de producto en la app (**`common` / `retained` / `special`**, cont
 - Si temperatura excede umbrales: alerta automática.
 - Política de reembolso si se rompe cadena de frío.
 
-## 11. Métricas operativas del módulo
+## 11. Farmacovigilancia y eventos adversos (Chief Medical / regulatorio)
+
+**Objetivo:** canal formal para **eventos adversos (EA)** y sospechas de fallos de calidad asociados a medicamentos dispensados vía Zonix.
+
+| Paso | Responsable | Acción |
+|---|---|---|
+| 1. Captura | Paciente (app) o farmacia | Formulario corto post-entrega: síntoma, medicamento, lote si existe |
+| 2. Triaje | Customer Support Zonix | Prioridad; datos completos en ≤ 24 h hábiles |
+| 3. Val clínico | Farmacéutico colegiado de la farmacia despachadora | Evaluación inicial; escalamiento médico si procede |
+| 4. Reporte regulatorio | Farmacia / asesor regulatorio | Notificación a **INHRR** u autoridad que corresponda según normativa vigente — **plantillas y plazos [PENDIENTE]** con farmacéutico asesor |
+| 5. Registro interno | Zonix | Audit log; sin datos clínicos innecesarios; retención según §14 |
+
+**Disclaimer app:** reportar EA **no sustituye** atención médica urgente; en emergencia dirigir a servicio de salud.
+
+## 12. Métricas operativas del módulo
 
 | Métrica | Meta mes 6 | Meta mes 12 |
 |---|---|---|
@@ -250,8 +266,10 @@ Las etiquetas de producto en la app (**`common` / `retained` / `special`**, cont
 | Tasa de quejas de paciente sobre validación | < 4% | < 2% |
 | Pharmacists activos | 8-15 | 35-45 |
 | Recetas validadas mes | 200 | 1.500+ |
+| **Eventos adversos (EA) reportados/mes** (farmacovigilancia) | **≤ 2** | **≤ 5** |
+| **TTR triaje EA** (Customer Support → escalamiento farmacia) | **≤ 24 h** | **≤ 12 h** |
 
-## 12. Riesgos del módulo
+## 13. Riesgos del módulo
 
 | Riesgo | Mitigación |
 |---|---|
@@ -261,75 +279,75 @@ Las etiquetas de producto en la app (**`common` / `retained` / `special`**, cont
 | MPPS audita y encuentra fallas | Trazabilidad completa + asesor regulatorio externo. |
 | Paciente sube datos personales sensibles fuera de la receta | Política de privacidad + cifrado en reposo + audit log. |
 
-## 13. Seguridad y privacidad de datos médicos (ALTA #2 forense)
+## 14. Seguridad y privacidad de datos médicos (ALTA #2 forense)
 
-Datos de salud son categoría especial bajo la **Ley de Protección de Datos Personales VE 2025**. Zonix Pharma cumple con:
+Datos de salud son categoría especial; **marco legal VE en actualización** — aplicar estándares de consentimiento, minimización y seguridad descritos en [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §4.4. Zonix Pharma cumple con:
 
-### 13.1 Almacenamiento
+### 14.1 Almacenamiento
 
 - **Recetas (foto/PDF):** S3 cifrado en reposo (AES-256). Bucket privado, acceso solo vía signed URL con TTL ≤ 60 min.
 - **Cédulas KYC del pharmacist y repartidor:** mismo S3 cifrado, política de retención 5 años o lo que exija ley aplicable.
 - **Comprobantes de pago:** S3 cifrado, retención 10 años (ley contable VE).
 - **Datos médicos del paciente** (medicamento comprado, frecuencia, condición indirecta): MySQL cifrado en reposo. Acceso vía API solo con sesión autenticada del paciente o con sesión del pharmacist responsable de su orden.
 
-### 13.2 Transmisión
+### 14.2 Transmisión
 
 - TLS 1.3 obligatorio en toda comunicación cliente-servidor.
 - Sin endpoints HTTP no encriptados.
 - Headers de seguridad (HSTS, CSP) configurados.
 
-### 13.3 Acceso
+### 14.3 Acceso
 
 - Audit log de todo acceso a datos sensibles.
 - Principle of Least Privilege: el pharmacist solo ve recetas asignadas a SU farmacia.
 - Customer Support de Zonix solo accede a datos sensibles vía herramienta auditada cuando hay disputa abierta.
 
-### 13.4 Retención
+### 14.4 Retención
 
 - **Receta común (digital en plataforma):** **hasta 10 años** como hipótesis de trazabilidad y defensa ante disputas; **ajustar** tras dictamen legal/farmacéutico (ver §8.2.1).
 - **Receta retenida / controlada:** conservación digital coherente con lo anterior + **retención física y libros** en la farmacia (responsabilidad del establecimiento).
 - **Datos personales paciente sin actividad:** anonimización después de 3 años de inactividad (política interna; validar plazo con abogado).
 - **Comprobantes de pago:** 10 años (marco contable VE; validar con contador).
 
-### 13.5 Consentimiento
+### 14.5 Consentimiento
 
 - Onboarding del paciente requiere consentimiento explícito a la política de privacidad antes de subir receta.
 - El paciente puede solicitar exportación de sus datos en cualquier momento (RGPD-like).
 - El paciente puede solicitar eliminación de su cuenta y datos (con excepción de los retenidos por ley contable o farmacéutica).
 
-### 13.6 Incidentes de seguridad
+### 14.6 Incidentes de seguridad
 
 - Plan de respuesta documentado.
 - Notificación al paciente afectado dentro de 72h si hay leak material.
 - Notificación a autoridad VE de protección de datos.
 
-## 14. Capacidad operativa fuera de horario y picos (ALTA #8 forense)
+## 15. Capacidad operativa fuera de horario y picos (ALTA #8 forense)
 
-### 14.1 Horario operativo estándar
+### 15.1 Horario operativo estándar
 
 - **Lunes-Sábado 08:00-20:00:** SLA validación Rx 60 min.
 - **Domingos y feriados:** SLA validación Rx 120 min (operación reducida).
 
-### 14.2 Capacidad de Customer Support
+### 15.2 Capacidad de Customer Support
 
 - **Mes 1-3:** 1 persona Customer Support 8h/día Lun-Sáb. Founder cubre fines de semana y emergencias.
 - **Mes 4-6:** Customer Support extiende a 12h/día Lun-Sáb. Marketing Lead cubre 2-3h Domingo en horario pico.
 - **Mes 7-12:** Si volumen lo justifica, contratar 2do Customer Support part-time (USD 150-200/mes adicional, no presupuestado en Base; Growth lo absorbe).
 
-### 14.3 Plan ante picos (feriados, fines de semana, eventos)
+### 15.3 Plan ante picos (feriados, fines de semana, eventos)
 
 - Notificación previa al equipo: programación de turnos.
 - Comunicación previa a farmacias activas: capacidad reducida → mejorar SLA acuerdos.
 - Buffer de Sales B2B y Delivery Ops como respaldo de Customer Support si excede 50 tickets/día (raro).
 
-### 14.4 Plan ante incidente técnico (servidor caído)
+### 15.4 Plan ante incidente técnico (servidor caído)
 
 - DigitalOcean SLA 99,9%.
 - Si caída > 1h: notificación push a paciente + farmacia.
 - Plan B operativo: pickup en sucursal con orden manual mientras se restaura.
 - Founder es el único responsable técnico. Si la indisponibilidad supera 1 semana, contratar consultor externo.
 
-## 15. Playbook de incidencias operativas (COO / Customer Support)
+## 16. Playbook de incidencias operativas (COO / Customer Support)
 
 Objetivo: **tiempo a resolución (TTR)** predecible y registro en ticket para aprendizaje y due diligence.
 
@@ -344,7 +362,7 @@ Objetivo: **tiempo a resolución (TTR)** predecible y registro en ticket para ap
 
 **Métricas Customer Support (objetivo mes 6):** primera respuesta **< 15 min** horario laboral; **> 85%** tickets cerrados sin reabrir; backlog **< 48 h** salvo P0.
 
-## 16. Modelo de amenazas abreviado (AppSec / CTO)
+## 17. Modelo de amenazas abreviado (AppSec / CTO)
 
 | Amenaza | Superficie | Mitigación en producto |
 |---|---|---|
@@ -354,22 +372,23 @@ Objetivo: **tiempo a resolución (TTR)** predecible y registro en ticket para ap
 | URL firmada filtrada | S3 signed URLs | TTL corto (≤ 60 min), sin listados públicos |
 | Webhooks pagos / OTP | Integraciones | Firma HMAC secreto, replay window, IP allowlist si aplica |
 | Insider Support | Herramientas internas | Acceso solo con ticket + audit log de cada vista |
+| **Suplantación de pharmacist** | Login pharmacist | **2FA opcional (TOTP)** en cuentas críticas — **roadmap T+90** (hardening post-piloto) |
 
 **DR / continuidad:** backups automáticos BD + snapshots configuración; prueba de restore **trimestral**; RPO objetivo **≤ 24 h**, RTO **≤ 4 h** para servicio core (ajustar con proveedor).
 
-## 17. QA y definición de “listo para piloto” (SDET / CTO)
+## 18. QA y definición de “listo para piloto” (SDET / CTO)
 
 | Capa | Qué se exige antes de Day-D |
 |---|---|
 | Automatizado | `php artisan test` en verde en CI; smoke API auth + orden OTC |
 | Manual | Flujo completo: registro buyer → carrito Rx → subida receta → validación pharmacist test → pago comprobante → dispatch |
-| Seguridad | Revisión checklist §16; sin secretos en repo; headers TLS |
+| Seguridad | Revisión checklist §17; sin secretos en repo; headers TLS |
 | Datos | Política de privacidad y consentimientos visibles en build de tienda |
 | Legal | Contrato marco farmacia + avisos revisados por abogado (ver [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §4.4.5) |
 
 **Regresión:** antes de cada release a producción, ejecutar suite automatizada + smoke manual de 30 min (script en runbook interno).
 
-## 18. Documentos hermanos
+## 19. Documentos hermanos
 
 - [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md): rol del farmacéutico colegiado.
 - [PROPUESTA_VALOR_USUARIO_FINAL.md](PROPUESTA_VALOR_USUARIO_FINAL.md): cómo el paciente sube receta.
