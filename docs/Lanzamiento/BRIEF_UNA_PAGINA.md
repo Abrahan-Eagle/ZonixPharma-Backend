@@ -70,7 +70,7 @@ Es la **vertical farmacia** del **stack Zonix Pharma** (~4 años de código prob
 | Payback CAC | **~2,4 meses** |
 | **Equilibrio mensual (revenue ≥ burn)** | **Post mes 12** con ARPF 45 y burn actual; **~167** farmacias activas orden de magnitud (ver §1.4 [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)) |
 | **Cash cierre año 1** (despliegue capital Base) | **~USD 27.045** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3) |
-| Año 2 proyección revenue conservadora | USD 96k anuales |
+| Año 2 proyección revenue conservadora | USD 96k–108k anuales |
 | Año 3 revenue ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §3.3) | **Conservador:** ~USD 180k–204k/año (sin Serie A). **Éxito / cobertura nacional:** hasta ~USD 480k/año. |
 
 Detalle completo y construcción mes a mes en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md). Detalle por línea de gasto en [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md).

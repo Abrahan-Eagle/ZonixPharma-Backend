@@ -36,7 +36,7 @@ Lo anterior + los siguientes:
 10. [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md) — preguntas para el equipo.
 11. [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) — plantilla de captura.
 12. [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) — texto de WhatsApp/email + bullets pitch.
-13. [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) — auditoría multi-perspectiva del pack: **6 perspectivas narrativas** y mapa ejecutivo en §11.1 / §11.1 bis.
+13. [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) — auditoría multi-perspectiva del pack: **6 perspectivas narrativas**, mapa ejecutivo §11.1 / §11.1 bis y **síntesis multi-rol §11.4** (tabla por rol ejecutivo + verificación técnica).
 
 ---
 
@@ -53,6 +53,8 @@ Lo anterior + los siguientes:
 | Buffer (inflación VE)             | 20%         | 20%                    | **25%** (Growth) |
 | Equilibrio mensual (revenue ≥ burn) | Mes 9-10 (orden magnitud Lean) | **Post-M12** salvo mitigaciones ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.4) | Ver nota Growth §4.1 [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) |
 | Farmacias activas ref. equilibrio | **~84**     | **~167** (ARPF 45, burn ~7,5k) | **~130** (histórico; refinar) |
+
+> **Nota Growth &lt; Base (capital pedido):** el escenario **Growth (USD 90k)** predató el replante operativo **Co-CEO + stack IA** del **Base (USD 101k)**. Growth **no** incluye en su burn §4.3 las líneas **Co-CEO USD 1.000/mes** ni **IA ~USD 425/mes** del Base §3.3 — por eso el burn promedio **~5.861** es menor. Para comparación estricta entre los tres escenarios, unificar Growth con las líneas Base §3.3 en FP&A antes de due diligence profundo (ver [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §4.1).
 
 > **Nota orden de magnitud (farmacias para cubrir burn):** **Lean ~84** (**3.756** burn promedio ÷ **ARPF 45**), **Base ~167** (**~7.499** ÷ 45), **Growth ~130** (**~5.861** ÷ 45). Ajustar cuando haya GMV real por tier.
 

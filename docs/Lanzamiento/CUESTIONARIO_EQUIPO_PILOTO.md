@@ -110,6 +110,7 @@
 2. ¿Tienes experiencia con copywriting?
 3. ¿Has hecho campañas de WhatsApp Business / TikTok?
 4. ¿Tienes experiencia con vallas publicitarias?
+5. ¿Estás alineado con el **stack IA** acordado para creatividad y apoyo a campañas (**Claude Max + Cursor Ultra + Seedance 2.0**; sin Gemini, Runway ni Midjourney) según [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §6.1?
 
 ### 4.3 Caso práctico
 

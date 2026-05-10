@@ -51,7 +51,7 @@
 | Registro de marca SAPI (paralelo) | 60-90 días | 350 |
 | **Total** | **~30 días + 60-90 marca SAPI** | **~1.450** |
 
-> **Nota:** la tabla suma **~USD 1.450** (rango medio con sello digital + SAPI en la misma lista). El **pack Lean** usa **USD 1.150** como one-shot de constitución operativa (ver [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.1): agrupa partidas sin duplicar el desglose línea a línea de esta tabla. No es contradicción: es el mismo orden de magnitud con distinto nivel de detalle.
+> **Nota:** esta tabla detalla cada trámite (total **~USD 1.450** con SAPI y sello digital en la misma lista). El [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.1 agrupa los trámites operativos prioritarios en el **one-shot Lean de USD 1.150** (constitución + RIF + apertura cuenta + sello; SAPI puede correr en paralelo como gasto diferido). El delta (**~USD 300**) corresponde principalmente a **SAPI** y partidas opcionales según avance del trámite.
 
 ## 2. Instrumento de inversión: SAFE post-money cap
 

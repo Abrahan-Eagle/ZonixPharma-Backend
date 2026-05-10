@@ -197,7 +197,7 @@ Contratar **dos** personas en este rol (tercera columna opcional si se evalúa r
 - [ ] Confirmar zona piloto inicial: Bella Florida + El Socorro O Bella Florida + San Diego.
 - [ ] Confirmar coworking vs. oficina propia desde mes 1.
 - [ ] Confirmar mes de activación de valla publicitaria (mes 3 base).
-- [ ] Confirmar si el founder cobra sueldo en Base o no (default: NO en Base).
+- [x] Confirmar si el founder cobra sueldo en Base: **USD 1.000/mes CEO+CTO en burn** (ya integrado — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3; aplica desde T+0 en escenario Base).
 - [ ] Confirmar política de equity con futuros empleados (vesting estándar 4 años / cliff 1 año).
 - [ ] Aprobar el SAFE template adaptado por el abogado.
 
