@@ -100,12 +100,12 @@ El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está 
 
 ### 2.4 Cláusulas adicionales recomendadas
 
-1. **Vesting del founder:** cláusula de re-vesting si Zonix levanta Serie A (founder vesteando 4 años con cliff 1 año desde la Serie A). Protege al inversor.
+1. **Vesting del founder:** cláusula de re-vesting si **Zonix Pharma** levanta Serie A (founder vesteando 4 años con cliff 1 año desde la Serie A). Protege al inversor.
 2. **Información al inversor (information rights):** reportes **mensuales** los **primeros 6 meses** pos-cierre; **trimestrales** después. Formato: email + adjuntos acordados (métricas §6 [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)).
 3. **Derechos de observación (opcional):** **board observer** sin voto en junta — solo si el ticket ≥ umbral acordado (ej. lead USD 50k+); no administración operativa diaria.
 4. **Asuntos reservados** (requieren notificación previa al inversor por escrito si impactan valor/dilución): cambio de control; nueva emisión que diluya **> 10%** pre-money en una sola ronda; remuneración anual del founder por encima de umbral definido; pivot que abandone vertical farmacéutico.
 5. **Right of First Refusal (ROFR):** el inversor del SAFE tiene derecho a participar en la siguiente ronda hasta mantener su % proporcional.
-6. **MFN (Most Favored Nation):** si Zonix emite un SAFE futuro con mejores términos, el inversor actual recibe los mismos términos. Estándar.
+6. **MFN (Most Favored Nation):** si **Zonix Pharma** emite un SAFE futuro con mejores términos, el inversor actual recibe los mismos términos. Estándar.
 7. **Restricciones de transferencia:** el SAFE no se puede vender a terceros sin consentimiento del founder.
 
 ### 2.5 Documento físico
@@ -183,7 +183,7 @@ El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está 
 ### 4.3 Regulación específica farmacéutica
 
 - **Ley del Ejercicio de la Farmacia (Gaceta Oficial 1971, vigente):** cada farmacia debe tener farmacéutico colegiado. Zonix Pharma NO contrata farmacéutico interno; cada farmacia afiliada aporta el suyo.
-- **MPPS (Ministerio del Poder Popular para la Salud):** registro de profesionales colegiados. Zonix verifica número MPPS de cada pharmacist en el onboarding.
+- **MPPS (Ministerio del Poder Popular para la Salud):** registro de profesionales colegiados. **Zonix Pharma** verifica número MPPS de cada pharmacist en el onboarding.
 - **INHRR (Instituto Nacional de Higiene Rafael Rangel):** registro de medicamentos. Solo se venden productos con INHRR vigente.
 - **Detalle:** [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md).
 
@@ -237,15 +237,15 @@ El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está 
 
 ### 4.6 KYC / AML y rol eventual como agregador de pagos (Sudeban)
 
-**Piloto (mes 0-6):** Zonix **no** recauda del paciente en nombre de terceros de forma centralizada — flujo documentado en [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md); riesgo PSP limitado.
+**Piloto (mes 0-6):** **Zonix Pharma** **no** recauda del paciente en nombre de terceros de forma centralizada — flujo documentado en [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md); riesgo PSP limitado.
 
 **Triggers para plan formal mes 6+** (activar con abogado + especialista Sudeban):
 
 | Trigger | Umbral orientativo | Acción |
 |---|---|---|
-| Volumen mensual agregado de fondos que transitan por cuentas Zonix | > orden **USD X** / mes (definir con contador y banco) | Evaluación licencia / figura adaptada |
+| Volumen mensual agregado de fondos que transitan por cuentas corporativas de **Zonix Pharma** | > orden **USD X** / mes (definir con contador y banco) | Evaluación licencia / figura adaptada |
 | % de transacciones **cross-border** (Zelle/USDT) sobre total | > **30-40%** sostenido 3 meses | Refuerzo KYC contrapartes + política AML escrita |
-| Zonix pasa a liquidar **directamente** a farmacias/repartidores como intermediario | Cualquier volumen | Due diligence Sudeban antes de encender |
+| **Zonix Pharma** pasa a liquidar **directamente** a farmacias/repartidores como intermediario | Cualquier volumen | Due diligence Sudeban antes de encender |
 
 **Componentes del programa:** KYC de farmacias (ya previsto onboarding), lista restrictiva interna, monitoreo de tickets fraud, conservación de evidencias, designación de **responsable compliance** (part-time CFO/legal hasta hire dedicado).
 

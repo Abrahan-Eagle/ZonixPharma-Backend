@@ -33,7 +33,7 @@
 
 **Segmentación de farmacias:**
 
-| Segmento | Cantidad estimada en Valencia metro | Target Zonix? |
+| Segmento | Cantidad estimada en Valencia metro | Target Zonix Pharma? |
 |---|---|---|
 | Cadenas premium (Farmatodo, Locatel, Farmahorro) | ~70-90 sucursales | NO en piloto. Eventualmente Enterprise. |
 | Cadenas medianas (3-8 sucursales) | ~25-35 | **SÍ — target óptimo (Pro / Enterprise)** |
@@ -53,7 +53,8 @@ Construido bottom-up, no top-down.
 | 12 | 120 | 67% SAM extendido | USD 5.400 |
 
 **Año 2:** expansión a Maracay y Maracaibo. SOM proyectado 200-220 farmacias activas, revenue mensual USD 8.000-9.000 (anual USD 96k-108k).
-**Año 3:** Caracas + Maracaibo + Valencia + Maracay + Barquisimeto. SOM 400-440 farmacias, revenue mensual USD 35k-40k (anual USD 420k-480k).
+
+**Año 3:** Caracas + Maracaibo + Valencia + Maracay + Barquisimeto. **Revenue anual** en dos lecturas explícitas (fuente única [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §3.2–§3.3): **caso conservador sin Serie A** ~**USD 180.000–204.000**/año (promedios mensuales del §3.2); **escenario éxito** (cobertura nacional acelerada / posible Serie A) **hasta ~USD 480.000**/año. **SOM 400–440 farmacias** y **revenue mensual USD 35k–40k** (anual **USD 420k–480k**) describen el **tramo alto / éxito**; no deben leerse como cifra única sin el conservador paralelo.
 
 Detalle del modelo en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md).
 
@@ -77,7 +78,7 @@ Detalle del modelo en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.m
 - Cadena venezolana premium, ~40-60 sucursales en todo el país.
 - App propia con catálogo, sin marketplace de terceros.
 - Foco: clase media-alta, presencial.
-- Diferencial Zonix: nosotros NO competimos con su segmento. Nuestro target es la farmacia mediana e independiente que NO tiene canal digital propio.
+- Diferencial **Zonix Pharma:** nosotros NO competimos con su segmento. Nuestro target es la farmacia mediana e independiente que NO tiene canal digital propio.
 
 ### 5.2 Locatel
 
@@ -104,7 +105,7 @@ Detalle del modelo en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.m
 
 - Vertical farmacéutico de PedidosYa (Delivery Hero), presente en VE desde 2023.
 - Modelo similar a Rappi (comisión sobre GMV).
-- Mismo diferencial vs. Zonix.
+- Mismo diferencial vs. **Zonix Pharma**.
 
 ### 5.6 Tabla comparativa
 
@@ -112,7 +113,7 @@ Detalle del modelo en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.m
 |---|---|---|---|---|
 | Tipo | Cadena propia | Marketplace generalista | Marketplace farmacéutico | **Marketplace farmacéutico VE** |
 | Target VE | Clase media-alta | Cadenas premium | No opera VE | **Farmacias independientes y cadenas pequeñas-medianas** |
-| Modelo cobro | Margen de venta | 25-35% comisión GMV | Comisión + delivery | **Cuota fija + % GMV moderado (Zonix)** |
+| Modelo cobro | Margen de venta | 25-35% comisión GMV | Comisión + delivery | **Cuota fija + % GMV moderado (Zonix Pharma)** |
 | Validación Rx digital | No | No | Parcial | **Sí — farmacéutico colegiado de la propia farmacia** |
 | Cadena de frío | No | No | Parcial | **Sí — flag operativo restringe modos delivery** |
 | Multi-sucursal con un solo onboarding | N/A | No | No | **Sí — Enterprise tier** |

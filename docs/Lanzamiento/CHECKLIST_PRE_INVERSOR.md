@@ -8,7 +8,7 @@
 - [ ] [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) impreso o en PDF.
 - [ ] [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) en formato spreadsheet imprimible (los 3 escenarios + año 2-3).
 - [ ] [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) con cap table actualizado.
-- [ ] Demo en vivo de la app (Buyer + Pharmacy + Pharmacist).
+- [ ] Demo en vivo de la app (Buyer + Pharmacy + Pharmacist + Delivery autónomo + Delivery Company).
 - [ ] Mensaje de envío al inversor: [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md).
 - [ ] Pack completo en Google Drive con permisos de visualización para el inversor.
 - [ ] Backup del pack en USB (por si la conexión falla en la reunión).
@@ -31,12 +31,12 @@
 
 - [x] **Nombre legal completo:** **Abrahan Pulido** (ver [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) §1).
 - [ ] **Cédula o pasaporte (identidad verificada):** tener documento a mano en reunión; **no publicar** número en el pack. Marcar aquí cuando hayas confirmado identidad con notario o banco.
-- [x] **LinkedIn actualizado:** [https://www.linkedin.com/in/abrahan-pulido-909a35b7/](https://www.linkedin.com/in/abrahan-pulido-909a35b7/) — Full Stack, marketplaces (Corral X, Zonix Eats), CETIAC.
+- [x] **LinkedIn actualizado:** [https://www.linkedin.com/in/abrahan-pulido-909a35b7/](https://www.linkedin.com/in/abrahan-pulido-909a35b7/) — Full Stack, marketplaces (**Corral X**, **Zonix Pharma** — mismo stack desde delivery B2C), CETIAC.
 - [ ] **Repositorios GitHub públicos:** añadir URL en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) §1 cuando decidas qué repo mostrar (ZonixPharma-Backend privado puede compartirse bajo NDA).
-- [x] **Lista de proyectos previos:** Zonix Eats, Corral X, Zonix, Zonix Imports, Aiblockweb — detalle en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) §1. **Métricas de tracción (usuarios/GMV):** [PENDIENTE — números reales por producto si las compartes].
+- [x] **Lista de proyectos previos:** **Zonix Pharma**, Corral X, Zonix Imports, Aiblockweb — detalle en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) §1. **Métricas de tracción (usuarios/GMV):** [PENDIENTE — números reales por producto si las compartes].
 - [x] **Por qué tú eres el founder correcto:** párrafo listo en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) §1.1.
 - [ ] **Referencias:** 2-3 contactos con teléfono y permiso explícito. [PENDIENTE].
-- [x] **Track record cuantificado (resumen):** 8+ años stack producto; fundador de 4 productos Zonix + Corral X; lideró equipo de 5 devs (Mekautos); 397 tests backend Zonix Pharma (verificación repo mayo 2026).
+- [x] **Track record cuantificado (resumen):** 8+ años stack producto; fundador de **Zonix Pharma**, Corral X, Zonix Imports y Aiblockweb; lideró equipo de 5 devs (Mekautos); 397 tests backend Zonix Pharma (verificación repo mayo 2026).
 - [ ] **Compromiso a tiempo completo:** declarar explícitamente. Hoy consta **CETIAC 2025–presente** (sábados) y roles director/proyecto en LinkedIn; el inversor preguntará. Completar: % dedicación Zonix Pharma vs. otros ingresos. [PENDIENTE declaración firmada].
 
 ## 4. Datos del piloto (con visitas presenciales hechas)
@@ -66,7 +66,7 @@
 | 0-3 | Saludo + presentación personal del founder + presentación del inversor. |
 | 3-5 | Pitch problema: "El paciente venezolano pierde 1-2h por mes recorriendo farmacias buscando medicamentos. La farmacia mediana pierde 25-35% de GMV en comisiones de Rappi." |
 | 5-10 | Pitch solución: "Zonix Pharma. Marketplace farmacéutico VE con cuota plataforma + fee sobre GMV (moderado vs agregadores). Validación Rx digital. Stack ya construido." Presentar el [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md). |
-| 10-15 | Demo en vivo: paciente busca, sube receta, paga. Pharmacist valida en tablet. Farmacia ve la orden. |
+| 10-15 | Demo en vivo: paciente busca, sube receta, paga. Pharmacist valida en tablet. Farmacia ve la orden. **Si hay tiempo:** una frase sobre **delivery** (asignación/tracking; repartidor autónomo vs empresa según el actor en la app). |
 | 15-20 | Mercado: TAM USD 1.638M (Cifar/IMS-IQVIA), comparable Farmalisto (~USD 32M revenue MX; funding ~USD 22M–33M según fuente). |
 | 20-25 | Números: **USD 101k** para 12 meses, equilibrio mensual **post-M12** (mitigaciones §1.4 PROYECCION), LTV/CAC **~8,3x**. |
 | 25-28 | Ask: **USD 101k** vía SAFE post-money cap **USD 600k**. Equity implícito **~16,83%**. |
@@ -79,7 +79,7 @@
 | Q | A |
 |---|---|
 | ¿Por qué híbrido (fija + % GMV) y no solo comisión tipo Rappi? | "Take-rate total muy inferior al 25-35% GMV de agregadores; la fija da piso y el % alinea incentivos; políticas de nivel en PROPUESTA B2B §5." |
-| ¿Cuánto pagas a las farmacias? | "Nada. Zonix es B2B SaaS + marketplace; la farmacia paga **servicio de plataforma** (fija + % GMV) y retiene el neto operativo de sus ventas según su operación." |
+| ¿Cuánto pagas a las farmacias? | "Nada. **Zonix Pharma** es B2B SaaS + marketplace; la farmacia paga **servicio de plataforma** (fija + % GMV) y retiene el neto operativo de sus ventas según su operación." |
 | ¿Cuánto pagas al repartidor? | "El delivery fee completo (USD 1,50-3,50) menos USD 0,30 procesamiento. Cero comisión sobre fee." |
 | ¿Y si las farmacias no quieren pagar? | "Plan B: ofertas iniciales con primeros 2 meses gratis. Plan C: si más del 50% rechaza el paquete vigente, evaluamos **ajuste comercial** de umbrales GMV o del % variable (el modelo ya es híbrido fija + % — ver PROPUESTA B2B §5)." |
 
@@ -88,7 +88,7 @@
 | Q | A |
 |---|---|
 | ¿Por qué Venezuela y no Colombia? | "Founder venezolano. Stack ya operativo VE (pagos manuales, factura SENIAT). Mercado pharma VE USD 1.638M. Competencia digital débil. Ventaja first-mover." |
-| ¿Qué pasa si Rappi baja precio? | "Su take-rate típico (25-35% GMV) es **estructuralmente más alto** que el ticket Zonix (cuota plataforma + % GMV bajo en app). Su unit economics sigue exigiendo comisión plena al farmacéutico." |
+| ¿Qué pasa si Rappi baja precio? | "Su take-rate típico (25-35% GMV) es **estructuralmente más alto** que el ticket **Zonix Pharma** (cuota plataforma + % GMV bajo en app). Su unit economics sigue exigiendo comisión plena al farmacéutico." |
 | ¿Y Farmalisto entra a VE? | "Probable año 2-3. Para entonces tenemos PMF y barrera operativa local." |
 
 ### 7.3 Sobre el equipo y la ejecución
@@ -97,7 +97,7 @@
 |---|---|
 | ¿CEO + CTO la misma persona, no es riesgoso? | "En piloto sí. En Serie A se contrata CTO o CEO técnico. Escala lean." |
 | ¿Cómo manejas la regulación farmacéutica? | "Cada farmacia aporta su pharmacist colegiado; KYC + verificación MPPS. Asesor regulatorio externo USD 120/mes en Growth." |
-| ¿Por qué no contratas un pharmacist liaison interno? | "La ley VE obliga a que el pharmacist sea de la farmacia, no de Zonix. Si Zonix contrata uno, no puede validar recetas de farmacias afiliadas." |
+| ¿Por qué no contratas un pharmacist liaison interno? | "La ley VE obliga a que el pharmacist sea de la farmacia, no de **Zonix Pharma**. Si **Zonix Pharma** contrata uno, no puede validar recetas de farmacias afiliadas." |
 | ¿Equipo fijo o freelance? | "Freelance / honorarios profesionales en piloto. Migración a régimen formal post-Serie A." |
 
 ### 7.4 Sobre las finanzas
@@ -116,7 +116,7 @@
 | ¿Por qué SAFE y no equity directo? | "Sin valuación arbitraria pre-revenue. Convierte automáticamente en próxima ronda. Estándar Y Combinator." |
 | ¿Cuándo convierte el SAFE? | "En la próxima ronda con valuación (Serie A esperada mes 18-24)." |
 | ¿Y si no hay Serie A en 24 meses? | "El SAFE no tiene fecha de vencimiento. Se mantiene hasta evento de conversión (ronda) o liquidación." |
-| ¿Qué pasa si Zonix se vende antes de Serie A? | "Cláusula estándar SAFE: convierte al 1x del monto invertido o el cap, lo que sea mayor para el inversor." |
+| ¿Qué pasa si **Zonix Pharma** se vende antes de Serie A? | "Cláusula estándar SAFE: convierte al 1x del monto invertido o el cap, lo que sea mayor para el inversor." |
 
 ### 7.6 Sobre los números
 
@@ -125,7 +125,7 @@
 | ¿De dónde sale TAM USD 1.638M? | "**Cifar VE** publica el mercado citando datos **IMS/IQVIA**: 389M unidades × USD 4,21 promedio. Crecimiento sector +20,66% YoY ene-ago 2025 / +17,7% proyección anual (validar PDF Cifar)." |
 | ¿De dónde sale CAC USD **109**? | "Construcción bottom-up: **2×** Sales (comisión **USD 30**/firma + prorrateo fijos **USD 240**/mes a **~8** firmas/mes), marketing digital, materiales. Detalle en [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §3." |
 | ¿De dónde sale churn 5% mensual? | "Mediana SaaS B2B SMB LatAm 3-7% (ChartMogul Benchmarks 2025). Conservador." |
-| ¿Por qué el equilibrio mensual queda **post-M12**? | "**Burn replanteado ~6,4k–6,7k**/mes con founder **1k**, HQ **500**, IA **~425** y equipo ajustado. Con **ARPF 45** hacen falta **~142** activas orden de magnitud; el plan llega a **120** en M12 (**5,4k** revenue vs **6,4k** burn). Mitigaciones: mix GMV, más firmas, ajuste gasto o bridge — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.4." |
+| ¿Por qué el equilibrio mensual queda **post-M12**? | "Burn recurrente por tramo **7.402 / 7.738 / 7.371** USD/mes (promedio **~7.499**; incluye founder **1k**, **Co-CEO 1k**, HQ **500**, IA **~425**, equipo — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3). Con **ARPF 45** hacen falta **>~165** activas orden de magnitud (**~167** con burn **7.371** ÷ 45 — [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §6). El plan llega a **120** en M12 (**5.400** revenue vs **7.371** burn — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1). Mitigaciones: §1.4 PROYECCION (mix GMV, firmas, gasto, bridge)." |
 | ¿Y si el plan no se cumple? | "Tabla de sensibilidad pesimista / base / optimista en [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) y detalle en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) sección 7. Plan de contingencia ante shocks documentado en sección 4." |
 
 ## 8. Cierre de la reunión

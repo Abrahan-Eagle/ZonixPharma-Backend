@@ -7,7 +7,7 @@
 
 > Hola [Nombre del inversor],
 >
-> Soy **Abrahan Pulido**. Soy fundador de Zonix Pharma, un marketplace farmacéutico digital que estamos preparando para lanzar en Carabobo. La tecnología ya está construida (stack del ecosistema Zonix: Laravel + Flutter; **397 tests** pasando en backend) y estoy buscando **USD 101k** vía SAFE para **12 meses de runway** (incluye **Co-CEO** a **USD 1k/mes**) con **~USD 27k** cash proyectado al cierre año 1 y narrativa clara de **equilibrio mensual post-M12** salvo mejora de mix/GMV (ver [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3–1.4).
+> Soy **Abrahan Pulido**. Soy fundador de Zonix Pharma, un marketplace farmacéutico digital que estamos preparando para lanzar en Carabobo. La tecnología ya está construida (**stack Zonix Pharma**: Laravel + Flutter; **397 tests** pasando en backend) y estoy buscando **USD 101k** vía SAFE para **12 meses de runway** (incluye **Co-CEO** a **USD 1k/mes**) con **~USD 27k** cash proyectado al cierre año 1 y narrativa clara de **equilibrio mensual post-M12** salvo mejora de mix/GMV (ver [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3–1.4).
 >
 > Modelo: la farmacia paga **cuota fija + un % moderado sobre GMV** en la app (tier dinámico por bandas — ver pack §5 B2B). El take-rate total sigue siendo **órden de magnitud menor** que Rappi/PedidosYa (25-35% GMV).
 >
@@ -24,7 +24,7 @@
 
 > Hola [Nombre],
 >
-> Gracias por tu interés. Te comparto el **data room** (`docs/Lanzamiento/` — **21 documentos** de trabajo + **`ANALISIS_FORENSE.md`** — auditoría forense del pack). Para empezar en **~30 min**:
+> Gracias por tu interés. Te comparto el **data room** (`docs/Lanzamiento/` — **21 archivos** Markdown: índice **README**, **19** documentos de contenido y **`ANALISIS_FORENSE.md`** como auditoría forense del pack). Para empezar en **~30 min**:
 >
 > - **BRIEF_UNA_PAGINA.md** — resumen ejecutivo.
 > - **PROYECCION_FINANCIERA_12M.md** + **UNIT_ECONOMICS.md** — números y supuestos.
@@ -34,7 +34,7 @@
 >
 > Acceso al pack completo en Google Drive: [LINK]
 >
-> Reunión de 30 min cuando puedas. Yo soy flexible. La reunión incluye demo en vivo de la app (Buyer + Pharmacy + Pharmacist + Delivery).
+> Reunión de 30 min cuando puedas. Yo soy flexible. La reunión incluye demo en vivo de la app (Buyer + Pharmacy + Pharmacist + Delivery autónomo + Delivery Company).
 >
 > Quedo atento.
 > Abrahan Pulido
@@ -48,7 +48,7 @@
 > Mientras tanto, dos puntos que quizás te interesen:
 >
 > 1. **Comparable internacional:** Farmalisto (MX + CO + PE) ~USD 32M revenue 2024 (MX); funding total reportado ~USD 22M en agregadores (hasta ~USD 33M PitchBook). El modelo marketplace farmacéutico LatAm ES financiable.
-> 2. **Diferenciador clave:** cuota fija + % bajo sobre GMV en app vs. comisión plena 25-35% de Rappi/PedidosYa Pharmacy. Para una farmacia que vende USD 5.000/mes en agregador, el costo típico allí es ~USD 1.250-1.750/mes; con Zonix el ticket suele ser **mucho menor** (detalle en PROPUESTA_VALOR_CLIENTE_B2B §5).
+> 2. **Diferenciador clave:** cuota fija + % bajo sobre GMV en app vs. comisión plena 25-35% de Rappi/PedidosYa Pharmacy. Para una farmacia que vende USD 5.000/mes en agregador, el costo típico allí es ~USD 1.250-1.750/mes; con **Zonix Pharma** el ticket suele ser **mucho menor** (detalle en PROPUESTA_VALOR_CLIENTE_B2B §5).
 >
 > Cuando estés listo, vemos.
 > Abrahan Pulido
@@ -69,7 +69,7 @@
 > **Slide 3: Tracción**
 > - Stack ya construido (Laravel + Flutter + Pusher + FCM).
 > - 397 tests pasando.
-> - 4 años de desarrollo de la plataforma base del ecosistema Zonix, reciclada al vertical farma.
+> - ~4 años de desarrollo del **stack Zonix Pharma**, reciclado al vertical farma.
 > - Backend en producción interna.
 
 > **Slide 4: Mercado**
@@ -112,8 +112,8 @@
 > - Mercado USD 1.638M creciendo 17%/año. Competencia digital débil. First-mover ventaja.
 
 > "¿Por qué híbrido fija + % GMV?"
-> - Take-rate total muy inferior al de agregadores; la fija da previsibilidad y el % alinea Zonix al volumen en app.
-> - Benchmark: agregador ~30% sobre GMV vs Zonix en fracciones de punto a ~1% + cuota (PROPUESTA B2B §5).
+> - Take-rate total muy inferior al de agregadores; la fija da previsibilidad y el % alinea **Zonix Pharma** al volumen en app.
+> - Benchmark: agregador ~30% sobre GMV vs **Zonix Pharma** en fracciones de punto a ~1% + cuota (PROPUESTA B2B §5).
 
 > "¿Y si las farmacias no firman?"
 > - Plan B: **hasta** 2 meses en **cuota USD 0** a las primeras 10 farmacias (waiver comercial; ver [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §11 y [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 nota waiver). Plan C: ajuste comercial de bandas o % (política comercial, no técnica).
@@ -150,7 +150,7 @@
 | SAFE post-money cap | **USD 600.000** |
 | Equity implícito | **~16,83%** |
 | Equilibrio mensual (revenue ≥ burn) | **Post-M12** (§1.4 PROYECCION) |
-| Farmacias activas ref. | **120** mes 12 modelo; **~142** orden magnitud equilibrio ARPF 45 |
+| Farmacias activas ref. | **120** mes 12 modelo; **~167** orden magnitud equilibrio (ARPF 45, burn tramo M7–M12) |
 | CAC | USD **109** |
 | LTV/CAC | **~8,3x** |
 | Payback CAC | **~2,4 meses** |
@@ -160,8 +160,8 @@
 | TAM Venezuela | USD 1.638M |
 | Comparable internacional | Farmalisto ~USD 32M revenue 2024 (MX); funding ~USD 22M–33M según fuente |
 | Stack | Laravel + Flutter + Pusher + FCM, 397 tests pasando |
-| Equipo | **6** roles full-time (Founder + **2×** Sales + Customer Support + Marketing + Delivery Ops) + 2 freelance (Contador + Abogado). Growth añade Asesor regulatorio. |
-| Founder track record | **Abrahan Pulido** — Ingeniero en Informática (IUTVAL); 8+ años full stack; fundador **Zonix Eats**, **Corral X**, **Zonix**, **Zonix Imports**; docente CETIAC; [LinkedIn](https://www.linkedin.com/in/abrahan-pulido-909a35b7/), [aiblockweb.com](https://aiblockweb.com), `ing.pulido.abrahan@gmail.com`, +58 412 4352014. **Pendiente:** URL GitHub pública + 2 referencias verificables para due diligence. |
+| Equipo | **7** roles full-time (Founder + **Co-CEO** + **2×** Sales + Customer Support + Marketing + Delivery Ops) + 2 freelance (Contador + Abogado). Growth añade Asesor regulatorio. |
+| Founder track record | **Abrahan Pulido** — Ingeniero en Informática (IUTVAL); 8+ años full stack; fundador **Zonix Pharma** (mismo stack desde delivery B2C), **Corral X**, **Zonix Imports**, **Aiblockweb**; docente CETIAC; [LinkedIn](https://www.linkedin.com/in/abrahan-pulido-909a35b7/), [aiblockweb.com](https://aiblockweb.com), `ing.pulido.abrahan@gmail.com`, +58 412 4352014. **Pendiente:** URL GitHub pública + 2 referencias verificables para due diligence. |
 
 ## 8. Cuándo enviar este mensaje
 

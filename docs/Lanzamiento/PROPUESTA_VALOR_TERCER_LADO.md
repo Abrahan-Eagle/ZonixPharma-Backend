@@ -22,9 +22,9 @@
 3. **Sin visibilidad de la ganancia esperada:** no sabe cuánto va a hacer en el día.
 4. **Pagos demorados:** semanal o mensual, no diario.
 
-### A.3 Lo que Zonix le ofrece
+### A.3 Lo que Zonix Pharma le ofrece
 
-- **Comisión Zonix: 0% sobre fee de entrega** (política repartidor autónomo en piloto). El repartidor cobra el delivery fee completo. **Monetización Zonix vs farmacia:** cuota plataforma **fija + % sobre GMV** del pedido ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5), no sobre el delivery fee del repartidor.
+- **Comisión Zonix Pharma: 0% sobre fee de entrega** (política repartidor autónomo en piloto). El repartidor cobra el delivery fee completo. **Monetización Zonix Pharma vs farmacia:** cuota plataforma **fija + % sobre GMV** del pedido ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5), no sobre el delivery fee del repartidor.
 - **Pago diario** vía Pago Móvil C2P o Binance Pay USDT.
 - **Estimación de ganancia visible** antes de aceptar la orden.
 - **Asignación geo-inteligente:** la app le asigna órdenes cerca de su ubicación actual.
@@ -36,7 +36,7 @@
 - **Delivery fee:** USD 1,50 - USD 3,50 según distancia (lo paga el paciente, lo recibe el repartidor).
 - **Sin cuota de inscripción.**
 - **KYC obligatorio:** cédula + foto + selfie + RIF (si lo tiene). Validado en 24-48h.
-- **Comisión Zonix:** 0% sobre delivery fee. Solo cobra fee fijo de USD 0,30 por orden completada (cubrir costo de procesamiento + push notifications + storage).
+- **Comisión Zonix Pharma:** 0% sobre delivery fee. Solo cobra fee fijo de USD 0,30 por orden completada (cubrir costo de procesamiento + push notifications + storage).
 
 ### A.5 Cuántos hay y cuántos necesitamos
 
@@ -49,7 +49,7 @@
 
 | Paso | Acción |
 |---|---|
-| 1 | Descarga app `Zonix Pharma Delivery` (versión específica) o usa la app principal con rol `delivery`. |
+| 1 | App **Zonix Pharma** (`com.zonix.pharma`) con rol **`delivery`**. El rótulo «Zonix Pharma Delivery» describe la experiencia del repartidor (p. ej. marketing o flavor); la fuente de verdad técnica es **un solo bundle** salvo decisión explícita de producto de publicar builds separados. |
 | 2 | Registra cuenta + KYC. |
 | 3 | Validación KYC en 24-48h. |
 | 4 | Test operativo: primera orden de prueba con Customer Support. |
@@ -71,7 +71,7 @@
 2. **Volumen estacional:** picos en feriados, valles en semana.
 3. **Coordinación manual:** llamadas, WhatsApp, sin trazabilidad.
 
-### B.3 Lo que Zonix le ofrece
+### B.3 Lo que Zonix Pharma le ofrece
 
 - **Cliente B2B nuevo:** órdenes constantes desde mes 4 del piloto.
 - **Coordinación automática:** la app asigna a sus repartidores via API.
@@ -83,7 +83,7 @@
 
 - **Membresía empresa:** USD 0 (gratis durante el piloto; después USD 50/mes para empresas con > 10 agentes activos) **— post-piloto, no incluido en proyecciones financieras año 1** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)).
 - **Delivery fee:** USD 1,50 - USD 3,50 por orden (cobrada al paciente, transferida a la empresa).
-- **Comisión Zonix:** 8% del delivery fee (cubrir asignación, tracking, dispute resolution).
+- **Comisión Zonix Pharma:** 8% del delivery fee (cubrir asignación, tracking, dispute resolution).
 - **Pago semanal** a la empresa vía transferencia bancaria.
 
 ### B.5 Targets año 1
@@ -107,8 +107,8 @@
 ### B.7 SLA con terceros y cadena de frío (logística)
 
 - **SLA de entrega** negociado por escrito en anexo B2B: tiempo objetivo alineado con lo que promete la app al paciente (p. ej. 60-90 min en zona piloto), con **exclusiones** (lluvia, cortes de luz, seguridad).
-- **Responsabilidad en cadena de frío:** la **farmacia** empaqueta y documenta salida; el **repartidor / empresa** mantiene cadena según checklist (fotos termómetro en app); Zonix **media** disputas según [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) §16.
-- **Seguro y daños:** cada empresa de delivery declara cobertura civil básica o asume riesgo contractual; Zonix no es asegurador.
+- **Responsabilidad en cadena de frío:** la **farmacia** empaqueta y documenta salida; el **repartidor / empresa** mantiene cadena según checklist (fotos termómetro en app); **Zonix Pharma** **media** disputas según [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) §16.
+- **Seguro y daños:** cada empresa de delivery declara cobertura civil básica o asume riesgo contractual; **Zonix Pharma** no es asegurador.
 
 ---
 
@@ -117,7 +117,7 @@
 ### C.1 Quién es
 
 - Profesional colegiado en MPPS (Ministerio del Poder Popular para la Salud).
-- Trabaja en una farmacia afiliada a Zonix.
+- Trabaja en una farmacia afiliada a **Zonix Pharma**.
 - Es el responsable legal de validar recetas en su farmacia.
 - Pueden ser dueño-fundador de la farmacia o empleado contratado por la farmacia.
 
@@ -127,10 +127,10 @@
 2. **Sin diferenciación profesional:** su rol está oculto detrás del mostrador.
 3. **Carga operativa alta:** valida + dispensa + atiende + concilia inventario.
 
-### C.3 Lo que Zonix le ofrece
+### C.3 Lo que Zonix Pharma le ofrece
 
 - **Validación digital con trazabilidad completa:** cada receta queda registrada con su firma digital, fecha, hora.
-- **Auditoría ante MPPS lista en 1 click:** exporta historial de validaciones cuando se lo pidan.
+- **Trazabilidad para auditoría:** exportación del historial de validaciones para apoyar requerimientos de autoridad o due diligence; **contenido y formato** frente a MPPS u otros organismos quedan sujetos a dictamen **farmacéutico asesor + abogado** (no se promete un formato oficial «pre-aprobado» hasta cerrarlo).
 - **Reconocimiento profesional:** su nombre aparece en el ticket del paciente como "validado por Lic. X, MPPS XXXXX".
 - **Carga operativa baja:** solo valida o rechaza, no procesa el resto del flujo.
 - **Sin costo extra:** el rol pharmacist viene incluido en el **servicio de plataforma** contratado por la farmacia (mismo tier B2B).
@@ -139,7 +139,7 @@
 ### C.4 Pricing al farmacéutico
 
 - **Costo:** USD 0 (incluido en el contrato de plataforma Basic / Pro / Enterprise de la farmacia).
-- **No es empleado de Zonix.** Sigue siendo empleado o dueño de la farmacia.
+- **No es empleado de Zonix Pharma.** Sigue siendo empleado o dueño de la farmacia.
 
 ### C.5 Onboarding del pharmacist
 
@@ -147,7 +147,7 @@
 |---|---|
 | 1 | La farmacia añade al farmacéutico colegiado a su cuenta vía dashboard. |
 | 2 | KYC del pharmacist: cédula, foto, número MPPS, registro INHRR. |
-| 3 | Customer Support de Zonix verifica el número MPPS (proceso en [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) §7.4). |
+| 3 | Customer Support de **Zonix Pharma** verifica el número MPPS (proceso en [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) §7.4). |
 | 4 | Capacitación: manual operativo + video tutorial 20 min. |
 | 5 | Activación: empieza a recibir notificaciones de recetas pendientes. |
 
@@ -166,7 +166,7 @@ Detalle del flujo completo en [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERA
 
 | Riesgo | Probabilidad | Mitigación |
 |---|---|---|
-| Repartidores autónomos prefieren Yummy / Rappi por volumen | Media-alta | Bono USD 0,50 por NPS > 4. Pago diario. Cero comisión Zonix sobre delivery fee. |
+| Repartidores autónomos prefieren Yummy / Rappi por volumen | Media-alta | Bono USD 0,50 por NPS > 4. Pago diario. Cero comisión **Zonix Pharma** sobre delivery fee. |
 | Empresa de delivery no quiere bajar exclusividad con Farmatodo | Baja | Buscar empresa #2 o #3 del mercado, no la #1. |
 | Farmacéutico colegiado se rehúsa a validar digital | Baja-media | Capacitación + manual + apoyo de Customer Support. La farmacia decide si lo capacita o cambia. |
 | MPPS hace observación sobre validación digital | Baja | Asesor regulatorio externo USD 120/mes (Growth). Trazabilidad + firma digital deberían cumplir. |

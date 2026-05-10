@@ -2,11 +2,11 @@
 
 > **Última actualización:** 10 mayo 2026 (revisión profesional multi-rol: regulación, farmacia, AppSec, COO, marketing salud, legal, CFO; coherencia numérica Base **101k** + **Co-CEO**).
 > **Estado del pack:** completo para pre-seed; textos legales y plazos de retención sujetos a **dictamen abogado + farmacéutico asesor** antes de Day-D público.
-> **Producto:** Zonix Pharma — marketplace farmacéutico digital, vertical Pharma del ecosistema Zonix.
+> **Producto:** Zonix Pharma — marketplace farmacéutico digital; el pack usa **solo** esa marca para producto y plataforma.
 > **Zona piloto:** Bella Florida + El Socorro, Valencia, Carabobo, Venezuela.
 > **Capital pedido (Base):** **USD 101.000** para 12 meses — SAFE post-money cap **USD 600.000** (ticket **+6k** vs. **95k** histórico: incorpora **Co-CEO USD 1.000/mes** — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3).
 
-Este directorio contiene un **data room ligero** estructurado en **21 documentos** de trabajo más **[ANALISIS_FORENSE.md](ANALISIS_FORENSE.md)** (auditoría multi-rol) para presentar Zonix Pharma a un inversionista. Está diseñado para leerse de forma navegable: el `BRIEF` resume todo en una página, y los demás archivos profundizan cada decisión, número y supuesto. Cada cifra está cruzada entre documentos y trazada a fuentes web reales (mayo 2026) cuando aplica.
+Este directorio contiene un **data room ligero** con **21 archivos** `.md` en total: **[README.md](README.md)** (índice), **[ANALISIS_FORENSE.md](ANALISIS_FORENSE.md)** (auditoría multi-rol del pack) y **19 documentos** de contenido (brief, finanzas, legal, operación, propuestas de valor, etc.) para presentar Zonix Pharma a un inversionista. Está diseñado para leerse de forma navegable: el `BRIEF` resume todo en una página, y los demás archivos profundizan cada decisión, número y supuesto. Cada cifra está cruzada entre documentos y trazada a fuentes web reales (mayo 2026) cuando aplica.
 
 ---
 
@@ -36,7 +36,7 @@ Lo anterior + los siguientes:
 10. [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md) — preguntas para el equipo.
 11. [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) — plantilla de captura.
 12. [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) — texto de WhatsApp/email + bullets pitch.
-13. [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) — auditoría multi-perspectiva del pack desde 6 roles.
+13. [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) — auditoría multi-perspectiva del pack: **6 perspectivas narrativas** y mapa ejecutivo en §11.1 / §11.1 bis.
 
 ---
 
@@ -139,7 +139,7 @@ Estos no se inventan. El pack los marca explícitamente con `[PENDIENTE]`. El [V
 - Todos los precios VE en USD pueden subir mensualmente por inflación. **Macro 2026:** el **BCV (mayo 2026)** proyecta **desaceleración** (inflación mensual de **un dígito desde mayo 2026**). Los escenarios externos **387-618%** (Anova/Cendas/Ecoanalítica) se conservan como **estrés/adversos**. El pack documenta cada cifra con fecha de captura **mayo 2026** y advierte **reconfirmación trimestral** antes de decisiones de inversión o gasto.
 - El buffer de 20% absorbe variaciones de hasta ±25% en precios denominados en bolívares.
 - Si la devaluación supera 100% en un trimestre, hay un plan de contingencia documentado en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md).
-- Los documentos tocados en la **revisión profesional 5 mayo 2026** llevan esa fecha en cabecera; el resto puede seguir en 4 mayo hasta el próximo cierre editorial.
+- **Cierre editorial pack:** **10 mayo 2026** en cabeceras de los documentos del directorio `docs/Lanzamiento/` alineados a esta revisión; si algún archivo heredara otra fecha en un párrafo puntual, priorizar la cabecera `Última actualización` del propio archivo.
 
 **Pack generado por:** Jarvis (asistente IA) bajo dirección del usuario, en sesión interactiva.
 **Pack revisado por:** [PENDIENTE — el usuario debe leer y aprobar antes de presentar al inversor].

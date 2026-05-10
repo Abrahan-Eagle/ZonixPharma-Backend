@@ -19,15 +19,15 @@
 | WhatsApp Business activo | **+58 412 4352014** (mismo número; formalizar línea Business al abrir C.A.) |
 | LinkedIn URL | **https://www.linkedin.com/in/abrahan-pulido-909a35b7/** |
 | Sitio / portfolio | **https://aiblockweb.com** (Aiblockweb — director de proyecto) |
-| GitHub URL | [PENDIENTE — añadir URL pública del perfil o del org Zonix para due diligence] |
-| Portfolio / proyectos previos | **Zonix Eats** (Laravel + Flutter + Firebase, pedidos y gestión), **Corral X** (marketplace agropecuario Laravel 10 + Flutter + MySQL), **Zonix** (ecosistema gestión empresarial Flutter + Laravel), **Zonix Imports** (logística importaciones Node.js + Vue.js + MySQL). Rol actual docente: **CETIAC** (programación web/móvil sábados, 2025–presente). |
+| GitHub URL | [PENDIENTE — añadir URL pública del perfil o del org **Zonix Pharma** para due diligence] |
+| Portfolio / proyectos previos | **Zonix Pharma** (Laravel + Flutter + MySQL; marketplace farmacéutico; evolución del mismo núcleo probado en **delivery B2C** y gestión sobre el stack), **Corral X** (marketplace agropecuario Laravel 10 + Flutter + MySQL), **Zonix Imports** (logística importaciones Node.js + Vue.js + MySQL), **Aiblockweb**. Rol actual docente: **CETIAC** (programación web/móvil sábados, 2025–presente). |
 | Experiencia técnica relevante (años) | **8+ años** desarrollo full stack (CV); **~15 años** experiencia laboral total acumulada (LinkedIn — incluye roles no tech tempranos). Para pitch usar **8+ años** en stack producto. |
 | Stack dominado | Laravel 10, PHP, MySQL, Flutter, Dart, Node.js, REST APIs, JWT, Firebase, Docker, CI/CD, Linux, TDD/Scrum; integración IA (OpenAI, LangChain) según CV. **Alineado con Zonix Pharma:** Laravel + Flutter + Pusher + FCM. |
 | Compromiso tiempo completo Zonix Pharma | [PENDIENTE — declarar explícitamente: 100% / % con CETIAC u otros] |
 
 ### 1.1 Párrafo «por qué soy el founder correcto» (CHECKLIST sección 3)
 
-Ingeniero en Informática (IUTVAL, 2013–2018) con **más de 8 años** construyendo productos web y móviles end-to-end. He fundado y desarrollado **Zonix Eats** (Laravel + Flutter + Firebase — mismo núcleo técnico que Zonix Pharma), **Corral X** (marketplace Laravel 10 + Flutter), **Zonix** y **Zonix Imports**, con foco en arquitectura escalable, **TDD**, **CI/CD** y entrega de MVP a producción. Lideré equipos (p. ej. Mekautos, 5 devs) y combino producto con docencia en **CETIAC**. Zonix Pharma no es un experimento desde cero: es la verticalización del stack y del aprendizaje operativo de Zonix Eats hacia farmacia, con **backend ya probado** (suite de tests del repo) y regulación VE documentada en el mismo repositorio.
+Ingeniero en Informática (IUTVAL, 2013–2018) con **más de 8 años** construyendo productos web y móviles end-to-end. He fundado y desarrollado **Zonix Pharma** y la línea previa de **delivery B2C** sobre el mismo núcleo (Laravel + Flutter), **Corral X** (marketplace Laravel 10 + Flutter), **Zonix Imports** y **Aiblockweb**, con foco en arquitectura escalable, **TDD**, **CI/CD** y entrega de MVP a producción. Lideré equipos (p. ej. Mekautos, 5 devs) y combino producto con docencia en **CETIAC**. **Zonix Pharma** no es un experimento desde cero: es la **verticalización a farmacia** del stack y del aprendizaje operativo ya acumulado, con **backend ya probado** (suite de tests del repo) y regulación VE documentada en el mismo repositorio.
 
 ## 1.5 Co-CEO / CEO operativo (segundo al mando)
 

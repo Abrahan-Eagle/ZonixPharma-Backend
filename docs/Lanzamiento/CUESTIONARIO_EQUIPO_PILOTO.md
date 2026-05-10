@@ -1,7 +1,7 @@
 # Cuestionario para el equipo del piloto
 
 > **Última actualización:** 10 mayo 2026.
-> Documento operacional para entrevistar a candidatos a los **6 roles full-time** (**Co-CEO / CEO operativo**, **2× Sales B2B**, Customer Support + Community Manager, Marketing Lead, Delivery Ops Coordinator) y a los freelance (Contador, Abogado). El **founder** y el **Co-CEO** usan cuestionario **ad hoc** (track record, visión, % dedicación) — no están en las plantillas §2–§6 salvo referencia cruzada. **Compensaciones alineadas al escenario Base USD 101k** ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3).
+> Documento operacional para entrevistar candidatos según la **nómina Base** ([README.md](README.md) §3). **Plantillas por función:** **§2** Sales B2B (una plantilla para **2×** ejecutivos), **§3** Customer Support + Community Manager, **§4** Marketing Lead, **§5** Delivery Ops Coordinator. **Co-CEO / CEO operativo** y **founder** (CEO+CTO): evaluación **ad hoc** (track record, visión, % dedicación), usando el bloque común **§1** y entrevista de alineamiento con dirección (no hay sección `##` exclusiva solo para Co-CEO). **§6–§7:** Contador y Abogado (freelance); **§8:** Asesor regulatorio (escenario Growth solamente). **Total Base = 7 FTE + 2 freelance** — [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) §7. **Compensaciones** alineadas al escenario **Base USD 101k** ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3).
 > Las respuestas se vuelcan en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md).
 
 ## 1. Cuestionario común a todos los roles

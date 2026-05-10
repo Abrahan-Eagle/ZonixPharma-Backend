@@ -7,7 +7,7 @@
 
 **Zonix Pharma** es un marketplace farmacéutico digital para Venezuela. Conecta pacientes con farmacias afiliadas para comprar OTC y medicamentos con receta (Rx), con validación de receta por farmacéutico colegiado y delivery a domicilio o pickup en sucursal.
 
-Es un **fork** de la **plataforma base del ecosistema Zonix** (mismo equipo, misma tecnología, mismas integraciones de pago manual VE), reorientado al vertical farmacia. La base técnica está construida y probada: backend Laravel con ~397 tests pasando y app Flutter sin issues de análisis.
+Es la **vertical farmacia** del **stack Zonix Pharma** (~4 años de código probado; misma base que delivery B2C previo): mismo equipo, misma tecnología, mismas integraciones de pago manual VE. La base técnica está construida y probada: backend Laravel con **397** tests pasando; app Flutter **sin issues** en `flutter analyze lib` en verificación Front mayo 2026 (suite `flutter test` en verde; CI según repo ZonixPharma-Front).
 
 ## Problema que resuelve
 
@@ -34,14 +34,14 @@ Es un **fork** de la **plataforma base del ecosistema Zonix** (mismo equipo, mis
 ## Por qué ahora (timing — ALTA #10 forense)
 
 1. **Mercado pharma VE está en recuperación post-crisis:** +17,49% YoY en unidades 2024-2025 (**Cifar**, datos IMS/IQVIA). Hace 2 años el mercado se contraía; en 2 años más estará cubierto por competidores digitales. **2026 es la ventana.**
-2. **Stack ya construido:** la plataforma base del ecosistema Zonix lleva 4 años de desarrollo; el fork a Pharma se hace en 30-45 días vs. 12-18 meses desde cero.
+2. **Stack ya construido:** el **stack Zonix Pharma** lleva ~4 años de desarrollo; el ajuste al vertical farmacia se hace en 30-45 días vs. 12-18 meses desde cero.
 3. **Competencia digital débil en VE:** Rappi y PedidosYa Pharmacy solo cubren cadenas premium. Farmatodo y Locatel no abren marketplace. **First-mover en farmacia mediana e independiente.**
 4. **Métodos de pago manuales VE están maduros:** Pago Móvil C2P + Zelle + Binance Pay USDT cubren el 95% de la población bancarizada. Hace 5 años no era posible.
 
 ## Diferenciadores claros
 
 - **Modelo B2B híbrido en USD** (cuota fija 20 / 35 / 50 + porcentaje moderado sobre GMV en app según banda): estructuralmente muy por debajo del take-rate 25-35% GMV de Rappi o PedidosYa Pharmacy. Detalle en [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5.
-- **Validación Rx por farmacéutico colegiado de la propia farmacia** dentro de la app, ya construida en backend. Cumple con la **Ley del Ejercicio de la Farmacia VE** sin que Zonix tenga que contratar un farmacéutico interno.
+- **Validación Rx por farmacéutico colegiado de la propia farmacia** dentro de la app, ya construida en backend. Cumple con la **Ley del Ejercicio de la Farmacia VE** sin que **Zonix Pharma** tenga que contratar un farmacéutico interno.
 - **Métodos de pago manuales VE soportados nativos:** Pago Móvil C2P, transferencia, Zelle, Binance Pay USDT — sin pasarelas internacionales caras, sin Stripe, sin necesidad de cuenta empresarial extranjera para operar.
 - **Stack autocontenido y probado:** backend MVP en producción interna con 397 tests pasando, frontend Flutter sin issues, Pusher real-time + Firebase FCM ya integrados.
 - **Equipo lean:** roles contratados Base = **Co-CEO** + **2× Sales B2B** + CS+CM + Marketing + Delivery Ops (+ founder técnico); 2 freelance (Contador, Abogado). Runway **12 meses** con **USD 101k** (Base). Founder técnico: **Abrahan Pulido**.
@@ -71,7 +71,7 @@ Es un **fork** de la **plataforma base del ecosistema Zonix** (mismo equipo, mis
 | **Equilibrio mensual (revenue ≥ burn)** | **Post mes 12** con ARPF 45 y burn actual; **~167** farmacias activas orden de magnitud (ver §1.4 [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)) |
 | **Cash cierre año 1** (despliegue capital Base) | **~USD 27.045** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3) |
 | Año 2 proyección revenue conservadora | USD 96k anuales |
-| Año 3 proyección revenue (cobertura nacional) | USD 480k anuales |
+| Año 3 revenue ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §3.3) | **Conservador:** ~USD 180k–204k/año (sin Serie A). **Éxito / cobertura nacional:** hasta ~USD 480k/año. |
 
 Detalle completo y construcción mes a mes en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md). Detalle por línea de gasto en [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md).
 
@@ -96,11 +96,12 @@ Detalle de las 3 sensibilidades en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FIN
 
 ## Equipo
 
-- **Founder / CEO / CTO:** **Abrahan Pulido** — Ingeniero en Informática (IUTVAL), full stack Laravel + Flutter + MySQL, 8+ años en producto; fundador de Zonix Eats, Corral X, Zonix y Zonix Imports. Contacto: `ing.pulido.abrahan@gmail.com`, +58 412 4352014, [LinkedIn](https://www.linkedin.com/in/abrahan-pulido-909a35b7/), [aiblockweb.com](https://aiblockweb.com).
-- **Sales B2B (2 ejecutivos):** USD **120** fijo c/u + USD **30** comisión por farmacia firmada. [PENDIENTE].
-- **Customer Support + Community Manager:** USD **350**/mes (+50 si KPI → 400). [PENDIENTE].
-- **Marketing Lead + apoyo a dirección:** USD **400**/mes (+100 bonus si KPI); dirección general: **Co-CEO**. [PENDIENTE].
-- **Delivery Ops Coordinator:** USD **300**/mes (+100 si KPI → 400) desde mes 1 (Base). [PENDIENTE].
+- **Founder / CEO / CTO:** **Abrahan Pulido** — Ingeniero en Informática (IUTVAL), full stack Laravel + Flutter + MySQL, 8+ años en producto; fundador de **Zonix Pharma** (evolución del mismo stack desde delivery B2C), **Corral X**, **Zonix Imports** y **Aiblockweb**. Contacto: `ing.pulido.abrahan@gmail.com`, +58 412 4352014, [LinkedIn](https://www.linkedin.com/in/abrahan-pulido-909a35b7/), [aiblockweb.com](https://aiblockweb.com).
+- **Sales B2B (2 ejecutivos):** USD **120** fijo c/u + USD **30** comisión por farmacia firmada.
+- **Customer Support + Community Manager:** USD **350**/mes (+50 si KPI → 400).
+- **Marketing Lead + apoyo a dirección:** USD **400**/mes (+100 bonus si KPI); dirección general: **Co-CEO**.
+- **Delivery Ops Coordinator:** USD **300**/mes (+100 si KPI → 400) desde mes 1 (Base).
+- **Contratación / nombres** de los roles anteriores: plantilla operativa en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) (montos ya cerrados en [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3).
 - **Contador externo (freelance):** USD 130/mes — IVA, ISLR, factura digital SENIAT.
 - **Abogado externo (freelance):** USD 200/mes — contratos, T&C, SAPI.
 
@@ -122,11 +123,11 @@ Detalle de las 3 sensibilidades en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FIN
 | Publicidad y claims en salud | Checklist **Do/Don't** y aprobación creativos: [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) §1.1; avisos al paciente en [PROPUESTA_VALOR_USUARIO_FINAL.md](PROPUESTA_VALOR_USUARIO_FINAL.md) §2.1. |
 | Competencia de Farmatodo / Locatel | No competimos en su segmento (cadenas premium); competimos en farmacias medianas e independientes que NO tienen canal digital propio. |
 | Adopción inicial lenta del paciente | Marketing primero a farmacias (B2B); el paciente entra orgánico una vez la farmacia ya tiene catálogo cargado. |
-| Pagos manuales VE complejos | Ya implementados y probados en la plataforma del ecosistema Zonix. Webhook YCloud para WhatsApp OTP. SENIAT factura digital integrada. |
+| Pagos manuales VE complejos | Ya implementados y probados en la **plataforma Zonix Pharma**. Webhook YCloud para WhatsApp OTP. SENIAT factura digital integrada. |
 
 ## Pregunta al inversor
 
-> Buscamos **USD 101.000** vía SAFE con post-money cap **USD 600.000** para operar Zonix Pharma **12 meses** con runway, **Co-CEO** (segundo al mando) y **~USD 27k** cash proyectado al cierre año 1 ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3), **Meta Ads + 2 Sales B2B**, y narrativa honesta de **equilibrio mensual post-M12** salvo mejora de mix/GMV o curva de firmas (§1.4). Año 2: expansión Maracay + Maracaibo, revenue anual **USD 96–108k** referencia. La tecnología ya está construida; lo que se financia es **comercialización, hosting, equipo doble dirección, IA, CapEx HQ y buffer de inflación**.
+> Buscamos **USD 101.000** vía SAFE con post-money cap **USD 600.000** para operar Zonix Pharma **12 meses** con runway, **Co-CEO** (segundo al mando) y **~USD 27k** cash proyectado al cierre año 1 ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3), **Meta Ads + 2 Sales B2B**, y narrativa honesta de **equilibrio mensual post-M12** salvo mejora de mix/GMV o curva de firmas (§1.4). Año 2: expansión Maracay + Maracaibo, revenue anual **USD 96–108k** referencia. Año 3: dos lecturas en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §3.3 — **conservador** ~**USD 180k–204k**/año (sin Serie A) vs **hasta ~USD 480k**/año en escenario **éxito / cobertura nacional**. La tecnología ya está construida; lo que se financia es **comercialización, hosting, equipo doble dirección, IA, CapEx HQ y buffer de inflación**.
 
 ## Llamada a la acción
 

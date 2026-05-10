@@ -1,7 +1,7 @@
 # Análisis forense multi-perspectiva del pack
 
 > **Última actualización:** 10 mayo 2026.
-> Documento que somete el pack completo a auditoría desde 6 perspectivas narrativas: CEO/founder, economista, especialista en publicidad, cliente final / paciente, operador tercero (farmacia, pharmacist, delivery), inversionista. La **§11.1** añade un **mapa rápido por rol ejecutivo** (CFO, COO, Legal, etc.) para due diligence.
+> Documento que somete el pack completo a auditoría desde 6 perspectivas narrativas: CEO/founder, economista, especialista en publicidad, cliente final / paciente, operador tercero (farmacia, pharmacist, delivery), inversionista. La **§11.1** y **§11.1 bis** añaden un **mapa rápido por rol ejecutivo** (CFO, COO, Legal, etc.) y lentes **DPO / CISO / auditoría interna / IR** para due diligence.
 > Cada perspectiva lista: fortalezas, hallazgos críticos, inconsistencias, mejoras propuestas con prioridad CRÍTICA / ALTA / MEDIA.
 > Las CRÍTICAS y ALTAS detectadas YA ESTÁN APLICADAS en los documentos del pack al cierre de este análisis.
 
@@ -11,8 +11,8 @@
 
 ### 1.1 Fortalezas
 
-- **Stack ya construido:** 4 años de desarrollo de la plataforma base del ecosistema Zonix + 397 tests pasando reduce riesgo de ejecución técnica drásticamente.
-- **Equipo lean defendible:** sin pharmacist liaison (legalmente correcto), sin diseñador UI/UX (founder tech), **6 FT + 2 externos** (contador + abogado) en Base; Growth suma asesor regulatorio — dimensionado para el piloto **Meta + 2 Sales**.
+- **Stack ya construido:** ~4 años de desarrollo del **stack Zonix Pharma** + 397 tests pasando reduce riesgo de ejecución técnica drásticamente.
+- **Equipo lean defendible:** sin pharmacist liaison (legalmente correcto), sin diseñador UI/UX (founder tech), **7** FTE operativos en Base (Founder + Co-CEO + 2× Sales + CS+CM + Marketing + Delivery Ops) + **2** freelance (contador + abogado) = **9** puestos costeados; Growth suma **asesor regulatorio** externo — dimensionado para el piloto **Meta + 2 Sales**.
 - **Decisión coherente sobre capital:** **USD 101k** (Base) incorpora replante operativo (founder, **Co-CEO**, HQ, IA, CapEx PCs, salarios) con runway 12 meses y **~USD 27k** cash cierre año 1 ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3). Lean y Growth quedan como alternativas legítimas.
 - **Plan T+0 / T+30 / T+60 / T+90 realista:** 30 días para constitución, 30 días para equipo + onboarding farmacias, 30 días para lanzamiento. Honesto.
 - **Founder con sueldo simbólico/profesional en Base (USD 1k/mes):** reduce “skin” puro en cash pero evita narrativa inconsistente con burn; el inversor debe verlo en presupuesto §3.3.
@@ -22,7 +22,7 @@
 | Severidad | Hallazgo | Acción |
 |---|---|---|
 | **CRÍTICA #1** *(histórico mayo 2026)* | Inconsistencia numérica en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) tabla 1.1 (modelo previo): total burn año 1 mal sumado vs. filas. **Estado:** corregido; modelo vigente **Meta + 2 Sales** + replante **101k** + **Co-CEO** — burn año 1 **89.982** (§1.1). |
-| **ALTA #1** *(histórico — modelo previo **un solo comercial**)* | El mensaje decía «6+2» pero el conteo correcto **entonces** era **5 FT + 2 FL = 7** (faltaba 1 headcount FT en el texto). **Modelo vigente Meta + 2 Sales:** **6 FT + 2 FL = 8** en Base (BRIEF, MENSAJE, README alineados). **Growth** suma Asesor regulatorio = **9**. | Alineado. |
+| **ALTA #1** *(histórico — modelo previo **un solo comercial**)* | El mensaje decía «6+2» pero el conteo correcto **entonces** era **5 FT + 2 FL = 7** (faltaba 1 headcount FT en el texto). **Vigente (Base, Meta + 2 Sales):** **7** FTE operativos + **2** freelance = **9** puestos costeados (Founder + Co-CEO + 2× Sales + CS+CM + Marketing + Delivery Ops — BRIEF, MENSAJE, README §3). **Growth:** misma base operativa + **asesor regulatorio** (costeo [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §4.1). | Alineado. |
 | **ALTA #2** | El plan no documenta políticas de seguridad de la información (donde se almacena la receta médica, copias de cédula del KYC, audit log de pago). Para inversor con due diligence formal es un gap. | Aplicado: añadida sección de seguridad y privacidad en [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) y referencia explícita en [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md). |
 | MEDIA | El plan no menciona qué pasa si el founder se enferma o se ausenta inesperadamente. | Documentado plan de contingencia en sección 2 más abajo. |
 
@@ -53,7 +53,7 @@
 | Severidad | Hallazgo | Acción |
 |---|---|---|
 | **ALTA #3** | El modelo asume tasa de firma 5-15 farmacias/mes desde mes 4. Si **2× Sales** firman menos, el **equilibrio mensual** se retrasa aún más (ya **post-M12** con el burn replanteado). | Aplicado: tabla de sensibilidad en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) sección 7; mitigaciones §1.4; BRIEF y CHECKLIST. |
-| **ALTA #4** | El cap del SAFE **USD 600k** para **USD 101k** da **~16,83%** equity. Sigue siendo **generoso para el inversor** vs. muchos pre-seed LatAm citados en 10-12% para tickets similares (comparable en espíritu al antiguo 13,64% / 75k). Justificable por MVP avanzado, founder técnico y **Co-CEO** modelado. | Aplicado: nota en [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) sobre cap como señal al primer inversor. |
+| **ALTA #4** | El cap del SAFE **USD 600k** para **USD 101k** da **~16,83%** equity. Sigue siendo **generoso para el inversor** vs. muchos pre-seed LatAm citados en 10-12% para tickets similares (referencia histórica **otra generación** de instrumento: ~**13,64%** sobre ticket **~USD 75k** — **no** confundir con la evolución **95k → 101k** del capital Base actual). Justificable por MVP avanzado, founder técnico y **Co-CEO** modelado. | Aplicado: nota en [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) sobre cap como señal al primer inversor. |
 | MEDIA | El año 2 proyecta revenue USD 96-108k anuales pero no detalla burn año 2 (más allá de "estabilizado en USD 6.000-6.500"). Inversor sofisticado puede pedir detalle. | Documentado en sección abajo. |
 | MEDIA | No hay análisis explícito de "cómo se compone el revenue año 1 vs. cohorts" — solo se da el agregado. Inversor con experiencia SaaS puede pedirlo. | Aplicado: tabla de cohort simulado ya existe en [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) sección 7. Confirmar referencia desde brief. |
 
@@ -134,7 +134,7 @@
 ### 5.1 Fortalezas
 
 - **Pricing transparente para farmacia:** modelo **híbrido** (fija 20/35/50 + % GMV por banda, políticas §5 B2B) es claro y defensible vs. take-rate pleno de Rappi.
-- **Ahorro vs. Rappi:** el ticket Zonix suele ser **órden de magnitud menor** que ~25-35% GMV en agregador; cuantificar en vivo con la calculadora del tier ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5).
+- **Ahorro vs. Rappi:** el ticket **Zonix Pharma** suele ser **órden de magnitud menor** que ~25-35% GMV en agregador; cuantificar en vivo con la calculadora del tier ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5).
 - **Onboarding farmacéutico colegiado bien justificado:** la Ley del Ejercicio de la Farmacia VE obliga a que el pharmacist sea de la farmacia. El plan respeta esa ley sin contratar pharmacist interno.
 - **Repartidor con 0% comisión sobre delivery fee:** atractivo para captar repartidores Yummy / Rappi descontentos con sus comisiones.
 - **SLA validación Rx 60 min:** específico, medible.
@@ -149,7 +149,7 @@
 
 ### 5.3 Inconsistencias detectadas
 
-- **Comisión Zonix sobre delivery fee:** Autonomous repartidor 0% en valor pero USD 0,30 fee fijo por orden ([PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) sección A.4). Empresa de delivery 8% ([PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) sección B.4). Coherente — son dos productos distintos.
+- **Comisión Zonix Pharma sobre delivery fee:** Autonomous repartidor 0% en valor pero USD 0,30 fee fijo por orden ([PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) sección A.4). Empresa de delivery 8% ([PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) sección B.4). Coherente — son dos productos distintos.
 
 ### 5.4 Sugerencias del operador
 
@@ -209,7 +209,7 @@
 
 | # | Hallazgo | Documento | Estado |
 |---|---|---|---|
-| **A1** | Histórico (un solo comercial): "6+2" vs. conteo real 5+2. **Vigente:** 6 FT + 2 FL = 8 Base; 9 Growth. | [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) + pack | ✓ Alineado |
+| **A1** | Histórico (un solo comercial): "6+2" vs. conteo real 5+2. **Vigente:** Base **7** FTE + **2** freelance = **9**; Growth + asesor regulatorio. | [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) + pack | ✓ Alineado |
 | **A2** | Falta sección de seguridad / privacidad de datos médicos | [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) + [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) | ✓ Aplicado |
 | **A3** | Tabla de sensibilidad central referenciada explícitamente | [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) + [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) | ✓ Aplicado |
 | **A4** | Cap SAFE generoso requiere comentario explícito | [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) | ✓ Aplicado |
@@ -296,14 +296,25 @@ Lo que un inversor sofisticado pediría adicionalmente al pack:
 |-----|----------------------------------|----------------------|
 | **CEO** | Narrativa única, hitos T+90, riesgos declarados, contingencia founder | OK — [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md), [CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md) |
 | **CFO** | Cierre **101k** = one-shots + burn + reserva; **§1.1/1.3** PROYECCION; waiver vs. B2B | Ajustado — notas waiver §1.1 PROYECCION + §11.2 [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) |
-| **COO** | SLAs, picos demanda, horarios — [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) | OK |
+| **COO** | SLAs, picos demanda, horarios — [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) | OK — ola 3: §8.3 export prudente + enlace [PLAN_REGULATORIO_PHARMA_VE.md](../PLAN_REGULATORIO_PHARMA_VE.md) |
 | **CTO / CISO** | Stack, tests, datos, AppSec — README, [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) §14 | OK; CI/repo bajo NDA |
 | **CPO** | Propuestas valor B2B/B2C/tercero, roadmap T+X — PROPUESTA_* + PROYECCION §10 | OK |
 | **CMO (clínico) / RA / QA-PV** | Claims, controlados, farmacovigilancia — PLAN_MODULO §8–11; marketing salud | Sujeto a dictamen asesor |
 | **Compliance / DPO / Legal** | SAFE, tratamiento datos, marco farmacia — [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §4.4 | Sujeto a abogado |
-| **CRO ventas / CMO marketing / CHRO** | Equipo Base 6+2, CAC/LTV, presupuesto Meta — PRESUPUESTO §3, UNIT_ECONOMICS | OK |
+| **CRO ventas / CMO marketing / CHRO** | Equipo Base **7 FTE + 2 freelance**; CAC/LTV; presupuesto Meta — PRESUPUESTO §3, UNIT_ECONOMICS | OK |
 | **Supply / logística (si aplica físico)** | Cadena de frío, SLA entrega, reparto — [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md), [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) | OK |
 | **CRO riesgos / Auditoría / IR** | Sensibilidades §7 PROYECCION, cap SAFE, updates §6.3 | OK |
+
+#### 11.1 bis — Lentes adicionales (mapa breve due diligence)
+
+Desglose de lecturas que en §11.1 iban agrupadas; **no** sustituye al dictamen externo.
+
+| Rol | Qué validar en el pack | Estado (mayo 2026) |
+|-----|-------------------------|---------------------|
+| **DPO** (protección de datos) | Bases, encargados, derechos, transferencias, DPIA OTP — [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §4.4; retención y minimización — [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) §14 | Sujeto a **abogado** + designación formal del responsable ante operación con datos de salud |
+| **CISO** (seguridad de la información) | Amenazas, controles, least privilege, 2FA roadmap — [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) §14–17; acceso repo/CI bajo NDA | **OK** para narrativa piloto; hardening continuo post Day-D |
+| **Auditoría interna** | KPIs financieros/operativos y discrepancias GMV — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §6.4; revisión periódica de supuestos del pack | **OK** como disciplina COO/CFO año 1; función de auditoría **formal** típica post-seed / con junta |
+| **IR / Corp Dev** | SAFE, cap, equity implícita, mensaje único al inversor — [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md), [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md), [README.md](README.md) | **OK**; ampliar con proceso de **NDA** y data room cerrado según §9 |
 
 ### 11.2 Segunda pasada profesional (mayo 2026) — qué se añadió al pack
 
@@ -315,6 +326,16 @@ Lo que un inversor sofisticado pediría adicionalmente al pack:
 | B2B / terceros | [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md); [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) | Objeciones MPPS/datos; contrato marco resumen; SLA logística y frío. |
 | CFO / inversor | [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §6.3 | Plantilla email investor update + nota FX. |
 | Tecnología / proveedor OTP | [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) | Fila OTP con DPIA/subencargado. |
+
+### 11.2 ter — Olas de cierre de coherencia (pack inversor, mayo 2026)
+
+| Ola | Objetivo | Documentos tocados (principal) |
+|-----|-----------|--------------------------------|
+| **1** | Headcount Base **7 FTE + 2** freelance; ALTA#1/A1/CHRO; guion demo delivery; cuestionario § vs README | [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md), [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md), [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md), [README.md](README.md) |
+| **2** | Marca producto **Zonix Pharma**; claim MPPS prudente; BRIEF sin `[PENDIENTE]` en montos ya cerrados | [CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md), [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md), [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md), [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md), [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md) |
+| **3** | Export/trazabilidad MPPS sin prometer formato oficial; enlace [PLAN_REGULATORIO_PHARMA_VE.md](../PLAN_REGULATORIO_PHARMA_VE.md); Customer Support unificado **Zonix Pharma** en módulo Rx | [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) |
+| **4** (cierre) | Pagos B2B + métodos de pago + FAQ checklist + PERFIL comparativa; mermaid `AppZonixPharma` / `ZonixPharma` | [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md), [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md), [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md), [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md) |
+| **5** | Naming **único Zonix Pharma** en todo el pack Lanzamiento: sin «Zonix» / «Zonix Eats» / «ecosistema Zonix»; CV y narrativa técnica bajo la misma marca | [README.md](README.md), [CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md), [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md), [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md), [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md), [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md), [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md), [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) |
 
 ### 11.3 Veredicto, riesgos residuales y próximos pasos
 

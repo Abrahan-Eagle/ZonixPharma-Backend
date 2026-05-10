@@ -29,7 +29,7 @@
 ### 3.1 Costo predecible y bajo
 
 - **Modelo híbrido:** cuota fija mensual en USD + porcentaje moderado sobre GMV generado en la app (ver §5). Los porcentajes están en el orden de **fracciones de punto a ~1%**, no en el rango 25-35% de los agregadores.
-- **Comparación vs. Rappi/PedidosYa:** una farmacia con ~USD 5.000/mes de GMV en Zonix suele pagar **órden de magnitud menos** que una comisión típica del 25-35% sobre el mismo volumen.
+- **Comparación vs. Rappi/PedidosYa:** una farmacia con ~USD 5.000/mes de GMV en **Zonix Pharma** suele pagar **órden de magnitud menos** que una comisión típica del 25-35% sobre el mismo volumen.
 - **Tier dinámico:** el nivel (Basic / Pro / Enterprise) sigue el GMV mensual según bandas; ascenso y descenso con reglas explícitas en §5.4.
 
 ### 3.2 Canal digital propio sin construirlo
@@ -37,7 +37,7 @@
 - App Flutter operativa en Android e iOS. Web responsive lista.
 - Catálogo cargado en 30 minutos con CSV o entrada manual.
 - Onboarding del personal en 1 hora.
-- Soporte chat con Customer Support de Zonix 12h al día.
+- Soporte chat con Customer Support de **Zonix Pharma** 12h al día.
 
 ### 3.3 Validación Rx con farmacéutico colegiado de la propia farmacia
 
@@ -45,7 +45,7 @@
 - Valida recetas digitalmente, marca como aprobada / rechazada / pendiente.
 - Genera trazabilidad completa: quién validó, cuándo, qué medicamento, qué receta.
 - Cumple con la **Ley del Ejercicio de la Farmacia VE** porque el responsable sigue siendo el farmacéutico colegiado de la farmacia.
-- La farmacia tiene auditoría digital ante MPPS si la pide.
+- La farmacia dispone de **trazabilidad digital** y exportaciones para apoyar requerimientos de autoridad (contenido y formato sujetos a dictamen **farmacéutico asesor + abogado** — coherente con [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) §8.3).
 
 ### 3.4 Delivery integrado
 
@@ -62,7 +62,7 @@
 
 ### 3.6 Multi-sucursal con un solo onboarding
 
-- **Un nivel y una factura por razón social (RIF):** el GMV para asignar tier y calcular el componente variable es la **suma de todas las sucursales** de esa persona jurídica en Zonix (piloto y cadenas pequeñas). El dashboard muestra **desglose por sucursal** para operación y confianza.
+- **Un nivel y una factura por razón social (RIF):** el GMV para asignar tier y calcular el componente variable es la **suma de todas las sucursales** de esa persona jurídica en **Zonix Pharma** (piloto y cadenas pequeñas). El dashboard muestra **desglose por sucursal** para operación y confianza.
 - Cada sucursal tiene su propio inventario, su propio farmacéutico colegiado, su propio dashboard.
 - Modelo futuro (franquicias / JV / enterprise explícito): contrato o nivel por establecimiento puede acordarse aparte.
 
@@ -76,7 +76,7 @@
 
 - **Un solo lugar** para ver órdenes en curso, historial, validación Rx, comprobantes de pago y estados de entrega.
 - **Inventario y catálogo** enlazados al flujo de venta (carga por CSV o manual); menos desajuste entre “lo que vendemos” y “lo que publicamos”.
-- **Dashboard de GMV (facturación Zonix):**
+- **Dashboard de GMV (facturación Zonix Pharma):**
   - Vista **mensual** del GMV reconocido (misma base que factura variable — §5.5).
   - **Agregado por RIF:** un solo número para nivelación de tier y cuota; **desglose por sucursal** cuando hay multi-sucursal (operación y reconciliación interna).
   - **Banda actual** del mes y **proyección** “si cerramos el mes hoy” (para anticipar ascensos §5.4).
@@ -87,7 +87,7 @@
 
 - La farmacia entra al **canal de adquisición** de Zonix Pharma: pauta digital (Meta Ads, Google Ads según plan del pack) y material físico en zona piloto (flyers, vallas donde aplique el escenario Base/Growth).
 - El catálogo de la farmacia queda **visible** para pacientes que buscan por zona y producto, sin que la sucursal tenga que montar su propia campaña desde cero.
-- El costo de esa capa comercial está en el **presupuesto operativo de Zonix** (ver [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md)); la farmacia se beneficia del tráfico agregado del marketplace.
+- El costo de esa capa comercial está en el **presupuesto operativo de Zonix Pharma** (ver [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md)); la farmacia se beneficia del tráfico agregado del marketplace.
 
 ### 3.10 Gestión de droguerías proveedoras *(roadmap Año 1 — no disponible en piloto)*
 
@@ -97,7 +97,7 @@
 
 ## 4. Lo que NO le ofrece Zonix Pharma (para no inflar)
 
-- **No reemplaza tu ERP de farmacia (Saint, Profit, Galac).** El panel administrativo de §3.8 cubre el flujo de ventas en Zonix (órdenes, comprobantes, validación Rx, reportes de GMV en la app); la contabilidad fiscal y el inventario maestro de la farmacia siguen viviendo en el ERP. Integración por CSV.
+- **No reemplaza tu ERP de farmacia (Saint, Profit, Galac).** El panel administrativo de §3.8 cubre el flujo de ventas en **Zonix Pharma** (órdenes, comprobantes, validación Rx, reportes de GMV en la app); la contabilidad fiscal y el inventario maestro de la farmacia siguen viviendo en el ERP. Integración por CSV.
 - **No procesa seguros médicos privados / IVSS.** Es venta directa al paciente.
 - **No es teleconsulta médica.** No conecta con médicos para emitir recetas; el paciente trae la suya.
 - **No es e-commerce general.** Solo farmacia (OTC + Rx + cuidado personal afín).
@@ -118,7 +118,7 @@ Los porcentajes aplican al GMV del mes según la definición de §5.5. El nivel 
 
 ### 5.1 Basic
 
-**Para:** farmacia independiente o GMV agregado del RIF en la banda **USD 0 – USD 2.500/mes** en Zonix.
+**Para:** farmacia independiente o GMV agregado del RIF en la banda **USD 0 – USD 2.500/mes** en **Zonix Pharma**.
 
 **Incluye:**
 - 1 sucursal (independiente); cadenas: sucursales según contrato con límites de producto.
@@ -154,17 +154,17 @@ Los porcentajes aplican al GMV del mes según la definición de §5.5. El nivel 
 - Reportes en tiempo real.
 - Dashboard agregado por marca.
 - Marca blanca opcional (logo de la cadena en cabecera de cliente).
-- Onboarding asistido en cada sucursal por Customer Support de Zonix.
+- Onboarding asistido en cada sucursal por Customer Support de **Zonix Pharma**.
 
 ### 5.4 Cambio de nivel por GMV (ascenso y descenso)
 
-Las reglas siguientes aplican al **GMV agregado del RIF** (suma de sucursales en Zonix). Los meses son **calendario** (enero, febrero, etc.); no se ajusta por mes corto o largo.
+Las reglas siguientes aplican al **GMV agregado del RIF** (suma de sucursales en **Zonix Pharma**). Los meses son **calendario** (enero, febrero, etc.); no se ajusta por mes corto o largo.
 
 **Ascenso (sin promedio):**
 
 1. Se toman **dos meses calendario consecutivos** (M y M+1).
 2. El ascenso al nivel superior solo procede si el GMV de **M** y el GMV de **M+1** son **cada uno** **mayor o igual (≥)** al **umbral inferior** del nivel destino (por ejemplo, para pasar a Pro: GMV ≥ USD 2.501 en M y ≥ USD 2.501 en M+1; para Enterprise: GMV ≥ USD 10.001 en ambos meses).
-3. Cerrado M+1, Zonix **notifica por escrito** al dueño (email y/o WhatsApp según canal contractual) el **cambio de nivel** y la **tarifa** que regirá a partir del ciclo indicado.
+3. Cerrado M+1, **Zonix Pharma** **notifica por escrito** al dueño (email y/o WhatsApp según canal contractual) el **cambio de nivel** y la **tarifa** que regirá a partir del ciclo indicado.
 4. La **nueva tarifa** (cuota fija + % del nivel nuevo) aplica en facturación desde **M+2**: los meses M y M+1 son solo la ventana de comprobación; el **primer mes de cobro** con el nivel nuevo es **M+2**.
 
 **Descenso:** política espejo — dos meses consecutivos **cada uno** con GMV **estrictamente por debajo** del umbral inferior del nivel actual (por ejemplo, para bajar de Pro a Basic: ambos meses con GMV ≤ USD 2.500); aviso al dueño y aplicación del nivel inferior desde el mes siguiente a la confirmación, salvo pacto distinto en contrato marco.
@@ -172,8 +172,8 @@ Las reglas siguientes aplican al **GMV agregado del RIF** (suma de sucursales en
 ### 5.5 Definición operativa de GMV (facturación y nivelación)
 
 - **Base:** suma del **total cobrado al paciente por transacción** en órdenes **completadas** en ese mes calendario. Incluye el **delivery fee** cuando forma parte del total del pedido en la app.
-- **Propinas** al repartidor por fuera de la app **no** entran en el GMV Zonix. **Créditos de tienda** no contemplados en el modelo base.
-- **Sin ajustes retroactivos** para fines de devengo Zonix: el reconocimiento del GMV es por transacción completada en el mes; devoluciones discrecionales de la farmacia al paciente son **ajenos al cálculo de fee** salvo error demostrable de plataforma (ver §5.7).
+- **Propinas** al repartidor por fuera de la app **no** entran en el GMV **Zonix Pharma**. **Créditos de tienda** no contemplados en el modelo base.
+- **Sin ajustes retroactivos** para fines de devengo **Zonix Pharma**: el reconocimiento del GMV es por transacción completada en el mes; devoluciones discrecionales de la farmacia al paciente son **ajenos al cálculo de fee** salvo error demostrable de plataforma (ver §5.7).
 
 ### 5.6 Alta nueva vs cambio de nivel (primer mes parcial)
 
@@ -192,7 +192,7 @@ El **cambio de nivel** por crecimiento estable sigue exclusivamente §5.4 (dos m
 
 ### 5.8 Fuente de verdad y reclamos sobre GMV
 
-- **Fuente de verdad:** totales del **dashboard Zonix** (misma base que facturación). Export CSV/PDF debe **cuadrar** con esos totales.
+- **Fuente de verdad:** totales del **dashboard Zonix Pharma** (misma base que facturación). Export CSV/PDF debe **cuadrar** con esos totales.
 - **Plazo:** **7 días hábiles** desde la publicación del **cierre mensual** oficial.
 - **Alcance:** solo corrección de **errores de plataforma** (orden mal clasificada, doble conteo). No se renegocia el nivel por desacuerdo comercial sobre el mes.
 
@@ -218,7 +218,7 @@ Detalle de facturación SENIAT e impago en [PLAN_METODOS_PAGO.md](PLAN_METODOS_P
 | 0-2 | Pitch del problema: pérdida de venta por desabastecimiento, comisión Rappi alta, sin trazabilidad Rx. |
 | 2-5 | Demo app paciente: cómo el paciente busca, agrega al carrito, sube receta, paga, recibe. |
 | 5-8 | Demo dashboard farmacia: cómo entra la orden, cómo se valida la receta, cómo se asigna delivery. |
-| 8-10 | Comparativa precio: Rappi 25-35% GMV vs. Zonix cuota fija + % moderado (§5). Cálculo en vivo con su GMV estimado. |
+| 8-10 | Comparativa precio: Rappi 25-35% GMV vs. **Zonix Pharma** cuota fija + % moderado (§5). Cálculo en vivo con su GMV estimado. |
 | 10-12 | Onboarding: 30 minutos de catálogo + 1h de capacitación. Sin contrato anual. Cancelación cualquier momento. |
 | 12-13 | Sucursal piloto: arrancar con 1 sola sucursal, ver resultado en 30 días, escalar al resto. |
 | 13-15 | Cierre: firma carta de intención (no contrato definitivo). Definir fecha de visita técnica. |
@@ -234,23 +234,23 @@ Detalle de facturación SENIAT e impago en [PLAN_METODOS_PAGO.md](PLAN_METODOS_P
 
 | Objeción | Respuesta |
 |---|---|
-| "Ya estoy en Rappi, no necesito más." | "Rappi te cobra USD X.XXX/mes en comisión sobre GMV. Zonix usa cuota fija + un % muy bajo sobre tu GMV en la app (§5); en volumen típico sueles pagar órden de magnitud menos. Puedes mantener Rappi mientras pruebas con nosotros." |
+| "Ya estoy en Rappi, no necesito más." | "Rappi te cobra USD X.XXX/mes en comisión sobre GMV. **Zonix Pharma** usa cuota fija + un % muy bajo sobre tu GMV en la app (§5); en volumen típico sueles pagar órden de magnitud menos. Puedes mantener Rappi mientras pruebas con nosotros." |
 | "Mi farmacéutico no quiere validar recetas en una app." | "El backend está construido para que él vea solo las recetas pendientes. Capacitación de 30 min. Si después no le gusta, cancelas." |
 | "¿Y si la app cae?" | "Es Laravel + DigitalOcean + Pusher. SLA del proveedor 99,9%. Tenemos plan B: pickup en sucursal sin entrega digital." |
 | "¿Cómo se cobra el delivery?" | "El paciente paga al pedir; nosotros recibimos el comprobante; tú recibes el dinero menos delivery fee del repartidor. Trazabilidad completa." |
-| "¿Y si el paciente reclama un medicamento mal entregado?" | "Hay módulo de quejas y resolución. Mediación de Customer Support de Zonix en 24h. La farmacia decide si reembolsa." |
+| "¿Y si el paciente reclama un medicamento mal entregado?" | "Hay módulo de quejas y resolución. Mediación de Customer Support de **Zonix Pharma** en 24h. La farmacia decide si reembolsa." |
 | "¿Cuánto tarda el onboarding?" | "30 min catálogo + 1h capacitación + 1 día de prueba interna. Total 2 días desde que firmas." |
 | "¿Y si no hay órdenes los primeros meses?" | "Marketing primero a tu **zona caminable** desde tu sucursal y al **polo del piloto** (Bella Florida o vía Tocuyito / El Socorro). Sales B2B garantiza al menos 5-10 órdenes/semana en mes 1, escalando." |
 | "¿Hay contrato anual?" | "No. Mensual. Cancelas cuando quieras con 30 días de aviso." |
-| "¿Quién es el responsable si MPPS inspecciona?" | "La farmacia sigue siendo el establecimiento farmacéutico responsable ante MPPS; Zonix aporta **trazabilidad digital** y logs exportables. Contrato marco lo deja escrito." |
-| "¿Qué datos del paciente ve Zonix?" | "Solo los necesarios para la orden y la receta; tratamiento bajo aviso de privacidad y contrato; subencargados listados para la C.A." |
+| "¿Quién es el responsable si MPPS inspecciona?" | "La farmacia sigue siendo el establecimiento farmacéutico responsable ante MPPS; **Zonix Pharma** aporta **trazabilidad digital** y logs exportables. Contrato marco lo deja escrito." |
+| "¿Qué datos del paciente ve **Zonix Pharma**?" | "Solo los necesarios para la orden y la receta; tratamiento bajo aviso de privacidad y contrato; subencargados listados para la C.A." |
 | "¿Me obligan a exclusividad digital?" | "No exclusividad con Rappi/PedidosYa; puedes operar multicanal." |
 
-## 9.1 Contrato marco farmacia–Zonix (resumen legal-operativo)
+## 9.1 Contrato marco farmacia–Zonix Pharma (resumen legal-operativo)
 
 Antes de **órdenes reales** con pacientes, cada farmacia firma (o anexa) documento que cubra como mínimo:
 
-1. **Roles:** farmacia como establecimiento dispensador; Zonix como plataforma y, tras constitución, **responsable del tratamiento** de datos de usuarios según [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §4.4.
+1. **Roles:** farmacia como establecimiento dispensador; **Zonix Pharma** como plataforma y, tras constitución, **responsable del tratamiento** de datos de usuarios según [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §4.4.
 2. **Validación Rx:** obligación de mantener farmacéutico colegiado MPPS activo; SLA acordado; escalamiento si no hay validador.
 3. **Recetas retenidas/controladas:** pickup, identificación, libros de control **en farmacia**.
 4. **Pagos y comprobantes:** cómo se concilian y plazos de disputa.
@@ -263,7 +263,7 @@ Plantillas: abogado corporativo + revisión **farmacéutica asesora** en cláusu
 | Métrica | Reporte |
 |---|---|
 | Órdenes recibidas / completadas / canceladas | Mensual, por email + dashboard. |
-| GMV de la farmacia en Zonix | Mensual. |
+| GMV de la farmacia en **Zonix Pharma** | Mensual. |
 | Tickets de soporte abiertos / cerrados | Mensual. |
 | Tiempo promedio validación Rx | Mensual. |
 | Satisfacción del paciente (NPS) | Trimestral. |
@@ -271,7 +271,7 @@ Plantillas: abogado corporativo + revisión **farmacéutica asesora** en cláusu
 
 ## 11. Por qué la farmacia debería decir SÍ ahora
 
-1. **Costo de oportunidad:** cada mes sin Zonix, Rappi se lleva el 30% de su GMV digital, o no vende digital.
+1. **Costo de oportunidad:** cada mes sin **Zonix Pharma**, Rappi se lleva el 30% de su GMV digital, o no vende digital.
 2. **Tier introductorio:** primeras 10 farmacias del piloto pueden acordar **USD 0 de cuota fija los primeros 2 meses** (waiver promocional; redacción y excepciones en contrato marco — abogado). El GMV se mide igual (§5.7). Después aplica el modelo híbrido §5. **Proyección de caja inversor:** la tabla central [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1–1.3 modela el caso **sin** ese waiver; la fila **«con waiver primeras 10»** al pie de §1.1 muestra el ajuste **~−USD 200** de ingresos año 1 (proxy de ingresos **meses 1–2** del caso sin waiver). Cualquier promesa comercial más amplia obliga **recalcular** runway con FP&A.
 3. **Riesgo cero:** cancelación cualquier momento, sin penalidad, sin contrato anual.
 4. **Equipo presencial:** Sales B2B + Customer Support en Carabobo. No es un call-center remoto.
@@ -279,8 +279,8 @@ Plantillas: abogado corporativo + revisión **farmacéutica asesora** en cláusu
 ## 12. Caso de éxito proyectado (para el inversor, no para la farmacia)
 
 **Ejemplo ilustrativo** (modelo híbrido §5): Farmacia "La Esperanza", Bella Florida, 1 sucursal.
-- **Antes Zonix:** GMV mensual digital USD 0 (no vendía digital). Rappi cobrando ~30% de las pocas ventas que entraban.
-- **Mes 1 con Zonix:** GMV USD 320 → nivel Basic; ejemplo de cuota aprox.: USD 20 + 0,60% × 320 ≈ **USD 22** (si el mes es parcial desde alta, puede aplicarse solo fija prorrateada §5.6).
+- **Antes Zonix Pharma:** GMV mensual digital USD 0 (no vendía digital). Rappi cobrando ~30% de las pocas ventas que entraban.
+- **Mes 1 con Zonix Pharma:** GMV USD 320 → nivel Basic; ejemplo de cuota aprox.: USD 20 + 0,60% × 320 ≈ **USD 22** (si el mes es parcial desde alta, puede aplicarse solo fija prorrateada §5.6).
 - **Mes 3:** GMV USD 1.200 → Basic.
 - **Mes 6:** GMV USD 3.500 → Pro (35 + 0,80% × 3.500 ≈ **USD 63** ese mes).
 - **Mes 12:** GMV USD 7.200 → sigue en Pro.

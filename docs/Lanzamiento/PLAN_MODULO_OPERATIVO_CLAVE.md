@@ -9,7 +9,7 @@
 1. **Es el diferenciador legal:** Rappi y PedidosYa NO validan recetas digitalmente en VE. Farmatodo y Locatel hacen validación física en sucursal.
 2. **Cumple regulación:** la Ley del Ejercicio de la Farmacia VE exige validación por farmacéutico colegiado.
 3. **Genera trazabilidad:** quién validó, cuándo, qué medicamento, qué receta, qué paciente. Fundamental ante MPPS.
-4. **Habilita el segmento Rx (48,3% del mercado farmacéutico VE):** sin esto, Zonix solo opera OTC + cuidado personal.
+4. **Habilita el segmento Rx (48,3% del mercado farmacéutico VE):** sin esto, **Zonix Pharma** solo opera OTC + cuidado personal.
 5. **Reduce riesgo de mal uso:** Rx retenida, sustancias controladas, dosis verificada.
 
 ## 2. Roles involucrados
@@ -20,7 +20,7 @@
 | Farmacéutico colegiado (`pharmacist`) | Valida o rechaza receta digital |
 | Farmacia (`commerce`) | Despacha medicamento |
 | Repartidor (`delivery` o `delivery_agent`) | Entrega en domicilio o pickup en sucursal |
-| Customer Support de Zonix | Media en disputas y casos límite |
+| Customer Support de **Zonix Pharma** | Media en disputas y casos límite |
 
 ## 3. Tipos de receta soportados
 
@@ -45,14 +45,14 @@
 - Validación digital + revisión de identidad obligatoria.
 - En piloto: opcional. Activar en mes 4-6 con asesoría regulatoria.
 
-**Referencia normativa:** clasificación exacta **común / retenida / especial** y listados de sustancias deben alinearse a **resoluciones MPPS / normativa vigente** — **[PENDIENTE]** adjuntar número de resolución y fecha en data room tras dictamen **farmacéutico asesor + abogado** (no inventar cita).
+**Referencia normativa:** clasificación exacta **común / retenida / especial** y listados de sustancias deben alinearse a **resoluciones MPPS / normativa vigente** — **[PENDIENTE]** adjuntar número de resolución y fecha en data room tras dictamen **farmacéutico asesor + abogado** (no inventar cita). Marco de trabajo y anexos previstos: [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md) (no sustituye cita formal en comunicación al paciente o a autoridad).
 
 ## 4. Flujo operativo paso a paso
 
 ```mermaid
 sequenceDiagram
     participant P as Paciente
-    participant Z as Zonix App
+    participant Z as AppZonixPharma
     participant F as Farmacia
     participant Ph as Farmaceutico colegiado
     participant R as Repartidor
@@ -125,7 +125,7 @@ Detalle técnico de transiciones en backend: skill `zonix-order-lifecycle` (ver 
 | Paso | Tiempo |
 |---|---|
 | Farmacia añade pharmacist a su cuenta | 5 min |
-| KYC del pharmacist: cédula + foto + número MPPS + registro INHRR | 10 min (paciente) + 24-48h (verificación Zonix) |
+| KYC del pharmacist: cédula + foto + número MPPS + registro INHRR | 10 min (paciente) + 24-48h (verificación **Zonix Pharma**) |
 | Customer Support verifica número MPPS (ver **§7.4**) | Async, 1-2 días hábiles |
 | Capacitación: video tutorial 20 min + manual PDF | 30 min |
 | Test operativo: validar 3 recetas de prueba | 30 min |
@@ -136,7 +136,7 @@ Detalle técnico de transiciones en backend: skill `zonix-order-lifecycle` (ver 
 - **Video tutorial:** screencast de 15-20 min con flujo completo.
 - **Manual PDF:** 8-12 páginas con casos comunes y casos límite.
 - **FAQ:** 30+ preguntas comunes con respuestas.
-- **Soporte directo:** WhatsApp del Customer Support de Zonix para dudas.
+- **Soporte directo:** WhatsApp del Customer Support de **Zonix Pharma** para dudas.
 
 ### 7.3 Compromisos del pharmacist
 
@@ -144,7 +144,7 @@ Detalle técnico de transiciones en backend: skill `zonix-order-lifecycle` (ver 
 - Actualizar estado de la receta en máximo 24h fuera de horario operativo.
 - Reportar inmediatamente cualquier sospecha de receta falsificada.
 - Mantener su número MPPS vigente.
-- Responder ante MPPS si se requiere auditoría (Zonix entrega historial).
+- Responder ante MPPS si se requiere auditoría (**Zonix Pharma** entrega historial / export según procedimiento acordado con abogado).
 
 ### 7.4 Verificación del número MPPS (fuente y contingencia)
 
@@ -184,11 +184,11 @@ Cada validación queda registrada en backend con:
 - **Antes del lanzamiento público (Day-D):** dictamen escrito de **abogado en farmacia y datos de salud VE** + revisión de **farmacéutico asesor** que cite **normativa aplicable** (Ley del Ejercicio de la Farmacia, resoluciones MPPS/INHRR vigentes, instructivos sobre psicotrópicos/estupefacientes) y ajuste, si hace falta, plazos y textos en T&C y política de privacidad.
 - Cualquier cifra de años en este pack es **hipótesis operativa** hasta esa validación.
 
-### 8.3 Exportación a MPPS
+### 8.3 Exportación / pack de trazabilidad (due diligence y autoridades)
 
-- Botón en dashboard del pharmacist: "Exportar mis validaciones del mes".
-- Genera PDF con audit log filtrado.
-- Listo para entregar a MPPS si se requiere auditoría.
+- Botón en dashboard del pharmacist: "Exportar mis validaciones del mes" (objetivo de producto; priorizar con CTO).
+- Genera **PDF u otro formato exportable** con audit log filtrado (campos mínimos bajo minimización — §14).
+- **Uso ante MPPS u otra autoridad:** el **contenido, soporte y plazos** del entregable se ajustan al requerimiento específico y al dictamen **farmacéutico asesor + abogado**; no se declara formato «oficial MPPS» hasta anexarlo al data room. Marco previo: [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md).
 
 ## 9. Manejo de casos límite
 
@@ -199,7 +199,7 @@ Cada validación queda registrada en backend con:
 
 ### 9.2 Receta vencida
 
-- TTL receta médica VE: depende del tipo; **referencia habitual** muchas recetas comunes **30 días** desde emisión — **confirmar** con normativa aplicable y criterio del farmacéutico colegiado (**[PENDIENTE]** cita MPPS/COFV si se usa en comunicación al paciente).
+- TTL receta médica VE: depende del tipo; **referencia habitual** muchas recetas comunes **30 días** desde emisión — **confirmar** con normativa aplicable y criterio del farmacéutico colegiado (**[PENDIENTE]** cita MPPS/COFV si se usa en comunicación al paciente). Contexto regulatorio del repo: [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md) (no sustituye cita en T&C hasta dictamen).
 - Si la receta tiene fecha > umbral válido: pharmacist rechaza con motivo.
 
 ### 9.3 Receta de medicamento sin INHRR
@@ -216,14 +216,14 @@ Cada validación queda registrada en backend con:
 ### 9.5 Receta sospechosa de falsificación
 
 - Pharmacist marca como "rechazada — sospecha falsificación".
-- Sistema notifica a Customer Support de Zonix.
+- Sistema notifica a Customer Support de **Zonix Pharma**.
 - Customer Support contacta al paciente para investigar.
 - Si confirma: cuenta del paciente suspendida 90 días o permanente según gravedad.
-- Audit log se entrega a MPPS si lo solicitan.
+- Audit log / export se entrega a MPPS u autoridad competente **si lo solicitan**, en la forma acordada con **abogado** (sin prometer formato preaprobado).
 
 ### 9.6 Sustancias controladas y nomenclatura legal (disclaimer)
 
-Las etiquetas de producto en la app (**`common` / `retained` / `special`**, controlados, cadena de frío) deben **mapearse** a listados y requisitos **vigentes en Venezuela** (estupefacientes, psicotrópicos, recetas oficiales, libros de control). **Mes 0-3 del piloto:** priorizar recetas **comunes** y flujo operativo estable; antes de escalar volumen en **controlados**, publicar **tabla de equivalencias** aprobada por **farmacéutico asesor + abogado** y ajustar UX (mensajes obligatorios, pickup, identificación). **Resolución(es) MPPS de referencia:** **[PENDIENTE]** anexar en data room.
+Las etiquetas de producto en la app (**`common` / `retained` / `special`**, controlados, cadena de frío) deben **mapearse** a listados y requisitos **vigentes en Venezuela** (estupefacientes, psicotrópicos, recetas oficiales, libros de control). **Mes 0-3 del piloto:** priorizar recetas **comunes** y flujo operativo estable; antes de escalar volumen en **controlados**, publicar **tabla de equivalencias** aprobada por **farmacéutico asesor + abogado** y ajustar UX (mensajes obligatorios, pickup, identificación). **Resolución(es) MPPS de referencia:** **[PENDIENTE]** anexar en data room (trabajo preparatorio: [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md)).
 
 ## 10. Cadena de frío
 
@@ -243,15 +243,15 @@ Las etiquetas de producto en la app (**`common` / `retained` / `special`**, cont
 
 ## 11. Farmacovigilancia y eventos adversos (Chief Medical / regulatorio)
 
-**Objetivo:** canal formal para **eventos adversos (EA)** y sospechas de fallos de calidad asociados a medicamentos dispensados vía Zonix.
+**Objetivo:** canal formal para **eventos adversos (EA)** y sospechas de fallos de calidad asociados a medicamentos dispensados vía **Zonix Pharma**.
 
 | Paso | Responsable | Acción |
 |---|---|---|
 | 1. Captura | Paciente (app) o farmacia | Formulario corto post-entrega: síntoma, medicamento, lote si existe |
-| 2. Triaje | Customer Support Zonix | Prioridad; datos completos en ≤ 24 h hábiles |
+| 2. Triaje | Customer Support **Zonix Pharma** | Prioridad; datos completos en ≤ 24 h hábiles |
 | 3. Val clínico | Farmacéutico colegiado de la farmacia despachadora | Evaluación inicial; escalamiento médico si procede |
-| 4. Reporte regulatorio | Farmacia / asesor regulatorio | Notificación a **INHRR** u autoridad que corresponda según normativa vigente — **plantillas y plazos [PENDIENTE]** con farmacéutico asesor |
-| 5. Registro interno | Zonix | Audit log; sin datos clínicos innecesarios; retención según §14 |
+| 4. Reporte regulatorio | Farmacia / asesor regulatorio | Notificación a **INHRR** u autoridad que corresponda según normativa vigente — **plantillas y plazos [PENDIENTE]** con farmacéutico asesor + abogado; alinear con [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md) |
+| 5. Registro interno | **Zonix Pharma** | Audit log; sin datos clínicos innecesarios; retención según §14 |
 
 **Disclaimer app:** reportar EA **no sustituye** atención médica urgente; en emergencia dirigir a servicio de salud.
 
@@ -275,7 +275,7 @@ Las etiquetas de producto en la app (**`common` / `retained` / `special`**, cont
 |---|---|
 | Pharmacist se rehúsa a validar digital | Capacitación + soporte. La farmacia decide si lo capacita o cambia. |
 | Pharmacist excede SLA frecuentemente | Alertas + escalamiento a la farmacia. Si crónico, suspender afiliación. |
-| Receta falsa pasa la validación | Audit log + Zonix Customer Support investiga. Programa de fraud detection con ML en año 2. |
+| Receta falsa pasa la validación | Audit log + Customer Support **Zonix Pharma** investiga. Programa de fraud detection con ML en año 2. |
 | MPPS audita y encuentra fallas | Trazabilidad completa + asesor regulatorio externo. |
 | Paciente sube datos personales sensibles fuera de la receta | Política de privacidad + cifrado en reposo + audit log. |
 
@@ -300,7 +300,7 @@ Datos de salud son categoría especial; **marco legal VE en actualización** —
 
 - Audit log de todo acceso a datos sensibles.
 - Principle of Least Privilege: el pharmacist solo ve recetas asignadas a SU farmacia.
-- Customer Support de Zonix solo accede a datos sensibles vía herramienta auditada cuando hay disputa abierta.
+- Customer Support de **Zonix Pharma** solo accede a datos sensibles vía herramienta auditada cuando hay disputa abierta.
 
 ### 14.4 Retención
 

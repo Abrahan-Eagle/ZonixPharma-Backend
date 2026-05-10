@@ -1,7 +1,7 @@
 # Plan de métodos de pago
 
 > **Última actualización:** 10 mayo 2026.
-> Documento que detalla cómo se cobra y se paga en Zonix Pharma. Reusa lógica ya implementada en la plataforma del ecosistema Zonix y documentada en `[../logica-pagos-por-rol.md](../logica-pagos-por-rol.md)` y `[../FLUJO_PAGO_ORDEN.md](../FLUJO_PAGO_ORDEN.md)`.
+> Documento que detalla cómo se cobra y se paga en Zonix Pharma. Reusa lógica ya implementada en la **plataforma Zonix Pharma** (mismo código base probado) y documentada en `[../logica-pagos-por-rol.md](../logica-pagos-por-rol.md)` y `[../FLUJO_PAGO_ORDEN.md](../FLUJO_PAGO_ORDEN.md)`.
 > Para marco regulatorio (Sudeban) ver `[../REQUISITOS_OPERAR_VENEZUELA.md](../REQUISITOS_OPERAR_VENEZUELA.md)` sección "Sudeban / pagos".
 
 ## 1. Métodos de pago soportados
@@ -33,7 +33,7 @@ Zonix Pharma opera con **pagos manuales VE nativos**, sin pasarelas internaciona
 ```mermaid
 sequenceDiagram
     participant P as Paciente
-    participant Z as Zonix App
+    participant Z as AppZonixPharma
     participant F as Farmacia
     P->>Z: Crea orden (medicamento + dirección)
     Z->>P: Muestra opciones de pago
@@ -65,11 +65,11 @@ Igual al flujo OTC, **pero con paso adicional**: validación Rx por farmacéutic
 
 Detalle del flujo Rx en [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md).
 
-### 2.3 Flujo Zonix → farmacia (servicio plataforma — cuota mensual)
+### 2.3 Flujo Zonix Pharma → farmacia (servicio plataforma — cuota mensual)
 
 ```mermaid
 sequenceDiagram
-    participant Z as Zonix
+    participant Z as ZonixPharma
     participant F as Farmacia
     Z->>F: Genera factura digital SENIAT al inicio del mes
     Z->>F: Envia link de pago por email + WhatsApp
@@ -89,7 +89,7 @@ sequenceDiagram
 **Factura digital SENIAT (descripción operativa; forma exacta la cierra el contador VE):**
 
 - Una misma factura puede llevar **dos líneas de concepto** (o texto equivalente): (1) suscripción / licencia mes ___ — parte fija; (2) fee variable por volumen transaccional sobre GMV del mes ___ — ingreso por **servicio de plataforma**, no por la venta del medicamento al paciente.
-- IVA, retenciones, moneda de facturación (USD indexado vs Bs) y redacción legal definitiva según figura fiscal de Zonix.
+- IVA, retenciones, moneda de facturación (USD indexado vs Bs) y redacción legal definitiva según figura fiscal de **Zonix Pharma** (vehículo que facture el servicio de plataforma).
 
 **Cambio de nivel por GMV:** ascenso solo si **dos meses calendario consecutivos** tienen GMV **cada uno** **mayor o igual (≥)** al umbral inferior del nivel destino (sin promedio); notificación al dueño tras cerrar el segundo mes; **nueva tarifa desde M+2**. Detalle en [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5.4.
 
@@ -107,13 +107,13 @@ sequenceDiagram
 
 **Alta en mes parcial:** primer mes desde incorporación puede facturarse solo **parte fija prorrateada** sin % sobre GMV (ver [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5.6).
 
-### 2.4 Flujo Zonix → repartidor (delivery fee)
+### 2.4 Flujo Zonix Pharma → repartidor (delivery fee)
 
 ```mermaid
 sequenceDiagram
     participant P as Paciente
     participant F as Farmacia
-    participant Z as Zonix
+    participant Z as ZonixPharma
     participant R as Repartidor
     P->>F: Paga orden completa (incluye delivery fee)
     F->>Z: Confirma recepcion total
@@ -123,17 +123,17 @@ sequenceDiagram
     Z->>R: Registra pago + fee fijo USD 0,30 por orden (procesamiento; sin % sobre delivery fee)
 ```
 
-**Repartidor autónomo (`delivery`):** **0%** de comisión Zonix sobre el delivery fee; solo **USD 0,30 por orden completada** (alineado a [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) §A.4). El **8% sobre delivery fee** aplica **solo** a **empresa de delivery** (`delivery_company` + agentes) — §2.5 y mismo doc §B.4.
+**Repartidor autónomo (`delivery`):** **0%** de comisión **Zonix Pharma** sobre el delivery fee; solo **USD 0,30 por orden completada** (alineado a [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) §A.4). El **8% sobre delivery fee** aplica **solo** a **empresa de delivery** (`delivery_company` + agentes) — §2.5 y mismo doc §B.4.
 
-**Variante alternativa:** Zonix actúa como agregador y paga directo al repartidor (mes 6+ con asesoría Sudeban). En piloto NO; la farmacia paga al repartidor para evitar caer bajo regulación de "intermediario de pagos" Sudeban.
+**Variante alternativa:** **Zonix Pharma** actúa como agregador y paga directo al repartidor (mes 6+ con asesoría Sudeban). En piloto NO; la farmacia paga al repartidor para evitar caer bajo regulación de "intermediario de pagos" Sudeban.
 
-### 2.5 Flujo Zonix → empresa de delivery
+### 2.5 Flujo Zonix Pharma → empresa de delivery
 
-Similar a 2.4, pero pago semanal a la empresa (no al agente individual) y consolidado. **Comisión Zonix:** **8%** del delivery fee (asignación, tracking, disputas) — [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) §B.4.
+Similar a 2.4, pero pago semanal a la empresa (no al agente individual) y consolidado. **Comisión Zonix Pharma:** **8%** del delivery fee (asignación, tracking, disputas) — [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) §B.4.
 
 ## 3. Conciliación contable
 
-### 3.1 Para Zonix (revenue farmacias: cuota fija + fee sobre GMV)
+### 3.1 Para Zonix Pharma (revenue farmacias: cuota fija + fee sobre GMV)
 
 - Los totales agregados dependen del mix de farmacias por banda GMV; las proyecciones del pack deben actualizarse cuando haya datos piloto (antes referían solo membresía fija).
 - 60-70% por Pago Móvil C2P.
@@ -170,12 +170,12 @@ Similar a 2.4, pero pago semanal a la empresa (no al agente individual) y consol
 
 **Nivel 3 — día ~10+ (bloqueo hard)**  
 *Asunto:* Catálogo suspendido — regularización  
-*Cuerpo:* Por mora continuada activamos **bloqueo hard** (catálogo no visible). Para reactivar: pago mínimo del período vencido o plan escrito con tesorería Zonix.
+*Cuerpo:* Por mora continuada activamos **bloqueo hard** (catálogo no visible). Para reactivar: pago mínimo del período vencido o plan escrito con tesorería **Zonix Pharma**.
 
 ### 3.5 Para el repartidor
 
 - Recibe pago diario o semanal (según preferencia).
-- Foundamentación: WhatsApp con foto del comprobante.
+- Fundamentación: WhatsApp con foto del comprobante.
 
 ## 4. Factura digital SENIAT
 
@@ -188,8 +188,8 @@ Similar a 2.4, pero pago semanal a la empresa (no al agente individual) y consol
 ### 4.2 Emisión
 
 - Cada período mensual genera **una factura digital** a la farmacia que puede incluir **dos conceptos** (fija + variable sobre GMV del mes — ver §2.3).
-- Cada compra de paciente: la farmacia emite factura al paciente donde aplique (no Zonix).
-- Zonix solo factura a la farmacia el servicio de plataforma, no al paciente final por el medicamento.
+- Cada compra de paciente: la farmacia emite factura al paciente donde aplique (no **Zonix Pharma** en ese rol).
+- **Zonix Pharma** solo factura a la farmacia el servicio de plataforma, no al paciente final por el medicamento.
 
 ### 4.3 Archivado
 
@@ -201,11 +201,11 @@ Similar a 2.4, pero pago semanal a la empresa (no al agente individual) y consol
 
 | Riesgo                                             | Mitigación                                                                                                                                |
 | -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| Paciente sube comprobante falso                    | Validación visual por la farmacia + Customer Support de Zonix puede mediar. Penalización: cuenta suspendida en 24h.                       |
-| Farmacia no paga cuota Zonix                       | Política de bloqueo escalonado (§2.3); la deuda devengada subsiste hasta regularización o acuerdo escrito.                                |
+| Paciente sube comprobante falso                    | Validación visual por la farmacia + Customer Support de **Zonix Pharma** puede mediar. Penalización: cuenta suspendida en 24h.                       |
+| Farmacia no paga cuota **Zonix Pharma**                       | Política de bloqueo escalonado (§2.3); la deuda devengada subsiste hasta regularización o acuerdo escrito.                                |
 | Repartidor no recibe pago de farmacia              | Customer Support media. Penalización a la farmacia: bloqueo de delivery fee adicional hasta resolver.                                     |
 | Devaluación bolívar entre orden y pago             | Política: precio congelado por 30 minutos desde generación de orden. Si paciente excede, debe re-cotizar.                                 |
-| Sudeban regula a Zonix como intermediario de pagos | Piloto opera sin Zonix recibir dinero del paciente directamente. Si requiere, Zonix obtiene licencia Sudeban (12-18 meses, post-Serie A). |
+| Sudeban regula a **Zonix Pharma** como intermediario de pagos | Piloto opera sin **Zonix Pharma** recibir dinero del paciente directamente. Si requiere, **Zonix Pharma** obtiene licencia Sudeban (12-18 meses, post-Serie A). |
 | Bloqueo cuentas Zelle por origen VE                | Política: no usar Zelle como único método; tener PMC2P + Binance Pay como respaldo.                                                       |
 
 
@@ -225,9 +225,9 @@ Detalle: `[../FLUJO_PAGO_ORDEN.md](../FLUJO_PAGO_ORDEN.md)` y `[../logica-pagos-
 
 ### 7.1 Quién reembolsa
 
-- **Si el problema es de la farmacia** (medicamento equivocado, vencido, mal estado): la farmacia reembolsa al paciente directamente. Zonix media.
+- **Si el problema es de la farmacia** (medicamento equivocado, vencido, mal estado): la farmacia reembolsa al paciente directamente. **Zonix Pharma** media.
 - **Si el problema es del repartidor** (pérdida, robo durante la entrega): el repartidor pierde el delivery fee. La farmacia reembolsa al paciente y no paga al repartidor.
-- **Si el problema es de Zonix** (bug en la app, validación errónea): Zonix reembolsa al paciente (cargo a cuenta operativa, raro).
+- **Si el problema es de Zonix Pharma** (bug en la app, validación errónea): **Zonix Pharma** reembolsa al paciente (cargo a cuenta operativa, raro).
 
 ### 7.2 Tiempo de reembolso
 
@@ -236,7 +236,7 @@ Detalle: `[../FLUJO_PAGO_ORDEN.md](../FLUJO_PAGO_ORDEN.md)` y `[../logica-pagos-
 
 ### 7.3 Disputa final
 
-- Si paciente y farmacia no acuerdan: Customer Support de Zonix decide en base a evidencia (foto entrega, estado producto, comprobante).
+- Si paciente y farmacia no acuerdan: Customer Support de **Zonix Pharma** decide en base a evidencia (foto entrega, estado producto, comprobante).
 - Decisión inapelable en piloto. Post-Serie A se evalúa órgano externo.
 
 ## 8. KPIs de pagos
