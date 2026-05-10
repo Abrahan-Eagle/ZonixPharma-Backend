@@ -1,7 +1,7 @@
 # Análisis forense multi-perspectiva del pack
 
 > **Última actualización:** 10 mayo 2026.
-> Documento que somete el pack completo a auditoría desde 6 perspectivas narrativas: CEO/founder, economista, especialista en publicidad, cliente final / paciente, operador tercero (farmacia, pharmacist, delivery), inversionista. La **§11.1** y **§11.1 bis** añaden un **mapa rápido por rol ejecutivo** (CFO, COO, Legal, etc.) y lentes **DPO / CISO / auditoría interna / IR** para due diligence.
+> Documento que somete el pack completo a auditoría desde 6 perspectivas narrativas: CEO/founder, economista, especialista en publicidad, cliente final / paciente, operador tercero (farmacia, pharmacist, delivery), inversionista. La **§11.1** y **§11.1 bis** añaden un **mapa rápido por rol ejecutivo** (CFO, COO, Legal, etc.) y lentes **DPO / CISO / auditoría interna / IR** para due diligence. La **§11.4** consolida **síntesis multi-rol** tras lectura cruzada de los 21 documentos del directorio.
 > Cada perspectiva lista: fortalezas, hallazgos críticos, inconsistencias, mejoras propuestas con prioridad CRÍTICA / ALTA / MEDIA.
 > Las CRÍTICAS y ALTAS detectadas YA ESTÁN APLICADAS en los documentos del pack al cierre de este análisis.
 
@@ -13,7 +13,7 @@
 
 - **Stack ya construido:** ~4 años de desarrollo del **stack Zonix Pharma** + 397 tests pasando reduce riesgo de ejecución técnica drásticamente.
 - **Equipo lean defendible:** sin pharmacist liaison (legalmente correcto), sin diseñador UI/UX (founder tech), **7** FTE operativos en Base (Founder + Co-CEO + 2× Sales + CS+CM + Marketing + Delivery Ops) + **2** freelance (contador + abogado) = **9** puestos costeados; Growth suma **asesor regulatorio** externo — dimensionado para el piloto **Meta + 2 Sales**.
-- **Decisión coherente sobre capital:** **USD 101k** (Base) incorpora replante operativo (founder, **Co-CEO**, HQ, IA, CapEx PCs, salarios) con runway 12 meses y **~USD 27k** cash cierre año 1 ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3). Lean y Growth quedan como alternativas legítimas.
+- **Decisión coherente sobre capital:** **USD 101k** (Base) incorpora replante operativo (founder, **Co-CEO**, HQ, IA, CapEx PCs, salarios) con runway 12 meses y **~USD 27.045** cash cierre año 1 ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3). Lean y Growth quedan como alternativas legítimas.
 - **Plan T+0 / T+30 / T+60 / T+90 realista:** 30 días para constitución, 30 días para equipo + onboarding farmacias, 30 días para lanzamiento. Honesto.
 - **Founder con sueldo simbólico/profesional en Base (USD 1k/mes):** reduce “skin” puro en cash pero evita narrativa inconsistente con burn; el inversor debe verlo en presupuesto §3.3.
 
@@ -358,6 +358,23 @@ El pack es **invertible** después de aplicadas las CRÍTICAS y ALTAS. Las MEDIA
 3. Founder cotiza formalmente coworking, valla, abogado, contador.
 4. **Abogado** revisa T&C, privacidad, contrato marco farmacia, SAFE; **farmacéutico asesor** valida tabla controlados y copy salud.
 5. Lectura final del pack por el founder antes de enviar al primer inversor.
+
+### 11.4 Síntesis auditoría multi-rol (pack completo, mayo 2026)
+
+Lectura cruzada de los **21** `.md` del directorio con lentes ejecutivos y de control. **Evidencia técnica:** el backend del repo pasó **397 tests** / **1636 assertions** (`./vendor/bin/phpunit`, verificación 10 may 2026).
+
+| Rol | Foco en el pack | Veredicto breve |
+|-----|-----------------|-----------------|
+| **CEO** | Narrativa única **Zonix Pharma**, runway 12m, honestidad post-M12 | **OK** — [CONTEXTO](CONTEXTO_PITCH_Y_DECISIONES.md), [BRIEF](BRIEF_UNA_PAGINA.md), [MENSAJE](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) |
+| **CFO** | Fuente §1.1 / §1.3 [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md); caja cierre año 1 **~27.045**; one-shots **~10.408** | **OK** — redondeos “27k” unificados a **27.045** donde el pitch cita cifra ancla |
+| **COO** | SLAs, Rx, cold chain, soporte — [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) | **OK** sujeto a operación real piloto |
+| **CTO / CISO** | Stack Laravel+Flutter, tests, CI/NDA | **OK** — cifra tests verificada en repo |
+| **CPO** | PROPUESTA_* + roadmap T+X [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) | **OK** |
+| **CMO clínico / RA / QA-PV** | Claims, controlados, FV — PLAN_MODULO + marketing salud | **Sujeto a dictamen** MPPS/copy salud |
+| **Compliance / DPO / Legal** | [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §4.4; SAFE; contrato marco B2B | **Sujeto a abogado**; FAQ M&A SAFE corregida a redacción no engañosa |
+| **CRO ventas / CMO marketing / CHRO** | CAC/LTV, equipo 7 FTE + 2 FL | **OK** — [UNIT_ECONOMICS](UNIT_ECONOMICS.md), [CUESTIONARIO](CUESTIONARIO_EQUIPO_PILOTO.md) |
+| **Supply / logística** | Cadena frío, delivery — PROPUESTA_TERCER_LADO + PLAN_MODULO | **OK** |
+| **CRO riesgos / Auditoría / IR** | Sensibilidades §7 PROYECCION; cap SAFE; VOLCADO founder | **OK** con pendientes GitHub/referencias/% tiempo |
 
 ---
 

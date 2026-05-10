@@ -80,7 +80,7 @@ Detalle completo y construcción mes a mes en [PROYECCION_FINANCIERA_12M.md](PRO
 | Escenario | Tasa firma/mes | Churn | ARPF* | Equilibrio mensual (ref.) | Cash cierre año 1 |
 |---|---|---|---|---|---|
 | Pesimista (probabilidad 20%) | 4-7 | 7% | USD 40 | Post-M12 + bridge | **~USD 25-30k** cash cierre A1 (orden magnitud; [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §7.1) |
-| **Base (probabilidad 50%)** | **8-15** | **5%** | **USD 45** | **Post-M12** (mitigaciones §1.4 PROYECCION) | **~USD 27k** |
+| **Base (probabilidad 50%)** | **8-15** | **5%** | **USD 45** | **Post-M12** (mitigaciones §1.4 PROYECCION) | **~USD 27.045** |
 | Optimista (probabilidad 30%) | 12-20 | 4% | USD 50 | Antes si mix/GMV mejora | **~USD 45–55k** (orden magnitud; refinar FP&A) |
 
 \*Misma convención que la tabla anterior: ARPF es **referencia provisional** hasta recalibrar con GMV real y modelo híbrido ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5).
@@ -112,7 +112,7 @@ Detalle de las 3 sensibilidades en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FIN
 | 1-3 | Constitución legal C.A., onboarding 5-10 farmacias en Bella Florida y El Socorro, Day-D del piloto al final del mes 3. |
 | 4-6 | Expansión a 30-50 farmacias activas en Valencia metro. Primer mes con revenue > USD 1.500. |
 | 7-9 | 60-80 farmacias activas. Validación Rx en producción con > 200 recetas validadas. Primer mes con revenue > USD 3.500. |
-| 10-12 | 90-120 farmacias activas. **Ruta a equilibrio mensual** con mitigaciones (mix GMV, firmas, gasto) — ver [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.4. Cierre del año con **~USD 27k** cash y revenue mensual > USD 4.500. |
+| 10-12 | 90-120 farmacias activas. **Ruta a equilibrio mensual** con mitigaciones (mix GMV, firmas, gasto) — ver [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.4. Cierre del año con **~USD 27.045** cash y revenue mensual > USD 4.500. |
 
 ## Riesgos principales y mitigaciones
 
@@ -127,7 +127,7 @@ Detalle de las 3 sensibilidades en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FIN
 
 ## Pregunta al inversor
 
-> Buscamos **USD 101.000** vía SAFE con post-money cap **USD 600.000** para operar Zonix Pharma **12 meses** con runway, **Co-CEO** (segundo al mando) y **~USD 27k** cash proyectado al cierre año 1 ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3), **Meta Ads + 2 Sales B2B**, y narrativa honesta de **equilibrio mensual post-M12** salvo mejora de mix/GMV o curva de firmas (§1.4). Año 2: expansión Maracay + Maracaibo, revenue anual **USD 96–108k** referencia. Año 3: dos lecturas en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §3.3 — **conservador** ~**USD 180k–204k**/año (sin Serie A) vs **hasta ~USD 480k**/año en escenario **éxito / cobertura nacional**. La tecnología ya está construida; lo que se financia es **comercialización, hosting, equipo doble dirección, IA, CapEx HQ y buffer de inflación**.
+> Buscamos **USD 101.000** vía SAFE con post-money cap **USD 600.000** para operar Zonix Pharma **12 meses** con runway, **Co-CEO** (segundo al mando) y **~USD 27.045** cash proyectado al cierre año 1 ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3), **Meta Ads + 2 Sales B2B**, y narrativa honesta de **equilibrio mensual post-M12** salvo mejora de mix/GMV o curva de firmas (§1.4). Año 2: expansión Maracay + Maracaibo, revenue anual **USD 96–108k** referencia. Año 3: dos lecturas en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §3.3 — **conservador** ~**USD 180k–204k**/año (sin Serie A) vs **hasta ~USD 480k**/año en escenario **éxito / cobertura nacional**. La tecnología ya está construida; lo que se financia es **comercialización, hosting, equipo doble dirección, IA, CapEx HQ y buffer de inflación**.
 
 ## Llamada a la acción
 

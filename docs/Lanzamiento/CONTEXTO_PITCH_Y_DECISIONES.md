@@ -11,7 +11,7 @@
 - **Equipo técnico ya entrenado:** el founder conoce el stack al detalle.
 - **Riesgo de ejecución reducido:** lo único que se construye desde cero es la capa farmacéutica (Rx, lotes FIFO, cadena de frío, pharmacist colegiado), y eso ya está parcialmente implementado y documentado en [`../PLAN_RX_VALIDATION.md`](../PLAN_RX_VALIDATION.md) y [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md).
 
-**Mensaje para el inversor:** "compramos cuatro años de desarrollo con **USD 101.000**" (runway Base 12 meses + colchón cierre año 1 — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3; incluye **Co-CEO**).
+**Mensaje para el inversor:** "compramos **~4 años** de desarrollo del stack con **USD 101.000**" (runway Base 12 meses + colchón cierre año 1 — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3; incluye **Co-CEO**).
 
 ## 2. Decisiones tomadas y por qué
 
@@ -155,7 +155,7 @@ Estas se documentarán en un anexo cuando lleguen al frente. Hoy no son bloquean
 
 - **Honesto sobre lo que no se ha hecho:** "no tenemos ventas todavía, tenemos producto operativo y plan validado".
 - **Confiado sobre lo que sí está hecho:** "397 tests pasando, ~4 años de desarrollo del **stack Zonix Pharma**".
-- **Específico con números:** nunca decir "esperamos crecer mucho"; decir **~107 farmacias activas hacia el mes 11**, **~120** hacia M12, **~USD 27k** cash cierre año 1 (Base **101k** + **Co-CEO**), y que el **equilibrio mensual** con ARPF placeholder queda **post-M12** salvo mitigaciones ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3–1.4).
+- **Específico con números:** nunca decir "esperamos crecer mucho"; decir **~107 farmacias activas hacia el mes 11**, **~120** hacia M12, **~USD 27.045** cash cierre año 1 (Base **101k** + **Co-CEO**), y que el **equilibrio mensual** con ARPF placeholder queda **post-M12** salvo mitigaciones ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3–1.4).
 - **Realista sobre Venezuela:** mencionar la inflación de entrada, no esconder la complejidad regulatoria.
 - **Modular:** si el inversor pide ticket más chico (USD 25k), tenemos respuesta para Lean. Si pide ticket más grande (USD 90k), tenemos Growth.
 

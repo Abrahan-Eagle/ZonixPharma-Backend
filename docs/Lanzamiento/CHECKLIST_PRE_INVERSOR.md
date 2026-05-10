@@ -104,7 +104,7 @@
 
 | Q | A |
 |---|---|
-| ¿Por qué **USD 101k** y no **USD 60k** Lean? | "Lean es viable pero con menos holgura comercial/IA/CapEx. **101k** incorpora founder **1k**, **Co-CEO 1k**, HQ **500**, IA **~425**, **4 PCs** y replante salarial — runway 12 meses con **~USD 27k** cash cierre año 1 ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3)." |
+| ¿Por qué **USD 101k** y no **USD 60k** Lean? | "Lean es viable pero con menos holgura comercial/IA/CapEx. **101k** incorpora founder **1k**, **Co-CEO 1k**, HQ **500**, IA **~425**, **4 PCs** y replante salarial — runway 12 meses con **~USD 27.045** cash cierre año 1 ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3)." |
 | ¿Por qué LTV/CAC **~8,3x** si benchmarks SaaS son 3-5x? | "1) Revenue recurrente B2B (cuota + fee GMV) con take-rate total bajo vs agregadores. 2) Marketplace sticky por catálogo y rutas. 3) No operamos logística directa del medicamento (gross margin alto en software)." |
 | ¿Qué pasa si inflación VE supera 800%? | "Plan contingencia: cortar valla (USD 350), bajar marketing 50% (USD 250), reducir 1 hire si necesario (USD 400). Burn baja a USD 3.000/mes. Runway extiende 4-6 meses." |
 | ¿Hay sueldo del founder? | "**Base:** **USD 1.000/mes** CEO+CTO en burn ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3). Lean puede seguir en **0** según escenario; Growth histórico USD 250 desde mes 4 — revisar alineación con Base." |
@@ -116,7 +116,7 @@
 | ¿Por qué SAFE y no equity directo? | "Sin valuación arbitraria pre-revenue. Convierte automáticamente en próxima ronda. Estándar Y Combinator." |
 | ¿Cuándo convierte el SAFE? | "En la próxima ronda con valuación (Serie A esperada mes 18-24)." |
 | ¿Y si no hay Serie A en 24 meses? | "El SAFE no tiene fecha de vencimiento. Se mantiene hasta evento de conversión (ronda) o liquidación." |
-| ¿Qué pasa si **Zonix Pharma** se vende antes de Serie A? | "Cláusula estándar SAFE: convierte al 1x del monto invertido o el cap, lo que sea mayor para el inversor." |
+| ¿Qué pasa si **Zonix Pharma** se vende antes de Serie A? | "En un **liquidity event** (M&A) suele haber cláusula de **payout / conversión** según el **SAFE firmado** (no confundir con préstamo 1:1). La mecánica exacta (precio, cap, seniority) la cierra **abogado** con el texto del instrumento." |
 
 ### 7.6 Sobre los números
 

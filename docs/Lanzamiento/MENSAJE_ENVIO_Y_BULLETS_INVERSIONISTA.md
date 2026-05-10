@@ -7,7 +7,7 @@
 
 > Hola [Nombre del inversor],
 >
-> Soy **Abrahan Pulido**. Soy fundador de Zonix Pharma, un marketplace farmacéutico digital que estamos preparando para lanzar en Carabobo. La tecnología ya está construida (**stack Zonix Pharma**: Laravel + Flutter; **397 tests** pasando en backend) y estoy buscando **USD 101k** vía SAFE para **12 meses de runway** (incluye **Co-CEO** a **USD 1k/mes**) con **~USD 27k** cash proyectado al cierre año 1 y narrativa clara de **equilibrio mensual post-M12** salvo mejora de mix/GMV (ver [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3–1.4).
+> Soy **Abrahan Pulido**. Soy fundador de Zonix Pharma, un marketplace farmacéutico digital que estamos preparando para lanzar en Carabobo. La tecnología ya está construida (**stack Zonix Pharma**: Laravel + Flutter; **397 tests** pasando en backend) y estoy buscando **USD 101k** vía SAFE para **12 meses de runway** (incluye **Co-CEO** a **USD 1k/mes**) con **~USD 27.045** cash proyectado al cierre año 1 (≈27k; [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3) y narrativa clara de **equilibrio mensual post-M12** salvo mejora de mix/GMV (ver [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3–1.4).
 >
 > Modelo: la farmacia paga **cuota fija + un % moderado sobre GMV** en la app (tier dinámico por bandas — ver pack §5 B2B). El take-rate total sigue siendo **órden de magnitud menor** que Rappi/PedidosYa (25-35% GMV).
 >
@@ -86,7 +86,7 @@
 > - **LTV/CAC ~8,3x.** Payback **~2,4** meses.
 
 > **Slide 6: Plan**
-> - **USD 101.000** para 12 meses (incluye one-shots mes **1 ~USD 10,4k** — CapEx PCs + depósito/amueblado **HQ** + bloque legal/operativo; **Co-CEO** va en **burn** recurrente, no en one-shots).
+> - **USD 101.000** para 12 meses (incluye one-shots mes **1 ~USD 10.408** — CapEx PCs + depósito/amueblado **HQ** + bloque legal/operativo; **Co-CEO** va en **burn** recurrente, no en one-shots).
 > - Burn promedio **~USD 7.499**/mes (tramos **7.402 / 7.738 / 7.371**; Meta **800/500** + **2 Sales** + founder + **Co-CEO** + IA + HQ; buffer 20%; macro BCV 2026 desaceleración — stress externos 387-618% anual como referencia).
 > - Equilibrio mensual: **post-M12** con ARPF 45 y burn actual; mitigaciones en PROYECCION §1.4 (**107** activas mes 11 = **USD 4.815** revenue vs burn **7.371**).
 > - Año 2: expansión Maracay + Maracaibo. Revenue proyectado USD 96k-108k anuales.

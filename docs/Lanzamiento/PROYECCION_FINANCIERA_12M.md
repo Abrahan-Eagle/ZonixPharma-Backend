@@ -255,7 +255,7 @@ A partir de mes 4: **DAU/MAU**, **retención D7/D30** compradores, adopción fea
 - Churn 7% mensual.
 - ARPF USD 40.
 - Revenue mes 12: USD 2.400.
-- **Cash al cierre año 1:** **por debajo** del Base **~USD 27k** (orden magnitud **USD 18–24k** si se materializa; refinar FP&A con burn **~7,4k**). Runway acortado vs. plan.
+- **Cash al cierre año 1:** **por debajo** del caso central **~USD 27.045** (orden magnitud **USD 18–24k** si se materializa; refinar FP&A con burn **~7,4k**). Runway acortado vs. plan.
 - **Acción:** acelerar Serie A o bridge round mes 12-14.
 
 ### 7.2 Escenario base (probabilidad 50%)
