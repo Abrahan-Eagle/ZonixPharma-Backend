@@ -85,18 +85,18 @@ Ingeniero en Informática (IUTVAL, 2013–2018) con **más de 8 años** construy
 
 ## 5. Equipo contratado o en proceso
 
-### 5.1 Rol comercial B2B (**2 ejecutivos** — modelo Base)
+### 5.1 Rol comercial B2B (**4 ejecutivos** — modelo Base)
 
-Contratar **dos** personas en este rol (tercera columna opcional si se evalúa refuerzo futuro). Compensación: USD **120** fijo c/u + USD **30** por farmacia firmada (**al rep que la firmó**; no duplicado entre reps) ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) / pack económico).
+Contratar **cuatro** personas en este rol (quinta columna opcional si se evalúa refuerzo). Compensación: USD **120** fijo c/u + USD **30** por farmacia firmada (**al rep que la firmó**; no duplicado entre reps) ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) / pack económico).
 
-| Dato | Candidato 1 | Candidato 2 | Candidato 3 |
-|---|---|---|---|
-| Nombre | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
-| Edad | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
-| Experiencia previa relevante | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
-| Salario esperado | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
-| Disponibilidad para empezar | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
-| Decisión | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
+| Dato | Candidato 1 | Candidato 2 | Candidato 3 | Candidato 4 |
+|---|---|---|---|---|
+| Nombre | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
+| Edad | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
+| Experiencia previa relevante | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
+| Salario esperado | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
+| Disponibilidad para empezar | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
+| Decisión | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
 
 ### 5.2 Customer Support
 

@@ -1,11 +1,11 @@
 # Zonix Pharma — Brief de una página
 
-> **Última actualización:** 10 mayo 2026.
+> **Última actualización:** 11 mayo 2026.
 > Documento ancla del pack. Léase primero. Todas las cifras están detalladas en los documentos hermanos del directorio [docs/Lanzamiento/](README.md).
 
 ## Qué es
 
-**Zonix Pharma** es un marketplace farmacéutico digital para Venezuela. Conecta pacientes con farmacias afiliadas para comprar OTC y medicamentos con receta (Rx), con validación de receta por farmacéutico colegiado y delivery a domicilio o pickup en sucursal.
+**Zonix Pharma** es un marketplace farmacéutico digital para Venezuela. Conecta pacientes con farmacias afiliadas para comprar OTC y medicamentos con receta (Rx), con validación de receta por farmacéutico colegiado y **entrega a domicilio o pickup en sucursal**. La **última milla** la ejecutan **empresa(s) de delivery especializada(s)** bajo **concesión o contrato marco** con Zonix Pharma; la plataforma **no** opera flota propia de reparto.
 
 Es la **vertical farmacia** del **stack Zonix Pharma** (~4 años de código probado; misma base que delivery B2C previo): mismo equipo, misma tecnología, mismas integraciones de pago manual VE. La base técnica está construida y probada: backend Laravel con **397** tests pasando; app Flutter **sin issues** en `flutter analyze lib` en verificación Front mayo 2026 (suite `flutter test` en verde; CI según repo ZonixPharma-Front).
 
@@ -40,18 +40,18 @@ Es la **vertical farmacia** del **stack Zonix Pharma** (~4 años de código prob
 
 ## Diferenciadores claros
 
-- **Modelo B2B híbrido en USD** (cuota fija 20 / 35 / 50 + porcentaje moderado sobre GMV en app según banda): estructuralmente muy por debajo del take-rate 25-35% GMV de Rappi o PedidosYa Pharmacy. Detalle en [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5.
+- **Modelo B2B híbrido en USD** (cuota fija **25 / 40 / 55** + porcentaje moderado sobre GMV en app según banda): estructuralmente muy por debajo del take-rate 25-35% GMV de Rappi o PedidosYa Pharmacy. Detalle en [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5.
 - **Validación Rx por farmacéutico colegiado de la propia farmacia** dentro de la app, ya construida en backend. Cumple con la **Ley del Ejercicio de la Farmacia VE** sin que **Zonix Pharma** tenga que contratar un farmacéutico interno.
 - **Métodos de pago manuales VE soportados nativos:** Pago Móvil C2P, transferencia, Zelle, Binance Pay USDT — sin pasarelas internacionales caras, sin Stripe, sin necesidad de cuenta empresarial extranjera para operar.
 - **Stack autocontenido y probado:** backend MVP en producción interna con 397 tests pasando, frontend Flutter sin issues, Pusher real-time + Firebase FCM ya integrados.
-- **Equipo lean:** roles contratados Base = **Co-CEO** + **2× Sales B2B** + CS+CM + Marketing + Delivery Ops (+ founder técnico); 2 freelance (Contador, Abogado). Runway **12 meses** con **USD 101k** (Base). Founder técnico: **Abrahan Pulido**.
+- **Equipo lean:** roles contratados Base = **Co-CEO** + **4× Sales B2B** + CS+CM + Marketing + Delivery Ops (+ founder técnico); 2 freelance (Contador, Abogado). Runway **12 meses** con **USD 101k** (Base). Founder técnico: **Abrahan Pulido**.
 
 ## Mercado y oportunidad (validados)
 
 - **TAM Venezuela:** USD 1.638M/año (389M unidades × USD 4,21 promedio, fuente **Cifar VE**, datos **IMS/IQVIA** 2025). Crecimiento +17,49% YoY en unidades. CAGR 6,1% proyectado 2026-2032.
 - **TAM regional Carabobo:** ~350-450 farmacias (226 solo en Valencia metro, [Farmacias Saas](https://www.saasvenezuela.com/sucursales) y directorios públicos).
 - **SAM zona piloto (Bella Florida + El Socorro):** 30-50 farmacias durante el primer trimestre.
-- **SOM realista al cierre del año:** 107 farmacias activas (1,8% del SAM extendido a Valencia metro). Con **2 Sales + curva Meta** y el **replante de costos fijos** (founder, HQ, IA, equipo — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §6.1), el **equilibrio mensual** (revenue ≥ burn) con **ARPF 45** queda **después del mes 12** salvo mitigaciones ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.4).
+- **SOM realista al cierre del año:** 107 farmacias activas (1,8% del SAM extendido a Valencia metro). Con **4 Sales + curva Meta**, **cuota fija 25/40/55** y el **replante de costos fijos** (founder, HQ, IA, equipo — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §6.1), el **equilibrio mensual** (revenue ≥ burn) con **ARPF ~50** queda **después del mes 12** salvo mitigaciones ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.4).
 
 ## Modelo financiero (escenario Base)
 
@@ -59,17 +59,17 @@ Es la **vertical farmacia** del **stack Zonix Pharma** (~4 años de código prob
 |---|---|
 | Capital pedido | **USD 101.000** |
 | Runway | 12 meses |
-| Burn promedio mensual | **~USD 7.499** (tramos **7.402 / 7.738 / 7.371**) |
-| One-shots mes 1 (CapEx + depósito HQ, etc.) | **~USD 10.408** |
+| Burn promedio mensual | **~USD 7.559** (tramos **7.462 / 7.798 / 7.431**) |
+| One-shots mes 1 (CapEx + depósito HQ, etc.) | **~USD 9.808** |
 | Buffer ya incluido (inflación VE) | 20% |
-| ARPF (revenue por farmacia) | USD 45/mes *(placeholder hasta GMV piloto; cobro = híbrido — [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md))* |
-| CAC | USD **109** |
+| ARPF (revenue por farmacia) | USD **~50**/mes *(placeholder hasta GMV piloto; cobro = híbrido cuota 25/40/55 — [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md))* |
+| CAC | USD **139** |
 | Churn mensual (mediana SMB SaaS LatAm) | 5% |
-| LTV | USD 900 |
-| **LTV/CAC** | **~8,3x** |
-| Payback CAC | **~2,4 meses** |
-| **Equilibrio mensual (revenue ≥ burn)** | **Post mes 12** con ARPF 45 y burn actual; **~167** farmacias activas orden de magnitud (ver §1.4 [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)) |
-| **Cash cierre año 1** (despliegue capital Base) | **~USD 27.045** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3) |
+| LTV | USD 1.000 |
+| **LTV/CAC** | **~7,2x** |
+| Payback CAC | **~2,8 meses** |
+| **Equilibrio mensual (revenue ≥ burn)** | **Post mes 12** con ARPF ~50 y burn actual (**4×** Sales); **~151** farmacias activas orden de magnitud (**~149** con burn tramo C **7.431** ÷ 50; **~151** con burn promedio **~7.559** ÷ 50 — ver §1.4 [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md), [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §6) |
+| **Cash cierre año 1** (despliegue capital Base) | **~USD 29.862** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3) |
 | Año 2 proyección revenue conservadora | USD 96k–108k anuales |
 | Año 3 revenue ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §3.3) | **Conservador:** ~USD 180k–204k/año (sin Serie A). **Éxito / cobertura nacional:** hasta ~USD 480k/año. |
 
@@ -79,15 +79,17 @@ Detalle completo y construcción mes a mes en [PROYECCION_FINANCIERA_12M.md](PRO
 
 | Escenario | Tasa firma/mes | Churn | ARPF* | Equilibrio mensual (ref.) | Cash cierre año 1 |
 |---|---|---|---|---|---|
-| Pesimista (probabilidad 20%) | 4-7 | 7% | USD 40 | Post-M12 + bridge | **~USD 25-30k** cash cierre A1 (orden magnitud; [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §7.1) |
-| **Base (probabilidad 50%)** | **8-15** | **5%** | **USD 45** | **Post-M12** (mitigaciones §1.4 PROYECCION) | **~USD 27.045** |
-| Optimista (probabilidad 30%) | 12-20 | 4% | USD 50 | Antes si mix/GMV mejora | **~USD 45–55k** (orden magnitud; refinar FP&A) |
+| Pesimista (probabilidad 20%) | 4-7 | 7% | USD 40 | Post-M12 + bridge | **~USD 25-30k** cash cierre A1 (orden magnitud vs. central **~29.862**; [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §7.1) |
+| **Base (probabilidad 50%)** | **8-15** | **5%** | **USD ~50** | **Post-M12** (mitigaciones §1.4 PROYECCION) | **~USD 29.862** |
+| Optimista (probabilidad 30%) | 12-20 | 4% | USD 55 | Antes si mix/GMV mejora | **~USD 35–43k** (orden magnitud; alineado §7.3 [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md); refinar FP&A) |
 
 \*Misma convención que la tabla anterior: ARPF es **referencia provisional** hasta recalibrar con GMV real y modelo híbrido ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5).
 
 Detalle de las 3 sensibilidades en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) sección 7.
 
 ## Instrumento de inversión propuesto
+
+> **Nota escenarios (paradoja Growth &lt; Base en capital pedido):** el ticket **Growth (USD 90k)** es **menor** que **Base (USD 101k)** porque el modelo **Growth** en [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §4.3 **predató** el replante **Co-CEO + stack IA** del Base §3.3 y **no** incluye esas líneas en su burn — por eso el capital pedido puede ser **inferior** pese al nombre «Growth». Para comparación **apples-to-apples** entre Lean / Base / Growth, ver la nota bajo la tabla de cifras clave en [README.md](README.md).
 
 - **SAFE post-money cap USD 600.000** (escenario Base). Sin valuación, sin tasa de interés, sin fecha de vencimiento. El inversor convierte a equity en la próxima ronda con cap o descuento, lo que sea más favorable para él.
 - **Ticket sugerido:** USD 25.000 / 50.000 / **101.000** (lead) u otros tickets acordados.
@@ -97,10 +99,10 @@ Detalle de las 3 sensibilidades en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FIN
 ## Equipo
 
 - **Founder / CEO / CTO:** **Abrahan Pulido** — Ingeniero en Informática (IUTVAL), full stack Laravel + Flutter + MySQL, 8+ años en producto; fundador de **Zonix Pharma** (evolución del mismo stack desde delivery B2C), **Corral X**, **Zonix Imports** y **Aiblockweb**. Contacto: `ing.pulido.abrahan@gmail.com`, +58 412 4352014, [LinkedIn](https://www.linkedin.com/in/abrahan-pulido-909a35b7/), [aiblockweb.com](https://aiblockweb.com).
-- **Sales B2B (2 ejecutivos):** USD **120** fijo c/u + USD **30** comisión por farmacia firmada.
+- **Sales B2B (4 ejecutivos):** USD **120** fijo c/u + USD **30** comisión por farmacia firmada.
 - **Customer Support + Community Manager:** USD **350**/mes (+50 si KPI → 400).
 - **Marketing Lead + apoyo a dirección:** USD **400**/mes (+100 bonus si KPI); dirección general: **Co-CEO**.
-- **Delivery Ops Coordinator:** USD **300**/mes (+100 si KPI → 400) desde mes 1 (Base).
+- **Delivery Ops Coordinator:** USD **300**/mes (+100 si KPI → 400) desde mes 1 (Base) — **enlace operativo** con **empresa(s) concesionaria(s)** de última milla; Zonix **no** opera flota propia.
 - **Contratación / nombres** de los roles anteriores: plantilla operativa en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) (montos ya cerrados en [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3).
 - **Contador externo (freelance):** USD 130/mes — IVA, ISLR, factura digital SENIAT.
 - **Abogado externo (freelance):** USD 200/mes — contratos, T&C, SAPI.
@@ -112,7 +114,7 @@ Detalle de las 3 sensibilidades en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FIN
 | 1-3 | Constitución legal C.A., onboarding 5-10 farmacias en Bella Florida y El Socorro, Day-D del piloto al final del mes 3. |
 | 4-6 | Expansión a 30-50 farmacias activas en Valencia metro. Primer mes con revenue > USD 1.500. |
 | 7-9 | 60-80 farmacias activas. Validación Rx en producción con > 200 recetas validadas. Primer mes con revenue > USD 3.500. |
-| 10-12 | 90-120 farmacias activas. **Ruta a equilibrio mensual** con mitigaciones (mix GMV, firmas, gasto) — ver [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.4. Cierre del año con **~USD 27.045** cash y revenue mensual > USD 4.500. |
+| 10-12 | 90-120 farmacias activas. **Ruta a equilibrio mensual** con mitigaciones (mix GMV, firmas, gasto) — ver [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.4. Cierre del año con **~USD 29.862** cash y revenue mensual > USD 5.000. |
 
 ## Riesgos principales y mitigaciones
 
@@ -127,7 +129,7 @@ Detalle de las 3 sensibilidades en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FIN
 
 ## Pregunta al inversor
 
-> Buscamos **USD 101.000** vía SAFE con post-money cap **USD 600.000** para operar Zonix Pharma **12 meses** con runway, **Co-CEO** (segundo al mando) y **~USD 27.045** cash proyectado al cierre año 1 ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3), **Meta Ads + 2 Sales B2B**, y narrativa honesta de **equilibrio mensual post-M12** salvo mejora de mix/GMV o curva de firmas (§1.4). Año 2: expansión Maracay + Maracaibo, revenue anual **USD 96–108k** referencia. Año 3: dos lecturas en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §3.3 — **conservador** ~**USD 180k–204k**/año (sin Serie A) vs **hasta ~USD 480k**/año en escenario **éxito / cobertura nacional**. La tecnología ya está construida; lo que se financia es **comercialización, hosting, equipo doble dirección, IA, CapEx HQ y buffer de inflación**.
+> Buscamos **USD 101.000** vía SAFE con post-money cap **USD 600.000** para operar Zonix Pharma **12 meses** con runway, **Co-CEO** (segundo al mando) y **~USD 29.862** cash proyectado al cierre año 1 ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3), **Meta Ads + 4 Sales B2B**, **cuota plataforma 25/40/55 USD**, y narrativa honesta de **equilibrio mensual post-M12** salvo mejora de mix/GMV o curva de firmas (§1.4). Año 2: expansión Maracay + Maracaibo, revenue anual **USD 96–108k** referencia. Año 3: dos lecturas en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §3.3 — **conservador** ~**USD 180k–204k**/año (sin Serie A) vs **hasta ~USD 480k**/año en escenario **éxito / cobertura nacional**. La tecnología ya está construida; lo que se financia es **comercialización, hosting, equipo doble dirección, IA, CapEx HQ y buffer de inflación**.
 
 ## Llamada a la acción
 

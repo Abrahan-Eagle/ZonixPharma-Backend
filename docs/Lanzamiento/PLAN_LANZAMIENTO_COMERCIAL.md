@@ -1,6 +1,6 @@
 # Plan de lanzamiento comercial
 
-> **Última actualización:** 10 mayo 2026.
+> **Última actualización:** 11 mayo 2026.
 > Documento que detalla el calendario operativo desde el cierre de inversión hasta el Day-D del piloto y los primeros 90 días post-lanzamiento.
 > El calendario es **relativo a T+0 = cierre de inversión**, ya que la fecha absoluta depende de cuándo entre el dinero.
 
@@ -34,7 +34,7 @@
 
 | Hito | Status |
 |---|---|
-| Publicación de vacantes (**Co-CEO / CEO operativo**, **2× Sales B2B**, Customer Support, Marketing Lead, Delivery Ops) | T+0 a T+5 |
+| Publicación de vacantes (**Co-CEO / CEO operativo**, **4× Sales B2B**, Customer Support, Marketing Lead, Delivery Ops) | T+0 a T+5 |
 | Entrevistas y selección | T+5 a T+20 |
 | Contratación + onboarding | T+20 a T+28 |
 | Capacitación inicial (producto + procesos) | T+28 a T+30 |
@@ -88,10 +88,15 @@
 
 ### 3.2 Hitos de delivery (T+30 a T+60)
 
+**Modelo:** última milla ejecutada por **empresa(s) especializada(s)** vía **concesión o contrato marco**; Zonix **no** opera flota propia. Los hitos siguientes cubren **partner** +, si aplica, **complemento** `delivery` autónomo en app.
+
 | Hito | Status |
 |---|---|
-| Onboarding 5-8 repartidores autónomos | T+30 a T+50 |
-| KYC de cada repartidor | T+30 a T+55 |
+| Negociación **borrador contrato marco / concesión** con **1 empresa** candidata (SLA, zonas, tarifas, datos, seguros) | T+30 a T+45 |
+| Firma **carta de intención** o contrato marco (según abogado) con empresa concesionaria | T+40 a T+50 |
+| Onboarding **agentes** del partner en app (`delivery_company` / `delivery_agent`) | T+45 a T+58 |
+| Onboarding **5-8 repartidores autónomos** (`delivery`) **solo si** se acuerda complemento operativo al partner | T+45 a T+58 |
+| KYC de cada repartidor / agente según rol | T+30 a T+55 |
 | Test entrega real con órdenes internas | T+55 a T+60 |
 | Definición de zona inicial de cobertura por **polos acotados** (Bella Florida + corredor vía Tocuyito hacia El Socorro); radios operativos por polo según **mapa real**, no un único círculo fijo | T+30 |
 
@@ -141,7 +146,7 @@
 
 ### 4.3 Días T+91 a T+100 — Estabilización
 
-- Customer Support 24/7 los primeros 10 días (turnos del founder + Customer Support + **equipo Sales B2B (2)** en standby).
+- Customer Support 24/7 los primeros 10 días (turnos del founder + Customer Support + **equipo Sales B2B (4)** en standby).
 - Bug fixing prioritario.
 - Iteración rápida basada en feedback de paciente y farmacia.
 
@@ -160,7 +165,7 @@ Criterios para considerar el piloto exitoso:
 | Tasa cancelación de orden | ≤ 8% |
 | Tasa de comprobante falso | ≤ 0,5% |
 | Revenue mensual | ≥ USD 1.500 |
-| Cash en banco | ≥ **~USD 49.000** (alineado a proyección Base **USD 101k** + **Co-CEO** — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3: cash final mes **6 ~USD 49.041**) |
+| Cash en banco | ≥ **~USD 49.700** (alineado a proyección Base **USD 101k** + **Co-CEO** + **4×** Sales — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3: cash final mes **6 ~USD 49.748**) |
 
 **Si NO se alcanzan estos criterios:** activar plan de contingencia documentado en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) sección 4.
 
@@ -176,7 +181,7 @@ Criterios para considerar el piloto exitoso:
 ### 6.2 Mes 10-12: Resto Valencia metro
 
 - Onboarding 30-40 farmacias adicionales.
-- Posible primer agregado: 1 empresa de delivery (5-8 agentes).
+- **Ampliación logística:** segundo **partner** concesionario o más **agentes** bajo el contrato marco existente (orden de magnitud **5-8 agentes** adicionales si aplica).
 - Meta: 120 farmacias activas en mes 12.
 
 ### 6.3 Año 2: Maracay (mes 13-14) + Maracaibo (mes 18)

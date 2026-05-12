@@ -1,6 +1,6 @@
 # Montos de referencia validados con fuentes de internet
 
-> **Última actualización:** 10 mayo 2026.
+> **Última actualización:** 11 mayo 2026.
 > Documento que lista las fuentes web públicas de cada cifra utilizada en el pack.
 > Cada precio o métrica venezolana puede variar mensualmente por inflación (macro 2026: **desaceleración oficial BCV** vs. escenarios externos pesimistas 387-618%). **Reconfirmar trimestralmente.**
 
@@ -39,7 +39,7 @@
 | Sales B2B junior (con comisión) | USD 100-200 fijo + comisión | [Computrabajo VE](https://ve.computrabajo.com/) búsquedas 2025-2026 |
 | Customer Support / community manager | USD 250-400 | [Indeed Venezuela](https://ve.indeed.com/) y [LinkedIn Salary Insights](https://www.linkedin.com/salary/) |
 | Marketing Lead junior-mid | USD 400-700 | LinkedIn Salary VE 2025 |
-| Delivery Ops Coordinator | USD 300-500 | Computrabajo VE 2025 |
+| Delivery Ops Coordinator | USD 300-500 | Computrabajo VE 2025; en Zonix Pharma el rol es **enlace con partner** de última milla (**sin** flota propia) |
 | Contador externo freelance (PYME) | USD 100-200/mes | [Tabla mínima Federación de Contadores VE](https://www.fccpv.org/) y promedio Computrabajo |
 | Abogado externo freelance (PYME) | USD 150-300/mes | Federación VE de Abogados, tarifas referenciales 2025 |
 | Asesor regulatorio farmacéutico | USD 100-200/mes | Estimado en base a consultorías especializadas LatAm |
@@ -73,12 +73,9 @@
 | Oficina propia 34-38m² | 2 ambientes + baño | USD 280-380 | Mismo |
 | Oficina propia 40-50m² | Sala recepción + 2 oficinas | USD 380-550 | Mismo |
 
-**Decisión del pack (tablas históricas §3.3 PRESUPUESTO):**
-- Lean: coworking básico USD 100/mes.
-- Base: oficina 34-38m² USD 280/mes.
-- Growth: oficina 34-38m² USD 280/mes (igual que Base).
+**Cierre numérico vigente (mayo 2026):** las líneas de inmueble en [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) **§3.3 / §4.3 / §6.1** son la **fuente de verdad** del pack: **Lean** coworking **USD 100/mes**; **Base** **HQ tipo casa USD 500/mes** (ya **sustituye** el ancla histórico **USD 280** “oficina 34–38 m²” de tablas previas); **Growth** conserva **USD 280** en su escenario §4.3 hasta unificar FP&A con Base — ver [README.md](README.md) nota Growth.
 
-**Decisión operativa founder (mayo 2026 — pendiente recalibrar FP&A):** HQ tipo **casa en alquiler USD 500/mes** (sustituye la línea 280 en el próximo cierre numérico). Ver [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §6.1.
+**Tabla de rangos arriba (USD 200–550):** solo **referencia de mercado** (listados coworking / oficina) para **cotizar y justificar** el **Base 500** frente a alternativas; **no** implica que el **Base** siga “pendiente” en **USD 280**.
 
 ## 6. Servicios públicos VE 2026
 
@@ -154,7 +151,7 @@ Detalle en [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md).
 | VC raised total (estimado) | **~USD 22M** reportado en agregadores (Tracxn, LeadIQ, EquityZen 2025-2026); **hasta ~USD 33M** en algunas bases (ej. PitchBook, 5 rondas) | [Tracxn](https://tracxn.com/d/companies/farmalisto/), [PitchBook](https://pitchbook.com/profiles/company/210015-91) |
 | País origen | México (**operación MX + CO + PE**) | Crunchbase / sitio corporativo |
 | Año fundación | 2012 | Crunchbase |
-| Modelo | Marketplace farmacéutico + delivery propio | Web Farmalisto |
+| Modelo | Marketplace farmacéutico con **logística propia del actor** (benchmark Farmalisto, no Zonix) | Web Farmalisto |
 | Comisión sobre ventas (estimada) | 12-18% | Industry estimates |
 
 ### 10.2 Rappi (vertical Pharmacy)

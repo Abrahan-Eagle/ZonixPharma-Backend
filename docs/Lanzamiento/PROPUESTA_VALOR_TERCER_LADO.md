@@ -1,12 +1,16 @@
 # Propuesta de valor — Tercer lado (Delivery, Delivery Company, Pharmacist colegiado)
 
-> **Última actualización:** 10 mayo 2026.
+> **Última actualización:** 11 mayo 2026.
 > Documento que captura el pitch a los tres roles que sostienen la operación: repartidor autónomo (`delivery`), empresa de delivery (`delivery_company` + sus `delivery_agent`), y farmacéutico colegiado (`pharmacist`).
 > Cada uno tiene flujo distinto. Esta propuesta los cubre por separado.
+
+**Última milla (decisión operativa):** **Zonix Pharma no opera flota propia de reparto.** La **ejecución física** del delivery (conductores, vehículos, cumplimiento en ruta) se delega mediante **concesión o contrato marco** a **empresa(s) de delivery especializada(s)**. La plataforma integra asignación, tracking y reglas comerciales; el rol interno **Delivery Ops Coordinator** es **enlace y gobernanza** (SLA, zonas, incidencias) con el **partner**, no empleador de repartidores. El rol **`delivery` autónomo** en la app puede usarse como **complemento** en piloto (picos, zonas puntuales) sin cambiar la narrativa de **operador principal por concesión**.
 
 ---
 
 ## A. Repartidor autónomo (`delivery`)
+
+> **Contexto concesión:** el modelo comercial prioriza **empresa concesionaria** (sección B). La sección A describe el pitch al **repartidor autónomo** cuando participe en el ecosistema técnico del marketplace (p. ej. complemento operativo); contratos, seguros y relación laboral siguen la normativa aplicable al vínculo real (partner vs. autónomo).
 
 ### A.1 Quién es
 
@@ -40,9 +44,11 @@
 
 ### A.5 Cuántos hay y cuántos necesitamos
 
-- **Piloto T+30 / T+50:** **5–8** repartidores autónomos onboarded ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §3.2).
-- **Cierre año 1 zona piloto:** **10–15** repartidores autónomos **activos** (stock estable post Day-D).
-- **Año 1 Valencia metro:** 25-35.
+> **Prioridad operativa:** **empresa concesionaria** (sección B) ejecuta la flota. Los rangos siguientes de **`delivery` autónomo** aplican si se usa como **complemento** en app (no como sustituto del partner).
+
+- **Piloto T+30 / T+50:** **5–8** repartidores autónomos **si** se acuerda complemento al partner ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §3.2).
+- **Cierre año 1 zona piloto:** **10–15** capacidad de campo **combinada** (principalmente **agentes del partner**; autónomos activos según mix real).
+- **Año 1 Valencia metro:** 25-35 (mix partner + complemento).
 - **Año 2 Carabobo + Aragua:** 60-80.
 
 ### A.6 Onboarding
@@ -61,8 +67,8 @@
 
 ### B.1 Quién es
 
-- Empresa local que tiene flota propia de repartidores con contrato.
-- Hoy trabaja para Farmatodo, Locatel, supermercados, restaurantes.
+- Empresa local **especializada en última milla**, con flota y repartidores bajo su propia operación — **candidata natural a concesión o contrato marco** con Zonix Pharma para ejecutar el reparto en zona piloto.
+- Hoy suele trabajar para Farmatodo, Locatel, supermercados, restaurantes u otros B2B logísticos.
 - Quiere agregar Zonix Pharma a su portafolio de clientes B2B.
 
 ### B.2 Dolor que tiene hoy
@@ -73,7 +79,7 @@
 
 ### B.3 Lo que Zonix Pharma le ofrece
 
-- **Cliente B2B nuevo:** órdenes constantes desde mes 4 del piloto.
+- **Cliente B2B nuevo:** canal de órdenes recurrentes en zona piloto una vez firmado el **contrato marco / concesión** y completado el onboarding del partner (calendario en [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §3.2).
 - **Coordinación automática:** la app asigna a sus repartidores via API.
 - **Pagos consolidados semanales** a la empresa (no a cada repartidor individualmente).
 - **Métricas de desempeño:** dashboard con NPS, tiempo promedio, órdenes completadas.
@@ -88,9 +94,9 @@
 
 ### B.5 Targets año 1
 
-- **Mes 1-3:** 0 empresas (solo repartidores autónomos).
-- **Mes 4-6:** 1 empresa con 5-8 agentes.
-- **Mes 7-12:** 2-3 empresas con 15-25 agentes totales.
+- **Mes 1-3:** **1 empresa concesionaria** (contrato marco) en activación en zona piloto; volumen inicial con **agentes** del partner. Rol **`delivery` autónomo** solo como **complemento** si el contrato y la operación lo permiten (no como sustituto de flota propia de Zonix).
+- **Mes 4-6:** consolidar SLAs + eventual **segunda** empresa o más **agentes** bajo el mismo marco.
+- **Mes 7-12:** **2-3 empresas** o **15-25 agentes** totales bajo partners (orden de magnitud; FP&A según contratos reales).
 
 ### B.6 Onboarding
 

@@ -1,6 +1,6 @@
 # Propuesta de valor — Usuario final (Paciente / Buyer)
 
-> **Última actualización:** 10 mayo 2026.
+> **Última actualización:** 11 mayo 2026.
 > Documento que captura el pitch al usuario final que descarga la app o entra a la web.
 > El paciente es el rol `users` (Buyer) en el backend.
 
@@ -72,8 +72,8 @@
 
 ### 3.4 Delivery a domicilio o pickup
 
-- Delivery autónomo o de empresa de delivery.
-- Tiempo promedio prometido: 60-90 minutos en Bella Florida y El Socorro.
+- La **última milla** la ejecutan **empresa(s) de delivery especializada(s)** bajo **concesión o contrato marco** con Zonix Pharma; la app orquesta asignación y tracking. Rol **`delivery` autónomo** o **`delivery_agent`** puede aparecer según el partner y complementos operativos ([PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md)).
+- Tiempo promedio prometido: 60-90 minutos en Bella Florida y El Socorro (sujeto a SLA con el operador).
 - Pickup en sucursal opcional para Rx retenida o sustancias controladas.
 
 ### 3.5 Tracking del repartidor en tiempo real
@@ -213,7 +213,7 @@ Estos KPIs se reportan trimestralmente al inversor.
 
 | Riesgo | Probabilidad | Plan B |
 |---|---|---|
-| Descargas < 1.500 en mes 6 | Media | Tolerar CPL Meta Ads hasta **USD 0,80** / aumentar presupuesto Meta hasta saturar curva; activar **TikTok Ads**; promociones de **delivery gratis** primer pedido. |
+| Descargas < 1.500 en mes 6 | Media | Tolerar CPL Meta Ads hasta **USD 0,80** / aumentar presupuesto Meta hasta saturar curva; activar **TikTok Ads**; cupón promocional primer pedido (costo acotado en marketing, **no** subsidio recurrente de delivery en burn). |
 | Conversión registro → primer pedido < 15% | Media | Llamada de Customer Support a usuarios registrados sin pedido. Encuesta para entender fricción. |
 | NPS < 25 | Media-baja | Encuesta cualitativa. Probable causa: tiempo de entrega o validación Rx. Plan: subir tarifa delivery o ampliar farmacias en zona. |
 

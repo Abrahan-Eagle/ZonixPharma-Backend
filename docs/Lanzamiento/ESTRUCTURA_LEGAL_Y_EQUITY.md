@@ -52,6 +52,8 @@
 | **Total** | **~30 días + 60-90 marca SAPI** | **~1.450** |
 
 > **Nota:** esta tabla detalla cada trámite (total **~USD 1.450** con SAPI y sello digital en la misma lista). El [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.1 agrupa los trámites operativos prioritarios en el **one-shot Lean de USD 1.150** (constitución + RIF + apertura cuenta + sello; SAPI puede correr en paralelo como gasto diferido). El delta (**~USD 300**) corresponde principalmente a **SAPI** y partidas opcionales según avance del trámite.
+>
+> **Lectura CFO (1.150 vs 1.450):** **constitución operativa prioritaria** (C.A. + RIF + cuenta + sello, **sin** contabilizar SAPI como caja obligatoria el mes cero) **USD ~1.100–1.150**. **Con SAPI** en la misma ventana de planificación: **~USD 1.450**. El presupuesto §2.1 usa **USD 1.150** como **one-shot prioritario** al arranque; **SAPI** puede tratarse como **gasto diferido / paralelo** según caja y dictamen contable.
 
 ## 2. Instrumento de inversión: SAFE post-money cap
 

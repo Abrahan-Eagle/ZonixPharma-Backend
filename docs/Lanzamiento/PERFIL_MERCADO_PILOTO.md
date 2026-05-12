@@ -1,6 +1,6 @@
 # Perfil de mercado y zona piloto
 
-> **Última actualización:** 10 mayo 2026.
+> **Última actualización:** 11 mayo 2026.
 > Documento de mercado: TAM / SAM / SOM, demografía Carabobo, benchmarks competitivos.
 > Todas las cifras citadas tienen fuente web pública. Las fuentes están en [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md).
 
@@ -46,11 +46,11 @@ Construido bottom-up, no top-down.
 
 | Mes | Farmacias activas | % SAM Valencia metro | Revenue mensual proyectado |
 |---|---|---|---|
-| 3 | 8 | 4,5% del piloto inicial | USD 200 |
-| 6 | 38 | 21% del piloto inicial / 17% SAM extendido | USD 1.515 |
-| 9 | 78 | 43% SAM extendido | USD 3.276 |
-| **11** | **107** | **59% SAM extendido / 47% Valencia metro** | **USD 4.815** *(revenue; burn mes 11 **7.371** — no equilibrio mensual)* |
-| 12 | 120 | 67% SAM extendido | USD 5.400 |
+| 3 | **15** | **~6,6%** Valencia metro *(alineado [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1)* | **USD 400** |
+| 6 | **41** | **~18%** Valencia metro / **~25%** SAM extendido *(150–180; §1.1)* | **USD 1.850** |
+| 9 | 78 | **~35%** Valencia metro / **~43%** SAM extendido | **USD 3.700** *(§1.1)* |
+| **11** | **107** | **59% SAM extendido / 47% Valencia metro** | **USD 5.350** *(revenue; burn mes 11 **7.431** — no equilibrio mensual)* |
+| 12 | 120 | 67% SAM extendido | USD 6.000 |
 
 **Año 2:** expansión a Maracay y Maracaibo. SOM proyectado 200-220 farmacias activas, revenue mensual USD 8.000-9.000 (anual USD 96k-108k).
 
@@ -145,7 +145,7 @@ El piloto combina **dos focos geográficos** dentro de Valencia metro: **Urb. Be
 ### 6.4 Razones operativas
 
 - **Founder vive en Carabobo:** decisiones operativas en horas, no días.
-- **Logística manejable:** un Delivery Ops Coordinator + 10-15 repartidores cubren la zona.
+- **Logística manejable:** **Delivery Ops** como enlace con **empresa concesionaria** de última milla + capacidad de campo del **partner** en el orden de **10-15 agentes** en zona piloto (mapa y contrato marco).
 - **Marketing local barato:** una valla 3m×2m USD 350/mes en av. Bolívar Norte capta ~20.000 impactos/día (fuente: [PubliExterior VE](https://www.publiexterior.com/), tarifario 2025).
 
 ## 7. Mercado expansión año 2
@@ -163,13 +163,13 @@ El piloto combina **dos focos geográficos** dentro de Valencia metro: **Urb. Be
 
 Basado en benchmarks LatAm (mercados B2B SaaS para SMB):
 
-- **Mes 1-3:** 8 farmacias activas (1,8% del SAM zona piloto inicial, 4,5% del SAM extendido).
-- **Mes 4-6:** 38 farmacias activas (21% del SAM extendido).
-- **Mes 7-9:** 78 farmacias activas (43%).
-- **Mes 10-12:** 107-120 farmacias activas (59-67%).
+- **Mes 1-3:** A cierre mes **3:** **15** farmacias activas (**~6,6%** Valencia metro / orden **~30–50%** del piloto inicial 30–50 puntos — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1).
+- **Mes 4-6:** A cierre mes **6:** **41** farmacias activas (**~18%** Valencia metro / **~25%** SAM extendido 150–180).
+- **Mes 7-9:** A cierre mes **9:** **78** farmacias activas (**~35%** Valencia metro / **~43%** SAM extendido).
+- **Mes 10-12:** A cierre mes **11–12:** **107–120** farmacias activas (**~47–53%** Valencia metro / **~59–67%** SAM extendido).
 
 Estos números asumen:
-- Sales B2B (2 reps, **firmas/mes en total**): ~**5-6** mes 1, **8-12** meses 4-6, **~14** meses 7-11 (ritmo medio anual **~10,7**/mes — coherente con [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1).
+- Sales B2B (**4 reps**, firmas/mes en total): ~**5-6** mes 1, **8-12** meses 4-6, **~14** meses 7-11 (ritmo medio anual **~10,7**/mes — coherente con [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1). Productividad individual orientativa: **~2,7 firmas/rep/mes** en cruise (10,7 ÷ 4).
 - Marketing digital + valla + referencias generan 3-5 leads orgánicos/mes desde mes 6.
 - Churn 5% mensual (la farmacia que no vende suficientemente cierra cuenta).
 
@@ -186,7 +186,7 @@ Estos números asumen:
 
 ## 10. Resumen para el inversor
 
-> Mercado farmacéutico VE: USD 1.638M/año (Cifar / IMS-IQVIA), creciendo +17,49% en unidades. 226 farmacias en Valencia metro, 30-50 en la zona piloto inicial. Comparable internacional (Farmalisto): ~USD 32M revenue; funding reportado ~USD 22M (hasta ~USD 33M según fuente). Diferencial: **cuota plataforma + % GMV moderado** vs. comisión 25-35% de Rappi. Unit economics resumidos en [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) (CAC **109**, LTV/CAC **~8,3x** con ARPF placeholder). Validación Rx digital + soporte cadena de frío + multi-sucursal son ventajas que ningún competidor en VE tiene hoy.
+> Mercado farmacéutico VE: USD 1.638M/año (Cifar / IMS-IQVIA), creciendo +17,49% en unidades. 226 farmacias en Valencia metro, 30-50 en la zona piloto inicial. Comparable internacional (Farmalisto): ~USD 32M revenue; funding reportado ~USD 22M (hasta ~USD 33M según fuente). Diferencial: **cuota plataforma + % GMV moderado** vs. comisión 25-35% de Rappi. Unit economics resumidos en [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) (CAC **139**, LTV/CAC **~7,2x** con ARPF placeholder **~50**). Validación Rx digital + soporte cadena de frío + multi-sucursal son ventajas que ningún competidor en VE tiene hoy.
 
 Documentos hermanos relevantes:
 - [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md): qué decir a la farmacia.

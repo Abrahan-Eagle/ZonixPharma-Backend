@@ -1,14 +1,14 @@
 # Proyección financiera 12 meses (+ año 2 y 3 + plan contingencia)
 
-> **Última actualización:** 10 mayo 2026.
+> **Última actualización:** 11 mayo 2026 (replante comercial: cuota fija **+USD 5** por tier **25/40/55**, **4×** Sales B2B, ARPF placeholder **~50**, burn tramos **7.462 / 7.798 / 7.431**; **sin** bono piloto farmacias ni **delivery fee subsidiado** en burn — ver [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md); **última milla por concesión** a operador especializado).
 > Documento que traduce los unit economics y el presupuesto a un flujo mes a mes para los 3 escenarios.
 > Cifras en USD constantes con buffer 20% ya aplicado al burn.
 
 ## 1. Modelo del escenario Base (USD 101k)
 
-**Nota modelo comercial:** el revenue de farmacias en la tabla usa **ARPF USD 45/mes** como placeholder ([UNIT_ECONOMICS.md](UNIT_ECONOMICS.md)). El cobro vigente es **híbrido fija + % GMV** ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5); conviene **recalibrar la columna Revenue** cuando haya GMV piloto sin alterar la lectura principal de burn/runway.
+**Nota modelo comercial:** el revenue de farmacias en la tabla usa **ARPF USD ~50/mes** como placeholder ([UNIT_ECONOMICS.md](UNIT_ECONOMICS.md)): mix **60/30/10** Basic/Pro/Enterprise con cuota fija **USD 25 / 40 / 55** (+**USD 5** por nivel respecto al ancla histórico 20/35/50) y la **misma** parte variable % GMV que §5 B2B. El cobro vigente sigue siendo **híbrido** ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5); conviene **recalibrar la columna Revenue** cuando haya GMV piloto.
 
-**Nota replante operativo (mayo 2026):** el **burn** mensual integra **HQ casa USD 500**, **sueldo founder USD 1.000**, **sueldo Co-CEO / CEO operativo USD 1.000**, **stack IA ~USD 425/mes** y **replante salarial** (CS+CM, Marketing, Delivery). Los **CapEx 4 PCs** van en **one-shots** mes 1 (**no** en el burn recurrente) — alineado a [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3 y §6.1. El ticket **Base** sube de **USD 95k** a **USD 101k** para absorber **~12.000 USD/año** del segundo al mando sin romper el cierre contable del presupuesto. Con **ARPF 45** y la **misma curva de farmacias**, el **equilibrio mensual** (revenue ≥ burn) queda **después del mes 12**; mitigaciones: mix de tier / GMV, acelerar firmas, ajuste de gasto fijo, **entrada escalonada** del sueldo Co-CEO o **bridge** a mitad de año (ver §1.4).
+**Nota replante operativo (mayo 2026):** el **burn** mensual integra **HQ casa USD 500**, **sueldo founder USD 1.000**, **sueldo Co-CEO / CEO operativo USD 1.000**, **stack IA ~USD 425/mes**, **replante salarial** (CS+CM, Marketing, Delivery) y **4× ejecutivos Sales B2B** (USD **120** fijo c/u + **USD 30**/firma — ver [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.1 / §3.3). Los **CapEx 4 PCs** van en **one-shots** mes 1 (**no** en el burn recurrente). El ticket **Base** sigue en **USD 101.000**; el **desglose** presupuestario tras retirar **bono piloto** y **delivery fee subsidiado** muestra **reserva positiva** (**+USD 484**) en [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.4. Con **ARPF ~50** y la **misma curva de farmacias**, el **equilibrio mensual** (revenue ≥ burn) queda **después del mes 12**; mitigaciones en §1.4. **Última milla:** la ejecuta **empresa(s) concesionaria(s)** ([PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) cabecera; [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) §1.1).
 
 ### 1.1 Tabla mes a mes
 
@@ -16,59 +16,60 @@
 
 | Mes | Farmacias firmadas | Farmacias activas | Revenue (USD/mes) | Burn (USD/mes) | Cash flow mensual | Cash flow acumulado |
 |---|---|---|---|---|---|---|
-| 1 | 5 | 5 | 35 | 7.402 | -7.367 | -7.367 |
-| 2 | 6 | 10 | 165 | 7.402 | -7.237 | -14.604 |
-| 3 | 6 | 15 | 360 | 7.738 | -7.378 | -21.982 |
-| 4 | 8 | 22 | 765 | 7.738 | -6.973 | -28.955 |
-| 5 | 10 | 31 | 1.215 | 7.738 | -6.523 | -35.478 |
-| 6 | 11 | 41 | 1.665 | 7.738 | -6.073 | -41.551 |
-| 7 | 12 | 51 | 2.115 | 7.371 | -5.256 | -46.807 |
-| 8 | 14 | 64 | 2.700 | 7.371 | -4.671 | -51.478 |
-| 9 | 15 | 78 | 3.330 | 7.371 | -4.041 | -55.519 |
-| 10 | 14 | 92 | 3.870 | 7.371 | -3.501 | -59.020 |
-| **11** | **14** | **107** | **4.815** | **7.371** | **-2.556** | **-61.576** |
-| 12 | 13 | 120 | 5.400 | 7.371 | -1.971 | -63.547 |
-| **Total año 1 (sin waiver)** | **128** | **120** | **26.435** | **89.982** | **-63.547** | |
-| **Total año 1 (con waiver primeras 10)** | **128** | **120** | **26.235** | **89.982** | **-63.747** | |
+| 1 | 5 | 5 | 39 | 7.462 | -7.423 | -7.423 |
+| 2 | 6 | 10 | 183 | 7.462 | -7.279 | -14.702 |
+| 3 | 6 | 15 | 400 | 7.798 | -7.398 | -22.100 |
+| 4 | 8 | 22 | 850 | 7.798 | -6.948 | -29.048 |
+| 5 | 10 | 31 | 1.350 | 7.798 | -6.448 | -35.496 |
+| 6 | 11 | 41 | 1.850 | 7.798 | -5.948 | -41.444 |
+| 7 | 12 | 51 | 2.350 | 7.431 | -5.081 | -46.525 |
+| 8 | 14 | 64 | 3.000 | 7.431 | -4.431 | -50.956 |
+| 9 | 15 | 78 | 3.700 | 7.431 | -3.731 | -54.687 |
+| 10 | 14 | 92 | 4.300 | 7.431 | -3.131 | -57.818 |
+| **11** | **14** | **107** | **5.350** | **7.431** | **-2.081** | **-59.899** |
+| 12 | 13 | 120 | 6.000 | 7.431 | -1.431 | -61.330 |
+| **Total año 1 (sin waiver)** | **128** | **120** | **29.372** | **90.702** | **-61.330** | |
+| **Total año 1 (con waiver primeras 10)** | **128** | **120** | **29.150** | **90.702** | **-61.552** | |
 
-> **Lectura (versión sin waiver, planning principal):** cash flow operativo acumulado **~−USD 63.547** (columna *Cash flow acumulado* mes 12). Con **USD 101.000** de capital y **~USD 10.408** de one-shots mes 1 (bloque **Base §3.2** — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md): Lean **5.058** + depósito/amueblado HQ + adecuación + **CapEx 4 PCs**; **no** incluye sueldos **Co-CEO**/founder, que van en **burn**), el **cash en caja** al cierre del año 1 queda **~USD 27.045** (ver §1.3). Burn recurrente por tramo: **7.402 / 7.738 / 7.371** USD/mes ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3), incluye **Co-CEO USD 1.000/mes**.
+> **Lectura (versión sin waiver, planning principal):** cash flow operativo acumulado **~−USD 61.330** (columna *Cash flow acumulado* mes 12). Con **USD 101.000** de capital y **~USD 9.808** de one-shots mes 1 (bloque **Base §3.2** — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md): Lean **4.458** + depósito/amueblado HQ + adecuación + **CapEx 4 PCs**; **no** incluye sueldos **Co-CEO**/founder, que van en **burn**), el **cash en caja** al cierre del año 1 queda **~USD 29.862** (ver §1.3). Burn recurrente por tramo: **7.462 / 7.798 / 7.431** USD/mes ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3), incluye **Co-CEO USD 1.000/mes** y **4× Sales**.
 >
-> **Lectura (versión con waiver B2B — cuota USD 0 meses 1–2 cohort inicial):** la fila **«con waiver primeras 10»** asume **~USD 200** menos de ingreso acumulado año 1 vs. sin waiver (**condonación** proxy de los ingresos modelados en **meses 1 y 2**; coherente con **35 + 165** en la tabla sin waiver). **Cash en caja** cierre año 1 **~USD 26.845** (ver [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) §8.1). Si el waiver se aplicara distinto (p. ej. más farmacias o más meses), **recalcular** con FP&A. **Break-even mensual** con ARPF 45 y burn actual: **posterior a mes 12** salvo mejora de mix/GMV o curva de farmacias.
+> **Lectura (versión con waiver B2B — cuota USD 0 meses 1–2 cohort inicial):** la fila **«con waiver primeras 10»** asume **~USD 222** menos de ingreso acumulado año 1 vs. sin waiver (**condonación** proxy de los ingresos modelados en **meses 1 y 2**; coherente con **39 + 183** en la tabla sin waiver). **Cash en caja** cierre año 1 **~USD 29.640** (ver [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) §8.1). Si el waiver se aplicara distinto (p. ej. más farmacias o más meses), **recalcular** con FP&A. **Break-even mensual** con ARPF ~50 y burn actual: **posterior a mes 12** salvo mejora de mix/GMV o curva de farmacias.
 
 ### 1.2 Hipótesis aplicadas al modelo
 
-- **Tasa de churn mensual:** 5% aplicado a farmacias activas del mes anterior.
+- **Tasa de churn mensual:** **5%** como **objetivo** de retención B2B (coherente con [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md)). La columna *Farmacias activas* de §1.1 es el **stock operativo** al cierre de mes (cuentas con capacidad de operar en app); **no** se obtiene solo de la fórmula escolar `stock_{n−1} × 0,95 + firmas_n` sobre enteros, porque el modelo incorpora **calendario de activación** (carta de intención → onboarding → primera orden) y **bajas por no-activación**. Para due diligence, **la tabla §1.1 es fuente de verdad** hasta recalibrar con datos de piloto.
+- **Revenue vs. `activas × ARPF ~50` (billing parcial y mix):** en meses **1–10** el **revenue** puede quedar **por debajo** de `farmacia_activas × USD 50` porque (1) las **altas del mes** suelen facturar **solo la parte proporcional** del período (días activos post-onboarding dentro del mes calendario), alineado a la política de **alta en mes parcial** ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5.6); (2) el **mix tier** (Basic/Pro/Enterprise) y el **fee % sobre GMV** pueden dejar el ingreso **bajo** el placeholder **50** hasta que el GMV en app madure. A partir de **mes 11** del caso central, el modelo muestra **revenue ≈ activas × 50** (cohorte mayoritariamente en régimen de facturación completa).
 - **Tasa de firma:** crece de 5 (mes 1) a 15 (mes 9), luego se estabiliza en 13-14/mes.
-- **Mix tier (referencia revenue):** 60% Basic / 30% Pro / 10% Enterprise → ARPF efectivo **USD 45/mes** hasta actualizar por bandas GMV híbridas.
-- **Equipo comercial:** **2 ejecutivos Sales B2B** (USD **120** fijo c/u + **USD 30**/firma); comisiones implícitas en el volumen de firmas del modelo (~**128** altas año → **~USD 560**/mes de línea Sales de media).
+- **Mix tier (referencia revenue):** 60% Basic / 30% Pro / 10% Enterprise → ARPF efectivo **USD ~50/mes** (cuota fija media +**USD 5**/farmacia vs. 20/35/50) hasta actualizar por bandas GMV híbridas.
+- **Equipo comercial:** **4 ejecutivos Sales B2B** (USD **120** fijo c/u + **USD 30**/firma); comisiones implícitas en el volumen de firmas del modelo (~**128** altas año → **~USD 801**/mes de línea Sales de media con **4×** fijos + comisión sobre la misma curva de firmas).
 - **Marketing digital:** **Meta Ads** — **USD 800/mes** meses **1–6**, **USD 500/mes** meses **7–12** (promedio **~USD 650**/mes), coherente con [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3.
-- **One-shots:** **~USD 10.408** en el mes 1 (incluye CapEx **4 PCs** — no en el burn recurrente).
+- **One-shots:** **~USD 9.808** en el mes 1 (incluye CapEx **4 PCs** — no en el burn recurrente).
 - **Buffer 20% (ponderado):** ya incorporado en los **USD/mes** de burn por tramo (misma metodología que el documento de presupuesto).
 
 ### 1.3 Capital deployment
 
 | Mes | Cash inicial | Inflow | Outflow | Cash final |
 |---|---|---|---|---|
-| 1 | 101.000 | 35 | 17.810 (7.402 burn + 10.408 one-shots) | 83.225 |
-| 2 | 83.225 | 165 | 7.402 | 75.988 |
-| 3 | 75.988 | 360 | 7.738 | 68.610 |
-| 4 | 68.610 | 765 | 7.738 | 61.637 |
-| 5 | 61.637 | 1.215 | 7.738 | 55.114 |
-| 6 | 55.114 | 1.665 | 7.738 | 49.041 |
-| 7 | 49.041 | 2.115 | 7.371 | 43.785 |
-| 8 | 43.785 | 2.700 | 7.371 | 39.114 |
-| 9 | 39.114 | 3.330 | 7.371 | 35.073 |
-| 10 | 35.073 | 3.870 | 7.371 | 31.572 |
-| 11 | 31.572 | 4.815 | 7.371 | 29.016 |
-| 12 | 29.016 | 5.400 | 7.371 | 27.045 |
+| 1 | 101.000 | 39 | 17.270 (7.462 burn + 9.808 one-shots) | 83.769 |
+| 2 | 83.769 | 183 | 7.462 | 76.490 |
+| 3 | 76.490 | 400 | 7.798 | 69.092 |
+| 4 | 69.092 | 850 | 7.798 | 62.144 |
+| 5 | 62.144 | 1.350 | 7.798 | 55.696 |
+| 6 | 55.696 | 1.850 | 7.798 | 49.748 |
+| 7 | 49.748 | 2.350 | 7.431 | 44.667 |
+| 8 | 44.667 | 3.000 | 7.431 | 40.236 |
+| 9 | 40.236 | 3.700 | 7.431 | 36.505 |
+| 10 | 36.505 | 4.300 | 7.431 | 33.374 |
+| 11 | 33.374 | 5.350 | 7.431 | 31.293 |
+| 12 | 31.293 | 6.000 | 7.431 | 29.862 |
 
-> **Lectura:** al cierre del año 1, Zonix Pharma tiene **USD ~27.045 de cash** (~**27%** del capital **USD 101.000** recibido) con el replante de costos fijos + **Co-CEO**. El colchón sigue permitiendo **arranque de año 2** sin ronda obligatoria inmediata si el revenue cumple trayectoria — ver sensibilidades §7.
+> **Lectura:** al cierre del año 1, Zonix Pharma tiene **USD ~29.862 de cash** (~**30%** del capital **USD 101.000** recibido) con el replante de costos fijos + **Co-CEO** + **4×** Sales y cuota fija **25/40/55**, **sin** bono piloto ni **delivery fee subsidiado** en el burn ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.1 / §3.3). El colchón sigue permitiendo **arranque de año 2** sin ronda obligatoria inmediata si el revenue cumple trayectoria — ver sensibilidades §7.
 >
-> **Waiver B2B (opcional):** la tabla anterior es **sin** waiver. Con la variante **«con waiver primeras 10»** (**~USD 200** menos de inflow acumulado año 1 — ver §1.1), la caja al cierre año 1 es **~USD 26.845** (misma cadena de **Outflow**, inflow reducido en **35** mes 1 y **165** mes 2 respecto a la columna mostrada).
+> **Waiver B2B (opcional):** la tabla anterior es **sin** waiver. Con la variante **«con waiver primeras 10»** (**~USD 222** menos de inflow acumulado año 1 — ver §1.1), la caja al cierre año 1 es **~USD 29.640** (misma cadena de **Outflow**, inflow reducido según política de waiver vs. la columna mostrada).
 
 ### 1.4 Break-even y mitigaciones (post-replante)
 
-Con **burn ~7.371–7.738** USD/mes y **ARPF placeholder 45**, hacen falta **>~165 farmacias activas** al mix actual para cubrir burn solo con cuota modelo (orden de magnitud). La tabla §1.1 llega a **120** activas al mes 12 → **no** hay equilibrio mensual en mes 12 sin cambiar supuestos. **Mitigaciones:** (1) subir ARPF efectivo con **mix Pro/Enterprise** o GMV real; (2) acelerar **firmas** o reducir churn; (3) **timing** de gastos (IA, bonus variables, **entrada escalonada** sueldo Co-CEO); (4) **bridge** trimestral si el inversor lo acepta.
+Con **burn ~7.431–7.798** USD/mes y **ARPF placeholder ~50**, hacen falta **>~149–151 farmacias activas** al mix actual para cubrir burn solo con cuota modelo (orden de magnitud: **7.431 ÷ 50**; promedio anual **~7.559 ÷ 50**). La tabla §1.1 llega a **120** activas al mes 12 → **no** hay equilibrio mensual en mes 12 sin cambiar supuestos. **Mitigaciones:** (1) subir ARPF efectivo con **mix Pro/Enterprise** o GMV real; (2) acelerar **firmas** o reducir churn; (3) **timing** de gastos (IA, bonus variables, **entrada escalonada** sueldo Co-CEO o **reducir** headcount Sales si la curva de firmas lo permite); (4) **bridge** trimestral si el inversor lo acepta.
 
 ## 2. Año 2 — proyección conservadora
 
@@ -144,10 +145,9 @@ Si éxito: ~USD 480.000 (cobertura completa nacional con Serie A)
 **Acciones inmediatas (en orden de prioridad):**
 
 1. Cortar valla publicitaria (USD 350-700/mes ahorrados).
-2. Reducir delivery fee subsidiado a USD 0.
-3. Reducir **Meta Ads** a **50%** del plan (ahorro orden **USD 250–400**/mes según tramo).
-4. Renegociar coworking u oficina (cambio a coworking más barato si ya estaba en oficina propia).
-5. Evaluar reducción 1 hire (ej. Delivery Ops Coordinator si hay < 30 órdenes/día).
+2. Reducir **Meta Ads** a **50%** del plan (ahorro orden **USD 250–400**/mes según tramo).
+3. Renegociar coworking u oficina (cambio a coworking más barato si ya estaba en oficina propia).
+4. Evaluar reducción 1 hire (ej. Delivery Ops Coordinator si hay < 30 órdenes/día).
 
 **Efecto:** burn mensual baja a USD 3.000-3.300. Runway extendido 4-6 meses adicionales.
 
@@ -187,8 +187,8 @@ Si éxito: ~USD 480.000 (cobertura completa nacional con Serie A)
 |---|---|---|---|
 | Tasa de firma mensual | 8-15 | 5-20 | Pivot ofertas si < 5; añadir Sales si > 20 |
 | Churn mensual | 5% | 3-7% | Activar retención si > 7% |
-| ARPF | USD 45 *(placeholder hasta recalibrar con bandas GMV híbridas)* | USD 35-55 | Revisar mix por banda / GMV si < 35 |
-| CAC | USD **109** | USD 80-150 | Revisar canales si > 150 |
+| ARPF | USD **~50** *(placeholder hasta recalibrar con bandas GMV híbridas; cuota fija 25/40/55)* | USD 35-55 | Revisar mix por banda / GMV si < 35 |
+| CAC | USD **139** | USD 90-170 | Revisar canales si > 170 |
 | Inflación VE (valor base / narrativa) | **Trayectoria BCV 2026:** desaceleración hacia **un dígito mensual desde may. 2026**; acumulado anual orden **~134-220%** si se cumple guía oficial — escenario **stress** **387-618%** (Anova/Cendas/Ecoanalítica) | 200-1.000% (stress) | Activar plan contingencia si escenario stress > 800% o devaluación > 100% trimestral |
 | **FX Bs/USD (Treasury)** | Tipo **BCV** oficial movilidad alta (ej. referencia pack mayo 2026 **~497 Bs/USD**, **+66% YTD** orden de magnitud) | Devaluación > 15% mensual vs. plan | Acelerar conversión USD→Bs para gastos locales; revisar política en [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §3.3 |
 
@@ -255,7 +255,7 @@ A partir de mes 4: **DAU/MAU**, **retención D7/D30** compradores, adopción fea
 - Churn 7% mensual.
 - ARPF USD 40.
 - Revenue mes 12: USD 2.400.
-- **Cash al cierre año 1:** **por debajo** del caso central **~USD 27.045** (orden magnitud **USD 18–24k** si se materializa; refinar FP&A con burn **~7,4k**). Runway acortado vs. plan.
+- **Cash al cierre año 1:** **por debajo** del caso central **~USD 29.862** (orden magnitud **USD 20–26k** si se materializa; refinar FP&A con burn **~7,4k**). Runway acortado vs. plan.
 - **Acción:** acelerar Serie A o bridge round mes 12-14.
 
 ### 7.2 Escenario base (probabilidad 50%)
@@ -266,17 +266,17 @@ A partir de mes 4: **DAU/MAU**, **retención D7/D30** compradores, adopción fea
 
 - Adopción 130% del plan: 156 farmacias en mes 12.
 - Churn 4% mensual.
-- ARPF USD 50 (más Pro y Enterprise).
-- Revenue mes 12: USD 7.800.
-- **Cash al cierre año 1:** **~USD 34–42k** (orden magnitud sobre despliegue **101k**; refinar con FP&A). Runway extra vs. Base.
+- ARPF USD 55 (más Pro, Enterprise y GMV en app sobre la base 25/40/55).
+- Revenue mes 12: USD 8.580 *(156 × 55 orden de magnitud; refinar con mix real).*
+- **Cash al cierre año 1:** **~USD 35–43k** (orden magnitud sobre despliegue **101k**; refinar con FP&A). Runway extra vs. Base.
 - **Acción:** evaluar expansión más agresiva año 2 o levantar Serie A en mes 18 con métricas más fuertes.
 
 ## 8. Coherencia con el resto del pack
 
 - Capital pedido **USD 101k** (Base) coincide con [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md), [README.md](README.md), [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md).
-- Burn por tramo (**7.402 / 7.738 / 7.371**) y promedio **~7.499** coinciden con [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3.
-- ARPF USD 45 (placeholder), CAC USD **109**, churn 5%, LTV USD 900 coinciden con [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md).
-- **Break-even operativo mensual (revenue ≥ burn):** con el replante de costos fijos y ARPF 45 **no** se alcanza en mes 12 en la tabla §1.1; ver §1.4 y [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md).
+- Burn por tramo (**7.462 / 7.798 / 7.431**) y promedio **~7.559** coinciden con [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3.
+- ARPF USD **~50** (placeholder), CAC USD **139**, churn 5%, LTV USD **1.000** coinciden con [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md).
+- **Break-even operativo mensual (revenue ≥ burn):** con el replante de costos fijos, **4×** Sales y ARPF ~50 **no** se alcanza en mes 12 en la tabla §1.1; ver §1.4 y [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md).
 - TAM USD 1.638M y SAM Valencia 226 farmacias coinciden con [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md).
 
 ## 9. Documentos hermanos

@@ -1,6 +1,6 @@
 # Contexto del pitch y decisiones tomadas
 
-> **Última actualización:** 10 mayo 2026.
+> **Última actualización:** 11 mayo 2026.
 > Documento que captura las decisiones del founder (usuario) sobre cómo se posiciona Zonix Pharma frente a un inversor, qué se dice, qué no, y por qué se eligió cada parámetro del modelo.
 
 ## 1. Tecnología base reutilizada (Zonix Pharma)
@@ -17,7 +17,7 @@
 
 ### 2.1 Modelo de ingresos: híbrido cuota fija + fee sobre GMV (USD)
 
-**Decisión:** Cobro **B2B en dos partes:** (1) **cuota fija mensual** por nivel (Basic **USD 20** / Pro **USD 35** / Enterprise **USD 50**); (2) **porcentaje moderado sobre GMV** generado en la app por mes calendario (**0,60% / 0,80% / 1,00%** según banda). Bandas de GMV, ascenso/descenso, RIF agregado, primer mes parcial, piloto y reclamos: [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5 y [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §2.3–§4.2.
+**Decisión:** Cobro **B2B en dos partes:** (1) **cuota fija mensual** por nivel (Basic **USD 25** / Pro **USD 40** / Enterprise **USD 55**); (2) **porcentaje moderado sobre GMV** generado en la app por mes calendario (**0,60% / 0,80% / 1,00%** según banda). Bandas de GMV, ascenso/descenso, RIF agregado, primer mes parcial, piloto y reclamos: [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5 y [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §2.3–§4.2.
 
 **Por qué:**
 - **Predecible vs. agregadores:** los % de **Zonix Pharma** están en fracciones de punto a ~1%, no en el rango 25-35% de Rappi/PedidosYa; la cuota fija da piso de ingreso.
@@ -30,7 +30,7 @@
 
 ### 2.2 Alcance del piloto: completo desde día 1
 
-**Decisión:** los **cinco roles** del marketplace (Buyer + Pharmacy + Pharmacist + Delivery autónomo + Delivery Company) operativos desde Day-D — **ecosistema completo** desde Day-D.
+**Decisión:** los **cinco roles** del marketplace (Buyer + Pharmacy + Pharmacist + Delivery autónomo + Delivery Company) operativos desde Day-D — **ecosistema completo** desde Day-D. La **ejecución física** de la última milla la llevan **empresa(s) de delivery especializada(s)** bajo **concesión o contrato marco**; Zonix **no** opera flota propia ([PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) cabecera; [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) §1.1). El rol **`delivery` autónomo** puede coexistir en producto como **complemento** al partner.
 
 **Por qué:**
 - La tecnología ya está construida. Reducir el alcance no acelera el lanzamiento, solo limita el aprendizaje.
@@ -41,20 +41,20 @@
 
 ### 2.3 Capital pedido: USD 101.000 (escenario Base)
 
-**Decisión:** **USD 101.000** para 12 meses con buffer 20%, **one-shots mes 1 ~USD 10.408** (CapEx 4 PCs + depósito/amueblado HQ — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.2) + **Co-CEO USD 1.000/mes** modelado en burn ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3).
+**Decisión:** **USD 101.000** para 12 meses con buffer 20%, **one-shots mes 1 ~USD 9.808** (CapEx 4 PCs + depósito/amueblado HQ — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.2) + **Co-CEO USD 1.000/mes** modelado en burn ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3).
 
 **Awareness y adquisición (orden de prioridad):**
 - **Canal principal:** **publicidad paga en Meta** (Instagram + Facebook) desde **mes 1** operativo (post-cierre), geo Carabobo/Valencia, creativos alineados a marca y **segmentación B2C + apoyo B2B** según campaña. Intensidad acordada para año 1: **USD 800/mes en meses 1–6** y **USD 500/mes en meses 7–12** (promedio **~USD 650/mes** en digital — ver [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md)).
 - **Segunda línea / combinación:** **valla publicitaria** como **refuerzo offline** de notoriedad (Base: valla pequeña desde mes 3; Growth: valla mayor + más presupuesto). El paciente y la farmacia **conocen primero el mensaje en feed/stories y remarketing**; la valla **no sustituye** al digital.
 
-**Equipo comercial:** **2 ejecutivos Sales B2B** desde el inicio (USD **120** fijo c/u + USD **30** por farmacia firmada). Sumar **1 o 2 vendedores más** (hasta 4) solo si hay **evidencia** (territorio partido, cola de demos, meta de firmas mayor); **no** se presupuestan en el modelo base hasta esa decisión.
+**Equipo comercial:** **4 ejecutivos Sales B2B** desde el inicio (USD **120** fijo c/u + USD **30** por farmacia firmada al rep que cierra). El modelo Base del pack incorpora **4×** Sales (no 2×) para acelerar firmas en el piloto Carabobo; recalcular comisiones y runway si se reduce headcount comercial.
 
 **Por qué se eligió Base sobre Lean (USD 60k) y Growth (USD 90k):**
 - **Lean (USD 60k):** sin valla, sin Delivery Ops mes 1, coworking; digital más bajo. Funcional pero menor holgura comercial.
-- **Base (USD 101k):** **digital Meta priorizado** + valla pequeña desde mes 3 + Delivery Ops desde mes 1 + **2 Sales B2B** + **HQ casa** + **sueldo founder** + **Co-CEO** + **stack IA**. Trade-off: burn recurrente mayor que el modelo **USD 95k** previo al replante Co-CEO (ticket actual **101k** absorbe ~12k/año del segundo al mando); **equilibrio mensual** (revenue ≥ burn) con ARPF 45 queda **post-M12** salvo mitigaciones (ver [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.4).
+- **Base (USD 101k):** **digital Meta priorizado** + valla pequeña desde mes 3 + Delivery Ops desde mes 1 + **4 Sales B2B** + **HQ casa** + **sueldo founder** + **Co-CEO** + **stack IA**. Trade-off: burn recurrente mayor que el modelo **USD 95k** previo al replante Co-CEO (ticket actual **101k** absorbe ~12k/año del segundo al mando) y que el modelo con **2×** Sales por **+USD 240**/mes fijos de comercial; **equilibrio mensual** (revenue ≥ burn) con **ARPF placeholder ~50** (cuota fija +USD 5 por tier vs. ancla previa) sigue **post-M12** salvo mitigaciones (ver [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.4).
 - **Growth (USD 90k):** valla mediana + asesor regulatorio + más margen digital / founder pay.
 
-Base es el balance entre agresividad en **Meta + ventas dobles** + **Co-CEO** y capital **USD 101k** (reserva de imprevistos en [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.4).
+Base es el balance entre agresividad en **Meta + 4× Sales B2B** + **Co-CEO** y capital **USD 101k** (reserva de imprevistos en [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.4).
 
 ### 2.4 Instrumento: SAFE post-money con cap
 
@@ -75,7 +75,7 @@ Detalle de mecánica del SAFE en [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL
 
 **Por qué:**
 - **Densidad farmacéutica:** Valencia metro tiene 226 farmacias ([Saas](https://www.saasvenezuela.com/)). El piloto usa **dos focos** en el área metropolitana — **Bella Florida** (sur-oeste Valencia) y **El Socorro** (corredor **vía Tocuyito**, referencia de campo: frente a **Ferretería Valcro**, antes de **Distribuidor San Luis** y **mercado mayorista**) — con **~30-50** puntos de farmacia en conjunto según estimación del [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md) §2 y §6 (validar con listado real; **no** asumir un solo “radio 4 km” si los polos quedan separados).
-- **Logística manejable:** un Delivery Ops Coordinator puede coordinar entregas en **polos acotados** con 10-15 repartidores (radio operativo por polo según mapa real).
+- **Logística manejable:** un **Delivery Ops Coordinator** coordina con la **empresa concesionaria** de última milla en **polos acotados** (SLA, cobertura, incidencias); capacidad de campo en el piloto en el orden de **10-15 agentes** del **partner** (no empleados de flota Zonix).
 - **Cliente final accesible:** clase media + media-alta con smartphone y data, dispuesta a pagar delivery.
 - **Founder vive en Carabobo:** decisiones operativas en horas, no en días.
 
@@ -129,18 +129,18 @@ Detalle competitivo en [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md).
 | Término | Significado simple | Aplicado a Zonix Pharma |
 |---|---|---|
 | **GMV** | Gross Merchandise Value: total por transacción completada en la app en el mes (definición operativa §5.5 B2B). | Si las farmacias venden USD 200k/mes a través de la app, GMV = USD 200k. **Zonix Pharma** cobra **cuota fija + fee %** sobre ese GMV según nivel; la farmacia se queda con el neto de venta según su operación. |
-| **CAC** | Costo de adquirir un cliente. | Cuánto gasta **Zonix Pharma** en marketing + **2×** Sales para firmar UNA farmacia. **USD 109** (ver [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §3). |
-| **LTV** | Lifetime Value: cuánto paga ese cliente en toda su vida con nosotros. | Una farmacia en promedio paga USD 45/mes durante 20 meses = USD 900 *(ARPF placeholder; recalibrar con híbrido + GMV en piloto).* |
-| **LTV/CAC** | Eficiencia del negocio. | **~8,3x** (con CAC **109** y ARPF placeholder **45**). > 3x ya es bueno; > 5x es excelente. |
+| **CAC** | Costo de adquirir un cliente. | Cuánto gasta **Zonix Pharma** en marketing + **4×** Sales para firmar UNA farmacia. **USD 139** (ver [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §3). |
+| **LTV** | Lifetime Value: cuánto paga ese cliente en toda su vida con nosotros. | Una farmacia en promedio paga USD 50/mes durante 20 meses = USD 1.000 *(ARPF placeholder; recalibrar con híbrido + GMV en piloto).* |
+| **LTV/CAC** | Eficiencia del negocio. | **~7,2x** (con CAC **139** y ARPF placeholder **50**). > 3x ya es bueno; > 5x es excelente. |
 | **Churn** | Porcentaje de clientes que se van cada mes. | 5%. Si tengo 100 farmacias, mes que viene tendré 95 (sin contar nuevas). |
-| **Burn rate** | Cuánto pierdo cada mes mientras no soy rentable. | **~USD 7.499**/mes promedio (tramos **7.402 / 7.738 / 7.371** — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3). |
+| **Burn rate** | Cuánto pierdo cada mes mientras no soy rentable. | **~USD 7.559**/mes promedio (tramos **7.462 / 7.798 / 7.431** — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3). |
 | **Runway** | Cuántos meses puedo aguantar con el dinero que tengo. | 12 meses con **USD 101k** + buffer + one-shots mes 1 modelados. |
-| **Break-even** | Mes en que empiezo a no perder dinero. | **Post-M12** con ARPF 45 y burn replanteado; **~167** farmacias activas orden de magnitud (§1.4 [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)). |
+| **Break-even** | Mes en que empiezo a no perder dinero. | **Post-M12** con ARPF ~50 y burn replanteado (**4×** Sales); **~151** farmacias activas orden de magnitud (**~149** con burn tramo C **7.431** ÷ 50; **~151** con burn promedio **~7.559** ÷ 50 — §1.4 [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md), [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §6). |
 | **SAFE** | Contrato simple de inversión. El inversor da dinero hoy, recibe equity en la próxima ronda. | **USD 101k** con cap **USD 600k**. |
 | **Cap** | Valuación máxima a la que el SAFE convierte. | Si la próxima ronda valora **Zonix Pharma** en USD 800k, el inversor convierte como si fuera **USD 600k** (Base) — recibe más equity que a valuación plena. |
-| **TAM / SAM / SOM** | Mercado total / accesible / capturable. | TAM Venezuela USD 1.638M. SOM realista **año 1: ~USD 26k revenue** (sin waiver) / **año 2 conservador: USD 96-108k** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 y §2.3). |
-| **ARPF** | Average Revenue Per Farmacia. | USD 45/mes **placeholder** hasta GMV piloto; cobro vigente = híbrido (§2.1). |
-| **Payback** | Meses para recuperar el CAC. | **~2,4 meses** (CAC/ARPF al placeholder). Recalibrar con ARPF híbrido real. |
+| **TAM / SAM / SOM** | Mercado total / accesible / capturable. | TAM Venezuela USD 1.638M. **SOM** (farmacias / penetración): [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md) §3 y [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md). **Ingreso B2B acumulado año 1** (tabla central, sin waiver): **~USD 29k** (**~29.372** — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1); **año 2 conservador: USD 96-108k** (mismo doc. §2.3). |
+| **ARPF** | Average Revenue Per Farmacia. | USD **50**/mes **placeholder** hasta GMV piloto (sube +USD 5/mes en cuota fija por tier vs. ancla 20/35/50); cobro vigente = híbrido (§2.1). |
+| **Payback** | Meses para recuperar el CAC. | **~2,8 meses** (CAC/ARPF al placeholder). Recalibrar con ARPF híbrido real. |
 
 ## 5. Decisiones que el founder se reserva (no están en el pack)
 
@@ -155,7 +155,7 @@ Estas se documentarán en un anexo cuando lleguen al frente. Hoy no son bloquean
 
 - **Honesto sobre lo que no se ha hecho:** "no tenemos ventas todavía, tenemos producto operativo y plan validado".
 - **Confiado sobre lo que sí está hecho:** "397 tests pasando, ~4 años de desarrollo del **stack Zonix Pharma**".
-- **Específico con números:** nunca decir "esperamos crecer mucho"; decir **~107 farmacias activas hacia el mes 11**, **~120** hacia M12, **~USD 27.045** cash cierre año 1 (Base **101k** + **Co-CEO**), y que el **equilibrio mensual** con ARPF placeholder queda **post-M12** salvo mitigaciones ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3–1.4).
+- **Específico con números:** nunca decir "esperamos crecer mucho"; decir **~107 farmacias activas hacia el mes 11**, **~120** hacia M12, **~USD 29.862** cash cierre año 1 (Base **101k** + **Co-CEO** + **4×** Sales + cuota **25/40/55**), y que el **equilibrio mensual** con ARPF placeholder **~50** queda **post-M12** salvo mitigaciones ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3–1.4).
 - **Realista sobre Venezuela:** mencionar la inflación de entrada, no esconder la complejidad regulatoria.
 - **Modular:** si el inversor pide ticket más chico (USD 25k), tenemos respuesta para Lean. Si pide ticket más grande (USD 90k), tenemos Growth.
 

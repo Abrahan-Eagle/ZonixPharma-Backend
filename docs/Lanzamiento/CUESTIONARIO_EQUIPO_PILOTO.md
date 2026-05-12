@@ -1,7 +1,7 @@
 # Cuestionario para el equipo del piloto
 
-> **Última actualización:** 10 mayo 2026.
-> Documento operacional para entrevistar candidatos según la **nómina Base** ([README.md](README.md) §3). **Plantillas por función:** **§2** Sales B2B (una plantilla para **2×** ejecutivos), **§3** Customer Support + Community Manager, **§4** Marketing Lead, **§5** Delivery Ops Coordinator. **Co-CEO / CEO operativo** y **founder** (CEO+CTO): evaluación **ad hoc** (track record, visión, % dedicación), usando el bloque común **§1** y entrevista de alineamiento con dirección (no hay sección `##` exclusiva solo para Co-CEO). **§6–§7:** Contador y Abogado (freelance); **§8:** Asesor regulatorio (escenario Growth solamente). **Total Base = 7 FTE + 2 freelance** — [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) §7. **Compensaciones** alineadas al escenario **Base USD 101k** ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3).
+> **Última actualización:** 11 mayo 2026.
+> Documento operacional para entrevistar candidatos según la **nómina Base** ([README.md](README.md) §3). **Plantillas por función:** **§2** Sales B2B (misma plantilla para **4×** ejecutivos; repetir entrevista por candidato), **§3** Customer Support + Community Manager, **§4** Marketing Lead, **§5** Delivery Ops Coordinator (**enlace con partner** última milla; Zonix **sin** flota propia). **Co-CEO / CEO operativo** y **founder** (CEO+CTO): evaluación **ad hoc** (track record, visión, % dedicación), usando el bloque común **§1** y entrevista de alineamiento con dirección (no hay sección `##` exclusiva solo para Co-CEO). **§6–§7:** Contador y Abogado (freelance); **§8:** Asesor regulatorio (escenario Growth solamente). **Total Base = 9 FTE + 2 freelance** — [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) §7. **Compensaciones** alineadas al escenario **Base USD 101k** ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3).
 > Las respuestas se vuelcan en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md).
 
 ## 1. Cuestionario común a todos los roles
@@ -12,7 +12,7 @@
 2. Edad y zona de residencia.
 3. Estado civil + responsabilidades familiares (relevante para flexibilidad de horario).
 4. Disponibilidad horaria (full-time / part-time / freelance).
-5. ¿Tienes vehículo propio? (relevante para Sales y Delivery Ops).
+5. ¿Tienes vehículo propio? (relevante para **Sales** en ruta B2B; **Delivery Ops** coordina **partner** de última milla — vehículo no es requisito de flota Zonix).
 
 ### 1.2 Experiencia
 
@@ -127,28 +127,30 @@
 
 ¿Aceptas?
 
-## 5. Cuestionario específico — Delivery Ops Coordinator
+## 5. Cuestionario específico — Delivery Ops Coordinator (enlace con partner última milla)
+
+> **Alcance del rol:** Zonix Pharma **no opera flota propia**; la última milla la ejecuta **empresa(s) concesionaria(s)**. Este perfil **coordina** SLA, cobertura, incidencias y comunicación con el **partner** y con Customer Support.
 
 ### 5.1 Track record
 
-1. ¿Has coordinado equipos de delivery o logística antes?
-2. ¿Cuántos repartidores manejabas?
-3. ¿Cómo manejabas la asignación de órdenes?
-4. ¿Has trabajado con apps de tracking GPS?
+1. ¿Has coordinado operaciones con **empresas de delivery o 3PL** (contrato marco, SLA, KPIs)?
+2. ¿Cuántos **agentes o rutas** del partner supervisabas en paralelo (orden de magnitud)?
+3. ¿Cómo gestionabas **incumplimientos de SLA** con un proveedor externo (no con empleados propios)?
+4. ¿Has trabajado con apps de tracking GPS en modelo **marketplace + tercero ejecutor**?
 
 ### 5.2 Habilidades
 
-1. ¿Manejas Excel/Google Sheets para reportes operativos?
-2. ¿Tienes experiencia con WhatsApp Business para comunicación con repartidores?
-3. ¿Sabes manejar disputas (paciente vs. repartidor)?
+1. ¿Manejas Excel/Google Sheets para reportes operativos (KPI del **partner**: tiempos, incidencias)?
+2. ¿Tienes experiencia con WhatsApp Business para comunicación con **coordinadores del partner** y farmacias?
+3. ¿Sabes mediar disputas entre **paciente**, **farmacia** y **empresa de delivery** (sin asumir culpa operativa de campo que no te corresponde)?
 
 ### 5.3 Caso práctico
 
-> Un repartidor entrega tarde por tráfico. El paciente reclama. La farmacia exige sanción al repartidor. El repartidor dice que la dirección estaba mal en la app. ¿Cómo lo resuelves?
+> El **partner** de última milla indica retraso por tráfico. El paciente reclama. La farmacia presiona. El **partner** dice que la geocodificación falló. ¿Cómo escalas y qué dejas documentado para **Zonix** vs. **partner**?
 
 ### 5.4 Compensación
 
-- **USD 300/mes** fijo (Delivery Ops Coordinator).
+- **USD 300/mes** fijo (Delivery Ops Coordinator — enlace **partner** última milla).
 - Bono **USD 100** si KPI (p. ej. tiempo promedio entrega **< 75 min** en mes) → **USD 400/mes** total.
 
 ¿Aceptas?

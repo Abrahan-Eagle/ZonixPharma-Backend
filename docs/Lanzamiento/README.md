@@ -1,6 +1,6 @@
 # Pack Lanzamiento Inversor — Zonix Pharma
 
-> **Última actualización:** 10 mayo 2026 (revisión profesional multi-rol: regulación, farmacia, AppSec, COO, marketing salud, legal, CFO; coherencia numérica Base **101k** + **Co-CEO**).
+> **Última actualización:** 11 mayo 2026.
 > **Estado del pack:** completo para pre-seed; textos legales y plazos de retención sujetos a **dictamen abogado + farmacéutico asesor** antes de Day-D público.
 > **Producto:** Zonix Pharma — marketplace farmacéutico digital; el pack usa **solo** esa marca para producto y plataforma.
 > **Zona piloto:** Bella Florida + El Socorro, Valencia, Carabobo, Venezuela.
@@ -27,7 +27,7 @@ Lo anterior + los siguientes:
 1. [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) — fases T+30 / T+60 / T+90 + Day-D + Definition of Done del piloto.
 2. [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) — pitch a la farmacia.
 3. [PROPUESTA_VALOR_USUARIO_FINAL.md](PROPUESTA_VALOR_USUARIO_FINAL.md) — pitch al paciente.
-4. [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) — pitch a delivery, delivery company y farmacéutico colegiado.
+4. [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) — pitch a delivery (complemento), delivery company / **concesión última milla** y farmacéutico colegiado.
 5. [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) — escenarios Lean / Base / Growth.
 6. [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md) — fuentes y precios públicos.
 7. [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) — vallas, radio, flyers.
@@ -48,15 +48,15 @@ Lo anterior + los siguientes:
 | Capital pedido                    | USD 60.000  | **USD 101.000**        | USD 90.000  |
 | Runway                            | 12 meses    | 12 meses               | 12 meses    |
 | SAFE post-money cap               | USD 450.000 | **USD 600.000**        | USD 650.000 |
-| Burn promedio mensual             | USD 3.756   | **~USD 7.499**         | **~USD 5.861** |
-| One-shots mes 1                   | USD 5.058   | **~USD 10.408**        | **~USD 11.308** |
+| Burn promedio mensual             | USD 3.636   | **~USD 7.559**         | **~USD 5.611** |
+| One-shots mes 1                   | USD 5.058   | **~USD 9.808**         | **~USD 10.708** |
 | Buffer (inflación VE)             | 20%         | 20%                    | **25%** (Growth) |
 | Equilibrio mensual (revenue ≥ burn) | Mes 9-10 (orden magnitud Lean) | **Post-M12** salvo mitigaciones ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.4) | Ver nota Growth §4.1 [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) |
-| Farmacias activas ref. equilibrio | **~84**     | **~167** (ARPF 45, burn ~7,5k) | **~130** (histórico; refinar) |
+| Farmacias activas ref. equilibrio | **~81**     | **~151** (ARPF ~50: **~149** tramo C burn **7.431**; **~151** burn promedio **~7.559**) | **~125** sin Co-CEO+IA en burn §4.3; **~162** si se alinean líneas Base §3.3 — refinar con FP&A antes de due diligence |
 
-> **Nota Growth &lt; Base (capital pedido):** el escenario **Growth (USD 90k)** predató el replante operativo **Co-CEO + stack IA** del **Base (USD 101k)**. Growth **no** incluye en su burn §4.3 las líneas **Co-CEO USD 1.000/mes** ni **IA ~USD 425/mes** del Base §3.3 — por eso el burn promedio **~5.861** es menor. Para comparación estricta entre los tres escenarios, unificar Growth con las líneas Base §3.3 en FP&A antes de due diligence profundo (ver [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §4.1).
+> **Nota Growth &lt; Base (capital pedido):** el escenario **Growth (USD 90k)** predató el replante operativo **Co-CEO + stack IA** del **Base (USD 101k)**. Growth **no** incluye en su burn §4.3 las líneas **Co-CEO USD 1.000/mes** ni **IA ~USD 425/mes** del Base §3.3 — por eso el burn promedio **~5.611** es menor. Para comparación estricta entre los tres escenarios, unificar Growth con las líneas Base §3.3 en FP&A antes de due diligence profundo (ver [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §4.1).
 
-> **Nota orden de magnitud (farmacias para cubrir burn):** **Lean ~84** (**3.756** burn promedio ÷ **ARPF 45**), **Base ~167** (**~7.499** ÷ 45), **Growth ~130** (**~5.861** ÷ 45). Ajustar cuando haya GMV real por tier.
+> **Nota orden de magnitud (farmacias para cubrir burn):** **Lean ~81** (**3.636** burn promedio ÷ **ARPF 45** ancla Lean), **Base ~151** (**~149** con burn tramo C **7.431**; **~151** con **~7.559** ÷ **~50**), **Growth ~125** con burn §4.3 tal cual (**~5.611** ÷ 45) o **~162** si se suman **Co-CEO + IA** como en Base §3.3. Ajustar cuando haya GMV real por tier.
 
 > **Nota Lean / Growth:** solo **Base** tiene tabla §1.1 mes a mes en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md). **Growth:** one-shots alineados a Base §3.2; burn §4.3 del presupuesto puede **no** reflejar aún todo el replante salarial/IA de Base — ver [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §4.1.
 
@@ -64,14 +64,14 @@ Lo anterior + los siguientes:
 
 | Métrica unitaria                    | Valor                                                                                                                                                                       |
 | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Modelo farmacia                     | Cuota fija **USD 20 / 35 / 50** + **% GMV** por banda ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5); **un RIF** / GMV agregado sucursales en piloto |
-| ARPF (Average Revenue Per Farmacia) | **USD 45/mes referencia provisional** (placeholder hasta GMV piloto; modelo cobro = híbrido §5 B2B — [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md))                               |
-| CAC                                 | USD **109**/farmacia                                                                                                                                                        |
+| Modelo farmacia                     | Cuota fija **USD 25 / 40 / 55** + **% GMV** por banda ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5); **un RIF** / GMV agregado sucursales en piloto |
+| ARPF (Average Revenue Per Farmacia) | **USD ~50/mes referencia provisional** (placeholder hasta GMV piloto; modelo cobro = híbrido §5 B2B — [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md))                               |
+| CAC                                 | USD **139**/farmacia                                                                                                                                                        |
 | Churn mensual                       | 5% (mediana SMB SaaS LatAm)                                                                                                                                                 |
 | Lifetime promedio                   | 20 meses                                                                                                                                                                    |
-| LTV                                 | USD 900                                                                                                                                                                     |
-| LTV/CAC                             | **~8,3x**                                                                                                                                                                   |
-| Payback CAC                         | **~2,4 meses**                                                                                                                                                              |
+| LTV                                 | USD 1.000                                                                                                                                                                   |
+| LTV/CAC                             | **~7,2x**                                                                                                                                                                   |
+| Payback CAC                         | **~2,8 meses**                                                                                                                                                              |
 
 
 
@@ -91,17 +91,17 @@ Lo anterior + los siguientes:
 
 ## Decisiones del usuario aplicadas en todo el pack
 
-1. **Modelo de ingresos:** **híbrido** — cuota fija **USD 20 / 35 / 50** + **% sobre GMV** por bandas ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5); **un nivel y una factura por RIF**, GMV agregado de sucursales en piloto; dashboard por sucursal.
-2. **Alcance del piloto:** completo desde día 1 (Buyer + Pharmacy + Pharmacist + Delivery autónomo + Delivery Company). Confirmado por el usuario.
+1. **Modelo de ingresos:** **híbrido** — cuota fija **USD 25 / 40 / 55** (+**USD 5**/tier vs. ancla histórica 20/35/50) + **% sobre GMV** por bandas ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5); **un nivel y una factura por RIF**, GMV agregado de sucursales en piloto; dashboard por sucursal.
+2. **Alcance del piloto:** completo desde día 1 (Buyer + Pharmacy + Pharmacist + Delivery autónomo + Delivery Company). Confirmado por el usuario. **Última milla:** Zonix Pharma **no opera flota propia**; la ejecución física del reparto se delega por **concesión o contrato marco** a **empresa(s) de delivery especializada(s)**; roles `delivery` / `delivery_company` en la app reflejan ese ecosistema (autónomo puede ser complemento en piloto — ver [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) cabecera y §B).
 3. **Equipo:**
   - Founder (CEO + CTO en una sola persona, el usuario) + **Co-CEO / CEO operativo** (segundo al mando; comercial / operación / corporate) **USD 1.000/mes** — **rótulo operativo**; representante legal / junta y SAFE según [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md).
   - Sin Pharmacist liaison interno: cada farmacia afiliada aporta su propio farmacéutico colegiado (Ley del Ejercicio de la Farmacia VE).
   - Sin Diseñador UI/UX: el founder cubre tech.
-  - **2× Sales B2B** con USD **120** fijo c/u + USD **30** por farmacia firmada (**al rep que la firmó**; no duplicado entre reps); escalar a 3.er–4.o rep solo con evidencia operativa.
-  - **Replante operativo** (integrado en Base **101k** — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3 y §6.1): sueldo founder **USD 1.000/mes**; **Co-CEO** **USD 1.000/mes**; Customer Support + Community Manager **350** (+50 si KPI → 400); Marketing Lead + apoyo a dirección **400** (+100 bonus si KPI); Delivery Ops **300** (+100 si KPI → 400).
+  - **4× Sales B2B** con USD **120** fijo c/u + USD **30** por farmacia firmada (**al rep que la firmó**; no duplicado entre reps); si la curva de firmas lo permite, valorar **2×** Sales como escenario de ahorro (recalcular CAC y PROYECCION).
+  - **Replante operativo** (integrado en Base **101k** — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3 y §6.1): sueldo founder **USD 1.000/mes**; **Co-CEO** **USD 1.000/mes**; Customer Support + Community Manager **350** (+50 si KPI → 400); Marketing Lead + apoyo a dirección **400** (+100 bonus si KPI); **Delivery Ops** **300** (+100 si KPI → 400) — **coordinación con empresa(s) concesionaria(s) de última milla**, no operación de flota propia.
   - Contador externo USD 130/mes + Abogado externo USD 200/mes.
   - Asesor regulatorio farmacéutico USD 120/mes solo en escenario Growth.
-  - **HQ — 4 PCs fijos:** recepción/cobros; admin+llamadas; dev potente; **PC 4** puesto flexible (Sales/Marketing en sede o backup de picos). **2× Sales** siguen con tablet/laptop en campo. CapEx referencia **~2.950–4.450 USD** (cotización local — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §6.1). **Sin compra de vehículo** en presupuesto.
+  - **HQ — 4 PCs fijos:** recepción/cobros; admin+llamadas; dev potente; **PC 4** puesto flexible (Sales/Marketing en sede o backup de picos). **4× Sales** en campo con tablet/laptop. CapEx referencia **~2.950–4.450 USD** (cotización local — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §6.1). **Sin compra de vehículo** en presupuesto.
   - **Stack IA:** Cursor **Ultra (200)** + Claude **Max (200)** + **Seedance 2.0** (~**25**/mes ancla hasta cotizar plan); sin Gemini, Runway ni Midjourney en stack acordado.
 4. **Inmueble:** Bella Florida o San Diego. Coworking USD 100/mes en Lean. **Base:** HQ tipo **casa USD 500/mes** en burn ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3). Growth mantiene línea oficina **USD 280** en su escenario hasta unificar FP&A.
 5. **Awareness:** **Meta Ads (Instagram/Facebook)** como canal principal desde mes 1 operativo — **USD 800/mes** meses 1–6 y **USD 500/mes** meses 7–12 en Base (promedio ~USD 650/mes). **Valla publicitaria:** NO en Lean; pequeña 3m×2m USD 350/mes en Base (**refuerzo offline**, desde mes 3). Mediana 6m×4m USD 700/mes en Growth.

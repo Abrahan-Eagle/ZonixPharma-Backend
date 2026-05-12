@@ -1,6 +1,6 @@
 # Plan del módulo operativo clave: validación Rx por farmacéutico colegiado
 
-> **Última actualización:** 10 mayo 2026.
+> **Última actualización:** 11 mayo 2026.
 > Documento que detalla el flujo central diferenciador de Zonix Pharma: la **validación de receta médica (Rx) por farmacéutico colegiado** dentro de la app.
 > Este flujo está parcialmente implementado en backend; ver [`../PLAN_RX_VALIDATION.md`](../PLAN_RX_VALIDATION.md) para detalle técnico.
 
@@ -11,6 +11,12 @@
 3. **Genera trazabilidad:** quién validó, cuándo, qué medicamento, qué receta, qué paciente. Fundamental ante MPPS.
 4. **Habilita el segmento Rx (48,3% del mercado farmacéutico VE):** sin esto, **Zonix Pharma** solo opera OTC + cuidado personal.
 5. **Reduce riesgo de mal uso:** Rx retenida, sustancias controladas, dosis verificada.
+
+### 1.1 Última milla — concesión a operador especializado
+
+**Zonix Pharma no opera flota propia de reparto.** La **ejecución física** del delivery (conductores, vehículos, rutina de campo, seguros y procedimientos del operador logístico) corresponde a **empresa(s) de delivery especializada(s)** con las que se suscriba **contrato marco o concesión**. La plataforma mantiene roles `delivery_company` / `delivery_agent` (y, si aplica, `delivery` autónomo como **complemento**) para **asignación, tracking y reglas comerciales**; el **Delivery Ops Coordinator** articula **SLA, cobertura e incidencias** con el **partner**, sin sustituir al ejecutor de última milla.
+
+Disputas que involucren entrega (incl. cadena de frío en ruta) se **median** según playbook del documento (p. ej. §16), distinguendo responsabilidades **farmacia / partner / paciente** frente a lo que **Zonix** controla en producto y datos.
 
 ## 2. Roles involucrados
 

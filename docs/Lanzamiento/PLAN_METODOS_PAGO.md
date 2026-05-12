@@ -245,6 +245,7 @@ Detalle: `[../FLUJO_PAGO_ORDEN.md](../FLUJO_PAGO_ORDEN.md)` y `[../logica-pagos-
 | KPI                                        | Meta mes 6 | Meta mes 12 |
 | ------------------------------------------ | ---------- | ----------- |
 | % órdenes pagadas con PMC2P                | 65%        | 60%         |
+| % órdenes pagadas con transferencia bancaria | 6%       | 5%          |
 | % órdenes pagadas con Zelle                | 8%         | 12%         |
 | % órdenes pagadas con Binance Pay          | 3%         | 8%          |
 | % órdenes pagadas en efectivo (pickup)     | 18%        | 15%         |

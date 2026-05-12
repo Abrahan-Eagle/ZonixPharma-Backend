@@ -15,6 +15,10 @@
 - [ ] **Creativos publicitarios** (Meta/TikTok/valla/flyers) revisados contra [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) §1.1 (Do/Don't salud VE) + visto bueno **abogado**.
 - [ ] **Términos de uso, política de privacidad y contrato marco farmacia** alineados con [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §4.4–4.4.5 (versión PDF fecha y hash en carpeta del inversor).
 
+### 1.1 Nota inversor — escenarios SAFE (Growth vs Base)
+
+> **Paradoja Growth &lt; Base (capital pedido):** el escenario **Growth (USD 90k)** predató el replante **Co-CEO + stack IA** del **Base (USD 101k)**. Growth **no** incluye en su burn §4.3 del [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) las líneas **Co-CEO USD 1.000/mes** ni **IA ~USD 425/mes** del Base §3.3 — por eso el **capital pedido** puede ser **menor** que Base pese al nombre «Growth». Para comparación **apples-to-apples** entre los tres escenarios, ver la nota bajo la tabla de cifras clave en [README.md](README.md).
+
 ## 2. Datos confirmados (que NO sean inventados)
 
 - [ ] **Nombre y datos del inversor:** [PENDIENTE]. Confirmado vía teléfono / email.
@@ -47,7 +51,7 @@
 - [ ] Cotización formal de la valla publicitaria: [PENDIENTE].
 - [ ] Lista de 2-3 abogados venezolanos con cotización: [PENDIENTE].
 - [ ] Lista de 2-3 contadores venezolanos con cotización: [PENDIENTE].
-- [ ] Lista de candidatos para Sales B2B, Customer Support, Marketing Lead, Delivery Ops Coordinator (al menos 2-3 por rol): [PENDIENTE].
+- [ ] Lista de candidatos para **4 ejecutivos** Sales B2B, Customer Support, Marketing Lead, Delivery Ops Coordinator (al menos 2-3 por rol; **Sales:** pipeline suficiente para **4** contrataciones): [PENDIENTE].
 
 ## 5. Demo técnica preparada
 
@@ -68,7 +72,7 @@
 | 5-10 | Pitch solución: "Zonix Pharma. Marketplace farmacéutico VE con cuota plataforma + fee sobre GMV (moderado vs agregadores). Validación Rx digital. Stack ya construido." Presentar el [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md). |
 | 10-15 | Demo en vivo: paciente busca, sube receta, paga. Pharmacist valida en tablet. Farmacia ve la orden. **Si hay tiempo:** una frase sobre **delivery** (asignación/tracking; repartidor autónomo vs empresa según el actor en la app). |
 | 15-20 | Mercado: TAM USD 1.638M (Cifar/IMS-IQVIA), comparable Farmalisto (~USD 32M revenue MX; funding ~USD 22M–33M según fuente). |
-| 20-25 | Números: **USD 101k** para 12 meses, equilibrio mensual **post-M12** (mitigaciones §1.4 PROYECCION), LTV/CAC **~8,3x**. |
+| 20-25 | Números: **USD 101k** para 12 meses, equilibrio mensual **post-M12** (mitigaciones §1.4 PROYECCION), LTV/CAC **~7,2x** (ARPF ~50, **4×** Sales — UNIT). |
 | 25-28 | Ask: **USD 101k** vía SAFE post-money cap **USD 600k**. Equity implícito **~16,83%**. |
 | 28-30 | Q&A inicial + próximos pasos. |
 
@@ -104,8 +108,8 @@
 
 | Q | A |
 |---|---|
-| ¿Por qué **USD 101k** y no **USD 60k** Lean? | "Lean es viable pero con menos holgura comercial/IA/CapEx. **101k** incorpora founder **1k**, **Co-CEO 1k**, HQ **500**, IA **~425**, **4 PCs** y replante salarial — runway 12 meses con **~USD 27.045** cash cierre año 1 ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3)." |
-| ¿Por qué LTV/CAC **~8,3x** si benchmarks SaaS son 3-5x? | "1) Revenue recurrente B2B (cuota + fee GMV) con take-rate total bajo vs agregadores. 2) Marketplace sticky por catálogo y rutas. 3) No operamos logística directa del medicamento (gross margin alto en software)." |
+| ¿Por qué **USD 101k** y no **USD 60k** Lean? | "Lean es viable pero con menos holgura comercial/IA/CapEx. **101k** incorpora founder **1k**, **Co-CEO 1k**, HQ **500**, IA **~425**, **4 PCs**, **4×** Sales y replante salarial — runway 12 meses con **~USD 29.862** cash cierre año 1 ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3)." |
+| ¿Por qué LTV/CAC **~7,2x** si benchmarks SaaS son 3-5x? | "1) Revenue recurrente B2B (cuota 25/40/55 + fee GMV) con take-rate total bajo vs agregadores. 2) Marketplace sticky por catálogo y rutas. 3) No operamos logística directa del medicamento (gross margin alto en software). 4) CAC sube con **4×** Sales pero ARPF placeholder sube a **~50**." |
 | ¿Qué pasa si inflación VE supera 800%? | "Plan contingencia: cortar valla (USD 350), bajar marketing 50% (USD 250), reducir 1 hire si necesario (USD 400). Burn baja a USD 3.000/mes. Runway extiende 4-6 meses." |
 | ¿Hay sueldo del founder? | "**Base:** **USD 1.000/mes** CEO+CTO en burn ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3). Lean puede seguir en **0** según escenario; Growth histórico USD 250 desde mes 4 — revisar alineación con Base." |
 
@@ -123,9 +127,9 @@
 | Q | A |
 |---|---|
 | ¿De dónde sale TAM USD 1.638M? | "**Cifar VE** publica el mercado citando datos **IMS/IQVIA**: 389M unidades × USD 4,21 promedio. Crecimiento sector +20,66% YoY ene-ago 2025 / +17,7% proyección anual (validar PDF Cifar)." |
-| ¿De dónde sale CAC USD **109**? | "Construcción bottom-up: **2×** Sales (comisión **USD 30**/firma + prorrateo fijos **USD 240**/mes a **~8** firmas/mes), marketing digital, materiales. Detalle en [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §3." |
+| ¿De dónde sale CAC USD **139**? | "Construcción bottom-up: **4×** Sales (comisión **USD 30**/firma + prorrateo fijos **USD 480**/mes a **~8** firmas/mes en supuesto cruise), marketing digital, materiales. Detalle en [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §3." |
 | ¿De dónde sale churn 5% mensual? | "Mediana SaaS B2B SMB LatAm 3-7% (ChartMogul Benchmarks 2025). Conservador." |
-| ¿Por qué el equilibrio mensual queda **post-M12**? | "Burn recurrente por tramo **7.402 / 7.738 / 7.371** USD/mes (promedio **~7.499**; incluye founder **1k**, **Co-CEO 1k**, HQ **500**, IA **~425**, equipo — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3). Con **ARPF 45** hacen falta **>~165** activas orden de magnitud (**~164** con burn tramo C **7.371** ÷ 45; **~167** con burn **promedio ~7.499** ÷ 45 — [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §6). El plan llega a **120** en M12 (**5.400** revenue vs **7.371** burn — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1). Mitigaciones: §1.4 PROYECCION (mix GMV, firmas, gasto, bridge)." |
+| ¿Por qué el equilibrio mensual queda **post-M12**? | "Burn recurrente por tramo **7.462 / 7.798 / 7.431** USD/mes (promedio **~7.559**; incluye founder **1k**, **Co-CEO 1k**, HQ **500**, IA **~425**, **4×** Sales, equipo — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3). Con **ARPF ~50** hacen falta **>~151** activas orden de magnitud (**~149** con burn tramo C **7.431** ÷ 50; **~151** con burn **promedio ~7.559** ÷ 50 — [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §6). El plan llega a **120** en M12 (**6.000** revenue vs **7.431** burn — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1). Mitigaciones: §1.4 PROYECCION (mix GMV, firmas, gasto, bridge)." |
 | ¿Y si el plan no se cumple? | "Tabla de sensibilidad pesimista / base / optimista en [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) y detalle en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) sección 7. Plan de contingencia ante shocks documentado en sección 4." |
 
 ## 8. Cierre de la reunión

@@ -12,8 +12,8 @@
 ### 1.1 Fortalezas
 
 - **Stack ya construido:** ~4 años de desarrollo del **stack Zonix Pharma** + 397 tests pasando reduce riesgo de ejecución técnica drásticamente.
-- **Equipo lean defendible:** sin pharmacist liaison (legalmente correcto), sin diseñador UI/UX (founder tech), **7** FTE operativos en Base (Founder + Co-CEO + 2× Sales + CS+CM + Marketing + Delivery Ops) + **2** freelance (contador + abogado) = **9** puestos costeados; Growth suma **asesor regulatorio** externo — dimensionado para el piloto **Meta + 2 Sales**.
-- **Decisión coherente sobre capital:** **USD 101k** (Base) incorpora replante operativo (founder, **Co-CEO**, HQ, IA, CapEx PCs, salarios) con runway 12 meses y **~USD 27.045** cash cierre año 1 ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3). Lean y Growth quedan como alternativas legítimas.
+- **Equipo lean defendible:** sin pharmacist liaison (legalmente correcto), sin diseñador UI/UX (founder tech), **9** FTE operativos en Base (Founder + Co-CEO + **4×** Sales + CS+CM + Marketing + Delivery Ops) + **2** freelance (contador + abogado) = **11** personas en payroll extendido; Growth suma **asesor regulatorio** externo — dimensionado para el piloto **Meta + 4× Sales**.
+- **Decisión coherente sobre capital:** **USD 101k** (Base) incorpora replante operativo (founder, **Co-CEO**, HQ, IA, CapEx PCs, salarios, **4×** Sales) con runway 12 meses y **~USD 29.862** cash cierre año 1 ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3). Lean y Growth quedan como alternativas legítimas.
 - **Plan T+0 / T+30 / T+60 / T+90 realista:** 30 días para constitución, 30 días para equipo + onboarding farmacias, 30 días para lanzamiento. Honesto.
 - **Founder con sueldo simbólico/profesional en Base (USD 1k/mes):** reduce “skin” puro en cash pero evita narrativa inconsistente con burn; el inversor debe verlo en presupuesto §3.3.
 
@@ -21,8 +21,8 @@
 
 | Severidad | Hallazgo | Acción |
 |---|---|---|
-| **CRÍTICA #1** *(histórico mayo 2026)* | Inconsistencia numérica en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) tabla 1.1 (modelo previo): total burn año 1 mal sumado vs. filas. **Estado:** corregido; modelo vigente **Meta + 2 Sales** + replante **101k** + **Co-CEO** — burn año 1 **89.982** (§1.1). |
-| **ALTA #1** *(histórico — modelo previo **un solo comercial**)* | El mensaje decía «6+2» pero el conteo correcto **entonces** era **5 FT + 2 FL = 7** (faltaba 1 headcount FT en el texto). **Vigente (Base, Meta + 2 Sales):** **7** FTE operativos + **2** freelance = **9** puestos costeados (Founder + Co-CEO + 2× Sales + CS+CM + Marketing + Delivery Ops — BRIEF, MENSAJE, README §3). **Growth:** misma base operativa + **asesor regulatorio** (costeo [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §4.1). | Alineado. |
+| **CRÍTICA #1** *(histórico mayo 2026)* | Inconsistencia numérica en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) tabla 1.1 (modelo previo): total burn año 1 mal sumado vs. filas. **Estado:** corregido; modelo vigente **Meta + 4× Sales** + replante **101k** + **Co-CEO** + cuota fija **25/40/55** — burn año 1 **90.702** (§1.1; **sin** bono piloto ni subsidio delivery en burn). |
+| **ALTA #1** *(histórico — modelo previo **un solo comercial**)* | El mensaje decía «6+2» pero el conteo correcto **entonces** era **5 FT + 2 FL = 7** (faltaba 1 headcount FT en el texto). **Vigente (Base, Meta + 4× Sales):** **9** FTE operativos + **2** freelance (Founder + Co-CEO + **4×** Sales + CS+CM + Marketing + Delivery Ops — BRIEF, MENSAJE, README §3). **Growth:** misma base operativa + **asesor regulatorio** (costeo [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §4.1). | Alineado. |
 | **ALTA #2** | El plan no documenta políticas de seguridad de la información (donde se almacena la receta médica, copias de cédula del KYC, audit log de pago). Para inversor con due diligence formal es un gap. | Aplicado: añadida sección de seguridad y privacidad en [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) y referencia explícita en [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md). |
 | MEDIA | El plan no menciona qué pasa si el founder se enferma o se ausenta inesperadamente. | Documentado plan de contingencia en sección 2 más abajo. |
 
@@ -42,8 +42,8 @@
 
 ### 2.1 Fortalezas
 
-- **LTV/CAC ~8,3x con benchmark sólido:** churn 5% (mediana SaaS B2B SMB LatAm), ARPF USD 45 **placeholder** y CAC USD **109** (construcción bottom-up con **2×** Sales) están justificados en [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md).
-- **Payback CAC ~2,4 meses:** retorno temprano frente a SaaS B2B típicos con billing anual (cuota + fee GMV mensual al nivel del placeholder).
+- **LTV/CAC ~7,2x con benchmark sólido:** churn 5% (mediana SaaS B2B SMB LatAm), ARPF USD **~50** **placeholder** y CAC USD **139** (construcción bottom-up con **4×** Sales) están justificados en [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md).
+- **Payback CAC ~2,8 meses:** retorno temprano frente a SaaS B2B típicos con billing anual (cuota + fee GMV mensual al nivel del placeholder).
 - **Buffer de inflación 20% (ponderado 30/10):** manejo realista de la macro VE. Mejor que asumir USD constantes como muchos otros pitchs.
 - **Tres escenarios distintos:** Lean / Base / Growth dan flexibilidad al inversor para elegir nivel de exposición.
 - **Plan de contingencia ante shocks:** documentado en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) sección 4.
@@ -52,7 +52,7 @@
 
 | Severidad | Hallazgo | Acción |
 |---|---|---|
-| **ALTA #3** | El modelo asume tasa de firma 5-15 farmacias/mes desde mes 4. Si **2× Sales** firman menos, el **equilibrio mensual** se retrasa aún más (ya **post-M12** con el burn replanteado). | Aplicado: tabla de sensibilidad en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) sección 7; mitigaciones §1.4; BRIEF y CHECKLIST. |
+| **ALTA #3** | El modelo asume tasa de firma 5-15 farmacias/mes desde mes 4. Si **4× Sales** firman menos de lo previsto, el **equilibrio mensual** se retrasa aún más (ya **post-M12** con el burn replanteado). | Aplicado: tabla de sensibilidad en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) sección 7; mitigaciones §1.4; BRIEF y CHECKLIST. |
 | **ALTA #4** | El cap del SAFE **USD 600k** para **USD 101k** da **~16,83%** equity. Sigue siendo **generoso para el inversor** vs. muchos pre-seed LatAm citados en 10-12% para tickets similares (referencia histórica **otra generación** de instrumento: ~**13,64%** sobre ticket **~USD 75k** — **no** confundir con la evolución **95k → 101k** del capital Base actual). Justificable por MVP avanzado, founder técnico y **Co-CEO** modelado. | Aplicado: nota en [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) sobre cap como señal al primer inversor. |
 | MEDIA | El año 2 proyecta revenue USD 96-108k anuales pero no detalla burn año 2 (más allá de "estabilizado en USD 6.000-6.500"). Inversor sofisticado puede pedir detalle. | Documentado en sección abajo. |
 | MEDIA | No hay análisis explícito de "cómo se compone el revenue año 1 vs. cohorts" — solo se da el agregado. Inversor con experiencia SaaS puede pedirlo. | Aplicado: tabla de cohort simulado ya existe en [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) sección 7. Confirmar referencia desde brief. |
@@ -60,7 +60,7 @@
 ### 2.3 Inconsistencias numéricas detectadas
 
 - (CRÍTICA #1 ya tratada en perspectiva CEO).
-- Cadena vigente (modelo **Meta + 2 Sales** + replante + **Co-CEO**): ARPF 45 → 107×45 = **4.815** (revenue mes 11) ✓; burn mes 11 **7.371** ✓ (cash flow mes **11** **−2.556** acumulado **−61.576**); **equilibrio mensual post-M12** salvo mitigaciones ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.4). Burn promedio **~7.499** → **~167** farmacias a ARPF 45 y burn tramo bajo ([UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §6).
+- Cadena vigente (modelo **Meta + 4× Sales** + replante + **Co-CEO** + cuota **25/40/55**): ARPF **~50** → 107×50 = **5.350** (revenue mes 11) ✓; burn mes 11 **7.431** ✓ (cash flow mes **11** **−2.081** acumulado **−59.899**); **equilibrio mensual post-M12** salvo mitigaciones ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.4). Burn promedio **~7.559** → **~151** farmacias orden de magnitud a ARPF 50 (**~149** con tramo **7.431**; **~151** con promedio **7.559** — [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §6).
 - Cap table conversión SAFE post-money cap **USD 600k** para **USD 101k** = **~16,83%** ✓ (101.000/600.000).
 - Cap Lean USD 60k / 450k = 13,33% ✓.
 - Cap Growth USD 90k / 650k = 13,85% ✓.
@@ -133,7 +133,7 @@
 
 ### 5.1 Fortalezas
 
-- **Pricing transparente para farmacia:** modelo **híbrido** (fija 20/35/50 + % GMV por banda, políticas §5 B2B) es claro y defensible vs. take-rate pleno de Rappi.
+- **Pricing transparente para farmacia:** modelo **híbrido** (fija **25/40/55** + % GMV por banda, políticas §5 B2B) es claro y defensible vs. take-rate pleno de Rappi.
 - **Ahorro vs. Rappi:** el ticket **Zonix Pharma** suele ser **órden de magnitud menor** que ~25-35% GMV en agregador; cuantificar en vivo con la calculadora del tier ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5).
 - **Onboarding farmacéutico colegiado bien justificado:** la Ley del Ejercicio de la Farmacia VE obliga a que el pharmacist sea de la farmacia. El plan respeta esa ley sin contratar pharmacist interno.
 - **Repartidor con 0% comisión sobre delivery fee:** atractivo para captar repartidores Yummy / Rappi descontentos con sus comisiones.
@@ -143,7 +143,7 @@
 
 | Severidad | Hallazgo | Acción |
 |---|---|---|
-| **CRÍTICA #2** | El pack promete waiver comercial (cuota **USD 0** meses iniciales) en [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §11 y FAQ en [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md); debía quedar **explícito** frente a la tabla §1.1 (caso **sin** waiver para no sobrestimar caja) y la variante **«con waiver»** (**~−USD 200** ingreso año 1 vs. proxy meses 1–2). | **Aplicado:** convención documentada en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 (párrafo previo a la tabla), notas §1.1–1.3 y §11.2 B2B; §8.1 de este informe. |
+| **CRÍTICA #2** | El pack promete waiver comercial (cuota **USD 0** meses iniciales) en [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §11 y FAQ en [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md); debía quedar **explícito** frente a la tabla §1.1 (caso **sin** waiver para no sobrestimar caja) y la variante **«con waiver»** (**~−USD 222** ingreso año 1 vs. proxy meses 1–2). | **Aplicado:** convención documentada en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 (párrafo previo a la tabla), notas §1.1–1.3 y §11.2 B2B; §8.1 de este informe. |
 | **ALTA #8** | Ningún documento detalla cómo se manejan los **picos operativos** (fines de semana, días festivos) ni el plan de capacidad del Customer Support fuera de horario. | Aplicado: añadida sección operativa de horarios y guardias en [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) y en SLA. |
 | MEDIA | El pack asume que el farmacéutico colegiado de la farmacia validará Rx digitalmente sin resistencia. En la práctica algunos farmacéuticos mayores rechazan apps. | Documentado: en [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) sección 8 hay objeción + respuesta sobre eso. La capacitación de 30 min y soporte WhatsApp directo son la mitigación. |
 
@@ -201,7 +201,7 @@
 
 | # | Hallazgo | Documento | Estado |
 |---|---|---|---|
-| **C1** *(histórico — modelo previo)* | Inconsistencia numérica en tabla 1.1 (año 1): total declarado vs. suma de filas **no coincidían** (orden **~54k USD** en el modelo antiguo). **No aplicar al modelo vigente:** burn año 1 Base actual = **89.982** (Meta + 2 Sales + replante + **Co-CEO** — ver PROYECCION §1.1). | ✓ Cerrado en documentos vigentes |
+| **C1** *(histórico — modelo previo)* | Inconsistencia numérica en tabla 1.1 (año 1): total declarado vs. suma de filas **no coincidían** (orden **~54k USD** en el modelo antiguo). **No aplicar al modelo vigente:** burn año 1 Base actual = **90.702** (Meta + **4×** Sales + replante + **Co-CEO** + cuota **25/40/55** — ver PROYECCION §1.1). | ✓ Cerrado en documentos vigentes |
 | **C2** | Waiver de 2 meses gratis NO reflejado en proyección | [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) tabla 1.1 + dependientes | ✓ Aplicado (ver sección 8) |
 | **C3** | Información del founder ausente en pack (50% decisión inversor) | [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) + [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) | ✓ **Parcialmente cerrado (mayo 2026):** nombre, contacto, LinkedIn, portfolio, proyectos y párrafo «por qué yo» volcados desde CV/LinkedIn. **Siguen pendientes:** GitHub público o acceso repo bajo NDA, 2–3 referencias, declaración % tiempo Zonix Pharma vs. CETIAC/otros, métricas de tracción por producto si aplica. |
 
@@ -209,7 +209,7 @@
 
 | # | Hallazgo | Documento | Estado |
 |---|---|---|---|
-| **A1** | Histórico (un solo comercial): "6+2" vs. conteo real 5+2. **Vigente:** Base **7** FTE + **2** freelance = **9**; Growth + asesor regulatorio. | [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) + pack | ✓ Alineado |
+| **A1** | Histórico (un solo comercial): "6+2" vs. conteo real 5+2. **Vigente:** Base **9** FTE + **2** freelance; Growth + asesor regulatorio. | [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) + pack | ✓ Alineado |
 | **A2** | Falta sección de seguridad / privacidad de datos médicos | [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) + [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) | ✓ Aplicado |
 | **A3** | Tabla de sensibilidad central referenciada explícitamente | [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) + [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) | ✓ Aplicado |
 | **A4** | Cap SAFE generoso requiere comentario explícito | [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) | ✓ Aplicado |
@@ -237,18 +237,18 @@
 
 ### 8.1 Fuente de verdad (modelo Base USD 101k, mayo 2026)
 
-La tabla mes a mes **oficial** (sin waiver y con waiver, burn **7.402 / 7.738 / 7.371**, one-shots **~10.408**) está en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §**1.1** y el despliegue de capital en §**1.3**.
+La tabla mes a mes **oficial** (sin waiver y con waiver, burn **7.462 / 7.798 / 7.431**, one-shots **~9.808**) está en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §**1.1** y el despliegue de capital en §**1.3**.
 
 **Totales año 1 (extraído del documento vigente):**
 
 | Versión | Revenue año 1 | Burn año 1 | Cash flow acumulado (operativo) |
 |---|---|---|---|
-| Sin waiver | **26.435** | **89.982** | **−63.547** |
-| Con waiver primeras 10 | **26.235** | **89.982** | **−63.747** |
+| Sin waiver | **29.372** | **90.702** | **−61.330** |
+| Con waiver primeras 10 | **29.150** | **90.702** | **−61.552** |
 
-**Lectura:** el waiver «primeras 10» en la tabla §1.1 condona **USD 200** de revenue acumulado año 1 vs. sin waiver (**proxy** de no cobrar los ingresos modelados en **meses 1 y 2**: **35 + 165**). **Impacto bajo** en caja vs. burn total. **Cash en caja** cierre año 1: **~USD 27.045** sin waiver ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3); **~USD 26.845** con esa variante (**−200** sobre inflows). **Equilibrio mensual** con ARPF 45: **posterior a mes 12** (§1.4). Si el comercial otorga waivers **más amplios**, recalcular.
+**Lectura:** el waiver «primeras 10» en la tabla §1.1 condona **~USD 222** de revenue acumulado año 1 vs. sin waiver (**proxy** de no cobrar los ingresos modelados en **meses 1 y 2**: **39 + 183** en el caso sin waiver). **Impacto bajo** en caja vs. burn total. **Cash en caja** cierre año 1: **~USD 29.862** sin waiver ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3); **~USD 29.640** con esa variante. **Equilibrio mensual** con ARPF **~50**: **posterior a mes 12** (§1.4). Si el comercial otorga waivers **más amplios**, recalcular.
 
-**Control cruzado (10 mayo 2026):** en mes **11** el burn del modelo Base es **7.371** USD/mes (tramo C — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1). Se corrigió el typo **6.371** en [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) y [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md) (resto del burn **7.402 / 7.738 / 7.371** ya estaba alineado).
+**Control cruzado (11 mayo 2026):** en mes **11** el burn del modelo Base es **7.431** USD/mes (tramo C — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1). Tramos completos **7.462 / 7.798 / 7.431** alineados a [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3 (**4×** Sales + buffer; **sin** bono piloto farmacias ni **delivery fee subsidiado** en burn).
 
 ### 8.2 Tabla histórica (modelo 75k / burn 4.9k — solo archivo)
 
@@ -301,7 +301,7 @@ Lo que un inversor sofisticado pediría adicionalmente al pack:
 | **CPO** | Propuestas valor B2B/B2C/tercero, roadmap T+X — PROPUESTA_* + PROYECCION §10 | OK |
 | **CMO (clínico) / RA / QA-PV** | Claims, controlados, farmacovigilancia — PLAN_MODULO §8–11; marketing salud | Sujeto a dictamen asesor |
 | **Compliance / DPO / Legal** | SAFE, tratamiento datos, marco farmacia — [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §4.4 | Sujeto a abogado |
-| **CRO ventas / CMO marketing / CHRO** | Equipo Base **7 FTE + 2 freelance**; CAC/LTV; presupuesto Meta — PRESUPUESTO §3, UNIT_ECONOMICS | OK |
+| **CRO ventas / CMO marketing / CHRO** | Equipo Base **9 FTE + 2 freelance** (**4×** Sales); CAC/LTV; presupuesto Meta — PRESUPUESTO §3, UNIT_ECONOMICS | OK |
 | **Supply / logística (si aplica físico)** | Cadena de frío, SLA entrega, reparto — [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md), [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) | OK |
 | **CRO riesgos / Auditoría / IR** | Sensibilidades §7 PROYECCION, cap SAFE, updates §6.3 | OK |
 
@@ -331,7 +331,7 @@ Desglose de lecturas que en §11.1 iban agrupadas; **no** sustituye al dictamen 
 
 | Ola | Objetivo | Documentos tocados (principal) |
 |-----|-----------|--------------------------------|
-| **1** | Headcount Base **7 FTE + 2** freelance; ALTA#1/A1/CHRO; guion demo delivery; cuestionario § vs README | [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md), [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md), [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md), [README.md](README.md) |
+| **1** | Headcount Base **9 FTE + 2** freelance (**4×** Sales; histórico **7 FTE + 2×** Sales); ALTA#1/A1/CHRO; guion demo delivery; cuestionario § vs README | [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md), [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md), [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md), [README.md](README.md) |
 | **2** | Marca producto **Zonix Pharma**; claim MPPS prudente; BRIEF sin `[PENDIENTE]` en montos ya cerrados | [CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md), [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md), [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md), [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md), [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md) |
 | **3** | Export/trazabilidad MPPS sin prometer formato oficial; enlace [PLAN_REGULATORIO_PHARMA_VE.md](../PLAN_REGULATORIO_PHARMA_VE.md); Customer Support unificado **Zonix Pharma** en módulo Rx | [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) |
 | **4** (cierre) | Pagos B2B + métodos de pago + FAQ checklist + PERFIL comparativa; mermaid `AppZonixPharma` / `ZonixPharma` | [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md), [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md), [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md), [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md) |
@@ -363,16 +363,24 @@ El pack es **invertible** después de aplicadas las CRÍTICAS y ALTAS. Las MEDIA
 
 Lectura cruzada de los **21** `.md` del directorio con lentes ejecutivos y de control. **Evidencia técnica:** el backend del repo pasó **397 tests** / **1636 assertions** (`./vendor/bin/phpunit`, verificación 10 may 2026).
 
+**Segunda pasada forense (coherencia numérica / narrativa inversor, mayo 2026):** cerrados hallazgos **C1–C4** y ajustes **A1–A4, M1–M2, M5** del plan de auditoría cruzada — **(C1)** [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md) §3 y §8 alineados a stock/revenue [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1; **(C2)** hipótesis **billing parcial** primer mes + mix GMV documentada en PROYECCION §1.2; **(C3)** metodología **stock de activas** (tabla §1.1 como fuente de verdad vs. fórmula churn escolar) en PROYECCION §1.2; **(C4)** sensibilidad **optimista** cash cierre año 1 en [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) alineada a **~USD 35–43k** (PROYECCION §7.3). **A1** nota **Growth &lt; Base** en BRIEF (instrumento) + [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) §1.1; **A2** fila farmacias equilibrio Growth en [README.md](README.md); **A3** fórmula promedio Lean **3.636** en [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.2; **A4** KPI **transferencia bancaria** en [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §8; **M1** equilibrio farmacias **~149–151** (modelo vigente **4×** Sales + ARPF **~50**) en UNIT + BRIEF *(histórico **~165** con 2×/45 — cuarta pasada; **~152–155** antes de retirar bono/subsidio delivery — quinta pasada)*; **M2** asterisco Growth §5 PRESUPUESTO; **M5** aclaración **USD 1.150 vs 1.450** en [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §1.4.
+
+**Tercera pasada (auditoría multi-rol en profundidad, mayo 2026):** *(Los ítems (3)–(4) cerraron coherencia del modelo **2× Sales + ARPF 45** y caja **~27.045**; el **modelo vigente** del pack es **4× Sales + ARPF ~50**, caja **~29.862** y equilibrio **~149–151** farmacias — ver **Quinta pasada** debajo y [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1.)* **(1)** [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §1 — corregido **one-shots Growth** **7.604** → **~11.308** (coherente con §4.2 y total **90k**); nota explícita anti-confusión con modelo antiguo; **vigente** one-shots Growth **~10.708** (§1 y §4.2). **(2)** [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §9 — recalculados break-even **pesimista/optimista** con **burn ÷ ARPF** explícito (**~216–212** a ARPF 35; **~137–135** a ARPF 55 vs. cifras previas erróneas). **(3)** Marco **~165** (**164/167**) unificado en [CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md), [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) §7 y cadena §2.3 aquí *(histórico 2×/45)*. **(4)** [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) — caja cierre año 1 **~USD 27.045** en esa ola *(histórico; vigente **~29.862**)*. **(5)** [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md) §5 — aclarado que **Base USD 500** ya está cerrado en PRESUPUESTO y la tabla de rangos es **benchmark**, no “pendiente” en 280.
+
+**Cuarta pasada (replante comercial mayo 2026):** cuota fija **+USD 5** por tier (**25/40/55**), **4×** Sales B2B, ARPF placeholder **~50**, burn **7.642 / 7.978 / 7.611** (promedio **~7.739**), revenue año 1 **29.372**, burn año 1 **92.862**, CF acum. **−63.490**, caja cierre **~27.102** (waiver **~26.880**); equilibrio farmacias orden de magnitud **~152–155** vs. **~165** del modelo **2×** Sales + ARPF 45. [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) §2.3, §8.1, §11.4 y pack Lanzamiento alineados a [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1.
+
+**Quinta pasada (11 mayo 2026):** retirados el **bono piloto** one-shot (Lean **−USD 600**) y la partida **delivery fee subsidiado** del burn. Burn **7.462 / 7.798 / 7.431** (promedio **~7.559**), burn año 1 **90.702**, CF acum. **−61.330**, caja **~29.862** (waiver **~29.640**); one-shots Base **~9.808**; reserva **+USD 484** en [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.4; equilibrio **~149–151** farmacias ([UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §6).
+
 | Rol | Foco en el pack | Veredicto breve |
 |-----|-----------------|-----------------|
 | **CEO** | Narrativa única **Zonix Pharma**, runway 12m, honestidad post-M12 | **OK** — [CONTEXTO](CONTEXTO_PITCH_Y_DECISIONES.md), [BRIEF](BRIEF_UNA_PAGINA.md), [MENSAJE](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) |
-| **CFO** | Fuente §1.1 / §1.3 [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md); caja cierre año 1 **~27.045**; one-shots **~10.408** | **OK** — redondeos “27k” unificados a **27.045** donde el pitch cita cifra ancla |
+| **CFO** | Fuente §1.1 / §1.3 [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md); caja cierre año 1 **~29.862**; one-shots Base **~9.808**; tabla §1 PRESUPUESTO Growth one-shots **~10.708**; reserva **+484** §3.4 PRESUPUESTO | **OK** post-quinta pasada — cifra ancla **29.862** en [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) §7 |
 | **COO** | SLAs, Rx, cold chain, soporte — [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) | **OK** sujeto a operación real piloto |
 | **CTO / CISO** | Stack Laravel+Flutter, tests, CI/NDA | **OK** — cifra tests verificada en repo |
 | **CPO** | PROPUESTA_* + roadmap T+X [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) | **OK** |
 | **CMO clínico / RA / QA-PV** | Claims, controlados, FV — PLAN_MODULO + marketing salud | **Sujeto a dictamen** MPPS/copy salud |
 | **Compliance / DPO / Legal** | [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §4.4; SAFE; contrato marco B2B | **Sujeto a abogado**; FAQ M&A SAFE corregida a redacción no engañosa |
-| **CRO ventas / CMO marketing / CHRO** | CAC/LTV, equipo 7 FTE + 2 FL | **OK** — [UNIT_ECONOMICS](UNIT_ECONOMICS.md), [CUESTIONARIO](CUESTIONARIO_EQUIPO_PILOTO.md) |
+| **CRO ventas / CMO marketing / CHRO** | CAC/LTV, equipo **9** FTE + 2 FL (**4×** Sales) | **OK** — [UNIT_ECONOMICS](UNIT_ECONOMICS.md), [CUESTIONARIO](CUESTIONARIO_EQUIPO_PILOTO.md) |
 | **Supply / logística** | Cadena frío, delivery — PROPUESTA_TERCER_LADO + PLAN_MODULO | **OK** |
 | **CRO riesgos / Auditoría / IR** | Sensibilidades §7 PROYECCION; cap SAFE; VOLCADO founder | **OK** con pendientes GitHub/referencias/% tiempo |
 

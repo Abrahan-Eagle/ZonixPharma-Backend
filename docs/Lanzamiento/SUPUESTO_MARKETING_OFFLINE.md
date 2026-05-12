@@ -200,7 +200,7 @@ Detalle de marca en [`../BRAND_ZONIX_PHARMA.md`](../BRAND_ZONIX_PHARMA.md).
 Triggers para subir de Base USD 350 valla → Growth USD 700 valla:
 
 1. Adopción supera 130% del plan.
-2. Cash en banco al cierre del mes **6 ≥ ~USD 49.000** (coherente con escenario Base **USD 101k** + **Co-CEO** + **Meta + 2 Sales** — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3 y DoD en [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md)); **no** usar umbral fijo **USD 50k** sin recalibrar el modelo.
+2. Cash en banco al cierre del mes **6 ≥ ~USD 48.100** (coherente con escenario Base **USD 101k** + **Co-CEO** + **Meta + 4×** Sales — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3 y DoD en [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md)); **no** usar umbral fijo **USD 50k** sin recalibrar el modelo.
 3. CAC orgánico (offline + boca en boca) supera CAC digital en farmacias firmadas.
 4. Serie A levantada o en proceso.
 
