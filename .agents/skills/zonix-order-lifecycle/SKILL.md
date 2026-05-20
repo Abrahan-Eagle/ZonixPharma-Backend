@@ -1,6 +1,6 @@
 ---
 name: zonix-order-lifecycle
-description: Ciclo de vida completo de órdenes en Zonix Eats. Estados, transiciones válidas, reglas de cancelación, penalidades, y eventos.
+description: Ciclo de vida de órdenes Zonix Pharma. Estados (incl. pending_prescription_validation), transiciones, cancelación, penalidades y eventos broadcast.
 trigger: Cuando se trabaje con órdenes, cambios de estado, cancelaciones, tracking de pedidos, o lógica de flujo de compra.
 scope: app/Models/Order.php, app/Http/Controllers/Commerce/OrderController.php, app/Http/Controllers/Delivery/DeliveryController.php, app/Http/Controllers/Buyer/OrderController.php
 author: Zonix Team
@@ -8,7 +8,7 @@ version: 2.0
 ---
 
 > **Zonix Pharma:** ciclo de vida de órdenes incluye `pending_prescription_validation` y reglas Rx/TTL en `PrescriptionService` / `config/zonix.php`.
-# 🔄 Ciclo de Vida de Órdenes - Zonix Eats
+# Ciclo de vida de órdenes — Zonix Pharma
 
 ## Roles (Terminología Estándar)
 

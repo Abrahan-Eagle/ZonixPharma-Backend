@@ -31,7 +31,7 @@
 - Necesita ayuda para usar la app (alfabetización digital baja).
 - El hijo le hace el pedido remoto con su tarjeta / Zelle y se entrega en casa de la mamá.
 
-## 2. Dolor que tiene hoy
+## 2. Flaquezas que tiene hoy
 
 1. **Desabastecimiento aleatorio:** "salgo a la farmacia y no sé si tendrán el medicamento; pierdo 1-2 horas".
 2. **Diferencia de precios entre farmacias:** "puedo gastar 30% más si voy a la farmacia equivocada".
@@ -72,7 +72,7 @@
 
 ### 3.4 Delivery a domicilio o pickup
 
-- La **última milla** la ejecutan **empresa(s) de delivery especializada(s)** bajo **concesión o contrato marco** con Zonix Pharma; la app orquesta asignación y tracking. Rol **`delivery` autónomo** o **`delivery_agent`** puede aparecer según el partner y complementos operativos ([PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md)).
+- La **última milla** la ejecutan **empresa(s) de delivery especializada(s)** bajo **concesión o contrato marco** con Zonix Pharma; la app orquesta asignación y tracking. En ruta opera un **`delivery_agent`** de esa empresa ([PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) §A).
 - Tiempo promedio prometido: 60-90 minutos en Bella Florida y El Socorro (sujeto a SLA con el operador).
 - Pickup en sucursal opcional para Rx retenida o sustancias controladas.
 
@@ -122,7 +122,7 @@
 | Paso | Tiempo | Qué hace |
 |---|---|---|
 | 1 | 30s | Descarga app desde Play Store o App Store (`com.zonix.pharma`). O entra a `web.zonixpharma.com`. |
-| 2 | 30s | Registro con **solo teléfono + WhatsApp OTP** (el código llega por WhatsApp gracias a YCloud, no SMS). Sin email, sin nombre, sin dirección todavía. |
+| 2 | 30s | Registro con **solo teléfono + OTP por SMS** (**Firebase Phone Auth**). Sin email, sin nombre, sin dirección todavía. |
 | 3 | Inmediato | Browse de catálogo: el paciente ya puede explorar productos. |
 | 4 | 60s al primer pedido | Cuando agrega al carrito, app pide: nombre + dirección de entrega (si elige delivery). |
 | 5 | 60s si Rx | Si el carrito tiene producto Rx, pide subir foto/PDF receta. |
@@ -143,7 +143,7 @@
 
 | Funnel | Meta mes 6 | Meta mes 12 |
 |---|---|---|
-| Descarga → registro WhatsApp OTP | 75% | 80% |
+| Descarga → registro SMS OTP (Firebase) | 75% | 80% |
 | Registro → primera búsqueda | 90% | 92% |
 | Primera búsqueda → primer carrito | 35% | 40% |
 | Primer carrito → primera orden | 65% | 75% |

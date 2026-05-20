@@ -1,8 +1,8 @@
 # Plan de lanzamiento comercial
 
-> **Última actualización:** 11 mayo 2026.
-> Documento que detalla el calendario operativo desde el cierre de inversión hasta el Day-D del piloto y los primeros 90 días post-lanzamiento.
-> El calendario es **relativo a T+0 = cierre de inversión**, ya que la fecha absoluta depende de cuándo entre el dinero.
+> **Última actualización:** 13 mayo 2026.
+> Documento que detalla el calendario operativo desde el cierre de inversión hasta el **Day-D** (lanzamiento público del piloto) y los primeros meses post-Day-D.
+> **Convención de tiempo:** **T+0** = cierre de inversión (entra el capital). **Day-D = T+90** = **día 0 del piloto en app** (M1 del modelo financiero en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)). Los **meses 1–12** del presupuesto/proyección cuentan **desde Day-D**, no desde el wire. **Fase 0 (T+0 → T+90):** cierre legal, equipo, HQ, tecnología, onboarding de farmacias y catálogo **antes** del lanzamiento público — el gasto de esos ~3 meses está en la **Fase 0** de la proyección (~USD 28,1k + one-shots), no duplicado en M1.
 
 ## 1. T+0 — Cierre de inversión
 
@@ -28,24 +28,27 @@
 | RIF empresa SENIAT | T+22 a T+24 |
 | Apertura cuenta bancaria empresa | T+24 a T+29 |
 | Inicio trámite SAPI (marca Zonix Pharma) | T+5 |
-| Sello digital + factura digital SENIAT | T+25 a T+30 |
+| Sello digital SENIAT (empresa ya inscrita) | T+25 a T+30 |
+| **Factura digital SENIAT** (habilitación en producción) | **Tras RIF** (T+22–T+30); puede quedar **operativa post-T+30** si el trámite se demora — no bloquea Day-D si aún no hay facturación B2B masiva |
 
 ### 2.2 Hitos de equipo (T+0 a T+30)
 
 | Hito | Status |
 |---|---|
-| Publicación de vacantes (**Co-CEO / CEO operativo**, **4× Sales B2B**, Customer Support, Marketing Lead, Delivery Ops) | T+0 a T+5 |
-| Entrevistas y selección | T+5 a T+20 |
-| Contratación + onboarding | T+20 a T+28 |
-| Capacitación inicial (producto + procesos) | T+28 a T+30 |
+| Publicación de vacantes (**Co-CEO / CEO operativo**, **4× Sales B2B**, Customer Support, Marketing Lead, **Coordinador de Partners Logísticos**) | T+0 a T+5 |
+| Entrevistas y selección | T+5 a T+15 **(10 días)** |
+| Contratación + onboarding | T+15 a T+17 **(2 días)** |
+| Capacitación inicial (producto + procesos) | T+17 a T+29 **(12 días)** |
+
+> **Rol Sales B2B (4):** no es solo prospección en calle: incluye **firma del contrato marco** con la farmacia y **capacitación práctica** para carga de catálogo, tiers y operación en panel (junto a CS/Co-CEO según playbook).
 
 ### 2.3 Hitos de inmueble (T+0 a T+30)
 
 | Hito | Status |
 |---|---|
-| Visitas a 3-5 oficinas / coworkings en Bella Florida y San Diego | T+0 a T+5 |
+| Visitas a **3–5 inmuebles tipo casa o local** candidatos en **San Diego** y **Av. Bolívar Norte** (Valencia) — **HQ casa/local** | T+0 a T+5 |
 | Selección + cotización formal | T+5 a T+10 |
-| Firma contrato + depósito (**Base:** alquiler **HQ tipo casa USD 500/mes** — sustituye coworking/oficina del escenario Lean; [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3 / §6.1) | T+10 a T+15 |
+| Firma contrato + depósito (**Lean/Base/Growth:** HQ tipo casa **USD 500/mes** — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2 / §6.1) | T+10 a T+15 |
 | Adecuación (pintura, instalación) | T+15 a T+25 |
 | Equipamiento (escritorios, sillas, internet) | T+25 a T+30 |
 
@@ -53,26 +56,36 @@
 
 | Hito | Status |
 |---|---|
-| Despliegue producción (DigitalOcean + dominio + SSL + email corp) | T+0 a T+7 |
-| OTP registro paciente vía **WhatsApp** (proveedor tipo **YCloud** u homologado) + DPIA/contrato subencargado | T+7 a T+10 |
+| Despliegue producción (**VPS Nameshared** + dominio + SSL + email corporativo) | T+0 a T+7 |
+| OTP registro paciente vía **Firebase Phone Auth** (SMS) + DPIA / registro de tratamiento | T+7 a T+12 |
 | Habilitar Pusher + FCM en producción | T+10 a T+15 |
-| Setup factura digital SENIAT en producción | T+25 a T+30 |
+| **Factura digital SENIAT** en entorno listo para producción | **Post-RIF** (T+22 a T+35; puede activarse cuando empresa esté constituida — ver §2.1) |
 | Tests de producción end-to-end | T+25 a T+30 |
 
 ### 2.5 Hitos comerciales (T+0 a T+30)
 
+**Intensidad comercial (desde T+30 con 4 vendedores al 100%):** **4** ejecutivos × **10** visitas presenciales/día útil × ~**20** días hábiles/mes ≈ **800 visitas/mes** en **Valencia metro** (Valencia centro, San Diego, Naguanagua, El Socorro, La Viña, Prebo, Juan José Mora, etc.) — no limitado a una sola urbanización.
+
 | Hito | Status |
 |---|---|
-| Visita a 15-25 farmacias prospecto en Bella Florida + El Socorro | T+5 a T+25 |
-| Lista corta de 8-12 farmacias para piloto | T+20 |
-| 5-8 cartas de intención firmadas (no contrato definitivo) | T+25 a T+30 |
+| Rutas de prospección asignadas por zona; **≥20–30 farmacias** con interés confirmado (minutas / follow-up) | T+5 a T+30 |
+| Lista corta **≥12–18** farmacias priorizadas para piloto | T+25 a T+30 |
+| **10–15 cartas de intención** firmadas (objetivo realista hacia **T+45** — ver §2.6) | T+30 a T+45 *(inicio en T+30 cuando el equipo comercial está en plantilla)* |
 | Material comercial impreso (brochures, tarjetas) | T+10 a T+20 |
 
 **Hito de cierre T+30:**
-- Empresa constituida.
-- Equipo armado.
-- Oficina lista.
-- 5-8 farmacias firmaron carta de intención.
+- Empresa constituida (o en tramo final de inscripción + RIF según calendario legal).
+- Equipo armado y en capacitación inicial cerrada.
+- **HQ** listo (casa/local en San Diego o Av. Bolívar Norte).
+- **Base comercial:** interés cualificado y pipeline; las **cartas de intención** masivas se concentran en **T+30 a T+45** cuando los 4 vendedores recorren a ritmo completo.
+
+### 2.6 Hitos comerciales pre-Day-D (T+30 a T+90)
+
+| Hito | Status |
+|---|---|
+| **4× Sales B2B** a ritmo completo: visitas, **contratos**, capacitación a farmacias piloto para carga de catálogo | T+30 a T+88 |
+| Meta: **~35 farmacias firmadas** (contrato marco / adhesión) antes de Day-D; **~28 activas** en app con catálogo listo para orden (alineado [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) Fase 0 + inicio M1) | T+88 |
+| Coordinación con **Coordinador de Partners Logísticos** + partner última milla para prueba operativa | T+60 a T+90 |
 
 ## 3. T+60 — Onboarding farmacias y catálogo
 
@@ -80,15 +93,15 @@
 
 | Hito | Status |
 |---|---|
-| Onboarding técnico de las 5-8 farmacias firmadas | T+30 a T+45 |
-| Carga de catálogo de cada farmacia | T+30 a T+50 |
-| Capacitación al farmacéutico colegiado de cada farmacia | T+35 a T+50 |
-| Capacitación al personal de mostrador | T+45 a T+55 |
-| Test operativo interno (órdenes de prueba) | T+50 a T+58 |
+| Onboarding técnico de **farmacias piloto** (priorizar las **10–15** con carta de intención hacia T+45; escalar a **20–28** según capacidad CS + Sales) | T+30 a T+55 |
+| Carga de catálogo de cada farmacia (Sales + farmacia; CS apoyo) | T+30 a T+55 |
+| Capacitación al farmacéutico colegiado de cada farmacia | T+35 a T+55 |
+| Capacitación al personal de mostrador | T+45 a T+58 |
+| Test operativo interno (órdenes de prueba) | T+50 a T+60 |
 
 ### 3.2 Hitos de delivery (T+30 a T+60)
 
-**Modelo:** última milla ejecutada por **empresa(s) especializada(s)** vía **concesión o contrato marco**; Zonix **no** opera flota propia. Los hitos siguientes cubren **partner** +, si aplica, **complemento** `delivery` autónomo en app.
+**Modelo:** última milla ejecutada por **empresa(s) especializada(s)** vía **concesión o contrato marco**; Zonix **no** opera flota propia. Los hitos siguientes cubren **partner** (`delivery_company`) y onboarding de **`delivery_agent`** en app (sin rol `delivery` autónomo).
 
 | Hito | Status |
 |---|---|
@@ -98,7 +111,7 @@
 | Onboarding **5-8 repartidores autónomos** (`delivery`) **solo si** se acuerda complemento operativo al partner | T+45 a T+58 |
 | KYC de cada repartidor / agente según rol | T+30 a T+55 |
 | Test entrega real con órdenes internas | T+55 a T+60 |
-| Definición de zona inicial de cobertura por **polos acotados** (Bella Florida + corredor vía Tocuyito hacia El Socorro); radios operativos por polo según **mapa real**, no un único círculo fijo | T+30 |
+| Definición de zona inicial de cobertura por **polos acotados** (Valencia centro, San Diego, corredores hacia Naguanagua / El Socorro); radios por polo según **mapa real** | T+30 |
 
 ### 3.3 Hitos de marketing (T+30 a T+60)
 
@@ -108,15 +121,15 @@
 |---|---|
 | **Meta Business**: cuenta, píxel/app events, públicos geo Carabobo/Valencia, línea creativa aprobada (marca [BRAND_ZONIX_PHARMA.md](../BRAND_ZONIX_PHARMA.md)) | T+30 a T+45 |
 | **Campañas Meta Ads** en entorno de prueba + presupuesto según tramo año 1 (**USD 800/mes** equivalente en ventana operativa inicial) | T+40 a T+55 |
-| Estrategia digital geo-targeted Bella Florida + El Socorro (B2C + apoyo B2B según campaña) | T+30 a T+45 |
+| Estrategia digital geo-targeted **Valencia metro** (B2C + apoyo B2B según campaña) | T+30 a T+45 |
 | Material de pre-lanzamiento (post Instagram, video TikTok, assets pagados) | T+50 a T+60 |
 | Diseño + producción **valla** 3m×2m (refuerzo; instalación suele activarse hacia **Day-D** / mes calendario ~3 según contrato) | T+30 a T+50 |
 | Contrato con proveedor de valla + ubicación av. Bolívar Norte | T+30 a T+50 |
 | Google Ads u otros canales solo si complementan remarketing / search local acordado | T+45 a T+60 |
 
 **Hito de cierre T+60:**
-- 5-8 farmacias con catálogo cargado y operativas.
-- 5-8 repartidores con KYC aprobado.
+- **≥20 farmacias** con catálogo cargado y operativas en staging / checklist (objetivo camino a **~28** al Day-D — ver §2.6 y [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)).
+- Repartidores / agentes con KYC según modelo acordado con partner.
 - **Meta Ads** operativo para pre-lanzamiento; valla en instalación o lista para activar en **Day-D**.
 
 ## 4. T+90 — DAY-D del piloto
@@ -139,7 +152,7 @@
 | 07:00 | **Boost Meta Ads** (canal principal) + **activación valla** (refuerzo offline, si contrato lo calendariza en Day-D) |
 | 08:00 | App pública en Play Store y App Store. Primera orden simulada por equipo interno. |
 | 09:00 | Comunicación oficial: Instagram, TikTok, Twitter, WhatsApp. |
-| 11:00 | Visita presencial a las 5-8 farmacias para confirmación operativa. |
+| 11:00 | Visitas presenciales a **farmacias piloto** en operación (**~20–28** según cierre T+60 / §2.6) para confirmación operativa. |
 | 12:00 | Primera orden real esperada. |
 | 18:00 | Reunión equipo: balance del día. |
 | 22:00 | Cierre del día. Reporte al inversor: # órdenes, # incidentes, # tickets. |
@@ -150,13 +163,13 @@
 - Bug fixing prioritario.
 - Iteración rápida basada en feedback de paciente y farmacia.
 
-## 5. Definition of Done del piloto (T+180 = mes 6)
+## 5. Definition of Done del piloto (M6 = sexto mes desde Day-D)
 
 Criterios para considerar el piloto exitoso:
 
 | Criterio | Meta mes 6 |
 |---|---|
-| Farmacias activas | ≥ 38 |
+| Farmacias activas | ≥ **97** (alineado a curva agresiva **M6** post-Day-D — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1) |
 | Pedidos completados | ≥ 1.500 |
 | Tiempo promedio entrega | ≤ 90 min |
 | Validación Rx promedio | ≤ 60 min |
@@ -164,8 +177,8 @@ Criterios para considerar el piloto exitoso:
 | NPS B2B | ≥ 50 |
 | Tasa cancelación de orden | ≤ 8% |
 | Tasa de comprobante falso | ≤ 0,5% |
-| Revenue mensual | ≥ USD 1.500 |
-| Cash en banco | ≥ **~USD 49.700** (alineado a proyección Base **USD 101k** + **Co-CEO** + **4×** Sales — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3: cash final mes **6 ~USD 49.748**) |
+| Revenue mensual | ≥ USD **4.800** (mismo modelo; refinar con FP&A) |
+| Cash en banco | ≥ **~USD 46.400** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3: cash final **M6** del año calendario post-Day-D) |
 
 **Si NO se alcanzan estos criterios:** activar plan de contingencia documentado en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) sección 4.
 
@@ -182,7 +195,7 @@ Criterios para considerar el piloto exitoso:
 
 - Onboarding 30-40 farmacias adicionales.
 - **Ampliación logística:** segundo **partner** concesionario o más **agentes** bajo el contrato marco existente (orden de magnitud **5-8 agentes** adicionales si aplica).
-- Meta: 120 farmacias activas en mes 12.
+- Meta: **~159 farmacias activas en mes 12** del calendario post-Day-D (**equilibrio mensual** revenue ≥ burn en **mes 11** con **~151 activas** — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 y §1.4).
 
 ### 6.3 Año 2: Maracay (mes 13-14) + Maracaibo (mes 18)
 

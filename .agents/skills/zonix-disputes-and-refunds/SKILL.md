@@ -1,6 +1,6 @@
 ---
 name: zonix-disputes-and-refunds
-description: Sistema de quejas/disputas y reembolsos manuales en Zonix Eats. Penalizaciones por cancelación y reglas de resolución.
+description: Disputas y reembolsos manuales Zonix Pharma. Penalizaciones por cancelación, resolución CS y contexto pedidos Rx/OTC.
 trigger: Cuando se trabaje con disputas, quejas, reembolsos, penalizaciones por cancelación o soporte post-venta.
 scope: app/Models/Dispute.php, app/Http/Controllers/*/DisputeController.php, app/Services/Payment/RefundService.php
 author: Zonix Team
@@ -8,7 +8,7 @@ version: 1.0
 ---
 
 > **Zonix Pharma:** disputas y reembolsos en pedidos de medicamentos y comercio; mismos patrones de resolución con contexto regulatorio VE según docs.
-# ⚖️ Disputas y Reembolsos - Zonix Eats
+# Disputas y reembolsos — Zonix Pharma
 
 ## 1. Conceptos Clave
 

@@ -14,7 +14,7 @@
 
 ### 1.1 Última milla — concesión a operador especializado
 
-**Zonix Pharma no opera flota propia de reparto.** La **ejecución física** del delivery (conductores, vehículos, rutina de campo, seguros y procedimientos del operador logístico) corresponde a **empresa(s) de delivery especializada(s)** con las que se suscriba **contrato marco o concesión**. La plataforma mantiene roles `delivery_company` / `delivery_agent` (y, si aplica, `delivery` autónomo como **complemento**) para **asignación, tracking y reglas comerciales**; el **Delivery Ops Coordinator** articula **SLA, cobertura e incidencias** con el **partner**, sin sustituir al ejecutor de última milla.
+**Zonix Pharma no opera flota propia de reparto.** La **ejecución física** del delivery (conductores, vehículos, rutina de campo, seguros y procedimientos del operador logístico) corresponde a **empresa(s) de delivery especializada(s)** con las que se suscriba **contrato marco o concesión**. La plataforma mantiene roles **`delivery_company`** y **`delivery_agent`** (sin rol **`delivery`** autónomo en producto piloto) para **asignación, tracking y reglas comerciales**; el **Coordinador de Partners Logísticos** articula **SLA, cobertura e incidencias** con el **partner**, sin sustituir al ejecutor de última milla.
 
 Disputas que involucren entrega (incl. cadena de frío en ruta) se **median** según playbook del documento (p. ej. §16), distinguendo responsabilidades **farmacia / partner / paciente** frente a lo que **Zonix** controla en producto y datos.
 
@@ -25,7 +25,7 @@ Disputas que involucren entrega (incl. cadena de frío en ruta) se **median** se
 | Paciente (`users`) | Sube foto/PDF de receta + crea orden |
 | Farmacéutico colegiado (`pharmacist`) | Valida o rechaza receta digital |
 | Farmacia (`commerce`) | Despacha medicamento |
-| Repartidor (`delivery` o `delivery_agent`) | Entrega en domicilio o pickup en sucursal |
+| Repartidor (`delivery_agent` del partner) | Entrega en domicilio o pickup en sucursal |
 | Customer Support de **Zonix Pharma** | Media en disputas y casos límite |
 
 ## 3. Tipos de receta soportados
@@ -344,11 +344,11 @@ Datos de salud son categoría especial; **marco legal VE en actualización** —
 
 - Notificación previa al equipo: programación de turnos.
 - Comunicación previa a farmacias activas: capacidad reducida → mejorar SLA acuerdos.
-- Buffer de Sales B2B y Delivery Ops como respaldo de Customer Support si excede 50 tickets/día (raro).
+- Buffer de Sales B2B y Coordinador de Partners Logísticos como respaldo de Customer Support si excede 50 tickets/día (raro).
 
 ### 15.4 Plan ante incidente técnico (servidor caído)
 
-- DigitalOcean SLA 99,9%.
+- **VPS Nameshared** (y demás proveedores cloud del stack) — SLA según contrato del proveedor de hosting.
 - Si caída > 1h: notificación push a paciente + farmacia.
 - Plan B operativo: pickup en sucursal con orden manual mientras se restaura.
 - Founder es el único responsable técnico. Si la indisponibilidad supera 1 semana, contratar consultor externo.

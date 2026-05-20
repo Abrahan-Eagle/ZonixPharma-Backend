@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Buyer;
 
 use App\Http\Controllers\Controller;
 use App\Models\Order;
+use App\Support\PharmaPilotPaymentCatalog;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -82,68 +83,13 @@ class PaymentController extends Controller
      */
     public function getPaymentMethods(): JsonResponse
     {
-        $paymentMethods = [
-            [
-                'id' => 'credit_card',
-                'name' => 'Tarjeta de Crédito/Débito',
-                'icon' => 'credit_card',
-                'description' => 'Visa, MasterCard, American Express',
-                'enabled' => true,
-                'supported_cards' => ['visa', 'mastercard', 'amex', 'discover'],
-            ],
-            [
-                'id' => 'cash',
-                'name' => 'Efectivo',
-                'icon' => 'money',
-                'description' => 'Pago al momento de la entrega',
-                'enabled' => true,
-                'supported_cards' => [],
-            ],
-            [
-                'id' => 'mobile_payment',
-                'name' => 'Pago Móvil',
-                'icon' => 'smartphone',
-                'description' => 'Pago a través de banca móvil',
-                'enabled' => true,
-                'supported_banks' => ['banesco', 'banco_de_venezuela', 'bbva', 'provincial', 'mercantil'],
-            ],
-            [
-                'id' => 'paypal',
-                'name' => 'PayPal',
-                'icon' => 'paypal',
-                'description' => 'Pago seguro con PayPal',
-                'enabled' => true,
-                'supported_cards' => [],
-            ],
-            [
-                'id' => 'stripe',
-                'name' => 'Stripe',
-                'icon' => 'stripe',
-                'description' => 'Pago con tarjeta vía Stripe',
-                'enabled' => false,
-                'supported_cards' => ['visa', 'mastercard', 'amex'],
-            ],
-            [
-                'id' => 'mercadopago',
-                'name' => 'MercadoPago',
-                'icon' => 'mercadopago',
-                'description' => 'Pago con MercadoPago',
-                'enabled' => false,
-                'supported_cards' => ['visa', 'mastercard', 'amex'],
-            ],
-            [
-                'id' => 'digital_wallet',
-                'name' => 'Billetera Digital',
-                'icon' => 'account_balance_wallet',
-                'description' => 'Apple Pay, Google Pay, Samsung Pay',
-                'enabled' => true,
-                'supported_cards' => [],
-            ],
-        ];
-
         return response()->json([
             'success' => true,
-            'data' => $paymentMethods,
+            'data' => PharmaPilotPaymentCatalog::forLegacyBuyerPaymentMethods(),
+            'meta' => [
+                'pilot_mode' => 'pharma_ve_manual',
+                'replacement' => config('zonix.legacy_payments.replacement'),
+            ],
         ]);
     }
 

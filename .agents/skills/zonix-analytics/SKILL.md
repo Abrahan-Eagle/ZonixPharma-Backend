@@ -1,6 +1,6 @@
 ---
 name: zonix-analytics
-description: Analytics y reportes de Zonix Eats. KPIs de comercio y admin, agregaciones sobre órdenes, rendimiento de delivery y buenas prácticas de consultas.
+description: Analytics y reportes Zonix Pharma. KPIs farmacia/admin, órdenes Rx, delivery, ARPF/GMV piloto y buenas prácticas SQL.
 trigger: Cuando se trabajen dashboards, métricas, reportes, filtros de fechas o consultas agregadas sobre órdenes, comercios o delivery.
 scope: app/Http/Controllers/Admin/AnalyticsController.php, app/Http/Controllers/Commerce/AnalyticsController.php, app/Services/AnalyticsService.php, database/migrations/*analytics*
 author: Zonix Team
@@ -8,7 +8,7 @@ version: 1.0
 ---
 
 > **Zonix Pharma:** KPIs y reportes para farmacias y admin; agregaciones sobre órdenes Pharma (incl. estados Rx). Ver `AGENTS.md`.
-# 📈 Analytics & Reportes - Zonix Eats
+# Analytics y reportes — Zonix Pharma
 
 ## 1. KPIs Clave
 
@@ -22,6 +22,19 @@ version: 1.0
   - Ventas por comercio.
   - Productos más vendidos.
   - Horas pico de pedidos.
+
+## 1.1 KPIs piloto (planning — no producción)
+
+Fuente numérica: [PROYECCION_FINANCIERA_12M.md](../../docs/Lanzamiento/PROYECCION_FINANCIERA_12M.md) §1.1 (tier **Lean 101k**). Invocar `zonix-startup-context` antes de citar cifras. **No inventar** métricas de GMV real hasta Day-D.
+
+| KPI | Referencia plan | Uso en dashboard |
+|-----|-----------------|------------------|
+| **ARPF** (ingreso mensual por farmacia activa) | Placeholder **~USD 50** | Comparar revenue commerce / farmacias activas |
+| **Farmacias activas** | Equilibrio **M11 ~151**; **M12 ~159**; firmas año 1 **~175** | Conteo `commerce` con órdenes pagadas en ventana |
+| **GMV** (órdenes pagadas) | Derivado de órdenes `paid|processing|shipped|delivered` | Suma `orders.total` — no confundir con revenue Zonix (cuota + fee) |
+| **Burn mensual ref.** | M11 **7.431** USD (Lean) | Solo reporting interno vs `zonix-financial-model` |
+
+Cuando exista GMV piloto real, contrastar desviación vs PROYECCION §7 (sensibilidad).
 
 ## 2. Patrones de Consultas
 

@@ -61,7 +61,7 @@
 
 **SAFE** = Simple Agreement for Future Equity. Es un contrato de Y Combinator (template público y gratuito en [`https://www.ycombinator.com/documents`](https://www.ycombinator.com/documents)) que dice:
 
-> "Yo, inversor, te doy USD 101.000 hoy (escenario Base). Tú, founder, prometes que cuando levantes la próxima ronda con valuación de mercado, mi inversión convierte automáticamente en acciones, con un cap (techo de valuación) o un descuento — lo que me dé más equity."
+> "Yo, inversor, te doy USD 101.000 hoy (escenario **Lean — mínimo viable**). Tú, founder, prometes que cuando levantes la próxima ronda con valuación de mercado, mi inversión convierte automáticamente en acciones, con un cap (techo de valuación) o un descuento — lo que me dé más equity."
 
 **Por qué post-money cap (no pre-money):**
 - Versión moderna del SAFE (YC 2018 onwards). Más clara para founder e inversor.
@@ -69,7 +69,7 @@
 
 ### 2.2 Términos propuestos
 
-| Término | Valor (escenario Base) |
+| Término | Valor (escenario Lean — mínimo viable) |
 |---|---|
 | Monto SAFE | **USD 101.000** |
 | Post-money valuation cap | **USD 600.000** |
@@ -86,15 +86,15 @@
 
 | Escenario | Monto SAFE | Cap post-money | Equity implícito |
 |---|---|---|---|
-| Lean | USD 60.000 | USD 450.000 | 13,33% |
-| **Base** | **USD 101.000** | **USD 600.000** | **16,83%** |
-| Growth | USD 90.000 | USD 650.000 | 13,85% |
+| **Lean (mínimo viable)** | **USD 101.000** | **USD 600.000** | **16,83%** |
+| **Base (recomendado)** | **USD 118.000** | **USD 650.000** | **18,15%** |
+| **Growth (acelerado)** | **USD 135.000** | **USD 720.000** | **18,75%** |
 
-**Lectura:** Lean y Growth quedan **~13%** implícito; **Base ~16,83%** refleja ticket **101k** (incluye **Co-CEO** en costo fijo — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3) con el mismo formato SAFE+cap. El cap se ajusta por escenario.
+**Lectura:** los tres tiers comparten el **mismo núcleo operativo** (Co-CEO, IA, 4× Sales). La escalera **101k < 118k < 135k** refleja **colchón comercial/regulatorio** y **reserva runway**, no un producto distinto.
 
 ### 2.3.1 Nota sobre el cap (ALTA #4 forense)
 
-El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está en torno a **10-12% equity** ([fuente: LatAm VC Report 2024-2025](https://www.endeavor.org.mx/) y reportes Crunchbase). El cap de Zonix Pharma (Base **USD 101k** / cap **USD 600k**) da **~16,83%**, algo más alto que el benchmark medio — coherente con ticket, **Co-CEO** y costo fijo del replante operativo (ver [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §6.1).
+El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está en torno a **10-12% equity** ([fuente: LatAm VC Report 2024-2025](https://www.endeavor.org.mx/) y reportes Crunchbase). El cap de Zonix Pharma (**Lean USD 101k** / cap **USD 600k**) da **~16,83%**, algo más alto que el benchmark medio — coherente con ticket, **Co-CEO** y costo fijo del replante operativo (ver [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2).
 
 **Decisión consciente del founder:** este cap es **intencional como señal de confianza al primer inversor** (lead investor del SAFE). El piloto tiene mucho más riesgo que un negocio post-PMF; el inversor que entra ahora merece compensación por el riesgo asumido.
 
@@ -125,7 +125,7 @@ El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está 
 |---|---|---|
 | Founder | 1.000.000 | 100,00% |
 
-### 3.2 Post-SAFE (escenario Base, USD 101k cap USD 600k)
+### 3.2 Post-SAFE (escenario Lean, USD 101k cap USD 600k)
 
 > **Nota:** el SAFE NO crea acciones hoy. Sólo al momento de conversión (próxima ronda con valuación de mercado).
 
@@ -143,7 +143,7 @@ El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está 
 | Stakeholder | % equity post Serie A (ilustrativo) |
 |---|---|
 | Founder | **53,17%** |
-| Inversor SAFE Base (cap USD 600k) | **16,83%** |
+| Inversor SAFE Lean (cap USD 600k) | **16,83%** |
 | Inversor Serie A (USD 500k / post-money USD 2,5M) | **20,00%** |
 | Pool de empleados / advisors (10% reservado) | **10,00%** |
 | **Total** | **100,00%** |
@@ -155,12 +155,12 @@ El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está 
 | Stakeholder | % final aproximado en exit |
 |---|---|
 | Founder | ~30-40% |
-| Inversor SAFE Base | ~7-10% (con dilución de 2 rondas posteriores) |
+| Inversor SAFE Lean | ~7-10% (con dilución de 2 rondas posteriores) |
 | Inversor Serie A | ~12-15% |
 | Inversor Serie B | ~15-20% |
 | Pool empleados (acumulado) | ~15-20% |
 
-**Lectura:** un inversor de SAFE Base USD 101k en exit a USD 50M tendría ~USD 4,7-6,7M (órden de magnitud; con dilución de rondas posteriores menos). En exit a USD 100M: orden ~USD 9-14M (ilustrativo).
+**Lectura:** un inversor de SAFE **Lean** USD 101k en exit a USD 50M tendría ~USD 4,7-6,7M (ilustrativo).
 
 ## 4. Marco legal venezolano (resumen)
 
@@ -202,7 +202,7 @@ El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está 
 |---|---|---|
 | **Responsable del tratamiento** | **ZONIX PHARMA, C.A.** (una vez constituida) | Decide fines y medios del tratamiento de datos de usuarios de la plataforma. |
 | **Responsables independientes** | **Cada farmacia afiliada** | Tratamiento de datos en **sucursal física** (receta retenida, libro de control, dispensación). |
-| **Encargados del tratamiento (subencargados)** | Proveedores con contrato tipo **DPA** (Data Processing Agreement): hosting (p. ej. nube), push/notificaciones, OTP WhatsApp si aplica, email transaccional, soporte con acceso acotado | Tratan datos **por cuenta y orden** de Zonix Pharma; lista cerrada y revisión anual. |
+| **Encargados del tratamiento (subencargados)** | Proveedores con contrato tipo **DPA** (Data Processing Agreement): hosting (p. ej. VPS), push/notificaciones (**Firebase** FCM), verificación teléfono (**Firebase Phone Auth** / SMS), email transaccional, soporte con acceso acotado | Tratan datos **por cuenta y orden** de Zonix Pharma; lista cerrada y revisión anual. |
 
 > **Pendiente legal:** mantener **registro de actividades de tratamiento** (ART) simple: finalidad, categorías de datos, categorías de interesados, subencargados, plazos de conservación, medidas de seguridad. Elaborar en **mes 1** con abogado (hoja única o documento interno).
 
@@ -307,7 +307,7 @@ Al cierre de la inversión, el inversor recibe:
 
 | Mes | Hito |
 |---|---|
-| 0 (cierre inversión) | Firma SAFE. Transferencia **USD 101k** (Base) a cuenta personal del founder (transitoria) o cuenta empresa. |
+| 0 (cierre inversión) | Firma SAFE. Transferencia **USD 101k** (**Lean — mínimo viable**) a cuenta personal del founder (transitoria) o cuenta empresa. |
 | 1 | Constitución legal C.A. completa. Apertura cuenta bancaria empresa. Transferencia interna founder → C.A. |
 | 1-2 | RIF + factura digital SENIAT habilitados. |
 | 2-3 | Marca SAPI registrada (paralelo). |

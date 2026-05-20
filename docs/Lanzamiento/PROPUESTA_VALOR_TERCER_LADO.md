@@ -1,104 +1,86 @@
-# Propuesta de valor — Tercer lado (Delivery, Delivery Company, Pharmacist colegiado)
+# Propuesta de valor — Tercer lado (`delivery_company`, `delivery_agent`, Pharmacist)
 
-> **Última actualización:** 11 mayo 2026.
-> Documento que captura el pitch a los tres roles que sostienen la operación: repartidor autónomo (`delivery`), empresa de delivery (`delivery_company` + sus `delivery_agent`), y farmacéutico colegiado (`pharmacist`).
-> Cada uno tiene flujo distinto. Esta propuesta los cubre por separado.
+> **Última actualización:** 18 mayo 2026.
+> Documento que captura el pitch a los actores que sostienen la operación logística y clínica: **empresa de delivery** (`delivery_company`), **repartidor de campo** (`delivery_agent`, vinculado a esa empresa) y **farmacéutico colegiado** (`pharmacist`).
 
-**Última milla (decisión operativa):** **Zonix Pharma no opera flota propia de reparto.** La **ejecución física** del delivery (conductores, vehículos, cumplimiento en ruta) se delega mediante **concesión o contrato marco** a **empresa(s) de delivery especializada(s)**. La plataforma integra asignación, tracking y reglas comerciales; el rol interno **Delivery Ops Coordinator** es **enlace y gobernanza** (SLA, zonas, incidencias) con el **partner**, no empleador de repartidores. El rol **`delivery` autónomo** en la app puede usarse como **complemento** en piloto (picos, zonas puntuales) sin cambiar la narrativa de **operador principal por concesión**.
+**Alcance producto (app actual):** en piloto y MVP solo existen **dos roles de logística** en la plataforma: **`delivery_company`** (panel empresa: agentes, asignación, métricas) y **`delivery_agent`** (app de reparto en calle: órdenes, QR, tracking). **No** hay flujo de registro ni onboarding para rol **`delivery`** (repartidor autónomo). El repartidor en ruta es siempre un **`delivery_agent`** cuya cuenta crea la empresa (`POST /api/delivery-company/agents`). Referencias residuales a `delivery` en backend o seeders demo son **legacy** — no usarlas en pitch, checklist inversor ni materiales comerciales hasta una decisión explícita de producto.
+
+**Última milla (decisión operativa):** **Zonix Pharma no opera flota propia.** La ejecución física se delega por **concesión o contrato marco** a **empresa(s) de delivery especializada(s)**. La plataforma orquesta asignación y tracking; el **Coordinador de Partners Logísticos** enlaza SLA e incidencias con el partner.
 
 ---
 
-## A. Repartidor autónomo (`delivery`)
-
-> **Contexto concesión:** el modelo comercial prioriza **empresa concesionaria** (sección B). La sección A describe el pitch al **repartidor autónomo** cuando participe en el ecosistema técnico del marketplace (p. ej. complemento operativo); contratos, seguros y relación laboral siguen la normativa aplicable al vínculo real (partner vs. autónomo).
+## A. Logística — empresa (`delivery_company`) y repartidor (`delivery_agent`)
 
 ### A.1 Quién es
-
-- Persona con moto o carro propio.
-- Trabaja por turnos cuando quiere.
-- Hoy probablemente trabaja en Yummy, Pedidosya, Rappi o repartidor independiente.
-- Quiere ingresos extra.
-
-### A.2 Dolor que tiene hoy
-
-1. **Comisión alta de plataformas:** Pedidosya / Rappi cobran 15-25% del fee de entrega.
-2. **Competencia alta entre repartidores:** muchos repartidores en zona, picos de espera.
-3. **Sin visibilidad de la ganancia esperada:** no sabe cuánto va a hacer en el día.
-4. **Pagos demorados:** semanal o mensual, no diario.
-
-### A.3 Lo que Zonix Pharma le ofrece
-
-- **Comisión Zonix Pharma: 0% sobre fee de entrega** (política repartidor autónomo en piloto). El repartidor cobra el delivery fee completo. **Monetización Zonix Pharma vs farmacia:** cuota plataforma **fija + % sobre GMV** del pedido ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5), no sobre el delivery fee del repartidor.
-- **Pago diario** vía Pago Móvil C2P o Binance Pay USDT.
-- **Estimación de ganancia visible** antes de aceptar la orden.
-- **Asignación geo-inteligente:** la app le asigna órdenes cerca de su ubicación actual.
-- **Bono por entrega excelente:** USD 0,50 extra si NPS > 4 estrellas.
-- **Sin contrato exclusivo:** puede seguir trabajando en otras plataformas.
-
-### A.4 Pricing al repartidor autónomo
-
-- **Delivery fee:** USD 1,50 - USD 3,50 según distancia (lo paga el paciente, lo recibe el repartidor).
-- **Sin cuota de inscripción.**
-- **KYC obligatorio:** cédula + foto + selfie + RIF (si lo tiene). Validado en 24-48h.
-- **Comisión Zonix Pharma:** 0% sobre delivery fee. Solo cobra fee fijo de USD 0,30 por orden completada (cubrir costo de procesamiento + push notifications + storage).
-
-### A.5 Cuántos hay y cuántos necesitamos
-
-> **Prioridad operativa:** **empresa concesionaria** (sección B) ejecuta la flota. Los rangos siguientes de **`delivery` autónomo** aplican si se usa como **complemento** en app (no como sustituto del partner).
-
-- **Piloto T+30 / T+50:** **5–8** repartidores autónomos **si** se acuerda complemento al partner ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §3.2).
-- **Cierre año 1 zona piloto:** **10–15** capacidad de campo **combinada** (principalmente **agentes del partner**; autónomos activos según mix real).
-- **Año 1 Valencia metro:** 25-35 (mix partner + complemento).
-- **Año 2 Carabobo + Aragua:** 60-80.
-
-### A.6 Onboarding
-
-| Paso | Acción |
-|---|---|
-| 1 | App **Zonix Pharma** (`com.zonix.pharma`) con rol **`delivery`**. El rótulo «Zonix Pharma Delivery» describe la experiencia del repartidor (p. ej. marketing o flavor); la fuente de verdad técnica es **un solo bundle** salvo decisión explícita de producto de publicar builds separados. |
-| 2 | Registra cuenta + KYC. |
-| 3 | Validación KYC en 24-48h. |
-| 4 | Test operativo: primera orden de prueba con Customer Support. |
-| 5 | Activación cuenta. Empieza a recibir asignaciones. |
-
----
-
-## B. Empresa de delivery (`delivery_company` + sus `delivery_agent`)
-
-### B.1 Quién es
 
 - Empresa local **especializada en última milla**, con flota y repartidores bajo su propia operación — **candidata natural a concesión o contrato marco** con Zonix Pharma para ejecutar el reparto en zona piloto.
 - Hoy suele trabajar para Farmatodo, Locatel, supermercados, restaurantes u otros B2B logísticos.
 - Quiere agregar Zonix Pharma a su portafolio de clientes B2B.
 
-### B.2 Dolor que tiene hoy
+### A.2 Flaquezas que tiene hoy
 
 1. **Diversificación de clientes:** depende de 1-2 clientes grandes; si pierden uno, pierden 30-50% de revenue.
 2. **Volumen estacional:** picos en feriados, valles en semana.
 3. **Coordinación manual:** llamadas, WhatsApp, sin trazabilidad.
 
-### B.3 Lo que Zonix Pharma le ofrece
+### A.3 Lo que Zonix Pharma le ofrece
 
 - **Cliente B2B nuevo:** canal de órdenes recurrentes en zona piloto una vez firmado el **contrato marco / concesión** y completado el onboarding del partner (calendario en [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §3.2).
 - **Coordinación automática:** la app asigna a sus repartidores via API.
-- **Pagos consolidados semanales** a la empresa (no a cada repartidor individualmente).
-- **Métricas de desempeño:** dashboard con NPS, tiempo promedio, órdenes completadas.
+- **Pagos consolidados mensuales** a la empresa (no a cada repartidor individualmente; cierre y liquidación del delivery fee acumulado en el mes).
+- **Métricas de desempeño:** dashboard con **NPS**, tiempo promedio, órdenes completadas.
 - **Sin exclusividad:** la empresa sigue trabajando para otros.
 
-### B.4 Pricing a la empresa
+> **¿Qué es NPS?** Siglas de *Net Promoter Score* («índice de recomendación»). Resume qué tan dispuestos están los clientes a **recomendar** el servicio. En Zonix Pharma se alimenta de la **calificación post-entrega** del paciente (p. ej. estrellas 1–5 en la app) y se agrega en el dashboard del partner. Metas de piloto: [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §6 (p. ej. NPS B2C ≥ 35). **No** es una métrica clínica ni de MPPS.
+
+### A.4 Pricing a la empresa
 
 - **Membresía empresa:** USD 0 (gratis durante el piloto; después USD 50/mes para empresas con > 10 agentes activos) **— post-piloto, no incluido en proyecciones financieras año 1** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)).
 - **Delivery fee:** USD 1,50 - USD 3,50 por orden (cobrada al paciente, transferida a la empresa).
 - **Comisión Zonix Pharma:** 8% del delivery fee (cubrir asignación, tracking, dispute resolution).
-- **Pago semanal** a la empresa vía transferencia bancaria.
+- **Pago mensual** a la empresa vía transferencia bancaria (alineado al cierre de facturación del periodo).
 
-### B.5 Targets año 1
+### A.5 Quién es el repartidor de campo (`delivery_agent`)
 
-- **Mes 1-3:** **1 empresa concesionaria** (contrato marco) en activación en zona piloto; volumen inicial con **agentes** del partner. Rol **`delivery` autónomo** solo como **complemento** si el contrato y la operación lo permiten (no como sustituto de flota propia de Zonix).
-- **Mes 4-6:** consolidar SLAs + eventual **segunda** empresa o más **agentes** bajo el mismo marco.
+- Persona con moto o carro que **trabaja para la empresa partner** (no se registra sola en la app).
+- Usa el mismo bundle **Zonix Pharma** (`com.zonix.pharma`) con rol **`delivery_agent`** y pantallas de reparto (`lib/features/screens/delivery/*`).
+- Recibe órdenes **asignadas por su empresa** (o auto-asignación según reglas del partner en dashboard `delivery_company`).
+- Su sueldo o fee por entrega lo define y paga **la empresa**, no Zonix Pharma directamente al agente en el modelo piloto (Zonix liquida el **delivery fee** a la **empresa** — ver [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §2.4).
+
+### A.6 Flaquezas que tiene hoy (repartidor de campo)
+
+1. **Coordinación por WhatsApp / llamadas:** sin estado único del pedido ni prueba de entrega centralizada.
+2. **No sabe cuánto ganará** en la ruta antes de aceptar.
+3. **Rutas ineficientes:** pedidos lejos sin criterio geográfico claro.
+4. **Disputas sin evidencia:** foto, QR y chat quedan fuera del sistema.
+
+### A.7 Lo que Zonix Pharma le ofrece (repartidor `delivery_agent`)
+
+**Idea en una frase:** la app le da al repartidor del partner las mismas herramientas que esperaría de una plataforma moderna, mientras **Zonix cobra a la farmacia** (cuota + % GMV) y **a la empresa de delivery** (comisión sobre delivery fee — §A.4), no un modelo “app se queda con el 20 % de tu envío” tipo Rappi sobre el repartidor individual.
+
+| Beneficio | Qué significa en la práctica |
+|---|---|
+| **Órdenes en la app** | Lista de pendientes, detalle, chat con farmacia/paciente, QR recogida/entrega. |
+| **Ganancia estimada antes de aceptar** | Ve el **delivery fee** de esa orden (USD 1,50–3,50 según distancia) antes de decir sí. |
+| **Asignación por zona** | La empresa (o reglas de la app) prioriza pedidos **cerca** de su ubicación. |
+| **Tracking visible al paciente** | Menos llamadas “¿dónde está?” — el estado lo ve el paciente en su app. |
+| **Evidencia en disputas** | Fotos y escaneos QR reducen “dijo / dijo” con Customer Support. |
+
+**Quién paga qué (no mezclar con el repartidor):**
+
+| Concepto | Quién paga | Quién cobra |
+|---|---|---|
+| Medicamentos (GMV) | Paciente | Farmacia → Zonix factura cuota plataforma ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5) |
+| Delivery fee | Paciente | **Empresa** `delivery_company` (Zonix retiene **8 %** del delivery fee a la empresa — §A.4) |
+| Sueldo / fee al repartidor | **Empresa** partner | **`delivery_agent`** (política interna del partner; fuera del contrato Zonix–agente) |
+
+### A.8 Targets año 1
+
+- **Mes 1-3:** **1 empresa concesionaria** (contrato marco) en activación; **5–15** `delivery_agent` activos bajo esa empresa ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §3.2).
+- **Mes 4-6:** consolidar SLAs + eventual **segunda** empresa o más agentes bajo el mismo marco.
 - **Mes 7-12:** **2-3 empresas** o **15-25 agentes** totales bajo partners (orden de magnitud; FP&A según contratos reales).
 
-### B.6 Onboarding
+### A.9 Onboarding
 
 | Paso | Acción |
 |---|---|
@@ -106,11 +88,20 @@
 | 2 | Demo dashboard de empresa. |
 | 3 | Firma carta de intención. |
 | 4 | KYC empresa: RIF, registro mercantil, lista de agentes. |
-| 5 | Onboarding de cada agente individualmente (KYC personal). |
-| 6 | Test operativo durante 1 semana. |
-| 7 | Activación. |
+| 5 | La empresa crea cada **`delivery_agent`** en app (`/api/delivery-company/agents`) + KYC personal del agente. |
+| 6 | Test operativo durante 1 semana (empresa + al menos 1 agente en ruta). |
+| 7 | Activación: agentes reciben asignaciones; empresa monitorea en dashboard. |
 
-### B.7 SLA con terceros y cadena de frío (logística)
+**Onboarding del agente (resumen):**
+
+| Paso | Acción |
+|---|---|
+| 1 | La **empresa** le crea la cuenta con rol **`delivery_agent`** (no hay registro público autónomo). |
+| 2 | El agente instala **Zonix Pharma**, inicia sesión y completa KYC si aplica. |
+| 3 | Primera orden de prueba con Customer Support + empresa. |
+| 4 | Operación en vivo: aceptar, QR pickup/entrega, tracking. |
+
+### A.10 SLA con terceros y cadena de frío (logística)
 
 - **SLA de entrega** negociado por escrito en anexo B2B: tiempo objetivo alineado con lo que promete la app al paciente (p. ej. 60-90 min en zona piloto), con **exclusiones** (lluvia, cortes de luz, seguridad).
 - **Responsabilidad en cadena de frío:** la **farmacia** empaqueta y documenta salida; el **repartidor / empresa** mantiene cadena según checklist (fotos termómetro en app); **Zonix Pharma** **media** disputas según [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) §16.
@@ -127,7 +118,7 @@
 - Es el responsable legal de validar recetas en su farmacia.
 - Pueden ser dueño-fundador de la farmacia o empleado contratado por la farmacia.
 
-### C.2 Dolor que tiene hoy
+### C.2 Flaquezas que tiene hoy
 
 1. **Validación de receta es manual y sin trazabilidad:** si después hay problema, no hay registro digital.
 2. **Sin diferenciación profesional:** su rol está oculto detrás del mostrador.
@@ -172,7 +163,7 @@ Detalle del flujo completo en [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERA
 
 | Riesgo | Probabilidad | Mitigación |
 |---|---|---|
-| Repartidores autónomos prefieren Yummy / Rappi por volumen | Media-alta | Bono USD 0,50 por NPS > 4. Pago diario. Cero comisión **Zonix Pharma** sobre delivery fee. |
+| Partner no asigna suficientes órdenes a sus `delivery_agent` | Media-alta | Contrato marco con mínimos de cobertura; Coordinador de Partners Logísticos; métricas en dashboard empresa. |
 | Empresa de delivery no quiere bajar exclusividad con Farmatodo | Baja | Buscar empresa #2 o #3 del mercado, no la #1. |
 | Farmacéutico colegiado se rehúsa a validar digital | Baja-media | Capacitación + manual + apoyo de Customer Support. La farmacia decide si lo capacita o cambia. |
 | MPPS hace observación sobre validación digital | Baja | Asesor regulatorio externo USD 120/mes (Growth). Trazabilidad + firma digital deberían cumplir. |

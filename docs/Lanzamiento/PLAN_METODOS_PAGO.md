@@ -91,9 +91,9 @@ sequenceDiagram
 - Una misma factura puede llevar **dos líneas de concepto** (o texto equivalente): (1) suscripción / licencia mes ___ — parte fija; (2) fee variable por volumen transaccional sobre GMV del mes ___ — ingreso por **servicio de plataforma**, no por la venta del medicamento al paciente.
 - IVA, retenciones, moneda de facturación (USD indexado vs Bs) y redacción legal definitiva según figura fiscal de **Zonix Pharma** (vehículo que facture el servicio de plataforma).
 
-**Cambio de nivel por GMV:** ascenso solo si **dos meses calendario consecutivos** tienen GMV **cada uno** **mayor o igual (≥)** al umbral inferior del nivel destino (sin promedio); notificación al dueño tras cerrar el segundo mes; **nueva tarifa desde M+2**. Detalle en [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5.4.
+**Cambio de nivel por GMV:** ascenso solo si **dos meses calendario consecutivos** tienen GMV **cada uno** **mayor o igual (≥)** al umbral inferior del nivel destino (sin promedio); notificación al dueño tras cerrar el segundo mes. **Durante M y M+1** la farmacia **sigue pagando la tarifa del nivel vigente antes del cambio**; la **nueva tarifa** aplica en facturación **desde M+2**. Detalle en [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5.4.
 
-**Disputas sobre cierre de GMV:** **7 días hábiles** desde publicación del cierre mensual; alcance según §5.8 del mismo documento.
+**Disputas sobre cierre de GMV:** **3 días hábiles** desde publicación del cierre mensual; alcance según §5.8 del mismo documento.
 
 **Política de impago:**
 
@@ -123,13 +123,13 @@ sequenceDiagram
     Z->>R: Registra pago + fee fijo USD 0,30 por orden (procesamiento; sin % sobre delivery fee)
 ```
 
-**Repartidor autónomo (`delivery`):** **0%** de comisión **Zonix Pharma** sobre el delivery fee; solo **USD 0,30 por orden completada** (alineado a [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) §A.4). El **8% sobre delivery fee** aplica **solo** a **empresa de delivery** (`delivery_company` + agentes) — §2.5 y mismo doc §B.4.
+**Repartidor en app (`delivery_agent`):** liquidación del fee según política de su **empresa** partner; Zonix no paga al agente directo en piloto. **Empresa `delivery_company`:** Zonix retiene **8%** del delivery fee (alineado [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) §A.4). Rol `delivery` autónomo **no** está en producto piloto.
 
 **Variante alternativa:** **Zonix Pharma** actúa como agregador y paga directo al repartidor (mes 6+ con asesoría Sudeban). En piloto NO; la farmacia paga al repartidor para evitar caer bajo regulación de "intermediario de pagos" Sudeban.
 
 ### 2.5 Flujo Zonix Pharma → empresa de delivery
 
-Similar a 2.4, pero pago semanal a la empresa (no al agente individual) y consolidado. **Comisión Zonix Pharma:** **8%** del delivery fee (asignación, tracking, disputas) — [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) §B.4.
+Similar a 2.4, pero **pago mensual** consolidado a la empresa (no al agente individual). **Comisión Zonix Pharma:** **8%** del delivery fee (asignación, tracking, disputas) — [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) §A.4.
 
 ## 3. Conciliación contable
 
@@ -150,7 +150,7 @@ Similar a 2.4, pero pago semanal a la empresa (no al agente individual) y consol
 ### 3.3 Política FX / Treasury (USD ↔ Bs)
 
 - **Regla operativa:** gastos locales en Bs se cubren convirtiendo USD→Bs con tipo **BCV oficial** (referencia diaria); **no** usar paralelo para libros sin dictamen contable.
-- **Cadencia:** al menos **2 veces por mes** (días 5 y 20) convertir ingresos USD liquidados a Bs para cubrir nómina local, servicios, coworking — o cuando la brecha de TC supere umbral definido con contador (ej. **> 5%** vs. última conversión).
+- **Cadencia:** al menos **2 veces por mes** (días 5 y 20) convertir ingresos USD liquidados a Bs para cubrir nómina local, servicios, alquiler HQ — o cuando la brecha de TC supere umbral definido con contador (ej. **> 5%** vs. última conversión).
 - **Conciliación:** mismo tipo de cambio que usará **SENIAT / libros** (BCV promedio mensual vs. diario — **cerrar con contador**).
 - **Stress:** si devaluación **> 15%** en 30 días vs. plan, revisión extraordinaria de política (ver [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §5).
 

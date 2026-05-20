@@ -49,7 +49,7 @@ Construido bottom-up, no top-down.
 | 3 | **15** | **~6,6%** Valencia metro *(alineado [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1)* | **USD 400** |
 | 6 | **41** | **~18%** Valencia metro / **~25%** SAM extendido *(150–180; §1.1)* | **USD 1.850** |
 | 9 | 78 | **~35%** Valencia metro / **~43%** SAM extendido | **USD 3.700** *(§1.1)* |
-| **11** | **107** | **59% SAM extendido / 47% Valencia metro** | **USD 5.350** *(revenue; burn mes 11 **7.431** — no equilibrio mensual)* |
+| **11** | **151** | **59% SAM extendido / 47% Valencia metro** | **USD 7.550** *(revenue; burn mes 11 **7.431** — **equilibrio mensual** caso central §1.1)* |
 | 12 | 120 | 67% SAM extendido | USD 6.000 |
 
 **Año 2:** expansión a Maracay y Maracaibo. SOM proyectado 200-220 farmacias activas, revenue mensual USD 8.000-9.000 (anual USD 96k-108k).
@@ -78,7 +78,7 @@ Detalle del modelo en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.m
 - Cadena venezolana premium, ~40-60 sucursales en todo el país.
 - App propia con catálogo, sin marketplace de terceros.
 - Foco: clase media-alta, presencial.
-- Diferencial **Zonix Pharma:** nosotros NO competimos con su segmento. Nuestro target es la farmacia mediana e independiente que NO tiene canal digital propio.
+- Diferencial **Zonix Pharma:** nosotros NO competimos con su segmento. Nuestro target es la farmacia mediana e independiente que **no** tiene **app** propia integrada al paciente.
 
 ### 5.2 Locatel
 
@@ -145,7 +145,7 @@ El piloto combina **dos focos geográficos** dentro de Valencia metro: **Urb. Be
 ### 6.4 Razones operativas
 
 - **Founder vive en Carabobo:** decisiones operativas en horas, no días.
-- **Logística manejable:** **Delivery Ops** como enlace con **empresa concesionaria** de última milla + capacidad de campo del **partner** en el orden de **10-15 agentes** en zona piloto (mapa y contrato marco).
+- **Logística manejable:** **Coordinador de Partners Logísticos** como enlace con **empresa concesionaria** de última milla + capacidad de campo del **partner** en el orden de **10-15 agentes** en zona piloto (mapa y contrato marco).
 - **Marketing local barato:** una valla 3m×2m USD 350/mes en av. Bolívar Norte capta ~20.000 impactos/día (fuente: [PubliExterior VE](https://www.publiexterior.com/), tarifario 2025).
 
 ## 7. Mercado expansión año 2
@@ -182,7 +182,7 @@ Estos números asumen:
 | Rappi o PedidosYa hace agresivo el descuento | Media | Nuestro modelo (fija + % bajo sobre GMV app) es estructuralmente más barato que su comisión plena; no podemos perder en precio vs agregador. |
 | Farmatodo lanza marketplace propio | Baja | Su DNA es retail propio, no marketplace. Tomarían 18-24 meses construirlo y entonces nosotros ya tenemos PMF. |
 | Adopción inicial < 50% del plan | Media | Pivote táctico: bajamos Sales B2B fijo, subimos comisión por farmacia firmada. |
-| Inflación supera el buffer 20% | Media-alta | Plan: cortar valla publicitaria primero, bajar 1 hire, renegociar coworking. Mantiene runway 9-10 meses en lugar de 12. |
+| Inflación supera el buffer 20% | Media-alta | Plan: cortar valla publicitaria primero, bajar 1 hire, renegociar alquiler HQ. Mantiene runway 9-10 meses en lugar de 12. |
 
 ## 10. Resumen para el inversor
 

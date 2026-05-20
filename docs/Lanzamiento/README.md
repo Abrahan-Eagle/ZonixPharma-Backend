@@ -1,12 +1,12 @@
 # Pack Lanzamiento Inversor — Zonix Pharma
 
-> **Última actualización:** 11 mayo 2026.
+> **Última actualización:** 18 mayo 2026.
 > **Estado del pack:** completo para pre-seed; textos legales y plazos de retención sujetos a **dictamen abogado + farmacéutico asesor** antes de Day-D público.
 > **Producto:** Zonix Pharma — marketplace farmacéutico digital; el pack usa **solo** esa marca para producto y plataforma.
-> **Zona piloto:** Bella Florida + El Socorro, Valencia, Carabobo, Venezuela.
-> **Capital pedido (Base):** **USD 101.000** para 12 meses — SAFE post-money cap **USD 600.000** (ticket **+6k** vs. **95k** histórico: incorpora **Co-CEO USD 1.000/mes** — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3).
+> **Zona piloto:** Valencia metro (Carabobo), con foco inicial operativo **San Diego / Av. Bolívar Norte** y expansión a Naguanagua, El Socorro, La Viña, Prebo, etc.
+> **Capital pedido (Lean — mínimo viable):** **USD 101.000** para **Fase 0 (~90 días)** + **12 meses** post-**Day-D** — SAFE post-money cap **USD 600.000**. **Recomendado (Base):** **USD 118.000** / cap **650.000**. **Acelerado (Growth):** **USD 135.000** / cap **720.000** — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §1.
 
-Este directorio contiene un **data room ligero** con **21 archivos** `.md` en total: **[README.md](README.md)** (índice), **[ANALISIS_FORENSE.md](ANALISIS_FORENSE.md)** (auditoría multi-rol del pack) y **19 documentos** de contenido (brief, finanzas, legal, operación, propuestas de valor, etc.) para presentar Zonix Pharma a un inversionista. Está diseñado para leerse de forma navegable: el `BRIEF` resume todo en una página, y los demás archivos profundizan cada decisión, número y supuesto. Cada cifra está cruzada entre documentos y trazada a fuentes web reales (mayo 2026) cuando aplica.
+Este directorio contiene un **data room ligero** con **22 archivos** `.md` en total: **[README.md](README.md)** (índice), **[ANALISIS_FORENSE.md](ANALISIS_FORENSE.md)** (auditoría multi-rol del pack), **[ROLES_SKILLS_ZONIX.md](ROLES_SKILLS_ZONIX.md)** (matriz rol → competencias → agentes JARVIS) y **19 documentos** de contenido (brief, finanzas, legal, operación, propuestas de valor, etc.) para presentar Zonix Pharma a un inversionista. Está diseñado para leerse de forma navegable: el `BRIEF` resume todo en una página, y los demás archivos profundizan cada decisión, número y supuesto. Cada cifra está cruzada entre documentos y trazada a fuentes web reales (mayo 2026) cuando aplica.
 
 ---
 
@@ -24,10 +24,11 @@ Este directorio contiene un **data room ligero** con **21 archivos** `.md` en to
 
 Lo anterior + los siguientes:
 
-1. [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) — fases T+30 / T+60 / T+90 + Day-D + Definition of Done del piloto.
+
+1. [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) — **Fase 0 (T+0→Day-D T+90)** + hitos T+30 / T+60 / Day-D + Definition of Done del piloto.
 2. [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) — pitch a la farmacia.
 3. [PROPUESTA_VALOR_USUARIO_FINAL.md](PROPUESTA_VALOR_USUARIO_FINAL.md) — pitch al paciente.
-4. [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) — pitch a delivery (complemento), delivery company / **concesión última milla** y farmacéutico colegiado.
+4. [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) — pitch a **`delivery_company`** + **`delivery_agent`** (concesión última milla) y farmacéutico colegiado; **sin** rol `delivery` autónomo en app.
 5. [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) — escenarios Lean / Base / Growth.
 6. [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md) — fuentes y precios públicos.
 7. [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) — vallas, radio, flyers.
@@ -37,28 +38,42 @@ Lo anterior + los siguientes:
 11. [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) — plantilla de captura.
 12. [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) — texto de WhatsApp/email + bullets pitch.
 13. [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) — auditoría multi-perspectiva del pack: **6 perspectivas narrativas**, mapa ejecutivo §11.1 / §11.1 bis y **síntesis multi-rol §11.4** (tabla por rol ejecutivo + verificación técnica).
+14. [ROLES_SKILLS_ZONIX.md](ROLES_SKILLS_ZONIX.md) — competencias por rol (piloto, plataforma, madurez), uso Docs / Empresa / Sistema y skills de agente.
+
+---
+
+## Roles, skills y agentes JARVIS
+
+Matriz de referencia para **qué rol aporta qué competencia** al redactar el pack, constituir la empresa en VE y construir el sistema (Laravel + Flutter):
+
+- **[ROLES_SKILLS_ZONIX.md](ROLES_SKILLS_ZONIX.md)** — tablas rol → skills → Docs / Empresa / Sistema → skill en `.agents/skills/`.
+- Skill agente asociada: **`zonix-lanzamiento-roles`** en [ZonixPharma-Backend/.agents/skills/zonix-lanzamiento-roles/SKILL.md](../../.agents/skills/zonix-lanzamiento-roles/SKILL.md).
+- **26 skills** `zonix-*` (canon Backend): [docs/zonix/README.md](../zonix/README.md) · auditoría v2: [docs/zonix/ANALISIS_FORENSE_SKILLS.md](../zonix/ANALISIS_FORENSE_SKILLS.md).
+- Inversor/finanzas: `zonix-startup-context`, `zonix-financial-model`, `zonix-investor-materials`, `zonix-fundraising-narrative`, `zonix-regulatory-ve`.
+- Empresa VE: `zonix-empresa-ve` · Lanzamiento operativo: `zonix-launch-piloto` · Sales B2B: `zonix-b2b-sales` · Orquestación roles: `zonix-lanzamiento-roles`.
+
+Invocar **`zonix-startup-context`** antes de números. Constitución: **`zonix-empresa-ve`**. Calendario T+90: **`zonix-launch-piloto`**. Envío inversor: `zonix-fundraising-narrative` + `zonix-investor-materials`.
 
 ---
 
 ## Cifras clave del pack (ancla numérica común a todos los documentos)
 
 
-| Concepto                          | Lean        | **Base (recomendado)** | Growth      |
-| --------------------------------- | ----------- | ---------------------- | ----------- |
-| Capital pedido                    | USD 60.000  | **USD 101.000**        | USD 90.000  |
-| Runway                            | 12 meses    | 12 meses               | 12 meses    |
-| SAFE post-money cap               | USD 450.000 | **USD 600.000**        | USD 650.000 |
-| Burn promedio mensual             | USD 3.636   | **~USD 7.559**         | **~USD 5.611** |
-| One-shots mes 1                   | USD 5.058   | **~USD 9.808**         | **~USD 10.708** |
-| Buffer (inflación VE)             | 20%         | 20%                    | **25%** (Growth) |
-| Equilibrio mensual (revenue ≥ burn) | Mes 9-10 (orden magnitud Lean) | **Post-M12** salvo mitigaciones ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.4) | Ver nota Growth §4.1 [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) |
-| Farmacias activas ref. equilibrio | **~81**     | **~151** (ARPF ~50: **~149** tramo C burn **7.431**; **~151** burn promedio **~7.559**) | **~125** sin Co-CEO+IA en burn §4.3; **~162** si se alinean líneas Base §3.3 — refinar con FP&A antes de due diligence |
+| Concepto                          | **Lean (mínimo viable)** | **Base (recomendado)** | **Growth (acelerado)** |
+| --------------------------------- | ------------------------ | ---------------------- | ---------------------- |
+| Capital pedido                    | **USD 101.000**          | **USD 118.000**        | **USD 135.000**        |
+| Runway                            | 12 meses post-Day-D      | 12 meses post-Day-D    | 12 meses post-Day-D    |
+| SAFE post-money cap               | **USD 600.000**          | **USD 650.000**        | **USD 720.000**        |
+| Equity implícito (ref.)           | **~16,8%**               | **~18,2%**             | **~18,8%**             |
+| Burn promedio mensual             | **~USD 7.559**           | **~USD 8.059**         | **~USD 8.691**         |
+| One-shots (Fase 0)                | **~USD 9.808**           | **~USD 10.708**        | **~USD 10.708**        |
+| Buffer (inflación VE)             | 20%                      | 20%                    | **25%** (marketing Growth) |
+| Equilibrio mensual (revenue ≥ burn) | **M11** (PROYECCION §1.1 — solo Lean tiene tabla M1–M12) | Más colchón caja; misma curva revenue | Mayor reserva runway |
+| Farmacias activas ref. equilibrio | **~151** (ARPF ~50; burn **7.431** tramo C) | **~162** (burn **~8.059**) | **~174** (burn **~8.691**) |
 
-> **Nota Growth &lt; Base (capital pedido):** el escenario **Growth (USD 90k)** predató el replante operativo **Co-CEO + stack IA** del **Base (USD 101k)**. Growth **no** incluye en su burn §4.3 las líneas **Co-CEO USD 1.000/mes** ni **IA ~USD 425/mes** del Base §3.3 — por eso el burn promedio **~5.611** es menor. Para comparación estricta entre los tres escenarios, unificar Growth con las líneas Base §3.3 en FP&A antes de due diligence profundo (ver [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §4.1).
+> **Lectura tiers:** **Lean = mínimo ejecutable** (Co-CEO, 4× Sales, HQ casa, IA, valla pequeña). **Base = recomendado** (+ valla mediana, asesor, Meta sostenido, reserva). **Growth = acelerado** (+ colchón runway). Escalera **101k < 118k < 135k**.
 
-> **Nota orden de magnitud (farmacias para cubrir burn):** **Lean ~81** (**3.636** burn promedio ÷ **ARPF 45** ancla Lean), **Base ~151** (**~149** con burn tramo C **7.431**; **~151** con **~7.559** ÷ **~50**), **Growth ~125** con burn §4.3 tal cual (**~5.611** ÷ 45) o **~162** si se suman **Co-CEO + IA** como en Base §3.3. Ajustar cuando haya GMV real por tier.
-
-> **Nota Lean / Growth:** solo **Base** tiene tabla §1.1 mes a mes en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md). **Growth:** one-shots alineados a Base §3.2; burn §4.3 del presupuesto puede **no** reflejar aún todo el replante salarial/IA de Base — ver [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §4.1.
+> **Fase 0 + Day-D (Lean 101k):** **T+0** = wire **USD 101k**; **Day-D = T+90**; **Fase 0** consume **~USD 28,1k**. **Caja al Day-D:** **~USD 72.943**. **Cierre M12:** **~USD 42.209** (sin waiver). Solo **Lean** tiene PROYECCION §1.1 mes a mes; Base/Growth = delta burn + reserva en [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md).
 
 
 
@@ -91,23 +106,26 @@ Lo anterior + los siguientes:
 
 ## Decisiones del usuario aplicadas en todo el pack
 
-1. **Modelo de ingresos:** **híbrido** — cuota fija **USD 25 / 40 / 55** (+**USD 5**/tier vs. ancla histórica 20/35/50) + **% sobre GMV** por bandas ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5); **un nivel y una factura por RIF**, GMV agregado de sucursales en piloto; dashboard por sucursal.
-2. **Alcance del piloto:** completo desde día 1 (Buyer + Pharmacy + Pharmacist + Delivery autónomo + Delivery Company). Confirmado por el usuario. **Última milla:** Zonix Pharma **no opera flota propia**; la ejecución física del reparto se delega por **concesión o contrato marco** a **empresa(s) de delivery especializada(s)**; roles `delivery` / `delivery_company` en la app reflejan ese ecosistema (autónomo puede ser complemento en piloto — ver [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) cabecera y §B).
+1. **Modelo de ingresos:** **híbrido** — cuota fija **USD 25 / 40 / 55** + **% sobre GMV** por bandas ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5); **un nivel y una factura por RIF**, GMV agregado de sucursales en piloto; dashboard por sucursal.
+2. **Alcance del piloto:** completo desde día 1 (Buyer + Pharmacy + Pharmacist + **`delivery_company`** + **`delivery_agent`**). **No** hay rol `delivery` (autónomo) en producto piloto. **Última milla:** Zonix **no opera flota propia**; concesión/contrato marco con empresa(s) partner — [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) cabecera y §A.
 3. **Equipo:**
   - Founder (CEO + CTO en una sola persona, el usuario) + **Co-CEO / CEO operativo** (segundo al mando; comercial / operación / corporate) **USD 1.000/mes** — **rótulo operativo**; representante legal / junta y SAFE según [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md).
   - Sin Pharmacist liaison interno: cada farmacia afiliada aporta su propio farmacéutico colegiado (Ley del Ejercicio de la Farmacia VE).
   - Sin Diseñador UI/UX: el founder cubre tech.
   - **4× Sales B2B** con USD **120** fijo c/u + USD **30** por farmacia firmada (**al rep que la firmó**; no duplicado entre reps); si la curva de firmas lo permite, valorar **2×** Sales como escenario de ahorro (recalcular CAC y PROYECCION).
-  - **Replante operativo** (integrado en Base **101k** — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3 y §6.1): sueldo founder **USD 1.000/mes**; **Co-CEO** **USD 1.000/mes**; Customer Support + Community Manager **350** (+50 si KPI → 400); Marketing Lead + apoyo a dirección **400** (+100 bonus si KPI); **Delivery Ops** **300** (+100 si KPI → 400) — **coordinación con empresa(s) concesionaria(s) de última milla**, no operación de flota propia.
-  - Contador externo USD 130/mes + Abogado externo USD 200/mes.
-  - Asesor regulatorio farmacéutico USD 120/mes solo en escenario Growth.
+  - **Replante operativo** (integrado en **Lean 101k** — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2): sueldo founder **USD 1.000/mes**; **Co-CEO** **USD 1.000/mes**; Customer Support + Community Manager **350** (+50 si KPI → 400); Marketing Lead + apoyo a dirección **400** (+100 bonus si KPI); **Coordinador de Partners Logísticos** **300** (+100 si KPI → 400).
+  - Asesor regulatorio farmacéutico **USD 120/mes** en escenarios **Base (118k)** y **Growth (135k)** — no en Lean.
   - **HQ — 4 PCs fijos:** recepción/cobros; admin+llamadas; dev potente; **PC 4** puesto flexible (Sales/Marketing en sede o backup de picos). **4× Sales** en campo con tablet/laptop. CapEx referencia **~2.950–4.450 USD** (cotización local — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §6.1). **Sin compra de vehículo** en presupuesto.
   - **Stack IA:** Cursor **Ultra (200)** + Claude **Max (200)** + **Seedance 2.0** (~**25**/mes ancla hasta cotizar plan); sin Gemini, Runway ni Midjourney en stack acordado.
-4. **Inmueble:** Bella Florida o San Diego. Coworking USD 100/mes en Lean. **Base:** HQ tipo **casa USD 500/mes** en burn ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3). Growth mantiene línea oficina **USD 280** en su escenario hasta unificar FP&A.
-5. **Awareness:** **Meta Ads (Instagram/Facebook)** como canal principal desde mes 1 operativo — **USD 800/mes** meses 1–6 y **USD 500/mes** meses 7–12 en Base (promedio ~USD 650/mes). **Valla publicitaria:** NO en Lean; pequeña 3m×2m USD 350/mes en Base (**refuerzo offline**, desde mes 3). Mediana 6m×4m USD 700/mes en Growth.
+4. **Inmueble:** Bella Florida o San Diego. **Lean/Base/Growth:** HQ tipo **casa USD 500/mes** ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2). Valla pequeña (Lean), mediana (Base/Growth).
+5. **Awareness:** **Meta Ads** canal principal. **Lean:** **USD 800/mes** M1–6 · **500** M7–12. **Base/Growth:** **800/mes** todo el año. Valla: pequeña 3m×2m (Lean, M3+); mediana 6m×4m (Base/Growth, M2+).
 6. **Día D del piloto:** T+90 desde cierre de inversión (calendario relativo, no absoluto, porque la fecha de cierre aún no está confirmada).
-7. **Instrumento de inversión:** SAFE post-money con cap variable por escenario (**USD 450k / 600k / 650k** — Lean / Base / Growth).
+7. **Instrumento de inversión:** SAFE post-money con cap por escenario (**USD 600k / 650k / 720k** — Lean / Base / Growth).
 8. **Benchmark de competencia para el pitch:** Farmatodo / Locatel + Farmalisto + Rappi/PedidosYa Pharmacy.
+9. **Comercial farmacia B2B (mayo 2026):** tier **solo por GMV** (sin topes por órdenes/SKU); **contrato marco anual** + cuota mensual; ascenso de tarifa desde **M+2** (en **M** y **M+1** sigue tarifa del nivel anterior); reclamos GMV **3 días hábiles**; salida sin penalidad en los **2 primeros meses**; prod en **VPS Nameshared** — [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5 y §9.
+10. **OTP paciente:** **Firebase Phone Auth (SMS)** — proxy **USD 30/mes** en burn Lean §2.3.
+11. **Logística en app:** solo **`delivery_company`** + **`delivery_agent`** — [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) cabecera.
+12. **Tiers capital (mayo 2026):** **Lean 101k** (mínimo) · **Base 118k** (recomendado) · **Growth 135k** (acelerado) — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §1.
 
 ## Documentos pre-existentes del repositorio que el pack referencia (no duplica)
 
@@ -126,8 +144,8 @@ Lo anterior + los siguientes:
 Estos no se inventan. El pack los marca explícitamente con `[PENDIENTE]`. El [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) es la plantilla para llenarlos.
 
 1. **Founder (mayo 2026 — parcial):** datos de **Abrahan Pulido** volcados en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) §1 (CV + LinkedIn). Siguen abiertos y son **bloqueantes para reunión institucional** (fondos / family office): **URL GitHub** o acceso repo bajo NDA, **declaración explícita de % dedicación** Zonix Pharma vs. CETIAC/otros, 2–3 referencias, métricas de tracción por producto (opcional).
-2. Nombres reales del Sales B2B, Customer Support, Marketing Lead, Delivery Ops.
-3. Cotización formal del coworking u oficina elegida en Bella Florida o San Diego (la guía da el rango USD 100-280; el contrato real puede variar 10-15%).
+2. Nombres reales del Sales B2B, Customer Support, Marketing Lead, **Coordinador de Partners Logísticos**.
+3. Cotización formal de **HQ casa** (San Diego / Av. Bolívar Norte, Valencia): alquiler objetivo **USD 500/mes** — validar contrato real (±10–15% vs. guía).
 4. Cotización formal de la valla con un proveedor específico (rango USD 350-700; contrato real puede variar 20%).
 5. Lista real de 5-8 farmacias prospecto identificadas (visitas hechas, contactos confirmados).
 6. Datos del primer inversor candidato (nombre, ticket esperado, ángel o fondo).

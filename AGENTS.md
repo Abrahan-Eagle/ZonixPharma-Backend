@@ -137,9 +137,25 @@ Configurables en `config/zonix.php` (sección `pharma`):
 | `zonix-order-lifecycle` | Estados de orden incluyendo `pending_prescription_validation` | [.agents/skills/zonix-order-lifecycle/SKILL.md](.agents/skills/zonix-order-lifecycle/SKILL.md) |
 | `zonix-delivery-system` | Haversine, OSRM, zonas, tracking, cadena de frío | [.agents/skills/zonix-delivery-system/SKILL.md](.agents/skills/zonix-delivery-system/SKILL.md) |
 | `zonix-realtime-events` | Pusher, FCM, broadcasting, canales | [.agents/skills/zonix-realtime-events/SKILL.md](.agents/skills/zonix-realtime-events/SKILL.md) |
-| `zonix-payments` | Pagos manuales VE (pago móvil, transferencia, Zelle, Binance Pay) | [.agents/skills/zonix-payments.md](.agents/skills/zonix-payments.md) |
+| `zonix-payments` | Pagos manuales VE (pago móvil, transferencia, Zelle, Binance Pay) | [.agents/skills/zonix-payments/SKILL.md](.agents/skills/zonix-payments/SKILL.md) |
 | `context-updater` | Resumir sesión en `docs/active_context.md` | [.agents/skills/context-updater/SKILL.md](.agents/skills/context-updater/SKILL.md) |
 | `documentar-avances` | Proponer "Cambios recientes" en AGENTS.md/README | [.agents/skills/documentar-avances/SKILL.md](.agents/skills/documentar-avances/SKILL.md) |
+| `zonix-lanzamiento-roles` | Panel roles pack Lanzamiento → Docs/Empresa/Sistema + skills agente | [.agents/skills/zonix-lanzamiento-roles/SKILL.md](.agents/skills/zonix-lanzamiento-roles/SKILL.md) |
+| `zonix-empresa-ve` | Constitución C.A., RIF, banco, SAFE, laboral piloto (checklist; no dictamen) | [.agents/skills/zonix-empresa-ve/SKILL.md](.agents/skills/zonix-empresa-ve/SKILL.md) |
+| `zonix-launch-piloto` | Plan T+0 → Day-D (T+90) → M12; KPIs farmacias; playbook Co-CEO/Sales | [.agents/skills/zonix-launch-piloto/SKILL.md](.agents/skills/zonix-launch-piloto/SKILL.md) |
+| `zonix-b2b-sales` | Playbook Sales B2B (×4), prospección farmacias, objeciones | [.agents/skills/zonix-b2b-sales/SKILL.md](.agents/skills/zonix-b2b-sales/SKILL.md) |
+| `zonix-startup-context` | Contexto canónico pre-seed (tiers 101/118/135k, anclas numéricas) | [.agents/skills/zonix-startup-context/SKILL.md](.agents/skills/zonix-startup-context/SKILL.md) |
+| `zonix-financial-model` | Coherencia PROYECCION, UNIT, PRESUPUESTO (marketplace farmacia VE) | [.agents/skills/zonix-financial-model/SKILL.md](.agents/skills/zonix-financial-model/SKILL.md) |
+| `zonix-investor-materials` | Data room ligero, gaps pack, checklist inversor | [.agents/skills/zonix-investor-materials/SKILL.md](.agents/skills/zonix-investor-materials/SKILL.md) |
+| `zonix-fundraising-narrative` | Pitch, MENSAJE_ENVIO, Q&A SAFE | [.agents/skills/zonix-fundraising-narrative/SKILL.md](.agents/skills/zonix-fundraising-narrative/SKILL.md) |
+| `zonix-regulatory-ve` | MPPS/INHRR, copy salud, Rx (lente; no dictamen) | [.agents/skills/zonix-regulatory-ve/SKILL.md](.agents/skills/zonix-regulatory-ve/SKILL.md) |
+| `zonix-prescriptions` | Receta médica, validación farmacéutico, TTL, controlados | [.agents/skills/zonix-prescriptions/SKILL.md](.agents/skills/zonix-prescriptions/SKILL.md) |
+| `zonix-medicine-catalog` | Catálogo medicamentos, lotes FIFO, INHRR, cold chain | [.agents/skills/zonix-medicine-catalog/SKILL.md](.agents/skills/zonix-medicine-catalog/SKILL.md) |
+| `zonix-disputes-and-refunds` | Disputas, reembolsos manuales, penalizaciones | [.agents/skills/zonix-disputes-and-refunds/SKILL.md](.agents/skills/zonix-disputes-and-refunds/SKILL.md) |
+| `zonix-analytics` | KPIs admin/commerce, agregaciones órdenes | [.agents/skills/zonix-analytics/SKILL.md](.agents/skills/zonix-analytics/SKILL.md) |
+| `zonix-jarvis-subagents-map` | Tarea Zonix → subagent VoltAgent (lente) → skill `zonix-*` canon | [.agents/skills/zonix-jarvis-subagents-map/SKILL.md](.agents/skills/zonix-jarvis-subagents-map/SKILL.md) |
+| `zonix-legal-contracts-ve` | Checklist contrato marco farmacia, SAFE, laboral VE | [.agents/skills/zonix-legal-contracts-ve/SKILL.md](.agents/skills/zonix-legal-contracts-ve/SKILL.md) |
+| `zonix-founder-ops-index` | Índice curado awesome-ceo/cto/tpm (sin cifras fuera del pack) | [.agents/skills/zonix-founder-ops-index/SKILL.md](.agents/skills/zonix-founder-ops-index/SKILL.md) |
 
 ---
 
@@ -160,6 +176,22 @@ Configurables en `config/zonix.php` (sección `pharma`):
 | Hacer git commit | `git-commit` |
 | Cerrar sesión con cambios relevantes | `context-updater` |
 | Finalizar tarea y documentar avances | `documentar-avances` |
+| Trabajar con pack Lanzamiento / roles / pitch inversor | `zonix-startup-context` + `zonix-lanzamiento-roles` + `documentar-avances` |
+| Auditar finanzas del pack (PROYECCION, UNIT, PRESUPUESTO) | `zonix-startup-context` + `zonix-financial-model` |
+| Preparar data room / gaps inversor | `zonix-startup-context` + `zonix-investor-materials` |
+| Redactar pitch / email inversor | `zonix-startup-context` + `zonix-fundraising-narrative` |
+| Copy regulatorio / Rx en documentos | `zonix-regulatory-ve` + asesor humano |
+| Trabajar con recetas / validación farmacéutico | `zonix-prescriptions` |
+| Catálogo medicamentos / lotes | `zonix-medicine-catalog` |
+| Disputas y reembolsos | `zonix-disputes-and-refunds` |
+| Dashboards y métricas admin/commerce | `zonix-analytics` |
+| Constituir empresa / SAFE / laboral VE | `zonix-startup-context` + `zonix-empresa-ve` + `zonix-lanzamiento-roles` |
+| Calendario piloto / hitos T+30/60/90 / Day-D | `zonix-launch-piloto` + `zonix-startup-context` |
+| Ejecutar plan comercial post-wire | `zonix-launch-piloto` + `zonix-lanzamiento-roles` |
+| Prospección / cierre farmacias B2B | `zonix-b2b-sales` + `zonix-launch-piloto` |
+| Tarea multi-rol compleja (qué subagent + qué skill) | `zonix-jarvis-subagents-map` + `zonix-lanzamiento-roles` |
+| Revisar contrato marco farmacia / SAFE / laboral (checklist) | `zonix-legal-contracts-ve` + `zonix-empresa-ve` + `zonix-regulatory-ve` |
+| Lectura founder CEO/CTO/TPM (due diligence, 90 días) | `zonix-founder-ops-index` + `zonix-startup-context` |
 
 ---
 
@@ -169,8 +201,13 @@ Configurables en `config/zonix.php` (sección `pharma`):
 - **[docs/PLAN_RX_VALIDATION.md](docs/PLAN_RX_VALIDATION.md)** — flujo de validación de receta y endpoints.
 - **[docs/PLAN_REGULATORIO_PHARMA_VE.md](docs/PLAN_REGULATORIO_PHARMA_VE.md)** — regulación VE, MPPS, INHRR, datos de salud.
 - **[docs/MIGRACION_EATS_PHARMA.md](docs/MIGRACION_EATS_PHARMA.md)** — qué cambió en la transformación Eats → Pharma.
+- **[docs/Lanzamiento/ROLES_SKILLS_ZONIX.md](docs/Lanzamiento/ROLES_SKILLS_ZONIX.md)** — matriz rol → competencias → agentes (pack inversor).
+- **[docs/Lanzamiento/README.md](docs/Lanzamiento/README.md)** — índice pack inversor (22 documentos).
+- **[docs/zonix/ANALISIS_FORENSE_SKILLS.md](docs/zonix/ANALISIS_FORENSE_SKILLS.md)** — auditoría forense multi-rol de skills `zonix-*`.
+- **[docs/zonix/research_links.md](docs/zonix/research_links.md)** — enlaces GitHub skills/roles (adaptar/evitar).
+- **[docs/zonix/roles_matrix.json](docs/zonix/roles_matrix.json)** — routing JARVIS por rol y tarea + `skills_inventory`.
 
 ---
 
 **Documentación completa de lógica de negocio:** Ver `README.md`
-**Última actualización:** 30 abril 2026
+**Última actualización:** 20 mayo 2026

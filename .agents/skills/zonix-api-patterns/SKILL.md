@@ -1,6 +1,6 @@
 ---
 name: zonix-api-patterns
-description: Patrones de API REST de Zonix Eats. Response format, paginación, roles, middleware, manejo de errores, y convenciones.
+description: Patrones de API REST de Zonix Pharma. Response format, paginación, roles (buyer/commerce/pharmacist/delivery/admin), middleware, errores y convenciones marketplace farmacéutico VE.
 trigger: Cuando se creen nuevos endpoints, controladores, respuestas de API, middleware de autenticación, o se modifiquen rutas.
 scope: routes/api.php, app/Http/Controllers/, app/Http/Middleware/
 author: Zonix Team
@@ -8,7 +8,7 @@ version: 2.0
 ---
 
 > **Zonix Pharma:** API REST del marketplace farmacéutico — prefijos buyer/commerce/pharmacist, respuesta `{ success, data, message }`, roles en `AGENTS.md`.
-# 🔌 Patrones de API - Zonix Eats
+# Patrones de API — Zonix Pharma
 
 ## Roles (Terminología Estándar)
 

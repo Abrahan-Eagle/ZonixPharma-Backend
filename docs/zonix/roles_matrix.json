@@ -1,0 +1,281 @@
+{
+  "meta": {
+    "product": "Zonix Pharma",
+    "version": "2026-05-20",
+    "source_md": "docs/Lanzamiento/ROLES_SKILLS_ZONIX.md",
+    "tiers_capital_usd": {
+      "lean": 101000,
+      "base": 118000,
+      "growth": 135000
+    },
+    "forense_skills": "docs/zonix/ANALISIS_FORENSE_SKILLS.md",
+    "skills_count": 30,
+    "forense_github_v3": "docs/zonix/ANALISIS_FORENSE_SKILLS.md#12-apéndice--auditoría-enlaces-github-mayo-2026"
+  },
+  "skills_inventory": [
+    {"id": "zonix-startup-context", "repo": "backend", "domain": "inversor", "prerequisite": null, "forense": "ok"},
+    {"id": "zonix-financial-model", "repo": "backend", "domain": "inversor", "prerequisite": "zonix-startup-context", "forense": "ok"},
+    {"id": "zonix-investor-materials", "repo": "backend", "domain": "inversor", "prerequisite": "zonix-startup-context", "forense": "ok"},
+    {"id": "zonix-fundraising-narrative", "repo": "backend", "domain": "inversor", "prerequisite": "zonix-startup-context", "forense": "ok"},
+    {"id": "zonix-regulatory-ve", "repo": "backend", "domain": "legal_ra", "prerequisite": null, "forense": "ok"},
+    {"id": "zonix-empresa-ve", "repo": "backend", "domain": "empresa_ve", "prerequisite": "zonix-startup-context", "forense": "ok"},
+    {"id": "zonix-launch-piloto", "repo": "backend", "domain": "gtm_ops", "prerequisite": "zonix-startup-context", "forense": "ok"},
+    {"id": "zonix-b2b-sales", "repo": "backend", "domain": "gtm_sales", "prerequisite": "zonix-launch-piloto", "forense": "ok"},
+    {"id": "zonix-lanzamiento-roles", "repo": "backend", "domain": "orquestacion", "prerequisite": "zonix-startup-context", "forense": "ok"},
+    {"id": "zonix-prescriptions", "repo": "backend", "domain": "producto_rx", "prerequisite": null, "forense": "ok"},
+    {"id": "zonix-medicine-catalog", "repo": "backend", "domain": "producto_catalogo", "prerequisite": null, "forense": "ok"},
+    {"id": "zonix-order-lifecycle", "repo": "backend", "domain": "producto_ordenes", "prerequisite": null, "forense": "ok"},
+    {"id": "zonix-disputes-and-refunds", "repo": "backend", "domain": "producto_ops", "prerequisite": "zonix-order-lifecycle", "forense": "ok"},
+    {"id": "zonix-delivery-system", "repo": "backend", "domain": "producto_delivery", "prerequisite": null, "forense": "ok"},
+    {"id": "zonix-realtime-events", "repo": "backend", "domain": "producto_realtime", "prerequisite": null, "forense": "ok"},
+    {"id": "zonix-api-patterns", "repo": "backend", "domain": "producto_api", "prerequisite": null, "forense": "ok"},
+    {"id": "zonix-analytics", "repo": "backend", "domain": "producto_datos", "prerequisite": "zonix-order-lifecycle", "forense": "reserva_kpi"},
+    {"id": "zonix-payments", "repo": "backend", "domain": "producto_pagos", "prerequisite": "zonix-order-lifecycle", "forense": "ok"},
+    {"id": "zonix-ui-design", "repo": "front", "domain": "ui", "prerequisite": null, "forense": "ok"},
+    {"id": "zonix-onboarding", "repo": "front", "domain": "ui", "prerequisite": "zonix-ui-design", "forense": "ok"},
+    {"id": "zonix-order-tracking-ui", "repo": "front", "domain": "ui", "prerequisite": "zonix-order-lifecycle", "forense": "ok"},
+    {"id": "zonix-admin-analytics-ui", "repo": "front", "domain": "ui", "prerequisite": "zonix-analytics", "forense": "ok"},
+    {"id": "zonix-order-lifecycle", "repo": "front", "domain": "ui_dup", "prerequisite": "zonix-order-lifecycle", "forense": "reserva_sync"},
+    {"id": "zonix-realtime-events", "repo": "front", "domain": "ui_dup", "prerequisite": "zonix-realtime-events", "forense": "reserva_sync"},
+    {"id": "zonix-startup-context", "repo": "front_stub", "domain": "inversor", "prerequisite": null, "forense": "ok"},
+    {"id": "zonix-investor-materials", "repo": "front_stub", "domain": "inversor", "prerequisite": null, "forense": "ok"},
+    {"id": "zonix-lanzamiento-roles", "repo": "front_stub", "domain": "orquestacion", "prerequisite": null, "forense": "ok"},
+    {"id": "zonix-launch-piloto", "repo": "front_stub", "domain": "gtm_ops", "prerequisite": null, "forense": "ok"},
+    {"id": "zonix-jarvis-subagents-map", "repo": "backend", "domain": "orquestacion", "prerequisite": "zonix-lanzamiento-roles", "forense": "ok_v3"},
+    {"id": "zonix-legal-contracts-ve", "repo": "backend", "domain": "legal_ve", "prerequisite": "zonix-empresa-ve", "forense": "ok_v3"},
+    {"id": "zonix-founder-ops-index", "repo": "backend", "domain": "founder_lens", "prerequisite": "zonix-startup-context", "forense": "ok_v3"}
+  ],
+  "piloto_payroll": [
+    {
+      "id": "founder_ceo_cto",
+      "label": "Founder / CEO / CTO",
+      "priority": "alta",
+      "docs": "alta",
+      "empresa": "media",
+      "sistema": "maxima",
+      "skills_agente": [
+        "zonix-startup-context",
+        "architecture-patterns",
+        "laravel-specialist",
+        "flutter-expert",
+        "zonix-lanzamiento-roles",
+        "zonix-founder-ops-index",
+        "zonix-jarvis-subagents-map"
+      ]
+    },
+    {
+      "id": "co_ceo_operativo",
+      "label": "Co-CEO / CEO operativo",
+      "priority": "alta",
+      "docs": "alta",
+      "empresa": "alta",
+      "sistema": "media",
+      "skills_agente": ["zonix-launch-piloto", "zonix-empresa-ve", "zonix-lanzamiento-roles", "zonix-delivery-system", "documentar-avances"]
+    },
+    {
+      "id": "sales_b2b",
+      "label": "Sales B2B (×4)",
+      "priority": "media",
+      "docs": "media",
+      "empresa": "baja",
+      "sistema": "baja",
+      "skills_agente": ["zonix-b2b-sales", "zonix-launch-piloto", "zonix-lanzamiento-roles"]
+    },
+    {
+      "id": "cs_community",
+      "label": "Customer Support + Community Manager",
+      "priority": "media",
+      "docs": "media",
+      "empresa": "baja",
+      "sistema": "media",
+      "skills_agente": ["zonix-disputes-and-refunds", "zonix-order-lifecycle", "zonix-onboarding"]
+    },
+    {
+      "id": "marketing_lead",
+      "label": "Marketing Lead",
+      "priority": "alta",
+      "docs": "alta",
+      "empresa": "baja",
+      "sistema": "baja",
+      "skills_agente": ["zonix-lanzamiento-roles"]
+    },
+    {
+      "id": "coordinador_logistica",
+      "label": "Coordinador de Partners Logísticos",
+      "priority": "media",
+      "docs": "media",
+      "empresa": "media",
+      "sistema": "media",
+      "skills_agente": ["zonix-delivery-system", "zonix-lanzamiento-roles"]
+    }
+  ],
+  "externos": [
+    {
+      "id": "contador",
+      "label": "Contador externo",
+      "priority": "maxima",
+      "human_required": true,
+      "skills_agente": ["zonix-financial-model", "zonix-startup-context"]
+    },
+    {
+      "id": "abogado",
+      "label": "Abogado externo",
+      "priority": "maxima",
+      "human_required": true,
+      "skills_agente": ["zonix-empresa-ve", "zonix-legal-contracts-ve", "zonix-regulatory-ve", "zonix-lanzamiento-roles", "security-requirement-extraction"]
+    },
+    {
+      "id": "asesor_regulatorio",
+      "label": "Asesor regulatorio farmacéutico",
+      "priority": "alta",
+      "human_required": true,
+      "skills_agente": ["zonix-regulatory-ve", "zonix-prescriptions"]
+    }
+  ],
+  "plataforma_app": [
+    {
+      "id": "users",
+      "role": "users",
+      "label": "Paciente",
+      "skills_agente": ["zonix-onboarding", "zonix-order-tracking-ui"]
+    },
+    {
+      "id": "commerce",
+      "role": "commerce",
+      "label": "Farmacia",
+      "skills_agente": ["zonix-medicine-catalog"]
+    },
+    {
+      "id": "pharmacist",
+      "role": "pharmacist",
+      "label": "Farmacéutico colegiado",
+      "skills_agente": ["zonix-prescriptions", "zonix-regulatory-ve"]
+    },
+    {
+      "id": "delivery_company",
+      "role": "delivery_company",
+      "label": "Empresa de delivery",
+      "skills_agente": ["zonix-delivery-system"]
+    },
+    {
+      "id": "delivery_agent",
+      "role": "delivery_agent",
+      "label": "Agente de delivery",
+      "skills_agente": ["zonix-delivery-system"]
+    },
+    {
+      "id": "admin",
+      "role": "admin",
+      "label": "Admin",
+      "skills_agente": ["zonix-analytics", "zonix-api-patterns"]
+    }
+  ],
+  "madurez": [
+    {
+      "id": "cfo",
+      "label": "CFO",
+      "cubre_hoy": "Contador + PROYECCION",
+      "skills_agente": ["zonix-financial-model", "zonix-startup-context", "zonix-investor-materials"]
+    },
+    {
+      "id": "coo",
+      "label": "COO",
+      "cubre_hoy": "Co-CEO",
+      "skills_agente": ["zonix-delivery-system", "zonix-lanzamiento-roles"]
+    },
+    {
+      "id": "cto",
+      "label": "CTO",
+      "cubre_hoy": "Founder",
+      "skills_agente": ["laravel-specialist", "architecture-patterns", "security"]
+    },
+    {
+      "id": "cpo",
+      "label": "CPO",
+      "cubre_hoy": "Founder + pack",
+      "skills_agente": ["zonix-order-lifecycle", "zonix-analytics"]
+    },
+    {
+      "id": "director_ra",
+      "label": "Director de asuntos regulatorios",
+      "cubre_hoy": "Asesor",
+      "skills_agente": ["zonix-regulatory-ve"]
+    },
+    {
+      "id": "ciso",
+      "label": "CISO",
+      "cubre_hoy": "Founder + PLAN_MODULO §14",
+      "skills_agente": ["security", "security-requirement-extraction"]
+    },
+    {
+      "id": "dpo",
+      "label": "DPO",
+      "cubre_hoy": "Abogado",
+      "skills_agente": ["security-requirement-extraction", "zonix-regulatory-ve"]
+    },
+    {
+      "id": "ir_corp_dev",
+      "label": "IR / Corp Dev",
+      "cubre_hoy": "MENSAJE + ESTRUCTURA",
+      "skills_agente": ["zonix-investor-materials", "zonix-fundraising-narrative"]
+    },
+    {
+      "id": "fpa",
+      "label": "FP&A / Business Analyst",
+      "cubre_hoy": "Founder lens",
+      "skills_agente": ["zonix-financial-model", "zonix-startup-context"]
+    }
+  ],
+  "jarvis_tasks": [
+    {
+      "task": "auditar_pack_numerico",
+      "roles_humanos": ["CFO", "FP&A", "Contador"],
+      "skills": ["zonix-startup-context", "zonix-financial-model", "zonix-lanzamiento-roles"]
+    },
+    {
+      "task": "preparar_envio_inversor",
+      "roles_humanos": ["IR", "Founder", "Legal"],
+      "skills": ["zonix-startup-context", "zonix-investor-materials", "zonix-fundraising-narrative"]
+    },
+    {
+      "task": "crear_empresa_ve",
+      "roles_humanos": ["Legal", "Contador", "Co-CEO"],
+      "skills": ["zonix-startup-context", "zonix-empresa-ve", "zonix-lanzamiento-roles", "security-requirement-extraction"]
+    },
+    {
+      "task": "ejecutar_plan_lanzamiento",
+      "roles_humanos": ["Co-CEO", "Sales", "Marketing", "CS"],
+      "skills": ["zonix-startup-context", "zonix-launch-piloto", "zonix-lanzamiento-roles"]
+    },
+    {
+      "task": "planificacion_operativa_m12",
+      "roles_humanos": ["Co-CEO", "CFO", "FP&A"],
+      "skills": ["zonix-startup-context", "zonix-launch-piloto", "zonix-financial-model"]
+    },
+    {
+      "task": "desarrollo_producto_sprint",
+      "roles_humanos": ["CTO", "QA"],
+      "skills": ["zonix-prescriptions", "zonix-order-lifecycle", "laravel-specialist", "flutter-expert"]
+    },
+    {
+      "task": "copy_salud_rx",
+      "roles_humanos": ["RA", "Medical Affairs", "Asesor"],
+      "skills": ["zonix-regulatory-ve", "zonix-prescriptions"]
+    },
+    {
+      "task": "revisar_contrato_b2b",
+      "roles_humanos": ["Legal", "Sales", "Co-CEO"],
+      "skills": ["zonix-startup-context", "zonix-legal-contracts-ve", "zonix-b2b-sales", "zonix-regulatory-ve"]
+    },
+    {
+      "task": "orquestar_tarea_multi_rol",
+      "roles_humanos": ["Founder", "CTO", "Co-CEO"],
+      "skills": ["zonix-jarvis-subagents-map", "zonix-lanzamiento-roles"]
+    },
+    {
+      "task": "lectura_founder_ceo_cto",
+      "roles_humanos": ["Founder", "Co-CEO"],
+      "skills": ["zonix-founder-ops-index", "zonix-startup-context", "zonix-launch-piloto"]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 ---
 name: zonix-realtime-events
-description: Sistema de eventos en tiempo real de Zonix Eats. Pusher broadcasting, FCM push notifications, canales, payloads.
+description: Eventos en tiempo real Zonix Pharma. Pusher, FCM (canal zonix_pharma_fcm), broadcasting Rx y órdenes, canales y payloads.
 trigger: Cuando se trabaje con Pusher, broadcasting, notificaciones push (FCM), eventos en tiempo real, o tracking de órdenes.
 scope: app/Events/, app/Http/Controllers/Notification/, config/broadcasting.php, routes/channels.php
 author: Zonix Team
@@ -8,7 +8,7 @@ version: 2.0
 ---
 
 > **Zonix Pharma:** eventos en tiempo real incluyen `PrescriptionUploaded`, `PrescriptionValidated`, `PrescriptionRejected` y canales `private-commerce.*`. Ver `zonix-prescriptions` y `AGENTS.md`.
-# 📡 Eventos en Tiempo Real - Zonix Eats
+# Eventos en tiempo real — Zonix Pharma
 
 > **⚠️ NO se usa WebSocket directo.** Se usa Pusher Channels (broadcasting) + FCM (push).
 

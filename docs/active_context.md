@@ -7,17 +7,18 @@
 
 ## Última actualización de contexto
 
-### Pack Lanzamiento — modelo Base **USD 101k** + **Co-CEO** + **4× Sales** + cuota **25/40/55** + **última milla por concesión** (11 mayo 2026)
+### Pack Lanzamiento — tiers Lean 101k / Base 118k / Growth 135k (18 mayo 2026)
 
-- **Resumen:** el escenario **Base** en **USD 101k** incorpora **Co-CEO / CEO operativo USD 1.000/mes**, **4× ejecutivos Sales B2B** y cuota fija **USD 25 / 40 / 55** (+**USD 5**/tier vs. ancla 20/35/50), con **ARPF placeholder ~50** en la proyección. **Última milla:** **concesión o contrato marco** con **empresa(s) de delivery especializada(s)** — Zonix **no** opera flota propia; **Delivery Ops** = enlace con partner ([PROPUESTA_VALOR_TERCER_LADO.md](Lanzamiento/PROPUESTA_VALOR_TERCER_LADO.md), [PLAN_MODULO_OPERATIVO_CLAVE.md](Lanzamiento/PLAN_MODULO_OPERATIVO_CLAVE.md) §1.1). Documentos alineados en `docs/Lanzamiento/` (README, BRIEF, PROYECCION, PRESUPUESTO, ESTRUCTURA, MENSAJE, CHECKLIST, UNIT_ECONOMICS, ANALISIS_FORENSE, etc.).
-- **Cifras ancla Base (fuente [PROYECCION_FINANCIERA_12M.md](Lanzamiento/PROYECCION_FINANCIERA_12M.md) §1.1–1.3, [PRESUPUESTO_12_MESES_REFERENCIA.md](Lanzamiento/PRESUPUESTO_12_MESES_REFERENCIA.md) §3):** capital **USD 101.000**; SAFE cap **USD 600.000**; equity implícito **~16,83%**; one-shots M1 **~USD 9.808**; burn tramos **7.462 / 7.798 / 7.431** (promedio anual **~7.559**); burn año 1 **90.702**; revenue año 1 **29.372**; cash cierre año 1 **~USD 29.862** (sin waiver); waiver B2B opcional **~USD 29.640**; cash mes **6 ~USD 49.748**; **equilibrio mensual post-M12** con ARPF **~50** salvo mitigaciones (§1.4); **~149–151** farmacias orden de magnitud para cubrir burn con placeholder; PRESUPUESTO §3.4 **reserva +484** (tras retirar bono piloto y subsidio delivery del burn — ver nota §3.4).
-- **Equipo Base:** **Co-CEO** + **4× Sales B2B** + CS+CM + Marketing + Delivery Ops + **founder** CEO+CTO (**9** FTE); **2** freelance (Contador, Abogado). «Co-CEO» es **rótulo operativo**; legal/junta/SAFE = dictamen abogado ([ESTRUCTURA_LEGAL_Y_EQUITY.md](Lanzamiento/ESTRUCTURA_LEGAL_Y_EQUITY.md), [README.md](Lanzamiento/README.md)).
-- **Waiver B2B vs. proyección:** tabla §1.1 = caso **central sin** waiver de cuota; fila «con waiver» ≈ **−USD ~222** ingreso año 1; **§1.3** documenta caja **~29.640** si aplica esa variante. Promesa comercial más amplia → recalcular con FP&A ([PROPUESTA_VALOR_CLIENTE_B2B.md](Lanzamiento/PROPUESTA_VALOR_CLIENTE_B2B.md) §11, [ANALISIS_FORENSE.md](Lanzamiento/ANALISIS_FORENSE.md) §8.1).
-- **Growth (USD 90k):** one-shots alineados a Base §3.2; burn §4.3 **aún no** unificado con Co-CEO + IA del Base — nota de reconciliación en [PRESUPUESTO_12_MESES_REFERENCIA.md](Lanzamiento/PRESUPUESTO_12_MESES_REFERENCIA.md) §4.1 y §5.
-- **Forense multi-rol:** [ANALISIS_FORENSE.md](Lanzamiento/ANALISIS_FORENSE.md) §11.1 tabla «lentes ejecutivos» (CEO, CFO, COO, CTO/CISO, CPO, clínico/RA/QA-PV, Compliance/DPO/Legal, ventas/marketing/CHRO, supply, riesgos/IR); §11.2–11.3 conclusión y próximos pasos.
-- **Obsoleto para materiales inversor:** cifras **95k**, burn **6.402 / 6.738 / 6.371**, cash **~33k**, DoD mes 6 **~41k**, equity **15,83%** — no usar; el histórico de proceso queda en entradas antiguas más abajo si aplica.
-- **Pendientes humanos** (igual que pack — [VOLCADO_RESPUESTAS_CUESTIONARIO.md](Lanzamiento/VOLCADO_RESPUESTAS_CUESTIONARIO.md), [CHECKLIST_PRE_INVERSOR.md](Lanzamiento/CHECKLIST_PRE_INVERSOR.md)): GitHub/NDA, referencias, % dedicación, farmacias prospecto, cotizaciones, abogado/farmacéutico, nombres equipo.
-- **Sin commit/push desde la IA** salvo orden explícita del usuario.
+- **Reestructuración:** antiguo «Base 101k» → **Lean (mínimo)**. **Base = 118k recomendado**. **Growth = 135k acelerado**. SAFE **600k / 650k / 720k**. Obsoletos **60k / 90k**.
+- **PROYECCION §1.1** = **Lean**; caja M12 **~42.209**; equilibrio **M11**.
+- **PRESUPUESTO:** [PRESUPUESTO_12_MESES_REFERENCIA.md](Lanzamiento/PRESUPUESTO_12_MESES_REFERENCIA.md) §1–§5 (fuente numérica única).
+- **Forense:** auditoría unificada [ANALISIS_FORENSE.md](Lanzamiento/ANALISIS_FORENSE.md) §11.4 (18 mayo 2026).
+
+### Pack Lanzamiento — modelo operativo Lean (referencia)
+
+- **Day-D = T+90**; **Fase 0 ~28.057**; caja Day-D **~72.943**; burn **7.462/7.798/7.431**; M12 **~42.209**; equilibrio **M11 ~151 activas**.
+- **Equipo Lean:** **9 FTE + 2 FL** (Co-CEO, 4× Sales, CS+CM, Marketing, Coordinador Partners, founder).
+- **Pendientes humanos:** GitHub/NDA, referencias, HQ casa, valla, abogado/farmacéutico — [VOLCADO](Lanzamiento/VOLCADO_RESPUESTAS_CUESTIONARIO.md), [CHECKLIST](Lanzamiento/CHECKLIST_PRE_INVERSOR.md).
 
 ---
 

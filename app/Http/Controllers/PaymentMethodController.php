@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StorePaymentMethodRequest;
 use App\Http\Requests\UpdatePaymentMethodRequest;
+use App\Support\PharmaPilotPaymentCatalog;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 
@@ -253,54 +254,10 @@ class PaymentMethodController extends Controller
     public function getAvailableMethods()
     {
         try {
-            $methods = [
-                [
-                    'type' => 'card',
-                    'name' => 'Tarjeta de Crédito/Débito',
-                    'description' => 'Visa, MasterCard, American Express',
-                    'icon' => 'credit_card',
-                    'enabled' => true,
-                ],
-                [
-                    'type' => 'mobile_payment',
-                    'name' => 'Pago Móvil',
-                    'description' => 'Pago a través de banca móvil',
-                    'icon' => 'smartphone',
-                    'enabled' => true,
-                ],
-                [
-                    'type' => 'cash',
-                    'name' => 'Efectivo',
-                    'description' => 'Pago al momento de la entrega',
-                    'icon' => 'money',
-                    'enabled' => true,
-                ],
-                [
-                    'type' => 'paypal',
-                    'name' => 'PayPal',
-                    'description' => 'Pago seguro con PayPal',
-                    'icon' => 'paypal',
-                    'enabled' => true,
-                ],
-                [
-                    'type' => 'digital_wallet',
-                    'name' => 'Billetera Digital',
-                    'description' => 'Apple Pay, Google Pay, etc.',
-                    'icon' => 'account_balance_wallet',
-                    'enabled' => true,
-                ],
-                [
-                    'type' => 'bank_transfer',
-                    'name' => 'Transferencia Bancaria',
-                    'description' => 'Transferencia directa a cuenta bancaria',
-                    'icon' => 'account_balance',
-                    'enabled' => true,
-                ],
-            ];
-
             return response()->json([
                 'success' => true,
-                'data' => $methods,
+                'data' => PharmaPilotPaymentCatalog::forPublicAvailableEndpoint(),
+                'meta' => ['pilot_mode' => 'pharma_ve_manual'],
             ]);
 
         } catch (\Exception $e) {

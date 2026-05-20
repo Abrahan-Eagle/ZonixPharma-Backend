@@ -1,16 +1,34 @@
 ---
 name: zonix-payments
-description: Sistema de pagos híbridos, métodos de pago polimórficos, bancos, y reglas de comisiones para Zonix Eats.
+description: Pagos manuales VE en Zonix Pharma (pago móvil, transferencia, Zelle, Binance Pay). Zonix no es PSP; ver PLAN_METODOS_PAGO y zonix-order-lifecycle.
 trigger: Cuando se toque Checkout, Pasarelas, Tasas, Binance, Stripe, payment_methods, datos bancarios, o tarifa/costo de delivery.
-scope: app/Services/Payment, app/Models/PaymentMethod.php, app/Models/Bank.php
+scope: app/Support/PharmaPilotPaymentCatalog.php, app/Http/Controllers/Buyer/OrderController.php, app/Models/PaymentMethod.php, app/Models/Bank.php
 version: 2.0
 ---
 
 > **Zonix Pharma:** vertical farmacéutica del ecosistema Zonix. Esta skill documenta patrones del core (pagos, comisiones, delivery_fee); el producto activo es **Zonix Pharma** — ver `AGENTS.md` y `docs/` para reglas Rx, recetas y farmacia.
 
+## Modo piloto Zonix Pharma (prioridad)
+
+**Fuente canónica:** [docs/Lanzamiento/PLAN_METODOS_PAGO.md](../../docs/Lanzamiento/PLAN_METODOS_PAGO.md).
+
+| Regla piloto | Detalle |
+|--------------|---------|
+| Zonix **no es PSP** | No custodia fondos ni liquida entre partes |
+| Flujo | Paciente paga **directo a la farmacia** (y repartidor si aplica) |
+| Métodos | Pago móvil C2P, transferencia, Zelle, Binance Pay USDT, efectivo, POS físico |
+| Confirmación | Comprobante + validación farmacia/admin — orden en `pending_payment` hasta validar |
+| Prohibido piloto | Stripe, PayPal, tarjeta internacional como pasarela Zonix |
+| API canónica comprador | `GET /api/buyer/orders/{id}/payment-info` + `POST .../payment-proof` |
+| Catálogo código | `App\Support\PharmaPilotPaymentCatalog` |
+
+Al implementar o auditar pagos en Pharma, **leer PLAN_METODOS_PAGO primero**. Las secciones siguientes con Stripe/Binance **webhook automático** son **legacy Zonix Eats** — no aplican al piloto farmacéutico salvo migración explícita acordada.
+
 **Módulo tarifa de delivery (futuro):** Para implementar la configuración de tarifa de delivery por Admin (base + $/km, zonas), leer y seguir [docs/PLAN_MODULO_TARIFA_DELIVERY.md](../../docs/PLAN_MODULO_TARIFA_DELIVERY.md).
 
 # 💸 Sistema de Pagos Zonix (Venezuela/Global)
+
+> **Legacy Eats (no piloto Pharma):** apartados «Pasarelas Activas» con webhooks automáticos Stripe/Binance.
 
 ## 1. Moneda y Conversión
 
@@ -18,15 +36,15 @@ version: 2.0
 - **Visualización:** El cliente ve precios en USD y VES (Bolívares).
 - **Tasa de Cambio:** Se usa la tasa del BCV almacenada en DB o Caché. NUNCA usar tasas estáticas en código.
 
-## 2. Pasarelas Activas
+## 2. Pasarelas Activas *(legacy Eats — no piloto Pharma)*
 
-### A. Binance Pay (Cripto)
+### A. Binance Pay (Cripto) *(legacy — piloto: Binance Pay manual + comprobante)*
 
 - **Prioridad:** Alta.
 - **Flujo:** Automático (Webhook).
 - **Lógica:** Generar QR de cobro en USDT. La orden pasa a `paid` SOLO cuando el Webhook de Binance confirma.
 
-### B. Stripe (Tarjetas Internacionales)
+### B. Stripe (Tarjetas Internacionales) *(legacy — no operativo VE piloto)*
 
 - **Uso:** Solo para tarjetas de crédito/débito internacionales.
 - **Regla:** El monto se envía en centavos de USD.

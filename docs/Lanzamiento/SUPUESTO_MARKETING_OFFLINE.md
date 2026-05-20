@@ -1,6 +1,6 @@
 # Supuesto de marketing offline
 
-> **Última actualización:** 10 mayo 2026.
+> **Última actualización:** 18 mayo 2026.
 > Documento que justifica el rol del marketing offline (vallas, radio, flyers) en el plan, y por qué la **prioridad principal es marketing digital**.
 
 ## 1. Filosofía del pack: digital primero, offline complementario
@@ -37,13 +37,13 @@
 
 ## 2. Presupuesto offline por escenario
 
-| Item | Lean | Base (recomendado) | Growth |
+| Item | Lean (101k) | Base (118k — recom.) | Growth (135k) |
 |---|---|---|---|
-| Valla publicitaria | USD 0/mes | **USD 350/mes desde mes 3** | USD 700/mes desde mes 2 |
+| Valla publicitaria | **USD 350/mes desde mes 3** (pequeña 3m×2m) | **USD 700/mes desde mes 2** (mediana 6m×4m) | USD 700/mes desde mes 2 |
 | Radio FM AM (mención 30s) | USD 0 | USD 0 | USD 250/mes desde mes 4 |
 | Flyers + brochures | USD 50/mes | USD 100/mes | USD 150/mes |
 | Eventos locales / patrocinios pequeños | USD 0 | USD 50/mes desde mes 6 | USD 100/mes desde mes 4 |
-| **Total offline mensual** | **USD 50** | **USD 350-550/mes** *(según mes: brochures M1-2, valla activa M3+, eventos M6+ — §4.1)* | **USD 1.200** |
+| **Total offline mensual** | **USD 50–400/mes** *(brochures M1+; valla pequeña M3+ — §4.1)* | **USD 350-550/mes** *(brochures M1-2, valla mediana M2+, eventos M6+ — §4.1)* | **USD 1.200** |
 
 ## 3. Detalle por canal
 
@@ -54,7 +54,7 @@
 | Tamaño | Ubicación | USD/mes | Notas |
 |---|---|---|---|
 | Pequeña 3m×2m | Av. secundaria | 250-400 | OK para barrio. |
-| **Pequeña 3m×2m** | **Av. principal (Bolívar Norte / Cedeño)** | **350-500** | **Base.** |
+| **Pequeña 3m×2m** | **Av. principal (Bolívar Norte / Cedeño)** | **350-500** | **Lean.** |
 | Mediana 6m×4m | Av. principal | 600-900 | Growth. |
 | LED grande 6m×4m | Av. principal con loop 8s | 1.200-2.500 | Solo con Serie A o post-PMF. |
 
@@ -82,9 +82,9 @@ Detalle de marca en [`../BRAND_ZONIX_PHARMA.md`](../BRAND_ZONIX_PHARMA.md).
 
 | Escenario | Mes activación | Razón |
 |---|---|---|
-| Lean | NO (sin valla) | Coworking + foco digital máximo |
-| Base | Mes 3 (Day-D) | Sincroniza con Day-D del piloto. |
-| Growth | Mes 2 (pre-Day-D) | Pre-lanzamiento + Day-D. |
+| Lean | Valla **pequeña 350** (M3+) | HQ casa + foco digital Meta 800/500 |
+| Base | Valla **mediana 700** (M2+) | Sincroniza con Day-D del piloto. |
+| Growth | Valla **mediana 700** (M2+) | Pre-lanzamiento + Day-D. |
 
 #### 3.1.5 Métricas
 
@@ -156,9 +156,12 @@ Detalle de marca en [`../BRAND_ZONIX_PHARMA.md`](../BRAND_ZONIX_PHARMA.md).
 - Asistentes que descargan app: meta 5-15% del público.
 - Tickets de soporte mencionando el evento: indicador de éxito.
 
-### 3.5 Marketing digital (Meta Ads) — escenario Base
+### 3.5 Marketing digital (Meta Ads) — por tier
 
-**Curva acordada en el pack:** **USD 800/mes en meses 1–6** + **USD 500/mes en meses 7–12** → promedio anual **~USD 650/mes** sobre línea Meta (coherente con [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.1 y §3.3). Versiones previas del pack citaban **USD 500/mes** plano — **obsoleto** frente a esta curva.
+- **Lean:** USD **800/mes** M1–6 · **500** M7–12.
+- **Base / Growth:** USD **800/mes** todo el año.
+
+**Curva Lean:** **USD 800/mes** M1–6 · **500** M7–12. **Base/Growth:** **800** todo el año — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2–§4.
 
 ## 4. Asignación temporal del presupuesto offline
 
@@ -170,7 +173,7 @@ Detalle de marca en [`../BRAND_ZONIX_PHARMA.md`](../BRAND_ZONIX_PHARMA.md).
 | 3-5 | Valla + flyers + brochures | USD 450-500 |
 | 6+ | Valla + flyers + brochures + eventos pequeños | USD 500-550 |
 
-**Promedio anual:** **USD 350-550/mes** (incluye valla USD 350 + material + eventos según tramo), alineado con la línea agregada de material + valla en [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3.
+**Promedio anual:** **USD 350-550/mes** (incluye valla + material + eventos según tramo), alineado con [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.3 (Lean/Base) y §3–§4.
 
 ## 5. KPIs de marketing offline
 
@@ -197,10 +200,10 @@ Detalle de marca en [`../BRAND_ZONIX_PHARMA.md`](../BRAND_ZONIX_PHARMA.md).
 
 ## 7. Cuándo escalar el presupuesto offline
 
-Triggers para subir de Base USD 350 valla → Growth USD 700 valla:
+Triggers para subir de Lean (valla pequeña **350**) → Base/Growth (valla mediana **700**):
 
 1. Adopción supera 130% del plan.
-2. Cash en banco al cierre del mes **6 ≥ ~USD 48.100** (coherente con escenario Base **USD 101k** + **Co-CEO** + **Meta + 4×** Sales — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3 y DoD en [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md)); **no** usar umbral fijo **USD 50k** sin recalibrar el modelo.
+2. Cash en banco al cierre del mes **6 ≥ ~USD 48.100** (coherente con escenario **Lean USD 101k** — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3).
 3. CAC orgánico (offline + boca en boca) supera CAC digital en farmacias firmadas.
 4. Serie A levantada o en proceso.
 
@@ -212,7 +215,7 @@ Si los datos reales se desvían del CPL planificado USD 0,15-0,60, el plan se re
 |---|---|
 | < USD 0,15 (mejor que plan) | Mantener presupuesto. Reasignar surplus a TikTok Ads o material orgánico. |
 | USD 0,15 - 0,60 (en rango) | Mantener plan. |
-| **USD 0,60 - 1,00 (peor que plan)** | **Reasignar dentro del presupuesto Base** (curva Meta **800/500** + valla — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3): subir fase digital **temporalmente** y **recortar valla** 1-2 meses para liberar caja. |
+| **USD 0,60 - 1,00 (peor que plan)** | **Reasignar dentro del presupuesto** (curva Meta + valla — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.3): subir fase digital **temporalmente** y **recortar valla** 1-2 meses para liberar caja. |
 | **> USD 1,00 (mucho peor que plan)** | **Pausar gasto en Meta Ads. Reasignar a TikTok Ads + WhatsApp Business + alianzas con farmacias afiliadas para distribución orgánica.** Revisión completa de creativos + segmentación. |
 
 **Frecuencia de revisión:** primer mes semanal, después mensual.
@@ -229,7 +232,7 @@ TikTok Ads es especialmente útil para captar el persona "Diego, 34 años" (jove
 
 ## 8. Documentos hermanos
 
-**Decisión del pack — presupuesto digital Base (Meta Ads):** **USD 800/mes M1–6** + **USD 500/mes M7–12** (promedio **~USD 650/mes** anual) — alineado a [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.1 / §3.3 y a la §**3.5** de este documento.
+**Decisión del pack — presupuesto digital Meta Ads:** **Lean:** **USD 800/mes** M1–6 + **500** M7–12. **Base/Growth:** **USD 800/mes** todo el año — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2–§4 y §**3.5** de este documento.
 
 - [PROPUESTA_VALOR_USUARIO_FINAL.md](PROPUESTA_VALOR_USUARIO_FINAL.md): mensaje del marketing al paciente.
 - [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md): mensaje del marketing a la farmacia.

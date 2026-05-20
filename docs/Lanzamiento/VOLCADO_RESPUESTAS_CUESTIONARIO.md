@@ -35,7 +35,7 @@ Ingeniero en Informática (IUTVAL, 2013–2018) con **más de 8 años** construy
 |---|---|
 | Nombre legal completo | [PENDIENTE] |
 | Rol en pack | **Co-CEO / CEO operativo** (comercial / operación / corporate — **rótulo operativo**; legal/junta según abogado) |
-| Sueldo Base modelado | **USD 1.000/mes** fijo ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3) |
+| Sueldo Lean modelado | **USD 1.000/mes** fijo ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.3) |
 | % dedicación Zonix Pharma vs otros ingresos | [PENDIENTE] |
 | LinkedIn / referencias | [PENDIENTE] |
 | Fecha incorporación prevista (T+X) | [PENDIENTE] |
@@ -48,27 +48,19 @@ Ingeniero en Informática (IUTVAL, 2013–2018) con **más de 8 años** construy
 | Tipo (ángel / fondo / family office) | [PENDIENTE] |
 | Inversiones previas en LatAm | [PENDIENTE] |
 | Inversiones en farmacéutico o salud | [PENDIENTE] |
-| Ticket esperado (USD) | [PENDIENTE — p. ej. USD 25k / 50k / **101k** (Base) / mayor] |
+| Ticket esperado (USD) | [PENDIENTE — p. ej. USD 25k / 50k / **101k** (Lean) / **118k** (Base recom.) / mayor] |
 | Disponibilidad para reunión | [PENDIENTE] |
 | Cómo lo conoces | [PENDIENTE — referido / contacto frío / etc.] |
 | Próximo paso confirmado | [PENDIENTE] |
 
-## 3. Datos de inmuebles cotizados
+## 3. Datos de inmuebles cotizados — HQ casa/local
 
-### 3.1 Coworking (Lean)
-
-| Opción | Ubicación | USD/mes | Servicios | Notas |
-|---|---|---|---|---|
-| Opción A | [PENDIENTE — Bella Florida] | [PENDIENTE — USD 80-150] | Internet + escritorio + sala reuniones | [PENDIENTE — visitar y confirmar] |
-| Opción B | [PENDIENTE — San Diego] | [PENDIENTE — USD 80-150] | Internet + escritorio | [PENDIENTE — visitar y confirmar] |
-| Opción C | [PENDIENTE — alterna] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
-
-### 3.2 Oficina propia (Base / Growth)
+**Cierre en pack (todos los tiers):** **USD 500/mes** — casa o local operativo en **San Diego** / **Av. Bolívar Norte** ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2–§4).
 
 | Opción | Ubicación | Tamaño | USD/mes | Depósito | Notas |
 |---|---|---|---|---|---|
-| Opción A | [PENDIENTE — Bella Florida] | [PENDIENTE — 34-38m²] | [PENDIENTE — USD 280-380] | [PENDIENTE — 3 meses] | [PENDIENTE — visitar] |
-| Opción B | [PENDIENTE — San Diego] | [PENDIENTE — 34-38m²] | [PENDIENTE — USD 280-380] | [PENDIENTE] | [PENDIENTE] |
+| Opción A | [PENDIENTE — San Diego] | [PENDIENTE — casa/local 2-4 amb.] | [PENDIENTE — ~USD 500] | [PENDIENTE — 1-3 meses] | [PENDIENTE — visitar] |
+| Opción B | [PENDIENTE — Av. Bolívar Norte] | [PENDIENTE] | [PENDIENTE — ~USD 500] | [PENDIENTE] | [PENDIENTE] |
 | Opción C | [PENDIENTE — alterna] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
 
 ## 4. Datos de proveedor de valla publicitaria
@@ -76,9 +68,9 @@ Ingeniero en Informática (IUTVAL, 2013–2018) con **más de 8 años** construy
 | Dato | Valor |
 |---|---|
 | Proveedor recomendado | [PENDIENTE — PubliExterior, Imagen Publicidad, DAR, otros] |
-| Tamaño elegido (escenario Base) | 3m × 2m |
+| Tamaño elegido | **Lean:** 3m × 2m (pequeña, **~350/mes** M3+) · **Base/Growth:** 6m × 4m (mediana, **~700/mes** M2+) |
 | Ubicación elegida | [PENDIENTE — av. Bolívar Norte / av. Cedeño] |
-| USD/mes cotizado | [PENDIENTE — rango USD 350-500] |
+| USD/mes cotizado | [PENDIENTE — Lean **350** / Base-Growth **700**] |
 | Costo de diseño + producción | [PENDIENTE — one-shot ~USD 200] |
 | Plazo de instalación | [PENDIENTE — 7-15 días] |
 | Mes de activación | T+90 (Day-D) / mes 3 |
@@ -116,7 +108,7 @@ Contratar **cuatro** personas en este rol (quinta columna opcional si se evalúa
 | Salario esperado | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
 | Decisión | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
 
-### 5.4 Delivery Ops Coordinator
+### 5.4 Coordinador de Partners Logísticos
 
 | Dato | Candidato 1 | Candidato 2 | Candidato 3 |
 |---|---|---|---|
@@ -181,7 +173,7 @@ Contratar **cuatro** personas en este rol (quinta columna opcional si se evalúa
 |---|---|---|---|
 | T+0 | Cierre inversión | Founder | [PENDIENTE] |
 | T+5 | Solicitud denominación Registro Mercantil | Founder + Abogado | [PENDIENTE] |
-| T+10 | Visitas a oficinas / coworkings | Founder | [PENDIENTE] |
+| T+10 | Visitas a **inmuebles tipo casa/local** candidatos (HQ) | Founder | [PENDIENTE] |
 | T+15 | Firma contrato inmueble | Founder | [PENDIENTE] |
 | T+22 | Inscripción Registro Mercantil completada | Abogado | [PENDIENTE] |
 | T+25 | RIF empresa | Contador | [PENDIENTE] |
@@ -195,9 +187,9 @@ Contratar **cuatro** personas en este rol (quinta columna opcional si se evalúa
 ## 9. Decisiones del founder pendientes
 
 - [ ] Confirmar zona piloto inicial: Bella Florida + El Socorro O Bella Florida + San Diego.
-- [ ] Confirmar coworking vs. oficina propia desde mes 1.
+- [ ] Confirmar contrato **HQ casa** (USD 500/mes objetivo) desde mes 1 operativo.
 - [ ] Confirmar mes de activación de valla publicitaria (mes 3 base).
-- [x] Confirmar si el founder cobra sueldo en Base: **USD 1.000/mes CEO+CTO en burn** (ya integrado — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3; aplica desde T+0 en escenario Base).
+- [x] Confirmar sueldo founder: **USD 1.000/mes** en burn **Lean 101k** — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.3.
 - [ ] Confirmar política de equity con futuros empleados (vesting estándar 4 años / cliff 1 año).
 - [ ] Aprobar el SAFE template adaptado por el abogado.
 
@@ -210,6 +202,21 @@ Contratar **cuatro** personas en este rol (quinta columna opcional si se evalúa
 [PENDIENTE — espacio para notas]
 
 ---
+
+## 12. Due diligence founder — checklist pre-inversor institucional
+
+> Completar por el **founder** (no el agente). `zonix-investor-materials` audita gaps; no rellena datos personales.
+
+| Ítem | Estado | Notas / enlace |
+|------|--------|----------------|
+| GitHub perfil u org **Zonix Pharma** público o bajo NDA | [PENDIENTE founder] | URL: |
+| Acceso repo bajo NDA (proceso + contacto legal) | [PENDIENTE founder] | |
+| 2–3 referencias profesionales (nombre, relación, contacto) | [PENDIENTE founder] | Ref 1: · Ref 2: · Ref 3: |
+| % dedicación **Zonix Pharma** vs CETIAC / otros | [PENDIENTE founder] | Ej. 100% / 80% Zonix + 20% docencia |
+| Métricas tracción por producto (usuarios, GMV, tests) si aplica | [PENDIENTE founder] | Backend: citar suite tests repo al reunirse |
+| Demo en vivo programada (fecha) | [PENDIENTE founder] | |
+
+Cruce automático sugerido: [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) §3 y [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) §7 (C3).
 
 ## 11. Documentos hermanos
 

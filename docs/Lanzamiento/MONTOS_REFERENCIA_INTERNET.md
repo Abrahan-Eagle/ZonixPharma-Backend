@@ -39,7 +39,7 @@
 | Sales B2B junior (con comisión) | USD 100-200 fijo + comisión | [Computrabajo VE](https://ve.computrabajo.com/) búsquedas 2025-2026 |
 | Customer Support / community manager | USD 250-400 | [Indeed Venezuela](https://ve.indeed.com/) y [LinkedIn Salary Insights](https://www.linkedin.com/salary/) |
 | Marketing Lead junior-mid | USD 400-700 | LinkedIn Salary VE 2025 |
-| Delivery Ops Coordinator | USD 300-500 | Computrabajo VE 2025; en Zonix Pharma el rol es **enlace con partner** de última milla (**sin** flota propia) |
+| Coordinador de Partners Logísticos | USD 300-500 | Computrabajo VE 2025; en Zonix Pharma el rol es **enlace con partner** de última milla (**sin** flota propia) |
 | Contador externo freelance (PYME) | USD 100-200/mes | [Tabla mínima Federación de Contadores VE](https://www.fccpv.org/) y promedio Computrabajo |
 | Abogado externo freelance (PYME) | USD 150-300/mes | Federación VE de Abogados, tarifas referenciales 2025 |
 | Asesor regulatorio farmacéutico | USD 100-200/mes | Estimado en base a consultorías especializadas LatAm |
@@ -50,11 +50,11 @@
 
 | Servicio | Plan recomendado | USD/mes | Fuente |
 |---|---|---|---|
-| DigitalOcean App Platform Basic + Managed PostgreSQL | Basic Droplet | USD 24-30 | [DigitalOcean Pricing](https://www.digitalocean.com/pricing) |
+| **VPS Nameshared** (Laravel + MySQL; prod piloto) | Plan VPS según RAM/vCPU | USD 20-35 *(cotizar)* | Alineado [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §2.4 — sustituye DigitalOcean en pack vigente |
 | Pusher Channels Startup | 200 conn / 100k msg/día | USD 49 | [Pusher Pricing](https://pusher.com/pricing) |
 | Firebase Cloud Messaging | Spark (gratis) | USD 0 | [Firebase Pricing](https://firebase.google.com/pricing) |
+| Firebase Phone Auth (SMS OTP registro paciente) | Blaze (pay-as-you-go); tarifa SMS por país | USD 15-40 *(~1.000 verif./mes piloto)* | [Firebase Auth pricing](https://firebase.google.com/pricing) — sustituye YCloud en pack vigente |
 | Google Maps Platform | $200 free monthly credit | USD 0-15 | [Google Maps Pricing](https://mapsplatform.google.com/pricing/) |
-| YCloud WhatsApp OTP | Free tier + USD 0,03/OTP | USD 0-50 | [YCloud Pricing](https://www.ycloud.com/pricing) |
 | SendGrid Email Free | 100/día | USD 0 | [SendGrid Pricing](https://sendgrid.com/pricing/) |
 | Notion Plus | 5 usuarios | USD 40-50 | [Notion Pricing](https://www.notion.so/pricing) |
 | Slack Free | unlimited usuarios, retención 90 días | USD 0 | [Slack Pricing](https://slack.com/pricing) |
@@ -63,19 +63,14 @@
 
 **Total hosting + SaaS Base:** ~USD 134/mes.
 
-## 5. Inmueble en Carabobo (Bella Florida / San Diego)
+## 5. Inmueble en Carabobo (San Diego / Av. Bolívar Norte)
 
 | Tipo | Tamaño | USD/mes | Fuente |
 |---|---|---|---|
-| Coworking básico | 2-3 puestos hot-desk | USD 80-150 | [Creando Coworking VE](https://www.creandocoworking.com.ve/), [Coffice Coworking Valencia](https://www.coffice.com.ve/), búsqueda Tu Inmueble |
-| Coworking premium | 4-5 puestos hot-desk + sala reuniones | USD 150-250 | Mismo |
-| Oficina propia 25-30m² | 1 ambiente | USD 200-280 | [Tu Inmueble](https://www.tuinmueble.com.ve/) y [InmovaliaVE](https://www.inmovalia.com/) listings 2025-2026 |
-| Oficina propia 34-38m² | 2 ambientes + baño | USD 280-380 | Mismo |
-| Oficina propia 40-50m² | Sala recepción + 2 oficinas | USD 380-550 | Mismo |
+| Casa / local operativo (HQ) | 2-4 ambientes | **500** (cerrado en pack) | [Tu Inmueble](https://www.tuinmueble.com.ve/) y [InmovaliaVE](https://www.inmovalia.com/) listings 2025-2026 |
+| Oficina comercial 25-50m² (referencia mercado) | 1-2 ambientes | USD 200-550 | Mismo — solo benchmark de cotización |
 
-**Cierre numérico vigente (mayo 2026):** las líneas de inmueble en [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) **§3.3 / §4.3 / §6.1** son la **fuente de verdad** del pack: **Lean** coworking **USD 100/mes**; **Base** **HQ tipo casa USD 500/mes** (ya **sustituye** el ancla histórico **USD 280** “oficina 34–38 m²” de tablas previas); **Growth** conserva **USD 280** en su escenario §4.3 hasta unificar FP&A con Base — ver [README.md](README.md) nota Growth.
-
-**Tabla de rangos arriba (USD 200–550):** solo **referencia de mercado** (listados coworking / oficina) para **cotizar y justificar** el **Base 500** frente a alternativas; **no** implica que el **Base** siga “pendiente” en **USD 280**.
+**Cierre numérico vigente (mayo 2026):** [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2–§4: **Lean / Base / Growth** usan **HQ casa USD 500/mes**.
 
 ## 6. Servicios públicos VE 2026
 
@@ -86,7 +81,7 @@
 | Electricidad oficina pequeña | 200-300 kWh/mes a tarifa industrial pequeña | USD 20-35 |
 | Agua + aseo | Tarifa básica + 4 funcionarios | USD 8-12 |
 | Telefonía móvil corp (3 líneas con datos) | Plan empresarial Movistar / Digitel | USD 25-40 |
-| Limpieza oficina (1 vez/semana) | Profesional independiente | USD 30-50 (USD 0 si está en coworking) |
+| Limpieza HQ (1 vez/semana) | Profesional independiente | USD 30-50 |
 | Caja chica (agua, café, papel, etc.) | 4 personas | USD 40-60 |
 
 **Fuentes:** [Inter VE Empresas](https://www.inter.com.ve/), [Movistar Empresas VE](https://www.movistar.com.ve/empresas), [NetUno Empresas](https://www.netuno.com.ve/empresas), [Corpoelec](https://www.corpoelec.gob.ve/) tarifario 2025, [Hidrocentro](https://www.hidrocentro.gob.ve/) tarifario 2025.
@@ -100,12 +95,11 @@
 | **CPL Meta Ads VE (B2C farmacéutico)** | **USD 0,15-0,60** | Estimación basada en [Hootsuite LatAm Digital Report 2025](https://www.hootsuite.com/research) y casos prácticos LatAm |
 | CPL Google Ads VE (search) | USD 0,30-0,90 | [Google Ads VE benchmarks 2025](https://ads.google.com/) |
 | CPL TikTok Ads VE | USD 0,20-0,80 | [TikTok For Business](https://www.tiktok.com/business/) regional 2025-2026 |
-| WhatsApp Business API (YCloud) outbound msg | USD 0,02-0,05 | [YCloud](https://www.ycloud.com/pricing) |
+| Firebase Phone Auth SMS (verificación teléfono) | Variable por país / MNO | [Firebase Auth pricing](https://firebase.google.com/pricing) |
 
-**Presupuesto Marketing digital:**
-- Lean: USD 350/mes → ~600-2.300 leads/mes.
-- Base: USD 500/mes → ~830-3.300 leads/mes.
-- Growth: USD 800/mes → ~1.330-5.300 leads/mes.
+**Presupuesto Marketing digital (Meta Ads — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2–§4):**
+- **Lean:** **800/mes** M1–6 · **500/mes** M7–12 (prom. **~650/mes**) → ~1.100-4.300 leads/mes.
+- **Base / Growth:** **800/mes** todo el año → ~1.330-5.300 leads/mes.
 
 ## 8. Marketing offline VE 2026
 
@@ -122,9 +116,8 @@
 **Fuentes:** [PubliExterior VE](https://www.publiexterior.com/), [Imagen Publicidad Exterior](https://www.imagenpublicidad.com/), [DAR Publicidad](https://www.darpublicidad.com.ve/) tarifarios 2025, búsquedas locales en Tu Inmueble por "valla publicitaria Carabobo".
 
 **Decisión del pack:**
-- Lean: USD 0 valla.
-- Base: USD 350/mes valla pequeña 3m×2m en av. Bolívar Norte.
-- Growth: USD 700/mes valla mediana 6m×4m en av. Bolívar Norte.
+- **Lean:** **USD 350/mes** valla pequeña 3m×2m desde M3+.
+- **Base / Growth:** **USD 700/mes** valla mediana 6m×4m desde M2+.
 
 Detalle en [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md).
 

@@ -1,7 +1,7 @@
 # Cuestionario para el equipo del piloto
 
 > **Última actualización:** 11 mayo 2026.
-> Documento operacional para entrevistar candidatos según la **nómina Base** ([README.md](README.md) §3). **Plantillas por función:** **§2** Sales B2B (misma plantilla para **4×** ejecutivos; repetir entrevista por candidato), **§3** Customer Support + Community Manager, **§4** Marketing Lead, **§5** Delivery Ops Coordinator (**enlace con partner** última milla; Zonix **sin** flota propia). **Co-CEO / CEO operativo** y **founder** (CEO+CTO): evaluación **ad hoc** (track record, visión, % dedicación), usando el bloque común **§1** y entrevista de alineamiento con dirección (no hay sección `##` exclusiva solo para Co-CEO). **§6–§7:** Contador y Abogado (freelance); **§8:** Asesor regulatorio (escenario Growth solamente). **Total Base = 9 FTE + 2 freelance** — [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) §7. **Compensaciones** alineadas al escenario **Base USD 101k** ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3).
+> Documento operacional para entrevistar candidatos según la **nómina Lean 101k** ([README.md](README.md) §3). **Plantillas:** §2 Sales (4×), §3 CS+CM, §4 Marketing, §5 Coordinador Partners, §6–§7 freelance, **§8** Asesor regulatorio (**Base 118k / Growth 135k**). **Total Lean = 9 FTE + 2 freelance**. **Compensaciones:** [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.
 > Las respuestas se vuelcan en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md).
 
 ## 1. Cuestionario común a todos los roles
@@ -12,7 +12,7 @@
 2. Edad y zona de residencia.
 3. Estado civil + responsabilidades familiares (relevante para flexibilidad de horario).
 4. Disponibilidad horaria (full-time / part-time / freelance).
-5. ¿Tienes vehículo propio? (relevante para **Sales** en ruta B2B; **Delivery Ops** coordina **partner** de última milla — vehículo no es requisito de flota Zonix).
+5. ¿Tienes vehículo propio? (relevante para **Sales** en ruta B2B; **Coordinador de Partners Logísticos** coordina **partner** de última milla — vehículo no es requisito de flota Zonix).
 
 ### 1.2 Experiencia
 
@@ -114,7 +114,7 @@
 
 ### 4.3 Caso práctico
 
-> Tienes **~USD 650/mes** de referencia digital Base (Meta **800** M1–6 / **500** M7–12 en promedio anual; mes 4 suele estar en fase alta) más material offline según plan. ¿Cómo lo distribuyes (Meta / Google / TikTok / WhatsApp / contenido orgánico)?
+> Tienes **~USD 650/mes** de referencia digital **Lean** (Meta **800** M1–6 / **500** M7–12; promedio anual ~650) o **~USD 800/mes** en **Base/Growth** (Meta plano todo el año), más material offline según plan. ¿Cómo lo distribuyes (Meta / Google / TikTok / WhatsApp / contenido orgánico)?
 
 ### 4.4 Apoyo a dirección cuando el founder viaja
 
@@ -127,7 +127,7 @@
 
 ¿Aceptas?
 
-## 5. Cuestionario específico — Delivery Ops Coordinator (enlace con partner última milla)
+## 5. Cuestionario específico — Coordinador de Partners Logísticos (enlace con partner última milla)
 
 > **Alcance del rol:** Zonix Pharma **no opera flota propia**; la última milla la ejecuta **empresa(s) concesionaria(s)**. Este perfil **coordina** SLA, cobertura, incidencias y comunicación con el **partner** y con Customer Support.
 
@@ -150,7 +150,7 @@
 
 ### 5.4 Compensación
 
-- **USD 300/mes** fijo (Delivery Ops Coordinator — enlace **partner** última milla).
+- **USD 300/mes** fijo (Coordinador de Partners Logísticos — enlace **partner** última milla).
 - Bono **USD 100** si KPI (p. ej. tiempo promedio entrega **< 75 min** en mes) → **USD 400/mes** total.
 
 ¿Aceptas?

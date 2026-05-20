@@ -8,7 +8,7 @@
 
 Zonix Pharma cobra a la farmacia un **servicio de plataforma** en formato **híbrido:** **cuota fija** + **fee porcentual sobre el GMV del mes en app**, según **tier** (Basic / Pro / Enterprise) y **bandas de GMV** definidos en [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5. Los porcentajes son **moderados** (≈0,6%-1% según tier), no un take-rate tipo agregador (25-35% GMV).
 
-Para **proyecciones de runway** del pack se usa **ARPF USD ~50/mes** como **placeholder** (ingreso medio por farmacia activa: cuota fija media **+USD 5**/farmacia vs. ancla 20/35/50 al mix 60/30/10, sin cambiar el % GMV) **hasta** recalibrar con **mix real** de tiers y GMV en piloto. Ese valor **no** sustituye al modelo híbrido: es solo ancla numérica compatible con la tabla mes a mes vigente.
+Para **proyecciones de runway** del pack se usa **ARPF USD ~50/mes** como **placeholder** (ingreso medio por farmacia activa al mix **60/30/10** Basic/Pro/Enterprise con cuota **25 / 40 / 55** + % GMV) **hasta** recalibrar con **mix real** de tiers y GMV en piloto. Ese valor **no** sustituye al modelo híbrido: es solo ancla numérica compatible con la tabla mes a mes vigente.
 
 ```
 Revenue por farmacia = ARPF mensual × Lifetime promedio
@@ -120,9 +120,9 @@ Promedio anual burn ÷ 50 ≈ 7.559 / 50 ≈ 151 farmacias
 → orden magnitud unificado: ~151 farmacias (~149 tramo C; ~151 promedio)
 ```
 
-El burn **real** va por **tramos** **7.462 / 7.798 / 7.431** ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3). La proyección Base llega a **120** activas mes 12 con revenue **USD 6.000** vs burn **USD 7.431** → **no** hay equilibrio en M12 con ARPF ~50 sin cambiar supuestos ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 y §1.4).
+El burn **real** va por **tramos** **7.462 / 7.798 / 7.431** ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.3). La proyección **Lean** (curva §1.1) llega a **~151 activas** en **M11** con revenue **USD 7.550** vs burn **USD 7.431** → **equilibrio mensual en M11** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 y §1.4).
 
-**Lectura:** equilibrio mensual **posterior a mes 12** salvo mitigaciones (mix Pro/Enterprise, GMV real, más firmas o ajuste de gasto).
+**Lectura:** el caso central asume **Fase 0** (T+0→Day-D) + **175** firmas en 12 meses post-Day-D; si la curva real es más lenta, el equilibrio se **retrasa** (mitigaciones §1.4).
 
 ## 7. Cohort analysis simulado
 
@@ -183,7 +183,7 @@ En operación real **no** hay una sola cohort: cada mes entran **nuevas** farmac
 - LTV: USD 437.
 - LTV/CAC: 3,4x.
 - Payback CAC: 3,7 meses.
-- **Break-even mensual (fórmula explícita):** con el mismo **burn** de referencia Base (**~USD 7.559** promedio anual; **~USD 7.431** tramo C M7–M12 — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3) y **ARPF 35**, hacen falta **~216** farmacias activas (**7.559 ÷ 35**) o **~212** (**7.431 ÷ 35**), **no** el orden **~151** del caso central con **ARPF ~50**.
+- **Break-even mensual (fórmula explícita):** con el mismo **burn de referencia Lean** (**~USD 7.559** promedio anual; **~USD 7.431** tramo C M7–M12 — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.3) y **ARPF 35**, hacen falta **~216** farmacias activas (**7.559 ÷ 35**) o **~212** (**7.431 ÷ 35**), **no** el orden **~151** del caso central con **ARPF ~50**.
 - **Implicación:** el equilibrio mensual queda **más lejos** que en el plan central; se necesitaría **más capital**, **recorte de burn** o **mejora de ARPF**/mix para extender runway (coherente con sensibilidad pesimista en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §7.1).
 
 ### Caso optimista
@@ -207,7 +207,7 @@ En operación real **no** hay una sola cohort: cada mes entran **nuevas** farmac
 | **LTV** | USD 1.000 |
 | **LTV/CAC** | **~7,2x** |
 | **Payback CAC** | **~2,8 meses** |
-| **Equilibrio operativo mensual** | **Post-M12** con ARPF ~50 y burn replanteado ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.4) |
+| **Equilibrio operativo mensual** | **M11** con ARPF ~50 y curva §1.1 ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.4) |
 | **Margen bruto del modelo** | ~92% |
 
 **Para el inversor:**
