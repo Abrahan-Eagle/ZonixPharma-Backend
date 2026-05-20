@@ -3,6 +3,7 @@
 > **Última actualización:** 20 mayo 2026.
 > Documento de mercado: TAM / SAM / SOM, demografía Carabobo, benchmarks competitivos.
 > Todas las cifras citadas tienen fuente web pública. Las fuentes están en [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md).
+> **Finanzas del pitch (capital, SAFE, runway, PROYECCION Lean):** no en este doc — ver [README.md](README.md) § *Cifras clave del pack* y [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md).
 
 ## 1. Mercado farmacéutico venezolano (TAM)
 

@@ -158,12 +158,21 @@ Estos no se inventan. El pack los marca explícitamente con `[PENDIENTE]`. El [V
 
 ---
 
+## Prompts para agentes (mejorar o crear el pack)
+
+| Prompt | Uso |
+|--------|-----|
+| [../plantillas/PROMPT_MEJORAR_PACK_LANZAMIENTO.md](../plantillas/PROMPT_MEJORAR_PACK_LANZAMIENTO.md) | **Mejorar** el pack existente (auditoría → OK → edición → pasada forense) |
+| [../plantillas/PROMPT_PACK_LANZAMIENTO_INVERSOR.md](../plantillas/PROMPT_PACK_LANZAMIENTO_INVERSOR.md) | **Crear** un pack desde cero en otro proyecto |
+
+---
+
 ## Notas de uso
 
 - Todos los precios VE en USD pueden subir mensualmente por inflación. **Macro 2026:** el **BCV (mayo 2026)** proyecta **desaceleración** (inflación mensual de **un dígito desde mayo 2026**). Los escenarios externos **387-618%** (Anova/Cendas/Ecoanalítica) se conservan como **estrés/adversos**. El pack documenta cada cifra con fecha de captura **mayo 2026** y advierte **reconfirmación trimestral** antes de decisiones de inversión o gasto.
 - El buffer de 20% absorbe variaciones de hasta ±25% en precios denominados en bolívares.
 - Si la devaluación supera 100% en un trimestre, hay un plan de contingencia documentado en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md).
-- **Cierre editorial pack:** **20 mayo 2026** (cuarta pasada: CHECKLIST demo/FAQ, FP&A waiver, VOLCADO tests, BRIEF equipo, PRESUPUESTO delta tiers). Priorizar siempre la cabecera `Última actualización` del propio archivo.
+- **Cierre editorial pack:** **20 mayo 2026** (quinta pasada: prompt [PROMPT_MEJORAR_PACK_LANZAMIENTO](../plantillas/PROMPT_MEJORAR_PACK_LANZAMIENTO.md), puntero finanzas en PERFIL, VOLCADO/phpunit **399**). Priorizar siempre la cabecera `Última actualización` del propio archivo.
 
 **Pack generado por:** Jarvis (asistente IA) bajo dirección del usuario, en sesión interactiva.
 **Pack revisado por:** [PENDIENTE — el usuario debe leer y aprobar antes de presentar al inversor].

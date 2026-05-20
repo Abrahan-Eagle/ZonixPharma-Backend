@@ -2,6 +2,7 @@
 
 > **Última actualización:** 20 mayo 2026.
 > Documento operacional. El founder debe poder marcarlo todo antes de la primera reunión con el inversor.
+> **Mejora continua (equipo):** [PROMPT_MEJORAR_PACK_LANZAMIENTO.md](../plantillas/PROMPT_MEJORAR_PACK_LANZAMIENTO.md) — auditoría → OK → edición → pasada en [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md).
 
 ## 1. Material listo
 

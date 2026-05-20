@@ -5,6 +5,7 @@
 > **Segunda pasada forense (20 mayo 2026):** alineados Fase 0 **~28.057**, conteo pack **22** archivos, waiver B2B **~453** (vs. proxy obsoleto **222**), copy Rappi **25–35%** en B2B §11.
 > **Tercera pasada forense (20 mayo 2026):** tests backend **399** (verificado `vendor/bin/phpunit`); equity README **16,83 / 18,15 / 18,75**; fechas cabecera unificadas; M12 waiver **~41.756** en MENSAJE; nota equilibrio teórico Base/Growth en README.
 > **Cuarta pasada forense (20 mayo 2026):** CHECKLIST (PROYECCION solo Lean, FAQ ~100 firmas, borrador legal, demo 5 pasos); nota FP&A waiver **~453** en PROYECCION §1.1; VOLCADO §1.2 verificación tests; tabla equipo Lean en BRIEF; delta tiers en PRESUPUESTO §1.1.
+> **Quinta pasada forense (20 mayo 2026):** [README](README.md) — aclaración producto Zonix vs portfolio founder; índice [PROMPT_MEJORAR_PACK_LANZAMIENTO.md](../plantillas/PROMPT_MEJORAR_PACK_LANZAMIENTO.md); [PERFIL_MERCADO_PILOTO](PERFIL_MERCADO_PILOTO.md) — puntero a cifras inversor; VOLCADO §1.2 — commit y `phpunit` **399** re-verificados. Sin cambios en anclas 101/118/135 ni PROYECCION §1.1.
 
 ---
 
