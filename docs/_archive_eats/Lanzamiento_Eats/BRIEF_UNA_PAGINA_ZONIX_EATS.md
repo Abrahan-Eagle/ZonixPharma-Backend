@@ -1,3 +1,6 @@
+> **ARCHIVO HISTÓRICO — Zonix Eats (pre-fork abr 2026).** No indexar para **Zonix Pharma**. Canon migración: [MIGRACION_EATS_PHARMA.md](../../MIGRACION_EATS_PHARMA.md) · Pack inversor vivo: [docs/Lanzamiento/README.md](../../Lanzamiento/README.md).
+>
+
 # Zonix Eats — Brief de una página (Creesca)
 
 **Actualización:** abril 2026 · **Detalle completo:** [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) · **Pitch / inversor:** [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md)

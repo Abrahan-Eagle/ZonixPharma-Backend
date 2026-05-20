@@ -1,3 +1,6 @@
+> **ARCHIVO HISTÓRICO — Zonix Eats (pre-fork abr 2026).** No indexar para **Zonix Pharma**. Canon migración: [MIGRACION_EATS_PHARMA.md](../../MIGRACION_EATS_PHARMA.md) · Pack inversor vivo: [docs/Lanzamiento/README.md](../../Lanzamiento/README.md).
+>
+
 # Estructura legal y equity — Zonix Eats (Creesca)
 
 > **Propósito:** definir el vehículo legal para operar, facturar membresías B2B, y recibir inversión. Este documento **no sustituye asesoría legal** — es una guía de decisión para que el equipo llegue al abogado con las preguntas correctas.  

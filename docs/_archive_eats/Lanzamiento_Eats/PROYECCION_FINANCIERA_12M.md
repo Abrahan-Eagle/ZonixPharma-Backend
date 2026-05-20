@@ -1,3 +1,6 @@
+> **ARCHIVO HISTÓRICO — Zonix Eats (pre-fork abr 2026).** No indexar para **Zonix Pharma**. Canon migración: [MIGRACION_EATS_PHARMA.md](../../MIGRACION_EATS_PHARMA.md) · Pack inversor vivo: [docs/Lanzamiento/README.md](../../Lanzamiento/README.md).
+>
+
 # Proyección financiera — 12 meses (Zonix Eats)
 
 > **Propósito:** mostrar al inversionista cuándo entra dinero, cuándo se cruzan ingresos con gastos, y qué pasa en cada escenario.  

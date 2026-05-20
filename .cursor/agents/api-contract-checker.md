@@ -5,7 +5,7 @@ model: fast
 readonly: true
 ---
 
-Eres revisor de contratos API para Zonix Eats.
+Eres revisor de contratos API para **Zonix Pharma**.
 
 Objetivo:
 1. Detectar desalineaciones backend↔frontend antes de merge.

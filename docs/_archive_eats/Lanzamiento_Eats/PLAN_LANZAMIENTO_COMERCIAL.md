@@ -1,9 +1,12 @@
+> **ARCHIVO HISTÓRICO — Zonix Eats (pre-fork abr 2026).** No indexar para **Zonix Pharma**. Canon migración: [MIGRACION_EATS_PHARMA.md](../../MIGRACION_EATS_PHARMA.md) · Pack inversor vivo: [docs/Lanzamiento/README.md](../../Lanzamiento/README.md).
+>
+
 # Zonix Eats — Plan de lanzamiento comercial (documento maestro)
 
 > **Empresa:** Creesca · **Producto:** Zonix Eats  
 > **Última actualización:** abril 2026  
 > **Metodología vs datos operativos:** la **estructura** de este plan (fases, checklist, KPIs, enlaces a docs técnicos) está **cerrada**. Los **`[PENDIENTE]`** y tablas vacías son **datos del piloto** que debe completar el equipo; no implican que el trabajo de planificación en herramientas de desarrollo esté “sin hacer”.  
-> **Relación con otros artefactos:** Este documento sintetiza la operación y el go-to-market. La plantilla para IAs sigue en [`PROMPT_OPERATIVO_LANZAMIENTO.md`](../../../PROMPT_OPERATIVO_LANZAMIENTO.md). El briefing de una página: [`BRIEF_UNA_PAGINA_ZONIX_EATS.md`](BRIEF_UNA_PAGINA_ZONIX_EATS.md). **Cuestionario para el equipo (copiar/enviar):** [`CUESTIONARIO_EQUIPO_PILOTO.md`](CUESTIONARIO_EQUIPO_PILOTO.md). **Plantilla para volcar respuestas (una pasada):** [`VOLCADO_RESPUESTAS_CUESTIONARIO.md`](VOLCADO_RESPUESTAS_CUESTIONARIO.md). Índice de la carpeta: [`README.md`](README.md).
+> **Relación con otros artefactos:** Este documento sintetiza la operación y el go-to-market (archivo Eats). Para IAs en **Zonix Pharma** usar [`PROMPT_MEJORAR_PACK_LANZAMIENTO.md`](../../plantillas/PROMPT_MEJORAR_PACK_LANZAMIENTO.md) — no `PROMPT_OPERATIVO_*` (repo Eats, no presente aquí). El briefing de una página: [`BRIEF_UNA_PAGINA_ZONIX_EATS.md`](BRIEF_UNA_PAGINA_ZONIX_EATS.md). **Cuestionario para el equipo (copiar/enviar):** [`CUESTIONARIO_EQUIPO_PILOTO.md`](CUESTIONARIO_EQUIPO_PILOTO.md). **Plantilla para volcar respuestas (una pasada):** [`VOLCADO_RESPUESTAS_CUESTIONARIO.md`](VOLCADO_RESPUESTAS_CUESTIONARIO.md). Índice de la carpeta: [`README.md`](README.md).
 
 **Mercado piloto definido:** Valencia, Estado Carabobo, Venezuela — **núcleo Urbanización Popular El Socorro** y **barrios colindantes** del mismo corredor (p. ej. Bella Florida, Los Chorritos, Las Parcelas, San Martín, Llano Verde, etc.). Ajustar el listado si se suman o excluyen zonas al validar cobertura de delivery.
 
@@ -46,7 +49,7 @@ Los montos de ronda, valuación y estructura legal (SAFE, equity, etc.) **no** v
 
 **Mapeo CUESTIONARIO_EQUIPO_PILOTO → este documento:** no es un segundo criterio paralelo a la matriz **A–E** de §2. El **ítem 3** del cuestionario (métricas) alimenta las preguntas **A–E**; el **ítem 4** (una sola prioridad) coincide con la **regla de salida** (una bandera: funnel / operación / producto). Los **ítems 1–2, 5–7** completan **§11** y el **brief** (ventana, comercios, delivery, SENIAT, membresía, presupuesto, canales, URLs). **Registro en una sola pasada** cuando lleguen respuestas: tabla **Registro** de §2 (fecha, prioridad #1, línea base, dueño); filas críticas de **§11** (sobre todo orden **1–5** de la tabla guía); tablas **Piloto** y **Prioridad #1** del brief.
 
-**Rutas en presentaciones externas:** usar rutas relativas al repo (esta carpeta: `zonix-eats-back/docs/Lanzamiento/`) o la copia que Creesca defina como canónica; evitar enlaces absolutos de máquina local.
+**Rutas en presentaciones externas:** usar rutas relativas a `docs/_archive_eats/Lanzamiento_Eats/` en **ZonixPharma-Backend**; evitar enlaces absolutos de máquina local.
 
 ---
 
@@ -82,7 +85,7 @@ Respuestas en bruto se pueden pegar en un mensaje o issue y volcar luego a las t
 
 ## 1. Diagnóstico inicial (estado del producto)
 
-**Lectura honesta (basada en el repo y [`PROMPT_OPERATIVO_LANZAMIENTO.md`](../../../PROMPT_OPERATIVO_LANZAMIENTO.md)):**
+**Lectura honesta (basada en el repo Eats de origen; archivo histórico en ZonixPharma-Backend):**
 
 - **Listo para pilotos acotados:** la app multi-rol (Flutter), el backend (Laravel) y el flujo de orden con pagos **off-platform** y validación de comprobantes por el comercio están construidos y probados a nivel de código (tests backend).
 - **No es “lanzamiento masivo sin fricción”:** los pagos son manuales fuera de la app; el cuello operativo suele estar en **validación de comprobantes**, **comunicación buyer–commerce** y **logística tercerizada**.
@@ -536,7 +539,7 @@ Orden sujeto al **diagnóstico**; cruza con implementación real en Cursor.
 | Quién paga comisión | Ninguno sobre ventas; ingreso = membresía fija B2B |
 | Ticket promedio objetivo / margen | [PENDIENTE — lado comercio, no Zonix sobre GMV] |
 | Persona comprador | [PENDIENTE — perfilar para residentes de El Socorro y barrios colindantes: hábitos, medios de pago, objeciones] |
-| Competidores locales y diferenciador | Ver tabla en PROMPT_OPERATIVO_LANZAMIENTO; completar nombres y presencia **en la zona piloto (Socorro y alrededores)** |
+| Competidores locales y diferenciador | Completar nombres y presencia **en la zona piloto (Socorro y alrededores)** — ver § competencia en este plan |
 | Flujo crítico end-to-end | Ya documentado: pending_payment → comprobante → validación → delivery → QR → entregado |
 | Soporte in-app | Chat buyer–commerce, disputas (según producto) |
 | Qué está terminado vs MVP | Ver checklist sección 5 |

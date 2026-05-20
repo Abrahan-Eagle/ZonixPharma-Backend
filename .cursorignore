@@ -13,3 +13,7 @@ node_modules/
 
 .env.*
 !.env.example
+
+# Archivo histórico Zonix Eats (no indexar para trabajo Pharma)
+docs/_archive_eats/
+docs/GUIA_COMPLETA_ZONIX_EATS_VENEZUELA.md

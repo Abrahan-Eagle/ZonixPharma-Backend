@@ -1,4 +1,4 @@
-# Business Rules (MVP) — Zonix Eats Backend
+# Business Rules (MVP) — Zonix Pharma Backend
 
 ## Decisiones Clave
 

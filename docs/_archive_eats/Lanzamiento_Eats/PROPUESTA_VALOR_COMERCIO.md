@@ -1,3 +1,6 @@
+> **ARCHIVO HISTÓRICO — Zonix Eats (pre-fork abr 2026).** No indexar para **Zonix Pharma**. Canon migración: [MIGRACION_EATS_PHARMA.md](../../MIGRACION_EATS_PHARMA.md) · Pack inversor vivo: [docs/Lanzamiento/README.md](../../Lanzamiento/README.md).
+>
+
 # Propuesta de valor para el comercio — Zonix Eats
 
 > **Propósito:** este es el documento que responde "¿por qué un comercio de barrio pagaría por Zonix?". Sirve como base para el pitch del captador en calle, para el material de onboarding, y para defender la tesis ante el inversionista.  

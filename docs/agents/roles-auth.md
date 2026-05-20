@@ -1,4 +1,4 @@
-# Roles & Authentication — Zonix Eats Backend
+# Roles & Authentication — Zonix Pharma Backend
 
 ## Roles (6 roles)
 

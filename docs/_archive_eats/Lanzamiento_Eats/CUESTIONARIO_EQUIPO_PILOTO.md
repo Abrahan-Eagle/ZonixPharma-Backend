@@ -1,3 +1,6 @@
+> **ARCHIVO HISTÓRICO — Zonix Eats (pre-fork abr 2026).** No indexar para **Zonix Pharma**. Canon migración: [MIGRACION_EATS_PHARMA.md](../../MIGRACION_EATS_PHARMA.md) · Pack inversor vivo: [docs/Lanzamiento/README.md](../../Lanzamiento/README.md).
+>
+
 # Zonix Eats — Cuestionario para el equipo Creesca (piloto)
 
 > **Uso:** copiar el bloque “Cuerpo” en correo, WhatsApp o formulario; volcar respuestas en [`PLAN_LANZAMIENTO_COMERCIAL.md`](PLAN_LANZAMIENTO_COMERCIAL.md) §2 y §11 y en [`BRIEF_UNA_PAGINA_ZONIX_EATS.md`](BRIEF_UNA_PAGINA_ZONIX_EATS.md).  

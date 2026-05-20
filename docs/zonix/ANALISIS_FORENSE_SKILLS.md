@@ -167,7 +167,7 @@ Duplicado en `zonix-investor-materials` para agentes que solo abran esa skill.
 | ROLES ↔ archivos en disco | **OK** (30/30) |
 | GitHub forense 22 URLs | **OK** — §12 + research_links G–L |
 | Código pagos piloto vs pack | **OK** — catálogo VE; flujo canónico payment-proof |
-| 0× «Zonix Eats» en skills | Verificar grep en CI |
+| 0× «Zonix Eats» en skills (salvo nota legacy acotada) | Verificar grep; canon Pharma `zonix-*` |
 
 **Veredicto objetivo v3:** ecosistema **listo para las 5 metas** + catálogo GitHub forense si se respeta:
 

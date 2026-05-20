@@ -1,4 +1,4 @@
-# Real-time Events — Zonix Eats Backend
+# Real-time Events — Zonix Pharma Backend
 
 **Firebase Cloud Messaging (FCM) + Pusher. NO WebSocket.**
 

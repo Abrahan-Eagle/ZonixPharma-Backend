@@ -1,4 +1,4 @@
-# Code Style — Zonix Eats Backend
+# Code Style — Zonix Pharma Backend
 
 ## Naming Conventions
 

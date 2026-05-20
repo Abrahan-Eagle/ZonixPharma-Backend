@@ -1,8 +1,8 @@
-# PROMPT — Auditoría forense + plan de transformación Zonix Eats -> Zonix Pharma
+# PROMPT — Auditoría forense + plan de transformación Eats → Pharma (código)
 
-> Prompt maestro reutilizable. Pégalo tal cual en una sesión nueva de Cursor (Backend o Frontend) cuando necesites una auditoría forense completa del estado actual y un plan de transformación accionable.
+> Herramienta de **migración técnica** (código/repos), no el pack inversor. Pack vivo: [Lanzamiento/README.md](Lanzamiento/README.md). Archivo Eats: [\_archive_eats/](_archive_eats/) — **no usar @** en chats de producto Pharma.
 >
-> Ubicación canónica: `ZonixPharma-Backend/docs/PROMPT_AUDIT_FORENSE.md`. Se puede referenciar con `@docs/PROMPT_AUDIT_FORENSE.md` desde cualquier chat.
+> Ubicación: `ZonixPharma-Backend/docs/PROMPT_AUDIT_FORENSE.md`. Pégalo cuando audites restos **Eats** en backend/frontend y el plan de cierre a **Zonix Pharma**.
 
 ---
 

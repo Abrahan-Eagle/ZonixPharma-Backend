@@ -1,3 +1,6 @@
+> **ARCHIVO HISTÓRICO — Zonix Eats (pre-fork abr 2026).** No indexar para **Zonix Pharma**. Canon migración: [MIGRACION_EATS_PHARMA.md](../../MIGRACION_EATS_PHARMA.md) · Pack inversor vivo: [docs/Lanzamiento/README.md](../../Lanzamiento/README.md).
+>
+
 # Volcado de respuestas — una sola pasada (Zonix Eats piloto)
 
 > **Uso:** cuando el equipo devuelva el [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md), pegar aquí las respuestas (aunque sea en bruto) o rellenar las tablas. Luego copiar bloques a [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §2 y §11 y a [BRIEF_UNA_PAGINA_ZONIX_EATS.md](BRIEF_UNA_PAGINA_ZONIX_EATS.md).

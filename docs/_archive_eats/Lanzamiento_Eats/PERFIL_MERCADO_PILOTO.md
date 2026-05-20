@@ -1,3 +1,6 @@
+> **ARCHIVO HISTÓRICO — Zonix Eats (pre-fork abr 2026).** No indexar para **Zonix Pharma**. Canon migración: [MIGRACION_EATS_PHARMA.md](../../MIGRACION_EATS_PHARMA.md) · Pack inversor vivo: [docs/Lanzamiento/README.md](../../Lanzamiento/README.md).
+>
+
 # Perfil de mercado — zona piloto (El Socorro, Valencia, Carabobo)
 
 > **Propósito:** fundamentar ante inversionistas y equipo que la zona piloto fue elegida con criterio, no por conveniencia.  

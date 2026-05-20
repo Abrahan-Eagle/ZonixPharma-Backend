@@ -1,3 +1,6 @@
+> **ARCHIVO HISTÓRICO — Zonix Eats (pre-fork abr 2026).** No indexar para **Zonix Pharma**. Canon migración: [MIGRACION_EATS_PHARMA.md](../../MIGRACION_EATS_PHARMA.md) · Pack inversor vivo: [docs/Lanzamiento/README.md](../../Lanzamiento/README.md).
+>
+
 # Mensaje para el equipo + bullets reunión con inversionista
 
 > **Origen:** borrador operativo alineado al pack canónico en esta carpeta. El texto del cuestionario debe mantenerse coherente con [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md); si hay divergencia, prevalece el cuestionario en repo.

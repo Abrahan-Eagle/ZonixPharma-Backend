@@ -1,3 +1,6 @@
+> **ARCHIVO HISTÓRICO — Zonix Eats (pre-fork abr 2026).** No indexar para **Zonix Pharma**. Canon migración: [MIGRACION_EATS_PHARMA.md](../../MIGRACION_EATS_PHARMA.md) · Pack inversor vivo: [docs/Lanzamiento/README.md](../../Lanzamiento/README.md).
+>
+
 # Presupuesto referencial — 12 meses (piloto Zonix Eats)
 
 > **Qué es esto:** modelo numérico para **discusión interna y pitch**, armado con **precios públicos en internet** (abr. 2026) más **supuestos** explícitos donde no hay tarifa única (ops, legal, intensidad de pauta).  

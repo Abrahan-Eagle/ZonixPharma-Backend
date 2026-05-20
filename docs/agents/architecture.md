@@ -1,9 +1,9 @@
-# Architecture — Zonix Eats Backend
+# Architecture — Zonix Pharma Backend
 
 ## Estructura del Proyecto
 
 ```
-zonix-eats-back/
+ZonixPharma-Backend/
 ├── app/
 │   ├── Http/
 │   │   ├── Controllers/         # 54 controladores organizados por módulo

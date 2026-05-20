@@ -12,7 +12,7 @@
 | **1** | **Commands** (`/test-back`, `/test-front`, `/pr`): flujos que el Agente ejecuta al escribir `/comando` en el chat (ej. correr tests o crear PR). | **Sí** | Ya están en `.cursor/commands/`. En el chat del Agente escribe `/` y elige el comando. |
 | **2** | **Añadir Docs**: Cursor indexa documentación externa (Laravel, Flutter, Dart, etc.) para que el Agente tenga contexto. Back + Front: ver §9. | **No** | Cursor Settings → **Indexing & Docs** → **Docs** → **Add Doc** → pegar URLs de §9 (Laravel + Sanctum para back; Flutter + Dart para front). |
 | **3** | **Reducir modelos**: tener solo 2–3 modelos activos deja el selector más claro y evita confusión. | **No** | Cursor Settings → **Agents** → **Models** → desactivar (toggle gris) todos salvo 1 rápido + 1 equilibrado + 1 max (recomendado: Opus 4.6 Fast, Sonnet 4.6 u Opus 4.6, Opus 4.6 Max). |
-| **4** | **.cursorignore**: excluir de la indexación carpetas como `vendor/`, `storage/`, etc., para que Cursor indexe solo código útil. | **No** (plantilla sí) | En la raíz del repo: `cp docs/cursorignore.example .cursorignore`. Opcional. |
+| **4** | **.cursorignore**: excluir `vendor/`, `docs/_archive_eats/`, etc. | Revisar | En la raíz: `cp docs/cursorignore.example .cursorignore` y asegurar líneas `docs/_archive_eats/` (ver plantilla actualizada). |
 | **5** | **Usage-Based Pricing** (Cloud Agents): definir cómo se factura el uso de agentes en la nube. | **No** | Solo si usas Cloud Agents: Cursor Settings → **Cloud Agents** → **Manage Settings** → **Open** → configurar pricing. Opcional. |
 | **6** | **Fetch Domain Allowlist**: permitir que el Agente abra automáticamente enlaces a dominios (laravel.com, php.net, etc.). | **No** | Cursor Settings → **Agents** → **Fetch Domain Allowlist** → añadir `laravel.com`, `php.net`, `docs.github.com` (o `*` para todos). Opcional. |
 | **7** | **Partial Accepts** (Tab): aceptar la siguiente palabra de una sugerencia con Ctrl+FlechaDerecha. | **No** | Cursor Settings → **Agents** → **Tab** → activar **Partial Accepts**. Opcional. |
@@ -207,7 +207,7 @@ La documentación recomienda **Commands** para flujos que repites mucho, por eje
 
 Puedes crearlos como archivos Markdown en `.cursor/commands/` (si Cursor los soporta en tu versión) o desde **Cursor Settings → Rules, Skills, Subagents → Commands → New Command**.
 
-Sugerencia para Zonix Eats:
+Sugerencia para **Zonix Pharma** (no indexar `docs/_archive_eats/`):
 - **Command `/test-back`**: ejecutar `php artisan test` (opcionalmente con `--filter=...` según contexto).
 - **Command `/test-front`**: ejecutar `flutter test` en el proyecto front.
 
@@ -235,13 +235,13 @@ La documentación dice que puedes “Crawl and index custom resources and develo
 1. En **Cursor Settings → Indexing & Docs → Docs** → **Add Doc**.
 2. Pega **una** URL por doc (backend y/o frontend según el workspace).
 
-Así el agente tendrá convenciones de framework + contexto de Zonix Eats.
+Así el agente tendrá convenciones de framework + contexto de **Zonix Pharma** (pack: `docs/Lanzamiento/`).
 
 ### URLs listas para añadir (Add Doc)
 
-En **Cursor Settings → Indexing & Docs → Docs → Add Doc** pega **una** URL por doc. Tienes Backend (Laravel) y Frontend (Flutter) para cubrir ambos repos de Zonix Eats.
+En **Cursor Settings → Indexing & Docs → Docs → Add Doc** pega **una** URL por doc. Repos: **ZonixPharma-Backend** + **ZonixPharma-Front**.
 
-**Backend (zonix-eats-back)** — Laravel 10.x, PHP 8.1+, Sanctum, Pusher + FCM:
+**Backend (ZonixPharma-Backend)** — Laravel 10.x, PHP 8.1+, Sanctum, Pusher + FCM:
 
 | URL | Uso |
 |-----|-----|
@@ -253,7 +253,7 @@ En **Cursor Settings → Indexing & Docs → Docs → Add Doc** pega **una** URL
 | `https://laravel.com/docs/10.x/broadcasting` | Broadcasting (Pusher) |
 | `https://php.net/manual/es/` | Referencia PHP (opcional) |
 
-**Frontend (zonix-eats-front)** — Flutter ≥3.5, Dart 3.5+, Provider, Pusher + FCM:
+**Frontend (ZonixPharma-Front)** — Flutter ≥3.5, Dart 3.5+, Provider, Pusher + FCM:
 
 | URL | Uso |
 |-----|-----|

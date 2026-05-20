@@ -1,4 +1,4 @@
-# API Conventions — Zonix Eats Backend
+# API Conventions — Zonix Pharma Backend
 
 ## Response Format
 

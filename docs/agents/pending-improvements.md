@@ -1,4 +1,4 @@
-# Pending Improvements — Zonix Eats Backend
+# Pending Improvements — Zonix Pharma Backend
 
 ## 🟡 ALTO
 

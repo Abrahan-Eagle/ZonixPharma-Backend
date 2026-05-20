@@ -1,4 +1,4 @@
-# Análisis Exhaustivo — Zonix Eats Backend
+# Análisis Exhaustivo — Zonix Pharma Backend
 
 **Ubicación del documento principal:** `ANALISIS_EXHAUSTIVO.md` (raíz del proyecto)  
 **Versión de Prompts:** 2.0 - Basada en Experiencia Real
@@ -22,7 +22,7 @@ Este documento contiene un análisis exhaustivo completo del proyecto realizado 
 ## PROMPT MAESTRO - ANÁLISIS COMPLETO v2.0
 
 ```
-Realiza un ANÁLISIS COMPLETO Y EXHAUSTIVO del proyecto Zonix Eats Backend.
+Realiza un ANÁLISIS COMPLETO Y EXHAUSTIVO del proyecto Zonix Pharma Backend.
 
 INSTRUCCIONES GENERALES:
 - Explora TODA la estructura del proyecto sin dejar áreas sin revisar

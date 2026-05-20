@@ -1,9 +1,9 @@
-# Requisitos para Operar un Marketplace de Comida Rapida en Venezuela
+# Requisitos para operar un marketplace de comida rápida en Venezuela (archivo Eats)
 
-> **Fecha:** 27 Marzo 2026
-> **Estado:** Investigacion completa, referencia permanente.
-> **Uso:** Consultar antes de tomar decisiones legales, fiscales o de modelo de negocio.
-> **Complemento:** Ver tambien `docs/PLAN_METODOS_PAGO_VENEZUELA.md` para metodos de pago.
+> **ARCHIVO Eats — no usar para Zonix Pharma.** Farmacia: [PLAN_REGULATORIO_PHARMA_VE.md](PLAN_REGULATORIO_PHARMA_VE.md), [PLAN_RX_VALIDATION.md](PLAN_RX_VALIDATION.md); pagos piloto Pharma: [Lanzamiento/PLAN_METODOS_PAGO.md](Lanzamiento/PLAN_METODOS_PAGO.md).
+>
+> **Fecha:** 27 marzo 2026 · **Estado:** referencia histórica Eats.
+> **Complemento Eats:** [\_archive_eats/Lanzamiento_Eats/PLAN_METODOS_PAGO_VENEZUELA.md](_archive_eats/Lanzamiento_Eats/PLAN_METODOS_PAGO_VENEZUELA.md).
 
 ---
 

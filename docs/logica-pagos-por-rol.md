@@ -1,4 +1,6 @@
-# Lógica de pagos por rol – Zonix Eats
+# Lógica de pagos por rol — Zonix Pharma
+
+> Evolución del modelo documentado en Eats. Flujo de orden: [FLUJO_PAGO_ORDEN.md](FLUJO_PAGO_ORDEN.md). Histórico comida: [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) (Lanzamiento) y archivo [\_archive_eats/Lanzamiento_Eats/PLAN_METODOS_PAGO_VENEZUELA.md](_archive_eats/Lanzamiento_Eats/PLAN_METODOS_PAGO_VENEZUELA.md).
 
 Este documento describe cómo cada rol usa los **métodos de pago** en la app: quién los configura, quién los ve y cómo fluye el dinero.
 

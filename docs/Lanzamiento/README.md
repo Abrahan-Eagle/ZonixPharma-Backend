@@ -158,6 +158,12 @@ Estos no se inventan. El pack los marca explícitamente con `[PENDIENTE]`. El [V
 
 ---
 
+## Indexación Cursor / IA
+
+- **Canon inversor:** solo archivos en `docs/Lanzamiento/` (este directorio).
+- **Excluir en @:** `docs/_archive_eats/` (Zonix Eats histórico), `docs/GUIA_COMPLETA_ZONIX_EATS_VENEZUELA.md`, `docs/REQUISITOS_OPERAR_VENEZUELA.md` (comida — ver regulación Pharma).
+- **`.cursorignore`:** incluir `docs/_archive_eats/` si el índice mezcla contexto Eats.
+
 ## Prompts para agentes (mejorar o crear el pack)
 
 | Prompt | Uso |

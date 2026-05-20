@@ -1,3 +1,6 @@
+> **ARCHIVO HISTÓRICO — Zonix Eats (pre-fork abr 2026).** No indexar para **Zonix Pharma**. Canon migración: [MIGRACION_EATS_PHARMA.md](../../MIGRACION_EATS_PHARMA.md) · Pack inversor vivo: [docs/Lanzamiento/README.md](../../Lanzamiento/README.md).
+>
+
 # Propuesta de valor para el comprador (buyer) — Zonix Eats
 
 > **Proposito:** responder "por que un vecino de El Socorro descargaria esta app en vez de seguir pidiendo por WhatsApp". Es el documento que falta en el pack: los otros 18 hablan del comercio y del inversionista, pero sin compradores no hay pedidos, y sin pedidos el comercio no paga.

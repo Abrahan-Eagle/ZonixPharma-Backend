@@ -1,4 +1,4 @@
-# Testing — Zonix Eats Backend
+# Testing — Zonix Pharma Backend
 
 ## Comandos
 

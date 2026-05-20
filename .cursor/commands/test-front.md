@@ -1,15 +1,13 @@
 # Run Frontend Tests
 
-Execute the Flutter test suite for zonix-eats-front (when workspace includes the frontend or user is in frontend repo).
+Execute the Flutter test suite for **ZonixPharma-Front** (when workspace includes the frontend or user is in frontend repo).
 
 ## Instructions
 
-1. If current workspace is `zonix-eats-front`: run `flutter test`
-2. If current workspace is `zonix-eats-back` and user asked for frontend tests: run `flutter test` from the sibling directory `../zonix-eats-front` (or inform the user to open the front workspace).
-3. For a specific test file: `flutter test test/path/to/test_file.dart`
-4. Report the result: passed/failed count and any failure output.
-5. If tests fail, suggest or apply fixes only if the user asked to fix them; otherwise just report.
+1. If current workspace is `ZonixPharma-Front`: run `flutter test`
+2. If current workspace is `ZonixPharma-Backend` and user asked for frontend tests: run `flutter test` from the sibling directory `../ZonixPharma-Front` (or inform the user to open the front workspace).
+3. Report pass/fail counts and failure output.
 
 ## Notes
 
-- Run `flutter pub get` first if the user reports dependency or "package not found" issues.
+- Producto: **Zonix Pharma** — no usar `docs/_archive_eats/` para copy ni decisiones de producto.

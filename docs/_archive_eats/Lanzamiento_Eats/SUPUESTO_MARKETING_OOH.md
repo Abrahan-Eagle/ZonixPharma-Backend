@@ -1,3 +1,6 @@
+> **ARCHIVO HISTÓRICO — Zonix Eats (pre-fork abr 2026).** No indexar para **Zonix Pharma**. Canon migración: [MIGRACION_EATS_PHARMA.md](../../MIGRACION_EATS_PHARMA.md) · Pack inversor vivo: [docs/Lanzamiento/README.md](../../Lanzamiento/README.md).
+>
+
 # Supuesto — marketing exterior (OOH) Valencia / Carabobo
 
 > **Uso:** base para hoja de inversión o pitch; **no** son cotizaciones firmes. Cerrar montos con **2–3 agencias** que facturen y gestionen permisos/impuestos.  
