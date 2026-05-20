@@ -1,6 +1,6 @@
 # Proyección financiera 12 meses (+ año 2 y 3 + plan contingencia)
 
-> **Última actualización:** 18 mayo 2026 (tiers Lean 101k / Base 118k / Growth 135k).
+> **Última actualización:** 20 mayo 2026 (tiers Lean 101k / Base 118k / Growth 135k).
 > Documento que traduce los unit economics y el presupuesto a un flujo mes a mes para los 3 escenarios.
 > Cifras en USD constantes con buffer 20% ya aplicado al burn.
 
@@ -52,6 +52,8 @@
 > **Lectura (versión sin waiver, planning principal):** cash flow operativo acumulado **M1–M12** **~−USD 30.734** (columna *Cash flow acumulado* mes 12). Con **caja Day-D ~USD 72.943** (tras **Fase 0** §0.1), el **cash en caja** al cierre del año 1 (M12) queda **~USD 42.209** (ver §1.3). Burn recurrente por tramo: **7.462 / 7.798 / 7.431** USD/mes ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.3), incluye **Co-CEO USD 1.000/mes** y **4× Sales**.
 >
 > **Lectura (versión con waiver B2B — cuota USD 0 meses 1–2 cohort inicial):** la fila **«con waiver primeras 10»** asume **~USD 453** menos de ingreso acumulado año 1 vs. sin waiver (**proxy** — **recalibrar** con FP&A cuando se fije política de waiver). **Cash en caja** cierre año 1 **~USD 41.756**. **Break-even mensual:** **mes 11** en el caso central sin waiver.
+
+**Nota FP&A — origen del proxy waiver (~453):** supuesto comercial [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §11: **primeras 10 farmacias**, **cuota fija USD 0** en **meses 1–2** de relación (GMV se mide igual). El ajuste **~453** en la fila «con waiver» de §1.1 es un **proxy** hasta modelo por cohorte: orden de magnitud **10 farmacias × ~2 meses × ~USD 20–25** de componente cuota media en meses tempranos del caso sin waiver (no sustituye recálculo si la política comercial amplía alcance o incluye % GMV). **Planning principal del inversor:** fila **sin waiver** y caja M12 **~42.209**.
 
 ### 1.2 Hipótesis aplicadas al modelo
 

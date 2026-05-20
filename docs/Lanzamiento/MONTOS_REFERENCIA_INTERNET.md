@@ -1,6 +1,6 @@
 # Montos de referencia validados con fuentes de internet
 
-> **Última actualización:** 11 mayo 2026.
+> **Última actualización:** 20 mayo 2026.
 > Documento que lista las fuentes web públicas de cada cifra utilizada en el pack.
 > Cada precio o métrica venezolana puede variar mensualmente por inflación (macro 2026: **desaceleración oficial BCV** vs. escenarios externos pesimistas 387-618%). **Reconfirmar trimestralmente.**
 

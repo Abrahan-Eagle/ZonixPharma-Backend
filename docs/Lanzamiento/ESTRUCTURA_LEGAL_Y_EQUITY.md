@@ -1,6 +1,6 @@
 # Estructura legal y equity (SAFE + cap table)
 
-> **Última actualización:** 10 mayo 2026.
+> **Última actualización:** 20 mayo 2026.
 > Documento que captura el vehículo legal, instrumento de inversión y cap table de Zonix Pharma.
 > Para detalle del marco regulatorio venezolano más amplio, ver [`../REQUISITOS_OPERAR_VENEZUELA.md`](../REQUISITOS_OPERAR_VENEZUELA.md).
 

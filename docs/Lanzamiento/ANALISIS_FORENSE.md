@@ -1,7 +1,10 @@
 # Análisis forense multi-perspectiva del pack
 
-> **Última actualización:** 18 mayo 2026.
+> **Última actualización:** 20 mayo 2026.
 > Auditoría multi-rol del pack. **Estado vigente:** tiers **Lean 101k / Base 118k / Growth 135k**; PROYECCION §1.1 = **Lean**; caja M12 **~42.209**; equilibrio **M11 ~151 activas**.
+> **Segunda pasada forense (20 mayo 2026):** alineados Fase 0 **~28.057**, conteo pack **22** archivos, waiver B2B **~453** (vs. proxy obsoleto **222**), copy Rappi **25–35%** en B2B §11.
+> **Tercera pasada forense (20 mayo 2026):** tests backend **399** (verificado `vendor/bin/phpunit`); equity README **16,83 / 18,15 / 18,75**; fechas cabecera unificadas; M12 waiver **~41.756** en MENSAJE; nota equilibrio teórico Base/Growth en README.
+> **Cuarta pasada forense (20 mayo 2026):** CHECKLIST (PROYECCION solo Lean, FAQ ~100 firmas, borrador legal, demo 5 pasos); nota FP&A waiver **~453** en PROYECCION §1.1; VOLCADO §1.2 verificación tests; tabla equipo Lean en BRIEF; delta tiers en PRESUPUESTO §1.1.
 
 ---
 
@@ -9,7 +12,7 @@
 
 ### 1.1 Fortalezas
 
-- **Stack ya construido:** ~4 años de desarrollo del **stack Zonix Pharma** + 397 tests pasando reduce riesgo de ejecución técnica drásticamente.
+- **Stack ya construido:** ~4 años de desarrollo del **stack Zonix Pharma** + 399 tests pasando reduce riesgo de ejecución técnica drásticamente.
 - **Equipo lean defendible:** sin pharmacist liaison (legalmente correcto), sin diseñador UI/UX (founder tech), **9** FTE operativos en Base (Founder + Co-CEO + **4×** Sales + CS+CM + Marketing + **Coordinador de Partners Logísticos**) + **2** freelance (contador + abogado) = **11** personas en payroll extendido; Growth suma **asesor regulatorio** externo — dimensionado para el piloto **Meta + 4× Sales**.
 - **Decisión coherente sobre capital:** **Lean 101k** (mínimo) + **Base 118k** (recomendado) + **Growth 135k** (acelerado); PROYECCION §1.1 modela **Lean**; caja M12 **~42.209** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §0–§1.3).
 - **Founder USD 1.000/mes** en los tres tiers — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.3.
@@ -138,7 +141,7 @@
 
 | Severidad | Hallazgo | Acción |
 |---|---|---|
-| **CRÍTICA #2** | El pack promete waiver comercial (cuota **USD 0** meses iniciales) en [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §11 y FAQ en [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md); debía quedar **explícito** frente a la tabla §1.1 (caso **sin** waiver para no sobrestimar caja) y la variante **«con waiver»** (**~−USD 222** ingreso año 1 vs. proxy meses 1–2). | **Aplicado:** convención documentada en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 (párrafo previo a la tabla), notas §1.1–1.3 y §11.2 B2B; §8.1 de este informe. |
+| **CRÍTICA #2** | El pack promete waiver comercial (cuota **USD 0** meses iniciales) en [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §11 y FAQ en [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md); debía quedar **explícito** frente a la tabla §1.1 (caso **sin** waiver para no sobrestimar caja) y la variante **«con waiver»** (**~−USD 453** ingreso año 1 — proxy fila §1.1). | **Aplicado:** convención documentada en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 (párrafo previo a la tabla), notas §1.1–1.3 y [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §11; §8 de este informe. |
 | **ALTA #8** | Ningún documento detalla cómo se manejan los **picos operativos** (fines de semana, días festivos) ni el plan de capacidad del Customer Support fuera de horario. | Aplicado: añadida sección operativa de horarios y guardias en [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) y en SLA. |
 | MEDIA | El pack asume que el farmacéutico colegiado de la farmacia validará Rx digitalmente sin resistencia. En la práctica algunos farmacéuticos mayores rechazan apps. | Documentado: en [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) sección 8 hay objeción + respuesta sobre eso. La capacitación de 30 min y soporte WhatsApp directo son la mitigación. |
 
@@ -255,7 +258,7 @@ Lo que un inversor sofisticado pediría adicionalmente al pack:
 2. **NDA si requiere:** template estándar + firma 24h.
 3. **Demo en vivo:** confirmar que la app funciona end-to-end.
 4. **Acceso al código (opcional):** repositorio GitHub privado con permisos de lectura. Si lo pide, otorgar.
-5. **Métricas técnicas:** uptime servidor (probablemente N/A en piloto), tests pasando (397 ✓), CI funcionando.
+5. **Métricas técnicas:** uptime servidor (probablemente N/A en piloto), tests pasando (**399** ✓ — última corrida documentada en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) §1.2: fecha + commit short), CI funcionando.
 6. **Referencias del founder:** 2-3 personas que lo conocen profesionalmente.
 7. **Validación legal del SAFE:** abogado del inversor revisa el documento.
 8. **Validación legal de la C.A. (post-constitución):** registro mercantil + RIF + actas.
@@ -333,13 +336,13 @@ El pack es **invertible** después de aplicadas las CRÍTICAS y ALTAS. Las MEDIA
 4. **Abogado** revisa T&C, privacidad, contrato marco farmacia, SAFE; **farmacéutico asesor** valida tabla controlados y copy salud.
 5. Lectura final del pack por el founder antes de enviar al primer inversor.
 
-### 11.4 Síntesis vigente (18 mayo 2026)
+### 11.4 Síntesis vigente (20 mayo 2026)
 
-**Tiers:** **Lean 101k** (mínimo) · **Base 118k** (recomendado) · **Growth 135k** (acelerado). SAFE **600k / 650k / 720k**. Fuente numérica: [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §1; flujo mes a mes **solo Lean**: [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §0–§1.3.
+**Tiers:** **Lean 101k** (mínimo) · **Base 118k** (recomendado) · **Growth 135k** (acelerado). SAFE **600k / 650k / 720k**. Fuente numérica: [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §1; flujo mes a mes **solo Lean**: [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §0–§1.3. **Roles y agentes JARVIS:** [ROLES_SKILLS_ZONIX.md](ROLES_SKILLS_ZONIX.md).
 
 **Anclas Lean:** Fase 0 **~28.057**; caja Day-D **~72.943**; burn **7.462/7.798/7.431**; M12 cash **~42.209**; equilibrio **M11 ~151 activas**; revenue año 1 **59.968**; burn año 1 **90.702**.
 
-**Evidencia técnica:** backend **397 tests** (`./vendor/bin/phpunit`, mayo 2026).
+**Evidencia técnica:** backend **399 tests** (`./vendor/bin/phpunit`, verificado mayo 2026 — OK 399 passed).
 
 | Rol | Foco en el pack | Veredicto breve |
 |-----|-----------------|-----------------|
@@ -351,6 +354,7 @@ El pack es **invertible** después de aplicadas las CRÍTICAS y ALTAS. Las MEDIA
 | **CMO clínico / RA / QA-PV** | Claims, controlados, FV — PLAN_MODULO + marketing salud | **Sujeto a dictamen** MPPS/copy salud |
 | **Compliance / DPO / Legal** | [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §4.4; SAFE; contrato marco B2B | **Sujeto a abogado**; FAQ M&A SAFE corregida a redacción no engañosa |
 | **CRO ventas / CMO marketing / CHRO** | CAC/LTV, equipo **9** FTE + 2 FL (**4×** Sales) | **OK** — [UNIT_ECONOMICS](UNIT_ECONOMICS.md), [CUESTIONARIO](CUESTIONARIO_EQUIPO_PILOTO.md) |
+| **Delivery / agentes IA** | Matriz rol → competencias → skills | **OK** — [ROLES_SKILLS_ZONIX](ROLES_SKILLS_ZONIX.md) |
 | **Supply / logística** | Cadena frío, delivery — PROPUESTA_TERCER_LADO + PLAN_MODULO | **OK** |
 | **CRO riesgos / Auditoría / IR** | Sensibilidades §7 PROYECCION; cap SAFE; VOLCADO founder | **OK** con pendientes GitHub/referencias/% tiempo |
 
@@ -358,7 +362,8 @@ El pack es **invertible** después de aplicadas las CRÍTICAS y ALTAS. Las MEDIA
 
 ## 12. Documentos hermanos
 
-- [README.md](README.md): índice general del pack.
+- [README.md](README.md): índice general del pack (**22** archivos).
+- [ROLES_SKILLS_ZONIX.md](ROLES_SKILLS_ZONIX.md): matriz roles, skills y agentes JARVIS.
 - [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md): brief con CRÍTICA / ALTA aplicadas.
 - [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md): proyección con CRÍTICA #1 y #2 aplicadas.
 - [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md): pre-flight con CRÍTICA #3 marcada.

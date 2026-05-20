@@ -1,14 +1,15 @@
 # Checklist pre-inversor
 
-> **Última actualización:** 10 mayo 2026.
+> **Última actualización:** 20 mayo 2026.
 > Documento operacional. El founder debe poder marcarlo todo antes de la primera reunión con el inversor.
 
 ## 1. Material listo
 
 - [ ] [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) impreso o en PDF.
-- [ ] [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) en formato spreadsheet imprimible (los 3 escenarios + año 2-3).
+- [ ] [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) en formato spreadsheet imprimible (**Lean** mes a mes §1.1; tiers Base/Growth y año 2–3 en el mismo doc + [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3–§4).
 - [ ] [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) con cap table actualizado.
-- [ ] Demo en vivo de la app (Buyer + Pharmacy + Pharmacist + `delivery_company` + `delivery_agent`).
+- [ ] **SAFE + contrato marco farmacia + T&C / privacidad** marcados como **borrador** hasta dictamen **abogado** (no enviar como versión final sin sello legal).
+- [ ] Demo en vivo de la app (Buyer + Pharmacy + Pharmacist + `delivery_company` + `delivery_agent`) — guion §1.2.
 - [ ] Mensaje de envío al inversor: [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md).
 - [ ] Pack completo en Google Drive con permisos de visualización para el inversor.
 - [ ] Backup del pack en USB (por si la conexión falla en la reunión).
@@ -18,6 +19,16 @@
 ### 1.1 Nota inversor — escenarios SAFE (Growth vs Base)
 
 > **Tiers capital (mayo 2026):** **Lean 101k** (mínimo) · **Base 118k** (recomendado) · **Growth 135k** (acelerado). Escalera **101 < 118 < 135**.
+
+### 1.2 Guion demo en vivo (~8–12 min)
+
+1. **Paciente (Buyer):** búsqueda OTC o Rx → carrito → dirección / pickup.
+2. **Farmacia (Pharmacy):** pedido entrante → preparación → estado en panel.
+3. **Farmacéutico colegiado (Pharmacist):** validación Rx digital (SLA 60 min).
+4. **Pago VE:** pago móvil / transferencia según [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) (flujo manual).
+5. **`delivery_agent`:** asignación, tracking y cierre de entrega (empresa `delivery_company` en backend).
+
+> Roles en piloto: **sin** `delivery` autónomo. Detalle operativo: [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md).
 
 ## 2. Datos confirmados (que NO sean inventados)
 
@@ -40,7 +51,7 @@
 - [x] **Lista de proyectos previos:** **Zonix Pharma**, Corral X, Zonix Imports, Aiblockweb — detalle en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) §1. **Métricas de tracción (usuarios/GMV):** [PENDIENTE — números reales por producto si las compartes].
 - [x] **Por qué tú eres el founder correcto:** párrafo listo en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) §1.1.
 - [ ] **Referencias:** 2-3 contactos con teléfono y permiso explícito. [PENDIENTE].
-- [x] **Track record cuantificado (resumen):** 8+ años stack producto; fundador de **Zonix Pharma**, Corral X, Zonix Imports y Aiblockweb; lideró equipo de 5 devs (Mekautos); 397 tests backend Zonix Pharma (verificación repo mayo 2026).
+- [x] **Track record cuantificado (resumen):** 8+ años stack producto; fundador de **Zonix Pharma**, Corral X, Zonix Imports y Aiblockweb; lideró equipo de 5 devs (Mekautos); 399 tests backend Zonix Pharma (verificación repo mayo 2026).
 - [ ] **Compromiso a tiempo completo:** declarar explícitamente. Hoy consta **CETIAC 2025–presente** (sábados) y roles director/proyecto en LinkedIn; el inversor preguntará. Completar: % dedicación Zonix Pharma vs. otros ingresos. [PENDIENTE declaración firmada].
 
 ## 4. Datos del piloto (con visitas presenciales hechas)
@@ -134,7 +145,8 @@
 | ¿De dónde sale TAM USD 1.638M? | "**Cifar VE** publica el mercado citando datos **IMS/IQVIA**: 389M unidades × USD 4,21 promedio. Crecimiento sector +20,66% YoY ene-ago 2025 / +17,7% proyección anual (validar PDF Cifar)." |
 | ¿De dónde sale CAC USD **139**? | "Construcción bottom-up: **4×** Sales (comisión **USD 30**/firma + prorrateo fijos **USD 480**/mes a **~8** firmas/mes en supuesto cruise), marketing digital, materiales. Detalle en [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §3." |
 | ¿De dónde sale churn 5% mensual? | "Mediana SaaS B2B SMB LatAm 3-7% (ChartMogul Benchmarks 2025). Conservador." |
-| ¿Por qué el equilibrio mensual está en **M11** y no antes? | "Burn recurrente por tramo **7.462 / 7.798 / 7.431** USD/mes (promedio **~7.559**; [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.3). Con **ARPF ~50** y la **curva agresiva** de §1.1 se llega a **~151 activas** en **M11** (revenue **7.550** vs burn **7.431**). **Day-D = T+90**; **Fase 0** consume **~28,1k** antes de M1 ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §0). Mitigaciones: §1.4 PROYECCION." |
+| ¿Por qué el equilibrio mensual está en **M11** y no antes? | "Burn recurrente por tramo **7.462 / 7.798 / 7.431** USD/mes (promedio **~7.559**; [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.3). Con **ARPF ~50** y la **curva agresiva** de §1.1 se llega a **~151 activas** en **M11** (revenue **7.550** vs burn **7.431**). **Day-D = T+90**; **Fase 0** consume **~28.057** antes de M1 ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §0). Mitigaciones: §1.4 PROYECCION." |
+| ¿Qué pasa si solo firmamos **~100 farmacias** en año 1 (vs. **175** del plan)? | "La curva §1.1 es **agresiva**; menos firmas **retrasa** el equilibrio mensual respecto a **M11** (menos activas → menos revenue con el mismo burn). Ver sensibilidad pesimista [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §7 y [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md). Mitigación: acelerar firmas, subir ARPF efectivo o recortar burn (contingencia §4 PROYECCION)." |
 | ¿Y si el plan no se cumple? | "Tabla de sensibilidad pesimista / base / optimista en [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) y detalle en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) sección 7. Plan de contingencia ante shocks documentado en sección 4." |
 
 ## 8. Cierre de la reunión

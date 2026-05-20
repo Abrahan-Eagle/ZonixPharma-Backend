@@ -1,13 +1,13 @@
 # Mensaje de envío al inversor + bullets pitch
 
-> **Última actualización:** 18 mayo 2026.
+> **Última actualización:** 20 mayo 2026.
 > Documento operacional. Texto listo para WhatsApp / email + bullets para presentación de 5 minutos.
 
 ## 1. Mensaje WhatsApp inicial (mensaje frío)
 
 > Hola [Nombre del inversor],
 >
-> Soy **Abrahan Pulido**. Soy fundador de Zonix Pharma, un marketplace farmacéutico digital que estamos preparando para lanzar en Carabobo. La tecnología ya está construida (**397 tests** backend) y busco **USD 101k** (Lean — mínimo viable) vía SAFE, con opción **118k recomendado** / **135k acelerado**, para **Fase 0 + 12 meses** post-Day-D — **~USD 42.209** cash M12 y equilibrio **M11** (PROYECCION §1).
+> Soy **Abrahan Pulido**. Soy fundador de Zonix Pharma, un marketplace farmacéutico digital que estamos preparando para lanzar en Carabobo. La tecnología ya está construida (**399 tests** backend) y busco **USD 101k** (Lean — mínimo viable) vía SAFE, con opción **118k recomendado** / **135k acelerado**, para **Fase 0 + 12 meses** post-Day-D — **~USD 42.209** cash M12 y equilibrio **M11** (PROYECCION §1).
 >
 > Modelo: la farmacia paga **cuota fija + un % moderado sobre GMV** en la app (tier dinámico por bandas — ver pack §5 B2B). El take-rate total sigue siendo **órden de magnitud menor** que Rappi/PedidosYa (25-35% GMV).
 >
@@ -24,13 +24,15 @@
 
 > Hola [Nombre],
 >
-> Gracias por tu interés. Te comparto el **data room** (`docs/Lanzamiento/` — **21 archivos** Markdown: índice **README**, **19** documentos de contenido y **`ANALISIS_FORENSE.md`** como auditoría forense del pack). Para empezar en **~30 min**:
+> Gracias por tu interés. Te comparto el **data room** (`docs/Lanzamiento/` — **22 archivos** Markdown: índice **README**, **`ANALISIS_FORENSE.md`** (auditoría del pack), **`ROLES_SKILLS_ZONIX.md`** (matriz rol → agentes JARVIS) y **19** documentos de contenido). Para empezar en **~30 min**:
 >
 > - **BRIEF_UNA_PAGINA.md** — resumen ejecutivo.
 > - **PROYECCION_FINANCIERA_12M.md** + **UNIT_ECONOMICS.md** — números y supuestos.
 > - **PERFIL_MERCADO_PILOTO.md** — TAM/SAM/SOM.
 > - **ESTRUCTURA_LEGAL_Y_EQUITY.md** — SAFE, cap table.
 > - **CHECKLIST_PRE_INVERSOR.md** — guion + FAQ.
+>
+> *(Solo equipo interno, no obligatorio para el inversor: **ROLES_SKILLS_ZONIX.md** — matriz de roles y agentes JARVIS.)*
 >
 > Acceso al pack completo en Google Drive: [LINK]
 >
@@ -68,7 +70,7 @@
 
 > **Slide 3: Tracción**
 > - Stack ya construido (Laravel + Flutter + Pusher + FCM).
-> - 397 tests pasando.
+> - 399 tests pasando.
 > - ~4 años de desarrollo del **stack Zonix Pharma**, reciclado al vertical farma.
 > - Backend en producción interna.
 
@@ -88,7 +90,7 @@
 > **Slide 6: Plan**
 > - **USD 101.000** Lean (mínimo) · **118.000** Base (recomendado) · **135.000** Growth (acelerado).
 > - Burn Lean **~USD 7.559**/mes; equilibrio **M11** (~**151** activas).
-> - **~USD 42.209** cash M12 (PROYECCION §1.3).
+> - **~USD 42.209** cash M12 sin waiver; **~41.756** con waiver B2B proxy (PROYECCION §1.3).
 
 > **Slide 7: Equipo**
 > - Founder = CEO + CTO. **Co-CEO** USD **1.000**/mes.
@@ -152,10 +154,10 @@
 | Payback CAC | **~2,8 meses** |
 | Burn mensual | **~USD 7.559** promedio (tramos **7.462 / 7.798 / 7.431**) |
 | Runway | 12 meses |
-| Cash al cierre año 1 (proyección) | **~USD 42.209** sin waiver ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3) |
+| Cash al cierre año 1 (proyección) | **~USD 42.209** sin waiver; **~USD 41.756** con waiver B2B proxy ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3) |
 | TAM Venezuela | USD 1.638M |
 | Comparable internacional | Farmalisto ~USD 32M revenue 2024 (MX); funding ~USD 22M–33M según fuente |
-| Stack | Laravel + Flutter + Pusher + FCM, 397 tests pasando |
+| Stack | Laravel + Flutter + Pusher + FCM, 399 tests pasando |
 | Equipo | **9** roles FT + 2 freelance. Asesor regulatorio en **Base/Growth** (118k/135k). |
 | Founder track record | **Abrahan Pulido** — Ingeniero en Informática (IUTVAL); 8+ años full stack; fundador **Zonix Pharma** (mismo stack desde delivery B2C), **Corral X**, **Zonix Imports**, **Aiblockweb**; docente CETIAC; [LinkedIn](https://www.linkedin.com/in/abrahan-pulido-909a35b7/), [aiblockweb.com](https://aiblockweb.com), `ing.pulido.abrahan@gmail.com`, +58 412 4352014. **Pendiente:** URL GitHub pública + 2 referencias verificables para due diligence. |
 

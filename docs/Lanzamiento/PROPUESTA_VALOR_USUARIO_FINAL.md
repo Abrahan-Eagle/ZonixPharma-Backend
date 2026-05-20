@@ -1,6 +1,6 @@
 # Propuesta de valor — Usuario final (Paciente / Buyer)
 
-> **Última actualización:** 11 mayo 2026.
+> **Última actualización:** 20 mayo 2026.
 > Documento que captura el pitch al usuario final que descarga la app o entra a la web.
 > El paciente es el rol `users` (Buyer) en el backend.
 

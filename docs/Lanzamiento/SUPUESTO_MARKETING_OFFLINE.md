@@ -1,6 +1,6 @@
 # Supuesto de marketing offline
 
-> **Última actualización:** 18 mayo 2026.
+> **Última actualización:** 20 mayo 2026.
 > Documento que justifica el rol del marketing offline (vallas, radio, flyers) en el plan, y por qué la **prioridad principal es marketing digital**.
 
 ## 1. Filosofía del pack: digital primero, offline complementario

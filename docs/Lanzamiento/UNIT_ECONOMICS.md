@@ -1,6 +1,6 @@
 # Unit Economics — Zonix Pharma
 
-> **Última actualización:** 10 mayo 2026 (replante: cuota fija **25/40/55**, **4×** Sales, ARPF **~50**, CAC **139**; §7.1 guía de lectura cohort).
+> **Última actualización:** 20 mayo 2026 (replante: cuota fija **25/40/55**, **4×** Sales, ARPF **~50**, CAC **139**; §7.1 guía de lectura cohort).
 > Documento que explica cómo gana dinero Zonix Pharma a nivel de farmacia individual.
 > Cifras base propagadas al [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md), [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) y al [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md).
 

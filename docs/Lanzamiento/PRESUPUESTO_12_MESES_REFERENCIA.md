@@ -1,6 +1,6 @@
 # Presupuesto 12 meses — referencia
 
-> **Última actualización:** 18 mayo 2026.
+> **Última actualización:** 20 mayo 2026.
 > Documento que detalla **línea por línea** los gastos durante 12 meses para los 3 escenarios.
 > Las cifras están justificadas en [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md).
 > Cifras en **USD constantes**, con buffer 20% ya aplicado al total para cubrir devaluación bolívar.
@@ -19,6 +19,22 @@
 > **Lectura tiers (mayo 2026):** **Lean** = mínimo viable **USD 101k**. **Base** = recomendado **USD 118k**. **Growth** = acelerado **USD 135k** (estrictamente mayor que Base). Escalera **101 < 118 < 135**.
 
 > **Buffer inflación VE:** el **20%** (Lean/Base) o **25%** (Growth, líneas marketing) ya está **incorporado en el burn mensual** de cada escenario, no como fila adicional en esta tabla. Ver §6 para la metodología ponderada (30% costos en Bs / 10% en USD).
+
+### 1.1 Delta vs Lean (sin tabla M1–M12 adicional)
+
+Solo [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 tiene flujo **mes a mes** (**Lean**). Base y Growth usan la **misma curva de revenue** del caso central y suben **burn + reserva**:
+
+| Delta vs **Lean 101k** | **Base +17k → 118k** | **Growth +34k → 135k** |
+|---|---|---|
+| Capital adicional | **+17.000** | **+34.000** |
+| Valla | Pequeña **350** → mediana **700** (desde M2) | Igual Base |
+| Meta Ads | **800/500** M1–6/M7–12 → **800** todo el año | Igual Base |
+| Asesor regulatorio | **+120/mes** (no en Lean) | Igual Base |
+| Reserva caja / runway | **~490** → **~10.590** | **~10.590** → **~20.000** |
+| Burn prom. mensual | **~7.559** → **~8.059** | **~8.059** → **~8.691** |
+| One-shots Fase 0 | **~9.808** → **~10.708** (+valla mediana) | **~10.708** (igual Base) |
+
+> Equilibrio teórico con ARPF **~50**: Lean **~151** activas · Base **~162** · Growth **~174** ([README.md](README.md) — sin proyección mensual Base/Growth).
 
 ## 2. Escenario Lean — USD 101.000 (mínimo viable)
 

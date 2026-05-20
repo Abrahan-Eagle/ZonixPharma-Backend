@@ -1,13 +1,13 @@
 # Contexto del pitch y decisiones tomadas
 
-> **Última actualización:** 11 mayo 2026.
+> **Última actualización:** 20 mayo 2026.
 > Documento que captura las decisiones del founder (usuario) sobre cómo se posiciona Zonix Pharma frente a un inversor, qué se dice, qué no, y por qué se eligió cada parámetro del modelo.
 
 ## 1. Tecnología base reutilizada (Zonix Pharma)
 
 **Zonix Pharma** es la **verticalización del stack propio** (Laravel + Flutter + MySQL) con **~4 años** de iteración —incluida etapa previa de **delivery B2C** sobre el mismo núcleo— ahora orientada a **farmacia**. Esto importa porque significa:
 
-- **Tecnología validada:** los 397 tests del backend ya cubren onboarding, órdenes, métodos de pago manuales VE, KYC, chat real-time, FCM, eventos broadcast. **No estamos empezando desde cero.**
+- **Tecnología validada:** los 399 tests del backend ya cubren onboarding, órdenes, métodos de pago manuales VE, KYC, chat real-time, FCM, eventos broadcast. **No estamos empezando desde cero.**
 - **Equipo técnico ya entrenado:** el founder conoce el stack al detalle.
 - **Riesgo de ejecución reducido:** lo único que se construye desde cero es la capa farmacéutica (Rx, lotes FIFO, cadena de frío, pharmacist colegiado), y eso ya está parcialmente implementado y documentado en [`../PLAN_RX_VALIDATION.md`](../PLAN_RX_VALIDATION.md) y [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md).
 
@@ -153,7 +153,7 @@ Estas se documentarán en un anexo cuando lleguen al frente. Hoy no son bloquean
 ## 6. Tono del pitch
 
 - **Honesto sobre lo que no se ha hecho:** "no tenemos ventas todavía, tenemos producto operativo y plan validado".
-- **Confiado sobre lo que sí está hecho:** "397 tests pasando, ~4 años de desarrollo del **stack Zonix Pharma**".
+- **Confiado sobre lo que sí está hecho:** "399 tests pasando, ~4 años de desarrollo del **stack Zonix Pharma**".
 - **Específico con números:** nunca decir "esperamos crecer mucho"; decir **~151 farmacias activas en M11**, **~159** hacia M12, **~USD 42.209** cash cierre **M12** post-Day-D (**Lean 101k** + **Fase 0** + **Co-CEO** + **4×** Sales + cuota **25/40/55**), y **equilibrio mensual en M11** con ARPF placeholder **~50** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §0–§1.4).
 - **Realista sobre Venezuela:** mencionar la inflación de entrada, no esconder la complejidad regulatoria.
 - **Modular:** ticket parcial (USD 25k–50k) sobre SAFE Lean; stretch **118k Base** o **135k Growth** según apetito del ángel.

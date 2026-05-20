@@ -1,6 +1,6 @@
 # Volcado de respuestas del cuestionario + datos pendientes del founder
 
-> **Última actualización:** 10 mayo 2026.
+> **Última actualización:** 20 mayo 2026.
 > Plantilla para el founder. Llenar a medida que se entreviste al equipo y se cierren contrataciones.
 > Cada celda con `[PENDIENTE]` debe llenarse antes de la primera reunión con un inversor.
 
@@ -28,6 +28,17 @@
 ### 1.1 Párrafo «por qué soy el founder correcto» (CHECKLIST sección 3)
 
 Ingeniero en Informática (IUTVAL, 2013–2018) con **más de 8 años** construyendo productos web y móviles end-to-end. He fundado y desarrollado **Zonix Pharma** y la línea previa de **delivery B2C** sobre el mismo núcleo (Laravel + Flutter), **Corral X** (marketplace Laravel 10 + Flutter), **Zonix Imports** y **Aiblockweb**, con foco en arquitectura escalable, **TDD**, **CI/CD** y entrega de MVP a producción. Lideré equipos (p. ej. Mekautos, 5 devs) y combino producto con docencia en **CETIAC**. **Zonix Pharma** no es un experimento desde cero: es la **verticalización a farmacia** del stack y del aprendizaje operativo ya acumulado, con **backend ya probado** (suite de tests del repo) y regulación VE documentada en el mismo repositorio.
+
+### 1.2 Verificación técnica backend (due diligence)
+
+| Campo | Valor |
+|---|---|
+| Repositorio | **ZonixPharma-Backend** |
+| Comando | `./vendor/bin/phpunit` (o `php artisan test`) |
+| Resultado última corrida | **399 tests**, **1649 assertions**, OK |
+| Fecha corrida | **20 mayo 2026** |
+| Commit (short) | **a3dee74** *(actualizar en cada corrida pre-reunión)* |
+| Notas | Cifra citada en pack: [README.md](README.md), [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md), [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) §9 |
 
 ## 1.5 Co-CEO / CEO operativo (segundo al mando)
 

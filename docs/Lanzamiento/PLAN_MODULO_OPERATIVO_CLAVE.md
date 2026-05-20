@@ -1,6 +1,6 @@
 # Plan del módulo operativo clave: validación Rx por farmacéutico colegiado
 
-> **Última actualización:** 11 mayo 2026.
+> **Última actualización:** 20 mayo 2026.
 > Documento que detalla el flujo central diferenciador de Zonix Pharma: la **validación de receta médica (Rx) por farmacéutico colegiado** dentro de la app.
 > Este flujo está parcialmente implementado en backend; ver [`../PLAN_RX_VALIDATION.md`](../PLAN_RX_VALIDATION.md) para detalle técnico.
 

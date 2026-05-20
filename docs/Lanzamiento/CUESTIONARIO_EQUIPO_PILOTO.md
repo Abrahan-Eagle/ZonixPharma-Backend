@@ -1,6 +1,6 @@
 # Cuestionario para el equipo del piloto
 
-> **Última actualización:** 11 mayo 2026.
+> **Última actualización:** 20 mayo 2026.
 > Documento operacional para entrevistar candidatos según la **nómina Lean 101k** ([README.md](README.md) §3). **Plantillas:** §2 Sales (4×), §3 CS+CM, §4 Marketing, §5 Coordinador Partners, §6–§7 freelance, **§8** Asesor regulatorio (**Base 118k / Growth 135k**). **Total Lean = 9 FTE + 2 freelance**. **Compensaciones:** [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.
 > Las respuestas se vuelcan en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md).
 

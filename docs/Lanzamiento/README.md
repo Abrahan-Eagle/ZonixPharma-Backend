@@ -1,6 +1,6 @@
 # Pack Lanzamiento Inversor — Zonix Pharma
 
-> **Última actualización:** 18 mayo 2026.
+> **Última actualización:** 20 mayo 2026.
 > **Estado del pack:** completo para pre-seed; textos legales y plazos de retención sujetos a **dictamen abogado + farmacéutico asesor** antes de Day-D público.
 > **Producto:** Zonix Pharma — marketplace farmacéutico digital; el pack usa **solo** esa marca para producto y plataforma.
 > **Zona piloto:** Valencia metro (Carabobo), con foco inicial operativo **San Diego / Av. Bolívar Norte** y expansión a Naguanagua, El Socorro, La Viña, Prebo, etc.
@@ -16,7 +16,7 @@ Este directorio contiene un **data room ligero** con **22 archivos** `.md` en to
 2. [CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md) — diferenciación, decisiones clave, parámetros del pitch.
 3. [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md) — TAM/SAM/SOM, demografía, benchmarks Farmatodo / Locatel / Farmalisto / Rappi.
 4. [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) — CAC, LTV, payback, break-even.
-5. [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) — 3 escenarios mes a mes + año 2-3 + plan de exit.
+5. [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) — tabla **M1–M12 mes a mes solo Lean** (§1.1); tiers Base/Growth y año 2–3 en el mismo doc + [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md).
 6. [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) — SAFE, cap table, vehículo legal VE.
 7. [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) — guion de reunión + FAQ.
 
@@ -64,16 +64,18 @@ Invocar **`zonix-startup-context`** antes de números. Constitución: **`zonix-e
 | Capital pedido                    | **USD 101.000**          | **USD 118.000**        | **USD 135.000**        |
 | Runway                            | 12 meses post-Day-D      | 12 meses post-Day-D    | 12 meses post-Day-D    |
 | SAFE post-money cap               | **USD 600.000**          | **USD 650.000**        | **USD 720.000**        |
-| Equity implícito (ref.)           | **~16,8%**               | **~18,2%**             | **~18,8%**             |
+| Equity implícito (ref.)           | **~16,83%**              | **~18,15%**            | **~18,75%**            |
 | Burn promedio mensual             | **~USD 7.559**           | **~USD 8.059**         | **~USD 8.691**         |
 | One-shots (Fase 0)                | **~USD 9.808**           | **~USD 10.708**        | **~USD 10.708**        |
 | Buffer (inflación VE)             | 20%                      | 20%                    | **25%** (marketing Growth) |
 | Equilibrio mensual (revenue ≥ burn) | **M11** (PROYECCION §1.1 — solo Lean tiene tabla M1–M12) | Más colchón caja; misma curva revenue | Mayor reserva runway |
 | Farmacias activas ref. equilibrio | **~151** (ARPF ~50; burn **7.431** tramo C) | **~162** (burn **~8.059**) | **~174** (burn **~8.691**) |
 
+> **Equilibrio Base/Growth:** las cifras **~162** / **~174** son **break-even teórico** (mismo ARPF **~50** y burn promedio del tier: **8.059 ÷ 50 ≈ 162**, **8.691 ÷ 50 ≈ 174**). **No** hay tabla M1–M12 mes a mes para Base/Growth en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) — solo **Lean** §1.1.
+
 > **Lectura tiers:** **Lean = mínimo ejecutable** (Co-CEO, 4× Sales, HQ casa, IA, valla pequeña). **Base = recomendado** (+ valla mediana, asesor, Meta sostenido, reserva). **Growth = acelerado** (+ colchón runway). Escalera **101k < 118k < 135k**.
 
-> **Fase 0 + Day-D (Lean 101k):** **T+0** = wire **USD 101k**; **Day-D = T+90**; **Fase 0** consume **~USD 28,1k**. **Caja al Day-D:** **~USD 72.943**. **Cierre M12:** **~USD 42.209** (sin waiver). Solo **Lean** tiene PROYECCION §1.1 mes a mes; Base/Growth = delta burn + reserva en [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md).
+> **Fase 0 + Day-D (Lean 101k):** **T+0** = wire **USD 101k**; **Day-D = T+90**; **Fase 0** consume **~USD 28.057** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §0.1). **Caja al Day-D:** **~USD 72.943**. **Cierre M12:** **~USD 42.209** (sin waiver). Solo **Lean** tiene PROYECCION §1.1 mes a mes; Base/Growth = delta burn + reserva en [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md).
 
 
 
@@ -87,6 +89,7 @@ Invocar **`zonix-startup-context`** antes de números. Constitución: **`zonix-e
 | LTV                                 | USD 1.000                                                                                                                                                                   |
 | LTV/CAC                             | **~7,2x**                                                                                                                                                                   |
 | Payback CAC                         | **~2,8 meses**                                                                                                                                                              |
+| Tests backend (verificado mayo 2026) | **399** (`vendor/bin/phpunit` en ZonixPharma-Backend)                                                                                                                       |
 
 
 
@@ -159,7 +162,7 @@ Estos no se inventan. El pack los marca explícitamente con `[PENDIENTE]`. El [V
 - Todos los precios VE en USD pueden subir mensualmente por inflación. **Macro 2026:** el **BCV (mayo 2026)** proyecta **desaceleración** (inflación mensual de **un dígito desde mayo 2026**). Los escenarios externos **387-618%** (Anova/Cendas/Ecoanalítica) se conservan como **estrés/adversos**. El pack documenta cada cifra con fecha de captura **mayo 2026** y advierte **reconfirmación trimestral** antes de decisiones de inversión o gasto.
 - El buffer de 20% absorbe variaciones de hasta ±25% en precios denominados en bolívares.
 - Si la devaluación supera 100% en un trimestre, hay un plan de contingencia documentado en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md).
-- **Cierre editorial pack:** **10 mayo 2026** en cabeceras de los documentos del directorio `docs/Lanzamiento/` alineados a esta revisión; si algún archivo heredara otra fecha en un párrafo puntual, priorizar la cabecera `Última actualización` del propio archivo.
+- **Cierre editorial pack:** **20 mayo 2026** (cuarta pasada: CHECKLIST demo/FAQ, FP&A waiver, VOLCADO tests, BRIEF equipo, PRESUPUESTO delta tiers). Priorizar siempre la cabecera `Última actualización` del propio archivo.
 
 **Pack generado por:** Jarvis (asistente IA) bajo dirección del usuario, en sesión interactiva.
 **Pack revisado por:** [PENDIENTE — el usuario debe leer y aprobar antes de presentar al inversor].

@@ -1,13 +1,13 @@
 # Zonix Pharma — Brief de una página
 
-> **Última actualización:** 18 mayo 2026.
+> **Última actualización:** 20 mayo 2026.
 > Documento ancla del pack. Léase primero. Todas las cifras están detalladas en los documentos hermanos del directorio [docs/Lanzamiento/](README.md).
 
 ## Qué es
 
 **Zonix Pharma** es un marketplace farmacéutico digital para Venezuela. Conecta pacientes con farmacias afiliadas para comprar OTC y medicamentos con receta (Rx), con validación de receta por farmacéutico colegiado y **entrega a domicilio o pickup en sucursal**. La **última milla** la ejecutan **empresa(s) de delivery especializada(s)** bajo **concesión o contrato marco** con Zonix Pharma; la plataforma **no** opera flota propia de reparto.
 
-Es la **vertical farmacia** del **stack Zonix Pharma** (~4 años de código probado; misma base que delivery B2C previo): mismo equipo, misma tecnología, mismas integraciones de pago manual VE. La base técnica está construida y probada: backend Laravel con **397** tests pasando; app Flutter **sin issues** en `flutter analyze lib` en verificación Front mayo 2026 (suite `flutter test` en verde; CI según repo ZonixPharma-Front).
+Es la **vertical farmacia** del **stack Zonix Pharma** (~4 años de código probado; misma base que delivery B2C previo): mismo equipo, misma tecnología, mismas integraciones de pago manual VE. La base técnica está construida y probada: backend Laravel con **399** tests pasando; app Flutter **sin issues** en `flutter analyze lib` en verificación Front mayo 2026 (suite `flutter test` en verde; CI según repo ZonixPharma-Front).
 
 ## Problema que resuelve
 
@@ -43,8 +43,24 @@ Es la **vertical farmacia** del **stack Zonix Pharma** (~4 años de código prob
 - **Modelo B2B híbrido en USD** (cuota fija **25 / 40 / 55** + porcentaje moderado sobre GMV en app según banda): estructuralmente muy por debajo del take-rate 25-35% GMV de Rappi o PedidosYa Pharmacy. Detalle en [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5.
 - **Validación Rx por farmacéutico colegiado de la propia farmacia** dentro de la app, ya construida en backend. Cumple con la **Ley del Ejercicio de la Farmacia VE** sin que **Zonix Pharma** tenga que contratar un farmacéutico interno.
 - **Métodos de pago manuales VE soportados nativos:** Pago Móvil C2P, transferencia, Zelle, Binance Pay USDT — sin pasarelas internacionales caras, sin Stripe, sin necesidad de cuenta empresarial extranjera para operar.
-- **Stack autocontenido y probado:** backend MVP en producción interna con 397 tests pasando, frontend Flutter sin issues, Pusher real-time + Firebase FCM ya integrados.
-- **Equipo lean:** roles contratados = **Co-CEO** + **4× Sales B2B** + CS+CM + Marketing + **Coordinador de Partners Logísticos** (+ founder técnico); 2 freelance (Contador, Abogado). Runway **12 meses** con **USD 101k** (Lean — mínimo viable). **Recomendado:** **USD 118k** (Base). Founder técnico: **Abrahan Pulido**.
+- **Stack autocontenido y probado:** backend MVP en producción interna con 399 tests pasando, frontend Flutter sin issues, Pusher real-time + Firebase FCM ya integrados.
+- **Equipo lean:** **9 FTE** + **2 freelance** en tier **Lean 101k** (detalle en tabla siguiente). Runway **12 meses** con **USD 101k** (mínimo viable). **Recomendado:** **USD 118k** (Base). Founder técnico: **Abrahan Pulido**.
+
+### Equipo piloto Lean (101k) — resumen
+
+| Rol | Tipo | Compensación ref. (USD/mes) | Notas |
+|---|---|---|---|
+| Founder / CEO / CTO | FTE | **1.000** | Abrahan Pulido — producto + tech |
+| Co-CEO / CEO operativo | FTE | **1.000** | Comercial / operación / corporate |
+| Sales B2B (×4) | FTE | **120** + **30**/firma | Comisión a rep que cierra |
+| Customer Support + Community Manager | FTE | **350** (+50 KPI → 400) | Soporte + comunidad |
+| Marketing Lead | FTE | **400** (+100 KPI) | Meta + offline |
+| Coordinador de Partners Logísticos | FTE | **300** (+100 KPI → 400) | SLA última milla partner |
+| Contador externo | Freelance | **130** | SENIAT / honorarios |
+| Abogado externo | Freelance | **200** | SAFE, contratos, T&C |
+| Asesor regulatorio farmacéutico | Externo | **120** | Solo **Base 118k** / **Growth 135k** |
+
+> Matriz completa rol → skills → JARVIS: [ROLES_SKILLS_ZONIX.md](ROLES_SKILLS_ZONIX.md). Detalle burn: [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.
 
 ## Mercado y oportunidad (validados)
 
@@ -67,7 +83,7 @@ Es la **vertical farmacia** del **stack Zonix Pharma** (~4 años de código prob
 | Runway | **Fase 0 (~90 días)** + **12 meses** post-Day-D ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md), [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §0) |
 | Burn promedio mensual | **~USD 7.559** (tramos **7.462 / 7.798 / 7.431**) |
 | One-shots (Fase 0 / pre-Day-D; CapEx + depósito HQ, etc.) | **~USD 9.808** |
-| Fase 0 (T+0→Day-D T+90) + caja inicio M1 | **~USD 28,1k** outflow Fase 0; **~USD 72.943** caja al Day-D ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §0) |
+| Fase 0 (T+0→Day-D T+90) + caja inicio M1 | **~USD 28.057** outflow Fase 0; **~USD 72.943** caja al Day-D ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §0) |
 | Buffer ya incluido (inflación VE) | 20% |
 | ARPF (revenue por farmacia) | USD **~50**/mes *(placeholder hasta GMV piloto; cobro = híbrido cuota 25/40/55 — [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md))* |
 | CAC | USD **139** |

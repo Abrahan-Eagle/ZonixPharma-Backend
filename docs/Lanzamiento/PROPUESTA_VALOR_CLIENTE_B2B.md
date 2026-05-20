@@ -1,6 +1,6 @@
 # Propuesta de valor — Cliente B2B (Farmacia)
 
-> **Última actualización:** 13 mayo 2026.
+> **Última actualización:** 20 mayo 2026.
 > Documento que captura el pitch comercial al dueño de la farmacia (decisor B2B).
 > Si la farmacia es cadena, el decisor es el gerente comercial / director de operaciones.
 
@@ -269,15 +269,15 @@ Plantillas: abogado corporativo + revisión **farmacéutica asesora** en cláusu
 
 ## 11. Por qué la farmacia debería decir SÍ ahora
 
-1. **Costo de oportunidad:** cada mes sin **Zonix Pharma**, Rappi se lleva el 30% de su GMV digital, o no vende digital.
-2. **Tier introductorio:** primeras 10 farmacias del piloto pueden acordar **USD 0 de cuota fija los primeros 2 meses** (waiver promocional; redacción y excepciones en contrato marco — abogado). El GMV se mide igual (§5.7). Después aplica el modelo híbrido §5. **Proyección de caja inversor:** la tabla central [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1–1.3 modela el caso **sin** ese waiver; la fila **«con waiver primeras 10»** al pie de §1.1 muestra el ajuste **~−USD 222** de ingresos año 1 (proxy de ingresos **meses 1–2** del caso sin waiver: **39 + 183**). Cualquier promesa comercial más amplia obliga **recalcular** runway con FP&A.
+1. **Costo de oportunidad:** cada mes sin **Zonix Pharma**, Rappi se lleva el **25–35%** de su GMV digital (rango típico agregador), o no vende digital.
+2. **Tier introductorio:** primeras 10 farmacias del piloto pueden acordar **USD 0 de cuota fija los primeros 2 meses** (waiver promocional; redacción y excepciones en contrato marco — abogado). El GMV se mide igual (§5.7). Después aplica el modelo híbrido §5. **Proyección de caja inversor:** la tabla central [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1–1.3 modela el caso **sin** ese waiver (planning principal); la fila **«con waiver primeras 10»** al pie de §1.1 muestra **~−USD 453** de ingreso acumulado año 1 vs. sin waiver (**proxy** — recalibrar con FP&A) y caja M12 **~USD 41.756**. Cualquier promesa comercial más amplia obliga **recalcular** runway con FP&A.
 3. **Riesgo acotado en los dos primeros meses:** durante los **2 primeros meses** de relación contractual de la farmacia con **Zonix Pharma**, salida **sin penalidad** según lo acordado en contrato marco (alineado al waiver / piloto comercial cuando aplique — ver §5.7). **A partir del mes 3**, **rigen** las reglas de permanencia, avisos y facturación del **contrato anual** y anexos.
 4. **Equipo presencial:** Sales B2B + Customer Support en Carabobo. No es un call-center remoto.
 
 ## 12. Caso de éxito proyectado (para el inversor, no para la farmacia)
 
 **Ejemplo ilustrativo** (modelo híbrido §5): Farmacia "La Esperanza", Bella Florida, 1 sucursal.
-- **Antes Zonix Pharma:** GMV mensual digital USD 0 (no vendía digital). Rappi cobrando ~30% de las pocas ventas que entraban.
+- **Antes Zonix Pharma:** GMV mensual digital USD 0 (no vendía digital). Rappi cobrando **25–35%** de las pocas ventas que entraban.
 - **Mes 1 con Zonix Pharma:** GMV USD 320 → nivel Basic; ejemplo de cuota aprox.: USD 25 + 0,60% × 320 ≈ **USD 27** (si el mes es parcial desde alta, puede aplicarse solo fija prorrateada §5.6).
 - **Mes 3:** GMV USD 1.200 → Basic.
 - **Mes 6:** GMV USD 3.500 → Pro (40 + 0,80% × 3.500 ≈ **USD 68** ese mes).

@@ -1,6 +1,6 @@
 # Plan de métodos de pago
 
-> **Última actualización:** 10 mayo 2026.
+> **Última actualización:** 20 mayo 2026.
 > Documento que detalla cómo se cobra y se paga en Zonix Pharma. Reusa lógica ya implementada en la **plataforma Zonix Pharma** (mismo código base probado) y documentada en `[../logica-pagos-por-rol.md](../logica-pagos-por-rol.md)` y `[../FLUJO_PAGO_ORDEN.md](../FLUJO_PAGO_ORDEN.md)`.
 > Para marco regulatorio (Sudeban) ver `[../REQUISITOS_OPERAR_VENEZUELA.md](../REQUISITOS_OPERAR_VENEZUELA.md)` sección "Sudeban / pagos".
 

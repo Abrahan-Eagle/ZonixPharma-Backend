@@ -1,6 +1,6 @@
 # Perfil de mercado y zona piloto
 
-> **Última actualización:** 11 mayo 2026.
+> **Última actualización:** 20 mayo 2026.
 > Documento de mercado: TAM / SAM / SOM, demografía Carabobo, benchmarks competitivos.
 > Todas las cifras citadas tienen fuente web pública. Las fuentes están en [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md).
 
