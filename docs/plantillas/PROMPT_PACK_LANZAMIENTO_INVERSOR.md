@@ -19,8 +19,8 @@ Variables a sustituir antes de enviar:
 
 | Variable | Ejemplo |
 |----------|---------|
-| `{{PROJECT_NAME}}` | Corral X |
-| `{{PROJECT_SLUG}}` | corral-x |
+| `{{PROJECT_NAME}}` | Zonix Pharma |
+| `{{PROJECT_SLUG}}` | zonix-pharma |
 | `{{REPO}}` | ruta del backend o monorepo donde vive `docs/` |
 | `{{COUNTRY_PILOT}}` | Venezuela |
 | `{{CITY_PILOT}}` | Valencia |
