@@ -133,7 +133,7 @@ Invocar **`zonix-startup-context`** antes de números. Constitución: **`zonix-e
 
 ## Documentos pre-existentes del repositorio que el pack referencia (no duplica)
 
-- `[../REQUISITOS_OPERAR_VENEZUELA.md](../REQUISITOS_OPERAR_VENEZUELA.md)` — marco regulatorio VE.
+- [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md) — marco farmacéutico VE; [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §10 — Sudeban/pagos piloto.
 - `[../PLAN_REGULATORIO_PHARMA_VE.md](../PLAN_REGULATORIO_PHARMA_VE.md)` — regulación específica del vertical farmacéutico.
 - `[../PLAN_RX_VALIDATION.md](../PLAN_RX_VALIDATION.md)` — flujo de validación de receta médica.
 - `[../BRAND_ZONIX_PHARMA.md](../BRAND_ZONIX_PHARMA.md)` — paleta, tipografía, do/don't.

@@ -1,8 +1,8 @@
 # Plan de métodos de pago
 
 > **Última actualización:** 20 mayo 2026.
-> Documento que detalla cómo se cobra y se paga en Zonix Pharma. Reusa lógica ya implementada en la **plataforma Zonix Pharma** (mismo código base probado) y documentada en `[../logica-pagos-por-rol.md](../logica-pagos-por-rol.md)` y `[../FLUJO_PAGO_ORDEN.md](../FLUJO_PAGO_ORDEN.md)`.
-> Para marco regulatorio (Sudeban) ver `[../REQUISITOS_OPERAR_VENEZUELA.md](../REQUISITOS_OPERAR_VENEZUELA.md)` sección "Sudeban / pagos".
+> Documento que detalla cómo se cobra y se paga en **Zonix Pharma** (pack inversor / piloto). La app reutiliza lógica de marketplace ya implementada en el backend Laravel, documentada en [`../logica-pagos-por-rol.md`](../logica-pagos-por-rol.md) (roles y cuentas) y [`../FLUJO_PAGO_ORDEN.md`](../FLUJO_PAGO_ORDEN.md) (checkout → comprobante → validación).
+> Marco **Sudeban / no intermediación:** §10 de este documento; contexto farmacéutico amplio en [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md) §8. No usar [`../REQUISITOS_OPERAR_VENEZUELA.md`](../REQUISITOS_OPERAR_VENEZUELA.md) (archivo histórico Zonix Eats).
 
 ## 1. Métodos de pago soportados
 
@@ -12,9 +12,9 @@ Zonix Pharma opera con **pagos manuales VE nativos**, sin pasarelas internaciona
 | Método                       | Aplicable                                                       | Tiempo confirmación | Comisión bancaria |
 | ---------------------------- | --------------------------------------------------------------- | ------------------- | ----------------- |
 | **Pago Móvil C2P**           | Pago paciente → farmacia                                        | 1-5 minutos         | 0% (BCV)          |
-| **Transferencia bancaria**   | Pago paciente → farmacia, paciente → repartidor                 | 1-30 minutos        | 0%                |
+| **Transferencia bancaria**   | Pago paciente → farmacia (medicamentos); paciente → `delivery_company` (envío) | 1-30 minutos        | 0%                |
 | **Zelle** (USD desde EE.UU.) | Pago paciente → farmacia (paciente con cuenta US o familiar US) | 5-30 minutos        | 0% (Zelle)        |
-| **Binance Pay USDT**         | Pago paciente → farmacia, repartidor en USDT                    | 1-3 minutos         | 0% (Binance Pay)  |
+| **Binance Pay USDT**         | Pago paciente → farmacia y/o `delivery_company` en USDT         | 1-3 minutos         | 0% (Binance Pay)  |
 | **Efectivo**                 | Pago contra entrega                                             | Inmediato           | 0%                |
 | **Punto de venta físico**    | Pago en farmacia (pickup)                                       | Inmediato           | 1-3%              |
 
@@ -30,26 +30,34 @@ Zonix Pharma opera con **pagos manuales VE nativos**, sin pasarelas internaciona
 
 ### 2.1 Flujo paciente → farmacia (orden OTC)
 
+**Pickup (sin delivery):** un solo pago del **subtotal medicamentos** a la farmacia (misma secuencia que abajo, sin línea delivery ni `delivery_company`).
+
+**Delivery:** el checkout desglosa **(A) subtotal medicamentos → farmacia** y **(B) delivery fee → `delivery_company`** (cuentas precargadas en app — [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) §A.4). **No** se mezcla el envío en un único C2P solo a la farmacia en piloto.
+
 ```mermaid
 sequenceDiagram
     participant P as Paciente
     participant Z as AppZonixPharma
     participant F as Farmacia
-    P->>Z: Crea orden (medicamento + dirección)
-    Z->>P: Muestra opciones de pago
-    P->>Z: Selecciona Pago Movil C2P
-    Z->>P: Muestra C2P de la farmacia
-    P->>F: Realiza Pago Movil C2P (banco a banco)
-    P->>Z: Sube comprobante (capture o referencia)
-    Z->>F: Notifica orden con comprobante
-    F->>Z: Valida comprobante (manual)
-    Z->>P: Push: pago confirmado
-    F->>Z: Marca orden lista para delivery
+    participant DC as DeliveryCompany
+    P->>Z: Crea orden OTC (medicamentos + modo delivery)
+    Z->>P: Checkout: subtotal F + delivery fee DC
+    P->>Z: Elige metodo (PMC2P / transferencia / etc.)
+    Z->>P: Muestra C2P/cuenta farmacia (A) y C2P/cuenta empresa (B)
+    P->>F: Paga (A) subtotal medicamentos
+    P->>DC: Paga (B) delivery fee
+    P->>Z: Sube comprobante(s) A y/o B
+    Z->>F: Notifica comprobante (A)
+    F->>Z: Valida pago medicamentos
+    Z->>DC: Notifica comprobante (B)
+    DC->>Z: Valida pago envio (o validacion delegada segun SLA partner)
+    Z->>P: Push: pago confirmado (ambos rubros OK)
+    F->>Z: Marca orden lista para despacho / asignacion DC
 ```
 
+**Tiempo total:** 5-15 minutos hasta ambos pagos validados (o uno si pickup solo A).
 
-
-**Tiempo total:** 5-15 minutos desde orden hasta pago confirmado.
+**GMV Zonix (cuota plataforma a farmacia):** entra el **subtotal medicamentos** completado en app; el **delivery fee** no forma parte del GMV de farmacia — ver §3.2 y B2B §5.5.
 
 ### 2.2 Flujo paciente → farmacia (orden Rx)
 
@@ -93,59 +101,113 @@ sequenceDiagram
 
 **Cambio de nivel por GMV:** ascenso solo si **dos meses calendario consecutivos** tienen GMV **cada uno** **mayor o igual (≥)** al umbral inferior del nivel destino (sin promedio); notificación al dueño tras cerrar el segundo mes. **Durante M y M+1** la farmacia **sigue pagando la tarifa del nivel vigente antes del cambio**; la **nueva tarifa** aplica en facturación **desde M+2**. Detalle en [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5.4.
 
-**Disputas sobre cierre de GMV:** **3 días hábiles** desde publicación del cierre mensual; alcance según §5.8 del mismo documento.
+**Disputas sobre cierre de GMV:** **3 días hábiles** desde publicación del cierre mensual. Alcance: solo corrección de **errores de plataforma** (orden mal clasificada, doble conteo); no renegociar nivel por desacuerdo comercial — [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5.8.
 
-**Política de impago:**
+**Política de impago** (días **desde la emisión** de la factura del servicio de plataforma, salvo fecha distinta en contrato marco):
 
-- Día 1: factura emitida (fija + variable del mes anterior cerrado).
-- Día 5: recordatorio automático.
-- Día 8: bloqueo soft (no acepta nuevas órdenes pero mantiene catálogo visible).
-- Día 12: bloqueo hard (catálogo oculto).
-- Día 15: cancelación cuenta + lista negra interna.
+- **Día 1:** factura emitida (cuota fija + fee variable del mes anterior cerrado).
+- **Día 3:** recordatorio automático (email + WhatsApp).
+- **Día 4:** bloqueo **soft** (no acepta nuevas órdenes; catálogo sigue visible).
+- **Día 10:** bloqueo **hard** (catálogo oculto).
+- **Día 15:** cancelación de cuenta + lista negra interna.
 
-**Mora y devengo:** la **suspensión por mora no extingue** las tarifas ya devengadas (cuota fija + fee variable de meses cerrados). El estado de cuenta conserva los montos impagos. **Reactivación:** regularizar como mínimo el mes vencido u otro acuerdo por escrito (plan de pagos). Frase tipo para contrato marco: *La suspensión del servicio por mora no extingue las tarifas devengadas por períodos anteriores.*
+**Mora y devengo:** la **suspensión por mora no extingue** las tarifas ya devengadas (cuota fija + fee variable de meses cerrados). El estado de cuenta conserva los montos impagos. Frase tipo para contrato marco: *La suspensión del servicio por mora no extingue las tarifas devengadas por períodos anteriores.*
+
+**Reactivación tras mora o baja de servicio** (acuerdo por escrito con tesorería; quitar lista negra tras pago acordado):
+
+| Antigüedad sin uso de la app | Fórmula de deuda reconocida al reactivar | Contrato |
+| ---------------------------- | ---------------------------------------- | -------- |
+| **≤ 6 meses** sin uso | Ver **Fórmula A** abajo | Mismo contrato marco (addendum de regularización) |
+| **> 6 meses** sin uso | Solo **Σ (% × GMV_m) indexado** (ver actualización por devaluación); sin cuotas fijas de meses sin uso | **Contrato nuevo** (re-alta; T&C y condiciones vigentes al firmar) |
+
+**Fórmula A** (válida si la farmacia lleva **6 meses o menos** sin usar la app):
+
+```text
+Deuda_reconocida = Σ ((%_nivel × GMV_m) × F_m)     mes impago m con GMV cerrado
+                 + Σ (Cuota_fija_nivel × F_m)       cada mes calendario sin uso de la app
+                 + (Cuota_fija_mes_re-alta × F_re-alta)   mes de reactivación (F_re-alta = 1 si pago el mismo día de re-alta)
+```
+
+- **Mes impago con GMV:** mes en que existió factura impaga y el dashboard registró GMV > 0; entra solo el componente **variable** (% del nivel vigente en ese mes — [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5).
+- **Mes sin uso:** mes calendario en que la cuenta estuvo suspendida/cancelada y **no** hubo operación en app; entra **una cuota fija** por mes (nivel vigente al cierre de cada mes o al acordar reactivación — documentar en addendum).
+- **Mes de re-alta:** al encender servicio, cobrar **cuota fija** del mes de reactivación (prorrateada días activos si es mes parcial — §5.6); el **% sobre GMV** del mes de re-alta aplica en la **factura del mes siguiente**, igual que operación normal.
+
+**Actualización por devaluación (componente variable y, si aplica, fijas de meses sin uso):** cada monto en USD devengado en el mes *m* se multiplica por **`F_m = BCV_reactivación / BCV_promedio_m`**, donde **`BCV_reactivación`** es el tipo BCV oficial del día del pago o re-alta y **`BCV_promedio_m`** el promedio BCV del mes *m* (misma fuente que §3.3). El pago en bolívares se calcula con **`BCV_reactivación`**. Si el pago es en USD (Zelle/USDT), se exige el **equivalente USD actualizado** (`monto_USD × F_m` agregado). Válido en **Fórmula A** (≤ 6 meses); en **> 6 meses** aplica solo a **`Σ (% × GMV_m)` indexado** + contrato nuevo.
+
+**Ejemplo (≤ 6 meses sin uso, ilustrativo):** impago **enero** (GMV USD 2.000, Basic 0,60% → USD 12 variable); **feb–abr** sin app (3 × USD 25 fija); reactivación **mayo** con `F_enero = 1,50`, `F_feb = F_mar = F_abr = 1,40`, `F_mayo = 1`:
+
+`Deuda ≈ (12 × 1,50) + (25 × 1,40 + 25 × 1,40 + 25 × 1,40) + (25 × 1) = 18 + 105 + 25 = 148 USD` (+ IVA/retenciones; validar BCV y GMV en dashboard).
+
+**> 6 meses sin uso:** no se suman las **fijas** de meses sin uso; solo **`Σ ((% × GMV_m) × F_m)`** de meses impagos con GMV histórico + firma de **contrato nuevo** y política de impago §2.3 desde cero. Opcional: plan de pagos escrito para el saldo variable indexado.
 
 **Alta en mes parcial:** primer mes desde incorporación puede facturarse solo **parte fija prorrateada** sin % sobre GMV (ver [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5.6).
 
-### 2.4 Flujo Zonix Pharma → repartidor (delivery fee)
+### 2.4 Flujo `delivery_company` (cobro del envío y liquidación interna)
+
+**Alcance:** flujo **del partner logístico** (`delivery_company` + sus `delivery_agent`). **Zonix Pharma no paga al repartidor** ni liquida nómina de campo; solo provee la app (asignación, tracking). La facturación de Zonix a la empresa está en **§2.5**.
+
+**Por orden (paciente → empresa):** complementa §2.1 rubro **(B)** — el paciente paga el **delivery fee** (USD 1,50–3,50) a las cuentas de la **`delivery_company`**; la empresa valida el comprobante en su panel (o delegación acordada en SLA).
+
+**Liquidación interna (empresa → `delivery_agent`):** la **`delivery_company`** acumula los fees cobrados en el período y paga a sus repartidores en ciclo **quincenal o mensual** (política interna del partner; **fuera** del contrato Zonix–agente). Default piloto: **mensual**; partners con alto volumen pueden pactar **quincenal** en addendum.
 
 ```mermaid
 sequenceDiagram
     participant P as Paciente
-    participant F as Farmacia
-    participant Z as ZonixPharma
-    participant R as Repartidor
-    P->>F: Paga orden completa (incluye delivery fee)
-    F->>Z: Confirma recepcion total
-    Z->>F: Calcula split: farmacia + delivery fee
-    F->>R: Transferencia diaria delivery fee acumulado (PMC2P o Binance Pay)
-    F->>Z: Sube comprobante de pago a repartidor
-    Z->>R: Registra pago + fee fijo USD 0,30 por orden (procesamiento; sin % sobre delivery fee)
+    participant Z as AppZonixPharma
+    participant DC as DeliveryCompany
+    participant A as DeliveryAgent
+    P->>Z: Orden con delivery
+    Z->>P: Cuenta de pago de DC (rubro B)
+    P->>DC: Paga delivery fee por orden
+    DC->>Z: Valida comprobante / confirma fee
+    Z->>DC: Asigna orden a agente A
+    Note over DC,A: Fin de periodo quincenal o mensual
+    DC->>A: Liquida sueldos/fees internos (politica DC)
 ```
 
-**Repartidor en app (`delivery_agent`):** liquidación del fee según política de su **empresa** partner; Zonix no paga al agente directo en piloto. **Empresa `delivery_company`:** Zonix retiene **8%** del delivery fee (alineado [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) §A.4). Rol `delivery` autónomo **no** está en producto piloto.
+- Rol `delivery` autónomo **no** está en producto piloto.
+- **`delivery_agent`:** no cobra del paciente en la app; cobra de su **empresa** en el cierre quincenal/mensual ([PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) §A.5–A.7).
 
-**Variante alternativa:** **Zonix Pharma** actúa como agregador y paga directo al repartidor (mes 6+ con asesoría Sudeban). En piloto NO; la farmacia paga al repartidor para evitar caer bajo regulación de "intermediario de pagos" Sudeban.
+**Variante alternativa (no piloto):** paciente paga todo a la farmacia y la farmacia remite el fee a DC — solo con addendum. **Agregador Zonix** (recauda y reparte) requiere due diligence Sudeban (§10).
 
-### 2.5 Flujo Zonix Pharma → empresa de delivery
+### 2.5 Flujo Zonix Pharma ↔ `delivery_company` (cobro plataforma — cierre mensual)
 
-Similar a 2.4, pero **pago mensual** consolidado a la empresa (no al agente individual). **Comisión Zonix Pharma:** **8%** del delivery fee (asignación, tracking, disputas) — [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) §A.4.
+Relación **B2B Zonix ↔ empresa partner** (independiente de la liquidación quincenal/mensual DC → agentes del §2.4).
+
+**Fórmula de ingresos Zonix (mensual, por `delivery_company`):**
+
+```text
+Cobro_mes = (8% × Σ delivery_fee validado en el mes) + (USD 0,30 × N envíos completados en el mes)
+```
+
+- **`Σ delivery_fee`:** suma de rubros **(B)** cobrados al paciente y **validados** en órdenes con delivery **entregadas** (`delivered`) en ese mes calendario (dashboard DC).
+- **`N`:** conteo de esos **mismos envíos** completados (una unidad por orden entregada con fee B reconocido).
+- **No aplica** al GMV farmacia ni al ingreso de la empresa fuera de órdenes Zonix.
+
+**Ejemplo:** 80 envíos en el mes, fee promedio USD 2,50 → fee acumulado USD 200 →  
+`Cobro Zonix = (0,08 × 200) + (0,30 × 80) = 16 + 24 = USD 40` (+ IVA/retenciones según SENIAT).
+
+- **Cadencia:** cierre y factura **mensual** (días 1–5 del mes siguiente, salvo contrato marco).
+- **Conciliación:** empresa aporta extracto; Zonix cruza órdenes `delivered`, comprobantes B y conteo **N**.
+- **Disputas delivery:** Customer Support + SLA partner ([PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) §A).
 
 ## 3. Conciliación contable
 
-### 3.1 Para Zonix Pharma (revenue farmacias: cuota fija + fee sobre GMV)
+### 3.1 Para Zonix Pharma (revenue farmacias + partners delivery)
 
-- Los totales agregados dependen del mix de farmacias por banda GMV; las proyecciones del pack deben actualizarse cuando haya datos piloto (antes referían solo membresía fija).
+- **Farmacias:** cuota fija + % sobre GMV medicamentos (§2.3).
+- **`delivery_company`:** **`Cobro_mes = 8% × Σ fee B + USD 0,30 × N envíos`** (§2.5).
 - 60-70% por Pago Móvil C2P.
 - 20-25% por transferencia.
 - 10-15% por Zelle / Binance Pay USDT (cadenas con flujo USD).
 - Conciliación manual los días 5 y 15 de cada mes con contador externo.
 
-### 3.2 Para la farmacia (orden de venta)
+### 3.2 Para la farmacia y la empresa de delivery (orden de venta)
 
-- Cada orden tiene: monto medicamento + delivery fee.
-- Farmacia recibe el monto del medicamento al instante (validación comprobante).
-- Farmacia recibe el delivery fee y lo paga al repartidor (manual diario).
+- Cada orden **con delivery** tiene dos rubros: **(A) subtotal medicamentos** y **(B) delivery fee**.
+- **(A)** lo paga el paciente a la **farmacia**; la farmacia valida comprobante A; entra al **GMV** para cuota Zonix (B2B §5.5).
+- **(B)** lo paga el paciente a la **`delivery_company`** (§2.1 / §2.4); **no** pasa por caja de la farmacia en piloto.
+- La farmacia **no** liquida al `delivery_agent` en el modelo estándar; la **empresa** paga a sus agentes según política interna.
 
 ### 3.3 Política FX / Treasury (USD ↔ Bs)
 
@@ -158,24 +220,28 @@ Similar a 2.4, pero **pago mensual** consolidado a la empresa (no al agente indi
 
 - **Retención ISLR / honorarios:** pagos a profesionales independientes en VE pueden estar sujetos a **retención** (orden típico **3-5%** según naturaleza y RIF — **validar** con contador en cada contrato).
 - **Tipo de cambio en registros:** usar criterio único declarado (ej. **BCV día del pago** o **promedio mensual BCV**) para USD/Bs; **no mezclar** métodos en el mismo ejercicio sin asiento de ajuste.
-- **Plantillas email mora** (coherentes con §2.3):
+- **Plantillas email mora** (coherentes con §2.3 — días desde emisión de factura):
 
-**Nivel 1 — día ~5 (recordatorio)**  
+**Nivel 1 — día 3 (recordatorio)**  
 *Asunto:* Zonix Pharma — Factura [mes] pendiente  
-*Cuerpo:* Estimados, les recordamos que la factura del servicio de plataforma [mes] vence. Total USD ___ / Bs ___ según factura digital. Cualquier duda respondan este hilo.
+*Cuerpo:* Estimados, les recordamos que la factura del servicio de plataforma [mes] está pendiente. Total USD ___ / Bs ___ según factura digital. Cualquier duda respondan este hilo.
 
-**Nivel 2 — día ~8 (aviso suspensión)**  
+**Nivel 2 — día 4 (aviso bloqueo soft)**  
 *Asunto:* Suspendemos nuevas órdenes por mora — acción requerida  
-*Cuerpo:* No registramos pago de la factura [mes]. A partir de mañana activamos **bloqueo soft** (sin nuevas órdenes). El estado de cuenta y tarifas devengadas siguen vigentes (ver política contrato).
+*Cuerpo:* No registramos pago de la factura [mes]. Activamos **bloqueo soft** (sin nuevas órdenes; catálogo visible). El estado de cuenta y tarifas devengadas siguen vigentes (ver política contrato).
 
-**Nivel 3 — día ~10+ (bloqueo hard)**  
+**Nivel 3 — día 10 (bloqueo hard)**  
 *Asunto:* Catálogo suspendido — regularización  
 *Cuerpo:* Por mora continuada activamos **bloqueo hard** (catálogo no visible). Para reactivar: pago mínimo del período vencido o plan escrito con tesorería **Zonix Pharma**.
 
-### 3.5 Para el repartidor
+**Nivel 4 — día 15 (cancelación)**  
+*Asunto:* Cuenta cancelada por mora  
+*Cuerpo:* Sin regularización, la cuenta queda **cancelada** y en lista negra interna. Para reincorporación: contactar tesorería **Zonix Pharma** con propuesta por escrito (Fórmula A si ≤ 6 meses sin uso; si > 6 meses, contrato nuevo y solo % GMV de meses impagos — §2.3 reactivación).
 
-- Recibe pago diario o semanal (según preferencia).
-- Fundamentación: WhatsApp con foto del comprobante.
+### 3.5 Para `delivery_company` y `delivery_agent`
+
+- **`delivery_company`:** recibe el **delivery fee (B)** del paciente **por orden**; acumula en el período; paga a sus **`delivery_agent`** en ciclo **quincenal o mensual** (§2.4). Paga a **Zonix Pharma** **`8% × Σ fee B + USD 0,30 × N envíos`** en cierre **mensual** (§2.5).
+- **`delivery_agent`:** no cobra del paciente en la app; la **empresa** le liquida en su calendario interno (quincenal/mensual). Evidencia operativa: QR, fotos entrega en app.
 
 ## 4. Factura digital SENIAT
 
@@ -203,7 +269,7 @@ Similar a 2.4, pero **pago mensual** consolidado a la empresa (no al agente indi
 | -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | Paciente sube comprobante falso                    | Validación visual por la farmacia + Customer Support de **Zonix Pharma** puede mediar. Penalización: cuenta suspendida en 24h.                       |
 | Farmacia no paga cuota **Zonix Pharma**                       | Política de bloqueo escalonado (§2.3); la deuda devengada subsiste hasta regularización o acuerdo escrito.                                |
-| Repartidor no recibe pago de farmacia              | Customer Support media. Penalización a la farmacia: bloqueo de delivery fee adicional hasta resolver.                                     |
+| `delivery_company` no valida fee o agente sin pago interno | Customer Support + SLA partner. Penalización operativa al partner (asignaciones pausadas). La farmacia no es deudora del fee B en piloto. |
 | Devaluación bolívar entre orden y pago             | Política: precio congelado por 30 minutos desde generación de orden. Si paciente excede, debe re-cotizar.                                 |
 | Sudeban regula a **Zonix Pharma** como intermediario de pagos | Piloto opera sin **Zonix Pharma** recibir dinero del paciente directamente. Si requiere, **Zonix Pharma** obtiene licencia Sudeban (12-18 meses, post-Serie A). |
 | Bloqueo cuentas Zelle por origen VE                | Política: no usar Zelle como único método; tener PMC2P + Binance Pay como respaldo.                                                       |
@@ -226,7 +292,7 @@ Detalle: `[../FLUJO_PAGO_ORDEN.md](../FLUJO_PAGO_ORDEN.md)` y `[../logica-pagos-
 ### 7.1 Quién reembolsa
 
 - **Si el problema es de la farmacia** (medicamento equivocado, vencido, mal estado): la farmacia reembolsa al paciente directamente. **Zonix Pharma** media.
-- **Si el problema es del repartidor** (pérdida, robo durante la entrega): el repartidor pierde el delivery fee. La farmacia reembolsa al paciente y no paga al repartidor.
+- **Si el problema es del repartidor / partner** (pérdida, robo en ruta): según SLA con `delivery_company`; reembolso del **delivery fee (B)** lo gestiona la **empresa** (o mediación Zonix). La farmacia reembolsa solo el **subtotal medicamentos (A)** si aplica.
 - **Si el problema es de Zonix Pharma** (bug en la app, validación errónea): **Zonix Pharma** reembolsa al paciente (cargo a cuenta operativa, raro).
 
 ### 7.2 Tiempo de reembolso
@@ -254,13 +320,37 @@ Detalle: `[../FLUJO_PAGO_ORDEN.md](../FLUJO_PAGO_ORDEN.md)` y `[../logica-pagos-
 | Tasa de comprobante falso detectado        | < 0,5%     | < 0,3%      |
 
 
-## 9. Documentos hermanos
+## 10. Marco Sudeban y rol de Zonix Pharma
+
+**Zonix Pharma es un marketplace de conexión**, no un proveedor de servicios de pago (PSP) ni una billetera. En el **piloto (mes 0–6)** el dinero de la orden **no pasa por cuentas de Zonix**: el paciente paga **(A) directo a la farmacia** y **(B) directo a `delivery_company`** (§2.1 / §2.4). Zonix cobra a la farmacia **cuota + % GMV** y a la empresa **`8% × Σ fee B + USD 0,30 × N envíos`** al cierre mensual (§2.5).
+
+**Por qué no se requiere licencia Sudeban en piloto** (validar con abogado VE antes de go-live):
+
+| Condición | Cumplimiento en piloto |
+| --------- | ---------------------- |
+| No crear billeteras ni saldos virtuales para terceros | Zonix no mantiene wallet de paciente ni de farmacia |
+| No retener fondos del comprador | El comprobante se valida en la farmacia; Zonix no custodia el pago de la orden |
+| No procesar el pago como intermediario | Pago Móvil / transferencia / Zelle / Binance van **paciente → farmacia** |
+| No centralizar la liquidación del medicamento ni del envío | Farmacia confirma (A); `delivery_company` confirma (B); sin wallet Zonix |
+
+**Triggers para revisión formal (mes 6+)** — activar con abogado + especialista pagos VE antes de cambiar producto:
+
+- Zonix **recibe** pagos del paciente y **reparte** a farmacia y/o delivery (modelo agregador — §2.4 variante alternativa).
+- Volumen o estructura que Sudeban clasifique como **intermediación** o **emisión** de medios de pago.
+- Integración de **gateway cripto** donde Zonix sea contraparte (no solo QR de la farmacia).
+
+**Si aplica licencia:** horizonte típico **12–18 meses** y costo de compliance post-Serie A (tabla de riesgos §5). Hasta entonces: mantener flujo documentado en §2.1–2.5 y [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §4.6.
+
+**Referencia histórica (solo Eats):** [`../REQUISITOS_OPERAR_VENEZUELA.md`](../REQUISITOS_OPERAR_VENEZUELA.md) § Sudeban — mismo principio de no intermediación, redactado para comida rápida; **no sustituye** este §10 para Pharma.
+
+## 11. Documentos hermanos
 
 - [PROPUESTA_VALOR_USUARIO_FINAL.md](PROPUESTA_VALOR_USUARIO_FINAL.md): cómo el paciente paga.
 - [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md): cómo la farmacia recibe.
-- [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md): cómo el repartidor cobra.
+- [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md): partner logístico; fórmula Zonix §2.5 (`8% + USD 0,30/envío`).
 - [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md): validación Rx antes del pago.
-- `[../FLUJO_PAGO_ORDEN.md](../FLUJO_PAGO_ORDEN.md)`: implementación técnica detallada.
-- `[../logica-pagos-por-rol.md](../logica-pagos-por-rol.md)`: roles en el flujo de pagos.
-- `[../REQUISITOS_OPERAR_VENEZUELA.md](../REQUISITOS_OPERAR_VENEZUELA.md)`: marco regulatorio Sudeban.
+- [`../FLUJO_PAGO_ORDEN.md`](../FLUJO_PAGO_ORDEN.md): implementación técnica (checkout y comprobante).
+- [`../logica-pagos-por-rol.md`](../logica-pagos-por-rol.md): roles y métodos cargados por entidad.
+- [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md): MPPS, INHRR, datos de salud, §8 no intermediación de pago.
+- [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §4.6: KYC/AML y triggers agregador.
 

@@ -96,7 +96,7 @@
 |---|---|
 | ¿Por qué híbrido (fija + % GMV) y no solo comisión tipo Rappi? | "Take-rate total muy inferior al 25-35% GMV de agregadores; la fija da piso y el % alinea incentivos; políticas de nivel en PROPUESTA B2B §5." |
 | ¿Cuánto pagas a las farmacias? | "Nada. **Zonix Pharma** es B2B SaaS + marketplace; la farmacia paga **servicio de plataforma** (fija + % GMV) y retiene el neto operativo de sus ventas según su operación." |
-| ¿Cuánto pagas al repartidor? | "El **delivery fee** (USD 1,50-3,50) lo cobra la **empresa partner**; Zonix retiene **8 %** a la empresa, no al agente. El repartidor en app es **`delivery_agent`**, cuenta creada por la empresa." |
+| ¿Cuánto pagas al repartidor? | "El **delivery fee** lo cobra la **empresa partner** al paciente; Zonix factura a la empresa **`8%` del fee mensual + USD 0,30 por envío** (no al agente). El repartidor es **`delivery_agent`**, cuenta de la empresa." |
 | ¿Y si las farmacias no quieren pagar? | "Plan B: ofertas iniciales con primeros 2 meses gratis. Plan C: si más del 50% rechaza el paquete vigente, evaluamos **ajuste comercial** de umbrales GMV o del % variable (el modelo ya es híbrido fija + % — ver PROPUESTA B2B §5)." |
 | ¿Qué define Basic / Pro / Enterprise? | "**Solo el GMV mensual agregado del RIF** en la app (bandas §5). **No** hay topes por órdenes, sucursales ni SKU para pertenecer a un nivel." |
 | ¿Hay contrato anual con la farmacia? | "**Sí:** marco B2B **anual**; la **cuota Zonix** se devenga **mensual** según GMV y tier. Salida sin penalidad acordada en los **2 primeros meses**; desde el **mes 3** rigen permanencia y avisos del contrato (PROPUESTA B2B §11)." |

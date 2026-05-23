@@ -27,7 +27,7 @@
 
 - **Cliente B2B nuevo:** canal de órdenes recurrentes en zona piloto una vez firmado el **contrato marco / concesión** y completado el onboarding del partner (calendario en [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §3.2).
 - **Coordinación automática:** la app asigna a sus repartidores via API.
-- **Pagos consolidados mensuales** a la empresa (no a cada repartidor individualmente; cierre y liquidación del delivery fee acumulado en el mes).
+- **Pagos consolidados** por la empresa: el paciente paga el fee **por orden** a DC; la empresa liquida a sus agentes **quincenal o mensual**; Zonix factura **mensual** `8% × Σ fee + USD 0,30 × N envíos` (§2.5 PLAN_METODOS_PAGO).
 - **Métricas de desempeño:** dashboard con **NPS**, tiempo promedio, órdenes completadas.
 - **Sin exclusividad:** la empresa sigue trabajando para otros.
 
@@ -36,16 +36,16 @@
 ### A.4 Pricing a la empresa
 
 - **Membresía empresa:** USD 0 (gratis durante el piloto; después USD 50/mes para empresas con > 10 agentes activos) **— post-piloto, no incluido en proyecciones financieras año 1** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)).
-- **Delivery fee:** USD 1,50 - USD 3,50 por orden (cobrada al paciente, transferida a la empresa).
-- **Comisión Zonix Pharma:** 8% del delivery fee (cubrir asignación, tracking, dispute resolution).
-- **Pago mensual** a la empresa vía transferencia bancaria (alineado al cierre de facturación del periodo).
+- **Delivery fee:** USD 1,50 - USD 3,50 por orden (cobrado al paciente **directo a la empresa** — rubro B, [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §2.1 / §2.4).
+- **Liquidación interna:** la empresa paga a sus **`delivery_agent`** en ciclo **quincenal o mensual** (default piloto: **mensual**).
+- **Cobro Zonix Pharma (mensual):** **`8% × Σ delivery_fee del mes + USD 0,30 × N envíos completados`** — factura a la **`delivery_company`** (§2.5 [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md)). Zonix **no** liquida sueldos de repartidores.
 
 ### A.5 Quién es el repartidor de campo (`delivery_agent`)
 
 - Persona con moto o carro que **trabaja para la empresa partner** (no se registra sola en la app).
 - Usa el mismo bundle **Zonix Pharma** (`com.zonix.pharma`) con rol **`delivery_agent`** y pantallas de reparto (`lib/features/screens/delivery/*`).
 - Recibe órdenes **asignadas por su empresa** (o auto-asignación según reglas del partner en dashboard `delivery_company`).
-- Su sueldo o fee por entrega lo define y paga **la empresa**, no Zonix Pharma directamente al agente en el modelo piloto (Zonix liquida el **delivery fee** a la **empresa** — ver [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §2.4).
+- Su sueldo o fee por entrega lo define y paga **la empresa** en cierre **quincenal o mensual**, no Zonix Pharma ni el paciente directo al agente ([PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §2.4).
 
 ### A.6 Flaquezas que tiene hoy (repartidor de campo)
 
@@ -56,7 +56,7 @@
 
 ### A.7 Lo que Zonix Pharma le ofrece (repartidor `delivery_agent`)
 
-**Idea en una frase:** la app le da al repartidor del partner las mismas herramientas que esperaría de una plataforma moderna, mientras **Zonix cobra a la farmacia** (cuota + % GMV) y **a la empresa de delivery** (comisión sobre delivery fee — §A.4), no un modelo “app se queda con el 20 % de tu envío” tipo Rappi sobre el repartidor individual.
+**Idea en una frase:** la app le da al repartidor del partner las mismas herramientas que esperaría de una plataforma moderna, mientras **Zonix cobra a la farmacia** (cuota + % GMV) y **a la empresa de delivery** (`8%` del fee acumulado **+ USD 0,30 por envío** al mes — §A.4), no un modelo “app se queda con el 20 % de tu envío” tipo Rappi sobre el repartidor individual.
 
 | Beneficio | Qué significa en la práctica |
 |---|---|
@@ -71,7 +71,7 @@
 | Concepto | Quién paga | Quién cobra |
 |---|---|---|
 | Medicamentos (GMV) | Paciente | Farmacia → Zonix factura cuota plataforma ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5) |
-| Delivery fee | Paciente | **Empresa** `delivery_company` (Zonix retiene **8 %** del delivery fee a la empresa — §A.4) |
+| Delivery fee | Paciente | **Empresa** `delivery_company` (Zonix cobra **`8% × Σ fee + USD 0,30/envío`** al cierre mensual — §A.4 / PLAN §2.5) |
 | Sueldo / fee al repartidor | **Empresa** partner | **`delivery_agent`** (política interna del partner; fuera del contrato Zonix–agente) |
 
 ### A.8 Targets año 1
@@ -176,4 +176,4 @@ Detalle del flujo completo en [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERA
 - [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md): pitch a la farmacia.
 - [PROPUESTA_VALOR_USUARIO_FINAL.md](PROPUESTA_VALOR_USUARIO_FINAL.md): pitch al paciente.
 - [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md): cómo opera la validación Rx en producción.
-- [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md): cómo se paga al repartidor y a la empresa de delivery.
+- [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md): cobro rubro B a `delivery_company`; fórmula Zonix `8% + USD 0,30/envío` §2.5.

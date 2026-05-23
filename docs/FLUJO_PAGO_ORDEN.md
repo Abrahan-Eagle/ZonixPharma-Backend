@@ -1,5 +1,7 @@
 # Flujo de pago y orden (paso a paso)
 
+> **Zonix Pharma** — términos genéricos *comprador* / *comercio* = paciente / farmacia en producto. Plan de métodos y regulación: [Lanzamiento/PLAN_METODOS_PAGO.md](Lanzamiento/PLAN_METODOS_PAGO.md); roles: [logica-pagos-por-rol.md](logica-pagos-por-rol.md).
+
 Flujo acordado para comprador y comercio: desde el carrito hasta que el comercio comienza a elaborar el pedido.
 
 ---
@@ -92,4 +94,4 @@ Flujo acordado para comprador y comercio: desde el carrito hasta que el comercio
 
 ---
 
-**Última actualización:** Marzo 2026
+**Última actualización:** Mayo 2026 (enlace pack Pharma)

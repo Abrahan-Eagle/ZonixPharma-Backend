@@ -2,7 +2,7 @@
 
 > **Última actualización:** 20 mayo 2026.
 > Documento que captura el vehículo legal, instrumento de inversión y cap table de Zonix Pharma.
-> Para detalle del marco regulatorio venezolano más amplio, ver [`../REQUISITOS_OPERAR_VENEZUELA.md`](../REQUISITOS_OPERAR_VENEZUELA.md).
+> Marco regulatorio **Pharma:** [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md). Pagos/Sudeban: [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §10. Archivo Eats (solo referencia): [`../REQUISITOS_OPERAR_VENEZUELA.md`](../REQUISITOS_OPERAR_VENEZUELA.md).
 
 **Roles operativos vs gobernanza:** el pack usa **Co-CEO / CEO operativo** junto al **CEO+CTO (founder)** como **rótulos de trabajo** (comercial / operación vs producto-tech). El **representante legal**, **junta**, **relación laboral** y el **SAFE** siguen lo que acuerden **abogado + partes**; no se asume que “dos CEO” dupliquen obligaciones legales sin documentarlo.
 
@@ -169,7 +169,7 @@ El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está 
 - IVA mensual (16%).
 - ISLR anual.
 - Factura digital habilitada desde mes 2 del piloto.
-- Detalle: [`../REQUISITOS_OPERAR_VENEZUELA.md`](../REQUISITOS_OPERAR_VENEZUELA.md) sección SENIAT.
+- Detalle facturación: [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §4; marco VE: [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md) §6.
 
 ### 4.2 Obligaciones laborales
 
@@ -321,5 +321,6 @@ Al cierre de la inversión, el inversor recibe:
 - [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md): resumen de instrumento.
 - [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md): cómo se gasta el SAFE.
 - [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md): T+30 / T+60 / T+90.
-- [`../REQUISITOS_OPERAR_VENEZUELA.md`](../REQUISITOS_OPERAR_VENEZUELA.md): marco regulatorio completo.
+- [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md): marco farmacéutico VE.
+- [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §10: Sudeban y no intermediación en piloto.
 - [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md): regulación farmacéutica VE.

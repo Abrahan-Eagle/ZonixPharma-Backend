@@ -120,12 +120,34 @@ Revisión técnica no legal: estado del código y configuración frente a los re
 - [ ] Procedimiento de incidentes de datos (notificación 72h).
 - [ ] Capacitación al equipo de soporte sobre datos sensibles.
 
-## 8. Lo que NO somos
+## 8. Pagos y Sudeban (Zonix Pharma)
+
+Zonix Pharma **no es** proveedor de servicios de pago ni billetera. En piloto:
+
+- El paciente paga a la **farmacia** con métodos VE documentados en
+  [Lanzamiento/PLAN_METODOS_PAGO.md](Lanzamiento/PLAN_METODOS_PAGO.md).
+- Zonix factura a la farmacia el **servicio de plataforma** (membresía +
+  fee sobre GMV), no el medicamento al paciente.
+- La farmacia liquida el **delivery fee** al repartidor o empresa partner
+  (Zonix no centraliza ese flujo en piloto).
+
+**Licencia Sudeban:** en principio **no aplica** si se cumplen las
+condiciones de no intermediación (sin wallet, sin retención del pago de
+la orden, sin agregación del dinero del paciente). Detalle operativo,
+triggers mes 6+ y tabla de cumplimiento:
+[Lanzamiento/PLAN_METODOS_PAGO.md](Lanzamiento/PLAN_METODOS_PAGO.md) §10.
+Marco legal/contratos: [Lanzamiento/ESTRUCTURA_LEGAL_Y_EQUITY.md](Lanzamiento/ESTRUCTURA_LEGAL_Y_EQUITY.md) §4.6.
+
+> Archivo histórico comida (solo referencia del mismo principio):
+> [REQUISITOS_OPERAR_VENEZUELA.md](REQUISITOS_OPERAR_VENEZUELA.md) — no usar
+> para due diligence Pharma.
+
+## 9. Lo que NO somos
 
 - NO somos farmacia: no almacenamos ni vendemos medicamentos.
 - NO somos farmacéuticos: no asesoramos sobre indicación, dosis o
   interacciones; eso lo hace el médico tratante y, en última instancia,
   el farmacéutico colegiado de la farmacia despachadora.
-- NO somos intermediarios de pago: las transacciones se realizan entre
-  paciente y farmacia (modelo Yummy/Sudeban).
+- NO somos intermediarios de pago en piloto: ver §8 y
+  [PLAN_METODOS_PAGO.md](Lanzamiento/PLAN_METODOS_PAGO.md) §10.
 - NO sustituimos consulta médica.

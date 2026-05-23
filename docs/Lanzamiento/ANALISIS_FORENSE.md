@@ -148,7 +148,7 @@
 
 ### 5.3 Inconsistencias detectadas
 
-- **Comisión Zonix sobre delivery fee:** **8 %** a **`delivery_company`** ([PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) §A.4). Sin rol `delivery` autónomo en app piloto — coherente con concesión.
+- **Ingreso Zonix ↔ `delivery_company`:** **`8% × Σ delivery_fee/mes + USD 0,30 × N envíos`** ([PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §2.5). Sin rol `delivery` autónomo en app piloto — coherente con concesión.
 
 ### 5.4 Sugerencias del operador
 
@@ -169,7 +169,7 @@
 - **Plan honesto:** declara explícitamente qué NO se ofrece (no teleconsulta, no seguros médicos, no veterinarios).
 - **Plan de contingencia documentado:** ante shocks macro (devaluación) y operativos (adopción baja, churn alto).
 - **Tres escenarios:** Lean / Base / Growth dan flexibilidad de ticket.
-- **Información detallada sobre regulación VE:** [`../REQUISITOS_OPERAR_VENEZUELA.md`](../REQUISITOS_OPERAR_VENEZUELA.md), [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md). Profundo.
+- **Información detallada sobre regulación VE (Pharma):** [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md), [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §10. Archivo Eats no usar en due diligence Pharma.
 
 ### 6.2 Hallazgos críticos
 

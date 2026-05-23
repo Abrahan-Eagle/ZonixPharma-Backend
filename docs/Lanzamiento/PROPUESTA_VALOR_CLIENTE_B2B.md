@@ -132,7 +132,7 @@ Con **USD 5.000** de GMV **completado en la app** en un **mes estable** y nivel 
 
 ## 5. Pricing detallado por tier (modelo híbrido)
 
-**Fórmula mensual:** `Cuota = Cuota_fija_nivel + (%_nivel × GMV del mes calendario)`.
+**Fórmula mensual:** `Cuota = Cuota_fija_nivel + (%_nivel × GMV del mes calendario)`. El **GMV** es solo **subtotal medicamentos** (§5.5); el **delivery fee** no entra en esta fórmula.
 
 **Asignación del nivel por banda de GMV mensual (USD, todas las sucursales del RIF sumadas):**
 
@@ -169,9 +169,11 @@ Las reglas siguientes aplican al **GMV agregado del RIF** (suma de sucursales en
 
 ### 5.5 Definición operativa de GMV (facturación y nivelación)
 
-- **Base:** suma del **total cobrado al paciente por transacción** en órdenes **completadas** en ese mes calendario. Incluye el **delivery fee** cuando forma parte del total del pedido en la app.
-- **Propinas** al repartidor por fuera de la app **no** entran en el GMV **Zonix Pharma**. **Créditos de tienda** no contemplados en el modelo base.
-- **Sin ajustes retroactivos** para fines de devengo **Zonix Pharma**: el reconocimiento del GMV es por transacción completada en el mes; devoluciones discrecionales de la farmacia al paciente son **ajenos al cálculo de fee** salvo error demostrable de plataforma (ver §5.7).
+- **Base:** suma del **subtotal medicamentos (rubro A)** cobrado al paciente en órdenes **completadas** en ese mes calendario (misma cifra que valida la farmacia en checkout — [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §2.1 / §3.2).
+- **Excluido del GMV farmacia:** el **delivery fee (rubro B)** pagado por el paciente a la **`delivery_company`**. Zonix factura a la empresa **`8% × Σ fee B + USD 0,30 × N envíos/mes`** ([PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §2.5) — **independiente** de la cuota farmacia.
+- **Pickup (sin delivery):** todo el total de la orden es GMV (no hay rubro B).
+- **Propinas** al repartidor por fuera de la app **no** entran en el GMV. **Créditos de tienda** no contemplados en el modelo base.
+- **Sin ajustes retroactivos** para fines de devengo **Zonix Pharma**: el reconocimiento del GMV es por transacción completada en el mes; devoluciones discrecionales de la farmacia al paciente sobre **medicamentos (A)** son **ajenas al cálculo de fee** salvo error demostrable de plataforma (ver §5.7).
 
 ### 5.6 Alta nueva vs cambio de nivel (primer mes parcial)
 
@@ -235,7 +237,7 @@ Detalle de facturación SENIAT e impago en [PLAN_METODOS_PAGO.md](PLAN_METODOS_P
 | "Ya estoy en Rappi, no necesito más." | "Rappi te cobra USD X.XXX/mes en comisión sobre GMV. **Zonix Pharma** usa cuota fija + un % muy bajo sobre tu GMV en la app (§5); en volumen típico sueles pagar órden de magnitud menos. Puedes mantener Rappi mientras pruebas con nosotros." |
 | "Mi farmacéutico no quiere validar recetas en una app." | "El backend está construido para que él vea solo las recetas pendientes. Capacitación de 30 min. Si tras los **2 primeros meses** (ventana sin penalidad acordada en contrato) no encaja el flujo, las salidas se rigen por el **contrato marco anual** y anexos." |
 | "¿Y si la app cae?" | "Backend **Laravel** en **VPS Nameshared** + **Pusher** + FCM. SLA del proveedor según contrato del hosting. Plan B: **pickup en sucursal** si falla la entrega digital." |
-| "¿Cómo se cobra el delivery?" | "El paciente paga al pedir; nosotros recibimos el comprobante; tú recibes el dinero menos delivery fee del repartidor. Trazabilidad completa." |
+| "¿Cómo se cobra el delivery?" | "El paciente paga el **envío aparte** a la **empresa de delivery**. Tú cobras solo medicamentos (GMV §5). La empresa paga a Zonix **`8%` del fee del mes + USD 0,30 por cada envío** — [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §2.5." |
 | "¿Y si el paciente reclama un medicamento mal entregado?" | "Hay módulo de quejas y resolución. Mediación de Customer Support de **Zonix Pharma** en 24h. La farmacia decide si reembolsa." |
 | "¿Cuánto tarda el onboarding?" | "30 min catálogo + 1h capacitación + 1 día de prueba interna. Total 2 días desde que firmas." |
 | "¿Y si no hay órdenes los primeros meses?" | "Marketing primero a tu **zona caminable** desde tu sucursal y al **polo del piloto** (Bella Florida o vía Tocuyito / El Socorro). Sales B2B garantiza al menos 5-10 órdenes/semana en mes 1, escalando." |

@@ -159,4 +159,4 @@ Detalle de las 3 sensibilidades en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FIN
 - Detalle financiero completo: [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md).
 - Análisis multi-perspectiva del pack: [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md).
 - Identidad de marca para diseño de assets externos: [`../BRAND_ZONIX_PHARMA.md`](../BRAND_ZONIX_PHARMA.md).
-- Marco regulatorio VE para due diligence: [`../REQUISITOS_OPERAR_VENEZUELA.md`](../REQUISITOS_OPERAR_VENEZUELA.md), [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md).
+- Marco regulatorio VE (Pharma): [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md), pagos/Sudeban [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §10.

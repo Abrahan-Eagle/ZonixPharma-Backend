@@ -144,7 +144,9 @@ La regulacion de Ipostel para delivery (Gaceta Oficial 42.813, feb 2024) fue **D
 
 ### Sudeban - NO aplica si no eres intermediario de pagos
 
-Ver `docs/PLAN_METODOS_PAGO_VENEZUELA.md`. Zonix Eats NO necesita licencia Sudeban siempre que:
+**Zonix Pharma (producto actual):** [Lanzamiento/PLAN_METODOS_PAGO.md](Lanzamiento/PLAN_METODOS_PAGO.md) §10 y [PLAN_REGULATORIO_PHARMA_VE.md](PLAN_REGULATORIO_PHARMA_VE.md) §8.
+
+**Zonix Eats (histórico):** [\_archive_eats/Lanzamiento_Eats/PLAN_METODOS_PAGO_VENEZUELA.md](_archive_eats/Lanzamiento_Eats/PLAN_METODOS_PAGO_VENEZUELA.md). Eats NO necesita licencia Sudeban siempre que:
 - No cree billeteras/wallets
 - No retenga dinero del comprador
 - No procese pagos como intermediario
