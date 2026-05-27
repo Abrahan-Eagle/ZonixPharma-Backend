@@ -1,8 +1,10 @@
 # Volcado de respuestas del cuestionario + datos pendientes del founder
 
-> **Última actualización:** 20 mayo 2026.
+> **Última actualización:** 27 mayo 2026.
 > Plantilla para el founder. Llenar a medida que se entreviste al equipo y se cierren contrataciones.
 > Cada celda con `[PENDIENTE]` debe llenarse antes de la primera reunión con un inversor.
+
+**Instrucciones (solo humano):** la IA **no** debe inventar GitHub, referencias, % dedicación, fechas de demo ni resultados de tests. Usar [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) (P0–P4) como checklist. Tras ronda Prompt C (mayo 2026), mejoras de redacción del pack están en [MEJORAS_PROMPT_C_RONDA_2026-05.md](MEJORAS_PROMPT_C_RONDA_2026-05.md).
 
 ## 1. Datos del founder
 
@@ -27,7 +29,7 @@
 
 ### 1.1 Párrafo «por qué soy el founder correcto» (CHECKLIST sección 3)
 
-Ingeniero en Informática (IUTVAL, 2013–2018) con **más de 8 años** construyendo productos web y móviles end-to-end. He fundado y desarrollado **Zonix Pharma** y la línea previa de **delivery B2C** sobre el mismo núcleo (Laravel + Flutter), **Corral X** (marketplace Laravel 10 + Flutter), **Zonix Imports** y **Aiblockweb**, con foco en arquitectura escalable, **TDD**, **CI/CD** y entrega de MVP a producción. Lideré equipos (p. ej. Mekautos, 5 devs) y combino producto con docencia en **CETIAC**. **Zonix Pharma** no es un experimento desde cero: es la **verticalización a farmacia** del stack y del aprendizaje operativo ya acumulado, con **backend ya probado** (suite de tests del repo) y regulación VE documentada en el mismo repositorio.
+Ingeniero en Informática (IUTVAL, 2013–2018) con **más de 8 años** construyendo productos web y móviles end-to-end. He fundado y desarrollado **Zonix Pharma** y la línea previa de **delivery B2C** sobre el mismo núcleo (Laravel + Flutter), **Corral X** (marketplace Laravel 10 + Flutter), **Zonix Imports** y **Aiblockweb**, con foco en arquitectura escalable, **TDD**, **CI/CD** y entrega de MVP a producción. Lideré equipos (p. ej. Mekautos, 5 devs) y combino producto con docencia en **CETIAC**. **Zonix Pharma** no es un experimento desde cero: es la **verticalización a farmacia** del stack y del aprendizaje operativo ya acumulado, con **suite de tests del repo** (re-ejecutar y citar commit en §1.2 — [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) P0-06) y regulación VE documentada en el mismo repositorio.
 
 ### 1.2 Verificación técnica backend (due diligence)
 

@@ -1,10 +1,64 @@
 # Checklist pre-inversor
 
-> **Última actualización:** 26 mayo 2026.
+> **Última actualización:** 27 mayo 2026.
 > Documento operacional. El founder debe poder marcarlo todo antes de la primera reunión con el inversor.
 > **Mejora continua (equipo):** tras cada revisión del pack, actualizar [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) y la cabecera `Última actualización` de los documentos tocados.
 
-## 1. Material listo
+## 0. Pre-flight reunión (Prompt E — gap analysis)
+
+> **Salida completa:** [MEJORAS_PROMPT_C_RONDA_2026-05.md](MEJORAS_PROMPT_C_RONDA_2026-05.md) § Prompt E (27 mayo 2026).  
+> **Registro P0:** [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md).
+
+### 0.1 P0 abiertos (bloqueantes institucional)
+
+| ID | Ítem | Estado |
+|----|------|--------|
+| P0-01 | GitHub URL o acceso repo bajo NDA | Abierto |
+| P0-02 | % dedicación Zonix vs CETIAC/otros | Abierto |
+| P0-03 | 2–3 referencias con permiso | Abierto |
+| P0-04 | Aprobación founder pack antes de envío | Abierto |
+| P0-05 | Demo en vivo — fecha programada | Abierto |
+| P0-06 | Re-run **399 tests** + commit en VOLCADO §1.2 | Abierto |
+| P0-07 | NDA + data room cerrado (si fondo formal) | Abierto |
+| P0-08 | Métricas tracción por producto (si se citan) | Abierto |
+
+**Ángel informal:** puede ir con P0-02 + P0-06 resueltos. **Fondo / family office:** cerrar **toda** la tabla.
+
+### 0.2 Top 5 preguntas inversor (30 min)
+
+| # | Pregunta probable | Respuesta anclada | Fuente |
+|---|-------------------|-------------------|--------|
+| 1 | ¿Por qué tú y a tiempo completo? | Track record 8+ años; fundador Zonix/Corral X; declarar **% dedicación** explícita | VOLCADO §1.1; REGISTRO P0-02 |
+| 2 | ¿Hay ventas / tracción hoy? | **Pre-revenue**; stack en **staging/VPS**; piloto **Day-D T+90**; no inflar GMV | BRIEF § Qué es; ALINEACION |
+| 3 | ¿Por qué **101k** y cap **600k**? | Piso honesto Fase 0 + 12m; **~42.209** cash M12; equilibrio **M11** | PROYECCION §1.1–§1.3; BRIEF |
+| 4 | ¿Es legal el modelo Rx en VE? | Farmacéutico **de cada farmacia** valida; dictamen **abogado + asesor** pre-Day-D | PLAN_MODULO §1; ESTRUCTURA |
+| 5 | ¿El producto está en producción? | **Staging** hoy; Play/App Store + Firebase OTP **T+7–12** Fase 0; **399 tests** (re-verificar) | ALINEACION; CHECKLIST §7.7 |
+
+### 0.3 Orden data room (~30 min)
+
+Igual que [README.md](README.md) § inversor: **BRIEF → CONTEXTO → PERFIL → UNIT → PROYECCION §1.1 → ESTRUCTURA → CHECKLIST**. Email listo: [MENSAJE_ENVIO…](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) §2.
+
+### 0.4 Riesgos si enviamos hoy sin cerrar P0
+
+| Riesgo | Severidad | Mitigación |
+|--------|-----------|------------|
+| DD técnica sin repo / commit tests fresco | Alta | P0-01, P0-06 antes de fondo |
+| Duda governance (% tiempo founder) | Alta | P0-02 por escrito |
+| Credibilidad operativa sin referencias | Media | P0-03 |
+| Expectativa «ya en Play Store» | Media | Matiz staging en BRIEF/MENSAJE (I-05) |
+| SAFE/T&C como versión final sin abogado | Media | Marcar **borrador** (CHECKLIST §1) |
+
+### 0.5 Próximas 3 sesiones (Prompt F)
+
+| # | Enfoque | Doc |
+|---|---------|-----|
+| 1 | Cerrar P0 founder (GitHub, % tiempo, refs, tests) | [VOLCADO](VOLCADO_RESPUESTAS_CUESTIONARIO.md) §1–§1.2 |
+| 2 | Outreach inversor + data room | [MENSAJE_ENVIO…](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) §1–§2 |
+| 3 | Demo + guion reunión | [CHECKLIST](CHECKLIST_PRE_INVERSOR.md) §5–§6 |
+
+Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 sesiones.
+
+---
 
 - [ ] [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) impreso o en PDF.
 - [ ] [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) en formato spreadsheet imprimible (**Lean** mes a mes §1.1; tiers Base/Growth y año 2–3 en el mismo doc + [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3–§4).
@@ -73,7 +127,7 @@
 - [ ] Cuenta de demo pharmacist con receta de prueba lista para validar.
 - [ ] Cuenta de demo delivery con orden asignada.
 - [ ] Conexión a internet de respaldo (hotspot móvil).
-- [ ] Backend de demo en producción (no local) para evitar errores de conectividad.
+- [ ] Backend de demo en **staging/VPS** (no local); verificar conectividad pre-reunión — release tiendas **T+7–12** Fase 0.
 
 ## 6. Guion de la reunión (30 minutos)
 
@@ -89,6 +143,8 @@
 | 28-30 | Q&A inicial + próximos pasos. |
 
 ## 7. Q&A — preguntas frecuentes y respuestas
+
+> **Data room (lente inversor):** respuestas ancladas a BRIEF, PROYECCION §1.1, UNIT, PROPUESTA B2B §5 y ALINEACION producto. §7.7 = due diligence técnica. P0 abiertos: [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md).
 
 ### 7.1 Sobre el modelo de negocio
 
@@ -107,7 +163,7 @@
 
 | Q | A |
 |---|---|
-| ¿Por qué Venezuela y no Colombia? | "Founder venezolano. Stack ya operativo VE (pagos manuales, factura SENIAT). Mercado pharma VE USD 1.638M. Competencia digital débil. Ventaja first-mover." |
+| ¿Por qué Venezuela y no Colombia? | "Founder venezolano. Stack ya operativo VE (pagos manuales, factura SENIAT). Mercado pharma VE USD 1.638M. Competencia digital débil. **Early mover** en independientes Valencia (mercado existente; no creamos categoría)." |
 | ¿Qué pasa si Rappi baja precio? | "Su take-rate típico (25-35% GMV) es **estructuralmente más alto** que el ticket **Zonix Pharma** (cuota plataforma + % GMV bajo en app). Su unit economics sigue exigiendo comisión plena al farmacéutico." |
 | ¿Y Farmalisto entra a VE? | "Probable año 2-3. Para entonces tenemos PMF y barrera operativa local." |
 

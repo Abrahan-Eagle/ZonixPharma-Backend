@@ -1,6 +1,6 @@
 # Propuesta de valor — Tercer lado (`delivery_company`, `delivery_agent`, Pharmacist)
 
-> **Última actualización:** 20 mayo 2026.
+> **Última actualización:** 27 mayo 2026.
 > Documento que captura el pitch a los actores que sostienen la operación logística y clínica: **empresa de delivery** (`delivery_company`), **repartidor de campo** (`delivery_agent`, vinculado a esa empresa) y **farmacéutico colegiado** (`pharmacist`).
 
 **Alcance producto (app actual):** en piloto y MVP solo existen **dos roles de logística** en la plataforma: **`delivery_company`** (panel empresa: agentes, asignación, métricas) y **`delivery_agent`** (app de reparto en calle: órdenes, QR, tracking). **No** hay flujo de registro ni onboarding para rol **`delivery`** (repartidor autónomo). El repartidor en ruta es siempre un **`delivery_agent`** cuya cuenta crea la empresa (`POST /api/delivery-company/agents`). Referencias residuales a `delivery` en backend o seeders demo son **legacy** — no usarlas en pitch, checklist inversor ni materiales comerciales hasta una decisión explícita de producto.

@@ -1,6 +1,6 @@
 # Pack Lanzamiento Inversor — Zonix Pharma
 
-> **Última actualización:** 26 mayo 2026.
+> **Última actualización:** 27 mayo 2026.
 > **Propósito de esta carpeta:** (1) **Plan de lanzamiento operativo** de Zonix Pharma — calendario **T+0 → Fase 0 → Day-D (T+90) → M12**, equipo, farmacias, tech y KPIs ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) es la fuente canónica). (2) **Materiales de inversor y finanzas** en mejora continua (WIP). Cruce pack ↔ código: [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) + [../ANALISIS_TECNICO_COMPLETO_2026-05.md](../ANALISIS_TECNICO_COMPLETO_2026-05.md).
 > **Estado del pack:** borrador avanzado pre-seed; textos legales y plazos de retención sujetos a **dictamen abogado + farmacéutico asesor** antes de Day-D público.
 > **Producto:** Zonix Pharma — marketplace farmacéutico digital; el pack usa **solo** esa marca para producto y plataforma (no mezclar con otros productos en narrativa, métricas ni infra — p. ej. dominio `zonixpharma.com`, repo `ZonixPharma-*`).
@@ -8,19 +8,25 @@
 > **Zona piloto:** Valencia metro (Carabobo), con foco inicial operativo **San Diego / Av. Bolívar Norte** y expansión a Naguanagua, El Socorro, La Viña, Prebo, etc.
 > **Capital pedido (Lean — mínimo viable):** **USD 101.000** para **Fase 0 (~90 días)** + **12 meses** post-**Day-D** — SAFE post-money cap **USD 600.000**. **Recomendado (Base):** **USD 118.000** / cap **650.000**. **Acelerado (Growth):** **USD 135.000** / cap **720.000** — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §1.
 
-Este directorio contiene **24 archivos** `.md`: índice y auditorías ([README.md](README.md), [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md), [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md), [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md), [INCOHERENCIAS_LANZAMIENTO_2026-05.md](INCOHERENCIAS_LANZAMIENTO_2026-05.md)) más **19 documentos** de contenido (brief, finanzas, legal, operación comercial, propuestas de valor). Para **ejecutar el lanzamiento**, empezar por [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) y [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md). Para **inversor**, el `BRIEF` resume en una página; el resto profundiza cifras y supuestos (mayo 2026).
+Este directorio contiene **25 archivos** `.md`: índice y auditorías ([README.md](README.md), [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md), [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md), [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md), [INCOHERENCIAS_LANZAMIENTO_2026-05.md](INCOHERENCIAS_LANZAMIENTO_2026-05.md), [PROMPT_PACK_LANZAMIENTO.md](PROMPT_PACK_LANZAMIENTO.md)) más **19 documentos** de contenido (brief, finanzas, legal, operación comercial, propuestas de valor). Para **ejecutar el lanzamiento**, empezar por [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) y [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md). Para **inversor**, el `BRIEF` resume en una página; el resto profundiza cifras y supuestos (mayo 2026).
 
 ---
 
-## Orden de lectura recomendado (para un inversionista con 30 minutos)
+## Orden de lectura recomendado (inversor — ~30 minutos)
 
-1. [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) — el resumen ejecutivo. Léase primero.
-2. [CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md) — diferenciación, decisiones clave, parámetros del pitch.
-3. [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md) — TAM/SAM/SOM, demografía, benchmarks Farmatodo / Locatel / Farmalisto / Rappi.
-4. [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) — CAC, LTV, payback, break-even.
-5. [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) — tabla **M1–M12 mes a mes solo Lean** (§1.1); tiers Base/Growth y año 2–3 en el mismo doc + [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md).
-6. [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) — SAFE, cap table, vehículo legal VE.
-7. [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) — guion de reunión + FAQ.
+| Min | Documento | Qué obtienes |
+|-----|-----------|--------------|
+| 5 | [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) | Tesis, problema, timing, ask SAFE |
+| 5 | [CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md) | Decisiones clave y posicionamiento |
+| 5 | [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md) | TAM/SAM/SOM, competencia, beachhead |
+| 5 | [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) | CAC, LTV, payback, break-even |
+| 5 | [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 | Tabla **M1–M12 Lean** mes a mes |
+| 3 | [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) | SAFE, cap table, vehículo VE |
+| 2 | [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) | Guion reunión + FAQ |
+
+**Opcional antes de reunión:** [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) (auditoría del pack) · [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) (pack ↔ código). **Mensaje listo para enviar:** [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) §2 (misma ruta).
+
+Tiers Base/Growth y detalle burn: [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §1.
 
 ## Orden de lectura para el equipo interno (90 minutos)
 
@@ -29,6 +35,10 @@ Lo anterior + los siguientes:
 0. [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) — qué dice el plan de lanzamiento vs qué hace el software hoy; guía para mejorar docs sin inventar datos.
 0b. [INCOHERENCIAS_LANZAMIENTO_2026-05.md](INCOHERENCIAS_LANZAMIENTO_2026-05.md) — registro doc ↔ doc (contradicciones corregidas y checklist de verificación).
 0c. [../zonix/ANALISIS_FORENSE_BUSQUEDA_GITHUB_LANZAMIENTO_2026-05.md](../zonix/ANALISIS_FORENSE_BUSQUEDA_GITHUB_LANZAMIENTO_2026-05.md) — auditoría forense de URLs/skills del doc [Busqueda GitHub](../Búsqueda%20de%20Habilidades%20de%20Startup%20en%20GitHub.md): qué sirve para mejorar el pack (Top 10 + anexos shawnpang/founder-playbook).
+0d. **[PROMPT_PACK_LANZAMIENTO.md](PROMPT_PACK_LANZAMIENTO.md)** — prompts A–F para copiar en Cursor al auditar, mejorar o corregir docs del pack.
+0e. **[AUDITORIA_PROMPT_B_RONDA_2026-05.md](AUDITORIA_PROMPT_B_RONDA_2026-05.md)** — salida ronda Prompt B (19 contenido + meta delta); hallazgos **I-11–I-16** en [INCOHERENCIAS](INCOHERENCIAS_LANZAMIENTO_2026-05.md).
+0f. **[MEJORAS_PROMPT_C_RONDA_2026-05.md](MEJORAS_PROMPT_C_RONDA_2026-05.md)** — log Prompt C/D/E/F (27 mayo 2026).
+0g. **[CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) §0** — pre-flight Prompt E + §0.5 próximas sesiones (Prompt F).
 
 ## Usar Jarvis (IA) para mejorar este pack
 
@@ -43,6 +53,10 @@ Los marcos del informe §9–11 están **adaptados en skills locales** (no hace 
 | `zonix-launch-piloto` | PLAN (four-steps, mom-test, **beachhead** post-piloto) |
 | `zonix-financial-model` | PROYECCION, UNIT, **waiver 10 farmacias** |
 | `zonix-investor-materials` | CHECKLIST, data room, PERFIL competencia |
+
+**Prompts listos:** [PROMPT_PACK_LANZAMIENTO.md](PROMPT_PACK_LANZAMIENTO.md) (copiar **Prompt A** + variante B–F).
+
+**Rondas recomendadas:** **B** auditoría → **C** redacción → **D** finanzas → **E** pre-reunión → **F** diagnose (founder P0). Log: [MEJORAS_PROMPT_C_RONDA_2026-05.md](MEJORAS_PROMPT_C_RONDA_2026-05.md).
 
 **Prompt ejemplo:** «Mejora `PROPUESTA_VALOR_CLIENTE_B2B` §X usando `zonix-lanzamiento-docs`; cifras solo del pack; una sección.»
 
@@ -124,7 +138,7 @@ Ruta skill: [.agents/skills/zonix-lanzamiento-docs/SKILL.md](../../.agents/skill
 2. **Alcance del piloto:** **flujos core completos desde Day-D** (Buyer + Pharmacy + Pharmacist + **`delivery_company`** + **`delivery_agent`**): OTC, Rx, pago manual VE, partner delivery. **No** rol `delivery` (autónomo). **No** incluye en pitch: lotes FIFO operativos ni app en tiendas hasta hitos Fase 0 — [INCOHERENCIAS_LANZAMIENTO_2026-05.md](INCOHERENCIAS_LANZAMIENTO_2026-05.md). **Última milla:** Zonix **no opera flota propia**; concesión/contrato marco — [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) cabecera y §A.
 3. **Equipo:**
   - Founder (CEO + CTO en una sola persona, el usuario) + **Co-CEO / CEO operativo** (segundo al mando; comercial / operación / corporate) **USD 1.000/mes** — **rótulo operativo**; representante legal / junta y SAFE según [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md).
-  - Sin Pharmacist liaison interno: cada farmacia afiliada aporta su propio farmacéutico colegiado (Ley del Ejercicio de la Farmacia VE).
+  - Sin Pharmacist liaison interno: cada farmacia afiliada aporta su propio farmacéutico colegiado (marco VE — Ley del Ejercicio de la Farmacia; operación comercial sujeta a dictamen **abogado + farmacéutico asesor** antes de Day-D).
   - Sin Diseñador UI/UX: el founder cubre tech.
   - **4× Sales B2B** con USD **120** fijo c/u + USD **30** por farmacia firmada (**al rep que la firmó**; no duplicado entre reps); si la curva de firmas lo permite, valorar **2×** Sales como escenario de ahorro (recalcular CAC y PROYECCION).
   - **Replante operativo** (integrado en **Lean 101k** — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2): sueldo founder **USD 1.000/mes**; **Co-CEO** **USD 1.000/mes**; Customer Support + Community Manager **350** (+50 si KPI → 400); Marketing Lead + apoyo a dirección **400** (+100 bonus si KPI); **Coordinador de Partners Logísticos** **300** (+100 si KPI → 400).

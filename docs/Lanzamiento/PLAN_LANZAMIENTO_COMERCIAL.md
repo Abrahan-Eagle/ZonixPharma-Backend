@@ -144,6 +144,7 @@ Checklist **antes** de tráfico masivo. Evidencia en VOLCADO / CRM — la IA **n
 | 2. Validación B2B | Contrato marco firmado + métodos de pago farmacia en panel | Farmacia activa en staging/prod |
 | 3. Creación demanda | Primer pedido real OTC o Rx | Orden ≥ `pending_payment` en BD |
 | 4. Ops | CS, disputas, partner `delivery_company` | Macros CS + SLA partner acordado |
+| **Go Day-D** | Founder firma checklist §4.0 + ALINEACION P0 cerrados | **No** tráfico masivo Meta/valla sin fila 1–4 |
 
 Coherente con [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §8.1 (SPIN) y [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md).
 

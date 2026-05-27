@@ -1,6 +1,6 @@
 # Perfil de mercado y zona piloto
 
-> **Última actualización:** 20 mayo 2026.
+> **Última actualización:** 27 mayo 2026.
 > Documento de mercado: TAM / SAM / SOM, demografía Carabobo, benchmarks competitivos.
 > Todas las cifras citadas tienen fuente web pública. Las fuentes están en [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md).
 > **Finanzas del pitch (capital, SAFE, runway, PROYECCION Lean):** no en este doc — ver [README.md](README.md) § *Cifras clave del pack* y [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md).
@@ -73,6 +73,15 @@ Detalle del modelo en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.m
 **Insight:** el segmento que más necesita Zonix Pharma son los hogares con adulto mayor o paciente crónico. Compran medicinas todos los meses, valoran no tener que ir físicamente a varias farmacias.
 
 ## 5. Benchmark competitivo
+
+**Matriz rápida (competitor-matrix — lente inversor):**
+
+| Actor | Segmento | Modelo | ¿Target Zonix piloto? | Ventaja Zonix |
+|-------|----------|--------|----------------------|---------------|
+| Farmatodo / Locatel | Cadena premium | App propia cerrada | No (eventual Enterprise) | Independientes sin app |
+| Rappi / PedidosYa Pharmacy | Agregador | 25–35% GMV | Parcial (grandes) | Cuota + % GMV bajo; Rx digital |
+| Farmalisto (LatAm) | Marketplace pharma | % venta | Referencia internacional | Híbrido + VE + piloto local |
+| WhatsApp informal | Farmacia | Cero tech | Sí (migración) | Trazabilidad + Rx + tracking |
 
 ### 5.1 Farmatodo
 

@@ -1,6 +1,6 @@
 # Presupuesto 12 meses — referencia
 
-> **Última actualización:** 20 mayo 2026.
+> **Última actualización:** 27 mayo 2026.
 > Documento que detalla **línea por línea** los gastos durante 12 meses para los 3 escenarios.
 > Las cifras están justificadas en [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md).
 > Cifras en **USD constantes**, con buffer 20% ya aplicado al total para cubrir devaluación bolívar.

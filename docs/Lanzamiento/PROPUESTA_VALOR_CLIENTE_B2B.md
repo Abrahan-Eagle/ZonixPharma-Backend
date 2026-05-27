@@ -72,13 +72,12 @@ Con **USD 5.000** de GMV **completado en la app** en un **mes estable** y nivel 
 - El farmacéutico de la farmacia recibe credenciales en la app.
 - Valida recetas digitalmente, marca como aprobada / rechazada / pendiente.
 - Genera trazabilidad completa: quién validó, cuándo, qué medicamento, qué receta.
-- Cumple con la **Ley del Ejercicio de la Farmacia VE** porque el responsable sigue siendo el farmacéutico colegiado de la farmacia.
+- Modelo diseñado para que el **farmacéutico colegiado de la farmacia** siga siendo el responsable de validación Rx, en línea con el marco farmacéutico VE *[PENDIENTE dictamen abogado + farmacéutico asesor antes de Day-D]*.
 - La farmacia dispone de **trazabilidad digital** y exportaciones para apoyar requerimientos de autoridad (contenido y formato sujetos a dictamen **farmacéutico asesor + abogado** — coherente con [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) §8.3).
 
 ### 3.4 Delivery integrado
 
-- Repartidores autónomos o de empresa de delivery se asignan automáticamente.
-- La farmacia no contrata repartidores propios.
+- **`delivery_agent`** bajo **`delivery_company`** partner (concesión última milla); la farmacia no contrata repartidores propios ni rol `delivery` autónomo en piloto ([PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md)).
 - Trazabilidad de la entrega: salida, en ruta, entregado, geolocalización.
 
 ### 3.5 Pagos manuales VE soportados nativos

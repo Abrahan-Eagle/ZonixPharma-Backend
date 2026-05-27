@@ -1,17 +1,17 @@
 # Contexto del pitch y decisiones tomadas
 
-> **Última actualización:** 26 mayo 2026.
+> **Última actualización:** 27 mayo 2026.
 > Documento que captura las decisiones del founder (usuario) sobre cómo se posiciona Zonix Pharma frente a un inversor, qué se dice, qué no, y por qué se eligió cada parámetro del modelo.
 
 ## 1. Tecnología base reutilizada (Zonix Pharma)
 
 **Zonix Pharma** es la **verticalización del stack propio** (Laravel + Flutter + MySQL) con **~4 años** de iteración —incluida etapa previa de **delivery B2C** sobre el mismo núcleo— ahora orientada a **farmacia**. Esto importa porque significa:
 
-- **Tecnología validada:** los 399 tests del backend ya cubren onboarding, órdenes, métodos de pago manuales VE, KYC, chat real-time, FCM, eventos broadcast. **No estamos empezando desde cero.**
+- **Tecnología validada:** backend en **staging/VPS** con **399 tests** (onboarding, órdenes, pagos manuales VE, KYC, chat, FCM, broadcast). **Re-ejecutar y citar commit** en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) §1.2 pre-reunión ([REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) P0-06). **No estamos empezando desde cero.**
 - **Equipo técnico ya entrenado:** el founder conoce el stack al detalle.
 - **Riesgo de ejecución reducido:** la capa farmacéutica diferenciadora (Rx, cadena de frío, farmacéutico colegiado) está **operativa en flujo core** y documentada en [`../PLAN_RX_VALIDATION.md`](../PLAN_RX_VALIDATION.md) y [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md). **Inventario por lotes (`medicine_lots`) / despacho FIFO:** esquema de datos y referencias en repo; **UI y despacho FIFO en operación** quedan para **post-Day-D o M3+** — no prometer módulo de lotes en pitch hasta cerrarlo ([ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md)).
 
-**Mensaje para el inversor:** "compramos **~4 años** de desarrollo del stack con **USD 101.000**" (runway **Lean** 12 meses + colchón cierre año 1 — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3; incluye **Co-CEO**).
+**Mensaje para el inversor:** "compramos **~4 años** de desarrollo del stack — hoy en **staging**, release tiendas **T+7–12** Fase 0 — con **USD 101.000** de runway **Lean** 12 meses post-Day-D + colchón cierre año 1" ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3; incluye **Co-CEO**).
 
 ## 2. Decisiones tomadas y por qué
 
@@ -98,7 +98,7 @@ Detalle de fases T+30 / T+60 / T+90 en [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZ
 **Decisión:** el founder cubre CEO + CTO. No se contrata pharmacist liaison interno. No se contrata diseñador UI/UX.
 
 **Por qué pharmacist liaison no:**
-- La **Ley del Ejercicio de la Farmacia VE** obliga a que cada farmacia tenga su propio farmacéutico colegiado registrado en MPPS. Si **Zonix Pharma** contrata uno, ese farmacéutico no puede validar recetas de farmacias afiliadas (no es responsable de su inventario).
+- La **Ley del Ejercicio de la Farmacia VE** obliga a que cada farmacia tenga su propio farmacéutico colegiado registrado en MPPS. Si **Zonix Pharma** contrata uno, ese farmacéutico no puede validar recetas de farmacias afiliadas (no es responsable de su inventario). *Validación del modelo en app: [PENDIENTE dictamen abogado + farmacéutico asesor antes de Day-D].*
 - El backend ya tiene módulo de Pharmacist con KYC, dashboard y validación. Cada farmacia afiliada accede al rol Pharmacist de su propio farmacéutico colegiado. Detalle en [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md).
 - Mitigación de riesgo regulatorio: KYC del pharmacist + verificación MPPS + capacitación. Asesor regulatorio externo **USD 120/mes** en **Base (118k)** y **Growth (135k)** — no en Lean.
 
@@ -127,6 +127,7 @@ Detalle competitivo en [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md).
 | Valor entregado | Pedido confiable OTC/Rx + tracking sin que Zonix opere flota |
 | Cliente objetivo | Farmacias independientes Valencia metro + paciente urbano/clase media |
 | Categoría de mercado | Marketplace farmacéutico digital (no «delivery de comida») |
+| Tipo de mercado (Steve Blank) | **Existente** — competimos por atributos (Rx, fee, VE); **no** «creamos la categoría» (anti blue-ocean) |
 
 ## 3. Lo que NO se dice en el pitch (porque puede confundir)
 
@@ -165,7 +166,7 @@ Estas se documentarán en un anexo cuando lleguen al frente. Hoy no son bloquean
 ## 6. Tono del pitch
 
 - **Honesto sobre lo que no se ha hecho:** "no tenemos ventas todavía, tenemos producto operativo y plan validado".
-- **Confiado sobre lo que sí está hecho:** "399 tests pasando, ~4 años de desarrollo del **stack Zonix Pharma**".
+- **Confiado sobre lo que sí está hecho:** "399 tests backend (re-verificar pre-reunión), ~4 años de desarrollo del **stack Zonix Pharma**; staging/VPS hoy, tiendas T+7–12".
 - **Específico con números:** nunca decir "esperamos crecer mucho"; decir **~151 farmacias activas en M11**, **~159** hacia M12, **~USD 42.209** cash cierre **M12** post-Day-D (**Lean 101k** + **Fase 0** + **Co-CEO** + **4×** Sales + cuota **25/40/55**), y **equilibrio mensual en M11** con ARPF placeholder **~50** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §0–§1.4).
 - **Realista sobre Venezuela:** mencionar la inflación de entrada, no esconder la complejidad regulatoria.
 - **Modular:** ticket parcial (USD 25k–50k) sobre SAFE Lean; stretch **118k Base** o **135k Growth** según apetito del ángel.

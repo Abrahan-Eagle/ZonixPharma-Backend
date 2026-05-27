@@ -1,10 +1,12 @@
 # Registro consolidado de pendientes — Pack Lanzamiento
 
-> **Última actualización:** 26 mayo 2026.  
+> **Última actualización:** 27 mayo 2026.  
 > **Uso:** Completar celdas antes de reunión con inversor institucional o envío del data room cerrado.  
 > **Fuente:** barrido `[PENDIENTE]` en `docs/Lanzamiento/` (no inventar datos).  
 > **Plantilla detallada:** [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md).  
-> **Pre-flight reunión:** [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md).
+> **Pre-flight reunión:** [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) §0 (Prompt E).  
+> **Checklist founder (P0 en chat IA):** [PROMPT_PACK_LANZAMIENTO.md](PROMPT_PACK_LANZAMIENTO.md) § Checklist datos humanos.  
+> **Auditoría Prompt B (27 may 2026):** [AUDITORIA_PROMPT_B_RONDA_2026-05.md](AUDITORIA_PROMPT_B_RONDA_2026-05.md) — hallazgos doc **I-01–I-16** en [INCOHERENCIAS](INCOHERENCIAS_LANZAMIENTO_2026-05.md).
 
 ---
 
@@ -124,4 +126,18 @@ Completar en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARI
 
 ---
 
-*Generado en análisis 360° pack Lanzamiento — 26 mayo 2026. Actualizar este registro al cerrar cada ítem.*
+## Próximas 3 sesiones (Prompt F — preparar inversor)
+
+> **Diagnose 27 mayo 2026:** el pack doc está listo; el bloqueante es **P0 humano**, no más edición IA de narrativa.
+
+| Sesión | Archivo | Qué hacer |
+|--------|---------|-----------|
+| **1 (ahora)** | [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) §1 + §1.2 | GitHub o NDA repo; **% dedicación** Zonix; 2–3 referencias; `phpunit` + commit → REGISTRO P0-01/02/03/06 |
+| **2** | [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) §1–§2 | Lead concreto; Drive link; email data room; marcar P0-04 |
+| **3** | [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) §5–§6 | Demo **staging**; guion 30 min; fecha reunión → P0-05 |
+
+Detalle: [MEJORAS_PROMPT_C_RONDA_2026-05.md](MEJORAS_PROMPT_C_RONDA_2026-05.md) § Prompt F · Pre-flight: CHECKLIST §0.
+
+---
+
+*Generado en análisis 360° pack Lanzamiento — 27 mayo 2026. Actualizar este registro al cerrar cada ítem.*

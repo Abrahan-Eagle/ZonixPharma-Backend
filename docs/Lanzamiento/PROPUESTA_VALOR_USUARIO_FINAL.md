@@ -46,7 +46,7 @@
 
 - Zonix Pharma es un **marketplace y canal tecnológico**; **no** sustituye el criterio médico ni la consulta presencial.
 - Los textos de la app, anuncios y redes deben cumplir **buenas prácticas de publicidad** en salud: sin promesas de cura, sin antes/después, sin garantizar resultados terapéuticos. Ver checklist operativo en [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) sección **«Do / Don’t — comunicaciones en salud (VE)»**.
-- Cifras de **ahorro** o comparaciones de precio son **estimaciones internas** o basadas en escenarios; pueden variar según stock y farmacia. No constituyen oferta vinculante ni asesoría sanitaria.
+- Cifras de **ahorro** o comparaciones de precio son **estimaciones internas** o basadas en escenarios; pueden variar según stock y farmacia. No constituyen oferta vinculante ni asesoría sanitaria. En copy externo usar la misma convención que [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) (hipótesis piloto **15–25%**, no garantizada).
 
 ## 2.2 BrandScript — mensaje paciente (1 página)
 

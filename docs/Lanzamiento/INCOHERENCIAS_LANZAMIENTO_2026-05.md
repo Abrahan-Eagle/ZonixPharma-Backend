@@ -1,6 +1,6 @@
 # Registro de incoherencias — pack Lanzamiento (doc ↔ doc)
 
-> **Fecha:** 26 mayo 2026.  
+> **Fecha:** 27 mayo 2026 (I-11–I-15 corregidos).  
 > **Alcance:** solo archivos en `docs/Lanzamiento/` — **sin** cambios de código.  
 > **Cruces:** [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) (pack vs producto), [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) (datos humanos), [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) (auditoría inversor).
 
@@ -20,6 +20,14 @@
 | **I-08** | P2 | [PLAN_LANZAMIENTO](PLAN_LANZAMIENTO_COMERCIAL.md) §5, [PROYECCION](PROYECCION_FINANCIERA_12M.md) §1.3 | DoD cash **≥ ~46.400** vs tabla **46.395** | Unificar a **≥ ~46.395** (fuente PROYECCION §1.3) | **Corregido** |
 | **I-09** | P2 | Varios | Cabecera **20 mayo** vs pack **26 mayo** | Actualizar `Última actualización` en docs tocados | **Corregido** |
 | **I-10** | — | [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) | Fechas tests / datos equipo vacíos | **No rellenar desde IA** — ver REGISTRO P0–P4 | **Abierto** (humano) |
+| **I-11** | P2 | [BRIEF](BRIEF_UNA_PAGINA.md) § timing, [MENSAJE_ENVIO](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md), [CHECKLIST](CHECKLIST_PRE_INVERSOR.md) FAQ | Narrativa «**first-mover**» / categoría nueva | **Early mover** en independientes Valencia; mercado **existente** (`zonix-startup-context` Market Type) | **Corregido** |
+| **I-12** | P2 | [BRIEF](BRIEF_UNA_PAGINA.md) § Modelo financiero | **Dos tablas** capital/burn redundantes (resumen + detalle) | Etiquetas «Resumen por tier» + «Detalle escenario Lean» | **Corregido** |
+| **I-13** | P2 | [PROYECCION](PROYECCION_FINANCIERA_12M.md), [PERFIL_MERCADO](PERFIL_MERCADO_PILOTO.md), [PLAN_MODULO](PLAN_MODULO_OPERATIVO_CLAVE.md) cabecera | `Última actualización: 20 mayo` residual | **27 mayo 2026** (barrido I-09) | **Corregido** |
+| **I-14** | P1 | [ALINEACION](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) §1.3, §4.1 | Texto obsoleto PLAN §3.2 `delivery` autónomo | Alineado a I-04: solo partner + agentes | **Corregido** |
+| **I-15** | P1 | [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) cabecera | «**parcialmente implementado**» sin matiz (mismo patrón I-02) | Rx backend/tests OK; FIFO lotes UI post-Day-D | **Corregido** |
+| **I-16** | P1 | [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §3.3–3.4, [ALINEACION](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) §4.1, [ANALISIS_FORENSE](ANALISIS_FORENSE.md) SF-03 | Claims Ley sin PENDIENTE; §4.1 desactualizado; SF-03 abierto | Dictamen en B2B; refresh §4.1; SF-03 mitigado en BRIEF/MENSAJE | **Corregido** |
+
+> **Ronda Prompt B (27 mayo 2026):** detalle por archivo en [AUDITORIA_PROMPT_B_RONDA_2026-05.md](AUDITORIA_PROMPT_B_RONDA_2026-05.md).
 
 ---
 

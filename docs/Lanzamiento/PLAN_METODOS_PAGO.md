@@ -1,8 +1,10 @@
 # Plan de métodos de pago
 
-> **Última actualización:** 20 mayo 2026.
+> **Última actualización:** 27 mayo 2026.
 > Documento que detalla cómo se cobra y se paga en **Zonix Pharma** (pack inversor / piloto). La app reutiliza lógica de marketplace ya implementada en el backend Laravel, documentada en [`../logica-pagos-por-rol.md`](../logica-pagos-por-rol.md) (roles y cuentas) y [`../FLUJO_PAGO_ORDEN.md`](../FLUJO_PAGO_ORDEN.md) (checkout → comprobante → validación).
 > Marco **Sudeban / no intermediación:** §10 de este documento; contexto farmacéutico amplio en [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md) §8. No usar [`../REQUISITOS_OPERAR_VENEZUELA.md`](../REQUISITOS_OPERAR_VENEZUELA.md) (archivo histórico Zonix Eats).
+
+**Resumen ejecutivo:** el **paciente** paga a la **farmacia** (medicamentos) y a la **empresa partner** (envío) por canales **manuales VE** (pago móvil, transferencia, Zelle, Binance, efectivo). **Zonix Pharma** no es PSP: cobra a la farmacia **cuota + % GMV** (B2B) y a la empresa logística **fee por envío** (§2.5). La farmacia **valida el comprobante** antes de despachar.
 
 ## 1. Métodos de pago soportados
 

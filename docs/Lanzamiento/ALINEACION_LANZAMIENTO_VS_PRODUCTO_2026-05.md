@@ -1,6 +1,6 @@
 # Alineación plan de Lanzamiento vs producto (software)
 
-> **Fecha:** 26 mayo 2026.  
+> **Fecha:** 27 mayo 2026.  
 > **Estado del pack:** **WIP** — documentos en mejora continua; este informe no es dictamen final ni cierre de data room.  
 > **Base técnica:** [../ANALISIS_TECNICO_COMPLETO_2026-05.md](../ANALISIS_TECNICO_COMPLETO_2026-05.md) (repos Backend + Frontend).  
 > **Plan operativo canónico:** [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md).  
@@ -44,7 +44,7 @@ Fuente: [CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md), [READM
 | Decisión | Implicación en software |
 |----------|-------------------------|
 | Piloto **completo** Buyer + Pharmacy + Pharmacist + delivery company/agent | Los 7 roles deben funcionar en producción; **no** priorizar solo OTC sin Rx |
-| **Sin** `delivery` autónomo en piloto (README) | Evitar prometer flujo repartidor freelance en copy; PLAN_LANZAMIENTO §3.2 aún menciona 5–8 `delivery` “si aplica” — **reconciliar** |
+| **Sin** `delivery` autónomo en piloto (README) | Solo **`delivery_company`** + **`delivery_agent`** bajo partner; rol `delivery` autónomo **fuera de alcance** MVP (I-04 corregido en PLAN) |
 | Pagos **manuales VE** (pago móvil, transferencia, Zelle, Binance) | No Stripe; comprobante + validación farmacia |
 | Modelo B2B **híbrido** 25/40/55 + % GMV | Facturación/agregación RIF es **operación/comercial**; panel commerce no sustituye contabilidad |
 | Zona **Valencia metro** | Catálogo y zonas de entrega por farmacia/partner |
@@ -111,7 +111,7 @@ Prioridad para el founder técnico (no sustituye backlog de negocio).
 | **P0** | **Release móvil:** Firebase proyecto Pharma, keystore, APNs | Day-D sin app instalable confiable | [TECH_DEBT](../TECH_DEBT.md) |
 | **P0** | **Smoke E2E manual** documentado (OTC, Rx, cold chain, pago) | PLAN_MODULO §18; PLAN_LANZAMIENTO T+25–30 | ANALISIS_TECNICO §10 |
 | **P1** | **Deploy/CI Pharma** (no pipeline Eats) | Riesgo desplegar código equivocado | `main.yml` |
-| **P1** | **`medicine_lots`:** sin API commerce, sin UI, sin FIFO en despacho | CONTEXTO dice “parcialmente implementado” — **solo esquema BD** | ANALISIS_TECNICO §4.3 |
+| **P1** | **`medicine_lots`:** sin API commerce, sin UI, sin FIFO en despacho | Esquema BD + seeder; **UI/despacho FIFO post-Day-D o M3+** (I-02 corregido en CONTEXTO y PLAN_MODULO) | ANALISIS_TECNICO §4.3 |
 | **P2** | Envelope API / `getMessage()` en controllers | Estabilidad prod, soporte | AUDIT_API_PATTERNS |
 | **P2** | Descarga archivo receta en app buyer/pharmacist | Operación farmacia | FE `PrescriptionService` |
 | **P2** | Badges controlados uniformes en listado buyer | Copy regulatorio UX | AUDIT_UI_PHARMA |
@@ -123,17 +123,17 @@ Prioridad para el founder técnico (no sustituye backlog de negocio).
 
 ## 4. Qué ajustar en los **documentos** (mientras los mejoráis)
 
-> **Estado 26 mayo 2026:** correcciones **I-01 a I-09** aplicadas en pack; detalle y verificación en [INCOHERENCIAS_LANZAMIENTO_2026-05.md](INCOHERENCIAS_LANZAMIENTO_2026-05.md).
+> **Estado 27 mayo 2026:** correcciones **I-01 a I-15** aplicadas en pack; detalle en [INCOHERENCIAS_LANZAMIENTO_2026-05.md](INCOHERENCIAS_LANZAMIENTO_2026-05.md). Tabla §4.1 = **histórico de mejoras ya hechas** + pendientes menores.
 
 ### 4.1 Documentación adelantada (suavizar o acotar)
 
-| Doc | Texto / idea actual | Sugerencia de mejora |
-|-----|---------------------|---------------------|
-| [CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md) §1 | “lotes FIFO … ya parcialmente implementado” | Cambiar a: **modelo de datos y demo seeder listos; UI y despacho FIFO post-Day-D o M3+** |
-| [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) | “stack en producción interna” / “Play Store Day-D” | Añadir nota: **release stores + Firebase = hito T+7–12 Fase 0**, dependencia TECH_DEBT |
-| [README.md](README.md) §3 | Piloto sin `delivery` autónomo | Alinear [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §3.2: quitar o marcar **fuera de alcance piloto** el onboarding “5–8 delivery autónomos” |
-| Varios | “Piloto completo desde día 1” | Matizar: **completo en flujos core (OTC, Rx, pago manual, partner delivery)**; lotes FIFO y controlados masivos **fase 2** |
-| [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §4.2 | 08:00 App en Play/App Store | Vincular explícitamente a checklist release (Firebase, keystore, revisión tiendas) |
+| Doc | Estado | Nota |
+|-----|--------|------|
+| [CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md) §1 | **Hecho (I-02)** | FIFO: esquema BD + seeder; UI/despacho post-Day-D o M3+ |
+| [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) | **Hecho (I-05, SF-03)** | Staging/VPS + go-live T+7–12; sin «stack probado» ambiguo |
+| [README.md](README.md) §3 | **Hecho (I-04)** | Solo partner + agentes; sin `delivery` autónomo |
+| Varios | **Hecho (I-03)** | «Flujos core» desde Day-D; FIFO/controlados masivos fase 2 |
+| [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §4.2 | **Pendiente menor** | Vincular checklist release (Firebase, keystore, tiendas) en §4.2 |
 
 ### 4.2 Documentación incompleta (añadir al plan)
 

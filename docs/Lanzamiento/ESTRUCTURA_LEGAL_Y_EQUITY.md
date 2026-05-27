@@ -1,10 +1,12 @@
 # Estructura legal y equity (SAFE + cap table)
 
-> **Última actualización:** 20 mayo 2026.
+> **Última actualización:** 27 mayo 2026.
 > Documento que captura el vehículo legal, instrumento de inversión y cap table de Zonix Pharma.
 > Marco regulatorio **Pharma:** [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md). Pagos/Sudeban: [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §10. Archivo Eats (solo referencia): [`../REQUISITOS_OPERAR_VENEZUELA.md`](../REQUISITOS_OPERAR_VENEZUELA.md).
 
 **Roles operativos vs gobernanza:** el pack usa **Co-CEO / CEO operativo** junto al **CEO+CTO (founder)** como **rótulos de trabajo** (comercial / operación vs producto-tech). El **representante legal**, **junta**, **relación laboral** y el **SAFE** siguen lo que acuerden **abogado + partes**; no se asume que “dos CEO” dupliquen obligaciones legales sin documentarlo.
+
+**Lectura inversor (30 min):** §2 SAFE (cap según tier) → §3 cap table post-conversión → §4 datos personales / subencargados → anexo template YC cuando abogado lo adjunte `[PENDIENTE]`.
 
 ## 1. Vehículo legal
 
@@ -184,7 +186,7 @@ El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está 
 
 ### 4.3 Regulación específica farmacéutica
 
-- **Ley del Ejercicio de la Farmacia (Gaceta Oficial 1971, vigente):** cada farmacia debe tener farmacéutico colegiado. Zonix Pharma NO contrata farmacéutico interno; cada farmacia afiliada aporta el suyo.
+- **Ley del Ejercicio de la Farmacia (Gaceta Oficial 1971, vigente):** cada farmacia debe tener farmacéutico colegiado. Zonix Pharma NO contrata farmacéutico interno; cada farmacia afiliada aporta el suyo. *Copy comercial y T&C: [PENDIENTE dictamen abogado + farmacéutico asesor antes de Day-D].*
 - **MPPS (Ministerio del Poder Popular para la Salud):** registro de profesionales colegiados. **Zonix Pharma** verifica número MPPS de cada pharmacist en el onboarding.
 - **INHRR (Instituto Nacional de Higiene Rafael Rangel):** registro de medicamentos. Solo se venden productos con INHRR vigente.
 - **Detalle:** [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md).

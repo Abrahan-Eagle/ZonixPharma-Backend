@@ -1,49 +1,53 @@
 # Zonix Pharma — Brief de una página
 
-> **Última actualización:** 26 mayo 2026.
+> **Última actualización:** 27 mayo 2026.
 > Documento ancla del pack. Léase primero. Todas las cifras están detalladas en los documentos hermanos del directorio [docs/Lanzamiento/](README.md).
 
 ## Qué es
 
-**Zonix Pharma** es un marketplace farmacéutico digital para Venezuela. Conecta pacientes con farmacias afiliadas para comprar OTC y medicamentos con receta (Rx), con validación de receta por farmacéutico colegiado y **entrega a domicilio o pickup en sucursal**. La **última milla** la ejecutan **empresa(s) de delivery especializada(s)** bajo **concesión o contrato marco** con Zonix Pharma; la plataforma **no** opera flota propia de reparto.
+**Zonix Pharma** es un marketplace farmacéutico **B2B2C** en Venezuela: el paciente compra en app; la **farmacia independiente o mediana** despacha; un **farmacéutico colegiado de esa farmacia** valida Rx cuando aplica; la **última milla** la hace un **partner** (`delivery_company` + agentes) bajo contrato marco — **sin flota propia** de Zonix.
 
-Es la **vertical farmacia** del **stack Zonix Pharma** (~4 años de código probado; misma base que delivery B2C previo): mismo equipo, misma tecnología, mismas integraciones de pago manual VE. La base técnica está construida y probada: backend Laravel con **399** tests pasando; app Flutter **sin issues** en `flutter analyze lib` en verificación Front mayo 2026 (suite `flutter test` en verde; CI según repo ZonixPharma-Front).
+**Para el inversor (una línea):** llevamos al canal que hoy paga 25–35% a agregadores o no tiene app propia un stack digital con **fee bajo + Rx validado**, en un mercado pharma **existente** de USD 1,638M/año — no inventamos categoría ([CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md) §2.9).
+
+**Estado producto:** vertical farmacia sobre stack **~4 años**; capa Pharma (Rx, roles) **~30–45 días** ya invertidos. **Hoy:** staging/VPS, **399** tests backend (re-verificar pre-reunión); Flutter analyze/tests en verde. **Day-D (T+90):** OTP Firebase + tiendas + smoke E2E — hitos **T+7–12** Fase 0 ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md), [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md)).
 
 ## Problema que resuelve
 
-**Para el paciente**
+*StoryBrand — el paciente es el héroe; Zonix es la guía. Sin promesas terapéuticas.*
 
-1. **Desabastecimiento y tiempo perdido:** recorrer 3-5 farmacias sin saber si tendrán stock del medicamento.
-2. **Precios opacos:** sin comparador, puede pagar hasta ~25% más yendo a la primera opción; no ve el mismo producto a mejor precio en otra farmacia afiliada.
-3. **Sin conexión clara con el delivery:** el pedido “sale” pero no hay seguimiento en tiempo real ni trazabilidad del repartidor.
-4. **Receta en papel:** se pierde, se arruga; quien paga desde el exterior no puede gestionar el pedido y la receta de forma digital.
-5. **Dudas antes de comprar:** sin canal rápido para orientación informativa (indicaciones, genérico vs. original, interacciones) antes del pedido — *asistente con IA en roadmap Año 1 (no piloto)*.
+**Para el paciente** *(problema externo: tiempo, stock, precio, receta)*
 
-**Para la farmacia mediana o independiente**
+1. **Stock incierto y tiempo perdido:** recorrer 3–5 farmacias sin saber si tendrán el medicamento.
+2. **Precio opaco:** sin comparador entre farmacias afiliadas, puede pagar más en la primera opción *(hipótesis piloto **15–25%**, no garantizada — [PROPUESTA_VALOR_USUARIO_FINAL.md](PROPUESTA_VALOR_USUARIO_FINAL.md))*.
+3. **Entrega sin trazabilidad:** el pedido “sale” pero no hay seguimiento en tiempo real ni visibilidad del repartidor partner.
+4. **Receta en papel:** se pierde o se daña; quien paga desde el exterior no puede coordinar pedido y receta de forma digital.
+5. **Dudas antes de comprar:** sin canal rápido para orientación informativa (genérico vs. original, etc.) — *asistente IA en roadmap Año 1 (no piloto)*.
 
-1. **Competir sin app propia** frente a cadenas premium (Farmatodo, Locatel) y agregadores internacionales, sin delivery integrado ni visibilidad online en marketplace.
-2. **Comisión alta en agregadores:** Rappi / PedidosYa suelen cobrar 25-35% del GMV digital; paga mucho sin herramientas propias de gestión a cambio.
-3. **Administración fragmentada:** órdenes, inventario, comprobantes y Rx en WhatsApp, papel y hojas sueltas; poca trazabilidad y mucho retrabajo.
-4. **Sin marketing digital ni presencia física coordinada:** no capta pacientes nuevos fuera del radio caminable; depende solo del tráfico a pie.
-5. **Compras a droguerías sin comparador:** catálogos y precios de proveedores en PDF/WhatsApp; no hay forma ágil de filtrar y armar pedidos a las droguerías elegidas — *módulo de gestión de proveedores en roadmap Año 1 (no piloto)*.
+**Para la farmacia mediana o independiente** *(problema externo: visibilidad, costo agregador, operación)*
+
+1. **Competir sin app propia** frente a cadenas premium (Farmatodo, Locatel) y agregadores, sin marketplace ni delivery integrado.
+2. **Comisión alta en agregadores:** Rappi / PedidosYa suelen cobrar **25–35%** del GMV digital; paga mucho sin herramientas propias de gestión.
+3. **Operación fragmentada:** órdenes, inventario, comprobantes y Rx en WhatsApp y papel; poca trazabilidad y retrabajo.
+4. **Captación limitada:** depende del tráfico a pie; poca coordinación entre marketing digital y presencia física.
+5. **Compras a droguerías sin comparador:** catálogos en PDF/WhatsApp — *módulo proveedores en roadmap Año 1 (no piloto)*.
 
 **Para el ecosistema**
 
-- La receta médica venezolana sigue siendo física, manuscrita y vulnerable a errores. Zonix Pharma digitaliza la validación con un farmacéutico colegiado.
+- La receta médica venezolana sigue siendo física y vulnerable a errores. Zonix digitaliza la **validación** con el farmacéutico colegiado de cada farmacia — no sustituye al criterio médico ni al titular de la farmacia.
 
 ## Por qué ahora (timing — ALTA #10 forense)
 
 1. **Mercado pharma VE está en recuperación post-crisis:** +17,49% YoY en unidades 2024-2025 (**Cifar**, datos IMS/IQVIA). Hace 2 años el mercado se contraía; en 2 años más estará cubierto por competidores digitales. **2026 es la ventana.**
 2. **Stack ya construido:** el **stack Zonix Pharma** lleva ~4 años de desarrollo; el **fork al vertical farmacia** (capa Rx, roles Pharma) equivale a **~30–45 días de esfuerzo de producto** ya invertido — **no** confundir con **Fase 0 = T+90** (legal, equipo, onboarding farmacias y release en tiendas antes de Day-D — [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md)).
-3. **Competencia digital débil en VE:** Rappi y PedidosYa Pharmacy solo cubren cadenas premium. Farmatodo y Locatel no abren marketplace. **First-mover en farmacia mediana e independiente.**
+3. **Competencia digital débil en VE:** Rappi y PedidosYa Pharmacy solo cubren cadenas premium. Farmatodo y Locatel no abren marketplace. **Early mover** en farmacias medianas e independientes (Valencia metro) — mercado **existente**, no categoría nueva ([CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md) §2.9).
 4. **Métodos de pago manuales VE están maduros:** Pago Móvil C2P + Zelle + Binance Pay USDT cubren el 95% de la población bancarizada. Hace 5 años no era posible.
 
 ## Diferenciadores claros
 
 - **Modelo B2B híbrido en USD** (cuota fija **25 / 40 / 55** + porcentaje moderado sobre GMV en app según banda): estructuralmente muy por debajo del take-rate 25-35% GMV de Rappi o PedidosYa Pharmacy. Detalle en [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5.
-- **Validación Rx por farmacéutico colegiado de la propia farmacia** dentro de la app, ya construida en backend. Cumple con la **Ley del Ejercicio de la Farmacia VE** sin que **Zonix Pharma** tenga que contratar un farmacéutico interno.
+- **Validación Rx por farmacéutico colegiado de la propia farmacia** dentro de la app, ya construida en backend. Modelo alineado a regulación farmacéutica VE *[PENDIENTE dictamen abogado + farmacéutico asesor antes de Day-D]*; Zonix **no** sustituye al farmacéutico titular de la farmacia.
 - **Métodos de pago manuales VE soportados nativos:** Pago Móvil C2P, transferencia, Zelle, Binance Pay USDT — sin pasarelas internacionales caras, sin Stripe, sin necesidad de cuenta empresarial extranjera para operar.
-- **Stack autocontenido y probado:** backend en **staging/VPS** con **399** tests pasando; frontend Flutter sin issues en analyze; Pusher + FCM integrados en código. **Release tiendas + Firebase OTP (SMS):** hitos **T+7–12** de Fase 0 — no asumir Play/App Store el día del wire ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md), [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md)).
+- **Stack en staging/VPS** (go-live público T+7–12 Fase 0): backend con **399** tests pasando (re-verificar pre-reunión); frontend Flutter sin issues en analyze; Pusher + FCM integrados en código. **Release tiendas + Firebase OTP (SMS):** hitos **T+7–12** de Fase 0 — no asumir Play/App Store el día del wire ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md), [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md)).
 - **Equipo lean:** **9 FTE** + **2 freelance** en tier **Lean 101k** (detalle en tabla siguiente). Runway **12 meses** con **USD 101k** (mínimo viable). **Recomendado:** **USD 118k** (Base). Founder técnico: **Abrahan Pulido**.
 
 ### Equipo piloto Lean (101k) — resumen
@@ -71,11 +75,15 @@ Es la **vertical farmacia** del **stack Zonix Pharma** (~4 años de código prob
 
 ## Modelo financiero (escenario Lean — mínimo viable USD 101k)
 
+**Resumen por tier** (escalera capital — ver [README.md](README.md) § Cifras clave):
+
 | Concepto | Lean (101k) | Base (118k — recomendado) | Growth (135k) |
 |---|---|---|---|
 | Capital pedido | **USD 101.000** | **USD 118.000** | **USD 135.000** |
 | SAFE cap | **600.000** | **650.000** | **720.000** |
 | Burn prom. mensual | **~7.559** | **~8.059** | **~8.691** |
+
+**Detalle escenario Lean** (tabla M1–M12 en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1):
 
 | Concepto | Valor (Lean — tabla M1–M12 en PROYECCION §1) |
 |---|---|
@@ -102,7 +110,7 @@ Detalle completo y construcción mes a mes en [PROYECCION_FINANCIERA_12M.md](PRO
 
 | Escenario | Tasa firma/mes | Churn | ARPF* | Equilibrio mensual (ref.) | Cash cierre año 1 |
 |---|---|---|---|---|---|
-| Pesimista (probabilidad 20%) | 4-7 | 7% | USD 40 | Post-M11 + bridge | **~USD 25–32k** cash cierre A1 (orden magnitud vs. central **~42.209**; [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §7.1) |
+| Pesimista (probabilidad 20%) | **~50% plan** *(~8 firmas/mes ref.)* | 7% | USD 40 | Post-M11 + bridge | **~USD 25–32k** cash cierre A1 (orden magnitud vs. central **~42.209**; [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §7.1) |
 | **Base (probabilidad 50%)** | **~15**/mes post-Day-D | **5%** | **USD ~50** | **M11** (§1.1–§1.4 PROYECCION) | **~USD 42.209** |
 | Optimista (probabilidad 30%) | 12-20 | 4% | USD 55 | Antes si mix/GMV mejora | **~USD 48–55k** (orden magnitud; alineado §7.3 [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md); refinar FP&A) |
 
@@ -134,7 +142,7 @@ Detalle de las 3 sensibilidades en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FIN
 |---|---|
 | 1-3 | **Fase 0:** constitución, equipo, HQ (**San Diego / Av. Bolívar Norte**), stack en **VPS Nameshared**, OTP **Firebase**; onboarding farmacias piloto — **Day-D = T+90** (ver [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md)). |
 | 4-6 | **M1–M3 post-Day-D:** rampa a **~62 activas**; revenue > **USD 3.100**/mes hacia M3 ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1). |
-| 7-9 | **~108–130 activas**; validación Rx en producción con > 200 recetas validadas; revenue > **USD 5.400–6.500**/mes. |
+| 7-9 | **~108–130 activas**; validación Rx en producción *(objetivo operativo — [PENDIENTE founder: umbral recetas/mes])*; revenue > **USD 5.400–6.500**/mes ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 M8–M9). |
 | 10-12 | **~141–159 activas**; **equilibrio en M11**; cierre M12 con **~USD 42.209** cash y revenue mensual **~USD 7.950**. |
 
 ## Riesgos principales y mitigaciones
@@ -146,17 +154,24 @@ Detalle de las 3 sensibilidades en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FIN
 | Publicidad y claims en salud | Checklist **Do/Don't** y aprobación creativos: [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) §1.1; avisos al paciente en [PROPUESTA_VALOR_USUARIO_FINAL.md](PROPUESTA_VALOR_USUARIO_FINAL.md) §2.1. |
 | Competencia de Farmatodo / Locatel | No competimos en su segmento (cadenas premium); competimos en farmacias medianas e independientes que **no** tienen **app / marketplace** propio integrado. |
 | Adopción inicial lenta del paciente | Marketing primero a farmacias (B2B); el paciente entra orgánico una vez la farmacia ya tiene catálogo cargado. |
-| Pagos manuales VE complejos | Ya implementados y probados en la **plataforma Zonix Pharma**. OTP paciente vía **Firebase Phone Auth** (SMS). Factura digital SENIAT cuando la empresa esté constituida y el trámite esté habilitado. |
+| Pagos manuales VE complejos | Implementados en código (**staging/VPS**); OTP paciente vía **Firebase Phone Auth** (SMS) en hito T+7–12 Fase 0. Factura digital SENIAT cuando la empresa esté constituida y el trámite esté habilitado. |
 
 ## Pregunta al inversor
 
-> Buscamos **USD 101.000** (Lean — mínimo) vía SAFE cap **600.000**, con opción **118k recomendado** / **135k acelerado**, para Fase 0 + 12 meses post-Day-D — **~USD 42.209** cash M12 y equilibrio **M11**.
+> ¿Te sumas a **USD 101.000** (Lean — mínimo viable) vía SAFE cap **600.000**, con opción **118k recomendado** / **135k acelerado**, para **Fase 0 + 12 meses** post-Day-D? Objetivo modelo central: **~USD 42.209** cash M12 y **equilibrio M11** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1).
+
+**Por qué ahora (sin urgencia falsa):** mercado pharma VE **+17,49%** unidades (Cifar); stack **~4 años** ya en staging; ventana **early mover** en independientes Valencia 2026 — el pack detalla supuestos y sensibilidad antes de comprometer capital.
+
+### Pre-requisitos DD (founder — antes de reunión institucional)
+
+Checklist **P0** en [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md): URL **GitHub** o acceso repo bajo NDA; **% dedicación** Zonix Pharma vs otros compromisos; **2–3 referencias** verificables; re-ejecutar **399 tests** y actualizar [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) §1.2; **NDA** / data room si el inversor lo exige.
 
 ## Llamada a la acción
 
-- Reunión de 30 minutos: [agenda en CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md).
-- Mensaje para enviar al inversor: [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md).
-- Detalle financiero completo: [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md).
-- Análisis multi-perspectiva del pack: [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md).
-- Identidad de marca para diseño de assets externos: [`../BRAND_ZONIX_PHARMA.md`](../BRAND_ZONIX_PHARMA.md).
-- Marco regulatorio VE (Pharma): [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md), pagos/Sudeban [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §10.
+**Siguiente paso concreto:** reunión de **30 min** con guion en [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md). Si prefieres revisar antes:
+
+1. [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) + [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 — números y tesis.
+2. [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) — texto listo para compartir.
+3. [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) — auditoría multi-perspectiva del pack.
+
+Marco regulatorio VE: [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md), pagos [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §10. Identidad de marca: [`../BRAND_ZONIX_PHARMA.md`](../BRAND_ZONIX_PHARMA.md).

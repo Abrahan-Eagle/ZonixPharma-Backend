@@ -1,13 +1,13 @@
 # Plan del módulo operativo clave: validación Rx por farmacéutico colegiado
 
-> **Última actualización:** 20 mayo 2026.
+> **Última actualización:** 27 mayo 2026.
 > Documento que detalla el flujo central diferenciador de Zonix Pharma: la **validación de receta médica (Rx) por farmacéutico colegiado** dentro de la app.
-> Este flujo está parcialmente implementado en backend; ver [`../PLAN_RX_VALIDATION.md`](../PLAN_RX_VALIDATION.md) para detalle técnico.
+> **Flujo Rx (upload → validación farmacéutico → TTL):** operativo en backend y tests; ver [`../PLAN_RX_VALIDATION.md`](../PLAN_RX_VALIDATION.md). **Inventario por lotes FIFO** en panel farmacia: esquema BD listo; **UI y despacho FIFO** post-Day-D o M3+ ([ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md)).
 
 ## 1. Por qué este módulo es crítico
 
 1. **Es el diferenciador legal:** Rappi y PedidosYa NO validan recetas digitalmente en VE. Farmatodo y Locatel hacen validación física en sucursal.
-2. **Cumple regulación:** la Ley del Ejercicio de la Farmacia VE exige validación por farmacéutico colegiado.
+2. **Alineado al marco regulatorio:** la Ley del Ejercicio de la Farmacia VE exige validación por farmacéutico colegiado *[dictamen formal abogado + farmacéutico asesor antes de Day-D]*.
 3. **Genera trazabilidad:** quién validó, cuándo, qué medicamento, qué receta, qué paciente. Fundamental ante MPPS.
 4. **Habilita el segmento Rx (48,3% del mercado farmacéutico VE):** sin esto, **Zonix Pharma** solo opera OTC + cuidado personal.
 5. **Reduce riesgo de mal uso:** Rx retenida, sustancias controladas, dosis verificada.

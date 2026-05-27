@@ -1,8 +1,10 @@
 # Montos de referencia validados con fuentes de internet
 
-> **Última actualización:** 20 mayo 2026.
+> **Última actualización:** 27 mayo 2026.
 > Documento que lista las fuentes web públicas de cada cifra utilizada en el pack.
 > Cada precio o métrica venezolana puede variar mensualmente por inflación (macro 2026: **desaceleración oficial BCV** vs. escenarios externos pesimistas 387-618%). **Reconfirmar trimestralmente.**
+
+**Cómo usar este documento:** fuente de **citas públicas** para el data room; **no** regenerar cifras del modelo (PROYECCION, PRESUPUESTO, UNIT) desde aquí. Si un precio operativo (HQ, valla, Meta) cambia, actualizar [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) y anotar fecha de consulta en la fila correspondiente.
 
 ## 1. Mercado farmacéutico venezolano (TAM)
 

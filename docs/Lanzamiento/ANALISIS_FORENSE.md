@@ -36,7 +36,7 @@
 
 ### 1.1 Fortalezas
 
-- **Stack ya construido:** ~4 años de desarrollo del **stack Zonix Pharma** + 399 tests pasando reduce riesgo de ejecución técnica drásticamente.
+- **Stack ya construido:** ~4 años de desarrollo del **stack Zonix Pharma** + **399 tests** backend (staging/VPS; release tiendas T+7–12) reduce riesgo de ejecución técnica.
 - **Equipo lean defendible:** sin pharmacist liaison (legalmente correcto), sin diseñador UI/UX (founder tech), **9** FTE operativos en Base (Founder + Co-CEO + **4×** Sales + CS+CM + Marketing + **Coordinador de Partners Logísticos**) + **2** freelance (contador + abogado) = **11** personas en payroll extendido; Growth suma **asesor regulatorio** externo — dimensionado para el piloto **Meta + 4× Sales**.
 - **Decisión coherente sobre capital:** **Lean 101k** (mínimo) + **Base 118k** (recomendado) + **Growth 135k** (acelerado); PROYECCION §1.1 modela **Lean**; caja M12 **~42.209** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §0–§1.3).
 - **Founder USD 1.000/mes** en los tres tiers — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.3.
@@ -402,7 +402,7 @@ El pack es **invertible** después de aplicadas las CRÍTICAS y ALTAS. Las MEDIA
 |----|------|----------|--------|
 | SF-01 | Alta | VOLCADO §1.2 fecha tests **20 mayo** y commit **81eec2a** — re-verificar antes de cada reunión | Actualizar fila §1.2 tras `php artisan test` |
 | SF-02 | Alta | Pack afirma piloto **completo** pero **medicine_lots / FIFO** sin API ni UI (ANALISIS_TECNICO) | No prometer inventario por lotes en pitch hasta módulo construido; o acotar a “post-M6” |
-| SF-03 | Media | **OTP Firebase** y build release en TECH_DEBT — BRIEF dice stack probado; aclarar “MVP interno / staging” | Alinear MENSAJE con TECH_DEBT; cerrar `google-services.json` |
+| SF-03 | Media | **OTP Firebase** y build release en TECH_DEBT | **Mitigado en BRIEF** (staging + T+7–12); cerrar `google-services.json` y alinear riesgos § pagos si aplica |
 | SF-04 | Media | **Deploy workflow `main.yml`** sigue “Zonix-EatsX” (técnico) — no afecta narrativa pack pero sí riesgo operativo | Desactivar o reemplazar pipeline antes de prod Pharma |
 | SF-05 | Baja | Co-CEO en VOLCADO §1.5 puede tener filas aún abiertas | Completar al contratar |
 | SF-06 | Info | Registro PENDIENTE único evita duplicar búsqueda en 6 archivos | Mantener REGISTRO como checklist maestro |

@@ -1,13 +1,13 @@
 # Mensaje de envío al inversor + bullets pitch
 
-> **Última actualización:** 26 mayo 2026.
+> **Última actualización:** 27 mayo 2026.
 > Documento operacional. Texto listo para WhatsApp / email + bullets para presentación de 5 minutos.
 
 ## 1. Mensaje WhatsApp inicial (mensaje frío)
 
 > Hola [Nombre del inversor],
 >
-> Soy **Abrahan Pulido**. Soy fundador de Zonix Pharma, un marketplace farmacéutico digital que estamos preparando para lanzar en Carabobo. La tecnología ya está construida (**399 tests** backend) y busco **USD 101k** (Lean — mínimo viable) vía SAFE, con opción **118k recomendado** / **135k acelerado**, para **Fase 0 + 12 meses** post-Day-D — **~USD 42.209** cash M12 y equilibrio **M11** (PROYECCION §1).
+> Soy **Abrahan Pulido**. Soy fundador de Zonix Pharma, un marketplace farmacéutico digital que estamos preparando para lanzar en Carabobo. Stack en **staging/VPS** con **399 tests** backend (re-verificar pre-reunión); go-live tiendas + Firebase **T+7–12** Fase 0. Busco **USD 101k** (Lean — mínimo viable) vía SAFE, con opción **118k recomendado** / **135k acelerado**, para **Fase 0 + 12 meses** post-Day-D — **~USD 42.209** cash M12 y equilibrio **M11** (PROYECCION §1).
 >
 > Modelo: la farmacia paga **cuota fija + un % moderado sobre GMV** en la app (tier dinámico por bandas — ver pack §5 B2B). El take-rate total sigue siendo **órden de magnitud menor** que Rappi/PedidosYa (25-35% GMV).
 >
@@ -20,9 +20,14 @@
 - Si conoces algo del inversor (otra inversión farmacéutica, LinkedIn shared connection): mencionarlo.
 - Si te lo presentó alguien: mencionar quién.
 
-### 1.1 Variante ultra-corta (~80 palabras)
+### 1.1 Variante ultra-corta (~80 palabras) — Cialdini
 
-> Hola [Nombre], soy Abrahan Pulido, fundador de **Zonix Pharma** (marketplace farmacéutico Valencia, OTC + Rx). Buscamos **USD 101k** pre-seed vía SAFE (cap **600k** Lean; opciones 118k/135k). Stack en producción (**399 tests** backend); piloto **Day-D** a T+90. ¿30 min esta semana? Pack: [LINK Drive / README Lanzamiento].
+> Hola [Nombre], soy Abrahan Pulido, fundador de **Zonix Pharma** (marketplace farmacéutico Valencia, OTC + Rx). Buscamos **USD 101k** pre-seed vía SAFE (cap **600k** Lean; opciones 118k/135k). Stack en **staging** (**399 tests** backend); piloto **Day-D** T+90. ¿30 min esta semana? Pack: [LINK Drive / README Lanzamiento].
+
+**Ganchos (usar 1–2, sin exagerar):**
+- **Autoridad:** stack ~4 años; regulación Rx con farmacéutico de cada farmacia.
+- **Prueba social:** mercado pharma VE **+17%** unidades (Cifar); comparables LatAm (Farmalisto).
+- **Escasez suave:** ventana piloto Valencia 2026 — no urgencia falsa de «último día».
 
 Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 
@@ -30,17 +35,21 @@ Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 
 > Hola [Nombre],
 >
-> Gracias por tu interés. Te comparto el **data room** (`docs/Lanzamiento/` — **21 archivos** Markdown: índice **README**, **`ANALISIS_FORENSE.md`** (auditoría del pack) y **19** documentos de contenido). Para empezar en **~30 min**:
+> Gracias por tu interés. Te comparto el **data room** (`docs/Lanzamiento/`). **Ruta ~30 min** (misma que [README.md](README.md) § inversor):
 >
-> - **BRIEF_UNA_PAGINA.md** — resumen ejecutivo.
-> - **PROYECCION_FINANCIERA_12M.md** + **UNIT_ECONOMICS.md** — números y supuestos.
-> - **PERFIL_MERCADO_PILOTO.md** — TAM/SAM/SOM.
-> - **ESTRUCTURA_LEGAL_Y_EQUITY.md** — SAFE, cap table.
-> - **CHECKLIST_PRE_INVERSOR.md** — guion + FAQ.
+> 1. **[BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md)** — tesis y cifras clave.
+> 2. **[CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md)** — decisiones y posicionamiento.
+> 3. **[PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md)** — TAM/SAM/SOM y competencia.
+> 4. **[UNIT_ECONOMICS.md](UNIT_ECONOMICS.md)** — CAC, LTV, payback.
+> 5. **[PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)** §1.1 — tabla M1–M12 Lean.
+> 6. **[ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md)** — SAFE y cap table.
+> 7. **[CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md)** — guion reunión + FAQ.
+>
+> Opcional DD profundo: [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) · [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) (pack ↔ producto).
 >
 > Acceso al pack completo en Google Drive: [LINK]
 >
-> Reunión de 30 min cuando puedas. Yo soy flexible. La reunión incluye demo en vivo de la app (Buyer + Pharmacy + Pharmacist + `delivery_company` + `delivery_agent`). **Última milla:** operada por **empresa(s) concesionaria(s)**; Zonix **no** tiene flota propia.
+> Reunión de **30 min** cuando puedas — incluye demo en vivo (Buyer + Pharmacy + Pharmacist + `delivery_company` + `delivery_agent`). **Última milla:** partner concesionario; Zonix **no** opera flota propia.
 >
 > Quedo atento.
 > Abrahan Pulido
@@ -74,9 +83,9 @@ Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 
 > **Slide 3: Tracción**
 > - Stack ya construido (Laravel + Flutter + Pusher + FCM).
-> - 399 tests pasando.
+> - **399 tests** backend (re-verificar pre-reunión; ver VOLCADO §1.2).
 > - ~4 años de desarrollo del **stack Zonix Pharma**, reciclado al vertical farma.
-> - Backend en producción interna.
+> - Backend en **staging/VPS**; go-live Play/App Store **T+7–12** Fase 0.
 
 > **Slide 4: Mercado**
 > - TAM Venezuela USD 1.638M.
@@ -111,7 +120,7 @@ Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 
 > "¿Por qué Venezuela?"
 > - Founder venezolano. Stack VE-nativo (PMC2P, Zelle, factura SENIAT).
-> - Mercado USD 1.638M creciendo 17%/año. Competencia digital débil. First-mover ventaja.
+> - Mercado USD 1.638M creciendo 17%/año. Competencia digital débil. **Early mover** en independientes Valencia (mercado existente; Rx + fee bajo vs agregador).
 
 > "¿Por qué híbrido fija + % GMV?"
 > - Take-rate total muy inferior al de agregadores; la fija da previsibilidad y el % alinea **Zonix Pharma** al volumen en app.
@@ -162,7 +171,7 @@ Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 | Cash al cierre año 1 (proyección) | **~USD 42.209** sin waiver; **~USD 41.756** con waiver B2B proxy ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3) |
 | TAM Venezuela | USD 1.638M |
 | Comparable internacional | Farmalisto ~USD 32M revenue 2024 (MX); funding ~USD 22M–33M según fuente |
-| Stack | Laravel + Flutter + Pusher + FCM, 399 tests pasando |
+| Stack | Laravel + Flutter + Pusher + FCM; **399 tests** backend (staging/VPS; release tiendas T+7–12 Fase 0) |
 | Equipo | **9** roles FT + 2 freelance. Asesor regulatorio en **Base/Growth** (118k/135k). |
 | Founder track record | **Abrahan Pulido** — Ingeniero en Informática (IUTVAL); 8+ años full stack; fundador **Zonix Pharma** (mismo stack desde delivery B2C), **Corral X**, **Zonix Imports**, **Aiblockweb**; docente CETIAC; [LinkedIn](https://www.linkedin.com/in/abrahan-pulido-909a35b7/), [aiblockweb.com](https://aiblockweb.com), `ing.pulido.abrahan@gmail.com`, +58 412 4352014. **Pendiente:** URL GitHub pública + 2 referencias verificables para due diligence. |
 

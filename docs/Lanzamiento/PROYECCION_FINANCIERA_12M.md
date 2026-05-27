@@ -1,6 +1,6 @@
 # Proyección financiera 12 meses (+ año 2 y 3 + plan contingencia)
 
-> **Última actualización:** 20 mayo 2026 (tiers Lean 101k / Base 118k / Growth 135k).
+> **Última actualización:** 27 mayo 2026 (tiers Lean 101k / Base 118k / Growth 135k).
 > Documento que traduce los unit economics y el presupuesto a un flujo mes a mes para los 3 escenarios.
 > Cifras en USD constantes con buffer 20% ya aplicado al burn.
 
