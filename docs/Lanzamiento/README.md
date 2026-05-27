@@ -8,7 +8,7 @@
 > **Zona piloto:** Valencia metro (Carabobo), con foco inicial operativo **San Diego / Av. Bolívar Norte** y expansión a Naguanagua, El Socorro, La Viña, Prebo, etc.
 > **Capital pedido (Lean — mínimo viable):** **USD 101.000** para **Fase 0 (~90 días)** + **12 meses** post-**Day-D** — SAFE post-money cap **USD 600.000**. **Recomendado (Base):** **USD 118.000** / cap **650.000**. **Acelerado (Growth):** **USD 135.000** / cap **720.000** — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §1.
 
-Este directorio contiene **25 archivos** `.md`: índice y auditorías ([README.md](README.md), [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md), [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md), [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md), [INCOHERENCIAS_LANZAMIENTO_2026-05.md](INCOHERENCIAS_LANZAMIENTO_2026-05.md), [PROMPT_PACK_LANZAMIENTO.md](PROMPT_PACK_LANZAMIENTO.md)) más **19 documentos** de contenido (brief, finanzas, legal, operación comercial, propuestas de valor). Para **ejecutar el lanzamiento**, empezar por [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) y [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md). Para **inversor**, el `BRIEF` resume en una página; el resto profundiza cifras y supuestos (mayo 2026).
+Este directorio contiene **28 archivos** `.md`: índice y auditorías ([README.md](README.md), [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md), [AUDITORIA_PROMPT_D_RONDA_2026-05.md](AUDITORIA_PROMPT_D_RONDA_2026-05.md), [AUDITORIA_PROMPT_E_RONDA_2026-05.md](AUDITORIA_PROMPT_E_RONDA_2026-05.md), [AUDITORIA_PROMPT_F_RONDA_2026-05.md](AUDITORIA_PROMPT_F_RONDA_2026-05.md), [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md), [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md), [INCOHERENCIAS_LANZAMIENTO_2026-05.md](INCOHERENCIAS_LANZAMIENTO_2026-05.md), [PROMPT_PACK_LANZAMIENTO.md](PROMPT_PACK_LANZAMIENTO.md)) más **19 documentos** de contenido (brief, finanzas, legal, operación comercial, propuestas de valor). Para **ejecutar el lanzamiento**, empezar por [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) y [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md). Para **inversor**, el `BRIEF` resume en una página; el resto profundiza cifras y supuestos (mayo 2026).
 
 ---
 
@@ -39,6 +39,9 @@ Lo anterior + los siguientes:
 0e. **[AUDITORIA_PROMPT_B_RONDA_2026-05.md](AUDITORIA_PROMPT_B_RONDA_2026-05.md)** — salida ronda Prompt B (19 contenido + meta delta); hallazgos **I-11–I-16** en [INCOHERENCIAS](INCOHERENCIAS_LANZAMIENTO_2026-05.md).
 0f. **[MEJORAS_PROMPT_C_RONDA_2026-05.md](MEJORAS_PROMPT_C_RONDA_2026-05.md)** — log Prompt C/D/E/F (27 mayo 2026).
 0g. **[CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) §0** — pre-flight Prompt E + §0.5 próximas sesiones (Prompt F).
+0h. **[AUDITORIA_PROMPT_D_RONDA_2026-05.md](AUDITORIA_PROMPT_D_RONDA_2026-05.md)** — coherencia numérica Prompt D pasada 2 (44 filas forenses; **verde**, 0 P0–P1).
+0i. **[AUDITORIA_PROMPT_E_RONDA_2026-05.md](AUDITORIA_PROMPT_E_RONDA_2026-05.md)** — pre-reunión inversor Prompt E pasada 2 (**amarillo**; 8 P0 humanos).
+0j. **[AUDITORIA_PROMPT_F_RONDA_2026-05.md](AUDITORIA_PROMPT_F_RONDA_2026-05.md)** — diagnose Prompt F pasada 2 (**acción founder**; rutas inversor / farmacia / Day-D).
 
 ## Usar Jarvis (IA) para mejorar este pack
 

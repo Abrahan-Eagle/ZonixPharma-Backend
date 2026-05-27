@@ -185,7 +185,8 @@ Tarea: auditar coherencia entre PROYECCION §1.1, UNIT_ECONOMICS, PRESUPUESTO_12
 
 Salida: tabla | archivo | línea aprox | valor A | valor B | severidad | corrección mínima.
 No regenerar tabla M1–M12.
-Salida ronda D (27 mayo 2026): [MEJORAS_PROMPT_C_RONDA_2026-05.md](MEJORAS_PROMPT_C_RONDA_2026-05.md) § Prompt D — **verde**, 0 correcciones.
+Salida ronda D pasada 1 (27 mayo 2026): [MEJORAS_PROMPT_C_RONDA_2026-05.md](MEJORAS_PROMPT_C_RONDA_2026-05.md) § Prompt D — resumen 12 anclas.
+Salida ronda D pasada 2 formal (20 mayo 2026): [AUDITORIA_PROMPT_D_RONDA_2026-05.md](AUDITORIA_PROMPT_D_RONDA_2026-05.md) — **verde**, 44 filas forenses, 0 correcciones P0–P1.
 ```
 
 ---
@@ -203,7 +204,8 @@ Salida:
 2. Top 5 preguntas inversor + respuesta anclada (doc fuente).
 3. Orden data room sugerido.
 4. Riesgos si enviamos hoy sin cerrar P0.
-Salida ronda E (27 mayo 2026): [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) §0 + [MEJORAS_PROMPT_C_RONDA_2026-05.md](MEJORAS_PROMPT_C_RONDA_2026-05.md) § Prompt E.
+Salida ronda E pasada 1 (27 mayo 2026): [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) §0 + [MEJORAS_PROMPT_C_RONDA_2026-05.md](MEJORAS_PROMPT_C_RONDA_2026-05.md) § Prompt E.
+Salida ronda E pasada 2 formal (20 mayo 2026): [AUDITORIA_PROMPT_E_RONDA_2026-05.md](AUDITORIA_PROMPT_E_RONDA_2026-05.md) — **amarillo**, 8 P0 humanos; finanzas OK (Prompt D).
 ```
 
 ---
@@ -219,7 +221,9 @@ Router diagnose (zonix-lanzamiento-docs):
 - Clasifica el problema.
 - 1 archivo + 1 sección para la próxima sesión.
 - Orden de 3 sesiones siguientes (un archivo por sesión).
-Salida ronda F (27 mayo 2026): [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 sesiones + [MEJORAS_PROMPT_C_RONDA_2026-05.md](MEJORAS_PROMPT_C_RONDA_2026-05.md) § Prompt F.
+Salida ronda F pasada 1 (27 mayo 2026): [MEJORAS_PROMPT_C_RONDA_2026-05.md](MEJORAS_PROMPT_C_RONDA_2026-05.md) § Prompt F + [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 sesiones.
+Salida ronda F pasada 2 formal (20 mayo 2026): [AUDITORIA_PROMPT_F_RONDA_2026-05.md](AUDITORIA_PROMPT_F_RONDA_2026-05.md) — **acción founder**; rutas inversor / farmacia / Day-D.
+Re-verificado pasada 3 (20 mayo 2026): P0-06 snapshot **d2d1b75** — 399 tests OK @ HEAD.
 ```
 
 ---

@@ -6,7 +6,8 @@
 
 ## 0. Pre-flight reunión (Prompt E — gap analysis)
 
-> **Salida completa:** [MEJORAS_PROMPT_C_RONDA_2026-05.md](MEJORAS_PROMPT_C_RONDA_2026-05.md) § Prompt E (27 mayo 2026).  
+> **Salida formal pasada 2:** [AUDITORIA_PROMPT_E_RONDA_2026-05.md](AUDITORIA_PROMPT_E_RONDA_2026-05.md) (20 mayo 2026).  
+> **Log pasada 1:** [MEJORAS_PROMPT_C_RONDA_2026-05.md](MEJORAS_PROMPT_C_RONDA_2026-05.md) § Prompt E.  
 > **Registro P0:** [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md).
 
 ### 0.1 P0 abiertos (bloqueantes institucional)
@@ -18,7 +19,7 @@
 | P0-03 | 2–3 referencias con permiso | Abierto |
 | P0-04 | Aprobación founder pack antes de envío | Abierto |
 | P0-05 | Demo en vivo — fecha programada | Abierto |
-| P0-06 | Re-run **399 tests** + commit en VOLCADO §1.2 | Abierto |
+| P0-06 | Re-run **399 tests** + commit en VOLCADO §1.2 | Snapshot OK (`d2d1b75`, 20 may 2026, pasada 3 F); **re-ejecutar** antes de cada reunión |
 | P0-07 | NDA + data room cerrado (si fondo formal) | Abierto |
 | P0-08 | Métricas tracción por producto (si se citan) | Abierto |
 
@@ -49,6 +50,8 @@ Igual que [README.md](README.md) § inversor: **BRIEF → CONTEXTO → PERFIL �
 | SAFE/T&C como versión final sin abogado | Media | Marcar **borrador** (CHECKLIST §1) |
 
 ### 0.5 Próximas 3 sesiones (Prompt F)
+
+> **Diagnose formal pasada 2:** [AUDITORIA_PROMPT_F_RONDA_2026-05.md](AUDITORIA_PROMPT_F_RONDA_2026-05.md) (20 mayo 2026).
 
 | # | Enfoque | Doc |
 |---|---------|-----|

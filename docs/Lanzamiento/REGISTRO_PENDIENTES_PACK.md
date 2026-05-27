@@ -4,7 +4,7 @@
 > **Uso:** Completar celdas antes de reunión con inversor institucional o envío del data room cerrado.  
 > **Fuente:** barrido `[PENDIENTE]` en `docs/Lanzamiento/` (no inventar datos).  
 > **Plantilla detallada:** [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md).  
-> **Pre-flight reunión:** [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) §0 (Prompt E).  
+> **Pre-flight reunión:** [AUDITORIA_PROMPT_E_RONDA_2026-05.md](AUDITORIA_PROMPT_E_RONDA_2026-05.md) (Prompt E pasada 2) · operativo [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) §0.  
 > **Checklist founder (P0 en chat IA):** [PROMPT_PACK_LANZAMIENTO.md](PROMPT_PACK_LANZAMIENTO.md) § Checklist datos humanos.  
 > **Auditoría Prompt B (27 may 2026):** [AUDITORIA_PROMPT_B_RONDA_2026-05.md](AUDITORIA_PROMPT_B_RONDA_2026-05.md) — hallazgos doc **I-01–I-16** en [INCOHERENCIAS](INCOHERENCIAS_LANZAMIENTO_2026-05.md).
 
@@ -31,7 +31,7 @@
 | P0-03 | **2–3 referencias** profesionales con permiso y contacto | Founder | CHECKLIST §2 | §1.2 tabla |
 | P0-04 | **Aprobación founder** del pack antes de enviar | Founder | README final | README L154 |
 | P0-05 | **Demo en vivo** programada (fecha) | Founder | ANALISIS_FORENSE §11.3; VOLCADO §1.2 | §1.2 |
-| P0-06 | Re-verificar **399 tests** + commit short pre-reunión | Founder | VOLCADO §1.2 | §1.2 — **6856ce8** (20 may 2026); re-ejecutar antes de cada reunión |
+| P0-06 | Re-verificar **399 tests** + commit short pre-reunión | Founder | VOLCADO §1.2 | §1.2 — **d2d1b75** (20 may 2026, pasada 3 F); re-ejecutar antes de cada reunión |
 | P0-07 | Proceso **NDA** + data room cerrado (si fondo formal) | Founder + Legal | ANALISIS_FORENSE §11.1 bis IR | — |
 | P0-08 | **Métricas tracción** por producto (GMV/usuarios) si se citan en pitch | Founder | CHECKLIST §2; VOLCADO §1.2 | CHECKLIST; §1.2 |
 
@@ -128,7 +128,8 @@ Completar en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARI
 
 ## Próximas 3 sesiones (Prompt F — preparar inversor)
 
-> **Diagnose 27 mayo 2026:** el pack doc está listo; el bloqueante es **P0 humano**, no más edición IA de narrativa.
+> **Diagnose pasada 2 formal (20 mayo 2026):** [AUDITORIA_PROMPT_F_RONDA_2026-05.md](AUDITORIA_PROMPT_F_RONDA_2026-05.md) — router inversor + rutas farmacia / Day-D.  
+> **Diagnose 27 mayo 2026 (pasada 1):** el pack doc está listo; el bloqueante es **P0 humano**, no más edición IA de narrativa.
 
 | Sesión | Archivo | Qué hacer |
 |--------|---------|-----------|
@@ -136,7 +137,7 @@ Completar en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARI
 | **2** | [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) §1–§2 | Lead concreto; Drive link; email data room; marcar P0-04 |
 | **3** | [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) §5–§6 | Demo **staging**; guion 30 min; fecha reunión → P0-05 |
 
-Detalle: [MEJORAS_PROMPT_C_RONDA_2026-05.md](MEJORAS_PROMPT_C_RONDA_2026-05.md) § Prompt F · Pre-flight: CHECKLIST §0.
+Detalle: [AUDITORIA_PROMPT_F_RONDA_2026-05.md](AUDITORIA_PROMPT_F_RONDA_2026-05.md) (pasada 2) · [MEJORAS_PROMPT_C_RONDA_2026-05.md](MEJORAS_PROMPT_C_RONDA_2026-05.md) § Prompt F · Pre-flight: [AUDITORIA_PROMPT_E_RONDA_2026-05.md](AUDITORIA_PROMPT_E_RONDA_2026-05.md).
 
 ---
 

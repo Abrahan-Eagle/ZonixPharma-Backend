@@ -87,6 +87,20 @@ Cruce PROYECCION §0–§1.3 ↔ PRESUPUESTO §1–§2.3 ↔ UNIT §3–§6 ↔ 
 
 **Resultado:** **verde** — sin ediciones en tablas M1–M12.
 
+### Prompt D — pasada 2 formal (20 mayo 2026)
+
+Re-ejecución ampliada según [PROMPT_PACK_LANZAMIENTO.md](PROMPT_PACK_LANZAMIENTO.md) § D: 18 anclas × docs citados (BRIEF, README, MENSAJE, ESTRUCTURA, CHECKLIST, PLAN) + tabla forense completa.
+
+| Entregable | Enlace |
+|------------|--------|
+| Informe DD | [AUDITORIA_PROMPT_D_RONDA_2026-05.md](AUDITORIA_PROMPT_D_RONDA_2026-05.md) |
+| Filas verificadas | 44 |
+| P0 / P1 | 0 / 0 |
+| P2 cosmético | 1 (MENSAJE Slide 8: Growth sin % equity explícito — opcional) |
+| Ediciones PROYECCION §1.1 | Ninguna |
+
+**Resultado pasada 2:** **verde** — mismo veredicto que pasada 1, con trazabilidad data room.
+
 ---
 
 ## Prompt E — pre-reunión inversor (27 mayo 2026)
@@ -118,6 +132,18 @@ README § inversor (7 docs, ~30 min) = MENSAJE §2.
 
 **Recomendación:** ángel con **P0-02 + P0-06** mínimo; institucional = **8/8 P0**.
 
+### Prompt E — pasada 2 formal (20 mayo 2026)
+
+Re-ejecución ampliada según [PROMPT_PACK_LANZAMIENTO.md](PROMPT_PACK_LANZAMIENTO.md) § E: gap analysis 30 min post-[AUDITORIA_PROMPT_D_RONDA_2026-05.md](AUDITORIA_PROMPT_D_RONDA_2026-05.md).
+
+| Entregable | Enlace |
+|------------|--------|
+| Informe DD pre-reunión | [AUDITORIA_PROMPT_E_RONDA_2026-05.md](AUDITORIA_PROMPT_E_RONDA_2026-05.md) |
+| P0 abiertos | 7 + P0-06 snapshot (`d2d1b75`) |
+| Top 5 Q&A | §2 informe (fuente + línea) |
+| Veredicto | **Amarillo** — pack listo; P0 humano bloqueante institucional |
+| Sync doc | CHECKLIST §0.1 P0-06 |
+
 ---
 
 ## Prompt F — diagnose (27 mayo 2026)
@@ -146,6 +172,26 @@ Cierra REGISTRO **P0-01, P0-02, P0-03, P0-06**.
 
 **Después de reunión:** P1 pipeline farmacias (VOLCADO §6) + abogado SAFE (P1-05 / P3-05).
 
+### Prompt F — pasada 2 formal (20 mayo 2026)
+
+Re-ejecución router post-[AUDITORIA_PROMPT_D_RONDA_2026-05.md](AUDITORIA_PROMPT_D_RONDA_2026-05.md) + [AUDITORIA_PROMPT_E_RONDA_2026-05.md](AUDITORIA_PROMPT_E_RONDA_2026-05.md).
+
+| Entregable | Enlace |
+|------------|--------|
+| Diagnose formal | [AUDITORIA_PROMPT_F_RONDA_2026-05.md](AUDITORIA_PROMPT_F_RONDA_2026-05.md) |
+| Clasificación | Pack maduro; P0 humano bloqueante |
+| Próxima sesión | VOLCADO §1 + §1.2 (Founder) |
+| Rutas extra | Pitch farmacia (B2B §8.1→§9) · Plan Day-D (PLAN §4.0→ALINEACION→§18) |
+| Veredicto | **Acción founder** — no más Prompt C |
+
+### Prompt F — pasada 3 refresh (20 mayo 2026)
+
+| Campo | Valor |
+|-------|--------|
+| Delta | HEAD **6856ce8** → **d2d1b75**; tests **399 passed** (1649 assertions) |
+| Archivos sync | VOLCADO §1.2 · REGISTRO P0-06 · CHECKLIST §0.1 · AUDITORIA_PROMPT_F cabecera |
+| Veredicto | Sin cambio — **acción founder** (resto P0 abiertos) |
+
 ---
 
-*Rondas pack IA: B → C (×2) → D → E → F (27 mayo 2026).*
+*Rondas pack IA: B → C (×2) → D → E → F (27 mayo 2026). Pasadas formales D/E/F: 20 mayo 2026.*
