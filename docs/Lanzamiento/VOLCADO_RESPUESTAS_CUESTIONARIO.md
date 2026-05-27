@@ -39,7 +39,7 @@ Ingeniero en Informática (IUTVAL, 2013–2018) con **más de 8 años** construy
 | Comando | `./vendor/bin/phpunit` (o `php artisan test`) |
 | Resultado última corrida | **399 tests**, **1649 assertions**, OK |
 | Fecha corrida | **20 mayo 2026** |
-| Commit (short) | **81eec2a** *(pack pasada 5; actualizar tras cada corrida `phpunit` pre-reunión)* |
+| Commit (short) | **6856ce8** *(re-verificado pre-reunión; `php artisan test` — 399 passed)* |
 | Notas | Cifra citada en pack: [README.md](README.md), [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md), [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) §9 |
 
 ## 1.5 Co-CEO / CEO operativo (segundo al mando)
