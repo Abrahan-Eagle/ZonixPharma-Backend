@@ -216,7 +216,7 @@ Contratar **cuatro** personas en este rol (quinta columna opcional si se evalúa
 
 ## 12. Due diligence founder — checklist pre-inversor institucional
 
-> Completar por el **founder** (no el agente). `zonix-investor-materials` audita gaps; no rellena datos personales.
+> Completar por el **founder**. Revisar gaps con [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) §3 antes de reunión institucional.
 
 | Ítem | Estado | Notas / enlace |
 |------|--------|----------------|

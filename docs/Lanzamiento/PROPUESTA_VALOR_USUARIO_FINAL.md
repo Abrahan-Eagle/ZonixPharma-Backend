@@ -1,6 +1,6 @@
 # Propuesta de valor — Usuario final (Paciente / Buyer)
 
-> **Última actualización:** 20 mayo 2026.
+> **Última actualización:** 26 mayo 2026.
 > Documento que captura el pitch al usuario final que descarga la app o entra a la web.
 > El paciente es el rol `users` (Buyer) en el backend.
 
@@ -47,6 +47,22 @@
 - Zonix Pharma es un **marketplace y canal tecnológico**; **no** sustituye el criterio médico ni la consulta presencial.
 - Los textos de la app, anuncios y redes deben cumplir **buenas prácticas de publicidad** en salud: sin promesas de cura, sin antes/después, sin garantizar resultados terapéuticos. Ver checklist operativo en [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) sección **«Do / Don’t — comunicaciones en salud (VE)»**.
 - Cifras de **ahorro** o comparaciones de precio son **estimaciones internas** o basadas en escenarios; pueden variar según stock y farmacia. No constituyen oferta vinculante ni asesoría sanitaria.
+
+## 2.2 BrandScript — mensaje paciente (1 página)
+
+Plantilla StoryBrand para copy Meta, valla y app. **Sin** promesas de cura ni resultados terapéuticos.
+
+| Elemento | Contenido Zonix Pharma |
+|----------|------------------------|
+| **Héroe** | Paciente en Valencia (Carmen, Diego, hijo de Doña Luisa) que necesita medicamentos OTC o Rx con entrega o pickup. |
+| **Problema externo** | Colas, stock incierto, receta física que se pierde, pago solo en mostrador. |
+| **Problema interno** | Estrés, tiempo perdido, miedo a comprar mal. |
+| **Villano (metafórico)** | Fragmentación del acceso — no atacar farmacias físicas de barrio. |
+| **Guía** | Zonix Pharma: claro, empático; la **dispensación y validación Rx** las hace el farmacéutico colegiado de **la farmacia** elegida. |
+| **Plan** | Buscar farmacia → carrito → subir receta si Rx → pago manual VE → seguimiento del pedido. |
+| **Éxito** | Medicamento entregado o retirado; receta validada o rechazo explicado. |
+| **Fracaso evitado** | Pedido bloqueado sin explicación (alinear estados app: `pending_prescription_validation`, etc.). |
+| **CTA** | «Descarga Zonix Pharma» / «Pide en tu farmacia aliada» — coherente con §9 creativos. |
 
 ## 3. Lo que Zonix Pharma le ofrece
 

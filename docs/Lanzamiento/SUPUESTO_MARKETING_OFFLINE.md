@@ -1,6 +1,6 @@
 # Supuesto de marketing offline
 
-> **Última actualización:** 20 mayo 2026.
+> **Última actualización:** 26 mayo 2026.
 > Documento que justifica el rol del marketing offline (vallas, radio, flyers) en el plan, y por qué la **prioridad principal es marketing digital**.
 
 ## 1. Filosofía del pack: digital primero, offline complementario
@@ -29,6 +29,18 @@
 - Contenido generado por usuarios (reseñas) que mencione **dosis** o **diagnóstico** sin moderación.
 
 **Proceso interno:** todo creativo digital u offline pasa por checklist legal de **1 página** firmado por responsable; campañas pagas requieren **archivo** de anuncio + fecha de vigencia.
+
+### 1.2 Bullseye — priorización de canales (Traction)
+
+Un **anillo** a la vez; presupuestos desde [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) — **no** inventar cifras nuevas aquí.
+
+| Anillo | Canal piloto | Métrica leading | Costo ref. pack |
+|--------|--------------|-----------------|-----------------|
+| **Interior** | Referidos farmacia + WhatsApp comunidad | Primer pedido con `commerce_id` piloto | CAC farmacia en [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) |
+| **Medio** | Meta Ads (paciente) | CPI / costo primer pedido pagado | PRESUPUESTO marketing digital |
+| **Exterior** | Valla Av. Bolívar / radio local | UTM o código en creativo | §2–§3 este doc |
+
+**Regla:** no escalar **exterior** hasta **Day-D** con catálogo vivo en ≥ meta farmacias de [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §2.6 / §4.
 
 **Pero no se prescinde del offline porque:**
 - Las farmacias (B2B) son personas mayores que confían en lo "tangible".

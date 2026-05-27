@@ -65,6 +65,43 @@ Si el equipo real va detrás del plan, documentar desviación y sensibilidad (ve
 
 Para sprints Laravel/Flutter usar skills de código (`zonix-prescriptions`, `zonix-order-lifecycle`, `laravel-specialist`, `flutter-expert`) — ver tabla en `zonix-lanzamiento-roles`.
 
+## Validación pre-Day-D (four-steps + mom-test)
+
+Añadir o auditar en PLAN_LANZAMIENTO_COMERCIAL como checklist; **no** sustituye Definition of Done del BRIEF.
+
+### Customer Development (four-steps)
+
+| Paso | Pregunta de validación | Evidencia mínima piloto Zonix |
+|------|------------------------|-------------------------------|
+| 1. Customer discovery | ¿Dueño farmacia y paciente confirman dolor sin mencionar Zonix? | ≥5 entrevistas mom-test documentadas |
+| 2. Customer validation | ¿Firma contrato marco + pago configurado? | Farmacia en panel con `payment_methods` |
+| 3. Customer creation | ¿Primer pedido real OTC o Rx? | Orden en BD estado ≥ `pending_payment` |
+| 4. Company building | ¿Procesos CS/disputas y SLA delivery? | Macros CS + partner `delivery_company` activo |
+
+### Mom-test (entrevistas farmacia — antes de escalar Sales)
+
+Reglas al redactar guiones en pack o VOLCADO:
+
+- Preguntar **hechos pasados** («¿Cuántos pedidos por WhatsApp la semana pasada?»), no hipótesis («¿Usarías una app?»).
+- No mencionar Zonix hasta entender flujo actual Rx y delivery.
+- Registrar citas textuales en VOLCADO; la IA **no inventa** respuestas de entrevistas.
+
+## Beachhead y post-piloto (crossing-the-chasm)
+
+Lente [founder-playbook `crossing-the-chasm`](https://github.com/getagentseal/founder-playbook) — **después** de validar piloto, no antes de Day-D.
+
+| Fase | Segmento | Acción | Doc pack |
+|------|----------|--------|----------|
+| **Beachhead (Day-D → M6)** | San Diego + Av. Bolívar Norte; farmacias independientes | Dominar NPS, Rx SLA, repeat purchase | BRIEF DoD; PLAN §4–§5 |
+| **Early majority (M6+)** | Naguanagua, El Socorro, La Viña, Prebo | Expandir catálogo + Meta solo si M3 retención OK | PLAN §6 T+180→T+360 |
+| **Mainstream** | Cadenas medianas / nacional | **No** en año 1; evento Enterprise tier | PROPUESTA B2B §1 |
+
+**Reglas agente:**
+
+1. **No** escalar marketing masivo a paciente «mainstream» sin retención y repetición probadas **M3+** post-Day-D.
+2. **No** prometer expansión geográfica fuera Valencia metro en pitch pre-seed sin actualizar PERFIL_MERCADO.
+3. Pragmatists (farmacias) compran cuando ven **referencias** de otras farmacias del beachhead — priorizar casos de éxito locales antes de cold national.
+
 ## Reglas
 
 1. No mover fechas Day-D sin actualizar PROYECCION y comunicación inversor.

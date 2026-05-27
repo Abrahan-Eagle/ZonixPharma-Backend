@@ -51,6 +51,51 @@ Stack en producción; piloto Day-D T+90. Data room: [enlace carpeta].
 
 Personalizar tono founder; **no** cambiar cifras sin actualizar README.
 
+## Variantes email (adaptado fundraising-email / made-to-stick)
+
+Usar al editar MENSAJE_ENVIO; **misma cifra** en las tres variantes.
+
+### Corto (~80 palabras)
+
+Asunto: `Zonix Pharma — pre-seed Valencia (SAFE)`
+
+Cuerpo: problema en 1 frase → solución marketplace Rx/OTC → ask wire tier + cap → CTA 30 min + enlace carpeta `docs/Lanzamiento/README.md`.
+
+### Medio (~150 palabras)
+
+Añadir: earned secret (CONTEXTO_PITCH), 1 bullet tracción técnica (stack listo, ALINEACION), 1 bullet piloto (Day-D T+90, farmacias SAM).
+
+### Largo (para data room previo)
+
+Añadir: tabla use of funds en 3 líneas (Fase 0 / nómina / marketing desde PRESUPUESTO §2), link CHECKLIST_PRE_INVERSOR, disclaimer legal VE `[PENDIENTE abogado]`.
+
+**SUCCES (made-to-stick)** para 1 bullet memorable en pitch: **Simple** — «marketplace farmacia con farmacéutico de cada local»; **Unexpected** — pagos manuales VE, sin ser banco; **Concrete** — USD 101k, 90 días a Day-D; **Credible** — tests/backend en ALINEACION; **Emotional** — acceso medicamentos Valencia; **Story** — founder con stack en producción.
+
+## Posicionamiento (obviously-awesome — CONTEXTO_PITCH)
+
+Plantilla de 1 párrafo al auditar CONTEXTO_PITCH:
+
+1. **Competitive alternatives:** Farmatodo/Locatel digital, Rappi, WhatsApp informal.
+2. **Unique attributes:** Rx con validación por farmacéutico de la farmacia; uni-pharmacy; VE payments manuales.
+3. **Value:** pedido confiable OTC/Rx + tracking sin flota Zonix.
+4. **Target customer:** farmacias independientes Valencia metro + paciente urbano.
+5. **Market category:** marketplace farmacéutico digital (no «delivery de comida»).
+
+## Cialdini — cierre inversor (influence)
+
+Lente [founder-playbook `influence`](https://github.com/getagentseal/founder-playbook). Aplicar en MENSAJE_ENVIO, reunión y CHECKLIST §8 — **sin** manipulación ni cifras inventadas.
+
+| Principio | Aplicación Zonix | Dónde en pack |
+|-----------|------------------|---------------|
+| **Reciprocity** | Compartir BRIEF + índice data room antes de pedir reunión; demo preparada | MENSAJE §2; README pack |
+| **Social proof** | **399 tests** backend; comparable Farmalisto LatAm financiable | MENSAJE §1; PERFIL_MERCADO |
+| **Scarcity** | Ronda Lean **101k** acotada; waiver **10 farmacias** piloto (no ilimitado) | README cifras; PROPUESTA B2B §11 |
+| **Authority** | Founder stack ~4 años; LinkedIn; track record Corral X si aplica | VOLCADO §1; CONTEXTO_PITCH §1 |
+| **Consistency** | SAFE estándar YC adaptado VE; decisiones documentadas en CONTEXTO | ESTRUCTURA_LEGAL |
+| **Liking** | Español claro; explicar SAFE/cap; sin arrogancia técnica | Tono § abajo |
+
+**En reunión (CHECKLIST §8):** cerrar con próximo paso concreto (SAFE en 14–21 días) y pedir feedback si rechaza (mantener relación).
+
 ## Q&A frecuente (respuestas ancladas)
 
 | Pregunta | Dirección de respuesta | Fuente |

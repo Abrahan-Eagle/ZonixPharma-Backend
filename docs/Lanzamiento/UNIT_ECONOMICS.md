@@ -1,6 +1,6 @@
 # Unit Economics — Zonix Pharma
 
-> **Última actualización:** 20 mayo 2026 (replante: cuota fija **25/40/55**, **4×** Sales, ARPF **~50**, CAC **139**; §7.1 guía de lectura cohort).
+> **Última actualización:** 26 mayo 2026 (replante: cuota fija **25/40/55**, **4×** Sales, ARPF **~50**, CAC **139**; §2.1 WTP; §7.1 guía de lectura cohort).
 > Documento que explica cómo gana dinero Zonix Pharma a nivel de farmacia individual.
 > Cifras base propagadas al [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md), [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) y al [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md).
 
@@ -35,6 +35,17 @@ Payback CAC = 139 / 50 ≈ 2,8 meses
 **Placeholder USD ~50/mes:** se conserva en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) y resúmenes hasta tener **GMV en app** y distribución por tier. Al actualizar ARPF, recalcular LTV, LTV/CAC y payback en este documento y en los hermanos.
 
 **Sensibilidad (ARPF más bajo):** si el ARPF efectivo fuera **USD 41/mes** (mix desfavorable), LTV = **USD 820**; LTV/CAC ≈ **5,9x** con CAC base **USD 139**. Sigue por encima del umbral típico “> 3x” SaaS SMB.
+
+### 2.1 WTP y pricing (lente monetizing-innovation)
+
+| Concepto | Aplicación Zonix | Regla pack |
+|----------|------------------|------------|
+| Valor económico para la farmacia | Visibilidad digital + pedidos + menos fricción Rx vs solo mostrador | Cualitativo hasta GMV real post-Day-D |
+| WTP (techo) | Lo que la farmacia acepta vs cuota **25/40/55** + % GMV | Comparar con ARPF **~50** placeholder |
+| Cercas de precio | Bandas por GMV (Basic / Pro / Enterprise) | [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5 — **no** cambiar % sin decisión founder |
+| Waiver piloto | Primeras 10 farmacias, 2 meses sin cuota fija | Solo si está en contrato; recalcular PROYECCION §1.1 fila waiver |
+
+**Nota:** ARPF **~50** es **placeholder** hasta recalibrar con mix real de tiers y GMV en piloto.
 
 ## 3. CAC (Customer Acquisition Cost)
 

@@ -30,10 +30,13 @@
 | **Versión** | 1.0.0 |
 | **Estado** | Migración Eats → Pharma (fork destructivo) en progreso |
 | **Roles** | 7 (users, commerce, pharmacist, delivery, delivery_agent, delivery_company, admin) |
-| **Última actualización** | 30 abril 2026 |
+| **Última actualización** | 27 mayo 2026 |
 
 ### Cambios recientes
 
+- **27 may 2026 — Skills startup Jarvis (founder-playbook / shawnpang destilados, sin repos externos).**
+  - Nuevas secciones: `zonix-startup-context` (Market Type), `zonix-financial-model` (waiver 100m-offers), `zonix-launch-piloto` (beachhead/chasm), `zonix-fundraising-narrative` (Cialdini), `zonix-lanzamiento-docs` (anti-patrones + router BRIEF/PERFIL).
+  - Guía: [docs/zonix/SKILLS_STARTUP_USAR_NO_USAR.md](docs/zonix/SKILLS_STARTUP_USAR_NO_USAR.md).
 - **30 abr 2026 — Transformación Zonix Eats → Zonix Pharma (fork destructivo, MVP completo Rx).**
   - Branding: `Zonix Pharma`, `com.zonix.pharma`, `zonix://pharmacy/{id}`, canal FCM `zonix_pharma_fcm`, dominio `zonixpharma.com`.
   - Paleta Pharma fría (#1E2A5A, #0F4C5C, #56C7B8, #A8DCCB, #F5F7FA, #C7CFD9, #142033, #F2A65A) en `app_colors.dart` + tema light/dark Pharma con Plus Jakarta Sans.
@@ -156,6 +159,7 @@ Configurables en `config/zonix.php` (sección `pharma`):
 | `zonix-jarvis-subagents-map` | Tarea Zonix → subagent VoltAgent (lente) → skill `zonix-*` canon | [.agents/skills/zonix-jarvis-subagents-map/SKILL.md](.agents/skills/zonix-jarvis-subagents-map/SKILL.md) |
 | `zonix-legal-contracts-ve` | Checklist contrato marco farmacia, SAFE, laboral VE | [.agents/skills/zonix-legal-contracts-ve/SKILL.md](.agents/skills/zonix-legal-contracts-ve/SKILL.md) |
 | `zonix-founder-ops-index` | Índice curado awesome-ceo/cto/tpm (sin cifras fuera del pack) | [.agents/skills/zonix-founder-ops-index/SKILL.md](.agents/skills/zonix-founder-ops-index/SKILL.md) |
+| `zonix-lanzamiento-docs` | Mejorar/auditar docs/Lanzamiento; marcos Busqueda GitHub adaptados | [.agents/skills/zonix-lanzamiento-docs/SKILL.md](.agents/skills/zonix-lanzamiento-docs/SKILL.md) |
 
 ---
 
@@ -177,6 +181,7 @@ Configurables en `config/zonix.php` (sección `pharma`):
 | Cerrar sesión con cambios relevantes | `context-updater` |
 | Finalizar tarea y documentar avances | `documentar-avances` |
 | Trabajar con pack Lanzamiento / roles / pitch inversor | `zonix-startup-context` + `zonix-lanzamiento-roles` + `documentar-avances` |
+| Mejorar o auditar un `.md` en `docs/Lanzamiento/` | `zonix-startup-context` + **`zonix-lanzamiento-docs`** + skill del router (tabla en skill) |
 | Auditar finanzas del pack (PROYECCION, UNIT, PRESUPUESTO) | `zonix-startup-context` + `zonix-financial-model` |
 | Preparar data room / gaps inversor | `zonix-startup-context` + `zonix-investor-materials` |
 | Redactar pitch / email inversor | `zonix-startup-context` + `zonix-fundraising-narrative` |

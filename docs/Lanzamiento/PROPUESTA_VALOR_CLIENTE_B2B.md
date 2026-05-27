@@ -1,6 +1,6 @@
 # Propuesta de valor — Cliente B2B (Farmacia)
 
-> **Última actualización:** 20 mayo 2026.
+> **Última actualización:** 26 mayo 2026.
 > Documento que captura el pitch comercial al dueño de la farmacia (decisor B2B).
 > Si la farmacia es cadena, el decisor es el gerente comercial / director de operaciones.
 
@@ -230,16 +230,31 @@ Detalle de facturación SENIAT e impago en [PLAN_METODOS_PAGO.md](PLAN_METODOS_P
 - **Cotización formal en email:** PDF con tier sugerido + precio + condiciones + fecha de inicio.
 - **Calculadora ahorro vs. Rappi:** spreadsheet con su GMV estimado.
 
+## 8.1 Discovery call — marco SPIN (Sales B2B)
+
+Guion **antes** de la demo (10–15 min). Preguntar **hechos pasados**, no «¿usarías una app?». No mencionar Zonix hasta entender el flujo actual.
+
+| Fase | Preguntas ejemplo | Objetivo |
+|------|-------------------|----------|
+| **S**ituación | ¿Cuántos pedidos digitales reciben por semana (WhatsApp, Rappi, otro)? ¿Farmacéutico colegiado en turno todos los días? | Baseline |
+| **P**roblema | ¿Han perdido ventas por stock o por no aparecer en búsqueda digital? ¿Cómo validan Rx hoy? | Dolor explícito |
+| **I**mplicación | Si un competidor digital captura pacientes de su zona en 6 meses, ¿qué pasa con su mostrador? | Urgencia moderada |
+| **N**ecesidad | Si tuvieran panel + demanda sin montar app propia ni flota, ¿qué KPI mejorarían primero (pedidos, ticket, Rx)? | Puente a §7 demo |
+
+Registrar respuestas en CRM / [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) §6 — **no inventar** citas en el pack.
+
 ## 9. Objeciones frecuentes y respuestas
 
-| Objeción | Respuesta |
-|---|---|
-| "Ya estoy en Rappi, no necesito más." | "Rappi te cobra USD X.XXX/mes en comisión sobre GMV. **Zonix Pharma** usa cuota fija + un % muy bajo sobre tu GMV en la app (§5); en volumen típico sueles pagar órden de magnitud menos. Puedes mantener Rappi mientras pruebas con nosotros." |
-| "Mi farmacéutico no quiere validar recetas en una app." | "El backend está construido para que él vea solo las recetas pendientes. Capacitación de 30 min. Si tras los **2 primeros meses** (ventana sin penalidad acordada en contrato) no encaja el flujo, las salidas se rigen por el **contrato marco anual** y anexos." |
-| "¿Y si la app cae?" | "Backend **Laravel** en **VPS Nameshared** + **Pusher** + FCM. SLA del proveedor según contrato del hosting. Plan B: **pickup en sucursal** si falla la entrega digital." |
-| "¿Cómo se cobra el delivery?" | "El paciente paga el **envío aparte** a la **empresa de delivery**. Tú cobras solo medicamentos (GMV §5). La empresa paga a Zonix **`8%` del fee del mes + USD 0,30 por cada envío** — [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §2.5." |
-| "¿Y si el paciente reclama un medicamento mal entregado?" | "Hay módulo de quejas y resolución. Mediación de Customer Support de **Zonix Pharma** en 24h. La farmacia decide si reembolsa." |
-| "¿Cuánto tarda el onboarding?" | "30 min catálogo + 1h capacitación + 1 día de prueba interna. Total 2 días desde que firmas." |
+| Objeción | Respuesta | Evidencia / siguiente paso |
+|---|---|---|
+| "Ya estoy en Rappi, no necesito más." | "Rappi te cobra USD X.XXX/mes en comisión sobre GMV. **Zonix Pharma** usa cuota fija + un % muy bajo sobre tu GMV en la app (§5); en volumen típico sueles pagar órden de magnitud menos. Puedes mantener Rappi mientras pruebas con nosotros." | Calculadora §8; §5 bandas 25/40/55 |
+| "Mi farmacéutico no quiere validar recetas en una app." | "El backend está construido para que él vea solo las recetas pendientes. Capacitación de 30 min. Si tras los **2 primeros meses** (ventana sin penalidad acordada en contrato) no encaja el flujo, las salidas se rigen por el **contrato marco anual** y anexos." | [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md); demo Pharmacist |
+| "¿Y si la app cae?" | "Backend **Laravel** en **VPS Nameshared** + **Pusher** + FCM. SLA del proveedor según contrato del hosting. Plan B: **pickup en sucursal** si falla la entrega digital." | [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) |
+| "¿Cómo se cobra el delivery?" | "El paciente paga el **envío aparte** a la **empresa de delivery**. Tú cobras solo medicamentos (GMV §5). La empresa paga a Zonix **`8%` del fee del mes + USD 0,30 por cada envío** — [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §2.5." | PROPUESTA_TERCER_LADO |
+| "¿Y si el paciente reclama un medicamento mal entregado?" | "Hay módulo de quejas y resolución. Mediación de Customer Support de **Zonix Pharma** en 24h. La farmacia decide si reembolsa." | PLAN_MODULO §16 |
+| "¿Cuánto tarda el onboarding?" | "30 min catálogo + 1h capacitación + 1 día de prueba interna. Total 2 días desde que firmas." | [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §3 |
+| "La comisión / cuota me parece alta." | Comparar CAC paciente digital vs visibilidad; mostrar §5 con su GMV estimado vs agregador 25–35%. | [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) |
+| "Regulación / MPPS." | Validación por **farmacéutico colegiado de la farmacia**; plataforma documentada. | [PLAN_REGULATORIO](../PLAN_REGULATORIO_PHARMA_VE.md) + asesor `[PENDIENTE]` |
 | "¿Y si no hay órdenes los primeros meses?" | "Marketing primero a tu **zona caminable** desde tu sucursal y al **polo del piloto** (Bella Florida o vía Tocuyito / El Socorro). Sales B2B garantiza al menos 5-10 órdenes/semana en mes 1, escalando." |
 | "¿Hay contrato anual?" | "Sí: el marco con la farmacia es **contrato anual** (marco B2B). La **cuota Zonix** se devenga **mensual** según GMV y tier §5. Salidas y penalidades: lo que diga el contrato firmado + avisos." |
 | "¿Quién es el responsable si MPPS inspecciona?" | "La farmacia sigue siendo el establecimiento farmacéutico responsable ante MPPS; **Zonix Pharma** aporta **trazabilidad digital** y logs exportables. Contrato marco lo deja escrito." |

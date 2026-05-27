@@ -1,13 +1,14 @@
 # Pack Lanzamiento Inversor — Zonix Pharma
 
-> **Última actualización:** 20 mayo 2026.
-> **Estado del pack:** completo para pre-seed; textos legales y plazos de retención sujetos a **dictamen abogado + farmacéutico asesor** antes de Day-D público.
+> **Última actualización:** 26 mayo 2026.
+> **Propósito de esta carpeta:** (1) **Plan de lanzamiento operativo** de Zonix Pharma — calendario **T+0 → Fase 0 → Day-D (T+90) → M12**, equipo, farmacias, tech y KPIs ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) es la fuente canónica). (2) **Materiales de inversor y finanzas** en mejora continua (WIP). Cruce pack ↔ código: [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) + [../ANALISIS_TECNICO_COMPLETO_2026-05.md](../ANALISIS_TECNICO_COMPLETO_2026-05.md).
+> **Estado del pack:** borrador avanzado pre-seed; textos legales y plazos de retención sujetos a **dictamen abogado + farmacéutico asesor** antes de Day-D público.
 > **Producto:** Zonix Pharma — marketplace farmacéutico digital; el pack usa **solo** esa marca para producto y plataforma (no mezclar con otros productos en narrativa, métricas ni infra — p. ej. dominio `zonixpharma.com`, repo `ZonixPharma-*`).
 > **Portfolio del founder:** puede citar otros proyectos del mismo founder (p. ej. **Corral X**) como track record en BRIEF/VOLCADO; eso **no** es el producto que se financia ni la plataforma de este data room.
 > **Zona piloto:** Valencia metro (Carabobo), con foco inicial operativo **San Diego / Av. Bolívar Norte** y expansión a Naguanagua, El Socorro, La Viña, Prebo, etc.
 > **Capital pedido (Lean — mínimo viable):** **USD 101.000** para **Fase 0 (~90 días)** + **12 meses** post-**Day-D** — SAFE post-money cap **USD 600.000**. **Recomendado (Base):** **USD 118.000** / cap **650.000**. **Acelerado (Growth):** **USD 135.000** / cap **720.000** — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §1.
 
-Este directorio contiene un **data room ligero** con **22 archivos** `.md` en total: **[README.md](README.md)** (índice), **[ANALISIS_FORENSE.md](ANALISIS_FORENSE.md)** (auditoría multi-rol del pack), **[ROLES_SKILLS_ZONIX.md](ROLES_SKILLS_ZONIX.md)** (matriz rol → competencias → agentes JARVIS) y **19 documentos** de contenido (brief, finanzas, legal, operación, propuestas de valor, etc.) para presentar Zonix Pharma a un inversionista. Está diseñado para leerse de forma navegable: el `BRIEF` resume todo en una página, y los demás archivos profundizan cada decisión, número y supuesto. Cada cifra está cruzada entre documentos y trazada a fuentes web reales (mayo 2026) cuando aplica.
+Este directorio contiene **24 archivos** `.md`: índice y auditorías ([README.md](README.md), [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md), [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md), [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md), [INCOHERENCIAS_LANZAMIENTO_2026-05.md](INCOHERENCIAS_LANZAMIENTO_2026-05.md)) más **19 documentos** de contenido (brief, finanzas, legal, operación comercial, propuestas de valor). Para **ejecutar el lanzamiento**, empezar por [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) y [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md). Para **inversor**, el `BRIEF` resume en una página; el resto profundiza cifras y supuestos (mayo 2026).
 
 ---
 
@@ -25,6 +26,29 @@ Este directorio contiene un **data room ligero** con **22 archivos** `.md` en to
 
 Lo anterior + los siguientes:
 
+0. [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) — qué dice el plan de lanzamiento vs qué hace el software hoy; guía para mejorar docs sin inventar datos.
+0b. [INCOHERENCIAS_LANZAMIENTO_2026-05.md](INCOHERENCIAS_LANZAMIENTO_2026-05.md) — registro doc ↔ doc (contradicciones corregidas y checklist de verificación).
+0c. [../zonix/ANALISIS_FORENSE_BUSQUEDA_GITHUB_LANZAMIENTO_2026-05.md](../zonix/ANALISIS_FORENSE_BUSQUEDA_GITHUB_LANZAMIENTO_2026-05.md) — auditoría forense de URLs/skills del doc [Busqueda GitHub](../Búsqueda%20de%20Habilidades%20de%20Startup%20en%20GitHub.md): qué sirve para mejorar el pack (Top 10 + anexos shawnpang/founder-playbook).
+
+## Usar Jarvis (IA) para mejorar este pack
+
+Los marcos del informe §9–11 están **adaptados en skills locales** (no hace falta `npx skills add` de repos externos):
+
+| Skill agente | Para qué |
+|--------------|----------|
+| **`zonix-lanzamiento-docs`** | Router, StoryBrand, Bullseye, **anti-patrones** (blue-ocean, 100m-leads, lean dogma) |
+| `zonix-startup-context` | Cifras ancla + **Market Type** (mercado existente) |
+| `zonix-b2b-sales` | PROPUESTA_VALOR_CLIENTE_B2B (SPIN) |
+| `zonix-fundraising-narrative` | MENSAJE_ENVIO, CONTEXTO_PITCH, **Cialdini** (cierre inversor) |
+| `zonix-launch-piloto` | PLAN (four-steps, mom-test, **beachhead** post-piloto) |
+| `zonix-financial-model` | PROYECCION, UNIT, **waiver 10 farmacias** |
+| `zonix-investor-materials` | CHECKLIST, data room, PERFIL competencia |
+
+**Prompt ejemplo:** «Mejora `PROPUESTA_VALOR_CLIENTE_B2B` §X usando `zonix-lanzamiento-docs`; cifras solo del pack; una sección.»
+
+Ruta skill: [.agents/skills/zonix-lanzamiento-docs/SKILL.md](../../.agents/skills/zonix-lanzamiento-docs/SKILL.md).
+
+**Pack (26–27 mayo 2026):** secciones SPIN, BrandScript, Bullseye, validación Day-D, WTP, email corto, FAQ técnica, posicionamiento. **Skills (27 mayo):** Market Type, waiver 100m-offers, beachhead/chasm, Cialdini, anti-patrones. Guía: [../zonix/SKILLS_STARTUP_USAR_NO_USAR.md](../zonix/SKILLS_STARTUP_USAR_NO_USAR.md).
 
 1. [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) — **Fase 0 (T+0→Day-D T+90)** + hitos T+30 / T+60 / Day-D + Definition of Done del piloto.
 2. [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) — pitch a la farmacia.
@@ -38,22 +62,8 @@ Lo anterior + los siguientes:
 10. [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md) — preguntas para el equipo.
 11. [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) — plantilla de captura.
 12. [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) — texto de WhatsApp/email + bullets pitch.
-13. [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) — auditoría multi-perspectiva del pack: **6 perspectivas narrativas**, mapa ejecutivo §11.1 / §11.1 bis y **síntesis multi-rol §11.4** (tabla por rol ejecutivo + verificación técnica).
-14. [ROLES_SKILLS_ZONIX.md](ROLES_SKILLS_ZONIX.md) — competencias por rol (piloto, plataforma, madurez), uso Docs / Empresa / Sistema y skills de agente.
-
----
-
-## Roles, skills y agentes JARVIS
-
-Matriz de referencia para **qué rol aporta qué competencia** al redactar el pack, constituir la empresa en VE y construir el sistema (Laravel + Flutter):
-
-- **[ROLES_SKILLS_ZONIX.md](ROLES_SKILLS_ZONIX.md)** — tablas rol → skills → Docs / Empresa / Sistema → skill en `.agents/skills/`.
-- Skill agente asociada: **`zonix-lanzamiento-roles`** en [ZonixPharma-Backend/.agents/skills/zonix-lanzamiento-roles/SKILL.md](../../.agents/skills/zonix-lanzamiento-roles/SKILL.md).
-- **26 skills** `zonix-*` (canon Backend): [docs/zonix/README.md](../zonix/README.md) · auditoría v2: [docs/zonix/ANALISIS_FORENSE_SKILLS.md](../zonix/ANALISIS_FORENSE_SKILLS.md).
-- Inversor/finanzas: `zonix-startup-context`, `zonix-financial-model`, `zonix-investor-materials`, `zonix-fundraising-narrative`, `zonix-regulatory-ve`.
-- Empresa VE: `zonix-empresa-ve` · Lanzamiento operativo: `zonix-launch-piloto` · Sales B2B: `zonix-b2b-sales` · Orquestación roles: `zonix-lanzamiento-roles`.
-
-Invocar **`zonix-startup-context`** antes de números. Constitución: **`zonix-empresa-ve`**. Calendario T+90: **`zonix-launch-piloto`**. Envío inversor: `zonix-fundraising-narrative` + `zonix-investor-materials`.
+13. [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) — auditoría multi-perspectiva del pack: **6 perspectivas narrativas**, mapa ejecutivo §11.1 / §11.1 bis, **síntesis §11.4** y **sexta pasada 360° §13** (cruce técnico).
+14. [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) — **registro único** de todos los `[PENDIENTE]` (P0–P4) para cerrar antes de reunión inversor.
 
 ---
 
@@ -111,7 +121,7 @@ Invocar **`zonix-startup-context`** antes de números. Constitución: **`zonix-e
 ## Decisiones del usuario aplicadas en todo el pack
 
 1. **Modelo de ingresos:** **híbrido** — cuota fija **USD 25 / 40 / 55** + **% sobre GMV** por bandas ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5); **un nivel y una factura por RIF**, GMV agregado de sucursales en piloto; dashboard por sucursal.
-2. **Alcance del piloto:** completo desde día 1 (Buyer + Pharmacy + Pharmacist + **`delivery_company`** + **`delivery_agent`**). **No** hay rol `delivery` (autónomo) en producto piloto. **Última milla:** Zonix **no opera flota propia**; concesión/contrato marco con empresa(s) partner — [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) cabecera y §A.
+2. **Alcance del piloto:** **flujos core completos desde Day-D** (Buyer + Pharmacy + Pharmacist + **`delivery_company`** + **`delivery_agent`**): OTC, Rx, pago manual VE, partner delivery. **No** rol `delivery` (autónomo). **No** incluye en pitch: lotes FIFO operativos ni app en tiendas hasta hitos Fase 0 — [INCOHERENCIAS_LANZAMIENTO_2026-05.md](INCOHERENCIAS_LANZAMIENTO_2026-05.md). **Última milla:** Zonix **no opera flota propia**; concesión/contrato marco — [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) cabecera y §A.
 3. **Equipo:**
   - Founder (CEO + CTO en una sola persona, el usuario) + **Co-CEO / CEO operativo** (segundo al mando; comercial / operación / corporate) **USD 1.000/mes** — **rótulo operativo**; representante legal / junta y SAFE según [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md).
   - Sin Pharmacist liaison interno: cada farmacia afiliada aporta su propio farmacéutico colegiado (Ley del Ejercicio de la Farmacia VE).
@@ -145,7 +155,7 @@ Invocar **`zonix-startup-context`** antes de números. Constitución: **`zonix-e
 
 ## Pendientes humanos para completar el pack
 
-Estos no se inventan. El pack los marca explícitamente con `[PENDIENTE]`. El [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) es la plantilla para llenarlos.
+Estos no se inventan. El pack los marca explícitamente con `[PENDIENTE]`. **Índice maestro de cierre:** [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md). **Plantilla detallada:** [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md).
 
 1. **Founder (mayo 2026 — parcial):** datos de **Abrahan Pulido** volcados en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) §1 (CV + LinkedIn). Siguen abiertos y son **bloqueantes para reunión institucional** (fondos / family office): **URL GitHub** o acceso repo bajo NDA, **declaración explícita de % dedicación** Zonix Pharma vs. CETIAC/otros, 2–3 referencias, métricas de tracción por producto (opcional).
 2. Nombres reales del Sales B2B, Customer Support, Marketing Lead, **Coordinador de Partners Logísticos**.
@@ -158,27 +168,12 @@ Estos no se inventan. El pack los marca explícitamente con `[PENDIENTE]`. El [V
 
 ---
 
-## Indexación Cursor / IA
-
-- **Canon inversor:** solo archivos en `docs/Lanzamiento/` (este directorio).
-- **Excluir en @:** `docs/_archive_eats/` (Zonix Eats histórico), `docs/GUIA_COMPLETA_ZONIX_EATS_VENEZUELA.md`, `docs/REQUISITOS_OPERAR_VENEZUELA.md` (comida — ver regulación Pharma).
-- **`.cursorignore`:** incluir `docs/_archive_eats/` si el índice mezcla contexto Eats.
-
-## Prompts para agentes (mejorar o crear el pack)
-
-| Prompt | Uso |
-|--------|-----|
-| [../plantillas/PROMPT_MEJORAR_PACK_LANZAMIENTO.md](../plantillas/PROMPT_MEJORAR_PACK_LANZAMIENTO.md) | **Mejorar** el pack existente (auditoría → OK → edición → pasada forense) |
-| [../plantillas/PROMPT_PACK_LANZAMIENTO_INVERSOR.md](../plantillas/PROMPT_PACK_LANZAMIENTO_INVERSOR.md) | **Crear** un pack desde cero en otro proyecto |
-
----
 
 ## Notas de uso
 
 - Todos los precios VE en USD pueden subir mensualmente por inflación. **Macro 2026:** el **BCV (mayo 2026)** proyecta **desaceleración** (inflación mensual de **un dígito desde mayo 2026**). Los escenarios externos **387-618%** (Anova/Cendas/Ecoanalítica) se conservan como **estrés/adversos**. El pack documenta cada cifra con fecha de captura **mayo 2026** y advierte **reconfirmación trimestral** antes de decisiones de inversión o gasto.
 - El buffer de 20% absorbe variaciones de hasta ±25% en precios denominados en bolívares.
 - Si la devaluación supera 100% en un trimestre, hay un plan de contingencia documentado en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md).
-- **Cierre editorial pack:** **20 mayo 2026** (quinta pasada: prompt [PROMPT_MEJORAR_PACK_LANZAMIENTO](../plantillas/PROMPT_MEJORAR_PACK_LANZAMIENTO.md), puntero finanzas en PERFIL, VOLCADO/phpunit **399**). Priorizar siempre la cabecera `Última actualización` del propio archivo.
+- **Cierre editorial pack:** **25 mayo 2026** (limpieza pack para uso humano; puntero finanzas en PERFIL, VOLCADO/phpunit **399**). Priorizar siempre la cabecera `Última actualización` del propio archivo.
 
-**Pack generado por:** Jarvis (asistente IA) bajo dirección del usuario, en sesión interactiva.
-**Pack revisado por:** [PENDIENTE — el usuario debe leer y aprobar antes de presentar al inversor].
+**Pack revisado por:** [PENDIENTE — el founder debe leer y aprobar antes de presentar al inversor].

@@ -1,6 +1,6 @@
 # Contexto del pitch y decisiones tomadas
 
-> **Última actualización:** 20 mayo 2026.
+> **Última actualización:** 26 mayo 2026.
 > Documento que captura las decisiones del founder (usuario) sobre cómo se posiciona Zonix Pharma frente a un inversor, qué se dice, qué no, y por qué se eligió cada parámetro del modelo.
 
 ## 1. Tecnología base reutilizada (Zonix Pharma)
@@ -9,7 +9,7 @@
 
 - **Tecnología validada:** los 399 tests del backend ya cubren onboarding, órdenes, métodos de pago manuales VE, KYC, chat real-time, FCM, eventos broadcast. **No estamos empezando desde cero.**
 - **Equipo técnico ya entrenado:** el founder conoce el stack al detalle.
-- **Riesgo de ejecución reducido:** lo único que se construye desde cero es la capa farmacéutica (Rx, lotes FIFO, cadena de frío, pharmacist colegiado), y eso ya está parcialmente implementado y documentado en [`../PLAN_RX_VALIDATION.md`](../PLAN_RX_VALIDATION.md) y [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md).
+- **Riesgo de ejecución reducido:** la capa farmacéutica diferenciadora (Rx, cadena de frío, farmacéutico colegiado) está **operativa en flujo core** y documentada en [`../PLAN_RX_VALIDATION.md`](../PLAN_RX_VALIDATION.md) y [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md). **Inventario por lotes (`medicine_lots`) / despacho FIFO:** esquema de datos y referencias en repo; **UI y despacho FIFO en operación** quedan para **post-Day-D o M3+** — no prometer módulo de lotes en pitch hasta cerrarlo ([ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md)).
 
 **Mensaje para el inversor:** "compramos **~4 años** de desarrollo del stack con **USD 101.000**" (runway **Lean** 12 meses + colchón cierre año 1 — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3; incluye **Co-CEO**).
 
@@ -28,12 +28,14 @@
 
 **Nota:** el modelo de lanzamiento es el **híbrido** (§2.1). Las proyecciones usan **ARPF placeholder** hasta datos de piloto.
 
-### 2.2 Alcance del piloto: completo desde día 1
+### 2.2 Alcance del piloto: flujos core completos desde Day-D
 
-**Decisión:** marketplace desde Day-D con Buyer + Pharmacy + Pharmacist + logística **`delivery_company`** + **`delivery_agent`** (sin rol `delivery` autónomo en app). La **última milla** la ejecutan **empresa(s) partner** bajo **concesión o contrato marco**; Zonix **no** opera flota propia ([PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md); [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) §1.1).
+**Decisión:** marketplace desde **Day-D** con **flujos core** operativos: Buyer + Pharmacy + Pharmacist + logística **`delivery_company`** + **`delivery_agent`** (sin rol `delivery` autónomo en app). La **última milla** la ejecutan **empresa(s) partner** bajo **concesión o contrato marco**; Zonix **no** opera flota propia ([PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md); [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) §1.1).
+
+**Fuera de alcance explícito en piloto (no prometer en pitch):** inventario por **lotes FIFO** en panel farmacia; release público en tiendas sin cerrar checklist Fase 0 (Firebase OTP, keystore, revisión Play/App Store); escala masiva de **sustancias controladas** más allá de casos acotados con farmacéutico real.
 
 **Por qué:**
-- La tecnología ya está construida. Reducir el alcance no acelera el lanzamiento, solo limita el aprendizaje.
+- La tecnología de los flujos core ya está construida. Reducir el alcance (p. ej. solo OTC sin Rx) no acelera el aprendizaje del diferenciador.
 - Si solo abrimos Buyer + Pharmacy, no validamos el flujo Rx (que es el diferenciador clave).
 - Si no abrimos Delivery Company, no validamos el caso multi-repartidor que Farmatodo no tiene resuelto digitalmente.
 
@@ -115,6 +117,16 @@ Detalle de fases T+30 / T+60 / T+90 en [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZ
 - **Rappi / PedidosYa Pharmacy:** ataque al segmento alto. Cobran 25-35% comisión. Zonix Pharma se diferencia en **estructura de costo** (cuota fija + % muy bajo sobre GMV en app vs comisión plena de agregador) y en **validación Rx** (que ellos no hacen).
 
 Detalle competitivo en [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md).
+
+### 2.9 Posicionamiento en una página (obviously-awesome)
+
+| Pregunta | Respuesta Zonix Pharma |
+|----------|------------------------|
+| Alternativas competitivas | Farmatodo/Locatel digital, Rappi Pharmacy, WhatsApp informal, app propia costosa |
+| Atributos únicos | Rx con farmacéutico de **cada** farmacia; uni-pharmacy; pagos manuales VE; cuota + % GMV bajo vs agregador |
+| Valor entregado | Pedido confiable OTC/Rx + tracking sin que Zonix opere flota |
+| Cliente objetivo | Farmacias independientes Valencia metro + paciente urbano/clase media |
+| Categoría de mercado | Marketplace farmacéutico digital (no «delivery de comida») |
 
 ## 3. Lo que NO se dice en el pitch (porque puede confundir)
 

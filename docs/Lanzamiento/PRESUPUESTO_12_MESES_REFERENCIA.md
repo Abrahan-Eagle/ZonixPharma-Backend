@@ -232,7 +232,7 @@ Este bloque **detalla** HQ, PCs y stack IA **integrados en Lean (101k)** §2 y e
 | Herramienta | Uso | Plan / decisión | USD/mes |
 |---------------|-----|-------------------|---------|
 | **Claude** | Redacción, diseño en texto, razonamiento, apoyo a código fuera del IDE | **Max (~200)** | **200** |
-| **Cursor** | IDE + agente / respaldo programación | **Ultra** | **200** |
+| **Cursor** | IDE + asistente de programación | **Ultra** | **200** |
 | **Seedance 2.0** | Generación de **video** | Suscripción según plan contratado | **~25** *(ancla conservadora hasta fijar tier en checkout)* |
 | **Gemini** | — | No usado por ahora | **0** |
 

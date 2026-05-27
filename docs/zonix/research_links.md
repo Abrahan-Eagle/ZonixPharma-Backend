@@ -1,6 +1,6 @@
 # Enlaces de investigación — Skills financieras y roles (GitHub)
 
-> **Última actualización:** 20 mayo 2026 (v3 — auditoría 22 enlaces GitHub).
+> **Última actualización:** 26 mayo 2026 (v4 — informe [ANALISIS_FORENSE_BUSQUEDA_GITHUB_LANZAMIENTO_2026-05.md](ANALISIS_FORENSE_BUSQUEDA_GITHUB_LANZAMIENTO_2026-05.md)).
 > Catálogo forense para adaptar skills de agente a Zonix Pharma (pack Lanzamiento + empresa VE).
 > **No instalar** hubs completos; usar skills `zonix-*` locales en `.agents/skills/`.
 
@@ -34,7 +34,7 @@
 
 | Recurso | URL | Veredicto | Skill Zonix |
 |---------|-----|-----------|-------------|
-| shawnpang/startup-founder-skills (repo) | https://github.com/shawnpang/startup-founder-skills | **Adaptar** selectivo | `npx skills add … --skill data-room pitch-deck` opcional |
+| shawnpang/startup-founder-skills (repo) | https://github.com/shawnpang/startup-founder-skills | **Adaptado** en Jarvis | → `zonix-lanzamiento-docs`, `zonix-fundraising-narrative`, `zonix-investor-materials`; `npx skills add` opcional local |
 | startup-context | https://github.com/shawnpang/startup-founder-skills/tree/main/skills/startup-context | **Adaptar** | → `zonix-startup-context` |
 | data-room | https://github.com/shawnpang/startup-founder-skills/tree/main/skills/data-room | **Adaptar** | → `zonix-investor-materials` |
 | pitch-deck | https://github.com/shawnpang/startup-founder-skills/tree/main/skills/pitch-deck | **Lente** | → `zonix-fundraising-narrative` |
@@ -168,6 +168,25 @@
 | chen-friedman/awesome-legaltech | https://github.com/chen-friedman/awesome-legaltech | **Lente** | US legal AI; no citar MPPS |
 | Vaquill-AI/awesome-legaltech | https://github.com/Vaquill-AI/awesome-legaltech | **Lente** | Similar; datasets US |
 | tanko-r/awesome-legal-tech | https://github.com/tanko-r/awesome-legal-tech | **Lente** | Workflow legal ops → `zonix-empresa-ve` |
+
+---
+
+## M. Doc Busqueda GitHub (auditoría completa mayo 2026)
+
+| Recurso | URL | Veredicto | Nota |
+|---------|-----|-----------|------|
+| Búsqueda de Habilidades de Startup en GitHub.md | [../Búsqueda de Habilidades de Startup en GitHub.md](../Búsqueda%20de%20Habilidades%20de%20Startup%20en%20GitHub.md) | **Fuente** | ~58 URLs únicas; Tablas 1–4 |
+| Informe forense Busqueda → Lanzamiento | [ANALISIS_FORENSE_BUSQUEDA_GITHUB_LANZAMIENTO_2026-05.md](ANALISIS_FORENSE_BUSQUEDA_GITHUB_LANZAMIENTO_2026-05.md) | **Canon** | Matriz A/B/C/D, anexos shawnpang + founder-playbook, Top 10 |
+
+> Las filas de §A–§L arriba siguen vigentes; el informe §M consolida **solo** lo citado en el doc Busqueda (sin sustituir este catálogo).
+
+---
+
+## L2. Guía rápida usar / no usar
+
+| Recurso | Nota |
+|---------|------|
+| [SKILLS_STARTUP_USAR_NO_USAR.md](SKILLS_STARTUP_USAR_NO_USAR.md) | **Canon** — qué skills startup usar y evitar con Jarvis |
 
 ---
 

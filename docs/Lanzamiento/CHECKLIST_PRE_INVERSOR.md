@@ -1,8 +1,8 @@
 # Checklist pre-inversor
 
-> **Última actualización:** 20 mayo 2026.
+> **Última actualización:** 26 mayo 2026.
 > Documento operacional. El founder debe poder marcarlo todo antes de la primera reunión con el inversor.
-> **Mejora continua (equipo):** [PROMPT_MEJORAR_PACK_LANZAMIENTO.md](../plantillas/PROMPT_MEJORAR_PACK_LANZAMIENTO.md) — auditoría → OK → edición → pasada en [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md).
+> **Mejora continua (equipo):** tras cada revisión del pack, actualizar [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) y la cabecera `Última actualización` de los documentos tocados.
 
 ## 1. Material listo
 
@@ -149,6 +149,17 @@
 | ¿Por qué el equilibrio mensual está en **M11** y no antes? | "Burn recurrente por tramo **7.462 / 7.798 / 7.431** USD/mes (promedio **~7.559**; [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.3). Con **ARPF ~50** y la **curva agresiva** de §1.1 se llega a **~151 activas** en **M11** (revenue **7.550** vs burn **7.431**). **Day-D = T+90**; **Fase 0** consume **~28.057** antes de M1 ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §0). Mitigaciones: §1.4 PROYECCION." |
 | ¿Qué pasa si solo firmamos **~100 farmacias** en año 1 (vs. **175** del plan)? | "La curva §1.1 es **agresiva**; menos firmas **retrasa** el equilibrio mensual respecto a **M11** (menos activas → menos revenue con el mismo burn). Ver sensibilidad pesimista [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §7 y [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md). Mitigación: acelerar firmas, subir ARPF efectivo o recortar burn (contingencia §4 PROYECCION)." |
 | ¿Y si el plan no se cumple? | "Tabla de sensibilidad pesimista / base / optimista en [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) y detalle en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) sección 7. Plan de contingencia ante shocks documentado en sección 4." |
+
+### 7.7 FAQ técnica (due diligence — lente CTO)
+
+| Pregunta | Respuesta anclada | Fuente |
+|----------|-------------------|--------|
+| ¿Stack? | Laravel API + Flutter; Sanctum; Pusher + FCM; pagos manuales VE | [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) |
+| ¿Tests? | **399** tests backend (re-verificar commit antes de reunión — P0-06) | [../ANALISIS_TECNICO_COMPLETO_2026-05.md](../ANALISIS_TECNICO_COMPLETO_2026-05.md) |
+| ¿Rx? | Validación por farmacéutico colegiado de la farmacia; estados `pending_prescription_validation` | [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md); [../PLAN_RX_VALIDATION.md](../PLAN_RX_VALIDATION.md) |
+| ¿Delivery? | Partners `delivery_company` / `delivery_agent`; **sin** flota Zonix | PLAN_LANZAMIENTO; ALINEACION |
+| ¿Repo / código? | GitHub org o acceso bajo NDA — **P0-01** | VOLCADO §1 |
+| ¿Seguridad datos salud? | Cifrado, retención, audit log — dictamen **abogado + asesor** | PLAN_MODULO §14; ESTRUCTURA §4.4 |
 
 ## 8. Cierre de la reunión
 

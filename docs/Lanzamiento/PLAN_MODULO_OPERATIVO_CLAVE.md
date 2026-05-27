@@ -105,7 +105,7 @@ sequenceDiagram
 | `cancelled` | Cancelada por cualquier motivo. |
 | `returned` | Devuelta (medicamento equivocado, vencido, etc.). |
 
-Detalle técnico de transiciones en backend: skill `zonix-order-lifecycle` (ver [.agents/skills/zonix-order-lifecycle/SKILL.md](../../.agents/skills/zonix-order-lifecycle/SKILL.md)).
+Detalle técnico de transiciones en backend: ver [../PLAN_RX_VALIDATION.md](../PLAN_RX_VALIDATION.md) y la documentación de ciclo de vida de órdenes en el repositorio.
 
 ## 6. SLA de validación
 

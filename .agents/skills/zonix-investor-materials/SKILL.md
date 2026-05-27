@@ -25,7 +25,9 @@ Evita usar solo `zonix-lanzamiento-roles` para todo el pack.
 | MENSAJE_ENVIO / pitch / CHECKLIST_PRE_INVERSOR | `zonix-fundraising-narrative` + `zonix-investor-materials` |
 | PLAN_MODULO_OPERATIVO / PLAN_RX (regulatorio) | `zonix-regulatory-ve` + `zonix-prescriptions` (código) |
 | PROPUESTA_VALOR_CLIENTE_B2B | `zonix-b2b-sales` |
-| PROPUESTA_VALOR_USUARIO_FINAL / TERCER_LADO | `zonix-lanzamiento-roles` + doc específico |
+| PROPUESTA_VALOR_USUARIO_FINAL / SUPUESTO_MARKETING | **`zonix-lanzamiento-docs`** (StoryBrand / Bullseye) |
+| PROPUESTA_VALOR_TERCER_LADO | `zonix-lanzamiento-roles` + doc específico |
+| Cualquier mejora pack (router) | **`zonix-lanzamiento-docs`** + skill de la fila |
 | PLAN_METODOS_PAGO | `zonix-payments` (modo piloto) + doc |
 | ROLES_SKILLS_ZONIX | `zonix-lanzamiento-roles` |
 | README / BRIEF | `zonix-startup-context` + `zonix-investor-materials` |

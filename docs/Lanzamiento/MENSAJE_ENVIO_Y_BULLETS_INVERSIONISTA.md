@@ -1,6 +1,6 @@
 # Mensaje de envío al inversor + bullets pitch
 
-> **Última actualización:** 20 mayo 2026.
+> **Última actualización:** 26 mayo 2026.
 > Documento operacional. Texto listo para WhatsApp / email + bullets para presentación de 5 minutos.
 
 ## 1. Mensaje WhatsApp inicial (mensaje frío)
@@ -20,19 +20,23 @@
 - Si conoces algo del inversor (otra inversión farmacéutica, LinkedIn shared connection): mencionarlo.
 - Si te lo presentó alguien: mencionar quién.
 
+### 1.1 Variante ultra-corta (~80 palabras)
+
+> Hola [Nombre], soy Abrahan Pulido, fundador de **Zonix Pharma** (marketplace farmacéutico Valencia, OTC + Rx). Buscamos **USD 101k** pre-seed vía SAFE (cap **600k** Lean; opciones 118k/135k). Stack en producción (**399 tests** backend); piloto **Day-D** a T+90. ¿30 min esta semana? Pack: [LINK Drive / README Lanzamiento].
+
+Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
+
 ## 2. Email seguimiento si responde positivamente
 
 > Hola [Nombre],
 >
-> Gracias por tu interés. Te comparto el **data room** (`docs/Lanzamiento/` — **22 archivos** Markdown: índice **README**, **`ANALISIS_FORENSE.md`** (auditoría del pack), **`ROLES_SKILLS_ZONIX.md`** (matriz rol → agentes JARVIS) y **19** documentos de contenido). Para empezar en **~30 min**:
+> Gracias por tu interés. Te comparto el **data room** (`docs/Lanzamiento/` — **21 archivos** Markdown: índice **README**, **`ANALISIS_FORENSE.md`** (auditoría del pack) y **19** documentos de contenido). Para empezar en **~30 min**:
 >
 > - **BRIEF_UNA_PAGINA.md** — resumen ejecutivo.
 > - **PROYECCION_FINANCIERA_12M.md** + **UNIT_ECONOMICS.md** — números y supuestos.
 > - **PERFIL_MERCADO_PILOTO.md** — TAM/SAM/SOM.
 > - **ESTRUCTURA_LEGAL_Y_EQUITY.md** — SAFE, cap table.
 > - **CHECKLIST_PRE_INVERSOR.md** — guion + FAQ.
->
-> *(Solo equipo interno, no obligatorio para el inversor: **ROLES_SKILLS_ZONIX.md** — matriz de roles y agentes JARVIS.)*
 >
 > Acceso al pack completo en Google Drive: [LINK]
 >
@@ -149,6 +153,7 @@
 | Equity implícito | **~16,83%** |
 | Equilibrio mensual (revenue ≥ burn) | **M11** (§1.4 PROYECCION) |
 | Farmacias activas ref. | **~159** mes 12 modelo; **~151** en **M11** (equilibrio) |
+| ARPF | **~USD 50/mes** *(placeholder; cobro real = híbrido cuota 25/40/55 + % GMV hasta piloto)* |
 | CAC | USD **139** |
 | LTV/CAC | **~7,2x** |
 | Payback CAC | **~2,8 meses** |

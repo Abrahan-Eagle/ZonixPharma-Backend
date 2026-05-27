@@ -1,11 +1,34 @@
 # Análisis forense multi-perspectiva del pack
 
-> **Última actualización:** 20 mayo 2026.
+> **Última actualización:** 25 mayo 2026.
 > Auditoría multi-rol del pack. **Estado vigente:** tiers **Lean 101k / Base 118k / Growth 135k**; PROYECCION §1.1 = **Lean**; caja M12 **~42.209**; equilibrio **M11 ~151 activas**.
-> **Segunda pasada forense (20 mayo 2026):** alineados Fase 0 **~28.057**, conteo pack **22** archivos, waiver B2B **~453** (vs. proxy obsoleto **222**), copy Rappi **25–35%** en B2B §11.
+> **Segunda pasada forense (20 mayo 2026):** alineados Fase 0 **~28.057**, conteo pack **21** archivos, waiver B2B **~453** (vs. proxy obsoleto **222**), copy Rappi **25–35%** en B2B §11.
 > **Tercera pasada forense (20 mayo 2026):** tests backend **399** (verificado `vendor/bin/phpunit`); equity README **16,83 / 18,15 / 18,75**; fechas cabecera unificadas; M12 waiver **~41.756** en MENSAJE; nota equilibrio teórico Base/Growth en README.
 > **Cuarta pasada forense (20 mayo 2026):** CHECKLIST (PROYECCION solo Lean, FAQ ~100 firmas, borrador legal, demo 5 pasos); nota FP&A waiver **~453** en PROYECCION §1.1; VOLCADO §1.2 verificación tests; tabla equipo Lean en BRIEF; delta tiers en PRESUPUESTO §1.1.
-> **Quinta pasada forense (20 mayo 2026):** [README](README.md) — aclaración producto Zonix vs portfolio founder; índice [PROMPT_MEJORAR_PACK_LANZAMIENTO.md](../plantillas/PROMPT_MEJORAR_PACK_LANZAMIENTO.md); [PERFIL_MERCADO_PILOTO](PERFIL_MERCADO_PILOTO.md) — puntero a cifras inversor; VOLCADO §1.2 — commit y `phpunit` **399** re-verificados. Sin cambios en anclas 101/118/135 ni PROYECCION §1.1.
+> **Quinta pasada forense (20 mayo 2026):** [README](README.md) — aclaración producto Zonix vs portfolio founder; [PERFIL_MERCADO_PILOTO](PERFIL_MERCADO_PILOTO.md) — puntero a cifras inversor; VOLCADO §1.2 — commit y `phpunit` **399** re-verificados. Sin cambios en anclas 101/118/135 ni PROYECCION §1.1.
+> **Limpieza pack (25 mayo 2026):** eliminado documento interno de roles/skills/agentes IA; pack orientado solo a lectura humana (inversor y equipo).
+> **Sexta pasada forense (26 mayo 2026):** análisis 360° pack + cruce [ANALISIS_TECNICO_COMPLETO_2026-05.md](../ANALISIS_TECNICO_COMPLETO_2026-05.md); registro único de pendientes [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md).
+
+---
+
+## Resumen ejecutivo — ¿Listo para enviar a inversor? (26 mayo 2026)
+
+**Tier de referencia en esta pasada:** **Base 118k** (recomendado); anclas numéricas siguen siendo **Lean 101k** en PROYECCION §1.1.
+
+| Dimensión | Semáforo | Comentario |
+|-----------|----------|------------|
+| **Finanzas (coherencia interna)** | Verde | Cadena 101k → Fase 0 **~28.057** → Day-D **~72.943** → M11 **~151 activas** → M12 **~42.209** alineada entre README, PRESUPUESTO §1–§2, PROYECCION §0–§1.3, BRIEF. Escalera **101 < 118 < 135** y equity **16,83% / 18,15% / 18,75%** coherentes. |
+| **Unit economics / narrativa revenue** | Amarillo | ARPF **~50** es **placeholder** explícito (UNIT_ECONOMICS, PROYECCION nota); recalibrar con GMV piloto y modelo híbrido **25/40/55 + % GMV** (B2B §5). Sensibilidades citadas en BRIEF → PROYECCION §7. |
+| **Legal / regulatorio (pack)** | Amarillo | Marco SAFE y datos salud documentados; textos y resoluciones MPPS **[PENDIENTE dictamen]** — ver REGISTRO P3. |
+| **GTM / operación** | Verde | PLAN_LANZAMIENTO T+90, propuestas B2B/B2C/tercer lado alineadas a README §3 (sin `delivery` autónomo en piloto). |
+| **Producto vs claims** | Amarillo | Rx + 7 roles + **399 tests** alineados con código; **lotes FIFO**, Firebase release y API homogénea **no** listos — ver cruce técnico §13. |
+| **Datos founder / due diligence** | Rojo | GitHub, % dedicación, referencias y aprobación formal del pack **sin cerrar** — REGISTRO P0. |
+
+**Veredicto envío:**
+
+- **Ángel / pre-seed VE (con NDA):** **Sí**, tras cerrar **P0** del [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) y re-ejecutar tests con commit actualizado en VOLCADO §1.2.
+- **Family office / fondo institucional:** **Condicional** — además de P0: farmacias prospecto reales (P1-03/04), cotizaciones HQ/valla, dictamen abogado (P3-05), demo programada.
+- **Day-D público escalado:** **No** hasta smoke E2E, Firebase/keystore y dictámenes regulatorios en copy salud.
 
 ---
 
@@ -313,7 +336,7 @@ Desglose de lecturas que en §11.1 iban agrupadas; **no** sustituye al dictamen 
 
 ### 11.2 Auditoría aplicada (mayo 2026)
 
-Auditoría forense multi-rol cerrada: hallazgos CRÍTICOS y ALTOS aplicados en el pack; tiers **Lean 101k / Base 118k / Growth 135k**; PROYECCION §1.1 = **Lean**. Detalle por documento: [README.md](README.md); matriz rol → skills → agentes: [ROLES_SKILLS_ZONIX.md](ROLES_SKILLS_ZONIX.md).
+Auditoría forense multi-perspectiva cerrada: hallazgos CRÍTICOS y ALTOS aplicados en el pack; tiers **Lean 101k / Base 118k / Growth 135k**; PROYECCION §1.1 = **Lean**. Detalle por documento: [README.md](README.md).
 
 ### 11.3 Veredicto, riesgos residuales y próximos pasos
 
@@ -339,7 +362,7 @@ El pack es **invertible** después de aplicadas las CRÍTICAS y ALTAS. Las MEDIA
 
 ### 11.4 Síntesis vigente (20 mayo 2026)
 
-**Tiers:** **Lean 101k** (mínimo) · **Base 118k** (recomendado) · **Growth 135k** (acelerado). SAFE **600k / 650k / 720k**. Fuente numérica: [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §1; flujo mes a mes **solo Lean**: [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §0–§1.3. **Roles y agentes JARVIS:** [ROLES_SKILLS_ZONIX.md](ROLES_SKILLS_ZONIX.md).
+**Tiers:** **Lean 101k** (mínimo) · **Base 118k** (recomendado) · **Growth 135k** (acelerado). SAFE **600k / 650k / 720k**. Fuente numérica: [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §1; flujo mes a mes **solo Lean**: [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §0–§1.3.
 
 **Anclas Lean:** Fase 0 **~28.057**; caja Day-D **~72.943**; burn **7.462/7.798/7.431**; M12 cash **~42.209**; equilibrio **M11 ~151 activas**; revenue año 1 **59.968**; burn año 1 **90.702**.
 
@@ -355,16 +378,63 @@ El pack es **invertible** después de aplicadas las CRÍTICAS y ALTAS. Las MEDIA
 | **CMO clínico / RA / QA-PV** | Claims, controlados, FV — PLAN_MODULO + marketing salud | **Sujeto a dictamen** MPPS/copy salud |
 | **Compliance / DPO / Legal** | [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §4.4; SAFE; contrato marco B2B | **Sujeto a abogado**; FAQ M&A SAFE corregida a redacción no engañosa |
 | **CRO ventas / CMO marketing / CHRO** | CAC/LTV, equipo **9** FTE + 2 FL (**4×** Sales) | **OK** — [UNIT_ECONOMICS](UNIT_ECONOMICS.md), [CUESTIONARIO](CUESTIONARIO_EQUIPO_PILOTO.md) |
-| **Delivery / agentes IA** | Matriz rol → competencias → skills | **OK** — [ROLES_SKILLS_ZONIX](ROLES_SKILLS_ZONIX.md) |
-| **Supply / logística** | Cadena frío, delivery — PROPUESTA_TERCER_LADO + PLAN_MODULO | **OK** |
+| **Supply / logística (partners)** | Cadena frío, SLA última milla — [PROPUESTA_VALOR_TERCER_LADO](PROPUESTA_VALOR_TERCER_LADO.md) + [PLAN_MODULO_OPERATIVO_CLAVE](PLAN_MODULO_OPERATIVO_CLAVE.md) | **OK** |
 | **CRO riesgos / Auditoría / IR** | Sensibilidades §7 PROYECCION; cap SAFE; VOLCADO founder | **OK** con pendientes GitHub/referencias/% tiempo |
+
+---
+
+## 13. Sexta pasada forense — análisis 360° (26 mayo 2026)
+
+### 13.1 Alcance ejecutado
+
+| Bloque | Resultado |
+|--------|-----------|
+| Finanzas | Anclas **101/118/135** y cadena Fase 0 → M12 **consistentes** entre README, PRESUPUESTO, PROYECCION, BRIEF, UNIT_ECONOMICS. Burn tramos **7.462 / 7.798 / 7.431** cuadran con PRESUPUESTO §2.3. |
+| Legal / equity | ESTRUCTURA_LEGAL + PLAN_MODULO ops/seguridad **completos como marco**; resoluciones MPPS y plantillas FV siguen **[PENDIENTE]** humano. |
+| GTM / narrativa | MENSAJE, CONTEXTO, BRIEF y PROPUESTA_* **coherentes** con decisiones README (híbrido B2B, Co-CEO, 4× Sales, Meta, Day-D T+90). |
+| Mercado / precios | PERFIL_MERCADO + MONTOS_REFERENCIA + SUPUESTO_OFFLINE **trazables**; reconfirmación trimestral macro VE ya advertida en README. |
+| Pagos / Rx ops | PLAN_METODOS_PAGO alineado a pagos manuales en código; PLAN_MODULO Rx coherente con PLAN_RX_VALIDATION. |
+| Pendientes | **~108** marcadores `[PENDIENTE]` consolidados en [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) (8 P0, 12 P1, 6 P2, 6 P3 dictamen, resto VOLCADO operativo). |
+
+### 13.2 Hallazgos nuevos (post-quinta pasada)
+
+| ID | Sev. | Hallazgo | Acción |
+|----|------|----------|--------|
+| SF-01 | Alta | VOLCADO §1.2 fecha tests **20 mayo** y commit **81eec2a** — re-verificar antes de cada reunión | Actualizar fila §1.2 tras `php artisan test` |
+| SF-02 | Alta | Pack afirma piloto **completo** pero **medicine_lots / FIFO** sin API ni UI (ANALISIS_TECNICO) | No prometer inventario por lotes en pitch hasta módulo construido; o acotar a “post-M6” |
+| SF-03 | Media | **OTP Firebase** y build release en TECH_DEBT — BRIEF dice stack probado; aclarar “MVP interno / staging” | Alinear MENSAJE con TECH_DEBT; cerrar `google-services.json` |
+| SF-04 | Media | **Deploy workflow `main.yml`** sigue “Zonix-EatsX” (técnico) — no afecta narrativa pack pero sí riesgo operativo | Desactivar o reemplazar pipeline antes de prod Pharma |
+| SF-05 | Baja | Co-CEO en VOLCADO §1.5 puede tener filas aún abiertas | Completar al contratar |
+| SF-06 | Info | Registro PENDIENTE único evita duplicar búsqueda en 6 archivos | Mantener REGISTRO como checklist maestro |
+
+### 13.3 Cruce pack ↔ producto ([ANALISIS_TECNICO_COMPLETO_2026-05.md](../ANALISIS_TECNICO_COMPLETO_2026-05.md))
+
+| Claim en pack | Estado código (26 may) | Riesgo inversor si no se aclara |
+|---------------|------------------------|--------------------------------|
+| Marketplace OTC + Rx, farmacéutico colegiado | Implementado; PrescriptionFlowTest | Bajo |
+| 399 tests backend | Verificado (re-ejecutar pre-reunión) | Bajo si se actualiza VOLCADO |
+| 7 roles en app piloto | MainRouter nivel 0–5 + delivery company | Bajo |
+| Sin flota propia Zonix | Modelo partners `delivery_company` | Bajo |
+| Piloto “completo desde día 1” | Funcional salvo lotes y polish API | Medio — matizar alcance |
+| VPS Nameshared producción | No verificado en repo | Medio — due diligence infra |
+| Cadena de frío / controlados en app | Flags + banners; escalado controlados pendiente tabla MPPS | Medio |
+| Readiness técnico Day-D | **3/5** (ANALISIS_TECNICO) | Medio — smoke manual obligatorio |
+
+### 13.4 Veredicto sexta pasada
+
+El pack **sigue siendo invertible pre-seed** en la línea de §11.3, con dos matices añadidos: (1) **cerrar P0 del REGISTRO** antes de institucional; (2) **no sobreprometer** inventario FIFO ni infra prod hasta cerrar gaps técnicos documentados. La coherencia financiera **no presenta contradicciones nuevas** respecto a las cinco pasadas anteriores.
+
+**Próximo paso founder:** trabajar [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) en orden P0 → P1; sesión posterior de re-auditoría solo sobre celdas cerradas.
 
 ---
 
 ## 12. Documentos hermanos
 
-- [README.md](README.md): índice general del pack (**22** archivos).
-- [ROLES_SKILLS_ZONIX.md](ROLES_SKILLS_ZONIX.md): matriz roles, skills y agentes JARVIS.
+- [README.md](README.md): índice general del pack (**21** archivos).
+- [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md): pendientes consolidados (sexta pasada).
+- [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md): plan de lanzamiento vs producto (enfoque operativo WIP).
+- [INCOHERENCIAS_LANZAMIENTO_2026-05.md](INCOHERENCIAS_LANZAMIENTO_2026-05.md): contradicciones entre documentos del pack (I-01…I-10).
+- [../ANALISIS_TECNICO_COMPLETO_2026-05.md](../ANALISIS_TECNICO_COMPLETO_2026-05.md): cruce producto código.
 - [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md): brief con CRÍTICA / ALTA aplicadas.
 - [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md): proyección con CRÍTICA #1 y #2 aplicadas.
 - [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md): pre-flight con CRÍTICA #3 marcada.

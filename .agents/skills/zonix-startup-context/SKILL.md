@@ -23,6 +23,21 @@ Fuente única de verdad para agentes que trabajan en **fundraising, finanzas o p
 | Stack | Laravel API + Flutter; pagos **manuales VE** (Zonix no es PSP) |
 | Última milla | Partners `delivery_company` / `delivery_agent` — **sin flota propia** |
 
+## Market Type (Steve Blank — four-steps)
+
+Zonix Pharma opera en **mercado existente con diferenciación por features** (no categoría nueva ni resegmentación pura).
+
+| Tipo | ¿Aplica Zonix? | Implicación para pitch/docs |
+|------|----------------|----------------------------|
+| New market | No | No usar narrativa «creamos el mercado de farmacia digital VE» |
+| **Existing market** | **Sí** | Competir en marketplace farmacéutico; ganar con Rx + costo vs agregador |
+| Resegmented (low-cost / niche) | Parcial | Nicho: farmacias independientes Valencia + paciente urbano |
+| Clone | No | No copiar modelo US sin adaptar VE |
+
+**Comparables válidos (PERFIL_MERCADO):** Farmalisto (LatAm), Farmatodo/Locatel (cadenas VE), Rappi Pharmacy (agregador alto take-rate).
+
+**Anti-patrón:** no aplicar `blue-ocean-strategy` al pitch — Zonix **no** inventa categoría; compite con atributos únicos (farmacéutico por farmacia, cuota+% GMV bajo, pagos manuales VE).
+
 ## Tiers de capital (nunca invertir nombres)
 
 | Tier | Capital pedido | SAFE cap post-money | Equity ref. | Burn prom. |

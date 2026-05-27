@@ -1,6 +1,6 @@
 # Zonix Pharma — Brief de una página
 
-> **Última actualización:** 20 mayo 2026.
+> **Última actualización:** 26 mayo 2026.
 > Documento ancla del pack. Léase primero. Todas las cifras están detalladas en los documentos hermanos del directorio [docs/Lanzamiento/](README.md).
 
 ## Qué es
@@ -34,7 +34,7 @@ Es la **vertical farmacia** del **stack Zonix Pharma** (~4 años de código prob
 ## Por qué ahora (timing — ALTA #10 forense)
 
 1. **Mercado pharma VE está en recuperación post-crisis:** +17,49% YoY en unidades 2024-2025 (**Cifar**, datos IMS/IQVIA). Hace 2 años el mercado se contraía; en 2 años más estará cubierto por competidores digitales. **2026 es la ventana.**
-2. **Stack ya construido:** el **stack Zonix Pharma** lleva ~4 años de desarrollo; el ajuste al vertical farmacia se hace en 30-45 días vs. 12-18 meses desde cero.
+2. **Stack ya construido:** el **stack Zonix Pharma** lleva ~4 años de desarrollo; el **fork al vertical farmacia** (capa Rx, roles Pharma) equivale a **~30–45 días de esfuerzo de producto** ya invertido — **no** confundir con **Fase 0 = T+90** (legal, equipo, onboarding farmacias y release en tiendas antes de Day-D — [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md)).
 3. **Competencia digital débil en VE:** Rappi y PedidosYa Pharmacy solo cubren cadenas premium. Farmatodo y Locatel no abren marketplace. **First-mover en farmacia mediana e independiente.**
 4. **Métodos de pago manuales VE están maduros:** Pago Móvil C2P + Zelle + Binance Pay USDT cubren el 95% de la población bancarizada. Hace 5 años no era posible.
 
@@ -43,7 +43,7 @@ Es la **vertical farmacia** del **stack Zonix Pharma** (~4 años de código prob
 - **Modelo B2B híbrido en USD** (cuota fija **25 / 40 / 55** + porcentaje moderado sobre GMV en app según banda): estructuralmente muy por debajo del take-rate 25-35% GMV de Rappi o PedidosYa Pharmacy. Detalle en [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5.
 - **Validación Rx por farmacéutico colegiado de la propia farmacia** dentro de la app, ya construida en backend. Cumple con la **Ley del Ejercicio de la Farmacia VE** sin que **Zonix Pharma** tenga que contratar un farmacéutico interno.
 - **Métodos de pago manuales VE soportados nativos:** Pago Móvil C2P, transferencia, Zelle, Binance Pay USDT — sin pasarelas internacionales caras, sin Stripe, sin necesidad de cuenta empresarial extranjera para operar.
-- **Stack autocontenido y probado:** backend MVP en producción interna con 399 tests pasando, frontend Flutter sin issues, Pusher real-time + Firebase FCM ya integrados.
+- **Stack autocontenido y probado:** backend en **staging/VPS** con **399** tests pasando; frontend Flutter sin issues en analyze; Pusher + FCM integrados en código. **Release tiendas + Firebase OTP (SMS):** hitos **T+7–12** de Fase 0 — no asumir Play/App Store el día del wire ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md), [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md)).
 - **Equipo lean:** **9 FTE** + **2 freelance** en tier **Lean 101k** (detalle en tabla siguiente). Runway **12 meses** con **USD 101k** (mínimo viable). **Recomendado:** **USD 118k** (Base). Founder técnico: **Abrahan Pulido**.
 
 ### Equipo piloto Lean (101k) — resumen
@@ -60,14 +60,14 @@ Es la **vertical farmacia** del **stack Zonix Pharma** (~4 años de código prob
 | Abogado externo | Freelance | **200** | SAFE, contratos, T&C |
 | Asesor regulatorio farmacéutico | Externo | **120** | Solo **Base 118k** / **Growth 135k** |
 
-> Matriz completa rol → skills → JARVIS: [ROLES_SKILLS_ZONIX.md](ROLES_SKILLS_ZONIX.md). Detalle burn: [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.
+> Detalle burn y equipo: [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.
 
 ## Mercado y oportunidad (validados)
 
 - **TAM Venezuela:** USD 1.638M/año (389M unidades × USD 4,21 promedio, fuente **Cifar VE**, datos **IMS/IQVIA** 2025). Crecimiento +17,49% YoY en unidades. CAGR 6,1% proyectado 2026-2032.
 - **TAM regional Carabobo:** ~350-450 farmacias (226 solo en Valencia metro, [Farmacias Saas](https://www.saasvenezuela.com/sucursales) y directorios públicos).
 - **SAM zona piloto (Valencia metro):** 30-50 farmacias primer trimestre operativo; foco HQ **San Diego / Av. Bolívar Norte** (ver [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md)).
-- **SOM / cierre año 1 (M12 post-Day-D):** **~159 farmacias activas** en el caso central §1.1 ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)). Con **4 Sales**, **cuota 25/40/55** y **ARPF ~50**, el **equilibrio mensual** (revenue ≥ burn) se alcanza en **mes 11** (**~151 activas**).
+- **SOM / cierre año 1 (M12 post-Day-D):** **~159 farmacias activas** en el caso central §1.1 ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)). Con **4 Sales**, modelo **híbrido** (cuota **25/40/55** + % GMV) y **ARPF ~50** *(placeholder hasta GMV piloto — no es solo cuota fija)*, el **equilibrio mensual** (revenue ≥ burn) se alcanza en **mes 11** (**~151 activas**).
 
 ## Modelo financiero (escenario Lean — mínimo viable USD 101k)
 

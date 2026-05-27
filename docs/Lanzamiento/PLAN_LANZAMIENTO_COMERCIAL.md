@@ -1,6 +1,6 @@
 # Plan de lanzamiento comercial
 
-> **Última actualización:** 20 mayo 2026.
+> **Última actualización:** 26 mayo 2026.
 > Documento que detalla el calendario operativo desde el cierre de inversión hasta el **Day-D** (lanzamiento público del piloto) y los primeros meses post-Day-D.
 > **Convención de tiempo:** **T+0** = cierre de inversión (entra el capital). **Day-D = T+90** = **día 0 del piloto en app** (M1 del modelo financiero en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)). Los **meses 1–12** del presupuesto/proyección cuentan **desde Day-D**, no desde el wire. **Fase 0 (T+0 → T+90):** cierre legal, equipo, HQ, tecnología, onboarding de farmacias y catálogo **antes** del lanzamiento público — el gasto de esos ~3 meses está en la **Fase 0** de la proyección (**~USD 28.057** + one-shots en §0.1 — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)), no duplicado en M1.
 
@@ -8,7 +8,7 @@
 
 **Eventos:**
 - Firma del SAFE.
-- Transferencia **USD 101.000** (Base) a cuenta personal del founder (transitoria) o cuenta empresa si ya está abierta.
+- Transferencia **USD 101.000** (**Lean** — mínimo viable; Base recomendado = **118k**) a cuenta personal del founder (transitoria) o cuenta empresa si ya está abierta.
 - Reunión kick-off **founder + Co-CEO** con abogado y contador.
 - Comunicación al inversor: confirmación de recepción + plan de los próximos 30 días.
 
@@ -107,8 +107,8 @@
 |---|---|
 | Negociación **borrador contrato marco / concesión** con **1 empresa** candidata (SLA, zonas, tarifas, datos, seguros) | T+30 a T+45 |
 | Firma **carta de intención** o contrato marco (según abogado) con empresa concesionaria | T+40 a T+50 |
-| Onboarding **agentes** del partner en app (`delivery_company` / `delivery_agent`) | T+45 a T+58 |
-| Onboarding **5-8 repartidores autónomos** (`delivery`) **solo si** se acuerda complemento operativo al partner | T+45 a T+58 |
+| Onboarding **agentes** del partner en app (`delivery_company` / `delivery_agent`; meta **5–15** activos bajo la empresa — [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) §A) | T+45 a T+58 |
+| ~~Rol `delivery` autónomo~~ | **Fuera de alcance piloto MVP** — no onboarding ni pitch; solo partner + `delivery_agent` ([README.md](README.md) §3) |
 | KYC de cada repartidor / agente según rol | T+30 a T+55 |
 | Test entrega real con órdenes internas | T+55 a T+60 |
 | Definición de zona inicial de cobertura por **polos acotados** (Valencia centro, San Diego, corredores hacia Naguanagua / El Socorro); radios por polo según **mapa real** | T+30 |
@@ -134,6 +134,19 @@
 
 ## 4. T+90 — DAY-D del piloto
 
+### 4.0 Validación pre-Day-D (Customer Development + mom-test)
+
+Checklist **antes** de tráfico masivo. Evidencia en VOLCADO / CRM — la IA **no inventa** entrevistas.
+
+| Paso | Validación | Evidencia mínima |
+|------|------------|------------------|
+| 1. Discovery | Dueño farmacia y paciente confirman dolor **sin** pitch Zonix primero (mom-test: hechos pasados) | ≥5 entrevistas documentadas |
+| 2. Validación B2B | Contrato marco firmado + métodos de pago farmacia en panel | Farmacia activa en staging/prod |
+| 3. Creación demanda | Primer pedido real OTC o Rx | Orden ≥ `pending_payment` en BD |
+| 4. Ops | CS, disputas, partner `delivery_company` | Macros CS + SLA partner acordado |
+
+Coherente con [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §8.1 (SPIN) y [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md).
+
 ### 4.1 Pre-lanzamiento (T+60 a T+85)
 
 | Hito | Status |
@@ -150,7 +163,7 @@
 |---|---|
 | 06:00 | Equipo en oficina. Verificación final de servicios. |
 | 07:00 | **Boost Meta Ads** (canal principal) + **activación valla** (refuerzo offline, si contrato lo calendariza en Day-D) |
-| 08:00 | App pública en Play Store y App Store. Primera orden simulada por equipo interno. |
+| 08:00 | App pública en Play Store y App Store *(depende checklist release Fase 0: Firebase OTP, keystore, APNs, revisión tiendas — [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md))*. Primera orden simulada por equipo interno. |
 | 09:00 | Comunicación oficial: Instagram, TikTok, Twitter, WhatsApp. |
 | 11:00 | Visitas presenciales a **farmacias piloto** en operación (**~20–28** según cierre T+60 / §2.6) para confirmación operativa. |
 | 12:00 | Primera orden real esperada. |
@@ -178,7 +191,7 @@ Criterios para considerar el piloto exitoso:
 | Tasa cancelación de orden | ≤ 8% |
 | Tasa de comprobante falso | ≤ 0,5% |
 | Revenue mensual | ≥ USD **4.800** (mismo modelo; refinar con FP&A) |
-| Cash en banco | ≥ **~USD 46.400** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3: cash final **M6** del año calendario post-Day-D) |
+| Cash en banco | ≥ **~USD 46.395** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3: cash final **M6** del año calendario post-Day-D) |
 
 **Si NO se alcanzan estos criterios:** activar plan de contingencia documentado en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) sección 4.
 

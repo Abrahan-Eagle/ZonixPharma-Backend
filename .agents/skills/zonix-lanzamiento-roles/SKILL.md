@@ -19,7 +19,7 @@ Skill de **gobernanza de roles** para Zonix Pharma (piloto + madurez). Fuente ca
 | Meta | Orden skills agente | Docs pack clave | Roles humanos piloto |
 |------|---------------------|-----------------|----------------------|
 | **Empresa VE** | `zonix-startup-context` → `zonix-empresa-ve` → esta skill | ESTRUCTURA_LEGAL, PLAN_LANZAMIENTO §2.1 | Abogado, Contador, Co-CEO |
-| **Documentos** | `zonix-startup-context` → skill por doc (§0 ter forense) → `zonix-investor-materials` | README Lanzamiento (22 archivos) | CFO lens, RA, Legal, Marketing |
+| **Documentos** | `zonix-startup-context` → **`zonix-lanzamiento-docs`** (router) → skill por doc → `zonix-investor-materials` | README Lanzamiento (22 archivos) | CFO lens, RA, Legal, Marketing |
 | **Inversores** | `zonix-startup-context` → `zonix-fundraising-narrative` → `zonix-investor-materials` | MENSAJE_ENVIO, CHECKLIST_PRE_INVERSOR | Founder, IR |
 | **Ejecutar lanzamiento** | `zonix-launch-piloto` → esta skill | PLAN_LANZAMIENTO, BRIEF | Co-CEO, Sales, CS, Marketing |
 | **Desarrollo producto** | Skills módulo (`zonix-prescriptions`, `zonix-order-lifecycle`, …) | PLAN_RX, PLAN_MODULO, BRAND | Founder/CTO, QA |

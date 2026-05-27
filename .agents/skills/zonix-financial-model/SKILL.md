@@ -118,6 +118,35 @@ Ej. Lean: 101k / 600k ≈ 16,8% — ver ESTRUCTURA_LEGAL para redondeo y pro-rat
 
 **Use of funds:** desglosar según PRESUPUESTO §2 (Fase 0, nómina, marketing, reserva); no inventar % sin ancla.
 
+## WTP y pricing (monetizing-innovation — UNIT_ECONOMICS)
+
+Al editar UNIT_ECONOMICS o PROPUESTA B2B §5; **no** cambiar bandas 25/40/55 ni % GMV sin decisión founder.
+
+| Concepto | Aplicación Zonix | Regla pack |
+|----------|------------------|------------|
+| **Economic value** | Visibilidad digital + pedidos + menos fricción Rx | Cualitativo hasta GMV real |
+| **WTP** | Techo que farmacia acepta vs cuota+GMV | Comparar con ARPF ~50 placeholder |
+| **Price fence** | Bandas por tamaño farmacia / GMV | Ya en PROPUESTA B2B §5 |
+| **Pilot waiver** | Descuento Fase 0 | Solo si documentado en PROPUESTA; marcar temporal |
+
+Nota estándar para UNIT_ECONOMICS: «ARPF ~50 es **placeholder** hasta recalibrar con GMV piloto post-Day-D».
+
+## Packaging waiver — primeras 10 farmacias (100m-offers)
+
+Lente [founder-playbook `100m-offers`](https://github.com/getagentseal/founder-playbook) — oferta irresistible **acotada**; no ampliar sin recalcular PROYECCION.
+
+| Elemento | Regla Zonix | Fuente pack |
+|----------|-------------|-------------|
+| **Oferta** | USD **0 cuota fija** meses 1–2 para **máx. 10** farmacias piloto | PROPUESTA B2B §11 |
+| **Escasez** | Techo 10 firmas; no extender a cadena premium (Farmatodo/Locatel) | PROPUESTA B2B §1 |
+| **Urgencia** | Ventana Fase 0 / pre-Day-D; fecha cierre en contrato | PLAN_LANZAMIENTO §3 |
+| **Valor** | Panel + demanda digital vs costo app propia / comisión Rappi 25–35% | PROPUESTA B2B §2–§3 |
+| **Riesgo revertido** | Salida sin penalidad meses 1–2 según contrato marco | PROPUESTA B2B §11 |
+
+**Impacto caja (no regenerar):** PROYECCION §1.1 fila «con waiver» — ingreso acumulado año 1 **~−USD 453** vs sin waiver; caja M12 **~USD 41.756** (planning principal sigue **sin** waiver).
+
+Al redactar copy comercial: prometer waiver **solo** si contrato marco lo refleja; tras mes 3 aplica modelo híbrido §5 B2B.
+
 ## Pitfalls (evitar)
 
 - Proyectar MRR de suscripción SaaS para farmacias.

@@ -42,6 +42,25 @@ Skill para **ejecutar venta B2B** a farmacias en el piloto — no para redactar 
 | «Regulación recetas» | Validación por farmacéutico de la farmacia; plataforma documentada en PLAN_MODULO |
 | «Comisión alta» | Comparar CAC paciente vs beneficio visibilidad (UNIT_ECONOMICS) |
 
+## Marco SPIN (adaptado de founder-playbook — editar PROPUESTA_VALOR_CLIENTE_B2B)
+
+Usar en **discovery call** y al ampliar el pack; no sustituye PROPUESTA_VALOR_CLIENTE_B2B §5 (cuota + % GMV).
+
+| Fase SPIN | Preguntas ejemplo (farmacia Valencia) | Objetivo |
+|-----------|--------------------------------------|----------|
+| **S**ituación | ¿Cuántos pedidos digitales reciben hoy? ¿Tienen farmacéutico colegiado en turno? | Baseline sin juzgar |
+| **P**roblema | ¿Pierden ventas por no aparecer en apps de delivery genéricas? ¿Rx sin flujo claro? | Dolor explícito |
+| **I**mplicación | ¿Qué pasa si un competidor digital captura pacientes de su zona en 6 meses? | Urgencia moderada |
+| **N**ecesidad-payoff | Si tuvieran panel + demanda Zonix sin flota propia suya, ¿qué KPI mejoraría primero (pedidos, ticket, Rx)? | Cierre hacia piloto |
+
+**Matriz objeciones → evidencia pack** (añadir al doc B2B como subsección):
+
+| Objeción | Evidencia / ancla | Siguiente paso |
+|----------|-------------------|----------------|
+| Comisión | UNIT_ECONOMICS, bandas 25/40/55 + % GMV | Demo panel + waiver piloto si aplica |
+| Rx / MPPS | PLAN_MODULO, PLAN_REGULATORIO | Intro farmacéutico responsable de la farmacia |
+| «No tengo tiempo» | Onboarding documentado PLAN §2.3 | Fecha capacitación + carga catálogo |
+
 ## Reglas
 
 1. **No prometer** dictamen MPPS ni plazos legales.
