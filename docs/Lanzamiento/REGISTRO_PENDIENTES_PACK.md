@@ -31,7 +31,7 @@
 | P0-03 | **2–3 referencias** profesionales con permiso y contacto | Founder | CHECKLIST §2 | §1.2 tabla |
 | P0-04 | **Aprobación founder** del pack antes de enviar | Founder | README final | README L154 |
 | P0-05 | **Demo en vivo** programada (fecha) | Founder | ANALISIS_FORENSE §11.3; VOLCADO §1.2 | §1.2 |
-| P0-06 | Re-verificar **399 tests** + commit short pre-reunión | Founder | VOLCADO §1.2 | §1.2 — **d2d1b75** (20 may 2026, pasada 3 F); re-ejecutar antes de cada reunión |
+| P0-06 | Re-verificar **399 tests** + commit short pre-reunión | Founder | VOLCADO §1.2 | §1.2 — **29ae76c** (20 may 2026); re-ejecutar antes de cada reunión |
 | P0-07 | Proceso **NDA** + data room cerrado (si fondo formal) | Founder + Legal | ANALISIS_FORENSE §11.1 bis IR | — |
 | P0-08 | **Métricas tracción** por producto (GMV/usuarios) si se citan en pitch | Founder | CHECKLIST §2; VOLCADO §1.2 | CHECKLIST; §1.2 |
 

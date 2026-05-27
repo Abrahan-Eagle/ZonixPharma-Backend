@@ -19,7 +19,7 @@
 | P0-03 | 2–3 referencias con permiso | Abierto |
 | P0-04 | Aprobación founder pack antes de envío | Abierto |
 | P0-05 | Demo en vivo — fecha programada | Abierto |
-| P0-06 | Re-run **399 tests** + commit en VOLCADO §1.2 | Snapshot OK (`d2d1b75`, 20 may 2026, pasada 3 F); **re-ejecutar** antes de cada reunión |
+| P0-06 | Re-run **399 tests** + commit en VOLCADO §1.2 | Snapshot OK (`29ae76c`, 20 may 2026); **re-ejecutar** antes de cada reunión |
 | P0-07 | NDA + data room cerrado (si fondo formal) | Abierto |
 | P0-08 | Métricas tracción por producto (si se citan) | Abierto |
 

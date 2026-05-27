@@ -139,7 +139,7 @@ Re-ejecución ampliada según [PROMPT_PACK_LANZAMIENTO.md](PROMPT_PACK_LANZAMIEN
 | Entregable | Enlace |
 |------------|--------|
 | Informe DD pre-reunión | [AUDITORIA_PROMPT_E_RONDA_2026-05.md](AUDITORIA_PROMPT_E_RONDA_2026-05.md) |
-| P0 abiertos | 7 + P0-06 snapshot (`d2d1b75`) |
+| P0 abiertos | 7 + P0-06 snapshot (`29ae76c`) |
 | Top 5 Q&A | §2 informe (fuente + línea) |
 | Veredicto | **Amarillo** — pack listo; P0 humano bloqueante institucional |
 | Sync doc | CHECKLIST §0.1 P0-06 |
@@ -188,7 +188,7 @@ Re-ejecución router post-[AUDITORIA_PROMPT_D_RONDA_2026-05.md](AUDITORIA_PROMPT
 
 | Campo | Valor |
 |-------|--------|
-| Delta | HEAD **6856ce8** → **d2d1b75**; tests **399 passed** (1649 assertions) |
+| Delta | HEAD **d2d1b75** → **29ae76c**; tests **399 passed** (1649 assertions) |
 | Archivos sync | VOLCADO §1.2 · REGISTRO P0-06 · CHECKLIST §0.1 · AUDITORIA_PROMPT_F cabecera |
 | Veredicto | Sin cambio — **acción founder** (resto P0 abiertos) |
 

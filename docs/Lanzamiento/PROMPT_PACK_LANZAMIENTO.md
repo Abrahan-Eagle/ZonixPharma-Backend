@@ -223,7 +223,7 @@ Router diagnose (zonix-lanzamiento-docs):
 - Orden de 3 sesiones siguientes (un archivo por sesión).
 Salida ronda F pasada 1 (27 mayo 2026): [MEJORAS_PROMPT_C_RONDA_2026-05.md](MEJORAS_PROMPT_C_RONDA_2026-05.md) § Prompt F + [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 sesiones.
 Salida ronda F pasada 2 formal (20 mayo 2026): [AUDITORIA_PROMPT_F_RONDA_2026-05.md](AUDITORIA_PROMPT_F_RONDA_2026-05.md) — **acción founder**; rutas inversor / farmacia / Day-D.
-Re-verificado pasada 3 (20 mayo 2026): P0-06 snapshot **d2d1b75** — 399 tests OK @ HEAD.
+Re-verificado pasada 3 (20 mayo 2026): P0-06 snapshot **29ae76c** — 399 tests OK @ HEAD.
 ```
 
 ---

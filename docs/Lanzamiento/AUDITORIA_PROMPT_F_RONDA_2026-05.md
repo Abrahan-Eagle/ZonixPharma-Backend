@@ -1,7 +1,7 @@
 # Diagnose Prompt F — router «no sé por dónde empezar» (pasada 2 formal)
 
 > **Fecha:** 20 mayo 2026.  
-> **Re-verificado pasada 3:** 20 mayo 2026 — `php artisan test` **399 passed** (1649 assertions) @ HEAD **d2d1b75**.  
+> **Re-verificado pasada 3:** 20 mayo 2026 — `php artisan test` **399 passed** @ HEAD **29ae76c** (post-commit auditorías D/E/F).  
 > **Método:** Prompt F ([PROMPT_PACK_LANZAMIENTO.md](PROMPT_PACK_LANZAMIENTO.md) §213–224) + skill `zonix-lanzamiento-docs`.  
 > **Contexto post-auditorías:** [AUDITORIA_PROMPT_D_RONDA_2026-05.md](AUDITORIA_PROMPT_D_RONDA_2026-05.md) (**verde**) · [AUDITORIA_PROMPT_E_RONDA_2026-05.md](AUDITORIA_PROMPT_E_RONDA_2026-05.md) (**amarillo**, P0 humano).  
 > **P0:** [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) — no rellenar con IA.
@@ -41,7 +41,7 @@
 | **Sección** | **§1** (founder) + **§1.2** (tests / repo) |
 | **Acción** | GitHub o acceso repo bajo NDA; **% dedicación** Zonix explícita; 2–3 referencias con permiso; re-run `php artisan test` + commit en §1.2 |
 | **Dueño** | **Founder** |
-| **P0 que cierra** | P0-01, P0-02, P0-03, P0-06 (snapshot **d2d1b75** — re-ejecutar pre-reunión) |
+| **P0 que cierra** | P0-01, P0-02, P0-03, P0-06 (snapshot **29ae76c** — re-ejecutar pre-reunión) |
 
 ---
 
@@ -107,7 +107,7 @@ Si el founder **no** prioriza inversor esta semana, usar una de estas rutas (mis
 |-------|---------|-----------|
 | Prompt F pasada 1 | [MEJORAS_PROMPT_C_RONDA_2026-05.md](MEJORAS_PROMPT_C_RONDA_2026-05.md) § Prompt F + REGISTRO § Próximas 3 sesiones | Ruta inversor (27 mayo) |
 | Prompt F pasada 2 | **Este archivo** (router §1–§5) | Rutas inversor / farmacia / Day-D |
-| **Prompt F pasada 3** | **Refresh P0-06** en este archivo + VOLCADO/REGISTRO/CHECKLIST | Tests **399** @ **d2d1b75** (20 may 2026) |
+| **Prompt F pasada 3** | **Refresh P0-06** en este archivo + VOLCADO/REGISTRO/CHECKLIST | Tests **399** @ **29ae76c** (20 may 2026) |
 
 ---
 
