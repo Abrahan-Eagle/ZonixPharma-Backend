@@ -126,9 +126,9 @@
 
 ### C.3 Lo que Zonix Pharma le ofrece
 
-- **Validación digital con trazabilidad completa:** cada receta queda registrada con su firma digital, fecha, hora.
+- **Validación digital con trazabilidad completa:** cada receta queda registrada con metadatos de validación (farmacéutico, fecha, hora). *[PENDIENTE dictamen abogado + farmacéutico asesor]*
 - **Trazabilidad para auditoría:** exportación del historial de validaciones para apoyar requerimientos de autoridad o due diligence; **contenido y formato** frente a MPPS u otros organismos quedan sujetos a dictamen **farmacéutico asesor + abogado** (no se promete un formato oficial «pre-aprobado» hasta cerrarlo).
-- **Reconocimiento profesional:** su nombre aparece en el ticket del paciente como "validado por Lic. X, MPPS XXXXX".
+- **Reconocimiento profesional:** su nombre puede aparecer en el ticket del paciente como "validado por Lic. X, MPPS XXXXX" *[PENDIENTE copy legal]*.
 - **Carga operativa baja:** solo valida o rechaza, no procesa el resto del flujo.
 - **Sin costo extra:** el rol pharmacist viene incluido en el **servicio de plataforma** contratado por la farmacia (mismo tier B2B).
 - **Onboarding sin compromiso individual:** el contrato lo tiene la farmacia, no el farmacéutico personal.
@@ -152,7 +152,7 @@
 
 - **SLA validación Rx:** < 60 minutos en horario operativo (8:00-20:00).
 - **Si excede 60 min:** la receta queda en pending y el paciente recibe push de "validación demorada".
-- **Si excede 120 min:** la orden se cancela automáticamente y el paciente recibe reembolso.
+- **Si excede 120 min:** la orden se cancela automáticamente (orden en `pending_prescription_validation`; pago **después** de validación). *[PENDIENTE política reembolso si hubiera pago anticipado — PLAN_METODOS §4]*
 - **Sustancias controladas:** validación obligatoria + retención de receta física en sucursal (pickup).
 
 Detalle del flujo completo en [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md).

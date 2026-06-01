@@ -1,7 +1,9 @@
 # Plan de métodos de pago
 
-> **Última actualización:** 27 mayo 2026.
-> Documento que detalla cómo se cobra y se paga en **Zonix Pharma** (pack inversor / piloto). La app reutiliza lógica de marketplace ya implementada en el backend Laravel, documentada en [`../logica-pagos-por-rol.md`](../logica-pagos-por-rol.md) (roles y cuentas) y [`../FLUJO_PAGO_ORDEN.md`](../FLUJO_PAGO_ORDEN.md) (checkout → comprobante → validación).
+> **Última actualización:** 1 junio 2026.
+> Documento que detalla cómo se cobra y se paga en **Zonix Pharma** (pack inversor / piloto).
+>
+> **One-pager inversor (3 min):** resumen ejecutivo abajo · §1 métodos · §2.1–2.2 flujos A/B · §10 Sudeban. Runbook (mora §2.3, Laravel §6, KPIs §8) = anexo operativo post-wire.
 > Marco **Sudeban / no intermediación:** §10 de este documento; contexto farmacéutico amplio en [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md) §8. No usar [`../REQUISITOS_OPERAR_VENEZUELA.md`](../REQUISITOS_OPERAR_VENEZUELA.md) (archivo histórico Zonix Eats).
 
 **Resumen ejecutivo:** el **paciente** paga a la **farmacia** (medicamentos) y a la **empresa partner** (envío) por canales **manuales VE** (pago móvil, transferencia, Zelle, Binance, efectivo). **Zonix Pharma** no es PSP: cobra a la farmacia **cuota + % GMV** (B2B) y a la empresa logística **fee por envío** (§2.5). La farmacia **valida el comprobante** antes de despachar.
@@ -332,7 +334,8 @@ Detalle: `[../FLUJO_PAGO_ORDEN.md](../FLUJO_PAGO_ORDEN.md)` y `[../logica-pagos-
 | --------- | ---------------------- |
 | No crear billeteras ni saldos virtuales para terceros | Zonix no mantiene wallet de paciente ni de farmacia |
 | No retener fondos del comprador | El comprobante se valida en la farmacia; Zonix no custodia el pago de la orden |
-| No procesar el pago como intermediario | Pago Móvil / transferencia / Zelle / Binance van **paciente → farmacia** |
+| No procesar el pago como intermediario (rubro A) | Pago Móvil / transferencia / Zelle / Binance del **medicamento** van **paciente → farmacia** |
+| No procesar el pago como intermediario (rubro B) | **Delivery fee** va **paciente → `delivery_company`** (§2.1 / §2.4); Zonix no recauda envío en piloto |
 | No centralizar la liquidación del medicamento ni del envío | Farmacia confirma (A); `delivery_company` confirma (B); sin wallet Zonix |
 
 **Triggers para revisión formal (mes 6+)** — activar con abogado + especialista pagos VE antes de cambiar producto:

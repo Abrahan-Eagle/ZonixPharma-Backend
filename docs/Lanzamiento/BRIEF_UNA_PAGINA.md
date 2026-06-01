@@ -1,6 +1,6 @@
 # Zonix Pharma — Brief de una página
 
-> **Última actualización:** 27 mayo 2026.
+> **Última actualización:** 1 junio 2026.
 > Documento ancla del pack. Léase primero. Todas las cifras están detalladas en los documentos hermanos del directorio [docs/Lanzamiento/](README.md).
 
 ## Qué es
@@ -49,6 +49,11 @@
 - **Métodos de pago manuales VE soportados nativos:** Pago Móvil C2P, transferencia, Zelle, Binance Pay USDT — sin pasarelas internacionales caras, sin Stripe, sin necesidad de cuenta empresarial extranjera para operar.
 - **Stack en staging/VPS** (go-live público T+7–12 Fase 0): backend con **399** tests pasando (re-verificar pre-reunión); frontend Flutter sin issues en analyze; Pusher + FCM integrados en código. **Release tiendas + Firebase OTP (SMS):** hitos **T+7–12** de Fase 0 — no asumir Play/App Store el día del wire ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md), [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md)).
 - **Equipo lean:** **9 FTE** + **2 freelance** en tier **Lean 101k** (detalle en tabla siguiente). Runway **12 meses** con **USD 101k** (mínimo viable). **Recomendado:** **USD 118k** (Base). Founder técnico: **Abrahan Pulido**.
+
+### Liquidez y defensibilidad (marketplace)
+
+- **Oferta primero:** **4× Sales** + catálogo en farmacias piloto **antes** de tráfico masivo a pacientes; **~28 activas** pre-Day-D → **~40** en M1 ([CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md) §2.10).
+- **Moat operativo:** Rx digital por farmacéutico de **cada** farmacia + **switching cost** (catálogo, historial, contrato híbrido) + pagos VE nativos — no solo «llegamos primero» (§2.11 CONTEXTO).
 
 ### Equipo piloto Lean (101k) — resumen
 
@@ -122,7 +127,7 @@ Detalle de las 3 sensibilidades en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FIN
 
 - **SAFE post-money** con cap según tier: **600k (Lean 101k)** · **650k (Base 118k — recomendado)** · **720k (Growth 135k)**.
 - **Ticket sugerido:** USD 25.000 / 50.000 / **101.000** (lead mínimo) / **118.000** (recomendado) / **135.000** (acelerado).
-- **Equity implícito Lean:** **~16,83%** (101k / 600k). Base **~18,15%**; Growth **~18,75%**.
+- **Equity implícito Lean:** **~16,83%** (101k / 600k). Base **~18,15%** *(≈18,2% redondeado)*; Growth **~18,75%** *(≈18,8% redondeado)*.
 - **Cap table:** [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md).
 
 ## Equipo
@@ -153,7 +158,7 @@ Detalle de las 3 sensibilidades en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FIN
 | Regulación farmacéutica venezolana | Cada farmacia afiliada aporta su propio farmacéutico colegiado. Dictamen **abogado + farmacéutico asesor** antes de Day-D. Asesor on-demand incluido en **Base/Growth** (118k/135k). |
 | Publicidad y claims en salud | Checklist **Do/Don't** y aprobación creativos: [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) §1.1; avisos al paciente en [PROPUESTA_VALOR_USUARIO_FINAL.md](PROPUESTA_VALOR_USUARIO_FINAL.md) §2.1. |
 | Competencia de Farmatodo / Locatel | No competimos en su segmento (cadenas premium); competimos en farmacias medianas e independientes que **no** tienen **app / marketplace** propio integrado. |
-| Adopción inicial lenta del paciente | Marketing primero a farmacias (B2B); el paciente entra orgánico una vez la farmacia ya tiene catálogo cargado. |
+| Adopción inicial lenta del paciente | **Liquidez B2B primero** (§2.10 CONTEXTO): catálogo + **~28 activas** pre-Day-D; demanda vía referidos farmacia + Meta geo; no tráfico masivo sin oferta. |
 | Pagos manuales VE complejos | Implementados en código (**staging/VPS**); OTP paciente vía **Firebase Phone Auth** (SMS) en hito T+7–12 Fase 0. Factura digital SENIAT cuando la empresa esté constituida y el trámite esté habilitado. |
 
 ## Pregunta al inversor

@@ -7,7 +7,7 @@
 ## 0. Pre-flight reunión (Prompt E — gap analysis)
 
 > **Salida formal pasada 2:** [AUDITORIA_PROMPT_E_RONDA_2026-05.md](AUDITORIA_PROMPT_E_RONDA_2026-05.md) (20 mayo 2026).  
-> **Log pasada 1:** [MEJORAS_PROMPT_C_RONDA_2026-05.md](MEJORAS_PROMPT_C_RONDA_2026-05.md) § Prompt E.  
+> **Log pasada 1:** [_auditorias/MEJORAS_PROMPT_C_RONDA_2026-05.md](_auditorias/MEJORAS_PROMPT_C_RONDA_2026-05.md) § Prompt E.  
 > **Registro P0:** [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md).
 
 ### 0.1 P0 abiertos (bloqueantes institucional)
@@ -175,7 +175,7 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 | Q | A |
 |---|---|
 | ¿CEO + CTO la misma persona, no es riesgoso? | "En piloto sí. En Serie A se contrata CTO o CEO técnico. Escala lean." |
-| ¿Cómo manejas la regulación farmacéutica? | "Cada farmacia aporta su pharmacist colegiado; KYC + verificación MPPS. Asesor regulatorio externo USD 120/mes en Growth." |
+| ¿Cómo manejas la regulación farmacéutica? | "Cada farmacia aporta su pharmacist colegiado; KYC + verificación MPPS. Asesor regulatorio externo USD 120/mes en **Base (118k) y Growth (135k)** — no en Lean 101k." |
 | ¿Por qué no contratas un pharmacist liaison interno? | "La ley VE obliga a que el pharmacist sea de la farmacia, no de **Zonix Pharma**. Si **Zonix Pharma** contrata uno, no puede validar recetas de farmacias afiliadas." |
 | ¿Equipo fijo o freelance? | "Freelance / honorarios profesionales en piloto. Migración a régimen formal post-Serie A." |
 
@@ -206,7 +206,7 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 | ¿De dónde sale CAC USD **139**? | "Construcción bottom-up: **4×** Sales (comisión **USD 30**/firma + prorrateo fijos **USD 480**/mes a **~8** firmas/mes en supuesto cruise), marketing digital, materiales. Detalle en [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §3." |
 | ¿De dónde sale churn 5% mensual? | "Mediana SaaS B2B SMB LatAm 3-7% (ChartMogul Benchmarks 2025). Conservador." |
 | ¿Por qué el equilibrio mensual está en **M11** y no antes? | "Burn recurrente por tramo **7.462 / 7.798 / 7.431** USD/mes (promedio **~7.559**; [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.3). Con **ARPF ~50** y la **curva agresiva** de §1.1 se llega a **~151 activas** en **M11** (revenue **7.550** vs burn **7.431**). **Day-D = T+90**; **Fase 0** consume **~28.057** antes de M1 ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §0). Mitigaciones: §1.4 PROYECCION." |
-| ¿Qué pasa si solo firmamos **~100 farmacias** en año 1 (vs. **175** del plan)? | "La curva §1.1 es **agresiva**; menos firmas **retrasa** el equilibrio mensual respecto a **M11** (menos activas → menos revenue con el mismo burn). Ver sensibilidad pesimista [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §7 y [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md). Mitigación: acelerar firmas, subir ARPF efectivo o recortar burn (contingencia §4 PROYECCION)." |
+| ¿Qué pasa si solo firmamos **~100 farmacias** en año 1 (vs. **~175 firmas / ~159 activas M12** del plan §1.1)? | "La curva §1.1 es **agresiva**; menos firmas **retrasa** el equilibrio mensual respecto a **M11** (menos activas → menos revenue con el mismo burn). Ver sensibilidad pesimista [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §7 y [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md). Mitigación: acelerar firmas, subir ARPF efectivo o recortar burn (contingencia §4 PROYECCION)." |
 | ¿Y si el plan no se cumple? | "Tabla de sensibilidad pesimista / base / optimista en [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) y detalle en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) sección 7. Plan de contingencia ante shocks documentado en sección 4." |
 
 ### 7.7 FAQ técnica (due diligence — lente CTO)

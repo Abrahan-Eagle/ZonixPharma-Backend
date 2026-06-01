@@ -1,6 +1,6 @@
 # Contexto del pitch y decisiones tomadas
 
-> **Última actualización:** 27 mayo 2026.
+> **Última actualización:** 1 junio 2026.
 > Documento que captura las decisiones del founder (usuario) sobre cómo se posiciona Zonix Pharma frente a un inversor, qué se dice, qué no, y por qué se eligió cada parámetro del modelo.
 
 ## 1. Tecnología base reutilizada (Zonix Pharma)
@@ -128,6 +128,37 @@ Detalle competitivo en [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md).
 | Cliente objetivo | Farmacias independientes Valencia metro + paciente urbano/clase media |
 | Categoría de mercado | Marketplace farmacéutico digital (no «delivery de comida») |
 | Tipo de mercado (Steve Blank) | **Existente** — competimos por atributos (Rx, fee, VE); **no** «creamos la categoría» (anti blue-ocean) |
+
+### 2.10 Liquidez marketplace (chicken-and-egg)
+
+**Problema clásico:** sin farmacias no hay catálogo; sin pacientes no hay GMV para la farmacia. **Decisión explícita del piloto: oferta primero, demanda escalonada.**
+
+| Fase | Oferta (farmacias) | Demanda (pacientes) | Fuente |
+|------|-------------------|---------------------|--------|
+| **T+0 → T+60** | **4× Sales B2B** visitas; cartas de intención; carga de catálogo | Solo soft launch interno (familia/equipo) | [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §2.5–2.6, §4.1 |
+| **T+60 → Day-D (T+90)** | Onboarding técnico por lotes; meta **~28 activas** pre-cargadas al Day-D | Pre-launch marketing **50%** presupuesto mes; WhatsApp local | PLAN §2.6, §4.1 |
+| **Day-D = M1** | **~40 activas** al cierre M1 (curva §1.1) | **Meta Ads + valla** según tier; primera ola B2C en zona piloto | [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 M1; [PROPUESTA_VALOR_USUARIO_FINAL.md](PROPUESTA_VALOR_USUARIO_FINAL.md) §7.3 |
+| **M2–M6** | Rampa a **≥97 activas** (DoD M6) | Geo-target Bella Florida + El Socorro; referidos farmacia (Bullseye interior) | PLAN §5; [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) §1.2 |
+
+**Mensaje inversor:** no gastamos tráfico masivo a pacientes **antes** de tener catálogo en farmacias piloto; el **B2B es el motor de liquidez** en Fase 0. La curva de **activas** en PROYECCION §1.1 es la fuente de verdad para revenue — no prometer GMV de paciente sin dato piloto.
+
+**Riesgo:** demanda B2C más lenta que firmas B2B → revenue por debajo de ARPF placeholder. **Mitigación:** referidos desde mostrador (QR/código farmacia), CS proactivo, recorte Meta si CAC paciente > umbral (contingencia PROYECCION §4).
+
+### 2.11 Moat y defensibilidad (más allá de timing)
+
+**Early mover** en independientes Valencia es **ventaja de entrada**, no moat permanente. Barreras que el pack sí puede defender ante inversor:
+
+| Moat | Qué es | Por qué importa |
+|------|--------|-----------------|
+| **Flujo Rx integrado** | Validación por farmacéutico **de la farmacia** en app; trazabilidad audit log | Agregadores genéricos **no** validan receta digital en VE ([PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md) §5.6) *[PENDIENTE dictamen]* |
+| **Switching cost operativo** | Catálogo cargado, historial de órdenes, farmacéutico capacitado, contrato marco anual | Cambiar a otro marketplace implica re-onboarding + pérdida de historial |
+| **Uni-pharmacy + pagos VE nativos** | Un carrito por farmacia; Pago Móvil / Zelle / Binance sin PSP Zonix | Difícil de replicar para agregador genérico sin adaptar stack VE |
+| **Modelo híbrido contractual** | Cuota **25/40/55** + % GMV bajo vs 25–35% agregador | Estructura de costo **pegada al contrato**; no solo descuento temporal |
+| **Datos operativos (no clínico)** | Logs de validación Rx, tiempos SLA, disputas — cifrados, retención limitada | Mejora operación farmacia; **no** prometer «IA diagnóstica» en piloto |
+
+**Lo que NO es moat hoy:** escala nacional, red de laboratorios, teleconsulta, integración IVSS — roadmap post-Day-D, no piloto.
+
+**Honestidad (prudencia):** Farmatodo podría lanzar marketplace propio en 18–24 meses ([PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md) §9); el moat defensible en M12 es **relación B2B + flujo Rx + costo total** en la zona piloto, no exclusividad legal.
 
 ## 3. Lo que NO se dice en el pitch (porque puede confundir)
 

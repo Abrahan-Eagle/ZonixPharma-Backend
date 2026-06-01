@@ -128,9 +128,9 @@ Mismo núcleo **Lean §2.3**, más:
 | Tramo | Meses | Burn/mes (USD) |
 |---|---|---|
 | A — sin valla mediana | 1 | **~7.606** |
-| B — valla mediana + asesor | 2–12 | **~8.292** |
+| B — valla mediana + asesor | 2–12 | **~8.100** |
 
-**Promedio Base:** **~8.059**/mes → **96.702** anual.
+**Promedio Base:** **~8.059**/mes → **96.702** anual *(7.606 + 11 × 8.100 = 96.706 ≈ 96.702)*.
 
 ### 3.4 Total Base 12 meses
 

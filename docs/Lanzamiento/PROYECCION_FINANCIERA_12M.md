@@ -102,20 +102,22 @@ Con **burn ~7.431–7.798** USD/mes y **ARPF placeholder ~50**, el **caso centra
 
 ### 2.2 Tabla agregada año 2
 
-| Trimestre año 2 | Farmacias activas | Revenue mensual | Burn mensual | Cash flow trimestral |
+| Trimestre año 2 | Farmacias activas | Revenue mensual | Burn mensual | Cash flow trimestral (aprox.) |
 |---|---|---|---|---|
-| Q1 (mes 13-15) | 130-160 | 5.850-7.200 | 7.500-8.000 (sube por Maracay) | +650 a +5.100 |
-| Q2 (mes 16-18) | 165-185 | 7.425-8.325 | 7.800-8.200 (sube por Maracaibo) | +4.275 a +6.975 |
-| Q3 (mes 19-21) | 190-205 | 8.550-9.225 | 8.000-8.500 | +6.150 a +8.175 |
-| Q4 (mes 22-24) | 210-225 | 9.450-10.125 | 8.000-8.500 | +8.850 a +10.875 |
-| **Total año 2** | **220 (cierre)** | **8.000-9.000 promedio** | **~7.500-8.500** | **~USD 30.000-40.000 cash positivo** |
+| Q1 (mes 13-15) | 130-160 | 5.850-7.200 | 7.500-8.000 (sube por Maracay) | **−2.500 a −1.200** |
+| Q2 (mes 16-18) | 165-185 | 7.425-8.325 | 7.800-8.200 (sube por Maracaibo) | **−400 a +800** |
+| Q3 (mes 19-21) | 190-205 | 8.550-9.225 | 8.000-8.500 | **+1.500 a +2.700** |
+| Q4 (mes 22-24) | 210-225 | 9.450-10.125 | 8.000-8.500 | **+4.000 a +5.500** |
+| **Total año 2** | **220 (cierre)** | **8.000-9.000 promedio** | **~7.500-8.500** | **~USD 3.000-7.000 cash positivo acumulado** |
+
+> **Lectura FP&A:** Q1–Q2 pueden ser **ligeramente negativos** en cash operativo (expansión Maracay/Maracaibo antes de escala revenue). El rango **+3k–+7k** anual es conservador vs. la lectura anterior (+30–40k). Recalcular con datos reales post-M12.
 
 ### 2.3 Revenue anual proyectado año 2
 
 ```
 Revenue total año 2 = ~USD 96.000-108.000
 Burn total año 2 = ~USD 90.000-102.000
-EBITDA año 2 = ~USD 20.000-30.000 positivo
+EBITDA año 2 = ~USD −6.000 a +18.000 (break-even operativo hacia fin de año 2; no asumir +20-30k sin recalibrar)
 ```
 
 ### 2.4 Burn año 2 — desglose conceptual (due diligence)

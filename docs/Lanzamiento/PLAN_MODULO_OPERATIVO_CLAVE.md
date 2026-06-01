@@ -1,7 +1,9 @@
 # Plan del módulo operativo clave: validación Rx por farmacéutico colegiado
 
-> **Última actualización:** 27 mayo 2026.
+> **Última actualización:** 1 junio 2026.
 > Documento que detalla el flujo central diferenciador de Zonix Pharma: la **validación de receta médica (Rx) por farmacéutico colegiado** dentro de la app.
+>
+> **One-pager inversor (3 min):** §1 diferenciador · §4 diagrama flujo · §6 SLA · §10 cadena frío resumen. Runbook completo (onboarding, §14 seguridad, §16–18 QA) = anexo operativo post-wire.
 > **Flujo Rx (upload → validación farmacéutico → TTL):** operativo en backend y tests; ver [`../PLAN_RX_VALIDATION.md`](../PLAN_RX_VALIDATION.md). **Inventario por lotes FIFO** en panel farmacia: esquema BD listo; **UI y despacho FIFO** post-Day-D o M3+ ([ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md)).
 
 ## 1. Por qué este módulo es crítico
@@ -85,7 +87,7 @@ sequenceDiagram
         Z->>P: Permite resubir o cancelar
     else Sin validar (TTL excedido)
         Z->>P: Push: validacion demorada
-        Z->>P: Cancelacion automatica + reembolso si pago hecho
+        Z->>P: Cancelacion automatica (orden no llego a pending_payment)
     end
 ```
 
@@ -96,7 +98,7 @@ sequenceDiagram
 | `pending_prescription_validation` | Receta subida, esperando validación. |
 | `prescription_approved` | Validada. Pasa a `pending_payment`. |
 | `prescription_rejected` | Rechazada. Paciente puede resubir o cancelar. |
-| `prescription_expired` | TTL excedido (60 min sin validación). Cancelación automática. |
+| `prescription_expired` | TTL de validación excedido (configurable — default **60 min** en horario operativo). Cancelación automática **antes** de `pending_payment`. |
 | `pending_payment` | Lista para pagar. |
 | `pending_dispatch` | Pagada, en preparación. |
 | `dispatched` | Salió de la farmacia. |
@@ -109,19 +111,21 @@ Detalle técnico de transiciones en backend: ver [../PLAN_RX_VALIDATION.md](../P
 
 ## 6. SLA de validación
 
+> **TTL configurable** en backend (`prescription_validation_ttl_minutes`; default **60**). Los plazos siguientes son **SLA operativo** para farmacéutico y CS, no sustituyen normativa MPPS.
+
 | Horario | SLA Validación |
 |---|---|
-| Horario operativo (8:00 - 20:00) | ≤ 60 minutos |
+| Horario operativo (8:00 - 20:00) | ≤ **60 minutos** (default TTL) |
 | Fuera de horario operativo | Pendiente al siguiente horario operativo + notificación al paciente |
 
-**Si excede 60 min:**
+**Si excede el TTL configurado (default 60 min en horario operativo):**
 - Push al paciente: "Validación demorada. Reintentando..."
-- Push al farmacéutico colegiado: "Receta vencida pronto, validar urgente."
+- Push al farmacéutico colegiado: "Receta vence pronto, validar urgente."
 
-**Si excede 120 min:**
-- Cancelación automática.
+**Si excede 120 min desde subida (domingos/feriados — operación reducida, §15.1):**
+- Cancelación automática de la orden en `pending_prescription_validation`.
 - Notificación al paciente.
-- Reembolso si ya pagó.
+- **Sin reembolso** en flujo estándar Rx: el pago ocurre **después** de validación (`pending_payment`). Si en el futuro hubiera pago anticipado, aplicar política en [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §4.
 - Métrica negativa para la farmacia (cuenta como SLA missed).
 
 ## 7. Onboarding del farmacéutico colegiado
@@ -287,13 +291,13 @@ Las etiquetas de producto en la app (**`common` / `retained` / `special`**, cont
 
 ## 14. Seguridad y privacidad de datos médicos (ALTA #2 forense)
 
-Datos de salud son categoría especial; **marco legal VE en actualización** — aplicar estándares de consentimiento, minimización y seguridad descritos en [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §4.4. Zonix Pharma cumple con:
+Datos de salud son categoría especial; **marco legal VE en actualización** — diseño orientado a consentimiento, minimización y seguridad descritos en [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §4.4. *[PENDIENTE dictamen abogado + farmacéutico asesor antes de Day-D público]* — no afirmar «cumplimiento pleno» hasta dictamen.
 
 ### 14.1 Almacenamiento
 
 - **Recetas (foto/PDF):** S3 cifrado en reposo (AES-256). Bucket privado, acceso solo vía signed URL con TTL ≤ 60 min.
 - **Cédulas KYC del pharmacist y repartidor:** mismo S3 cifrado, política de retención 5 años o lo que exija ley aplicable.
-- **Comprobantes de pago:** S3 cifrado, retención 10 años (ley contable VE).
+- **Comprobantes de pago:** S3 cifrado, retención **hasta 10 años** *[PENDIENTE contador/abogado — plazo contable VE]*.
 - **Datos médicos del paciente** (medicamento comprado, frecuencia, condición indirecta): MySQL cifrado en reposo. Acceso vía API solo con sesión autenticada del paciente o con sesión del pharmacist responsable de su orden.
 
 ### 14.2 Transmisión

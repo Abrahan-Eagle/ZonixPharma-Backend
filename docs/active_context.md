@@ -7,6 +7,25 @@
 
 ## Última actualización de contexto
 
+### Auditoría forense 360° pack Lanzamiento — 1 junio 2026
+
+- **Entregable:** [AUDITORIA_FORENSE_360_2026-06.md](Lanzamiento/AUDITORIA_FORENSE_360_2026-06.md) — consolida hallazgos P0–P2; lente prudencia (integridad) sin texto religioso en docs inversor.
+- **Correcciones P0:** PERFIL curva M9=130/M12=159; PLAN M9 + §9 DoD M6; PROYECCION año 2 EBITDA/cash; PRESUPUESTO Base tramos; PLAN_MODULO TTL; PLAN_METODOS Sudeban rubro B; VOLCADO §7 partner.
+- **Correcciones P1:** UNIT burn Lean vs Base; asesor Base+Growth; claims `[PENDIENTE]` Rx/legal; calendario B2C Day-D; valla Base mediana; FAQ ~159; equity redondeo.
+- **Recorte:** 7 meta-docs → [Lanzamiento/_auditorias/](Lanzamiento/_auditorias/); README data room; CUESTIONARIO solo interno.
+- **INCOHERENCIAS:** I-17–I-27 registradas.
+- **Biblia marketplace G1–G2, G5:** CONTEXTO §2.10–§2.11; PLAN §4.0 fila 5 mom-test pricing; UNIT §2.1 enlace.
+- **Bloqueante inversor:** P0 humano en [REGISTRO_PENDIENTES_PACK.md](Lanzamiento/REGISTRO_PENDIENTES_PACK.md) (sin cambio).
+
+### Spec Kit (SDD) integrado — 27 mayo 2026
+
+- **Backend hub:** `.specify/`, `specs/`, constitution en `.specify/memory/constitution.md`, overrides dual-repo.
+- **Front espejo:** `cursor-agent` en ZonixPharma-Front; specs activas en Backend `specs/`.
+- **Skills:** `.cursor/skills/speckit-*` (proceso) + `.agents/skills/zonix-*` (dominio).
+- **Piloto:** `specs/001-block-rx-strict-checkout/` — spec/plan/tasks/analyze listos; **implement pendiente OK usuario**.
+- **Guía:** [docs/zonix/SPEC_KIT_ZONIX.md](zonix/SPEC_KIT_ZONIX.md).
+- **Tests post-install:** `php artisan test --filter=OrderTest` OK; `flutter test` 216 passed.
+
 ### Pack Lanzamiento — tiers Lean 101k / Base 118k / Growth 135k (18 mayo 2026)
 
 - **Reestructuración:** antiguo «Base 101k» → **Lean (mínimo)**. **Base = 118k recomendado**. **Growth = 135k acelerado**. SAFE **600k / 650k / 720k**. Obsoletos **60k / 90k**.

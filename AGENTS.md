@@ -20,6 +20,23 @@
 
 ---
 
+## Spec-Driven Development (Spec Kit)
+
+Toolkit oficial GitHub para features de **producto** (API + Flutter). **No** usar para `docs/Lanzamiento/` ni cifras inversor.
+
+| Concepto | Ubicación |
+| -------- | --------- |
+| Constitution | [.specify/memory/constitution.md](.specify/memory/constitution.md) |
+| Feature specs | [specs/](specs/) (hub Backend) |
+| Skills SDD | `.cursor/skills/speckit-*` (`/speckit-specify`, `/speckit-plan`, …) |
+| Skills dominio | `.agents/skills/zonix-*` (siempre en implement) |
+| Guía router | [docs/zonix/SPEC_KIT_ZONIX.md](docs/zonix/SPEC_KIT_ZONIX.md) |
+| Front espejo | `../ZonixPharma-Front` — specs en Backend |
+
+**Flujo:** specify → clarify (opc.) → plan → tasks → analyze → implement (**solo con OK usuario**).
+
+---
+
 ## Project Overview
 
 | Métrica | Valor |
@@ -34,6 +51,12 @@
 
 ### Cambios recientes
 
+- **27 may 2026 — Spec Kit (SDD) integrado en Jarvis (producto, no Lanzamiento).**
+  - [github/spec-kit](https://github.com/github/spec-kit) v0.8.15: `specify-cli`, integración `cursor-agent` en Backend (hub) y Front (espejo).
+  - Hub: `specs/`, `.specify/memory/constitution.md`, overrides dual-repo en `.specify/templates/overrides/`.
+  - Skills proceso: `.cursor/skills/speckit-*` (complementan `.agents/skills/zonix-*`).
+  - Piloto: [specs/001-block-rx-strict-checkout/](specs/001-block-rx-strict-checkout/) — artefactos listos; implement con OK usuario.
+  - Guía: [docs/zonix/SPEC_KIT_ZONIX.md](docs/zonix/SPEC_KIT_ZONIX.md).
 - **27 may 2026 — Skills startup Jarvis (founder-playbook / shawnpang destilados, sin repos externos).**
   - Nuevas secciones: `zonix-startup-context` (Market Type), `zonix-financial-model` (waiver 100m-offers), `zonix-launch-piloto` (beachhead/chasm), `zonix-fundraising-narrative` (Cialdini), `zonix-lanzamiento-docs` (anti-patrones + router BRIEF/PERFIL).
   - Guía: [docs/zonix/SKILLS_STARTUP_USAR_NO_USAR.md](docs/zonix/SKILLS_STARTUP_USAR_NO_USAR.md).
@@ -197,6 +220,8 @@ Configurables en `config/zonix.php` (sección `pharma`):
 | Tarea multi-rol compleja (qué subagent + qué skill) | `zonix-jarvis-subagents-map` + `zonix-lanzamiento-roles` |
 | Revisar contrato marco farmacia / SAFE / laboral (checklist) | `zonix-legal-contracts-ve` + `zonix-empresa-ve` + `zonix-regulatory-ve` |
 | Lectura founder CEO/CTO/TPM (due diligence, 90 días) | `zonix-founder-ops-index` + `zonix-startup-context` |
+| Nueva feature producto (spec → plan → tasks) | Spec Kit (`speckit-*`) + skills `zonix-*` del dominio — ver [SPEC_KIT_ZONIX.md](docs/zonix/SPEC_KIT_ZONIX.md) |
+| Refactor / feature multi-módulo full-stack | Spec Kit + `zonix-order-lifecycle` / `zonix-api-patterns` / `zonix-ui-design` según módulo |
 
 ---
 
@@ -211,8 +236,10 @@ Configurables en `config/zonix.php` (sección `pharma`):
 - **[docs/zonix/ANALISIS_FORENSE_SKILLS.md](docs/zonix/ANALISIS_FORENSE_SKILLS.md)** — auditoría forense multi-rol de skills `zonix-*`.
 - **[docs/zonix/research_links.md](docs/zonix/research_links.md)** — enlaces GitHub skills/roles (adaptar/evitar).
 - **[docs/zonix/roles_matrix.json](docs/zonix/roles_matrix.json)** — routing JARVIS por rol y tarea + `skills_inventory`.
+- **[docs/zonix/SPEC_KIT_ZONIX.md](docs/zonix/SPEC_KIT_ZONIX.md)** — Spec Kit (SDD) vs Jarvis `zonix-*`.
+- **[specs/README.md](specs/README.md)** — índice features Spec Kit.
 
 ---
 
 **Documentación completa de lógica de negocio:** Ver `README.md`
-**Última actualización:** 20 mayo 2026
+**Última actualización:** 27 mayo 2026

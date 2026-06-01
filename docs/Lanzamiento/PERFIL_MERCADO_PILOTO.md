@@ -49,9 +49,9 @@ Construido bottom-up, no top-down.
 |---|---|---|---|
 | 3 | **15** | **~6,6%** Valencia metro *(alineado [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1)* | **USD 400** |
 | 6 | **41** | **~18%** Valencia metro / **~25%** SAM extendido *(150–180; §1.1)* | **USD 1.850** |
-| 9 | 78 | **~35%** Valencia metro / **~43%** SAM extendido | **USD 3.700** *(§1.1)* |
-| **11** | **151** | **59% SAM extendido / 47% Valencia metro** | **USD 7.550** *(revenue; burn mes 11 **7.431** — **equilibrio mensual** caso central §1.1)* |
-| 12 | 120 | 67% SAM extendido | USD 6.000 |
+| 9 | **130** | **~57%** Valencia metro / **~72%** SAM extendido *(§1.1)* | **USD 6.500** |
+| **11** | **151** | **~67%** Valencia metro / **~84%** SAM extendido | **USD 7.550** *(revenue; burn mes 11 **7.431** — **equilibrio mensual** §1.1)* |
+| 12 | **159** | **~70%** Valencia metro / **~88%** SAM extendido *(§1.1)* | **USD 7.950** |
 
 **Año 2:** expansión a Maracay y Maracaibo. SOM proyectado 200-220 farmacias activas, revenue mensual USD 8.000-9.000 (anual USD 96k-108k).
 
@@ -124,8 +124,8 @@ Detalle del modelo en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.m
 | Tipo | Cadena propia | Marketplace generalista | Marketplace farmacéutico | **Marketplace farmacéutico VE** |
 | Target VE | Clase media-alta | Cadenas premium | No opera VE | **Farmacias independientes y cadenas pequeñas-medianas** |
 | Modelo cobro | Margen de venta | 25-35% comisión GMV | Comisión + delivery | **Cuota fija + % GMV moderado (Zonix Pharma)** |
-| Validación Rx digital | No | No | Parcial | **Sí — farmacéutico colegiado de la propia farmacia** |
-| Cadena de frío | No | No | Parcial | **Sí — flag operativo restringe modos delivery** |
+| Validación Rx digital | No | No | Parcial | **Sí — farmacéutico colegiado de la propia farmacia** *[PENDIENTE dictamen abogado + farmacéutico asesor]* |
+| Cadena de frío | No | No | Parcial | **Sí — flag operativo restringe modos delivery** *[PENDIENTE dictamen abogado + farmacéutico asesor]* |
 | Multi-sucursal con un solo onboarding | N/A | No | No | **Sí — Enterprise tier** |
 | Métodos pago manuales VE (Pago Móvil, Zelle, Binance Pay) | Solo presencial | Pago Móvil parcial | No opera VE | **Sí — los 4 nativos** |
 
@@ -175,8 +175,8 @@ Basado en benchmarks LatAm (mercados B2B SaaS para SMB):
 
 - **Mes 1-3:** A cierre mes **3:** **15** farmacias activas (**~6,6%** Valencia metro / orden **~30–50%** del piloto inicial 30–50 puntos — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1).
 - **Mes 4-6:** A cierre mes **6:** **41** farmacias activas (**~18%** Valencia metro / **~25%** SAM extendido 150–180).
-- **Mes 7-9:** A cierre mes **9:** **78** farmacias activas (**~35%** Valencia metro / **~43%** SAM extendido).
-- **Mes 10-12:** A cierre mes **11–12:** **107–120** farmacias activas (**~47–53%** Valencia metro / **~59–67%** SAM extendido).
+- **Mes 7-9:** A cierre mes **9:** **130** farmacias activas (**~57%** Valencia metro / **~72%** SAM extendido — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1).
+- **Mes 10-12:** A cierre mes **11:** **151** activas (**equilibrio mensual**); mes **12:** **159** activas (**~70%** Valencia metro).
 
 Estos números asumen:
 - Sales B2B (**4 reps**, firmas/mes en total): ~**5-6** mes 1, **8-12** meses 4-6, **~14** meses 7-11 (ritmo medio anual **~10,7**/mes — coherente con [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1). Productividad individual orientativa: **~2,7 firmas/rep/mes** en cruise (10,7 ÷ 4).
@@ -188,7 +188,7 @@ Estos números asumen:
 | Riesgo | Probabilidad | Mitigación |
 |---|---|---|
 | Devaluación bolívar > 100% trimestral | Media | Buffer 20%. Plan contingencia documentado. |
-| Regulación nueva sobre marketplaces | Baja-media | Asesor regulatorio externo USD 120/mes en Growth. Founder revisa Gaceta semanalmente. |
+| Regulación nueva sobre marketplaces | Baja-media | Asesor regulatorio externo USD 120/mes en **Base (118k) y Growth (135k)** — no en Lean 101k. Founder revisa Gaceta semanalmente. |
 | Rappi o PedidosYa hace agresivo el descuento | Media | Nuestro modelo (fija + % bajo sobre GMV app) es estructuralmente más barato que su comisión plena; no podemos perder en precio vs agregador. |
 | Farmatodo lanza marketplace propio | Baja | Su DNA es retail propio, no marketplace. Tomarían 18-24 meses construirlo y entonces nosotros ya tenemos PMF. |
 | Adopción inicial < 50% del plan | Media | Pivote táctico: bajamos Sales B2B fijo, subimos comisión por farmacia firmada. |
@@ -196,7 +196,7 @@ Estos números asumen:
 
 ## 10. Resumen para el inversor
 
-> Mercado farmacéutico VE: USD 1.638M/año (Cifar / IMS-IQVIA), creciendo +17,49% en unidades. 226 farmacias en Valencia metro, 30-50 en la zona piloto inicial. Comparable internacional (Farmalisto): ~USD 32M revenue; funding reportado ~USD 22M (hasta ~USD 33M según fuente). Diferencial: **cuota plataforma + % GMV moderado** vs. comisión 25-35% de Rappi. Unit economics resumidos en [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) (CAC **139**, LTV/CAC **~7,2x** con ARPF placeholder **~50**). Validación Rx digital + soporte cadena de frío + multi-sucursal son ventajas que ningún competidor en VE tiene hoy.
+> Mercado farmacéutico VE: USD 1.638M/año (Cifar / IMS-IQVIA), creciendo +17,49% en unidades. 226 farmacias en Valencia metro, 30-50 en la zona piloto inicial. Comparable internacional (Farmalisto): ~USD 32M revenue; funding reportado ~USD 22M (hasta ~USD 33M según fuente). Diferencial: **cuota plataforma + % GMV moderado** vs. comisión 25-35% de Rappi. Unit economics resumidos en [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) (CAC **139**, LTV/CAC **~7,2x** con ARPF placeholder **~50**). Validación Rx digital + cadena de frío + multi-sucursal son **atributos del producto piloto** frente a agregadores genéricos — *[PENDIENTE dictamen abogado + farmacéutico asesor]* para claims regulatorios en materiales externos.
 
 Documentos hermanos relevantes:
 - [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md): qué decir a la farmacia.

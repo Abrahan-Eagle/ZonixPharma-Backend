@@ -254,9 +254,9 @@ Registrar respuestas en CRM / [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPU
 | "¿Cuánto tarda el onboarding?" | "30 min catálogo + 1h capacitación + 1 día de prueba interna. Total 2 días desde que firmas." | [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §3 |
 | "La comisión / cuota me parece alta." | Comparar CAC paciente digital vs visibilidad; mostrar §5 con su GMV estimado vs agregador 25–35%. | [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) |
 | "Regulación / MPPS." | Validación por **farmacéutico colegiado de la farmacia**; plataforma documentada. | [PLAN_REGULATORIO](../PLAN_REGULATORIO_PHARMA_VE.md) + asesor `[PENDIENTE]` |
-| "¿Y si no hay órdenes los primeros meses?" | "Marketing primero a tu **zona caminable** desde tu sucursal y al **polo del piloto** (Bella Florida o vía Tocuyito / El Socorro). Sales B2B garantiza al menos 5-10 órdenes/semana en mes 1, escalando." |
+| "¿Y si no hay órdenes los primeros meses?" | "Marketing geo en **zona piloto** desde **Day-D** (Meta + valla según tier). **Objetivo comercial** (no garantía contractual): escalar demanda conforme crece catálogo — ver curva [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1." |
 | "¿Hay contrato anual?" | "Sí: el marco con la farmacia es **contrato anual** (marco B2B). La **cuota Zonix** se devenga **mensual** según GMV y tier §5. Salidas y penalidades: lo que diga el contrato firmado + avisos." |
-| "¿Quién es el responsable si MPPS inspecciona?" | "La farmacia sigue siendo el establecimiento farmacéutico responsable ante MPPS; **Zonix Pharma** aporta **trazabilidad digital** y logs exportables. Contrato marco lo deja escrito." |
+| "¿Quién es el responsable si MPPS inspecciona?" | "La farmacia sigue siendo el establecimiento farmacéutico responsable ante MPPS; **Zonix Pharma** aporta trazabilidad digital y logs exportables. *[PENDIENTE dictamen abogado + farmacéutico asesor]*" |
 | "¿Qué datos del paciente ve **Zonix Pharma**?" | "Solo los necesarios para la orden y la receta; tratamiento bajo aviso de privacidad y contrato; subencargados listados para la C.A." |
 | "¿Me obligan a exclusividad digital?" | "No exclusividad con Rappi/PedidosYa; puedes operar multicanal." |
 
@@ -265,8 +265,8 @@ Registrar respuestas en CRM / [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPU
 Antes de **órdenes reales** con pacientes, cada farmacia firma (o anexa) documento que cubra como mínimo:
 
 1. **Roles:** farmacia como establecimiento dispensador; **Zonix Pharma** como plataforma y, tras constitución, **responsable del tratamiento** de datos de usuarios según [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §4.4.
-2. **Validación Rx:** obligación de mantener farmacéutico colegiado MPPS activo; SLA acordado; escalamiento si no hay validador.
-3. **Recetas retenidas/controladas:** pickup, identificación, libros de control **en farmacia**.
+2. **Validación Rx:** obligación de mantener farmacéutico colegiado MPPS activo; SLA acordado; escalamiento si no hay validador. *[PENDIENTE dictamen abogado + farmacéutico asesor]*
+3. **Recetas retenidas/controladas:** pickup, identificación, libros de control **en farmacia**. *[PENDIENTE dictamen abogado + farmacéutico asesor]*
 4. **Pagos y comprobantes:** cómo se concilian y plazos de disputa.
 5. **Salida:** exportación de datos y baja de sucursal sin perjuicio a pacientes con orden abierta.
 

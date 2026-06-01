@@ -313,7 +313,7 @@ Al cierre de la inversión, el inversor recibe:
 | 1 | Constitución legal C.A. completa. Apertura cuenta bancaria empresa. Transferencia interna founder → C.A. |
 | 1-2 | RIF + factura digital SENIAT habilitados. |
 | 2-3 | Marca SAPI registrada (paralelo). |
-| 3 | Day-D del piloto. Operación oficial de la C.A. |
+| 3 | **Day-D del piloto (T+90 desde wire).** Inicio **M1** financiero post-Day-D — ver [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §0. Operación oficial de la C.A. en paralelo mes 1–3. |
 | 4-6 | Reporte mensual al inversor. |
 | 7-12 | Reporte trimestral al inversor. |
 | 18-24 | Posible Serie A. Conversión del SAFE. |

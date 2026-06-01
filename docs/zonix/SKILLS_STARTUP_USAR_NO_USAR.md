@@ -43,6 +43,17 @@
 | HIPAA / quant trading US | No VE pharma pre-seed |
 | `emotixco/claude-skills-founder` | **Referencia** competitor-matrix / metrics — no `npx skills add` |
 
+## Excepción: Spec Kit (ingeniería SDD)
+
+| Recurso | Veredicto | Notas |
+|---------|-----------|-------|
+| [github/spec-kit](https://github.com/github/spec-kit) | **Usar** (producto) | `specify-cli` v0.8.15; skills `.cursor/skills/speckit-*`; hub `specs/` en Backend |
+| Spec Kit en `docs/Lanzamiento/` | **No usar** | Seguir `zonix-lanzamiento-docs` + `PROMPT_PACK_LANZAMIENTO.md` |
+
+No confundir con `npx skills add` de repos founder: Spec Kit es CLI oficial MIT, no fuente de cifras del pack.
+
+Guía: [SPEC_KIT_ZONIX.md](SPEC_KIT_ZONIX.md).
+
 ## No instalar / no usar como fuente de cifras
 
 - `VoltAgent/awesome-agent-skills`, `agent-skills-hub` completo, `founder-os`, `JOINCLASS/ai-ceo-framework`

@@ -4,7 +4,7 @@
 > Plantilla para el founder. Llenar a medida que se entreviste al equipo y se cierren contrataciones.
 > Cada celda con `[PENDIENTE]` debe llenarse antes de la primera reunión con un inversor.
 
-**Instrucciones (solo humano):** la IA **no** debe inventar GitHub, referencias, % dedicación, fechas de demo ni resultados de tests. Usar [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) (P0–P4) como checklist. Tras ronda Prompt C (mayo 2026), mejoras de redacción del pack están en [MEJORAS_PROMPT_C_RONDA_2026-05.md](MEJORAS_PROMPT_C_RONDA_2026-05.md).
+**Instrucciones (solo humano):** la IA **no** debe inventar GitHub, referencias, % dedicación, fechas de demo ni resultados de tests. Usar [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) (P0–P4) como checklist. Tras ronda Prompt C (mayo 2026), mejoras de redacción del pack están en [_auditorias/MEJORAS_PROMPT_C_RONDA_2026-05.md](_auditorias/MEJORAS_PROMPT_C_RONDA_2026-05.md). Auditoría consolidada jun 2026: [AUDITORIA_FORENSE_360_2026-06.md](AUDITORIA_FORENSE_360_2026-06.md).
 
 ## 1. Datos del founder
 
@@ -170,15 +170,14 @@ Contratar **cuatro** personas en este rol (quinta columna opcional si se evalúa
 | 7 | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
 | 8 | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
 
-## 7. Repartidores prospecto
+## 7. Repartidores — partners logísticos (`delivery_company` + `delivery_agent`)
 
-| # | Nombre | Cédula | Vehículo | Zona habitual | KYC enviado | Estado |
+> **Modelo piloto:** Zonix **no** contrata repartidores directos. Onboarding vía **empresa partner** (`delivery_company`) y sus **agentes** bajo contrato marco — [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md).
+
+| # | Empresa partner (`delivery_company`) | Contacto | Agentes estimados | Zona | Contrato marco | Estado |
 |---|---|---|---|---|---|---|
-| 1 | [PENDIENTE] | [PENDIENTE] | [PENDIENTE — moto/carro] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
+| 1 | [PENDIENTE] | [PENDIENTE] | [PENDIENTE — 5–15 agentes] | Valencia piloto | [PENDIENTE] | [PENDIENTE] |
 | 2 | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
-| 3 | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
-| 4 | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
-| 5 | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
 
 ## 8. Cronograma personal del founder T+0 a T+90
 
@@ -193,7 +192,7 @@ Contratar **cuatro** personas en este rol (quinta columna opcional si se evalúa
 | T+28 | Equipo contratado y onboarded | Founder | [PENDIENTE] |
 | T+30 | Empresa constituida | Founder + Abogado | [PENDIENTE] |
 | T+45 | 5-8 farmacias firmaron carta de intención | Sales B2B | [PENDIENTE] |
-| T+60 | Catálogos cargados + repartidores onboarded | Founder + DOC | [PENDIENTE] |
+| T+60 | Catálogos cargados + **partner logístico** onboarded (`delivery_company`) | Founder + Coordinador Partners | [PENDIENTE] |
 | T+85 | Pre-launch marketing activo | Marketing Lead | [PENDIENTE] |
 | T+90 | DAY-D | Equipo completo | [PENDIENTE] |
 

@@ -1,6 +1,6 @@
 # Plan de lanzamiento comercial
 
-> **Última actualización:** 26 mayo 2026.
+> **Última actualización:** 1 junio 2026.
 > Documento que detalla el calendario operativo desde el cierre de inversión hasta el **Day-D** (lanzamiento público del piloto) y los primeros meses post-Day-D.
 > **Convención de tiempo:** **T+0** = cierre de inversión (entra el capital). **Day-D = T+90** = **día 0 del piloto en app** (M1 del modelo financiero en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)). Los **meses 1–12** del presupuesto/proyección cuentan **desde Day-D**, no desde el wire. **Fase 0 (T+0 → T+90):** cierre legal, equipo, HQ, tecnología, onboarding de farmacias y catálogo **antes** del lanzamiento público — el gasto de esos ~3 meses está en la **Fase 0** de la proyección (**~USD 28.057** + one-shots en §0.1 — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)), no duplicado en M1.
 
@@ -144,9 +144,12 @@ Checklist **antes** de tráfico masivo. Evidencia en VOLCADO / CRM — la IA **n
 | 2. Validación B2B | Contrato marco firmado + métodos de pago farmacia en panel | Farmacia activa en staging/prod |
 | 3. Creación demanda | Primer pedido real OTC o Rx | Orden ≥ `pending_payment` en BD |
 | 4. Ops | CS, disputas, partner `delivery_company` | Macros CS + SLA partner acordado |
-| **Go Day-D** | Founder firma checklist §4.0 + ALINEACION P0 cerrados | **No** tráfico masivo Meta/valla sin fila 1–4 |
+| **5. Pricing mom-test** | Dueño farmacia reacciona a **cuota 25/40/55 + % GMV** con **hechos pasados** (no «¿pagarías?») | **≥3** entrevistas documentadas (minuta o VOLCADO §3): comparación vs agregador/WhatsApp; reacción a ejemplo Pro **USD 40 + 0,80%** sobre GMV ilustrativo ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §3.1, §5) |
+| **Go Day-D** | Founder firma checklist §4.0 + ALINEACION P0 cerrados | **No** tráfico masivo Meta/valla sin filas **1–5** |
 
-Coherente con [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §8.1 (SPIN) y [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md).
+Coherente con [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §8.1 (SPIN), [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §2.1 (WTP) y [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md).
+
+**Guía mom-test pricing (fila 5):** preguntar qué **gastó o dejó de ganar** la farmacia con agregador/WhatsApp el último mes; mostrar **solo después** el ejemplo híbrido (Basic **25** / Pro **40** / Enterprise **55** + % GMV). **No** cambiar bandas ni % del pack sin decisión founder documentada. Si **≥2 de 3** entrevistas muestran rechazo claro al nivel Pro sobre GMV típico local, escalar a founder antes de firmar contratos masivos — no bloquea Day-D si hay señal mixta, pero **sí** obliga nota en VOLCADO y revisión ARPF placeholder ([UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §2.1).
 
 ### 4.1 Pre-lanzamiento (T+60 a T+85)
 
@@ -203,7 +206,7 @@ Criterios para considerar el piloto exitoso:
 - Onboarding 20-30 farmacias adicionales.
 - Sin cambio en equipo ni inmueble.
 - Marketing digital extendido.
-- Meta: 78 farmacias activas en mes 9.
+- Meta: **130** farmacias activas en mes 9 *(PROYECCION §1.1)*.
 
 ### 6.2 Mes 10-12: Resto Valencia metro
 
@@ -248,7 +251,9 @@ Reporte interno (no al inversor):
 - Reunión de 30-45 min con inversor.
 - Plan próximos 90 días.
 
-## 9. Entregables al final del piloto (T+180)
+## 9. Entregables al cierre del piloto (**M6 = sexto mes desde Day-D**)
+
+> **Nota:** Day-D = **T+90** = inicio **M1** financiero. El piloto se evalúa al **M6 post-Day-D** (§5 Definition of Done), no en T+180 calendario absoluto.
 
 Documento al inversor:
 

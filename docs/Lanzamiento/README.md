@@ -8,7 +8,7 @@
 > **Zona piloto:** Valencia metro (Carabobo), con foco inicial operativo **San Diego / Av. Bolívar Norte** y expansión a Naguanagua, El Socorro, La Viña, Prebo, etc.
 > **Capital pedido (Lean — mínimo viable):** **USD 101.000** para **Fase 0 (~90 días)** + **12 meses** post-**Day-D** — SAFE post-money cap **USD 600.000**. **Recomendado (Base):** **USD 118.000** / cap **650.000**. **Acelerado (Growth):** **USD 135.000** / cap **720.000** — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §1.
 
-Este directorio contiene **28 archivos** `.md`: índice y auditorías ([README.md](README.md), [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md), [AUDITORIA_PROMPT_D_RONDA_2026-05.md](AUDITORIA_PROMPT_D_RONDA_2026-05.md), [AUDITORIA_PROMPT_E_RONDA_2026-05.md](AUDITORIA_PROMPT_E_RONDA_2026-05.md), [AUDITORIA_PROMPT_F_RONDA_2026-05.md](AUDITORIA_PROMPT_F_RONDA_2026-05.md), [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md), [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md), [INCOHERENCIAS_LANZAMIENTO_2026-05.md](INCOHERENCIAS_LANZAMIENTO_2026-05.md), [PROMPT_PACK_LANZAMIENTO.md](PROMPT_PACK_LANZAMIENTO.md)) más **19 documentos** de contenido (brief, finanzas, legal, operación comercial, propuestas de valor). Para **ejecutar el lanzamiento**, empezar por [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) y [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md). Para **inversor**, el `BRIEF` resume en una página; el resto profundiza cifras y supuestos (mayo 2026).
+Este directorio contiene **25 archivos** `.md` en raíz (+ **7** en [_auditorias/](_auditorias/) = **32** total): índice y auditorías de producto ([README.md](README.md), [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md), [AUDITORIA_FORENSE_360_2026-06.md](AUDITORIA_FORENSE_360_2026-06.md), [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md), [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md), [INCOHERENCIAS_LANZAMIENTO_2026-05.md](INCOHERENCIAS_LANZAMIENTO_2026-05.md)) más **19 documentos** de contenido (brief, finanzas, legal, operación comercial, propuestas de valor). Logs Prompt B–F y plantillas IA: [_auditorias/](_auditorias/) — **no data room**. Para **ejecutar el lanzamiento**, empezar por [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) y [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md). Para **inversor**, el `BRIEF` resume en una página; el resto profundiza cifras y supuestos (junio 2026).
 
 ---
 
@@ -24,24 +24,21 @@ Este directorio contiene **28 archivos** `.md`: índice y auditorías ([README.m
 | 3 | [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) | SAFE, cap table, vehículo VE |
 | 2 | [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) | Guion reunión + FAQ |
 
-**Opcional antes de reunión:** [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) (auditoría del pack) · [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) (pack ↔ código). **Mensaje listo para enviar:** [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) §2 (misma ruta).
+**Opcional antes de reunión:** [AUDITORIA_FORENSE_360_2026-06.md](AUDITORIA_FORENSE_360_2026-06.md) (auditoría consolidada) · [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) (pack ↔ código). **Mensaje listo para enviar:** [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) §2 (misma ruta).
+
+> **No incluir en zip inversor:** [_auditorias/](_auditorias/) · [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md) · [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) (interno).
 
 Tiers Base/Growth y detalle burn: [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §1.
 
 ## Orden de lectura para el equipo interno (90 minutos)
 
-Lo anterior + los siguientes:
+Lo anterior + los siguientes (material **Jarvis / proceso** en [_auditorias/](_auditorias/) — no inversor):
 
-0. [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) — qué dice el plan de lanzamiento vs qué hace el software hoy; guía para mejorar docs sin inventar datos.
-0b. [INCOHERENCIAS_LANZAMIENTO_2026-05.md](INCOHERENCIAS_LANZAMIENTO_2026-05.md) — registro doc ↔ doc (contradicciones corregidas y checklist de verificación).
-0c. [../zonix/ANALISIS_FORENSE_BUSQUEDA_GITHUB_LANZAMIENTO_2026-05.md](../zonix/ANALISIS_FORENSE_BUSQUEDA_GITHUB_LANZAMIENTO_2026-05.md) — auditoría forense de URLs/skills del doc [Busqueda GitHub](../Búsqueda%20de%20Habilidades%20de%20Startup%20en%20GitHub.md): qué sirve para mejorar el pack (Top 10 + anexos shawnpang/founder-playbook).
-0d. **[PROMPT_PACK_LANZAMIENTO.md](PROMPT_PACK_LANZAMIENTO.md)** — prompts A–F para copiar en Cursor al auditar, mejorar o corregir docs del pack.
-0e. **[AUDITORIA_PROMPT_B_RONDA_2026-05.md](AUDITORIA_PROMPT_B_RONDA_2026-05.md)** — salida ronda Prompt B (19 contenido + meta delta); hallazgos **I-11–I-16** en [INCOHERENCIAS](INCOHERENCIAS_LANZAMIENTO_2026-05.md).
-0f. **[MEJORAS_PROMPT_C_RONDA_2026-05.md](MEJORAS_PROMPT_C_RONDA_2026-05.md)** — log Prompt C/D/E/F (27 mayo 2026).
-0g. **[CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) §0** — pre-flight Prompt E + §0.5 próximas sesiones (Prompt F).
-0h. **[AUDITORIA_PROMPT_D_RONDA_2026-05.md](AUDITORIA_PROMPT_D_RONDA_2026-05.md)** — coherencia numérica Prompt D pasada 2 (44 filas forenses; **verde**, 0 P0–P1).
-0i. **[AUDITORIA_PROMPT_E_RONDA_2026-05.md](AUDITORIA_PROMPT_E_RONDA_2026-05.md)** — pre-reunión inversor Prompt E pasada 2 (**amarillo**; 8 P0 humanos).
-0j. **[AUDITORIA_PROMPT_F_RONDA_2026-05.md](AUDITORIA_PROMPT_F_RONDA_2026-05.md)** — diagnose Prompt F pasada 2 (**acción founder**; rutas inversor / farmacia / Day-D).
+0. [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) — qué dice el plan vs qué hace el software hoy.
+0b. [INCOHERENCIAS_LANZAMIENTO_2026-05.md](INCOHERENCIAS_LANZAMIENTO_2026-05.md) — registro doc ↔ doc (I-01–I-28).
+0c. [AUDITORIA_FORENSE_360_2026-06.md](AUDITORIA_FORENSE_360_2026-06.md) — auditoría consolidada junio 2026.
+0d. [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) — P0–P4 humanos.
+0e. [_auditorias/PROMPT_PACK_LANZAMIENTO.md](_auditorias/PROMPT_PACK_LANZAMIENTO.md) — prompts A–F (solo IA).
 
 ## Usar Jarvis (IA) para mejorar este pack
 
@@ -57,9 +54,9 @@ Los marcos del informe §9–11 están **adaptados en skills locales** (no hace 
 | `zonix-financial-model` | PROYECCION, UNIT, **waiver 10 farmacias** |
 | `zonix-investor-materials` | CHECKLIST, data room, PERFIL competencia |
 
-**Prompts listos:** [PROMPT_PACK_LANZAMIENTO.md](PROMPT_PACK_LANZAMIENTO.md) (copiar **Prompt A** + variante B–F).
+**Prompts listos (equipo interno):** [_auditorias/PROMPT_PACK_LANZAMIENTO.md](_auditorias/PROMPT_PACK_LANZAMIENTO.md).
 
-**Rondas recomendadas:** **B** auditoría → **C** redacción → **D** finanzas → **E** pre-reunión → **F** diagnose (founder P0). Log: [MEJORAS_PROMPT_C_RONDA_2026-05.md](MEJORAS_PROMPT_C_RONDA_2026-05.md).
+**Rondas recomendadas:** auditoría consolidada [AUDITORIA_FORENSE_360_2026-06.md](AUDITORIA_FORENSE_360_2026-06.md) → correcciones doc a doc → P0 humano REGISTRO.
 
 **Prompt ejemplo:** «Mejora `PROPUESTA_VALOR_CLIENTE_B2B` §X usando `zonix-lanzamiento-docs`; cifras solo del pack; una sección.»
 
@@ -92,7 +89,7 @@ Ruta skill: [.agents/skills/zonix-lanzamiento-docs/SKILL.md](../../.agents/skill
 | Capital pedido                    | **USD 101.000**          | **USD 118.000**        | **USD 135.000**        |
 | Runway                            | 12 meses post-Day-D      | 12 meses post-Day-D    | 12 meses post-Day-D    |
 | SAFE post-money cap               | **USD 600.000**          | **USD 650.000**        | **USD 720.000**        |
-| Equity implícito (ref.)           | **~16,83%**              | **~18,15%**            | **~18,75%**            |
+| Equity implícito (ref.)           | **~16,83%**              | **~18,15%** *(≈18,2% redondeado)* | **~18,75%** *(≈18,8% redondeado)* |
 | Burn promedio mensual             | **~USD 7.559**           | **~USD 8.059**         | **~USD 8.691**         |
 | One-shots (Fase 0)                | **~USD 9.808**           | **~USD 10.708**        | **~USD 10.708**        |
 | Buffer (inflación VE)             | 20%                      | 20%                    | **25%** (marketing Growth) |

@@ -44,13 +44,14 @@ Payback CAC = 139 / 50 ≈ 2,8 meses
 | WTP (techo) | Lo que la farmacia acepta vs cuota **25/40/55** + % GMV | Comparar con ARPF **~50** placeholder |
 | Cercas de precio | Bandas por GMV (Basic / Pro / Enterprise) | [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5 — **no** cambiar % sin decisión founder |
 | **Recalibración ARPF** | Tras **≥30 días** post-Day-D con GMV y mix tier medidos | Actualizar §2, PROYECCION §1.1, BRIEF — **no** antes de piloto |
+| **Mom-test pre-Day-D** | **≥3** entrevistas pricing (cuota **25/40/55** + % GMV) con hechos pasados | Evidencia en [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §4.0 fila 5 — **no** inventar WTP sin minutas |
 | Waiver piloto | Primeras 10 farmacias, 2 meses sin cuota fija | Solo si está en contrato; recalcular PROYECCION §1.1 fila waiver |
 
 **Nota:** ARPF **~50** es **placeholder** hasta recalibrar con mix real de tiers y GMV en piloto.
 
 ## 3. CAC (Customer Acquisition Cost)
 
-**Construcción bottom-up del CAC** (alineada a **4 ejecutivos Sales B2B** y **~8 farmacias firmadas/mes** en régimen de crucero; comisión **USD 30** por farmacia firmada):
+**Construcción bottom-up del CAC** (alineada a **4 ejecutivos Sales B2B** y **~8 farmacias firmadas/mes** en régimen de crucero para el **cálculo del CAC**; la curva comercial agresiva del pack asume **~175 firmas/año (~15/mes)** en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 — **stock de activas** es fuente de verdad para revenue):
 
 | Componente | Costo por farmacia firmada |
 |---|---|
@@ -124,12 +125,14 @@ Payback = CAC / ARPF
 Definición: mes en el que **revenue mensual ≥ burn mensual**.
 
 ```
-Burn promedio mensual (Base, año 1) ≈ USD 7.559
+Burn promedio mensual (**Lean**, año 1) ≈ USD 7.559
 Revenue mensual necesario (referencia) ≈ mismo orden que burn por tramo
 Farmacias activas necesarias (ARPF placeholder ~50) ≈ 7.431 / 50
                              ≈ 149 farmacias (tramo “bajo” mes 7–12)
 Promedio anual burn ÷ 50 ≈ 7.559 / 50 ≈ 151 farmacias
 → orden magnitud unificado: ~151 farmacias (~149 tramo C; ~151 promedio)
+
+> **Base 118k:** burn promedio **~USD 8.059**/mes ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3) — equilibrio teórico **~162 activas** (README pack).
 ```
 
 El burn **real** va por **tramos** **7.462 / 7.798 / 7.431** ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.3). La proyección **Lean** (curva §1.1) llega a **~151 activas** en **M11** con revenue **USD 7.550** vs burn **USD 7.431** → **equilibrio mensual en M11** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 y §1.4).
@@ -228,6 +231,6 @@ En operación real **no** hay una sola cohort: cada mes entran **nuevas** farmac
 ## 11. Documentos hermanos
 
 - [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md): cómo se traduce a flujo mes a mes.
-- [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md): de dónde sale el burn Base (~USD **7.559**/mes promedio; tramos **7.462 / 7.798 / 7.431**).
+- [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md): de dónde sale el burn **Lean** (~USD **7.559**/mes promedio; tramos **7.462 / 7.798 / 7.431**) y **Base** (~**8.059**/mes).
 - [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md): de dónde sale el SAM extendido.
 - [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md): fuentes de churn LatAm y benchmarks Farmalisto.

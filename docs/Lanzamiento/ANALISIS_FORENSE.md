@@ -1,6 +1,7 @@
 # Análisis forense multi-perspectiva del pack
 
-> **Última actualización:** 25 mayo 2026.
+> **Última actualización:** 1 junio 2026.
+> **Auditoría vigente:** [AUDITORIA_FORENSE_360_2026-06.md](AUDITORIA_FORENSE_360_2026-06.md). Historial: [_auditorias/](_auditorias/).
 > Auditoría multi-rol del pack. **Estado vigente:** tiers **Lean 101k / Base 118k / Growth 135k**; PROYECCION §1.1 = **Lean**; caja M12 **~42.209**; equilibrio **M11 ~151 activas**.
 > **Segunda pasada forense (20 mayo 2026):** alineados Fase 0 **~28.057**, conteo pack **21** archivos, waiver B2B **~453** (vs. proxy obsoleto **222**), copy Rappi **25–35%** en B2B §11.
 > **Tercera pasada forense (20 mayo 2026):** tests backend **399** (verificado `vendor/bin/phpunit`); equity README **16,83 / 18,15 / 18,75**; fechas cabecera unificadas; M12 waiver **~41.756** en MENSAJE; nota equilibrio teórico Base/Growth en README.

@@ -105,6 +105,8 @@ Regla: **no** escalar anillo exterior hasta catálogo Day-D en ≥ N farmacias (
 
 ## Prompt sugerido al usuario (copiar)
 
+**Pack completo A–F:** [docs/Lanzamiento/PROMPT_PACK_LANZAMIENTO.md](../../docs/Lanzamiento/PROMPT_PACK_LANZAMIENTO.md).
+
 ```
 Mejora [ARCHIVO.md] en docs/Lanzamiento usando zonix-lanzamiento-docs.
 Sección: [nombre]. Cifras solo del pack. Una sección por respuesta.

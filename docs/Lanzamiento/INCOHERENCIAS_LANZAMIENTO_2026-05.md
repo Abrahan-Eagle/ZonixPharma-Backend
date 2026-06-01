@@ -1,6 +1,6 @@
 # Registro de incoherencias — pack Lanzamiento (doc ↔ doc)
 
-> **Fecha:** 27 mayo 2026 (I-11–I-15 corregidos).  
+> **Fecha:** 1 junio 2026 (I-17–I-28 corregidos; I-11–I-16 mayo 2026).  
 > **Alcance:** solo archivos en `docs/Lanzamiento/` — **sin** cambios de código.  
 > **Cruces:** [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) (pack vs producto), [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) (datos humanos), [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) (auditoría inversor).
 
@@ -26,8 +26,20 @@
 | **I-14** | P1 | [ALINEACION](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) §1.3, §4.1 | Texto obsoleto PLAN §3.2 `delivery` autónomo | Alineado a I-04: solo partner + agentes | **Corregido** |
 | **I-15** | P1 | [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) cabecera | «**parcialmente implementado**» sin matiz (mismo patrón I-02) | Rx backend/tests OK; FIFO lotes UI post-Day-D | **Corregido** |
 | **I-16** | P1 | [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §3.3–3.4, [ALINEACION](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) §4.1, [ANALISIS_FORENSE](ANALISIS_FORENSE.md) SF-03 | Claims Ley sin PENDIENTE; §4.1 desactualizado; SF-03 abierto | Dictamen en B2B; refresh §4.1; SF-03 mitigado en BRIEF/MENSAJE | **Corregido** |
+| **I-17** | P0 | [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md) §3, §8 | M9=78, M12=120 vs PROYECCION M9=130, M12=159 | Alineado a §1.1 | **Corregido** (jun 2026) |
+| **I-18** | P0 | [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §6.1, §9 | M9=78; T+180 vs DoD M6 | M9=130; §9 = M6 post-Day-D | **Corregido** |
+| **I-19** | P0 | PROYECCION §2.2–2.3, PRESUPUESTO §3.3 | Año 2 EBITDA/cash incoherentes; tramos Base no suman | Recalculado; tramo B ~8.100 | **Corregido** |
+| **I-20** | P0 | PLAN_MODULO, PLAN_METODOS §10, VOLCADO §7 | TTL 60/120; Sudeban rubro B; repartidores directos | Unificado TTL; tabla B; partner model | **Corregido** |
+| **I-21** | P1 | UNIT §6, CHECKLIST §7.3, CUESTIONARIO §8 | Burn "Base"=Lean; asesor solo Growth | Etiquetas Lean/Base; Base+Growth asesor | **Corregido** |
+| **I-22** | P1 | B2B §9, USUARIO §7.3, PLAN Day-D | Marketing B2C vs Day-D; garantía órdenes | Calendario unificado; sin garantía contractual | **Corregido** |
+| **I-23** | P1 | PERFIL §5.6, MENSAJE, B2B, TERCER_LADO, PLAN_MODULO §14 | Claims Rx/legal sin PENDIENTE | Marcadores añadidos | **Corregido** |
+| **I-24** | P1 | USUARIO §7.2, CHECKLIST §7.6, ESTRUCTURA §8 | Valla Base; FAQ 175; Day-D mes 3 | Mediana 700; ~159 M12; M1 financiero | **Corregido** |
+| **I-25** | P2 | README, _auditorias/ | 29 archivos; meta-proceso en data room | 32 total; 7 archivados | **Corregido** |
+| **I-26** | P1 | [CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md) §2.10 | Sin sección liquidez chicken-and-egg | §2.10 oferta primero + tabla fases | **Corregido** (jun 2026) |
+| **I-27** | P1 | [CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md) §2.11, [BRIEF](BRIEF_UNA_PAGINA.md) | Moat solo «early mover» | §2.11 moat + resumen BRIEF | **Corregido** |
+| **I-28** | P1 | [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §4.0, [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §2.1 | Sin mom-test pricing pre-Day-D | Fila 5 §4.0 + guía WTP | **Corregido** (jun 2026) |
 
-> **Ronda Prompt B (27 mayo 2026):** detalle por archivo en [AUDITORIA_PROMPT_B_RONDA_2026-05.md](AUDITORIA_PROMPT_B_RONDA_2026-05.md).
+> **Ronda forense 360 (1 jun 2026):** [AUDITORIA_FORENSE_360_2026-06.md](AUDITORIA_FORENSE_360_2026-06.md).
 
 ---
 

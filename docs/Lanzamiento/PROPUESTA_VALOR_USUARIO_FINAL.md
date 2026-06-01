@@ -178,19 +178,20 @@ Plantilla StoryBrand para copy Meta, valla y app. **Sin** promesas de cura ni re
 
 ### 7.2 Canales offline
 
-- Valla publicitaria 3m×2m USD 350/mes (Base) o 6m×4m USD 700/mes (Growth) en av. Bolívar Norte / av. Cedeño.
+- Valla: **Lean 101k** — pequeña 3m×2m **USD 350/mes** (desde M3). **Base 118k / Growth 135k** — mediana 6m×4m **USD 700/mes** (desde M2). Ver [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) §2.
 - Flyers en farmacias afiliadas: USD 80/mes en imprenta, USD 50/mes en distribución.
 - Radio FM local: USD 200-400/mes por mención corta de 30s en horario AM, NO incluido en Lean ni Base. Solo Growth.
 
 Detalle completo en [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) y [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md).
 
-### 7.3 Estrategia: B2B primero, B2C después
+### 7.3 Estrategia: B2B primero, B2C escalonado (alineado Day-D)
 
-- Mes 1-3: foco en cargar 10 farmacias con catálogo. Sin marketing al paciente todavía.
-- Mes 4-6: marketing local geo-targeteado en Bella Florida + El Socorro. CPL bajo.
-- Mes 7-12: expansión Valencia metro. CPL sube ligeramente porque el área es mayor.
+- **Fase 0 (T+0→T+90):** foco B2B — catálogo y onboarding farmacias; marketing paciente **limitado** (soft launch interno T+60–70).
+- **Day-D (T+90 = M1):** activación **Meta Ads** + **valla** según tier ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §4.2) — primera ola B2C en zona piloto.
+- **M2–M3:** intensificar geo-target en Bella Florida + El Socorro; CPL bajo.
+- **M4–M12:** expansión Valencia metro ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1).
 
-Razón: si lanzamos al paciente sin catálogo cargado, el paciente abre la app y se va. Pésima primera impresión, churn altísimo.
+Razón: lanzar tráfico masivo sin catálogo en ≥ N farmacias piloto degrada NPS; Day-D asume **~28 activas** pre-cargadas (Fase 0).
 
 ## 8. KPIs del usuario final
 

@@ -77,7 +77,7 @@ Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 
 > **Slide 2: Solución**
 > - Marketplace farmacéutico digital con **modelo B2B híbrido** (cuota fija **25/40/55** USD + % GMV según banda — ver pack).
-> - Validación Rx digital por farmacéutico colegiado de la propia farmacia.
+> - Validación Rx digital por farmacéutico colegiado de la propia farmacia *[PENDIENTE dictamen abogado + farmacéutico asesor]*.
 > - Pagos manuales VE soportados nativos (Pago Móvil, Zelle, Binance Pay).
 > - Multi-sucursal con un solo onboarding.
 

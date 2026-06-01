@@ -1,12 +1,14 @@
 # Registro consolidado de pendientes — Pack Lanzamiento
 
-> **Última actualización:** 27 mayo 2026.  
+> **Última actualización:** 1 junio 2026.  
+> **Auditoría modelo de negocio vs biblia:** [_auditorias/AUDITORIA_MODELO_NEGOCIO_VS_BIBLIA_2026-05.md](_auditorias/AUDITORIA_MODELO_NEGOCIO_VS_BIBLIA_2026-05.md) — gaps marketplace G1–G7 abajo.  
+> **Auditoría consolidada:** [AUDITORIA_FORENSE_360_2026-06.md](AUDITORIA_FORENSE_360_2026-06.md).  
 > **Uso:** Completar celdas antes de reunión con inversor institucional o envío del data room cerrado.  
 > **Fuente:** barrido `[PENDIENTE]` en `docs/Lanzamiento/` (no inventar datos).  
 > **Plantilla detallada:** [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md).  
-> **Pre-flight reunión:** [AUDITORIA_PROMPT_E_RONDA_2026-05.md](AUDITORIA_PROMPT_E_RONDA_2026-05.md) (Prompt E pasada 2) · operativo [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) §0.  
-> **Checklist founder (P0 en chat IA):** [PROMPT_PACK_LANZAMIENTO.md](PROMPT_PACK_LANZAMIENTO.md) § Checklist datos humanos.  
-> **Auditoría Prompt B (27 may 2026):** [AUDITORIA_PROMPT_B_RONDA_2026-05.md](AUDITORIA_PROMPT_B_RONDA_2026-05.md) — hallazgos doc **I-01–I-16** en [INCOHERENCIAS](INCOHERENCIAS_LANZAMIENTO_2026-05.md).
+> **Pre-flight reunión:** [AUDITORIA_FORENSE_360_2026-06.md](AUDITORIA_FORENSE_360_2026-06.md) · operativo [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) §0.  
+> **Checklist founder (P0 en chat IA):** [_auditorias/PROMPT_PACK_LANZAMIENTO.md](_auditorias/PROMPT_PACK_LANZAMIENTO.md) § Checklist datos humanos.  
+> **Auditoría histórica Prompt B:** [_auditorias/AUDITORIA_PROMPT_B_RONDA_2026-05.md](_auditorias/AUDITORIA_PROMPT_B_RONDA_2026-05.md) — hallazgos doc **I-01–I-25** en [INCOHERENCIAS](INCOHERENCIAS_LANZAMIENTO_2026-05.md).
 
 ---
 
@@ -15,8 +17,8 @@
 | Prioridad | Cant. ítems únicos (aprox.) | Significado |
 |-----------|---------------------------|-------------|
 | **P0 — Bloqueante reunión institucional** | 8 | Due diligence formal o credibilidad founder |
-| **P1 — Recomendado pre-Day-D** | 12 | Operación piloto y cotizaciones reales |
-| **P2 — Pre-envío inversor ángel / pre-seed** | 6 | Inversor, NDA, aprobación pack |
+| **P1 — Recomendado pre-Day-D** | 15 | Operación piloto, cotizaciones y **narrativa marketplace** |
+| **P2 — Pre-envío inversor ángel / pre-seed** | 10 | Inversor, NDA, aprobación pack y **artefactos modelo negocio** |
 | **P3 — Dictamen externo (no llenar en tabla)** | 4 | Abogado + farmacéutico asesor |
 | **P4 — Plantillas operativas (muchas celdas)** | ~70+ | Equipo, farmacias, calendario T+X — ver VOLCADO §3–9 |
 
@@ -53,6 +55,9 @@
 | P1-10 | **Partners logísticos** (empresa delivery) en pipeline | Coordinador Partners | PROPUESTA_TERCER_LADO | §9 repartidores |
 | P1-11 | **Fecha cierre inversión** (T+0 absoluto) para calendario T+30/60/90 | Founder | README §8 | §10 calendario |
 | P1-12 | **Smoke E2E** OTC + Rx documentado | Founder + CTO | TECH_DEBT.md; PLAN_MODULO §18 | — |
+| P1-13 | Sección **liquidez / chicken-and-egg** en CONTEXTO §2.10 + BRIEF | — | **Cerrado** jun 2026 — ver CONTEXTO §2.10 |
+| P1-14 | Sección **moat / defensibilidad** en CONTEXTO §2.11 + BRIEF | — | **Cerrado** jun 2026 — ver CONTEXTO §2.11 |
+| P1-15 | **mom-test pricing** (≥3 entrevistas cuota 25/40/55) antes Day-D | PLAN §4.0 fila 5 | **Cerrado** jun 2026 — checklist §4.0; evidencia = minutas Sales (VOLCADO §3) |
 
 ---
 
@@ -66,6 +71,10 @@
 | P2-04 | Experiencia inversor LatAm y en salud/farma | Founder | CHECKLIST §1 |
 | P2-05 | Disponibilidad reunión + próximo paso | Founder | VOLCADO §2 |
 | P2-06 | **NDA listo** si el inversor lo pide | Legal | CHECKLIST §1 |
+| P2-07 | **Business Model Canvas** resumido (9 bloques, 1 página) en CONTEXTO | Founder + IA (Prompt C) | [AUDITORIA_MODELO_NEGOCIO_VS_BIBLIA_2026-05.md](AUDITORIA_MODELO_NEGOCIO_VS_BIBLIA_2026-05.md) G3 / M4 | — |
+| P2-08 | Párrafo **flywheel** post-Day-D en PLAN §4 o §5 | Founder + IA | G4 / M5 | — |
+| P2-09 | Criterios **crossing-the-chasm** (expansión SAM post-M6) en PERFIL §6 | Founder | G6 / M6 | — |
+| P2-10 | Tabla **4 lados** marketplace en PROPUESTA_TERCER_LADO intro | Founder + IA | G7 / M7 | — |
 
 ---
 
@@ -124,12 +133,15 @@ Completar en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARI
 4. P2-* cuando exista inversor concreto.  
 5. P1-12 smoke + P3 regulatorio antes de tráfico pagado masivo.
 
+**Cerrados jun 2026 (Prompt C biblia G1–G2, G5):** P1-13 liquidez · P1-14 moat · P1-15 mom-test pricing — CONTEXTO §2.10–§2.11; PLAN §4.0 fila 5.
+
 ---
 
 ## Próximas 3 sesiones (Prompt F — preparar inversor)
 
-> **Diagnose pasada 2 formal (20 mayo 2026):** [AUDITORIA_PROMPT_F_RONDA_2026-05.md](AUDITORIA_PROMPT_F_RONDA_2026-05.md) — router inversor + rutas farmacia / Day-D.  
-> **Diagnose 27 mayo 2026 (pasada 1):** el pack doc está listo; el bloqueante es **P0 humano**, no más edición IA de narrativa.
+> **Diagnose pasada 2 formal (20 mayo 2026):** [_auditorias/AUDITORIA_PROMPT_F_RONDA_2026-05.md](_auditorias/AUDITORIA_PROMPT_F_RONDA_2026-05.md) — router inversor + rutas farmacia / Day-D.  
+> **Diagnose 27 mayo 2026 (pasada 1):** el pack doc está listo; el bloqueante es **P0 humano**, no más edición IA de narrativa.  
+> **Forense 360 (1 jun 2026):** [AUDITORIA_FORENSE_360_2026-06.md](AUDITORIA_FORENSE_360_2026-06.md).
 
 | Sesión | Archivo | Qué hacer |
 |--------|---------|-----------|
@@ -137,7 +149,7 @@ Completar en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARI
 | **2** | [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) §1–§2 | Lead concreto; Drive link; email data room; marcar P0-04 |
 | **3** | [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) §5–§6 | Demo **staging**; guion 30 min; fecha reunión → P0-05 |
 
-Detalle: [AUDITORIA_PROMPT_F_RONDA_2026-05.md](AUDITORIA_PROMPT_F_RONDA_2026-05.md) (pasada 2) · [MEJORAS_PROMPT_C_RONDA_2026-05.md](MEJORAS_PROMPT_C_RONDA_2026-05.md) § Prompt F · Pre-flight: [AUDITORIA_PROMPT_E_RONDA_2026-05.md](AUDITORIA_PROMPT_E_RONDA_2026-05.md).
+Detalle: [_auditorias/AUDITORIA_PROMPT_F_RONDA_2026-05.md](_auditorias/AUDITORIA_PROMPT_F_RONDA_2026-05.md) · [_auditorias/MEJORAS_PROMPT_C_RONDA_2026-05.md](_auditorias/MEJORAS_PROMPT_C_RONDA_2026-05.md) § Prompt F · Pre-flight: [AUDITORIA_FORENSE_360_2026-06.md](AUDITORIA_FORENSE_360_2026-06.md).
 
 ---
 
