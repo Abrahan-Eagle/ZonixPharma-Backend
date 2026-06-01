@@ -33,7 +33,7 @@
 | P0-03 | **2–3 referencias** profesionales con permiso y contacto | Founder | CHECKLIST §2 | §1.2 tabla |
 | P0-04 | **Aprobación founder** del pack antes de enviar | Founder | README final | README L154 |
 | P0-05 | **Demo en vivo** programada (fecha) | Founder | ANALISIS_FORENSE §11.3; VOLCADO §1.2 | §1.2 |
-| P0-06 | Re-verificar **399 tests** + commit short pre-reunión | Founder | VOLCADO §1.2 | §1.2 — **29ae76c** (20 may 2026); re-ejecutar antes de cada reunión |
+| P0-06 | Re-verificar **399 tests** + commit short pre-reunión | Founder | VOLCADO §1.2 | **17f208e** (1 jun 2026, 399 OK) — re-ejecutar antes de cada reunión |
 | P0-07 | Proceso **NDA** + data room cerrado (si fondo formal) | Founder + Legal | ANALISIS_FORENSE §11.1 bis IR | — |
 | P0-08 | **Métricas tracción** por producto (GMV/usuarios) si se citan en pitch | Founder | CHECKLIST §2; VOLCADO §1.2 | CHECKLIST; §1.2 |
 
@@ -71,10 +71,10 @@
 | P2-04 | Experiencia inversor LatAm y en salud/farma | Founder | CHECKLIST §1 |
 | P2-05 | Disponibilidad reunión + próximo paso | Founder | VOLCADO §2 |
 | P2-06 | **NDA listo** si el inversor lo pide | Legal | CHECKLIST §1 |
-| P2-07 | **Business Model Canvas** resumido (9 bloques, 1 página) en CONTEXTO | Founder + IA (Prompt C) | [AUDITORIA_MODELO_NEGOCIO_VS_BIBLIA_2026-05.md](AUDITORIA_MODELO_NEGOCIO_VS_BIBLIA_2026-05.md) G3 / M4 | — |
-| P2-08 | Párrafo **flywheel** post-Day-D en PLAN §4 o §5 | Founder + IA | G4 / M5 | — |
-| P2-09 | Criterios **crossing-the-chasm** (expansión SAM post-M6) en PERFIL §6 | Founder | G6 / M6 | — |
-| P2-10 | Tabla **4 lados** marketplace en PROPUESTA_TERCER_LADO intro | Founder + IA | G7 / M7 | — |
+| P2-07 | **Business Model Canvas** resumido (9 bloques, 1 página) en CONTEXTO | Founder + IA (Prompt C) | **Cerrado** jun 2026 — CONTEXTO §2.12 (tabla 9 bloques, sin cifras nuevas); validar founder |
+| P2-08 | Párrafo **flywheel** post-Day-D en PLAN §4 o §5 | Founder + IA | **Cerrado** jun 2026 — PLAN §4.4 (ciclo + métricas leading §1.1) |
+| P2-09 | Criterios **crossing-the-chasm** (expansión SAM post-M6) en PERFIL §6 | Founder | **Cerrado** jun 2026 — PERFIL §6.5 (criterios DoD M6 antes de SAM extendido) |
+| P2-10 | Tabla **4 lados** marketplace en PROPUESTA_TERCER_LADO intro | Founder + IA | **Cerrado** jun 2026 — TERCER_LADO § "Marketplace de cuatro lados" |
 
 ---
 

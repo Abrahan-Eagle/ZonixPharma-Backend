@@ -38,8 +38,13 @@
 | **I-26** | P1 | [CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md) §2.10 | Sin sección liquidez chicken-and-egg | §2.10 oferta primero + tabla fases | **Corregido** (jun 2026) |
 | **I-27** | P1 | [CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md) §2.11, [BRIEF](BRIEF_UNA_PAGINA.md) | Moat solo «early mover» | §2.11 moat + resumen BRIEF | **Corregido** |
 | **I-28** | P1 | [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §4.0, [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §2.1 | Sin mom-test pricing pre-Day-D | Fila 5 §4.0 + guía WTP | **Corregido** (jun 2026) |
+| **I-29** | P2 | [CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md) §2.12 | Business Model Canvas disperso (G3/M4) | §2.12 tabla 9 bloques con punteros; sin cifras nuevas | **Corregido** (jun 2026) |
+| **I-30** | P2 | [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §4.4 | Flywheel ausente explícito (G4/M5) | §4.4 ciclo + métricas leading desde §1.1 | **Corregido** (jun 2026) |
+| **I-31** | P2 | [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md) §6.5 | Sin criterio crossing-the-chasm (G6/M6) | §6.5 criterios DoD M6 antes de SAM extendido | **Corregido** (jun 2026) |
+| **I-32** | P2 | [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) intro | Multi-lado sin tabla 4 lados (G7/M7) | Tabla "4 lados" quién paga a quién + efecto de red | **Corregido** (jun 2026) |
 
 > **Ronda forense 360 (1 jun 2026):** [AUDITORIA_FORENSE_360_2026-06.md](AUDITORIA_FORENSE_360_2026-06.md).
+> **Ronda biblia marketplace G3–G7 (1 jun 2026):** I-29–I-32 — Canvas, flywheel, chasm, 4 lados.
 
 ---
 

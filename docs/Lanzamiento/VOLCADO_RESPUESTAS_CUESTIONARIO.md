@@ -1,6 +1,6 @@
 # Volcado de respuestas del cuestionario + datos pendientes del founder
 
-> **Última actualización:** 27 mayo 2026.
+> **Última actualización:** 1 junio 2026.
 > Plantilla para el founder. Llenar a medida que se entreviste al equipo y se cierren contrataciones.
 > Cada celda con `[PENDIENTE]` debe llenarse antes de la primera reunión con un inversor.
 
@@ -38,8 +38,8 @@ Ingeniero en Informática (IUTVAL, 2013–2018) con **más de 8 años** construy
 | Repositorio | **ZonixPharma-Backend** |
 | Comando | `./vendor/bin/phpunit` (o `php artisan test`) |
 | Resultado última corrida | **399 tests**, **1649 assertions**, OK |
-| Fecha corrida | **20 mayo 2026** (pasada 3 Prompt F) |
-| Commit (short) | **29ae76c** *(re-verificado pre-reunión; `php artisan test` — 399 passed @ HEAD)* |
+| Fecha corrida | **1 junio 2026** (`php artisan test --parallel`) |
+| Commit (short) | **17f208e** *(re-verificar antes de cada reunión inversor)* |
 | Notas | Cifra citada en pack: [README.md](README.md), [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md), [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) §9 |
 
 ## 1.5 Co-CEO / CEO operativo (segundo al mando)

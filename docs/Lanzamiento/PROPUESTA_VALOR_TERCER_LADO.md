@@ -7,6 +7,19 @@
 
 **Última milla (decisión operativa):** **Zonix Pharma no opera flota propia.** La ejecución física se delega por **concesión o contrato marco** a **empresa(s) de delivery especializada(s)**. La plataforma orquesta asignación y tracking; el **Coordinador de Partners Logísticos** enlaza SLA e incidencias con el partner.
 
+## Marketplace de cuatro lados (quién paga a quién)
+
+Resumen para inversor y onboarding partner; detalle de flujos en [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md).
+
+| Lado | Rol en app | Paga a | Recibe de | Ingreso Zonix |
+|------|------------|--------|-----------|---------------|
+| **Farmacia** | `commerce` | **Zonix** (cuota **25/40/55** + % GMV) | Paciente (producto OTC/Rx) | Principal — [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5 |
+| **Paciente** | `users` | Farmacia + **fee delivery** (a `delivery_company`) | Medicamento + tracking | Indirecto vía GMV farmacia |
+| **Empresa delivery** | `delivery_company` | **Zonix** (**8% × Σ fee + USD 0,30 × envío**/mes) | Paciente (fee por orden) | Secundario — PLAN_METODOS §2.5 |
+| **Farmacéutico** | `pharmacist` | — (empleado/colegiado de la farmacia) | Salario farmacia | Habilita Rx; sin fee directo a Zonix |
+
+**Efecto de red:** más farmacias → más catálogo → más pacientes → más GMV → más ARPF farmacia y fee delivery ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §4.4 flywheel). **Liquidez arranque:** oferta B2B primero ([CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md) §2.10).
+
 ---
 
 ## A. Logística — empresa (`delivery_company`) y repartidor (`delivery_agent`)

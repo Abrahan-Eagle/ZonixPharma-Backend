@@ -3,7 +3,8 @@
 > **Fecha:** 1 junio 2026.  
 > **Método:** Router [`zonix-lanzamiento-docs`](../../.agents/skills/zonix-lanzamiento-docs/SKILL.md) + buenas prácticas marketplace (Canvas, efecto de red, liquidez, moat, flywheel, chasm).  
 > **Docs auditados:** 9 documentos de negocio en `docs/Lanzamiento/`.  
-> **Finanzas:** coherencia numérica **verde** ([AUDITORIA_PROMPT_D_RONDA_2026-05.md](AUDITORIA_PROMPT_D_RONDA_2026-05.md)) — fuera de alcance salvo ARPF/WTP.
+> **Finanzas:** coherencia numérica **verde** ([AUDITORIA_PROMPT_D_RONDA_2026-05.md](AUDITORIA_PROMPT_D_RONDA_2026-05.md)) — fuera de alcance salvo ARPF/WTP.  
+> **Cierre G3–G7 (1 jun 2026):** gaps marketplace estándar **resueltos** en el pack — Canvas (CONTEXTO §2.12 / M4), flywheel (PLAN §4.4 / M5), chasm (PERFIL §6.5 / M6), 4 lados (TERCER_LADO / M7). G1 (liquidez §2.10), G2 (moat §2.11), G5 (mom-test PLAN §4.0) ya cerrados. Trazas: INCOHERENCIAS I-26–I-32; REGISTRO P1-13/14/15 y P2-07–P2-10. Validación founder pendiente.
 
 ---
 

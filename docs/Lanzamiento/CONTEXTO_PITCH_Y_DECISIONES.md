@@ -160,6 +160,22 @@ Detalle competitivo en [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md).
 
 **Honestidad (prudencia):** Farmatodo podría lanzar marketplace propio en 18–24 meses ([PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md) §9); el moat defensible en M12 es **relación B2B + flujo Rx + costo total** en la zona piloto, no exclusividad legal.
 
+### 2.12 Business Model Canvas (resumen — sin cifras nuevas)
+
+Vista única para data room; detalle en docs hermanos. **ARPF ~50** y tiers **101k / 118k / 135k** solo desde [README.md](README.md) y [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md).
+
+| Bloque Canvas | Zonix Pharma (piloto Valencia) | Doc fuente |
+|---------------|-------------------------------|------------|
+| **Segmentos** | Farmacias independientes (B2B); paciente urbano/clase media (B2C); empresa `delivery_company` + `delivery_agent`; farmacéutico colegiado por farmacia | PROPUESTA ×3, PERFIL §6 |
+| **Propuesta de valor** | Marketplace OTC/Rx con validación farmacéutico local, uni-pharmacy, pagos VE, tracking sin flota Zonix | BRIEF; PROPUESTA_USUARIO_FINAL §2.2 |
+| **Canales** | **4× Sales** campo; Meta Ads + valla + referidos mostrador; app Android/iOS | PLAN §2–4; SUPUESTO_MARKETING |
+| **Relación** | Contrato marco anual farmacia; CS + validación Rx; partner logístico bajo SLA | B2B §9; PLAN_MODULO |
+| **Fuentes de ingreso** | Cuota **25/40/55** + % GMV farmacia; **8% × Σ delivery_fee + USD 0,30 × N envíos** a `delivery_company` | B2B §5; PLAN_METODOS_PAGO §2.5 |
+| **Recursos clave** | Stack Laravel+Flutter (~4 años); founder+Co-CEO; farmacéuticos de cada farmacia aliada | §1 CONTEXTO; VOLCADO §1 |
+| **Actividades clave** | Onboarding B2B, catálogo, validación Rx, asignación partner, pagos manuales VE | PLAN_LANZAMIENTO; PLAN_MODULO |
+| **Socios clave** | Farmacias piloto; **empresa(s) concesionaria** última milla; abogado/contador VE *[PENDIENTE]* | TERCER_LADO; REGISTRO P1-05/06 |
+| **Estructura de costos** | Fase 0 + burn post-Day-D (Lean **~7.559**/mes promedio); CAC farmacia **139** | PRESUPUESTO §2; UNIT §3 |
+
 ## 3. Lo que NO se dice en el pitch (porque puede confundir)
 
 - No se promete monetización por publicidad de laboratorios. Es un upside futuro, no parte del modelo base.

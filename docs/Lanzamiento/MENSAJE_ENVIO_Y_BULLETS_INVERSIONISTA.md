@@ -35,7 +35,7 @@ Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 
 > Hola [Nombre],
 >
-> Gracias por tu interés. Te comparto el **data room** (`docs/Lanzamiento/`). **Ruta ~30 min** (misma que [README.md](README.md) § inversor):
+> Gracias por tu interés. Te comparto el **data room** (`docs/Lanzamiento/`). **Empieza por** [CARTA_CONTEXTO_ESPECIALISTAS.md](CARTA_CONTEXTO_ESPECIALISTAS.md). **Ruta ~30 min** (misma que [README.md](README.md) § inversor):
 >
 > 1. **[BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md)** — tesis y cifras clave.
 > 2. **[CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md)** — decisiones y posicionamiento.

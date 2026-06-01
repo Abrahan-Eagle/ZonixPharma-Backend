@@ -111,7 +111,7 @@ rg 'Growth solamente' CUESTIONARIO_EQUIPO_PILOTO.md PERFIL_MERCADO_PILOTO.md
 1. Cerrar P0 humanos en VOLCADO §1 (GitHub, % dedicación, referencias).  
 2. Dictamen abogado + farmacéutico (P3 en REGISTRO).  
 3. mom-test pricing (≥3 entrevistas cuota 25/40/55) — PLAN §4.0.  
-4. Secciones marketplace G1–G7 (liquidez, moat, canvas) — Prompt C cuando haya OK.
+4. Secciones marketplace G1–G7 — **cerradas jun 2026:** liquidez (CONTEXTO §2.10), moat (§2.11), Canvas (§2.12), flywheel (PLAN §4.4), chasm (PERFIL §6.5), 4 lados (TERCER_LADO). Validación founder pendiente (P2-07–P2-10 en REGISTRO).
 
 ---
 

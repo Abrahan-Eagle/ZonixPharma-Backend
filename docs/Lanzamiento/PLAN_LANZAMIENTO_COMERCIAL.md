@@ -180,6 +180,25 @@ Coherente con [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) �
 - Bug fixing prioritario.
 - Iteración rápida basada en feedback de paciente y farmacia.
 
+### 4.4 Flywheel post-Day-D (ciclo virtuoso marketplace)
+
+Una vez activo el Day-D, el pack modela un **flywheel** explícito (sin prometer GMV de paciente sin dato piloto):
+
+```text
+Más farmacias activas (+ catálogo) → más pacientes en zona piloto (Meta + referidos mostrador)
+→ más GMV en app → más ingreso Zonix (cuota + % GMV) → más capacidad Sales/CS/Marketing
+→ mejor onboarding de nuevas farmacias → (ciclo)
+```
+
+| Paso | Métrica leading (Lean) | Fuente |
+|------|------------------------|--------|
+| 1. Oferta | Farmacias **activas** (curva §1.1: **40** M1 → **97** M6) | [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 |
+| 2. Demanda | Pedidos completados; NPS B2C ≥ 35 en M6 | §5 DoD |
+| 3. Monetización | Revenue mensual ≥ **4.800** en M6 | §5 DoD |
+| 4. Reinversión | Meta **800**/mes (Lean M1–6) + **4× Sales** | [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2 |
+
+**Freno del flywheel:** churn farmacia **5%**/mes ([UNIT_ECONOMICS.md](UNIT_ECONOMICS.md)); demanda B2C lenta → priorizar Bullseye **interior** (QR farmacia) antes de escalar Meta ([CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md) §2.10).
+
 ## 5. Definition of Done del piloto (M6 = sexto mes desde Day-D)
 
 Criterios para considerar el piloto exitoso:

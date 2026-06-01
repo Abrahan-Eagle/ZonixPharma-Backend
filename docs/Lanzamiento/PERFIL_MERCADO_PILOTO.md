@@ -158,6 +158,20 @@ El piloto combina **dos focos geográficos** dentro de Valencia metro: **Urb. Be
 - **Logística manejable:** **Coordinador de Partners Logísticos** como enlace con **empresa concesionaria** de última milla + capacidad de campo del **partner** en el orden de **10-15 agentes** en zona piloto (mapa y contrato marco).
 - **Marketing local barato:** una valla 3m×2m USD 350/mes en av. Bolívar Norte capta ~20.000 impactos/día (fuente: [PubliExterior VE](https://www.publiexterior.com/), tarifario 2025).
 
+### 6.5 Crossing the chasm — cuándo ampliar SAM (post-M6)
+
+**Regla del pack:** no escalar geografía ni narrativa “Valencia metro completo” hasta cumplir el **Definition of Done M6** del piloto ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §5). Esto evita el error clásico de saltar del **beachhead** (Bella Florida + El Socorro) al **mainstream** sin retención.
+
+| Criterio chasm (todos requeridos) | Meta M6 | Si falla |
+|-----------------------------------|---------|----------|
+| Farmacias activas | ≥ **97** | No abrir Naguanagua/San Diego masivo; reforzar Sales + waiver |
+| Pedidos completados | ≥ **1.500** | Recortar Meta exterior; Bullseye interior |
+| NPS B2C | ≥ **35** | CS + fixes producto antes de expansión |
+| NPS B2B | ≥ **50** | Revisar pricing mom-test (PLAN §4.0 fila 5) |
+| Cash en banco | ≥ **~46.395** | Activar contingencia PROYECCION §4 |
+
+**Solo tras M6 verde:** ejecutar §6 PLAN (Naguanagua + San Diego, meta **130** activas M9) y SAM extendido **150–180** farmacias documentado en §3. **Año 2** (Maracay, Maracaibo) permanece upside — no commitment en pitch año 1 ([CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md) §3).
+
 ## 7. Mercado expansión año 2
 
 | Ciudad | Farmacias estimadas | Población | Notas |

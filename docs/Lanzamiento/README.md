@@ -1,12 +1,14 @@
 # Pack Lanzamiento Inversor — Zonix Pharma
 
-> **Última actualización:** 27 mayo 2026.
+> **Última actualización:** 1 junio 2026.
 > **Propósito de esta carpeta:** (1) **Plan de lanzamiento operativo** de Zonix Pharma — calendario **T+0 → Fase 0 → Day-D (T+90) → M12**, equipo, farmacias, tech y KPIs ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) es la fuente canónica). (2) **Materiales de inversor y finanzas** en mejora continua (WIP). Cruce pack ↔ código: [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) + [../ANALISIS_TECNICO_COMPLETO_2026-05.md](../ANALISIS_TECNICO_COMPLETO_2026-05.md).
 > **Estado del pack:** borrador avanzado pre-seed; textos legales y plazos de retención sujetos a **dictamen abogado + farmacéutico asesor** antes de Day-D público.
 > **Producto:** Zonix Pharma — marketplace farmacéutico digital; el pack usa **solo** esa marca para producto y plataforma (no mezclar con otros productos en narrativa, métricas ni infra — p. ej. dominio `zonixpharma.com`, repo `ZonixPharma-*`).
 > **Portfolio del founder:** puede citar otros proyectos del mismo founder (p. ej. **Corral X**) como track record en BRIEF/VOLCADO; eso **no** es el producto que se financia ni la plataforma de este data room.
 > **Zona piloto:** Valencia metro (Carabobo), con foco inicial operativo **San Diego / Av. Bolívar Norte** y expansión a Naguanagua, El Socorro, La Viña, Prebo, etc.
 > **Capital pedido (Lean — mínimo viable):** **USD 101.000** para **Fase 0 (~90 días)** + **12 meses** post-**Day-D** — SAFE post-money cap **USD 600.000**. **Recomendado (Base):** **USD 118.000** / cap **650.000**. **Acelerado (Growth):** **USD 135.000** / cap **720.000** — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §1.
+
+> **Enviar a especialistas / inversor:** leer primero [CARTA_CONTEXTO_ESPECIALISTAS.md](CARTA_CONTEXTO_ESPECIALISTAS.md) · zip según [DATA_ROOM_ZIP_GUIA.md](DATA_ROOM_ZIP_GUIA.md) · checklist founder [P0_FOUNDER_PRE_ENVIO.md](P0_FOUNDER_PRE_ENVIO.md) · dictamen legal [BRIEF_DICTAMEN_P3_ABOGADO_ASESOR.md](BRIEF_DICTAMEN_P3_ABOGADO_ASESOR.md).
 
 Este directorio contiene **25 archivos** `.md` en raíz (+ **7** en [_auditorias/](_auditorias/) = **32** total): índice y auditorías de producto ([README.md](README.md), [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md), [AUDITORIA_FORENSE_360_2026-06.md](AUDITORIA_FORENSE_360_2026-06.md), [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md), [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md), [INCOHERENCIAS_LANZAMIENTO_2026-05.md](INCOHERENCIAS_LANZAMIENTO_2026-05.md)) más **19 documentos** de contenido (brief, finanzas, legal, operación comercial, propuestas de valor). Logs Prompt B–F y plantillas IA: [_auditorias/](_auditorias/) — **no data room**. Para **ejecutar el lanzamiento**, empezar por [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) y [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md). Para **inversor**, el `BRIEF` resume en una página; el resto profundiza cifras y supuestos (junio 2026).
 
@@ -26,7 +28,7 @@ Este directorio contiene **25 archivos** `.md` en raíz (+ **7** en [_auditorias
 
 **Opcional antes de reunión:** [AUDITORIA_FORENSE_360_2026-06.md](AUDITORIA_FORENSE_360_2026-06.md) (auditoría consolidada) · [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) (pack ↔ código). **Mensaje listo para enviar:** [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) §2 (misma ruta).
 
-> **No incluir en zip inversor:** [_auditorias/](_auditorias/) · [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md) · [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) (interno).
+> **No incluir en zip inversor:** [_auditorias/](_auditorias/) · [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md) · [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) · [P0_FOUNDER_PRE_ENVIO.md](P0_FOUNDER_PRE_ENVIO.md) · [DATA_ROOM_ZIP_GUIA.md](DATA_ROOM_ZIP_GUIA.md) (interno / guía).
 
 Tiers Base/Growth y detalle burn: [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §1.
 
