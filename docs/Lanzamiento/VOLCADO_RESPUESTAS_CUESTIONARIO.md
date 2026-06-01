@@ -4,7 +4,7 @@
 > Plantilla para el founder. Llenar a medida que se entreviste al equipo y se cierren contrataciones.
 > Cada celda con `[PENDIENTE]` debe llenarse antes de la primera reunión con un inversor.
 
-**Instrucciones (solo humano):** la IA **no** debe inventar GitHub, referencias, % dedicación, fechas de demo ni resultados de tests. Usar [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) (P0–P4) como checklist. Tras ronda Prompt C (mayo 2026), mejoras de redacción del pack están en [_auditorias/MEJORAS_PROMPT_C_RONDA_2026-05.md](_auditorias/MEJORAS_PROMPT_C_RONDA_2026-05.md). Auditoría consolidada jun 2026: [AUDITORIA_FORENSE_360_2026-06.md](AUDITORIA_FORENSE_360_2026-06.md).
+**Instrucciones (solo humano):** completar únicamente datos verificables. No inventar GitHub, referencias, % dedicación, fechas de demo ni resultados de tests. Usar [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) (P0–P4) como checklist.
 
 ## 1. Datos del founder
 
@@ -40,7 +40,7 @@ Ingeniero en Informática (IUTVAL, 2013–2018) con **más de 8 años** construy
 | Resultado última corrida | **399 tests**, **1649 assertions**, OK |
 | Fecha corrida | **1 junio 2026** (`php artisan test --parallel`) |
 | Commit (short) | **17f208e** *(re-verificar antes de cada reunión inversor)* |
-| Notas | Cifra citada en pack: [README.md](README.md), [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md), [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) §9 |
+| Notas | Cifra citada en pack: [README.md](README.md), [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) |
 
 ## 1.5 Co-CEO / CEO operativo (segundo al mando)
 
@@ -228,7 +228,7 @@ Contratar **cuatro** personas en este rol (quinta columna opcional si se evalúa
 | Métricas tracción por producto (usuarios, GMV, tests) si aplica | [PENDIENTE founder] | Backend: citar suite tests repo al reunirse |
 | Demo en vivo programada (fecha) | [PENDIENTE founder] | |
 
-Cruce automático sugerido: [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) §3 y [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) §7 (C3).
+Cruce sugerido: [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) §3.
 
 ## 11. Documentos hermanos
 

@@ -289,7 +289,7 @@ Las etiquetas de producto en la app (**`common` / `retained` / `special`**, cont
 | MPPS audita y encuentra fallas | Trazabilidad completa + asesor regulatorio externo. |
 | Paciente sube datos personales sensibles fuera de la receta | Política de privacidad + cifrado en reposo + audit log. |
 
-## 14. Seguridad y privacidad de datos médicos (ALTA #2 forense)
+## 14. Seguridad y privacidad de datos médicos
 
 Datos de salud son categoría especial; **marco legal VE en actualización** — diseño orientado a consentimiento, minimización y seguridad descritos en [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §4.4. *[PENDIENTE dictamen abogado + farmacéutico asesor antes de Day-D público]* — no afirmar «cumplimiento pleno» hasta dictamen.
 
@@ -331,7 +331,7 @@ Datos de salud son categoría especial; **marco legal VE en actualización** —
 - Notificación al paciente afectado dentro de 72h si hay leak material.
 - Notificación a autoridad VE de protección de datos.
 
-## 15. Capacidad operativa fuera de horario y picos (ALTA #8 forense)
+## 15. Capacidad operativa fuera de horario y picos
 
 ### 15.1 Horario operativo estándar
 

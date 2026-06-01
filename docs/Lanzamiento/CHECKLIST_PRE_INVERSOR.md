@@ -2,12 +2,10 @@
 
 > **Última actualización:** 27 mayo 2026.
 > Documento operacional. El founder debe poder marcarlo todo antes de la primera reunión con el inversor.
-> **Mejora continua (equipo):** tras cada revisión del pack, actualizar [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) y la cabecera `Última actualización` de los documentos tocados.
+> **Mejora continua:** tras cada revisión del pack, actualizar la cabecera `Última actualización` de los documentos tocados.
 
-## 0. Pre-flight reunión (Prompt E — gap analysis)
+## 0. Pre-reunión (pre-flight)
 
-> **Salida formal pasada 2:** [AUDITORIA_PROMPT_E_RONDA_2026-05.md](AUDITORIA_PROMPT_E_RONDA_2026-05.md) (20 mayo 2026).  
-> **Log pasada 1:** [_auditorias/MEJORAS_PROMPT_C_RONDA_2026-05.md](_auditorias/MEJORAS_PROMPT_C_RONDA_2026-05.md) § Prompt E.  
 > **Registro P0:** [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md).
 
 ### 0.1 P0 abiertos (bloqueantes institucional)
@@ -49,9 +47,7 @@ Igual que [README.md](README.md) § inversor: **BRIEF → CONTEXTO → PERFIL �
 | Expectativa «ya en Play Store» | Media | Matiz staging en BRIEF/MENSAJE (I-05) |
 | SAFE/T&C como versión final sin abogado | Media | Marcar **borrador** (CHECKLIST §1) |
 
-### 0.5 Próximas 3 sesiones (Prompt F)
-
-> **Diagnose formal pasada 2:** [AUDITORIA_PROMPT_F_RONDA_2026-05.md](AUDITORIA_PROMPT_F_RONDA_2026-05.md) (20 mayo 2026).
+### 0.5 Próximas 3 sesiones (founder)
 
 | # | Enfoque | Doc |
 |---|---------|-----|
@@ -98,7 +94,7 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 - [ ] **Disponibilidad para reunión:** [PENDIENTE].
 - [ ] **NDA listo si el inversor lo pide:** [PENDIENTE].
 
-## 3. Datos del founder ready (CRÍTICA #3 forense — bloqueante para primera reunión)
+## 3. Datos del founder ready (requisito crítico pre-reunión)
 
 > **Nota crítica:** un inversor sofisticado dedica el 50% de su decisión a evaluar al founder. Estado tras volcado CV + LinkedIn (mayo 2026): **la mayoría de ítems están listos**; **GitHub / acceso repo bajo NDA** y **% dedicación explícita a Zonix Pharma** son **bloqueantes para reunión institucional** (fondos, family office, chequeo de governance). Completar también referencias comerciales antes de agenda cerrada.
 

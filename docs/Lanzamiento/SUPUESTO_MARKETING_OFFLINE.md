@@ -219,7 +219,7 @@ Triggers para subir de Lean (valla pequeña **350**) → Base/Growth (valla medi
 3. CAC orgánico (offline + boca en boca) supera CAC digital en farmacias firmadas.
 4. Serie A levantada o en proceso.
 
-## 7.1 Triggers de revisión del presupuesto digital (ALTA #5 forense)
+## 7.1 Triggers de revisión del presupuesto digital
 
 Si los datos reales se desvían del CPL planificado USD 0,15-0,60, el plan se revisa así:
 
@@ -232,7 +232,7 @@ Si los datos reales se desvían del CPL planificado USD 0,15-0,60, el plan se re
 
 **Frecuencia de revisión:** primer mes semanal, después mensual.
 
-## 7.2 Triggers de adición de TikTok Ads (ALTA #6 forense)
+## 7.2 Triggers de adición de TikTok Ads
 
 Si Meta Ads se satura o el CPL sube > USD 0,40, activar TikTok Ads como segundo canal:
 

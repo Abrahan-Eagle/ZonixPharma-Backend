@@ -94,7 +94,7 @@
 
 **Lectura:** los tres tiers comparten el **mismo núcleo operativo** (Co-CEO, IA, 4× Sales). La escalera **101k < 118k < 135k** refleja **colchón comercial/regulatorio** y **reserva runway**, no un producto distinto.
 
-### 2.3.1 Nota sobre el cap (ALTA #4 forense)
+### 2.3.1 Nota sobre el cap
 
 El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está en torno a **10-12% equity** ([fuente: LatAm VC Report 2024-2025](https://www.endeavor.org.mx/) y reportes Crunchbase). El cap de Zonix Pharma (**Lean USD 101k** / cap **USD 600k**) da **~16,83%**, algo más alto que el benchmark medio — coherente con ticket, **Co-CEO** y costo fijo del replante operativo (ver [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2).
 
@@ -191,7 +191,7 @@ El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está 
 - **INHRR (Instituto Nacional de Higiene Rafael Rangel):** registro de medicamentos. Solo se venden productos con INHRR vigente.
 - **Detalle:** [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md).
 
-### 4.4 Datos personales y datos de salud (ALTA #2 forense + revisión profesional)
+### 4.4 Datos personales y datos de salud (revisión profesional)
 
 - **Ley de Protección de Datos Personales (Venezuela):** existe **proyecto de ley** en discusión / tramitación en **2025-2026**; **confirmar estado de promulgación** con abogado antes de citar “vigencia”. **Mientras tanto:** aplicar **buenas prácticas** alineadas a estándares internacionales (consentimiento, minimización, seguridad, derechos titular, encargados/DPA) como ya describe el pack operativo.
 - **Textos legales** (aviso de privacidad, T&C app, contrato marco farmacia) deben ser **revisados y firmados** por abogado antes de Day-D público.
@@ -253,7 +253,7 @@ El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está 
 
 **Componentes del programa:** KYC de farmacias (ya previsto onboarding), lista restrictiva interna, monitoreo de tickets fraud, conservación de evidencias, designación de **responsable compliance** (part-time CFO/legal hasta hire dedicado).
 
-## 5. Equity de futuros empleados / advisors (ALTA #9 forense)
+## 5. Equity de futuros empleados / advisors
 
 ### 5.0 Single-founder y plan de mitigación
 

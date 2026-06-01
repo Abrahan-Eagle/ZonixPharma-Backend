@@ -131,7 +131,7 @@ Plantilla StoryBrand para copy Meta, valla y app. **Sin** promesas de cura ni re
 - **Delivery fee:** USD 1,50-3,50 según distancia. Detalle en [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md).
 - **Validación Rx:** GRATIS (el farmacéutico de la farmacia lo hace como parte del pedido).
 
-## 6. Onboarding del paciente (mínima fricción, ALTA #7 forense)
+## 6. Onboarding del paciente (mínima fricción)
 
 **Filosofía:** el paciente debe poder llegar a "primera búsqueda de medicamento" en menos de 90 segundos desde abrir la app. Datos adicionales se piden **solo cuando el flujo lo necesita** (Rx, delivery a dirección, pago).
 
@@ -173,7 +173,7 @@ Plantilla StoryBrand para copy Meta, valla y app. **Sin** promesas de cura ni re
 |---|---|---|---|
 | Meta Ads (Facebook + Instagram) | USD 0,15-0,60 por lead | 30+ años, mujeres con cargas familiares, hijos en exterior | [Fuente: Meta Business VE benchmarks 2025](https://www.facebook.com/business/) |
 | Google Ads (search + display) | USD 0,30-0,90 por lead | Búsqueda intención (alguien escribe "farmacia delivery Valencia") | [Fuente: Google Ads VE 2025](https://ads.google.com/) |
-| **TikTok Ads** | **USD 0,20-0,80 por lead** | **18-35 años, joven profesional, contenido viral. Crecimiento alto en VE 2025-2026.** | Activar como segundo canal si Meta satura (ALTA #6 forense). Detalle en [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) sección 7.2. |
+| **TikTok Ads** | **USD 0,20-0,80 por lead** | **18-35 años, joven profesional, contenido viral. Crecimiento alto en VE 2025-2026.** | Activar como segundo canal si Meta satura. Detalle en [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) sección 7.2. |
 | WhatsApp Business + difusión | Casi 0 | Leads cálidos / referidos / B2B | Para leads orgánicos vía Sales B2B. |
 
 ### 7.2 Canales offline

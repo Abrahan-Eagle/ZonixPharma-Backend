@@ -35,7 +35,7 @@ Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 
 > Hola [Nombre],
 >
-> Gracias por tu interés. Te comparto el **data room** (`docs/Lanzamiento/`). **Empieza por** [CARTA_CONTEXTO_ESPECIALISTAS.md](CARTA_CONTEXTO_ESPECIALISTAS.md). **Ruta ~30 min** (misma que [README.md](README.md) § inversor):
+> Gracias por tu interés. Te comparto el **data room** (`docs/Lanzamiento/`). **Empieza por** [README.md](README.md) y [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md). **Ruta ~30 min** (índice inversor en README):
 >
 > 1. **[BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md)** — tesis y cifras clave.
 > 2. **[CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md)** — decisiones y posicionamiento.
@@ -45,7 +45,7 @@ Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 > 6. **[ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md)** — SAFE y cap table.
 > 7. **[CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md)** — guion reunión + FAQ.
 >
-> Opcional DD profundo: [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) · [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) (pack ↔ producto).
+> Opcional DD técnico: [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) (pack ↔ producto).
 >
 > Acceso al pack completo en Google Drive: [LINK]
 >

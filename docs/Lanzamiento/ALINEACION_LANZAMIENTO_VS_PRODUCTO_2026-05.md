@@ -123,7 +123,7 @@ Prioridad para el founder técnico (no sustituye backlog de negocio).
 
 ## 4. Qué ajustar en los **documentos** (mientras los mejoráis)
 
-> **Estado 27 mayo 2026:** correcciones **I-01 a I-15** aplicadas en pack; detalle en [INCOHERENCIAS_LANZAMIENTO_2026-05.md](INCOHERENCIAS_LANZAMIENTO_2026-05.md). Tabla §4.1 = **histórico de mejoras ya hechas** + pendientes menores.
+> **Estado 1 junio 2026:** correcciones **I-01 a I-15** aplicadas en pack. Tabla §4.1 = histórico de mejoras ya hechas + pendientes menores.
 
 ### 4.1 Documentación adelantada (suavizar o acotar)
 
@@ -155,7 +155,7 @@ Prioridad para el founder técnico (no sustituye backlog de negocio).
 | Pagos manuales VE | PLAN_METODOS_PAGO, zonix-payments | OK con código |
 | 399 tests | BRIEF, VOLCADO §1.2, README | Re-ejecutar y actualizar commit antes de reunión |
 
-### 4.4 Datos humanos vacíos (no rellenar desde IA)
+### 4.4 Datos humanos vacíos (solo founder / equipo)
 
 Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md). El plan de lanzamiento **no puede ejecutarse** sin: fechas T+0, HQ/valla cotizadas, pipeline farmacias, nombres equipo, partner logístico firmado.
 
@@ -170,7 +170,7 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md). El plan de lanza
 
 ---
 
-## 5. Orden de trabajo sugerido (founder + Jarvis)
+## 5. Orden de trabajo sugerido (founder + equipo)
 
 Coherente con Fase 0 del [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md):
 
@@ -178,7 +178,7 @@ Coherente con Fase 0 del [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERC
 2. **Docs:** aplicar §4.1–4.2 en CONTEXTO, PLAN_LANZAMIENTO, BRIEF (1–2 párrafos cada uno).  
 3. **Operación:** llenar VOLCADO §3–9 según REGISTRO P1.  
 4. **Pre-Day-D:** checklist §18 PLAN_MODULO + matriz §2 de este doc en verde.  
-5. **Inversor (cuando toque):** REGISTRO P0 + ANALISIS_FORENSE (capa aparte).
+5. **Inversor (cuando toque):** REGISTRO P0 + [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md).
 
 ---
 
@@ -193,7 +193,7 @@ Coherente con Fase 0 del [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERC
 | Operación Rx y soporte | [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) |
 | Qué hace el código | [../ANALISIS_TECNICO_COMPLETO_2026-05.md](../ANALISIS_TECNICO_COMPLETO_2026-05.md) |
 | Qué falta llenar a mano | [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) |
-| Auditoría inversor | [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) |
+| Checklist inversor | [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) |
 
 ---
 

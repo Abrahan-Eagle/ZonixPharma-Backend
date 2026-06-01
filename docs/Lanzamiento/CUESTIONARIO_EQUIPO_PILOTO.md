@@ -4,7 +4,7 @@
 > **Solo equipo interno / HR** — **no incluir** en zip data room inversor. Para inversor: ver nómina resumida en [README.md](README.md) §3 y [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md).
 > Documento operacional para entrevistar candidatos según la **nómina Lean 101k** ([README.md](README.md) §3). **Plantillas:** §2 Sales (4×), §3 CS+CM, §4 Marketing, §5 Coordinador Partners, §6–§7 freelance, **§8** Asesor regulatorio (**Base 118k / Growth 135k**). **Total Lean = 9 FTE + 2 freelance**. **Compensaciones:** [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.
 > Las respuestas se vuelcan en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md).  
-> **Bloqueantes inversor (P0):** [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) — GitHub, % dedicación, referencias; la IA **no** rellena esas celdas.
+> **Bloqueantes inversor (P0):** [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) — GitHub, % dedicación, referencias; solo el founder completa esas celdas.
 
 ## 1. Cuestionario común a todos los roles
 

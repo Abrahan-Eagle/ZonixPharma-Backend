@@ -8,9 +8,11 @@
 > **Zona piloto:** Valencia metro (Carabobo), con foco inicial operativo **San Diego / Av. Bolívar Norte** y expansión a Naguanagua, El Socorro, La Viña, Prebo, etc.
 > **Capital pedido (Lean — mínimo viable):** **USD 101.000** para **Fase 0 (~90 días)** + **12 meses** post-**Day-D** — SAFE post-money cap **USD 600.000**. **Recomendado (Base):** **USD 118.000** / cap **650.000**. **Acelerado (Growth):** **USD 135.000** / cap **720.000** — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §1.
 
-> **Enviar a especialistas / inversor:** leer primero [CARTA_CONTEXTO_ESPECIALISTAS.md](CARTA_CONTEXTO_ESPECIALISTAS.md) · zip según [DATA_ROOM_ZIP_GUIA.md](DATA_ROOM_ZIP_GUIA.md) · checklist founder [P0_FOUNDER_PRE_ENVIO.md](P0_FOUNDER_PRE_ENVIO.md) · dictamen legal [BRIEF_DICTAMEN_P3_ABOGADO_ASESOR.md](BRIEF_DICTAMEN_P3_ABOGADO_ASESOR.md).
+> **Lectura externa:** pack revisado para especialistas (inversor, abogado, contador, asesor farmacéutico, equipo). Sin documentación de proceso interno de redacción automatizada.
 
-Este directorio contiene **25 archivos** `.md` en raíz (+ **7** en [_auditorias/](_auditorias/) = **32** total): índice y auditorías de producto ([README.md](README.md), [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md), [AUDITORIA_FORENSE_360_2026-06.md](AUDITORIA_FORENSE_360_2026-06.md), [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md), [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md), [INCOHERENCIAS_LANZAMIENTO_2026-05.md](INCOHERENCIAS_LANZAMIENTO_2026-05.md)) más **19 documentos** de contenido (brief, finanzas, legal, operación comercial, propuestas de valor). Logs Prompt B–F y plantillas IA: [_auditorias/](_auditorias/) — **no data room**. Para **ejecutar el lanzamiento**, empezar por [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) y [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md). Para **inversor**, el `BRIEF` resume en una página; el resto profundiza cifras y supuestos (junio 2026).
+Este directorio contiene **22 documentos** `.md` en raíz: materiales de **inversor**, **finanzas**, **legal**, **operación comercial**, **propuestas de valor** y **plantillas internas** ([REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md), [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md), [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md)).
+
+Para **ejecutar el lanzamiento:** [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) y [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md). Para **inversor en ~30 min:** [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) y la ruta de la tabla siguiente.
 
 ---
 
@@ -26,60 +28,31 @@ Este directorio contiene **25 archivos** `.md` en raíz (+ **7** en [_auditorias
 | 3 | [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) | SAFE, cap table, vehículo VE |
 | 2 | [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) | Guion reunión + FAQ |
 
-**Opcional antes de reunión:** [AUDITORIA_FORENSE_360_2026-06.md](AUDITORIA_FORENSE_360_2026-06.md) (auditoría consolidada) · [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) (pack ↔ código). **Mensaje listo para enviar:** [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) §2 (misma ruta).
+**Opcional (due diligence técnico):** [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) (pack ↔ producto en código).
 
-> **No incluir en zip inversor:** [_auditorias/](_auditorias/) · [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md) · [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) · [P0_FOUNDER_PRE_ENVIO.md](P0_FOUNDER_PRE_ENVIO.md) · [DATA_ROOM_ZIP_GUIA.md](DATA_ROOM_ZIP_GUIA.md) (interno / guía).
+**Mensaje listo para enviar:** [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) §2.
+
+> **Uso interno (no obligatorio para inversor en primera pasada):** [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md) · [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) · [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) (plantilla founder).
 
 Tiers Base/Growth y detalle burn: [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §1.
 
 ## Orden de lectura para el equipo interno (90 minutos)
 
-Lo anterior + los siguientes (material **Jarvis / proceso** en [_auditorias/](_auditorias/) — no inversor):
+Lo anterior +:
 
-0. [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) — qué dice el plan vs qué hace el software hoy.
-0b. [INCOHERENCIAS_LANZAMIENTO_2026-05.md](INCOHERENCIAS_LANZAMIENTO_2026-05.md) — registro doc ↔ doc (I-01–I-28).
-0c. [AUDITORIA_FORENSE_360_2026-06.md](AUDITORIA_FORENSE_360_2026-06.md) — auditoría consolidada junio 2026.
-0d. [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) — P0–P4 humanos.
-0e. [_auditorias/PROMPT_PACK_LANZAMIENTO.md](_auditorias/PROMPT_PACK_LANZAMIENTO.md) — prompts A–F (solo IA).
-
-## Usar Jarvis (IA) para mejorar este pack
-
-Los marcos del informe §9–11 están **adaptados en skills locales** (no hace falta `npx skills add` de repos externos):
-
-| Skill agente | Para qué |
-|--------------|----------|
-| **`zonix-lanzamiento-docs`** | Router, StoryBrand, Bullseye, **anti-patrones** (blue-ocean, 100m-leads, lean dogma) |
-| `zonix-startup-context` | Cifras ancla + **Market Type** (mercado existente) |
-| `zonix-b2b-sales` | PROPUESTA_VALOR_CLIENTE_B2B (SPIN) |
-| `zonix-fundraising-narrative` | MENSAJE_ENVIO, CONTEXTO_PITCH, **Cialdini** (cierre inversor) |
-| `zonix-launch-piloto` | PLAN (four-steps, mom-test, **beachhead** post-piloto) |
-| `zonix-financial-model` | PROYECCION, UNIT, **waiver 10 farmacias** |
-| `zonix-investor-materials` | CHECKLIST, data room, PERFIL competencia |
-
-**Prompts listos (equipo interno):** [_auditorias/PROMPT_PACK_LANZAMIENTO.md](_auditorias/PROMPT_PACK_LANZAMIENTO.md).
-
-**Rondas recomendadas:** auditoría consolidada [AUDITORIA_FORENSE_360_2026-06.md](AUDITORIA_FORENSE_360_2026-06.md) → correcciones doc a doc → P0 humano REGISTRO.
-
-**Prompt ejemplo:** «Mejora `PROPUESTA_VALOR_CLIENTE_B2B` §X usando `zonix-lanzamiento-docs`; cifras solo del pack; una sección.»
-
-Ruta skill: [.agents/skills/zonix-lanzamiento-docs/SKILL.md](../../.agents/skills/zonix-lanzamiento-docs/SKILL.md).
-
-**Pack (26–27 mayo 2026):** secciones SPIN, BrandScript, Bullseye, validación Day-D, WTP, email corto, FAQ técnica, posicionamiento. **Skills (27 mayo):** Market Type, waiver 100m-offers, beachhead/chasm, Cialdini, anti-patrones. Guía: [../zonix/SKILLS_STARTUP_USAR_NO_USAR.md](../zonix/SKILLS_STARTUP_USAR_NO_USAR.md).
-
-1. [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) — **Fase 0 (T+0→Day-D T+90)** + hitos T+30 / T+60 / Day-D + Definition of Done del piloto.
-2. [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) — pitch a la farmacia.
-3. [PROPUESTA_VALOR_USUARIO_FINAL.md](PROPUESTA_VALOR_USUARIO_FINAL.md) — pitch al paciente.
-4. [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) — pitch a **`delivery_company`** + **`delivery_agent`** (concesión última milla) y farmacéutico colegiado; **sin** rol `delivery` autónomo en app.
-5. [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) — escenarios Lean / Base / Growth.
-6. [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md) — fuentes y precios públicos.
-7. [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) — vallas, radio, flyers.
-8. [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) — pago móvil, transferencia, Zelle, Binance Pay.
-9. [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) — validación Rx, farmacovigilancia §11, seguridad §14, playbook incidencias §16, amenazas §17, QA piloto §18.
-10. [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md) — preguntas para el equipo.
-11. [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) — plantilla de captura.
-12. [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) — texto de WhatsApp/email + bullets pitch.
-13. [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) — auditoría multi-perspectiva del pack: **6 perspectivas narrativas**, mapa ejecutivo §11.1 / §11.1 bis, **síntesis §11.4** y **sexta pasada 360° §13** (cruce técnico).
-14. [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) — **registro único** de todos los `[PENDIENTE]` (P0–P4) para cerrar antes de reunión inversor.
+1. [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) — qué dice el plan vs qué hace el software hoy.
+2. [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) — pendientes humanos P0–P4.
+3. [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) — Fase 0 (T+0→Day-D T+90) + hitos T+30 / T+60 / Day-D.
+4. [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) — pitch a la farmacia.
+5. [PROPUESTA_VALOR_USUARIO_FINAL.md](PROPUESTA_VALOR_USUARIO_FINAL.md) — pitch al paciente.
+6. [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) — delivery + farmacéutico colegiado.
+7. [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) — escenarios Lean / Base / Growth.
+8. [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md) — fuentes y precios públicos.
+9. [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) — vallas, radio, flyers.
+10. [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) — pago móvil, transferencia, Zelle, Binance Pay.
+11. [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) — Rx, farmacovigilancia, seguridad, QA piloto.
+12. [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md) · [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) — captura operativa.
+13. [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) — outreach inversor.
 
 ---
 
@@ -137,7 +110,7 @@ Ruta skill: [.agents/skills/zonix-lanzamiento-docs/SKILL.md](../../.agents/skill
 ## Decisiones del usuario aplicadas en todo el pack
 
 1. **Modelo de ingresos:** **híbrido** — cuota fija **USD 25 / 40 / 55** + **% sobre GMV** por bandas ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5); **un nivel y una factura por RIF**, GMV agregado de sucursales en piloto; dashboard por sucursal.
-2. **Alcance del piloto:** **flujos core completos desde Day-D** (Buyer + Pharmacy + Pharmacist + **`delivery_company`** + **`delivery_agent`**): OTC, Rx, pago manual VE, partner delivery. **No** rol `delivery` (autónomo). **No** incluye en pitch: lotes FIFO operativos ni app en tiendas hasta hitos Fase 0 — [INCOHERENCIAS_LANZAMIENTO_2026-05.md](INCOHERENCIAS_LANZAMIENTO_2026-05.md). **Última milla:** Zonix **no opera flota propia**; concesión/contrato marco — [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) cabecera y §A.
+2. **Alcance del piloto:** **flujos core completos desde Day-D** (Buyer + Pharmacy + Pharmacist + **`delivery_company`** + **`delivery_agent`**): OTC, Rx, pago manual VE, partner delivery. **No** rol `delivery` (autónomo). **No** incluye en pitch: lotes FIFO operativos ni app en tiendas hasta hitos Fase 0 — ver [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md). **Última milla:** Zonix **no opera flota propia**; concesión/contrato marco — [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md).
 3. **Equipo:**
   - Founder (CEO + CTO en una sola persona, el usuario) + **Co-CEO / CEO operativo** (segundo al mando; comercial / operación / corporate) **USD 1.000/mes** — **rótulo operativo**; representante legal / junta y SAFE según [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md).
   - Sin Pharmacist liaison interno: cada farmacia afiliada aporta su propio farmacéutico colegiado (marco VE — Ley del Ejercicio de la Farmacia; operación comercial sujeta a dictamen **abogado + farmacéutico asesor** antes de Day-D).
@@ -190,6 +163,14 @@ Estos no se inventan. El pack los marca explícitamente con `[PENDIENTE]`. **Ín
 - Todos los precios VE en USD pueden subir mensualmente por inflación. **Macro 2026:** el **BCV (mayo 2026)** proyecta **desaceleración** (inflación mensual de **un dígito desde mayo 2026**). Los escenarios externos **387-618%** (Anova/Cendas/Ecoanalítica) se conservan como **estrés/adversos**. El pack documenta cada cifra con fecha de captura **mayo 2026** y advierte **reconfirmación trimestral** antes de decisiones de inversión o gasto.
 - El buffer de 20% absorbe variaciones de hasta ±25% en precios denominados en bolívares.
 - Si la devaluación supera 100% en un trimestre, hay un plan de contingencia documentado en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md).
-- **Cierre editorial pack:** **25 mayo 2026** (limpieza pack para uso humano; puntero finanzas en PERFIL, VOLCADO/phpunit **399**). Priorizar siempre la cabecera `Última actualización` del propio archivo.
+- **Cierre editorial pack:** **1 junio 2026** (revisión para lectura externa). Priorizar siempre la cabecera `Última actualización` del propio archivo.
+
+## Exportar a especialistas (checklist founder)
+
+1. Revisar [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) (P0 antes de reunión institucional).
+2. **Zip inversor (~30 min):** BRIEF → CONTEXTO → PERFIL → UNIT → PROYECCION §1.1 → ESTRUCTURA → CHECKLIST (+ MENSAJE §2 opcional).
+3. **Opcional DD técnico:** [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md).
+4. **Excluir del zip externo** (uso interno): CUESTIONARIO, REGISTRO, VOLCADO — salvo que el especialista lo pida.
+5. Marcar aprobación founder en REGISTRO P0-04 antes de enviar.
 
 **Pack revisado por:** [PENDIENTE — el founder debe leer y aprobar antes de presentar al inversor].

@@ -136,7 +136,7 @@
 
 ### 4.0 Validación pre-Day-D (Customer Development + mom-test)
 
-Checklist **antes** de tráfico masivo. Evidencia en VOLCADO / CRM — la IA **no inventa** entrevistas.
+Checklist **antes** de tráfico masivo. Documentar solo entrevistas reales en VOLCADO / CRM.
 
 | Paso | Validación | Evidencia mínima |
 |------|------------|------------------|

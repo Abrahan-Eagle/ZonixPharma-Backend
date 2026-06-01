@@ -7,15 +7,14 @@
 
 ## Última actualización de contexto
 
-### Auditoría forense 360° pack Lanzamiento — 1 junio 2026
+### Pack Lanzamiento listo para especialistas (sin meta IA) — 1 junio 2026
 
-- **Entregable:** [AUDITORIA_FORENSE_360_2026-06.md](Lanzamiento/AUDITORIA_FORENSE_360_2026-06.md) — consolida hallazgos P0–P2; lente prudencia (integridad) sin texto religioso en docs inversor.
-- **Correcciones P0:** PERFIL curva M9=130/M12=159; PLAN M9 + §9 DoD M6; PROYECCION año 2 EBITDA/cash; PRESUPUESTO Base tramos; PLAN_MODULO TTL; PLAN_METODOS Sudeban rubro B; VOLCADO §7 partner.
-- **Correcciones P1:** UNIT burn Lean vs Base; asesor Base+Growth; claims `[PENDIENTE]` Rx/legal; calendario B2C Day-D; valla Base mediana; FAQ ~159; equity redondeo.
-- **Recorte:** 7 meta-docs → [Lanzamiento/_auditorias/](Lanzamiento/_auditorias/); README data room; CUESTIONARIO solo interno.
-- **INCOHERENCIAS:** I-17–I-27 registradas.
-- **Biblia marketplace G1–G2, G5:** CONTEXTO §2.10–§2.11; PLAN §4.0 fila 5 mom-test pricing; UNIT §2.1 enlace.
-- **Bloqueante inversor:** P0 humano en [REGISTRO_PENDIENTES_PACK.md](Lanzamiento/REGISTRO_PENDIENTES_PACK.md) (sin cambio).
+- **Hecho:** `docs/Lanzamiento/` — **22** `.md` en raíz; eliminados 11 archivos de proceso (`_auditorias/`, `ANALISIS_FORENSE`, `AUDITORIA_FORENSE_360`, `INCOHERENCIAS`).
+- **README:** índice externo; sin Jarvis/prompts/skills; nota lectura externa.
+- **Sanitizados:** REGISTRO, VOLCADO, CHECKLIST, BRIEF, MENSAJE, PLAN, PLAN_MODULO, ESTRUCTURA, PROPUESTA_USUARIO, ALINEACION, SUPUESTO, CUESTIONARIO.
+- **Verificación:** `rg` en `docs/Lanzamiento/*.md` → 0 coincidencias meta IA; sin enlaces a archivos borrados.
+- **Mantiene (negocio):** stack IA en PRESUPUESTO §6.1; asistente paciente roadmap; claims regulatorios en CONTEXTO.
+- **Bloqueante inversor:** P0 humano en [REGISTRO_PENDIENTES_PACK.md](Lanzamiento/REGISTRO_PENDIENTES_PACK.md) — founder debe revisar zip antes de enviar.
 
 ### Spec Kit (SDD) integrado — 27 mayo 2026
 
@@ -31,7 +30,7 @@
 - **Reestructuración:** antiguo «Base 101k» → **Lean (mínimo)**. **Base = 118k recomendado**. **Growth = 135k acelerado**. SAFE **600k / 650k / 720k**. Obsoletos **60k / 90k**.
 - **PROYECCION §1.1** = **Lean**; caja M12 **~42.209**; equilibrio **M11**.
 - **PRESUPUESTO:** [PRESUPUESTO_12_MESES_REFERENCIA.md](Lanzamiento/PRESUPUESTO_12_MESES_REFERENCIA.md) §1–§5 (fuente numérica única).
-- **Forense:** auditoría unificada [ANALISIS_FORENSE.md](Lanzamiento/ANALISIS_FORENSE.md) §11.4 (18 mayo 2026).
+- **Pack externo:** sin auditorías Jarvis en carpeta Lanzamiento (contenido absorbido en docs de negocio).
 
 ### Pack Lanzamiento — modelo operativo Lean (referencia)
 
