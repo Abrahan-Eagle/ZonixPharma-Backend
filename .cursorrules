@@ -29,6 +29,22 @@ Cursor lee `AGENTS.md` automáticamente. Toda la información de desarrollo est�
 
 ---
 
+## Spec Kit (SDD — features de producto)
+
+Features de **producto** (API + Flutter) siguen Spec-Driven Development. **No** usar Spec Kit para `docs/Lanzamiento/` ni cifras inversor — usar `zonix-lanzamiento-docs`.
+
+**Flujo:** `/speckit-specify` → `/speckit-clarify` (opc.) → `/speckit-plan` → `/speckit-tasks` → `/speckit-analyze` → `/speckit-implement` (**solo con OK usuario**).
+
+- **Constitution:** [.specify/memory/constitution.md](.specify/memory/constitution.md)
+- **Specs:** [specs/](specs/) (hub Backend)
+- **Guía:** [docs/zonix/SPEC_KIT_ZONIX.md](docs/zonix/SPEC_KIT_ZONIX.md)
+- **Skills proceso:** `.cursor/skills/speckit-*` (complementan `.agents/skills/zonix-*`)
+- **Front:** `../ZonixPharma-Front` — citar rutas como `front:lib/...` en plans/tasks
+
+Leer el `plan.md` activo en `specs/` para contexto técnico de la feature en curso.
+
+---
+
 ## Reglas de Colaboración
 
 **IMPORTANTE: El usuario es el líder del proyecto.**
@@ -98,7 +114,7 @@ return response()->json([
 
 ### Reglas farmacéuticas (Pharma específicas)
 
-- **Productos Rx**: campo `requires_prescription = true`. Bloquean checkout sin receta válida (`ZONIX_PHARMA_BLOCK_RX_WITHOUT_PRESCRIPTION`).
+- **Productos Rx**: campo `requires_prescription = true`. Por defecto flujo permisivo (`ZONIX_PHARMA_BLOCK_RX_WITHOUT_PRESCRIPTION=false`): la orden entra en `pending_prescription_validation` sin receta previa. Bloqueo en checkout solo en modo estricto opt-in (`true`).
 - **Receta médica**: tabla `prescriptions`, validada por farmacéutico colegiado de la farmacia despachadora; TTL configurable.
 - **Lotes**: tabla `medicine_lots` para FIFO por `expiry_date`.
 - **Promociones**: NO aplicar descuentos a líneas Rx (`ZONIX_PHARMA_DISALLOW_PROMOTIONS_ON_RX`).
@@ -106,7 +122,9 @@ return response()->json([
 - **Cadena de frío**: `cold_chain = true` restringe modos de delivery.
 - **Datos de salud**: cifrado, acceso limitado, retención limitada, audit log.
 
-### Skills de dominio recomendadas
+### Skills de dominio (selección — catálogo completo en `AGENTS.md`)
+
+Para **nueva feature de producto**: skills `.cursor/skills/speckit-*` + `zonix-*` del dominio.
 
 - **zonix-api-patterns**: para crear o modificar endpoints, controladores, rutas y middleware.
 - **zonix-order-lifecycle**: para cualquier cambio en órdenes, estados (incluyendo `pending_prescription_validation`), cancelaciones o reglas de flujo.
@@ -130,5 +148,5 @@ php artisan test --filter=NombreTest # Específico
 
 ---
 
-**Última actualización:** 30 abril 2026
+**Última actualización:** 1 junio 2026
 **Para instrucciones completas:** Ver `AGENTS.md`
