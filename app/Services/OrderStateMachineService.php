@@ -201,10 +201,19 @@ class OrderStateMachineService
         }
 
         DB::transaction(function () use ($order, $to, $actorRole, $actorId, $source, $reason, $from) {
-            $order->update(['status' => $to]);
+            $lockedOrder = Order::query()
+                ->whereKey($order->id)
+                ->lockForUpdate()
+                ->firstOrFail();
+
+            if ($to === Order::STATUS_CANCELLED) {
+                app(OrderStockService::class)->restoreForCancelledOrder($lockedOrder);
+            }
+
+            $lockedOrder->update(['status' => $to]);
 
             DB::table('order_status_history')->insert([
-                'order_id' => $order->id,
+                'order_id' => $lockedOrder->id,
                 'from_status' => $from,
                 'to_status' => $to,
                 'actor_role' => $actorRole,

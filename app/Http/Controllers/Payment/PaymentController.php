@@ -136,7 +136,11 @@ class PaymentController extends Controller
     }
 
     /**
-     * Process payment
+     * Process payment — legacy endpoint.
+     *
+     * No marca la orden como pagada: el flujo canónico es subir comprobante
+     * (buyer) y validarlo (comercio). Este endpoint valida ownership y estado
+     * y devuelve instrucciones para usar el flujo de comprobante.
      */
     public function processPayment(Request $request)
     {
@@ -150,87 +154,88 @@ class PaymentController extends Controller
             ]);
 
             $user = Auth::user();
-            $order = Order::findOrFail($request->order_id);
-
-            // Verificar que la orden pertenece al usuario
-            if ($order->profile_id !== $user->profile->id) {
+            $profileId = $user->profile->id ?? null;
+            if (! $profileId) {
                 return response()->json([
                     'success' => false,
-                    'message' => 'No tienes permiso para pagar esta orden',
+                    'message' => 'No tienes un perfil asociado',
                 ], 403);
             }
 
-            // Verificar que la orden no esté ya pagada
-            if ($order->payment_proof) {
+            return DB::transaction(function () use ($request, $user, $profileId) {
+                $order = Order::query()
+                    ->whereKey($request->order_id)
+                    ->lockForUpdate()
+                    ->firstOrFail();
+
+                if ($order->profile_id !== $profileId) {
+                    return response()->json([
+                        'success' => false,
+                        'message' => 'No tienes permiso para pagar esta orden',
+                    ], 403);
+                }
+
+                if ($order->status !== Order::STATUS_PENDING_PAYMENT) {
+                    return response()->json([
+                        'success' => false,
+                        'message' => 'La orden no está pendiente de pago',
+                        'error_code' => 'INVALID_ORDER_STATUS',
+                    ], 422);
+                }
+
+                if (! $order->approved_for_payment) {
+                    return response()->json([
+                        'success' => false,
+                        'message' => 'La farmacia aún no ha aprobado este pedido para pago',
+                        'error_code' => 'NOT_APPROVED_FOR_PAYMENT',
+                    ], 422);
+                }
+
+                if ($order->payment_proof || $order->payment_validated_at) {
+                    return response()->json([
+                        'success' => false,
+                        'message' => 'Esta orden ya tiene un comprobante o pago registrado',
+                        'error_code' => 'PAYMENT_ALREADY_SUBMITTED',
+                    ], 422);
+                }
+
+                if (abs((float) $order->total - (float) $request->amount) > 0.01) {
+                    return response()->json([
+                        'success' => false,
+                        'message' => 'El monto no coincide con el total de la orden',
+                    ], 422);
+                }
+
+                $paymentMethod = PaymentMethod::findOrFail($request->payment_method_id);
+                $ownsMethod = $user->paymentMethods()
+                    ->whereKey($paymentMethod->id)
+                    ->exists();
+
+                if (! $ownsMethod) {
+                    return response()->json([
+                        'success' => false,
+                        'message' => 'El método de pago no pertenece a tu cuenta',
+                        'error_code' => 'PAYMENT_METHOD_FORBIDDEN',
+                    ], 403);
+                }
+
                 return response()->json([
                     'success' => false,
-                    'message' => 'Esta orden ya ha sido pagada',
+                    'message' => 'Sube el comprobante de pago en tu pedido. La farmacia lo validará antes de marcar como pagado.',
+                    'error_code' => 'USE_PAYMENT_PROOF_FLOW',
+                    'data' => [
+                        'order_id' => $order->id,
+                        'payment_method_id' => $paymentMethod->id,
+                        'hint_endpoint' => "/api/buyer/orders/{$order->id}/payment-proof",
+                    ],
                 ], 422);
-            }
-
-            // Verificar que el monto coincida
-            if (abs($order->total - $request->amount) > 0.01) {
-                return response()->json([
-                    'success' => false,
-                    'message' => 'El monto no coincide con el total de la orden',
-                ], 422);
-            }
-
-            // Obtener método de pago
-            $paymentMethod = PaymentMethod::findOrFail($request->payment_method_id);
-
-            // Generar ID de transacción único
-            $transactionId = 'txn_'.time().'_'.strtoupper(substr(md5($order->id.$user->id), 0, 8));
-
-            DB::beginTransaction();
-            try {
-                // Actualizar orden con información de pago
-                $order->update([
-                    'payment_method' => $paymentMethod->type,
-                    'payment_proof' => $transactionId,
-                    'payment_validated_at' => now(),
-                    'status' => 'paid',
-                ]);
-
-                DB::commit();
-
-                $transaction = [
-                    'id' => $order->id,
-                    'amount' => $order->total,
-                    'currency' => $request->currency,
-                    'status' => 'completed',
-                    'type' => 'payment',
-                    'payment_method_id' => $paymentMethod->id,
-                    'payment_method_type' => $paymentMethod->type,
-                    'order_id' => $order->id,
-                    'description' => $request->description,
-                    'transaction_id' => $transactionId,
-                    'created_at' => $order->created_at->toIso8601String(),
-                    'processed_at' => $order->payment_validated_at->toIso8601String(),
-                ];
-
-                Log::info('Payment processed successfully', [
-                    'transaction_id' => $transactionId,
-                    'order_id' => $order->id,
-                    'amount' => $order->total,
-                    'user_id' => $user->id,
-                ]);
-
-                return response()->json([
-                    'success' => true,
-                    'message' => 'Payment processed successfully',
-                    'data' => $transaction,
-                ]);
-            } catch (\Exception $e) {
-                DB::rollBack();
-                throw $e;
-            }
+            });
         } catch (\Exception $e) {
             Log::error('Error processing payment: '.$e->getMessage());
 
             return response()->json([
                 'success' => false,
-                'message' => 'Error processing payment: '.$e->getMessage(),
+                'message' => 'Error processing payment. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -419,7 +424,7 @@ class PaymentController extends Controller
 
             return response()->json([
                 'success' => false,
-                'message' => 'Error processing refund: '.$e->getMessage(),
+                'message' => 'Error processing refund. Intenta de nuevo.',
             ], 500);
         }
     }

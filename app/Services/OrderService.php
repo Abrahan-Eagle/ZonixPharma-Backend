@@ -6,9 +6,14 @@ use App\Models\Commerce;
 use App\Models\DeliveryAgent;
 use App\Models\Order;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class OrderService
 {
+    public function __construct(
+        private readonly OrderStateMachineService $stateMachine,
+    ) {}
+
     /**
      * Obtener las órdenes del comprador autenticado.
      *
@@ -69,13 +74,13 @@ class OrderService
     }
 
     /**
-     * Cancelar una orden pendiente del comprador.
+     * Cancelar una orden pendiente del comprador vía máquina de estados (restock incluido).
      *
      * @param  int  $orderId
      * @param  int  $userId
      * @return true|string True si se cancela, mensaje de error si no.
      */
-    public function cancelOrder(string|int $orderId, string|int $userId)
+    public function cancelOrder(string|int $orderId, string|int $userId, ?string $reason = null)
     {
         $user = \App\Models\User::find($userId);
         $profile = $user ? $user->profile : null;
@@ -88,18 +93,42 @@ class OrderService
         if (! $order) {
             return 'Orden no encontrada';
         }
-        $cancellable = ['pending_payment', 'pending_prescription_validation'];
-        if (in_array($order->status, $cancellable, true)) {
-            $order->update([
-                'status' => 'cancelled',
-                'cancellation_reason' => 'Customer requested cancellation',
-            ]);
 
-            return true;
+        $cancellable = [Order::STATUS_PENDING_PAYMENT, Order::STATUS_PENDING_PRESCRIPTION];
+        if (! in_array($order->status, $cancellable, true)) {
+            return 'No se puede cancelar esta orden';
         }
 
-        return 'No se puede cancelar esta orden';
-    }
+        if ($order->status === Order::STATUS_PENDING_PAYMENT) {
+            $timeLimit = $order->created_at->addMinutes(5);
+            if (now()->greaterThan($timeLimit)) {
+                return 'El tiempo límite para cancelar esta orden ha expirado (5 minutos)';
+            }
+        }
 
-    // Aquí puedes agregar más métodos relacionados a la lógica de órdenes
+        try {
+            DB::transaction(function () use ($order, $profile, $reason) {
+                $decision = $this->stateMachine->applyTransition(
+                    $order,
+                    'buyer',
+                    Order::STATUS_CANCELLED,
+                    $profile->id,
+                    'order_service_cancel',
+                    $reason ?? 'Customer requested cancellation',
+                );
+
+                if (! ($decision['allowed'] ?? false)) {
+                    throw new \RuntimeException($decision['message'] ?? 'No se puede cancelar esta orden');
+                }
+
+                $order->update([
+                    'cancellation_reason' => $reason ?? 'Customer requested cancellation',
+                ]);
+            });
+        } catch (\RuntimeException $e) {
+            return $e->getMessage();
+        }
+
+        return true;
+    }
 }

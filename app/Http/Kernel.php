@@ -71,6 +71,7 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'role' => \App\Http\Middleware\RoleMiddleware::class,
+        'commerce.approved' => \App\Http\Middleware\EnsureCommerceApproved::class,
         'deprecate.legacy' => \App\Http\Middleware\DeprecationHeadersMiddleware::class,
     ];
 }

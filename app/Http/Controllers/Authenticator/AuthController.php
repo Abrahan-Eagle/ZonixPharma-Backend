@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Authenticator;
 
 use App\Http\Controllers\Controller;
+use App\Models\Commerce;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
@@ -135,7 +136,7 @@ class AuthController extends Controller
 
             if (! $email) {
                 return response()->json([
-                    'status' => false,
+                    'success' => false,
                     'message' => 'Email is required',
                 ], 422);
             }
@@ -257,7 +258,22 @@ class AuthController extends Controller
         // Guardar como entero 1 o 0 en BD (columna tinyint)
         $authUser->completed_onboarding = $validated['completed_onboarding'] ? 1 : 0;
         if (! empty($validated['role'])) {
-            $authUser->role = $validated['role'];
+            $requestedRole = $validated['role'];
+            if ($requestedRole === 'commerce' && $authUser->role !== 'commerce') {
+                $profile = $authUser->profile;
+                if ($profile && ! $profile->commerce) {
+                    Commerce::create([
+                        'profile_id' => $profile->id,
+                        'business_name' => $authUser->name,
+                        'status' => 'pending_review',
+                        'open' => false,
+                        'is_primary' => true,
+                    ]);
+                } elseif ($profile?->commerce && $profile->commerce->status !== 'approved') {
+                    $profile->commerce->update(['status' => 'pending_review']);
+                }
+            }
+            $authUser->role = $requestedRole;
         }
         $authUser->save();
 
@@ -277,7 +293,7 @@ class AuthController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'nullable|string|min:8|confirmed',
-            'role' => 'required|string|in:users,commerce,delivery_company,delivery_agent,delivery',
+            'role' => 'required|string|in:users,commerce',
             'google_id' => 'nullable|string',
         ]);
 
