@@ -183,6 +183,9 @@ Configurables en `config/zonix.php` (sección `pharma`):
 | `zonix-legal-contracts-ve` | Checklist contrato marco farmacia, SAFE, laboral VE | [.agents/skills/zonix-legal-contracts-ve/SKILL.md](.agents/skills/zonix-legal-contracts-ve/SKILL.md) |
 | `zonix-founder-ops-index` | Índice curado awesome-ceo/cto/tpm (sin cifras fuera del pack) | [.agents/skills/zonix-founder-ops-index/SKILL.md](.agents/skills/zonix-founder-ops-index/SKILL.md) |
 | `zonix-lanzamiento-docs` | Mejorar/auditar docs/Lanzamiento; marcos Busqueda GitHub adaptados | [.agents/skills/zonix-lanzamiento-docs/SKILL.md](.agents/skills/zonix-lanzamiento-docs/SKILL.md) |
+| `zonix-brand-ops` | Naming, tono pharma VE, 60-30-10, anti-patterns Eats | [.agents/skills/zonix-brand-ops/SKILL.md](.agents/skills/zonix-brand-ops/SKILL.md) |
+| `zonix-web-design` | Landing Blade, zonix.css, WCAG web | [.agents/skills/zonix-web-design/SKILL.md](.agents/skills/zonix-web-design/SKILL.md) |
+| `zonix-design-enforcer` | Heurísticas 8pt/WCAG (stub → Front Flutter) | [.agents/skills/zonix-design-enforcer/SKILL.md](.agents/skills/zonix-design-enforcer/SKILL.md) |
 
 ---
 
@@ -221,7 +224,10 @@ Configurables en `config/zonix.php` (sección `pharma`):
 | Revisar contrato marco farmacia / SAFE / laboral (checklist) | `zonix-legal-contracts-ve` + `zonix-empresa-ve` + `zonix-regulatory-ve` |
 | Lectura founder CEO/CTO/TPM (due diligence, 90 días) | `zonix-founder-ops-index` + `zonix-startup-context` |
 | Nueva feature producto (spec → plan → tasks) | Spec Kit (`speckit-*`) + skills `zonix-*` del dominio — ver [SPEC_KIT_ZONIX.md](docs/zonix/SPEC_KIT_ZONIX.md) |
-| Refactor / feature multi-módulo full-stack | Spec Kit + `zonix-order-lifecycle` / `zonix-api-patterns` / `zonix-ui-design` según módulo |
+| Refactor / feature multi-módulo full-stack | Spec Kit + `zonix-order-lifecycle` / `zonix-api-patterns` / `zonix-ui-design` (Front) según módulo |
+| Landing / welcome / CSS marketing | `zonix-web-design` + `zonix-brand-ops` |
+| Copy marca / ASO / revisión anti-Eats | `zonix-brand-ops` |
+| UI Flutter (desde Backend, coordinación) | Front `zonix-ui-design` + `zonix-design-enforcer` |
 
 ---
 

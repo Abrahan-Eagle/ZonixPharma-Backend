@@ -24,7 +24,8 @@ Orquestación JARVIS: los subagents de [VoltAgent/awesome-claude-code-subagents]
 | Plan T+0 → Day-D | Co-CEO, Sales | project-manager (lente) | `zonix-launch-piloto`, `zonix-lanzamiento-roles` |
 | Implementar Rx / validación farmacéutico | CTO, RA | healthcare-admin (lente ops) | `zonix-prescriptions`, `zonix-regulatory-ve` |
 | API Laravel marketplace | CTO | laravel-specialist, api-designer | `zonix-api-patterns`, `laravel-specialist` |
-| UI Flutter paciente/farmacia | CPO, UX | flutter-expert, mobile-developer | `zonix-ui-design`, `zonix-onboarding` (Front) |
+| UI Flutter paciente/farmacia | CPO, UX | flutter-expert, mobile-developer | `zonix-ui-design`, `zonix-design-enforcer`, `zonix-onboarding`, `zonix-brand-ops` (Front) |
+| Landing / marketing web Blade | CPO, UX | frontend-design (lente) | `zonix-web-design`, `zonix-brand-ops` |
 | Pagos manuales VE | AppSec, Legal | payment-integration (solo lente; **no** PSP) | `zonix-payments`, `PLAN_METODOS_PAGO.md` |
 | Seguridad auth / datos salud | CISO, DPO | security-auditor, security-engineer | `security`, `security-requirement-extraction`, `zonix-regulatory-ve` |
 | Delivery / SLA partners | COO | devops-engineer (lente) | `zonix-delivery-system` |

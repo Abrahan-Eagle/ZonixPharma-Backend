@@ -40,10 +40,12 @@
 
 ---
 
-### Verificación local CI (10 mayo 2026)
+### Saneamiento Jarvis + P0 API (9 junio 2026)
 
-- **Backend (este repo):** `php artisan test` → **397 passed** (1636 assertions). Última pasada **Pint** en contexto histórico: **PASS** (433 archivos — ver entrada 1 mayo si se requiere re-ejecutar).
-- **Frontend (repo hermano):** `flutter analyze lib` → sin issues; `flutter test` → **216 passed** (~1 skipped). Mismo resumen en [`../ZonixPharma-Front/docs/active_context.md`](../ZonixPharma-Front/docs/active_context.md).
+- **Docs:** AGENTS/README/active_context alineados (métricas reales, Android `com.zonix.eats` parche, copy Pharma en README backend carrito).
+- **Backend P0-15:** `ProfileController` — `DB::transaction()` en `createDeliveryAgent`, `createCommerce`, `createDeliveryCompany`.
+- **Backend P0 sweep:** mensajes genéricos en respuestas JSON (sin `$e->getMessage()` al cliente) en Privacy, Activity, AccountDeletion, Export, Commerce Order/Product/Analytics/Dashboard, Analytics global, Notification, Payment, PaymentMethod.
+- **Verificación:** `php artisan test --parallel` → **399 passed**; Front sin cambios de código → **216 passed** (baseline).
 - **Higiene Intelephense / tipado reciente:** un solo `use App\Events\PaymentProofUploaded` en `tests/Feature/OrderTest.php`; `Buyer/PharmacyController::show(string|int $id)`; modelo `Order` (`withPivot(['quantity', 'unit_price'])`, scopes `scopeWithoutAwaitingProofValidation` / `scopeWherePendingPaymentTtlExceeded` con `Builder $query`); `Buyer/TrackingController::getOrderTracking(string|int $orderId)`.
 - **Nota:** sin commit/push automático desde la IA en esta verificación.
 

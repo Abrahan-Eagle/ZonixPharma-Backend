@@ -51,24 +51,24 @@ Imagina que tienes un carrito de compras. Tienes dos opciones:
 
 ```
 Tu carrito puede tener:
-- Producto A del Comercio "Pizza Hut" ($10)
-- Producto B del Comercio "McDonald's" ($8)
-- Producto C del Comercio "Pizza Hut" ($5)
+- Producto A de la Farmacia "Salud Total" ($10)
+- Producto B de la Farmacia "MediFarma" ($8)
+- Producto C de la Farmacia "Salud Total" ($5)
 ```
 
-✅ **Ventaja:** El usuario puede comprar de varios comercios a la vez  
-❌ **Desventaja:** Complica el proceso de pago (cada comercio tiene su propio proceso)  
-❌ **Desventaja:** Complica el envío (cada comercio envía por separado)
+✅ **Ventaja:** El usuario puede comprar de varias farmacias a la vez  
+❌ **Desventaja:** Complica el proceso de pago (cada farmacia tiene su propio proceso)  
+❌ **Desventaja:** Complica el envío (cada farmacia despacha por separado)
 
-**OPCIÓN B: Solo un comercio por carrito (Uni-Commerce)**
+**OPCIÓN B: Solo una farmacia por carrito (Uni-Pharmacy)**
 
 ```
 Tu carrito solo puede tener:
-- Producto A del Comercio "Pizza Hut" ($10)
-- Producto B del Comercio "Pizza Hut" ($8)
-- Producto C del Comercio "Pizza Hut" ($5)
+- Producto A de la Farmacia "Salud Total" ($10)
+- Producto B de la Farmacia "Salud Total" ($8)
+- Producto C de la Farmacia "Salud Total" ($5)
 
-Si intentas agregar un producto de "McDonald's":
+Si intentas agregar un producto de "MediFarma":
 → El sistema te pregunta: "¿Deseas limpiar el carrito y agregar este producto?"
 ```
 
@@ -76,7 +76,7 @@ Si intentas agregar un producto de "McDonald's":
 ✅ **Ventaja:** Un solo proceso de envío  
 ✅ **Ventaja:** Mejor experiencia de usuario (más simple)
 
-**Decisión implementada: Solo un comercio por carrito** (uni-commerce, como Uber Eats). Al agregar un producto de otro comercio, el sistema limpia el carrito anterior y muestra advertencia. Simplifica checkout, pago y envío por orden.
+**Decisión implementada: Solo una farmacia por carrito** (uni-pharmacy). Al agregar un producto de otra farmacia, el sistema limpia el carrito anterior y muestra advertencia. Simplifica checkout, pago y envío por orden.
 
 **Lógica de Implementación:**
 

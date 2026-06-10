@@ -21,7 +21,7 @@
       </svg>
     </button><a class="c-header-brand d-lg-none" href="{{ url('/') }}" class="text-decoration-none">
       {{-- <img src="{{ asset('assets/front/images/LOGO_CORRAL.png') }}" alt="Zonix Pharma Logo" style="max-height: 20px; width: auto;"> --}}
-      <span style="color: #ff3d40; font-weight: bold; font-size: 20px;">ZONIX PHARMA</span>
+      <span style="color: #56C7B8; font-weight: bold; font-size: 20px;">ZONIX PHARMA</span>
     </a>
     <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar"
       data-class="c-sidebar-lg-show" responsive="true">
