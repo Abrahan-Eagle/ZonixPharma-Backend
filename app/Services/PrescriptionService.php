@@ -75,6 +75,7 @@ class PrescriptionService
                 'prescription_id' => $prescription->id,
                 'status' => Order::STATUS_PENDING_PRESCRIPTION,
                 'requires_prescription' => true,
+                'expires_at' => null,
             ]);
 
             event(new PrescriptionUploaded($prescription));
@@ -96,6 +97,11 @@ class PrescriptionService
     public function approve(Prescription $prescription, int $pharmacistProfileId): Prescription
     {
         return DB::transaction(function () use ($prescription, $pharmacistProfileId) {
+            $prescription = Prescription::query()
+                ->whereKey($prescription->id)
+                ->lockForUpdate()
+                ->firstOrFail();
+
             if (! $prescription->isPending()) {
                 return $prescription;
             }
@@ -106,7 +112,9 @@ class PrescriptionService
                 'validated_at' => now(),
             ]);
 
-            $order = $prescription->order;
+            $order = $prescription->order_id
+                ? Order::query()->whereKey($prescription->order_id)->lockForUpdate()->first()
+                : null;
             if ($order && $order->status === Order::STATUS_PENDING_PRESCRIPTION) {
                 $this->stateMachine->applyTransition(
                     order: $order,
@@ -116,7 +124,10 @@ class PrescriptionService
                     source: 'prescription_approval',
                     reason: 'Receta validada por farmacéutico colegiado.',
                 );
-                $order->update(['prescription_validated_at' => now()]);
+                $order->update([
+                    'prescription_validated_at' => now(),
+                    'expires_at' => null,
+                ]);
             }
 
             event(new PrescriptionValidated($prescription));
@@ -137,6 +148,11 @@ class PrescriptionService
     public function reject(Prescription $prescription, int $pharmacistProfileId, string $reason): Prescription
     {
         return DB::transaction(function () use ($prescription, $pharmacistProfileId, $reason) {
+            $prescription = Prescription::query()
+                ->whereKey($prescription->id)
+                ->lockForUpdate()
+                ->firstOrFail();
+
             if (! $prescription->isPending()) {
                 return $prescription;
             }
@@ -148,7 +164,9 @@ class PrescriptionService
                 'rejection_reason' => $reason,
             ]);
 
-            $order = $prescription->order;
+            $order = $prescription->order_id
+                ? Order::query()->whereKey($prescription->order_id)->lockForUpdate()->first()
+                : null;
             if ($order && $order->status === Order::STATUS_PENDING_PRESCRIPTION) {
                 $this->stateMachine->applyTransition(
                     order: $order,
@@ -158,7 +176,10 @@ class PrescriptionService
                     source: 'prescription_rejection',
                     reason: $reason,
                 );
-                $order->update(['cancellation_reason' => 'Receta rechazada: '.$reason]);
+                $order->update([
+                    'cancellation_reason' => 'Receta rechazada: '.$reason,
+                    'expires_at' => null,
+                ]);
             }
 
             event(new PrescriptionRejected($prescription));
@@ -190,9 +211,19 @@ class PrescriptionService
             ->chunkById(100, function ($prescriptions) use (&$expired) {
                 foreach ($prescriptions as $prescription) {
                     DB::transaction(function () use ($prescription, &$expired) {
-                        $prescription->update(['status' => Prescription::STATUS_EXPIRED]);
+                        $locked = Prescription::query()
+                            ->whereKey($prescription->id)
+                            ->lockForUpdate()
+                            ->first();
+                        if (! $locked || ! $locked->isPending()) {
+                            return;
+                        }
 
-                        $order = $prescription->order;
+                        $locked->update(['status' => Prescription::STATUS_EXPIRED]);
+
+                        $order = $locked->order_id
+                            ? Order::query()->whereKey($locked->order_id)->lockForUpdate()->first()
+                            : null;
                         if ($order && $order->status === Order::STATUS_PENDING_PRESCRIPTION) {
                             $this->stateMachine->applyTransition(
                                 order: $order,
@@ -201,13 +232,63 @@ class PrescriptionService
                                 source: 'prescription_ttl_expired',
                                 reason: 'Receta no validada dentro del TTL.',
                             );
-                            $order->update(['cancellation_reason' => 'Receta no validada en el plazo permitido.']);
+                            $order->update([
+                                'cancellation_reason' => 'Receta no validada en el plazo permitido.',
+                                'expires_at' => null,
+                            ]);
                         }
                         $expired++;
                     });
                 }
             });
 
+        $expired += $this->expireOrphanRxOrders($now);
+
         return $expired;
+    }
+
+    /**
+     * Cancela pedidos Rx huérfanos (sin receta subida) cuyo TTL de subida venció.
+     */
+    public function expireOrphanRxOrders(?\DateTimeInterface $now = null): int
+    {
+        $now = $now ?? now();
+        $cancelled = 0;
+
+        Order::query()
+            ->where('status', Order::STATUS_PENDING_PRESCRIPTION)
+            ->where('requires_prescription', true)
+            ->whereNull('prescription_id')
+            ->whereNotNull('expires_at')
+            ->where('expires_at', '<', $now)
+            ->chunkById(100, function ($orders) use (&$cancelled) {
+                foreach ($orders as $order) {
+                    DB::transaction(function () use ($order, &$cancelled) {
+                        $locked = Order::query()->whereKey($order->id)->lockForUpdate()->first();
+                        if (
+                            ! $locked
+                            || $locked->status !== Order::STATUS_PENDING_PRESCRIPTION
+                            || $locked->prescription_id !== null
+                        ) {
+                            return;
+                        }
+
+                        $this->stateMachine->applyTransition(
+                            order: $locked,
+                            actorRole: 'admin',
+                            toStatus: Order::STATUS_CANCELLED,
+                            source: 'orphan_rx_order_ttl_expired',
+                            reason: 'Receta no subida dentro del plazo permitido.',
+                        );
+                        $locked->update([
+                            'cancellation_reason' => 'Receta no subida en el plazo permitido.',
+                            'expires_at' => null,
+                        ]);
+                        $cancelled++;
+                    });
+                }
+            });
+
+        return $cancelled;
     }
 }

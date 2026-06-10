@@ -114,9 +114,11 @@ class DashboardController extends Controller
                 ],
             ]);
         } catch (\Exception $e) {
+            \Log::error('commerce_dashboard_failed', ['exception' => $e]);
+
             return response()->json([
                 'success' => false,
-                'message' => 'Error obteniendo dashboard: '.$e->getMessage(),
+                'message' => 'Error obteniendo dashboard. Intenta de nuevo.',
             ], 500);
         }
     }

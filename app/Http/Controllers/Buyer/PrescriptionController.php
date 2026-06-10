@@ -12,6 +12,7 @@ use App\Services\PrescriptionService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
@@ -185,8 +186,19 @@ class PrescriptionController extends Controller
             ], 422);
         }
 
-        $this->prescriptionFiles->deleteByReference($prescription->image_url);
-        $prescription->delete();
+        DB::transaction(function () use ($prescription) {
+            $locked = Prescription::query()
+                ->whereKey($prescription->id)
+                ->lockForUpdate()
+                ->firstOrFail();
+
+            if (! $locked->isPending()) {
+                throw new \RuntimeException('PRESCRIPTION_ALREADY_PROCESSED');
+            }
+
+            $this->prescriptionFiles->deleteByReference($locked->image_url);
+            $locked->delete();
+        });
 
         return response()->json([
             'success' => true,

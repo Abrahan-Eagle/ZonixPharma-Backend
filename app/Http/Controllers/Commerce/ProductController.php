@@ -80,7 +80,7 @@ class ProductController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Error al obtener productos',
-                'error' => $e->getMessage(),
+                'error' => 'Error interno. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -128,7 +128,7 @@ class ProductController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Error al crear producto',
-                'error' => $e->getMessage(),
+                'error' => 'Error interno. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -159,7 +159,7 @@ class ProductController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Producto no encontrado',
-                'error' => $e->getMessage(),
+                'error' => 'Error interno. Intenta de nuevo.',
             ], 404);
         }
     }
@@ -210,7 +210,7 @@ class ProductController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Error al actualizar producto',
-                'error' => $e->getMessage(),
+                'error' => 'Error interno. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -247,7 +247,7 @@ class ProductController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Error al eliminar producto',
-                'error' => $e->getMessage(),
+                'error' => 'Error interno. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -284,7 +284,7 @@ class ProductController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Error al cambiar disponibilidad',
-                'error' => $e->getMessage(),
+                'error' => 'Error interno. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -324,7 +324,7 @@ class ProductController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Error al obtener estadísticas',
-                'error' => $e->getMessage(),
+                'error' => 'Error interno. Intenta de nuevo.',
             ], 500);
         }
     }

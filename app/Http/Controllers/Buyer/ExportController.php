@@ -9,6 +9,7 @@ use App\Models\Profile;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
@@ -30,7 +31,11 @@ class ExportController extends Controller
             try {
                 $data['profile'] = $this->getProfileDataForExport($user, $profile);
             } catch (\Throwable $e) {
-                $data['profile'] = ['email' => $user->email ?? null, 'error' => $e->getMessage()];
+                $fallbackEmail = $user?->email;
+                $data['profile'] = [
+                    'email' => $fallbackEmail,
+                    'error' => 'Error interno. Intenta de nuevo.',
+                ];
             }
             try {
                 $data['orders'] = $this->getOrdersDataForExport($user);
@@ -53,7 +58,7 @@ class ExportController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Error al exportar los datos personales',
-                'error' => $e->getMessage(),
+                'error' => 'Error interno. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -61,7 +66,7 @@ class ExportController extends Controller
     private function getProfileDataForExport(?\App\Models\User $user, ?\App\Models\Profile $profile)
     {
         $p = $profile ? $profile->toArray() : [];
-        $p['email'] = $user->email ?? null;
+        $p['email'] = $user?->email;
         $p['firstName'] = $profile ? $profile->firstName : null;
         $p['lastName'] = $profile ? $profile->lastName : null;
         $dob = $profile ? $profile->date_of_birth : null;
@@ -177,7 +182,7 @@ class ExportController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Error al solicitar exportación',
-                'error' => $e->getMessage(),
+                'error' => 'Error interno. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -209,7 +214,7 @@ class ExportController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Error al verificar estado',
-                'error' => $e->getMessage(),
+                'error' => 'Error interno. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -250,7 +255,7 @@ class ExportController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Error al descargar archivo',
-                'error' => $e->getMessage(),
+                'error' => 'Error interno. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -275,7 +280,7 @@ class ExportController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Error al obtener historial',
-                'error' => $e->getMessage(),
+                'error' => 'Error interno. Intenta de nuevo.',
             ], 500);
         }
     }

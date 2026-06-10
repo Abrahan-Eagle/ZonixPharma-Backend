@@ -40,12 +40,20 @@ class ExpirePendingPrescriptionsCommand extends Command
         }
 
         if ($this->option('dry-run')) {
-            $candidates = \App\Models\Prescription::query()
+            $prescriptionCandidates = \App\Models\Prescription::query()
                 ->where('status', \App\Models\Prescription::STATUS_PENDING_VALIDATION)
                 ->whereNotNull('expires_at')
                 ->where('expires_at', '<', now())
                 ->count();
-            $this->info("Candidatas a expirar: {$candidates}");
+            $orphanOrderCandidates = \App\Models\Order::query()
+                ->where('status', \App\Models\Order::STATUS_PENDING_PRESCRIPTION)
+                ->where('requires_prescription', true)
+                ->whereNull('prescription_id')
+                ->whereNotNull('expires_at')
+                ->where('expires_at', '<', now())
+                ->count();
+            $this->info("Candidatas a expirar (recetas): {$prescriptionCandidates}");
+            $this->info("Candidatas a expirar (pedidos Rx huérfanos): {$orphanOrderCandidates}");
 
             return self::SUCCESS;
         }

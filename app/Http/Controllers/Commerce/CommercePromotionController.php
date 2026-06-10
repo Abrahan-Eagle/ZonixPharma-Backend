@@ -10,6 +10,20 @@ use Illuminate\Support\Facades\Auth;
 class CommercePromotionController extends Controller
 {
     /**
+     * Promociones globales (`commerce_id` null) solo las muta un administrador.
+     */
+    private function assertPromotionMutable(Promotion $promotion, $user, ?int $commerceId): void
+    {
+        if ($promotion->commerce_id !== null && $promotion->commerce_id !== $commerceId) {
+            abort(403, 'No tienes acceso a esta promoción');
+        }
+
+        if ($promotion->commerce_id === null && ($user->role ?? null) !== 'admin') {
+            abort(403, 'Las promociones globales solo pueden ser modificadas por un administrador.');
+        }
+    }
+
+    /**
      * Listar promociones del comercio (o globales si commerce_id es null).
      */
     public function index(Request $request)
@@ -122,9 +136,7 @@ class CommercePromotionController extends Controller
         $user = Auth::user();
         $commerceId = $user->profile?->commerce?->id;
 
-        if ($promotion->commerce_id !== null && $promotion->commerce_id !== $commerceId) {
-            abort(403, 'No tienes acceso a esta promoción');
-        }
+        $this->assertPromotionMutable($promotion, $user, $commerceId);
 
         $request->validate([
             'title' => 'sometimes|string|max:255',
@@ -178,9 +190,7 @@ class CommercePromotionController extends Controller
         $user = Auth::user();
         $commerceId = $user->profile?->commerce?->id;
 
-        if ($promotion->commerce_id !== null && $promotion->commerce_id !== $commerceId) {
-            abort(403, 'No tienes acceso a esta promoción');
-        }
+        $this->assertPromotionMutable($promotion, $user, $commerceId);
 
         $promotion->delete();
 
@@ -198,9 +208,7 @@ class CommercePromotionController extends Controller
         $user = Auth::user();
         $commerceId = $user->profile?->commerce?->id;
 
-        if ($promotion->commerce_id !== null && $promotion->commerce_id !== $commerceId) {
-            abort(403, 'No tienes acceso a esta promoción');
-        }
+        $this->assertPromotionMutable($promotion, $user, $commerceId);
 
         $promotion->update(['is_active' => ! $promotion->is_active]);
 

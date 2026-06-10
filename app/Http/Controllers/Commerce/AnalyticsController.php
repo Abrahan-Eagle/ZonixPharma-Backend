@@ -97,7 +97,7 @@ class AnalyticsController extends Controller
         } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
-                'message' => 'Error obteniendo analytics: '.$e->getMessage(),
+                'message' => 'Error obteniendo analytics. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -141,7 +141,7 @@ class AnalyticsController extends Controller
         } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
-                'message' => 'Error obteniendo revenue analytics: '.$e->getMessage(),
+                'message' => 'Error obteniendo revenue analytics. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -181,7 +181,7 @@ class AnalyticsController extends Controller
         } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
-                'message' => 'Error obteniendo order analytics: '.$e->getMessage(),
+                'message' => 'Error obteniendo order analytics. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -219,7 +219,7 @@ class AnalyticsController extends Controller
         } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
-                'message' => 'Error obteniendo product analytics: '.$e->getMessage(),
+                'message' => 'Error obteniendo product analytics. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -257,7 +257,7 @@ class AnalyticsController extends Controller
         } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
-                'message' => 'Error obteniendo customer analytics: '.$e->getMessage(),
+                'message' => 'Error obteniendo customer analytics. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -317,7 +317,7 @@ class AnalyticsController extends Controller
         } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
-                'message' => 'Error obteniendo performance analytics: '.$e->getMessage(),
+                'message' => 'Error obteniendo performance analytics. Intenta de nuevo.',
             ], 500);
         }
     }

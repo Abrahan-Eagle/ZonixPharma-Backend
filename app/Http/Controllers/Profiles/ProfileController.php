@@ -11,6 +11,7 @@ use App\Models\Phone;
 use App\Models\Profile;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
@@ -333,32 +334,32 @@ class ProfileController extends Controller
             $profileData['photo_users'] = $baseUrl.'/storage/'.$path;
         }
 
-        // Crear el perfil
-        $profile = Profile::create($profileData);
+        $payload = DB::transaction(function () use ($request, $profileData) {
+            $profile = Profile::create($profileData);
 
-        // Registrar teléfono en tabla phones (una sola fuente de verdad)
-        $this->createPhoneForProfile($profile, $request->phone);
+            $this->createPhoneForProfile($profile, $request->phone);
 
-        // Crear el delivery agent asociado
-        $deliveryAgentData = [
-            'profile_id' => $profile->id,
-            'vehicle_type' => $request->vehicle_type, // Required según modelo de negocio
-            'license_number' => $request->license_number, // Required según modelo de negocio
-            'status' => 'activo',
-            'working' => false,
-        ];
+            $deliveryAgentData = [
+                'profile_id' => $profile->id,
+                'vehicle_type' => $request->vehicle_type,
+                'license_number' => $request->license_number,
+                'status' => 'activo',
+                'working' => false,
+            ];
 
-        // Si se proporciona company_id, agregarlo
-        if ($request->has('company_id') && $request->company_id) {
-            $deliveryAgentData['company_id'] = $request->company_id;
-        }
+            if ($request->has('company_id') && $request->company_id) {
+                $deliveryAgentData['company_id'] = $request->company_id;
+            }
 
-        $deliveryAgent = \App\Models\DeliveryAgent::create($deliveryAgentData);
+            $deliveryAgent = \App\Models\DeliveryAgent::create($deliveryAgentData);
 
-        return $this->jsonSuccess([
-            'profile' => $profile,
-            'delivery_agent' => $deliveryAgent,
-        ], 'Delivery agent profile created successfully', 201);
+            return [
+                'profile' => $profile,
+                'delivery_agent' => $deliveryAgent,
+            ];
+        });
+
+        return $this->jsonSuccess($payload, 'Delivery agent profile created successfully', 201);
     }
 
     /**
@@ -419,24 +420,27 @@ class ProfileController extends Controller
             $profileData['photo_users'] = $baseUrl.'/storage/'.$path;
         }
 
-        // Crear el perfil
-        $profile = Profile::create($profileData);
+        $payload = DB::transaction(function () use ($request, $profileData) {
+            $profile = Profile::create($profileData);
 
-        // Registrar teléfono en tabla phones (una sola fuente de verdad)
-        $this->createPhoneForProfile($profile, $request->phone);
+            $this->createPhoneForProfile($profile, $request->phone);
 
-        // Crear el commerce asociado.
-        // IMPORTANTE: la dirección completa se gestiona en la tabla addresses
-        // (addresses.role = 'commerce'); aquí no se persiste en la tabla commerces
-        // para evitar duplicar información.
-        $commerce = \App\Models\Commerce::create([
-            'profile_id' => $profile->id,
-            'business_name' => $request->business_name, // Required según modelo de negocio
-            'business_type' => $request->business_type, // Required según modelo de negocio
-            'tax_id' => $request->tax_id, // Required según modelo de negocio
-            'description' => $request->description ?? null,
-            'open' => $request->is_open ?? false,
-        ]);
+            $commerce = \App\Models\Commerce::create([
+                'profile_id' => $profile->id,
+                'business_name' => $request->business_name,
+                'business_type' => $request->business_type,
+                'tax_id' => $request->tax_id,
+                'description' => $request->description ?? null,
+                'open' => $request->is_open ?? false,
+            ]);
+
+            return [
+                'profile' => $profile,
+                'commerce' => $commerce,
+            ];
+        });
+
+        $commerce = $payload['commerce'];
 
         return $this->jsonSuccess([
             'id' => $commerce->id,
@@ -610,25 +614,26 @@ class ProfileController extends Controller
             $profileData['photo_users'] = $baseUrl.'/storage/'.$path;
         }
 
-        // Crear el perfil
-        $profile = Profile::create($profileData);
+        $payload = DB::transaction(function () use ($request, $profileData) {
+            $profile = Profile::create($profileData);
 
-        // Registrar teléfono en tabla phones (una sola fuente de verdad)
-        $this->createPhoneForProfile($profile, $request->phone);
+            $this->createPhoneForProfile($profile, $request->phone);
 
-        // Crear la delivery company asociada
-        $deliveryCompany = \App\Models\DeliveryCompany::create([
-            'profile_id' => $profile->id,
-            'name' => $request->company_name,
-            'tax_id' => $request->ci, // Required según modelo de negocio
-            'address' => $request->address,
-            'active' => true,
-        ]);
+            $deliveryCompany = \App\Models\DeliveryCompany::create([
+                'profile_id' => $profile->id,
+                'name' => $request->company_name,
+                'tax_id' => $request->ci,
+                'address' => $request->address,
+                'active' => true,
+            ]);
 
-        return $this->jsonSuccess([
-            'profile' => $profile,
-            'delivery_company' => $deliveryCompany,
-        ], 'Delivery company profile created successfully', 201);
+            return [
+                'profile' => $profile,
+                'delivery_company' => $deliveryCompany,
+            ];
+        });
+
+        return $this->jsonSuccess($payload, 'Delivery company profile created successfully', 201);
     }
 
     /**

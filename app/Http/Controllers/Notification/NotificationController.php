@@ -245,13 +245,13 @@ class NotificationController extends Controller
             }
         } catch (\Exception $e) {
             Log::error('Error enviando push notification', [
-                'error' => $e->getMessage(),
+                'error' => 'Error interno. Intenta de nuevo.',
                 'trace' => $e->getTraceAsString(),
             ]);
 
             return response()->json([
                 'success' => false,
-                'message' => 'Error al enviar notificación: '.$e->getMessage(),
+                'message' => 'Error al enviar notificación. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -299,7 +299,7 @@ class NotificationController extends Controller
             ]);
         } catch (\Exception $e) {
             Log::error('Error obteniendo notification settings', [
-                'error' => $e->getMessage(),
+                'error' => 'Error interno. Intenta de nuevo.',
             ]);
 
             return response()->json([
@@ -355,12 +355,12 @@ class NotificationController extends Controller
             ]);
         } catch (\Exception $e) {
             Log::error('Error actualizando notification settings', [
-                'error' => $e->getMessage(),
+                'error' => 'Error interno. Intenta de nuevo.',
             ]);
 
             return response()->json([
                 'success' => false,
-                'message' => 'Error al actualizar configuración: '.$e->getMessage(),
+                'message' => 'Error al actualizar configuración. Intenta de nuevo.',
             ], 500);
         }
     }

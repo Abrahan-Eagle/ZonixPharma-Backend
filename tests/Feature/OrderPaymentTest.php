@@ -11,6 +11,7 @@ use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Http\UploadedFile;
+use Illuminate\Support\Facades\Storage;
 use Laravel\Sanctum\Sanctum;
 use Tests\TestCase;
 
@@ -144,6 +145,7 @@ class OrderPaymentTest extends TestCase
     /** @test */
     public function user_can_upload_payment_proof()
     {
+        Storage::fake('local');
         Sanctum::actingAs($this->user);
 
         $order = Order::factory()->create([
@@ -164,12 +166,10 @@ class OrderPaymentTest extends TestCase
         $response->assertStatus(200)
             ->assertJson(['success' => true]);
 
-        $this->assertDatabaseHas('orders', [
-            'id' => $order->id,
-            'payment_proof' => 'payment_proofs/'.$file->hashName(),
-            'payment_method' => 'pago_movil',
-            'reference_number' => 'REF123456',
-        ]);
+        $order->refresh();
+        $this->assertStringStartsWith('secure:payment_proofs/', (string) $order->payment_proof);
+        $this->assertSame('pago_movil', $order->payment_method);
+        $this->assertSame('REF123456', $order->reference_number);
     }
 
     /** @test */

@@ -400,7 +400,7 @@ class RoleAuthenticationTest extends TestCase
             ]);
     }
 
-    public function test_delivery_agent_can_register_with_delivery_role()
+    public function test_delivery_agent_cannot_register_via_public_register()
     {
         $deliveryData = [
             'name' => 'Test Delivery',
@@ -412,17 +412,8 @@ class RoleAuthenticationTest extends TestCase
 
         $response = $this->postJson('/api/auth/register', $deliveryData);
 
-        $response->assertStatus(201)
-            ->assertJson([
-                'success' => true,
-                'data' => [
-                    'user' => [
-                        'name' => 'Test Delivery',
-                        'email' => 'delivery@example.com',
-                        'role' => 'delivery_agent',
-                    ],
-                ],
-            ]);
+        $response->assertStatus(422)
+            ->assertJsonValidationErrors(['role']);
     }
 
     /**

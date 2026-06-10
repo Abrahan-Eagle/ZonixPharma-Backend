@@ -47,6 +47,8 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::get('/', [DocumentController::class, 'index']);
         Route::post('/', [DocumentController::class, 'store']);
         Route::get('/{id}', [DocumentController::class, 'show']);
+        Route::get('/{id}/file', [DocumentController::class, 'downloadFile'])
+            ->middleware('throttle:60,1');
         Route::put('/{id}', [DocumentController::class, 'update']);
         Route::delete('/{id}', [DocumentController::class, 'destroy']);
     });

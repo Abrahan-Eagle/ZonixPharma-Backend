@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Buyer;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
 
 class ActivityController extends Controller
@@ -60,10 +61,12 @@ class ActivityController extends Controller
             ]);
 
         } catch (\Exception $e) {
+            Log::error('activity_controller_error', ['exception' => $e]);
+
             return response()->json([
                 'success' => false,
                 'message' => 'Error al obtener historial de actividad',
-                'error' => $e->getMessage(),
+                'error' => 'Error interno. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -85,10 +88,12 @@ class ActivityController extends Controller
             ]);
 
         } catch (\Exception $e) {
+            Log::error('activity_controller_error', ['exception' => $e]);
+
             return response()->json([
                 'success' => false,
                 'message' => 'Error al obtener estadísticas',
-                'error' => $e->getMessage(),
+                'error' => 'Error interno. Intenta de nuevo.',
             ], 500);
         }
     }

@@ -77,16 +77,6 @@ class ExpirePendingPaymentOrdersCommand extends Command
 
                 try {
                     DB::transaction(function () use ($order, $stateMachine, $reason, $source) {
-                        foreach ($order->orderItems as $item) {
-                            $product = $item->product;
-                            if ($product && $product->stock_quantity !== null) {
-                                $product->increment('stock_quantity', $item->quantity);
-                                if ($product->stock_quantity > 0 && ! $product->available) {
-                                    $product->update(['available' => true]);
-                                }
-                            }
-                        }
-
                         $order->update([
                             'cancellation_reason' => $reason,
                             'cancelled_by' => 'system',

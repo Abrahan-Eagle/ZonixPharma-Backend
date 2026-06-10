@@ -58,7 +58,20 @@ class Document extends Model
     protected function frontImage(): Attribute
     {
         return Attribute::make(
-            get: fn ($value) => $value ? url("storage/{$value}") : null,
+            get: function (?string $value) {
+                if ($value === null || $value === '') {
+                    return null;
+                }
+                if (
+                    str_starts_with($value, 'secure:')
+                    || str_starts_with($value, 'http://')
+                    || str_starts_with($value, 'https://')
+                ) {
+                    return $value;
+                }
+
+                return url("storage/{$value}");
+            },
         );
     }
 }

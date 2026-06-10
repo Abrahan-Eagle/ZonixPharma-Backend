@@ -6,6 +6,7 @@ use App\Http\Requests\StorePaymentMethodRequest;
 use App\Http\Requests\UpdatePaymentMethodRequest;
 use App\Support\PharmaPilotPaymentCatalog;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 
 class PaymentMethodController extends Controller
@@ -119,11 +120,13 @@ class PaymentMethodController extends Controller
             }
 
             // Si es método por defecto, desactivar otros
-            if ($data['is_default'] ?? false) {
-                $owner->paymentMethods()->update(['is_default' => false]);
-            }
+            $method = DB::transaction(function () use ($owner, $data) {
+                if ($data['is_default'] ?? false) {
+                    $owner->paymentMethods()->update(['is_default' => false]);
+                }
 
-            $method = $owner->paymentMethods()->create($data);
+                return $owner->paymentMethods()->create($data);
+            });
 
             return response()->json([
                 'success' => true,
@@ -136,7 +139,7 @@ class PaymentMethodController extends Controller
 
             return response()->json([
                 'success' => false,
-                'message' => 'Error al crear método de pago: '.$e->getMessage(),
+                'message' => 'Error al crear método de pago. Intenta de nuevo.',
             ], 500);
         }
     }

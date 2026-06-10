@@ -463,7 +463,7 @@ class OrderController extends Controller
 
             return response()->json([
                 'success' => false,
-                'message' => 'Error al aprobar orden para pago: '.$e->getMessage(),
+                'message' => 'Error al aprobar orden para pago. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -543,7 +543,7 @@ class OrderController extends Controller
 
             return response()->json([
                 'success' => false,
-                'message' => 'Error al rechazar la orden: '.$e->getMessage(),
+                'message' => 'Error al rechazar la orden. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -592,7 +592,7 @@ class OrderController extends Controller
             Log::warning('commerce_order_broadcast_failed', [
                 'event' => 'OrderStatusChanged',
                 'order_id' => $order->id,
-                'message' => $e->getMessage(),
+                'message' => 'Error interno. Intenta de nuevo.',
             ]);
         }
     }
@@ -605,7 +605,7 @@ class OrderController extends Controller
             Log::warning('commerce_order_broadcast_failed', [
                 'event' => 'PaymentValidated',
                 'order_id' => $order->id,
-                'message' => $e->getMessage(),
+                'message' => 'Error interno. Intenta de nuevo.',
             ]);
         }
     }

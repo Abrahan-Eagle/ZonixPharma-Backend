@@ -16,6 +16,11 @@ use Illuminate\Contracts\Pagination\LengthAwarePaginator;
  *   - business_type_id pertenece a una de las tipologías farmacéuticas
  *     declaradas en `BusinessTypeSeeder` (Farmacia, Farmacia 24h, Droguería,
  *     Boticario, etc.).
+ *
+ * **Nota sobre `medicine_lots`:** la tabla existe para trazabilidad demo y
+ * relaciones en `Product::lots()`, pero este servicio no consulta lotes ni
+ * aplica despacho FIFO. Los lotes son informativos hasta que exista un flujo
+ * de dispensación por lote en commerce/delivery.
  */
 class PharmacyService
 {

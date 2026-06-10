@@ -13,11 +13,13 @@ use App\Services\DeliveryFeeService;
 use App\Services\NotificationService;
 use App\Services\OrderService;
 use App\Services\OrderStateMachineService;
+use App\Services\PrivateFileStorageService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Validation\ValidationException;
+use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Controlador para gestionar las órdenes del comprador.
@@ -38,13 +40,20 @@ class OrderController extends Controller
     /** @var NotificationService */
     protected $notificationService;
 
+    /** @var PrivateFileStorageService */
+    protected $privateFiles;
+
     /**
      * Inyecta el servicio de órdenes y notificaciones.
      */
-    public function __construct(OrderService $orderService, NotificationService $notificationService)
-    {
+    public function __construct(
+        OrderService $orderService,
+        NotificationService $notificationService,
+        PrivateFileStorageService $privateFiles,
+    ) {
         $this->orderService = $orderService;
         $this->notificationService = $notificationService;
+        $this->privateFiles = $privateFiles;
     }
 
     /**
@@ -528,6 +537,11 @@ class OrderController extends Controller
                 ? ($preApprovedPrescriptionId !== null ? Order::STATUS_PENDING_PAYMENT : Order::STATUS_PENDING_PRESCRIPTION)
                 : Order::STATUS_PENDING_PAYMENT;
 
+            $rxUploadTtlMinutes = (int) config('zonix.pharma.prescription_validation_ttl_minutes', 60);
+            $rxOrderExpiresAt = ($requiresPrescription && $preApprovedPrescriptionId === null && $rxUploadTtlMinutes > 0)
+                ? now()->addMinutes($rxUploadTtlMinutes)
+                : null;
+
             // Crear orden en transacción
             $order = DB::transaction(function () use (
                 $validated,
@@ -539,7 +553,8 @@ class OrderController extends Controller
                 $initialStatus,
                 $requiresPrescription,
                 $coldChainRequired,
-                $preApprovedPrescriptionId
+                $preApprovedPrescriptionId,
+                $rxOrderExpiresAt
             ) {
                 if ($preApprovedPrescriptionId !== null) {
                     $lockedRx = Prescription::query()
@@ -574,6 +589,7 @@ class OrderController extends Controller
                     'requires_prescription' => $requiresPrescription,
                     'cold_chain_required' => $coldChainRequired,
                     'prescription_id' => $preApprovedPrescriptionId,
+                    'expires_at' => $rxOrderExpiresAt,
                 ]);
 
                 foreach ($validated['products'] as $item) {
@@ -840,18 +856,7 @@ class OrderController extends Controller
             }
         }
 
-        $payments = $order->orderPayments->map(fn ($p) => [
-            'id' => $p->id,
-            'type' => $p->type,
-            'amount' => (float) $p->amount,
-            'payment_method_label' => $p->payment_method_label,
-            'reference_number' => $p->reference_number,
-            'payment_proof' => $p->payment_proof,
-            'payment_proof_uploaded_at' => $p->payment_proof_uploaded_at?->toIso8601String(),
-            'validated_at' => $p->validated_at?->toIso8601String(),
-            'rejected_at' => $p->rejected_at?->toIso8601String(),
-            'rejection_reason' => $p->rejection_reason,
-        ]);
+        $payments = $order->orderPayments->map(fn ($p) => $this->serializeOrderPayment($p, $order->id));
 
         return response()->json([
             'success' => true,
@@ -964,8 +969,10 @@ class OrderController extends Controller
             }
 
             $file = $request->file('payment_proof');
-            $file->store('payment_proofs', 'public');
-            $proofPath = 'payment_proofs/'.$file->hashName();
+            if ($orderPayment->payment_proof) {
+                $this->privateFiles->deleteByReference($orderPayment->payment_proof);
+            }
+            $proofPath = $this->privateFiles->storeFromUpload($file, 'payment_proofs');
 
             $orderPayment->update([
                 'payment_proof' => $proofPath,
@@ -1095,18 +1102,6 @@ class OrderController extends Controller
             }
 
             DB::transaction(function () use ($order, $request, $profile) {
-                // Restaurar stock si se cancela la orden (si tiene stock_quantity)
-                foreach ($order->orderItems as $item) {
-                    $product = $item->product;
-                    if ($product && $product->stock_quantity !== null) {
-                        $product->increment('stock_quantity', $item->quantity);
-                        // Si había stock 0 y se restauró, marcar como disponible nuevamente
-                        if ($product->stock_quantity > 0 && ! $product->available) {
-                            $product->update(['available' => true]);
-                        }
-                    }
-                }
-
                 $decision = app(OrderStateMachineService::class)->applyTransition(
                     $order,
                     'buyer',
@@ -1167,5 +1162,69 @@ class OrderController extends Controller
 
             return response()->json(['success' => false, 'message' => 'Error interno'], 500);
         }
+    }
+
+    /**
+     * GET /api/buyer/orders/{id}/payment-proof — Descarga autenticada del comprobante.
+     */
+    public function downloadPaymentProof(Request $request, string|int $id): Response
+    {
+        $user = Auth::user();
+        if (! $user?->profile) {
+            return response()->json(['success' => false, 'message' => 'No autenticado'], 401);
+        }
+
+        $order = \App\Models\Order::where('profile_id', $user->profile->id)->find($id);
+        if (! $order) {
+            return response()->json(['success' => false, 'message' => 'Orden no encontrada'], 404);
+        }
+
+        $paymentType = $request->query('type', 'food');
+        $orderPayment = \App\Models\OrderPayment::where('order_id', $order->id)
+            ->where('type', $paymentType)
+            ->first();
+
+        $reference = $orderPayment?->payment_proof ?? $order->payment_proof;
+        if ($reference === null || $reference === '') {
+            return response()->json(['success' => false, 'message' => 'Sin comprobante.'], 404);
+        }
+
+        try {
+            $payload = $this->privateFiles->getBinaryForDownload($reference);
+        } catch (\Throwable $e) {
+            return response()->json(['success' => false, 'message' => 'No se pudo recuperar el comprobante.'], 404);
+        }
+
+        return response($payload['binary'], 200, [
+            'Content-Type' => $payload['mime'],
+            'Content-Disposition' => 'inline; filename="payment-proof-'.$order->id.'-'.$paymentType.'"',
+        ]);
+    }
+
+    /**
+     * @return array<string, mixed>
+     */
+    private function serializeOrderPayment(\App\Models\OrderPayment $payment, int $orderId): array
+    {
+        $reference = (string) ($payment->payment_proof ?? '');
+        $row = [
+            'id' => $payment->id,
+            'type' => $payment->type,
+            'amount' => (float) $payment->amount,
+            'payment_method_label' => $payment->payment_method_label,
+            'reference_number' => $payment->reference_number,
+            'payment_proof' => $payment->payment_proof,
+            'payment_proof_uploaded_at' => $payment->payment_proof_uploaded_at?->toIso8601String(),
+            'validated_at' => $payment->validated_at?->toIso8601String(),
+            'rejected_at' => $payment->rejected_at?->toIso8601String(),
+            'rejection_reason' => $payment->rejection_reason,
+        ];
+
+        if ($reference !== '' && $this->privateFiles->isSecureOrLegacyFile($reference)) {
+            $row['payment_proof'] = null;
+            $row['payment_proof_download_url'] = url('/api/buyer/orders/'.$orderId.'/payment-proof?type='.$payment->type);
+        }
+
+        return $row;
     }
 }

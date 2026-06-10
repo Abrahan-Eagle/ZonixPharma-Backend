@@ -67,6 +67,12 @@ return new class extends Migration
             $table->boolean('cold_chain_required')->default(false)
                 ->comment('Algún ítem requiere cadena de frío; restringe modos de delivery.');
 
+            $table->timestamp('stock_restocked_at')->nullable()
+                ->comment('Marca idempotente de reposición de inventario al cancelar.');
+
+            $table->timestamp('expires_at')->nullable()
+                ->comment('TTL para subir receta en pedidos Rx sin prescription_id (huérfanos).');
+
             $table->timestamps();
 
             $table->index('status', 'orders_status_index');

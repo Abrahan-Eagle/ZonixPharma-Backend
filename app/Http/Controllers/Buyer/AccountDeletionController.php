@@ -80,7 +80,7 @@ class AccountDeletionController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Error al solicitar eliminación',
-                'error' => $e->getMessage(),
+                'error' => 'Error interno. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -150,7 +150,7 @@ class AccountDeletionController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Error al confirmar eliminación',
-                'error' => $e->getMessage(),
+                'error' => 'Error interno. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -185,7 +185,7 @@ class AccountDeletionController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Error al cancelar eliminación',
-                'error' => $e->getMessage(),
+                'error' => 'Error interno. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -216,7 +216,7 @@ class AccountDeletionController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Error al obtener estado',
-                'error' => $e->getMessage(),
+                'error' => 'Error interno. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -257,7 +257,7 @@ class AccountDeletionController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Error al eliminar la cuenta',
-                'error' => $e->getMessage(),
+                'error' => 'Error interno. Intenta de nuevo.',
             ], 500);
         }
     }

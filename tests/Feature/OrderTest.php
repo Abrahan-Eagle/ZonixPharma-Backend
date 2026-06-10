@@ -25,7 +25,7 @@ class OrderTest extends TestCase
 
     public function test_user_can_create_upload_comprobante_and_cancel_order()
     {
-        Storage::fake('public');
+        Storage::fake('local');
         $user = User::factory()->create(['role' => 'users']);
         $profile = Profile::factory()->create([
             'user_id' => $user->id,
@@ -82,7 +82,8 @@ class OrderTest extends TestCase
             'reference_number' => '123456',
         ]);
         $response->assertStatus(200)->assertJson(['success' => true]);
-        Storage::disk('public')->assertExists('payment_proofs/'.$file->hashName());
+        $order = Order::findOrFail($orderId);
+        $this->assertStringStartsWith('secure:payment_proofs/', (string) $order->payment_proof);
 
         // Cancelar orden
         $response = $this->postJson("/api/buyer/orders/{$orderId}/cancel", [

@@ -6,13 +6,18 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreDocumentRequest;
 use App\Models\Document;
 use App\Models\Profile;
+use App\Services\PrivateFileStorageService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
+use Symfony\Component\HttpFoundation\Response;
 
 class DocumentController extends Controller
 {
+    public function __construct(
+        private readonly PrivateFileStorageService $privateFiles,
+    ) {}
+
     private function isAdmin(Request $request): bool
     {
         return $request->user() && $request->user()->role === 'admin';
@@ -41,7 +46,8 @@ class DocumentController extends Controller
         $documents = Document::with('profile')
             ->where('profile_id', $profile->id)
             ->active()
-            ->get();
+            ->get()
+            ->map(fn (Document $doc) => $this->serializeDocument($doc));
 
         return response()->json($documents);
     }
@@ -56,7 +62,6 @@ class DocumentController extends Controller
             return response()->json(['message' => 'No autorizado'], 403);
         }
 
-        // CI y RIF son únicos por perfil (normativa Venezuela: un RIF/identificador por contribuyente).
         $existingDocument = Document::where('profile_id', $profile->id)
             ->where('type', $validated['type'])
             ->first();
@@ -67,7 +72,6 @@ class DocumentController extends Controller
 
         $paths = $this->handleImageUpload($request);
 
-        // Crear el documento con valores predeterminados
         $document = Document::create(array_merge(
             collect($validated)->only([
                 'type', 'number_ci', 'rif_number', 'taxDomicile',
@@ -81,7 +85,10 @@ class DocumentController extends Controller
             ]
         ));
 
-        return response()->json(['message' => 'Document created successfully', 'document' => $document], 201);
+        return response()->json([
+            'message' => 'Document created successfully',
+            'document' => $this->serializeDocument($document),
+        ], 201);
     }
 
     /**
@@ -97,13 +104,12 @@ class DocumentController extends Controller
         $document = Document::with('profile')
             ->where('profile_id', $profile->id)
             ->active()
-            ->get();
+            ->get()
+            ->map(fn (Document $doc) => $this->serializeDocument($doc));
 
         if ($document->isEmpty()) {
             return response()->json(['message' => 'Document not found'], 404);
         }
-
-        // Log::info('+++++++++++++++++++++++++++++++++++ document===== :', ['document' => json_encode($document)]);
 
         return response()->json($document);
     }
@@ -151,7 +157,10 @@ class DocumentController extends Controller
             ]
         ));
 
-        return response()->json(['message' => 'Document updated successfully', 'document' => $document]);
+        return response()->json([
+            'message' => 'Document updated successfully',
+            'document' => $this->serializeDocument($document->fresh()),
+        ]);
     }
 
     /**
@@ -175,6 +184,52 @@ class DocumentController extends Controller
         return response()->json(['message' => 'Document deleted successfully']);
     }
 
+    public function downloadFile(Request $request, string|int $id): Response
+    {
+        $document = Document::find($id);
+        if (! $document) {
+            return response()->json(['message' => 'Document not found'], 404);
+        }
+
+        $profile = Profile::find($document->profile_id);
+        if (! $profile || ! $this->canAccessProfile($request, $profile)) {
+            return response()->json(['message' => 'No autorizado'], 403);
+        }
+
+        $reference = (string) ($document->getRawOriginal('front_image') ?? '');
+        if ($reference === '') {
+            return response()->json(['message' => 'Sin adjunto.'], 404);
+        }
+
+        try {
+            $payload = $this->privateFiles->getBinaryForDownload($reference);
+        } catch (\Throwable $e) {
+            Log::warning('document_download_failed', [
+                'document_id' => $document->id,
+                'message' => $e->getMessage(),
+            ]);
+
+            return response()->json(['message' => 'No se pudo recuperar el documento.'], 404);
+        }
+
+        return response($payload['binary'], 200, [
+            'Content-Type' => $payload['mime'],
+            'Content-Disposition' => 'inline; filename="document-'.$document->id.'"',
+        ]);
+    }
+
+    private function serializeDocument(Document $document): array
+    {
+        $arr = $document->toArray();
+        $url = (string) ($document->getRawOriginal('front_image') ?? '');
+        if ($this->privateFiles->isSecureOrLegacyFile($url)) {
+            $arr['front_image'] = null;
+            $arr['front_image_download_url'] = url('/api/documents/'.$document->id.'/file');
+        }
+
+        return $arr;
+    }
+
     private function getValidator(array $data, string $type, bool $isUpdate = false)
     {
         $rules = [
@@ -188,13 +243,13 @@ class DocumentController extends Controller
         switch ($type) {
             case 'ci':
                 $rules = array_merge($rules, [
-                    'number_ci' => ($isUpdate ? 'sometimes' : 'required').'|integer|digits_between:6,9', // Venezuela: número cédula (solo dígitos, sin V)
+                    'number_ci' => ($isUpdate ? 'sometimes' : 'required').'|integer|digits_between:6,9',
                     'front_image' => 'nullable|image|mimes:jpg,jpeg,png|max:5120',
                 ]);
                 break;
             case 'rif':
                 $rules = array_merge($rules, [
-                    'rif_number' => [$isUpdate ? 'sometimes' : 'required', 'string', 'max:20', 'regex:/^[VEJGP]-?\d{8}-?\d$/'], // Venezuela: X-NNNNNNNN-N (guiones opcionales)
+                    'rif_number' => [$isUpdate ? 'sometimes' : 'required', 'string', 'max:20', 'regex:/^[VEJGP]-?\d{8}-?\d$/'],
                     'taxDomicile' => ($isUpdate ? 'sometimes' : 'nullable').'|nullable|string',
                     'front_image' => 'nullable|image|mimes:jpg,jpeg,png|max:5120',
                 ]);
@@ -212,10 +267,13 @@ class DocumentController extends Controller
         $paths = [];
 
         if ($request->hasFile('front_image')) {
-            if ($document && $document->front_image) {
-                Storage::disk('public')->delete($document->front_image);
+            if ($document && $document->getRawOriginal('front_image')) {
+                $this->privateFiles->deleteByReference($document->getRawOriginal('front_image'));
             }
-            $paths['front_image'] = $request->file('front_image')->store('documents/front', 'public');
+            $paths['front_image'] = $this->privateFiles->storeFromUpload(
+                $request->file('front_image'),
+                'kyc_documents',
+            );
         }
 
         return $paths;
@@ -224,8 +282,7 @@ class DocumentController extends Controller
     private function deleteImages(Document $document)
     {
         if ($document->front_image) {
-            Storage::disk('public')->delete($document->front_image);
+            $this->privateFiles->deleteByReference($document->getRawOriginal('front_image'));
         }
-
     }
 }

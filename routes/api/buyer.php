@@ -139,6 +139,8 @@ Route::middleware(['auth:sanctum', 'role:users'])->group(function () {
         Route::get('/orders/{id}/available-payment-methods', [BuyerOrderController::class, 'getAvailablePaymentMethodsForOrder']);
         Route::get('/orders/{id}/payment-info', [BuyerOrderController::class, 'getPaymentInfo']);
         Route::post('/orders/{id}/payment-proof', [BuyerOrderController::class, 'uploadPaymentProof']);
+        Route::get('/orders/{id}/payment-proof', [BuyerOrderController::class, 'downloadPaymentProof'])
+            ->middleware('throttle:60,1');
         Route::post('/orders/{id}/cancel', [BuyerOrderController::class, 'cancelOrder']);
         Route::get('/orders/{id}/delivery-qr', [BuyerOrderController::class, 'deliveryQr']);
 

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Buyer;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
 
 class PrivacyController extends Controller
@@ -26,10 +27,12 @@ class PrivacyController extends Controller
             ]);
 
         } catch (\Exception $e) {
+            Log::error('privacy_controller_error', ['exception' => $e]);
+
             return response()->json([
                 'success' => false,
                 'message' => 'Error al obtener configuración',
-                'error' => $e->getMessage(),
+                'error' => 'Error interno. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -79,10 +82,12 @@ class PrivacyController extends Controller
             ]);
 
         } catch (\Exception $e) {
+            Log::error('privacy_controller_error', ['exception' => $e]);
+
             return response()->json([
                 'success' => false,
                 'message' => 'Error al actualizar configuración',
-                'error' => $e->getMessage(),
+                'error' => 'Error interno. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -105,10 +110,12 @@ class PrivacyController extends Controller
             ]);
 
         } catch (\Exception $e) {
+            Log::error('privacy_controller_error', ['exception' => $e]);
+
             return response()->json([
                 'success' => false,
                 'message' => 'Error al obtener política',
-                'error' => $e->getMessage(),
+                'error' => 'Error interno. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -131,10 +138,12 @@ class PrivacyController extends Controller
             ]);
 
         } catch (\Exception $e) {
+            Log::error('privacy_controller_error', ['exception' => $e]);
+
             return response()->json([
                 'success' => false,
                 'message' => 'Error al obtener términos',
-                'error' => $e->getMessage(),
+                'error' => 'Error interno. Intenta de nuevo.',
             ], 500);
         }
     }

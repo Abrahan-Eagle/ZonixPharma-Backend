@@ -47,7 +47,7 @@ class AdminOrderController extends Controller
     public function updateStatus($id, Request $request)
     {
         $request->validate([
-            'status' => 'required|in:pending_payment,paid,processing,shipped,delivered,cancelled',
+            'status' => 'required|in:pending_prescription_validation,pending_payment,paid,processing,shipped,delivered,cancelled',
         ]);
 
         $order = Order::findOrFail($id);

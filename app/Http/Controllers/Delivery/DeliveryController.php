@@ -456,7 +456,9 @@ class DeliveryController extends Controller
                 'agent_id' => $deliveryAgent->id,
             ]));
 
-            $order->orderDelivery->delete();
+            DB::transaction(function () use ($order) {
+                $order->orderDelivery?->delete();
+            });
             AutoAssignDeliveryJob::dispatch($order->id);
 
             return response()->json([

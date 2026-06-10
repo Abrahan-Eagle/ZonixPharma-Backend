@@ -58,6 +58,8 @@ class Order extends Model
         'prescription_id',
         'prescription_validated_at',
         'cold_chain_required',
+        'stock_restocked_at',
+        'expires_at',
     ];
 
     protected $casts = [
@@ -75,6 +77,8 @@ class Order extends Model
         'requires_prescription' => 'boolean',
         'cold_chain_required' => 'boolean',
         'prescription_validated_at' => 'datetime',
+        'stock_restocked_at' => 'datetime',
+        'expires_at' => 'datetime',
     ];
 
     /**

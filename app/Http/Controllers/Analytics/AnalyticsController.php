@@ -57,7 +57,7 @@ class AnalyticsController extends Controller
         } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
-                'message' => 'Error obteniendo analytics: '.$e->getMessage(),
+                'message' => 'Error obteniendo analytics. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -87,7 +87,7 @@ class AnalyticsController extends Controller
         } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
-                'message' => 'Error obteniendo revenue analytics: '.$e->getMessage(),
+                'message' => 'Error obteniendo revenue analytics. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -117,7 +117,7 @@ class AnalyticsController extends Controller
         } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
-                'message' => 'Error obteniendo order analytics: '.$e->getMessage(),
+                'message' => 'Error obteniendo order analytics. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -143,7 +143,7 @@ class AnalyticsController extends Controller
         } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
-                'message' => 'Error obteniendo customer analytics: '.$e->getMessage(),
+                'message' => 'Error obteniendo customer analytics. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -167,7 +167,7 @@ class AnalyticsController extends Controller
         } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
-                'message' => 'Error obteniendo restaurant analytics: '.$e->getMessage(),
+                'message' => 'Error obteniendo restaurant analytics. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -191,7 +191,7 @@ class AnalyticsController extends Controller
         } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
-                'message' => 'Error obteniendo delivery analytics: '.$e->getMessage(),
+                'message' => 'Error obteniendo delivery analytics. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -215,7 +215,7 @@ class AnalyticsController extends Controller
         } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
-                'message' => 'Error obteniendo marketing analytics: '.$e->getMessage(),
+                'message' => 'Error obteniendo marketing analytics. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -260,7 +260,7 @@ class AnalyticsController extends Controller
         } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
-                'message' => 'Error generando reporte: '.$e->getMessage(),
+                'message' => 'Error generando reporte. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -376,7 +376,7 @@ class AnalyticsController extends Controller
         } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
-                'message' => 'Error exportando datos: '.$e->getMessage(),
+                'message' => 'Error exportando datos. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -411,7 +411,7 @@ class AnalyticsController extends Controller
         } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
-                'message' => 'Error descargando archivo: '.$e->getMessage(),
+                'message' => 'Error descargando archivo. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -474,7 +474,7 @@ class AnalyticsController extends Controller
         } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
-                'message' => 'Error obteniendo real-time analytics: '.$e->getMessage(),
+                'message' => 'Error obteniendo real-time analytics. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -521,7 +521,7 @@ class AnalyticsController extends Controller
         } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
-                'message' => 'Error obteniendo predictive analytics: '.$e->getMessage(),
+                'message' => 'Error obteniendo predictive analytics. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -589,7 +589,7 @@ class AnalyticsController extends Controller
         } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
-                'message' => 'Error obteniendo comparative analytics: '.$e->getMessage(),
+                'message' => 'Error obteniendo comparative analytics. Intenta de nuevo.',
             ], 500);
         }
     }
@@ -769,7 +769,7 @@ class AnalyticsController extends Controller
         } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
-                'message' => 'Error obteniendo KPI dashboard: '.$e->getMessage(),
+                'message' => 'Error obteniendo KPI dashboard. Intenta de nuevo.',
             ], 500);
         }
     }
