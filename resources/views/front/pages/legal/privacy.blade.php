@@ -106,7 +106,7 @@
                             </div>
                             <p>Compartimos tus datos estrictamente con las partes involucradas en el cumplimiento de tu pedido:</p>
                             <ul class="list-disc ps-4 space-y-2">
-                                <li><strong>Comercios Aliados:</strong> Reciben tu nombre y detalles del pedido para su preparación.</li>
+                                <li><strong>Farmacias aliadas:</strong> Reciben tu nombre y detalles del pedido para la dispensación y despacho de medicamentos.</li>
                                 <li><strong>Repartidores:</strong> Reciben tu nombre, dirección y teléfono para realizar la entrega.</li>
                             </ul>
                             <p class="mt-3 text-sm text-slate-500">No vendemos ni alquilamos tus datos personales a terceros con fines de marketing sin tu consentimiento explícito.</p>

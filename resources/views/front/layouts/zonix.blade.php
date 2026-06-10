@@ -26,7 +26,7 @@
     <meta property="twitter:image" content="{{ $seo['image'] }}">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="{{ asset('assets/img/logo.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('assets/img/favicon.png') }}">
     
     <!-- Bootstrap 5 -->
     <link href="{{ asset('vendor/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
@@ -41,9 +41,16 @@
     <link href="{{ asset('css/zonix.css') }}" rel="stylesheet">
 
     <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-        {!! \App\Helpers\SeoHelper::jsonLd() !!}
-    </script>
+    @if(isset($pageSchema))
+        <script type="application/ld+json">
+            {!! $pageSchema !!}
+        </script>
+    @else
+        <script type="application/ld+json">
+            {!! \App\Helpers\SeoHelper::jsonLd() !!}
+        </script>
+    @endif
+    @stack('schema')
 </head>
 <body>
     <div id="content-wrapper">

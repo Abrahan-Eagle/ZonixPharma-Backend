@@ -1,10 +1,14 @@
 @extends('front.layouts.zonix')
 
 @section('content')
+    @php
+        $appStoreUrl = config('services.stores.app_store_url');
+        $playStoreUrl = config('services.stores.play_store_url');
+    @endphp
     <!-- Preloader (Restored) -->
     <div id="preloader" class="position-fixed top-0 start-0 w-100 h-100 bg-white d-flex align-items-center justify-content-center z-fixed-max">
         <div class="text-center animate-pulse">
-            <img src="{{ asset('assets/img/logo.png') }}" alt="Zonix" style="height: 12rem;">
+            <img src="{{ asset('assets/img/logo.png') }}" alt="Zonix Pharma" style="height: 4rem;">
         </div>
     </div>
     
@@ -18,7 +22,7 @@
                 <p class="mb-0 text-xs text-slate-500">Tus medicinas a un clic 💊</p>
             </div>
         </div>
-        <button class="btn btn-zonix-primary rounded-pill px-4 font-bold small shadow-md" data-bs-toggle="modal" data-bs-target="#registerModal">
+        <button class="btn btn-zonix-primary rounded-pill px-4 font-bold small shadow-md" onclick="document.getElementById('download').scrollIntoView({behavior:'smooth'})">
             Descargar
         </button>
     </div>
@@ -27,9 +31,8 @@
     <nav class="navbar-zonix d-flex align-items-center">
         <div class="container-zonix w-100 d-flex align-items-center justify-content-between">
             <!-- Brand -->
-            <a class="navbar-brand d-flex align-items-center gap-1" href="{{ url('/') }}">
+            <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
                 <img src="{{ asset('assets/img/logo.png') }}" alt="Zonix Pharma" class="navbar-brand-logo">
-                <span class="navbar-brand-text fs-3 font-black tracking-tighter leading-none">Zonix<span class="text-primary-zonix">PHARMA</span></span>
             </a>
 
             <!-- Search Removed for Landing Page -->
@@ -39,8 +42,8 @@
 
             <!-- Desktop Menu -->
             <div class="d-none d-lg-flex align-items-center gap-4">
-                <a href="#categories" class="nav-link font-bold text-navy">Farmacias</a>
-                <a href="#offers" class="nav-link font-bold text-navy">Ofertas</a>
+                <a href="#categories" class="nav-link font-bold text-navy">Categorías</a>
+                <a href="#offers" class="nav-link font-bold text-navy">En la App</a>
                 <a href="#become-partner" class="nav-link font-bold text-navy">Ser Aliado</a>
             </div>
 
@@ -49,13 +52,13 @@
                 @auth
                     <a href="{{ route('dashboard') }}" class="btn btn-ghost font-bold text-navy d-none d-lg-block">Dashboard</a>
                 @else
-                    <button class="btn btn-ghost font-bold text-navy d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar Sesión</button>
+                    <a href="{{ route('login') }}" class="btn btn-ghost font-bold text-navy d-none d-lg-block">Panel aliados</a>
                 @endauth
-                <button class="btn btn-zonix-primary rounded-pill px-4 hover-scale d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#registerModal">
+                <a href="#download" class="btn btn-zonix-primary rounded-pill px-4 hover-scale d-none d-lg-block">
                     Descarga la App
-                </button>
+                </a>
                 <!-- Mobile Toggle -->
-                <button class="btn btn-icon d-lg-none" id="mobileMenuBtn">
+                <button class="btn btn-icon d-lg-none" id="mobileMenuBtn" aria-label="Abrir menú de navegación">
                     <span class="material-symbols-outlined fs-2 text-navy">menu</span>
                 </button>
             </div>
@@ -66,8 +69,8 @@
     <header class="hero-wrapper">
         <div class="hero-left">
             <div style="max-width: 36rem;">
-                <span class="d-inline-block px-3 py-1 bg-yellow-10 text-yellow rounded-pill border border-warning border-opacity-25 font-bold text-uppercase tracking-wider mb-4 text-xs">
-                    🚀 Entregas en 15 minutos
+                <span class="d-inline-block px-3 py-1 bg-white bg-opacity-10 text-white rounded-pill border border-white border-opacity-10 font-bold text-uppercase tracking-wider mb-4 text-xs">
+                    Entregas en 20-45 min
                 </span>
                 <h1 class="text-hero-zonix font-black leading-none tracking-tight text-white mb-4 reveal">
                     Tu farmacia, ahora <br>
@@ -79,12 +82,24 @@
                 </p>
 
                 <div class="d-flex flex-wrap gap-3">
-                    <a href="javascript:void(0)" class="app-badge" onclick="alert('Disponible pronto en App Store')">
-                        <img src="{{ asset('assets/img/badges/app-store.png') }}" alt="Download on App Store" class="h-100">
-                    </a>
-                    <a href="javascript:void(0)" class="app-badge" onclick="alert('Disponible pronto en Google Play')">
-                        <img src="{{ asset('assets/img/badges/google-play.png') }}" alt="Get it on Google Play" class="h-100">
-                    </a>
+                    @if($appStoreUrl)
+                        <a href="{{ $appStoreUrl }}" target="_blank" rel="noopener noreferrer" class="app-badge">
+                            <img src="{{ asset('assets/img/badges/app-store.png') }}" alt="Descargar en App Store" class="h-100">
+                        </a>
+                    @else
+                        <a href="#" class="app-badge" data-bs-toggle="modal" data-bs-target="#comingSoonModal">
+                            <img src="{{ asset('assets/img/badges/app-store.png') }}" alt="Descargar en App Store — próximamente" class="h-100">
+                        </a>
+                    @endif
+                    @if($playStoreUrl)
+                        <a href="{{ $playStoreUrl }}" target="_blank" rel="noopener noreferrer" class="app-badge">
+                            <img src="{{ asset('assets/img/badges/google-play.png') }}" alt="Descargar en Google Play" class="h-100">
+                        </a>
+                    @else
+                        <a href="#" class="app-badge" data-bs-toggle="modal" data-bs-target="#comingSoonModal">
+                            <img src="{{ asset('assets/img/badges/google-play.png') }}" alt="Descargar en Google Play — próximamente" class="h-100">
+                        </a>
+                    @endif
                 </div>
             </div>
             
@@ -96,9 +111,9 @@
             <!-- Desktop Image -->
             <div class="position-absolute top-0 start-0 w-100 h-100 d-none d-lg-block rounded-4rem-bl overflow-hidden">
                 <picture>
-                    <source srcset="{{ asset('assets/img/hero/desktop-pizza.webp') }}" type="image/webp">
-                    <img src="{{ asset('assets/img/hero/desktop-pizza.jpg') }}" 
-                         alt="Pizza" class="w-100 h-100 object-fit-cover" width="1920" height="1080">
+                    <source srcset="{{ asset('assets/img/hero/desktop-pharmacy.webp') }}" type="image/webp">
+                    <img src="{{ asset('assets/img/hero/desktop-pharmacy.jpg') }}" 
+                         alt="Farmacia verificada" class="w-100 h-100 object-fit-cover" width="1920" height="1080">
                 </picture>
                 <div class="hero-overlay-desktop"></div>
                 
@@ -110,11 +125,8 @@
                         </div>
                         <div>
                             <p class="text-xs text-slate-500 font-bold text-uppercase mb-0">Calidad Verificada</p>
-                            <p class="text-slate-900 font-bold mb-0">100% Fresco</p>
+                            <p class="text-slate-900 font-bold mb-0">Productos certificados</p>
                         </div>
-                    </div>
-                    <div class="progress bg-slate-100" style="height: 6px;">
-                        <div class="progress-bar bg-green-500 rounded-pill" style="width: 92%"></div>
                     </div>
                 </div>
             </div>
@@ -122,9 +134,9 @@
             <!-- Mobile Image -->
             <div class="position-absolute top-0 start-0 w-100 h-100 d-lg-none">
                  <picture>
-                    <source srcset="{{ asset('assets/img/hero/mobile-pizza.webp') }}" type="image/webp">
-                    <img src="{{ asset('assets/img/hero/mobile-pizza.jpg') }}" 
-                         alt="Pizza" class="w-100 h-100 object-fit-cover" width="800" height="1200">
+                    <source srcset="{{ asset('assets/img/hero/mobile-pharmacy.webp') }}" type="image/webp">
+                    <img src="{{ asset('assets/img/hero/mobile-pharmacy.jpg') }}" 
+                         alt="Farmacia verificada" class="w-100 h-100 object-fit-cover" width="800" height="1200">
                  </picture>
                  <div class="hero-overlay-mobile"></div>
             </div>
@@ -137,37 +149,37 @@
             <div class="row g-4 justify-content-center justify-content-md-between align-items-center">
                 <div class="col-6 col-md-auto d-flex justify-content-center">
                     <div class="social-stat reveal">
-                        <span class="material-symbols-outlined fs-1 text-slate-300">download</span>
+                        <span class="material-symbols-outlined fs-1 text-slate-300">verified</span>
                         <div>
-                            <div class="social-stat-number">+1M</div>
-                            <div class="social-stat-label">Descargas<br>Globales</div>
+                            <div class="social-stat-number text-sm">Aliadas</div>
+                            <div class="social-stat-label">Farmacias<br>verificadas</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-auto d-flex justify-content-center">
                     <div class="social-stat reveal reveal-delay-100">
-                        <span class="material-symbols-outlined fs-1 text-slate-300">star</span>
+                        <span class="material-symbols-outlined fs-1 text-slate-300">medication</span>
                         <div>
-                            <div class="social-stat-number">4.9</div>
-                            <div class="social-stat-label">Calificación<br>App Store</div>
+                            <div class="social-stat-number">OTC + Rx</div>
+                            <div class="social-stat-label">Catálogo<br>completo</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-auto d-flex justify-content-center">
                     <div class="social-stat reveal reveal-delay-200">
-                        <span class="material-symbols-outlined fs-1 text-slate-300">store</span>
+                        <span class="material-symbols-outlined fs-1 text-slate-300">timer</span>
                         <div>
-                            <div class="social-stat-number">+5k</div>
-                            <div class="social-stat-label">Farmacias<br>Aliados</div>
+                            <div class="social-stat-number">20-45</div>
+                            <div class="social-stat-label">Minutos de<br>entrega</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-auto d-flex justify-content-center">
                     <div class="social-stat reveal reveal-delay-300">
-                        <span class="material-symbols-outlined fs-1 text-slate-300">timer</span>
+                        <span class="material-symbols-outlined fs-1 text-slate-300">support_agent</span>
                         <div>
-                            <div class="social-stat-number">15m</div>
-                            <div class="social-stat-label">Tiempo<br>Promedio</div>
+                            <div class="social-stat-number">24/7</div>
+                            <div class="social-stat-label">Soporte<br>humano</div>
                         </div>
                     </div>
                 </div>
@@ -183,12 +195,12 @@
                     <div class="card-audience hover-lift reveal">   
                         <div class="bg-gradient-glass"></div>
                         <div class="card-content">
-                            <div class="card-audience-icon hover-lift-icon bg-red-50 text-primary-zonix">
+                            <div class="card-audience-icon hover-lift-icon bg-primary-10 text-teal-deep">
                                 <span class="material-symbols-outlined fs-2">local_pharmacy</span>
                             </div>
                             <h3 class="text-2xl font-bold text-navy mb-2">Pide ahora en la App</h3>
                             <p class="text-slate-600 mb-4 flex-grow-1">Accede a farmacias verificadas y recibe tus medicinas en minutos.</p>
-                            <button class="btn w-100 py-3 rounded-xl bg-slate-100 text-navy font-bold hover:bg-primary-zonix hover:text-white transition-colors border-0" data-bs-toggle="modal" data-bs-target="#registerModal">
+                            <button class="btn w-100 py-3 rounded-xl bg-slate-100 text-navy font-bold hover:bg-navy hover:text-white transition-colors border-0" onclick="document.getElementById('download').scrollIntoView({behavior:'smooth'})">
                                 Pedir Ahora
                             </button>
                         </div>
@@ -201,11 +213,11 @@
                             <div class="card-audience-icon hover-lift-icon bg-blue-50 text-info">
                                 <span class="material-symbols-outlined fs-2 text-blue-zonix">directions_bike</span>
                             </div>
-                            <h3 class="text-2xl font-bold text-navy mb-2">Gana Dinero</h3>
-                            <p class="text-slate-600 mb-4 flex-grow-1">Conduce, entrega y genera ingresos extra con tu propio horario.</p>
-                            <button class="btn w-100 py-3 rounded-xl bg-slate-100 text-navy font-bold hover:bg-blue-zonix hover:text-white transition-colors border-0" onclick="alert('Próximamente: Registro de Repartidores')">
+                            <h3 class="text-2xl font-bold text-navy mb-2">Repartidor aliado</h3>
+                            <p class="text-slate-600 mb-4 flex-grow-1">Entrega medicamentos con horario flexible y pagos puntuales.</p>
+                            <a href="mailto:repartidores@zonixpharma.com" class="btn w-100 py-3 rounded-xl bg-slate-100 text-navy font-bold hover:bg-blue-zonix hover:text-white transition-colors border-0 text-decoration-none d-flex align-items-center justify-content-center">
                                 Ser Repartidor
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -218,9 +230,9 @@
                             </div>
                             <h3 class="text-2xl font-bold text-navy mb-2">Vende más con Zonix</h3>
                             <p class="text-slate-600 mb-4 flex-grow-1">Digitaliza tu farmacia y llega a nuevos pacientes hoy mismo.</p>
-                            <button class="btn w-100 py-3 rounded-xl bg-slate-100 text-navy font-bold hover:bg-yellow hover:text-navy transition-colors border-0" onclick="alert('Próximamente: Registro de Aliados')">
+                            <a href="{{ route('login') }}" class="btn w-100 py-3 rounded-xl bg-slate-100 text-navy font-bold hover:bg-yellow hover:text-navy transition-colors border-0 text-decoration-none d-flex align-items-center justify-content-center">
                                 Registrar Farmacia
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -232,42 +244,41 @@
     <section id="categories" class="py-5 bg-white">
         <div class="container-zonix">
             <div class="d-flex align-items-center justify-content-between mb-4">
-                <h2 class="text-2xl md:text-3xl font-black text-navy tracking-tight">Categorías Populares</h2>
+                <h2 class="text-2xl md:text-3xl font-black text-navy tracking-tight">Categorías de productos</h2>
                 <div class="d-flex gap-2">
                     <button class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0" style="width: 2.5rem; height: 2.5rem;" id="catBtnPrev"><span class="material-symbols-outlined">arrow_back</span></button>
                     <button class="btn bg-navy text-white rounded-circle d-flex align-items-center justify-content-center p-0" style="width: 2.5rem; height: 2.5rem;" id="catBtnNext"><span class="material-symbols-outlined">arrow_forward</span></button>
                 </div>
             </div>
             
-            <div class="scroll-snap-x hide-scrollbar" id="categoriesContainer">
-                <a href="#" class="category-item snap-start">
-                    <div class="category-ring"><img src="{{ asset('assets/img/categories/burger.jpg') }}" alt="Burger" loading="lazy" width="80" height="80"></div>
-                    <span class="font-bold text-navy text-sm">Hamburguesas</span>
+            <div class="scroll-snap-x hide-scrollbar" id="categoriesContainer" role="list">
+                <a href="#offers" class="category-item snap-start" role="listitem">
+                    <div class="category-ring"><img src="{{ asset('assets/img/categories/analgesicos.jpg') }}" alt="Analgésicos" loading="lazy" width="80" height="80"></div>
+                    <span class="font-bold text-navy text-sm">Analgésicos</span>
                 </a>
-                <a href="#" class="category-item snap-start">
-                    <div class="category-ring"><img src="{{ asset('assets/img/categories/sushi.jpg') }}" alt="Sushi" loading="lazy" width="80" height="80"></div>
-                    <span class="font-bold text-navy text-sm">Sushi</span>
+                <a href="#offers" class="category-item snap-start" role="listitem">
+                    <div class="category-ring"><img src="{{ asset('assets/img/categories/antigripales.jpg') }}" alt="Antigripales" loading="lazy" width="80" height="80"></div>
+                    <span class="font-bold text-navy text-sm">Antigripales</span>
                 </a>
-                <a href="#" class="category-item snap-start">
-                    <div class="category-ring"><img src="{{ asset('assets/img/categories/mexicana.jpg') }}" alt="Mexicana" loading="lazy" width="80" height="80"></div>
-                    <span class="font-bold text-navy text-sm">Mexicana</span>
+                <a href="#offers" class="category-item snap-start" role="listitem">
+                    <div class="category-ring"><img src="{{ asset('assets/img/categories/vitaminas.jpg') }}" alt="Vitaminas" loading="lazy" width="80" height="80"></div>
+                    <span class="font-bold text-navy text-sm">Vitaminas</span>
                 </a>
-                <a href="#" class="category-item snap-start">
-                    <div class="category-ring"><img src="{{ asset('assets/img/categories/pizza.jpg') }}" alt="Pizza" loading="lazy" width="80" height="80"></div>
-                    <span class="font-bold text-navy text-sm">Pizza</span>
+                <a href="#offers" class="category-item snap-start" role="listitem">
+                    <div class="category-ring"><img src="{{ asset('assets/img/categories/dermatologicos.jpg') }}" alt="Dermatológicos" loading="lazy" width="80" height="80"></div>
+                    <span class="font-bold text-navy text-sm">Dermatológicos</span>
                 </a>
-                <!-- Adding more items for scrolling effect -->
-                 <a href="#" class="category-item snap-start">
-                        <div class="category-ring"><img src="{{ asset('assets/img/categories/bebidas.jpg') }}" alt="Bebidas" loading="lazy" width="80" height="80"></div>
-                        <span class="font-bold text-navy text-sm">Bebidas</span>
+                <a href="#offers" class="category-item snap-start" role="listitem">
+                    <div class="category-ring"><img src="{{ asset('assets/img/categories/cuidado-infantil.jpg') }}" alt="Cuidado infantil" loading="lazy" width="80" height="80"></div>
+                    <span class="font-bold text-navy text-sm">Cuidado infantil</span>
                 </a>
-                <a href="#" class="category-item snap-start">
-                        <div class="category-ring"><img src="{{ asset('assets/img/categories/saludable.jpg') }}" alt="Saludable" loading="lazy" width="80" height="80"></div>
-                        <span class="font-bold text-navy text-sm">Saludable</span>
+                <a href="#offers" class="category-item snap-start" role="listitem">
+                    <div class="category-ring"><img src="{{ asset('assets/img/categories/dispositivos-medicos.jpg') }}" alt="Dispositivos médicos" loading="lazy" width="80" height="80"></div>
+                    <span class="font-bold text-navy text-sm">Dispositivos médicos</span>
                 </a>
-                <a href="#" class="category-item snap-start">
-                        <div class="category-ring"><img src="{{ asset('assets/img/categories/postres.jpg') }}" alt="Postres" loading="lazy" width="80" height="80"></div>
-                        <span class="font-bold text-navy text-sm">Postres</span>
+                <a href="#offers" class="category-item snap-start" role="listitem">
+                    <div class="category-ring"><img src="{{ asset('assets/img/categories/primeros-auxilios.jpg') }}" alt="Primeros auxilios" loading="lazy" width="80" height="80"></div>
+                    <span class="font-bold text-navy text-sm">Primeros auxilios</span>
                 </a>
             </div>
         </div>
@@ -279,22 +290,22 @@
             <div class="d-flex align-items-end justify-content-between mb-4">
                 <div>
                     <h2 class="text-3xl md:text-4xl font-black text-navy tracking-tight mb-2">Descubre en la App</h2>
-                    <p class="text-slate-600 font-medium mb-0">Miles de ofertas exclusivas esperándote en tu móvil.</p>
+                    <p class="text-slate-600 font-medium mb-0">Explora farmacias aliadas y productos OTC desde la app.</p>
                 </div>
-                <div class="text-primary-zonix font-bold d-flex align-items-center gap-1">Solo en la App <span class="material-symbols-outlined fs-6">smartphone</span></div>
+                <div class="text-navy font-bold d-flex align-items-center gap-1">Solo en la App <span class="material-symbols-outlined fs-6">smartphone</span></div>
             </div>
             
             <div class="row g-4">
                 <div class="col-sm-6 col-lg-zonix-3">
                     <div class="card-promo">
                         <div class="card-promo-img-wrapper">
-                            <img src="{{ asset('assets/img/promos/burger-king.jpg') }}" alt="Burger" loading="lazy" width="400" height="250">
-                            <span class="position-absolute top-0 start-0 m-3 badge bg-primary-zonix rounded-pill">50% OFF</span>
-                            <div class="position-absolute bottom-0 end-0 m-3 px-2 py-1 bg-white rounded shadow-sm d-flex align-items-center gap-1 small font-bold"><span class="material-symbols-outlined text-warning" style="font-size: 14px;">star</span> 4.8</div>
+                            <img src="{{ asset('assets/img/promos/farmacia-central.jpg') }}" alt="Farmacia Central" loading="lazy" width="400" height="250">
+                            <span class="position-absolute top-0 start-0 m-3 badge bg-mint-soft text-navy rounded-pill">OTC</span>
+                            <div class="position-absolute bottom-0 end-0 m-3 px-2 py-1 bg-white rounded shadow-sm d-flex align-items-center gap-1 small font-bold text-navy"><span class="material-symbols-outlined text-green-600" style="font-size: 14px;">verified</span> Farmacia aliada</div>
                         </div>
                         <div class="p-3">
-                            <h3 class="font-bold text-navy fs-5 mb-1">Burger King</h3>
-                            <p class="text-slate-500 text-sm mb-3">Hamburguesas • Americana • $$</p>
+                            <h3 class="font-bold text-navy fs-5 mb-1">Farmacia Central</h3>
+                            <p class="text-slate-500 text-sm mb-3">Medicinas • OTC • $$</p>
                             <div class="d-flex justify-content-between pt-3 border-top border-slate-100"><span class="text-xs font-bold text-slate-400">20-30 min</span><span class="text-xs font-bold text-success bg-success bg-opacity-10 px-2 rounded">Envío Gratis</span></div>
                         </div>
                     </div>
@@ -303,13 +314,13 @@
                 <div class="col-sm-6 col-lg-zonix-3">
                     <div class="card-promo">
                         <div class="card-promo-img-wrapper">
-                            <img src="{{ asset('assets/img/promos/tacos.jpg') }}" alt="Tacos" loading="lazy" width="400" height="250">
-                            <span class="position-absolute top-0 start-0 m-3 badge bg-yellow text-navy rounded-pill">2x1 HOY</span>
-                            <div class="position-absolute bottom-0 end-0 m-3 px-2 py-1 bg-white rounded shadow-sm d-flex align-items-center gap-1 small font-bold"><span class="material-symbols-outlined text-warning" style="font-size: 14px;">star</span> 4.5</div>
+                            <img src="{{ asset('assets/img/promos/drogueria-salud.jpg') }}" alt="Droguería La Salud" loading="lazy" width="400" height="250">
+                            <span class="position-absolute top-0 start-0 m-3 badge bg-yellow text-navy rounded-pill">OTC</span>
+                            <div class="position-absolute bottom-0 end-0 m-3 px-2 py-1 bg-white rounded shadow-sm d-flex align-items-center gap-1 small font-bold text-navy"><span class="material-symbols-outlined text-green-600" style="font-size: 14px;">verified</span> Farmacia aliada</div>
                         </div>
                         <div class="p-3">
-                            <h3 class="font-bold text-navy fs-5 mb-1">El Tizoncito</h3>
-                            <p class="text-slate-500 text-sm mb-3">Tacos • Mexicana • $</p>
+                            <h3 class="font-bold text-navy fs-5 mb-1">Droguería La Salud</h3>
+                            <p class="text-slate-500 text-sm mb-3">Vitaminas • OTC • $</p>
                             <div class="d-flex justify-content-between pt-3 border-top border-slate-100"><span class="text-xs font-bold text-slate-400">15-25 min</span><span class="text-xs font-bold text-slate-500">$25 envío</span></div>
                         </div>
                     </div>
@@ -318,13 +329,13 @@
                 <div class="col-sm-6 col-lg-zonix-3">
                     <div class="card-promo">
                         <div class="card-promo-img-wrapper">
-                            <img src="{{ asset('assets/img/promos/dunkin.jpg') }}" alt="Dunkin" loading="lazy" width="400" height="250">
-                            <span class="position-absolute top-0 start-0 m-3 badge bg-primary-zonix text-white rounded-pill">NUEVO</span>
-                            <div class="position-absolute bottom-0 end-0 m-3 px-2 py-1 bg-white rounded shadow-sm d-flex align-items-center gap-1 small font-bold"><span class="material-symbols-outlined text-warning" style="font-size: 14px;">star</span> 4.9</div>
+                            <img src="{{ asset('assets/img/promos/farmacia-norte.jpg') }}" alt="Farmacia del Norte" loading="lazy" width="400" height="250">
+                            <span class="position-absolute top-0 start-0 m-3 badge bg-badge-navy rounded-pill">Verificada</span>
+                            <div class="position-absolute bottom-0 end-0 m-3 px-2 py-1 bg-white rounded shadow-sm d-flex align-items-center gap-1 small font-bold text-navy"><span class="material-symbols-outlined text-green-600" style="font-size: 14px;">prescriptions</span> Rx disponible</div>
                         </div>
                         <div class="p-3">
-                            <h3 class="font-bold text-navy fs-5 mb-1">Dunkin'</h3>
-                            <p class="text-slate-500 text-sm mb-3">Donas • Café • $</p>
+                            <h3 class="font-bold text-navy fs-5 mb-1">Farmacia del Norte</h3>
+                            <p class="text-slate-500 text-sm mb-3">Dermatológicos • OTC • $</p>
                             <div class="d-flex justify-content-between pt-3 border-top border-slate-100"><span class="text-xs font-bold text-slate-400">10-20 min</span><span class="text-xs font-bold text-success bg-success bg-opacity-10 px-2 rounded">Envío Gratis</span></div>
                         </div>
                     </div>
@@ -333,13 +344,13 @@
                 <div class="col-sm-6 col-lg-zonix-3">
                     <div class="card-promo">
                         <div class="card-promo-img-wrapper">
-                            <img src="{{ asset('assets/img/promos/dominos.jpg') }}" alt="Dominos" loading="lazy" width="400" height="250">
-                            <span class="position-absolute top-0 start-0 m-3 badge bg-primary-zonix text-white rounded-pill">30% OFF</span>
-                            <div class="position-absolute bottom-0 end-0 m-3 px-2 py-1 bg-white rounded shadow-sm d-flex align-items-center gap-1 small font-bold"><span class="material-symbols-outlined text-warning" style="font-size: 14px;">star</span> 4.7</div>
+                            <img src="{{ asset('assets/img/promos/farmacia-express.jpg') }}" alt="Farmacia Express" loading="lazy" width="400" height="250">
+                            <span class="position-absolute top-0 start-0 m-3 badge bg-mint-soft text-navy rounded-pill">Envío rápido</span>
+                            <div class="position-absolute bottom-0 end-0 m-3 px-2 py-1 bg-white rounded shadow-sm d-flex align-items-center gap-1 small font-bold text-navy"><span class="material-symbols-outlined text-green-600" style="font-size: 14px;">verified</span> Farmacia aliada</div>
                         </div>
                         <div class="p-3">
-                            <h3 class="font-bold text-navy fs-5 mb-1">Domino's</h3>
-                            <p class="text-slate-500 text-sm mb-3">Pizza • Italiana • $$</p>
+                            <h3 class="font-bold text-navy fs-5 mb-1">Farmacia Express</h3>
+                            <p class="text-slate-500 text-sm mb-3">Primeros auxilios • OTC • $$</p>
                             <div class="d-flex justify-content-between pt-3 border-top border-slate-100"><span class="text-xs font-bold text-slate-400">30-45 min</span><span class="text-xs font-bold text-slate-500">$15 envío</span></div>
                         </div>
                     </div>
@@ -356,7 +367,7 @@
                     <div class="blob-bg" style="top:50%; left:50%; transform:translate(-50%, -50%); width: 120%; height: 120%;"></div>
                     <div class="position-relative z-1 bg-navy rounded-3rem border-8 border-slate-900 shadow-2xl overflow-hidden phone-mockup">
                          <!-- Phone Content Simulated -->
-                         <div class="bg-primary-zonix p-3 pt-5 text-white">
+                         <div class="bg-navy p-3 pt-5 text-white">
                             <div class="d-flex justify-content-between align-items-center mb-3">
                                 <span class="material-symbols-outlined">menu</span>
                                 <span class="font-bold">Zonix Pharma</span>
@@ -387,11 +398,11 @@
                     </div>
                 </div>
                 <div class="col-lg-zonix-6 ps-lg-5">
-                    <span class="text-primary-zonix font-bold tracking-wider text-uppercase text-sm d-block mb-2 reveal">¿Cómo funciona?</span>
+                    <span class="text-teal-deep font-bold tracking-wider text-uppercase text-sm d-block mb-2 reveal">¿Cómo funciona?</span>
                     <h2 class="text-3xl text-md-5xl font-black text-navy mb-5 reveal">Tu farmacia favorita en 3 simples pasos</h2>
                     <div class="d-flex flex-column" style="gap: 2.5rem;">
                         <div class="d-flex gap-4 reveal reveal-delay-100">
-                             <div class="flex-shrink-0"><div class="rounded-circle bg-primary-10 text-primary-zonix d-flex align-items-center justify-content-center" style="width: 3.5rem; height: 3.5rem;"><span class="material-symbols-outlined text-3xl">touch_app</span></div></div>
+                             <div class="flex-shrink-0"><div class="rounded-circle bg-primary-10 text-teal-deep d-flex align-items-center justify-content-center" style="width: 3.5rem; height: 3.5rem;"><span class="material-symbols-outlined text-3xl">touch_app</span></div></div>
                              <div><h3 class="text-xl font-bold text-navy mb-2">1. Descarga la App</h3><p class="text-slate-600">Disponible gratis para iOS y Android. Crea tu cuenta en segundos.</p></div>
                         </div>
                         <div class="d-flex gap-4">
@@ -411,41 +422,46 @@
     <!-- GEO / Definition Section -->
     <section id="about" class="py-5 bg-light border-top border-bottom border-slate-100">
         <div class="container-zonix text-center" style="max-width: 800px;">
-            <span class="text-primary-zonix font-bold tracking-wider text-uppercase text-sm d-block mb-3 reveal">Sobre Nosotros</span>
+            <span class="text-teal-deep font-bold tracking-wider text-uppercase text-sm d-block mb-3 reveal">Sobre Nosotros</span>
             <h2 class="text-3xl font-black text-navy mb-4 reveal">¿Qué es Zonix Pharma?</h2>
             <p class="text-slate-600 text-lg leading-relaxed reveal reveal-delay-100">
-                <strong>Zonix Pharma</strong> es la plataforma tecnológica de delivery líder en Venezuela que conecta a usuarios con las mejores farmacias y droguerías locales. 
-                A diferencia de otras apps, ofrecemos <strong>entregas en 15 minutos</strong>, soporte al cliente 100% humano y métodos de pago adaptados a la realidad local (Bolívares, Dólares en efectivo, Zelle, PayPal).
+                <strong>Zonix Pharma</strong> es la plataforma tecnológica que conecta a usuarios con farmacias y droguerías aliadas en Venezuela.
+                Ofrecemos <strong>entregas en 20 a 45 minutos</strong>, soporte humano directo y métodos de pago adaptados a la realidad local (Bolívares, Dólares en efectivo, Zelle, PayPal).
             </p>
+            <ul class="list-unstyled text-start text-slate-600 mt-4 mb-0 reveal reveal-delay-200" style="max-width: 560px; margin-left: auto; margin-right: auto;">
+                <li class="d-flex gap-2 align-items-start mb-2"><span class="material-symbols-outlined text-teal-deep fs-6 mt-1">health_and_safety</span><span>Farmacias con farmacéutico colegiado responsable de la dispensación.</span></li>
+                <li class="d-flex gap-2 align-items-start mb-2"><span class="material-symbols-outlined text-teal-deep fs-6 mt-1">inventory_2</span><span>Productos certificados y cadena de custodia en cada pedido.</span></li>
+                <li class="d-flex gap-2 align-items-start"><span class="material-symbols-outlined text-teal-deep fs-6 mt-1">prescriptions</span><span>Medicamentos Rx: carga tu receta en la app y validación antes del despacho.</span></li>
+            </ul>
         </div>
     </section>
 
     <!-- Drivers -->
     <section class="position-relative py-5 bg-navy text-white overflow-hidden">
         <div class="position-absolute top-0 start-0 w-100 h-100">
-             <img src="{{ asset('assets/img/driver/driver-bg.jpg') }}" class="w-100 h-100 object-fit-cover" alt="Driver">
+             <img src="{{ asset('assets/img/driver/driver-bg.jpg') }}" class="w-100 h-100 object-fit-cover" alt="Repartidor de Zonix Pharma en entrega de medicamentos">
              <div class="driver-overlay-gradient position-absolute top-0 start-0 w-100 h-100"></div>
         </div>
         <div class="container-zonix position-relative z-1 py-5">
             <div class="" style="max-width: 42rem;">
                 <!-- Fixed Heading size: text-4xl (mobile) -> text-md-5xl (tablet) -> text-lg-6xl (desktop) -->
-                <h2 class="text-4xl text-md-5xl text-lg-6xl font-black mb-4 leading-tight text-white reveal">Sé tu propio jefe. <br><span class="text-blue-zonix">Gana dinero extra.</span></h2>
-                <p class="text-slate-300 text-lg mb-5 reveal reveal-delay-100">Únete a la flota de repartidores más grande de Latinoamérica. Tú decides cuándo y cuánto trabajar. Sin horarios fijos, sin jefes.</p>
+                <h2 class="text-4xl text-md-5xl text-lg-6xl font-black mb-4 leading-tight text-white reveal">Entrega medicamentos con responsabilidad.<br><span class="text-blue-zonix">Únete como repartidor aliado.</span></h2>
+                <p class="text-slate-300 text-lg mb-5 reveal reveal-delay-100">Forma parte de nuestra red de repartidores en Venezuela. Horario flexible, pagos puntuales y entregas con cadena de custodia.</p>
                 <div class="row g-4 mb-5">
                     <div class="col-sm-6">
                         <div class="bg-white bg-opacity-10 backdrop-blur p-4 rounded-xl border border-white border-opacity-10">
-                            <span class="d-block text-3xl font-black text-yellow mb-1">$350+</span><p class="text-sm font-medium text-white mb-0">Ganancia promedio diaria</p>
+                            <span class="d-block text-3xl font-black text-yellow mb-1">Flexible</span><p class="text-sm font-medium text-white mb-0">Horario a tu medida</p>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="bg-white bg-opacity-10 backdrop-blur p-4 rounded-xl border border-white border-opacity-10">
-                             <span class="d-block text-3xl font-black text-primary-zonix mb-1">100%</span><p class="text-sm font-medium text-white mb-0">De las propinas son tuyas</p>
+                             <span class="d-block text-3xl font-black text-brand-mint mb-1">Trazable</span><p class="text-sm font-medium text-white mb-0">Cadena de custodia farmacia a paciente</p>
                         </div>
                     </div>
                 </div>
                 <div class="d-flex flex-column flex-sm-row gap-3">
-                    <button class="btn-zonix-primary btn-ripple py-3 px-4 rounded-pill">Registrarme para conducir <span class="material-symbols-outlined">directions_bike</span></button>
-                    <button class="btn border border-white border-opacity-25 text-white font-bold py-3 px-4 rounded-pill hover:bg-white hover:bg-opacity-10 transition">Más información</button>
+                    <a href="mailto:repartidores@zonixpharma.com" class="btn-zonix-primary btn-ripple py-3 px-4 rounded-pill text-decoration-none d-inline-flex align-items-center justify-content-center gap-2">Registrarme para conducir <span class="material-symbols-outlined">directions_bike</span></a>
+                    <a href="#become-partner" class="btn border border-white border-opacity-25 text-white font-bold py-3 px-4 rounded-pill hover:bg-white hover:bg-opacity-10 transition text-decoration-none">Más información</a>
                 </div>
             </div>
         </div>
@@ -455,7 +471,7 @@
     <section class="py-5 bg-white border-bottom border-slate-100">
         <div class="container-zonix">
             <div class="text-center mb-5">
-                <span class="text-primary-zonix font-bold tracking-wider text-uppercase text-sm d-block mb-2 reveal">Comunidad</span>
+                <span class="text-teal-deep font-bold tracking-wider text-uppercase text-sm d-block mb-2 reveal">Comunidad</span>
                 <h2 class="text-3xl font-black text-navy reveal">Ellos ya usan Zonix</h2>
             </div>
             
@@ -463,22 +479,22 @@
                 <div class="col-md-4">
                     <div class="testimonial-card reveal">
                         <div class="d-flex align-items-center gap-3 mb-4">
-                            <img src="{{ asset('assets/img/avatars/user1.jpg') }}" alt="User" class="rounded-circle avatar-ring" width="56" height="56">
+                            <img src="{{ asset('assets/img/avatars/user1.jpg') }}" alt="Sofía M., usuaria de Zonix Pharma" class="rounded-circle avatar-ring" width="56" height="56">
                             <div>
                                 <h4 class="font-bold text-navy text-base mb-0">Sofía M.</h4>
-                                <div class="text-warning text-sm"><span class="material-symbols-outlined fs-6">star</span><span class="material-symbols-outlined fs-6">star</span><span class="material-symbols-outlined fs-6">star</span><span class="material-symbols-outlined fs-6">star</span><span class="material-symbols-outlined fs-6">star</span></div>
+                                <span class="badge bg-primary-10 text-navy rounded-pill text-xs font-bold px-2 py-1">Paciente</span>
                             </div>
                         </div>
-                        <p class="text-slate-600 mb-0">"La mejor app de delivery que he probado. Llegan súper rápido y el soporte es excelente. ¡Totalmente recomendada!"</p>
+                        <p class="text-slate-600 mb-0">"La mejor app de farmacia que he probado. Llegan rápido y el soporte es excelente. ¡Totalmente recomendada!"</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="testimonial-card reveal reveal-delay-100">
                         <div class="d-flex align-items-center gap-3 mb-4">
-                            <img src="{{ asset('assets/img/avatars/user2.jpg') }}" alt="User" class="rounded-circle avatar-ring" width="56" height="56">
+                            <img src="{{ asset('assets/img/avatars/user2.jpg') }}" alt="Carlos R., repartidor de Zonix Pharma" class="rounded-circle avatar-ring" width="56" height="56">
                             <div>
                                 <h4 class="font-bold text-navy text-base mb-0">Carlos R.</h4>
-                                <div class="text-warning text-sm"><span class="material-symbols-outlined fs-6">star</span><span class="material-symbols-outlined fs-6">star</span><span class="material-symbols-outlined fs-6">star</span><span class="material-symbols-outlined fs-6">star</span><span class="material-symbols-outlined fs-6">star</span></div>
+                                <span class="badge bg-primary-10 text-navy rounded-pill text-xs font-bold px-2 py-1">Repartidor</span>
                             </div>
                         </div>
                         <p class="text-slate-600 mb-0">"Como repartidor, Zonix me da la libertad que necesito. Pagos puntuales y siempre hay pedidos."</p>
@@ -487,13 +503,13 @@
                 <div class="col-md-4">
                     <div class="testimonial-card reveal reveal-delay-200">
                         <div class="d-flex align-items-center gap-3 mb-4">
-                            <img src="{{ asset('assets/img/avatars/user3.jpg') }}" alt="User" class="rounded-circle avatar-ring" width="56" height="56">
+                            <img src="{{ asset('assets/img/avatars/user3.jpg') }}" alt="Ana P., aliada farmacéutica de Zonix Pharma" class="rounded-circle avatar-ring" width="56" height="56">
                             <div>
                                 <h4 class="font-bold text-navy text-base mb-0">Ana P.</h4>
-                                <div class="text-warning text-sm"><span class="material-symbols-outlined fs-6">star</span><span class="material-symbols-outlined fs-6">star</span><span class="material-symbols-outlined fs-6">star</span><span class="material-symbols-outlined fs-6">star</span><span class="material-symbols-outlined fs-6">star</span></div>
+                                <span class="badge bg-primary-10 text-navy rounded-pill text-xs font-bold px-2 py-1">Farmacia aliada</span>
                             </div>
                         </div>
-                        <p class="text-slate-600 mb-0">"Desde que registré mi pastelería, las ventas se duplicaron. La plataforma para negocios es muy intuitiva."</p>
+                        <p class="text-slate-600 mb-0">"Desde que registré mi farmacia, llegamos a más pacientes en la zona. La plataforma para aliados es muy intuitiva."</p>
                     </div>
                 </div>
             </div>
@@ -504,7 +520,7 @@
     <section class="py-5 bg-white">
         <div class="container-zonix" style="max-width: 800px;">
             <div class="text-center mb-5">
-                <span class="text-primary-zonix font-bold tracking-wider text-uppercase text-sm d-block mb-2 reveal">Preguntas Frecuentes</span>
+                <span class="text-teal-deep font-bold tracking-wider text-uppercase text-sm d-block mb-2 reveal">Preguntas Frecuentes</span>
                 <h2 class="text-3xl font-black text-navy reveal">Resolvemos tus dudas</h2>
             </div>
             
@@ -518,7 +534,7 @@
                     </h2>
                     <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                         <div class="accordion-body text-slate-600 pb-4">
-                            El tiempo promedio de entrega en Zonix Pharma es de <strong>15 a 30 minutos</strong>, gracias a nuestra tecnología de despacho inteligente y flota de repartidores locales. Priorizamos la rapidez para que tus medicinas lleguen rápido y en condiciones óptimas.
+                            El tiempo promedio de entrega en Zonix Pharma es de <strong>20 a 45 minutos</strong>, según la disponibilidad de la farmacia más cercana y la logística de delivery. Priorizamos que tus medicinas lleguen en condiciones óptimas.
                         </div>
                     </div>
                 </div>
@@ -546,7 +562,21 @@
                     </h2>
                     <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                         <div class="accordion-body text-slate-600 pb-4">
-                            Actualmente operamos en <strong>Caracas, Maracaibo, Valencia, Barquisimeto y Lechería</strong>. Estamos expandiéndonos rápidamente para llevar el mejor delivery a más ciudades del país.
+                            Actualmente operamos en <strong>Caracas, Maracaibo, Valencia, Barquisimeto, Maracay y Lechería</strong>. Estamos expandiéndonos gradualmente para llevar el servicio farmacéutico a domicilio a más ciudades del país.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="accordion-item border-0 mb-3 bg-slate-50 rounded-xl overflow-hidden reveal reveal-delay-400">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-transparent shadow-none font-bold text-navy py-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                            ¿Necesito receta médica para comprar medicamentos?
+                        </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-slate-600 pb-4">
+                            Los productos de venta libre (<strong>OTC</strong>) no requieren receta. Los medicamentos bajo prescripción (<strong>Rx</strong>) requieren cargar una receta válida en la app, que es revisada por el farmacéutico colegiado de la farmacia despachadora antes del despacho.
                         </div>
                     </div>
                 </div>
@@ -560,15 +590,27 @@
             <div class="cta-banner shadow-primary reveal">
                 <div>
                     <h2 class="text-3xl text-md-4xl font-black text-white mb-3">¿Qué esperas?</h2>
-                    <p class="text-white text-opacity-75 text-lg mb-4 mb-md-0">Únete a la comunidad farmacéutica más grande. Descarga la App hoy.</p>
+                    <p class="text-white text-opacity-75 text-lg mb-4 mb-md-0">Únete a la comunidad farmacéutica en crecimiento. Descarga la App hoy.</p>
                 </div>
                 <div class="d-flex flex-wrap gap-3">
-                    <a href="javascript:void(0)" class="app-badge" onclick="alert('Disponible pronto en App Store')">
-                        <img src="{{ asset('assets/img/badges/app-store.png') }}" alt="Download on App Store" class="h-100">
-                    </a>
-                    <a href="javascript:void(0)" class="app-badge" onclick="alert('Disponible pronto en Google Play')">
-                        <img src="{{ asset('assets/img/badges/google-play.png') }}" alt="Get it on Google Play" class="h-100">
-                    </a>
+                    @if($appStoreUrl)
+                        <a href="{{ $appStoreUrl }}" target="_blank" rel="noopener noreferrer" class="app-badge">
+                            <img src="{{ asset('assets/img/badges/app-store.png') }}" alt="Descargar en App Store" class="h-100">
+                        </a>
+                    @else
+                        <a href="#" class="app-badge" data-bs-toggle="modal" data-bs-target="#comingSoonModal">
+                            <img src="{{ asset('assets/img/badges/app-store.png') }}" alt="Descargar en App Store — próximamente" class="h-100">
+                        </a>
+                    @endif
+                    @if($playStoreUrl)
+                        <a href="{{ $playStoreUrl }}" target="_blank" rel="noopener noreferrer" class="app-badge">
+                            <img src="{{ asset('assets/img/badges/google-play.png') }}" alt="Descargar en Google Play" class="h-100">
+                        </a>
+                    @else
+                        <a href="#" class="app-badge" data-bs-toggle="modal" data-bs-target="#comingSoonModal">
+                            <img src="{{ asset('assets/img/badges/google-play.png') }}" alt="Descargar en Google Play — próximamente" class="h-100">
+                        </a>
+                    @endif
                 </div>
             </div>
         </div>
@@ -577,10 +619,10 @@
     <!-- Cookie Consent Banner -->
     <div id="cookieBanner" class="cookie-banner">
         <div class="d-flex align-items-center gap-3">
-            <span class="material-symbols-outlined text-primary-zonix fs-1">cookie</span>
+            <span class="material-symbols-outlined text-teal-deep fs-1">cookie</span>
             <div>
                 <p class="font-bold text-navy mb-0">Usamos cookies 🍪</p>
-                <p class="text-slate-500 text-sm mb-0">Para mejorar tu experiencia y ofrecerte las mejores ofertas.</p>
+                <p class="text-slate-500 text-sm mb-0">Para ofrecerte una experiencia segura y personalizada.</p>
             </div>
         </div>
         <button id="acceptCookies" class="btn btn-zonix-primary py-2 px-4 shadow-none">
@@ -594,15 +636,15 @@
             <button class="btn btn-sm text-slate-400 border-0 p-1" onclick="document.getElementById('smartBanner').remove()">
                 <span class="material-symbols-outlined fs-6">close</span>
             </button>
-            <div class="bg-primary-zonix rounded p-1 d-flex align-items-center justify-content-center" style="width: 2.5rem; height: 2.5rem;">
-                <span class="material-symbols-outlined text-white">lunch_dining</span>
+            <div class="bg-navy rounded p-1 d-flex align-items-center justify-content-center" style="width: 2.5rem; height: 2.5rem;">
+                <span class="material-symbols-outlined text-white">local_pharmacy</span>
             </div>
             <div>
                 <p class="font-bold text-navy text-sm mb-0">Zonix Pharma</p>
-                <p class="text-xs text-slate-500 mb-0">Gratis en App Store</p>
+                <p class="text-xs text-slate-500 mb-0">Próximamente en tiendas</p>
             </div>
         </div>
-        <button class="btn btn-sm btn-zonix-primary rounded-pill px-3 font-bold">
+        <button class="btn btn-sm btn-zonix-primary rounded-pill px-3 font-bold" onclick="document.getElementById('download').scrollIntoView({behavior:'smooth'})">
             Ver
         </button>
     </div>
@@ -621,10 +663,7 @@
                 <!-- Brand Col -->
                 <div class="col-lg-4">
                     <div class="mb-4">
-                        <div class="d-flex align-items-center gap-1">
-                            <img src="{{ asset('assets/img/logo.png') }}" alt="Zonix Pharma" style="height: 4rem; filter: none !important;">
-                            <span class="text-white fs-3 font-black tracking-tighter leading-none">Zonix<span class="text-primary-zonix">PHARMA</span></span>
-                        </div>
+                        <img src="{{ asset('assets/img/logo.png') }}" alt="Zonix Pharma" style="height: 4rem; filter: none !important;">
                     </div>
                     <p class="text-slate-400 mb-4 bg-transparent border-0 p-0">
                         La plataforma tecnológica que conecta a usuarios, farmacias y repartidores para acercarte la salud.
@@ -649,9 +688,6 @@
                 <div class="col-6 col-lg-2">
                     <h5 class="font-bold mb-3 text-white">Zonix</h5>
                     <a href="#about" class="footer-link">Sobre Nosotros</a>
-                    <a href="javascript:void(0)" onclick="alert('Sección de Carreras próximamente')" class="footer-link">Carreras</a>
-                    <a href="javascript:void(0)" onclick="alert('Blog próximamente')" class="footer-link">Blog</a>
-                    <a href="javascript:void(0)" onclick="alert('Kit de Prensa próximamente')" class="footer-link">Prensa</a>
                 </div>
 
                 <div class="col-6 col-lg-2">
@@ -690,96 +726,70 @@
     <div class="offcanvas-backdrop" id="offcanvasBackdrop"></div>
     <div class="offcanvas-menu" id="offcanvasMenu">
         <div class="d-flex justify-content-between align-items-center mb-5">
-            <div class="d-flex align-items-center gap-1">
-                <img src="{{ asset('assets/img/logo.png') }}" alt="Zonix Pharma" style="height: 3rem;">
-                <span class="text-navy fs-3 font-black tracking-tighter leading-none">Zonix<span class="text-primary-zonix">PHARMA</span></span>
-            </div>
-            <button class="btn btn-icon" id="closeMenuBtn">
+            <img src="{{ asset('assets/img/logo.png') }}" alt="Zonix Pharma" style="height: 3rem;">
+            <button class="btn btn-icon" id="closeMenuBtn" aria-label="Cerrar menú">
                 <span class="material-symbols-outlined fs-2 text-slate-400">close</span>
             </button>
         </div>
         
         <div class="d-flex flex-col gap-4">
-            <a href="#" class="nav-link-mobile">
+            <a href="{{ url('/') }}" class="nav-link-mobile">
                 <span class="material-symbols-outlined">home</span> Inicio
             </a>
             <a href="#categories" class="nav-link-mobile">
-                <span class="material-symbols-outlined">local_pharmacy</span> Farmacias
+                <span class="material-symbols-outlined">category</span> Categorías
             </a>
             <a href="#offers" class="nav-link-mobile">
-                <span class="material-symbols-outlined">percent</span> Ofertas
+                <span class="material-symbols-outlined">smartphone</span> En la App
             </a>
              <hr class="border-slate-100 my-2">
             @auth
-                 <a href="{{ route('dashboard') }}" class="nav-link-mobile text-primary-zonix font-bold">
+                 <a href="{{ route('dashboard') }}" class="nav-link-mobile text-navy font-bold">
                     <span class="material-symbols-outlined">dashboard</span> Dashboard
                 </a>
             @else
-                 <a href="#" class="nav-link-mobile" data-bs-toggle="modal" data-bs-target="#loginModal">
-                    <span class="material-symbols-outlined">person</span> Iniciar Sesión
+                 <a href="{{ route('login') }}" class="nav-link-mobile">
+                    <span class="material-symbols-outlined">storefront</span> Panel aliados
                 </a>
-                 <a href="#" class="nav-link-mobile text-primary-zonix font-bold" data-bs-toggle="modal" data-bs-target="#registerModal">
-                    <span class="material-symbols-outlined">how_to_reg</span> Registrarse
+                 <a href="#download" class="nav-link-mobile text-navy font-bold">
+                    <span class="material-symbols-outlined">download</span> Descargar App
                 </a>
             @endauth
         </div>
         
         <div class="mt-auto bg-slate-50 p-4 rounded-xl">
             <div class="d-flex gap-3 mb-4">
-                <a href="#" class="btn btn-icon bg-white text-navy hover-scale"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="btn btn-icon bg-white text-navy hover-scale"><i class="bi bi-tiktok"></i></a>
-                <a href="#" class="btn btn-icon bg-white text-navy hover-scale"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://instagram.com/zonixpharma" target="_blank" rel="noopener noreferrer" class="btn btn-icon bg-white text-navy hover-scale" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://tiktok.com/@zonixpharma" target="_blank" rel="noopener noreferrer" class="btn btn-icon bg-white text-navy hover-scale" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                <a href="https://facebook.com/zonixpharma" target="_blank" rel="noopener noreferrer" class="btn btn-icon bg-white text-navy hover-scale" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
             </div>
              <p class="text-xs text-slate-500 font-bold text-uppercase mb-3">Descarga la App</p>
              <div class="d-flex gap-2">
-                 <button class="btn bg-navy text-white flex-grow-1 py-2 rounded-lg"><span class="material-symbols-outlined">android</span></button>
-                 <button class="btn bg-navy text-white flex-grow-1 py-2 rounded-lg"><span class="material-symbols-outlined">ios</span></button>
+                 @if($playStoreUrl)
+                     <a href="{{ $playStoreUrl }}" target="_blank" rel="noopener noreferrer" class="btn bg-navy text-white flex-grow-1 py-2 rounded-lg text-decoration-none d-flex align-items-center justify-content-center" aria-label="Google Play"><span class="material-symbols-outlined">android</span></a>
+                 @else
+                     <button type="button" class="btn bg-navy text-white flex-grow-1 py-2 rounded-lg" data-bs-toggle="modal" data-bs-target="#comingSoonModal" aria-label="Google Play — próximamente"><span class="material-symbols-outlined">android</span></button>
+                 @endif
+                 @if($appStoreUrl)
+                     <a href="{{ $appStoreUrl }}" target="_blank" rel="noopener noreferrer" class="btn bg-navy text-white flex-grow-1 py-2 rounded-lg text-decoration-none d-flex align-items-center justify-content-center" aria-label="App Store"><span class="material-symbols-outlined">phone_iphone</span></a>
+                 @else
+                     <button type="button" class="btn bg-navy text-white flex-grow-1 py-2 rounded-lg" data-bs-toggle="modal" data-bs-target="#comingSoonModal" aria-label="App Store — próximamente"><span class="material-symbols-outlined">phone_iphone</span></button>
+                 @endif
              </div>
         </div>
     </div>
-    <!-- Login Modal -->
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+    <!-- Coming Soon Modal (App stores) -->
+    <div class="modal fade" id="comingSoonModal" tabindex="-1" aria-labelledby="comingSoonModalTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content rounded-xl border-0 shadow-lg overflow-hidden">
                 <div class="modal-header border-0 pb-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body p-5 text-center">
-                    <img src="{{ asset('assets/img/logo.png') }}" alt="Zonix" style="height: 3rem;" class="mb-4">
-                    <h3 class="font-black text-navy mb-2">Bienvenido de nuevo</h3>
-                    <p class="text-slate-500 mb-4">Ingresa a tu cuenta para pedir</p>
-                    <form method="POST" action="{{ route('login') }}">
-                        @csrf
-                        <input type="email" name="email" class="form-control form-control-lg bg-slate-50 border-0 mb-3" placeholder="Correo electrónico" required>
-                        <input type="password" name="password" class="form-control form-control-lg bg-slate-50 border-0 mb-4" placeholder="Contraseña" required>
-                        <button type="submit" class="btn btn-zonix-primary w-100 py-3 font-bold rounded-pill">Iniciar Sesión</button>
-                    </form>
-                    <p class="text-xs text-slate-400 mt-4">¿No tienes cuenta? <a href="#" class="text-primary-zonix font-bold" data-bs-toggle="modal" data-bs-target="#registerModal">Regístrate</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Register Modal -->
-    <div class="modal fade" id="registerModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content rounded-xl border-0 shadow-lg overflow-hidden">
-                <div class="modal-header border-0 pb-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-5 text-center">
-                    <img src="{{ asset('assets/img/logo.png') }}" alt="Zonix" style="height: 3rem;" class="mb-4">
-                    <h3 class="font-black text-navy mb-2">Crea tu cuenta</h3>
-                    <p class="text-slate-500 mb-4">Empieza a disfrutar Zonix Pharma</p>
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
-                        <input type="text" name="name" class="form-control form-control-lg bg-slate-50 border-0 mb-3" placeholder="Nombre completo" required>
-                        <input type="email" name="email" class="form-control form-control-lg bg-slate-50 border-0 mb-3" placeholder="Correo electrónico" required>
-                        <input type="password" name="password" class="form-control form-control-lg bg-slate-50 border-0 mb-3" placeholder="Crear contraseña" required>
-                        <input type="password" name="password_confirmation" class="form-control form-control-lg bg-slate-50 border-0 mb-4" placeholder="Confirmar contraseña" required>
-                        <button type="submit" class="btn btn-zonix-primary w-100 py-3 font-bold rounded-pill">Crear Cuenta</button>
-                    </form>
-                    <p class="text-xs text-slate-400 mt-4">¿Ya tienes cuenta? <a href="#" class="text-primary-zonix font-bold" data-bs-toggle="modal" data-bs-target="#loginModal">Inicia Sesión</a></p>
+                    <img src="{{ asset('assets/img/logo.png') }}" alt="Zonix Pharma" style="height: 3rem;" class="mb-4">
+                    <h3 id="comingSoonModalTitle" class="font-black text-navy mb-2">App próximamente</h3>
+                    <p class="text-slate-500 mb-4">Zonix Pharma estará disponible muy pronto en App Store y Google Play. Mientras tanto, las farmacias aliadas pueden acceder al panel web.</p>
+                    <a href="{{ route('login') }}" class="btn btn-zonix-primary w-100 py-3 font-bold rounded-pill text-decoration-none">Panel de aliados</a>
                 </div>
             </div>
         </div>

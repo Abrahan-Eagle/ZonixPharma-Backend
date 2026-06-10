@@ -65,13 +65,8 @@ class SeoHelper
             '@context' => 'https://schema.org',
             '@type' => 'WebSite',
             'name' => 'Zonix Pharma',
-            'url' => $data['url'],
+            'url' => url('/'),
             'description' => $data['description'],
-            'potentialAction' => [
-                '@type' => 'SearchAction',
-                'target' => url('/').'/search?q={search_term_string}',
-                'query-input' => 'required name=search_term_string',
-            ],
         ];
 
         return json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
@@ -89,11 +84,6 @@ class SeoHelper
                 '@type' => 'Offer',
                 'price' => '0',
                 'priceCurrency' => 'USD',
-            ],
-            'aggregateRating' => [
-                '@type' => 'AggregateRating',
-                'ratingValue' => '4.8',
-                'ratingCount' => '1250',
             ],
         ];
 
@@ -149,12 +139,38 @@ class SeoHelper
                 ],
                 [
                     '@type' => 'Question',
+                    'name' => '¿En qué ciudades de Venezuela opera Zonix Pharma?',
+                    'acceptedAnswer' => [
+                        '@type' => 'Answer',
+                        'text' => 'Operamos en Caracas, Maracaibo, Valencia, Barquisimeto, Maracay y Lechería, con expansión gradual a más ciudades.',
+                    ],
+                ],
+                [
+                    '@type' => 'Question',
                     'name' => '¿Necesito receta médica para comprar medicamentos en Zonix Pharma?',
                     'acceptedAnswer' => [
                         '@type' => 'Answer',
                         'text' => 'Los productos de venta libre (OTC) no requieren receta. Los medicamentos bajo prescripción (Rx) requieren la carga de una receta válida que es revisada por el farmacéutico colegiado de la farmacia despachadora.',
                     ],
                 ],
+            ],
+        ];
+
+        return json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+    }
+
+    public static function generateWebPageSchema(string $name, string $description): string
+    {
+        $schema = [
+            '@context' => 'https://schema.org',
+            '@type' => 'WebPage',
+            'name' => $name,
+            'description' => $description,
+            'url' => url()->current(),
+            'isPartOf' => [
+                '@type' => 'WebSite',
+                'name' => 'Zonix Pharma',
+                'url' => url('/'),
             ],
         ];
 

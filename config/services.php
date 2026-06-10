@@ -36,4 +36,9 @@ return [
         'database_url' => env('FIREBASE_DATABASE_URL'),
     ],
 
+    'stores' => [
+        'app_store_url' => env('APP_STORE_URL', ''),
+        'play_store_url' => env('PLAY_STORE_URL', ''),
+    ],
+
 ];

@@ -91,7 +91,7 @@
                                 </div>
                                 <h3 class="text-2xl font-bold text-navy m-0">2. Pedidos y Pagos</h3>
                             </div>
-                            <p>Los precios de los productos son establecidos directamente por los comercios aliados. Zonix Pharma cobra una tarifa de servicio y/o envío por el uso de la plataforma.</p>
+                            <p>Los precios de los productos son establecidos directamente por las farmacias y droguerías aliadas. Zonix Pharma cobra una tarifa de servicio y/o envío por el uso de la plataforma.</p>
                             <p>Aceptamos los siguientes métodos de pago:</p>
                             <div class="d-flex gap-2 mb-3">
                                 <span class="badge bg-light text-navy border">Pago Móvil</span>
@@ -107,7 +107,7 @@
                                 </div>
                                 <h3 class="text-2xl font-bold text-navy m-0">3. Cancelaciones y Reembolsos</h3>
                             </div>
-                            <p>Puedes cancelar tu pedido sin costo siempre que el comercio no haya comenzado a prepararlo. Una vez en preparación, podrían aplicar cargos por cancelación.</p>
+                            <p>Puedes cancelar tu pedido sin costo siempre que la farmacia aliada no haya iniciado el despacho del pedido. Una vez en proceso de dispensación o despacho, podrían aplicar cargos por cancelación.</p>
                         </div>
 
                         <div id="liability" class="scroll-mt-24">
@@ -117,7 +117,7 @@
                                 </div>
                                 <h3 class="text-2xl font-bold text-navy m-0">4. Limitación de Responsabilidad</h3>
                             </div>
-                            <p>Zonix Pharma no prepara ni manipula alimentos. La responsabilidad sobre la calidad e higiene de los productos recae exclusivamente en el comercio aliado. Sin embargo, gestionaremos cualquier reclamo para asegurar tu satisfacción.</p>
+                            <p>Zonix Pharma es una plataforma tecnológica intermediaria: no dispensa medicamentos ni valida recetas médicas. La responsabilidad sobre la dispensación, la cadena de custodia, la validez de la receta (Rx) y el cumplimiento normativo recae en la farmacia aliada y su farmacéutico colegiado responsable. Zonix Pharma gestionará reclamos para facilitar la resolución entre usuario y establecimiento.</p>
                         </div>
 
                     </div>

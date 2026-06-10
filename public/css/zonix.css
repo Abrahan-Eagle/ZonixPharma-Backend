@@ -9,16 +9,21 @@
   /* Typography */
   --font-display: "Plus Jakarta Sans", sans-serif;
 
-  /* Colors - Exact matches from Tailwind Config */
-  --zonix-primary: #ff3d40;
-  --zonix-navy: #003049;
-  --zonix-navy-light: #004e75;
-  --zonix-blue: #0099dd;
-  --zonix-yellow: #fdb813;
+  /* Colors — BRAND_ZONIX_PHARMA.md (canónico pharma) */
+  --zonix-primary: #56C7B8;       /* brandTeal — CTA principal */
+  --zonix-navy: #1E2A5A;            /* brandNavy */
+  --zonix-navy-light: #0F4C5C;      /* brandTealDeep */
+  --zonix-blue: #0F4C5C;            /* acento profundo / links */
+  --zonix-yellow: #F2A65A;          /* brandCtaAccent */
+
+  /* Aliases documentados */
+  --brand-teal: #56C7B8;
+  --brand-mint: #A8DCCB;
+  --brand-surface-light: #F5F7FA;
 
   /* Backgrounds */
-  --zonix-bg-light: #f8f5f5;
-  --zonix-bg-dark: #230f0f;
+  --zonix-bg-light: #F5F7FA;
+  --zonix-bg-dark: #142033;
 
   /* Slate Scale (Tailwind defaults) */
   --slate-50: #f8fafc;
@@ -43,7 +48,7 @@
     0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --shadow-xl:
     0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --shadow-primary: 0 10px 15px -3px rgba(255, 61, 64, 0.3);
+  --shadow-primary: 0 10px 15px -3px rgba(86, 199, 184, 0.35);
 }
 
 /* --- GLOBAL RESETS & OVERRIDES --- */
@@ -197,8 +202,24 @@ h6 {
 .text-primary-zonix {
   color: var(--zonix-primary) !important;
 }
+.text-teal-deep {
+  color: var(--zonix-navy-light) !important;
+}
+.text-brand-mint {
+  color: var(--brand-mint) !important;
+}
 .bg-primary-zonix {
   background-color: var(--zonix-primary) !important;
+}
+.bg-mint-soft {
+  background-color: rgba(168, 220, 203, 0.35) !important;
+}
+.bg-badge-navy {
+  background-color: var(--zonix-navy) !important;
+  color: #fff !important;
+}
+.badge.bg-primary-zonix {
+  color: var(--zonix-navy) !important;
 }
 .text-navy {
   color: var(--zonix-navy) !important;
@@ -239,13 +260,13 @@ h6 {
 
 /* Opacity Variants (Fix for bg-opacity-10 failing with !important hex) */
 .bg-yellow-10 {
-  background-color: rgba(253, 184, 19, 0.1) !important;
+  background-color: rgba(242, 166, 90, 0.1) !important;
 }
 .bg-primary-10 {
-  background-color: rgba(255, 61, 64, 0.1) !important;
+  background-color: rgba(86, 199, 184, 0.12) !important;
 }
 .bg-blue-10 {
-  background-color: rgba(0, 153, 221, 0.1) !important;
+  background-color: rgba(15, 76, 92, 0.1) !important;
 }
 .bg-success-10 {
   background-color: rgba(25, 135, 84, 0.1) !important; /* Bootstrap Success approx */
@@ -364,13 +385,13 @@ h6 {
   height: auto;
 }
 .nav-search-btn:hover {
-  background-color: #dc2626;
+  background-color: var(--zonix-navy-light);
 }
 
 /* 2. Buttons */
 .btn-zonix-primary {
     background-color: var(--zonix-primary);
-    color: white;
+    color: var(--zonix-navy);
     font-weight: 700;
     padding: 0.625rem 1.5rem; /* py-2.5 (10px) px-6 (24px) - Navbar Base */
     border-radius: 9999px;
@@ -387,7 +408,7 @@ h6 {
     font-size: 1rem;
 }
 .btn-zonix-primary:hover {
-    background-color: #dc2626;
+    background-color: var(--zonix-navy-light);
     color: white;
     transform: translateY(-1px);
 }
@@ -464,17 +485,17 @@ h6 {
 }
 /* Exact Gradient Replacements for Hero */
 .hero-overlay-mobile {
-    background: linear-gradient(to top, rgba(0,48,73,0.8) 0%, transparent 100%);
+    background: linear-gradient(to top, rgba(30,42,90,0.8) 0%, transparent 100%);
     position: absolute; inset: 0; pointer-events: none;
 }
 .hero-overlay-desktop {
-    background: linear-gradient(to right, rgba(0,48,73,0.5) 0%, transparent 50%, transparent 100%);
+    background: linear-gradient(to right, rgba(30,42,90,0.5) 0%, transparent 50%, transparent 100%);
     position: absolute; inset: 0; pointer-events: none;
     border-bottom-left-radius: 4rem;
 }
 .driver-overlay-gradient {
     /* Exact match: form-navy via-navy/90 to-transparent */
-    background: linear-gradient(90deg, #003049 0%, rgba(0, 48, 73, 0.9) 40%, transparent 100%) !important;
+    background: linear-gradient(90deg, var(--zonix-navy) 0%, rgba(30, 42, 90, 0.9) 40%, transparent 100%) !important;
     opacity: 1 !important;
 }
 
@@ -913,7 +934,7 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 12px rgba(255, 61, 64, 0.4);
+    box-shadow: 0 4px 12px rgba(86, 199, 184, 0.4);
     cursor: pointer;
     opacity: 0;
     visibility: hidden;
@@ -927,7 +948,7 @@ h6 {
     transform: translateY(0);
 }
 #backToTop:hover {
-    background-color: #dc2626;
+    background-color: var(--zonix-navy-light);
     transform: translateY(-4px);
 }
 
@@ -1061,10 +1082,10 @@ h6 {
 }
 
 
-/* CTA Banner Redesign */
+/* CTA Banner Redesign — navy dominante (60%), teal reservado a botones store */
 .cta-banner {
-    background: linear-gradient(135deg, var(--zonix-primary) 0%, #ff6b6d 100%) !important;
-    box-shadow: 0 25px 50px -12px rgba(255, 61, 64, 0.4) !important;
+    background: linear-gradient(135deg, var(--zonix-navy) 0%, var(--zonix-navy-light) 100%) !important;
+    box-shadow: 0 25px 50px -12px rgba(30, 42, 90, 0.35) !important;
 }
 
 /* Testimonials */
@@ -1140,13 +1161,6 @@ h6 {
 
 
 /* Dynamic Branding Logic */
-.navbar-brand-text {
-    color: white !important; /* Default on dark hero */
-    transition: color 0.3s ease;
-}
-.navbar-zonix.navbar-sticky .navbar-brand-text {
-    color: var(--zonix-navy) !important; /* Dark on white navbar */
-}
 
 /* Ensure the logo image adapts too */
 .navbar-brand-logo {
@@ -1181,17 +1195,7 @@ h6 {
 
 /* RE-OVERRIDING BRANDING LOGIC */
 
-/* 1. Navbar Text */
-.navbar-brand-text {
-    color: white !important; /* Always white on Hero */
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Add shadow for visibility */
-}
-.navbar-zonix.navbar-sticky .navbar-brand-text {
-    color: var(--zonix-navy) !important;
-    text-shadow: none;
-}
-
-/* 2. Logo Image */
+/* Logo Image */
 .navbar-brand-logo {
     height: 3.3rem !important; /* Even bigger */
     filter: none !important; /* SHOW ORIGINAL COLORS BY DEFAULT */
@@ -1222,10 +1226,6 @@ footer img[alt="Zonix Pharma"] {
     visibility: visible !important;
     display: inline-block !important;
 }
-.navbar-brand span {
-    opacity: 1 !important;
-    visibility: visible !important;
-}
 
 
 /* Z-INDEX FIX & SIMPLIFIED VISIBILITY */
@@ -1235,17 +1235,6 @@ footer img[alt="Zonix Pharma"] {
     display: flex !important;
     align-items: center !important;
     opacity: 1 !important;
-}
-
-/* Ensure Text is Visible */
-.navbar-brand-text {
-    display: inline-block !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    color: white !important; /* Default */
-}
-.navbar-zonix.navbar-sticky .navbar-brand-text {
-    color: var(--zonix-navy) !important;
 }
 
 /* Ensure Logo is Visible */
@@ -1273,16 +1262,7 @@ footer img[alt="Zonix Pharma"] {
     padding-bottom: 1rem;
 }
 
-/* 2. Navbar Brand: ALWAYS ORIGINAL COLORS */
-.navbar-brand-text {
-    color: var(--zonix-navy) !important; /* Always Navy */
-    text-shadow: none !important;
-    font-weight: 900 !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-
-/* 3. Logo Image: ALWAYS ORIGINAL COLORS */
+/* Logo Image: ALWAYS ORIGINAL COLORS */
 .navbar-brand-logo {
     filter: none !important; /* No inversion, show colorful logo */
     height: 3.3rem !important; /* Big size */
@@ -1387,9 +1367,6 @@ body {
     /* 3. Navbar Tweaks */
     .navbar-brand-logo {
         height: 2.5rem !important; /* Smaller logo on mobile */
-    }
-    .navbar-brand-text {
-        font-size: 1.5rem !important;
     }
     
     /* 4. Center Mobile Text if desired? No, keep left aligned but guarded */
