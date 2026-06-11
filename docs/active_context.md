@@ -7,6 +7,11 @@
 
 ## Última actualización de contexto
 
+### Remediación módulo pharmacist (lote 2 — historial) — 10 junio 2026
+
+- **Hecho:** `GET /api/pharmacist/prescriptions/history` (filtro `status`, paginado); tests `PharmacistPrescriptionHistoryTest`.
+- **Verificación:** `php artisan test --parallel` → **431 passed**.
+
 ### Remediación módulo pharmacist (lote 1) — 10 junio 2026
 
 - **Hecho:** throttle `30,1` en approve/reject Rx; tests `PharmacistDashboardTest` (KPIs + licencia no verificada → 403 `PHARMACIST_LICENSE_INVALID`).

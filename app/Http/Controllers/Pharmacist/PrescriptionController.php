@@ -61,6 +61,46 @@ class PrescriptionController extends Controller
         ]);
     }
 
+    public function historyIndex(Request $request): JsonResponse
+    {
+        $profile = $this->resolveProfile();
+        if (! $profile) {
+            return $this->unauthenticated();
+        }
+
+        $commerceIds = $this->commerceIdsForPharmacist($profile->id);
+        $terminalStatuses = [
+            Prescription::STATUS_APPROVED,
+            Prescription::STATUS_REJECTED,
+            Prescription::STATUS_EXPIRED,
+        ];
+
+        $query = Prescription::query()
+            ->whereIn('commerce_id', $commerceIds)
+            ->whereIn('status', $terminalStatuses)
+            ->orderByDesc('validated_at')
+            ->orderByDesc('updated_at');
+
+        $status = $request->input('status');
+        if (is_string($status) && $status !== '' && in_array($status, $terminalStatuses, true)) {
+            $query->where('status', $status);
+        }
+
+        $items = $query->paginate((int) min($request->input('per_page', 20), 100));
+        $mapped = collect($items->items())->map(fn (Prescription $p) => $this->serializePrescription($p))->all();
+
+        return response()->json([
+            'success' => true,
+            'data' => $mapped,
+            'pagination' => [
+                'total' => $items->total(),
+                'per_page' => $items->perPage(),
+                'current_page' => $items->currentPage(),
+                'last_page' => $items->lastPage(),
+            ],
+        ]);
+    }
+
     public function show(Request $request, Prescription $prescription): JsonResponse
     {
         $profile = $this->resolveProfile();
