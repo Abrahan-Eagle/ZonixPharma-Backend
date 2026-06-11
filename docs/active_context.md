@@ -7,6 +7,12 @@
 
 ## Última actualización de contexto
 
+### P2 backlog Rx/Orders lote 4 — 10 junio 2026
+
+- **Pharmacist:** cache `loadPharmacistDashboard()` en `PrescriptionService`; eager `with(['order','commerce'])` en pending/history Rx.
+- **Orders UI:** chat badge Farmacia; `rx_countdown.dart` + 4 tests; `orderHttpErrorMessage` en comprobante/mensajes.
+- **Verificación:** Backend **436**; Front **237** tests (~1 skip).
+
 ### Cierre auditorías Rx/Orders + remediación final — 10 junio 2026
 
 - **Pharmacist lote 3–4:** audit doc, throttle onboarding, envelope buyer Rx, `verified` preservado en re-envío MPPS.

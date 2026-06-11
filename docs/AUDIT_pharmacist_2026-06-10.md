@@ -82,11 +82,7 @@
 - **Estado lote 3:** Remediado `throttle:10,1`
 
 ### [PHARM-005] Fetch duplicado `/dashboard` en Pendientes
-- **Rol:** Front
-- **Hallazgo:** `pending_validations_page` y `pharmacist_dashboard_page` llaman dashboard solo para `commerces` / licencia.
-- **Evidencia:** `pending_validations_page.dart:51`, `pharmacist_dashboard_page.dart:41`
-- **Severidad:** P2
-- **Recomendación:** `PharmacistContextService` o cache en Provider.
+- **Estado lote 4 (P2):** `PrescriptionService.loadPharmacistDashboard()` cache compartido panel + Pusher.
 
 ### [PHARM-006] Sin tests Feature onboarding pharmacist
 - **Rol:** Backend / QA

@@ -60,8 +60,7 @@
 - **Severidad:** P2 · **Estado lote 3:** centralizado en helper
 
 ### [ORD-004] Copy legacy `restaurant` en rating y chat
-- **Evidencia:** `order_rating_page.dart`, `buyer_order_chat_page.dart` case `'restaurant'`
-- **Severidad:** P2 · **Backlog:** alias pharma en UI copy, no rompe API
+- **Estado lote 4 (P2):** Badge chat muestra **Farmacia** (mantiene case `restaurant` API).
 
 ### [ORD-005] Rx E2E no automatizado
 - **Severidad:** P2 · **Doc:** [SMOKE_RX_E2E.md](SMOKE_RX_E2E.md)
@@ -96,4 +95,4 @@ cd ZonixPharma-Front && flutter analyze && flutter test
 
 1. Ejecutar smoke manual [SMOKE_RX_E2E.md](SMOKE_RX_E2E.md).
 2. P2: renombrar labels restaurant→farmacia en rating/chat UI.
-3. P2: tests widget `order_detail_page` countdown Rx.
+3. P2: tests widget countdown — **util `rx_countdown.dart` + 4 tests** (lote 4).

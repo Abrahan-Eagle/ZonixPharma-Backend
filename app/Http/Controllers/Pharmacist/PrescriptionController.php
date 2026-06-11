@@ -42,6 +42,7 @@ class PrescriptionController extends Controller
         $commerceIds = $this->commerceIdsForPharmacist($profile->id);
 
         $items = Prescription::query()
+            ->with(['order', 'commerce'])
             ->whereIn('commerce_id', $commerceIds)
             ->pending()
             ->orderBy('created_at')
@@ -76,6 +77,7 @@ class PrescriptionController extends Controller
         ];
 
         $query = Prescription::query()
+            ->with(['order', 'commerce'])
             ->whereIn('commerce_id', $commerceIds)
             ->whereIn('status', $terminalStatuses)
             ->orderByDesc('validated_at')
