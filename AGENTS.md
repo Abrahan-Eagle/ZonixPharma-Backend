@@ -243,6 +243,9 @@ Configurables en `config/zonix.php` (sección `pharma`):
 - **[docs/zonix/research_links.md](docs/zonix/research_links.md)** — enlaces GitHub skills/roles (adaptar/evitar).
 - **[docs/zonix/roles_matrix.json](docs/zonix/roles_matrix.json)** — routing JARVIS por rol y tarea + `skills_inventory`.
 - **[docs/zonix/SPEC_KIT_ZONIX.md](docs/zonix/SPEC_KIT_ZONIX.md)** — Spec Kit (SDD) vs Jarvis `zonix-*`.
+- **[docs/PROMPT_AUDIT_360_ZONIX.md](docs/PROMPT_AUDIT_360_ZONIX.md)** — super prompt auditoría exhaustiva (360° / código / por módulo); complementa `PROMPT_AUDIT_FORENSE.md` y `AUDIT_API_PATTERNS_*`.
+- **[docs/AUDIT_commerce_2026-06-10.md](docs/AUDIT_commerce_2026-06-10.md)** — piloto auditoría módulo commerce (contrato API↔Front, `commerce_api_errors`).
+- **[docs/AUDIT_commerce_8fases_2026-06-10.md](docs/AUDIT_commerce_8fases_2026-06-10.md)** — auditoría 8 fases completa módulo commerce (jun 2026).
 - **[specs/README.md](specs/README.md)** — índice features Spec Kit.
 
 ---
