@@ -1,6 +1,6 @@
 # Propuesta de valor — Cliente B2B (Farmacia)
 
-> **Última actualización:** 26 mayo 2026.
+> **Última actualización:** 11 junio 2026.
 > Documento que captura el pitch comercial al dueño de la farmacia (decisor B2B).
 > Si la farmacia es cadena, el decisor es el gerente comercial / director de operaciones.
 
@@ -12,6 +12,29 @@
 | Cadena pequeña (3-8 sucursales) | Gerente comercial o dueño-fundador | Reunión agendada, pitch de 30 min. |
 | Cadena mediana (9-25 sucursales) | Director de operaciones / CEO | Reunión formal, propuesta escrita + demo en vivo. |
 | Cadena premium (Farmatodo / Locatel) | Comité de innovación digital | NO en piloto. Eventualmente Enterprise tier. |
+
+## 2.0 Día en la vida del dueño + ranking mom-test (Steve Blank M3)
+
+Antes de pitchear (§3) o demostrar (§7), Sales debe **mapear el día real** del dueño y construir el ranking de problemas/beneficios **desde entrevistas** — no desde este documento.
+
+### Día en la vida (plantilla discovery — llenar por farmacia en VOLCADO §6)
+
+| Momento | Qué hace hoy | Dónde duele (hipótesis a confirmar) |
+|---------|--------------|--------------------------------------|
+| Apertura (7–9 am) | Revisa stock, recibe droguería, abre WhatsApp del negocio | Pedidos nocturnos sin responder; conteo manual |
+| Mediodía (12–3 pm) | Pico mostrador + pedidos WhatsApp simultáneos | Errores precio/cantidad; Rx «a ojo» sin registro |
+| Cierre (6–8 pm) | Cuadre de caja, conciliar Pago Móvil, anotar faltantes | Horas conciliando; ventas perdidas no medidas |
+| Fin de semana | Guardia reducida, demanda alta delivery | Sin farmacéutico de turno → Rx rechazadas |
+
+### Ranking 3+3 (consolidar tras ≥5 entrevistas)
+
+| # | Top 3 problemas (citas mom-test) | Top 3 beneficios Zonix (medibles) |
+|---|----------------------------------|-----------------------------------|
+| 1 | `[PENDIENTE entrevistas — VOLCADO §6]` | Menos pedidos manuales por WhatsApp (pedidos en app/semana) |
+| 2 | `[PENDIENTE]` | Rx con estado y trazabilidad (tiempo validación ≤60 min) |
+| 3 | `[PENDIENTE]` | Costo de canal acotado vs agregador (calculadora §8) |
+
+**Tipo de propuesta dominante para el one-pager (Blank M2):** **costo total menor** vs take-rate agregador (§2 punto 3 + §5). «Menos fricción» y «nuevo canal» van como apoyo en objeciones §9, **no** mezclados en el mismo párrafo del pitch.
 
 ## 2. Flaquezas que tiene hoy
 
@@ -241,6 +264,8 @@ Guion **antes** de la demo (10–15 min). Preguntar **hechos pasados**, no «¿u
 | **N**ecesidad | Si tuvieran panel + demanda sin montar app propia ni flota, ¿qué KPI mejorarían primero (pedidos, ticket, Rx)? | Puente a §7 demo |
 
 Registrar respuestas en CRM / [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) §6 — **no inventar** citas en el pack.
+
+**Complemento «día en la vida» (§2.0):** además del SPIN, recorrer los 4 momentos del día (apertura / mediodía / cierre / fin de semana) preguntando **qué pasó la última vez** en cada uno; las citas alimentan el ranking 3+3 de §2.0 antes de ajustar el one-pager.
 
 ## 9. Objeciones frecuentes y respuestas
 

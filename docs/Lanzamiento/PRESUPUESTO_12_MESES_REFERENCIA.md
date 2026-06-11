@@ -1,6 +1,6 @@
 # Presupuesto 12 meses — referencia
 
-> **Última actualización:** 27 mayo 2026.
+> **Última actualización:** 11 junio 2026.
 > Documento que detalla **línea por línea** los gastos durante 12 meses para los 3 escenarios.
 > Las cifras están justificadas en [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md).
 > Cifras en **USD constantes**, con buffer 20% ya aplicado al total para cubrir devaluación bolívar.
@@ -91,6 +91,8 @@ Solo [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 tiene fl
 | Burn 12 meses | **90.702** |
 | Reserva imprevistos | **490** |
 | **Total Lean** | **101.000** |
+
+> **Puente con Fase 0 (use of funds):** esta tabla asigna el capital por **tipo de gasto** (one-shots + 12 meses de burn + reserva = 101.000). El **burn operativo de Fase 0** (~**18.249** = 28.057 − 9.808 one-shots, los ~3 meses pre-Day-D) es **gasto adicional en el tiempo** que se cubre con el flujo del año: la caja cierra en **~42.209** M12 porque el **revenue M1–M12** compensa ese tramo — ver cadena completa en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §0.1 y §1.3 (101.000 − Fase 0 ~28.057 = Day-D ~72.943 → M12 ~42.209). No leer esta tabla como flujo de caja temporal.
 
 ## 3. Escenario Base — USD 118.000 (recomendado)
 

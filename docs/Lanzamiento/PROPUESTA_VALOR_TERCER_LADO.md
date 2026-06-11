@@ -1,6 +1,6 @@
 # Propuesta de valor — Tercer lado (`delivery_company`, `delivery_agent`, Pharmacist)
 
-> **Última actualización:** 27 mayo 2026.
+> **Última actualización:** 11 junio 2026.
 > Documento que captura el pitch a los actores que sostienen la operación logística y clínica: **empresa de delivery** (`delivery_company`), **repartidor de campo** (`delivery_agent`, vinculado a esa empresa) y **farmacéutico colegiado** (`pharmacist`).
 
 **Alcance producto (app actual):** en piloto y MVP solo existen **dos roles de logística** en la plataforma: **`delivery_company`** (panel empresa: agentes, asignación, métricas) y **`delivery_agent`** (app de reparto en calle: órdenes, QR, tracking). **No** hay flujo de registro ni onboarding para rol **`delivery`** (repartidor autónomo). El repartidor en ruta es siempre un **`delivery_agent`** cuya cuenta crea la empresa (`POST /api/delivery-company/agents`). Referencias residuales a `delivery` en backend o seeders demo son **legacy** — no usarlas en pitch, checklist inversor ni materiales comerciales hasta una decisión explícita de producto.
@@ -120,6 +120,19 @@ Resumen para inversor y onboarding partner; detalle de flujos en [PLAN_METODOS_P
 - **Responsabilidad en cadena de frío:** la **farmacia** empaqueta y documenta salida; el **repartidor / empresa** mantiene cadena según checklist (fotos termómetro en app); **Zonix Pharma** **media** disputas según [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) §16.
 - **Seguro y daños:** cada empresa de delivery declara cobertura civil básica o asume riesgo contractual; **Zonix Pharma** no es asegurador.
 
+### A.11 Alianza asimétrica con el partner (lente Steve Blank M7)
+
+El partner #1 es **socio clave del día 0, no de la escala** — gestionar la asimetría explícitamente:
+
+| Riesgo de alianza | Señal | Mitigación contractual / operativa |
+|-------------------|-------|-------------------------------------|
+| **Dependencia de 1 partner** año 1 | Partner concentra >90% entregas | Pipeline **partner #2** activo desde T+60 (REGISTRO P1-10); pickup como fallback |
+| **Prioridad de capacidad** (partner atiende primero a clientes grandes, p. ej. cadenas) | SLA degradado en picos | Mínimos de agentes/cobertura por franja en contrato marco `[PENDIENTE abogado]` |
+| **Poder de negociación creciente** (tarifa post-piloto) | Renegociación de fee al crecer GMV | Tarifario con bandas + cláusula de revisión anual, no mensual |
+| **Salida del partner** | Preaviso corto / abandono | Preaviso mínimo + plan de transición (pickup + partner #2) en contrato |
+
+**Qué cede Zonix vs qué exige:** cede no-exclusividad (el partner sigue con otros clientes — A.3); exige **mínimos de cobertura/SLA en zona piloto** y datos de tracking en app. Documentar ambos lados en el contrato marco — la asimetría sin mínimos escritos favorece siempre al partner.
+
 ---
 
 ## C. Farmacéutico colegiado (`pharmacist`)
@@ -179,7 +192,7 @@ Detalle del flujo completo en [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERA
 | Partner no asigna suficientes órdenes a sus `delivery_agent` | Media-alta | Contrato marco con mínimos de cobertura; Coordinador de Partners Logísticos; métricas en dashboard empresa. |
 | Empresa de delivery no quiere bajar exclusividad con Farmatodo | Baja | Buscar empresa #2 o #3 del mercado, no la #1. |
 | Farmacéutico colegiado se rehúsa a validar digital | Baja-media | Capacitación + manual + apoyo de Customer Support. La farmacia decide si lo capacita o cambia. |
-| MPPS hace observación sobre validación digital | Baja | Asesor regulatorio externo USD 120/mes (Growth). Trazabilidad + firma digital deberían cumplir. |
+| MPPS hace observación sobre validación digital | Baja | Asesor regulatorio externo USD 120/mes (Growth). Trazabilidad + firma digital sujetas a dictamen `[PENDIENTE farmacéutico asesor + abogado]`. |
 | Repartidor entrega medicamento equivocado | Media | Foto al recibir + foto al entregar. Mediación Customer Support. Reembolso a paciente, descuento al repartidor. |
 
 ---

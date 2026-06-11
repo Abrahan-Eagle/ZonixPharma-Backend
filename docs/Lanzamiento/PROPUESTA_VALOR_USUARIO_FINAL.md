@@ -1,6 +1,6 @@
 # Propuesta de valor — Usuario final (Paciente / Buyer)
 
-> **Última actualización:** 26 mayo 2026.
+> **Última actualización:** 11 junio 2026.
 > Documento que captura el pitch al usuario final que descarga la app o entra a la web.
 > El paciente es el rol `users` (Buyer) en el backend.
 
@@ -89,7 +89,7 @@ Plantilla StoryBrand para copy Meta, valla y app. **Sin** promesas de cura ni re
 ### 3.4 Delivery a domicilio o pickup
 
 - La **última milla** la ejecutan **empresa(s) de delivery especializada(s)** bajo **concesión o contrato marco** con Zonix Pharma; la app orquesta asignación y tracking. En ruta opera un **`delivery_agent`** de esa empresa ([PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) §A).
-- Tiempo promedio prometido: 60-90 minutos en Bella Florida y El Socorro (sujeto a SLA con el operador).
+- Tiempo promedio objetivo: 60-90 minutos en Bella Florida y El Socorro — `[PENDIENTE SLA partner firmado]`; no prometer en copy externo hasta contrato marco ([PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) §A.10).
 - Pickup en sucursal opcional para Rx retenida o sustancias controladas.
 
 ### 3.5 Tracking del repartidor en tiempo real
@@ -157,6 +157,8 @@ Plantilla StoryBrand para copy Meta, valla y app. **Sin** promesas de cura ni re
 
 ### 6.2 Métricas del funnel
 
+> **Lectura (Steve Blank, bilateral):** estas metas son **hipótesis piloto** — el lado paciente se valida con **repeat purchase M2 post-Day-D**, no antes (farmacias primero — [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §0). No tratarlas como compromiso ante inversor; cruzar con DoD §5 del PLAN.
+
 | Funnel | Meta mes 6 | Meta mes 12 |
 |---|---|---|
 | Descarga → registro SMS OTP (Firebase) | 75% | 80% |
@@ -173,7 +175,7 @@ Plantilla StoryBrand para copy Meta, valla y app. **Sin** promesas de cura ni re
 |---|---|---|---|
 | Meta Ads (Facebook + Instagram) | USD 0,15-0,60 por lead | 30+ años, mujeres con cargas familiares, hijos en exterior | [Fuente: Meta Business VE benchmarks 2025](https://www.facebook.com/business/) |
 | Google Ads (search + display) | USD 0,30-0,90 por lead | Búsqueda intención (alguien escribe "farmacia delivery Valencia") | [Fuente: Google Ads VE 2025](https://ads.google.com/) |
-| **TikTok Ads** | **USD 0,20-0,80 por lead** | **18-35 años, joven profesional, contenido viral. Crecimiento alto en VE 2025-2026.** | Activar como segundo canal si Meta satura. Detalle en [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) sección 7.2. |
+| **TikTok Ads** | **USD 0,20-0,80 por lead** | **18-35 años, joven profesional, formato short-form / alcance orgánico. Crecimiento alto en VE 2025-2026.** | Activar como segundo canal si Meta satura. Detalle en [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) sección 7.2; sin proyectar viralidad (§3.6 SUPUESTO). |
 | WhatsApp Business + difusión | Casi 0 | Leads cálidos / referidos / B2B | Para leads orgánicos vía Sales B2B. |
 
 ### 7.2 Canales offline
@@ -194,6 +196,8 @@ Detalle completo en [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.m
 Razón: lanzar tráfico masivo sin catálogo en ≥ N farmacias piloto degrada NPS; Day-D asume **~28 activas** pre-cargadas (Fase 0).
 
 ## 8. KPIs del usuario final
+
+> **Hipótesis piloto — validar M2–M6 post-Day-D** (mismo criterio que §6.2): cifras a recalibrar con datos reales del piloto; la métrica gate es **repeat M2**.
 
 | KPI | Meta mes 6 | Meta mes 12 |
 |---|---|---|

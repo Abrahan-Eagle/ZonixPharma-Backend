@@ -1,6 +1,6 @@
 # Plan del módulo operativo clave: validación Rx por farmacéutico colegiado
 
-> **Última actualización:** 1 junio 2026.
+> **Última actualización:** 11 junio 2026.
 > Documento que detalla el flujo central diferenciador de Zonix Pharma: la **validación de receta médica (Rx) por farmacéutico colegiado** dentro de la app.
 >
 > **One-pager inversor (3 min):** §1 diferenciador · §4 diagrama flujo · §6 SLA · §10 cadena frío resumen. Runbook completo (onboarding, §14 seguridad, §16–18 QA) = anexo operativo post-wire.
@@ -355,6 +355,18 @@ Datos de salud son categoría especial; **marco legal VE en actualización** —
 - **VPS Nameshared** (y demás proveedores cloud del stack) — SLA según contrato del proveedor de hosting.
 - Si caída > 1h: notificación push a paciente + farmacia.
 - Plan B operativo: pickup en sucursal con orden manual mientras se restaura.
+
+### 15.5 Contingencia partner delivery (pre y post Day-D)
+
+El partner #1 es dependencia crítica (alianza asimétrica — [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) §A.11). Plan B por escenario:
+
+| Escenario | Acción inmediata | Acción estructural |
+|-----------|------------------|--------------------|
+| Partner #1 **no firma antes de T+60** | Day-D arranca en modo **pickup-first** (pedido + retiro en sucursal); delivery se activa al firmar | Acelerar pipeline **partner #2** (REGISTRO P1-10) |
+| Partner **cae en operación** (huelga, quiebra, abandono) | Pickup forzado en app + notificación a pacientes con pedido en ruta | Plan de transición a partner #2 según preaviso contractual `[PENDIENTE contrato marco]` |
+| Partner **degrada SLA** en picos (prioriza otros clientes) | Escalar a Coordinador Partners; limitar radio de delivery temporalmente | Mínimos de agentes/franja en contrato; revisión mensual de SLA |
+
+Regla: **pickup siempre disponible** en producto — el delivery es upside operativo, no condición de existencia del pedido.
 - Founder es el único responsable técnico. Si la indisponibilidad supera 1 semana, contratar consultor externo.
 
 ## 16. Playbook de incidencias operativas (COO / Customer Support)

@@ -1,6 +1,6 @@
 # Proyección financiera 12 meses (+ año 2 y 3 + plan contingencia)
 
-> **Última actualización:** 27 mayo 2026 (tiers Lean 101k / Base 118k / Growth 135k).
+> **Última actualización:** 11 junio 2026 (tiers Lean 101k / Base 118k / Growth 135k).
 > Documento que traduce los unit economics y el presupuesto a un flujo mes a mes para los 3 escenarios.
 > Cifras en USD constantes con buffer 20% ya aplicado al burn.
 
@@ -59,7 +59,7 @@
 
 - **Tasa de churn mensual:** **5%** como **objetivo** de retención B2B (coherente con [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md)). La columna *Farmacias activas* de §1.1 es el **stock operativo** al cierre de mes; incorpora **pre-carga** de **~28 activas** al Day-D (Fase 0) y rampa comercial **4×** Sales. Para due diligence, **la tabla §1.1 es fuente de verdad** hasta recalibrar con datos de piloto.
 - **Revenue vs. `activas × ARPF ~50`:** en meses iniciales el revenue puede quedar **por debajo** del placeholder por **billing parcial** y mix GMV ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5.6); a partir de **M11** el modelo muestra **revenue ≥ burn** con **~151 activas**.
-- **Tasa de firma:** **~175** firmas en 12 meses post-Day-D (curva agresiva alineada a **4** vendedores × **10** visitas/día en ventana comercial — ver [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §2.5–2.6).
+- **Tasa de firma:** **~175** firmas en 12 meses post-Day-D (curva agresiva alineada a **4** vendedores × **10** visitas/día en ventana comercial — ver [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §2.5–2.6). **La tasa de cierre real está `[PENDIENTE Sales Lead — dato T+60]`**: hasta entonces la curva §1.1 es **hipótesis de capacidad de canal**, no compromiso — sanity check bottom-up en [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md) §3.1 (Steve Blank L6.14).
 - **Mix tier (referencia revenue):** 60% Basic / 30% Pro / 10% Enterprise → ARPF efectivo **USD ~50/mes** hasta actualizar por bandas GMV híbridas.
 - **Equipo comercial:** **4 ejecutivos Sales B2B** (USD **120** fijo c/u + **USD 30**/firma); comisiones implícitas en **~175** altas año → línea Sales **~USD 801**/mes de media.
 - **Marketing digital:** **Meta Ads** — **USD 800/mes** meses **1–6**, **USD 500/mes** meses **7–12** (promedio **~USD 650**/mes), coherente con [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.3.
@@ -91,7 +91,9 @@
 
 Con **burn ~7.431–7.798** USD/mes y **ARPF placeholder ~50**, el **caso central** de §1.1 alcanza **equilibrio mensual** en **mes 11** (**~151 activas**, revenue **7.550**). Si la curva de firmas o el ARPF real quedan **por debajo**, **mitigaciones:** (1) subir ARPF efectivo con **mix Pro/Enterprise** o GMV real; (2) acelerar **firmas** o reducir churn; (3) **timing** de gastos (IA, bonus variables, **entrada escalonada** sueldo Co-CEO o **reducir** headcount Sales si la curva lo permite); (4) **bridge** trimestral si el inversor lo acepta.
 
-## 2. Año 2 — proyección conservadora
+## 2. Año 2 — proyección conservadora `[LARGO PLAZO — no ancla pre-seed]`
+
+> §2 y §3 son **rangos direccionales sin GMV piloto**: no usarlos como ancla en pitch ni due diligence pre-seed; recalcular con datos reales post-Day-D. Las anclas del pack son §0–§1 (año 1).
 
 ### 2.1 Hipótesis año 2
 
@@ -134,7 +136,7 @@ EBITDA año 2 = ~USD −6.000 a +18.000 (break-even operativo hacia fin de año 
 | Imprevistos / buffer | 400-600 | Mantiene discipline |
 | **Total burn mensual año 2** | **~7.500-8.500** | Alineado §2.2; expansión Maracay/Maracaibo sin duplicar HQ ni founder |
 
-## 3. Año 3 — proyección con primera serie A potencial
+## 3. Año 3 — proyección con primera serie A potencial `[LARGO PLAZO — no ancla pre-seed]`
 
 ### 3.1 Hipótesis año 3
 

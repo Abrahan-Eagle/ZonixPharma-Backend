@@ -1,6 +1,6 @@
 # Estructura legal y equity (SAFE + cap table)
 
-> **Última actualización:** 27 mayo 2026.
+> **Última actualización:** 11 junio 2026.
 > Documento que captura el vehículo legal, instrumento de inversión y cap table de Zonix Pharma.
 > Marco regulatorio **Pharma:** [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md). Pagos/Sudeban: [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §10. Archivo Eats (solo referencia): [`../REQUISITOS_OPERAR_VENEZUELA.md`](../REQUISITOS_OPERAR_VENEZUELA.md).
 
@@ -109,8 +109,16 @@ El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está 
 3. **Derechos de observación (opcional):** **board observer** sin voto en junta — solo si el ticket ≥ umbral acordado (ej. lead USD 50k+); no administración operativa diaria.
 4. **Asuntos reservados** (requieren notificación previa al inversor por escrito si impactan valor/dilución): cambio de control; nueva emisión que diluya **> 10%** pre-money en una sola ronda; remuneración anual del founder por encima de umbral definido; pivot que abandone vertical farmacéutico.
 5. **Right of First Refusal (ROFR):** el inversor del SAFE tiene derecho a participar en la siguiente ronda hasta mantener su % proporcional.
-6. **MFN (Most Favored Nation):** si **Zonix Pharma** emite un SAFE futuro con mejores términos, el inversor actual recibe los mismos términos. Estándar.
+6. **MFN (Most Favored Nation):** si **Zonix Pharma** emite un SAFE futuro con mejores términos, el inversor actual recibe los mismos términos. Estándar. **No confundir** con la cláusula de «nación más favorecida» **corporativa** (garantizar a un socio estratégico el mejor trato comercial vs terceros) — esa es un **red flag** de inversor corporativo, ver §2.6 y [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) §7.8.
 7. **Restricciones de transferencia:** el SAFE no se puede vender a terceros sin consentimiento del founder.
+
+### 2.6 Inversor corporativo / estratégico (cadena, distribuidor, agregador)
+
+Este pack está diseñado para **ángel / fondo pre-seed**. Si el interesado es un **corporativo** (Steve Blank, UniMOOC M7: la gran empresa invierte para que **su** negocio crezca):
+
+- **Red flags en term sheet** — no aceptar verbalmente, derivar a abogado: exclusividad (zona/categoría/tiempo), nación más favorecida comercial, acceso a tecnología/datos como condición, derecho de primera oferta o veto en M&A/Serie A. Tabla completa: [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) §7.8.
+- **Datos de salud nunca** son moneda de negociación (§4.4; [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) §14).
+- Todo término corporativo se cierra con **abogado cross-border** `[PENDIENTE abogado]` — skill de checklist: `zonix-legal-contracts-ve`.
 
 ### 2.5 Documento físico
 
@@ -208,13 +216,13 @@ El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está 
 
 > **Pendiente legal:** mantener **registro de actividades de tratamiento** (ART) simple: finalidad, categorías de datos, categorías de interesados, subencargados, plazos de conservación, medidas de seguridad. Elaborar en **mes 1** con abogado (hoja única o documento interno).
 
-#### 4.4.2 Bases jurídicas (resumen para pack)
+#### 4.4.2 Bases jurídicas (resumen para pack) — **borrador hasta dictamen** `[PENDIENTE abogado]`
 
 - **Ejecución de contrato / prestación del servicio:** cuenta, pedidos, pagos, entregas.
 - **Consentimiento explícito:** subida de receta, datos de salud opcionales, marketing no esencial.
 - **Obligación legal:** facturación, retenciones contables, respuesta a autoridad competente con orden fundada.
 
-#### 4.4.3 Derechos del titular (paciente / usuario)
+#### 4.4.3 Derechos del titular (paciente / usuario) — **borrador hasta dictamen** `[PENDIENTE abogado]`
 
 - Acceso, rectificación, supresión (salvo excepciones legales de conservación), oposición a tratamientos opcionales, portabilidad razonable.
 - **Canal:** formulario en app + email a contacto oficial de la C.A. (definir en constitución). SLA interno de respuesta: **15 días hábiles** (ajustar a norma cuando el reglamento lo precise).

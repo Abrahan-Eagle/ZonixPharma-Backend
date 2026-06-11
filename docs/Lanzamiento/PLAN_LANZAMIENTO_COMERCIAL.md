@@ -1,8 +1,21 @@
 # Plan de lanzamiento comercial
 
-> **Última actualización:** 1 junio 2026.
+> **Última actualización:** 11 junio 2026.
 > Documento que detalla el calendario operativo desde el cierre de inversión hasta el **Day-D** (lanzamiento público del piloto) y los primeros meses post-Day-D.
 > **Convención de tiempo:** **T+0** = cierre de inversión (entra el capital). **Day-D = T+90** = **día 0 del piloto en app** (M1 del modelo financiero en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)). Los **meses 1–12** del presupuesto/proyección cuentan **desde Day-D**, no desde el wire. **Fase 0 (T+0 → T+90):** cierre legal, equipo, HQ, tecnología, onboarding de farmacias y catálogo **antes** del lanzamiento público — el gasto de esos ~3 meses está en la **Fase 0** de la proyección (**~USD 28.057** + one-shots en §0.1 — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)), no duplicado en M1.
+
+## 0. Hipótesis por fase + señal de pivot (Customer Development)
+
+El calendario §1–§4 ejecuta; esta tabla dice **qué hipótesis valida cada fase** y cuándo pivotar (bloques del Canvas en [CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md) §2.12).
+
+| Fase | Hipótesis a validar (falsable) | Señal de pivot | Bloque Canvas |
+|------|-------------------------------|----------------|---------------|
+| **T+0–T+30** | Se puede armar equipo + legal + HQ en 30 días con el presupuesto Fase 0a | Cotizaciones reales > presupuesto → recortar alcance, no inflar tier | Costes |
+| **T+30–T+60** | Dueño de farmacia independiente confirma dolor digital y **firma carta de intención** tras visita (≥10–15 hacia T+45) | ≥2/3 de entrevistas sin dolor confirmado → revisar segmento beachhead o propuesta | Segmentos / Propuesta |
+| **T+60–T+90** | Farmacia firmada **activa catálogo** y opera panel; partner delivery cumple prueba operativa | Firma pero no activa → pivot onboarding/canal, no más firmas | Canales / Relación |
+| **M1–M2 post-Day-D** | Paciente compra y **repite en M2**; farmacia paga cuota al vencer waiver | Sin repeat M2 → revisar relación/percepción precio **antes** de escalar Meta | Relación / Ingresos |
+
+Regla: pivot documentado en VOLCADO + nota founder; **no** pivotar por una sola entrevista ni por entusiasmo social (mom-test).
 
 ## 1. T+0 — Cierre de inversión
 
@@ -120,7 +133,7 @@
 | Hito | Status |
 |---|---|
 | **Meta Business**: cuenta, píxel/app events, públicos geo Carabobo/Valencia, línea creativa aprobada (marca [BRAND_ZONIX_PHARMA.md](../BRAND_ZONIX_PHARMA.md)) | T+30 a T+45 |
-| **Campañas Meta Ads** en entorno de prueba + presupuesto según tramo año 1 (**USD 800/mes** equivalente en ventana operativa inicial) | T+40 a T+55 |
+| **Campañas Meta Ads** en entorno de prueba (**solo test interno**: validación píxel, creatividades, públicos — gasto mínimo; **sin** captación masiva de pacientes hasta gate §4.0 filas 1–5 verdes) | T+40 a T+55 |
 | Estrategia digital geo-targeted **Valencia metro** (B2C + apoyo B2B según campaña) | T+30 a T+45 |
 | Material de pre-lanzamiento (post Instagram, video TikTok, assets pagados) | T+50 a T+60 |
 | Diseño + producción **valla** 3m×2m (refuerzo; instalación suele activarse hacia **Day-D** / mes calendario ~3 según contrato) | T+30 a T+50 |
@@ -140,7 +153,8 @@ Checklist **antes** de tráfico masivo. Documentar solo entrevistas reales en VO
 
 | Paso | Validación | Evidencia mínima |
 |------|------------|------------------|
-| 1. Discovery | Dueño farmacia y paciente confirman dolor **sin** pitch Zonix primero (mom-test: hechos pasados) | ≥5 entrevistas documentadas |
+| 1. Discovery **B2B (obligatorio pre-Day-D)** | Dueño farmacia confirma dolor **sin** pitch Zonix primero (mom-test: hechos pasados) | ≥5 entrevistas documentadas |
+| 1b. Discovery **B2C (informativo)** | Paciente: señales de intención (soft launch §4.1, encuestas) — la validación real es **repeat M2 post-Day-D** (§0, bilateral: farmacias primero) | Notas soft launch; sin gate |
 | 2. Validación B2B | Contrato marco firmado + métodos de pago farmacia en panel | Farmacia activa en staging/prod |
 | 3. Creación demanda | Primer pedido real OTC o Rx | Orden ≥ `pending_payment` en BD |
 | 4. Ops | CS, disputas, partner `delivery_company` | Macros CS + SLA partner acordado |

@@ -1,10 +1,20 @@
 # Cuestionario para el equipo del piloto
 
-> **Última actualización:** 1 junio 2026.
+> **Última actualización:** 11 junio 2026.
 > **Solo equipo interno / HR** — **no incluir** en zip data room inversor. Para inversor: ver nómina resumida en [README.md](README.md) §3 y [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md).
 > Documento operacional para entrevistar candidatos según la **nómina Lean 101k** ([README.md](README.md) §3). **Plantillas:** §2 Sales (4×), §3 CS+CM, §4 Marketing, §5 Coordinador Partners, §6–§7 freelance, **§8** Asesor regulatorio (**Base 118k / Growth 135k**). **Total Lean = 9 FTE + 2 freelance**. **Compensaciones:** [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.
 > Las respuestas se vuelcan en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md).  
 > **Bloqueantes inversor (P0):** [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) — GitHub, % dedicación, referencias; solo el founder completa esas celdas.
+
+## 0. Fase 0 = customer development team (Steve Blank M1)
+
+El equipo del piloto **no** es una versión pequeña de una empresa grande: no hay «VP de ventas» ni departamentos el día 1. Los roles de este cuestionario son **sombreros** dentro de un equipo de **customer development**:
+
+- **Founder y Co-CEO hacen discovery directo** con farmacias (entrevistas mom-test, visitas) — no solo supervisan.
+- **Sales es entrevistador antes que vendedor** en T+30–T+60: su primera tarea es confirmar el dolor (PLAN §0, §4.0), no empujar el cierre.
+- La estructura funcional (departamentos formales) llega **post-Day-D con retención probada**, no en Fase 0.
+
+Criterio de selección transversal: capacidad de **escuchar y registrar hechos** (VOLCADO §6) pesa tanto como la tasa de cierre.
 
 ## 1. Cuestionario común a todos los roles
 
@@ -62,6 +72,10 @@
 ### 2.3 Caso práctico
 
 > Llamas a una farmacia mediana. El dueño te dice: "Ya estoy en Rappi, no me interesa otro marketplace". ¿Cómo respondes?
+
+**Caso práctico 2 (discovery mom-test — eliminatorio):**
+
+> Tienes 10 minutos con un dueño de farmacia que no conoce Zonix. **Sin mencionar el producto**, ¿qué 3 preguntas le haces para entender su operación digital actual? *(Se espera: hechos pasados — «¿cuántos pedidos por WhatsApp la semana pasada?» — no hipótesis tipo «¿usarías una app?». Evaluar si registra respuestas o solo busca pitchear.)*
 
 ### 2.4 Esquema de compensación
 

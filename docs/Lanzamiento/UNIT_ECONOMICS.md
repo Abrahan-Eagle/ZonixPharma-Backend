@@ -1,6 +1,6 @@
 # Unit Economics — Zonix Pharma
 
-> **Última actualización:** 27 mayo 2026 (replante: cuota fija **25/40/55**, **4×** Sales, ARPF **~50**, CAC **139**; §2.1 WTP; §7.1 guía de lectura cohort).
+> **Última actualización:** 11 junio 2026 (replante: cuota fija **25/40/55**, **4×** Sales, ARPF **~50**, CAC **139**; §2.1 WTP; §7.1 guía de lectura cohort).
 > Documento que explica cómo gana dinero Zonix Pharma a nivel de farmacia individual.
 > Cifras base propagadas al [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md), [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) y al [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md).
 
@@ -64,6 +64,8 @@ Payback CAC = 139 / 50 ≈ 2,8 meses
 | **CAC total promedio** | **USD 139** |
 
 **Sensibilidad:** si la comisión marginal sube a **USD 50** por firma para acelerar adopción, CAC sube **+USD 20** → **USD 159**; LTV/CAC ≈ **6,3x** (LTV **1.000**). Aún sólido frente a benchmarks 3-5x.
+
+**Nota dual de denominador (Steve Blank L6.14 — capacidad de canal):** el **CAC 139** usa **~8 firmas/mes** (régimen crucero, escenario **conservador** — ancla del pitch). Si el equipo sostiene el ritmo del plan central (**~15 firmas/mes**, PROYECCION §1.1), el prorrateo fijo baja de 60 a **~32** y el CAC implícito sería **~111** — es decir, el 139 ya incorpora margen de seguridad. **No cambiar el headline 139 sin decisión founder.** Puente con PRESUPUESTO §2.3: el costo Sales total **~USD 801/mes** = **480** fijo + **~321** de comisiones promedio al ritmo del plan (175 firmas/año × 30 ÷ 12 ≈ 437 en meses pico; promedio anual menor por ramp).
 
 ## 4. LTV (Lifetime Value)
 

@@ -1,6 +1,6 @@
 # Plan de métodos de pago
 
-> **Última actualización:** 1 junio 2026.
+> **Última actualización:** 11 junio 2026.
 > Documento que detalla cómo se cobra y se paga en **Zonix Pharma** (pack inversor / piloto).
 >
 > **One-pager inversor (3 min):** resumen ejecutivo abajo · §1 métodos · §2.1–2.2 flujos A/B · §10 Sudeban. Runbook (mora §2.3, Laravel §6, KPIs §8) = anexo operativo post-wire.
@@ -283,9 +283,9 @@ Cobro_mes = (8% × Σ delivery_fee validado en el mes) + (USD 0,30 × N envíos 
 
 El backend Laravel ya tiene módulos implementados:
 
-- `app/Models/Order` con campos `payment_method`, `payment_proof_url`, `payment_status`, `payment_validated_at`.
-- `app/Http/Controllers/PaymentController` para upload de comprobante + validación.
-- `database/migrations` con tabla `payments` y `payment_methods`.
+- `app/Models/Order` con campos `payment_method`, `payment_proof`, `payment_validated_at`, `payment_proof_uploaded_at`.
+- Upload de comprobante y validación en el flujo de la orden (`Buyer/OrderController` + validación en `Commerce/OrderController`); `Payment/PaymentController` y `Buyer/PaymentController` cubren métodos/consultas.
+- `database/migrations` con tablas `order_payments`, `payment_methods` y `delivery_payments`.
 - Eventos broadcast (`PaymentValidated`, `PaymentRejected`) con Pusher.
 - FCM push notifications a paciente y farmacia.
 
