@@ -17,7 +17,7 @@
 - **Cifras Zonix:** ninguna del curso; solo `zonix-startup-context` + pack `docs/Lanzamiento/`.
 - **Duplicados en carpeta:** varios `.srt` aparecen repetidos en el filesystem (mismo nombre); conteo operativo único ≈ **115 lecciones**.
 - **Prioridad P0:** Lean Canvas operativo, test de hipótesis/pivot, día-en-la-vida farmacia, pricing por tipo de mercado, alianzas delivery/partners.
-- **P1:** tipos de propuesta de valor en pitch; CAC web vs físico en marketing pack.
+- **P1 (hecho):** tipos de propuesta de valor en pitch; CAC web vs físico en marketing pack.
 - **P2:** alianzas startup–corporativo (M7) — referencia en `references/`, no skill dedicada.
 - **Entregable implementación:** `.agents/skills/zonix-lean-canvas/` + patches en 4 skills + router actualizado.
 - **Próximo paso humano:** validar plantillas Lean Canvas con founder antes de usar en reunión inversor.
