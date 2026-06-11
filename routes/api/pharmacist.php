@@ -13,7 +13,8 @@ Route::middleware(['auth:sanctum', 'role:pharmacist'])->prefix('pharmacist')->gr
     Route::get('/dashboard', [PharmacistDashboardController::class, 'index']);
 
     Route::get('/onboarding', [PharmacistOnboardingController::class, 'show']);
-    Route::post('/onboarding', [PharmacistOnboardingController::class, 'store']);
+    Route::post('/onboarding', [PharmacistOnboardingController::class, 'store'])
+        ->middleware('throttle:10,1');
 
     Route::prefix('prescriptions')->group(function () {
         Route::get('/pending', [PharmacistPrescriptionController::class, 'pendingIndex']);

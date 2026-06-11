@@ -62,11 +62,21 @@ class OnboardingController extends Controller
             $payload['title_image_url'] = Storage::url($stored);
         }
 
+        $existing = PharmacistProfile::where('profile_id', $profile->id)->first();
+        $resetVerified = $existing === null
+            || $existing->mpps_number !== $payload['mpps_number']
+            || ($existing->college_license_number ?? '') !== ($payload['college_license_number'] ?? '');
+
+        if ($resetVerified) {
+            $payload['verified'] = false;
+        }
+
         // Mantener `verified` en false hasta que un admin verifique manualmente
         // la colegiación (ver flujo en docs/PLAN_REGULATORIO_PHARMA_VE.md).
+        // Re-envíos que solo actualizan notas/título no revocan verificación previa.
         $pharmacist = PharmacistProfile::updateOrCreate(
             ['profile_id' => $profile->id],
-            $payload + ['verified' => false],
+            $payload,
         );
 
         return response()->json([

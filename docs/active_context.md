@@ -7,6 +7,20 @@
 
 ## Última actualización de contexto
 
+### Cierre auditorías Rx/Orders + remediación final — 10 junio 2026
+
+- **Pharmacist lote 3–4:** audit doc, throttle onboarding, envelope buyer Rx, `verified` preservado en re-envío MPPS.
+- **Orders lote 3:** [`AUDIT_orders_2026-06-10.md`](AUDIT_orders_2026-06-10.md); Front `order_api_errors.dart` + `OrderService` success/helper.
+- **Smoke:** [`SMOKE_RX_E2E.md`](SMOKE_RX_E2E.md) checklist manual E2E Rx.
+- **Verificación:** Backend **436** tests; Front **233** tests (~1 skip).
+
+### Auditoría 360° pharmacist + remediación lote 3 — 10 junio 2026
+
+- **Hecho:** [`AUDIT_pharmacist_2026-06-10.md`](AUDIT_pharmacist_2026-06-10.md). Throttle `10,1` en `POST /api/pharmacist/onboarding`. Tests `PharmacistOnboardingTest` (4 escenarios).
+- **Front (espejo):** `PrescriptionService` buyer exige `success == true` (upload/delete/list); onboarding parsea envelope + `pharmacistHttpErrorMessage`.
+- **Verificación:** Backend **435** tests; Front **230** tests (~1 skip), analyze OK.
+- **Pendiente P2:** tab Config pharmacist; smoke E2E Rx; auditoría orders 360°.
+
 ### Remediación módulo pharmacist (lote 2 — historial) — 10 junio 2026
 
 - **Hecho:** `GET /api/pharmacist/prescriptions/history` (filtro `status`, paginado); tests `PharmacistPrescriptionHistoryTest`.

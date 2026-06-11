@@ -260,7 +260,9 @@ Configurables en `config/zonix.php` (sección `pharma`):
 - **[docs/zonix/SPEC_KIT_ZONIX.md](docs/zonix/SPEC_KIT_ZONIX.md)** — Spec Kit (SDD) vs Jarvis `zonix-*`.
 - **[docs/PROMPT_AUDIT_360_ZONIX.md](docs/PROMPT_AUDIT_360_ZONIX.md)** — super prompt auditoría exhaustiva (360° / código / por módulo); complementa `PROMPT_AUDIT_FORENSE.md` y `AUDIT_API_PATTERNS_*`.
 - **[docs/AUDIT_commerce_2026-06-10.md](docs/AUDIT_commerce_2026-06-10.md)** — piloto auditoría módulo commerce (contrato API↔Front, `commerce_api_errors`).
-- **[docs/AUDIT_commerce_8fases_2026-06-10.md](docs/AUDIT_commerce_8fases_2026-06-10.md)** — auditoría 8 fases completa módulo commerce (jun 2026).
+- **[docs/AUDIT_pharmacist_2026-06-10.md](docs/AUDIT_pharmacist_2026-06-10.md)** — auditoría módulo pharmacist + remediación lote 3 (envelope, onboarding throttle).
+- **[docs/AUDIT_orders_2026-06-10.md](docs/AUDIT_orders_2026-06-10.md)** — auditoría módulo orders buyer + `order_api_errors`.
+- **[docs/SMOKE_RX_E2E.md](docs/SMOKE_RX_E2E.md)** — checklist smoke manual flujo Rx E2E.
 - **[specs/README.md](specs/README.md)** — índice features Spec Kit.
 
 ---
