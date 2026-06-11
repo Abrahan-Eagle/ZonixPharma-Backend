@@ -47,10 +47,14 @@ Toolkit oficial GitHub para features de **producto** (API + Flutter). **No** usa
 | **Versión** | 1.0.0 |
 | **Estado** | Migración Eats → Pharma (fork destructivo) en progreso |
 | **Roles** | 7 (users, commerce, pharmacist, delivery, delivery_agent, delivery_company, admin) |
-| **Última actualización** | 27 mayo 2026 |
+| **Última actualización** | 10 junio 2026 |
 
 ### Cambios recientes
 
+- **10 jun 2026 — Remediación módulo commerce (auditoría 360° + multi-sede).**
+  - Auditoría: [docs/AUDIT_commerce_8fases_2026-06-10.md](docs/AUDIT_commerce_8fases_2026-06-10.md), [docs/PROMPT_AUDIT_360_ZONIX.md](docs/PROMPT_AUDIT_360_ZONIX.md).
+  - Backend: trait `ResolvesCommerce` + header `X-Commerce-Id`; throttle `60,1`; Pusher multi-sede; KPI dashboard alineado a cola Rx/pago/preparación; tests `CommerceMultiSedeTest`, `CommerceDashboardTest`, `EnsureCommerceApproved`, `CommerceProductRx`, `CommerceOrderValidatePayment`.
+  - Verificación: `php artisan test --parallel` → **422 passed** (post-fix dashboard).
 - **27 may 2026 — Spec Kit (SDD) integrado en Jarvis (producto, no Lanzamiento).**
   - [github/spec-kit](https://github.com/github/spec-kit) v0.8.15: `specify-cli`, integración `cursor-agent` en Backend (hub) y Front (espejo).
   - Hub: `specs/`, `.specify/memory/constitution.md`, overrides dual-repo en `.specify/templates/overrides/`.

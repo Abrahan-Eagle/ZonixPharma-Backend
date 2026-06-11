@@ -34,9 +34,14 @@ class DashboardController extends Controller
             }
             $commerceId = $commerce->id;
 
-            // Órdenes pendientes
+            // Cola activa farmacia: Rx pendiente, pago, preparación (zonix-order-lifecycle).
             $pendingOrders = Order::where('commerce_id', $commerceId)
-                ->whereIn('status', ['paid', 'processing'])
+                ->whereIn('status', [
+                    'pending_prescription_validation',
+                    'pending_payment',
+                    'paid',
+                    'processing',
+                ])
                 ->count();
 
             // Órdenes de hoy

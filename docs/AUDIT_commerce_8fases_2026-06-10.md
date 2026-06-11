@@ -398,3 +398,21 @@
 | F8 Informe | ✅ | — |
 
 **Generado:** 10 junio 2026 · JARVIS Audit Lead · Solo lectura (sin cambios de código)
+
+---
+
+## Remediación aplicada (post-informe)
+
+**Fecha cierre:** 10 junio 2026 · **Rama:** `dev` (Backend + Front pushed)
+
+| ID / tema | Estado |
+| --------- | ------ |
+| P1 fake success writes, Pusher multi-sede, throttle, envelope promos | ✅ |
+| P2 `commerce_api_errors`, tab Rx, métodos huérfanos, URL commerces | ✅ |
+| Multi-sede `ResolvesCommerce` + `CommerceContext` + `CommerceMultiSedeTest` | ✅ |
+| COM3-005 KPI `pending_orders` (Rx + pago + preparación) | ✅ `CommerceDashboardTest` |
+| COM3-004 `getReadyOrders` alias documentado | ✅ Front |
+| COM3-006 copy Pizza → OTC en test | ✅ |
+| Brand `Colors.*` en `screens/commerce/*` | ✅ (ya `AppColors`; 3 transparent) |
+
+**Siguiente módulo sugerido:** `MODULO=orders` (state machine E2E + Rx TTL) o `MODULO=pharmacist`.
