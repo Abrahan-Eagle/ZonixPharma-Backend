@@ -48,7 +48,7 @@ Si el usuario no especifica archivo, clasificar la tarea:
 | «Los números no cuadran» | PROYECCION, UNIT, PRESUPUESTO → `zonix-financial-model` |
 | «¿Qué falta para reunión inversor?» | CHECKLIST, README → `zonix-investor-materials` |
 | «Calendario / Day-D» | PLAN_LANZAMIENTO → `zonix-launch-piloto` |
-| «Copy paciente / ads» | PROPUESTA_USUARIO_FINAL + BRAND → StoryBrand abajo |
+| «Copy paciente / ads» | PROPUESTA_USUARIO_FINAL + BRAND + SUPUESTO_MARKETING (Get/Keep/Grow §CAC) |
 | «Varios problemas a la vez» | Una sesión = **un documento**; ordenar por P0 en REGISTRO_PENDIENTES |
 
 ## StoryBrand — plantilla paciente (PROPUESTA_USUARIO_FINAL)
@@ -76,6 +76,32 @@ Un **anillo** a la vez; métricas desde pack, no inventar presupuesto nuevo.
 | Exterior | Valla Av. Bolívar / radio local | Código o UTM offline | SUPUESTO_MARKETING_OFFLINE |
 
 Regla: **no** escalar anillo exterior hasta catálogo Day-D en ≥ N farmacias (meta PLAN §1.1).
+
+## Get → Keep → Grow y CAC (UniMOOC M5 — Steve Blank)
+
+Destilado curso [ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md](../../docs/zonix/ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md). **Cifras solo del pack** — esta sección es **metodología** para editar SUPUESTO_MARKETING_OFFLINE y cruzar con UNIT_ECONOMICS.
+
+| Fase | Objetivo | Canal Zonix piloto | Métrica | Fuente cifra |
+|------|----------|-------------------|---------|--------------|
+| **Get (captar)** | Nuevas farmacias / nuevos pacientes | Sales **físico** (B2B) · Meta Ads **web** (B2C post-Day-D) | Firmas farmacia · CPI / 1er pedido pagado | CAC farmacia **139** (UNIT); PRESUPUESTO marketing |
+| **Keep (fidelizar)** | Retención panel + repeat purchase | Onboarding commerce · CS Rx · push FCM | Churn farmacia · repeat M2 paciente | Churn **5%** ref. (UNIT) |
+| **Grow (aumentar)** | Más ticket / más productos mismo cliente | Cross-sell OTC post-Rx · upsell banda GMV | ARPF · items/pedido | ARPF **~50** placeholder |
+
+### CAC web vs físico (no confundir)
+
+| Canal | Lado | Cómo modelar en pack | Regla agente |
+|-------|------|----------------------|--------------|
+| **Físico** | Farmacia B2B | CAC **139** en UNIT_ECONOMICS | Visita Sales T+60–T+90; no mezclar con CPI Meta |
+| **Web** | Paciente B2C | Presupuesto Meta en PRESUPUESTO + SUPUESTO_MARKETING | **No** escalar paid hasta N farmacias activas (`zonix-startup-context` bilateral) |
+| **Viral / referido** | Ambos | WhatsApp farmacia → paciente (anillo interior Bullseye) | Medir pedidos con `commerce_id` piloto; no inventar K-factor |
+
+**Errores a evitar al editar marketing pack (M5):**
+
+1. Optimizar CPI paciente **antes** de oferta farmacia (catálogo vacío).
+2. Usar ejemplo US del curso (AdWords 0,50€/click) como cifra Zonix — solo lógica «coste visita → coste conversión».
+3. Confundir **tráfico web** con **adquisición pagada completada** (pedido ≥ `pending_payment`).
+
+Al proponer texto en SUPUESTO_MARKETING_OFFLINE: una fila por canal con métrica leading + enlace a línea PRESUPUESTO; marcar `[Requiere Marketing Lead]` si falta dato real post-piloto.
 
 ## Anti-patrones (marcos a NO aplicar)
 

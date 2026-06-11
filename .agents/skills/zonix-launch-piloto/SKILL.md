@@ -86,6 +86,24 @@ Reglas al redactar guiones en pack o VOLCADO:
 - No mencionar Zonix hasta entender flujo actual Rx y delivery.
 - Registrar citas textuales en VOLCADO; la IA **no inventa** respuestas de entrevistas.
 
+### Hipótesis explícitas y pivot (UniMOOC Steve Blank — M1)
+
+Destilado curso [ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md](../../docs/zonix/ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md); usar con `zonix-lean-canvas`.
+
+| Regla | Aplicación Zonix Fase 0 |
+|-------|-------------------------|
+| Hipótesis implícita → **escrita** | Cada bloque canvas con frase falsable («Las farmacias de San Diego firmarán en 30 días si…») |
+| Test fuera de oficina | Entrevistas mom-test + visita Sales; no encuestas online genéricas |
+| Pivot documentado | Si ≥3 entrevistas contradicen segmento o valor → pivot antes de escalar Meta Ads |
+
+**Tipos de pivot (cuál bloque revisar):**
+
+| Señal | Acción |
+|-------|--------|
+| Dueño farmacia no ve dolor Rx/digital | Revisar segmento beachhead o propuesta (canvas 2–3) |
+| Firma pero no activa catálogo | Pivot canal/onboarding (canvas 5–6) |
+| Paciente no repite M2 | Pivot relación o precio percepción (canvas 6–7) — **no** bajar cuota sin OK pack |
+
 ## Beachhead y post-piloto (crossing-the-chasm)
 
 Lente [founder-playbook `crossing-the-chasm`](https://github.com/getagentseal/founder-playbook) — **después** de validar piloto, no antes de Day-D.
@@ -112,6 +130,7 @@ Lente [founder-playbook `crossing-the-chasm`](https://github.com/getagentseal/fo
 ## Skills relacionadas
 
 - `zonix-startup-context`
+- `zonix-lean-canvas`
 - `zonix-empresa-ve`
 - `zonix-lanzamiento-roles`
 - `zonix-financial-model` (seguimiento caja vs plan)

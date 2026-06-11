@@ -51,6 +51,11 @@ Toolkit oficial GitHub para features de **producto** (API + Flutter). **No** usa
 
 ### Cambios recientes
 
+- **11 jun 2026 — Curso UniMOOC Steve Blank → skills startup.**
+  - Forense: [docs/zonix/ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md](docs/zonix/ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md) (115 `.srt`, 8 buckets M1–M7).
+  - Nueva skill: `zonix-lean-canvas` (Canvas 9 bloques, bilateral, pivot).
+  - Ampliadas: `zonix-launch-piloto`, `zonix-b2b-sales`, `zonix-financial-model`, `zonix-startup-context`, `zonix-fundraising-narrative` (M2), `zonix-lanzamiento-docs` (M5 CAC).
+  - Router: [docs/zonix/SKILLS_STARTUP_USAR_NO_USAR.md](docs/zonix/SKILLS_STARTUP_USAR_NO_USAR.md), `roles_matrix.json`.
 - **10 jun 2026 — Remediación módulo commerce (auditoría 360° + multi-sede).**
   - Auditoría: [docs/AUDIT_commerce_8fases_2026-06-10.md](docs/AUDIT_commerce_8fases_2026-06-10.md), [docs/PROMPT_AUDIT_360_ZONIX.md](docs/PROMPT_AUDIT_360_ZONIX.md).
   - Backend: trait `ResolvesCommerce` + header `X-Commerce-Id`; throttle `60,1`; Pusher multi-sede; KPI dashboard alineado a cola Rx/pago/preparación; tests `CommerceMultiSedeTest`, `CommerceDashboardTest`, `EnsureCommerceApproved`, `CommerceProductRx`, `CommerceOrderValidatePayment`.
@@ -184,6 +189,7 @@ Configurables en `config/zonix.php` (sección `pharma`):
 | `zonix-lanzamiento-roles` | Panel roles pack Lanzamiento → Docs/Empresa/Sistema + skills agente | [.agents/skills/zonix-lanzamiento-roles/SKILL.md](.agents/skills/zonix-lanzamiento-roles/SKILL.md) |
 | `zonix-empresa-ve` | Constitución C.A., RIF, banco, SAFE, laboral piloto (checklist; no dictamen) | [.agents/skills/zonix-empresa-ve/SKILL.md](.agents/skills/zonix-empresa-ve/SKILL.md) |
 | `zonix-launch-piloto` | Plan T+0 → Day-D (T+90) → M12; KPIs farmacias; playbook Co-CEO/Sales | [.agents/skills/zonix-launch-piloto/SKILL.md](.agents/skills/zonix-launch-piloto/SKILL.md) |
+| `zonix-lean-canvas` | Lean Canvas operativo (UniMOOC Steve Blank); hipótesis, pivot, bilateral | [.agents/skills/zonix-lean-canvas/SKILL.md](.agents/skills/zonix-lean-canvas/SKILL.md) |
 | `zonix-b2b-sales` | Playbook Sales B2B (×4), prospección farmacias, objeciones | [.agents/skills/zonix-b2b-sales/SKILL.md](.agents/skills/zonix-b2b-sales/SKILL.md) |
 | `zonix-startup-context` | Contexto canónico pre-seed (tiers 101/118/135k, anclas numéricas) | [.agents/skills/zonix-startup-context/SKILL.md](.agents/skills/zonix-startup-context/SKILL.md) |
 | `zonix-financial-model` | Coherencia PROYECCION, UNIT, PRESUPUESTO (marketplace farmacia VE) | [.agents/skills/zonix-financial-model/SKILL.md](.agents/skills/zonix-financial-model/SKILL.md) |
@@ -235,6 +241,7 @@ Configurables en `config/zonix.php` (sección `pharma`):
 | Calendario piloto / hitos T+30/60/90 / Day-D | `zonix-launch-piloto` + `zonix-startup-context` |
 | Ejecutar plan comercial post-wire | `zonix-launch-piloto` + `zonix-lanzamiento-roles` |
 | Prospección / cierre farmacias B2B | `zonix-b2b-sales` + `zonix-launch-piloto` |
+| Lean Canvas / modelo negocio piloto | `zonix-startup-context` + `zonix-lean-canvas` + `zonix-launch-piloto` |
 | Tarea multi-rol compleja (qué subagent + qué skill) | `zonix-jarvis-subagents-map` + `zonix-lanzamiento-roles` |
 | Revisar contrato marco farmacia / SAFE / laboral (checklist) | `zonix-legal-contracts-ve` + `zonix-empresa-ve` + `zonix-regulatory-ve` |
 | Lectura founder CEO/CTO/TPM (due diligence, 90 días) | `zonix-founder-ops-index` + `zonix-startup-context` |

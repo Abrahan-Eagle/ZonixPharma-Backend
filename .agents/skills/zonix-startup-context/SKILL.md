@@ -38,6 +38,17 @@ Zonix Pharma opera en **mercado existente con diferenciación por features** (no
 
 **Anti-patrón:** no aplicar `blue-ocean-strategy` al pitch — Zonix **no** inventa categoría; compite con atributos únicos (farmacéutico por farmacia, cuota+% GMV bajo, pagos manuales VE).
 
+## Mercado bilateral (UniMOOC M3 — Steve Blank)
+
+Zonix es **two-sided**: farmacia (supply) + paciente (demand). Implicaciones:
+
+| Lado | Métrica leading Fase 0 | Riesgo chicken-and-egg |
+|------|------------------------|-------------------------|
+| Farmacia | Firmas + catálogo activo | Sin oferta, paciente no convierte |
+| Paciente | Pedidos completados post-Day-D | Sin demanda, farmacia churn |
+
+**Regla agente:** no escalar paid paciente (Meta) hasta **N farmacias activas** en beachhead — ver `zonix-launch-piloto` y `zonix-lean-canvas`.
+
 ## Tiers de capital (nunca invertir nombres)
 
 | Tier | Capital pedido | SAFE cap post-money | Equity ref. | Burn prom. |
@@ -110,6 +121,7 @@ Leer en este orden para inversor (30 min): [docs/Lanzamiento/README.md](../../do
 ## Skills relacionadas
 
 - `zonix-financial-model` — coherencia tablas y escenarios
+- `zonix-lean-canvas` — canvas cualitativo pre-Day-D
 - `zonix-investor-materials` — data room y gaps
 - `zonix-fundraising-narrative` — pitch y outreach
 - `zonix-lanzamiento-roles` — qué rol humano aplica

@@ -1,6 +1,6 @@
 # Skills startup — qué usar y qué evitar (Zonix Pharma)
 
-> **Última actualización:** 27 mayo 2026.  
+> **Última actualización:** 11 junio 2026 (curso UniMOOC Steve Blank → `zonix-lean-canvas`).  
 > Fuente: [ANALISIS_FORENSE_BUSQUEDA_GITHUB_LANZAMIENTO_2026-05.md](ANALISIS_FORENSE_BUSQUEDA_GITHUB_LANZAMIENTO_2026-05.md), [research_links.md](research_links.md), [getagentseal/founder-playbook](https://github.com/getagentseal/founder-playbook), [shawnpang/startup-founder-skills](https://github.com/shawnpang/startup-founder-skills).
 
 ## Usar siempre (Jarvis local)
@@ -14,6 +14,7 @@
 | `zonix-investor-materials` | Data room, CHECKLIST |
 | `zonix-financial-model` | PROYECCION, UNIT, **waiver 100m-offers** |
 | `zonix-launch-piloto` | PLAN, Day-D, **beachhead / chasm** |
+| `zonix-lean-canvas` | Canvas 9 bloques, hipótesis, pivot, bilateral |
 | `zonix-b2b-sales` | Farmacias B2B, SPIN |
 | `zonix-regulatory-ve` | Copy salud VE |
 | `zonix-legal-contracts-ve` | Contratos (checklist) |
@@ -24,6 +25,7 @@
 |---------------|-------------|------------------|
 | startup-context / Market Type | `zonix-startup-context` | ✓ |
 | four-steps, mom-test | `zonix-launch-piloto` | ✓ |
+| Lean Canvas (Steve Blank UniMOOC) | `zonix-lean-canvas` | ✓ |
 | spin-selling | `zonix-b2b-sales` | ✓ |
 | monetizing-innovation, 100m-offers (waiver) | `zonix-financial-model` | ✓ |
 | obviously-awesome, storybrand, made-to-stick | `zonix-fundraising-narrative`, `zonix-lanzamiento-docs` | ✓ |

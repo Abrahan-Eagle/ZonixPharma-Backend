@@ -72,3 +72,27 @@ Usar en **discovery call** y al ampliar el pack; no sustituye PROPUESTA_VALOR_CL
 - `zonix-launch-piloto`
 - `zonix-lanzamiento-roles`
 - `zonix-regulatory-ve` (copy en material impreso)
+- `zonix-lean-canvas` (segmento + problema farmacia)
+
+## Día en la vida — dueño farmacia (UniMOOC M3)
+
+Plantilla discovery **antes** SPIN; rellenar en notas de visita (no inventar respuestas).
+
+| Momento del día | Preguntas mom-test (hechos pasados) |
+|-----------------|-------------------------------------|
+| Apertura | ¿Cuántos pedidos por WhatsApp ayer? ¿Cuántos Rx rechazados por falta de info? |
+| Mediodía | ¿Cómo confirman stock hoy? ¿Quién valida receta si el titular no está? |
+| Cierre | ¿Qué hacen cuando Rappi/agregador no trae pedido completo? |
+| Fin de semana | ¿Pierden ventas por no aparecer en búsqueda digital local? |
+
+**Ranking problemas** (post-visita, founder/CS): ordenar 3 dolores citados textualmente → alimentar PROPUESTA B2B §2.
+
+## Arquetipo farmacia piloto (adaptado Jersey Square)
+
+| Atributo | Perfil beachhead Zonix |
+|----------|------------------------|
+| Tamaño | Independiente 1–2 sedes Valencia metro |
+| Rx | Farmacéutico colegiado en plantilla |
+| Digital | WhatsApp activo; sin app propia |
+| Delivery | Propio o tercero; abierto a partner Zonix |
+| Anti-target | Cadena nacional año 1; farmacia sin titular Rx |

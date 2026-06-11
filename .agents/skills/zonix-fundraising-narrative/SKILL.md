@@ -81,6 +81,33 @@ Plantilla de 1 párrafo al auditar CONTEXTO_PITCH:
 4. **Target customer:** farmacias independientes Valencia metro + paciente urbano.
 5. **Market category:** marketplace farmacéutico digital (no «delivery de comida»).
 
+## Tipos de propuesta de valor (UniMOOC M2 — Steve Blank)
+
+Destilado curso [ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md](../../docs/zonix/ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md). Usar al editar **CONTEXTO_PITCH**, **BRIEF** o slide «Solución» — **no** inventar claims clínicos.
+
+Blank distingue dos fuentes de valor que convergen en la propuesta:
+
+| Fuente | Qué aporta | Ejemplo Zonix (cualitativo) |
+|--------|------------|-----------------------------|
+| **Conocimiento técnico** | Eficiencia, escala producto, menos fricción operativa | Stack Laravel+Flutter en prod; Rx + validación farmacéutico en app |
+| **Conocimiento de mercado** | Distribución, marca, encaje segmento | Beachhead Valencia; Sales B2B físico; partners delivery |
+
+**Ranking antes del pitch (M2):**
+
+1. Listar **3 problemas** del cliente (farmacia / paciente) con citas mom-test — no features.
+2. Listar **3 beneficios** medibles o observables (ej. «menos WhatsApp manual», «receta con estado visible»).
+3. Elegir **un** mensaje puente para inversor: problema → atributo único → prueba (tests, piloto Day-D).
+
+**Tipos narrativos para bullets MENSAJE (elegir 1 dominante por audiencia):**
+
+| Tipo | Cuándo usar | Bullet Zonix (plantilla) |
+|------|-------------|--------------------------|
+| **Más eficiente / menos fricción** | Inversor tech | «Marketplace uni-pharmacy con Rx integrado vs agregador genérico» |
+| **Nuevo acceso / canal** | Inversor GTM | «Demanda digital para farmacias independientes sin app propia» |
+| **Costo total menor** | Comparables take-rate | «Cuota+GMV vs comisión 25–35% agregador — ver PROPUESTA B2B §2» |
+
+**Anti-patrones pitch:** no mezclar los tres tipos en un mismo párrafo; no prometer PMV como producto «terminado» — piloto Day-D es validación.
+
 ## Cialdini — cierre inversor (influence)
 
 Lente [founder-playbook `influence`](https://github.com/getagentseal/founder-playbook). Aplicar en MENSAJE_ENVIO, reunión y CHECKLIST §8 — **sin** manipulación ni cifras inventadas.
@@ -124,3 +151,4 @@ Marcar `[PENDIENTE asesor/abogado]` en temas sin dictamen.
 - `zonix-financial-model` (si preguntan tablas)
 - `zonix-regulatory-ve` (preguntas MPPS/Rx)
 - `zonix-lanzamiento-roles` (declarar lente IR + Legal)
+- `zonix-lean-canvas` (bloque propuesta de valor)

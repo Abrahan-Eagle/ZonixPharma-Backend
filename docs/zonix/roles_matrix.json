@@ -9,7 +9,8 @@
       "growth": 135000
     },
     "forense_skills": "docs/zonix/ANALISIS_FORENSE_SKILLS.md",
-    "skills_count": 31,
+    "skills_count": 32,
+    "forense_unimooc": "docs/zonix/ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md",
     "forense_github_v3": "docs/zonix/ANALISIS_FORENSE_SKILLS.md#12-apéndice--auditoría-enlaces-github-mayo-2026"
   },
   "skills_inventory": [
@@ -68,6 +69,13 @@
       "domain": "gtm_sales",
       "prerequisite": "zonix-launch-piloto",
       "forense": "ok"
+    },
+    {
+      "id": "zonix-lean-canvas",
+      "repo": "backend",
+      "domain": "gtm_ops",
+      "prerequisite": "zonix-startup-context",
+      "forense": "ok_unimooc_2026_06"
     },
     {
       "id": "zonix-lanzamiento-docs",
@@ -636,6 +644,20 @@
         "zonix-founder-ops-index",
         "zonix-startup-context",
         "zonix-launch-piloto"
+      ]
+    },
+    {
+      "task": "lean_canvas_piloto_unimooc",
+      "roles_humanos": [
+        "Founder",
+        "Co-CEO",
+        "Sales B2B"
+      ],
+      "skills": [
+        "zonix-startup-context",
+        "zonix-lean-canvas",
+        "zonix-launch-piloto",
+        "zonix-b2b-sales"
       ]
     }
   ]

@@ -147,6 +147,28 @@ Lente [founder-playbook `100m-offers`](https://github.com/getagentseal/founder-p
 
 Al redactar copy comercial: prometer waiver **solo** si contrato marco lo refleja; tras mes 3 aplica modelo híbrido §5 B2B.
 
+## Pricing por tipo de mercado (Steve Blank UniMOOC M6)
+
+Zonix compite en **mercado existente** — precio/features vs agregadores; **no** educar mercado desde cero.
+
+| Tipo mercado | Implicación pricing Zonix | Acción agente |
+|--------------|---------------------------|---------------|
+| Existente | Comparables Farmatodo, Rappi, cuota+GMV debe ser defendible vs take-rate agregador | Citar PROPUESTA B2B §2–§5; no inventar descuento |
+| Resegmentado (nicho) | Farmacias independientes Valencia — bandas 25/40/55 | UNIT + waiver §11 |
+| Nuevo | **No aplica** | No usar en pitch |
+
+**Errores frecuentes startups (M6 — evitar en pack):**
+
+1. Fijar precio antes de validar segmento beachhead.
+2. Confundir **forma de cobro** (cuota+%) con **willingness to pay** — WTP cualitativo hasta GMV real.
+3. Optimizar ingresos en spreadsheet sin farmacias activas en app.
+
+**Get → Keep → Grow (M5 — lente CAC):**
+
+- **Get:** CAC farmacia **139** (UNIT) — Sales físico Fase 0.
+- **Keep:** churn ref. 5%; retención panel + pedidos recurrentes.
+- **Grow:** ARPF ~50 placeholder; upsell banda GMV post-piloto — `[PENDIENTE GMV]`.
+
 ## Pitfalls (evitar)
 
 - Proyectar MRR de suscripción SaaS para farmacias.
