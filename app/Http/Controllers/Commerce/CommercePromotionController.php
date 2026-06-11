@@ -73,7 +73,10 @@ class CommercePromotionController extends Controller
             abort(403, 'No tienes acceso a esta promoción');
         }
 
-        return response()->json($promotion);
+        return response()->json([
+            'success' => true,
+            'data' => $promotion,
+        ]);
     }
 
     /**

@@ -5,7 +5,7 @@ use App\Http\Controllers\Commerce\OrderController as CommerceOrderController;
 use App\Http\Controllers\Commerce\ProductController;
 use Illuminate\Support\Facades\Route;
 
-Route::middleware(['auth:sanctum', 'role:commerce', 'commerce.approved'])->prefix('commerce')->group(function () {
+Route::middleware(['auth:sanctum', 'role:commerce', 'commerce.approved', 'throttle:60,1'])->prefix('commerce')->group(function () {
     Route::get('/commerces', [\App\Http\Controllers\Commerce\CommerceListController::class, 'index']);
     Route::post('/commerces', [\App\Http\Controllers\Commerce\CommerceListController::class, 'store']);
     Route::get('/posts', [\App\Http\Controllers\Commerce\CommercePostController::class, 'index']);

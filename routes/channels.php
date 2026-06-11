@@ -38,8 +38,8 @@ Broadcast::channel('orders.{orderId}', function ($user, $orderId) {
 Broadcast::channel('commerce.{commerceId}', function ($user, $commerceId) {
     $commerceIdInt = (int) $commerceId;
 
-    if ($user->role === 'commerce' && $user->profile?->commerce?->id === $commerceIdInt) {
-        return true;
+    if ($user->role === 'commerce' && $user->profile !== null) {
+        return $user->profile->commerces()->where('id', $commerceIdInt)->exists();
     }
 
     // En Zonix Pharma, el farmacéutico colegiado responsable de la farmacia
