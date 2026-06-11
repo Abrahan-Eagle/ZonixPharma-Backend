@@ -376,6 +376,16 @@ class DeliveryControllerTest extends TestCase
             ->assertJsonPath('success', false);
     }
 
+    public function test_me_returns_authenticated_agent()
+    {
+        $response = $this->getJson('/api/delivery/me');
+
+        $response->assertStatus(200)
+            ->assertJson(['success' => true])
+            ->assertJsonPath('data.id', $this->deliveryAgent->id)
+            ->assertJsonStructure(['data' => ['id', 'profile_id', 'working', 'company_id']]);
+    }
+
     public function test_cannot_accept_already_assigned_order()
     {
         $commerce = Commerce::factory()->create(['open' => true]);

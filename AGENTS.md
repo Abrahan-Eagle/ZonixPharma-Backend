@@ -263,6 +263,7 @@ Configurables en `config/zonix.php` (sección `pharma`):
 - **[docs/AUDIT_pharmacist_2026-06-10.md](docs/AUDIT_pharmacist_2026-06-10.md)** — auditoría módulo pharmacist + remediación lote 3 (envelope, onboarding throttle).
 - **[docs/AUDIT_orders_2026-06-10.md](docs/AUDIT_orders_2026-06-10.md)** — auditoría módulo orders buyer + `order_api_errors`.
 - **[docs/AUDIT_buyer_catalog_2026-06-10.md](docs/AUDIT_buyer_catalog_2026-06-10.md)** — auditoría catálogo buyer + `product_api_errors`.
+- **[docs/AUDIT_delivery_2026-06-10.md](docs/AUDIT_delivery_2026-06-10.md)** — auditoría módulo delivery + `delivery_api_errors`.
 - **[docs/SMOKE_RX_E2E.md](docs/SMOKE_RX_E2E.md)** — checklist smoke manual flujo Rx E2E.
 - **[specs/README.md](specs/README.md)** — índice features Spec Kit.
 
