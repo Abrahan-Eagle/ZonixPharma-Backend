@@ -1,4 +1,4 @@
-# Banco de 100 problemas y 100 necesidades — Dueño de farmacia independiente
+# Banco de 100 problemas, 100 necesidades y 100 deseos — Dueño de farmacia independiente
 
 > **Última actualización:** 11 junio 2026.
 > **Uso interno** (founder + Sales) — **no incluir** en zip data room inversor.
@@ -307,26 +307,173 @@
 
 ---
 
+## PARTE 3 — 100 DESEOS Y ASPIRACIONES
+
+> **Diferencia con problemas y necesidades:** el problema duele hoy; la necesidad es lo que requiere para operar; el **deseo/aspiración** es lo que sueña lograr — el motor emocional de la decisión de compra. En discovery aparecen al final de la conversación ("¿y usted cómo se ve en 5 años?"). **Regla:** los deseos orientan el tono del pitch y la relación a largo plazo, pero **nunca** se prometen como resultado del producto. La columna Zonix aquí significa **habilitador**: Zonix contribuye (Sí), contribuye indirectamente (Parcial) o no es su rol (No).
+
+### S. Económicos y patrimoniales (D1–D13)
+
+| # | Deseo / aspiración | Zonix |
+|---|--------------------|-------|
+| D1 | Ser dueño del local donde opera, no pagar alquiler de por vida | No |
+| D2 | Tener estabilidad económica que no dependa del dólar del día | Parcial |
+| D3 | Generar ingresos suficientes para ahorrar, no solo sobrevivir | Parcial |
+| D4 | Construir un patrimonio que valga algo si un día vende el negocio | Parcial |
+| D5 | Tener un negocio que se pueda valorar y vender formalmente | Parcial |
+| D6 | Diversificar: que la farmacia financie otra inversión familiar | Parcial |
+| D7 | Salir de deudas con droguerías y proveedores | Parcial |
+| D8 | Un colchón financiero para aguantar un mal trimestre | Parcial |
+| D9 | Retirarse algún día con el negocio funcionando sin él | Parcial |
+| D10 | Que el negocio pague un seguro de salud para él y su familia | No |
+| D11 | Volver a tener acceso a crédito formal como antes | No |
+| D12 | Ingresos en divisas estables sin riesgo legal | Parcial |
+| D13 | Que un mes malo no signifique no poder pagar la nómina | Parcial |
+
+### T. Crecimiento del negocio (D14–D26)
+
+| # | Deseo / aspiración | Zonix |
+|---|--------------------|-------|
+| D14 | Abrir una segunda sucursal en otra zona de Valencia | Parcial |
+| D15 | Convertirse en una pequeña cadena local reconocida | Parcial |
+| D16 | Ser la farmacia de referencia de su urbanización | Sí |
+| D17 | Duplicar las ventas sin duplicar el esfuerzo físico | Sí |
+| D18 | Tener clientes de toda Valencia, no solo de su cuadra | Sí |
+| D19 | Crecer al ritmo de las cadenas sin perder el trato personal | Sí |
+| D20 | Ampliar el surtido (dermocosmética, suplementos) con demanda asegurada | Parcial |
+| D21 | Tener su propia marca de productos algún día | No |
+| D22 | Llegar a atender empresas y seguros, no solo público de mostrador | No |
+| D23 | Que la farmacia funcione 24/7 de alguna forma (pedidos nocturnos) | Sí |
+| D24 | Expandirse a otra ciudad (Maracay, Puerto Cabello) | Parcial |
+| D25 | Pasar de sobrevivir mes a mes a planificar a 3 años | Parcial |
+| D26 | Ver crecer el negocio que heredó de su padre más de lo que él lo dejó | Parcial |
+
+### U. Reconocimiento y estatus (D27–D38)
+
+| # | Deseo / aspiración | Zonix |
+|---|--------------------|-------|
+| D27 | Que su farmacia sea conocida y nombrada en la zona | Sí |
+| D28 | Ser respetado en el gremio farmacéutico local | Parcial |
+| D29 | Que lo vean como un empresario moderno, no como "la botica vieja" | Sí |
+| D30 | Aparecer en medios o redes como caso de éxito local | Parcial |
+| D31 | Que las droguerías lo traten como cliente importante | Parcial |
+| D32 | Ser de los primeros de su zona en innovar (orgullo de pionero) | Sí |
+| D33 | Que su competencia se pregunte "¿cómo lo hizo?" | Parcial |
+| D34 | Tener una fachada y una imagen de la que sentirse orgulloso | Parcial |
+| D35 | Que los médicos de la zona recomienden su farmacia | Parcial |
+| D36 | Reconocimiento del colegio de farmacéuticos por buenas prácticas | Parcial |
+| D37 | Que su nombre y el de su farmacia signifiquen confianza | Parcial |
+| D38 | Dejar de sentirse invisible frente a Farmatodo y Locatel | Sí |
+
+### V. Familia y legado (D39–D50)
+
+| # | Deseo / aspiración | Zonix |
+|---|--------------------|-------|
+| D39 | Que sus hijos hereden un negocio vivo, no una deuda | Parcial |
+| D40 | Pagar la universidad de los hijos con el negocio | Parcial |
+| D41 | Que los hijos quieran trabajar en la farmacia (y no migrar) | Parcial |
+| D42 | Dejar un negocio tan ordenado que cualquiera pueda continuarlo | Parcial |
+| D43 | Que la farmacia lleve el apellido familiar con orgullo otra generación | Parcial |
+| D44 | Darle empleo estable a familiares | Parcial |
+| D45 | Que el sacrificio de años se traduzca en bienestar para los suyos | Parcial |
+| D46 | Reunificar a la familia que migró, con un negocio que dé para todos | No |
+| D47 | Comprar o mejorar la casa familiar | No |
+| D48 | Que su cónyuge pueda dejar de trabajar jornadas dobles | Parcial |
+| D49 | Tener tiempo para ver crecer a los nietos | Parcial |
+| D50 | Asegurar la vejez de sus padres con el negocio | Parcial |
+
+### W. Estilo de vida personal (D51–D63)
+
+| # | Deseo / aspiración | Zonix |
+|---|--------------------|-------|
+| D51 | Trabajar menos de 12 horas diarias | Parcial |
+| D52 | Tomar vacaciones sin que el negocio se caiga | Parcial |
+| D53 | Dormir tranquilo sin pensar en la caja del día siguiente | Parcial |
+| D54 | Tener fines de semana libres de verdad | Parcial |
+| D55 | Delegar con confianza y no ser esclavo del mostrador | Parcial |
+| D56 | Recuperar su salud (estrés, tensión, sueño) | Parcial |
+| D57 | Tener tiempo para un hobby o deporte | Parcial |
+| D58 | Atender el negocio desde el teléfono cuando viaja | Sí |
+| D59 | Llegar a casa antes de que los hijos se duerman | Parcial |
+| D60 | Sentir que controla el negocio y no que el negocio lo controla | Sí |
+| D61 | Dejar de "apagar incendios" y disfrutar lo que construyó | Parcial |
+| D62 | Jubilarse activo, asesorando, no encerrado en el mostrador | Parcial |
+| D63 | Volver a sentir entusiasmo por su negocio, no solo cansancio | Sí |
+
+### X. Profesionales (farmacéutico de vocación) (D64–D75)
+
+| # | Deseo / aspiración | Zonix |
+|---|--------------------|-------|
+| D64 | Ejercer como profesional de salud, no solo como cajero | Parcial |
+| D65 | Ser el consejero de salud de confianza de su comunidad | Parcial |
+| D66 | Hacer seguimiento real a pacientes crónicos | Parcial |
+| D67 | Que su criterio farmacéutico sea valorado (no "deme lo más barato") | Parcial |
+| D68 | Mantenerse actualizado en farmacología sin costo prohibitivo | No |
+| D69 | Ofrecer servicios clínicos (tensión, glicemia, inyectología) reconocidos | Parcial |
+| D70 | Trabajar con herramientas a la altura de su profesionalismo | Sí |
+| D71 | Validar recetas con el rigor que la ley exige, sin fricción | Sí |
+| D72 | Formar a la siguiente generación de farmacéuticos | No |
+| D73 | Participar en jornadas de salud comunitaria | No |
+| D74 | Que la profesión farmacéutica recupere prestigio en el país | Parcial |
+| D75 | Contribuir a que nadie abandone un tratamiento por falta de acceso | Parcial |
+
+### Y. Comunidad e impacto social (D76–D88)
+
+| # | Deseo / aspiración | Zonix |
+|---|--------------------|-------|
+| D76 | Servir a su comunidad: ser "la farmacia que siempre está" | Sí |
+| D77 | Que el adulto mayor de la zona reciba su medicamento sin trasladarse | Sí |
+| D78 | Ayudar al paciente crónico a no interrumpir su tratamiento | Sí |
+| D79 | Ser punto de apoyo del barrio en emergencias de salud | Parcial |
+| D80 | Dar precios justos sin quebrar en el intento | Parcial |
+| D81 | Generar empleo digno en su zona | Parcial |
+| D82 | Que su farmacia sea sinónimo de honestidad (sin medicinas vencidas ni falsificadas) | Parcial |
+| D83 | Apoyar a escuelas o iglesias locales con jornadas | No |
+| D84 | Demostrar que el comercio de barrio puede competir y ganar | Sí |
+| D85 | Que ningún vecino tenga que ir hasta el centro por un medicamento | Sí |
+| D86 | Ser recordado como alguien que ayudó, no solo que vendió | Parcial |
+| D87 | Contribuir a la salud pública desde lo privado | Parcial |
+| D88 | Que su comunidad prospere junto con su negocio | Parcial |
+
+### Z. Modernización y futuro (D89–D100)
+
+| # | Deseo / aspiración | Zonix |
+|---|--------------------|-------|
+| D89 | Tener una farmacia digital "como las de afuera" | Sí |
+| D90 | No quedarse obsoleto mientras el mundo cambia | Sí |
+| D91 | Entender la tecnología en lugar de temerle | Sí |
+| D92 | Que la digitalización la haga alguien confiable, sin estafas | Sí |
+| D93 | Subirse a la ola del delivery antes de que sea tarde | Sí |
+| D94 | Tener datos de su negocio como los tienen las cadenas | Parcial |
+| D95 | Automatizar lo repetitivo y dedicarse a lo importante | Parcial |
+| D96 | Una farmacia que funcione igual de bien con o sin él presente | Parcial |
+| D97 | Estar preparado para la próxima crisis (pandemia, apagón, escasez) | Parcial |
+| D98 | Ver a Venezuela recuperarse y su negocio crecer con ella | No |
+| D99 | Ser parte de algo más grande que su mostrador (una red, un movimiento) | Sí |
+| D100 | Mirar atrás en 10 años y saber que tomó la decisión correcta a tiempo | Parcial |
+
+---
+
 ## Resumen de cobertura Zonix (conteo honesto)
 
-| Cobertura | Problemas | Necesidades |
-|-----------|-----------|-------------|
-| **Sí** (resuelve hoy) | 28 | 38 |
-| **Parcial** (mejora con límites) | 45 | 51 |
-| **No** (fuera MVP — roadmap o descarte) | 27 | 11 |
+| Cobertura | Problemas | Necesidades | Deseos (habilitador) |
+|-----------|-----------|-------------|----------------------|
+| **Sí** (resuelve / habilita hoy) | 28 | 38 | 22 |
+| **Parcial** (mejora / contribuye con límites) | 45 | 51 | 67 |
+| **No** (fuera MVP o fuera de rol) | 27 | 11 | 11 |
 
 **Lecturas clave:**
 
 1. **El pitch debe vivir en los "Sí":** pedidos digitales, Rx trazable, conciliación de pagos, delivery partner, visibilidad y costo de canal bajo. Coincide con el ranking hipotético de [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §2.0.
 2. **Los "Parcial" son material de objeciones**, no de promesas: decir exactamente qué hace y qué no (ej. P43 faltantes: el catálogo ayuda, no es ERP de inventario).
 3. **Los "No" más citados en calle definen el roadmap:** si el comparador de droguerías (P47–P48) o las alertas de vencimiento (P46) dominan las entrevistas, son candidatos post-piloto — decisión founder documentada, nunca improvisada en un pitch.
-4. **Este banco NO se muestra a la farmacia.** En discovery se pregunta con mom-test (hechos pasados) y se anota cuáles de estos ítems aparecen espontáneamente; ese es el dato.
+4. **Los deseos (D) dan el tono, no el contenido del pitch:** se vende con problemas y necesidades confirmados; los deseos (ser referencia de la zona D16, modernizarse D89–D93, legado familiar D39–D43) orientan el lenguaje y la relación de largo plazo. **Prohibido** prometer deseos como resultado ("con Zonix duplicarás ventas") — mom-test: hechos, no sueños.
+5. **Este banco NO se muestra a la farmacia.** En discovery se pregunta con mom-test (hechos pasados) y se anota cuáles de estos ítems aparecen espontáneamente; ese es el dato.
 
 ---
 
 ## Cómo usar este banco en discovery
 
 1. Antes de la visita: releer categorías A–J (problemas) como **mapa mental** — no como cuestionario a recitar.
-2. Durante: solo las 5 preguntas core de [GUIA_DISCOVERY_CALLE_FASE0.md](GUIA_DISCOVERY_CALLE_FASE0.md) §3.2; dejar hablar.
-3. Después: marcar en la minuta qué números (P/N) mencionó el dueño **espontáneamente** y con qué dato (horas, USD, ventas).
-4. Tras ≥5 entrevistas: los P/N más repetidos con dato concreto → ranking 3+3 de PROPUESTA_B2B §2.0; el resto queda como hipótesis sin confirmar.
+2. Durante: solo las 5 preguntas core de [GUIA_DISCOVERY_CALLE_FASE0.md](GUIA_DISCOVERY_CALLE_FASE0.md) §3.2; dejar hablar. Si la conversación fluye, cerrar con una pregunta de aspiración («¿cómo se ve usted y su farmacia en 5 años?») y escuchar qué deseos (D) emergen.
+3. Después: marcar en la minuta qué números (P/N/D) mencionó el dueño **espontáneamente** y con qué dato (horas, USD, ventas).
+4. Tras ≥5 entrevistas: los P/N más repetidos con dato concreto → ranking 3+3 de PROPUESTA_B2B §2.0; los D dominantes → tono del one-pager y seguimiento; el resto queda como hipótesis sin confirmar.
