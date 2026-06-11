@@ -71,4 +71,41 @@ php artisan test --filter=ExpirePendingPrescriptions
 # Front
 flutter test test/models/order_test.dart
 flutter test test/features/utils/order_api_errors_test.dart
+flutter test test/features/services/pharma_policy_service_test.dart
+flutter test test/widgets/checkout_strict_rx_test.dart
 ```
+
+---
+
+## Runbook smoke UI Flutter (dispositivo / emulador)
+
+**Prerequisitos**
+
+| Item | Valor local típico |
+| ---- | ------------------ |
+| Backend | `php artisan serve --host=0.0.0.0 --port=8000` |
+| Front `.env` | `API_URL_LOCAL=http://<IP-LAN>:8000` (misma red que el teléfono) |
+| Seed strict | `php artisan db:seed --class=RxStrictSmokeSeeder` |
+| Buyer | user id **1** (Abrahan) o demo buyer id **3** — **no** user 2 (`delivery_agent`) |
+| Producto Rx demo | id **3** Amoxicilina, farmacia commerce id **1** |
+
+**Escenario permisivo** (`.env` backend `ZONIX_PHARMA_BLOCK_RX_WITHOUT_PRESCRIPTION=false`)
+
+1. Login buyer → farmacia El Socorro → agregar Amoxicilina → carrito.
+2. Checkout → banner “Tu pedido requiere receta médica” (no picker).
+3. Confirmar → orden `pending_prescription_validation` → CTA subir receta.
+
+**Escenario estricto** (backend `.env` `=true` + `php artisan config:clear`)
+
+1. **Reiniciar app** (checkout refresca política con `forceRefresh` al abrir).
+2. Mismo carrito Rx → checkout → banner **“Modo estricto Rx”** + dropdown **Receta aprobada**.
+3. Elegir receta `#1 · Dr. Smoke Demo` → **Recoger** (pickup) → **Confirmar Pedido**.
+4. Esperado: orden `pending_payment` (sin pantalla upload intermedia).
+
+**Archivos clave Front**
+
+- `lib/features/services/pharma_policy_service.dart` — `GET /api/pharma-policy`
+- `lib/features/screens/cart/checkout_page.dart` — picker strict + `prescription_id` en orden
+- `lib/features/screens/cart/cart_page.dart` — banner Rx en carrito
+
+---

@@ -74,7 +74,7 @@ Con `.env` temporal `ZONIX_PHARMA_BLOCK_RX_WITHOUT_PRESCRIPTION=true` + `config:
 | Errores orden buyer | `test/features/utils/order_api_errors_test.dart` | ✅ |
 | Errores receta | `test/features/utils/pharmacist_api_errors_test.dart` | ✅ |
 | Parseo orden Rx | `test/models/order_test.dart` | ✅ |
-| Modo estricto checkout (policy + picker) | API strict verificada 11 jun; smoke **UI Flutter** en dispositivo | ⏳ manual UI |
+| Modo estricto checkout (policy + picker) | `checkout_strict_rx_test.dart` + API strict 11 jun | ✅ widget; ⏳ manual UI dispositivo |
 
 ---
 
