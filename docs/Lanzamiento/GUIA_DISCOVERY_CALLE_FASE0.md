@@ -5,6 +5,7 @@
 > **Marco:** Customer Development / mom-test (Steve Blank, UniMOOC M1–M3) — skills `zonix-launch-piloto`, `zonix-b2b-sales`, `zonix-lean-canvas`.
 > **Canon:** [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §0 y §4.0 · [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §2.0 · [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md) §0.
 > **Resultados se vuelcan en:** [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) §6 (farmacias prospecto) + ranking 3+3 de PROPUESTA_B2B §2.0.
+> **Banco de hipótesis (mapa mental pre-visita):** [BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md](BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md) — 100 problemas + 100 necesidades con cobertura Zonix (Sí/Parcial/No).
 
 ---
 

@@ -10,7 +10,7 @@
 
 > **Lectura externa:** pack revisado para especialistas (inversor, abogado, contador, asesor farmacéutico, equipo). Sin documentación de proceso interno de redacción automatizada.
 
-Este directorio contiene **23 documentos** `.md` en raíz: materiales de **inversor**, **finanzas**, **legal**, **operación comercial**, **propuestas de valor** y **plantillas internas** ([REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md), [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md), [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md), [GUIA_DISCOVERY_CALLE_FASE0.md](GUIA_DISCOVERY_CALLE_FASE0.md)).
+Este directorio contiene **24 documentos** `.md` en raíz: materiales de **inversor**, **finanzas**, **legal**, **operación comercial**, **propuestas de valor** y **plantillas internas** ([REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md), [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md), [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md), [GUIA_DISCOVERY_CALLE_FASE0.md](GUIA_DISCOVERY_CALLE_FASE0.md), [BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md](BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md)).
 
 Para **ejecutar el lanzamiento:** [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) y [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md). Para **inversor en ~30 min:** [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) y la ruta de la tabla siguiente.
 
@@ -32,7 +32,7 @@ Para **ejecutar el lanzamiento:** [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIEN
 
 **Mensaje listo para enviar:** [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) §2.
 
-> **Uso interno (no obligatorio para inversor en primera pasada):** [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md) · [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) · [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) (plantilla founder) · [GUIA_DISCOVERY_CALLE_FASE0.md](GUIA_DISCOVERY_CALLE_FASE0.md) (mom-test calle).
+> **Uso interno (no obligatorio para inversor en primera pasada):** [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md) · [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) · [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) (plantilla founder) · [GUIA_DISCOVERY_CALLE_FASE0.md](GUIA_DISCOVERY_CALLE_FASE0.md) (mom-test calle) · [BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md](BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md) (100 problemas + 100 necesidades, hipótesis discovery).
 
 Tiers Base/Growth y detalle burn: [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §1.
 
@@ -170,7 +170,7 @@ Estos no se inventan. El pack los marca explícitamente con `[PENDIENTE]`. **Ín
 1. Revisar [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) (P0 antes de reunión institucional).
 2. **Zip inversor (~30 min):** BRIEF → CONTEXTO → PERFIL → UNIT → PROYECCION §1.1 → ESTRUCTURA → CHECKLIST (+ MENSAJE §2 opcional).
 3. **Opcional DD técnico:** [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md).
-4. **Excluir del zip externo** (uso interno): CUESTIONARIO, REGISTRO, VOLCADO, GUIA_DISCOVERY — salvo que el especialista lo pida.
+4. **Excluir del zip externo** (uso interno): CUESTIONARIO, REGISTRO, VOLCADO, GUIA_DISCOVERY, BANCO_PROBLEMAS — salvo que el especialista lo pida.
 5. Marcar aprobación founder en REGISTRO P0-04 antes de enviar.
 
 **Pack revisado por:** [PENDIENTE — el founder debe leer y aprobar antes de presentar al inversor].
