@@ -13,8 +13,8 @@
 - **Lote 10:** `delivery_company_api_errors.dart` + `DeliveryCompanyService.lastActionError`; `GET /admin/statistics` envelope `{ success, data }`.
 - **Docs:** `AUDIT_delivery_2026-06-10.md`, `AUDIT_admin_2026-06-10.md`, `SMOKE_RX_E2E_RESULTS_2026-06-10.md`.
 - **Helpers Front API:** `commerce_api_errors`, `pharmacist_api_errors`, `order_api_errors`, `product_api_errors`, `delivery_api_errors`, `admin_api_errors`, `delivery_company_api_errors`.
-- **Pendiente manual:** smoke Rx estricto en dispositivo (`RxStrictSmokeSeeder` + `ZONIX_PHARMA_BLOCK_RX_WITHOUT_PRESCRIPTION=true`).
-- **Commits dev:** Backend `3ae4595`; Front `af18072` (admin lote 9); delivery lote 8 `c1364b9` / `b0feccd`.
+- **Pendiente manual:** smoke Rx estricto en **app Flutter** (API local OK 11 jun; seed + receta id 1 listos).
+- **Verificación 11 jun 2026:** Backend **443/443** parallel; Front **238** tests (~1 skip).
 
 ### Buyer catalog lote 7 — 10 junio 2026
 

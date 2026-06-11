@@ -1,8 +1,8 @@
 # Resultados smoke Rx E2E — verificación automatizada
 
-**Fecha ejecución:** 10 junio 2026  
-**Entorno:** local SQLite tests (`php artisan test`)  
-**Manual en dispositivo:** pendiente (requiere seed + cuentas buyer/pharmacist)
+**Fecha ejecución:** 10 junio 2026 (actualizado verificación completa **11 junio 2026**)  
+**Entorno:** local SQLite tests (`php artisan test`) + API local `:8000`  
+**Manual en dispositivo Flutter:** pendiente (requiere app + modo estricto en `.env`)
 
 ---
 
@@ -24,7 +24,34 @@
 | Index buyer recetas | `BuyerPrescriptionIndexTest` (2 tests) | ✅ |
 | Política pública pharma | `PublicPharmaPolicyTest` | ✅ |
 
-**Total filtro Rx smoke:** 22 tests, 84 assertions — **PASS**
+**Total filtro Rx smoke:** 21 tests — **PASS** (11 jun 2026)
+
+**Suite completa (11 jun 2026):**
+
+| Repo | Comando | Resultado |
+| ---- | ------- | --------- |
+| Backend | `php artisan test --parallel` | **443 passed**, 1822 assertions |
+| Front | `flutter test` | **238 passed**, ~1 skip |
+
+---
+
+## Smoke API local (servidor `php artisan serve :8000`)
+
+| Paso | Comando / endpoint | Resultado 11 jun 2026 |
+| ---- | ------------------ | --------------------- |
+| Seed receta strict | `php artisan db:seed --class=RxStrictSmokeSeeder` | ✅ receta `approved` profile 1 + commerce 1 (Rx product id 3) |
+| Política pública | `GET /api/pharma-policy` | ✅ `block_rx_without_prescription: false` (`.env` actual) |
+| Listado recetas buyer | `GET /api/buyer/prescriptions` (user 1 Sanctum) | ✅ incluye receta id 1 `approved`, `order_id: null`, commerce Farmacia El Socorro |
+
+Para probar **modo estricto** en local:
+
+```bash
+# .env
+ZONIX_PHARMA_BLOCK_RX_WITHOUT_PRESCRIPTION=true
+php artisan config:clear
+# GET /api/pharma-policy → block_rx_without_prescription: true
+# App: carrito Rx product id 3 → checkout → picker receta id 1 → confirmar
+```
 
 ---
 
