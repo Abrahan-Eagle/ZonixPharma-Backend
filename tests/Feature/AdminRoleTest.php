@@ -99,4 +99,39 @@ class AdminRoleTest extends TestCase
                 ],
             ]);
     }
+
+    public function test_admin_statistics_returns_expected_keys()
+    {
+        $admin = User::factory()->admin()->create();
+        Sanctum::actingAs($admin);
+
+        Order::factory()->count(2)->create();
+
+        $response = $this->getJson('/api/admin/statistics');
+
+        $response->assertStatus(200)
+            ->assertJsonStructure([
+                'total_users',
+                'active_users',
+                'total_orders',
+                'total_revenue',
+                'total_commerces',
+                'user_distribution',
+            ]);
+    }
+
+    public function test_admin_cannot_apply_invalid_order_status_transition()
+    {
+        $admin = User::factory()->admin()->create();
+        Sanctum::actingAs($admin);
+        $order = Order::factory()->create(['status' => 'pending_payment']);
+
+        $response = $this->patchJson("/api/admin/orders/{$order->id}/status", [
+            'status' => 'delivered',
+        ]);
+
+        $response->assertStatus(409)
+            ->assertJsonPath('success', false)
+            ->assertJsonPath('error_code', 'ORDER_INVALID_TRANSITION');
+    }
 }
