@@ -7,6 +7,14 @@
 
 ## Última actualización de contexto
 
+### Remediación módulo Commerce + multi-sede — 10 junio 2026
+
+- **Hecho:** Auditoría 360° (8 fases) documentada en [`AUDIT_commerce_8fases_2026-06-10.md`](AUDIT_commerce_8fases_2026-06-10.md) y [`PROMPT_AUDIT_360_ZONIX.md`](PROMPT_AUDIT_360_ZONIX.md). Remediación P1/P2: throttle `60,1` en rutas commerce, Pusher `commerces()` multi-sede, envelope promos, tests `EnsureCommerceApproved`, `CommerceOrderValidatePayment`, `CommerceProductRx`.
+- **Multi-sede:** trait `ResolvesCommerce` (`commerce_id` / header `X-Commerce-Id` / principal); tests `CommerceMultiSedeTest` (4 escenarios). Push `dev` → `140c486`.
+- **Verificación:** `php artisan test --parallel` → **421 passed**.
+- **Smoke manual sugerido:** perfil con 2 farmacias → `set-primary` → productos/órdenes/dashboard scoped; header ajeno → 403.
+- **Pendiente:** sprint brand residual mínimo en Front (solo `Colors.transparent` en chat/QR); otros módulos fuera de commerce.
+
 ### Pack Lanzamiento listo para especialistas (sin meta IA) — 1 junio 2026
 
 - **Hecho:** `docs/Lanzamiento/` — **22** `.md` en raíz; eliminados 11 archivos de proceso (`_auditorias/`, `ANALISIS_FORENSE`, `AUDITORIA_FORENSE_360`, `INCOHERENCIAS`).
