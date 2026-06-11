@@ -55,18 +55,15 @@ Toolkit oficial GitHub para features de **producto** (API + Flutter). **No** usa
   - Auditoría: [docs/AUDIT_commerce_8fases_2026-06-10.md](docs/AUDIT_commerce_8fases_2026-06-10.md), [docs/PROMPT_AUDIT_360_ZONIX.md](docs/PROMPT_AUDIT_360_ZONIX.md).
   - Backend: trait `ResolvesCommerce` + header `X-Commerce-Id`; throttle `60,1`; Pusher multi-sede; KPI dashboard alineado a cola Rx/pago/preparación; tests `CommerceMultiSedeTest`, `CommerceDashboardTest`, `EnsureCommerceApproved`, `CommerceProductRx`, `CommerceOrderValidatePayment`.
   - Verificación: `php artisan test --parallel` → **422+ passed**.
+- **10 jun 2026 — Remediación módulo pharmacist (lote 2 — historial).**
+  - `GET /api/pharmacist/prescriptions/history`; tests `PharmacistPrescriptionHistoryTest`.
+  - Verificación: **431 passed**.
 - **10 jun 2026 — Remediación módulo pharmacist (lote 1).**
   - Throttle `30,1` en approve/reject Rx; tests `PharmacistDashboardTest` (KPIs + licencia inválida).
-  - Verificación: **429 passed**.
 - **10 jun 2026 — Remediación buyer orders (Rx post-checkout, lote 2).**
   - `OrderTrackingController`: timeline Rx, copy Pharma, clave `pharmacy` + alias `restaurant`, pasos dinámicos.
   - Tests: `ExpirePendingPrescriptionsCommandTest`, `OrderTest::test_legacy_order_tracking_includes_rx_state_and_pharmacy`.
-  - Verificación: **427 passed**.
-- **10 jun 2026 — Remediación módulo pharmacist (lote 1).**
-  - Throttle `30,1` approve/reject; tests `PharmacistDashboardTest` (KPIs + `PHARMACIST_LICENSE_INVALID`).
-  - Verificación: **429 passed**.
-- **10 jun 2026 — Remediación buyer orders (Rx post-checkout, lote 2).**
-  - `TrackingController`: timeline con `pending_prescription_validation` y copy Pharma.
+- **10 jun 2026 — Remediación buyer orders (Rx post-checkout, lote 1).**
   - `Buyer/OrderController`: cancel usa `message` de state machine + 409 en transición inválida; throttle `30,1` en cancel/payment-proof/comprobante.
   - Tests: `OrderTest` cancel Rx + timeline Rx.
 - **27 may 2026 — Spec Kit (SDD) integrado en Jarvis (producto, no Lanzamiento).**
