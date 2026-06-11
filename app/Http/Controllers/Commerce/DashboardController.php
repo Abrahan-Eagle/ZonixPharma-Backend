@@ -2,14 +2,18 @@
 
 namespace App\Http\Controllers\Commerce;
 
+use App\Http\Controllers\Commerce\Concerns\ResolvesCommerce;
 use App\Http\Controllers\Controller;
 use App\Models\Order;
 use App\Models\Product;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class DashboardController extends Controller
 {
-    public function index()
+    use ResolvesCommerce;
+
+    public function index(Request $request)
     {
         try {
             /** @var \App\Models\User|null $user */
@@ -19,7 +23,11 @@ class DashboardController extends Controller
             }
             $user->load('profile.commerces');
             $profile = $user->profile;
-            $commerce = $profile?->getPrimaryCommerce();
+
+            $commerce = $this->resolveCommerce($request);
+            if ($commerce instanceof \Illuminate\Http\JsonResponse) {
+                return $commerce;
+            }
 
             if (! $profile || ! $commerce) {
                 return response()->json(['error' => 'User is not associated with a commerce'], 403);

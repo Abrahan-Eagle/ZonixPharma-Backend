@@ -2,13 +2,17 @@
 
 namespace App\Http\Controllers\Commerce;
 
+use App\Http\Controllers\Commerce\Concerns\ResolvesCommerce;
 use App\Http\Controllers\Controller;
 use App\Models\Promotion;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class CommercePromotionController extends Controller
 {
+    use ResolvesCommerce;
+
     /**
      * Promociones globales (`commerce_id` null) solo las muta un administrador.
      */
@@ -28,8 +32,10 @@ class CommercePromotionController extends Controller
      */
     public function index(Request $request)
     {
-        $user = Auth::user();
-        $commerce = $user->profile?->commerce;
+        $commerce = $this->resolveCommerce($request);
+        if ($commerce instanceof JsonResponse) {
+            return $commerce;
+        }
         $commerceId = $commerce?->id;
 
         $query = Promotion::query();
@@ -63,11 +69,14 @@ class CommercePromotionController extends Controller
      *
      * @param  int  $id
      */
-    public function show($id)
+    public function show(Request $request, $id)
     {
         $promotion = Promotion::findOrFail($id);
-        $user = Auth::user();
-        $commerceId = $user->profile?->commerce?->id;
+        $commerce = $this->resolveCommerce($request);
+        if ($commerce instanceof JsonResponse) {
+            return $commerce;
+        }
+        $commerceId = $commerce?->id;
 
         if ($promotion->commerce_id !== null && $promotion->commerce_id !== $commerceId) {
             abort(403, 'No tienes acceso a esta promoción');
@@ -99,8 +108,10 @@ class CommercePromotionController extends Controller
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:5120',
         ]);
 
-        $user = Auth::user();
-        $commerce = $user->profile?->commerce;
+        $commerce = $this->resolveCommerceOrNotFound($request);
+        if ($commerce instanceof JsonResponse) {
+            return $commerce;
+        }
 
         $data = $request->only([
             'title', 'description', 'discount_type', 'discount_value',
@@ -110,7 +121,7 @@ class CommercePromotionController extends Controller
         $data['minimum_order'] = $data['minimum_order'] ?? 0;
         $data['priority'] = $data['priority'] ?? 0;
         $data['is_active'] = $request->boolean('is_active', true);
-        $data['commerce_id'] = $commerce?->id;
+        $data['commerce_id'] = $commerce->id;
 
         if ($request->hasFile('image')) {
             $path = $request->file('image')->store('promotions', 'public');
@@ -137,7 +148,11 @@ class CommercePromotionController extends Controller
     {
         $promotion = Promotion::findOrFail($id);
         $user = Auth::user();
-        $commerceId = $user->profile?->commerce?->id;
+        $commerce = $this->resolveCommerce($request);
+        if ($commerce instanceof JsonResponse) {
+            return $commerce;
+        }
+        $commerceId = $commerce?->id;
 
         $this->assertPromotionMutable($promotion, $user, $commerceId);
 
@@ -187,11 +202,15 @@ class CommercePromotionController extends Controller
      *
      * @param  int  $id
      */
-    public function destroy(string|int $id)
+    public function destroy(Request $request, string|int $id)
     {
         $promotion = Promotion::findOrFail($id);
         $user = Auth::user();
-        $commerceId = $user->profile?->commerce?->id;
+        $commerce = $this->resolveCommerce($request);
+        if ($commerce instanceof JsonResponse) {
+            return $commerce;
+        }
+        $commerceId = $commerce?->id;
 
         $this->assertPromotionMutable($promotion, $user, $commerceId);
 
@@ -205,11 +224,15 @@ class CommercePromotionController extends Controller
      *
      * @param  int  $id
      */
-    public function toggle(string|int $id)
+    public function toggle(Request $request, string|int $id)
     {
         $promotion = Promotion::findOrFail($id);
         $user = Auth::user();
-        $commerceId = $user->profile?->commerce?->id;
+        $commerce = $this->resolveCommerce($request);
+        if ($commerce instanceof JsonResponse) {
+            return $commerce;
+        }
+        $commerceId = $commerce?->id;
 
         $this->assertPromotionMutable($promotion, $user, $commerceId);
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Commerce;
 
+use App\Http\Controllers\Commerce\Concerns\ResolvesCommerce;
 use App\Http\Controllers\Controller;
 use App\Models\Order;
 use App\Models\Review;
@@ -11,10 +12,12 @@ use Illuminate\Support\Facades\DB;
 
 class AnalyticsController extends Controller
 {
+    use ResolvesCommerce;
+
     /**
      * Obtener analytics generales del comercio
      */
-    public function getOverview()
+    public function getOverview(Request $request)
     {
         try {
             /** @var \App\Models\User|null $user */
@@ -24,7 +27,11 @@ class AnalyticsController extends Controller
             }
             $user->load('profile.commerces');
             $profile = $user->profile;
-            $commerce = $profile?->getPrimaryCommerce();
+
+            $commerce = $this->resolveCommerce($request);
+            if ($commerce instanceof \Illuminate\Http\JsonResponse) {
+                return $commerce;
+            }
 
             if (! $profile || ! $commerce) {
                 return response()->json(['error' => 'User is not associated with a commerce'], 403);
@@ -115,7 +122,11 @@ class AnalyticsController extends Controller
             }
             $user->load('profile.commerces');
             $profile = $user->profile;
-            $commerce = $profile?->getPrimaryCommerce();
+
+            $commerce = $this->resolveCommerce($request);
+            if ($commerce instanceof \Illuminate\Http\JsonResponse) {
+                return $commerce;
+            }
 
             if (! $profile || ! $commerce) {
                 return response()->json(['error' => 'User is not associated with a commerce'], 403);
@@ -159,7 +170,11 @@ class AnalyticsController extends Controller
             }
             $user->load('profile.commerces');
             $profile = $user->profile;
-            $commerce = $profile?->getPrimaryCommerce();
+
+            $commerce = $this->resolveCommerce($request);
+            if ($commerce instanceof \Illuminate\Http\JsonResponse) {
+                return $commerce;
+            }
 
             if (! $profile || ! $commerce) {
                 return response()->json(['error' => 'User is not associated with a commerce'], 403);
@@ -189,7 +204,7 @@ class AnalyticsController extends Controller
     /**
      * Obtener productos más vendidos
      */
-    public function getProducts()
+    public function getProducts(Request $request)
     {
         try {
             /** @var \App\Models\User|null $user */
@@ -199,7 +214,11 @@ class AnalyticsController extends Controller
             }
             $user->load('profile.commerces');
             $profile = $user->profile;
-            $commerce = $profile?->getPrimaryCommerce();
+
+            $commerce = $this->resolveCommerce($request);
+            if ($commerce instanceof \Illuminate\Http\JsonResponse) {
+                return $commerce;
+            }
 
             if (! $profile || ! $commerce) {
                 return response()->json(['error' => 'User is not associated with a commerce'], 403);
@@ -227,7 +246,7 @@ class AnalyticsController extends Controller
     /**
      * Obtener analytics de clientes
      */
-    public function getCustomers()
+    public function getCustomers(Request $request)
     {
         try {
             /** @var \App\Models\User|null $user */
@@ -237,7 +256,11 @@ class AnalyticsController extends Controller
             }
             $user->load('profile.commerces');
             $profile = $user->profile;
-            $commerce = $profile?->getPrimaryCommerce();
+
+            $commerce = $this->resolveCommerce($request);
+            if ($commerce instanceof \Illuminate\Http\JsonResponse) {
+                return $commerce;
+            }
 
             if (! $profile || ! $commerce) {
                 return response()->json(['error' => 'User is not associated with a commerce'], 403);
@@ -265,7 +288,7 @@ class AnalyticsController extends Controller
     /**
      * Obtener métricas de rendimiento
      */
-    public function getPerformance()
+    public function getPerformance(Request $request)
     {
         try {
             /** @var \App\Models\User|null $user */
@@ -275,7 +298,11 @@ class AnalyticsController extends Controller
             }
             $user->load('profile.commerces');
             $profile = $user->profile;
-            $commerce = $profile?->getPrimaryCommerce();
+
+            $commerce = $this->resolveCommerce($request);
+            if ($commerce instanceof \Illuminate\Http\JsonResponse) {
+                return $commerce;
+            }
 
             if (! $profile || ! $commerce) {
                 return response()->json(['error' => 'User is not associated with a commerce'], 403);

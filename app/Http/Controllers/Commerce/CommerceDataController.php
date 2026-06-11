@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Commerce;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\Commerce\Concerns\ResolvesCommerce;
 use App\Models\Commerce;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -11,31 +12,7 @@ use Illuminate\Support\Facades\Storage;
 
 class CommerceDataController extends Controller
 {
-    /**
-     * Resolver el comercio: por commerce_id (query/header) o principal.
-     * Si se envía commerce_id y no pertenece al perfil, responde 403 (sin fallback al comercio principal).
-     */
-    protected function resolveCommerce(Request $request): Commerce|JsonResponse|null
-    {
-        $profile = Auth::user()->profile;
-        if (! $profile) {
-            return null;
-        }
-        $commerceId = $request->query('commerce_id') ?? $request->header('X-Commerce-Id') ?? $request->input('commerce_id');
-        if ($commerceId) {
-            $commerce = $profile->commerces()->find($commerceId);
-            if (! $commerce) {
-                return response()->json([
-                    'success' => false,
-                    'message' => 'No autorizado para operar esta farmacia o el identificador no existe.',
-                ], 403);
-            }
-
-            return $commerce;
-        }
-
-        return $profile->getPrimaryCommerce();
-    }
+    use ResolvesCommerce;
 
     /**
      * Get current user's commerce data.

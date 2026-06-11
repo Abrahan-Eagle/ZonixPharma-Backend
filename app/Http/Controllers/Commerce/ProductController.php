@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Commerce;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\Commerce\Concerns\ResolvesCommerce;
 use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
 use App\Models\Product;
@@ -13,22 +14,17 @@ use Illuminate\Support\Facades\Storage;
 
 class ProductController extends Controller
 {
+    use ResolvesCommerce;
+
     /**
      * Display a listing of the resource.
      */
     public function index(Request $request)
     {
         try {
-            $user = Auth::user();
-            $profile = $user->profile;
-            $commerce = $profile ? $profile->getPrimaryCommerce() : null;
-            if (! $commerce) {
-                \Log::error('No se encontró comercio para el usuario', ['user_id' => $user->id]);
-
-                return response()->json([
-                    'success' => false,
-                    'message' => 'Comercio no encontrado para el usuario autenticado',
-                ], 404);
+            $commerce = $this->resolveCommerceOrNotFound($request);
+            if ($commerce instanceof \Illuminate\Http\JsonResponse) {
+                return $commerce;
             }
             $query = Product::where('commerce_id', $commerce->id);
 
@@ -88,16 +84,9 @@ class ProductController extends Controller
     public function store(StoreProductRequest $request)
     {
         try {
-            $user = Auth::user();
-            $profile = $user->profile;
-            $commerce = $profile ? $profile->getPrimaryCommerce() : null;
-            if (! $commerce) {
-                \Log::error('No se encontró comercio para el usuario', ['user_id' => $user->id]);
-
-                return response()->json([
-                    'success' => false,
-                    'message' => 'Comercio no encontrado para el usuario autenticado',
-                ], 404);
+            $commerce = $this->resolveCommerceOrNotFound($request);
+            if ($commerce instanceof \Illuminate\Http\JsonResponse) {
+                return $commerce;
             }
             $validatedData = $request->validated();
 
@@ -133,19 +122,12 @@ class ProductController extends Controller
         }
     }
 
-    public function show(string|int $id)
+    public function show(Request $request, string|int $id)
     {
         try {
-            $user = Auth::user();
-            $profile = $user->profile;
-            $commerce = $profile ? $profile->getPrimaryCommerce() : null;
-            if (! $commerce) {
-                \Log::error('No se encontró comercio para el usuario', ['user_id' => $user->id]);
-
-                return response()->json([
-                    'success' => false,
-                    'message' => 'Comercio no encontrado para el usuario autenticado',
-                ], 404);
+            $commerce = $this->resolveCommerceOrNotFound($request);
+            if ($commerce instanceof \Illuminate\Http\JsonResponse) {
+                return $commerce;
             }
             $product = Product::where('commerce_id', $commerce->id)->findOrFail($id);
 
@@ -167,16 +149,9 @@ class ProductController extends Controller
     public function update(UpdateProductRequest $request, string|int $id)
     {
         try {
-            $user = Auth::user();
-            $profile = $user->profile;
-            $commerce = $profile ? $profile->getPrimaryCommerce() : null;
-            if (! $commerce) {
-                \Log::error('No se encontró comercio para el usuario', ['user_id' => $user->id]);
-
-                return response()->json([
-                    'success' => false,
-                    'message' => 'Comercio no encontrado para el usuario autenticado',
-                ], 404);
+            $commerce = $this->resolveCommerceOrNotFound($request);
+            if ($commerce instanceof \Illuminate\Http\JsonResponse) {
+                return $commerce;
             }
             $product = Product::where('commerce_id', $commerce->id)->findOrFail($id);
             $validatedData = $request->validated();
@@ -215,19 +190,12 @@ class ProductController extends Controller
         }
     }
 
-    public function destroy(string|int $id)
+    public function destroy(Request $request, string|int $id)
     {
         try {
-            $user = Auth::user();
-            $profile = $user->profile;
-            $commerce = $profile ? $profile->getPrimaryCommerce() : null;
-            if (! $commerce) {
-                \Log::error('No se encontró comercio para el usuario', ['user_id' => $user->id]);
-
-                return response()->json([
-                    'success' => false,
-                    'message' => 'Comercio no encontrado para el usuario autenticado',
-                ], 404);
+            $commerce = $this->resolveCommerceOrNotFound($request);
+            if ($commerce instanceof \Illuminate\Http\JsonResponse) {
+                return $commerce;
             }
             $product = Product::where('commerce_id', $commerce->id)->findOrFail($id);
 
@@ -255,19 +223,12 @@ class ProductController extends Controller
     /**
      * Cambiar disponibilidad del producto
      */
-    public function toggleDisponible(string|int $id)
+    public function toggleDisponible(Request $request, string|int $id)
     {
         try {
-            $user = Auth::user();
-            $profile = $user->profile;
-            $commerce = $profile ? $profile->getPrimaryCommerce() : null;
-            if (! $commerce) {
-                \Log::error('No se encontró comercio para el usuario', ['user_id' => $user->id]);
-
-                return response()->json([
-                    'success' => false,
-                    'message' => 'Comercio no encontrado para el usuario autenticado',
-                ], 404);
+            $commerce = $this->resolveCommerceOrNotFound($request);
+            if ($commerce instanceof \Illuminate\Http\JsonResponse) {
+                return $commerce;
             }
             $product = Product::where('commerce_id', $commerce->id)->findOrFail($id);
             $product->update(['available' => ! $product->available]);
@@ -292,16 +253,12 @@ class ProductController extends Controller
     /**
      * Obtener estadísticas de productos del comercio
      */
-    public function estadisticas()
+    public function estadisticas(Request $request)
     {
         try {
-            $user = Auth::user();
-            $commerce = $user->profile?->getPrimaryCommerce();
-            if (! $commerce) {
-                return response()->json([
-                    'success' => false,
-                    'message' => 'Comercio no encontrado para el usuario autenticado',
-                ], 404);
+            $commerce = $this->resolveCommerceOrNotFound($request);
+            if ($commerce instanceof \Illuminate\Http\JsonResponse) {
+                return $commerce;
             }
             $commerceId = $commerce->id;
 

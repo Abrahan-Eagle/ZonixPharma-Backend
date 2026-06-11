@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Commerce;
 
+use App\Http\Controllers\Commerce\Concerns\ResolvesCommerce;
 use App\Events\OrderStatusChanged;
 use App\Events\PaymentValidated;
 use App\Http\Controllers\Controller;
@@ -16,6 +17,8 @@ use Illuminate\Support\Facades\Log;
 
 class OrderController extends Controller
 {
+    use ResolvesCommerce;
+
     public function index(Request $request)
     {
         try {
@@ -26,19 +29,13 @@ class OrderController extends Controller
             }
             $user->load('profile.commerces');
             $profile = $user->profile;
-            $commerce = $profile?->getPrimaryCommerce();
 
+            $commerce = $this->resolveCommerce($request);
+            if ($commerce instanceof \Illuminate\Http\JsonResponse) {
+                return $commerce;
+            }
             if (! $profile || ! $commerce) {
                 return response()->json(['error' => 'User is not associated with a commerce'], 403);
-            }
-
-            // Si se solicita commerce_id específico, debe pertenecer al perfil; si no, 403
-            if ($request->has('commerce_id')) {
-                $requested = $profile->commerces()->find($request->commerce_id);
-                if (! $requested) {
-                    return response()->json(['error' => 'Unauthorized'], 403);
-                }
-                $commerce = $requested;
             }
 
             $perPage = max(1, min((int) $request->input('per_page', 15), 100));
