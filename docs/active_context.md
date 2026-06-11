@@ -13,8 +13,9 @@
 - **Lote 10:** `delivery_company_api_errors.dart` + `DeliveryCompanyService.lastActionError`; `GET /admin/statistics` envelope `{ success, data }`.
 - **Docs:** `AUDIT_delivery_2026-06-10.md`, `AUDIT_admin_2026-06-10.md`, `SMOKE_RX_E2E_RESULTS_2026-06-10.md`.
 - **Helpers Front API:** `commerce_api_errors`, `pharmacist_api_errors`, `order_api_errors`, `product_api_errors`, `delivery_api_errors`, `admin_api_errors`, `delivery_company_api_errors`.
-- **Smoke Rx estricto API:** verificado 11 jun (422/201); `.env` local restaurado a permisivo; `RxStrictSmokeSeeder` re-ejecutado.
-- **Pendiente:** smoke **UI Flutter** en dispositivo (permisivo + estricto).
+- **Smoke Rx estricto API:** verificado 11 jun; widget `checkout_strict_rx_test` en Front.
+- **Local dispositivo (11 jun):** `.env` **strict ON**; receta libre **id=2**; runbook `SMOKE_RX_E2E.md`.
+- **Pendiente:** smoke UI Flutter en dispositivo; luego restaurar `.env` a permisivo.
 
 ### Buyer catalog lote 7 — 10 junio 2026
 

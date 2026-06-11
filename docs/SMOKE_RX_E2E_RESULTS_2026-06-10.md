@@ -66,6 +66,17 @@ Con `.env` temporal `ZONIX_PHARMA_BLOCK_RX_WITHOUT_PRESCRIPTION=true` + `config:
 
 **Nota:** el token Sanctum debe ser de rol `users` (buyer). User id 2 es `delivery_agent` → 401 en rutas buyer.
 
+### Listo para smoke dispositivo (strict ON — sesión actual)
+
+| Item | Valor |
+| ---- | ----- |
+| `.env` backend | `ZONIX_PHARMA_BLOCK_RX_WITHOUT_PRESCRIPTION=true` |
+| Receta libre checkout | **id=2** (`order_id: null`, commerce 1) — id=1 ligada a orden 13 |
+| Producto Rx | id **3** Amoxicilina @ Farmacia El Socorro |
+| Front LAN | `API_URL_LOCAL=http://192.168.27.12:8000` |
+| App | **Hot restart** tras activar strict; login buyer user **1** |
+| Al cerrar prueba | `.env` → `false` + `php artisan config:clear` |
+
 ## Checklist UI (Front — tests unitarios/widget)
 
 | Ítem | Cobertura | Resultado |
