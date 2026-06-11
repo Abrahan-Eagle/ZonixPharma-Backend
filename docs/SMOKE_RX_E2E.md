@@ -49,7 +49,8 @@
 - [x] Cancel buyer respeta `success: true` y mensaje 409 legible — `OrderTest` + `order_api_errors.dart`
 - [x] Historial pharmacist filtra aprobadas/rechazadas/expiradas — `PharmacistPrescriptionHistoryTest`
 - [x] Tracking legacy incluye paso validación receta (6 pasos Rx) — `OrderTest::test_legacy_order_tracking_includes_rx_state_and_pharmacy`
-- [ ] Smoke manual en dispositivo — ver [SMOKE_RX_E2E_RESULTS_2026-06-10.md](SMOKE_RX_E2E_RESULTS_2026-06-10.md)
+- [x] Modo estricto API — smoke curl 11 jun (422 sin receta, 201 con `prescription_id`) — ver [SMOKE_RX_E2E_RESULTS_2026-06-10.md](SMOKE_RX_E2E_RESULTS_2026-06-10.md)
+- [ ] Smoke manual UI Flutter en dispositivo — permisivo + estricto
 
 ---
 

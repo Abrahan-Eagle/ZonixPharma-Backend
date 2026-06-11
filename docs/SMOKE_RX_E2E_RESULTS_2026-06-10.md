@@ -53,7 +53,18 @@ php artisan config:clear
 # App: carrito Rx product id 3 → checkout → picker receta id 1 → confirmar
 ```
 
----
+### Smoke API modo estricto (11 jun 2026 — ejecutado)
+
+Con `.env` temporal `ZONIX_PHARMA_BLOCK_RX_WITHOUT_PRESCRIPTION=true` + `config:clear` + buyer user 1 (Sanctum):
+
+| Paso | Request | Resultado |
+| ---- | ------- | --------- |
+| Política | `GET /api/pharma-policy` | ✅ `block_rx_without_prescription: true` |
+| Bloqueo sin receta | `POST /api/buyer/orders` (producto Rx id 3, sin `prescription_id`) | ✅ **422** `ORDER_RX_PRESCRIPTION_REQUIRED` |
+| Checkout OK | `POST /api/buyer/orders` + `prescription_id: 1` | ✅ **201** `status: pending_payment`, `prescription_id: 1`, orden id 13 |
+| Restauración dev | `.env` → `false`, `config:clear`, `RxStrictSmokeSeeder` | ✅ nueva receta libre para próximo smoke UI |
+
+**Nota:** el token Sanctum debe ser de rol `users` (buyer). User id 2 es `delivery_agent` → 401 en rutas buyer.
 
 ## Checklist UI (Front — tests unitarios/widget)
 
@@ -63,7 +74,7 @@ php artisan config:clear
 | Errores orden buyer | `test/features/utils/order_api_errors_test.dart` | ✅ |
 | Errores receta | `test/features/utils/pharmacist_api_errors_test.dart` | ✅ |
 | Parseo orden Rx | `test/models/order_test.dart` | ✅ |
-| Modo estricto checkout (policy + picker) | implementado lote 6 — smoke manual recomendado | ⏳ manual |
+| Modo estricto checkout (policy + picker) | API strict verificada 11 jun; smoke **UI Flutter** en dispositivo | ⏳ manual UI |
 
 ---
 
