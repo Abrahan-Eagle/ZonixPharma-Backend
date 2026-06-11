@@ -10,7 +10,7 @@ Skill **orquestadora** para editar el pack `docs/Lanzamiento/` con IA. Integra e
 ## Cuándo aplicar
 
 - El usuario pide **mejorar**, **auditar**, **ampliar una sección** o **alinear** un `.md` del pack Lanzamiento.
-- Sesión de mejora continua post-[INCOHERENCIAS_LANZAMIENTO_2026-05.md](../../docs/Lanzamiento/INCOHERENCIAS_LANZAMIENTO_2026-05.md).
+- Sesión de mejora continua sobre [REGISTRO_PENDIENTES_PACK.md](../../docs/Lanzamiento/REGISTRO_PENDIENTES_PACK.md) (el histórico INCOHERENCIAS_2026-05 ya no está versionado).
 - Dudas de qué skill `zonix-*` usar para un documento concreto.
 
 ## Obligatorio antes (siempre)
@@ -140,13 +140,13 @@ Al proponer texto en SUPUESTO_MARKETING_OFFLINE: una fila por canal con métrica
 1. **Cifras:** solo PROYECCION, PRESUPUESTO, UNIT_ECONOMICS, README pack — nunca regenerar tier/cap/ARPF sin fuente.
 2. **Legal/regulatorio:** MPPS, INHRR, Rx → `zonix-regulatory-ve`; marcar `[PENDIENTE abogado/asesor]`.
 3. **Producto:** features citadas deben existir en ALINEACION o código; si no, «[roadmap]».
-4. **Una sesión = una sección** por documento (misma disciplina que INCOHERENCIAS).
+4. **Una sesión = una sección** por documento (misma disciplina que REGISTRO_PENDIENTES).
 5. **VOLCADO / REGISTRO:** la IA propone texto; el founder valida datos personales y pendientes.
-6. Tras cambio material: proponer entrada en INCOHERENCIAS o REGISTRO_PENDIENTES; `documentar-avances` si cierra hito.
+6. Tras cambio material: proponer entrada en REGISTRO_PENDIENTES_PACK; `documentar-avances` si cierra hito.
 
 ## Prompt sugerido al usuario (copiar)
 
-**Pack completo A–F:** [docs/Lanzamiento/PROMPT_PACK_LANZAMIENTO.md](../../docs/Lanzamiento/PROMPT_PACK_LANZAMIENTO.md).
+**Pack completo A–F:** [docs/plantillas/PROMPT_MEJORAR_PACK_LANZAMIENTO.md](../../docs/plantillas/PROMPT_MEJORAR_PACK_LANZAMIENTO.md) (mejora) y [PROMPT_PACK_LANZAMIENTO_INVERSOR.md](../../docs/plantillas/PROMPT_PACK_LANZAMIENTO_INVERSOR.md) (creación desde cero).
 
 ```
 Mejora [ARCHIVO.md] en docs/Lanzamiento usando zonix-lanzamiento-docs.

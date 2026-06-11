@@ -1,6 +1,6 @@
 # Registro consolidado de pendientes — Pack Lanzamiento
 
-> **Última actualización:** 1 junio 2026.  
+> **Última actualización:** 11 junio 2026.  
 > **Uso:** Completar celdas antes de reunión con inversor institucional o envío del data room cerrado.  
 > **Fuente:** barrido `[PENDIENTE]` en `docs/Lanzamiento/` (no inventar datos).  
 > **Plantilla detallada:** [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md).  
@@ -130,6 +130,16 @@ Completar en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARI
 5. P1-12 smoke + P3 regulatorio antes de tráfico pagado masivo.
 
 **Cerrados jun 2026:** P1-13 liquidez · P1-14 moat · P1-15 mom-test pricing — CONTEXTO §2.10–§2.11; PLAN §4.0.
+
+**Mejoras UniMOOC (11 jun 2026 — Steve Blank, ver `docs/zonix/ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md`):**
+
+| Mejora | Documento / sección |
+|--------|---------------------|
+| Canal referido / ciclo viral (QR mostrador, sin K-factor) | SUPUESTO_MARKETING §3.6 |
+| Sanity check cuota por capacidad Sales (visitas/cierre `[PENDIENTE Sales Lead T+60]`) | PERFIL_MERCADO §3.1 |
+| Red flags inversor corporativo (exclusividad, nación más favorecida) | CHECKLIST §7.8 |
+| Nota tipo de propuesta dominante por perfil inversor | MENSAJE §4 |
+| Columna «Hipótesis a validar (Fase 0)» en Canvas | CONTEXTO §2.12 |
 
 ---
 

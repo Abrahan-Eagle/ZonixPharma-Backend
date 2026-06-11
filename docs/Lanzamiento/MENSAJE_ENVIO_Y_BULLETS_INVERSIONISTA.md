@@ -1,6 +1,6 @@
 # Mensaje de envío al inversor + bullets pitch
 
-> **Última actualización:** 27 mayo 2026.
+> **Última actualización:** 11 junio 2026.
 > Documento operacional. Texto listo para WhatsApp / email + bullets para presentación de 5 minutos.
 
 ## 1. Mensaje WhatsApp inicial (mensaje frío)
@@ -69,6 +69,16 @@ Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 > Abrahan Pulido
 
 ## 4. Bullets pitch — 5 minutos
+
+> **Nota de uso (tipos de propuesta de valor — Steve Blank M2):** al adaptar estos bullets a un inversor concreto, elegir **un** tipo dominante y no mezclar los tres en el mismo párrafo:
+>
+> | Perfil inversor | Tipo dominante | Bullets a enfatizar |
+> |-----------------|----------------|---------------------|
+> | Tech / producto | Eficiencia / menos fricción (Rx integrado, multi-sucursal) | Slides 2-3 |
+> | GTM / comercial | Nuevo canal de demanda para farmacias sin app propia | Slides 1, 4 |
+> | Financiero | Costo total menor vs take-rate agregador 25-35% | Slides 1, 5 |
+>
+> Plantillas por tipo en skill `zonix-fundraising-narrative` (§ tipos de propuesta de valor).
 
 > **Slide 1: Problema**
 > - Mercado farmacéutico VE: USD 1.638M/año, 389M unidades, +17,49% YoY (**Cifar VE**, datos IMS/IQVIA).

@@ -1,6 +1,6 @@
 # Perfil de mercado y zona piloto
 
-> **Última actualización:** 27 mayo 2026.
+> **Última actualización:** 11 junio 2026.
 > Documento de mercado: TAM / SAM / SOM, demografía Carabobo, benchmarks competitivos.
 > Todas las cifras citadas tienen fuente web pública. Las fuentes están en [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md).
 > **Finanzas del pitch (capital, SAFE, runway, PROYECCION Lean):** no en este doc — ver [README.md](README.md) § *Cifras clave del pack* y [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md).
@@ -52,6 +52,19 @@ Construido bottom-up, no top-down.
 | 9 | **130** | **~57%** Valencia metro / **~72%** SAM extendido *(§1.1)* | **USD 6.500** |
 | **11** | **151** | **~67%** Valencia metro / **~84%** SAM extendido | **USD 7.550** *(revenue; burn mes 11 **7.431** — **equilibrio mensual** §1.1)* |
 | 12 | **159** | **~70%** Valencia metro / **~88%** SAM extendido *(§1.1)* | **USD 7.950** |
+
+### 3.1 Sanity check — cuota limitada por capacidad del canal (Steve Blank, L6.14)
+
+La cuota alcanzable no la fija el SAM sino **cuántas farmacias puede firmar el equipo Sales**:
+
+```
+Farmacias firmadas/mes ≈ 4 Sales × visitas efectivas/semana × tasa de cierre × 4 semanas
+```
+
+- **Headcount:** 4× Sales B2B (única fuente: [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) nómina) — no asumir más vendedores sin línea de gasto.
+- **Visitas efectivas/semana y tasa de cierre:** `[PENDIENTE Sales Lead — dato real T+60]`; hasta entonces la curva §3 es hipótesis, no compromiso.
+- **Lectura de coherencia:** llegar a **151 activas en M11** requiere firmar ~13-14 farmacias/mes netas de churn (~3,5/mes por vendedor). Si el dato real T+60 queda por debajo, ajustar curva o headcount **antes** de prometer M11 al inversor — no estirar la tasa de cierre en el spreadsheet.
+- Cruce con CAC **139** y LTV/CAC **~7,2x** ([UNIT_ECONOMICS.md](UNIT_ECONOMICS.md)): si para sostener la curva hay que subir gasto S&M, recalcular payback antes de aceptar la nueva cuota.
 
 **Año 2:** expansión a Maracay y Maracaibo. SOM proyectado 200-220 farmacias activas, revenue mensual USD 8.000-9.000 (anual USD 96k-108k).
 

@@ -1,6 +1,6 @@
 # Contexto del pitch y decisiones tomadas
 
-> **Última actualización:** 1 junio 2026.
+> **Última actualización:** 11 junio 2026.
 > Documento que captura las decisiones del founder (usuario) sobre cómo se posiciona Zonix Pharma frente a un inversor, qué se dice, qué no, y por qué se eligió cada parámetro del modelo.
 
 ## 1. Tecnología base reutilizada (Zonix Pharma)
@@ -164,17 +164,19 @@ Detalle competitivo en [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md).
 
 Vista única para data room; detalle en docs hermanos. **ARPF ~50** y tiers **101k / 118k / 135k** solo desde [README.md](README.md) y [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md).
 
-| Bloque Canvas | Zonix Pharma (piloto Valencia) | Doc fuente |
-|---------------|-------------------------------|------------|
-| **Segmentos** | Farmacias independientes (B2B); paciente urbano/clase media (B2C); empresa `delivery_company` + `delivery_agent`; farmacéutico colegiado por farmacia | PROPUESTA ×3, PERFIL §6 |
-| **Propuesta de valor** | Marketplace OTC/Rx con validación farmacéutico local, uni-pharmacy, pagos VE, tracking sin flota Zonix | BRIEF; PROPUESTA_USUARIO_FINAL §2.2 |
-| **Canales** | **4× Sales** campo; Meta Ads + valla + referidos mostrador; app Android/iOS | PLAN §2–4; SUPUESTO_MARKETING |
-| **Relación** | Contrato marco anual farmacia; CS + validación Rx; partner logístico bajo SLA | B2B §9; PLAN_MODULO |
-| **Fuentes de ingreso** | Cuota **25/40/55** + % GMV farmacia; **8% × Σ delivery_fee + USD 0,30 × N envíos** a `delivery_company` | B2B §5; PLAN_METODOS_PAGO §2.5 |
-| **Recursos clave** | Stack Laravel+Flutter (~4 años); founder+Co-CEO; farmacéuticos de cada farmacia aliada | §1 CONTEXTO; VOLCADO §1 |
-| **Actividades clave** | Onboarding B2B, catálogo, validación Rx, asignación partner, pagos manuales VE | PLAN_LANZAMIENTO; PLAN_MODULO |
-| **Socios clave** | Farmacias piloto; **empresa(s) concesionaria** última milla; abogado/contador VE *[PENDIENTE]* | TERCER_LADO; REGISTRO P1-05/06 |
-| **Estructura de costos** | Fase 0 + burn post-Day-D (Lean **~7.559**/mes promedio); CAC farmacia **139** | PRESUPUESTO §2; UNIT §3 |
+| Bloque Canvas | Zonix Pharma (piloto Valencia) | Hipótesis a validar (Fase 0) | Doc fuente |
+|---------------|-------------------------------|------------------------------|------------|
+| **Segmentos** | Farmacias independientes (B2B); paciente urbano/clase media (B2C); empresa `delivery_company` + `delivery_agent`; farmacéutico colegiado por farmacia | Dueño de farmacia independiente confirma dolor digital en ≥5 entrevistas mom-test sin mencionar Zonix | PROPUESTA ×3, PERFIL §6 |
+| **Propuesta de valor** | Marketplace OTC/Rx con validación farmacéutico local, uni-pharmacy, pagos VE, tracking sin flota Zonix | Farmacia firma contrato marco en ≤30 días tras demo | BRIEF; PROPUESTA_USUARIO_FINAL §2.2 |
+| **Canales** | **4× Sales** campo; Meta Ads + valla + referidos mostrador; app Android/iOS | Tasa de cierre real de Sales sostiene la curva §3 PERFIL (sanity §3.1) | PLAN §2–4; SUPUESTO_MARKETING |
+| **Relación** | Contrato marco anual farmacia; CS + validación Rx; partner logístico bajo SLA | Farmacia activa catálogo y opera panel sin soporte diario tras onboarding | B2B §9; PLAN_MODULO |
+| **Fuentes de ingreso** | Cuota **25/40/55** + % GMV farmacia; **8% × Σ delivery_fee + USD 0,30 × N envíos** a `delivery_company` | Farmacia paga la cuota tras vencer el waiver (mes 3) sin churn | B2B §5; PLAN_METODOS_PAGO §2.5 |
+| **Recursos clave** | Stack Laravel+Flutter (~4 años); founder+Co-CEO; farmacéuticos de cada farmacia aliada | Farmacéutico de la farmacia valida Rx dentro del TTL en operación real | §1 CONTEXTO; VOLCADO §1 |
+| **Actividades clave** | Onboarding B2B, catálogo, validación Rx, asignación partner, pagos manuales VE | Pedido E2E (OTC y Rx) completado con pago manual conciliado | PLAN_LANZAMIENTO; PLAN_MODULO |
+| **Socios clave** | Farmacias piloto; **empresa(s) concesionaria** última milla; abogado/contador VE *[PENDIENTE]* | Partner delivery cumple SLA en zona piloto con 10-15 agentes | TERCER_LADO; REGISTRO P1-05/06 |
+| **Estructura de costos** | Fase 0 + burn post-Day-D (Lean **~7.559**/mes promedio); CAC farmacia **139** | Burn real Fase 0 ≤ ~28.057 presupuestado; CAC real ≤ 139 ±20% | PRESUPUESTO §2; UNIT §3 |
+
+> Si ≥3 entrevistas o el dato real T+60 contradicen una hipótesis, aplicar pivot por bloque según `zonix-lean-canvas` (§ pivot) **antes** de escalar Meta Ads — el paciente (B2C) se valida con repeat M2 post-Day-D.
 
 ## 3. Lo que NO se dice en el pitch (porque puede confundir)
 

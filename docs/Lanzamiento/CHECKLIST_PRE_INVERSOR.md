@@ -1,6 +1,6 @@
 # Checklist pre-inversor
 
-> **Última actualización:** 27 mayo 2026.
+> **Última actualización:** 11 junio 2026.
 > Documento operacional. El founder debe poder marcarlo todo antes de la primera reunión con el inversor.
 > **Mejora continua:** tras cada revisión del pack, actualizar la cabecera `Última actualización` de los documentos tocados.
 
@@ -215,6 +215,19 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 | ¿Delivery? | Partners `delivery_company` / `delivery_agent`; **sin** flota Zonix | PLAN_LANZAMIENTO; ALINEACION |
 | ¿Repo / código? | GitHub org o acceso bajo NDA — **P0-01** | VOLCADO §1 |
 | ¿Seguridad datos salud? | Cifrado, retención, audit log — dictamen **abogado + asesor** | PLAN_MODULO §14; ESTRUCTURA §4.4 |
+
+### 7.8 Si el inversor es corporativo / estratégico (cadena, distribuidor, agregador)
+
+Lente Steve Blank (UniMOOC M7): la gran empresa invierte para que **su** negocio crezca, no el tuyo. Antes de avanzar más allá de la primera reunión, revisar el term sheet contra estos **red flags**:
+
+| Red flag | Qué significa | Acción |
+|----------|---------------|--------|
+| Cláusula de **nación más favorecida** | Se garantiza siempre el mejor trato vs cualquier tercero futuro | `[PENDIENTE abogado]` — no aceptar verbalmente |
+| **Exclusividad** (zona, categoría o tiempo) | Bloquea firmar otras farmacias/cadenas justo en el piloto | Rechazar en Fase 0; el beachhead necesita pipeline abierto |
+| Acceso a **tecnología / datos** como condición | El objetivo real es el stack o los datos de farmacias, no el retorno | Evaluar qué reciben exactamente; datos de salud **nunca** ([PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) §14) |
+| Derecho de **primera oferta / veto** en M&A o Serie A | Reduce opcionalidad de salida y espanta fondos futuros | `[PENDIENTE abogado]` |
+
+**Pregunta guía (Blank):** «¿qué hacen ellos por la creación de *mi* empresa?» — si la respuesta es solo capital + condiciones restrictivas, preferir ángel/fondo del perfil §1. Todo término se cierra con **abogado** (ESTRUCTURA_LEGAL; skill `zonix-legal-contracts-ve`).
 
 ## 8. Cierre de la reunión
 

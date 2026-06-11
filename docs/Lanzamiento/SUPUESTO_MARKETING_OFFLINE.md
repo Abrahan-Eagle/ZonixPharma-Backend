@@ -1,6 +1,6 @@
 # Supuesto de marketing offline
 
-> **Última actualización:** 26 mayo 2026.
+> **Última actualización:** 11 junio 2026.
 > Documento que justifica el rol del marketing offline (vallas, radio, flyers) en el plan, y por qué la **prioridad principal es marketing digital**.
 
 ## 1. Filosofía del pack: digital primero, offline complementario
@@ -174,6 +174,27 @@ Detalle de marca en [`../BRAND_ZONIX_PHARMA.md`](../BRAND_ZONIX_PHARMA.md).
 - **Base / Growth:** USD **800/mes** todo el año.
 
 **Curva Lean:** **USD 800/mes** M1–6 · **500** M7–12. **Base/Growth:** **800** todo el año — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2–§4.
+
+### 3.6 Canal referido / ciclo viral (costo ~0 — Steve Blank M5)
+
+El canal de adquisición más barato del piloto no es paid: es la **farmacia aliada convirtiendo su tráfico de mostrador en usuarios de la app** (anillo interior del Bullseye §1.2).
+
+#### 3.6.1 Mecánica
+
+- **QR en mostrador y bolsa de despacho** de cada farmacia activa (impreso junto a flyers §3.3 — sin línea de gasto nueva).
+- **Incentivo opcional:** descuento en próximo pedido en app para el paciente que escanea y completa primer pedido — sale del presupuesto Meta Ads §3.5 existente, **no** de margen nuevo.
+- Post-piloto (M6+): evaluar referido paciente→paciente solo si hay retención M2 probada.
+
+#### 3.6.2 Trackeo
+
+- Pedidos con `commerce_id` de farmacia piloto + código/UTM por farmacia (mismo patrón que "VALLA15" §5.1).
+- Encuesta in-app "¿Cómo nos conociste?" → opción "Mi farmacia me lo recomendó".
+
+#### 3.6.3 Reglas (no negociables)
+
+1. **No proyectar K-factor ni "crecimiento viral"** en PROYECCION: el referido se mide post-Day-D con datos reales; hasta entonces es upside no contabilizado.
+2. No forzar viralidad en pedidos **Rx** (dato de salud, privado); el loop aplica a OTC y descarga de app.
+3. Si la farmacia no recomienda (señal: 0 escaneos QR en 30 días), es feedback de propuesta de valor B2B — escalar a Sales, no subir paid.
 
 ## 4. Asignación temporal del presupuesto offline
 

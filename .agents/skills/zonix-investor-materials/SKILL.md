@@ -29,7 +29,7 @@ Evita usar solo `zonix-lanzamiento-roles` para todo el pack.
 | PROPUESTA_VALOR_TERCER_LADO | `zonix-lanzamiento-roles` + doc específico |
 | Cualquier mejora pack (router) | **`zonix-lanzamiento-docs`** + skill de la fila |
 | PLAN_METODOS_PAGO | `zonix-payments` (modo piloto) + doc |
-| ROLES_SKILLS_ZONIX | `zonix-lanzamiento-roles` |
+| Matriz roles (roles_matrix.json — fuera del pack) | `zonix-lanzamiento-roles` |
 | README / BRIEF | `zonix-startup-context` + `zonix-investor-materials` |
 
 ## Índice data room (canónico)
@@ -56,8 +56,10 @@ Evita usar solo `zonix-lanzamiento-roles` para todo el pack.
 | 17 | CUESTIONARIO_EQUIPO_PILOTO.md | Equipo |
 | 18 | VOLCADO_RESPUESTAS_CUESTIONARIO.md | Captura respuestas |
 | 19 | MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md | Outreach |
-| 20 | ANALISIS_FORENSE.md | Auditoría multi-rol |
-| 21 | ROLES_SKILLS_ZONIX.md | Roles / skills |
+| 20 | ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md | Cruce pack ↔ producto |
+| 21 | REGISTRO_PENDIENTES_PACK.md | Pendientes P0–P4 |
+
+> Históricos **no versionados** (eliminados del repo): `ANALISIS_FORENSE.md` (pack) y `ROLES_SKILLS_ZONIX.md` — la matriz de roles canónica vive en [roles_matrix.json](../../docs/zonix/roles_matrix.json) + skill `zonix-lanzamiento-roles`.
 
 Referencias técnicas fuera de Lanzamiento (due diligence profunda):
 
@@ -111,7 +113,7 @@ Patrón checklist (lente [awesome-econ-ai-stuff](https://github.com/meleantonio/
 - Estado: ABIERTO | CERRADO | [PENDIENTE humano]
 ```
 
-Cruzar hallazgos con [ANALISIS_FORENSE.md](../../docs/Lanzamiento/ANALISIS_FORENSE.md) §11 — no duplicar sin verificar estado (✓ cerrado).
+Cruzar hallazgos con [REGISTRO_PENDIENTES_PACK.md](../../docs/Lanzamiento/REGISTRO_PENDIENTES_PACK.md) — no duplicar ítems ya cerrados (ver § «Ya completado en pack»).
 
 ## Inversor corporativo / estratégico (UniMOOC M7 L7.13)
 
