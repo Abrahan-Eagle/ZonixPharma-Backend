@@ -20,7 +20,9 @@ Route::middleware(['auth:sanctum', 'role:pharmacist'])->prefix('pharmacist')->gr
         Route::get('/{prescription}', [PharmacistPrescriptionController::class, 'show']);
         Route::get('/{prescription}/file', [PharmacistPrescriptionController::class, 'downloadFile'])
             ->middleware('throttle:prescription-download');
-        Route::post('/{prescription}/approve', [PharmacistPrescriptionController::class, 'approve']);
-        Route::post('/{prescription}/reject', [PharmacistPrescriptionController::class, 'reject']);
+        Route::post('/{prescription}/approve', [PharmacistPrescriptionController::class, 'approve'])
+            ->middleware('throttle:30,1');
+        Route::post('/{prescription}/reject', [PharmacistPrescriptionController::class, 'reject'])
+            ->middleware('throttle:30,1');
     });
 });

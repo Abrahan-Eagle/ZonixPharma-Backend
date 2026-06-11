@@ -7,11 +7,17 @@
 
 ## Última actualización de contexto
 
+### Remediación módulo pharmacist (lote 1) — 10 junio 2026
+
+- **Hecho:** throttle `30,1` en approve/reject Rx; tests `PharmacistDashboardTest` (KPIs + licencia no verificada → 403 `PHARMACIST_LICENSE_INVALID`).
+- **Verificación:** `php artisan test --parallel` → **429 passed**.
+- **Pendiente:** auditoría 360° pharmacist; historial recetas en shell (pestaña Historial).
+
 ### Remediación buyer orders (lote 2) — 10 junio 2026
 
 - **Hecho:** `OrderTrackingController` legacy alineado a Pharma + timeline Rx (6 pasos); clave `pharmacy` + alias `restaurant`. Tests `ExpirePendingPrescriptionsCommandTest` (orphan Rx vía `zonix:expire-pending-prescriptions`) y `OrderTest::test_legacy_order_tracking_includes_rx_state_and_pharmacy`.
 - **Verificación:** `php artisan test --parallel` → **427 passed**.
-- **Pendiente:** auditoría 360° módulo orders completa; módulo **pharmacist** panel.
+- **Pendiente:** auditoría 360° módulo orders completa; historial recetas pharmacist UI.
 
 ### Remediación módulo Commerce + multi-sede — 10 junio 2026
 
