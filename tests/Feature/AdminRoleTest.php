@@ -110,13 +110,17 @@ class AdminRoleTest extends TestCase
         $response = $this->getJson('/api/admin/statistics');
 
         $response->assertStatus(200)
+            ->assertJsonPath('success', true)
             ->assertJsonStructure([
-                'total_users',
-                'active_users',
-                'total_orders',
-                'total_revenue',
-                'total_commerces',
-                'user_distribution',
+                'success',
+                'data' => [
+                    'total_users',
+                    'active_users',
+                    'total_orders',
+                    'total_revenue',
+                    'total_commerces',
+                    'user_distribution',
+                ],
             ]);
     }
 

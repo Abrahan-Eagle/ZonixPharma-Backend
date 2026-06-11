@@ -38,12 +38,12 @@
 | ADM-002 | `error_code` state machine no mapeado en Front | ✅ ORDER_INVALID_* |
 | ADM-003 | UI admin dice "Comercio(s)" | ✅ "Farmacia(s)" en labels visibles |
 | ADM-004 | Sin test PATCH orden admin transición inválida | ✅ lote 9 |
+| ADM-005 | `/admin/statistics` sin envelope canónico | ✅ lote 10 `{ success, data }` |
 
 ---
 
 ## Pendiente P2
 
-- Unificar `/admin/statistics` a envelope `{ success, data }` (breaking menor; Front ya tolera plano).
 - Endpoint analytics `/restaurants` → alias `/pharmacies` documentado (cosmético API).
 - Moderación reseñas UI admin si `REVIEWS_MODERATION_SCHEMA_MISSING`.
 

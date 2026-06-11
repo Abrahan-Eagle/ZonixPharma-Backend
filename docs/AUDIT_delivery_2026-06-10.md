@@ -39,12 +39,12 @@
 | DEL-002 | `error_code` backend no mapeado en Front (accept, QR, status) | ✅ lote 8 |
 | DEL-003 | UI dice "Comercio" en flujo repartidor | ✅ "Farmacia" |
 | DEL-004 | Sin test explícito `/delivery/me` | ✅ `test_me_returns_authenticated_agent` |
+| DEL-005 | `DeliveryCompanyService` sin helper errores | ✅ lote 10 `delivery_company_api_errors` |
 
 ---
 
 ## Pendiente P2
 
-- `DeliveryCompanyService`: helper compartido o `delivery_company_api_errors.dart` (dashboard, assign, validate payment).
 - Cadena de frío: restringir aceptación si pedido `cold_chain_required` y agente sin flag — ver `zonix-delivery-system`.
 - `delivery_order_detail_page`: fallback `commerce` vs `business_name` ya cubierto; unificar label "Farmacia" en routes map subtitle.
 

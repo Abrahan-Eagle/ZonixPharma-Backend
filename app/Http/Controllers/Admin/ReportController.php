@@ -167,14 +167,17 @@ class ReportController extends Controller
         $averageOrderValue = $totalOrders > 0 ? $totalRevenue / $totalOrders : 0;
 
         return response()->json([
-            'total_users' => $totalUsers,
-            'active_users' => $activeUsers,
-            'suspended_users' => $suspendedUsers,
-            'user_distribution' => $userDistribution,
-            'total_orders' => $totalOrders,
-            'total_revenue' => round($totalRevenue, 2),
-            'average_order_value' => round($averageOrderValue, 2),
-            'total_commerces' => Commerce::count(),
+            'success' => true,
+            'data' => [
+                'total_users' => $totalUsers,
+                'active_users' => $activeUsers,
+                'suspended_users' => $suspendedUsers,
+                'user_distribution' => $userDistribution,
+                'total_orders' => $totalOrders,
+                'total_revenue' => round($totalRevenue, 2),
+                'average_order_value' => round($averageOrderValue, 2),
+                'total_commerces' => Commerce::count(),
+            ],
         ]);
     }
 
