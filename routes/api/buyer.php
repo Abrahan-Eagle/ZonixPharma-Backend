@@ -134,14 +134,17 @@ Route::middleware(['auth:sanctum', 'role:users'])->group(function () {
         Route::get('/orders/{id}', [BuyerOrderController::class, 'show']);
         Route::get('/products/{id}', [\App\Http\Controllers\Buyer\ProductController::class, 'show']);
         Route::get('/products', [\App\Http\Controllers\Buyer\ProductController::class, 'index']);
-        Route::post('/orders/{id}/comprobante', [\App\Http\Controllers\Buyer\OrderController::class, 'uploadComprobante']);
+        Route::post('/orders/{id}/comprobante', [\App\Http\Controllers\Buyer\OrderController::class, 'uploadComprobante'])
+            ->middleware('throttle:30,1');
 
         Route::get('/orders/{id}/available-payment-methods', [BuyerOrderController::class, 'getAvailablePaymentMethodsForOrder']);
         Route::get('/orders/{id}/payment-info', [BuyerOrderController::class, 'getPaymentInfo']);
-        Route::post('/orders/{id}/payment-proof', [BuyerOrderController::class, 'uploadPaymentProof']);
+        Route::post('/orders/{id}/payment-proof', [BuyerOrderController::class, 'uploadPaymentProof'])
+            ->middleware('throttle:30,1');
         Route::get('/orders/{id}/payment-proof', [BuyerOrderController::class, 'downloadPaymentProof'])
             ->middleware('throttle:60,1');
-        Route::post('/orders/{id}/cancel', [BuyerOrderController::class, 'cancelOrder']);
+        Route::post('/orders/{id}/cancel', [BuyerOrderController::class, 'cancelOrder'])
+            ->middleware('throttle:30,1');
         Route::get('/orders/{id}/delivery-qr', [BuyerOrderController::class, 'deliveryQr']);
 
         Route::get('/posts', [\App\Http\Controllers\Buyer\PostController::class, 'index']);

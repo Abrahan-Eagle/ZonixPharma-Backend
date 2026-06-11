@@ -1112,7 +1112,7 @@ class OrderController extends Controller
                 );
 
                 if (! ($decision['allowed'] ?? false)) {
-                    throw new \RuntimeException($decision['reason'] ?? 'Transición inválida para cancelar');
+                    throw new \RuntimeException($decision['message'] ?? 'Transición inválida para cancelar');
                 }
 
                 $order->update([
@@ -1121,6 +1121,8 @@ class OrderController extends Controller
             });
 
             return response()->json(['success' => true, 'message' => 'Orden cancelada exitosamente']);
+        } catch (\RuntimeException $e) {
+            return response()->json(['success' => false, 'message' => $e->getMessage()], 409);
         } catch (\Exception $e) {
             Log::error('Error al cancelar orden: '.$e->getMessage());
 

@@ -160,15 +160,40 @@ class TrackingController extends Controller
     private function getStatusInfo(string $status): array
     {
         $statusMap = [
+            'pending_prescription_validation' => [
+                'title' => 'Validación de receta',
+                'description' => 'Sube tu receta médica o espera la validación del farmacéutico colegiado.',
+                'icon' => 'medical_services',
+            ],
             'pending_payment' => ['title' => 'Pendiente de Pago', 'description' => 'Tu pedido fue creado. Sube el comprobante de pago.', 'icon' => 'hourglass_empty'],
-            'paid' => ['title' => 'Pago Confirmado', 'description' => 'El comercio validó tu pago y procesará el pedido.', 'icon' => 'check_circle'],
-            'processing' => ['title' => 'Preparando tu Pedido', 'description' => 'El restaurante está preparando tu comida.', 'icon' => 'restaurant'],
+            'paid' => ['title' => 'Pago Confirmado', 'description' => 'La farmacia validó tu pago y procesará el pedido.', 'icon' => 'check_circle'],
+            'processing' => ['title' => 'Preparando tu Pedido', 'description' => 'La farmacia está preparando tu pedido.', 'icon' => 'local_pharmacy'],
             'shipped' => ['title' => 'En Camino', 'description' => 'El repartidor está llevando tu pedido.', 'icon' => 'directions_car'],
             'delivered' => ['title' => 'Entregado', 'description' => 'Tu pedido ha sido entregado exitosamente.', 'icon' => 'done_all'],
             'cancelled' => ['title' => 'Cancelado', 'description' => 'Tu pedido ha sido cancelado.', 'icon' => 'cancel'],
         ];
 
         return $statusMap[$status] ?? $statusMap['pending_payment'];
+    }
+
+    /** @return list<string> */
+    private function timelineFutureStates(Order $order, string $currentStatus): array
+    {
+        $rxChain = [
+            'pending_prescription_validation',
+            'pending_payment',
+            'paid',
+            'processing',
+            'shipped',
+            'delivered',
+        ];
+        $otcChain = ['pending_payment', 'paid', 'processing', 'shipped', 'delivered'];
+
+        $useRxChain = (bool) $order->requires_prescription
+            || $order->prescription_id
+            || $currentStatus === 'pending_prescription_validation';
+
+        return $useRxChain ? $rxChain : $otcChain;
     }
 
     private function generateTimeline(Order $order): array
@@ -213,7 +238,7 @@ class TrackingController extends Controller
             $seen[$currentStatus] = true;
         }
 
-        $futureStates = ['pending_payment', 'paid', 'processing', 'shipped', 'delivered'];
+        $futureStates = $this->timelineFutureStates($order, $currentStatus);
         $currentIndex = array_search($currentStatus, $futureStates, true);
         if ($currentIndex !== false && $currentStatus !== 'cancelled') {
             for ($i = $currentIndex + 1; $i < count($futureStates); $i++) {

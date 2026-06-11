@@ -54,7 +54,11 @@ Toolkit oficial GitHub para features de **producto** (API + Flutter). **No** usa
 - **10 jun 2026 — Remediación módulo commerce (auditoría 360° + multi-sede).**
   - Auditoría: [docs/AUDIT_commerce_8fases_2026-06-10.md](docs/AUDIT_commerce_8fases_2026-06-10.md), [docs/PROMPT_AUDIT_360_ZONIX.md](docs/PROMPT_AUDIT_360_ZONIX.md).
   - Backend: trait `ResolvesCommerce` + header `X-Commerce-Id`; throttle `60,1`; Pusher multi-sede; KPI dashboard alineado a cola Rx/pago/preparación; tests `CommerceMultiSedeTest`, `CommerceDashboardTest`, `EnsureCommerceApproved`, `CommerceProductRx`, `CommerceOrderValidatePayment`.
-  - Verificación: `php artisan test --parallel` → **422 passed** (post-fix dashboard).
+  - Verificación: `php artisan test --parallel` → **422+ passed**.
+- **10 jun 2026 — Remediación buyer orders (Rx post-checkout, lote 1).**
+  - `TrackingController`: timeline con `pending_prescription_validation` y copy Pharma.
+  - `Buyer/OrderController`: cancel usa `message` de state machine + 409 en transición inválida; throttle `30,1` en cancel/payment-proof/comprobante.
+  - Tests: `OrderTest` cancel Rx + timeline Rx.
 - **27 may 2026 — Spec Kit (SDD) integrado en Jarvis (producto, no Lanzamiento).**
   - [github/spec-kit](https://github.com/github/spec-kit) v0.8.15: `specify-cli`, integración `cursor-agent` en Backend (hub) y Front (espejo).
   - Hub: `specs/`, `.specify/memory/constitution.md`, overrides dual-repo en `.specify/templates/overrides/`.

@@ -551,6 +551,55 @@ class OrderTest extends TestCase
             ]);
     }
 
+    public function test_buyer_cancel_rx_order_from_pending_prescription_validation(): void
+    {
+        $buyer = User::factory()->create(['role' => 'users']);
+        $profile = Profile::factory()->create(['user_id' => $buyer->id]);
+        $commerce = Commerce::factory()->create(['profile_id' => $profile->id, 'open' => true]);
+        $order = \App\Models\Order::factory()->create([
+            'profile_id' => $profile->id,
+            'commerce_id' => $commerce->id,
+            'status' => 'pending_prescription_validation',
+            'requires_prescription' => true,
+        ]);
+
+        $this->actingAs($buyer, 'sanctum');
+        $this->postJson("/api/buyer/orders/{$order->id}/cancel", [
+            'reason' => 'Ya no necesito el medicamento',
+        ])
+            ->assertStatus(200)
+            ->assertJsonPath('success', true);
+
+        $this->assertDatabaseHas('orders', [
+            'id' => $order->id,
+            'status' => 'cancelled',
+        ]);
+    }
+
+    public function test_buyer_tracking_timeline_includes_rx_state(): void
+    {
+        $buyer = User::factory()->create(['role' => 'users']);
+        $profile = Profile::factory()->create(['user_id' => $buyer->id]);
+        $commerce = Commerce::factory()->create(['profile_id' => $profile->id, 'open' => true]);
+        $order = \App\Models\Order::factory()->create([
+            'profile_id' => $profile->id,
+            'commerce_id' => $commerce->id,
+            'status' => 'pending_prescription_validation',
+            'requires_prescription' => true,
+        ]);
+
+        $this->actingAs($buyer, 'sanctum');
+        $response = $this->getJson("/api/buyer/orders/{$order->id}/tracking");
+        $response->assertStatus(200)
+            ->assertJsonPath('success', true);
+
+        $timeline = $response->json('data.timeline');
+        $this->assertIsArray($timeline);
+        $statuses = array_column($timeline, 'status');
+        $this->assertContains('pending_prescription_validation', $statuses);
+        $this->assertContains('pending_payment', $statuses);
+    }
+
     public function test_create_order_with_rx_succeeds_without_prescription_when_block_rx_is_off(): void
     {
         config(['zonix.pharma.block_rx_without_prescription' => false]);
