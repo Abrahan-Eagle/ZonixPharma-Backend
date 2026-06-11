@@ -61,6 +61,8 @@ Si el equipo real va detrás del plan, documentar desviación y sensibilidad (ve
 | **Coordinador Partners** | Contratos delivery, cadena frío | `zonix-delivery-system`, PROPUESTA_VALOR_TERCER_LADO |
 | **Founder/CTO** | Stack, Rx, seguridad | skills producto `zonix-*` |
 
+**Organización Fase 0 (UniMOOC M1 L1A.08):** el equipo piloto es un **customer development team**, no divisiones funcionales de empresa grande (VP ventas / VP marketing día 1 = anti-patrón Blank). Co-CEO y Sales hacen discovery directo con farmacias; los roles de la tabla son sombreros, no departamentos — no proponer organigramas corporativos en el pack hasta post-Day-D con retención probada.
+
 ## Desarrollo producto (no confundir con esta skill)
 
 Para sprints Laravel/Flutter usar skills de código (`zonix-prescriptions`, `zonix-order-lifecycle`, `laravel-specialist`, `flutter-expert`) — ver tabla en `zonix-lanzamiento-roles`.

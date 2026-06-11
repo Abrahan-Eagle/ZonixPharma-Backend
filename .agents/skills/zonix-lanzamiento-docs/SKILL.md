@@ -95,6 +95,21 @@ Destilado curso [ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md](../../docs/zonix/ANA
 | **Web** | Paciente B2C | Presupuesto Meta en PRESUPUESTO + SUPUESTO_MARKETING | **No** escalar paid hasta N farmacias activas (`zonix-startup-context` bilateral) |
 | **Viral / referido** | Ambos | WhatsApp farmacia → paciente (anillo interior Bullseye) | Medir pedidos con `commerce_id` piloto; no inventar K-factor |
 
+### Demanda pagada vs gratuita + ciclo viral (M5 L5.03/L5.04/L5.07)
+
+| Tipo de demanda | Qué es | Aplicación Zonix piloto |
+|-----------------|--------|-------------------------|
+| **Pagada** | Ads, vallas, radio — cuesta dinero por impacto | Meta Ads paciente + valla Av. Bolívar (anillos medio/exterior Bullseye) |
+| **Gratuita (earned)** | PR, contenido, recomendación espontánea | Farmacia recomienda app a su cliente de mostrador; nota prensa local Day-D |
+| **Viral (diseñada)** | El cliente trae clientes con incentivo explícito | Loop farmacia→paciente: QR en mostrador / bolsa; referido paciente→paciente post-piloto |
+
+**Diseñar el loop viral (Blank):** preguntarse qué incentivo convierte al cliente en vendedor (descuento próximo pedido, prioridad pickup). Reglas Zonix:
+
+1. El loop natural del piloto es **farmacia → paciente** (la farmacia ya tiene tráfico físico); diseñarlo antes de gastar en paid.
+2. **No inventar K-factor** ni «crecimiento viral» en PROYECCION; solo medible post-piloto con pedidos referidos rastreables (UTM/código).
+3. No forzar viralidad: si el producto no se recomienda solo (Rx es privado/sensible), aceptar que el motor es Sales B2B + paid acotado — no todos los productos generan ciclo viral.
+4. Incentivos de referido salen de línea marketing en PRESUPUESTO, no de margen nuevo inventado.
+
 **Errores a evitar al editar marketing pack (M5):**
 
 1. Optimizar CPI paciente **antes** de oferta farmacia (catálogo vacío).

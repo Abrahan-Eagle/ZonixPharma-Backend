@@ -169,6 +169,33 @@ Zonix compite en **mercado existente** — precio/features vs agregadores; **no*
 - **Keep:** churn ref. 5%; retención panel + pedidos recurrentes.
 - **Grow:** ARPF ~50 placeholder; upsell banda GMV post-piloto — `[PENDIENTE GMV]`.
 
+## Cuota de mercado realista por capacidad de canal (M6 L6.14 + M4)
+
+Blank: la cuota alcanzable **no** sale del TAM top-down sino de **cuánto puede vender tu canal**. Al auditar PROYECCION §1.1 / PERFIL_MERCADO, verificar bottom-up:
+
+```
+Farmacias_firmadas_mes ≈ Sales_headcount × visitas_semana × tasa_cierre × 4
+```
+
+| Variable | Fuente / regla |
+|----------|----------------|
+| Sales headcount | **4×** (PRESUPUESTO nómina) — no asumir más sin línea de gasto |
+| Visitas/semana y tasa de cierre | `[PENDIENTE Sales Lead]` hasta dato real T+60; no inventar |
+| Coherencia | Curva farmacias activas (→ ~151 M11 Lean) debe ser alcanzable con la fórmula; si no, marcar incoherencia |
+| LTV vs CAC antes de proyectar | LTV/CAC **~7,2x**, payback **~2,8 meses** (UNIT) — si un escenario lo rompe, señalar antes de aceptar la cuota |
+
+### Economía del canal (M4 — directo vs indirecto)
+
+El precio de lista no es el ingreso: descuentos + coste del canal comen margen. Aplicación Zonix (sin copiar cifras US del curso):
+
+| Canal | Coste real a incluir | Dónde vive en pack |
+|-------|----------------------|--------------------|
+| **Directo B2B** (Sales propio) | Nómina 4× Sales + comisiones si las hay + CAC 139 | PRESUPUESTO S&M |
+| **App / web** (paciente) | Ads + soporte CS + fees pago manual | PRESUPUESTO marketing + COGS |
+| **Indirecto** (partner delivery) | Fee del partner por entrega — no es ingreso Zonix, es coste del pedido | `zonix-delivery-system`; UNIT si afecta ticket |
+
+Regla: al proponer ingresos por canal, restar **descuento (waiver §11) + coste de canal** antes de comparar con burn; «vender más» por canal indirecto puede dar margen neto menor que directo.
+
 ## Pitfalls (evitar)
 
 - Proyectar MRR de suscripción SaaS para farmacias.

@@ -113,6 +113,14 @@ Patrón checklist (lente [awesome-econ-ai-stuff](https://github.com/meleantonio/
 
 Cruzar hallazgos con [ANALISIS_FORENSE.md](../../docs/Lanzamiento/ANALISIS_FORENSE.md) §11 — no duplicar sin verificar estado (✓ cerrado).
 
+## Inversor corporativo / estratégico (UniMOOC M7 L7.13)
+
+Si una empresa grande (cadena, distribuidor, agregador) propone **invertir o aliarse con exclusividad**, antes de incorporarlo al data room o al pitch:
+
+- **Red flags a detectar en el term sheet:** cláusula de *nación más favorecida* (mejor trato garantizado vs terceros), **exclusividad** (bloquea otras farmacias/cadenas en piloto), acceso a tecnología/datos como objetivo real.
+- Pregunta de Blank: «¿qué hacen ellos por la creación de **mi** empresa?» — si la respuesta es solo capital + condiciones restrictivas, escalar.
+- Acción agente: marcar `[PENDIENTE abogado]` y derivar a `zonix-legal-contracts-ve` + `zonix-empresa-ve`; **no** redactar cláusulas ni aceptar términos en nombre del founder.
+
 ## Lo que el agente NO debe generar
 
 - Contratos legales vinculantes

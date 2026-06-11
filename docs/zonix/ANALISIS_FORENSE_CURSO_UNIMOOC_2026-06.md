@@ -18,7 +18,8 @@
 - **Duplicados en carpeta:** varios `.srt` aparecen repetidos en el filesystem (mismo nombre); conteo operativo único ≈ **115 lecciones**.
 - **Prioridad P0:** Lean Canvas operativo, test de hipótesis/pivot, día-en-la-vida farmacia, pricing por tipo de mercado, alianzas delivery/partners.
 - **P1 (hecho):** tipos de propuesta de valor en pitch; CAC web vs físico en marketing pack.
-- **P2:** alianzas startup–corporativo (M7) — referencia en `references/`, no skill dedicada.
+- **P2 (hecho — repaso 11 jun):** alianzas startup–corporativo (M7) en `references/` + red flags inversor corporativo en `zonix-investor-materials`.
+- **Repaso completo 11 jun (mejoras):** ciclo viral M5 (`zonix-lanzamiento-docs`), cuota realista + economía del canal M4/M6 (`zonix-financial-model`), organización Fase 0 M1 (`zonix-launch-piloto`).
 - **Entregable implementación:** `.agents/skills/zonix-lean-canvas/` + patches en 4 skills + router actualizado.
 - **Próximo paso humano:** validar plantillas Lean Canvas con founder antes de usar en reunión inversor.
 
@@ -144,6 +145,14 @@
 - Skill destino: `zonix-lanzamiento-docs` (Bullseye) + `zonix-launch-piloto`
 - Evidencia: distribución física vs web — Zonix: app + visita Sales B2B + partners última milla.
 
+#### [CUR-B4-02] Economía del canal (repaso 11 jun)
+- Ruta: `.../L4.05) 'Canales de distribución directos'` y L4.06 (español_ASR).srt
+- Marcos: channel economics — ingreso real = precio lista − descuento − coste canal
+- Aplicabilidad: **Alta**
+- Skill destino: `zonix-financial-model` (§ economía del canal) + cross-ref bloque 5 `zonix-lean-canvas`
+- Evidencia: canal indirecto vende más volumen pero deja menos margen neto; comparar antes de elegir.
+- Anti-patrones: copiar cifras US del ejemplo ($100 catálogo) — solo la lógica.
+
 ### B5 — Relaciones con clientes y CAC (Módulo 5)
 
 #### [CUR-B5-01] Captar / fidelizar / aumentar clientes
@@ -157,6 +166,14 @@
 - Ruta: `.../L5.12) 'Coste de adquisición de clientes web'. (español_ASR).srt`
 - Aplicabilidad: **Media** — cruzar con UNIT_ECONOMICS CAC farmacia 139, no inventar CPI
 - Skill destino: `zonix-financial-model` (nota metodológica P1)
+
+#### [CUR-B5-03] Demanda pagada/gratuita + ciclo viral (repaso 11 jun)
+- Ruta: L5.03, L5.04 y `.../L5.07) 'El ciclo viral'. (español_ASR).srt`
+- Marcos: demand creation (paid/earned/viral), referral loop con incentivo
+- Aplicabilidad: **Alta** — loop natural Zonix = farmacia → paciente (QR mostrador)
+- Skill destino: `zonix-lanzamiento-docs` (§ Demanda pagada vs gratuita + ciclo viral)
+- Evidencia: «convertir a nuestros clientes en vendedores»; «no os sintáis mal si vuestra empresa no puede generar un ciclo viral».
+- Anti-patrones: inventar K-factor en PROYECCION; forzar viralidad en Rx (privado/sensible).
 
 ### B6 — Ingresos y pricing (Módulo 6)
 
@@ -176,6 +193,14 @@
 - Ruta: `.../L6.08) 'Mercados unilaterales y multilaterales'. (español_ASR).srt`
 - Skill destino: `zonix-lean-canvas` (bloque ingresos lado farmacia + GMV)
 
+#### [CUR-B6-04] Tamaño y cuota de mercado realista (repaso 11 jun)
+- Ruta: `.../L6.14) 'Tamaño y cuota de mercado'. (español_ASR).srt`
+- Marcos: market sizing bottom-up por capacidad de canal; LTV vs CAC antes de proyectar
+- Aplicabilidad: **Alta**
+- Skill destino: `zonix-financial-model` (§ cuota de mercado realista por capacidad de canal)
+- Evidencia: «a cuánta gente podéis vender con vuestro canal de distribución… datos reales y no ficticios».
+- Anti-patrones: cuota top-down desde TAM en PERFIL_MERCADO sin fórmula Sales.
+
 ### B7 — Socios y alianzas (Lean Canvas M7)
 
 #### [CUR-B7-01] Alianzas startup ↔ grandes empresas
@@ -188,7 +213,15 @@
 #### [CUR-B7-02] Riesgo gestión alianzas
 - Ruta: `.../L7.12) 'Riesgo de la gestión de alianzas'. (español_ASR).srt`
 - Aplicabilidad: **Media**
-- Skill destino: `references/unimooc-modulo-7.md` (P2)
+- Skill destino: `zonix-lean-canvas/references/unimooc-modulos.md` § M7 (P2 — hecho)
+
+#### [CUR-B7-03] Inversión corporativa — red flags (repaso 11 jun)
+- Ruta: `.../L7.13) 'Inversiones'. (español_ASR).srt`
+- Marcos: corporate VC / strategic investor due diligence
+- Aplicabilidad: **Media-Alta** — relevante si cadena/distribuidor propone invertir
+- Skill destino: `zonix-investor-materials` (§ inversor corporativo) + `references/unimooc-modulos.md`
+- Evidencia: cláusula «nación más favorecida», exclusividad 1 año, acceso tecnología — «¿qué hacen por la creación de mi empresa?».
+- Anti-patrones: aceptar exclusividad piloto; redactar cláusulas sin abogado.
 
 ### B8 — Sueltos (dedupe)
 
@@ -233,9 +266,20 @@
 - `zonix-fundraising-narrative`: tipos propuesta de valor M2 (técnico vs mercado, ranking problema/beneficio).
 - `zonix-lanzamiento-docs`: Get/Keep/Grow + CAC web vs físico M5 (metodología; cifras pack).
 
-### P2
+### P2 (implementado 11 jun 2026 — repaso completo)
 
-- Extractos M7 alianzas en `references/` únicamente
+- Extractos M7 (tipos de socios, riesgos, inversión corporativa) en `zonix-lean-canvas/references/unimooc-modulos.md`.
+- Red flags inversor corporativo/estratégico (L7.13) en `zonix-investor-materials`.
+
+### Repaso completo 11 jun 2026 (huecos cerrados)
+
+| Hallazgo | Lección | Skill |
+|----------|---------|-------|
+| CUR-B5-03 demanda pagada/gratuita + ciclo viral | L5.03/L5.04/L5.07 | `zonix-lanzamiento-docs` |
+| CUR-B6-04 cuota de mercado por capacidad de canal | L6.14 | `zonix-financial-model` |
+| CUR-B4-02 economía del canal | L4.05/L4.06 | `zonix-financial-model` + cross-ref canvas bloque 5 |
+| CUR-B7-03 inversión corporativa red flags | L7.13 | `zonix-investor-materials` + references M7 |
+| Organización Fase 0 (customer dev team) | L1A.08 | `zonix-launch-piloto` |
 
 ---
 
@@ -243,11 +287,14 @@
 
 | Skill | Cambio |
 |-------|--------|
-| `zonix-lean-canvas` | **Nueva** |
-| `zonix-launch-piloto` | Ampliada |
+| `zonix-lean-canvas` | **Nueva** (+ references M4–M7 ampliadas en repaso) |
+| `zonix-launch-piloto` | Ampliada (hipótesis/pivot + organización Fase 0) |
 | `zonix-b2b-sales` | Ampliada |
-| `zonix-financial-model` | Ampliada |
+| `zonix-financial-model` | Ampliada (pricing + cuota canal + economía canal) |
 | `zonix-startup-context` | Ampliada |
+| `zonix-fundraising-narrative` | Ampliada (P1 — tipos propuesta valor) |
+| `zonix-lanzamiento-docs` | Ampliada (P1 CAC + ciclo viral) |
+| `zonix-investor-materials` | Ampliada (P2 — inversor corporativo) |
 
 ---
 

@@ -30,7 +30,7 @@ Rellenar en español; **sin inventar cifras** — usar `[PENDIENTE]` o enlace a 
 | 2 | **Segmentos** | Beachhead: farmacias San Diego / Av. Bolívar; paciente urbano metro | PERFIL_MERCADO, `zonix-launch-piloto` |
 | 3 | **Propuesta única de valor** | Marketplace + farmacéutico local; pagos manuales VE; sin flota Zonix | CONTEXTO_PITCH |
 | 4 | **Solución** | App Flutter + panel commerce + Rx validation + partners delivery | ALINEACION producto |
-| 5 | **Canales** | Sales B2B físico; app paciente; Meta Ads post-Day-D | PLAN_LANZAMIENTO, Bullseye en `zonix-lanzamiento-docs` |
+| 5 | **Canales** | Sales B2B físico; app paciente; Meta Ads post-Day-D — costear el canal (directo vs partner): § economía del canal en `zonix-financial-model` | PLAN_LANZAMIENTO, Bullseye en `zonix-lanzamiento-docs` |
 | 6 | **Relación cliente** | Self-service panel farmacia; CS paciente; farmacéutico valida Rx | — |
 | 7 | **Fuentes de ingreso** | Cuota 25/40/55 + % GMV; ARPF ~50 placeholder | PROPUESTA B2B §5, UNIT_ECONOMICS |
 | 8 | **Estructura de costes** | Fase 0 ~28k; burn Lean; nómina piloto | PROYECCION, PRESUPUESTO |

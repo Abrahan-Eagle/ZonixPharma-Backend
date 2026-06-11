@@ -55,6 +55,7 @@ Toolkit oficial GitHub para features de **producto** (API + Flutter). **No** usa
   - Forense: [docs/zonix/ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md](docs/zonix/ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md) (115 `.srt`, 8 buckets M1–M7).
   - Nueva skill: `zonix-lean-canvas` (Canvas 9 bloques, bilateral, pivot).
   - Ampliadas: `zonix-launch-piloto`, `zonix-b2b-sales`, `zonix-financial-model`, `zonix-startup-context`, `zonix-fundraising-narrative` (M2), `zonix-lanzamiento-docs` (M5 CAC).
+  - Repaso completo (cierre P2): ciclo viral M5, cuota/economía de canal M4/M6, organización Fase 0 M1, red flags inversor corporativo M7 (`zonix-investor-materials`).
   - Router: [docs/zonix/SKILLS_STARTUP_USAR_NO_USAR.md](docs/zonix/SKILLS_STARTUP_USAR_NO_USAR.md), `roles_matrix.json`.
 - **10 jun 2026 — Remediación módulo commerce (auditoría 360° + multi-sede).**
   - Auditoría: [docs/AUDIT_commerce_8fases_2026-06-10.md](docs/AUDIT_commerce_8fases_2026-06-10.md), [docs/PROMPT_AUDIT_360_ZONIX.md](docs/PROMPT_AUDIT_360_ZONIX.md).
