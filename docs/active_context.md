@@ -7,6 +7,12 @@
 
 ## Última actualización de contexto
 
+### Lote 6 — smoke Rx + rating pharma + strict checkout — 10 junio 2026
+
+- **Smoke:** [`SMOKE_RX_E2E_RESULTS_2026-06-10.md`](SMOKE_RX_E2E_RESULTS_2026-06-10.md) — 22 tests backend PASS; manual dispositivo pendiente.
+- **Strict Rx (spec 001):** `GET /api/pharma-policy`; Front `PharmaPolicyService` + checkout/cart modo estricto.
+- **Rating:** alias `ratePharmacy` / `pharmacyRated` (API `/reviews/restaurant` intacta).
+
 ### Buyer prescriptions lote 5 — 10 junio 2026
 
 - **Auditoría:** [`AUDIT_buyer_prescriptions_2026-06-10.md`](AUDIT_buyer_prescriptions_2026-06-10.md) — semáforo VERDE.

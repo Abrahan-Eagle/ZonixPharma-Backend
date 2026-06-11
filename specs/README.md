@@ -4,7 +4,7 @@
 
 | ID | Feature | Status |
 |----|---------|--------|
-| [001-block-rx-strict-checkout](001-block-rx-strict-checkout/) | Modo estricto Rx sin receta (`block_rx_without_prescription`) | Artefactos listos — implement pendiente OK |
+| [001-block-rx-strict-checkout](001-block-rx-strict-checkout/) | Modo estricto Rx sin receta (`block_rx_without_prescription`) | ✅ Implementado lote 6 (jun 2026) |
 
 **Constitution:** [.specify/memory/constitution.md](../.specify/memory/constitution.md)  
 **Guía:** [docs/zonix/SPEC_KIT_ZONIX.md](../docs/zonix/SPEC_KIT_ZONIX.md)

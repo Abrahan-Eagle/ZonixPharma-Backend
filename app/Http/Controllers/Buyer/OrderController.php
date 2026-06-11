@@ -435,7 +435,7 @@ class OrderController extends Controller
                 $pid = isset($validated['prescription_id']) ? (int) $validated['prescription_id'] : 0;
                 if ($pid < 1) {
                     return $this->errorResponse(
-                        'Este pedido incluye medicamentos con receta. Debes enviar prescription_id de una receta ya aprobada por esta farmacia, o desactivar el modo estricto (ZONIX_PHARMA_BLOCK_RX_WITHOUT_PRESCRIPTION).',
+                        'Este pedido incluye medicamentos con receta. Debes enviar prescription_id de una receta ya aprobada por esta farmacia.',
                         'ORDER_RX_PRESCRIPTION_REQUIRED',
                         422
                     );

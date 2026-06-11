@@ -10,3 +10,5 @@ Route::get('/available-payment-methods', [\App\Http\Controllers\PaymentMethodCon
 Route::get('/banks', [\App\Http\Controllers\BankController::class, 'index']);
 
 Route::get('/ping', fn () => response()->json(['message' => 'API funcionando']));
+
+Route::get('/pharma-policy', \App\Http\Controllers\Public\PharmaPolicyController::class);

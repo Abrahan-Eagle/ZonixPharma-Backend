@@ -45,10 +45,17 @@
 
 ## Checklist rápido
 
-- [ ] Countdown visible en `order_detail_page` cuando `expiresAt` presente
-- [ ] Cancel buyer respeta `success: true` y mensaje 409 legible
-- [ ] Historial pharmacist filtra aprobadas/rechazadas/expiradas
-- [ ] Tracking legacy incluye paso validación receta (6 pasos Rx)
+- [x] Countdown visible en `order_detail_page` cuando `expiresAt` presente — cubierto `rx_countdown_test.dart`
+- [x] Cancel buyer respeta `success: true` y mensaje 409 legible — `OrderTest` + `order_api_errors.dart`
+- [x] Historial pharmacist filtra aprobadas/rechazadas/expiradas — `PharmacistPrescriptionHistoryTest`
+- [x] Tracking legacy incluye paso validación receta (6 pasos Rx) — `OrderTest::test_legacy_order_tracking_includes_rx_state_and_pharmacy`
+- [ ] Smoke manual en dispositivo — ver [SMOKE_RX_E2E_RESULTS_2026-06-10.md](SMOKE_RX_E2E_RESULTS_2026-06-10.md)
+
+---
+
+## Verificación automatizada (10 jun 2026)
+
+Suite backend Rx: **22 tests PASS**. Detalle en [SMOKE_RX_E2E_RESULTS_2026-06-10.md](SMOKE_RX_E2E_RESULTS_2026-06-10.md).
 
 ---
 

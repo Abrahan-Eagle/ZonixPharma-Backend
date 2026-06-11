@@ -22,6 +22,7 @@ controladas y cadena de frío.
 
 - **Permisivo (default):** el comprador puede crear el pedido con ítems Rx sin enviar `prescription_id`. La orden inicia en `pending_prescription_validation` y la receta se sube después con `POST /api/buyer/prescriptions` (MVP).
 - **Estricto (`true`):** si hay productos Rx, el `POST /api/buyer/orders` debe incluir `prescription_id` de una receta en estado `approved`, del mismo `commerce_id`, `patient_profile_id` del comprador y sin `order_id` previo. La orden inicia en `pending_payment` y queda vinculada a esa receta.
+- **Cliente Flutter:** consulta `GET /api/pharma-policy` (`block_rx_without_prescription`) para banners en carrito/checkout y selector de receta aprobada.
 
 ### `ZONIX_PHARMA_PRESCRIPTION_VALIDATION_TTL_MINUTES`
 
