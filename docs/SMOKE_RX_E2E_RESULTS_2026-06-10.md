@@ -57,4 +57,10 @@ flutter test test/features/utils/rx_countdown_test.dart test/features/utils/orde
 1. Login buyer → carrito Rx → checkout permisivo → subir receta → login pharmacist → aprobar → comprobante.
 2. Repetir con `ZONIX_PHARMA_BLOCK_RX_WITHOUT_PRESCRIPTION=true` y receta pre-aprobada en seed.
 
+```bash
+# Tras migrate:fresh --seed (ZonixDemoSeeder)
+php artisan db:seed --class=RxStrictSmokeSeeder
+# .env: ZONIX_PHARMA_BLOCK_RX_WITHOUT_PRESCRIPTION=true && php artisan config:clear
+```
+
 Ver checklist original: [SMOKE_RX_E2E.md](SMOKE_RX_E2E.md).

@@ -7,6 +7,11 @@
 
 ## Última actualización de contexto
 
+### Buyer catalog lote 7 — 10 junio 2026
+
+- **Auditoría:** [`AUDIT_buyer_catalog_2026-06-10.md`](AUDIT_buyer_catalog_2026-06-10.md).
+- **Smoke strict:** `RxStrictSmokeSeeder` + test; doc en `SMOKE_RX_E2E_RESULTS`.
+
 ### Lote 6 — smoke Rx + rating pharma + strict checkout — 10 junio 2026
 
 - **Smoke:** [`SMOKE_RX_E2E_RESULTS_2026-06-10.md`](SMOKE_RX_E2E_RESULTS_2026-06-10.md) — 22 tests backend PASS; manual dispositivo pendiente.
