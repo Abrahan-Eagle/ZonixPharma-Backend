@@ -31,19 +31,23 @@ class OrderTrackingController extends Controller
             }
 
             $statusInfo = $this->getStatusInfo($order->status);
+            $futureStates = $this->timelineFutureStates($order, (string) $order->status);
+
+            $pharmacy = [
+                'name' => $order->commerce->business_name ?? $order->commerce->name ?? 'Farmacia',
+                'address' => $order->commerce->address ?? 'N/A',
+                'phone' => $order->commerce->phone ?? 'N/A',
+            ];
 
             $trackingData = [
                 'order_id' => $order->id,
                 'status' => $order->status,
                 'status_info' => $statusInfo,
                 'estimated_delivery_time' => $this->calculateEstimatedDeliveryTime($order),
-                'current_step' => $this->getCurrentStep($order->status),
-                'total_steps' => 5,
-                'restaurant' => [
-                    'name' => $order->commerce->name ?? 'Restaurante',
-                    'address' => $order->commerce->address ?? 'N/A',
-                    'phone' => $order->commerce->phone ?? 'N/A',
-                ],
+                'current_step' => $this->getCurrentStep($order),
+                'total_steps' => count($futureStates),
+                'pharmacy' => $pharmacy,
+                'restaurant' => $pharmacy,
                 'delivery_agent' => $order->orderDelivery?->agent ? [
                     'name' => $order->orderDelivery->agent->profile->firstName ?? 'Repartidor',
                     'phone' => $order->orderDelivery->agent->phone ?? 'N/A',
@@ -205,6 +209,12 @@ class OrderTrackingController extends Controller
     private function getStatusInfo(string $status): array
     {
         $statusMap = [
+            'pending_prescription_validation' => [
+                'title' => 'Validación de receta',
+                'description' => 'Sube tu receta médica o espera la validación del farmacéutico colegiado.',
+                'icon' => 'medical_services',
+                'color' => '#56C7B8',
+            ],
             'pending_payment' => [
                 'title' => 'Pendiente de Pago',
                 'description' => 'Tu pedido fue creado. Sube el comprobante de pago.',
@@ -213,14 +223,14 @@ class OrderTrackingController extends Controller
             ],
             'paid' => [
                 'title' => 'Pago Confirmado',
-                'description' => 'El comercio validó tu pago y procesará el pedido.',
+                'description' => 'La farmacia validó tu pago y procesará el pedido.',
                 'icon' => 'check_circle',
                 'color' => '#4CAF50',
             ],
             'processing' => [
                 'title' => 'Preparando tu Pedido',
-                'description' => 'El restaurante está preparando tu comida.',
-                'icon' => 'restaurant',
+                'description' => 'La farmacia está preparando tu pedido.',
+                'icon' => 'local_pharmacy',
                 'color' => '#2196F3',
             ],
             'shipped' => [
@@ -246,21 +256,35 @@ class OrderTrackingController extends Controller
         return $statusMap[$status] ?? $statusMap['pending_payment'];
     }
 
+    /** @return list<string> */
+    private function timelineFutureStates(Order $order, string $currentStatus): array
+    {
+        $rxChain = [
+            'pending_prescription_validation',
+            'pending_payment',
+            'paid',
+            'processing',
+            'shipped',
+            'delivered',
+        ];
+        $otcChain = ['pending_payment', 'paid', 'processing', 'shipped', 'delivered'];
+
+        $useRxChain = (bool) $order->requires_prescription
+            || $order->prescription_id
+            || $currentStatus === 'pending_prescription_validation';
+
+        return $useRxChain ? $rxChain : $otcChain;
+    }
+
     /**
      * Obtener paso actual del proceso
      */
-    private function getCurrentStep(string $status): int
+    private function getCurrentStep(Order $order): int
     {
-        $stepMap = [
-            'pending_payment' => 1,
-            'paid' => 2,
-            'processing' => 3,
-            'shipped' => 4,
-            'delivered' => 5,
-            'cancelled' => 0,
-        ];
+        $futureStates = $this->timelineFutureStates($order, (string) $order->status);
+        $idx = array_search($order->status, $futureStates, true);
 
-        return $stepMap[$status] ?? 1;
+        return $idx !== false ? $idx + 1 : 1;
     }
 
     /**
@@ -271,6 +295,8 @@ class OrderTrackingController extends Controller
         $baseTime = 30;
 
         switch ($order->status) {
+            case 'pending_prescription_validation':
+                return now()->addMinutes($baseTime + 15)->format('H:i');
             case 'pending_payment':
             case 'paid':
                 return now()->addMinutes($baseTime)->format('H:i');
@@ -339,7 +365,7 @@ class OrderTrackingController extends Controller
                 ];
             }
 
-            $futureStates = ['pending_payment', 'paid', 'processing', 'shipped', 'delivered'];
+            $futureStates = $this->timelineFutureStates($order, $currentStatus);
             $currentIndex = array_search($currentStatus, $futureStates, true);
             if ($currentIndex !== false && $currentStatus !== 'cancelled') {
                 for ($i = $currentIndex + 1; $i < count($futureStates); $i++) {
@@ -373,8 +399,8 @@ class OrderTrackingController extends Controller
             'icon' => $currentInfo['icon'],
         ];
 
-        $futureStates = ['pending_payment', 'paid', 'processing', 'shipped', 'delivered'];
-        $currentIndex = array_search($order->status, $futureStates);
+        $futureStates = $this->timelineFutureStates($order, (string) $order->status);
+        $currentIndex = array_search($order->status, $futureStates, true);
 
         if ($currentIndex !== false) {
             for ($i = $currentIndex + 1; $i < count($futureStates); $i++) {

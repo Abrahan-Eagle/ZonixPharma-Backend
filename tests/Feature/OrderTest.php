@@ -600,6 +600,36 @@ class OrderTest extends TestCase
         $this->assertContains('pending_payment', $statuses);
     }
 
+    public function test_legacy_order_tracking_includes_rx_state_and_pharmacy(): void
+    {
+        $buyer = User::factory()->create(['role' => 'users']);
+        $profile = Profile::factory()->create(['user_id' => $buyer->id]);
+        $commerce = Commerce::factory()->create([
+            'profile_id' => $profile->id,
+            'open' => true,
+            'business_name' => 'Farmacia Central',
+        ]);
+        $order = \App\Models\Order::factory()->create([
+            'profile_id' => $profile->id,
+            'commerce_id' => $commerce->id,
+            'status' => 'pending_prescription_validation',
+            'requires_prescription' => true,
+        ]);
+
+        $this->actingAs($buyer, 'sanctum');
+        $response = $this->getJson("/api/buyer/tracking/order/{$order->id}");
+        $response->assertStatus(200)
+            ->assertJsonPath('success', true)
+            ->assertJsonPath('data.pharmacy.name', 'Farmacia Central')
+            ->assertJsonPath('data.restaurant.name', 'Farmacia Central');
+
+        $timeline = $response->json('data.timeline');
+        $statuses = array_column($timeline, 'status');
+        $this->assertContains('pending_prescription_validation', $statuses);
+        $this->assertContains('pending_payment', $statuses);
+        $this->assertSame(6, $response->json('data.total_steps'));
+    }
+
     public function test_create_order_with_rx_succeeds_without_prescription_when_block_rx_is_off(): void
     {
         config(['zonix.pharma.block_rx_without_prescription' => false]);

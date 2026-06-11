@@ -7,6 +7,12 @@
 
 ## Última actualización de contexto
 
+### Remediación buyer orders (lote 2) — 10 junio 2026
+
+- **Hecho:** `OrderTrackingController` legacy alineado a Pharma + timeline Rx (6 pasos); clave `pharmacy` + alias `restaurant`. Tests `ExpirePendingPrescriptionsCommandTest` (orphan Rx vía `zonix:expire-pending-prescriptions`) y `OrderTest::test_legacy_order_tracking_includes_rx_state_and_pharmacy`.
+- **Verificación:** `php artisan test --parallel` → **427 passed**.
+- **Pendiente:** auditoría 360° módulo orders completa; módulo **pharmacist** panel.
+
 ### Remediación módulo Commerce + multi-sede — 10 junio 2026
 
 - **Hecho:** Auditoría 360° (8 fases) documentada en [`AUDIT_commerce_8fases_2026-06-10.md`](AUDIT_commerce_8fases_2026-06-10.md) y [`PROMPT_AUDIT_360_ZONIX.md`](PROMPT_AUDIT_360_ZONIX.md). Remediación P1/P2: throttle `60,1` en rutas commerce, Pusher `commerces()` multi-sede, envelope promos, tests `EnsureCommerceApproved`, `CommerceOrderValidatePayment`, `CommerceProductRx`.
