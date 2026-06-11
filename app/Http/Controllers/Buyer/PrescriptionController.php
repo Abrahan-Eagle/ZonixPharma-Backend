@@ -40,6 +40,7 @@ class PrescriptionController extends Controller
         }
 
         $items = Prescription::query()
+            ->with(['order', 'commerce'])
             ->where('patient_profile_id', $profile->id)
             ->orderByDesc('created_at')
             ->paginate((int) min($request->input('per_page', 20), 100));

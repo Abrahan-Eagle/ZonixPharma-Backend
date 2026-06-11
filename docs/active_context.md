@@ -7,6 +7,13 @@
 
 ## Última actualización de contexto
 
+### Buyer prescriptions lote 5 — 10 junio 2026
+
+- **Auditoría:** [`AUDIT_buyer_prescriptions_2026-06-10.md`](AUDIT_buyer_prescriptions_2026-06-10.md) — semáforo VERDE.
+- **Backend:** eager `with(['order','commerce'])` en GET index; tests `BuyerPrescriptionIndexTest` (list + destroy 422).
+- **Front:** `MyPrescriptionsPage` → tap abre `OrderDetailPage`; eliminar receta pending; `prescriptionHttpErrorMessage` (+ códigos buyer Rx).
+- **Verificación:** Backend BuyerPrescription **2** OK; Front **238** tests (~1 skip), analyze OK.
+
 ### P2 backlog Rx/Orders lote 4 — 10 junio 2026
 
 - **Pharmacist:** cache `loadPharmacistDashboard()` en `PrescriptionService`; eager `with(['order','commerce'])` en pending/history Rx.
