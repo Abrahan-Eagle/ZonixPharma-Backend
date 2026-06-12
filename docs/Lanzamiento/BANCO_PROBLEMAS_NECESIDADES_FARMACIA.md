@@ -1,11 +1,22 @@
-# Banco de 100 problemas, 100 necesidades y 100 deseos — Dueño de farmacia independiente
+# Banco de 100 problemas, 100 temores, 100 necesidades y 100 deseos — Dueño de farmacia independiente
 
 > **Última actualización:** 11 junio 2026.
 > **Uso interno** (founder + Sales) — **no incluir** en zip data room inversor.
-> **Qué es:** banco de hipótesis para discovery (mom-test). Cada ítem es un **dolor o necesidad candidata** a confirmar en calle — no una verdad. Confirmados → ranking 3+3 en [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §2.0 y minutas en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) §6.
+> **Qué es:** banco de **400 hipótesis** para discovery (mom-test). Cada ítem es un problema, temor, necesidad o deseo **candidato** a confirmar en calle — no una verdad. Confirmados → ranking 3+3 en [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §2.0 y minutas en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) §6.
 > **Guía de campo:** [GUIA_DISCOVERY_CALLE_FASE0.md](GUIA_DISCOVERY_CALLE_FASE0.md).
-> **Columna Zonix:** **Sí** = lo resuelve el producto/modelo hoy · **Parcial** = lo mejora con límites · **No** = fuera del MVP (roadmap o descarte; **no prometer en pitch** — [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) §7).
+> **Columna Zonix:** **Sí** = lo resuelve el producto/modelo hoy · **Parcial** = lo mejora con límites · **No** = fuera del MVP (roadmap o descarte; **no prometer en pitch** — [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) §7). En temores la columna se lee como **Mitiga** y en deseos como **Habilita** (ver intro de cada parte).
 > **Fuentes:** Cavefar/Cifar (VE 2024–2026), Crónica Uno / La Calle (brecha cambiaria, descapitalización), Sincofarma SP (Brasil — digitalización independientes), Eurofarma LatAm, NCPA/Avalere/RevealSite (EE.UU. — operación independiente), más pack Lanzamiento. Datos extranjeros = **proxy**, no extrapolación directa a Valencia.
+
+## Las 4 capas del dueño de farmacia
+
+| Capa | Pregunta guía | Se valida con | Uso en venta |
+|------|---------------|---------------|--------------|
+| **Problemas (P1–P100)** | ¿Qué le pasa hoy que le cuesta tiempo o dinero? | Hechos pasados ("¿cuándo fue la última vez que…?") | Contenido del pitch — solo los confirmados en calle |
+| **Temores (T1–T100)** | ¿Qué le da miedo que pase? | Hechos pasados + objeciones que repite | Manejo de objeciones — explican **por qué no compra** aunque el problema exista |
+| **Necesidades (N1–N100)** | ¿Qué requiere para operar y resolver? | Lo que ya intentó o pagó por resolver | Promesa concreta del producto (los "Sí") |
+| **Deseos (D1–D100)** | ¿Cómo se ve como empresario en 5 años? | Pregunta de cierre de conversación | Tono y relación a largo plazo — **nunca** promesa |
+
+**Diferencia clave problema vs temor:** el problema es un hecho que ya duele ("pierdo ventas porque no tengo app"); el temor es un riesgo percibido hacia el futuro ("me da miedo que me multen", "me da miedo que la plataforma me robe los clientes"). El mom-test valida ambos con hechos, pero los temores se trabajan en la venta como **objeciones a desactivar**, no como dolores a resolver.
 
 ---
 
@@ -453,27 +464,185 @@
 
 ---
 
+## PARTE 4 — 100 TEMORES
+
+> **Diferencia con los problemas:** el problema ya duele hoy (hecho); el **temor** es el riesgo que el dueño percibe hacia adelante — lo que lo paraliza, lo que lo hace decir "déjame pensarlo". En discovery los temores aparecen como objeciones repetidas o como historias de terceros ("a un colega le pasó que…"). **Regla:** los temores no se "venden" — se **desactivan** con evidencia (demo, contrato claro, salida flexible, referencias). La columna aquí se lee como **Mitiga**: **Sí** = el producto/modelo reduce ese riesgo de forma directa hoy · **Parcial** = lo reduce con límites · **No** = fuera del control de Zonix (no improvisar promesas).
+> **Referencias cruzadas:** varios temores son la cara emocional de un problema ya listado (ej. T1–T3 ↔ P23–P33 trazabilidad Rx; T56 ↔ P11 relación con el cliente). No es duplicación: el problema se confirma con hechos; el temor se maneja como objeción.
+
+### AA. Regulatorios y legales (T1–T12)
+
+| # | Temor | Mitiga |
+|---|-------|--------|
+| T1 | Que una inspección del MPPS encuentre fallas en sus registros Rx y lo multen o cierren | Parcial |
+| T2 | Que un despacho de Rx mal validado termine en sanción contra su licencia o la del regente | Parcial |
+| T3 | Que el registro de sustancias controladas llevado a mano tenga huecos que no pueda explicar | Parcial |
+| T4 | Que la normativa cambie y se entere cuando ya está en falta | No |
+| T5 | Que vender por canal digital sea interpretado como ilegal o "zona gris" por la autoridad | Parcial |
+| T6 | Que una receta falsificada despachada sin darse cuenta lo haga responsable | Parcial |
+| T7 | Que un paciente lo denuncie o le arme un escándalo por negarse a vender Rx sin receta | Parcial |
+| T8 | Que la publicidad de salud que hace en redes le traiga una sanción | Parcial |
+| T9 | Que le retengan o decomisen mercancía en una fiscalización | No |
+| T10 | Que el SENIAT lo sancione por errores de facturación que ni su contador le explica | No |
+| T11 | Que una fuga de datos de salud de sus pacientes recaiga legalmente sobre él | Parcial |
+| T12 | Que el regente renuncie y no pueda operar legalmente mientras consigue reemplazo | No |
+
+### BB. Financieros (T13–T24)
+
+| # | Temor | Mitiga |
+|---|-------|--------|
+| T13 | Quebrar: que la farmacia de toda la vida no aguante otro año | Parcial |
+| T14 | Descapitalizarse: vender hoy y no poder reponer el inventario mañana | Parcial |
+| T15 | Que una devaluación brusca le borre el margen del mes en una semana | No |
+| T16 | No poder pagar la nómina un mes y perder a su gente | No |
+| T17 | Que la deuda con la droguería crezca hasta volverse impagable | No |
+| T18 | Que la droguería le corte el crédito y lo deje sin surtido | No |
+| T19 | Perder los ahorros de años en un negocio que ya no da | Parcial |
+| T20 | Invertir en algo nuevo (tecnología, reformas) y que sea plata perdida | Sí |
+| T21 | Que un robo o asalto se lleve la caja del mes | No |
+| T22 | Que el manejo informal del efectivo lo exponga a pérdidas y fraudes sin registro | Parcial |
+| T23 | Pagar comisiones ocultas o cuotas que crecen sin control en una plataforma | Sí |
+| T24 | Que el alquiler en USD suba hasta sacarlo del local | No |
+
+### CC. Competencia y mercado (T25–T34)
+
+| # | Temor | Mitiga |
+|---|-------|--------|
+| T25 | Que Farmatodo o Locatel abra una sede cerca y le quite la mitad de la clientela | Parcial |
+| T26 | Quedarse fuera mientras las demás farmacias de la zona se digitalizan | Sí |
+| T27 | Que los agregadores capturen al cliente digital de su zona antes que él | Sí |
+| T28 | Una guerra de precios que no puede ganar contra cadenas con mejor costo | Parcial |
+| T29 | Que el cliente de años lo cambie por una app solo por comodidad | Sí |
+| T30 | Que su zona se llene de farmacias nuevas con más capital | Parcial |
+| T31 | Volverse irrelevante para el cliente joven que ya no entra a la farmacia | Sí |
+| T32 | Que las droguerías privilegien a las cadenas y a él le llegue lo que sobra | No |
+| T33 | Que la venta informal de medicinas (redes, buhoneros) le quite ventas sin pagar lo que él paga | Parcial |
+| T34 | Que un competidor copie su mejor idea más rápido y con más plata | Parcial |
+
+### DD. Operacionales (T35–T44)
+
+| # | Temor | Mitiga |
+|---|-------|--------|
+| T35 | Que un error de despacho dañe a un paciente (la pesadilla profesional) | Parcial |
+| T36 | Despachar sin saberlo un medicamento falsificado o adulterado | Parcial |
+| T37 | Que un lote vencido llegue al mostrador y a un cliente | Parcial |
+| T38 | Que se dañe la nevera y pierda toda la cadena de frío sin darse cuenta | No |
+| T39 | Que un pedido mal entregado (dirección, producto) termine en pérdida y reclamo | Sí |
+| T40 | Quedarse sin sistema en plena hora pico (caída de internet o de luz) | No |
+| T41 | Perder todos los registros del negocio por daño de la PC o robo | Parcial |
+| T42 | Que el desorden de WhatsApp le haga perder un pedido grande | Sí |
+| T43 | Un reclamo serio sin evidencia de qué se acordó con el cliente | Sí |
+| T44 | Que el hurto hormiga se coma el margen sin poder detectarlo | No |
+
+### EE. Personal y dependencia (T45–T54)
+
+| # | Temor | Mitiga |
+|---|-------|--------|
+| T45 | Que un empleado de confianza lo robe o le "clone" el negocio | No |
+| T46 | Que el farmacéutico regente migre y no consiga reemplazo | No |
+| T47 | Enfermarse él y que el negocio se paralice | Parcial |
+| T48 | Que la rotación constante le impida formar un equipo estable | Parcial |
+| T49 | Capacitar a alguien que luego se va a la competencia | Parcial |
+| T50 | Que el personal rechace la herramienta digital y la abandone en silencio | Parcial |
+| T51 | Delegar y que le dañen la reputación construida en años | Parcial |
+| T52 | No poder pagar lo que pide un buen empleado y quedarse con el que hay | No |
+| T53 | Que un conflicto laboral termine en demanda | No |
+| T54 | Seguir siendo esclavo del mostrador porque nadie más puede hacerlo todo | Parcial |
+
+### FF. Tecnología y digitalización (T55–T64)
+
+| # | Temor | Mitiga |
+|---|-------|--------|
+| T55 | Que lo estafen con una "solución digital" que cobra y no entrega | Sí |
+| T56 | Que la plataforma se quede con SUS clientes y luego le suba la tarifa | Parcial |
+| T57 | No entender la tecnología y quedar dependiendo de terceros para todo | Parcial |
+| T58 | Que sus datos y los de sus clientes terminen vendidos o filtrados | Parcial |
+| T59 | Empezar la digitalización y abandonarla a mitad por complejidad | Sí |
+| T60 | Pagar mensualidades de un software que el personal no usa | Sí |
+| T61 | Que la plataforma quiebre o se vaya del país y lo deje colgado | No |
+| T62 | Quedar amarrado a un contrato tecnológico sin salida | Sí |
+| T63 | Que la tecnología lo reemplace en lugar de ayudarlo | Parcial |
+| T64 | Hacer el ridículo intentando algo digital "que no es para él" | Sí |
+
+### GG. Macro Venezuela (T65–T74)
+
+| # | Temor | Mitiga |
+|---|-------|--------|
+| T65 | Otra ola de escasez de medicamentos como la de 2016–2018 | No |
+| T66 | Apagones prolongados que dañen la cadena de frío e interrumpan ventas | No |
+| T67 | Nuevos impuestos o parafiscales que rematen el margen | No |
+| T68 | Controles de precios que lo obliguen a vender a pérdida | No |
+| T69 | Que la migración siga llevándose a sus clientes y a su personal | No |
+| T70 | Inseguridad creciente: asaltos al local o al delivery | Parcial |
+| T71 | Que el efectivo y el vuelto sigan siendo un caos sin solución | Parcial |
+| T72 | Una crisis bancaria que congele sus fondos | No |
+| T73 | Que la recuperación del país no llegue a tiempo para su negocio | No |
+| T74 | Cambios de reglas de juego de la noche a la mañana | No |
+
+### HH. Reputación y confianza (T75–T84)
+
+| # | Temor | Mitiga |
+|---|-------|--------|
+| T75 | Que una mala experiencia se vuelva viral y manche años de reputación | Parcial |
+| T76 | Una reseña negativa injusta sin derecho a réplica | Parcial |
+| T77 | Que lo asocien con medicinas vencidas o falsificadas sin ser cierto | Parcial |
+| T78 | Perder la confianza de los médicos que recomiendan su farmacia | Parcial |
+| T79 | Que un error de un repartidor tercero se lo cobren a su nombre | Parcial |
+| T80 | Defraudar a los clientes de toda la vida si algo sale mal en lo digital | Parcial |
+| T81 | Que la comunidad lo perciba como "carero" frente a las cadenas | Parcial |
+| T82 | Un escándalo por fuga de datos de salud de sus pacientes | Parcial |
+| T83 | Que su farmacia aparezca en una lista negra de algún ente | No |
+| T84 | Perder el prestigio profesional construido por décadas | Parcial |
+
+### II. Familia y salud personal (T85–T92)
+
+| # | Temor | Mitiga |
+|---|-------|--------|
+| T85 | Que el estrés del negocio le cobre la salud (tensión, infarto) | Parcial |
+| T86 | Enfermarse o morir y dejar a la familia con un negocio que nadie sabe manejar | Parcial |
+| T87 | Que los hijos migren y no haya a quién dejarle la farmacia | No |
+| T88 | Que el negocio le quite los mejores años de la vida familiar | Parcial |
+| T89 | Que el matrimonio se resienta por las jornadas de 12 horas | Parcial |
+| T90 | Llegar a viejo sin pensión y sin negocio que lo sostenga | Parcial |
+| T91 | Que un problema legal del negocio toque el patrimonio familiar | No |
+| T92 | No poder costear una emergencia médica propia | No |
+
+### JJ. Futuro y obsolescencia (T93–T100)
+
+| # | Temor | Mitiga |
+|---|-------|--------|
+| T93 | Que la farmacia de barrio desaparezca como modelo de negocio | Sí |
+| T94 | Darse cuenta demasiado tarde de que debió digitalizarse antes | Sí |
+| T95 | Que el futuro del sector sea solo para cadenas y apps con capital | Sí |
+| T96 | Invertir años más de su vida en un negocio sin futuro | Parcial |
+| T97 | Que la próxima generación vea la farmacia como algo del pasado | Parcial |
+| T98 | Quedarse solo: gremio debilitado y sin apoyo institucional | Parcial |
+| T99 | Que una nueva tecnología (IA, telemedicina) lo vuelva prescindible | Parcial |
+| T100 | Cerrar el negocio que fundó su familia y cargar con esa culpa | Parcial |
+
+---
+
 ## Resumen de cobertura Zonix (conteo honesto)
 
-| Cobertura | Problemas | Necesidades | Deseos (habilitador) |
-|-----------|-----------|-------------|----------------------|
-| **Sí** (resuelve / habilita hoy) | 28 | 38 | 22 |
-| **Parcial** (mejora / contribuye con límites) | 45 | 51 | 67 |
-| **No** (fuera MVP o fuera de rol) | 27 | 11 | 11 |
+| Cobertura | Problemas | Temores (mitiga) | Necesidades | Deseos (habilitador) |
+|-----------|-----------|------------------|-------------|----------------------|
+| **Sí** (resuelve / mitiga / habilita hoy) | 28 | 17 | 38 | 22 |
+| **Parcial** (mejora / contribuye con límites) | 45 | 52 | 51 | 67 |
+| **No** (fuera MVP o fuera de rol) | 27 | 31 | 11 | 11 |
 
 **Lecturas clave:**
 
 1. **El pitch debe vivir en los "Sí":** pedidos digitales, Rx trazable, conciliación de pagos, delivery partner, visibilidad y costo de canal bajo. Coincide con el ranking hipotético de [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §2.0.
 2. **Los "Parcial" son material de objeciones**, no de promesas: decir exactamente qué hace y qué no (ej. P43 faltantes: el catálogo ayuda, no es ERP de inventario).
 3. **Los "No" más citados en calle definen el roadmap:** si el comparador de droguerías (P47–P48) o las alertas de vencimiento (P46) dominan las entrevistas, son candidatos post-piloto — decisión founder documentada, nunca improvisada en un pitch.
-4. **Los deseos (D) dan el tono, no el contenido del pitch:** se vende con problemas y necesidades confirmados; los deseos (ser referencia de la zona D16, modernizarse D89–D93, legado familiar D39–D43) orientan el lenguaje y la relación de largo plazo. **Prohibido** prometer deseos como resultado ("con Zonix duplicarás ventas") — mom-test: hechos, no sueños.
-5. **Este banco NO se muestra a la farmacia.** En discovery se pregunta con mom-test (hechos pasados) y se anota cuáles de estos ítems aparecen espontáneamente; ese es el dato.
+4. **Los temores (T) son el manual de objeciones, no el pitch.** Que solo 17 sean "Sí" es la lectura honesta: un marketplace no quita el miedo a la devaluación ni a la migración. Los que sí mitiga (T20 inversión perdida, T23 comisiones ocultas, T55 estafa digital, T62 contrato sin salida, T26–T31 quedarse atrás) son exactamente los que frenan la firma — se desactivan con demo, contrato claro y salida flexible, no con discurso. Los 31 "No" **jamás** se prometen ("con nosotros está protegido de…").
+5. **Los deseos (D) dan el tono, no el contenido del pitch:** se vende con problemas y necesidades confirmados; los deseos (ser referencia de la zona D16, modernizarse D89–D93, legado familiar D39–D43) orientan el lenguaje y la relación de largo plazo. **Prohibido** prometer deseos como resultado ("con Zonix duplicarás ventas") — mom-test: hechos, no sueños.
+6. **Este banco NO se muestra a la farmacia.** En discovery se pregunta con mom-test (hechos pasados) y se anota cuáles de estos ítems aparecen espontáneamente; ese es el dato.
 
 ---
 
 ## Cómo usar este banco en discovery
 
-1. Antes de la visita: releer categorías A–J (problemas) como **mapa mental** — no como cuestionario a recitar.
-2. Durante: solo las 5 preguntas core de [GUIA_DISCOVERY_CALLE_FASE0.md](GUIA_DISCOVERY_CALLE_FASE0.md) §3.2; dejar hablar. Si la conversación fluye, cerrar con una pregunta de aspiración («¿cómo se ve usted y su farmacia en 5 años?») y escuchar qué deseos (D) emergen.
-3. Después: marcar en la minuta qué números (P/N/D) mencionó el dueño **espontáneamente** y con qué dato (horas, USD, ventas).
-4. Tras ≥5 entrevistas: los P/N más repetidos con dato concreto → ranking 3+3 de PROPUESTA_B2B §2.0; los D dominantes → tono del one-pager y seguimiento; el resto queda como hipótesis sin confirmar.
+1. Antes de la visita: releer categorías A–J (problemas) y AA–JJ (temores) como **mapa mental** — no como cuestionario a recitar.
+2. Durante: solo las 5 preguntas core de [GUIA_DISCOVERY_CALLE_FASE0.md](GUIA_DISCOVERY_CALLE_FASE0.md) §3.2; dejar hablar. Las objeciones espontáneas ("es que a un colega le pasó que…", "¿y si ustedes me suben la tarifa?") son temores (T) — anotarlas, no rebatirlas en ese momento. Si la conversación fluye, cerrar con una pregunta de aspiración («¿cómo se ve usted y su farmacia en 5 años?») y escuchar qué deseos (D) emergen.
+3. Después: marcar en la minuta qué números (P/T/N/D) mencionó el dueño **espontáneamente** y con qué dato (horas, USD, ventas).
+4. Tras ≥5 entrevistas: los P/N más repetidos con dato concreto → ranking 3+3 de PROPUESTA_B2B §2.0; los T dominantes → guion de manejo de objeciones de Sales; los D dominantes → tono del one-pager y seguimiento; el resto queda como hipótesis sin confirmar.
