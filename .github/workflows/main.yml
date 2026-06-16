@@ -89,6 +89,9 @@ jobs:
           mkdir -p storage/framework/views
           mkdir -p bootstrap/cache
 
+      - name: Remove individual CoreUI SVGs before FTP
+        run: rm -rf public/icons/svg
+
       - name: FTP deploy
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
@@ -96,11 +99,16 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           timeout: 1200000
+          state-name: pharma-ftp-deploy-state
+          log-level: minimal
           exclude: |
             **/.git*
             **/.github/**
             **/node_modules/**
             **/vendor/**
+            **/public/icons/svg/**
+            **/storage/app/public/**
+            **/storage/logs/**
             **/tests/**
             **/.agents/**
             **/.cursor/**

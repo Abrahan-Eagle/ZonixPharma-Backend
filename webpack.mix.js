@@ -42,15 +42,12 @@ mix.scripts([
 .extract(['jquery', 'bootstrap']);
 
 // Copiar assets estáticos
-// CoreUI: SVG icons
-mix.copyDirectory("resources/assets/coreui/svg", "public/icons/svg/free")
 // Dashboard: Copiar solo assets estáticos seguros, evitar JS/CSS compilados
-.copyDirectory("resources/assets/dashboard", "public")
-// CoreUI Icons desde node_modules
+mix.copyDirectory("resources/assets/dashboard", "public")
+// CoreUI Icons desde node_modules (sprites + fonts; sin SVG sueltos — UI usa sprites)
 .copyDirectory("node_modules/@coreui/icons/fonts", "public/fonts")
 .copyDirectory("node_modules/@coreui/icons/svg/flag", "public/svg/flag")
-.copyDirectory("node_modules/@coreui/icons/sprites/", "public/icons/sprites")
-.copyDirectory("node_modules/@coreui/icons/svg/free/", "public/icons/svg/free");
+.copyDirectory("node_modules/@coreui/icons/sprites/", "public/icons/sprites");
 
 // Configuración de jQuery
 mix.autoload({

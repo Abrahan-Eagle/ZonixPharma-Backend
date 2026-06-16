@@ -84,11 +84,13 @@ push main  →  main.yml
   → npm run production
   → composer install --no-dev
   → php artisan test --parallel
-  → FTP upload (código + .env; **sin** vendor/)
+  → FTP upload (código + .env; **sin** vendor/ ni icons/svg/free)
   → curl https://pharma.aiblockweb.com/api/ping
 ```
 
-**Nota:** `vendor/` no se sube por FTP (evita timeout). Tras el primer deploy, ejecutar en cPanel Terminal: `composer install --no-dev --optimize-autoloader`.
+**Nota:** `vendor/` y `public/icons/svg/**` no se suben por FTP (evita timeout en hosting compartido). La UI admin usa **sprites** (`public/icons/sprites/`). Tras el primer deploy, ejecutar en cPanel Terminal: `composer install --no-dev --optimize-autoloader`.
+
+**Deploy incremental:** el workflow usa `state-name: pharma-ftp-deploy-state`; los pushes siguientes a `main` solo suben archivos cambiados.
 
 **CI separado:** [`.github/workflows/ci.yml`](../.github/workflows/ci.yml) corre Pint + tests en PRs y en `dev`/`main`; no despliega.
 
