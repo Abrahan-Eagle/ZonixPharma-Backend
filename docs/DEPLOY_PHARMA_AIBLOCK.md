@@ -84,9 +84,11 @@ push main  →  main.yml
   → npm run production
   → composer install --no-dev
   → php artisan test --parallel
-  → FTP upload (incluye .env)
+  → FTP upload (código + .env; **sin** vendor/)
   → curl https://pharma.aiblockweb.com/api/ping
 ```
+
+**Nota:** `vendor/` no se sube por FTP (evita timeout). Tras el primer deploy, ejecutar en cPanel Terminal: `composer install --no-dev --optimize-autoloader`.
 
 **CI separado:** [`.github/workflows/ci.yml`](../.github/workflows/ci.yml) corre Pint + tests en PRs y en `dev`/`main`; no despliega.
 
@@ -115,6 +117,7 @@ En **Domains → Subdomains** (`pharma.aiblockweb.com`):
 
 ```bash
 cd /ruta/al/proyecto   # raíz Laravel (donde está artisan)
+composer install --no-dev --optimize-autoloader
 php artisan migrate --force
 php artisan db:seed --class=ZonixDemoSeeder   # opcional demo
 php artisan config:clear
