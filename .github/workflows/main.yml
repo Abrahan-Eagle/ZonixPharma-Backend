@@ -127,7 +127,7 @@ jobs:
             **/package-lock.json
             **/.github/**
             **/node_modules/**
-            **/vendor/**
+            vendor/**
             **/public/icons/svg/**
             **/storage/app/public/**
             **/storage/logs/**
