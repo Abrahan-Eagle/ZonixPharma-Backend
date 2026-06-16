@@ -95,8 +95,10 @@ jobs:
       - name: Strip dev-only files before FTP
         run: |
           rm -rf .git
+          rm -rf resources/assets
           rm -f _ide_helper.php _ide_helper_models.php
           rm -f .env.example phpunit.xml phpstan.neon.dist pint.json
+          rm -f webpack.mix.js package.json package-lock.json
 
       - name: FTP deploy
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
@@ -117,6 +119,12 @@ jobs:
             **/phpunit.xml
             **/phpstan*
             **/pint.json
+            **/resources/assets/**
+            **/resources/js/**
+            **/resources/sass/**
+            **/webpack.mix.js
+            **/package.json
+            **/package-lock.json
             **/.github/**
             **/node_modules/**
             **/vendor/**
