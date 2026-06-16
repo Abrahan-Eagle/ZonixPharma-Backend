@@ -39,9 +39,6 @@ trait ResolvesCommerce
         return $profile->getPrimaryCommerce();
     }
 
-    /**
-     * @return Commerce|JsonResponse
-     */
     protected function resolveCommerceOrNotFound(Request $request): Commerce|JsonResponse
     {
         $commerce = $this->resolveCommerce($request);

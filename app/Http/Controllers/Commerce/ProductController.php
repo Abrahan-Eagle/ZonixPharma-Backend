@@ -2,14 +2,13 @@
 
 namespace App\Http\Controllers\Commerce;
 
-use App\Http\Controllers\Controller;
 use App\Http\Controllers\Commerce\Concerns\ResolvesCommerce;
+use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
 use App\Models\Product;
 use Exception;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 
 class ProductController extends Controller

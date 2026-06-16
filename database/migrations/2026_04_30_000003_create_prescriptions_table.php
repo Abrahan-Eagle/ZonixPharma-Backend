@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
@@ -60,24 +61,43 @@ return new class extends Migration
             $table->index(['status', 'validated_at'], 'prescriptions_status_validated_index');
         });
 
-        Schema::table('orders', function (Blueprint $table) {
-            $table->foreign('prescription_id')
-                ->references('id')
-                ->on('prescriptions')
-                ->nullOnDelete();
-        });
+        if (Schema::hasTable('orders') && Schema::hasColumn('orders', 'prescription_id') && ! $this->ordersPrescriptionForeignExists()) {
+            Schema::table('orders', function (Blueprint $table) {
+                $table->foreign('prescription_id')
+                    ->references('id')
+                    ->on('prescriptions')
+                    ->nullOnDelete();
+            });
+        }
     }
 
     public function down(): void
     {
-        $isSqlite = Schema::getConnection()->getDriverName() === 'sqlite';
-
-        if (! $isSqlite && Schema::hasColumn('orders', 'prescription_id')) {
+        if (Schema::hasTable('orders')
+            && Schema::hasColumn('orders', 'prescription_id')
+            && $this->ordersPrescriptionForeignExists()) {
             Schema::table('orders', function (Blueprint $table) {
                 $table->dropForeign(['prescription_id']);
             });
         }
 
         Schema::dropIfExists('prescriptions');
+    }
+
+    private function ordersPrescriptionForeignExists(): bool
+    {
+        if (DB::getDriverName() === 'sqlite') {
+            return false;
+        }
+
+        return DB::selectOne(
+            'SELECT CONSTRAINT_NAME FROM information_schema.KEY_COLUMN_USAGE
+             WHERE TABLE_SCHEMA = DATABASE()
+               AND TABLE_NAME = ?
+               AND COLUMN_NAME = ?
+               AND REFERENCED_TABLE_NAME IS NOT NULL
+             LIMIT 1',
+            ['orders', 'prescription_id']
+        ) !== null;
     }
 };

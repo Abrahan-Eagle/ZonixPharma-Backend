@@ -2,12 +2,11 @@
 
 namespace App\Http\Controllers\Commerce;
 
-use App\Http\Controllers\Controller;
 use App\Http\Controllers\Commerce\Concerns\ResolvesCommerce;
+use App\Http\Controllers\Controller;
 use App\Models\Commerce;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 
 class CommerceDataController extends Controller

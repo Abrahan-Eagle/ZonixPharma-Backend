@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers\Commerce;
 
-use App\Http\Controllers\Commerce\Concerns\ResolvesCommerce;
 use App\Events\OrderStatusChanged;
 use App\Events\PaymentValidated;
+use App\Http\Controllers\Commerce\Concerns\ResolvesCommerce;
 use App\Http\Controllers\Controller;
 use App\Jobs\AutoAssignDeliveryJob;
 use App\Models\DeliveryCompany;
@@ -180,9 +180,6 @@ class OrderController extends Controller
      *
      * Este método consolida validarComprobante() y validatePayment().
      * Usa el campo 'status' en lugar de 'estado' para mantener consistencia.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\JsonResponse
      */
     public function validatePayment(Request $request, string|int $id)
     {

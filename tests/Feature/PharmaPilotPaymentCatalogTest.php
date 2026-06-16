@@ -8,6 +8,7 @@ use Tests\TestCase;
 class PharmaPilotPaymentCatalogTest extends TestCase
 {
     use RefreshDatabase;
+
     public function test_public_available_payment_methods_excludes_enabled_stripe_and_paypal(): void
     {
         $response = $this->getJson('/api/available-payment-methods');

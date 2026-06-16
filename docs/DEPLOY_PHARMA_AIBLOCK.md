@@ -163,14 +163,35 @@ php artisan route:clear
 php artisan optimize:clear
 ```
 
-#### Prohibido en producción
+#### Base de datos: migrate, seed y refresh
+
+| Comando | Qué hace | Cuándo usarlo |
+| -------- | -------- | ------------- |
+| `php artisan migrate --force` | Aplica solo migraciones **nuevas** (esquema) | Cada deploy con cambios de BD |
+| `php artisan db:seed --class=ZonixDemoSeeder --force` | Inserta datos demo | Primera carga o reset manual de demo |
+| `php artisan migrate:refresh --seed --force` | **Borra todo** (rollback + migrate) y vuelve a sembrar | Solo entorno **demo** sin datos reales |
+| `php artisan migrate:fresh --seed --force` | Equivalente a wipe + migrate + seed (no usa `down()`) | Alternativa a refresh en demo |
+
+**Producción con datos reales:** usar **solo** `migrate --force`. No ejecutar `refresh`, `fresh` ni seeders masivos.
+
+**Entorno demo** (`pharma.aiblockweb.com` sin farmacias/pedidos reales): tras deploy del fix en la migración de `prescriptions`, puedes resetear demo con:
 
 ```bash
-# NO usar — borra todas las tablas:
-# php artisan migrate:refresh --seed
+cd ~/pharma.aiblockweb.com
+php artisan migrate:refresh --seed --force
+php artisan optimize:clear
 ```
 
-Usar solo `php artisan migrate --force` para aplicar migraciones pendientes.
+Eso ejecuta `DatabaseSeeder` (referencia + `ZonixDemoSeeder`). **Borra todos los datos** en cada ejecución.
+
+**Deploy habitual** (sin reset):
+
+```bash
+php artisan migrate --force
+php artisan optimize:clear
+```
+
+**Nota:** `npm` no existe en cPanel shared; los assets JS/CSS se compilan en GitHub Actions (`npm run production`) y llegan por FTP.
 
 #### Troubleshooting
 

@@ -7,6 +7,4 @@ namespace App\Services;
  *
  * @deprecated Preferir inyectar PrivateFileStorageService directamente en código nuevo.
  */
-class PrescriptionFileStorageService extends PrivateFileStorageService
-{
-}
+class PrescriptionFileStorageService extends PrivateFileStorageService {}
