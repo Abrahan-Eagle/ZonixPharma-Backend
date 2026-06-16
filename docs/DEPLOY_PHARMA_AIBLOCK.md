@@ -115,10 +115,12 @@ En **Domains → Subdomains** (`pharma.aiblockweb.com`):
 - El **document root** debe ser la carpeta `public/` de Laravel (o el equivalente en tu cuenta FTP).
 - Si el FTP deposita en la raíz del subdominio, suele ser `~/pharma.aiblockweb.com/public` o similar — confirmar en cPanel.
 
-### 4.3 Artisan (SSH o Terminal cPanel)
+### 4.3 Artisan (Terminal web cPanel — Namecheap shared)
+
+Tras **FTP exitoso** en GitHub Actions, en Terminal web (desde la raíz donde está `artisan`):
 
 ```bash
-cd /ruta/al/proyecto   # raíz Laravel (donde está artisan)
+cd ~/pharma.aiblockweb.com   # ajustar ruta real en tu cuenta
 composer install --no-dev --optimize-autoloader
 php artisan migrate --force
 php artisan db:seed --class=ZonixDemoSeeder   # opcional demo
@@ -126,6 +128,10 @@ php artisan config:clear
 php artisan route:clear
 php artisan storage:link
 ```
+
+Si `composer` no está en PATH: `php ~/composer.phar install --no-dev --optimize-autoloader`
+
+**Sin estos pasos** `/api/ping` responderá 404 aunque el FTP haya terminado bien (falta `vendor/` y document root).
 
 ### 4.4 Cron (scheduler)
 
