@@ -92,6 +92,12 @@ jobs:
       - name: Remove individual CoreUI SVGs before FTP
         run: rm -rf public/icons/svg
 
+      - name: Strip dev-only files before FTP
+        run: |
+          rm -rf .git
+          rm -f _ide_helper.php _ide_helper_models.php
+          rm -f .env.example phpunit.xml phpstan.neon.dist pint.json
+
       - name: FTP deploy
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
@@ -102,7 +108,15 @@ jobs:
           state-name: pharma-ftp-deploy-state
           log-level: minimal
           exclude: |
+            **/.git/**
             **/.git*
+            **/_ide_helper*
+            **/.cursor*
+            **/.editorconfig
+            **/.env.example
+            **/phpunit.xml
+            **/phpstan*
+            **/pint.json
             **/.github/**
             **/node_modules/**
             **/vendor/**
@@ -111,7 +125,6 @@ jobs:
             **/storage/logs/**
             **/tests/**
             **/.agents/**
-            **/.cursor/**
             **/.specify/**
             **/specs/**
             **/docs/**
