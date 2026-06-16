@@ -260,6 +260,7 @@ Configurables en `config/zonix.php` (sección `pharma`):
 - **[docs/PLAN_RX_VALIDATION.md](docs/PLAN_RX_VALIDATION.md)** — flujo de validación de receta y endpoints.
 - **[docs/PLAN_REGULATORIO_PHARMA_VE.md](docs/PLAN_REGULATORIO_PHARMA_VE.md)** — regulación VE, MPPS, INHRR, datos de salud.
 - **[docs/MIGRACION_EATS_PHARMA.md](docs/MIGRACION_EATS_PHARMA.md)** — qué cambió en la transformación Eats → Pharma.
+- **[docs/DEPLOY_PHARMA_AIBLOCK.md](docs/DEPLOY_PHARMA_AIBLOCK.md)** — deploy FTP GitHub Actions → `pharma.aiblockweb.com`.
 - **Matriz roles → skills:** [docs/zonix/roles_matrix.json](docs/zonix/roles_matrix.json) + skill `zonix-lanzamiento-roles` (el `.md` ROLES_SKILLS_ZONIX del pack ya no está versionado).
 - **[docs/Lanzamiento/README.md](docs/Lanzamiento/README.md)** — índice pack inversor (22 documentos).
 - **[docs/zonix/ANALISIS_FORENSE_SKILLS.md](docs/zonix/ANALISIS_FORENSE_SKILLS.md)** — auditoría forense multi-rol de skills `zonix-*`.

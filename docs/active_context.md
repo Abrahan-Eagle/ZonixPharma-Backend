@@ -7,6 +7,13 @@
 
 ## Última actualización de contexto
 
+### Deploy FTP pharma.aiblockweb.com — junio 2026
+
+- **Workflow:** [`.github/workflows/main.yml`](../.github/workflows/main.yml) reemplaza legacy Zonix-EatsX → **Zonix Pharma**, PHP 8.3, tests pre-FTP, destino `https://pharma.aiblockweb.com`.
+- **Guía:** [`docs/DEPLOY_PHARMA_AIBLOCK.md`](DEPLOY_PHARMA_AIBLOCK.md) — secrets GitHub, `ENV_CONTENT`, primer arranque cPanel.
+- **Secrets requeridos (GitHub):** `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`, `ENV_CONTENT`.
+- **Pendiente operativo:** crear secrets en GitHub → merge/push a **`main`** → `migrate` en cPanel → `API_URL=https://pharma.aiblockweb.com` en Flutter.
+
 ### Cierre cadena auditorías 360° + lote 10 — 10 junio 2026
 
 - **Módulos auditados y remediados (lotes 1–10):** commerce, pharmacist, orders, buyer Rx, smoke/strict checkout, buyer catalog, delivery, admin.

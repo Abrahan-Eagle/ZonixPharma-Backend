@@ -1,104 +1,118 @@
-name: Deploy to Production (Zonix-EatsX)
+name: Deploy Zonix Pharma (pharma.aiblockweb.com)
+
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-pharma-main
+  cancel-in-progress: true
 
 jobs:
-  FTP-Deploy-Action:
-    name: FTP-Deploy-Action (Production)
+  deploy:
+    name: FTP deploy (pharma.aiblockweb.com)
     runs-on: ubuntu-latest
 
     steps:
-      # Paso 1: Instalar Node.js 20
-      - name: Set up Node.js 20
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
-
-      # Paso 2: Clonar el repositorio
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 2
 
-      # Paso 3: Instalar dependencias de Node.js y compilar activos
-      - name: Build assets
-        run: npm install && npm run production
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
 
-      # Paso 4: Instalar PHP y Composer
-      - name: Install PHP and Composer
+      - name: Build frontend assets
+        run: npm ci && npm run production
+
+      - name: Setup PHP 8.3
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.2' # Ajusta a la versión de PHP usada en tu proyecto Laravel
-          tools: 'composer'
+          php-version: '8.3'
+          extensions: mbstring, xml, ctype, json, pdo_sqlite, bcmath
+          coverage: none
+          tools: composer
 
-      # Paso 5: Configurar el archivo .env desde los secretos (PRODUCCIÓN)
-      - name: Setup environment file (PRODUCTION)
+      - name: Prepare Laravel for tests
         run: |
-          echo "Setting up .env from secrets for PRODUCTION environment..."
+          cp .env.example .env
+          php artisan key:generate --force
+
+      - name: Install PHP dependencies (with dev, for tests)
+        run: composer install --optimize-autoloader --no-interaction
+
+      - name: Run tests before deploy
+        run: php artisan test --parallel
+
+      - name: Setup production environment file
+        run: |
+          echo "Setting up .env from GitHub secret ENV_CONTENT..."
           echo "${{ secrets.ENV_CONTENT }}" > .env
-          # Asegurar que APP_DEBUG sea false en producción
           sed -i 's/APP_DEBUG=.*/APP_DEBUG=false/' .env
-          # Cambiar APP_URL a eats.aiblockweb.com
-          sed -i 's|APP_URL=.*|APP_URL=https://eats.aiblockweb.com|' .env
-          cat .env # Para depurar y verificar el contenido del .env
+          sed -i 's|APP_URL=.*|APP_URL=https://pharma.aiblockweb.com|' .env
+          if ! grep -q '^APP_KEY=.\+' .env; then
+            php artisan key:generate --force
+          fi
+          echo ".env configured (contents hidden)"
 
-      # Paso 6: Instalar dependencias PHP (incluyendo dev para seeders)
-      - name: Install PHP dependencies
-        run: composer install --optimize-autoloader --no-interaction --no-scripts
+      - name: Install production PHP dependencies
+        run: composer install --no-dev --optimize-autoloader --no-interaction
 
-      # Paso 7: Limpiar cachés (NO cachear para evitar rutas absolutas del runner)
       - name: Clear Laravel caches
         run: |
           php artisan config:clear || true
           php artisan cache:clear || true
           php artisan route:clear || true
           php artisan view:clear || true
-          # NO cachear configuraciones aquí - se hará en el servidor después del despliegue
 
-      # Paso 8: Eliminar archivos de caché que contienen rutas absolutas
       - name: Remove cached config files
         run: |
-          echo "Removing cached config files with absolute paths..."
           rm -f bootstrap/cache/config.php
           rm -f bootstrap/cache/routes-v7.php
           rm -f bootstrap/cache/services.php
-          
-      # Paso 9: Crear directorios necesarios antes del despliegue
+
       - name: Create required directories
         run: |
-          echo "Creating required directories..."
           mkdir -p storage/logs
           mkdir -p storage/framework/cache
           mkdir -p storage/framework/sessions
           mkdir -p storage/framework/views
           mkdir -p bootstrap/cache
 
-      # Paso 10: Desplegar archivos por FTP (PRODUCCIÓN)
-      - name: FTP-Deploy-Action (Production)
+      - name: FTP deploy
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           git-files: false
+          exclude: |
+            **/.git*
+            **/.github/**
+            **/node_modules/**
+            **/tests/**
+            **/.agents/**
+            **/.cursor/**
+            **/.specify/**
+            **/specs/**
+            **/docs/**
 
-      # Paso 11: Configurar permisos de directorios (optimizado para servidor compartido)
       - name: Set directory permissions
         run: |
-          echo "Setting up directory permissions for shared hosting..."
           chmod -R 755 storage bootstrap/cache
           chmod 600 .env
 
-      # Paso 12: Crear enlace simbólico de storage (si es necesario)
       - name: Create storage link
-        run: |
-          echo "Creating storage link..."
-          php artisan storage:link || echo "Storage link already exists or not needed"
+        run: php artisan storage:link || echo "Storage link skipped on runner"
 
-      # Paso 13: Verificar el despliegue (PRODUCCIÓN)
-      - name: Verify deployment (Production)
+      - name: Verify deployment
         run: |
-          echo "Verifying deployment to eats.aiblockweb.com..."
-          curl -f https://eats.aiblockweb.com/api/env-test || echo "API endpoint not accessible"
+          echo "Verifying https://pharma.aiblockweb.com ..."
+          curl -fsS --retry 3 --retry-delay 5 \
+            https://pharma.aiblockweb.com/api/ping \
+            || echo "WARN: /api/ping not reachable yet (first deploy may need migrate + docroot)"

@@ -263,7 +263,7 @@ Fuente: [AUDIT_API_PATTERNS_2026-05-01.md](AUDIT_API_PATTERNS_2026-05-01.md).
 | Workflow | Repo | Estado |
 |----------|------|--------|
 | `ci.yml` | BE + FE | Activo en `main`, `develop`, `dev` |
-| `main.yml` “Zonix-EatsX” | BE | **Legacy** — FTP a `eats.aiblockweb.com`, sin tests, PHP 8.2 — **desalineado con Pharma** |
+| `main.yml` Zonix Pharma | BE | **Resuelto jun 2026** — FTP a `pharma.aiblockweb.com`, PHP 8.3, tests pre-deploy — ver [`DEPLOY_PHARMA_AIBLOCK.md`](DEPLOY_PHARMA_AIBLOCK.md) |
 
 ---
 
@@ -303,7 +303,7 @@ Fuente: [AUDIT_API_PATTERNS_2026-05-01.md](AUDIT_API_PATTERNS_2026-05-01.md).
 |----|------|-------------|-------------------|
 | P0-API-01 | Seguridad API | `$e->getMessage()` devuelto al cliente en `catch` de ~30 controladores | Barrer en CI; migrar a `Handler` o mensajes genéricos + `Log::error` |
 | P0-API-02 | Pagos | Idempotencia / ownership `Payment.processPayment` (auditoría) | Revisar `Buyer/PaymentController`, tests dedicados |
-| P0-OPS-01 | Deploy | `main.yml` despliega **Zonix-EatsX** a FTP Eats | Desactivar o reemplazar pipeline Pharma |
+| P0-OPS-01 | Deploy | ~~`main.yml` despliega Zonix-EatsX~~ | **Resuelto jun 2026** — pipeline Pharma → `pharma.aiblockweb.com` |
 | P0-OPS-02 | Mobile | Firebase `google-services.json` / proyecto `zonix-pharma` pendiente | [TECH_DEBT.md](TECH_DEBT.md) |
 
 ### P1 — Pre-piloto Day-D o primeras semanas
@@ -353,7 +353,7 @@ Fuente: [AUDIT_API_PATTERNS_2026-05-01.md](AUDIT_API_PATTERNS_2026-05-01.md).
 
 1. Corregir Pint en test Pharma pilot.
 2. Bloquear nuevos `getMessage()` en respuestas JSON (regla PR + grep CI).
-3. Desactivar o renombrar workflow `main.yml` Eats.
+3. ~~Desactivar o renombrar workflow `main.yml` Eats.~~ Hecho — deploy Pharma en `main.yml`.
 4. Actualizar README Front y métricas en `active_context.md`.
 5. Ejecutar y documentar smoke manual OTC + Rx (plantilla en `TECH_DEBT.md`).
 
