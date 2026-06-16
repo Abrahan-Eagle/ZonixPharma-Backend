@@ -112,26 +112,78 @@ FTP **no** ejecuta migraciones. Tras el **primer** deploy exitoso:
 
 En **Domains → Subdomains** (`pharma.aiblockweb.com`):
 
-- El **document root** debe ser la carpeta `public/` de Laravel (o el equivalente en tu cuenta FTP).
-- Si el FTP deposita en la raíz del subdominio, suele ser `~/pharma.aiblockweb.com/public` o similar — confirmar en cPanel.
+- El **document root** debe ser la carpeta **`public/`** de Laravel (no la raíz donde está `artisan`).
+- Ejemplo Namecheap: `/home/unibicuo/pharma.aiblockweb.com/public`
+- Si el docroot apunta a la raíz del proyecto, usa un `.htaccess` raíz que reenvíe a `public/` (ver §4.6).
 
-### 4.3 Artisan (Terminal web cPanel — Namecheap shared)
+**Comprobar:** si `/api/ping` da 404, casi siempre el docroot está mal. Si da **500** sin `vendor/`, ver §4.3.
 
-Tras **FTP exitoso** en GitHub Actions, en Terminal web (desde la raíz donde está `artisan`):
+### 4.3 Post-FTP: vendor + Artisan (Namecheap shared)
+
+El FTP **no sube** `vendor/` (evita timeout). Sin `vendor/autoload.php` verás **HTTP 500** y no existirá `storage/logs/laravel.log`.
+
+Namecheap **no incluye** `composer` en PATH (`bash: composer: command not found` es normal).
+
+#### Opción A — Script automático (recomendado)
+
+Tras deploy FTP verde, en **Terminal web** cPanel:
 
 ```bash
-cd ~/pharma.aiblockweb.com   # ajustar ruta real en tu cuenta
-composer install --no-dev --optimize-autoloader
-php artisan migrate --force
-php artisan db:seed --class=ZonixDemoSeeder   # opcional demo
-php artisan config:clear
-php artisan route:clear
-php artisan storage:link
+cd ~/pharma.aiblockweb.com
+bash scripts/cpanel-post-ftp-boot.sh
 ```
 
-Si `composer` no está en PATH: `php ~/composer.phar install --no-dev --optimize-autoloader`
+El script: valida PHP ≥ 8.1, instala `composer.phar`, ejecuta `composer install --no-dev`, permisos, `migrate --force`, caches.
 
-**Sin estos pasos** `/api/ping` responderá 404 aunque el FTP haya terminado bien (falta `vendor/` y document root).
+#### Opción B — Comandos manuales
+
+```bash
+cd ~/pharma.aiblockweb.com
+
+# 1) PHP (MultiPHP Manager → 8.2 o 8.3 para el subdominio)
+php -v
+
+# 2) Composer local
+curl -sS https://getcomposer.org/installer | php
+php composer.phar --version
+
+# 3) vendor/ (crítico)
+php -d memory_limit=512M composer.phar install --no-dev --optimize-autoloader --no-interaction
+ls -la vendor/autoload.php
+
+# 4) Permisos
+chmod -R 775 storage bootstrap/cache
+mkdir -p storage/logs storage/framework/{cache,sessions,views}
+
+# 5) Laravel
+php artisan storage:link
+php artisan migrate --force
+php artisan config:clear
+php artisan route:clear
+php artisan optimize:clear
+```
+
+#### Prohibido en producción
+
+```bash
+# NO usar — borra todas las tablas:
+# php artisan migrate:refresh --seed
+```
+
+Usar solo `php artisan migrate --force` para aplicar migraciones pendientes.
+
+#### Troubleshooting
+
+| Error | Acción |
+|-------|--------|
+| `composer: command not found` | Usar `php composer.phar` (§4.3), no `composer` global |
+| `vendor/autoload.php` ausente | Ejecutar paso 3 antes de cualquier `artisan` |
+| `Allowed memory size exhausted` | `php -d memory_limit=512M composer.phar install ...` |
+| PHP 7.x / 8.0 | cPanel → **MultiPHP Manager** → **8.2+** |
+| Sigue 500 con vendor OK | `tail -50 storage/logs/laravel.log` (MySQL, APP_KEY, permisos) |
+| composer install imposible en hosting | Generar `vendor/` en local con `--no-dev`, comprimir, subir y extraer en cPanel (último recurso) |
+
+**Sin estos pasos** `/api/ping` responderá **500** (sin vendor) o **404** (docroot incorrecto).
 
 ### 4.4 Cron (scheduler)
 
@@ -144,6 +196,21 @@ Necesario para TTL recetas Rx y expiración `pending_payment`.
 ### 4.5 Permisos
 
 - `storage/` y `bootstrap/cache/` escribibles (755 o 775 según hosting).
+
+### 4.6 `.htaccess` (solo si docroot = raíz Laravel)
+
+Si el **document root** es la carpeta donde está `artisan` (no `public/`), crea `.htaccess` en la raíz:
+
+```apache
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^$ public/ [L]
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+```
+
+No copies el `.htaccess` de CorralX con rutas `/laravel/public`. El `.htaccess` de `public/` puede ser el [estándar Laravel](../public/.htaccess) o tu variante con HTTPS/headers.
 
 ---
 
@@ -198,9 +265,10 @@ El workflow anterior desplegaba **Zonix Eats** a `eats.aiblockweb.com`. Este rep
 1. [ ] Crear los 4 secrets en GitHub (§1).
 2. [ ] Merge `dev` → `main` (o push directo a `main` con este workflow).
 3. [ ] Actions → workflow verde.
-4. [ ] cPanel: `migrate --force` + `storage:link` (§4).
-5. [ ] `curl https://pharma.aiblockweb.com/api/ping`
-6. [ ] Flutter: `API_URL=https://pharma.aiblockweb.com`
+4. [ ] cPanel: `bash scripts/cpanel-post-ftp-boot.sh` (§4.3) — **vendor + migrate**
+5. [ ] cPanel: Document Root = `.../public` (§4.2)
+6. [ ] `curl https://pharma.aiblockweb.com/api/ping`
+7. [ ] Flutter: `API_URL=https://pharma.aiblockweb.com`
 
 ---
 
