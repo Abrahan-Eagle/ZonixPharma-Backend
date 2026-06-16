@@ -56,6 +56,10 @@ jobs:
           echo "${{ secrets.ENV_CONTENT }}" > .env
           sed -i 's/APP_DEBUG=.*/APP_DEBUG=false/' .env
           sed -i 's|APP_URL=.*|APP_URL=https://pharma.aiblockweb.com|' .env
+          # Dotenv exige comillas si el valor tiene espacios (ej. APP_NAME=Zonix Pharma)
+          if grep -qE '^APP_NAME=[^"\047].*[[:space:]]' .env; then
+            sed -i 's/^APP_NAME=\(.*\)$/APP_NAME="\1"/' .env
+          fi
           if ! grep -q '^APP_KEY=.\+' .env; then
             php artisan key:generate --force
           fi
