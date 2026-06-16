@@ -39,12 +39,13 @@ jobs:
           tools: composer
 
       - name: Prepare Laravel for tests
-        run: |
-          cp .env.example .env
-          php artisan key:generate --force
+        run: cp .env.example .env
 
       - name: Install PHP dependencies (with dev, for tests)
         run: composer install --optimize-autoloader --no-interaction
+
+      - name: Generate app key for tests
+        run: php artisan key:generate --force
 
       - name: Run tests before deploy
         run: php artisan test --parallel
