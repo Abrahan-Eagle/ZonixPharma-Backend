@@ -40,6 +40,10 @@
     <!-- Custom Semantic CSS -->
     <link href="{{ asset('css/zonix.css') }}" rel="stylesheet">
 
+    @if(request()->routeIs('front.home'))
+        <link rel="preload" as="image" href="{{ asset('assets/img/hero/desktop-pharmacy.webp') }}" type="image/webp" fetchpriority="high">
+    @endif
+
     <!-- Schema.org JSON-LD -->
     @if(isset($pageSchema))
         <script type="application/ld+json">

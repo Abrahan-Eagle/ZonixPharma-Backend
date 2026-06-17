@@ -19,7 +19,20 @@ version: 1.0
 1. `BRAND_ZONIX_PHARMA.md`
 2. **Esta skill** + `zonix.css` existente
 3. `zonix-brand-ops` (copy/naming)
-4. `frontend-design` — solo ideas de composición; **no** nuevas paletas ni fuentes fuera de BRAND
+4. `ui-ux-pro-max` — ideas UX, layout, a11y, design system reasoning; ver [ZONIX.md](../ui-ux-pro-max/ZONIX.md); **no** nuevas paletas ni fuentes fuera de BRAND
+5. `frontend-design` — solo ideas de composición; **no** nuevas paletas ni fuentes fuera de BRAND
+
+## Cuándo invocar ui-ux-pro-max
+
+Antes de rediseñar secciones o auditar UX/a11y de la landing:
+
+```bash
+python3 .agents/skills/ui-ux-pro-max/scripts/search.py \
+  "pharmacy healthcare marketplace trust" \
+  --design-system -p "Zonix Pharma"
+```
+
+Implementar patrones en `zonix.css`; mapear colores sugeridos a tokens `--brand-*`.
 
 ## Stack web Zonix
 
@@ -91,5 +104,6 @@ public/css/zonix.css
 ## Skills relacionadas
 
 - `zonix-brand-ops` — naming y tono
+- `ui-ux-pro-max` — design system reasoning (`--design-system`); ver [ZONIX.md](../ui-ux-pro-max/ZONIX.md)
 - `zonix-design-enforcer` (Front) — mismas heurísticas 8pt/WCAG en Flutter
 - `frontend-design` — referencia secundaria; no contradice tokens

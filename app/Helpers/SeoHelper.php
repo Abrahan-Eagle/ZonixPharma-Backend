@@ -126,7 +126,7 @@ class SeoHelper
                     'name' => '¿Cuánto tarda en llegar mi pedido con Zonix Pharma?',
                     'acceptedAnswer' => [
                         '@type' => 'Answer',
-                        'text' => 'El tiempo promedio de entrega en Zonix Pharma es de 20 a 45 minutos, según la disponibilidad de la farmacia más cercana y la logística de delivery.',
+                        'text' => 'El tiempo de entrega depende de la farmacia aliada, tu ubicación y la logística disponible. Zonix Pharma prioriza condiciones óptimas y cadena de custodia.',
                     ],
                 ],
                 [
@@ -142,7 +142,7 @@ class SeoHelper
                     'name' => '¿En qué ciudades de Venezuela opera Zonix Pharma?',
                     'acceptedAnswer' => [
                         '@type' => 'Answer',
-                        'text' => 'Operamos en Caracas, Maracaibo, Valencia, Barquisimeto, Maracay y Lechería, con expansión gradual a más ciudades.',
+                        'text' => 'Estamos en expansión gradual en Caracas, Maracaibo, Valencia, Barquisimeto, Maracay y Lechería, con más ciudades próximamente.',
                     ],
                 ],
                 [

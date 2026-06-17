@@ -175,6 +175,7 @@ Configurables en `config/zonix.php` (sección `pharma`):
 | `systematic-debugging` | [.agents/skills/systematic-debugging/SKILL.md](.agents/skills/systematic-debugging/SKILL.md) |
 | `test-driven-development` | [.agents/skills/test-driven-development/SKILL.md](.agents/skills/test-driven-development/SKILL.md) |
 | `git-commit` | [.agents/skills/git-commit/SKILL.md](.agents/skills/git-commit/SKILL.md) |
+| `ui-ux-pro-max` | [.agents/skills/ui-ux-pro-max/SKILL.md](.agents/skills/ui-ux-pro-max/SKILL.md) — design intelligence v2; secundaria a BRAND + `zonix-web-design` |
 
 ### Custom (Zonix)
 
@@ -207,6 +208,7 @@ Configurables en `config/zonix.php` (sección `pharma`):
 | `zonix-lanzamiento-docs` | Mejorar/auditar docs/Lanzamiento; marcos Busqueda GitHub adaptados | [.agents/skills/zonix-lanzamiento-docs/SKILL.md](.agents/skills/zonix-lanzamiento-docs/SKILL.md) |
 | `zonix-brand-ops` | Naming, tono pharma VE, 60-30-10, anti-patterns Eats | [.agents/skills/zonix-brand-ops/SKILL.md](.agents/skills/zonix-brand-ops/SKILL.md) |
 | `zonix-web-design` | Landing Blade, zonix.css, WCAG web | [.agents/skills/zonix-web-design/SKILL.md](.agents/skills/zonix-web-design/SKILL.md) |
+| `zonix-ai-landing-pipeline` | Pipeline NEONFALL adaptado: Nano Banana → Veo/Kling → Claude Design → Claude Code → Blade/zonix.css | [.agents/skills/zonix-ai-landing-pipeline/SKILL.md](.agents/skills/zonix-ai-landing-pipeline/SKILL.md) |
 | `zonix-design-enforcer` | Heurísticas 8pt/WCAG (stub → Front Flutter) | [.agents/skills/zonix-design-enforcer/SKILL.md](.agents/skills/zonix-design-enforcer/SKILL.md) |
 
 ---
@@ -248,7 +250,9 @@ Configurables en `config/zonix.php` (sección `pharma`):
 | Lectura founder CEO/CTO/TPM (due diligence, 90 días) | `zonix-founder-ops-index` + `zonix-startup-context` |
 | Nueva feature producto (spec → plan → tasks) | Spec Kit (`speckit-*`) + skills `zonix-*` del dominio — ver [SPEC_KIT_ZONIX.md](docs/zonix/SPEC_KIT_ZONIX.md) |
 | Refactor / feature multi-módulo full-stack | Spec Kit + `zonix-order-lifecycle` / `zonix-api-patterns` / `zonix-ui-design` (Front) según módulo |
-| Landing / welcome / CSS marketing | `zonix-web-design` + `zonix-brand-ops` |
+| Landing / welcome / CSS marketing | `zonix-web-design` + `zonix-brand-ops` + `ui-ux-pro-max` (secundaria) |
+| Landing con IA, hero video loop, Nano Banana / Veo / Claude Design | `zonix-ai-landing-pipeline` + `zonix-web-design` + `zonix-brand-ops` + `ui-ux-pro-max` (secundaria) |
+| Revisar UX / a11y / layout web o Flutter | `ui-ux-pro-max` + skill Zonix del stack (`zonix-web-design` o Front `zonix-ui-design`) |
 | Copy marca / ASO / revisión anti-Eats | `zonix-brand-ops` |
 | UI Flutter (desde Backend, coordinación) | Front `zonix-ui-design` + `zonix-design-enforcer` |
 
@@ -267,6 +271,7 @@ Configurables en `config/zonix.php` (sección `pharma`):
 - **[docs/zonix/research_links.md](docs/zonix/research_links.md)** — enlaces GitHub skills/roles (adaptar/evitar).
 - **[docs/zonix/roles_matrix.json](docs/zonix/roles_matrix.json)** — routing JARVIS por rol y tarea + `skills_inventory`.
 - **[docs/zonix/SPEC_KIT_ZONIX.md](docs/zonix/SPEC_KIT_ZONIX.md)** — Spec Kit (SDD) vs Jarvis `zonix-*`.
+- **[docs/plantillas/PROMPT_LANDING_IA_ZONIX.md](docs/plantillas/PROMPT_LANDING_IA_ZONIX.md)** — super prompt auditoría landing + plan pipeline IA (NEONFALL adaptado); invoca `zonix-ai-landing-pipeline` + web/brand/regulatorio.
 - **[docs/PROMPT_AUDIT_360_ZONIX.md](docs/PROMPT_AUDIT_360_ZONIX.md)** — super prompt auditoría exhaustiva (360° / código / por módulo); complementa `PROMPT_AUDIT_FORENSE.md` y `AUDIT_API_PATTERNS_*`.
 - **[docs/AUDIT_commerce_2026-06-10.md](docs/AUDIT_commerce_2026-06-10.md)** — piloto auditoría módulo commerce (contrato API↔Front, `commerce_api_errors`).
 - **[docs/AUDIT_pharmacist_2026-06-10.md](docs/AUDIT_pharmacist_2026-06-10.md)** — auditoría módulo pharmacist + remediación lote 3 (envelope, onboarding throttle).

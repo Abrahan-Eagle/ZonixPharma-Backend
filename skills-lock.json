@@ -150,6 +150,11 @@
       "source": "anthropics/skills",
       "sourceType": "github",
       "computedHash": "cf8e5916d474886bd67b09691247f43f331523008b7d366064bc607ab42d6302"
+    },
+    "ui-ux-pro-max": {
+      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "sourceType": "github",
+      "computedHash": "e5baf02db1b7b3d95d44000600bbd4608a9cb2e65a87e451ceb031c4c9fdc639"
     }
   }
 }

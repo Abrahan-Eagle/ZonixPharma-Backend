@@ -105,14 +105,53 @@ document.addEventListener("DOMContentLoaded", function () {
     const categoriesContainer = document.getElementById('categoriesContainer');
     const catBtnPrev = document.getElementById('catBtnPrev');
     const catBtnNext = document.getElementById('catBtnNext');
+    const catNavActions = document.getElementById('catNavActions');
 
     if (categoriesContainer && catBtnPrev && catBtnNext) {
-        catBtnNext.addEventListener('click', () => {
-            categoriesContainer.scrollBy({ left: 300, behavior: 'smooth' });
-        });
-        catBtnPrev.addEventListener('click', () => {
-            categoriesContainer.scrollBy({ left: -300, behavior: 'smooth' });
-        });
+        const desktopCategoriesQuery = window.matchMedia('(min-width: 1024px)');
+
+        const updateCategoryNavState = () => {
+            if (desktopCategoriesQuery.matches) {
+                if (catNavActions) {
+                    catNavActions.classList.add('is-hidden');
+                }
+                catBtnPrev.disabled = true;
+                catBtnNext.disabled = true;
+                return;
+            }
+
+            const maxScroll = categoriesContainer.scrollWidth - categoriesContainer.clientWidth;
+            const hasOverflow = maxScroll > 4;
+
+            if (hasOverflow) {
+                if (catNavActions) {
+                    catNavActions.classList.remove('is-hidden');
+                }
+                const atStart = categoriesContainer.scrollLeft <= 4;
+                const atEnd = categoriesContainer.scrollLeft >= maxScroll - 4;
+                catBtnPrev.disabled = atStart;
+                catBtnNext.disabled = atEnd;
+            } else {
+                if (catNavActions) {
+                    catNavActions.classList.add('is-hidden');
+                }
+                catBtnPrev.disabled = true;
+                catBtnNext.disabled = true;
+            }
+        };
+
+        const scrollCategories = (direction) => {
+            const amount = Math.max(categoriesContainer.clientWidth * 0.75, 240);
+            categoriesContainer.scrollBy({ left: direction * amount, behavior: 'smooth' });
+        };
+
+        catBtnNext.addEventListener('click', () => scrollCategories(1));
+        catBtnPrev.addEventListener('click', () => scrollCategories(-1));
+        categoriesContainer.addEventListener('scroll', updateCategoryNavState, { passive: true });
+        window.addEventListener('resize', updateCategoryNavState);
+        window.addEventListener('load', updateCategoryNavState);
+        desktopCategoriesQuery.addEventListener('change', updateCategoryNavState);
+        updateCategoryNavState();
 
         // Mouse Drag Logic
         let isDown = false;
@@ -132,6 +171,7 @@ document.addEventListener("DOMContentLoaded", function () {
         categoriesContainer.addEventListener('mouseup', () => {
             isDown = false;
             categoriesContainer.classList.remove('active');
+            updateCategoryNavState();
         });
         categoriesContainer.addEventListener('mousemove', (e) => {
             if (!isDown) return;
@@ -273,6 +313,50 @@ document.addEventListener("DOMContentLoaded", function () {
             stickyBar.classList.add("d-none");
             localStorage.setItem("zonix_sticky_dismissed", new Date().getTime().toString());
         });
+    }
+
+    // 10. Fase 7 — cinematic sheen + mockup tilt (desktop, motion-safe)
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const hasFinePointer = window.matchMedia("(pointer: fine)").matches;
+
+    if (!prefersReducedMotion && hasFinePointer) {
+        const sheenCards = document.querySelectorAll(".premium-depth-card:not(.premium-depth-card--light)");
+        let sheenFrame = 0;
+
+        const updateSheen = (event) => {
+            cancelAnimationFrame(sheenFrame);
+            sheenFrame = requestAnimationFrame(() => {
+                sheenCards.forEach((card) => {
+                    const rect = card.getBoundingClientRect();
+                    card.style.setProperty("--mouse-x", `${event.clientX - rect.left}px`);
+                    card.style.setProperty("--mouse-y", `${event.clientY - rect.top}px`);
+                });
+            });
+        };
+
+        if (sheenCards.length > 0) {
+            window.addEventListener("mousemove", updateSheen, { passive: true });
+        }
+
+        const mockupTilt = document.querySelector(".phone-mockup-tilt");
+        const mockupStage = document.querySelector(".phone-mockup-stage");
+        let tiltFrame = 0;
+
+        if (mockupTilt && mockupStage) {
+            mockupStage.addEventListener("mousemove", (event) => {
+                cancelAnimationFrame(tiltFrame);
+                tiltFrame = requestAnimationFrame(() => {
+                    const rect = mockupStage.getBoundingClientRect();
+                    const xVal = ((event.clientX - rect.left) / rect.width - 0.5) * 2;
+                    const yVal = ((event.clientY - rect.top) / rect.height - 0.5) * 2;
+                    mockupTilt.style.transform = `rotateY(${xVal * 8}deg) rotateX(${-yVal * 8}deg)`;
+                });
+            }, { passive: true });
+
+            mockupStage.addEventListener("mouseleave", () => {
+                mockupTilt.style.transform = "rotateY(0deg) rotateX(0deg)";
+            });
+        }
     }
 });
 
