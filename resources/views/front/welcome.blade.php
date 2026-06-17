@@ -163,48 +163,48 @@
     <!-- Social Proof Strip -->
     <section class="social-proof-strip">
         <div class="container-zonix">
-            <div class="row g-4 justify-content-center justify-content-md-between align-items-center">
-                <div class="col-6 col-md-auto d-flex justify-content-center">
+            <div class="row social-proof-row g-3 g-md-4 justify-content-md-between align-items-center">
+                <div class="col-12 col-md-auto">
                     <div class="social-stat reveal">
                         <div class="social-stat-icon" aria-hidden="true">
                             <span class="material-symbols-outlined">verified</span>
                         </div>
-                        <div>
+                        <div class="social-stat-copy">
                             <div class="social-stat-number text-sm">Aliadas</div>
-                            <div class="social-stat-label">Farmacias<br>verificadas</div>
+                            <div class="social-stat-label">Farmacias verificadas</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-auto d-flex justify-content-center">
+                <div class="col-12 col-md-auto">
                     <div class="social-stat reveal reveal-delay-100">
                         <div class="social-stat-icon" aria-hidden="true">
                             <span class="material-symbols-outlined">medication</span>
                         </div>
-                        <div>
+                        <div class="social-stat-copy">
                             <div class="social-stat-number">OTC + Rx</div>
-                            <div class="social-stat-label">Catálogo<br>completo</div>
+                            <div class="social-stat-label">Catálogo completo</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-auto d-flex justify-content-center">
+                <div class="col-12 col-md-auto">
                     <div class="social-stat reveal reveal-delay-200">
                         <div class="social-stat-icon" aria-hidden="true">
                             <span class="material-symbols-outlined">timer</span>
                         </div>
-                        <div>
+                        <div class="social-stat-copy">
                             <div class="social-stat-number">Rápido</div>
-                            <div class="social-stat-label">Entrega en<br>tu zona</div>
+                            <div class="social-stat-label">Entrega en tu zona</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-auto d-flex justify-content-center">
+                <div class="col-12 col-md-auto">
                     <div class="social-stat reveal reveal-delay-300">
                         <div class="social-stat-icon" aria-hidden="true">
                             <span class="material-symbols-outlined">support_agent</span>
                         </div>
-                        <div>
+                        <div class="social-stat-copy">
                             <div class="social-stat-number text-sm">Humano</div>
-                            <div class="social-stat-label">Horario<br>extendido</div>
+                            <div class="social-stat-label">Horario extendido</div>
                         </div>
                     </div>
                 </div>
@@ -883,7 +883,7 @@
             </button>
         </div>
         
-        <div class="d-flex flex-col gap-4">
+        <div class="d-flex flex-column gap-2">
             <a href="{{ url('/') }}" class="nav-link-mobile">
                 <span class="material-symbols-outlined">home</span> Inicio
             </a>

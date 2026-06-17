@@ -307,10 +307,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (!lastDismissed || (now - parseInt(lastDismissed) > oneWeek)) {
             stickyBar.classList.remove("d-none");
+            document.body.classList.add("has-mobile-sticky-bar");
         }
 
         closeStickyBtn.addEventListener("click", () => {
             stickyBar.classList.add("d-none");
+            document.body.classList.remove("has-mobile-sticky-bar");
             localStorage.setItem("zonix_sticky_dismissed", new Date().getTime().toString());
         });
     }

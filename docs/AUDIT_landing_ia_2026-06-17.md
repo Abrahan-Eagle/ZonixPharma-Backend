@@ -349,6 +349,24 @@ Sección `#offers` «Descubre en la App»: cards planas, badges saturados en ima
 
 ---
 
+## Mobile responsive fixes (RM-M1 — 2026-06-17)
+
+Feedback usuario: social strip amontonado, menú offcanvas roto, footer/sticky en mobile.
+
+| ID | Severidad | Causa | Fix aplicado |
+|----|-----------|-------|--------------|
+| **RM-M1** | Alta | Social proof `col-6` + `<br>` en labels | `col-12 col-md-auto`, lista vertical con fondo `--zonix-bg-light` por fila |
+| **RM-M2** | Alta | Offcanvas `flex-col` (Tailwind inválido en Bootstrap) | `flex-column gap-2` — links apilados verticalmente |
+| **RM-M3** | Media | Hero mobile apilaba texto + imagen | Overlay: `.hero-right` absolute + gradiente navy full-height |
+| **RM-M4** | Media | Sticky bar tapaba footer | `body.has-mobile-sticky-bar` padding-bottom + cookie banner ya en `bottom: 80px` |
+| **RM-M5** | Baja | Tipografía hero grande en 375px | `clamp()` en `.text-hero-zonix` |
+
+**Archivos:** `welcome.blade.php`, `public/css/zonix.css`, `public/js/zonix.js`
+
+**Checklist mobile 375px:** social strip 4 filas legibles · menú «En la App» horizontal OK · hero copy sobre imagen · footer no oculto por sticky
+
+---
+
 ## Fases anteriores (referencia)
 
 ### Fase 4 — Hero emocional + copy psicología marca
