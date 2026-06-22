@@ -8,7 +8,7 @@
 
 ## 1. Por qué este módulo es crítico
 
-1. **Es el diferenciador legal:** Rappi y PedidosYa NO validan recetas digitalmente en VE. Farmatodo y Locatel hacen validación física en sucursal.
+1. **Es el diferenciador legal:** **PedidosYa** NO valida recetas digitalmente en VE. Farmatodo y Locatel hacen validación física en sucursal. *(Rappi no opera en VE.)*
 2. **Alineado al marco regulatorio:** la Ley del Ejercicio de la Farmacia VE exige validación por farmacéutico colegiado *[dictamen formal abogado + farmacéutico asesor antes de Day-D]*.
 3. **Genera trazabilidad:** quién validó, cuándo, qué medicamento, qué receta, qué paciente. Fundamental ante MPPS.
 4. **Habilita el segmento Rx (48,3% del mercado farmacéutico VE):** sin esto, **Zonix Pharma** solo opera OTC + cuidado personal.
@@ -330,8 +330,8 @@ Datos de salud son categoría especial; **marco legal VE en actualización** —
 ### 14.6 Incidentes de seguridad
 
 - Plan de respuesta documentado.
-- Notificación al paciente afectado dentro de 72h si hay leak material.
-- Notificación a autoridad VE de protección de datos.
+- Notificación al paciente afectado dentro de **72h** si hay leak material *(política interna recomendada — no plazo legal VE verificado jun 2026)*.
+- Notificación a autoridad competente si aplica marco vigente — **[PENDIENTE abogado]** (no hay superintendencia nacional de datos tipo GDPR).
 
 ## 15. Capacidad operativa fuera de horario y picos
 

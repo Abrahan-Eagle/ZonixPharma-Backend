@@ -40,7 +40,7 @@ Imagina a alguien en Valencia que necesita un medicamento para un familiar. Reco
 |-----------|----------------------|-------------------|
 | **TAM Venezuela** | **USD 1.638M/año** (389M unidades × USD 4,21; **Cifar VE**, **IMS/IQVIA** 2025) | Mercado grande, en recuperación (+17,49% YoY) |
 | **Crecimiento** | +17,49% unidades 2024–2025; CAGR 6,1% 2026–2032 | Ventana de adopción digital post-crisis |
-| **Competencia directa** | Farmatodo / Locatel (cadenas); Rappi / PedidosYa Pharmacy (25–35% GMV) | **No atacan** el segmento independiente / mediano |
+| **Competencia directa** | Farmatodo / Locatel (cadenas); **PedidosYa Pharmacy** VE (20–30% GMV) | **No atacan** el segmento independiente / mediano |
 | **Comparable LatAm** | Farmalisto: ~USD 32M revenue 2024; funding ~USD 22–33M | El modelo marketplace pharma **sí es financiable** |
 | **Nicho piloto** | **226 farmacias** Valencia metro; **~80–100 independientes** target | Beachhead denso, operable desde Carabobo |
 

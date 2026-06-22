@@ -107,14 +107,15 @@ Detalle de fases T+30 / T+60 / T+90 en [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZ
 - Hay docs de marca canónicos: [`../BRAND_ZONIX_PHARMA.md`](../BRAND_ZONIX_PHARMA.md). Tokens, paleta, tipografía ya definidos.
 - Si el negocio crece, el primer hire post-PMF es un Product Designer.
 
-### 2.8 Benchmark de competencia: Farmatodo + Farmalisto + Rappi
+### 2.8 Benchmark de competencia: Farmatodo + Farmalisto + PedidosYa
 
-**Decisión:** mencionar los tres en el pitch.
+**Decisión:** mencionar los tres en el pitch (Rappi solo como referencia LatAm, **no competidor VE**).
 
 **Por qué cada uno:**
 - **Farmatodo / Locatel** (cadenas premium VE): no son competencia directa, son referencia para que el inversor entienda que el sector farmacéutico VE existe y es grande. Ellas NO atacan el segmento de farmacias medianas e independientes.
 - **Farmalisto** (MX + CO + PE): comparable directo internacional. **~USD 32M revenue 2024 (MX)**; funding total **~USD 22M** reportado en agregadores (**hasta ~USD 33M** en PitchBook). Demuestra que el modelo marketplace farmacéutico LatAm es financiable.
-- **Rappi / PedidosYa Pharmacy:** ataque al segmento alto. Cobran 25-35% comisión. Zonix Pharma se diferencia en **estructura de costo** (cuota fija + % muy bajo sobre GMV en app vs comisión plena de agregador) y en **validación Rx** (que ellos no hacen).
+- **PedidosYa Pharmacy (VE):** agregador activo en Venezuela desde 2023. Cobran comisión sobre GMV (orden **20–30%**). Zonix Pharma se diferencia en **estructura de costo** (cuota fija + % muy bajo sobre GMV en app) y en **validación Rx** (que ellos no hacen).
+- **Rappi Pharmacy:** benchmark LatAm (CO, MX, etc.) — **no opera en VE** jun 2026.
 
 Detalle competitivo en [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md).
 
@@ -122,7 +123,7 @@ Detalle competitivo en [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md).
 
 | Pregunta | Respuesta Zonix Pharma |
 |----------|------------------------|
-| Alternativas competitivas | Farmatodo/Locatel digital, Rappi Pharmacy, WhatsApp informal, app propia costosa |
+| Alternativas competitivas | Farmatodo/Locatel digital, **PedidosYa** Pharmacy VE, WhatsApp informal, app propia costosa *(Rappi: ref. LatAm, no VE)* |
 | Atributos únicos | Rx con farmacéutico de **cada** farmacia; uni-pharmacy; pagos manuales VE; cuota + % GMV bajo vs agregador |
 | Valor entregado | Pedido confiable OTC/Rx + tracking sin que Zonix opere flota |
 | Cliente objetivo | Farmacias independientes Valencia metro + paciente urbano/clase media |

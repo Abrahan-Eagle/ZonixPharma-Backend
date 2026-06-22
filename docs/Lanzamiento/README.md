@@ -28,7 +28,7 @@ Para **ejecutar el lanzamiento:** [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIEN
 | 3 | [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) | SAFE, cap table, vehículo VE |
 | 2 | [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) | Guion reunión + FAQ |
 
-**Opcional (due diligence técnico):** [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) (pack ↔ producto en código).
+**Opcional (due diligence técnico):** [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) (pack ↔ producto en código) · [../SMOKE_RX_E2E.md](../SMOKE_RX_E2E.md) (checklist smoke manual Rx/OTC pre-demo).
 
 **Mensaje listo para enviar:** [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) §2.
 
@@ -90,6 +90,7 @@ Lo anterior +:
 | LTV/CAC                             | **~7,2x**                                                                                                                                                                   |
 | Payback CAC                         | **~2,8 meses**                                                                                                                                                              |
 | Tests backend (verificado jun 2026) | **443 passed** (`php artisan test --parallel` en ZonixPharma-Backend; re-verificar pre-reunión — REGISTRO P0-06)                                                                 |
+| Tests frontend (referencia jun 2026) | **~241 passed** (`flutter test` en ZonixPharma-Front; re-verificar pre-reunión — AUD-01)                                                                 |
 
 
 
@@ -124,7 +125,7 @@ Lo anterior +:
 5. **Awareness:** **Meta Ads** canal principal. **Lean:** **USD 800/mes** M1–6 · **500** M7–12. **Base/Growth:** **800/mes** todo el año. Valla: pequeña 3m×2m (Lean, M3+); mediana 6m×4m (Base/Growth, M2+).
 6. **Día D del piloto:** T+90 desde cierre de inversión (calendario relativo, no absoluto, porque la fecha de cierre aún no está confirmada).
 7. **Instrumento de inversión:** SAFE post-money con cap por escenario (**USD 600k / 650k / 720k** — Lean / Base / Growth).
-8. **Benchmark de competencia para el pitch:** Farmatodo / Locatel + Farmalisto + Rappi/PedidosYa Pharmacy.
+8. **Benchmark de competencia para el pitch:** Farmatodo / Locatel + Farmalisto + **PedidosYa Pharmacy** *(agregador activo VE; Rappi no opera en país)*.
 9. **Comercial farmacia B2B (mayo 2026):** tier **solo por GMV** (sin topes por órdenes/SKU); **contrato marco anual** + cuota mensual; ascenso de tarifa desde **M+2** (en **M** y **M+1** sigue tarifa del nivel anterior); reclamos GMV **3 días hábiles**; salida sin penalidad en los **2 primeros meses**; prod en **VPS Nameshared** — [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5 y §9.
 10. **OTP paciente:** **Firebase Phone Auth (SMS)** — proxy **USD 30/mes** en burn Lean §2.3.
 11. **Logística en app:** solo **`delivery_company`** + **`delivery_agent`** — [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) cabecera.
@@ -156,6 +157,17 @@ Estos no se inventan. El pack los marca explícitamente con `[PENDIENTE]`. **Ín
 
 ---
 
+
+## Mantenimiento con IA (Jarvis)
+
+| Objetivo | Plantilla |
+|----------|-----------|
+| Mejora incremental de un doc o sección | [../plantillas/PROMPT_MEJORAR_PACK_LANZAMIENTO.md](../plantillas/PROMPT_MEJORAR_PACK_LANZAMIENTO.md) |
+| **Auditoría forense v3** (25 workers + research web 2026 + juez mayor + autofix) | [../plantillas/PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md](../plantillas/PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md) |
+| Informes previos | [../AUDIT_FORENSE_PACK_LANZAMIENTO_2026-06-22.md](../AUDIT_FORENSE_PACK_LANZAMIENTO_2026-06-22.md) |
+| Citas y costos web | [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md) |
+
+---
 
 ## Notas de uso
 

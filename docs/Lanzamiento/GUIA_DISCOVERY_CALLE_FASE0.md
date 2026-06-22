@@ -68,7 +68,7 @@ El founder debe confirmar **en persona** que el dolor existe **antes** de escala
 | 1 | ¿Cuántos pedidos por **WhatsApp o teléfono** recibió la semana pasada? ¿Quién los anota y cómo? | Pedidos manuales, errores precio/cantidad | Problema / Solución |
 | 2 | ¿Cuánto tiempo le tomó ayer **conciliar Pago Móvil / transferencias** al cierre? | Horas administrativas perdidas | Problema |
 | 3 | La última vez que un cliente pidió algo **sin stock** o fuera de su radio, ¿qué pasó con esa venta? | Ventas perdidas, visibilidad catálogo | Problema / Propuesta |
-| 4 | ¿Está o estuvo en **Rappi / PedidosYa**? ¿Cuánto pagó de comisión el mes pasado? ¿Por qué sigue / se salió? | Costo de canal, take-rate agregador | Ingresos / Competencia |
+| 4 | ¿Está o estuvo en **PedidosYa** u otro agregador? ¿Cuánto pagó de comisión el mes pasado? ¿Por qué sigue / se salió? | Costo de canal, take-rate agregador | Ingresos / Competencia |
 | 5 | ¿Cómo **valida recetas** hoy? Si hay un reclamo o inspección, ¿qué registro tiene? | Rx sin trazabilidad (diferenciador core) | Propuesta / Regulación |
 
 ### 3.3 Preguntas de profundización (si fluye)
@@ -97,7 +97,7 @@ Entrevistado (rol): dueño / regente / encargado
 1. Pedidos WhatsApp/tel semana pasada: ___  ¿Quién anota?: ____________
 2. Tiempo conciliación pagos ayer: ___ h    Método: ____________
 3. Última venta perdida (stock/radio): ____________
-4. Agregador (Rappi/PYA): sí/no  Comisión mes pasado: USD ___  Motivo: ____________
+4. Agregador (PedidosYa/otro): sí/no  Comisión mes pasado: USD ___  Motivo: ____________
 5. Validación Rx hoy: ____________  Registro ante reclamo: ____________
 Citas textuales (2–3):
 - "____________"

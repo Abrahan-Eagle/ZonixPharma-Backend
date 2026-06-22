@@ -83,6 +83,16 @@ Solo [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 tiene fl
 
 **Promedio Lean:** **~7.559**/mes → **90.702** anual.
 
+#### 2.3.1 Desglose «Servicios oficina + hosting/SaaS/Firebase Phone» (jun 2026)
+
+| Componente | USD/mes en fila **234** | Benchmark web [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md) §4–§6 |
+|---|---|---|
+| Servicios oficina (electricidad, agua, internet fijo) | **~80** | §6 ref. **~74–101** |
+| Hosting + SaaS core (VPS, Pusher, Maps, GitHub, Workspace, Notion, SendGrid) | **~154** | **~120–150** sin SMS pico |
+| Firebase SMS OTP (~1.000 verif./mes post-Day-D) | *incluido conservador* | **~112–160** adicional si volumen real |
+
+**Reconciliación AUD-v3-01:** el **234/mes** del modelo asume **OTP bajo en Fase 0** y SaaS histórico ~**134/mes** en MONTOS. Con **~1.000 SMS/mes** a **USD 0,16/SMS VE**, el benchmark jun 2026 sugiere **+USD 100–130/mes** vs placeholder — cubrir con **contingencia §2.3** o revisar tier **118k** con FP&A. **No** recalcular [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 desde esta nota.
+
 ### 2.4 Total Lean 12 meses
 
 | Concepto | USD |

@@ -1,6 +1,6 @@
 # Montos de referencia validados con fuentes de internet
 
-> **Última actualización:** 27 mayo 2026.
+> **Última actualización:** 21 junio 2026 (auditoría forense v3 + refresh web).
 > Documento que lista las fuentes web públicas de cada cifra utilizada en el pack.
 > Cada precio o métrica venezolana puede variar mensualmente por inflación (macro 2026: **desaceleración oficial BCV** vs. escenarios externos pesimistas 387-618%). **Reconfirmar trimestralmente.**
 
@@ -16,6 +16,8 @@
 | CAGR 2026-2032 | **6,1%** anual | [Statista Venezuela Pharmaceutical Market](https://www.statista.com/study/47924/pharmaceutical-market-in-latin-america/) |
 | Genéricos Rx % del total | **48,3%** | Cifar 2025 |
 | OTC % del total | **35,2%** | Cifar 2025 |
+| Precio promedio / unidad VE 2025 | **~USD 4,21** | Faro Farmacéutico / Grupo LETI vía prensa 2025 — [Revista Business VE](https://www.revistabusinessvenezuela.com/produccion-local-aporta-el-74-del-repunte-del-mercado-farmaceutico-en-venezuela-en-2025/) |
+| Crecimiento ene-abr 2026 (unidades) | **+13,49% YoY** (130,4M u acum.) | [Descifrado / Faro Farmacéutico](https://www.descifrado.com/2026/05/28/faro-farmaceutico-mercado-de-medicamentos-en-el-pais-crecio-1349-en-primer-cuatrimestre/) |
 
 **Nota:** **Cifar** publica las series del mercado VE citando datos **IMS/IQVIA**. En agosto 2025 reportó **+20,66% YoY** ene-ago y proyección anual **+17,7%**; el **H1 2025** superó la proyección con **+23,4%** (prensa especializada). Para el data room del inversor se recomienda anexar comunicados Cifar originales al cierre.
 
@@ -24,7 +26,7 @@
 | Dato | Valor | Fuente |
 |---|---|---|
 | Inflación oficial 2025 (cierre) | ~190% | [BCV Venezuela](https://www.bcv.org.ve/) |
-| **Inflación mensual observada 2026 (BCV, hasta abril)** | **ene +32,6% / feb +14,7% / mar +13,1% / abr +10,6%** | Comunicados BCV / prensa económica VE mayo 2026 |
+| **Inflación mensual observada 2026 (BCV, hasta mayo)** | **ene +32,6% / feb +14,7% / mar +13,1% / abr +10,6% / may +6,3%** | Comunicados BCV / prensa económica VE jun 2026 |
 | **Proyección oficial BCV mayo 2026** | **Inflación mensual de un dígito desde mayo 2026** | [Banca y Negocios — presidente BCV](https://www.bancaynegocios.com/presidente-e-bcv-podemos-esperar-que-a-partir-de-mayo-empecemos-a-tener-inflacion-de-un-digito-en-el-pais/), [El Nacional](https://www.elnacional.com/2026/05/bcv-proyecta-inflacion-de-un-digito-en-venezuela-a-partir-de-mayo/) |
 | Lectura macro base (orden de magnitud) | Si la trayectoria oficial se mantiene, **acumulado anual 2026** puede ubicarse en **orden ~134-220%** (vs. escenarios externos pesimistas 387-618%). | Consolidación pack — contrastar trimestralmente con BCV |
 | Inflación proyectada 2026 — escenario **pesimista** (Anova) | **387% - 618%** | [Anova Policy Research](https://anova-policy.org/) |
@@ -53,17 +55,17 @@
 | Servicio | Plan recomendado | USD/mes | Fuente |
 |---|---|---|---|
 | **VPS Nameshared** (Laravel + MySQL; prod piloto) | Plan VPS según RAM/vCPU | USD 20-35 *(cotizar)* | Alineado [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §2.4 — sustituye DigitalOcean en pack vigente |
-| Pusher Channels Startup | 200 conn / 100k msg/día | USD 49 | [Pusher Pricing](https://pusher.com/pricing) |
+| Pusher Channels Startup | **500 conn / 1M msg/día** | USD 49 | [Pusher Pricing](https://pusher.com/channels/pricing/) |
 | Firebase Cloud Messaging | Spark (gratis) | USD 0 | [Firebase Pricing](https://firebase.google.com/pricing) |
-| Firebase Phone Auth (SMS OTP registro paciente) | Blaze (pay-as-you-go); tarifa SMS por país | USD 15-40 *(~1.000 verif./mes piloto)* | [Firebase Auth pricing](https://firebase.google.com/pricing) — sustituye YCloud en pack vigente |
-| Google Maps Platform | $200 free monthly credit | USD 0-15 | [Google Maps Pricing](https://mapsplatform.google.com/pricing/) |
-| SendGrid Email Free | 100/día | USD 0 | [SendGrid Pricing](https://sendgrid.com/pricing/) |
+| Firebase Phone Auth (SMS OTP registro paciente) | Blaze (pay-as-you-go); tarifa SMS por país | **USD ~0,16/SMS VE** → **~USD 160/mes** *(~1.000 verif./mes piloto)* | [Firebase Auth pricing](https://firebase.google.com/pricing) — sustituye YCloud; **no** usar rango 15–40 obsoleto |
+| Google Maps Platform | Pay-as-you-go + caps gratuitos por SKU *(mar 2025: fin crédito global USD 200)* | USD 0-15 | [Maps billing overview](https://developers.google.com/maps/billing-and-pricing/overview) |
+| SendGrid Email | Essentials o API desde **~USD 19,95/mes** *(Free 100/día discontinuado dic 2025)* | USD 0–20 | [Twilio SendGrid changelog dic 2025](https://sendgrid.com/en-us/blog/sendgrid-free-plan); [SendGrid Pricing](https://sendgrid.com/pricing/) |
 | Notion Plus | 5 usuarios | USD 40-50 | [Notion Pricing](https://www.notion.so/pricing) |
 | Slack Free | unlimited usuarios, retención 90 días | USD 0 | [Slack Pricing](https://slack.com/pricing) |
 | GitHub Team | 5 usuarios | USD 20 | [GitHub Pricing](https://github.com/pricing) |
-| Domain + email corp Google Workspace Business Starter | 6 USD/usuario | USD 12-30 | [Google Workspace Pricing](https://workspace.google.com/pricing) |
+| Domain + email corp Google Workspace Business Starter | **USD 7–8,40/usuario** *(promo nuevos: ~50% 3 meses)* | USD 14–42 *(2–5 usuarios)* | [Google Workspace Pricing](https://workspace.google.com/pricing) |
 
-**Total hosting + SaaS Base:** ~USD 134/mes.
+**Total hosting + SaaS Base (jun 2026):** **~USD 280–310/mes** *(desglose arriba)*. Reconciliación con modelo financiero: [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.3.1 — fila **234/mes** (oficina + SaaS conservador; delta SMS documentado).
 
 ## 5. Inmueble en Carabobo (San Diego / Av. Bolívar Norte)
 
@@ -92,8 +94,9 @@
 
 | Métrica | Valor VE 2025-2026 | Fuente |
 |---|---|---|
-| CPM Meta Ads VE | USD 0,80-2,50 | [Meta Business Insights LatAm 2025](https://www.facebook.com/business/) |
-| CPC Meta Ads VE | USD 0,03-0,12 | Meta Business VE benchmarks |
+| CPM Meta Ads VE — escenario pack (LatAm ref.) | USD 0,80-2,50 | Meta Business LatAm benchmarks 2025 |
+| CPM Meta Ads VE — escenario agencia local VE | **USD 0,10-0,30** | [Perinoladesign VE 2025](https://perinoladesign.com.ve/cuanto-invertir-en-anuncios-de-instagram-y-facebook-en-venezuela-en-2025/) |
+| CPC Meta Ads VE | USD 0,01-0,12 | Agencia VE / Meta benchmarks |
 | **CPL Meta Ads VE (B2C farmacéutico)** | **USD 0,15-0,60** | Estimación basada en [Hootsuite LatAm Digital Report 2025](https://www.hootsuite.com/research) y casos prácticos LatAm |
 | CPL Google Ads VE (search) | USD 0,30-0,90 | [Google Ads VE benchmarks 2025](https://ads.google.com/) |
 | CPL TikTok Ads VE | USD 0,20-0,80 | [TikTok For Business](https://www.tiktok.com/business/) regional 2025-2026 |
@@ -154,16 +157,16 @@ Detalle en [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md).
 | Dato | Valor | Fuente |
 |---|---|---|
 | Comisión Pharmacy LatAm | **25-35% del GMV** | [Rappi for Restaurants & Brands](https://about.rappi.com/es) |
-| Países opera | 10+ (incluye Venezuela) | About Rappi |
+| Países opera | **CO, MX, PE, AR, BR, CL, CR, EC, UY** — **no Venezuela** (jun 2026) | About Rappi / App Store |
 | Total VC raised | USD 2.7B+ | Crunchbase Rappi |
-| Foco VE | Cadenas premium (Farmatodo, Locatel) | Public listing |
+| Foco VE | **N/A** — agregador VE = **PedidosYa** §10.3 | [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md) §5.4 |
 
 ### 10.3 PedidosYa (Delivery Hero)
 
 | Dato | Valor | Fuente |
 |---|---|---|
 | Comisión Pharmacy | **20-30% del GMV** | Public reports Delivery Hero |
-| Operación VE | Activa desde 2023 | Web pedidosya.com |
+| Operación VE | Activa desde 2023; **Valencia en cobertura**; 700K+ MAU (oct-2025) | [Descifrado / PedidosYa](https://www.descifrado.com/2025/10/29/pedidos-ya-celebra-5-anos-de-crecimiento-con-mas-de-700-mil-usuarios-activos-en-venezuela/) |
 
 ## 11. Churn benchmarks SaaS B2B SMB LatAm
 

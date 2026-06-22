@@ -93,7 +93,7 @@ Detalle del modelo en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.m
 | Actor | Segmento | Modelo | ¿Target Zonix piloto? | Ventaja Zonix |
 |-------|----------|--------|----------------------|---------------|
 | Farmatodo / Locatel | Cadena premium | App propia cerrada | No (eventual Enterprise) | Independientes sin app |
-| Rappi / PedidosYa Pharmacy | Agregador | 25–35% GMV | Parcial (grandes) | Cuota + % GMV bajo; Rx digital |
+| PedidosYa Pharmacy | Agregador activo VE | 25–35% GMV *(estimado)* | Parcial (cadenas + independientes) | Cuota + % GMV bajo; Rx digital |
 | Farmalisto (LatAm) | Marketplace pharma | % venta | Referencia internacional | Híbrido + VE + piloto local |
 | WhatsApp informal | Farmacia | Cero tech | Sí (migración) | Trazabilidad + Rx + tracking |
 
@@ -118,22 +118,23 @@ Detalle del modelo en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.m
 - Modelo: comisión sobre ventas + delivery. NO membresía fija.
 - Lectura para el inversor: el modelo marketplace farmacéutico LatAm ES financiable a esa escala. Zonix Pharma se posiciona con **modelo híbrido** (cuota fija baja + % moderado sobre GMV en la app) frente al take-rate típico por venta de modelos tipo Farmalisto o agregadores de delivery.
 
-### 5.4 Rappi Pharmacy
+### 5.4 PedidosYa Pharmacy *(agregador activo en VE)*
 
-- Vertical farmacéutico de Rappi, presente en VE desde 2022.
-- Modelo: comisión 25-35% sobre GMV.
-- Cobertura: solo cadenas premium (Farmatodo, Locatel) y algunas independientes grandes.
-- Lectura para el inversor: una farmacia que vende USD 5.000/mes en Rappi paga USD 1.250-1.750 en comisión típica. Con Zonix Pharma paga **cuota fija + % moderado sobre GMV en la app** ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5); el costo total para la farmacia suele ser **órden de magnitud menor** que el take-rate del agregador.
+- Vertical farmacéutico de **PedidosYa** (Delivery Hero), operativo en VE desde 2023; **Valencia en cobertura** (oct-2025: 700K+ MAU, 2.500+ comercios en plataforma).
+- Modelo: comisión sobre GMV (orden de magnitud **25–35%** según categoría/contrato — validar con farmacias aliadas).
+- Cobertura: cadenas (p. ej. SAAS, FarmaGo) e independientes en marketplace generalista.
+- Lectura para el inversor: una farmacia que vende USD 5.000/mes en PedidosYa puede pagar **USD 1.250–1.750** en comisión típica. Con Zonix Pharma paga **cuota fija + % moderado sobre GMV en la app** ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5); el costo total suele ser **menor** que el take-rate del agregador.
 
-### 5.5 PedidosYa Pharmacy
+> **Nota factual (jun 2026):** **Rappi no opera en Venezuela** (sin presencia comercial en país; excluido por riesgo legal según prensa sector). No usar Rappi como competidor directo VE en materiales inversor.
 
-- Vertical farmacéutico de PedidosYa (Delivery Hero), presente en VE desde 2023.
-- Modelo similar a Rappi (comisión sobre GMV).
-- Mismo diferencial vs. **Zonix Pharma**.
+### 5.5 Otros agregadores / referencia LatAm
+
+- **Rappi Pharmacy:** referencia LatAm (CO, MX, etc.) — **no competidor VE**.
+- **Farmalisto:** marketplace farmacéutico LatAm — **no opera VE** (ver §5.3).
 
 ### 5.6 Tabla comparativa
 
-| Aspecto | Farmatodo / Locatel | Rappi / PedidosYa | Farmalisto | **Zonix Pharma** |
+| Aspecto | Farmatodo / Locatel | **PedidosYa** *(VE)* | Farmalisto | **Zonix Pharma** |
 |---|---|---|---|---|
 | Tipo | Cadena propia | Marketplace generalista | Marketplace farmacéutico | **Marketplace farmacéutico VE** |
 | Target VE | Clase media-alta | Cadenas premium | No opera VE | **Farmacias independientes y cadenas pequeñas-medianas** |
@@ -192,7 +193,7 @@ El piloto combina **dos focos geográficos** dentro de Valencia metro: **Urb. Be
 |---|---|---|---|
 | Maracay | ~250 | 1,2M | Cercanía geográfica con Valencia, expansión natural. |
 | Maracaibo | ~400 | 1,4M | Mercado grande pero requiere base operativa local. |
-| Caracas | ~700 | 2,9M | Mercado más grande pero competencia directa Rappi/PedidosYa más fuerte. |
+| Caracas | ~700 | 2,9M | Mercado más grande pero competencia directa **PedidosYa** más fuerte. |
 | Barquisimeto | ~200 | 1,0M | Ciudad mediana, sin competencia digital fuerte. |
 
 **Plan año 2:** Maracay (mes 13) + Maracaibo (mes 18). Caracas y Barquisimeto en año 3.
@@ -217,14 +218,14 @@ Estos números asumen:
 |---|---|---|
 | Devaluación bolívar > 100% trimestral | Media | Buffer 20%. Plan contingencia documentado. |
 | Regulación nueva sobre marketplaces | Baja-media | Asesor regulatorio externo USD 120/mes en **Base (118k) y Growth (135k)** — no en Lean 101k. Founder revisa Gaceta semanalmente. |
-| Rappi o PedidosYa hace agresivo el descuento | Media | Nuestro modelo (fija + % bajo sobre GMV app) es estructuralmente más barato que su comisión plena; no podemos perder en precio vs agregador. |
+| PedidosYa agresivo en descuento / comisión | Media | Modelo Zonix (fija + % bajo sobre GMV app) estructuralmente más barato que comisión plena agregador; benchmark real = PedidosYa VE, no Rappi. |
 | Farmatodo lanza marketplace propio | Baja | Su DNA es retail propio, no marketplace. Tomarían 18-24 meses construirlo y entonces nosotros ya tenemos PMF. |
 | Adopción inicial < 50% del plan | Media | Pivote táctico: bajamos Sales B2B fijo, subimos comisión por farmacia firmada. |
 | Inflación supera el buffer 20% | Media-alta | Plan: cortar valla publicitaria primero, bajar 1 hire, renegociar alquiler HQ. Mantiene runway 9-10 meses en lugar de 12. |
 
 ## 10. Resumen para el inversor
 
-> Mercado farmacéutico VE: USD 1.638M/año (Cifar / IMS-IQVIA), creciendo +17,49% en unidades. 226 farmacias en Valencia metro, 30-50 en la zona piloto inicial. Comparable internacional (Farmalisto): ~USD 32M revenue; funding reportado ~USD 22M (hasta ~USD 33M según fuente). Diferencial: **cuota plataforma + % GMV moderado** vs. comisión 25-35% de Rappi. Unit economics resumidos en [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) (CAC **139**, LTV/CAC **~7,2x** con ARPF placeholder **~50**). Validación Rx digital + cadena de frío + multi-sucursal son **atributos del producto piloto** frente a agregadores genéricos — *[PENDIENTE dictamen abogado + farmacéutico asesor]* para claims regulatorios en materiales externos.
+> Mercado farmacéutico VE: USD 1.638M/año (derivado Cifar/Faro: 389M u × ~USD 4,21). 226 farmacias en Valencia metro *(reconciliar vs ~187 ciudad / ~290 Carabobo — SmartScraper abr-2026)*. Comparable internacional (Farmalisto): ~USD 32M revenue; funding ~USD 22–33M. Diferencial: **cuota plataforma + % GMV moderado** vs. comisión **PedidosYa** (~25–35% GMV). Unit economics: [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) (CAC **139**, LTV/CAC **~7,2x**, ARPF **~50**). Validación Rx digital + cadena de frío + multi-sucursal — *[PENDIENTE dictamen abogado + farmacéutico asesor]*.
 
 Documentos hermanos relevantes:
 - [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md): qué decir a la farmacia.

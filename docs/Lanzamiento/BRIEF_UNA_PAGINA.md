@@ -26,7 +26,7 @@
 **Para la farmacia mediana o independiente** *(problema externo: visibilidad, costo agregador, operación)*
 
 1. **Competir sin app propia** frente a cadenas premium (Farmatodo, Locatel) y agregadores, sin marketplace ni delivery integrado.
-2. **Comisión alta en agregadores:** Rappi / PedidosYa suelen cobrar **25–35%** del GMV digital; paga mucho sin herramientas propias de gestión.
+2. **Comisión alta en agregadores:** **PedidosYa** (VE) suele retener **20–30%** del GMV digital; paga mucho sin herramientas propias de gestión. *(Rappi: referencia LatAm, no opera en VE.)*
 3. **Operación fragmentada:** órdenes, inventario, comprobantes y Rx en WhatsApp y papel; poca trazabilidad y retrabajo.
 4. **Captación limitada:** depende del tráfico a pie; poca coordinación entre marketing digital y presencia física.
 5. **Compras a droguerías sin comparador:** catálogos en PDF/WhatsApp — *módulo proveedores en roadmap Año 1 (no piloto)*.
@@ -39,16 +39,16 @@
 
 1. **Mercado pharma VE está en recuperación post-crisis:** +17,49% YoY en unidades 2024-2025 (**Cifar**, datos IMS/IQVIA). Hace 2 años el mercado se contraía; en 2 años más estará cubierto por competidores digitales. **2026 es la ventana.**
 2. **Stack ya construido:** el **stack Zonix Pharma** lleva ~4 años de desarrollo; el **fork al vertical farmacia** (capa Rx, roles Pharma) equivale a **~30–45 días de esfuerzo de producto** ya invertido — **no** confundir con **Fase 0 = T+90** (legal, equipo, onboarding farmacias y release en tiendas antes de Day-D — [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md)).
-3. **Competencia digital débil en VE:** Rappi y PedidosYa Pharmacy solo cubren cadenas premium. Farmatodo y Locatel no abren marketplace. **Early mover** en farmacias medianas e independientes (Valencia metro) — mercado **existente**, no categoría nueva ([CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md) §2.9).
+3. **Competencia digital débil en VE:** **PedidosYa Pharmacy** cubre cadenas e independientes en marketplace generalista. Farmatodo y Locatel no abren marketplace B2B. **Early mover** en farmacias medianas e independientes (Valencia metro) — mercado **existente**, no categoría nueva ([CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md) §2.9).
 4. **Métodos de pago manuales VE están maduros:** Pago Móvil C2P + Zelle + Binance Pay USDT cubren el 95% de la población bancarizada. Hace 5 años no era posible.
 
 ## Diferenciadores claros
 
-- **Modelo B2B híbrido en USD** (cuota fija **25 / 40 / 55** + porcentaje moderado sobre GMV en app según banda): estructuralmente muy por debajo del take-rate 25-35% GMV de Rappi o PedidosYa Pharmacy. Detalle en [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5.
+- **Modelo B2B híbrido en USD** (cuota fija **25 / 40 / 55** + porcentaje moderado sobre GMV en app según banda): estructuralmente muy por debajo del take-rate **20–30% GMV** típico de **PedidosYa** en VE. Detalle en [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5.
 - **Validación Rx por farmacéutico colegiado de la propia farmacia** dentro de la app, ya construida en backend. Modelo alineado a regulación farmacéutica VE *[PENDIENTE dictamen abogado + farmacéutico asesor antes de Day-D]*; Zonix **no** sustituye al farmacéutico titular de la farmacia.
 - **Métodos de pago manuales VE soportados nativos:** Pago Móvil C2P, transferencia, Zelle, Binance Pay USDT — sin pasarelas internacionales caras, sin Stripe, sin necesidad de cuenta empresarial extranjera para operar.
 - **Stack en staging/VPS** (go-live público T+7–12 Fase 0): backend con **443** tests pasando (re-verificar pre-reunión); frontend Flutter sin issues en analyze; Pusher + FCM integrados en código. **Release tiendas + Firebase OTP (SMS):** hitos **T+7–12** de Fase 0 — no asumir Play/App Store el día del wire ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md), [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md)).
-- **Equipo lean:** **9 FTE** + **2 freelance** en tier **Lean 101k** (detalle en tabla siguiente). Runway **12 meses** con **USD 101k** (mínimo viable). **Recomendado:** **USD 118k** (Base). Founder técnico: **Abrahan Pulido**.
+- **Equipo lean:** **8 FTE** + **2 freelance** en tier **Lean 101k** (detalle en tabla siguiente). Runway **12 meses** con **USD 101k** (mínimo viable). **Recomendado:** **USD 118k** (Base). Founder técnico: **Abrahan Pulido**.
 
 ### Liquidez y defensibilidad (marketplace)
 
@@ -114,11 +114,11 @@ Detalle completo y construcción mes a mes en [PROYECCION_FINANCIERA_12M.md](PRO
 
 ### Sensibilidad del modelo
 
-| Escenario | Tasa firma/mes | Churn | ARPF* | Equilibrio mensual (ref.) | Cash cierre año 1 |
-|---|---|---|---|---|---|
-| Pesimista (probabilidad 20%) | **~50% plan** *(~8 firmas/mes ref.)* | 7% | USD 40 | Post-M11 + bridge | **~USD 25–32k** cash cierre A1 (orden magnitud vs. central **~42.209**; [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §7.1) |
-| **Base (probabilidad 50%)** | **~15**/mes post-Day-D | **5%** | **USD ~50** | **M11** (§1.1–§1.4 PROYECCION) | **~USD 42.209** |
-| Optimista (probabilidad 30%) | 12-20 | 4% | USD 55 | Antes si mix/GMV mejora | **~USD 48–55k** (orden magnitud; alineado §7.3 [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md); refinar FP&A) |
+| Escenario | Tasa firma/mes | Churn | ARPF* | Activas M12 (ref.) | Revenue M12 (ref.) | Equilibrio mensual (ref.) | Cash cierre año 1 |
+|---|---|---|---|---|---|---|---|
+| Pesimista (probabilidad 20%) | **~50% plan** *(~8 firmas/mes ref.)* | 7% | USD 40 | **~80** | **~USD 3.200** | Post-M11 + bridge | **~USD 25–32k** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §7.1) |
+| **Base (probabilidad 50%)** | **~15**/mes post-Day-D | **5%** | **USD ~50** | **~159** | **~USD 7.950** | **M11** (~151 activas) | **~USD 42.209** |
+| Optimista (probabilidad 30%) | **130% plan** *(ref. §7.3)* | 4% | USD 55 | **~207** | **~USD 11.385** | Antes si mix/GMV mejora | **~USD 48–55k** (§7.3 PROYECCION) |
 
 \*Misma convención que la tabla anterior: ARPF es **referencia provisional** hasta recalibrar con GMV real y modelo híbrido ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5).
 

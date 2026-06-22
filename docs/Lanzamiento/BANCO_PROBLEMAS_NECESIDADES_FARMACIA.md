@@ -35,7 +35,7 @@
 | P7 | No tiene catálogo digital ordenado con precios consultables | Sí |
 | P8 | El cliente joven compra donde puede pedir por app y él no puede ofrecerlo | Sí |
 | P9 | Las cadenas grandes (Farmatodo, Locatel) capturan al cliente digital | Sí |
-| P10 | Los agregadores (Rappi/PedidosYa) cobran 25–35% de comisión sobre GMV | Sí |
+| P10 | Los agregadores (**PedidosYa** VE) cobran **20–30%** de comisión sobre GMV | Sí |
 | P11 | Si entra a un agregador, pierde la relación directa con su cliente | Parcial |
 | P12 | No sabe qué productos buscan los clientes que nunca llegaron a entrar | Parcial |
 

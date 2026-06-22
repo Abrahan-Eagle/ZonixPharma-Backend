@@ -53,7 +53,7 @@
 | P1-12 | **Smoke E2E** OTC + Rx documentado | Founder + CTO | PLAN_MODULO §18 | — |
 | P1-13 | Sección **liquidez / chicken-and-egg** en CONTEXTO §2.10 + BRIEF | Founder | **Cerrado** jun 2026 — ver CONTEXTO §2.10 |
 | P1-14 | Sección **moat / defensibilidad** en CONTEXTO §2.11 + BRIEF | Founder | **Cerrado** jun 2026 — ver CONTEXTO §2.11 |
-| P1-15 | **mom-test pricing** (≥3 entrevistas cuota 25/40/55) antes Day-D | Founder | **Cerrado** jun 2026 — PLAN §4.0; evidencia = minutas Sales (VOLCADO §3) |
+| P1-15 | **mom-test pricing** (≥3 entrevistas cuota 25/40/55) antes Day-D | Founder | PLAN §4.0 fila 5 | §5.1 notas Sales — **PENDIENTE** evidencia en VOLCADO (no marcar cerrado hasta minutas) |
 
 ---
 
@@ -97,15 +97,16 @@ Completar en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARI
 | §1 Founder | Cédula/edad opcional; GitHub; % tiempo | P0 |
 | §2 Inversor | Todo el bloque | P2 (cuando haya lead) |
 | §3 Inmueble + valla | 3 opciones HQ + proveedor valla | P1 |
-| §4 Sales (×4) | Entrevistas y decisión | P1 |
-| §5 CS+CM | Candidatos | P1 |
-| §6 Marketing | Candidatos | P1 |
-| §7 Coordinador Partners | Candidatos | P1 |
-| §8 Abogado / Contador | Cotizaciones | P1 |
+| §4 Valla publicitaria | Proveedor + cotización | P1 |
+| §5.1 Sales (×4) | Entrevistas y decisión | P1 |
+| §5.2 CS+CM | Candidatos | P1 |
+| §5.3 Marketing | Candidatos | P1 |
+| §5.4 Coordinador Partners | Candidatos | P1 |
+| §5.5–5.6 Abogado / Contador | Cotizaciones | P1 |
 | §6 Farmacias (tabla 1–8) | Pipeline real | P1 |
-| §9 Repartidores (tabla) | Partners logística | P1 |
-| §10 Calendario T+X | Fechas absolutas post-cierre | P1 |
-| §11 Notas libres | — | — |
+| §7 Repartidores (tabla) | Partners logística | P1 |
+| §8 Cronograma T+X | Fechas absolutas post-cierre | P1 |
+| §9–§10 Decisiones / notas | — | P1 / — |
 
 ---
 
@@ -130,7 +131,7 @@ Completar en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARI
 4. P2-* cuando exista inversor concreto.  
 5. P1-12 smoke + P3 regulatorio antes de tráfico pagado masivo.
 
-**Cerrados jun 2026:** P1-13 liquidez · P1-14 moat · P1-15 mom-test pricing — CONTEXTO §2.10–§2.11; PLAN §4.0.
+**Cerrados jun 2026:** P1-13 liquidez · P1-14 moat — CONTEXTO §2.10–§2.11. **P1-15 mom-test pricing:** reabierto (sin evidencia VOLCADO §5.1).
 
 **Mejoras UniMOOC (11 jun 2026 — Steve Blank, ver `docs/zonix/ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md`):**
 
@@ -204,6 +205,13 @@ Completar en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARI
 | AUD-v2-14 | AUD-02 BRIEF sensibilidad optimista M12 | FP&A |
 | AUD-v2-15 | AUD-04 PROYECCION §3.3 puente 480k | FP&A |
 | AUD-v2-16 | Smoke E2E manual ejecutado y firmado (P1-12) | Founder + CTO |
+| AUD-v3-01 | MONTOS SaaS vs PRESUPUESTO — **reconciliado** con nota §2.3.1 (sin recalcular PROYECCION) | FP&A |
+| AUD-v3-02 | P1-15 mom-test reabierto (sin evidencia VOLCADO §5.1) | Founder |
+| AUD-v3-pack | Autofix v3 (7 archivos) — [informe](../AUDIT_FORENSE_PACK_LANZAMIENTO_v3_2026-06-21.md) | Jarvis jun 2026 |
+| AUD-v3-R3 | PERFIL: Rappi → PedidosYa VE; Faro TAM; CPM dual | Jarvis jun 2026 |
+| AUD-v3-R4 | PLAN_REGULATORIO: Ley Datos 2025 → marco disperso VE | Jarvis + [PENDIENTE abogado] |
+| AUD-v3-R4b | Brecha e-commerce farmacéutico sin norma habilitante explícita | [PENDIENTE abogado] — CHECKLIST §7 |
+| AUD-v3-olas4-7 | Rappi→PedidosYa transversal + PRESUPUESTO §2.3.1 + PLAN_MODULO §14.6 | Jarvis jun 2026 |
 
 ---
 

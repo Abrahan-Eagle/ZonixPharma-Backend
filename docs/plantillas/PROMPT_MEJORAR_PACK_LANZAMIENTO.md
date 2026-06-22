@@ -5,7 +5,7 @@
 > **Destino:** solo `docs/Lanzamiento/` (+ actualizar `docs/Lanzamiento/ANALISIS_FORENSE.md` al cerrar cada pasada)  
 > **Uso:** copiar la sección **«Pega en Cursor»** al final en un chat nuevo. Adjuntar con `@` los archivos listados en §K.
 
-**Relacionado:** creación desde cero → [PROMPT_PACK_LANZAMIENTO_INVERSOR.md](PROMPT_PACK_LANZAMIENTO_INVERSOR.md). Pack vigente → [../Lanzamiento/README.md](../Lanzamiento/README.md).
+**Relacionado:** creación desde cero → [PROMPT_PACK_LANZAMIENTO_INVERSOR.md](PROMPT_PACK_LANZAMIENTO_INVERSOR.md). **Auditoría forense masiva (25×1 + research web + juez mayor)** → [PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md](PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md). Pack vigente → [../Lanzamiento/README.md](../Lanzamiento/README.md).
 
 ---
 
@@ -52,7 +52,7 @@ Modelo vigente **mayo 2026**. Si detectas divergencia, **propón** corrección c
 | ARPF placeholder | **~50** | **~50** | **~50** |
 | Waiver B2B proxy (10×2×cuota) | **~453** | — | — |
 | Caja M12 con waiver | **~41.756** | — | — |
-| Tests backend (evidencia) | **399** passed | verificar con `php artisan test` o `./vendor/bin/phpunit` | actualizar VOLCADO §1.2 |
+| Tests backend (evidencia) | **443+** passed (jun 2026) | verificar con `php artisan test` o `./vendor/bin/phpunit` | actualizar VOLCADO §1.2 |
 
 **Regla PROYECCION:** tabla **M1–M12 mes a mes solo en Lean** §1.1. Base/Growth = delta en [PRESUPUESTO_12_MESES_REFERENCIA.md](../Lanzamiento/PRESUPUESTO_12_MESES_REFERENCIA.md) §1.1.
 
@@ -60,7 +60,9 @@ Modelo vigente **mayo 2026**. Si detectas divergencia, **propón** corrección c
 
 ---
 
-## §D — Inventario del pack (22 archivos)
+## §D — Inventario del pack (25 archivos en raíz)
+
+> Para auditoría forense paralela (25 workers + research web), usar [PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md](PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md) §D (tabla completa con olas).
 
 | # | Archivo | Prioridad mejora |
 |---|---------|------------------|
@@ -281,7 +283,7 @@ Copia desde aquí hasta el final del bloque:
 
 ---
 
-**Contexto:** Mejora del pack inversor **Zonix Pharma** en `ZonixPharma-Backend/docs/Lanzamiento/` (22 archivos). Sigue el prompt meta [docs/plantillas/PROMPT_MEJORAR_PACK_LANZAMIENTO.md](PROMPT_MEJORAR_PACK_LANZAMIENTO.md) — §A a §K.
+**Contexto:** Mejora del pack inversor **Zonix Pharma** en `ZonixPharma-Backend/docs/Lanzamiento/` (**25 archivos** `.md` en raíz). Sigue el prompt meta [docs/plantillas/PROMPT_MEJORAR_PACK_LANZAMIENTO.md](PROMPT_MEJORAR_PACK_LANZAMIENTO.md) — §A a §K. Para auditoría forense masiva → [PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md](PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md).
 
 **Reglas rápidas:**
 - Producto del pitch = **solo Zonix Pharma** (`zonixpharma.com`). Portfolio con **Corral X** = OK en CV/VOLCADO.
@@ -290,7 +292,7 @@ Copia desde aquí hasta el final del bloque:
 - **No** inventar `[PENDIENTE]` del founder ni métricas de piloto.
 - Flujo: auditoría → lista P0–P2 → **esperar mi OK** → editar → actualizar ANALISIS_FORENSE (pasada N) → verificar cascada de anclas.
 
-**Anclas (no cambiar):** Lean **101k**, cap **600k**, Fase 0 **~28.057**, caja Day-D **~72.943**, equilibrio **M11 ~151**, M12 **~42.209**, waiver **~453**, tests **399**.
+**Anclas (no cambiar):** Lean **101k**, cap **600k**, Fase 0 **~28.057**, caja Day-D **~72.943**, equilibrio **M11 ~151**, M12 **~42.209**, waiver **~453**, tests **443+** (verificar CI).
 
 **Skills:** `zonix-startup-context`, `zonix-financial-model`, `zonix-investor-materials`, `zonix-lanzamiento-roles`.
 

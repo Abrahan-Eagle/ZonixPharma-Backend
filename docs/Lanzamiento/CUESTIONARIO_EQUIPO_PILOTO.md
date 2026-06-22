@@ -31,7 +31,7 @@ Criterio de selección transversal: capacidad de **escuchar y registrar hechos**
 1. ¿Cuánto tiempo llevas en tu rol actual o más reciente?
 2. ¿Has trabajado en startups antes? Cuáles y por cuánto tiempo.
 3. ¿Has trabajado en sector farmacéutico o salud antes? Detalla.
-4. ¿Has trabajado en marketplaces (Rappi, PedidosYa, Yummy)? Detalla.
+4. ¿Has trabajado en marketplaces (PedidosYa, Yummy, otros)? Detalla.
 
 ### 1.3 Compensación esperada
 
@@ -65,13 +65,13 @@ Criterio de selección transversal: capacidad de **escuchar y registrar hechos**
 
 ### 2.2 Conocimiento del sector
 
-1. ¿Conoces el modelo de negocio de Rappi y PedidosYa Pharmacy?
+1. ¿Conoces el modelo de negocio de **PedidosYa Pharmacy** en VE?
 2. ¿Sabes qué % de comisión cobran a las farmacias?
 3. ¿Conoces farmacias independientes en Valencia que podrían ser interesantes?
 
 ### 2.3 Caso práctico
 
-> Llamas a una farmacia mediana. El dueño te dice: "Ya estoy en Rappi, no me interesa otro marketplace". ¿Cómo respondes?
+> Llamas a una farmacia mediana. El dueño te dice: "Ya estoy en PedidosYa, no me interesa otro marketplace". ¿Cómo respondes?
 
 **Caso práctico 2 (discovery mom-test — eliminatorio):**
 

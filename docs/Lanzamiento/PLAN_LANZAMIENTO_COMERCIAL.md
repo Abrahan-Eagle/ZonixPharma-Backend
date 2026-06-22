@@ -149,7 +149,7 @@ Regla: pivot documentado en VOLCADO + nota founder; **no** pivotar por una sola 
 
 ### 4.0 Validación pre-Day-D (Customer Development + mom-test)
 
-Checklist **antes** de tráfico masivo. Documentar solo entrevistas reales en VOLCADO / CRM.
+Checklist **antes** de tráfico masivo. Documentar solo entrevistas reales en VOLCADO / CRM. **Smoke técnico Rx/OTC:** [../SMOKE_RX_E2E.md](../SMOKE_RX_E2E.md) (REGISTRO P1-12) antes de fila **Go Day-D**.
 
 | Paso | Validación | Evidencia mínima |
 |------|------------|------------------|
@@ -221,7 +221,7 @@ Criterios para considerar el piloto exitoso:
 |---|---|
 | Farmacias activas | ≥ **97** (alineado a curva agresiva **M6** post-Day-D — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1) |
 | Pedidos completados | ≥ 1.500 |
-| Tiempo promedio entrega | ≤ 90 min |
+| Tiempo promedio entrega | ≤ 90 min *[PENDIENTE SLA partner — acordar con `delivery_company` antes Day-D]* |
 | Validación Rx promedio | ≤ 60 min |
 | NPS B2C | ≥ 35 |
 | NPS B2B | ≥ 50 |

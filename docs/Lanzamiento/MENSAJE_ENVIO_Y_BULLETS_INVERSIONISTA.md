@@ -123,7 +123,7 @@ Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 
 > **Slide 8: Ask**
 > - **USD 101.000** SAFE cap **600.000** (~**16,83%**).
-> - Recomendado: **118k / 650k** (~**18,15%**). Acelerado: **135k / 720k**.
+> - Recomendado: **118k / 650k** (~**18,15%**). Acelerado: **135k / 720k** (~**18,75%**).
 > - Sin valuación arbitraria. Plazo cierre: 21-30 días.
 
 ## 5. Bullets para Q&A (cobertura defensiva)
@@ -146,7 +146,7 @@ Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 > - Estructuralmente no pueden. Su unit economics requiere comisión > 20%.
 
 > "¿Y si Farmalisto entra a VE?"
-> - Probable año 2-3. Para entonces tenemos PMF + barrera operativa local.
+> - Probable año 2-3. Para entonces buscamos **PMF operativo local** + barrera operativa (hipótesis post-piloto Day-D).
 
 ## 6. Glosario express (si el inversor no es del rubro)
 
@@ -169,7 +169,7 @@ Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 |---|---|
 | Capital pedido | **USD 101.000** (Lean) · **118.000** (Base rec.) · **135.000** (Growth) |
 | SAFE post-money cap | **600k / 650k / 720k** |
-| Equity implícito | **~16,83%** |
+| Equity implícito | **~16,83%** (Lean) · **~18,15%** (Base) · **~18,75%** (Growth) |
 | Equilibrio mensual (revenue ≥ burn) | **M11** (§1.4 PROYECCION) |
 | Farmacias activas ref. | **~159** mes 12 modelo; **~151** en **M11** (equilibrio) |
 | ARPF | **~USD 50/mes** *(placeholder; cobro real = híbrido cuota 25/40/55 + % GMV hasta piloto)* |

@@ -59,6 +59,8 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 
 ---
 
+## 1. Documentos para la reunión
+
 - [ ] [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) impreso o en PDF.
 - [ ] [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) en formato spreadsheet imprimible (**Lean** mes a mes §1.1; tiers Base/Growth y año 2–3 en el mismo doc + [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3–§4).
 - [ ] [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) con cap table actualizado.
@@ -127,13 +129,14 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 - [ ] Cuenta de demo delivery con orden asignada.
 - [ ] Conexión a internet de respaldo (hotspot móvil).
 - [ ] Backend de demo en **staging/VPS** (no local); verificar conectividad pre-reunión — release tiendas **T+7–12** Fase 0.
+- [ ] **Smoke manual Rx/OTC** ejecutado según [../SMOKE_RX_E2E.md](../SMOKE_RX_E2E.md) (REGISTRO P1-12) antes de demo en vivo P0-05.
 
 ## 6. Guion de la reunión (30 minutos)
 
 | Min | Acción |
 |---|---|
 | 0-3 | Saludo + presentación personal del founder + presentación del inversor. |
-| 3-5 | Pitch problema: "El paciente venezolano pierde 1-2h por mes recorriendo farmacias buscando medicamentos. La farmacia mediana pierde 25-35% de GMV en comisiones de Rappi." |
+| 3-5 | Pitch problema: "El paciente venezolano pierde 1-2h por mes recorriendo farmacias buscando medicamentos. La farmacia mediana pierde **20–30%** de GMV en comisiones de **PedidosYa**." |
 | 5-10 | Pitch solución: "Zonix Pharma. Marketplace farmacéutico VE con cuota plataforma + fee sobre GMV (moderado vs agregadores). Validación Rx digital. Stack ya construido." Presentar el [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md). |
 | 10-15 | Demo en vivo: paciente busca, sube receta, paga. Pharmacist valida en tablet. Farmacia ve la orden. **Si hay tiempo:** **`delivery_company`** asigna a **`delivery_agent`** y tracking en app (sin rol autónomo `delivery`). |
 | 15-20 | Mercado: TAM USD 1.638M (Cifar/IMS-IQVIA), comparable Farmalisto (~USD 32M revenue MX; funding ~USD 22M–33M según fuente). |
@@ -149,7 +152,7 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 
 | Q | A |
 |---|---|
-| ¿Por qué híbrido (fija + % GMV) y no solo comisión tipo Rappi? | "Take-rate total muy inferior al 25-35% GMV de agregadores; la fija da piso y el % alinea incentivos; políticas de nivel en PROPUESTA B2B §5." |
+| ¿Por qué híbrido (fija + % GMV) y no solo comisión tipo agregador? | "Take-rate total muy inferior al **20–30% GMV** de **PedidosYa** VE; la fija da piso y el % alinea incentivos; políticas de nivel en PROPUESTA B2B §5." |
 | ¿Cuánto pagas a las farmacias? | "Nada. **Zonix Pharma** es B2B SaaS + marketplace; la farmacia paga **servicio de plataforma** (fija + % GMV) y retiene el neto operativo de sus ventas según su operación." |
 | ¿Cuánto pagas al repartidor? | "El **delivery fee** lo cobra la **empresa partner** al paciente; Zonix factura a la empresa **`8%` del fee mensual + USD 0,30 por envío** (no al agente). El repartidor es **`delivery_agent`**, cuenta de la empresa." |
 | ¿Y si las farmacias no quieren pagar? | "Plan B: ofertas iniciales con primeros 2 meses gratis. Plan C: si más del 50% rechaza el paquete vigente, evaluamos **ajuste comercial** de umbrales GMV o del % variable (el modelo ya es híbrido fija + % — ver PROPUESTA B2B §5)." |
@@ -163,7 +166,7 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 | Q | A |
 |---|---|
 | ¿Por qué Venezuela y no Colombia? | "Founder venezolano. Stack ya operativo VE (pagos manuales, factura SENIAT). Mercado pharma VE USD 1.638M. Competencia digital débil. **Early mover** en independientes Valencia (mercado existente; no creamos categoría)." |
-| ¿Qué pasa si Rappi baja precio? | "Su take-rate típico (25-35% GMV) es **estructuralmente más alto** que el ticket **Zonix Pharma** (cuota plataforma + % GMV bajo en app). Su unit economics sigue exigiendo comisión plena al farmacéutico." |
+| ¿Qué pasa si PedidosYa baja precio? | "Su take-rate típico (**20–30% GMV**) es **estructuralmente más alto** que el ticket **Zonix Pharma** (cuota plataforma + % GMV bajo en app). Su unit economics sigue exigiendo comisión plena al farmacéutico." |
 | ¿Y Farmalisto entra a VE? | "Probable año 2-3. Para entonces tenemos PMF y barrera operativa local." |
 
 ### 7.3 Sobre el equipo y la ejecución
@@ -211,7 +214,8 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 | Pregunta | Respuesta anclada | Fuente |
 |----------|-------------------|--------|
 | ¿Stack? | Laravel API + Flutter; Sanctum; Pusher + FCM; pagos manuales VE | [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) |
-| ¿Tests? | **443** tests backend (re-verificar commit antes de reunión — P0-06) | [../ANALISIS_TECNICO_COMPLETO_2026-05.md](../ANALISIS_TECNICO_COMPLETO_2026-05.md) |
+| ¿Tests? | **443** tests backend + **~241** Flutter (re-verificar commit antes de reunión — P0-06 / AUD-01) | [../ANALISIS_TECNICO_COMPLETO_2026-05.md](../ANALISIS_TECNICO_COMPLETO_2026-05.md) |
+| ¿Smoke E2E Rx? | Checklist manual [../SMOKE_RX_E2E.md](../SMOKE_RX_E2E.md) — **P1-12** pendiente ejecución firmada | REGISTRO P1-12 |
 | ¿Rx? | Validación por farmacéutico colegiado de la farmacia; estados `pending_prescription_validation` | [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md); [../PLAN_RX_VALIDATION.md](../PLAN_RX_VALIDATION.md) |
 | ¿Delivery? | Partners `delivery_company` / `delivery_agent`; **sin** flota Zonix | PLAN_LANZAMIENTO; ALINEACION |
 | ¿Repo / código? | GitHub org o acceso bajo NDA — **P0-01** | VOLCADO §1 |
