@@ -1,8 +1,11 @@
 ---
 name: zonix-launch-piloto
 description: Plan de acción y ejecución del piloto Zonix Pharma. Calendario T+0 (wire) → Day-D (T+90) → M12 post-Day-D. KPIs farmacias, roles Co-CEO/Sales/CS. Invocar zonix-startup-context si hay fechas o caja.
+metadata:
+  auto_invoke:
+    - "Calendario piloto / hitos T+30/60/90 / Day-D"
+    - "Ejecutar plan comercial post-wire"
 ---
-
 # zonix-launch-piloto
 
 Skill para **planificar y ejecutar** el lanzamiento comercial y operativo de Zonix Pharma — no para redactar el pack inversor ni para código aislado.

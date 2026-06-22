@@ -1,8 +1,9 @@
 ---
 name: zonix-lean-canvas
 description: Lean Canvas operativo Zonix Pharma (Steve Blank UniMOOC). Rellena y valida los 9 bloques para piloto Valencia B2B2C. Use when canvas, modelo de negocio, hipótesis por bloque, socios clave o mercado bilateral. Invocar zonix-startup-context primero; cifras solo del pack.
+metadata:
+  auto_invoke: "Lean Canvas / modelo negocio piloto"
 ---
-
 # zonix-lean-canvas
 
 Destilado del curso **UniMOOC «Cómo crear tu Startup»** (Steve Blank) — bloques Canvas M1/M6/M7. **No** sustituye PROYECCION ni PROPUESTA B2B; es plantilla **cualitativa** pre-Day-D.

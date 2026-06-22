@@ -6,8 +6,9 @@ scope: docs/BRAND_ZONIX_PHARMA.md, resources/views/front/, public/css/zonix.css,
 related-skills: zonix-web-design, zonix-ui-design, zonix-regulatory-ve, frontend-design
 author: Zonix Team
 version: 1.0
+metadata:
+  auto_invoke: "Copy marca / ASO / revisión anti-Eats"
 ---
-
 # Zonix Pharma — Brand Ops
 
 > Canon visual completo: [docs/BRAND_ZONIX_PHARMA.md](../../../docs/BRAND_ZONIX_PHARMA.md).

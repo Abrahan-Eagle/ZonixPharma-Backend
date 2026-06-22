@@ -5,8 +5,11 @@ trigger: Después de implementar correcciones o mejoras relevantes (features, co
 scope: AGENTS.md, README.md, .cursorrules
 author: Zonix Team
 version: 1.0
+metadata:
+  auto_invoke:
+    - "Finalizar tarea y documentar avances"
+    - "Cerrar sesión con cambios relevantes"
 ---
-
 # Documentar avances — Cambios recientes
 
 ## Objetivo

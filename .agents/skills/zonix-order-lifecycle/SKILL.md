@@ -5,8 +5,9 @@ trigger: Cuando se trabaje con órdenes, cambios de estado, cancelaciones, track
 scope: app/Models/Order.php, app/Http/Controllers/Commerce/OrderController.php, app/Http/Controllers/Delivery/DeliveryController.php, app/Http/Controllers/Buyer/OrderController.php
 author: Zonix Team
 version: 2.0
+metadata:
+  auto_invoke: "Trabajar con estados / flujo de órdenes"
 ---
-
 > **Zonix Pharma:** ciclo de vida de órdenes incluye `pending_prescription_validation` y reglas Rx/TTL en `PrescriptionService` / `config/zonix.php`.
 # Ciclo de vida de órdenes — Zonix Pharma
 

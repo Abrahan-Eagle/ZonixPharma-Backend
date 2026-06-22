@@ -1,8 +1,18 @@
 ---
 name: zonix-startup-context
 description: Contexto canónico Zonix Pharma (pre-seed VE). Leer ANTES de finanzas, pitch o auditoría pack. Ancla cifras Lean/Base/Growth y rutas docs/Lanzamiento. No regenerar números sin citar fuente.
+metadata:
+  auto_invoke:
+    - "Trabajar con pack Lanzamiento / roles / pitch inversor"
+    - "Mejorar o auditar un .md en docs/Lanzamiento/"
+    - "Auditar finanzas del pack (PROYECCION, UNIT, PRESUPUESTO)"
+    - "Preparar data room / gaps inversor"
+    - "Redactar pitch / email inversor"
+    - "Constituir empresa / SAFE / laboral VE"
+    - "Calendario piloto / hitos T+30/60/90 / Day-D"
+    - "Lean Canvas / modelo negocio piloto"
+    - "Lectura founder CEO/CTO/TPM (due diligence, 90 días)"
 ---
-
 # zonix-startup-context
 
 Fuente única de verdad para agentes que trabajan en **fundraising, finanzas o pack Lanzamiento**. Inspirado en [startup-context](https://github.com/shawnpang/startup-founder-skills/tree/main/skills/startup-context) (MIT), adaptado a Zonix Pharma Venezuela.

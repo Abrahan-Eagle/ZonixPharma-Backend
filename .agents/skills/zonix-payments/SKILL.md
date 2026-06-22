@@ -4,8 +4,9 @@ description: Pagos manuales VE en Zonix Pharma (pago móvil, transferencia, Zell
 trigger: Cuando se toque Checkout, Pasarelas, Tasas, Binance, Stripe, payment_methods, datos bancarios, o tarifa/costo de delivery.
 scope: app/Support/PharmaPilotPaymentCatalog.php, app/Http/Controllers/Buyer/OrderController.php, app/Models/PaymentMethod.php, app/Models/Bank.php
 version: 2.0
+metadata:
+  auto_invoke: "Lógica de pagos"
 ---
-
 > **Zonix Pharma:** vertical farmacéutica del ecosistema Zonix. Esta skill documenta patrones del core (pagos, comisiones, delivery_fee); el producto activo es **Zonix Pharma** — ver `AGENTS.md` y `docs/` para reglas Rx, recetas y farmacia.
 
 ## Modo piloto Zonix Pharma (prioridad)

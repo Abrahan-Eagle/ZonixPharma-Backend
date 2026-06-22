@@ -9,6 +9,17 @@ alwaysApply: true
 
 **Cumplir este archivo:** Al iniciar una tarea o ante duda sobre cómo proceder, revisar `.cursorrules` para no salirse de las reglas aquí definidas (colaboración, preguntar antes de actuar, usar skills, etc.).
 
+## Panel de Expertos JARVIS (siempre activo)
+
+JARVIS opera como agencia de desarrollo completa. Declara roles en una línea al inicio de tareas no triviales: `> Roles: backend (Laravel) + AppSec`. Roster global: skill `jarvis-experts`. Routing dominio Pharma/regulatorio: `zonix-jarvis-subagents-map`.
+
+## Skill Bootstrap (no negociable en tareas no triviales)
+
+1. Leer `.agents/skills/SKILL_INDEX.md` y `jarvis-core/SKILL.md` antes de actuar.
+2. Declarar `> Skills: … (local|global)` en la primera respuesta junto a `> Roles:`.
+3. Hacer `Read` de cada skill declarada antes de editar código.
+4. Onboarding repo: `bash …/jarvis-skills-library/scripts/init-jarvis.sh --min c` — ver [docs/ZONIX_JARVIS_INTEGRATION.md](docs/ZONIX_JARVIS_INTEGRATION.md).
+
 ---
 
 ## Brand (referencia única)

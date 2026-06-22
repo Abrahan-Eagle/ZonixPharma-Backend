@@ -1,8 +1,9 @@
 ---
 name: zonix-legal-contracts-ve
 description: Revisión checklist de contratos VE (marco farmacia B2B, SAFE, laboral). Salida [PENDIENTE abogado]. Invocar zonix-empresa-ve y zonix-regulatory-ve primero.
+metadata:
+  auto_invoke: "Revisar contrato marco farmacia / SAFE / laboral (checklist)"
 ---
-
 # zonix-legal-contracts-ve
 
 Skill para **preparar revisión** de documentos legales de Zonix Pharma en Venezuela. Patrones inspirados en [lawvable/awesome-legal-skills](https://github.com/lawvable/awesome-legal-skills) (Corporate, Commercial, Employment, Compliance) — **no sustituye** abogado ni asesor farmacéutico.

@@ -1,8 +1,9 @@
 ---
 name: zonix-investor-materials
 description: Materiales inversor Zonix Pharma — data room ligero, checklist due diligence, gaps pack Lanzamiento. Alineado a docs/Lanzamiento y CHECKLIST_PRE_INVERSOR. No sustituye abogado ni contador.
+metadata:
+  auto_invoke: "Preparar data room / gaps inversor"
 ---
-
 # zonix-investor-materials
 
 Adaptación de [data-room](https://github.com/shawnpang/startup-founder-skills/tree/main/skills/data-room) y business-case patterns (antigravity-awesome-skills). Invocar `zonix-startup-context` primero.

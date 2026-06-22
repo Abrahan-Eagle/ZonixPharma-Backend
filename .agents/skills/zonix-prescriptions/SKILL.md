@@ -1,8 +1,9 @@
 ---
 name: zonix-prescriptions
 description: Sistema de receta médica (Rx) en Zonix Pharma. Modelo Prescription, validación por farmacéutico colegiado, TTL, controlados, eventos broadcast.
+metadata:
+  auto_invoke: "Trabajar con recetas / validación farmacéutico"
 ---
-
 # zonix-prescriptions
 
 Skill de dominio para todo lo relacionado con receta médica (Rx) en Zonix Pharma.

@@ -5,8 +5,9 @@ trigger: Cuando se trabaje con delivery agents, cálculo de distancias, rutas, z
 scope: app/Http/Controllers/Location/LocationController.php, app/Http/Controllers/Delivery/DeliveryController.php, app/Models/DeliveryZone.php, app/Services/TrackingService.php
 author: Zonix Team
 version: 2.0
+metadata:
+  auto_invoke: "Calcular distancias/zonas"
 ---
-
 > **Zonix Pharma:** marketplace farmacéutico; delivery incluye cadena de frío y restricciones Pharma cuando aplique (`config/zonix.php`). Ver `AGENTS.md`.
 
 **Módulo tarifa de delivery (futuro):** Si se va a implementar el módulo de tarifa (config Admin, CRUD zonas, cálculo en backend), leer y seguir [docs/PLAN_MODULO_TARIFA_DELIVERY.md](../../../docs/PLAN_MODULO_TARIFA_DELIVERY.md).

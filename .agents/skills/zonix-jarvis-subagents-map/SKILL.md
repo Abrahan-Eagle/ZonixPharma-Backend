@@ -1,8 +1,9 @@
 ---
 name: zonix-jarvis-subagents-map
 description: Mapeo tareas Zonix Pharma → subagents externos (lente VoltAgent) → skills zonix-* obligatorias. No instalar subagents de terceros en el repo.
+metadata:
+  auto_invoke: "Tarea multi-rol compleja (qué subagent + qué skill)"
 ---
-
 # zonix-jarvis-subagents-map
 
 Orquestación JARVIS: los subagents de [VoltAgent/awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) son **lente opcional**; el canon operativo y de negocio está en skills `zonix-*` locales.

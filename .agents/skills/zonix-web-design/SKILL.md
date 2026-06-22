@@ -6,8 +6,9 @@ scope: resources/views/front/, resources/views/dashboard/shared/, public/css/zon
 related-skills: zonix-brand-ops, frontend-design, ui-ux-pro-max
 author: Zonix Team
 version: 1.0
+metadata:
+  auto_invoke: "Landing / welcome / CSS marketing"
 ---
-
 # Zonix Pharma — Web Design (Blade + CSS)
 
 > **Leer primero:** [docs/BRAND_ZONIX_PHARMA.md](../../../docs/BRAND_ZONIX_PHARMA.md) y `zonix-brand-ops`.

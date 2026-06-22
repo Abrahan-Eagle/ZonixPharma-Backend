@@ -1,8 +1,9 @@
 ---
 name: zonix-empresa-ve
 description: Constitución y gobierno corporativo Zonix Pharma en Venezuela (C.A., RIF, banco, SAFE, laboral). Checklist T+0–T+30. Invocar zonix-startup-context primero. No sustituye abogado ni contador.
+metadata:
+  auto_invoke: "Constituir empresa / SAFE / laboral VE"
 ---
-
 # zonix-empresa-ve
 
 Skill para **crear y operar la empresa** Zonix Pharma en Venezuela: vehículo legal, equity, SAFE y trámites post-wire. Complementa el pack [docs/Lanzamiento/](../../docs/Lanzamiento/) — no reemplaza dictamen profesional.

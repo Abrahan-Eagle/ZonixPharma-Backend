@@ -1,8 +1,9 @@
 ---
 name: zonix-lanzamiento-docs
 description: Mejorar y auditar documentos en docs/Lanzamiento con marcos founder-playbook/shawnpang adaptados a Zonix Pharma VE. Router por archivo; cifras solo desde pack. Invocar zonix-startup-context primero.
+metadata:
+  auto_invoke: "Mejorar o auditar un .md en docs/Lanzamiento/"
 ---
-
 # zonix-lanzamiento-docs
 
 Skill **orquestadora** para editar el pack `docs/Lanzamiento/` con IA. Integra el informe [ANALISIS_FORENSE_BUSQUEDA_GITHUB_LANZAMIENTO_2026-05.md](../../docs/zonix/ANALISIS_FORENSE_BUSQUEDA_GITHUB_LANZAMIENTO_2026-05.md) **sin** instalar repos externos (`shawnpang`, `founder-playbook`, VoltAgent). Los marcos Tier A viven en skills `zonix-*` locales.

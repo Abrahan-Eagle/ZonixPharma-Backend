@@ -1,8 +1,9 @@
 ---
 name: zonix-b2b-sales
 description: Playbook Sales B2B Zonix Pharma (×4). Prospección farmacias Valencia, contrato marco, onboarding panel. Invocar zonix-launch-piloto para hitos T+60–Day-D.
+metadata:
+  auto_invoke: "Prospección / cierre farmacias B2B"
 ---
-
 # zonix-b2b-sales
 
 Skill para **ejecutar venta B2B** a farmacias en el piloto — no para redactar el pack inversor completo.

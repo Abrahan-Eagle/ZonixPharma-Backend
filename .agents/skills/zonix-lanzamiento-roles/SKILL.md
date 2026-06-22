@@ -1,8 +1,11 @@
 ---
 name: zonix-lanzamiento-roles
 description: Panel de roles y competencias del pack Lanzamiento Zonix Pharma. Mapea rol humano → skills → Docs/Empresa/Sistema → skills agente. Usar al redactar pack inversor, constitución VE o priorizar lentes JARVIS.
+metadata:
+  auto_invoke:
+    - "Trabajar con pack Lanzamiento / roles / pitch inversor"
+    - "Ejecutar plan comercial post-wire"
 ---
-
 # zonix-lanzamiento-roles
 
 Skill de **gobernanza de roles** para Zonix Pharma (piloto + madurez). Fuente canónica: [docs/Lanzamiento/ROLES_SKILLS_ZONIX.md](../../docs/Lanzamiento/ROLES_SKILLS_ZONIX.md).

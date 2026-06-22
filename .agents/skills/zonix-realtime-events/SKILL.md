@@ -5,8 +5,9 @@ trigger: Cuando se trabaje con Pusher, broadcasting, notificaciones push (FCM), 
 scope: app/Events/, app/Http/Controllers/Notification/, config/broadcasting.php, routes/channels.php
 author: Zonix Team
 version: 2.0
+metadata:
+  auto_invoke: "Implementar eventos broadcast"
 ---
-
 > **Zonix Pharma:** eventos en tiempo real incluyen `PrescriptionUploaded`, `PrescriptionValidated`, `PrescriptionRejected` y canales `private-commerce.*`. Ver `zonix-prescriptions` y `AGENTS.md`.
 # Eventos en tiempo real — Zonix Pharma
 

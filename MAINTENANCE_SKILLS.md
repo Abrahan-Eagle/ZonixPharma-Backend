@@ -10,7 +10,46 @@ Las skills (`.agents/skills/*/SKILL.md`) no son simple documentación; son **gu�
 
 ---
 
-## 2. Precedencia de diseño y branding (obligatoria)
+## 2. Capas de skills y sync global (Paso C — jarvis-skills-library)
+
+| Capa | Patrón | Ejemplos |
+|------|--------|----------|
+| 0 Máquina | `~/.cursor/skills/` vía `install.sh` | `jarvis-core`, `sdd-router`, `project-bootstrap-ops` |
+| 0 Global-sync | `.global-sync-manifest` | `brainstorming-ops`, `verification-before-completion` |
+| 1 Orquestación | `jarvis-*` | `jarvis-core`, `jarvis-experts` |
+| 2 Proceso | `*-ops` | `task-pipeline-ops`, `git-guardrails-ops` |
+| 3 Dominio Zonix | `zonix-*` | **solo locales** — nunca en manifest |
+| 5 Solo local | no en manifest | `documentar-avances`, `ui-ux-pro-max`, `speckit-*` en `.cursor/skills/` |
+
+**Onboarding máquina + repo:**
+
+```bash
+# Capa 0 (máquina) — tras git pull en jarvis-skills-library
+bash /var/www/html/proyectos/AIPP/jarvis-skills-library/scripts/install.sh --all
+
+# Capa 1 (este repo) — tras pull en library
+JARVIS_SKILLS_LIBRARY=/var/www/html/proyectos/AIPP/jarvis-skills-library \
+  ./scripts/sync-global-skills-from-library.sh
+JARVIS_SKILLS_LIBRARY=/var/www/html/proyectos/AIPP/jarvis-skills-library \
+  ./scripts/check-global-skills-sync.sh
+python3 .agents/skills/sync.sh
+
+# Verificación bootstrap
+bash $JARVIS_SKILLS_LIBRARY/scripts/init-jarvis.sh --min c
+```
+
+- **passthrough:** `SKILL.md` idéntico al canónico.
+- **overlay:** editar solo `OVERLAY.md`; no parchear a mano el cuerpo canónico en `SKILL.md`.
+- **`zonix-*`:** nunca en manifest — solo locales.
+- **WARN Fase 2:** `.cursor/skills/` versionado (speckit, ui-ux) sigue coexistiendo; migración futura documentada en [docs/ZONIX_JARVIS_INTEGRATION.md](docs/ZONIX_JARVIS_INTEGRATION.md).
+
+Doc integración: [docs/ZONIX_JARVIS_INTEGRATION.md](docs/ZONIX_JARVIS_INTEGRATION.md) · Library: `jarvis-skills-library/docs/ZONIX_INTEGRATION.md`.
+
+**CI:** workflow `.github/workflows/global-skills-sync-check.yml` en PR/push que toque `.agents/skills/`.
+
+---
+
+## 3. Precedencia de diseño y branding (obligatoria)
 
 Al tocar UI, copy o CSS, aplicar este orden **sin excepción**:
 
@@ -24,11 +63,11 @@ Al tocar UI, copy o CSS, aplicar este orden **sin excepción**:
 
 **Regla:** Las skills genéricas (`ui-ux-pro-max`, `frontend-design`) son **secundarias**. Nunca introducir HEX, gradientes purple AI-slop ni paletas fuera de tokens `brand*` / variables CSS en `zonix.css`.
 
-Overlay Zonix para `ui-ux-pro-max`: [.agents/skills/ui-ux-pro-max/ZONIX.md](.agents/skills/ui-ux-pro-max/ZONIX.md).
+Overlay Zonix para `ui-ux-pro-max`: [.agents/skills/ui-ux-pro-max/ZONIX.md](.agents/skills/ui-ux-pro-max/ZONIX.md) (local capa 5; Front usa `OVERLAY.md` vía manifest).
 
 ---
 
-## 3. Terminología Estándar de Roles
+## 4. Terminología Estándar de Roles
 
 Cualquier cambio en código o docs **DEBE** usar la nomenclatura Pharma (7 roles). Ver `AGENTS.md` sección Roles y rutas.
 
@@ -44,7 +83,7 @@ Cualquier cambio en código o docs **DEBE** usar la nomenclatura Pharma (7 roles
 
 ---
 
-## 4. Reglas de Oro para Actualizaciones
+## 5. Reglas de Oro para Actualizaciones
 
 ### 4.1. Auditoría Previa (Mandatorio para IAs)
 
@@ -67,7 +106,7 @@ Toda skill debe referenciar a otras si hay solapamiento.
 
 ---
 
-## 5. Infraestructura Crítica (Inamovible)
+## 6. Infraestructura Crítica (Inamovible)
 
 1. **NO WebSockets:** Pusher Channels + FCM.
 2. **Migraciones:** editar `create_*` en local; no acumular `add_*` sueltos (ver `.cursorrules`).
@@ -75,7 +114,7 @@ Toda skill debe referenciar a otras si hay solapamiento.
 
 ---
 
-## 6. Cómo Hacer Cambios (IA Flow)
+## 7. Cómo Hacer Cambios (IA Flow)
 
 1. **Analizar:** Leer `AGENTS.md` y este archivo.
 2. **Proponer:** Plan o diff acotado; esperar OK usuario en cambios de código.
@@ -84,5 +123,5 @@ Toda skill debe referenciar a otras si hay solapamiento.
 
 ---
 
-**Última actualización:** 17 junio 2026  
+**Última actualización:** 21 junio 2026  
 **Zonix Team**

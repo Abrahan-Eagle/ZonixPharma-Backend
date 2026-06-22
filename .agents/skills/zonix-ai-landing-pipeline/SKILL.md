@@ -11,8 +11,9 @@ scope: resources/views/front/, public/css/zonix.css, public/img/, docs/BRAND_ZON
 related-skills: zonix-web-design, zonix-brand-ops, zonix-regulatory-ve, zonix-design-enforcer, ui-ux-pro-max
 author: Zonix Team
 version: 1.0
+metadata:
+  auto_invoke: "Landing con IA, hero video loop, Nano Banana / Veo / Claude Design"
 ---
-
 # Zonix Pharma — Pipeline de landing con IA (NEONFALL adaptado)
 
 > **Fuente metodológica:** proceso NEONFALL (Juan Pablo Rosso · Nexum AI). Prompts verbatim y plantillas en [reference.md](reference.md).

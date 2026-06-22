@@ -1,8 +1,9 @@
 ---
 name: zonix-regulatory-ve
 description: Marco regulatorio Venezuela Zonix Pharma — MPPS, INHRR, Rx, farmacovigilancia, copy salud. Lente para docs Lanzamiento y producto. No dictamen legal; citar PLAN_REGULATORIO o [PENDIENTE].
+metadata:
+  auto_invoke: "Copy regulatorio / Rx en documentos"
 ---
-
 # zonix-regulatory-ve
 
 Lente regulatoria para marketplace farmacéutico **Venezuela**. Inspirado en [cs-quality-regulatory](https://github.com/alirezarezvani/claude-skills/blob/main/agents/ra-qm-team/cs-quality-regulatory.md) (ideas ISO/MDR), **no** HIPAA US. Fuente canónica: [docs/PLAN_REGULATORIO_PHARMA_VE.md](../../docs/PLAN_REGULATORIO_PHARMA_VE.md).

@@ -1,8 +1,9 @@
 ---
 name: zonix-financial-model
 description: Modelo financiero Zonix Pharma (marketplace farmacia VE). Coherencia PROYECCION, UNIT_ECONOMICS, PRESUPUESTO; escenarios Lean/Base/Growth; Fase 0 T+90. No sustituye contador SENIAT.
+metadata:
+  auto_invoke: "Auditar finanzas del pack (PROYECCION, UNIT, PRESUPUESTO)"
 ---
-
 # zonix-financial-model
 
 Adaptación de [startup-financial-modeling](https://github.com/sickn33/antigravity-awesome-skills/blob/main/skills/startup-financial-modeling/SKILL.md) (community) al marketplace farmacéutico Zonix. **Siempre** invocar `zonix-startup-context` primero.

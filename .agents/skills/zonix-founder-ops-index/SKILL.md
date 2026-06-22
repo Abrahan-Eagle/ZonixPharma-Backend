@@ -1,8 +1,9 @@
 ---
 name: zonix-founder-ops-index
 description: Índice curado CEO/CTO/TPM para founder Zonix Pharma. Enlaces a kuchin awesome-ceo/cto/tpm. Cifras solo desde zonix-startup-context y pack Lanzamiento.
+metadata:
+  auto_invoke: "Lectura founder CEO/CTO/TPM (due diligence, 90 días)"
 ---
-
 # zonix-founder-ops-index
 
 Índice de lectura para **founder / CTO** en Zonix Pharma. Fuentes principales: [awesome-ceo](https://github.com/kuchin/awesome-ceo), [awesome-cto](https://github.com/kuchin/awesome-cto), [awesome-tpm](https://github.com/kuchin/awesome-tpm).

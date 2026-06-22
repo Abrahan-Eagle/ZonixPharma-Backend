@@ -5,8 +5,9 @@ trigger: Cuando se trabaje con disputas, quejas, reembolsos, penalizaciones por 
 scope: app/Models/Dispute.php, app/Http/Controllers/*/DisputeController.php, app/Services/Payment/RefundService.php
 author: Zonix Team
 version: 1.0
+metadata:
+  auto_invoke: "Disputas y reembolsos"
 ---
-
 > **Zonix Pharma:** disputas y reembolsos en pedidos de medicamentos y comercio; mismos patrones de resolución con contexto regulatorio VE según docs.
 # Disputas y reembolsos — Zonix Pharma
 

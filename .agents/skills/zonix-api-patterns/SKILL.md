@@ -5,8 +5,9 @@ trigger: Cuando se creen nuevos endpoints, controladores, respuestas de API, mid
 scope: routes/api.php, app/Http/Controllers/, app/Http/Middleware/
 author: Zonix Team
 version: 2.0
+metadata:
+  auto_invoke: "Crear/modificar controladores o rutas"
 ---
-
 > **Zonix Pharma:** API REST del marketplace farmacéutico — prefijos buyer/commerce/pharmacist, respuesta `{ success, data, message }`, roles en `AGENTS.md`.
 # Patrones de API — Zonix Pharma
 

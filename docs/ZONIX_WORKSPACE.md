@@ -29,3 +29,18 @@
 ## Regla de oro para agentes
 
 Cifras (101k / 118k / 135k, SAFE caps, ARPF) y legal VE solo desde **pack Lanzamiento** + skill `zonix-startup-context`.
+
+## JARVIS onboarding (Capa 0 + Paso C)
+
+| Recurso | Uso |
+|---------|-----|
+| Chat Cursor | `init jarvis` |
+| Terminal | `bash …/jarvis-skills-library/scripts/init-jarvis.sh --min c` |
+| Manifest Backend | `.agents/skills/.global-sync-manifest` (48 skills Laravel/ops) |
+| Manifest Front | `../ZonixPharma-Front/.agents/skills/.global-sync-manifest` (45 skills Flutter + ui-router) |
+| Integración | [docs/ZONIX_JARVIS_INTEGRATION.md](ZONIX_JARVIS_INTEGRATION.md) |
+| Library | `jarvis-skills-library/docs/ZONIX_INTEGRATION.md` |
+
+**Roles:** `jarvis-experts` (panel global) + `zonix-jarvis-subagents-map` (routing VE/Rx/regulatorio) — coexisten; precedencia en `jarvis-core/OVERLAY.md`.
+
+**Spec Kit:** activo en `.specify/` + `speckit-*` — no usar para `docs/Lanzamiento/` (usar `zonix-lanzamiento-docs`).

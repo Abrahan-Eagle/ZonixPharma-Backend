@@ -5,8 +5,9 @@ trigger: Cuando se trabajen dashboards, métricas, reportes, filtros de fechas o
 scope: app/Http/Controllers/Admin/AnalyticsController.php, app/Http/Controllers/Commerce/AnalyticsController.php, app/Services/AnalyticsService.php, database/migrations/*analytics*
 author: Zonix Team
 version: 1.0
+metadata:
+  auto_invoke: "Dashboards y métricas admin/commerce"
 ---
-
 > **Zonix Pharma:** KPIs y reportes para farmacias y admin; agregaciones sobre órdenes Pharma (incl. estados Rx). Ver `AGENTS.md`.
 # Analytics y reportes — Zonix Pharma
 

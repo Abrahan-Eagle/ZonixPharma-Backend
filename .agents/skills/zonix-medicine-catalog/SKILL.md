@@ -1,8 +1,9 @@
 ---
 name: zonix-medicine-catalog
 description: Catálogo de medicamentos Zonix Pharma. Atributos farmacéuticos del Product, lotes (medicine_lots) FIFO, registro INHRR, ATC, regulación, cadena de frío.
+metadata:
+  auto_invoke: "Catálogo medicamentos / lotes"
 ---
-
 # zonix-medicine-catalog
 
 Skill de dominio para el catálogo farmacéutico de Zonix Pharma.

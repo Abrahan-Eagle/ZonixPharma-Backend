@@ -1,8 +1,9 @@
 ---
 name: zonix-fundraising-narrative
 description: Narrativa fundraising Zonix Pharma — pitch bullets, email/WhatsApp inversor, Q&A SAFE pre-seed VE. Basado en MENSAJE_ENVIO y CONTEXTO_PITCH. Invocar zonix-startup-context primero.
+metadata:
+  auto_invoke: "Redactar pitch / email inversor"
 ---
-
 # zonix-fundraising-narrative
 
 Combina ideas de [pitch-deck](https://github.com/shawnpang/startup-founder-skills/tree/main/skills/pitch-deck), [fundraising-email](https://github.com/shawnpang/startup-founder-skills/tree/main/skills/fundraising-email) y lente CFO ([c-level-advisor](https://github.com/alirezarezvani/claude-skills/tree/main/c-level-advisor)). **Siempre** `zonix-startup-context` primero.
