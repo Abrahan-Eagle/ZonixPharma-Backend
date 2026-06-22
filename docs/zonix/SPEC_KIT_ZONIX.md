@@ -14,7 +14,8 @@
 
 | Namespace | Ubicación | Propósito |
 |-----------|-----------|-----------|
-| `speckit-*` | `.cursor/skills/` | Proceso SDD (specify, plan, tasks, implement) |
+| `speckit-*` (core) | `~/.cursor/skills/` vía `install.sh --all` | Proceso SDD (specify, plan, tasks, implement) |
+| `speckit-git-*` | `.agents/skills/` | Hooks git Spec Kit (local capa 5) |
 | `zonix-*` | `.agents/skills/` | Dominio Pharma, API, Rx, finanzas pack, legal VE |
 
 **Regla:** Spec Kit no reemplaza Jarvis. En implementación, invocar siempre las `zonix-*` del dominio.

@@ -49,7 +49,7 @@
 
 | Recurso | Veredicto | Notas |
 |---------|-----------|-------|
-| [github/spec-kit](https://github.com/github/spec-kit) | **Usar** (producto) | `specify-cli` v0.8.15; skills `.cursor/skills/speckit-*`; hub `specs/` en Backend |
+| [github/spec-kit](https://github.com/github/spec-kit) | **Usar** (producto) | `specify-cli` v0.8.15; skills `~/.cursor/skills/speckit-*` (`install.sh --all`); hub `specs/` en Backend |
 | Spec Kit en `docs/Lanzamiento/` | **No usar** | Seguir `zonix-lanzamiento-docs` + `PROMPT_PACK_LANZAMIENTO.md` |
 
 No confundir con `npx skills add` de repos founder: Spec Kit es CLI oficial MIT, no fuente de cifras del pack.

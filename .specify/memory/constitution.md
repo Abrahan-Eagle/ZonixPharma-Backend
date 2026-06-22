@@ -14,7 +14,7 @@
 2. **No git push/merge** without explicit user order; local commits only when requested.
 3. **User tests first** before production deploy claims.
 4. **Session context:** read `docs/active_context.md` when resuming work.
-5. **Jarvis skills** (`.agents/skills/zonix-*`) remain mandatory for domain logic; Spec Kit (`.cursor/skills/speckit-*`) governs SDD workflow only.
+5. **Jarvis skills** (`.agents/skills/zonix-*`) remain mandatory for domain logic; Spec Kit (`~/.cursor/skills/speckit-*` via `install.sh --all`) governs SDD workflow only.
 6. **Do not use Spec Kit** for `docs/Lanzamiento/` (investor pack, financial figures) — use `zonix-lanzamiento-docs` + `zonix-startup-context`.
 
 ---

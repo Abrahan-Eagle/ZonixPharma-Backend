@@ -3,21 +3,6 @@ alwaysApply: true
 ---
 
 <!-- SPECKIT START -->
-## Zonix Pharma — Spec Kit (SDD hub)
-
-- **Constitution:** `.specify/memory/constitution.md` (gates all speckit phases)
-- **Feature specs:** `specs/00N-feature-name/` in this repo (Backend hub)
-- **Jarvis canon:** `AGENTS.md`, `.cursorrules`, `.agents/skills/zonix-*`
-- **Front repo:** `../ZonixPharma-Front` — cite paths as `front:lib/...` in plans/tasks
-
-### Workflow
-
-1. `/speckit-constitution` — amend only with user approval
-2. `/speckit-specify` → `/speckit-clarify` (if needed) → `/speckit-plan` → `/speckit-tasks` → `/speckit-analyze` → `/speckit-implement` (implement **only after user OK**)
-
-### Do NOT use Spec Kit for
-
-- `docs/Lanzamiento/` investor pack or financial figures — use `zonix-lanzamiento-docs`
-
-Read the active feature `plan.md` in `specs/` for current technical context.
+For additional context about technologies to be used, project structure,
+shell commands, and other important information, read the current plan
 <!-- SPECKIT END -->

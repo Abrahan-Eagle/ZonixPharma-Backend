@@ -28,7 +28,7 @@ Toolkit oficial GitHub para features de **producto** (API + Flutter). **No** usa
 | -------- | --------- |
 | Constitution | [.specify/memory/constitution.md](.specify/memory/constitution.md) |
 | Feature specs | [specs/](specs/) (hub Backend) |
-| Skills SDD | `.cursor/skills/speckit-*` (`/speckit-specify`, `/speckit-plan`, …) |
+| Skills SDD | `~/.cursor/skills/speckit-*` (`/speckit-specify`, `/speckit-plan`, …) vía `install.sh --all` |
 | Skills dominio | `.agents/skills/zonix-*` (siempre en implement) |
 | Guía router | [docs/zonix/SPEC_KIT_ZONIX.md](docs/zonix/SPEC_KIT_ZONIX.md) |
 | Front espejo | `../ZonixPharma-Front` — specs en Backend |
@@ -75,7 +75,7 @@ Toolkit oficial GitHub para features de **producto** (API + Flutter). **No** usa
 - **27 may 2026 — Spec Kit (SDD) integrado en Jarvis (producto, no Lanzamiento).**
   - [github/spec-kit](https://github.com/github/spec-kit) v0.8.15: `specify-cli`, integración `cursor-agent` en Backend (hub) y Front (espejo).
   - Hub: `specs/`, `.specify/memory/constitution.md`, overrides dual-repo en `.specify/templates/overrides/`.
-  - Skills proceso: `.cursor/skills/speckit-*` (complementan `.agents/skills/zonix-*`).
+  - Skills proceso: `~/.cursor/skills/speckit-*` + `.agents/skills/speckit-git-*` (complementan `.agents/skills/zonix-*`).
   - Piloto: [specs/001-block-rx-strict-checkout/](specs/001-block-rx-strict-checkout/) — artefactos listos; implement con OK usuario.
   - Guía: [docs/zonix/SPEC_KIT_ZONIX.md](docs/zonix/SPEC_KIT_ZONIX.md).
 - **27 may 2026 — Skills startup Jarvis (founder-playbook / shawnpang destilados, sin repos externos).**
@@ -177,7 +177,7 @@ JARVIS opera como agencia de desarrollo completa. Declarar roles en una línea: 
 | 2 Proceso | `*-ops` | `task-pipeline-ops`, `verification-before-completion` |
 | 3 Dominio Zonix | `zonix-*` | `zonix-api-patterns`, `zonix-prescriptions` — **solo locales** |
 | 4 Genéricas | manifest passthrough | `laravel-specialist`, `security` |
-| 5 Solo local | no en manifest | `documentar-avances`, `ui-ux-pro-max`, `speckit-*` en `.cursor/skills/` |
+| 5 Solo local | no en manifest | `documentar-avances`, `ui-ux-pro-max` (ZONIX.md), `speckit-git-*` |
 
 Tras `git pull` en jarvis-skills-library: `./scripts/sync-global-skills-from-library.sh` + `./scripts/check-global-skills-sync.sh`. Ver `MAINTENANCE_SKILLS.md`.
 

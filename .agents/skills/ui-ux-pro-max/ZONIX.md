@@ -1,6 +1,21 @@
-# Zonix Pharma — Overlay ui-ux-pro-max
+# Zonix Pharma — Overlay ui-ux-pro-max (Backend + canon compartido)
 
 > Leer **antes** de aplicar colores, tipografía o fuentes sugeridas por el design system generator.
+> Espejo Flutter: `../ZonixPharma-Front/.agents/skills/ui-ux-pro-max/OVERLAY.md`
+
+## Producto
+
+- **Nombre:** Zonix Pharma
+- **Vertical:** Marketplace farmacéutico (Venezuela, OTC + Rx)
+
+## Fuente canónica de tokens
+
+| Recurso | Ruta |
+|---------|------|
+| Marca (canon) | [docs/BRAND_ZONIX_PHARMA.md](../../../docs/BRAND_ZONIX_PHARMA.md) |
+| Web Blade/CSS | skill `zonix-web-design` · `public/css/zonix.css` |
+| Flutter | Front `zonix-ui-design` · `lib/features/utils/app_colors.dart` |
+| Enforcer | `.agents/skills/zonix-design-enforcer/SKILL.md` (stub → Front) |
 
 ## Precedencia (obligatoria)
 
@@ -8,7 +23,7 @@
 1. docs/BRAND_ZONIX_PHARMA.md
 2. zonix-web-design (Blade + zonix.css) | zonix-ui-design (Flutter)
 3. zonix-brand-ops | zonix-design-enforcer
-4. ui-ux-pro-max (esta skill — ideas UX/patterns; NO override tokens)
+4. ui-ux-pro-max (patrones UX; NO override tokens brand*)
 5. frontend-design (secundaria)
 ```
 
@@ -23,15 +38,18 @@
 
 ## Comando design system (Pharma)
 
-Desde la raíz del repo:
-
 ```bash
-python3 .agents/skills/ui-ux-pro-max/scripts/search.py \
+export UI_UX_SKILL_ROOT="${UI_UX_SKILL_ROOT:-$HOME/.cursor/skills/ui-ux-pro-max}"
+
+python3 "$UI_UX_SKILL_ROOT/scripts/search.py" \
   "pharmacy healthcare marketplace trust venezuela" \
-  --design-system -p "Zonix Pharma"
+  --design-system -p "Zonix Pharma" -f markdown
+
+python3 "$UI_UX_SKILL_ROOT/scripts/search.py" "navigation forms cards listing" \
+  --stack html-tailwind   # Blade · o --stack flutter en Front
 ```
 
-Usar la salida para: estructura de landing, patrones hero, checklist a11y, anti-patterns de industria. **Mapear colores** a tokens BRAND (`--brand-navy`, `--brand-teal`, `--brand-teal-deep`, `--brand-mint`).
+Mapear colores sugeridos a: `--brand-navy`, `--brand-teal`, `--brand-teal-deep`, `--brand-mint` (web) · `brandNavy`, `brandTeal`, `brandTealDeep`, `brandMint` (Flutter).
 
 ## Anti-patterns Zonix
 
@@ -40,9 +58,8 @@ Usar la salida para: estructura de landing, patrones hero, checklist a11y, anti-
 - Paletas/fuentes fuera de Plus Jakarta Sans (web) y BRAND
 - Copy gig-economy / restaurante / Eats legacy
 - Ratings fake o claims de salud sin respaldo regulatorio
+- Ignorar badges Rx / cold chain en checkout
 
-## Canon
+## Skills financieras/regulatorias completas
 
-- Marca: [docs/BRAND_ZONIX_PHARMA.md](../../../docs/BRAND_ZONIX_PHARMA.md)
-- Web: skill `zonix-web-design`
-- Flutter: Front `zonix-ui-design`
+Solo en Backend: `zonix-financial-model`, `zonix-fundraising-narrative`, `zonix-regulatory-ve`.

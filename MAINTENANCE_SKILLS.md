@@ -19,7 +19,7 @@ Las skills (`.agents/skills/*/SKILL.md`) no son simple documentación; son **gu�
 | 1 Orquestación | `jarvis-*` | `jarvis-core`, `jarvis-experts` |
 | 2 Proceso | `*-ops` | `task-pipeline-ops`, `git-guardrails-ops` |
 | 3 Dominio Zonix | `zonix-*` | **solo locales** — nunca en manifest |
-| 5 Solo local | no en manifest | `documentar-avances`, `ui-ux-pro-max`, `speckit-*` en `.cursor/skills/` |
+| 5 Solo local | no en manifest | `documentar-avances`, `ui-ux-pro-max` (ZONIX.md), `speckit-git-*` |
 
 **Onboarding máquina + repo:**
 
@@ -41,7 +41,7 @@ bash $JARVIS_SKILLS_LIBRARY/scripts/init-jarvis.sh --min c
 - **passthrough:** `SKILL.md` idéntico al canónico.
 - **overlay:** editar solo `OVERLAY.md`; no parchear a mano el cuerpo canónico en `SKILL.md`.
 - **`zonix-*`:** nunca en manifest — solo locales.
-- **WARN Fase 2:** `.cursor/skills/` versionado (speckit, ui-ux) sigue coexistiendo; migración futura documentada en [docs/ZONIX_JARVIS_INTEGRATION.md](docs/ZONIX_JARVIS_INTEGRATION.md).
+- **Spec Kit:** skills core en `~/.cursor/skills/` (`install.sh --all`); git hooks en `.agents/skills/speckit-git-*`. `.cursor/skills/` gitignored — ver [docs/ZONIX_JARVIS_INTEGRATION.md](docs/ZONIX_JARVIS_INTEGRATION.md).
 
 Doc integración: [docs/ZONIX_JARVIS_INTEGRATION.md](docs/ZONIX_JARVIS_INTEGRATION.md) · Library: `jarvis-skills-library/docs/ZONIX_INTEGRATION.md`.
 

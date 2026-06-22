@@ -231,7 +231,7 @@ Zonix **sí** usa `.specify/` y Spec Kit para **features de producto** (API + Fl
 
 | Ámbito | Cadena |
 |--------|--------|
-| Feature producto | `sdd-router` (global) → `.cursor/skills/speckit-*` → skills `zonix-*` del dominio |
+| Feature producto | `sdd-router` (global) → `~/.cursor/skills/speckit-*` → skills `zonix-*` del dominio |
 | Guía canon | [docs/zonix/SPEC_KIT_ZONIX.md](docs/zonix/SPEC_KIT_ZONIX.md) |
 | Constitution | `.specify/memory/constitution.md` |
 | Specs hub | `specs/` (Backend); Front espejo en `../ZonixPharma-Front` |

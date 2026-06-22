@@ -30,7 +30,7 @@ bash /var/www/html/proyectos/AIPP/jarvis-skills-library/scripts/init-jarvis.sh -
 | Backend | 48 (Laravel + ops) | `jarvis-core` — Spec Kit **activo**, dominio `zonix-*` |
 | Front | 45 (Flutter + ui-router + ui-ux-pro-max) | `jarvis-core` — `ui-router` → `zonix-ui-design` → `ui-ux-pro-max` |
 
-**No incluir en manifest:** skills `zonix-*`, `documentar-avances`, `speckit-*` (`.cursor/skills/`), Stitch/React (Front capa 5/6).
+**No incluir en manifest:** skills `zonix-*`, `documentar-avances`, `speckit-*` (global `~/.cursor/skills/` vía `install.sh`), `speckit-git-*` (local `.agents/skills/`), Stitch/React (Front capa 5/6).
 
 ## Sync post-pull library
 
@@ -57,10 +57,25 @@ Precedencia detallada: `.agents/skills/jarvis-core/OVERLAY.md`.
 | Features producto API+Flutter | `.specify/` + `speckit-*` + `zonix-*` |
 | Pack inversor / `docs/Lanzamiento/` | `zonix-lanzamiento-docs` — **no** Spec Kit |
 
-## Fase 2 (fuera de scope actual)
+## Fase 2 — completada (jun 2026)
 
-- Migrar/eliminar `.cursor/skills/` versionado (speckit, ui-ux duplicados).
-- Unificar `ui-ux-pro-max/ZONIX.md` (Backend capa 5) con `OVERLAY.md` (Front manifest).
+- `.cursor/skills/` **no se versiona** (`.gitignore`); duplicados speckit/ui-ux eliminados del repo.
+- **Spec Kit core:** `bash jarvis-skills-library/scripts/install.sh --all` → `~/.cursor/skills/speckit-*`.
+- **Spec Kit git hooks:** `.agents/skills/speckit-git-*` (local capa 5).
+- **ui-ux-pro-max:** canon Zonix unificado — Backend `ZONIX.md` + Front `OVERLAY.md` (scripts globales en `~/.cursor/skills/ui-ux-pro-max`).
+
+Tras clonar el repo, onboarding máquina (funciona **desde cualquier directorio**):
+
+```bash
+# Capa 0 — skills globales (~/.cursor/skills/)
+bash /var/www/html/proyectos/AIPP/jarvis-skills-library/scripts/install.sh --all
+
+# Opcional — integración Cursor local en .cursor/skills/ (gitignored; no versionar)
+cd /var/www/html/proyectos/AIPP/DESARROLLO/ZonixPharma/ZonixPharma-Backend
+specify init . --force --integration cursor-agent --script sh
+```
+
+Si **ya estás dentro** de `jarvis-skills-library`, usa `bash scripts/install.sh --all` (sin prefijo `jarvis-skills-library/`).
 
 ## Referencias
 

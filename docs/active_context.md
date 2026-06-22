@@ -99,7 +99,7 @@
 
 - **Backend hub:** `.specify/`, `specs/`, constitution en `.specify/memory/constitution.md`, overrides dual-repo.
 - **Front espejo:** `cursor-agent` en ZonixPharma-Front; specs activas en Backend `specs/`.
-- **Skills:** `.cursor/skills/speckit-*` (proceso) + `.agents/skills/zonix-*` (dominio).
+- **Skills:** `~/.cursor/skills/speckit-*` (proceso) + `.agents/skills/zonix-*` (dominio).
 - **Piloto:** `specs/001-block-rx-strict-checkout/` — spec/plan/tasks/analyze listos; **implement pendiente OK usuario**.
 - **Guía:** [docs/zonix/SPEC_KIT_ZONIX.md](zonix/SPEC_KIT_ZONIX.md).
 - **Tests post-install:** `php artisan test --filter=OrderTest` OK; `flutter test` 216 passed.

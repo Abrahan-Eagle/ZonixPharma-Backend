@@ -49,7 +49,7 @@ Features de **producto** (API + Flutter) siguen Spec-Driven Development. **No** 
 - **Constitution:** [.specify/memory/constitution.md](.specify/memory/constitution.md)
 - **Specs:** [specs/](specs/) (hub Backend)
 - **Guía:** [docs/zonix/SPEC_KIT_ZONIX.md](docs/zonix/SPEC_KIT_ZONIX.md)
-- **Skills proceso:** `.cursor/skills/speckit-*` (complementan `.agents/skills/zonix-*`)
+- **Skills proceso:** `~/.cursor/skills/speckit-*` (global vía `install.sh`) + `.agents/skills/speckit-git-*` (local)
 - **Front:** `../ZonixPharma-Front` — citar rutas como `front:lib/...` en plans/tasks
 
 Leer el `plan.md` activo en `specs/` para contexto técnico de la feature en curso.
@@ -135,7 +135,7 @@ return response()->json([
 
 ### Skills de dominio (selección — catálogo completo en `AGENTS.md`)
 
-Para **nueva feature de producto**: skills `.cursor/skills/speckit-*` + `zonix-*` del dominio.
+Para **nueva feature de producto**: skills `~/.cursor/skills/speckit-*` + `zonix-*` del dominio.
 
 - **zonix-api-patterns**: para crear o modificar endpoints, controladores, rutas y middleware.
 - **zonix-order-lifecycle**: para cualquier cambio en órdenes, estados (incluyendo `pending_prescription_validation`), cancelaciones o reglas de flujo.

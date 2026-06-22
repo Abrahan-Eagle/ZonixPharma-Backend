@@ -30,6 +30,9 @@ Homestead.json
 .phpactor.json
 auth.json
 
+# No versionar skills globales ni duplicados Spec Kit (usar ~/.cursor/skills/ vía install.sh)
+.cursor/skills/
+
 # Otro proyecto / utilidades locales (no Zonix Eats)
 venv_scraper/
 pendrive_badblocks_result.txt
