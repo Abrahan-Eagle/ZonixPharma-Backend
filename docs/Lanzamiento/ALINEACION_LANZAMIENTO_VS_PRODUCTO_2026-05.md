@@ -1,6 +1,6 @@
 # Alineación plan de Lanzamiento vs producto (software)
 
-> **Fecha:** 27 mayo 2026.  
+> **Fecha:** 22 junio 2026 (refresh post-auditoría forense v2).  
 > **Estado del pack:** **WIP** — documentos en mejora continua; este informe no es dictamen final ni cierre de data room.  
 > **Base técnica:** [../ANALISIS_TECNICO_COMPLETO_2026-05.md](../ANALISIS_TECNICO_COMPLETO_2026-05.md) (repos Backend + Frontend).  
 > **Plan operativo canónico:** [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md).  
@@ -57,10 +57,10 @@ Leyenda: **OK** listo para piloto con smoke | **Parcial** existe con gaps | **No
 
 | Fase / hito (PLAN_LANZAMIENTO) | Qué pide el plan | Producto (código) | Estado |
 |------------------------------|-----------------|-------------------|--------|
-| T+0–7 Deploy VPS, dominio, SSL | Producción Pharma | Infra no en repo; workflow `main.yml` aún **Eats** | **Ops** + deuda CI |
+| T+0–7 Deploy VPS, dominio, SSL | Producción Pharma | Infra no en repo; deploy **`main.yml`** → pharma.aiblockweb.com; CI **`ci.yml`** (Pint + PHPUnit) | **Ops** + **OK** pipeline Pharma |
 | T+7–12 Firebase Phone Auth OTP | Registro paciente SMS | Integración prevista; **google-services.json** pendiente ([TECH_DEBT](../TECH_DEBT.md)) | **Parcial** |
 | T+10–15 Pusher + FCM prod | Tiempo real órdenes/Rx | Implementado en código; requiere credenciales prod | **Parcial** |
-| T+25–30 Tests E2E producción | Flujo completo | **399** BE + **216** FE tests; **smoke manual** no documentado | **Parcial** |
+| T+25–30 Tests E2E producción | Flujo completo | **443** BE + **~241** FE tests; smoke manual: [../SMOKE_RX_E2E.md](../SMOKE_RX_E2E.md) | **Parcial** |
 | T+30 Equipo + HQ | — | — | **Ops** |
 | T+30–55 Onboarding farmacias + **carga catálogo** | Panel commerce productos Rx/OTC | `commerce_product_form_page`, API products | **OK** |
 | T+35–55 Capacitación **farmacéutico** | Onboarding MPPS, validar Rx | `pharmacist_onboarding`, `PrescriptionController` | **OK** |
@@ -110,7 +110,7 @@ Prioridad para el founder técnico (no sustituye backlog de negocio).
 |-----------|--------------|------------------------|-------------------|
 | **P0** | **Release móvil:** Firebase proyecto Pharma, keystore, APNs | Day-D sin app instalable confiable | [TECH_DEBT](../TECH_DEBT.md) |
 | **P0** | **Smoke E2E manual** documentado (OTC, Rx, cold chain, pago) | PLAN_MODULO §18; PLAN_LANZAMIENTO T+25–30 | ANALISIS_TECNICO §10 |
-| **P1** | **Deploy/CI Pharma** (no pipeline Eats) | Riesgo desplegar código equivocado | `main.yml` |
+| **P1** | **Deploy/CI Pharma** | Pipeline alineado a Pharma (`ci.yml` + `main.yml`); pendiente credenciales prod Firebase/APNs | Workflows GitHub |
 | **P1** | **`medicine_lots`:** sin API commerce, sin UI, sin FIFO en despacho | Esquema BD + seeder; **UI/despacho FIFO post-Day-D o M3+** (I-02 corregido en CONTEXTO y PLAN_MODULO) | ANALISIS_TECNICO §4.3 |
 | **P2** | Envelope API / `getMessage()` en controllers | Estabilidad prod, soporte | AUDIT_API_PATTERNS |
 | **P2** | Descarga archivo receta en app buyer/pharmacist | Operación farmacia | FE `PrescriptionService` |
@@ -123,7 +123,7 @@ Prioridad para el founder técnico (no sustituye backlog de negocio).
 
 ## 4. Qué ajustar en los **documentos** (mientras los mejoráis)
 
-> **Estado 1 junio 2026:** correcciones **I-01 a I-15** aplicadas en pack. Tabla §4.1 = histórico de mejoras ya hechas + pendientes menores.
+> **Estado 22 junio 2026:** correcciones **I-01 a I-15** aplicadas en pack; refresh CI Pharma + smoke Rx documentado. Tabla §4.1 = histórico de mejoras ya hechas + pendientes menores.
 
 ### 4.1 Documentación adelantada (suavizar o acotar)
 
@@ -142,18 +142,18 @@ Prioridad para el founder técnico (no sustituye backlog de negocio).
 | Comandos scheduler Rx/pagos | PLAN_MODULO o PLAN_RX | `zonix:expire-pending-prescriptions`, expire `pending_payment`, purge datos receta |
 | Política `block_rx_without_prescription` default false | PLAN_MODULO §Rx | Comportamiento MVP: orden puede crearse sin receta previa; subida después |
 | Retención 90 días adjuntos receta | ESTRUCTURA_LEGAL §4.4 + PLAN_MODULO §14 | Ya parcial; enlazar a comando purge |
-| Readiness checklist pre-Day-D | Nuevo § en PLAN_LANZAMIENTO o PLAN_MODULO §18 | Tabla: smoke OTC, smoke Rx, Pusher, FCM, 1 orden pago real en staging |
+| Readiness checklist pre-Day-D | PLAN_LANZAMIENTO §4.2 o PLAN_MODULO §18 | Tabla: smoke OTC/Rx ([SMOKE_RX_E2E.md](../SMOKE_RX_E2E.md)), Pusher, FCM, 1 orden pago real staging; caps SAFE **600k/650k/720k** citados en pitch |
 | Deuda nombres Eats en UI | Nota en BRIEF o CONTEXTO | “restaurants” = farmacias (legacy); no es vertical Eats |
 
 ### 4.3 Documentación coherente (reforzar, no reescribir)
 
 | Tema | Docs alineados | Nota |
 |------|----------------|------|
-| Flujo Rx farmacéutico colegiado | PLAN_MODULO, PLAN_RX_VALIDATION, PROPUESTA_B2C, código | Mantener como diferenciador central |
+| Flujo Rx farmacéutico colegiado | PLAN_MODULO, PLAN_RX_VALIDATION, PROPUESTA_VALOR_USUARIO_FINAL, código | Mantener como diferenciador central |
 | T+90 = Day-D = M1 | PLAN_LANZAMIENTO, PROYECCION §0, README | Crítico para no confundir burn |
 | 7 roles / sin flota Zonix | README, PROPUESTA_TERCER_LADO, TERCER_LADO | OK con código |
 | Pagos manuales VE | PLAN_METODOS_PAGO, zonix-payments | OK con código |
-| 399 tests | BRIEF, VOLCADO §1.2, README | Re-ejecutar y actualizar commit antes de reunión |
+| 443 tests | BRIEF, VOLCADO §1.2, README | Re-ejecutar y actualizar commit antes de reunión |
 
 ### 4.4 Datos humanos vacíos (solo founder / equipo)
 

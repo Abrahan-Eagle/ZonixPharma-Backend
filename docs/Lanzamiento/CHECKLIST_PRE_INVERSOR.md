@@ -17,7 +17,7 @@
 | P0-03 | 2–3 referencias con permiso | Abierto |
 | P0-04 | Aprobación founder pack antes de envío | Abierto |
 | P0-05 | Demo en vivo — fecha programada | Abierto |
-| P0-06 | Re-run **399 tests** + commit en VOLCADO §1.2 | Snapshot OK (`17f208e`, 1 jun 2026); **re-ejecutar** antes de cada reunión |
+| P0-06 | Re-run **443 tests** + commit en VOLCADO §1.2 | Snapshot OK (`17f208e`, 1 jun 2026); **re-ejecutar** antes de cada reunión |
 | P0-07 | NDA + data room cerrado (si fondo formal) | Abierto |
 | P0-08 | Métricas tracción por producto (si se citan) | Abierto |
 
@@ -31,7 +31,7 @@
 | 2 | ¿Hay ventas / tracción hoy? | **Pre-revenue**; stack en **staging/VPS**; piloto **Day-D T+90**; no inflar GMV | BRIEF § Qué es; ALINEACION |
 | 3 | ¿Por qué **101k** y cap **600k**? | Piso honesto Fase 0 + 12m; **~42.209** cash M12; equilibrio **M11** | PROYECCION §1.1–§1.3; BRIEF |
 | 4 | ¿Es legal el modelo Rx en VE? | Farmacéutico **de cada farmacia** valida; dictamen **abogado + asesor** pre-Day-D | PLAN_MODULO §1; ESTRUCTURA |
-| 5 | ¿El producto está en producción? | **Staging** hoy; Play/App Store + Firebase OTP **T+7–12** Fase 0; **399 tests** (re-verificar) | ALINEACION; CHECKLIST §7.7 |
+| 5 | ¿El producto está en producción? | **Staging** hoy; Play/App Store + Firebase OTP **T+7–12** Fase 0; **443 tests** (re-verificar) | ALINEACION; CHECKLIST §7.7 |
 
 ### 0.3 Orden data room (~30 min)
 
@@ -105,7 +105,7 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 - [x] **Lista de proyectos previos:** **Zonix Pharma**, Corral X, Zonix Imports, Aiblockweb — detalle en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) §1. **Métricas de tracción (usuarios/GMV):** [PENDIENTE — números reales por producto si las compartes].
 - [x] **Por qué tú eres el founder correcto:** párrafo listo en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) §1.1.
 - [ ] **Referencias:** 2-3 contactos con teléfono y permiso explícito. [PENDIENTE].
-- [x] **Track record cuantificado (resumen):** 8+ años stack producto; fundador de **Zonix Pharma**, Corral X, Zonix Imports y Aiblockweb; lideró equipo de 5 devs (Mekautos); 399 tests backend Zonix Pharma (verificación repo mayo 2026).
+- [x] **Track record cuantificado (resumen):** 8+ años stack producto; fundador de **Zonix Pharma**, Corral X, Zonix Imports y Aiblockweb; lideró equipo de 5 devs (Mekautos); 443 tests backend Zonix Pharma (verificación repo mayo 2026).
 - [ ] **Compromiso a tiempo completo:** declarar explícitamente. Hoy consta **CETIAC 2025–presente** (sábados) y roles director/proyecto en LinkedIn; el inversor preguntará. Completar: % dedicación Zonix Pharma vs. otros ingresos. [PENDIENTE declaración firmada].
 
 ## 4. Datos del piloto (con visitas presenciales hechas)
@@ -138,7 +138,7 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 | 10-15 | Demo en vivo: paciente busca, sube receta, paga. Pharmacist valida en tablet. Farmacia ve la orden. **Si hay tiempo:** **`delivery_company`** asigna a **`delivery_agent`** y tracking en app (sin rol autónomo `delivery`). |
 | 15-20 | Mercado: TAM USD 1.638M (Cifar/IMS-IQVIA), comparable Farmalisto (~USD 32M revenue MX; funding ~USD 22M–33M según fuente). |
 | 20-25 | Números: **USD 101k** (Fase 0 + **12m** post-Day-D), **Day-D = T+90**, equilibrio **M11** (mitigaciones §1.4 PROYECCION), LTV/CAC **~7,2x** (ARPF ~50, **4×** Sales — UNIT). |
-| 25-28 | Ask: **USD 101k** vía SAFE post-money cap **USD 600k**. Equity implícito **~16,83%**. |
+| 25-28 | Ask (elegir tier según conversación): **Lean — USD 101k** SAFE cap **600k** (~16,83% implícito) · **Base recomendado — USD 118k** cap **650k** (~18,2%) · **Growth — USD 135k** cap **720k** (~18,8%) — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §1. |
 | 28-30 | Q&A inicial + próximos pasos. |
 
 ## 7. Q&A — preguntas frecuentes y respuestas
@@ -179,8 +179,9 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 
 | Q | A |
 |---|---|
-| ¿Por qué **USD 101k** mínimo y no menos? | "**101k Lean** es el **piso honesto** con Co-CEO, 4× Sales, HQ casa, IA y Fase 0. Stretch recomendado: **118k Base** o **135k Growth**." |
+| ¿Por qué **USD 101k** mínimo y no menos? | "**101k Lean** es el **piso honesto** con Co-CEO, 4× Sales, HQ casa, IA y Fase 0. Stretch recomendado: **118k Base** (cap **650k**) o **135k Growth** (cap **720k**)." |
 | ¿Qué gano con **118k** vs **101k**? | "Valla mediana, asesor regulatorio **120/mes**, Meta **800** todo el año y **~USD 10k** más de reserva caja — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3." |
+| ¿Qué gano con **135k** vs **118k**? | "Mayor colchón runway (**~USD 17k** reserva adicional vs Lean), Meta **800** sostenido y buffer **25%** — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §4." |
 | ¿Por qué LTV/CAC **~7,2x** si benchmarks SaaS son 3-5x? | "1) Revenue recurrente B2B (cuota 25/40/55 + fee GMV) con take-rate total bajo vs agregadores. 2) Marketplace sticky por catálogo y rutas. 3) No operamos logística directa del medicamento (gross margin alto en software). 4) CAC sube con **4×** Sales pero ARPF placeholder sube a **~50**." |
 | ¿Qué pasa si inflación VE supera 800%? | "Plan contingencia: cortar valla (USD 350), bajar Meta ~50% (~USD 400), reducir 1 hire si necesario (~USD 300–400). Burn baja a **~USD 5.500–6.300**/mes (orden de magnitud). Runway extiende **~1–2 meses**." |
 | ¿Hay sueldo del founder? | "**Lean 101k:** **USD 1.000/mes** CEO+CTO en burn ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.3). Igual en Base/Growth." |
@@ -210,7 +211,7 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 | Pregunta | Respuesta anclada | Fuente |
 |----------|-------------------|--------|
 | ¿Stack? | Laravel API + Flutter; Sanctum; Pusher + FCM; pagos manuales VE | [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) |
-| ¿Tests? | **399** tests backend (re-verificar commit antes de reunión — P0-06) | [../ANALISIS_TECNICO_COMPLETO_2026-05.md](../ANALISIS_TECNICO_COMPLETO_2026-05.md) |
+| ¿Tests? | **443** tests backend (re-verificar commit antes de reunión — P0-06) | [../ANALISIS_TECNICO_COMPLETO_2026-05.md](../ANALISIS_TECNICO_COMPLETO_2026-05.md) |
 | ¿Rx? | Validación por farmacéutico colegiado de la farmacia; estados `pending_prescription_validation` | [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md); [../PLAN_RX_VALIDATION.md](../PLAN_RX_VALIDATION.md) |
 | ¿Delivery? | Partners `delivery_company` / `delivery_agent`; **sin** flota Zonix | PLAN_LANZAMIENTO; ALINEACION |
 | ¿Repo / código? | GitHub org o acceso bajo NDA — **P0-01** | VOLCADO §1 |

@@ -1,6 +1,6 @@
 # Pack Lanzamiento Inversor — Zonix Pharma
 
-> **Última actualización:** 1 junio 2026.
+> **Última actualización:** 21 junio 2026.
 > **Propósito de esta carpeta:** (1) **Plan de lanzamiento operativo** de Zonix Pharma — calendario **T+0 → Fase 0 → Day-D (T+90) → M12**, equipo, farmacias, tech y KPIs ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) es la fuente canónica). (2) **Materiales de inversor y finanzas** en mejora continua (WIP). Cruce pack ↔ código: [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) + [../ANALISIS_TECNICO_COMPLETO_2026-05.md](../ANALISIS_TECNICO_COMPLETO_2026-05.md).
 > **Estado del pack:** borrador avanzado pre-seed; textos legales y plazos de retención sujetos a **dictamen abogado + farmacéutico asesor** antes de Day-D público.
 > **Producto:** Zonix Pharma — marketplace farmacéutico digital; el pack usa **solo** esa marca para producto y plataforma (no mezclar con otros productos en narrativa, métricas ni infra — p. ej. dominio `zonixpharma.com`, repo `ZonixPharma-*`).
@@ -10,7 +10,7 @@
 
 > **Lectura externa:** pack revisado para especialistas (inversor, abogado, contador, asesor farmacéutico, equipo). Sin documentación de proceso interno de redacción automatizada.
 
-Este directorio contiene **24 documentos** `.md` en raíz: materiales de **inversor**, **finanzas**, **legal**, **operación comercial**, **propuestas de valor** y **plantillas internas** ([REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md), [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md), [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md), [GUIA_DISCOVERY_CALLE_FASE0.md](GUIA_DISCOVERY_CALLE_FASE0.md), [BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md](BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md)).
+Este directorio contiene **25 archivos** `.md` en raíz: **23 documentos canónicos** del pack + **1 anexo outreach** ([RESUMEN_ALIADO_GABRIEL_BARRIOS.md](RESUMEN_ALIADO_GABRIEL_BARRIOS.md), no incluir en zip inversor por defecto) + este **README**. Materiales de **inversor**, **finanzas**, **legal**, **operación comercial**, **propuestas de valor** y **plantillas internas** ([REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md), [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md), [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md), [GUIA_DISCOVERY_CALLE_FASE0.md](GUIA_DISCOVERY_CALLE_FASE0.md), [BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md](BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md)).
 
 Para **ejecutar el lanzamiento:** [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) y [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md). Para **inversor en ~30 min:** [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) y la ruta de la tabla siguiente.
 
@@ -89,7 +89,7 @@ Lo anterior +:
 | LTV                                 | USD 1.000                                                                                                                                                                   |
 | LTV/CAC                             | **~7,2x**                                                                                                                                                                   |
 | Payback CAC                         | **~2,8 meses**                                                                                                                                                              |
-| Tests backend (verificado mayo 2026) | **399** (`vendor/bin/phpunit` en ZonixPharma-Backend)                                                                                                                       |
+| Tests backend (verificado jun 2026) | **443 passed** (`php artisan test --parallel` en ZonixPharma-Backend; re-verificar pre-reunión — REGISTRO P0-06)                                                                 |
 
 
 
@@ -132,13 +132,12 @@ Lo anterior +:
 
 ## Documentos pre-existentes del repositorio que el pack referencia (no duplica)
 
-- [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md) — marco farmacéutico VE; [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §10 — Sudeban/pagos piloto.
-- `[../PLAN_REGULATORIO_PHARMA_VE.md](../PLAN_REGULATORIO_PHARMA_VE.md)` — regulación específica del vertical farmacéutico.
-- `[../PLAN_RX_VALIDATION.md](../PLAN_RX_VALIDATION.md)` — flujo de validación de receta médica.
-- `[../BRAND_ZONIX_PHARMA.md](../BRAND_ZONIX_PHARMA.md)` — paleta, tipografía, do/don't.
-- `[../logica-pagos-por-rol.md](../logica-pagos-por-rol.md)` — lógica de pagos manuales VE.
-- `[../FLUJO_PAGO_ORDEN.md](../FLUJO_PAGO_ORDEN.md)` — flujo de pago de orden.
-- `[../MIGRACION_EATS_PHARMA.md](../MIGRACION_EATS_PHARMA.md)` — qué cambió en la migración Eats → Pharma.
+- [../PLAN_REGULATORIO_PHARMA_VE.md](../PLAN_REGULATORIO_PHARMA_VE.md) — marco farmacéutico VE; [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §10 — Sudeban/pagos piloto.
+- [../PLAN_RX_VALIDATION.md](../PLAN_RX_VALIDATION.md) — flujo de validación de receta médica.
+- [../BRAND_ZONIX_PHARMA.md](../BRAND_ZONIX_PHARMA.md) — paleta, tipografía, do/don't.
+- [../logica-pagos-por-rol.md](../logica-pagos-por-rol.md) — lógica de pagos manuales VE.
+- [../FLUJO_PAGO_ORDEN.md](../FLUJO_PAGO_ORDEN.md) — flujo de pago de orden.
+- [../MIGRACION_EATS_PHARMA.md](../MIGRACION_EATS_PHARMA.md) — qué cambió en la migración Eats → Pharma.
 
 ---
 

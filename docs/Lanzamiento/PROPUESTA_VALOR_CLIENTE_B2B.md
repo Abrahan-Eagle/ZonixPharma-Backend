@@ -15,7 +15,7 @@
 
 ## 2.0 Día en la vida del dueño + ranking mom-test (Steve Blank M3)
 
-Antes de pitchear (§3) o demostrar (§7), Sales debe **mapear el día real** del dueño y construir el ranking de problemas/beneficios **desde entrevistas** — no desde este documento.
+Antes de pitchear (§3) o demostrar (§7), Sales debe **mapear el día real** del dueño y construir el ranking de problemas/beneficios **desde entrevistas** — no desde este documento. **Guía de campo:** [GUIA_DISCOVERY_CALLE_FASE0.md](GUIA_DISCOVERY_CALLE_FASE0.md) §5–§8 (mom-test + pricing 25/40/55).
 
 ### Día en la vida (plantilla discovery — llenar por farmacia en VOLCADO §6)
 
@@ -30,9 +30,9 @@ Antes de pitchear (§3) o demostrar (§7), Sales debe **mapear el día real** de
 
 | # | Top 3 problemas (citas mom-test) | Top 3 beneficios Zonix (medibles) |
 |---|----------------------------------|-----------------------------------|
-| 1 | `[PENDIENTE entrevistas — VOLCADO §6]` | Menos pedidos manuales por WhatsApp (pedidos en app/semana) |
-| 2 | `[PENDIENTE]` | Rx con estado y trazabilidad (tiempo validación ≤60 min) |
-| 3 | `[PENDIENTE]` | Costo de canal acotado vs agregador (calculadora §8) |
+| 1 | `[PENDIENTE entrevistas — VOLCADO §6; guía [GUIA_DISCOVERY_CALLE_FASE0.md](GUIA_DISCOVERY_CALLE_FASE0.md) §9]` | Menos pedidos manuales por WhatsApp (pedidos en app/semana) |
+| 2 | `[PENDIENTE Sales Lead — dato T+60]` | Rx con estado y trazabilidad (tiempo validación ≤60 min) |
+| 3 | `[PENDIENTE Sales Lead — dato T+60]` | Costo de canal acotado vs agregador (calculadora §8) |
 
 **Tipo de propuesta dominante para el one-pager (Blank M2):** **costo total menor** vs take-rate agregador (§2 punto 3 + §5). «Menos fricción» y «nuevo canal» van como apoyo en objeciones §9, **no** mezclados en el mismo párrafo del pitch.
 

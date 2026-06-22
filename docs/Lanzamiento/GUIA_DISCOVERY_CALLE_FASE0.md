@@ -40,6 +40,19 @@ El founder debe confirmar **en persona** que el dolor existe **antes** de escala
 5. **No vender en la primera visita.** El brochure se entrega al salir, si el dueño lo pide o si hubo interés genuino.
 6. La IA / el equipo **no inventa** respuestas de entrevistas — solo se vuelca lo que el dueño dijo.
 
+### 2.1 Script mom-test pricing (cuota 25/40/55 + waiver §11 B2B)
+
+**Cuándo:** segunda visita o cierre de primera visita **solo si** hubo dolor confirmado (§3). **No** abrir con precio.
+
+| Paso | Guion (adaptar al GMV declarado) | Registrar en VOLCADO §6 |
+|------|----------------------------------|-------------------------|
+| 1 | «Con el GMV que me comentó (~USD X/mes en mostrador + digital), hoy en agregador pagaría ~25–35% — ¿cuánto fue la última factura real?» | GMV estimado + comisión actual |
+| 2 | «Nuestro modelo es **cuota fija por banda + % bajo sobre GMV en app**: **Basic 25**, **Pro 40**, **Enterprise 55** USD/mes + % según banda ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5). Con **USD 5.000** GMV en app, Pro sería **~USD 80/mes** vs **~USD 1.250–1.750** en agregador — ¿le cierra el orden de magnitud?» | Reacción (acepta / duda / rechaza) |
+| 3 | «Las **primeras 10 farmacias piloto** pueden tener **cuota USD 0 meses 1–2** (GMV se mide igual) — §11 B2B. ¿Eso cambia su decisión de probar?» | Sí/No + objeción |
+| 4 | «¿Qué tendría que pasar en **30 días** para que esto valga la pena vs seguir solo WhatsApp?» | Métrica de éxito del dueño |
+
+**Umbral:** ≥3 reacciones documentadas antes Day-D (PLAN §4.0 fila 5). Si ≥2/3 rechazan Pro sobre GMV típico → escalar a founder.
+
 ---
 
 ## 3. Guion de entrevista (10–15 min, sin pitch)
