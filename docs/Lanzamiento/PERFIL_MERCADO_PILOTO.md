@@ -47,8 +47,8 @@ Construido bottom-up, no top-down.
 
 | Mes | Farmacias activas | % SAM Valencia metro | Revenue mensual proyectado |
 |---|---|---|---|
-| 3 | **15** | **~6,6%** Valencia metro *(alineado [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1)* | **USD 400** |
-| 6 | **41** | **~18%** Valencia metro / **~25%** SAM extendido *(150–180; §1.1)* | **USD 1.850** |
+| 3 | **62** | **~27%** Valencia metro *(alineado [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1)* | **USD 3.100** |
+| 6 | **97** | **~43%** Valencia metro / **~54%** SAM extendido *(150–180; §1.1)* | **USD 4.850** |
 | 9 | **130** | **~57%** Valencia metro / **~72%** SAM extendido *(§1.1)* | **USD 6.500** |
 | **11** | **151** | **~67%** Valencia metro / **~84%** SAM extendido | **USD 7.550** *(revenue; burn mes 11 **7.431** — **equilibrio mensual** §1.1)* |
 | 12 | **159** | **~70%** Valencia metro / **~88%** SAM extendido *(§1.1)* | **USD 7.950** |
@@ -63,6 +63,7 @@ Farmacias firmadas/mes ≈ 4 Sales × visitas efectivas/semana × tasa de cierre
 
 - **Headcount:** 4× Sales B2B (única fuente: [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) nómina) — no asumir más vendedores sin línea de gasto.
 - **Visitas efectivas/semana y tasa de cierre:** `[PENDIENTE Sales Lead — dato real T+60]`; hasta entonces la curva §3 es hipótesis, no compromiso.
+- **Cruce M3/M6 con PROYECCION §1.1:** al cierre **M3** el modelo central tiene **62 activas** / **USD 3.100** rev; al cierre **M6**, **97 activas** / **USD 4.850** — coherente con gate DoD ≥97 activas ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §5).
 - **Lectura de coherencia:** llegar a **151 activas en M11** requiere firmar ~13-14 farmacias/mes netas de churn (~3,5/mes por vendedor). Si el dato real T+60 queda por debajo, ajustar curva o headcount **antes** de prometer M11 al inversor — no estirar la tasa de cierre en el spreadsheet.
 - Cruce con CAC **139** y LTV/CAC **~7,2x** ([UNIT_ECONOMICS.md](UNIT_ECONOMICS.md)): si para sostener la curva hay que subir gasto S&M, recalcular payback antes de aceptar la nueva cuota.
 
@@ -200,8 +201,8 @@ El piloto combina **dos focos geográficos** dentro de Valencia metro: **Urb. Be
 
 Basado en benchmarks LatAm (mercados B2B SaaS para SMB):
 
-- **Mes 1-3:** A cierre mes **3:** **15** farmacias activas (**~6,6%** Valencia metro / orden **~30–50%** del piloto inicial 30–50 puntos — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1).
-- **Mes 4-6:** A cierre mes **6:** **41** farmacias activas (**~18%** Valencia metro / **~25%** SAM extendido 150–180).
+- **Mes 1-3:** A cierre mes **3:** **62** farmacias activas (**~27%** Valencia metro — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1).
+- **Mes 4-6:** A cierre mes **6:** **97** farmacias activas (**~43%** Valencia metro / **~54%** SAM extendido 150–180).
 - **Mes 7-9:** A cierre mes **9:** **130** farmacias activas (**~57%** Valencia metro / **~72%** SAM extendido — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1).
 - **Mes 10-12:** A cierre mes **11:** **151** activas (**equilibrio mensual**); mes **12:** **159** activas (**~70%** Valencia metro).
 

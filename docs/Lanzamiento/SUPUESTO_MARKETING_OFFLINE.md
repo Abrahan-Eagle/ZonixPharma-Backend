@@ -171,9 +171,7 @@ Detalle de marca en [`../BRAND_ZONIX_PHARMA.md`](../BRAND_ZONIX_PHARMA.md).
 ### 3.5 Marketing digital (Meta Ads) — por tier
 
 - **Lean:** USD **800/mes** M1–6 · **500** M7–12.
-- **Base / Growth:** USD **800/mes** todo el año.
-
-**Curva Lean:** **USD 800/mes** M1–6 · **500** M7–12. **Base/Growth:** **800** todo el año — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2–§4.
+- **Base / Growth:** USD **800/mes** todo el año — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2–§4.
 
 ### 3.6 Canal referido / ciclo viral (costo ~0 — Steve Blank M5)
 
@@ -236,7 +234,7 @@ El canal de adquisición más barato del piloto no es paid: es la **farmacia ali
 Triggers para subir de Lean (valla pequeña **350**) → Base/Growth (valla mediana **700**):
 
 1. Adopción supera 130% del plan.
-2. Cash en banco al cierre del mes **6 ≥ ~USD 48.100** (coherente con escenario **Lean USD 101k** — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3).
+2. Cash en banco al cierre del **mes 6 post-Day-D (M6)** ≥ **~USD 46.395** (caja final M6 — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3; escenario **Lean USD 101k**).
 3. CAC orgánico (offline + boca en boca) supera CAC digital en farmacias firmadas.
 4. Serie A levantada o en proceso.
 

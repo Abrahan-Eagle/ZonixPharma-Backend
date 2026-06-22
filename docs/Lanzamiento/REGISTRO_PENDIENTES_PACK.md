@@ -15,7 +15,7 @@
 | **P0 — Bloqueante reunión institucional** | 8 | Due diligence formal o credibilidad founder |
 | **P1 — Recomendado pre-Day-D** | 15 | Operación piloto, cotizaciones y narrativa marketplace |
 | **P2 — Pre-envío inversor ángel / pre-seed** | 10 | Inversor, NDA, aprobación pack y artefactos modelo negocio |
-| **P3 — Dictamen externo (no llenar en tabla)** | 4 | Abogado + farmacéutico asesor |
+| **P3 — Dictamen externo (no llenar en tabla)** | 7 | Abogado + farmacéutico asesor |
 | **P4 — Plantillas operativas (muchas celdas)** | ~70+ | Equipo, farmacias, calendario T+X — ver VOLCADO §3–9 |
 
 ---
@@ -29,7 +29,7 @@
 | P0-03 | **2–3 referencias** profesionales con permiso y contacto | Founder | CHECKLIST §2 | §1.2 tabla |
 | P0-04 | **Aprobación founder** del pack antes de enviar | Founder | README final | README |
 | P0-05 | **Demo en vivo** programada (fecha) | Founder | CHECKLIST §5–§6; VOLCADO §1.2 | §1.2 |
-| P0-06 | Re-verificar **399 tests** + commit short pre-reunión | Founder | VOLCADO §1.2; BRIEF | §1.2 — snapshot **17f208e** (1 jun 2026); re-ejecutar antes de cada reunión |
+| P0-06 | Re-verificar **443 tests** + commit short pre-reunión | Founder | VOLCADO §1.2; BRIEF | §1.2 — snapshot **17f208e** (1 jun 2026, obsoleto); re-ejecutar antes de cada reunión |
 | P0-07 | Proceso **NDA** + data room cerrado (si fondo formal) | Founder + Legal | CHECKLIST §0.1 | — |
 | P0-08 | **Métricas tracción** por producto (GMV/usuarios) si se citan en pitch | Founder | CHECKLIST §2; VOLCADO §1.2 | CHECKLIST; §1.2 |
 
@@ -84,6 +84,7 @@
 | P3-04 | Plantillas y plazos **INHRR** / farmacovigilancia | Farmacéutico + Abogado | PLAN_MODULO §11 |
 | P3-05 | Revisión **T&C, privacidad, SAFE, contrato marco** farmacia | Abogado | ESTRUCTURA_LEGAL; CHECKLIST |
 | P3-06 | Designación formal **DPO** / responsable datos salud | Abogado | ESTRUCTURA §4.4; PLAN_MODULO §14 |
+| P3-07 | Plazo **retención digital receta** (doc 10 años vs purge código **90 días** `config/zonix.php`) | Abogado + Farmacéutico | PLAN_MODULO §14.4; ESTRUCTURA §4.4.1 |
 
 ---
 
@@ -117,7 +118,7 @@ Completar en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARI
 | Tiers capital 101 / 118 / 135 y SAFE caps | README, PRESUPUESTO §1 |
 | PROYECCION Lean M1–M12, Fase 0, caja M12 | PROYECCION §0–§1.3 |
 | Coherencia numérica pack (cifras ancla) | README, BRIEF, PROYECCION |
-| Tests backend **399** (verificar fecha pre-reunión) | README, BRIEF, VOLCADO §1.2 |
+| Tests backend **443** (verificar fecha pre-reunión) | README, BRIEF, VOLCADO §1.2 |
 
 ---
 
@@ -167,14 +168,42 @@ Completar en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARI
 
 | ID | Pendiente | Dueño |
 |----|-----------|-------|
-| AUD-01 | ALINEACION desactualizada (tests FE 216 vs ~228; veredicto §7) — requiere **re-run real** de suites | Founder |
+| AUD-01 | ALINEACION tests FE **~241** (AUDIT_360 jun 2026); BE **443** — re-run pre-reunión | Founder |
 | AUD-02 | BRIEF sensibilidad optimista: añadir activas/revenue M12 (~207 / ~11.385 según PROYECCION §7.3) | Founder + FP&A |
-| AUD-03 | Registro ART (§4.4.1 ESTRUCTURA) → formalizar como P3-07 con abogado | Abogado |
+| AUD-03 | Registro ART (§4.4.1 ESTRUCTURA) → formalizado como **P3-07** | Abogado + Farmacéutico |
 | AUD-04 | PROYECCION §3.3: puente 480k éxito (farmacias × ARPF) o etiqueta `[PENDIENTE FP&A]` adicional | FP&A |
 | AUD-05 | UNIT §8: margen bruto ~92% sin restar waiver/S&M — nota «margen post-waiver» | FP&A |
 | AUD-06 | PLAN_METODOS §5: fila riesgo «pharmacist ausente» (hoy solo en PLAN_MODULO §16) | Founder |
-| AUD-07 | ALINEACION §4.2-4.3: corregir `PROPUESTA_B2C` → `PROPUESTA_VALOR_USUARIO_FINAL.md` y ruta AUDIT_API_PATTERNS | Founder |
-| AUD-08 | PLAN_MODULO §8.2: unificar «10 años» como hipótesis `[PENDIENTE farmacéutico]` | Farmacéutico asesor |
+| AUD-07 | ALINEACION §4.3: ruta `PROPUESTA_VALOR_USUARIO_FINAL.md` (corregido v2) | **Cerrado** v2 |
+| AUD-08 | PLAN_MODULO §14.4: nota 90 días código + `[PENDIENTE]` 10 años | **Parcial** — P3-07 |
+
+**Auditoría forense pack v2 (22 jun 2026 — ver [../AUDIT_FORENSE_PACK_LANZAMIENTO_2026-06-22.md](../AUDIT_FORENSE_PACK_LANZAMIENTO_2026-06-22.md)):**
+
+*Remediado en v2:*
+
+| ID | Hallazgo | Acción |
+|----|----------|--------|
+| AUD-v2-01 | RESUMEN_GABRIEL «24 documentos» | → 23 canónicos + anexo (README) |
+| AUD-v2-02 | SUPUESTO trigger cash M6 **48.100** | → **46.395** (PROYECCION §1.3) |
+| AUD-v2-03 | PROYECCION suma firmas **185** vs total **175** | Nota FP&A §1.1 |
+| AUD-v2-04 | CHECKLIST Ask solo Lean 101k/600k | Guion multi-tier 118k/650k · 135k/720k |
+| AUD-v2-05 | ALINEACION CI «Eats» obsoleto | Refresh jun 2026; `ci.yml` + `main.yml` Pharma |
+| AUD-v2-06 | Smoke Rx no enlazado | → [SMOKE_RX_E2E.md](../SMOKE_RX_E2E.md) |
+| AUD-v2-07 | MENSAJE sin bridge T+0→Fase 0→Day-D | Párrafo en §1 y variante corta |
+| AUD-v2-08 | GUIA sin script pricing mom-test | §2.1 añadido |
+| AUD-v2-09 | PROP_USUARIO copy «90 min» sin SLA | `[PENDIENTE SLA partner]` en ads |
+| AUD-v2-10 | PLAN_MODULO farmacovigilancia §11 | Marcado `[roadmap]` |
+| AUD-v2-11 | Retención receta doc vs código 90 días | §14.4 + **P3-07** |
+
+*Persisten (founder / externo):*
+
+| ID | Pendiente | Dueño |
+|----|-----------|-------|
+| AUD-v2-12 | P0 humanos **8/8** abiertos (GitHub, NDA, demo, tracción…) | Founder |
+| AUD-v2-13 | Re-run tests + commit VOLCADO §1.2 (P0-06) | Founder |
+| AUD-v2-14 | AUD-02 BRIEF sensibilidad optimista M12 | FP&A |
+| AUD-v2-15 | AUD-04 PROYECCION §3.3 puente 480k | FP&A |
+| AUD-v2-16 | Smoke E2E manual ejecutado y firmado (P1-12) | Founder + CTO |
 
 ---
 

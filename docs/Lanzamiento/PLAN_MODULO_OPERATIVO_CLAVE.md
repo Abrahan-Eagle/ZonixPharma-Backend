@@ -253,6 +253,8 @@ Las etiquetas de producto en la app (**`common` / `retained` / `special`**, cont
 
 ## 11. Farmacovigilancia y eventos adversos (Chief Medical / regulatorio)
 
+> **`[roadmap]` — producto:** el flujo descrito abajo es **operativo objetivo**; en código **jun 2026** no hay formulario in-app post-entrega ni integración INHRR automatizada. Hasta implementarlo: canal vía Customer Support + farmacia según §16.
+
 **Objetivo:** canal formal para **eventos adversos (EA)** y sospechas de fallos de calidad asociados a medicamentos dispensados vía **Zonix Pharma**.
 
 | Paso | Responsable | Acción |
@@ -314,7 +316,7 @@ Datos de salud son categoría especial; **marco legal VE en actualización** —
 
 ### 14.4 Retención
 
-- **Receta común (digital en plataforma):** **hasta 10 años** como hipótesis de trazabilidad y defensa ante disputas; **ajustar** tras dictamen legal/farmacéutico (ver §8.2.1).
+- **Receta común (digital en plataforma):** **hasta 10 años** como hipótesis de trazabilidad y defensa ante disputas; **ajustar** tras dictamen legal/farmacéutico (ver §8.2.1). **Implementación código (jun 2026):** purge automático de adjuntos **90 días** tras estado terminal (`config/zonix.php` → `prescription_retention_days_after_terminal`, default **90**) — **desalineación doc↔código** pendiente de unificar con `[PENDIENTE abogado/asesor]`.
 - **Receta retenida / controlada:** conservación digital coherente con lo anterior + **retención física y libros** en la farmacia (responsabilidad del establecimiento).
 - **Datos personales paciente sin actividad:** anonimización después de 3 años de inactividad (política interna; validar plazo con abogado).
 - **Comprobantes de pago:** 10 años (marco contable VE; validar con contador).

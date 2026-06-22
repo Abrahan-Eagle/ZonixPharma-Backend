@@ -137,7 +137,7 @@ Plantilla StoryBrand para copy Meta, valla y app. **Sin** promesas de cura ni re
 
 | Paso | Tiempo | Qué hace |
 |---|---|---|
-| 1 | 30s | Descarga app desde Play Store o App Store (`com.zonix.pharma`). O entra a `web.zonixpharma.com`. |
+| 1 | 30s | Descarga app desde Play Store o App Store (**objetivo** `com.zonix.pharma`; **Android build actual** `com.zonix.eats` compartido con Firebase Eats — parche transitorio hasta registro Pharma en consola; ver [../MIGRACION_EATS_PHARMA.md](../MIGRACION_EATS_PHARMA.md)). O entra a `web.zonixpharma.com`. |
 | 2 | 30s | Registro con **solo teléfono + OTP por SMS** (**Firebase Phone Auth**). Sin email, sin nombre, sin dirección todavía. |
 | 3 | Inmediato | Browse de catálogo: el paciente ya puede explorar productos. |
 | 4 | 60s al primer pedido | Cuando agrega al carrito, app pide: nombre + dirección de entrega (si elige delivery). |
@@ -215,11 +215,11 @@ Estos KPIs se reportan trimestralmente al inversor.
 
 ### 9.1 Anuncio Meta Ads para crónico (clase media-alta)
 
-> "Tu mamá necesita 5 medicamentos cada mes. ¿Y si los pides desde tu teléfono y le llegan en 90 minutos? Zonix Pharma. Solo Carabobo, por ahora."
+> "Tu mamá necesita 5 medicamentos cada mes. ¿Y si los pides desde tu teléfono y le llegan a domicilio? Zonix Pharma. Solo Carabobo, por ahora." *(Tiempo de entrega: `[PENDIENTE SLA partner firmado]` — no prometer minutos fijos en ads hasta contrato.)*
 
 ### 9.2 Anuncio Meta Ads para joven profesional
 
-> "¿Sin tiempo para ir a la farmacia? Pide tu medicamento desde la app, paga con Zelle o Binance Pay, recíbelo en 90 minutos. Zonix Pharma. Carabobo."
+> "¿Sin tiempo para ir a la farmacia? Pide tu medicamento desde la app, paga con Zelle o Binance Pay, recíbelo a domicilio. Zonix Pharma. Carabobo." *(SLA entrega: `[PENDIENTE SLA partner firmado]`.)*
 
 ### 9.3 Anuncio Meta Ads para hijos en el exterior
 

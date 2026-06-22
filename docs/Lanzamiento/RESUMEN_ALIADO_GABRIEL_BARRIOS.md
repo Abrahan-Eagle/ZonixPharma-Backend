@@ -1,6 +1,6 @@
 # Zonix Pharma — Resumen para aliado estratégico
 
-> **Anexo de outreach** (no forma parte de los 24 documentos canónicos del pack).  
+> **Anexo de outreach** (no forma parte de los **23 documentos canónicos** del pack; el directorio tiene **25 archivos** `.md` incluyendo este README y anexo — ver [README.md](README.md)).  
 > **Para:** Gabriel Barrios — Gerente de Consultoría, Grupo Morr (Valencia, Venezuela)  
 > **De:** Abrahan Pulido — Founder / CEO / CTO, Zonix Pharma  
 > **Fecha:** 17 junio 2026  
@@ -12,7 +12,7 @@
 
 - **Mercado real y grande:** pharma venezolano **USD 1.638M/año**, en recuperación (+17,49% YoY en unidades — Cifar / IMS-IQVIA).
 - **Nicho desatendido:** farmacias **independientes y medianas** de Valencia que no tienen app propia y pagan **25–35%** a agregadores — o quedan fuera del digital.
-- **Producto ya construido:** stack **~4 años**, **399 tests** en staging; el capital va a **lanzar y vender**, no a inventar tecnología desde cero.
+- **Producto ya construido:** stack **~4 años**, **443 tests** en staging; el capital va a **lanzar y vender**, no a inventar tecnología desde cero.
 
 ---
 
@@ -77,10 +77,10 @@ Imagina a alguien en Valencia que necesita un medicamento para un familiar. Reco
 
 ### Lo que **sí** está hecho
 
-- Backend staging con **399 tests** (órdenes, pagos VE, chat, FCM, broadcast Rx).
+- Backend staging con **443 tests** (órdenes, pagos VE, chat, FCM, broadcast Rx).
 - App Flutter **OTC + Rx**; roles commerce, pharmacist, buyer y delivery operativos.
 - Landing y marca Pharma (`zonixpharma.com` / staging).
-- Pack de **24 documentos** con proyección mes a mes (Lean).
+- Pack de **23 documentos canónicos** + este anexo con proyección mes a mes (Lean).
 
 ### Lo que **aún no** está hecho
 

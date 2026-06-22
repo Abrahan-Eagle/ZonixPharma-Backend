@@ -7,7 +7,7 @@
 
 **Zonix Pharma** es la **verticalización del stack propio** (Laravel + Flutter + MySQL) con **~4 años** de iteración —incluida etapa previa de **delivery B2C** sobre el mismo núcleo— ahora orientada a **farmacia**. Esto importa porque significa:
 
-- **Tecnología validada:** backend en **staging/VPS** con **399 tests** (onboarding, órdenes, pagos manuales VE, KYC, chat, FCM, broadcast). **Re-ejecutar y citar commit** en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) §1.2 pre-reunión ([REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) P0-06). **No estamos empezando desde cero.**
+- **Tecnología validada:** backend en **staging/VPS** con **443 tests** (onboarding, órdenes, pagos manuales VE, KYC, chat, FCM, broadcast). **Re-ejecutar y citar commit** en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) §1.2 pre-reunión ([REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) P0-06). **No estamos empezando desde cero.**
 - **Equipo técnico ya entrenado:** el founder conoce el stack al detalle.
 - **Riesgo de ejecución reducido:** la capa farmacéutica diferenciadora (Rx, cadena de frío, farmacéutico colegiado) está **operativa en flujo core** y documentada en [`../PLAN_RX_VALIDATION.md`](../PLAN_RX_VALIDATION.md) y [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md). **Inventario por lotes (`medicine_lots`) / despacho FIFO:** esquema de datos y referencias en repo; **UI y despacho FIFO en operación** quedan para **post-Day-D o M3+** — no prometer módulo de lotes en pitch hasta cerrarlo ([ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md)).
 
@@ -215,7 +215,7 @@ Estas se documentarán en un anexo cuando lleguen al frente. Hoy no son bloquean
 ## 6. Tono del pitch
 
 - **Honesto sobre lo que no se ha hecho:** "no tenemos ventas todavía, tenemos producto operativo y plan validado".
-- **Confiado sobre lo que sí está hecho:** "399 tests backend (re-verificar pre-reunión), ~4 años de desarrollo del **stack Zonix Pharma**; staging/VPS hoy, tiendas T+7–12".
+- **Confiado sobre lo que sí está hecho:** "443 tests backend (re-verificar pre-reunión), ~4 años de desarrollo del **stack Zonix Pharma**; staging/VPS hoy, tiendas T+7–12".
 - **Específico con números:** nunca decir "esperamos crecer mucho"; decir **~151 farmacias activas en M11**, **~159** hacia M12, **~USD 42.209** cash cierre **M12** post-Day-D (**Lean 101k** + **Fase 0** + **Co-CEO** + **4×** Sales + cuota **25/40/55**), y **equilibrio mensual en M11** con ARPF placeholder **~50** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §0–§1.4).
 - **Realista sobre Venezuela:** mencionar la inflación de entrada, no esconder la complejidad regulatoria.
 - **Modular:** ticket parcial (USD 25k–50k) sobre SAFE Lean; stretch **118k Base** o **135k Growth** según apetito del ángel.

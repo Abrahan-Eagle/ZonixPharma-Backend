@@ -37,7 +37,7 @@ Ingeniero en Informática (IUTVAL, 2013–2018) con **más de 8 años** construy
 |---|---|
 | Repositorio | **ZonixPharma-Backend** |
 | Comando | `./vendor/bin/phpunit` (o `php artisan test`) |
-| Resultado última corrida | **399 tests**, **1649 assertions**, OK |
+| Resultado última corrida | **443 tests**, **1649 assertions**, OK |
 | Fecha corrida | **1 junio 2026** (`php artisan test --parallel`) |
 | Commit (short) | **17f208e** *(re-verificar antes de cada reunión inversor)* |
 | Notas | Cifra citada en pack: [README.md](README.md), [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) |

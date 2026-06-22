@@ -170,7 +170,7 @@ Es cuántas de esas **10** siguen activas **mes a mes** si cada mes se van **5%*
 **Columna “ARPF acumulado de la cohort”**  
 Es el **dinero total** que ese grupo ha pagado a Zonix **sumando todos los meses** desde que empezó (desde el mes 4 del ejemplo). Se asume **USD 50 por farmacia y por mes** (el **placeholder** ARPF del pack). Por ejemplo: en el mes 5 el grupo paga aproximadamente **9,5 × 50** ese mes; el acumulado **974** incluye lo del mes 4 más lo del mes 5 (con redondeos de la tabla).
 
-**La frase “USD 158/mes” y “mes 28”**  
+**La frase “USD 175/mes” y “mes 28”**  
 **24 meses después** del inicio de la cohort (mes 4 + 24 = **mes 28** del calendario de la empresa), aún quedan **~3,5** farmacias activas de las 10 originales. Ese resto paga ~**3,5 × 50 ≈ 175 USD al mes**. **“Todavía no se ha extinguido”** significa que la cohort no llega a cero: con churn 5% queda un **rabo** de clientes que siguen un tiempo generando ingreso.
 
 **Por qué importa la “Lectura” de abajo**  
