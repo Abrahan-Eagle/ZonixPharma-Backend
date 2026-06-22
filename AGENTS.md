@@ -212,6 +212,7 @@ Todos los skills y sus directivas se auto-generan usando `python3 .agents/skills
 | `engram-router` | Orquesta memoria persistente Engram (MCP) vs context-updater/handoff/active_context JARVIS. | [.agents/skills/engram-router/SKILL.md](.agents/skills/engram-router/SKILL.md) |
 | `error-handling-patterns` | Master error handling patterns across languages including exceptions, Result types, error propagation, and graceful degradation to build resilient applications. Use when implementing error handling, designing APIs, or improving application reliability. | [.agents/skills/error-handling-patterns/SKILL.md](.agents/skills/error-handling-patterns/SKILL.md) |
 | `executing-plans` | Ejecutar plan Flutter paso a paso. | [.agents/skills/executing-plans/SKILL.md](.agents/skills/executing-plans/SKILL.md) |
+| `fan-out-synthesize-ops` | Orquestación por defecto JARVIS: Map-Reduce agentico / Fan-out-and-synthesize — N subagentes en paralelo recaudan contexto → sesión principal (orquestador) sintetiza → writer único aplica → verify. | [.agents/skills/fan-out-synthesize-ops/SKILL.md](.agents/skills/fan-out-synthesize-ops/SKILL.md) |
 | `finishing-a-development-branch` | Cerrar feature Flutter: analyze + test, opciones merge/PR. | [.agents/skills/finishing-a-development-branch/SKILL.md](.agents/skills/finishing-a-development-branch/SKILL.md) |
 | `frontend-design` | Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Generates creative, polished code and UI design that avoids generic AI aesthetics. | [.agents/skills/frontend-design/SKILL.md](.agents/skills/frontend-design/SKILL.md) |
 | `git-commit` | Execute git commit with conventional commit message analysis, intelligent staging, and message generation. Use when user asks to commit changes, create a git commit, or mentions "/commit". Supports: (1) Auto-detecting type and scope from changes, (2) Generating conventional commit messages from diff, (3) Interactive commit with optional type/scope/description overrides, (4) Intelligent file staging for logical grouping | [.agents/skills/git-commit/SKILL.md](.agents/skills/git-commit/SKILL.md) |
@@ -296,6 +297,7 @@ Aplicar precedencia de [`jarvis-core`](.agents/skills/jarvis-core/SKILL.md) cuan
 | Auditar finanzas del pack (PROYECCION, UNIT, PRESUPUESTO) | `zonix-financial-model` |
 | Auditar finanzas del pack (PROYECCION, UNIT, PRESUPUESTO) | `zonix-startup-context` |
 | Auditar open issues como maintainer | `backlog-triage-ops` |
+| Auditoría módulo | `fan-out-synthesize-ops` |
 | Buscar contexto previo mem_search mem_context | `engram-memory-protocol` |
 | Calcular distancias/zonas | `zonix-delivery-system` |
 | Calendario piloto / hitos T+30/60/90 / Day-D | `zonix-launch-piloto` |
@@ -318,6 +320,7 @@ Aplicar precedencia de [`jarvis-core`](.agents/skills/jarvis-core/SKILL.md) cuan
 | Crear commit | `verification-before-completion` |
 | Crear o preparar pull request | `branch-pr-ops` |
 | Crear/modificar controladores o rutas | `zonix-api-patterns` |
+| Cualquier tarea no trivial | `fan-out-synthesize-ops` |
 | Cualquier tarea no trivial | `jarvis-experts` |
 | Dashboards y métricas admin/commerce | `zonix-analytics` |
 | Decidir loop vs prompt simple | `agent-loop-engineering` |
@@ -336,6 +339,7 @@ Aplicar precedencia de [`jarvis-core`](.agents/skills/jarvis-core/SKILL.md) cuan
 | Escribir descripción de PR o notas para review | `cognitive-doc-design-ops` |
 | Escribir feedback de code review para humano | `comment-writer-ops` |
 | Evitar PR monolítico desde SDD tasks | `work-unit-commits-ops` |
+| Explorar codebase | `fan-out-synthesize-ops` |
 | Finalizar tarea y documentar avances | `documentar-avances` |
 | Gates humanos antes de acción irreversible | `human-in-the-loop-ops` |
 | Guardar decisión o bugfix en Engram | `engram-memory-protocol` |
@@ -343,10 +347,12 @@ Aplicar precedencia de [`jarvis-core`](.agents/skills/jarvis-core/SKILL.md) cuan
 | Hacer git push o merge | `git-guardrails-ops` |
 | Human-in-the-loop diseño de loop | `human-in-the-loop-ops` |
 | Implementar eventos broadcast | `zonix-realtime-events` |
+| Implementar feature multi-archivo | `fan-out-synthesize-ops` |
 | Implementar feature o bugfix | `test-driven-development` |
 | Iniciar módulo | `brainstorming-ops` |
 | Iniciar módulo | `jarvis-core` |
 | Iniciar módulo | `task-pipeline-ops` |
+| Investigar bug | `fan-out-synthesize-ops` |
 | Iterar hasta lograr un objetivo medible | `agent-loop-engineering` |
 | Landing / welcome / CSS marketing | `zonix-web-design` |
 | Landing con IA, hero video loop, Nano Banana / Veo / Claude Design | `zonix-ai-landing-pipeline` |

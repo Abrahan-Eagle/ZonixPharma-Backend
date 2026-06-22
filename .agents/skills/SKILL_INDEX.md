@@ -26,6 +26,7 @@
 | `engram-router` | local | passthrough | Memoria persistente Engram MCP; Configurar engram en Cursor… |
 | `error-handling-patterns` | local | passthrough | — |
 | `executing-plans` | local | passthrough | — |
+| `fan-out-synthesize-ops` | local | passthrough | Cualquier tarea no trivial; Explorar codebase… |
 | `finishing-a-development-branch` | local | passthrough | Terminar módulo |
 | `frontend-design` | local | local-only | — |
 | `git-commit` | local | passthrough | Crear commit |
