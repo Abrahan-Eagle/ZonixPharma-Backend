@@ -180,8 +180,8 @@ Plantilla StoryBrand para copy Meta, valla y app. **Sin** promesas de cura ni re
 
 ### 7.2 Canales offline
 
-- Valla: **Lean 101k** — pequeña 3m×2m **USD 350/mes** (desde M3). **Base 118k / Growth 135k** — mediana 6m×4m **USD 700/mes** (desde M2). Ver [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) §2.
-- Flyers en farmacias afiliadas: USD 80/mes en imprenta, USD 50/mes en distribución.
+- Valla: **Lean ~112k** — pequeña 3m×2m **USD 350/mes** (desde M3). **Base ~157k / Growth ~187k** — mediana 6m×4m **USD 700/mes** (desde M2). Ver [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) §2.
+- Flyers en farmacias afiliadas: **USD 50/mes** (alineado [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) §2 tabla Lean).
 - Radio FM local: USD 200-400/mes por mención corta de 30s en horario AM, NO incluido en Lean ni Base. Solo Growth.
 
 Detalle completo en [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) y [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md).
@@ -205,9 +205,11 @@ Razón: lanzar tráfico masivo sin catálogo en ≥ N farmacias piloto degrada N
 | Usuarios activos mensuales | 600 | 3.500 |
 | Ratio de conversión (descarga → primer pedido) | 25% | 30% |
 | Pedidos por usuario activo / mes | 1,2 | 1,8 |
-| GMV mensual (todos los pedidos) | USD 8.500 | USD 75.000 |
+| GMV mensual (todos los pedidos) | USD 8.500 *(hipótesis)* | USD 75.000 *(hipótesis)* |
 | NPS | 35 | 50 |
-| Tiempo promedio entrega | 75 min | 60 min |
+| Tiempo promedio entrega | 75 min `[PENDIENTE SLA partner]` | 60 min `[PENDIENTE SLA partner]` |
+
+> **Usuarios vs pedidos:** las filas «usuarios» y «GMV/pedidos» son **hipótesis de demanda B2C post-Day-D** — no sustituyen **~159 activas M12** (oferta B2B) del modelo financiero.
 
 Estos KPIs se reportan trimestralmente al inversor.
 

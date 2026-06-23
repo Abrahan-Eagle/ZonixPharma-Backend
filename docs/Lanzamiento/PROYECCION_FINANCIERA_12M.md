@@ -142,9 +142,38 @@ Con **burn ~7.980** (tramo C) y **ARPF ~50**, el equilibrio mensual (~**160 acti
 
 ## 2. Año 2 — proyección conservadora `[LARGO PLAZO — no ancla pre-seed]`
 
-> §2 y §3 sin GMV piloto — no usar en pitch pre-seed sin disclaimer. Anclas pack: §0–§1.
+> §2–§6 sin GMV piloto — no usar en pitch pre-seed sin disclaimer. Anclas pack: §0–§1.
 
-*(Contenido años 2–3 sin cambio material vs versión anterior — recalcular post-piloto.)*
+| Concepto | Referencia |
+|----------|------------|
+| Revenue anual | **USD 96k–108k** conservador ([MODELO](MODELO_FINANCIERO_ZONIX_PHARMA.md) Año 2) |
+| Activas cierre | ~220 (MODELO Año 2) |
+| Burn | Escalar con tier Base/Growth si se activa expansión |
+
+## 3. Escenarios Base / Growth (puntero)
+
+> **No recalcular aquí** — ver [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) §S1.3–§S4 y [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3–§4.
+
+| Tier | Capital | Burn prom. | SAFE cap |
+|------|---------|------------|----------|
+| Base ~157k | **~157.268** | **~10.898**/mes | **~912.814** |
+| Growth ~187k | **~187.478** | **~12.698**/mes | **~1.205.345** |
+
+## 4. Contingencia y mitigaciones
+
+| Trigger | Acción |
+|---------|--------|
+| Cash M6 < **48.311** | Recorte Meta 50%; pausar valla; bridge founder |
+| Firmas < 8/mes × 2 meses | Revisar script Sales; mom-test pricing (GUIA §2.1) |
+| CAC > 139 +20% | Reducir comisiones variable; foco referidos farmacia |
+
+## 5. Año 3 — referencia `[LARGO PLAZO]`
+
+Conservador **~USD 180k–204k/año** sin Serie A. Ver MODELO Año 3.
+
+## 6. Éxito / cobertura nacional `[PENDIENTE FP&A]`
+
+Hipótesis **~USD 480k/año** requiere puente farmacias × ARPF — **no ancla pre-seed**. Disclaimer §3.3: recalcular con FP&A antes de citar en pitch institucional.
 
 ## 7. Sensibilidad P10 / P50 / P90
 

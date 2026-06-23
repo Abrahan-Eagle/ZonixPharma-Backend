@@ -131,9 +131,9 @@ Detalle completo y construcción mes a mes en [PROYECCION_FINANCIERA_12M.md](PRO
 
 | Escenario | Tasa firma/mes | Churn | ARPF* | Activas M12 (ref.) | Revenue M12 (ref.) | Equilibrio mensual (ref.) | Cash cierre año 1 |
 |---|---|---|---|---|---|---|---|
-| Pesimista (probabilidad 20%) | **~50% plan** *(~8 firmas/mes ref.)* | 7% | USD 40 | **~40** | **~USD 1.600** | Post-año 1 + bridge | **~USD 5–8k** |
+| Pesimista (probabilidad 20%) | **~50% plan** *(~8 firmas/mes ref.)* | 7% | USD 40 | **~120** | **~USD 4.800** | Post-año 1 + bridge | **~USD 25–32k** |
 | **Base (probabilidad 50%)** | **~15**/mes post-Day-D | **5%** | **USD ~50** | **~159** | **~USD 7.950** | **Casi M12** | **~USD 40.831** |
-| Optimista (probabilidad 30%) | **130% plan** *(ref. §7.3)* | 4% | USD 55 | **~104** | **~USD 5.720** | Año 2 si escala Sales | **~USD 18–22k** |
+| Optimista (probabilidad 30%) | **130% plan** *(ref. §7.3)* | 4% | USD 55 | **~200** | **~USD 11.000** | Año 2 si escala Sales | **~USD 48–55k** |
 
 \*Misma convención que la tabla anterior: ARPF es **referencia provisional** hasta recalibrar con GMV real y modelo híbrido ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5).
 
@@ -141,7 +141,7 @@ Detalle de las 3 sensibilidades en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FIN
 
 ## Instrumento de inversión propuesto
 
-- **SAFE post-money** con cap según tier: **600k (Lean ~112k)** · **~913k (Base ~157k — recomendado)** · **~1.205M (Growth ~187k)**.
+- **SAFE post-money** con cap según tier: **600k (Lean ~112k)** · **~912.814 (Base ~157k — recomendado)** · **~1.205.345 (Growth ~187k)**.
 - **Ticket sugerido:** USD 25.000 / 50.000 / **~111.988** (lead mínimo) / **~157.268** (recomendado) / **~187.478** (acelerado).
 - **Equity implícito Lean:** **~18,66%** (111.988 / 600k). Base **~17,23%**; Growth **~15,55%**.
 - **Cap table:** [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md).

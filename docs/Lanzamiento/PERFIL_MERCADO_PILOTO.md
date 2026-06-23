@@ -217,7 +217,7 @@ Estos números asumen:
 | Riesgo | Probabilidad | Mitigación |
 |---|---|---|
 | Devaluación bolívar > 100% trimestral | Media | Buffer 20%. Plan contingencia documentado. |
-| Regulación nueva sobre marketplaces | Baja-media | Asesor regulatorio externo USD 120/mes en **Base (118k) y Growth (135k)** — no en Lean 101k. Founder revisa Gaceta semanalmente. |
+| Regulación nueva sobre marketplaces | Baja-media | Asesor regulatorio externo USD 120/mes en **Base (~157k) y Growth (~187k)** — no en Lean ~112k. Founder revisa Gaceta semanalmente. |
 | PedidosYa agresivo en descuento / comisión | Media | Modelo Zonix (fija + % bajo sobre GMV app) estructuralmente más barato que comisión plena agregador; benchmark real = PedidosYa VE, no Rappi. |
 | Farmatodo lanza marketplace propio | Baja | Su DNA es retail propio, no marketplace. Tomarían 18-24 meses construirlo y entonces nosotros ya tenemos PMF. |
 | Adopción inicial < 50% del plan | Media | Pivote táctico: bajamos Sales B2B fijo, subimos comisión por farmacia firmada. |

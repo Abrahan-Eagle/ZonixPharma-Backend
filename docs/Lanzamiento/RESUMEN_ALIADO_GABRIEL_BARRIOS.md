@@ -1,9 +1,9 @@
 # Zonix Pharma — Resumen para aliado estratégico
 
-> **Anexo de outreach** (no forma parte de los **23 documentos canónicos** del pack; el directorio tiene **25 archivos** `.md` incluyendo este README y anexo — ver [README.md](README.md)).  
+> **Anexo de outreach** (no forma parte de los **23 documentos canónicos** del pack; el directorio tiene **27 archivos** `.md` en raíz incluyendo README, censo y anexo — ver [README.md](README.md)).  
 > **Para:** Gabriel Barrios — Gerente de Consultoría, Grupo Morr (Valencia, Venezuela)  
 > **De:** Abrahan Pulido — Founder / CEO / CTO, Zonix Pharma  
-> **Fecha:** 17 junio 2026  
+> **Fecha:** 22 junio 2026  
 > **Propósito:** compartir la tesis del proyecto, la oportunidad de nicho y una invitación a sumarse como aliado estratégico y asesor.
 
 ---
@@ -103,7 +103,7 @@ Imagina a alguien en Valencia que necesita un medicamento para un familiar. Reco
 | Capital (Lean / Base / Growth) | **~USD 112k / ~157k / ~187k** (SAFE) |
 | **Equilibrio mensual** | **Casi M12** (4× Sales); **~159** activas M12 |
 | Cash cierre M12 | **~USD 40.831** |
-| Farmacias activas M12 | **~80** |
+| Farmacias activas M12 | **~159** *(modelo Lean 4× Sales; SAM independientes ~80–100 es mercado addressable, no M12)* |
 | ARPF referencia | **~USD 50/mes** *(placeholder hasta GMV piloto)* |
 
 ---
@@ -153,7 +153,7 @@ Sinergias que veo:
 |------|------|
 | Fase 0 (T+0 → Day-D, 90 días) | Legal, equipo, **4× Sales**, ~**28 farmacias** con catálogo |
 | Day-D | Go-live app; OTP Firebase |
-| M1 | **~20 activas** |
+| M1 | **~40 activas** *(modelo v3.8.2; no confundir con SAM ~80–100)* |
 | M12 | **~159 activas**; cash **~USD 40.831** (casi equilibrio mensual M12) |
 
 ---

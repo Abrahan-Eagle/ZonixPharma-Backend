@@ -1,6 +1,6 @@
 # Guía operativa — Discovery en calle (Fase 0)
 
-> **Última actualización:** 11 junio 2026.
+> **Última actualización:** 22 junio 2026.
 > **Uso interno** (founder + Co-CEO + Sales) — **no incluir** en zip data room inversor.
 > **Marco:** Customer Development / mom-test (Steve Blank, UniMOOC M1–M3) — skills `zonix-launch-piloto`, `zonix-b2b-sales`, `zonix-lean-canvas`.
 > **Canon:** [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §0 y §4.0 · [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §2.0 · [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md) §0.
@@ -131,7 +131,7 @@ Interés en seguir conversando: alto / medio / nulo
 
 | Herramienta | Uso | Referencia |
 |-------------|-----|------------|
-| **Tablet o teléfono con demo staging** | App paciente + panel farmacia en vivo | PROPUESTA_B2B §7–§8; README §3 |
+| **Tablet o teléfono con demo staging** | App paciente + panel farmacia en vivo | PROPUESTA_B2B §7–§8; [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §4 |
 | **Brochure B2B one-pager** | Entregable al cierre del visit | PROPUESTA_B2B §8; SUPUESTO §3.3.2 |
 | Calculadora de ahorro vs agregador | Ejemplo Pro USD 40 + 0,80% vs 25–35% | PROPUESTA_B2B §3.1, §8 |
 | Carta de intención preliminar | Solo si el dueño la pide o el dolor está confirmado | PLAN §2.5 |

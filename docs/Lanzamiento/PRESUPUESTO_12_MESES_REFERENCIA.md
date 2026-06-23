@@ -83,6 +83,15 @@
 
 **Promedio Lean:** **~8.108**/mes → **97.290** anual.
 
+#### 2.3.1 Desglose hosting / SaaS (fila **234** USD/mes Lean)
+
+| Componente | USD/mes | Notas |
+|---|---|---|
+| Servicios oficina (Nameshared VPS ref.) | **80** | Infra app staging/prod piloto |
+| SaaS stack (Cursor/Claude proxy, dominio, SSL, etc.) | **120** | Ver MODELO §S2 footnote SaaS |
+| Firebase Phone Auth SMS (proxy) | **34** | OTP paciente — README §C.10 |
+| **Total fila hosting** | **234** | **80 + 120 + 34 = 234** (reconcilia AUD-v3-01 vs PROYECCION sin recalcular §1.3) |
+
 ### 2.4 Total Lean 12 meses
 
 | Concepto | USD |

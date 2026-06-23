@@ -22,6 +22,8 @@ Zonix Pharma opera con **pagos manuales VE nativos**, sin pasarelas internaciona
 | **Efectivo**                 | Pago contra entrega                                             | Inmediato           | 0%                |
 | **Punto de venta físico**    | Pago en farmacia (pickup)                                       | Inmediato           | 1-3%              |
 
+> **Comisión bancaria receptora (farmacia / partner):** en pago móvil C2P el **receptor** puede pagar **~1,5%** (referencia BDV 2026) — no es comisión de Zonix; la farmacia la absorbe en su margen. Zonix no es PSP ni cuenta de paso del paciente (§10 Sudeban).
+
 
 **No soportados:**
 
@@ -277,6 +279,7 @@ Cobro_mes = (8% × Σ delivery_fee validado en el mes) + (USD 0,30 × N envíos 
 | Devaluación bolívar entre orden y pago             | Política: precio congelado por 30 minutos desde generación de orden. Si paciente excede, debe re-cotizar.                                 |
 | Sudeban regula a **Zonix Pharma** como intermediario de pagos | Piloto opera sin **Zonix Pharma** recibir dinero del paciente directamente. Si requiere, **Zonix Pharma** obtiene licencia Sudeban (12-18 meses, post-Serie A). |
 | Bloqueo cuentas Zelle por origen VE                | Política: no usar Zelle como único método; tener PMC2P + Binance Pay como respaldo.                                                       |
+| **Pharmacist ausente / sin validación Rx**         | Orden Rx queda en `pending_prescription_validation`; TTL 60 min → cancelación automática. Escalamiento CS + playbook [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) §16. Onboarding pharmacist: [PLAN_MODULO](PLAN_MODULO_OPERATIVO_CLAVE.md) §7. |
 
 
 ## 6. Implementación técnica (referencia)

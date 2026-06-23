@@ -2,7 +2,7 @@
 
 > **Última actualización:** 11 junio 2026.
 > Documento que detalla el calendario operativo desde el cierre de inversión hasta el **Day-D** (lanzamiento público del piloto) y los primeros meses post-Day-D.
-> **Convención de tiempo:** **T+0** = cierre de inversión (entra el capital). **Day-D = T+90** = **día 0 del piloto en app** (M1 del modelo financiero en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)). Los **meses 1–12** del presupuesto/proyección cuentan **desde Day-D**, no desde el wire. **Fase 0 (T+0 → T+90):** cierre legal, equipo, HQ, tecnología, onboarding de farmacias y catálogo **antes** del lanzamiento público — el gasto de esos ~3 meses está en la **Fase 0** de la proyección (**~USD 28.057** + one-shots en §0.1 — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)), no duplicado en M1.
+> **Convención de tiempo:** **T+0** = cierre de inversión (entra el capital). **Day-D = T+90** = **día 0 del piloto en app** (M1 del modelo financiero en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)). Los **meses 1–12** del presupuesto/proyección cuentan **desde Day-D**, no desde el wire. **Fase 0 (T+0 → T+90):** cierre legal, equipo, HQ, tecnología, onboarding de farmacias y catálogo **antes** del lanzamiento público — el gasto de esos ~3 meses está en la **Fase 0** de la proyección (**~USD 33.835** + one-shots en §0.1 — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)), no duplicado en M1.
 
 ## 0. Hipótesis por fase + señal de pivot (Customer Development)
 
@@ -21,7 +21,7 @@ Regla: pivot documentado en VOLCADO + nota founder; **no** pivotar por una sola 
 
 **Eventos:**
 - Firma del SAFE.
-- Transferencia **USD 101.000** (**Lean** — mínimo viable; Base recomendado = **118k**) a cuenta personal del founder (transitoria) o cuenta empresa si ya está abierta.
+- Transferencia **~USD 111.988** (**Lean** — mínimo viable; Base recomendado = **~157k**; Growth = **~187k**) a cuenta personal del founder (transitoria) o cuenta empresa si ya está abierta.
 - Reunión kick-off **founder + Co-CEO** con abogado y contador.
 - Comunicación al inversor: confirmación de recepción + plan de los próximos 30 días.
 
@@ -158,7 +158,7 @@ Checklist **antes** de tráfico masivo. Documentar solo entrevistas reales en VO
 | 2. Validación B2B | Contrato marco firmado + métodos de pago farmacia en panel | Farmacia activa en staging/prod |
 | 3. Creación demanda | Primer pedido real OTC o Rx | Orden ≥ `pending_payment` en BD |
 | 4. Ops | CS, disputas, partner `delivery_company` | Macros CS + SLA partner acordado |
-| **5. Pricing mom-test** | Dueño farmacia reacciona a **cuota 25/40/55 + % GMV** con **hechos pasados** (no «¿pagarías?») | **≥3** entrevistas documentadas (minuta o VOLCADO §3): comparación vs agregador/WhatsApp; reacción a ejemplo Pro **USD 40 + 0,80%** sobre GMV ilustrativo ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §3.1, §5) |
+| **5. Pricing mom-test** | Dueño farmacia reacciona a **cuota 25/40/55 + % GMV** con **hechos pasados** (no «¿pagarías?») | **≥3** entrevistas documentadas (minuta o VOLCADO §6): comparación vs agregador/WhatsApp; reacción a ejemplo Pro **USD 40 + 0,80%** sobre GMV ilustrativo ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §3.1, §5) |
 | **Go Day-D** | Founder firma checklist §4.0 + ALINEACION P0 cerrados | **No** tráfico masivo Meta/valla sin filas **1–5** |
 
 Coherente con [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §8.1 (SPIN), [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §2.1 (WTP) y [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md).

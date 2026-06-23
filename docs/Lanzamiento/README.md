@@ -10,7 +10,7 @@
 
 > **Lectura externa:** pack revisado para especialistas (inversor, abogado, contador, asesor farmacéutico, equipo). Sin documentación de proceso interno de redacción automatizada.
 
-Este directorio contiene **26 archivos** en raíz: **23 documentos canónicos** `.md` + **1 modelo financiero** ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) + [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx)) + **1 anexo outreach** ([RESUMEN_ALIADO_GABRIEL_BARRIOS.md](RESUMEN_ALIADO_GABRIEL_BARRIOS.md), no incluir en zip inversor por defecto) + este **README**. Materiales de **inversor**, **finanzas**, **legal**, **operación comercial**, **propuestas de valor** y **plantillas internas** ([REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md), [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md), [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md), [GUIA_DISCOVERY_CALLE_FASE0.md](GUIA_DISCOVERY_CALLE_FASE0.md), [BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md](BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md)).
+Este directorio contiene **27 archivos** en raíz: **23 documentos canónicos** `.md` + **1 modelo financiero** ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) + [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx)) + **1 anexo outreach** ([RESUMEN_ALIADO_GABRIEL_BARRIOS.md](RESUMEN_ALIADO_GABRIEL_BARRIOS.md), no incluir en zip inversor por defecto) + **1 censo calle** ([CENSO_FARMACIAS_CARABOBO_FASE0.md](CENSO_FARMACIAS_CARABOBO_FASE0.md)) + este **README**. Materiales de **inversor**, **finanzas**, **legal**, **operación comercial**, **propuestas de valor** y **plantillas internas** ([REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md), [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md), [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md), [GUIA_DISCOVERY_CALLE_FASE0.md](GUIA_DISCOVERY_CALLE_FASE0.md), [BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md](BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md)).
 
 Para **ejecutar el lanzamiento:** [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) y [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md). Para **inversor en ~30 min:** [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) y la ruta de la tabla siguiente.
 
@@ -128,7 +128,7 @@ Lo anterior +:
 4. **Inmueble:** Bella Florida o San Diego. **Lean/Base/Growth:** HQ tipo **casa USD 500/mes** ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2). Valla pequeña (Lean), mediana (Base/Growth).
 5. **Awareness:** **Meta Ads** canal principal. **Lean:** **USD 800/mes** M1–6 · **500** M7–12. **Base/Growth:** **800/mes** todo el año. Valla: pequeña 3m×2m (Lean, M3+); mediana 6m×4m (Base/Growth, M2+).
 6. **Día D del piloto:** T+90 desde cierre de inversión (calendario relativo, no absoluto, porque la fecha de cierre aún no está confirmada).
-7. **Instrumento de inversión:** SAFE post-money con cap por escenario (**USD 600k / ~908k / ~1.270M** — Lean / Base / Growth).
+7. **Instrumento de inversión:** SAFE post-money con cap por escenario (**USD 600k / ~912.814 / ~1.205.345** — Lean / Base / Growth).
 8. **Benchmark de competencia para el pitch:** Farmatodo / Locatel + Farmalisto + **PedidosYa Pharmacy** *(agregador activo VE; Rappi no opera en país)*.
 9. **Comercial farmacia B2B (mayo 2026):** tier **solo por GMV** (sin topes por órdenes/SKU); **contrato marco anual** + cuota mensual; ascenso de tarifa desde **M+2** (en **M** y **M+1** sigue tarifa del nivel anterior); reclamos GMV **3 días hábiles**; salida sin penalidad en los **2 primeros meses**; prod en **VPS Nameshared** — [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5 y §9.
 10. **OTP paciente:** **Firebase Phone Auth (SMS)** — proxy **USD 30/mes** en burn Lean §2.3.
@@ -167,7 +167,7 @@ Estos no se inventan. El pack los marca explícitamente con `[PENDIENTE]`. **Ín
 | Objetivo | Plantilla |
 |----------|-----------|
 | Mejora incremental de un doc o sección | [../plantillas/PROMPT_MEJORAR_PACK_LANZAMIENTO.md](../plantillas/PROMPT_MEJORAR_PACK_LANZAMIENTO.md) |
-| **Auditoría forense v3** (25 workers + research web 2026 + juez mayor + autofix) | [../plantillas/PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md](../plantillas/PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md) |
+| **Auditoría forense v3** (27 workers + verify Excel v3.8.2 + research web 2026 + juez mayor + autofix) | [../plantillas/PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md](../plantillas/PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md) **v2.0** |
 | Informes previos | [../AUDIT_FORENSE_PACK_LANZAMIENTO_2026-06-22.md](../AUDIT_FORENSE_PACK_LANZAMIENTO_2026-06-22.md) |
 | Citas y costos web | [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md) |
 

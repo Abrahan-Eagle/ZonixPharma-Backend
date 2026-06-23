@@ -169,6 +169,8 @@ Detalle técnico de transiciones en backend: ver [../PLAN_RX_VALIDATION.md](../P
 
 ### 8.1 Audit log
 
+> **Plazo producto (jun 2026):** el código aplica purge de adjuntos de receta **90 días** tras estado terminal (`config/zonix.php`) — ver §14.4 y **`[PENDIENTE P3-07 dictamen]`** para alinear con hipótesis **10 años** de §8.2.
+
 Cada validación queda registrada en backend con:
 
 - `prescription_id`
@@ -316,7 +318,14 @@ Datos de salud son categoría especial; **marco legal VE en actualización** —
 
 ### 14.4 Retención
 
-- **Receta común (digital en plataforma):** **hasta 10 años** como hipótesis de trazabilidad y defensa ante disputas; **ajustar** tras dictamen legal/farmacéutico (ver §8.2.1). **Implementación código (jun 2026):** purge automático de adjuntos **90 días** tras estado terminal (`config/zonix.php` → `prescription_retention_days_after_terminal`, default **90**) — **desalineación doc↔código** pendiente de unificar con `[PENDIENTE abogado/asesor]`.
+- **Receta común (digital en plataforma):** **hasta 10 años** como hipótesis de trazabilidad y defensa ante disputas; **ajustar** tras dictamen legal/farmacéutico (ver §8.2.1). **Implementación código (jun 2026):** purge automático de adjuntos **90 días** tras estado terminal (`config/zonix.php` → `prescription_retention_days_after_terminal`, default **90**) — **desalineación doc↔código** pendiente de unificar con `[PENDIENTE abogado/asesor]` (**P3-07**).
+
+| Capa | Plazo doc (hipótesis) | Plazo código / producto | Gate |
+|------|----------------------|-------------------------|------|
+| Adjunto receta digital | 10 años | **90 días** post-terminal | P3-07 |
+| Audit log metadata | 10 años | Sin purge automático documentado | P3-07 |
+| Receta física retenida | 10 años + libro farmacia | N/A (farmacia) | Farmacéutico |
+| Comprobante pago | 10 años | S3 — validar contador | Contador |
 - **Receta retenida / controlada:** conservación digital coherente con lo anterior + **retención física y libros** en la farmacia (responsabilidad del establecimiento).
 - **Datos personales paciente sin actividad:** anonimización después de 3 años de inactividad (política interna; validar plazo con abogado).
 - **Comprobantes de pago:** 10 años (marco contable VE; validar con contador).

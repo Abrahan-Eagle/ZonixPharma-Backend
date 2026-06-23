@@ -1,6 +1,6 @@
 # Unit Economics — Zonix Pharma
 
-> **Última actualización:** 22 junio 2026 (anclas **v3.3**: **4× Sales** Lean, burn **8.108**, casi equilibrio M12).
+> **Última actualización:** 22 junio 2026 (anclas **v3.8.2**: **4× Sales** Lean, burn **8.108**, casi equilibrio M12).
 > Documento que explica cómo gana dinero Zonix Pharma a nivel de farmacia individual.
 > Cifras base propagadas al [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md), [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) y al [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md).
 
@@ -133,11 +133,11 @@ Definición: mes en el que **revenue mensual ≥ burn mensual**.
 Burn promedio mensual (**Lean**, año 1) ≈ USD 8.108
 Revenue mensual necesario (referencia) ≈ mismo orden que burn por tramo
 Farmacias activas necesarias (ARPF placeholder ~50) ≈ 7.980 / 50
-                             ≈ 146 farmacias (tramo C M7–12)
-Promedio anual burn ÷ 50 ≈ 8.108 / 50 ≈ 148 farmacias
-→ equilibrio teórico: **~151 activas** (requiere **4× Sales** o mayor ARPF)
+                             ≈ **160** farmacias (tramo C M7–12, Lean)
+Promedio anual burn ÷ 50 ≈ 8.108 / 50 ≈ **162** farmacias (Lean)
+→ equilibrio teórico Lean: **~160 activas** (caso central modelo **~159** M12)
 
-> **Base ~157k:** burn promedio **~USD 10.898**/mes ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S4) — equilibrio teórico **~210 activas**.
+> **Base ~157k:** burn promedio **~USD 10.898**/mes ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S4) — equilibrio teórico **~218 activas** (~162 en sensibilidad MODELO §S4.2 con ARPF ~50).
 ```
 
 El burn **real** va por **tramos** **8.011 / 8.347 / 7.980** ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.2). La proyección **Lean v3.3** (curva S3.1) llega a **~159 activas** en **M12** con revenue **USD ~7.950** vs burn **USD 7.980** → **casi equilibrio mensual en M12** con **4× Sales**.
@@ -190,6 +190,8 @@ En operación real **no** hay una sola cohort: cada mes entran **nuevas** farmac
 | Payback CAC | **~2,8 meses** | ~10-14 meses estimado | 12-18 meses |
 | Churn mensual | 5% (target) | ~6% estimado | 5-7% |
 | Gross margin | ~92% (software / plataforma; sin logística directa del medicamento) | ~65% (incluye costo logístico) | ~70-80% |
+
+> **Nota AUD-05:** el ~92% es margen bruto de plataforma **antes** de waiver comercial §11 (cuota USD 0 meses 1–2 primeras 10 farmacias) y antes de S&M variable. Margen **post-waiver** requiere recalibración FP&A post-piloto.
 
 **Lectura para el inversor:** Zonix Pharma tiene buen payback y LTV/CAC frente a benchmarks porque **no** opera logística directa del medicamento (intermediación + software). Los ratios usan **ARPF placeholder (USD ~50)** y **CAC USD 139** hasta datos de piloto.
 

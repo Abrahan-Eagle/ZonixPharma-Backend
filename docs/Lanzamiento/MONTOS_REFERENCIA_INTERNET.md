@@ -19,7 +19,7 @@
 | Precio promedio / unidad VE 2025 | **~USD 4,21** | Faro Farmacéutico / Grupo LETI vía prensa 2025 — [Revista Business VE](https://www.revistabusinessvenezuela.com/produccion-local-aporta-el-74-del-repunte-del-mercado-farmaceutico-en-venezuela-en-2025/) |
 | Crecimiento ene-abr 2026 (unidades) | **+13,49% YoY** (130,4M u acum.) | [Descifrado / Faro Farmacéutico](https://www.descifrado.com/2026/05/28/faro-farmaceutico-mercado-de-medicamentos-en-el-pais-crecio-1349-en-primer-cuatrimestre/) |
 
-**Nota:** **Cifar** publica las series del mercado VE citando datos **IMS/IQVIA**. En agosto 2025 reportó **+20,66% YoY** ene-ago y proyección anual **+17,7%**; el **H1 2025** superó la proyección con **+23,4%** (prensa especializada). Para el data room del inversor se recomienda anexar comunicados Cifar originales al cierre.
+**Nota:** **Cifar** publica las series del mercado VE citando datos **IMS/IQVIA**. **Derivación TAM pack:** USD **1.638M** = mercado farmacéutico total VE (ventas canal farmacia + institucional según definición Cifar); **SAM** Valencia metro = subconjunto geográfico ([PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md) §3) — no confundir TAM nacional con activas M12 del modelo (~159). En agosto 2025 reportó **+20,66% YoY** ene-ago; el **H1 2025** superó la proyección con **+23,4%** (prensa especializada). Para el data room del inversor se recomienda anexar comunicados Cifar originales al cierre.
 
 ## 2. Inflación y devaluación VE 2026
 
@@ -139,7 +139,17 @@ Detalle en [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md).
 
 **Total one-shot legal:** USD 950-1.300. **Pack usa USD 1.150 promedio.**
 
-## 10. Benchmarks competitivos (Farmalisto, Rappi)
+> **Marco regulatorio farmacéutico / e-commerce Rx:** no sustituye dictamen — ver [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md) y brecha e-commerce farmacéutico **`[PENDIENTE abogado]`** (CHECKLIST §7).
+
+## 9A. Pagos VE 2026 (referencia pública)
+
+| Método / concepto | Comisión / nota | Fuente pack |
+|---|---|---|
+| **Pago móvil C2P (BDV y otros)** | **~1,5%** costo típico **receptor** (farmacia / partner) — no lo absorbe Zonix | [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §1 nota receptora |
+| Transferencia / Zelle / Binance Pay | 0% en tabla piloto | PLAN_METODOS §1 |
+| Punto de venta físico | 1–3% | PLAN_METODOS §1 |
+
+## 10. Benchmarks competitivos (Farmalisto, PedidosYa)
 
 ### 10.1 Farmalisto
 

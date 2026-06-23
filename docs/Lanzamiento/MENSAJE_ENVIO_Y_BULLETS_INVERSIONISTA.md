@@ -100,7 +100,7 @@ Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 > **Slide 4: Mercado**
 > - TAM Venezuela USD 1.638M.
 > - SAM Valencia metro 226 farmacias.
-> - SOM M12: **~80** farmacias activas (caso central v3 — [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.1).
+> - SOM M12: **~159** farmacias activas (caso central v3.8.2 — [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.1). *(SAM independientes ~80–100 — no confundir con activas M12.)*
 > - Comparable Farmalisto: ~USD 32M revenue 2024; funding ~USD 22M reportado (hasta ~USD 33M PitchBook); países MX+CO+PE.
 
 > **Slide 5: Modelo**
@@ -167,10 +167,10 @@ Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 | Indicador | Valor |
 |---|---|
 | Capital pedido | **~USD 111.988** (Lean) · **~157.268** (Base rec.) · **~187.478** (Growth Carabobo) |
-| SAFE post-money cap | **600k / ~908k / ~1.270M** |
+| SAFE post-money cap | **600k / ~912.814 / ~1.205.345** |
 | Equity implícito | **~18,66%** (Lean) · **~17,23%** (Base) · **~15,55%** (Growth) |
-| Equilibrio mensual (revenue ≥ burn) | **Casi M12** (Lean 4× Sales); ~160 activas teórico |
-| Farmacias activas ref. | **~80** mes 12 modelo Lean v3 |
+| Equilibrio mensual (revenue ≥ burn) | **Casi M12** (Lean 4× Sales); ~159 activas modelo v3.8.2 |
+| Farmacias activas ref. | **~159** mes 12 modelo Lean v3.8.2 *(SAM ~80–100 independientes ≠ M12)* |
 | ARPF | **~USD 50/mes** *(placeholder; cobro real = híbrido cuota 25/40/55 + % GMV hasta piloto)* |
 | CAC | USD **139** |
 | LTV/CAC | **~7,2x** |

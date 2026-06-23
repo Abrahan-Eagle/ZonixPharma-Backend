@@ -92,7 +92,7 @@ Ingeniero en Informática (IUTVAL, 2013–2018) con **más de 8 años** construy
 
 ### 5.1 Rol comercial B2B (**4 ejecutivos** — modelo Base)
 
-Contratar **cuatro** personas en este rol (quinta columna opcional si se evalúa refuerzo). Compensación: USD **120** fijo c/u + USD **30** por farmacia firmada (**al rep que la firmó**; no duplicado entre reps) ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) / pack económico).
+Contratar **cuatro** personas en este rol (quinta columna opcional si se evalúa refuerzo). **Post-Day-D (nómina Lean):** USD **350** base c/u + USD **40** por farmacia firmada ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2). **Fase 0 discovery (solo calle, pre-contrato):** proxy **120 + 30** por firma — etiquetado como hipótesis de compensación temprana, no nómina cerrada.
 
 | Dato | Candidato 1 | Candidato 2 | Candidato 3 | Candidato 4 |
 |---|---|---|---|---|

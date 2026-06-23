@@ -207,7 +207,7 @@ Este pack está diseñado para **ángel / fondo pre-seed**. Si el interesado es 
 - **Ley de Protección de Datos Personales (Venezuela):** existe **proyecto de ley** en discusión / tramitación en **2025-2026**; **confirmar estado de promulgación** con abogado antes de citar “vigencia”. **Mientras tanto:** aplicar **buenas prácticas** alineadas a estándares internacionales (consentimiento, minimización, seguridad, derechos titular, encargados/DPA) como ya describe el pack operativo.
 - **Textos legales** (aviso de privacidad, T&C app, contrato marco farmacia) deben ser **revisados y firmados** por abogado antes de Day-D público.
 - Datos de salud (recetas, historial de medicamentos, inferencias): **categoría sensible**; consentimiento explícito, minimización, retención acotada, medidas técnicas y **registro de tratamiento**.
-- Implementación técnica y operativa: [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) secciones **13** (seguridad), **15** (playbook incidencias), **16** (modelo de amenazas) y **17** (QA / listo para piloto).
+- Implementación técnica y operativa: [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) secciones **14** (seguridad), **16** (playbook incidencias), **17** (modelo de amenazas) y **18** (QA / listo para piloto).
 
 #### 4.4.1 Roles en el tratamiento (due diligence)
 

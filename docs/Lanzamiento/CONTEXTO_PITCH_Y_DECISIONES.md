@@ -1,6 +1,6 @@
 # Contexto del pitch y decisiones tomadas
 
-> **Última actualización:** 22 junio 2026 (anclas financieras **v3.0**).
+> **Última actualización:** 22 junio 2026 (anclas financieras **v3.8.2**).
 > Documento que captura las decisiones del founder (usuario) sobre cómo se posiciona Zonix Pharma frente a un inversor, qué se dice, qué no, y por qué se eligió cada parámetro del modelo.
 
 ## 1. Tecnología base reutilizada (Zonix Pharma)
@@ -60,7 +60,7 @@
 
 ### 2.4 Instrumento: SAFE post-money con cap
 
-**Decisión:** SAFE post-money cap según tier — **600k (Lean ~112k)** · **~913k (Base ~157k — recomendado)** · **~1.205M (Growth ~187k — Carabobo)**.
+**Decisión:** SAFE post-money cap según tier — **600k (Lean ~112k)** · **~912.814 (Base ~157k — recomendado)** · **~1.205.345 (Growth ~187k — Carabobo)**.
 
 **Por qué:**
 - **Simple:** un documento de 5 páginas. No requiere abogado en NY ni fondo institucional.
@@ -139,7 +139,7 @@ Detalle competitivo en [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md).
 |------|-------------------|---------------------|--------|
 | **T+0 → T+60** | **4× Sales B2B** visitas; cartas de intención; carga de catálogo | Solo soft launch interno (familia/equipo) | [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §2.5–2.6, §4.1 |
 | **T+60 → Day-D (T+90)** | Onboarding técnico por lotes; meta **~28 activas** pre-cargadas al Day-D | Pre-launch marketing **50%** presupuesto mes; WhatsApp local | PLAN §2.6, §4.1 |
-| **Day-D = M1** | **~20 activas** al cierre M1 (curva v3) | **Meta Ads + valla** según tier; primera ola B2C en zona piloto | [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.1 M1 |
+| **Day-D = M1** | **~40 activas** al cierre M1 (curva v3.8.2) | **Meta Ads + valla** según tier; primera ola B2C en zona piloto | [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.1 M1 |
 | **M2–M6** | Rampa a **≥97 activas** (DoD M6) | Geo-target Bella Florida + El Socorro; referidos farmacia (Bullseye interior) | PLAN §5; [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) §1.2 |
 
 **Mensaje inversor:** no gastamos tráfico masivo a pacientes **antes** de tener catálogo en farmacias piloto; el **B2B es el motor de liquidez** en Fase 0. La curva de **activas** en PROYECCION §1.1 es la fuente de verdad para revenue — no prometer GMV de paciente sin dato piloto.
@@ -176,7 +176,7 @@ Vista única para data room; detalle en docs hermanos. **ARPF ~50** y tiers **~1
 | **Recursos clave** | Stack Laravel+Flutter (~4 años); founder+Co-CEO; farmacéuticos de cada farmacia aliada | Farmacéutico de la farmacia valida Rx dentro del TTL en operación real | §1 CONTEXTO; VOLCADO §1 |
 | **Actividades clave** | Onboarding B2B, catálogo, validación Rx, asignación partner, pagos manuales VE | Pedido E2E (OTC y Rx) completado con pago manual conciliado | PLAN_LANZAMIENTO; PLAN_MODULO |
 | **Socios clave** | Farmacias piloto; **empresa(s) concesionaria** última milla; abogado/contador VE *[PENDIENTE]* | Partner delivery cumple SLA en zona piloto con 10-15 agentes | TERCER_LADO; REGISTRO P1-05/06 |
-| **Estructura de costos** | Fase 0 + burn post-Day-D (Lean **~8.108**/mes promedio); CAC farmacia **139** | Burn real Fase 0 ≤ ~31.320 presupuestado; CAC real ≤ 139 ±20% | MODELO S2–S3; UNIT §3 |
+| **Estructura de costos** | Fase 0 + burn post-Day-D (Lean **~8.108**/mes promedio); CAC farmacia **139** | Burn real Fase 0 ≤ **~33.835** presupuestado; CAC real ≤ 139 ±20% | MODELO S2–S3; UNIT §3 |
 
 > Si ≥3 entrevistas o el dato real T+60 contradicen una hipótesis, aplicar pivot por bloque según `zonix-lean-canvas` (§ pivot) **antes** de escalar Meta Ads — el paciente (B2C) se valida con repeat M2 post-Day-D.
 

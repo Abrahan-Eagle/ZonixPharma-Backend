@@ -629,6 +629,8 @@
 | **Parcial** (mejora / contribuye con límites) | 45 | 52 | 51 | 67 |
 | **No** (fuera MVP o fuera de rol) | 27 | 31 | 11 | 11 |
 
+> **Verificación Fase 3 (jun 2026):** cada columna suma **100** ítems (P/T/N/D). La columna «Temores (mitiga)» cuenta cobertura Zonix sobre el temor, no duplica el total de problemas.
+
 **Lecturas clave:**
 
 1. **El pitch debe vivir en los "Sí":** pedidos digitales, Rx trazable, conciliación de pagos, delivery partner, visibilidad y costo de canal bajo. Coincide con el ranking hipotético de [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §2.0.

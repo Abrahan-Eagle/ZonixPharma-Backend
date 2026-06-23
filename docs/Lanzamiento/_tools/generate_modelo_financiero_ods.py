@@ -6,20 +6,37 @@ from pathlib import Path
 
 OUT = Path(__file__).resolve().parent.parent / "MODELO_FINANCIERO_ZONIX_PHARMA.fods"
 
-# --- Datos ancla pack (Lean) ---
+# --- Datos ancla pack v3.8.2 (Lean) ---
 MONTHS = list(range(1, 13))
 FIRMADAS = [13, 13, 14, 15, 15, 16, 16, 16, 17, 17, 17, 16]
 ACTIVAS = [40, 51, 62, 74, 85, 97, 108, 119, 130, 141, 151, 159]
 REVENUE = [1500, 2168, 3100, 3700, 4250, 4850, 5400, 5950, 6500, 7050, 7550, 7950]
-BURN = [7462, 7462, 7798, 7798, 7798, 7798, 7431, 7431, 7431, 7431, 7431, 7431]
-CASH_INIT = [72943, 66981, 61687, 56989, 52891, 49343, 46395, 44364, 42883, 41952, 41571, 41690]
-CASH_IN = REVENUE
-CASH_OUT = BURN
-CASH_FINAL = [66981, 61687, 56989, 52891, 49343, 46395, 44364, 42883, 41952, 41571, 41690, 42209]
+BURN = [8011, 8011, 8347, 8347, 8347, 8347, 7980, 7980, 7980, 7980, 7980, 7980]
+CASH_INIT = [78153, 71642, 65799, 60552, 55905, 51808, 48311, 45731, 43701, 42221, 41291, 40861]
+CASH_FINAL = [71642, 65799, 60552, 55905, 51808, 48311, 45731, 43701, 42221, 41291, 40861, 40831]
 
-FCF_YEARS = [-101000, -30734, 6000, 84000, 110000, 150000]  # año0..5
+TIER_LEAN = 111988
+TIER_BASE = 157268
+TIER_GROWTH = 187478
+FASE0_TOTAL = 33835
+FASE0_0A = 17813
+FASE0_0B = 8011
+FASE0_0C = 8011
+CAJA_DAYD = 78153
+ONE_SHOTS = 14208
+BURN_Y1 = 97290
+RESERVA = 490
+BURN_AVG = 8108
+BURN_AVG_BASE = 10898
+BURN_AVG_GROWTH = 12698
+ONE_SHOTS_BASE = 15208
+SAFE_CAP_LEAN = 600000
+SAFE_CAP_BASE = 912814
+SAFE_CAP_GROWTH = 1205345
+
+FCF_YEARS = [-111988, -37322, 6000, 84000, 110000, 150000]  # año0..5
 DISCOUNT = 0.25
-EQUITY_INV = 0.1683
+EQUITY_INV = 0.1866
 
 
 def esc(s: str) -> str:
@@ -62,15 +79,15 @@ def build_supuestos() -> list[str]:
         row([cell("A7", "LTV/CAC"), cell("B7", 7.2), cell("C7", "UNIT_ECONOMICS")]),
         row([cell("A8", "Payback CAC (meses)"), cell("B8", 2.8), cell("C8", "UNIT_ECONOMICS")]),
         row([cell("A9", "Margen bruto plataforma"), cell("B9", 0.92), cell("C9", "UNIT_ECONOMICS")]),
-        row([cell("A11", "Tier Lean capital USD"), cell("B11", 101000), cell("C11", "PRESUPUESTO")]),
-        row([cell("A12", "Tier Base capital USD"), cell("B12", 118000), cell("C12", "PRESUPUESTO")]),
-        row([cell("A13", "Tier Growth capital USD"), cell("B13", 135000), cell("C13", "PRESUPUESTO")]),
-        row([cell("A14", "SAFE cap Lean USD"), cell("B14", 600000), cell("C14", "ESTRUCTURA_LEGAL")]),
-        row([cell("A15", "Equity ref. Lean"), cell("B15", 0.1683), cell("C15", "ESTRUCTURA_LEGAL")]),
-        row([cell("A16", "Burn prom. Lean USD/mes"), cell("B16", 7559), cell("C16", "PRESUPUESTO")]),
+        row([cell("A11", "Tier Lean capital USD"), cell("B11", TIER_LEAN), cell("C11", "PRESUPUESTO")]),
+        row([cell("A12", "Tier Base capital USD"), cell("B12", TIER_BASE), cell("C12", "PRESUPUESTO")]),
+        row([cell("A13", "Tier Growth capital USD"), cell("B13", TIER_GROWTH), cell("C13", "PRESUPUESTO")]),
+        row([cell("A14", "SAFE cap Lean USD"), cell("B14", SAFE_CAP_LEAN), cell("C14", "ESTRUCTURA_LEGAL")]),
+        row([cell("A15", "Equity ref. Lean"), cell("B15", EQUITY_INV), cell("C15", "ESTRUCTURA_LEGAL")]),
+        row([cell("A16", "Burn prom. Lean USD/mes"), cell("B16", BURN_AVG), cell("C16", "PRESUPUESTO")]),
         row([cell("A17", "Tasa descuento VAN"), cell("B17", DISCOUNT), cell("C17", "SUPUESTO MODELO")]),
-        row([cell("A18", "Caja Day-D USD"), cell("B18", 72943), cell("C18", "PROYECCION §0.1")]),
-        row([cell("A19", "Caja cierre M12 USD"), cell("B19", 42209), cell("C19", "PROYECCION §1.3")]),
+        row([cell("A18", "Caja Day-D USD"), cell("B18", CAJA_DAYD), cell("C18", "PROYECCION §0.1")]),
+        row([cell("A19", "Caja cierre M12 USD"), cell("B19", 40831), cell("C19", "PROYECCION §1.3")]),
     ]
     return rows
 
@@ -85,16 +102,16 @@ def build_inversion() -> list[str]:
         row([cell("A7", "CapEx 4 PCs"), cell("D7", 4), cell("E7", 925), cell("F7", 3700)]),
         row([cell("A8", "TOTAL one-shots"), cell("F8", 9808, formula="of:=[Inversion.F4]+[Inversion.F5]+[Inversion.F6]+[Inversion.F7]")]),
         row([cell("A10", "OUTFLOW FASE 0")]),
-        row([cell("A11", "Sub-fase 0a T+0-30"), cell("F11", 13133)]),
-        row([cell("A12", "Sub-fase 0b T+30-60"), cell("F12", 7462)]),
-        row([cell("A13", "Sub-fase 0c T+60-90"), cell("F13", 7462)]),
-        row([cell("A14", "TOTAL Fase 0"), cell("F14", 28057, formula="of:=[Inversion.F11]+[Inversion.F12]+[Inversion.F13]")]),
-        row([cell("A15", "Caja al Day-D (101k - Fase0)"), cell("F15", 72943, formula="of:=101000-[Inversion.F14]")]),
+        row([cell("A11", "Sub-fase 0a T+0-30"), cell("F11", FASE0_0A)]),
+        row([cell("A12", "Sub-fase 0b T+30-60"), cell("F12", FASE0_0B)]),
+        row([cell("A13", "Sub-fase 0c T+60-90"), cell("F13", FASE0_0C)]),
+        row([cell("A14", "TOTAL Fase 0"), cell("F14", FASE0_TOTAL, formula="of:=[Inversion.F11]+[Inversion.F12]+[Inversion.F13]")]),
+        row([cell("A15", f"Caja al Day-D ({TIER_LEAN} - Fase0)"), cell("F15", CAJA_DAYD, formula=f"of:={TIER_LEAN}-[Inversion.F14]")]),
         row([cell("A17", "USE OF FUNDS 12M")]),
-        row([cell("A18", "One-shots"), cell("F18", 9808)]),
-        row([cell("A19", "Burn M1-M12"), cell("F19", 90702)]),
-        row([cell("A20", "Reserva"), cell("F20", 490)]),
-        row([cell("A21", "TOTAL Lean"), cell("F21", 101000, formula="of:=[Inversion.F18]+[Inversion.F19]+[Inversion.F20]")]),
+        row([cell("A18", "One-shots"), cell("F18", ONE_SHOTS)]),
+        row([cell("A19", "Burn M1-M12"), cell("F19", BURN_Y1)]),
+        row([cell("A20", "Reserva"), cell("F20", RESERVA)]),
+        row([cell("A21", "TOTAL Lean"), cell("F21", TIER_LEAN, formula="of:=[Inversion.F18]+[Inversion.F19]+[Inversion.F20]")]),
     ]
     return rows
 
@@ -129,9 +146,9 @@ def build_ano1() -> list[str]:
     rows.append(row([
         cell(f"A{r}", "TOTAL"),
         cell(f"D{r}", 59968, formula="of:=SUM([Ano1.D2:D13])"),
-        cell(f"E{r}", 90702, formula="of:=SUM([Ano1.E2:E13])"),
-        cell(f"F{r}", -30734, formula="of:=SUM([Ano1.F2:F13])"),
-        cell(f"I{r}", 42209),
+        cell(f"E{r}", 97290, formula="of:=SUM([Ano1.E2:E13])"),
+        cell(f"F{r}", -37322, formula="of:=SUM([Ano1.F2:F13])"),
+        cell(f"I{r}", 40831),
     ]))
     return rows
 
@@ -139,15 +156,15 @@ def build_ano1() -> list[str]:
 def build_sensibilidad() -> list[str]:
     rows = [
         row([cell("A1", "Sensibilidad tiers"), cell("B1", "Lean"), cell("C1", "Base"), cell("D1", "Growth")]),
-        row([cell("A2", "Capital USD"), cell("B2", 101000), cell("C2", 118000), cell("D2", 135000)]),
-        row([cell("A3", "Burn prom/mes"), cell("B3", 7559), cell("C3", 8059), cell("D3", 8691)]),
-        row([cell("A4", "One-shots"), cell("B4", 9808), cell("C4", 10708), cell("D4", 10708)]),
-        row([cell("A5", "Activas equilibrio"), cell("B5", 151), cell("C5", 162), cell("D5", 174)]),
+        row([cell("A2", "Capital USD"), cell("B2", TIER_LEAN), cell("C2", TIER_BASE), cell("D2", TIER_GROWTH)]),
+        row([cell("A3", "Burn prom/mes"), cell("B3", BURN_AVG), cell("C3", BURN_AVG_BASE), cell("D3", BURN_AVG_GROWTH)]),
+        row([cell("A4", "One-shots"), cell("B4", ONE_SHOTS), cell("C4", ONE_SHOTS_BASE), cell("D4", ONE_SHOTS_BASE)]),
+        row([cell("A5", "Activas equilibrio"), cell("B5", 159), cell("C5", 162), cell("D5", 174)]),
         row([cell("A7", "Escenarios P10/P50/P90")]),
         row([cell("A8", "Escenario"), cell("B8", "Activas M12"), cell("C8", "ARPF"), cell("D8", "Cash M12 ord.")]),
-        row([cell("A9", "P10 pesimista"), cell("B9", 80), cell("C9", 40), cell("D9", "25-32k")]),
-        row([cell("A10", "P50 base"), cell("B10", 159), cell("C10", 50), cell("D10", 42209)]),
-        row([cell("A11", "P90 optimista"), cell("B11", 207), cell("C11", 55), cell("D11", "48-55k")]),
+        row([cell("A9", "P10 pesimista"), cell("B9", 120), cell("C9", 40), cell("D9", "25-32k")]),
+        row([cell("A10", "P50 base"), cell("B10", 159), cell("C10", 50), cell("D10", 40831)]),
+        row([cell("A11", "P90 optimista"), cell("B11", 200), cell("C11", 55), cell("D11", "48-55k")]),
     ]
     return rows
 
@@ -156,7 +173,7 @@ def build_ano25() -> list[str]:
     years = ["Año 0", "Año 1", "Año 2", "Año 3", "Año 4", "Año 5"]
     activas = ["—", 159, 220, 440, 520, 600]
     revenue = [0, 59968, 102000, 192000, 240000, 300000]
-    costs = [101000, 90702, 96000, 108000, 130000, 150000]
+    costs = [TIER_LEAN, BURN_Y1, 96000, 108000, 130000, 150000]
     fcf = FCF_YEARS
     rows = [
         row([cell("A1", "Proyección anual Año 0-5"), cell("B1", "Activas cierre"), cell("C1", "Revenue"), cell("D1", "Costos"), cell("E1", "FCF")]),
@@ -179,9 +196,9 @@ def build_ano25() -> list[str]:
 def build_flujo_total() -> list[str]:
     rows = [
         row([cell("A1", "Flujo consolidado + VAN"), cell("B1", "Año 0"), cell("C1", "Año 1"), cell("D1", "Año 2"), cell("E1", "Año 3"), cell("F1", "Año 4"), cell("G1", "Año 5")]),
-        row([cell("A2", "FCF USD"), cell("B2", -101000), cell("C2", -30734), cell("D2", 6000), cell("E2", 84000), cell("F2", 110000), cell("G2", 150000)]),
+        row([cell("A2", "FCF USD"), cell("B2", -111988), cell("C2", -37322), cell("D2", 6000), cell("E2", 84000), cell("F2", 110000), cell("G2", 150000)]),
         row([cell("A3", "Factor descuento 25%"), cell("B3", 1), cell("C3", 0.8), cell("D3", 0.64), cell("E3", 0.512), cell("F3", 0.4096), cell("G3", 0.32768)]),
-        row([cell("A4", "VP flujo"), cell("B4", -101000), 
+        row([cell("A4", "VP flujo"), cell("B4", -111988), 
              cell("C4", None, formula="of:=[FlujoTotal.C2]*[FlujoTotal.C3]"),
              cell("D4", None, formula="of:=[FlujoTotal.D2]*[FlujoTotal.D3]"),
              cell("E4", None, formula="of:=[FlujoTotal.E2]*[FlujoTotal.E3]"),
@@ -190,8 +207,8 @@ def build_flujo_total() -> list[str]:
         row([cell("A6", "VAN(5) USD"), cell("B6", None, formula="of:=SUM([FlujoTotal.B4:G4])")]),
         row([cell("A7", "VAN(3) USD"), cell("B7", None, formula="of:=SUM([FlujoTotal.B4:D4])")]),
         row([cell("A9", "Reparto ilustrativo FCF Año 5")]),
-        row([cell("A10", "Inversor SAFE 16.83%"), cell("B10", None, formula=f"of:=[FlujoTotal.G2]*{EQUITY_INV}")]),
-        row([cell("A11", "Founder 83.17%"), cell("B11", None, formula=f"of:=[FlujoTotal.G2]*(1-{EQUITY_INV})")]),
+        row([cell("A10", "Inversor SAFE 18,66%"), cell("B10", None, formula=f"of:=[FlujoTotal.G2]*{EQUITY_INV}")]),
+        row([cell("A11", "Founder 81,34%"), cell("B11", None, formula=f"of:=[FlujoTotal.G2]*(1-{EQUITY_INV})")]),
         row([cell("A13", "NOTA: reparto ilustrativo — SAFE no reparte caja pre-conversión")]),
     ]
     return rows

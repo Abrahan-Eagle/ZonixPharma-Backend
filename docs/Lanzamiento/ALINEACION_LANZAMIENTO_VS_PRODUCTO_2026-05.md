@@ -17,8 +17,8 @@ Zonix Pharma planea un **piloto en Valencia metro (Carabobo)** como marketplace 
 | Hito | Significado | Gasto / modelo |
 |------|-------------|----------------|
 | **T+0** | Wire del capital (ej. **~USD 112k** tier Lean) | Inicio Fase 0 |
-| **T+0 → T+90** | **Fase 0:** legal, equipo, HQ, tech, onboarding farmacias, catálogo, partner logístico | **~USD 31.320** + one-shots **~13.408** (Lean) |
-| **Day-D = T+90** | Lanzamiento **público** en app = **M1** del modelo financiero | Caja ~**71.468** al abrir M1 |
+| **T+0 → T+90** | **Fase 0:** legal, equipo, HQ, tech, onboarding farmacias, catálogo, partner logístico | **~USD 33.835** + one-shots **~13.408** (Lean) |
+| **Day-D = T+90** | Lanzamiento **público** en app = **M1** del modelo financiero | Caja ~**78.153** al abrir M1 *(M1 fin ~71.642)* |
 | **M1–M12** | Escala comercial, Meta Ads, soporte; **casi equilibrio M12** con 4× Sales | Caja M12 ref. **~40.831** (Lean) |
 
 ### 1.2 Qué hace el equipo en cada fase
@@ -35,7 +35,7 @@ Zonix Pharma planea un **piloto en Valencia metro (Carabobo)** como marketplace 
 
 - App en tiendas (plan: Play Store / App Store); Meta Ads + valla; primeras órdenes reales.
 - Soporte intensivo 10 días; reportes semanales/mensuales al inversor.
-- **Definition of Done piloto (M6 post-Day-D):** ≥97 farmacias activas, ≥1.500 pedidos, Rx ≤60 min, NPS, cash ≥~46.4k (ver [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §5).
+- **Definition of Done piloto (M6 post-Day-D):** ≥97 farmacias activas, ≥1.500 pedidos, Rx ≤60 min, NPS, cash ≥~**48.311** (ver [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §5).
 
 ### 1.3 Decisiones de negocio que atan producto y docs
 
@@ -87,7 +87,7 @@ flowchart TB
   end
   subgraph producto [Producto_hoy]
     Rx[Rx_flow_OK]
-    Roles[7_roles_OK]
+    Roles[6_roles_piloto_core]
     Pay[Pagos_manuales_OK]
     Lots[Lotes_FIFO_No]
     Release[Release_Firebase_Pendiente]
@@ -142,7 +142,7 @@ Prioridad para el founder técnico (no sustituye backlog de negocio).
 | Comandos scheduler Rx/pagos | PLAN_MODULO o PLAN_RX | `zonix:expire-pending-prescriptions`, expire `pending_payment`, purge datos receta |
 | Política `block_rx_without_prescription` default false | PLAN_MODULO §Rx | Comportamiento MVP: orden puede crearse sin receta previa; subida después |
 | Retención 90 días adjuntos receta | ESTRUCTURA_LEGAL §4.4 + PLAN_MODULO §14 | Ya parcial; enlazar a comando purge |
-| Readiness checklist pre-Day-D | PLAN_LANZAMIENTO §4.2 o PLAN_MODULO §18 | Tabla: smoke OTC/Rx ([SMOKE_RX_E2E.md](../SMOKE_RX_E2E.md)), Pusher, FCM, 1 orden pago real staging; caps SAFE **600k/~908k/~1.270M** citados en pitch |
+| Readiness checklist pre-Day-D | PLAN_LANZAMIENTO §4.2 o PLAN_MODULO §18 | Tabla: smoke OTC/Rx ([SMOKE_RX_E2E.md](../SMOKE_RX_E2E.md)), Pusher, FCM, 1 orden pago real staging; caps SAFE **600k/~912.814/~1.205.345** citados en pitch |
 | Deuda nombres Eats en UI | Nota en BRIEF o CONTEXTO | “restaurants” = farmacias (legacy); no es vertical Eats |
 
 ### 4.3 Documentación coherente (reforzar, no reescribir)

@@ -49,7 +49,7 @@ Un **anillo** a la vez; presupuestos desde [PRESUPUESTO_12_MESES_REFERENCIA.md](
 
 ## 2. Presupuesto offline por escenario
 
-| Item | Lean (101k) | Base (118k — recom.) | Growth (135k) |
+| Item | Lean (~112k) | Base (~157k — recom.) | Growth (~187k) |
 |---|---|---|---|
 | Valla publicitaria | **USD 350/mes desde mes 3** (pequeña 3m×2m) | **USD 700/mes desde mes 2** (mediana 6m×4m) | USD 700/mes desde mes 2 |
 | Radio FM AM (mención 30s) | USD 0 | USD 0 | USD 250/mes desde mes 4 |
@@ -234,7 +234,7 @@ El canal de adquisición más barato del piloto no es paid: es la **farmacia ali
 Triggers para subir de Lean (valla pequeña **350**) → Base/Growth (valla mediana **700**):
 
 1. Adopción supera 130% del plan.
-2. Cash en banco al cierre del **mes 6 post-Day-D (M6)** ≥ **~USD 46.395** (caja final M6 — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3; escenario **Lean USD 101k**).
+2. Cash en banco al cierre del **mes 6 post-Day-D (M6)** ≥ **~USD 48.311** (caja final M6 — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3; escenario **Lean ~112k**).
 3. CAC orgánico (offline + boca en boca) supera CAC digital en farmacias firmadas.
 4. Serie A levantada o en proceso.
 
