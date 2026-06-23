@@ -1,6 +1,6 @@
 # PROMPT — Auditoría forense + plan de transformación Eats → Pharma (código)
 
-> Herramienta de **migración técnica** (código/repos), no el pack inversor. Pack vivo: [Lanzamiento/README.md](Lanzamiento/README.md). Archivo Eats: [\_archive_eats/](_archive_eats/) — **no usar @** en chats de producto Pharma.
+> Herramienta de **migración técnica** (código/repos), no el pack inversor. Pack vivo: [Lanzamiento/README.md](Lanzamiento/README.md). Histórico Eats: [MIGRACION_EATS_PHARMA.md](MIGRACION_EATS_PHARMA.md) — **no usar @** en chats de producto Pharma.
 >
 > Ubicación: `ZonixPharma-Backend/docs/PROMPT_AUDIT_FORENSE.md`. Pégalo cuando audites restos **Eats** en backend/frontend y el plan de cierre a **Zonix Pharma**.
 

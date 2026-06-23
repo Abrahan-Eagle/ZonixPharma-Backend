@@ -52,7 +52,7 @@ Uso recomendado para clientes nuevos, OpenAPI y SDK: **siempre la columna “Can
 - Migraciones `create_product_extras_table.php` y `create_product_preferences_table.php`.
 - Seeders `ProductExtraSeeder`, `ProductPreferenceSeeder`. Factories asociadas.
 - Assets `onboarding_eats*.png` (renombrados a `onboarding_pharma*.png`).
-- Documentación de lanzamiento Eats (`docs/Lanzamiento/*` referente a comida) — referencias residuales se ignoran como histórico.
+- Documentación de lanzamiento Eats — reemplazada por [`docs/Lanzamiento/`](Lanzamiento/README.md) (Pharma). Carpeta `docs/_archive_eats/` **eliminada del repo** jun 2026 (recuperable en historial git).
 
 ## Qué es nuevo
 

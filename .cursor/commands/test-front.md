@@ -10,4 +10,4 @@ Execute the Flutter test suite for **ZonixPharma-Front** (when workspace include
 
 ## Notes
 
-- Producto: **Zonix Pharma** — no usar `docs/_archive_eats/` para copy ni decisiones de producto.
+- Producto: **Zonix Pharma** — no usar docs Eats históricos para copy ni decisiones de producto.

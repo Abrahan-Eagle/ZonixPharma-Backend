@@ -7,6 +7,12 @@
 
 ## Última actualización de contexto
 
+### Limpieza archivo Eats — junio 2026
+
+- **`docs/_archive_eats/` eliminada** del repo (pack Lanzamiento Eats duplicado). Historial recuperable vía git (commit anterior a eliminación).
+- Referencias actualizadas en `MIGRACION_EATS_PHARMA.md`, `.cursorignore`, plantillas y docs operativos.
+- Docs Eats sueltos que permanecen (solo referencia, no producto): `GUIA_COMPLETA_ZONIX_EATS_VENEZUELA.md`, `REQUISITOS_OPERAR_VENEZUELA.md`.
+
 ### Deploy FTP pharma.aiblockweb.com — junio 2026
 
 - **Workflow:** [`.github/workflows/main.yml`](../.github/workflows/main.yml) reemplaza legacy Zonix-EatsX → **Zonix Pharma**, PHP 8.3, tests pre-FTP, destino `https://pharma.aiblockweb.com`.
@@ -165,7 +171,7 @@
   - **C1**: `ProductFactory` reescrito con datos farmacéuticos (principio activo, dosage_form, concentración, presentación, manufacturer, INHRR) + states `rx()`, `controlled()`, `coldChain()`. `OrderFactory` con states `withRx()` y `withColdChain()`.
   - **C2/C3**: Sweep masivo de copy "restaurante / comida / Zonix Eats" en `main_router.dart`, `buyer_shell.dart`, `restaurants_page.dart`, `restaurant_details_page.dart`, `commerce_share_qr_page.dart`, `cart_page.dart`, `checkout_page.dart`, `order_service.dart`, `app_strings.dart`, `onboarding_page3.dart`. Backend: `WebSocketController`, `Admin/ReportController`, `Web/Front/IndexController`, `LocationController`, `Buyer/SearchController`, `Analytics/AnalyticsController`, `Commerce/CommerceListController`, `routes/web.php`, `database/factories/NotificationFactory.php`, vistas legales `terms.blade.php`/`privacy.blade.php`.
   - **C4**: `tests/Feature/SeoTest.php` y `tests/Feature/AdminOperationalHardeningTest.php` con literales Pharma.
-  - **C5**: `docs/Lanzamiento` movida a `docs/_archive_eats/Lanzamiento_Eats` con `README.md` que aclara que ya no aplica.
+  - **C5**: pack `docs/Lanzamiento` Eats archivado en `docs/_archive_eats/Lanzamiento_Eats` (abr 2026); **carpeta `_archive_eats` eliminada del repo** jun 2026 — recuperable en historial git. Pack vivo: `docs/Lanzamiento/` (Pharma).
   - **D1**: Endpoint `POST /api/pharmacist/onboarding` (con `GET` para estado actual) en `Pharmacist/OnboardingController` + `StorePharmacistProfileRequest` (MPPS, licencia, foto título). El admin debe verificar manualmente antes de habilitar al farmacéutico para validar recetas.
   - **D2**: `create_profiles_table` ampliado con columnas opcionales sensibles: `allergies`, `medical_notes`, `emergency_contact_name`, `emergency_contact_phone`, `medical_consent_given`, `medical_consent_at`. UI buyer queda como follow-up.
   - **D3**: `buyer_shell` añade icono "Mis recetas médicas" (Icons.receipt_long) que abre `MyPrescriptionsPage`.

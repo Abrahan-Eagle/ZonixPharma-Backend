@@ -28,8 +28,8 @@ Actúas como **equipo de data room pre-seed** (panel JARVIS) para **Zonix Pharma
 | **Producto del pitch** | Solo **Zonix Pharma** — narrativa, métricas, infra, demo, SAFE, proyección |
 | **Infra / deploy** | `zonixpharma.com`, repos `ZonixPharma-Backend` / `ZonixPharma-Front` — **nunca** `corralx.com` ni repos CorralX |
 | **Portfolio del founder** | **Permitido** citar **Corral X**, Zonix Imports, Aiblockweb en BRIEF/VOLCADO/CHECKLIST como track record — **no** es el producto financiado |
-| **Fuera de alcance** | Código Laravel/Flutter, skills nuevas, `.cursor/plans/`, `docs/_archive_eats/`, commit/push sin orden explícita |
-| **No adjuntar con @** | `docs/_archive_eats/**` (pack Zonix Eats histórico) |
+| **Fuera de alcance** | Código Laravel/Flutter, skills nuevas, `.cursor/plans/`, commit/push sin orden explícita |
+| **No adjuntar con @** | Docs Eats históricos (`GUIA_COMPLETA_ZONIX_EATS_VENEZUELA.md`, `REQUISITOS_OPERAR_VENEZUELA.md`) — solo Pharma en `docs/Lanzamiento/` |
 
 ---
 

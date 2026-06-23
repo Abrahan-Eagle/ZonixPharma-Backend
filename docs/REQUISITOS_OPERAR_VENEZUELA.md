@@ -2,8 +2,7 @@
 
 > **ARCHIVO Eats — no usar para Zonix Pharma.** Farmacia: [PLAN_REGULATORIO_PHARMA_VE.md](PLAN_REGULATORIO_PHARMA_VE.md), [PLAN_RX_VALIDATION.md](PLAN_RX_VALIDATION.md); pagos piloto Pharma: [Lanzamiento/PLAN_METODOS_PAGO.md](Lanzamiento/PLAN_METODOS_PAGO.md).
 >
-> **Fecha:** 27 marzo 2026 · **Estado:** referencia histórica Eats.
-> **Complemento Eats:** [\_archive_eats/Lanzamiento_Eats/PLAN_METODOS_PAGO_VENEZUELA.md](_archive_eats/Lanzamiento_Eats/PLAN_METODOS_PAGO_VENEZUELA.md).
+> **Fecha:** 27 marzo 2026 · **Estado:** referencia histórica Eats (no usar para Pharma).
 
 ---
 
@@ -146,7 +145,7 @@ La regulacion de Ipostel para delivery (Gaceta Oficial 42.813, feb 2024) fue **D
 
 **Zonix Pharma (producto actual):** [Lanzamiento/PLAN_METODOS_PAGO.md](Lanzamiento/PLAN_METODOS_PAGO.md) §10 y [PLAN_REGULATORIO_PHARMA_VE.md](PLAN_REGULATORIO_PHARMA_VE.md) §8.
 
-**Zonix Eats (histórico):** [\_archive_eats/Lanzamiento_Eats/PLAN_METODOS_PAGO_VENEZUELA.md](_archive_eats/Lanzamiento_Eats/PLAN_METODOS_PAGO_VENEZUELA.md). Eats NO necesita licencia Sudeban siempre que:
+**Zonix Eats (histórico):** pack Lanzamiento Eats retirado del repo (jun 2026; recuperable en historial git). Eats NO necesita licencia Sudeban siempre que:
 - No cree billeteras/wallets
 - No retenga dinero del comprador
 - No procese pagos como intermediario
