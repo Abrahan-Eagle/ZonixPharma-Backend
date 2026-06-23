@@ -1,6 +1,6 @@
 # Unit Economics — Zonix Pharma
 
-> **Última actualización:** 11 junio 2026 (replante: cuota fija **25/40/55**, **4×** Sales, ARPF **~50**, CAC **139**; §2.1 WTP; §7.1 guía de lectura cohort).
+> **Última actualización:** 22 junio 2026 (anclas **v3.3**: **4× Sales** Lean, burn **8.108**, casi equilibrio M12).
 > Documento que explica cómo gana dinero Zonix Pharma a nivel de farmacia individual.
 > Cifras base propagadas al [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md), [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) y al [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md).
 
@@ -17,7 +17,7 @@ Revenue por farmacia = ARPF mensual × Lifetime promedio
 ```
 
 ```
-Costo de adquirir farmacia = USD 139 (CAC)   ← construcción §3 (4× Sales B2B)
+Costo de adquirir farmacia = USD 139 (CAC)   ← construcción §3 (Sales B2B; headline conservador)
 ```
 
 ```
@@ -36,6 +36,8 @@ Payback CAC = 139 / 50 ≈ 2,8 meses
 
 **Sensibilidad (ARPF más bajo):** si el ARPF efectivo fuera **USD 41/mes** (mix desfavorable), LTV = **USD 820**; LTV/CAC ≈ **5,9x** con CAC base **USD 139**. Sigue por encima del umbral típico “> 3x” SaaS SMB.
 
+**Sensibilidad Lean+ (v3.5):** para **equilibrio mensual M11** sin acelerar curva comercial, hace falta **ARPF ~53** (gap **+23 USD** en M11 vs burn **~7.980**). Para **BE ~M10** con **4× Sales** y curva base ARPF ~50, aplicar curva **×1,15** (**Lean+**, **~174 activas M11**) — ver [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) §S1.3b y [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.5.
+
 ### 2.1 WTP y pricing (lente monetizing-innovation)
 
 | Concepto | Aplicación Zonix | Regla pack |
@@ -51,21 +53,22 @@ Payback CAC = 139 / 50 ≈ 2,8 meses
 
 ## 3. CAC (Customer Acquisition Cost)
 
-**Construcción bottom-up del CAC** (alineada a **4 ejecutivos Sales B2B** y **~8 farmacias firmadas/mes** en régimen de crucero para el **cálculo del CAC**; la curva comercial agresiva del pack asume **~175 firmas/año (~15/mes)** en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 — **stock de activas** es fuente de verdad para revenue):
+**Construcción bottom-up del CAC** (alineada a **4× Sales** en tier Lean y **~8 farmacias firmadas/mes** en régimen de crucero para el **cálculo del CAC**; la curva comercial v3.3 asume **~185 firmas/año (~15/mes pico)** en [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.1 — **stock de activas** es fuente de verdad para revenue):
 
 | Componente | Costo por farmacia firmada |
 |---|---|
-| Comisión Sales B2B (USD 30 por firma) | USD 30 |
-| Costo proporcional fijo **4×** Sales (USD **480**/mes ÷ **8** firmas/mes) | USD **60** |
+| Comisión Sales B2B (USD 40 por firma) | USD 40 |
+| Costo proporcional fijo **4×** Sales Lean (base **1.400**/mes ÷ **~16** firmas/mes — capacidad canal) | USD **~88** |
 | Marketing digital geo-targeteado (Meta + canales B2B) | USD 25 |
 | Material impreso, brochures, demos | USD 5 |
 | Customer Support proporcional para onboarding inicial | USD 10 |
 | Pérdida en farmacias que cancelan en primer mes (10% de las firmadas) | USD 9 |
-| **CAC total promedio** | **USD 139** |
+| **Suma bottom-up explícita** | **USD ~177** |
+| **CAC headline pitch (conservador redondeado v3.3)** | **USD 139** *(no cambiar sin decisión founder; recalcular post-piloto)* |
 
 **Sensibilidad:** si la comisión marginal sube a **USD 50** por firma para acelerar adopción, CAC sube **+USD 20** → **USD 159**; LTV/CAC ≈ **6,3x** (LTV **1.000**). Aún sólido frente a benchmarks 3-5x.
 
-**Nota dual de denominador (Steve Blank L6.14 — capacidad de canal):** el **CAC 139** usa **~8 firmas/mes** (régimen crucero, escenario **conservador** — ancla del pitch). Si el equipo sostiene el ritmo del plan central (**~15 firmas/mes**, PROYECCION §1.1), el prorrateo fijo baja de 60 a **~32** y el CAC implícito sería **~111** — es decir, el 139 ya incorpora margen de seguridad. **No cambiar el headline 139 sin decisión founder.** Puente con PRESUPUESTO §2.3: el costo Sales total **~USD 801/mes** = **480** fijo + **~321** de comisiones promedio al ritmo del plan (175 firmas/año × 30 ÷ 12 ≈ 437 en meses pico; promedio anual menor por ramp).
+**Nota dual de denominador (Steve Blank L6.14 — capacidad de canal):** el **CAC 139** usa **~8 firmas/mes** (régimen crucero, escenario **conservador** — ancla del pitch). Si el equipo sostiene mayor ritmo de firmas, el prorrateo fijo baja y el CAC implícito sería menor — el **139** incorpora margen de seguridad. **No cambiar el headline 139 sin decisión founder.** Puente con MODELO S3.2: el costo Sales base Lean **~USD 1.400/mes** (4×350) + comisiones al ritmo de firmas.
 
 ## 4. LTV (Lifetime Value)
 
@@ -127,19 +130,19 @@ Payback = CAC / ARPF
 Definición: mes en el que **revenue mensual ≥ burn mensual**.
 
 ```
-Burn promedio mensual (**Lean**, año 1) ≈ USD 7.559
+Burn promedio mensual (**Lean**, año 1) ≈ USD 8.108
 Revenue mensual necesario (referencia) ≈ mismo orden que burn por tramo
-Farmacias activas necesarias (ARPF placeholder ~50) ≈ 7.431 / 50
-                             ≈ 149 farmacias (tramo “bajo” mes 7–12)
-Promedio anual burn ÷ 50 ≈ 7.559 / 50 ≈ 151 farmacias
-→ orden magnitud unificado: ~151 farmacias (~149 tramo C; ~151 promedio)
+Farmacias activas necesarias (ARPF placeholder ~50) ≈ 7.980 / 50
+                             ≈ 146 farmacias (tramo C M7–12)
+Promedio anual burn ÷ 50 ≈ 8.108 / 50 ≈ 148 farmacias
+→ equilibrio teórico: **~151 activas** (requiere **4× Sales** o mayor ARPF)
 
-> **Base 118k:** burn promedio **~USD 8.059**/mes ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3.3) — equilibrio teórico **~162 activas** (README pack).
+> **Base ~157k:** burn promedio **~USD 10.898**/mes ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S4) — equilibrio teórico **~210 activas**.
 ```
 
-El burn **real** va por **tramos** **7.462 / 7.798 / 7.431** ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.3). La proyección **Lean** (curva §1.1) llega a **~151 activas** en **M11** con revenue **USD 7.550** vs burn **USD 7.431** → **equilibrio mensual en M11** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 y §1.4).
+El burn **real** va por **tramos** **8.011 / 8.347 / 7.980** ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.2). La proyección **Lean v3.3** (curva S3.1) llega a **~159 activas** en **M12** con revenue **USD ~7.950** vs burn **USD 7.980** → **casi equilibrio mensual en M12** con **4× Sales**.
 
-**Lectura:** el caso central asume **Fase 0** (T+0→Day-D) + **175** firmas en 12 meses post-Day-D; si la curva real es más lenta, el equilibrio se **retrasa** (mitigaciones §1.4).
+**Lectura:** el caso central v3.4 asume **~185 firmas** en 12 meses post-Day-D con **4× Sales** (Lean/Base/Growth). Para **>80% Carabobo** (~238 activas M12), usar tier **Blitz 6× Sales** ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) §S4) o mayor ARPF.
 
 ## 7. Cohort analysis simulado
 
@@ -188,7 +191,7 @@ En operación real **no** hay una sola cohort: cada mes entran **nuevas** farmac
 | Churn mensual | 5% (target) | ~6% estimado | 5-7% |
 | Gross margin | ~92% (software / plataforma; sin logística directa del medicamento) | ~65% (incluye costo logístico) | ~70-80% |
 
-**Lectura para el inversor:** Zonix Pharma tiene buen payback y LTV/CAC frente a benchmarks porque **no** opera logística directa del medicamento (intermediación + software). Los ratios usan **ARPF placeholder (USD ~50)** y **CAC con 4× Sales (USD 139)** hasta datos de piloto.
+**Lectura para el inversor:** Zonix Pharma tiene buen payback y LTV/CAC frente a benchmarks porque **no** opera logística directa del medicamento (intermediación + software). Los ratios usan **ARPF placeholder (USD ~50)** y **CAC USD 139** hasta datos de piloto.
 
 ## 9. Sensibilidades al modelo
 
@@ -200,7 +203,7 @@ En operación real **no** hay una sola cohort: cada mes entran **nuevas** farmac
 - LTV: USD 437.
 - LTV/CAC: 3,4x.
 - Payback CAC: 3,7 meses.
-- **Break-even mensual (fórmula explícita):** con el mismo **burn de referencia Lean** (**~USD 7.559** promedio anual; **~USD 7.431** tramo C M7–M12 — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.3) y **ARPF 35**, hacen falta **~216** farmacias activas (**7.559 ÷ 35**) o **~212** (**7.431 ÷ 35**), **no** el orden **~151** del caso central con **ARPF ~50**.
+- **Break-even mensual (fórmula explícita):** con el mismo **burn de referencia Lean** (**~USD 8.108** promedio anual; **~USD 7.980** tramo C M7–M12 — [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.2) y **ARPF 35**, hacen falta **~212** farmacias activas (**8.108 ÷ 35**), **por encima** del caso central v3.3 con **ARPF ~50** y **4× Sales** (~**159** activas M12).
 - **Implicación:** el equilibrio mensual queda **más lejos** que en el plan central; se necesitaría **más capital**, **recorte de burn** o **mejora de ARPF**/mix para extender runway (coherente con sensibilidad pesimista en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §7.1).
 
 ### Caso optimista
@@ -211,7 +214,7 @@ En operación real **no** hay una sola cohort: cada mes entran **nuevas** farmac
 - LTV: USD 1.375.
 - LTV/CAC: 18,3x.
 - Payback CAC: 1,4 meses.
-- **Break-even mensual (fórmula explícita):** con burn **~USD 7.559** y **ARPF 55** → **~137** farmacias (**7.559 ÷ 55**); con tramo **7.431** → **~135**. Orden de magnitud **por debajo** de las **~151** del caso **ARPF ~50** + mismo burn (§6 arriba).
+- **Break-even mensual (fórmula explícita):** con burn **~USD 8.108** y **ARPF 55** → **~135** farmacias (**8.108 ÷ 55**); con tramo **7.980** → **~132**. Orden de magnitud **por debajo** de las **~159** del caso **ARPF ~50** + **4× Sales** (§6 arriba).
 - **Implicación:** el equilibrio mensual podría **adelantarse** vs. el caso central **solo si** se sostienen **ARPF ~55**, CAC bajo **y** el burn no sube; validar con FP&A y **§7** [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md). Año 2 con revenue mensual USD 12-15k sigue siendo **referencia** conservadora en PROYECCION §2.
 
 ## 10. Conclusión
@@ -219,12 +222,12 @@ En operación real **no** hay una sola cohort: cada mes entran **nuevas** farmac
 | Métrica | Valor |
 |---|---|
 | **ARPF** | USD **~50**/mes *(placeholder hasta GMV piloto; cuota 25/40/55)* |
-| **CAC** | USD **139** *(4× Sales + supuestos §3)* |
+| **CAC** | USD **139** *(Sales + supuestos §3)* |
 | **Lifetime promedio** | 20 meses |
 | **LTV** | USD 1.000 |
 | **LTV/CAC** | **~7,2x** |
 | **Payback CAC** | **~2,8 meses** |
-| **Equilibrio operativo mensual** | **M11** con ARPF ~50 y curva §1.1 ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.4) |
+| **Equilibrio operativo mensual** | **Casi M12** (Lean 4× Sales); **M10** (Lean+ curva ×1,15); **M11** (Lean + ARPF ~53); **~159 activas** Lean / **~183** Lean+ ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S1.3b) |
 | **Margen bruto del modelo** | ~92% |
 
 **Para el inversor:**
@@ -232,7 +235,9 @@ En operación real **no** hay una sola cohort: cada mes entran **nuevas** farmac
 
 ## 11. Documentos hermanos
 
+- [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) + [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx): consolidado gastos/ingresos/egresos y sensibilidad.
 - [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md): cómo se traduce a flujo mes a mes.
-- [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md): de dónde sale el burn **Lean** (~USD **7.559**/mes promedio; tramos **7.462 / 7.798 / 7.431**) y **Base** (~**8.059**/mes).
+- [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md): desglose histórico por línea (en actualización v3).
+- [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md): burn **Lean** (~USD **8.108**/mes promedio; tramos **8.011 / 8.347 / 7.980**) y **Base** (~**9.898**/mes).
 - [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md): de dónde sale el SAM extendido.
 - [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md): fuentes de churn LatAm y benchmarks Farmalisto.

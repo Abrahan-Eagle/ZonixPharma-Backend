@@ -100,10 +100,10 @@ Imagina a alguien en Valencia que necesita un medicamento para un familiar. Reco
 | Modelo cobro farmacia | Cuota **25/40/55** + **% GMV** por banda |
 | **LTV/CAC** | **~7,2x** (LTV USD 1.000 / CAC USD 139) |
 | Payback CAC | **~2,8 meses** |
-| Capital (Lean / Base / Growth) | **USD 101k / 118k / 135k** (SAFE) |
-| **Equilibrio mensual** | **Mes 11** (~**151** farmacias activas) |
-| Cash cierre M12 | **~USD 42.209** |
-| Farmacias activas M12 | **~159** |
+| Capital (Lean / Base / Growth) | **~USD 112k / ~157k / ~187k** (SAFE) |
+| **Equilibrio mensual** | **Casi M12** (4× Sales); **~159** activas M12 |
+| Cash cierre M12 | **~USD 40.831** |
+| Farmacias activas M12 | **~80** |
 | ARPF referencia | **~USD 50/mes** *(placeholder hasta GMV piloto)* |
 
 ---
@@ -125,7 +125,7 @@ Ser *early mover* en independientes Valencia es **ventaja de entrada**, no moat 
 |--------|------------|
 | **Inflación / devaluación VE** | Buffer **20%** en presupuesto; contingencia si devaluación >100% trimestral |
 | **Regulación farmacéutica** | Farmacéutico colegiado **por farmacia**; asesor regulatorio en tier Base/Growth |
-| **Chicken-and-egg** | **Oferta primero:** 4× Sales + ~28 activas pre-Day-D; demanda escalonada |
+| **Chicken-and-egg** | **Oferta primero:** **4× Sales** + ~28 activas pre-Day-D; demanda escalonada |
 | **Competencia agregadores** | Su unit economics exige comisión >20%; Zonix compite en **costo total** |
 
 ---
@@ -151,11 +151,10 @@ Sinergias que veo:
 
 | Hito | Meta |
 |------|------|
-| Fase 0 (T+0 → Day-D, 90 días) | Legal, equipo, 4× Sales, ~**28 farmacias** con catálogo |
+| Fase 0 (T+0 → Day-D, 90 días) | Legal, equipo, **4× Sales**, ~**28 farmacias** con catálogo |
 | Day-D | Go-live app; OTP Firebase |
-| M1 | ~**40 activas** |
-| M11 | **Equilibrio mensual** (~151 activas) |
-| M12 | ~**159 activas**; cash **~USD 42.209** |
+| M1 | **~20 activas** |
+| M12 | **~159 activas**; cash **~USD 40.831** (casi equilibrio mensual M12) |
 
 ---
 

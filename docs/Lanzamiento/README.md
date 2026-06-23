@@ -1,16 +1,16 @@
 # Pack Lanzamiento Inversor — Zonix Pharma
 
-> **Última actualización:** 21 junio 2026.
+> **Última actualización:** 22 junio 2026 (anclas financieras **v3.8.2** — ESTA layout compacto + Hoja1 8 bloques).
 > **Propósito de esta carpeta:** (1) **Plan de lanzamiento operativo** de Zonix Pharma — calendario **T+0 → Fase 0 → Day-D (T+90) → M12**, equipo, farmacias, tech y KPIs ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) es la fuente canónica). (2) **Materiales de inversor y finanzas** en mejora continua (WIP). Cruce pack ↔ código: [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) + [../ANALISIS_TECNICO_COMPLETO_2026-05.md](../ANALISIS_TECNICO_COMPLETO_2026-05.md).
 > **Estado del pack:** borrador avanzado pre-seed; textos legales y plazos de retención sujetos a **dictamen abogado + farmacéutico asesor** antes de Day-D público.
 > **Producto:** Zonix Pharma — marketplace farmacéutico digital; el pack usa **solo** esa marca para producto y plataforma (no mezclar con otros productos en narrativa, métricas ni infra — p. ej. dominio `zonixpharma.com`, repo `ZonixPharma-*`).
 > **Portfolio del founder:** puede citar otros proyectos del mismo founder (p. ej. **Corral X**) como track record en BRIEF/VOLCADO; eso **no** es el producto que se financia ni la plataforma de este data room.
 > **Zona piloto:** Valencia metro (Carabobo), con foco inicial operativo **San Diego / Av. Bolívar Norte** y expansión a Naguanagua, El Socorro, La Viña, Prebo, etc.
-> **Capital pedido (Lean — mínimo viable):** **USD 101.000** para **Fase 0 (~90 días)** + **12 meses** post-**Day-D** — SAFE post-money cap **USD 600.000**. **Recomendado (Base):** **USD 118.000** / cap **650.000**. **Acelerado (Growth):** **USD 135.000** / cap **720.000** — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §1.
+> **Capital pedido (Lean — mínimo viable):** **~USD 111.988** *(≈112k)* para **Fase 0 (~90 días)** + **12 meses** post-**Day-D** — SAFE post-money cap **USD 600.000**. **Recomendado (Base):** **~USD 157.268** *(≈157k)* / cap **~912.814**. **Growth:** **~USD 187.478** *(≈187k)* / cap **~1.205.345** — [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S1.3 · [CENSO_FARMACIAS_CARABOBO_FASE0.md](CENSO_FARMACIAS_CARABOBO_FASE0.md).
 
 > **Lectura externa:** pack revisado para especialistas (inversor, abogado, contador, asesor farmacéutico, equipo). Sin documentación de proceso interno de redacción automatizada.
 
-Este directorio contiene **25 archivos** `.md` en raíz: **23 documentos canónicos** del pack + **1 anexo outreach** ([RESUMEN_ALIADO_GABRIEL_BARRIOS.md](RESUMEN_ALIADO_GABRIEL_BARRIOS.md), no incluir en zip inversor por defecto) + este **README**. Materiales de **inversor**, **finanzas**, **legal**, **operación comercial**, **propuestas de valor** y **plantillas internas** ([REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md), [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md), [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md), [GUIA_DISCOVERY_CALLE_FASE0.md](GUIA_DISCOVERY_CALLE_FASE0.md), [BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md](BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md)).
+Este directorio contiene **26 archivos** en raíz: **23 documentos canónicos** `.md` + **1 modelo financiero** ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) + [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx)) + **1 anexo outreach** ([RESUMEN_ALIADO_GABRIEL_BARRIOS.md](RESUMEN_ALIADO_GABRIEL_BARRIOS.md), no incluir en zip inversor por defecto) + este **README**. Materiales de **inversor**, **finanzas**, **legal**, **operación comercial**, **propuestas de valor** y **plantillas internas** ([REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md), [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md), [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md), [GUIA_DISCOVERY_CALLE_FASE0.md](GUIA_DISCOVERY_CALLE_FASE0.md), [BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md](BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md)).
 
 Para **ejecutar el lanzamiento:** [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) y [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md). Para **inversor en ~30 min:** [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) y la ruta de la tabla siguiente.
 
@@ -25,6 +25,7 @@ Para **ejecutar el lanzamiento:** [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIEN
 | 5 | [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md) | TAM/SAM/SOM, competencia, beachhead |
 | 5 | [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) | CAC, LTV, payback, break-even |
 | 5 | [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 | Tabla **M1–M12 Lean** mes a mes |
+| 5 | [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) o `.xlsx` | Gastos/ingresos/egresos consolidado (12 hojas v3.8.2; ESTA compacto + Hoja1 8 bloques + Hoja3 use-of-funds) |
 | 3 | [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) | SAFE, cap table, vehículo VE |
 | 2 | [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) | Guion reunión + FAQ |
 
@@ -47,12 +48,13 @@ Lo anterior +:
 5. [PROPUESTA_VALOR_USUARIO_FINAL.md](PROPUESTA_VALOR_USUARIO_FINAL.md) — pitch al paciente.
 6. [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) — delivery + farmacéutico colegiado.
 7. [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) — escenarios Lean / Base / Growth.
-8. [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md) — fuentes y precios públicos.
-9. [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) — vallas, radio, flyers.
-10. [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) — pago móvil, transferencia, Zelle, Binance Pay.
-11. [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) — Rx, farmacovigilancia, seguridad, QA piloto.
-12. [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md) · [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) — captura operativa.
-13. [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) — outreach inversor.
+8. [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) + [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx) — modelo consolidado gastos/ingresos/egresos (FP&A / aliados).
+9. [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md) — fuentes y precios públicos.
+10. [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) — vallas, radio, flyers.
+11. [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) — pago móvil, transferencia, Zelle, Binance Pay.
+12. [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) — Rx, farmacovigilancia, seguridad, QA piloto.
+13. [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md) · [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) — captura operativa.
+14. [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) — outreach inversor.
 
 ---
 
@@ -61,21 +63,23 @@ Lo anterior +:
 
 | Concepto                          | **Lean (mínimo viable)** | **Base (recomendado)** | **Growth (acelerado)** |
 | --------------------------------- | ------------------------ | ---------------------- | ---------------------- |
-| Capital pedido                    | **USD 101.000**          | **USD 118.000**        | **USD 135.000**        |
+| Capital pedido                    | **~USD 111.988** *(≈112k)* | **~USD 157.268** *(≈157k)* | **~USD 187.478** *(≈187k)* |
 | Runway                            | 12 meses post-Day-D      | 12 meses post-Day-D    | 12 meses post-Day-D    |
-| SAFE post-money cap               | **USD 600.000**          | **USD 650.000**        | **USD 720.000**        |
-| Equity implícito (ref.)           | **~16,83%**              | **~18,15%** *(≈18,2% redondeado)* | **~18,75%** *(≈18,8% redondeado)* |
-| Burn promedio mensual             | **~USD 7.559**           | **~USD 8.059**         | **~USD 8.691**         |
-| One-shots (Fase 0)                | **~USD 9.808**           | **~USD 10.708**        | **~USD 10.708**        |
+| SAFE post-money cap               | **USD 600.000**          | **~USD 912.814**       | **~USD 1.205.345**     |
+| Equity implícito (ref.)           | **~18,66%**              | **~17,23%**            | **~15,55%**            |
+| Burn promedio mensual             | **~USD 8.108**           | **~USD 10.898**         | **~USD 12.698**        |
+| One-shots (Fase 0)                | **~USD 14.208**          | **~USD 15.108**        | **~USD 15.108**        |
 | Buffer (inflación VE)             | 20%                      | 20%                    | **25%** (marketing Growth) |
-| Equilibrio mensual (revenue ≥ burn) | **M11** (PROYECCION §1.1 — solo Lean tiene tabla M1–M12) | Más colchón caja; misma curva revenue | Mayor reserva runway |
-| Farmacias activas ref. equilibrio | **~151** (ARPF ~50; burn **7.431** tramo C) | **~162** (burn **~8.059**) | **~174** (burn **~8.691**) |
+| Equilibrio mensual (revenue ≥ burn) | **Casi en M12** (4× Sales bootstrap) | Colchón + sueldos mercado | Dev senior + reserva **~20k** |
+| Farmacias activas ref. M12 / equilibrio | **~159** M12; equilibrio **~160** activas (ARPF ~50) | **~159** M12; **~218** teórico | **~159** M12; **~254** teórico |
 
-> **Equilibrio Base/Growth:** las cifras **~162** / **~174** son **break-even teórico** (mismo ARPF **~50** y burn promedio del tier: **8.059 ÷ 50 ≈ 162**, **8.691 ÷ 50 ≈ 174**). **No** hay tabla M1–M12 mes a mes para Base/Growth en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) — solo **Lean** §1.1.
+> **Nota v3.4 (jun 2026):** Lean/Base/Growth = **4× Sales**, misma curva (~159 M12). **Blitz** = **6× Sales**, ~238 M12, capital **~185k**. Fuente: [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S1.3, S4.
 
-> **Lectura tiers:** **Lean = mínimo ejecutable** (Co-CEO, 4× Sales, HQ casa, IA, valla pequeña). **Base = recomendado** (+ valla mediana, asesor, Meta sostenido, reserva). **Growth = acelerado** (+ colchón runway). Escalera **101k < 118k < 135k**.
+> **Equilibrio Base/Growth:** break-even teórico (ARPF **~50**): Base **~218** activas (**10.898 ÷ 50**), Growth **~254** (**12.698 ÷ 50**). Tabla M1–M12: [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.
 
-> **Fase 0 + Day-D (Lean 101k):** **T+0** = wire **USD 101k**; **Day-D = T+90**; **Fase 0** consume **~USD 28.057** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §0.1). **Caja al Day-D:** **~USD 72.943**. **Cierre M12:** **~USD 42.209** (sin waiver). Solo **Lean** tiene PROYECCION §1.1 mes a mes; Base/Growth = delta burn + reserva en [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md).
+> **Lectura tiers:** **Lean = bootstrap 4× Sales ~112k.** **Base = recomendado ~157k** (sueldos mercado + Google Ads B2B). **Growth = ~187k** (Dev senior + colchón). Escalera **112k < 157k < 187k**.
+
+> **Fase 0 + Day-D (Lean ~112k):** **T+0** = wire **~USD 112k**; **Day-D = T+90**; **Fase 0** consume **~USD 33.835** ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S2.2). **Caja al Day-D:** **~USD 78.153**. **Cierre M12:** **~USD 40.831**. Revenue acumulado año 1 Lean: **~USD 59.968**; FCF año 1: **−37.322**.
 
 
 
@@ -116,20 +120,20 @@ Lo anterior +:
   - Founder (CEO + CTO en una sola persona, el usuario) + **Co-CEO / CEO operativo** (segundo al mando; comercial / operación / corporate) **USD 1.000/mes** — **rótulo operativo**; representante legal / junta y SAFE según [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md).
   - Sin Pharmacist liaison interno: cada farmacia afiliada aporta su propio farmacéutico colegiado (marco VE — Ley del Ejercicio de la Farmacia; operación comercial sujeta a dictamen **abogado + farmacéutico asesor** antes de Day-D).
   - Sin Diseñador UI/UX: el founder cubre tech.
-  - **4× Sales B2B** con USD **120** fijo c/u + USD **30** por farmacia firmada (**al rep que la firmó**; no duplicado entre reps); si la curva de firmas lo permite, valorar **2×** Sales como escenario de ahorro (recalcular CAC y PROYECCION).
-  - **Replante operativo** (integrado en **Lean 101k** — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2): sueldo founder **USD 1.000/mes**; **Co-CEO** **USD 1.000/mes**; Customer Support + Community Manager **350** (+50 si KPI → 400); Marketing Lead + apoyo a dirección **400** (+100 bonus si KPI); **Coordinador de Partners Logísticos** **300** (+100 si KPI → 400).
-  - Asesor regulatorio farmacéutico **USD 120/mes** en escenarios **Base (118k)** y **Growth (135k)** — no en Lean.
-  - **HQ — 4 PCs fijos:** recepción/cobros; admin+llamadas; dev potente; **PC 4** puesto flexible (Sales/Marketing en sede o backup de picos). **4× Sales** en campo con tablet/laptop. CapEx referencia **~2.950–4.450 USD** (cotización local — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §6.1). **Sin compra de vehículo** en presupuesto.
+  - **Lean v3.3:** **4× Sales B2B** base **USD 350** c/u + USD **40** por farmacia firmada (**al rep que la firmó**); **Dev junior** **USD 600/mes** en nómina. **Base/Growth:** **4× Sales** (base **400** / **450** c/u — [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S1.2b).
+  - **Replante operativo** (integrado en **Lean ~112k**): sueldo founder **USD 1.000/mes**; **Co-CEO** **USD 1.000/mes**; Customer Support + Community Manager **400**; herramientas IA **425**; contador + abogado **330**.
+  - Asesor regulatorio farmacéutico **USD 120/mes** en escenarios **Base (~157k)** y **Growth (~187k)** — no en Lean.
+  - **HQ — 4 PCs fijos:** recepción/cobros; admin+llamadas; dev potente; **PC 4** puesto flexible (Sales/Marketing en sede o backup de picos). **Sales** en campo con tablet/laptop. CapEx en one-shots **~13.408** ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S2.1). **Sin compra de vehículo** en presupuesto.
   - **Stack IA:** Cursor **Ultra (200)** + Claude **Max (200)** + **Seedance 2.0** (~**25**/mes ancla hasta cotizar plan); sin Gemini, Runway ni Midjourney en stack acordado.
 4. **Inmueble:** Bella Florida o San Diego. **Lean/Base/Growth:** HQ tipo **casa USD 500/mes** ([PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2). Valla pequeña (Lean), mediana (Base/Growth).
 5. **Awareness:** **Meta Ads** canal principal. **Lean:** **USD 800/mes** M1–6 · **500** M7–12. **Base/Growth:** **800/mes** todo el año. Valla: pequeña 3m×2m (Lean, M3+); mediana 6m×4m (Base/Growth, M2+).
 6. **Día D del piloto:** T+90 desde cierre de inversión (calendario relativo, no absoluto, porque la fecha de cierre aún no está confirmada).
-7. **Instrumento de inversión:** SAFE post-money con cap por escenario (**USD 600k / 650k / 720k** — Lean / Base / Growth).
+7. **Instrumento de inversión:** SAFE post-money con cap por escenario (**USD 600k / ~908k / ~1.270M** — Lean / Base / Growth).
 8. **Benchmark de competencia para el pitch:** Farmatodo / Locatel + Farmalisto + **PedidosYa Pharmacy** *(agregador activo VE; Rappi no opera en país)*.
 9. **Comercial farmacia B2B (mayo 2026):** tier **solo por GMV** (sin topes por órdenes/SKU); **contrato marco anual** + cuota mensual; ascenso de tarifa desde **M+2** (en **M** y **M+1** sigue tarifa del nivel anterior); reclamos GMV **3 días hábiles**; salida sin penalidad en los **2 primeros meses**; prod en **VPS Nameshared** — [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5 y §9.
 10. **OTP paciente:** **Firebase Phone Auth (SMS)** — proxy **USD 30/mes** en burn Lean §2.3.
 11. **Logística en app:** solo **`delivery_company`** + **`delivery_agent`** — [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) cabecera.
-12. **Tiers capital (mayo 2026):** **Lean 101k** (mínimo) · **Base 118k** (recomendado) · **Growth 135k** (acelerado) — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §1.
+12. **Tiers capital (v3.3 jun 2026):** **Lean ~112k** (4× Sales bootstrap) · **Base ~157k** (recomendado) · **Growth ~187k** (colchón + Dev senior) — [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S1.3 · [CENSO_FARMACIAS_CARABOBO_FASE0.md](CENSO_FARMACIAS_CARABOBO_FASE0.md).
 
 ## Documentos pre-existentes del repositorio que el pack referencia (no duplica)
 
@@ -179,7 +183,7 @@ Estos no se inventan. El pack los marca explícitamente con `[PENDIENTE]`. **Ín
 ## Exportar a especialistas (checklist founder)
 
 1. Revisar [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) (P0 antes de reunión institucional).
-2. **Zip inversor (~30 min):** BRIEF → CONTEXTO → PERFIL → UNIT → PROYECCION §1.1 → ESTRUCTURA → CHECKLIST (+ MENSAJE §2 opcional).
+2. **Zip inversor (~30 min):** BRIEF → CONTEXTO → PERFIL → UNIT → PROYECCION §1.1 → **MODELO_FINANCIERO `.xlsx`** (opcional FP&A) → ESTRUCTURA → CHECKLIST (+ MENSAJE §2 opcional).
 3. **Opcional DD técnico:** [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md).
 4. **Excluir del zip externo** (uso interno): CUESTIONARIO, REGISTRO, VOLCADO, GUIA_DISCOVERY, BANCO_PROBLEMAS — salvo que el especialista lo pida.
 5. Marcar aprobación founder en REGISTRO P0-04 antes de enviar.

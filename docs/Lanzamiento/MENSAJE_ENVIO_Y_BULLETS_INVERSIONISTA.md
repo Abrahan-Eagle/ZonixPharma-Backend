@@ -1,13 +1,13 @@
 # Mensaje de envío al inversor + bullets pitch
 
-> **Última actualización:** 11 junio 2026.
+> **Última actualización:** 22 junio 2026 (anclas financieras **v3.0**).
 > Documento operacional. Texto listo para WhatsApp / email + bullets para presentación de 5 minutos.
 
 ## 1. Mensaje WhatsApp inicial (mensaje frío)
 
 > Hola [Nombre del inversor],
 >
-> Soy **Abrahan Pulido**. Soy fundador de Zonix Pharma, un marketplace farmacéutico digital que estamos preparando para lanzar en Carabobo. **T+0** = wire del capital; **~90 días Fase 0** (legal, equipo, onboarding farmacias, Firebase/tiendas); **Day-D (T+90)** = piloto público en app = **M1** del modelo financiero ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §0). Stack en **staging/VPS** con **443 tests** backend (re-verificar pre-reunión); go-live tiendas + Firebase **T+7–12** Fase 0. Busco **USD 101k** (Lean — mínimo viable) vía SAFE, con opción **118k recomendado** / **135k acelerado**, para **Fase 0 + 12 meses** post-Day-D — **~USD 42.209** cash M12 y equilibrio **M11** (PROYECCION §1).
+> Soy **Abrahan Pulido**. Soy fundador de Zonix Pharma, un marketplace farmacéutico digital que estamos preparando para lanzar en Carabobo. **T+0** = wire del capital; **~90 días Fase 0** (legal, equipo, onboarding farmacias, Firebase/tiendas); **Day-D (T+90)** = piloto público en app = **M1** del modelo financiero ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S2). Stack en **staging/VPS** con **443 tests** backend (re-verificar pre-reunión); go-live tiendas + Firebase **T+7–12** Fase 0. Busco **~USD 112k** (Lean — **4× Sales** bootstrap Carabobo) vía SAFE, con opción **~157k recomendado** / **~187k Growth**, para **Fase 0 + 12 meses** post-Day-D — **~USD 40.831** cash M12 y **~159 activas** (casi equilibrio mensual M12).
 >
 > Modelo: la farmacia paga **cuota fija + un % moderado sobre GMV** en la app (tier dinámico por bandas — ver pack §5 B2B). El take-rate total sigue siendo **órden de magnitud menor** que Rappi/PedidosYa (25-35% GMV).
 >
@@ -22,7 +22,7 @@
 
 ### 1.1 Variante ultra-corta (~80 palabras) — Cialdini
 
-> Hola [Nombre], soy Abrahan Pulido, fundador de **Zonix Pharma** (marketplace farmacéutico Valencia, OTC + Rx). Tras wire (**T+0**), **~90 días Fase 0** y **Day-D** piloto público. Buscamos **USD 101k** pre-seed vía SAFE (cap **600k** Lean; opciones 118k/650k · 135k/720k). Stack en **staging** (**443 tests** backend). ¿30 min esta semana? Pack: [LINK Drive / README Lanzamiento].
+> Hola [Nombre], soy Abrahan Pulido, fundador de **Zonix Pharma** (marketplace farmacéutico Valencia, OTC + Rx). Tras wire (**T+0**), **~90 días Fase 0** y **Day-D** piloto público. Buscamos **~USD 112k** pre-seed vía SAFE (cap **600k** Lean; opciones **~157k/~913k** · **~187k/~1.205M**). Stack en **staging** (**443 tests** backend). ¿30 min esta semana? Pack: [LINK Drive / README Lanzamiento].
 
 **Ganchos (usar 1–2, sin exagerar):**
 - **Autoridad:** stack ~4 años; regulación Rx con farmacéutico de cada farmacia.
@@ -100,30 +100,29 @@ Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 > **Slide 4: Mercado**
 > - TAM Venezuela USD 1.638M.
 > - SAM Valencia metro 226 farmacias.
-> - SOM M11: **~151** farmacias activas (equilibrio mensual caso central §1.1 — [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md) §3).
+> - SOM M12: **~80** farmacias activas (caso central v3 — [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.1).
 > - Comparable Farmalisto: ~USD 32M revenue 2024; funding ~USD 22M reportado (hasta ~USD 33M PitchBook); países MX+CO+PE.
 
 > **Slide 5: Modelo**
 > - ARPF USD **~50**/mes **referencia provisional** (hasta GMV piloto; cobro híbrido cuota **25/40/55** + % GMV — UNIT_ECONOMICS).
-> - CAC USD **139** (**4×** Sales B2B + marketing digital — UNIT_ECONOMICS §3).
+> - CAC USD **139** (**4×** Sales B2B Lean + marketing digital — UNIT_ECONOMICS §3).
 > - Churn 5%/mes (mediana SaaS SMB LatAm — ChartMogul 2025).
 > - LTV USD 1.000.
 > - **LTV/CAC ~7,2x.** Payback **~2,8** meses.
 
 > **Slide 6: Plan**
-> - **USD 101.000** Lean (mínimo) · **118.000** Base (recomendado) · **135.000** Growth (acelerado).
-> - Burn Lean **~USD 7.559**/mes; equilibrio **M11** (~**151** activas).
-> - **~USD 42.209** cash M12 sin waiver; **~41.756** con waiver B2B proxy (PROYECCION §1.3).
+> - **~USD 111.988** Lean *(≈112k)* · **~157.268** Base *(≈157k)* · **~187.478** Growth *(≈187k)*.
+> - Burn Lean **~USD 8.108**/mes; **casi equilibrio M12** (~**159** activas).
+> - **~USD 40.831** cash M12; revenue año 1 **~59.968**; FCF **−37.322** (MODELO S3).
 
 > **Slide 7: Equipo**
 > - Founder = CEO + CTO. **Co-CEO** USD **1.000**/mes.
-> - **4× Sales B2B:** USD **120** + **30**/firma.
-> - CS+CM **350**; Marketing **400**; Coordinador Partners **300**.
-> - Contador + Abogado **330**/mes.
+> - **4× Sales B2B (Lean):** USD **350** base + **40**/firma.
+> - **Dev junior** USD **600**; CS+CM **400**; contador + abogado **330**/mes.
 
 > **Slide 8: Ask**
-> - **USD 101.000** SAFE cap **600.000** (~**16,83%**).
-> - Recomendado: **118k / 650k** (~**18,15%**). Acelerado: **135k / 720k** (~**18,75%**).
+> - **~USD 112k** SAFE cap **600.000** (~**18,66%**).
+> - Recomendado: **~157k / ~913k** (~**17,23%**). Carabobo: **~187k / ~1.205M** (~**15,55%**).
 > - Sin valuación arbitraria. Plazo cierre: 21-30 días.
 
 ## 5. Bullets para Q&A (cobertura defensiva)
@@ -167,22 +166,22 @@ Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 
 | Indicador | Valor |
 |---|---|
-| Capital pedido | **USD 101.000** (Lean) · **118.000** (Base rec.) · **135.000** (Growth) |
-| SAFE post-money cap | **600k / 650k / 720k** |
-| Equity implícito | **~16,83%** (Lean) · **~18,15%** (Base) · **~18,75%** (Growth) |
-| Equilibrio mensual (revenue ≥ burn) | **M11** (§1.4 PROYECCION) |
-| Farmacias activas ref. | **~159** mes 12 modelo; **~151** en **M11** (equilibrio) |
+| Capital pedido | **~USD 111.988** (Lean) · **~157.268** (Base rec.) · **~187.478** (Growth Carabobo) |
+| SAFE post-money cap | **600k / ~908k / ~1.270M** |
+| Equity implícito | **~18,66%** (Lean) · **~17,23%** (Base) · **~15,55%** (Growth) |
+| Equilibrio mensual (revenue ≥ burn) | **Casi M12** (Lean 4× Sales); ~160 activas teórico |
+| Farmacias activas ref. | **~80** mes 12 modelo Lean v3 |
 | ARPF | **~USD 50/mes** *(placeholder; cobro real = híbrido cuota 25/40/55 + % GMV hasta piloto)* |
 | CAC | USD **139** |
 | LTV/CAC | **~7,2x** |
 | Payback CAC | **~2,8 meses** |
-| Burn mensual | **~USD 7.559** promedio (tramos **7.462 / 7.798 / 7.431**) |
+| Burn mensual | **~USD 8.108** promedio (tramos **8.011 / 8.347 / 7.980**) |
 | Runway | 12 meses |
-| Cash al cierre año 1 (proyección) | **~USD 42.209** sin waiver; **~USD 41.756** con waiver B2B proxy ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3) |
+| Cash al cierre año 1 (proyección) | **~USD 40.831** ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.3) |
 | TAM Venezuela | USD 1.638M |
 | Comparable internacional | Farmalisto ~USD 32M revenue 2024 (MX); funding ~USD 22M–33M según fuente |
 | Stack | Laravel + Flutter + Pusher + FCM; **443 tests** backend (staging/VPS; release tiendas T+7–12 Fase 0) |
-| Equipo | **9** roles FT + 2 freelance. Asesor regulatorio en **Base/Growth** (118k/135k). |
+| Equipo | **Lean:** 4× Sales + Dev junior + CS (Carabobo). Asesor regulatorio en **Base/Growth** (~157k/~187k). |
 | Founder track record | **Abrahan Pulido** — Ingeniero en Informática (IUTVAL); 8+ años full stack; fundador **Zonix Pharma** (mismo stack desde delivery B2C), **Corral X**, **Zonix Imports**, **Aiblockweb**; docente CETIAC; [LinkedIn](https://www.linkedin.com/in/abrahan-pulido-909a35b7/), [aiblockweb.com](https://aiblockweb.com), `ing.pulido.abrahan@gmail.com`, +58 412 4352014. **Pendiente:** URL GitHub pública + 2 referencias verificables para due diligence. |
 
 ## 8. Cuándo enviar este mensaje

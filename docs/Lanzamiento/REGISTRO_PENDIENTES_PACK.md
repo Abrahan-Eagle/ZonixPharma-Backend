@@ -1,6 +1,6 @@
 # Registro consolidado de pendientes — Pack Lanzamiento
 
-> **Última actualización:** 11 junio 2026.  
+> **Última actualización:** 21 junio 2026.  
 > **Uso:** Completar celdas antes de reunión con inversor institucional o envío del data room cerrado.  
 > **Fuente:** barrido `[PENDIENTE]` en `docs/Lanzamiento/` (no inventar datos).  
 > **Plantilla detallada:** [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md).  
@@ -71,6 +71,8 @@
 | P2-08 | Párrafo **flywheel** post-Day-D en PLAN | Founder | **Cerrado** jun 2026 — PLAN §4.4 |
 | P2-09 | Criterios **crossing-the-chasm** (expansión SAM post-M6) en PERFIL | Founder | **Cerrado** jun 2026 — PERFIL §6.5 |
 | P2-10 | Tabla **4 lados** marketplace en PROPUESTA_TERCER_LADO | Founder | **Cerrado** jun 2026 — TERCER_LADO intro |
+| P2-11 | **Modelo financiero consolidado** (.md + .xlsx) — recalibrar VAN/TIR e impuestos con FP&A/contador | Founder | [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) — **creado** jun 2026; validación externa **PENDIENTE** |
+| P2-12 | Recalibrar **ARPF + GMV** en modelo tras ≥30 días post-Day-D | Founder + FP&A | MODELO §S7.3; UNIT §2.1 |
 
 ---
 

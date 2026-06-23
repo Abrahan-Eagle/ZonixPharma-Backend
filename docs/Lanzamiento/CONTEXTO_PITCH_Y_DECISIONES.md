@@ -1,6 +1,6 @@
 # Contexto del pitch y decisiones tomadas
 
-> **Última actualización:** 11 junio 2026.
+> **Última actualización:** 22 junio 2026 (anclas financieras **v3.0**).
 > Documento que captura las decisiones del founder (usuario) sobre cómo se posiciona Zonix Pharma frente a un inversor, qué se dice, qué no, y por qué se eligió cada parámetro del modelo.
 
 ## 1. Tecnología base reutilizada (Zonix Pharma)
@@ -11,7 +11,7 @@
 - **Equipo técnico ya entrenado:** el founder conoce el stack al detalle.
 - **Riesgo de ejecución reducido:** la capa farmacéutica diferenciadora (Rx, cadena de frío, farmacéutico colegiado) está **operativa en flujo core** y documentada en [`../PLAN_RX_VALIDATION.md`](../PLAN_RX_VALIDATION.md) y [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md). **Inventario por lotes (`medicine_lots`) / despacho FIFO:** esquema de datos y referencias en repo; **UI y despacho FIFO en operación** quedan para **post-Day-D o M3+** — no prometer módulo de lotes en pitch hasta cerrarlo ([ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md)).
 
-**Mensaje para el inversor:** "compramos **~4 años** de desarrollo del stack — hoy en **staging**, release tiendas **T+7–12** Fase 0 — con **USD 101.000** de runway **Lean** 12 meses post-Day-D + colchón cierre año 1" ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3; incluye **Co-CEO**).
+**Mensaje para el inversor:** "compramos **~4 años** de desarrollo del stack — hoy en **staging**, release tiendas **T+7–12** Fase 0 — con **~USD 112k** de runway **Lean** 12 meses post-Day-D + colchón cierre año 1 **~USD 40.831**" ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3; incluye **Co-CEO** + **Dev junior** + **4× Sales**).
 
 ## 2. Decisiones tomadas y por qué
 
@@ -41,25 +41,26 @@
 
 **Trade-off:** la complejidad operativa de día 1 es alta. Mitigación: con sólo 5-10 farmacias en mes 1 y 50-100 órdenes diarias, el founder + Customer Support pueden monitorear todos los flujos en vivo.
 
-### 2.3 Capital pedido: tres tiers (Lean / Base / Growth)
+### 2.3 Capital pedido: tiers (Lean / Base / Growth / Blitz stretch)
 
-**Decisión:** tres tiers — **Lean 101k** (mínimo viable) · **Base 118k** (recomendado) · **Growth 135k** (acelerado). Escalera **101k < 118k < 135k**.
+**Decisión:** cuatro referencias — **Lean ~112k** · **Base ~157k** (recomendado) · **Growth ~187k** · **Blitz ~185k** (6× Sales agresivo). Escalera conservadora **112k < 157k < 187k**; Blitz ≈ Growth en capital pero **+79 activas M12**.
 
 | Tier | Capital | Rol |
 |---|---|---|
-| **Lean (mínimo viable)** | **USD 101.000** | Piso honesto: Fase 0 + 12 meses post-Day-D; PROYECCION §1.1 mes a mes |
-| **Base (recomendado)** | **USD 118.000** | Lean + valla mediana + asesor + Meta 800 todo el año + reserva |
-| **Growth (acelerado)** | **USD 135.000** | Base + colchón runway + marketing/contingencia ampliados |
+| **Lean (bootstrap Carabobo)** | **~USD 111.988** *(≈112k)* | Fase 0 + 12 meses post-Day-D; **4× Sales @ 350** + Dev junior |
+| **Base (recomendado)** | **~USD 157.268** *(≈157k)* | Sueldos mercado **400**, Dev mid, diseñador + Google Ads B2B, valla mediana, asesor |
+| **Growth** | **~USD 187.478** *(≈187k)* | Dev senior + colchón **~20k** — [CENSO_FARMACIAS_CARABOBO_FASE0.md](CENSO_FARMACIAS_CARABOBO_FASE0.md) |
+| **Blitz (stretch Carabobo)** | **~USD 184.878** *(≈185k)* | **6× Sales @ 400**, curva **×1,5**, **~238 activas M12** |
 
-**Lean — detalle:** **USD 101.000** para **Fase 0 (~90 días)** + **12 meses** post-**Day-D**; one-shots **~9.808** en Fase 0; **Co-CEO**, **4× Sales**, HQ casa, stack IA — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.
+**Lean — detalle:** **~USD 112k** para **Fase 0 (~90 días)** + **12 meses** post-**Day-D**; one-shots **~14.208**; **Co-CEO**, **4× Sales** (base 350), **Dev junior 600**, HQ casa, stack IA — [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S1–S3.
 
-**Awareness (Lean):** Meta **800/mes** M1–6 · **500** M7–12; valla pequeña desde M3. **Base/Growth:** Meta **800/mes** todo el año; valla mediana desde M2.
+**Awareness (Lean):** Meta **800/mes** M1–6 · **500** M7–12; valla pequeña desde M3. **Base/Growth:** Meta **800/mes** todo el año; valla mediana desde M2; **Base+** diseñador + Google Ads B2B (v3.2).
 
-**Pitch:** cerrar en **Lean 101k** (mínimo) u orientar al ángel cómodo a **Base 118k** (recomendado).
+**Pitch:** cerrar en **Lean ~112k** (Valencia) u orientar al ángel cómodo a **Base ~157k** (recomendado) o **Growth ~187k** (Carabobo).
 
 ### 2.4 Instrumento: SAFE post-money con cap
 
-**Decisión:** SAFE post-money cap según tier — **600k (Lean 101k)** · **650k (Base 118k — recomendado)** · **720k (Growth 135k)**.
+**Decisión:** SAFE post-money cap según tier — **600k (Lean ~112k)** · **~913k (Base ~157k — recomendado)** · **~1.205M (Growth ~187k — Carabobo)**.
 
 **Por qué:**
 - **Simple:** un documento de 5 páginas. No requiere abogado en NY ni fondo institucional.
@@ -100,7 +101,7 @@ Detalle de fases T+30 / T+60 / T+90 en [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZ
 **Por qué pharmacist liaison no:**
 - La **Ley del Ejercicio de la Farmacia VE** obliga a que cada farmacia tenga su propio farmacéutico colegiado registrado en MPPS. Si **Zonix Pharma** contrata uno, ese farmacéutico no puede validar recetas de farmacias afiliadas (no es responsable de su inventario). *Validación del modelo en app: [PENDIENTE dictamen abogado + farmacéutico asesor antes de Day-D].*
 - El backend ya tiene módulo de Pharmacist con KYC, dashboard y validación. Cada farmacia afiliada accede al rol Pharmacist de su propio farmacéutico colegiado. Detalle en [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md).
-- Mitigación de riesgo regulatorio: KYC del pharmacist + verificación MPPS + capacitación. Asesor regulatorio externo **USD 120/mes** en **Base (118k)** y **Growth (135k)** — no en Lean.
+- Mitigación de riesgo regulatorio: KYC del pharmacist + verificación MPPS + capacitación. Asesor regulatorio externo **USD 120/mes** en **Base (~157k)** y **Growth (~187k)** — no en Lean.
 
 **Por qué diseñador UI/UX no:**
 - El founder es el responsable técnico y conoce el stack Flutter completo.
@@ -138,7 +139,7 @@ Detalle competitivo en [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md).
 |------|-------------------|---------------------|--------|
 | **T+0 → T+60** | **4× Sales B2B** visitas; cartas de intención; carga de catálogo | Solo soft launch interno (familia/equipo) | [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §2.5–2.6, §4.1 |
 | **T+60 → Day-D (T+90)** | Onboarding técnico por lotes; meta **~28 activas** pre-cargadas al Day-D | Pre-launch marketing **50%** presupuesto mes; WhatsApp local | PLAN §2.6, §4.1 |
-| **Day-D = M1** | **~40 activas** al cierre M1 (curva §1.1) | **Meta Ads + valla** según tier; primera ola B2C en zona piloto | [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 M1; [PROPUESTA_VALOR_USUARIO_FINAL.md](PROPUESTA_VALOR_USUARIO_FINAL.md) §7.3 |
+| **Day-D = M1** | **~20 activas** al cierre M1 (curva v3) | **Meta Ads + valla** según tier; primera ola B2C en zona piloto | [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.1 M1 |
 | **M2–M6** | Rampa a **≥97 activas** (DoD M6) | Geo-target Bella Florida + El Socorro; referidos farmacia (Bullseye interior) | PLAN §5; [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) §1.2 |
 
 **Mensaje inversor:** no gastamos tráfico masivo a pacientes **antes** de tener catálogo en farmacias piloto; el **B2B es el motor de liquidez** en Fase 0. La curva de **activas** en PROYECCION §1.1 es la fuente de verdad para revenue — no prometer GMV de paciente sin dato piloto.
@@ -163,19 +164,19 @@ Detalle competitivo en [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md).
 
 ### 2.12 Business Model Canvas (resumen — sin cifras nuevas)
 
-Vista única para data room; detalle en docs hermanos. **ARPF ~50** y tiers **101k / 118k / 135k** solo desde [README.md](README.md) y [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md).
+Vista única para data room; detalle en docs hermanos. **ARPF ~50** y tiers **~112k / ~157k / ~187k** desde [README.md](README.md) y [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S1.3.
 
 | Bloque Canvas | Zonix Pharma (piloto Valencia) | Hipótesis a validar (Fase 0) | Doc fuente |
 |---------------|-------------------------------|------------------------------|------------|
 | **Segmentos** | Farmacias independientes (B2B); paciente urbano/clase media (B2C); empresa `delivery_company` + `delivery_agent`; farmacéutico colegiado por farmacia | Dueño de farmacia independiente confirma dolor digital en ≥5 entrevistas mom-test sin mencionar Zonix | PROPUESTA ×3, PERFIL §6 |
 | **Propuesta de valor** | Marketplace OTC/Rx con validación farmacéutico local, uni-pharmacy, pagos VE, tracking sin flota Zonix | Farmacia firma contrato marco en ≤30 días tras demo | BRIEF; PROPUESTA_USUARIO_FINAL §2.2 |
-| **Canales** | **4× Sales** campo; Meta Ads + valla + referidos mostrador; app Android/iOS | Tasa de cierre real de Sales sostiene la curva §3 PERFIL (sanity §3.1) | PLAN §2–4; SUPUESTO_MARKETING |
+| **Canales** | **4× Sales** (todos los tiers; sueldos difieren) campo; Meta Ads + valla + referidos mostrador; app Android/iOS | Tasa de cierre real de Sales sostiene curva v3.3 | PLAN §2–4; SUPUESTO_MARKETING |
 | **Relación** | Contrato marco anual farmacia; CS + validación Rx; partner logístico bajo SLA | Farmacia activa catálogo y opera panel sin soporte diario tras onboarding | B2B §9; PLAN_MODULO |
 | **Fuentes de ingreso** | Cuota **25/40/55** + % GMV farmacia; **8% × Σ delivery_fee + USD 0,30 × N envíos** a `delivery_company` | Farmacia paga la cuota tras vencer el waiver (mes 3) sin churn | B2B §5; PLAN_METODOS_PAGO §2.5 |
 | **Recursos clave** | Stack Laravel+Flutter (~4 años); founder+Co-CEO; farmacéuticos de cada farmacia aliada | Farmacéutico de la farmacia valida Rx dentro del TTL en operación real | §1 CONTEXTO; VOLCADO §1 |
 | **Actividades clave** | Onboarding B2B, catálogo, validación Rx, asignación partner, pagos manuales VE | Pedido E2E (OTC y Rx) completado con pago manual conciliado | PLAN_LANZAMIENTO; PLAN_MODULO |
 | **Socios clave** | Farmacias piloto; **empresa(s) concesionaria** última milla; abogado/contador VE *[PENDIENTE]* | Partner delivery cumple SLA en zona piloto con 10-15 agentes | TERCER_LADO; REGISTRO P1-05/06 |
-| **Estructura de costos** | Fase 0 + burn post-Day-D (Lean **~7.559**/mes promedio); CAC farmacia **139** | Burn real Fase 0 ≤ ~28.057 presupuestado; CAC real ≤ 139 ±20% | PRESUPUESTO §2; UNIT §3 |
+| **Estructura de costos** | Fase 0 + burn post-Day-D (Lean **~8.108**/mes promedio); CAC farmacia **139** | Burn real Fase 0 ≤ ~31.320 presupuestado; CAC real ≤ 139 ±20% | MODELO S2–S3; UNIT §3 |
 
 > Si ≥3 entrevistas o el dato real T+60 contradicen una hipótesis, aplicar pivot por bloque según `zonix-lean-canvas` (§ pivot) **antes** de escalar Meta Ads — el paciente (B2C) se valida con repeat M2 post-Day-D.
 
@@ -191,16 +192,16 @@ Vista única para data room; detalle en docs hermanos. **ARPF ~50** y tiers **10
 | Término | Significado simple | Aplicado a Zonix Pharma |
 |---|---|---|
 | **GMV** | Gross Merchandise Value: total por transacción completada en la app en el mes (definición operativa §5.5 B2B). | Si las farmacias venden USD 200k/mes a través de la app, GMV = USD 200k. **Zonix Pharma** cobra **cuota fija + fee %** sobre ese GMV según nivel; la farmacia se queda con el neto de venta según su operación. |
-| **CAC** | Costo de adquirir un cliente. | Cuánto gasta **Zonix Pharma** en marketing + **4×** Sales para firmar UNA farmacia. **USD 139** (ver [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §3). |
+| **CAC** | Costo de adquirir un cliente. | Cuánto gasta **Zonix Pharma** en marketing + **Sales** para firmar UNA farmacia. **USD 139** (ver [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §3). |
 | **LTV** | Lifetime Value: cuánto paga ese cliente en toda su vida con nosotros. | Una farmacia en promedio paga USD 50/mes durante 20 meses = USD 1.000 *(ARPF placeholder; recalibrar con híbrido + GMV en piloto).* |
 | **LTV/CAC** | Eficiencia del negocio. | **~7,2x** (con CAC **139** y ARPF placeholder **50**). > 3x ya es bueno; > 5x es excelente. |
 | **Churn** | Porcentaje de clientes que se van cada mes. | 5%. Si tengo 100 farmacias, mes que viene tendré 95 (sin contar nuevas). |
-| **Burn rate** | Cuánto pierdo cada mes mientras no soy rentable. | **~USD 7.559**/mes promedio (tramos **7.462 / 7.798 / 7.431** — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.3). |
-| **Runway** | Cuántos meses puedo aguantar con el dinero que tengo. | **Fase 0 + 12m** post-Day-D con **USD 101k** + buffer + one-shots en Fase 0 ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §0). |
-| **Break-even** | Mes en que empiezo a no perder dinero. | **M11** post-Day-D con curva §1.1 (**~151 activas**; revenue **7.550** vs burn **7.431** — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1, [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §6). |
-| **SAFE** | Contrato simple de inversión. El inversor da dinero hoy, recibe equity en la próxima ronda. | **USD 101k** con cap **USD 600k**. |
+| **Burn rate** | Cuánto pierdo cada mes mientras no soy rentable. | **~USD 8.108**/mes promedio (tramos **8.011 / 8.347 / 7.980** — [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.2). |
+| **Runway** | Cuántos meses puedo aguantar con el dinero que tengo. | **Fase 0 + 12m** post-Day-D con **~USD 112k** + buffer + one-shots en Fase 0 ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S2). |
+| **Break-even** | Mes en que empiezo a no perder dinero. | **Casi en M12** con **4× Sales** y ARPF ~50 (~**159 activas**, revenue **~7.950** vs burn **~7.980**) — [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.1. |
+| **SAFE** | Contrato simple de inversión. El inversor da dinero hoy, recibe equity en la próxima ronda. | **~USD 112k** con cap **USD 600k**. |
 | **Cap** | Valuación máxima a la que el SAFE convierte. | Si la próxima ronda valora **Zonix Pharma** en USD 800k, el inversor convierte como si fuera **USD 600k** (**Lean**) — recibe más equity que a valuación plena. |
-| **TAM / SAM / SOM** | Mercado total / accesible / capturable. | TAM Venezuela USD 1.638M. **SOM** (farmacias / penetración): [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md) §3 y [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md). **Ingreso B2B acumulado año 1** (tabla central, sin waiver): **~USD 60k** (**~59.968** — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1); **año 2 conservador: USD 96-108k** (mismo doc. §2.3). |
+| **TAM / SAM / SOM** | Mercado total / accesible / capturable. | TAM Venezuela USD 1.638M. **SOM** (farmacias / penetración): [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md) §3 y [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md). **Ingreso B2B acumulado año 1** (v3 Lean, sin waiver): **~USD 30k** (**~59.968** — [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.1); **año 2 conservador: USD 96-108k**.
 | **ARPF** | Average Revenue Per Farmacia. | USD **50**/mes **placeholder** hasta GMV piloto (cuota fija **25 / 40 / 55** + % GMV); cobro vigente = híbrido (§2.1). |
 | **Payback** | Meses para recuperar el CAC. | **~2,8 meses** (CAC/ARPF al placeholder). Recalibrar con ARPF híbrido real. |
 
@@ -217,9 +218,9 @@ Estas se documentarán en un anexo cuando lleguen al frente. Hoy no son bloquean
 
 - **Honesto sobre lo que no se ha hecho:** "no tenemos ventas todavía, tenemos producto operativo y plan validado".
 - **Confiado sobre lo que sí está hecho:** "443 tests backend (re-verificar pre-reunión), ~4 años de desarrollo del **stack Zonix Pharma**; staging/VPS hoy, tiendas T+7–12".
-- **Específico con números:** nunca decir "esperamos crecer mucho"; decir **~151 farmacias activas en M11**, **~159** hacia M12, **~USD 42.209** cash cierre **M12** post-Day-D (**Lean 101k** + **Fase 0** + **Co-CEO** + **4×** Sales + cuota **25/40/55**), y **equilibrio mensual en M11** con ARPF placeholder **~50** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §0–§1.4).
+- **Específico con números:** nunca decir "esperamos crecer mucho"; decir **~159 farmacias activas en M12**, **~USD 40.831** cash cierre **M12** post-Day-D (**Lean ~112k** + **Fase 0** + **Co-CEO** + **4×** Sales + Dev junior + cuota **25/40/55**), y **casi equilibrio mensual en M12** con ARPF placeholder **~50** ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3).
 - **Realista sobre Venezuela:** mencionar la inflación de entrada, no esconder la complejidad regulatoria.
-- **Modular:** ticket parcial (USD 25k–50k) sobre SAFE Lean; stretch **118k Base** o **135k Growth** según apetito del ángel.
+- **Modular:** ticket parcial (USD 25k–50k) sobre SAFE Lean; stretch **~157k Base** o **~187k Growth Carabobo** según apetito del ángel.
 
 ## 7. Próximos pasos antes de la primera reunión con un inversor
 

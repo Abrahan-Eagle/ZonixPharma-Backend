@@ -16,16 +16,16 @@ Zonix Pharma planea un **piloto en Valencia metro (Carabobo)** como marketplace 
 
 | Hito | Significado | Gasto / modelo |
 |------|-------------|----------------|
-| **T+0** | Wire del capital (ej. **USD 101k** tier Lean) | Inicio Fase 0 |
-| **T+0 → T+90** | **Fase 0:** legal, equipo, HQ, tech, onboarding farmacias, catálogo, partner logístico | **~USD 28.057** + one-shots **~9.808** (Lean) |
-| **Day-D = T+90** | Lanzamiento **público** en app = **M1** del modelo financiero | Caja ~**72.943** al abrir M1 |
-| **M1–M12** | Escala comercial, Meta Ads, soporte; equilibrio mensual ref. **M11** (~151 farmacias activas) | Caja M12 ref. **~42.209** (Lean, sin waiver) |
+| **T+0** | Wire del capital (ej. **~USD 112k** tier Lean) | Inicio Fase 0 |
+| **T+0 → T+90** | **Fase 0:** legal, equipo, HQ, tech, onboarding farmacias, catálogo, partner logístico | **~USD 31.320** + one-shots **~13.408** (Lean) |
+| **Day-D = T+90** | Lanzamiento **público** en app = **M1** del modelo financiero | Caja ~**71.468** al abrir M1 |
+| **M1–M12** | Escala comercial, Meta Ads, soporte; **casi equilibrio M12** con 4× Sales | Caja M12 ref. **~40.831** (Lean) |
 
 ### 1.2 Qué hace el equipo en cada fase
 
 **Fase 0 (antes de que el público use la app)**
 
-- Constituir **C.A.**, RIF, banco; contratar **Co-CEO**, **4× Sales**, CS+CM, Marketing, **Coordinador Partners Logísticos**.
+- Constituir **C.A.**, RIF, banco; contratar **Co-CEO**, **4× Sales** (Lean), CS+CM, **Dev junior**; Marketing vía Meta/CM.
 - Montar **HQ** tipo casa (~USD 500/mes), **4 PCs**, stack IA (Cursor/Claude).
 - Desplegar **VPS + dominio + SSL**; **Firebase OTP**; Pusher/FCM; tests E2E internos.
 - Prospección: meta **~35 firmas** y **~28 farmacias activas** con catálogo antes de Day-D.
@@ -142,7 +142,7 @@ Prioridad para el founder técnico (no sustituye backlog de negocio).
 | Comandos scheduler Rx/pagos | PLAN_MODULO o PLAN_RX | `zonix:expire-pending-prescriptions`, expire `pending_payment`, purge datos receta |
 | Política `block_rx_without_prescription` default false | PLAN_MODULO §Rx | Comportamiento MVP: orden puede crearse sin receta previa; subida después |
 | Retención 90 días adjuntos receta | ESTRUCTURA_LEGAL §4.4 + PLAN_MODULO §14 | Ya parcial; enlazar a comando purge |
-| Readiness checklist pre-Day-D | PLAN_LANZAMIENTO §4.2 o PLAN_MODULO §18 | Tabla: smoke OTC/Rx ([SMOKE_RX_E2E.md](../SMOKE_RX_E2E.md)), Pusher, FCM, 1 orden pago real staging; caps SAFE **600k/650k/720k** citados en pitch |
+| Readiness checklist pre-Day-D | PLAN_LANZAMIENTO §4.2 o PLAN_MODULO §18 | Tabla: smoke OTC/Rx ([SMOKE_RX_E2E.md](../SMOKE_RX_E2E.md)), Pusher, FCM, 1 orden pago real staging; caps SAFE **600k/~908k/~1.270M** citados en pitch |
 | Deuda nombres Eats en UI | Nota en BRIEF o CONTEXTO | “restaurants” = farmacias (legacy); no es vertical Eats |
 
 ### 4.3 Documentación coherente (reforzar, no reescribir)
@@ -165,7 +165,7 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md). El plan de lanza
 |---|-------------|--------|
 | W1 | ARPF **~50** en finanzas vs modelo híbrido 25/40/55 + % GMV | Ya aclarado en PROYECCION; repetir una línea en BRIEF “hasta GMV piloto” |
 | W2 | VOLCADO §1.2 fecha tests 20 mayo | Actualizar al cerrar P0-06 |
-| W3 | Tier **Base 118k** recomendado vs PROYECCION solo Lean M1–M12 | Correcto por diseño; no mezclar caja Base en tabla Lean sin §delta PRESUPUESTO |
+| W3 | Tier **Base ~157k** recomendado vs MODELO solo Lean M1–M12 | Correcto por diseño; no mezclar caja Base en tabla Lean sin §delta MODELO S4 |
 | W4 | DoD “validación Rx ≤60 min” vs TTL config 60 min | Coherente; documentar que es objetivo operativo + TTL automático |
 
 ---
