@@ -2558,7 +2558,7 @@ def build_flujo_total(wb: Workbook):
         set_num(ws, rr, c, formula=f"={cl}{fcf_flujo_row}-{cl}{ccf_flujo_row}")
     rr += 2
 
-    # Vector IRR en columna K (t=0 + FCF años 1–5)
+    # Vector IRR en columna J (t=0 + FCF años 1–5)
     set_text(ws, rr, 10, "Flujo IRR")
     irr_start = rr + 1
     set_num(ws, irr_start, 10, value=-SAFE_LEAN)
@@ -2577,9 +2577,9 @@ def build_flujo_total(wb: Workbook):
     set_text(ws, van_row + 3, 2, "VAN(3)")
     set_num(ws, van_row + 3, 3, formula=f"=C{van_row + 2}+C9")
     set_text(ws, van_row + 4, 2, "TIR(5)")
-    set_num(ws, van_row + 4, 3, formula=f"=IRR(K{irr_start}:K{irr_start + 5})")
+    set_num(ws, van_row + 4, 3, formula=f"=IRR(J{irr_start}:J{irr_start + 5})")
     set_text(ws, van_row + 5, 2, "TIR(3)")
-    set_num(ws, van_row + 5, 3, formula=f"=IRR(K{irr_start}:K{irr_start + 3})")
+    set_num(ws, van_row + 5, 3, formula=f"=IRR(J{irr_start}:J{irr_start + 3})")
     set_text(ws, van_row + 6, 2, "Payback inversor (años, ilustrativo)")
     set_num(
         ws, van_row + 6, 3,

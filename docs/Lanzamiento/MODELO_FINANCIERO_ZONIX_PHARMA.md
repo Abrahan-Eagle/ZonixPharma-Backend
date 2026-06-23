@@ -429,7 +429,7 @@ Tabla detallada de rubros (Detallado + MO post-Day-D): ver **[S2.0](#s20-mapping
 |---------|-----------|-------------------|
 | VP flujos años 0–5 | **~−790** | Hoja **Flujo Total** — celda **VAN(5)** (recalcular Excel) |
 | **VAN(5)** | **~−790** | Negativo en Lean v3.5.1 — esperable pre-seed con FCF A1 negativo |
-| **TIR (5 años)** | **Fórmula `=IRR`** en Flujo Total | Vector K: −~112k + FCF años 1–5 |
+| **TIR (5 años)** | **Fórmula `=IRR`** en Flujo Total | Vector J: −~112k + FCF años 1–5 |
 | **Payback inversor (ilustrativo)** | **Flujo Total** — fila Payback | Año en que **CCF acumulado** ≥ USD ~111.988; **no promesa contractual** |
 
 > **Lectura inversor pre-seed v3.3:** VAN(5) puede seguir **negativo** en Lean bootstrap (4× Sales sueldos bajo mercado + Dev en nómina). Base/Growth añaden reserva y sueldos de mercado. Recalcular con FP&A antes de pitch institucional.

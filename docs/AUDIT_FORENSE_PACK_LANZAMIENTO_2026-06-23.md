@@ -46,12 +46,25 @@
 | Check | Resultado |
 |-------|-----------|
 | Grep anti-regresión `101k/118k/135k/28.057/908k/650k/720k` | ✅ **0** en pack (salvo REGISTRO histórico AUD-v2-04 cerrado) |
-| `verify_modelo_financiero.py` | ✅ exit **0** |
+| `verify_modelo_financiero.py` | ✅ exit **0** (~71 checks; incl. Flujo/Tasa + vector IRR J) |
 | Promedio score pack (estimado post-fix) | **≥21/24** (P0 doc cerrados; P0 humanos abiertos) |
 
 **Findings cerrados (muestra):** F-P0 tiers · F-P0 pitch ~80 · F-P0 caps · F-P1 ALINEACION Fase0/Day-D · F-P1 CONTEXTO M1 ~40 · F-P1 UNIT §6 BE ~160 · F-P1 PROYECCION stubs · F-P2 BRIEF sensibilidad · AUD-v2-04 · AUD-v3-P0-01
 
-**Siguen abiertos (founder/externo):** P0-01…P0-08 REGISTRO · P0-06 refresh tests · P3-07 dictamen retención · AUD-02/04/05 FP&A · smoke Rx E2E
+**Siguen abiertos (founder/externo):** P0-01…P0-08 REGISTRO · ~~P0-06 refresh tests~~ · P3-07 dictamen retención · AUD-02/04/05 FP&A · smoke Rx E2E
+
+---
+
+## Seguimiento post-informe (23 jun 2026)
+
+| Commit | Alcance | Verify |
+|--------|---------|--------|
+| **`d7b7df4`** | Fase 3 autofix pack `.md` + `.fods` v3.8.2 | — |
+| **`69a09f7`** | **P0-06 cerrado:** `php artisan test --parallel` → **443 passed / 1822 assertions**; `VOLCADO` §1.2 → commit `d7b7df4` | ✅ tests |
+| **`5e0466f`** | Fix layout **Flujo Total** (headers D:H, `I17=H17`, payback `ABS($C$9)`) y **Tasa Crecimiento** (headers C:G, YoY revenue fila 8) | ✅ verify exit **0** |
+| **`e3ea599`** | Vector IRR columna **J** alineado con `=IRR(J28:J33)` / `=IRR(J28:J31)`; guard en `verify_modelo_financiero.py`; `MODELO.md` vector J | ✅ verify exit **0** |
+
+**Nota Excel:** abrir `.xlsx` en Excel/LibreOffice y recalcular (F9) para ver VAN/TIR numéricos; openpyxl no cachea resultados de fórmula.
 
 ---
 

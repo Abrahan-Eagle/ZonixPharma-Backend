@@ -507,6 +507,33 @@ def main() -> None:
             fail(f"Falta métrica {need!r} en Flujo Total")
     ok("TIR(3/5) y payback en Flujo Total")
 
+    irr_label_row = None
+    for r in range(1, 55):
+        if ws_flujo.cell(r, 10).value == "Flujo IRR":
+            irr_label_row = r
+            break
+    if irr_label_row is None:
+        fail("Flujo Total: falta etiqueta 'Flujo IRR' en columna J")
+    irr_start = irr_label_row + 1
+    irr_t0 = ws_flujo.cell(irr_start, 10).value
+    if irr_t0 != -anchors["safe_lean"]:
+        fail(f"Flujo Total J{irr_start} debe ser −SAFE Lean ({-anchors['safe_lean']}), got {irr_t0!r}")
+    tir5_formula = None
+    tir3_formula = None
+    for r in range(1, 55):
+        label = ws_flujo.cell(r, 2).value
+        if label == "TIR(5)":
+            tir5_formula = ws_flujo.cell(r, 3).value
+        elif label == "TIR(3)":
+            tir3_formula = ws_flujo.cell(r, 3).value
+    irr_range = f"J{irr_start}:J{irr_start + 5}"
+    irr_range3 = f"J{irr_start}:J{irr_start + 3}"
+    if tir5_formula != f"=IRR({irr_range})":
+        fail(f"TIR(5) debe ser =IRR({irr_range}), got {tir5_formula!r}")
+    if tir3_formula != f"=IRR({irr_range3})":
+        fail(f"TIR(3) debe ser =IRR({irr_range3}), got {tir3_formula!r}")
+    ok(f"Flujo Total vector IRR columna J (J{irr_start}:J{irr_start + 5}) alineado con TIR")
+
     for y in range(1, 6):
         hdr = ws_flujo.cell(16, y + 3).value
         if hdr != f"Año {y}":
