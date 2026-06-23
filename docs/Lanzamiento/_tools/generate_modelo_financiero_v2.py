@@ -2469,9 +2469,8 @@ def build_flujo_total(wb: Workbook):
     set_text(ws, 12, 12, "Por recuperar")
 
     rr = 16
-    set_text(ws, rr, 3, "Año 1")
-    for i, y in enumerate(range(2, 6), start=4):
-        set_text(ws, rr, i + 2, f"Año {y}")
+    for y in range(1, 6):
+        set_text(ws, rr, y + 3, f"Año {y}")
     set_text(ws, rr, 9, "TOTAL")
     style_header_row(ws, rr, range(3, 10))
 
@@ -2480,7 +2479,7 @@ def build_flujo_total(wb: Workbook):
     for y in range(1, 6):
         ref = YEAR_ROWS[y]["activas"]
         set_num(ws, rr, y + 3, formula=f"='Año {y}'!N{ref}")
-    set_num(ws, rr, 9, formula=f"=N{rr}")
+    set_num(ws, rr, 9, formula=f"=H{rr}")
     activas_flujo_row = rr
     rr += 1
 
@@ -2582,15 +2581,14 @@ def build_flujo_total(wb: Workbook):
     set_text(ws, van_row + 5, 2, "TIR(3)")
     set_num(ws, van_row + 5, 3, formula=f"=IRR(K{irr_start}:K{irr_start + 3})")
     set_text(ws, van_row + 6, 2, "Payback inversor (años, ilustrativo)")
-    inv = SAFE_LEAN
     set_num(
         ws, van_row + 6, 3,
         formula=(
-            f'=IF(H{ccf_acum_flujo_row}>={inv},5,'
-            f'IF(G{ccf_acum_flujo_row}>={inv},4,'
-            f'IF(F{ccf_acum_flujo_row}>={inv},3,'
-            f'IF(E{ccf_acum_flujo_row}>={inv},2,'
-            f'IF(D{ccf_acum_flujo_row}>={inv},1,"[LARGO PLAZO]")))))'
+            f'=IF(H{ccf_acum_flujo_row}>=ABS($C$9),5,'
+            f'IF(G{ccf_acum_flujo_row}>=ABS($C$9),4,'
+            f'IF(F{ccf_acum_flujo_row}>=ABS($C$9),3,'
+            f'IF(E{ccf_acum_flujo_row}>=ABS($C$9),2,'
+            f'IF(D{ccf_acum_flujo_row}>=ABS($C$9),1,"[LARGO PLAZO]")))))'
         ),
     )
 
@@ -2609,9 +2607,8 @@ def build_flujo_total(wb: Workbook):
 def build_tasa_crecimiento(ws):
     ws.title = "Tasa Crecimiento"
     set_text(ws, 2, 2, "TASAS DE CRECIMIENTO — Zonix Pharma", True)
-    set_text(ws, 4, 3, "Año 1")
-    for i, y in enumerate(range(2, 6), start=4):
-        set_text(ws, 4, i + 2, f"Año {y}")
+    for y in range(1, 6):
+        set_text(ws, 4, y + 2, f"Año {y}")
     style_header_row(ws, 4, range(3, 8))
     r = 6
 
@@ -2620,7 +2617,7 @@ def build_tasa_crecimiento(ws):
         c = y + 2
         prev = get_column_letter(c - 1)
         cl = get_column_letter(c)
-        set_num(ws, r, c, formula=f"=IF({prev}{r+1}=0,\"\",({cl}{r+2}-{prev}{r+2})/{prev}{r+2})", fmt=PCT_FMT)
+        set_num(ws, r, c, formula=f"=IF({prev}{r+2}=0,\"\",({cl}{r+2}-{prev}{r+2})/{prev}{r+2})", fmt=PCT_FMT)
     r += 1
 
     set_text(ws, r, 2, "Farmacias activas cierre")

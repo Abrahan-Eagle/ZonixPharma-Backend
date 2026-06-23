@@ -507,6 +507,27 @@ def main() -> None:
             fail(f"Falta métrica {need!r} en Flujo Total")
     ok("TIR(3/5) y payback en Flujo Total")
 
+    for y in range(1, 6):
+        hdr = ws_flujo.cell(16, y + 3).value
+        if hdr != f"Año {y}":
+            fail(f"Flujo Total D16:H16 esperado Año {y} en col {y + 3}, got {hdr!r}")
+    if ws_flujo.cell(16, 3).value == "Año 1":
+        fail("Flujo Total C16 no debe ser Año 1 (datos en D:H)")
+    activas_total = ws_flujo["I17"].value
+    if activas_total != "=H17":
+        fail(f"Flujo Total I17 activas TOTAL debe ser =H17, got {activas_total!r}")
+    ok("Flujo Total headers D:H alineados + I17=H17")
+
+    ws_tasa = wb["Tasa Crecimiento"]
+    for y in range(1, 6):
+        hdr = ws_tasa.cell(4, y + 2).value
+        if hdr != f"Año {y}":
+            fail(f"Tasa Crecimiento C4:G4 esperado Año {y} en col {y + 2}, got {hdr!r}")
+    growth_d = ws_tasa["D6"].value
+    if not (isinstance(growth_d, str) and "C8" in growth_d and "C7" not in growth_d):
+        fail(f"Tasa Crecimiento D6 debe usar fila revenue (C8), got {growth_d!r}")
+    ok("Tasa Crecimiento headers C:G + YoY revenue guard")
+
     t = anchors["active_tier"]
     expense_checks = {
         t.dev_label: t.dev,
