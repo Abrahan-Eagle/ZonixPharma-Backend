@@ -2465,21 +2465,18 @@ def build_flujo_total(wb: Workbook):
         else:
             set_text(ws, i, 3, val)
 
-    set_text(ws, 12, 11, "CCF")
-    set_text(ws, 12, 12, "Por recuperar")
-
     rr = 16
+    set_text(ws, rr, 2, "Concepto", True)
     for y in range(1, 6):
         set_text(ws, rr, y + 3, f"Año {y}")
     set_text(ws, rr, 9, "TOTAL")
-    style_header_row(ws, rr, range(3, 10))
+    style_header_row(ws, rr, range(2, 10))
 
     rr += 1
     set_text(ws, rr, 2, "Farmacias activas cierre")
     for y in range(1, 6):
         ref = YEAR_ROWS[y]["activas"]
         set_num(ws, rr, y + 3, formula=f"='Año {y}'!N{ref}")
-    set_num(ws, rr, 9, formula=f"=H{rr}")
     activas_flujo_row = rr
     rr += 1
 
@@ -2532,6 +2529,8 @@ def build_flujo_total(wb: Workbook):
 
     set_text(ws, rr, 2, "CCF acumulado (inversor)")
     ccf_acum_flujo_row = rr
+    set_text(ws, rr - 1, 11, "CCF acum Y5")
+    set_text(ws, rr - 1, 12, "Por recuperar Y5")
     for y in range(1, 6):
         c = y + 3
         cl = get_column_letter(c)
@@ -2577,12 +2576,15 @@ def build_flujo_total(wb: Workbook):
     set_text(ws, van_row + 3, 2, "VAN(3)")
     set_num(ws, van_row + 3, 3, formula=f"=C{van_row + 2}+C9")
     set_text(ws, van_row + 4, 2, "TIR(5)")
-    set_num(ws, van_row + 4, 3, formula=f"=IRR(J{irr_start}:J{irr_start + 5})")
+    set_num(ws, van_row + 4, 3, formula=f"=IRR(J{irr_start}:J{irr_start + 5})", fmt=PCT_FMT)
     set_text(ws, van_row + 5, 2, "TIR(3)")
-    set_num(ws, van_row + 5, 3, formula=f"=IRR(J{irr_start}:J{irr_start + 3})")
-    set_text(ws, van_row + 6, 2, "Payback inversor (años, ilustrativo)")
+    set_num(ws, van_row + 5, 3, formula=f"=IRR(J{irr_start}:J{irr_start + 3})", fmt=PCT_FMT)
+    set_text(ws, van_row + 6, 2, "Tasa Requerida (r)")
+    set_num(ws, van_row + 6, 3, formula="=$C$8", fmt=PCT_FMT)
+    payback_row = van_row + 7
+    set_text(ws, payback_row, 2, "Payback inversor (años, ilustrativo)")
     set_num(
-        ws, van_row + 6, 3,
+        ws, payback_row, 3,
         formula=(
             f'=IF(H{ccf_acum_flujo_row}>=ABS($C$9),5,'
             f'IF(G{ccf_acum_flujo_row}>=ABS($C$9),4,'
@@ -2591,8 +2593,22 @@ def build_flujo_total(wb: Workbook):
             f'IF(D{ccf_acum_flujo_row}>=ABS($C$9),1,"[LARGO PLAZO]")))))'
         ),
     )
+    set_text(ws, payback_row + 1, 2, "% SAFE recuperado (CCF acum Y5, ilustrativo)")
+    set_num(
+        ws, payback_row + 1, 3,
+        formula=f"=H{ccf_acum_flujo_row}/ABS($C$9)",
+        fmt=PCT_FMT,
+    )
+    set_text(ws, payback_row + 2, 2, "Lectura payback")
+    set_num(
+        ws, payback_row + 2, 3,
+        formula=(
+            f'=IF(C{payback_row}="[LARGO PLAZO]",'
+            f'"CCF acum Y5 no cubre SAFE — ver % recuperado","")'
+        ),
+    )
 
-    rr = van_row + 8
+    rr = payback_row + 4
     set_text(
         ws,
         rr,
@@ -2602,6 +2618,8 @@ def build_flujo_total(wb: Workbook):
 
     ws.column_dimensions["B"].width = 38
     ws.column_dimensions["C"].width = 14
+    for c in range(4, 10):
+        ws.column_dimensions[get_column_letter(c)].width = 14
 
 
 def build_tasa_crecimiento(ws):

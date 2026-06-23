@@ -501,11 +501,26 @@ def main() -> None:
         fail(f"Founders debe ser =1-C6, got {founders!r}")
     ok("Flujo Total founders =1-C6")
 
-    labels = {ws_flujo.cell(r, 2).value for r in range(1, 55)}
-    for need in ("TIR(5)", "TIR(3)", "Payback inversor (años, ilustrativo)"):
+    labels = {ws_flujo.cell(r, 2).value for r in range(1, 60)}
+    for need in (
+        "TIR(5)",
+        "TIR(3)",
+        "Tasa Requerida (r)",
+        "Payback inversor (años, ilustrativo)",
+        "% SAFE recuperado (CCF acum Y5, ilustrativo)",
+        "Lectura payback",
+    ):
         if need not in labels:
             fail(f"Falta métrica {need!r} en Flujo Total")
-    ok("TIR(3/5) y payback en Flujo Total")
+    ok("TIR(3/5), tasa r, payback y % SAFE en Flujo Total")
+
+    if ws_flujo.cell(12, 11).value or ws_flujo.cell(12, 12).value:
+        fail("Flujo Total fila 12 no debe tener headers huérfanos CCF/Por recuperar en K/L")
+    ok("Flujo Total sin headers huérfanos fila 12")
+
+    if ws_flujo.cell(16, 2).value != "Concepto":
+        fail(f"Flujo Total B16 debe ser Concepto, got {ws_flujo.cell(16, 2).value!r}")
+    ok("Flujo Total B16 Concepto")
 
     irr_label_row = None
     for r in range(1, 55):
@@ -534,16 +549,45 @@ def main() -> None:
         fail(f"TIR(3) debe ser =IRR({irr_range3}), got {tir3_formula!r}")
     ok(f"Flujo Total vector IRR columna J (J{irr_start}:J{irr_start + 5}) alineado con TIR")
 
+    tir5_fmt = None
+    tasa_r_formula = None
+    for r in range(1, 60):
+        label = ws_flujo.cell(r, 2).value
+        if label == "TIR(5)":
+            tir5_fmt = ws_flujo.cell(r, 3).number_format
+        elif label == "Tasa Requerida (r)":
+            tasa_r_formula = ws_flujo.cell(r, 3).value
+    if tir5_fmt != "0.00%":
+        fail(f"TIR(5) debe usar formato porcentaje 0.00%, got {tir5_fmt!r}")
+    if tasa_r_formula != "=$C$8":
+        fail(f"Tasa Requerida (r) debe ser =$C$8, got {tasa_r_formula!r}")
+    ok("Flujo Total TIR % y Tasa Requerida (r)")
+
+    ccf_acum_row = None
+    por_rec_row = None
+    for r in range(1, 60):
+        label = ws_flujo.cell(r, 2).value
+        if label == "CCF acumulado (inversor)":
+            ccf_acum_row = r
+        elif label == "Por recuperar inversor (SAFE)":
+            por_rec_row = r
+    if ccf_acum_row is None or por_rec_row is None:
+        fail("Flujo Total: filas CCF acum / Por recuperar no encontradas")
+    if ws_flujo.cell(ccf_acum_row - 1, 11).value != "CCF acum Y5":
+        fail(f"Flujo Total K{ccf_acum_row - 1} debe ser CCF acum Y5")
+    if ws_flujo.cell(ccf_acum_row - 1, 12).value != "Por recuperar Y5":
+        fail(f"Flujo Total L{ccf_acum_row - 1} debe ser Por recuperar Y5")
+    ok("Flujo Total resumen inversor Y5 (K/L labels)")
+
     for y in range(1, 6):
         hdr = ws_flujo.cell(16, y + 3).value
         if hdr != f"Año {y}":
             fail(f"Flujo Total D16:H16 esperado Año {y} en col {y + 3}, got {hdr!r}")
     if ws_flujo.cell(16, 3).value == "Año 1":
         fail("Flujo Total C16 no debe ser Año 1 (datos en D:H)")
-    activas_total = ws_flujo["I17"].value
-    if activas_total != "=H17":
-        fail(f"Flujo Total I17 activas TOTAL debe ser =H17, got {activas_total!r}")
-    ok("Flujo Total headers D:H alineados + I17=H17")
+    if ws_flujo["I17"].value is not None:
+        fail(f"Flujo Total I17 activas debe estar vacío (stock ≠ suma), got {ws_flujo['I17'].value!r}")
+    ok("Flujo Total headers D:H alineados + I17 vacío en activas")
 
     ws_tasa = wb["Tasa Crecimiento"]
     for y in range(1, 6):

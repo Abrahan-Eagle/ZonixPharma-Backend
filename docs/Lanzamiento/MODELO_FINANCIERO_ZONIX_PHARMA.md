@@ -429,8 +429,11 @@ Tabla detallada de rubros (Detallado + MO post-Day-D): ver **[S2.0](#s20-mapping
 |---------|-----------|-------------------|
 | VP flujos años 0–5 | **~−790** | Hoja **Flujo Total** — celda **VAN(5)** (recalcular Excel) |
 | **VAN(5)** | **~−790** | Negativo en Lean v3.5.1 — esperable pre-seed con FCF A1 negativo |
-| **TIR (5 años)** | **Fórmula `=IRR`** en Flujo Total | Vector J: −~112k + FCF años 1–5 |
-| **Payback inversor (ilustrativo)** | **Flujo Total** — fila Payback | Año en que **CCF acumulado** ≥ USD ~111.988; **no promesa contractual** |
+| **TIR (5 años)** | **~25%** (formato celda **%)** | Vector **J**: −~112k + FCF años 1–5; comparar con **Tasa Requerida (r)** |
+| **TIR (3 años)** | Negativo en Lean | Misma hoja — horizonte corto con FCF A1 negativo |
+| **Tasa Requerida (r)** | **25%** | `=Flujo Total!C8` — fila dedicada bajo TIR |
+| **% SAFE recuperado (CCF acum Y5)** | **~52%** ilustrativo | `H23/ABS(C9)` — CCF acum no cubre wire en horizonte 5y Lean |
+| **Payback inversor (ilustrativo)** | **`[LARGO PLAZO]`** en Lean | Año en que **CCF acumulado** ≥ USD ~111.988; fila **Lectura payback** explica si no aplica |
 
 > **Lectura inversor pre-seed v3.3:** VAN(5) puede seguir **negativo** en Lean bootstrap (4× Sales sueldos bajo mercado + Dev en nómina). Base/Growth añaden reserva y sueldos de mercado. Recalcular con FP&A antes de pitch institucional.
 
@@ -493,7 +496,7 @@ Recalibrar ARPF y S3 cuando existan **≥30 días** de GMV post-Day-D (UNIT_ECON
 - [x] SAFE caps **600k / ~913k / ~1.205M**; equity ref. **18,66% / 17,23% / 15,55%**
 - [x] Burn M1–M12 suma **97.290**; buffer VE 20% **dentro de contingencia** (1.322 / 1.308 / 1.241)
 - [x] Ingresos Año 1 **59.968**; FCF **−37.322**; costos enlazados **ESTA SI VALE**
-- [x] Flujo Total: refs vivas, **TIR(3/5)**, payback CCF acum, CCF/Por recuperar
+- [x] Flujo Total: refs vivas, **TIR(3/5) %**, **Tasa r**, **% SAFE recuperado**, payback + lectura, resumen Y5 K/L
 - [x] Fase 0 **~33.835**; caja Day-D **~78.153**; cierre M12 **~40.831**
 - [x] Detallado v3.1: resumen lateral K–M, MO/marketing mensual desglosado, anti triple-conteo
 - [x] **verify v3.1:** guards Pizza mapping, comisiones Sales, Growth marketing_lead

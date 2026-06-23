@@ -62,7 +62,8 @@
 | **`d7b7df4`** | Fase 3 autofix pack `.md` + `.fods` v3.8.2 | — |
 | **`69a09f7`** | **P0-06 cerrado:** `php artisan test --parallel` → **443 passed / 1822 assertions**; `VOLCADO` §1.2 → commit `d7b7df4` | ✅ tests |
 | **`5e0466f`** | Fix layout **Flujo Total** (headers D:H, `I17=H17`, payback `ABS($C$9)`) y **Tasa Crecimiento** (headers C:G, YoY revenue fila 8) | ✅ verify exit **0** |
-| **`e3ea599`** | Vector IRR columna **J** alineado con `=IRR(J28:J33)` / `=IRR(J28:J31)`; guard en `verify_modelo_financiero.py`; `MODELO.md` vector J | ✅ verify exit **0** |
+| **`9688af1`** | Vector IRR columna **J** alineado con `=IRR(J28:J33)` / `=IRR(J28:J31)`; guard en `verify_modelo_financiero.py`; `MODELO.md` vector J | ✅ verify exit **0** |
+| **`08c43b0`** | UX Flujo Total vs template: **Concepto** B16, TIR **%**, **Tasa r**, **% SAFE recuperado**, labels K22/L22, I17 vacío activas | ✅ verify exit **0** |
 
 **Nota Excel:** abrir `.xlsx` en Excel/LibreOffice y recalcular (F9) para ver VAN/TIR numéricos; openpyxl no cachea resultados de fórmula.
 
