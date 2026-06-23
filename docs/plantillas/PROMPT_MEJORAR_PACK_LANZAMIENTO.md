@@ -1,11 +1,11 @@
 # Prompt meta — Mejorar pack Lanzamiento Inversor (Zonix Pharma)
 
-> **Versión:** 1.0 — mayo 2026  
+> **Versión:** 1.1 — junio 2026 (anclas alineadas README/modelo v3.8.2)  
 > **Repo:** `ZonixPharma-Backend`  
 > **Destino:** solo `docs/Lanzamiento/` (+ actualizar `docs/Lanzamiento/ANALISIS_FORENSE.md` al cerrar cada pasada)  
 > **Uso:** copiar la sección **«Pega en Cursor»** al final en un chat nuevo. Adjuntar con `@` los archivos listados en §K.
 
-**Relacionado:** creación desde cero → [PROMPT_PACK_LANZAMIENTO_INVERSOR.md](PROMPT_PACK_LANZAMIENTO_INVERSOR.md). **Auditoría forense masiva (25×1 + research web + juez mayor)** → [PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md](PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md). Pack vigente → [../Lanzamiento/README.md](../Lanzamiento/README.md).
+**Relacionado:** creación desde cero → [PROMPT_PACK_LANZAMIENTO_INVERSOR.md](PROMPT_PACK_LANZAMIENTO_INVERSOR.md). **Auditoría forense masiva (27×1 + verify Excel v3.8.2 + research web + juez mayor)** → [PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md](PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md) **v2.0**. Pack vigente → [../Lanzamiento/README.md](../Lanzamiento/README.md).
 
 ---
 
@@ -35,59 +35,64 @@ Actúas como **equipo de data room pre-seed** (panel JARVIS) para **Zonix Pharma
 
 ## §C — Cifras ancla INMUTABLES (no recalcular sin OK del usuario)
 
-Modelo vigente **mayo 2026**. Si detectas divergencia, **propón** corrección con diff; **no** cambies tiers ni tabla PROYECCION §1.1 sin aprobación.
+> **Fuente canónica (jun 2026):** [README.md](../Lanzamiento/README.md) § cifras + [MODELO_FINANCIERO_ZONIX_PHARMA.md](../Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.md) **v3.8.2**. Verificar con `docs/Lanzamiento/_tools/verify_modelo_financiero.py`. Si `zonix-startup-context` dice 101/118/135k, tratar como **stale**.
+
+Modelo vigente **jun 2026**. Si detectas divergencia, **propón** corrección con diff; **no** cambies tiers ni tabla PROYECCION §1.1 sin aprobación.
 
 | Concepto | Lean | Base | Growth |
 |----------|------|------|--------|
-| Capital pedido | **101.000** | **118.000** | **135.000** |
-| SAFE cap post-money | **600.000** | **650.000** | **720.000** |
-| Equity implícita (ref.) | **~16,83%** | **~18,15%** | **~18,75%** |
-| Burn promedio mensual | **~7.559** | **~8.059** | **~8.691** |
-| Fase 0 one-shots | **~9.808** | **~10.708** | **~10.708** |
-| Fase 0 total outflow | **~28.057** | (ver PRESUPUESTO) | (ver PRESUPUESTO) |
-| Caja al Day-D (T+90) | **~72.943** | — | — |
-| Caja M12 (sin waiver) | **~42.209** | — | — |
-| Equilibrio mensual | **M11** | teórico **~162** activas | teórico **~174** activas |
-| Farmacias activas ref. equilibrio | **~151** | **~162** | **~174** |
+| Capital pedido | **~111.988** *(≈112k)* | **~157.268** *(≈157k)* | **~187.478** *(≈187k)* |
+| SAFE cap post-money | **600.000** | **~912.814** | **~1.205.345** |
+| Equity implícita (ref.) | **~18,66%** | **~17,23%** | **~15,55%** |
+| Burn promedio mensual | **~8.108** | **~10.898** | **~12.698** |
+| Fase 0 total outflow | **~33.835** | (ver PRESUPUESTO) | (ver PRESUPUESTO) |
+| Caja al Day-D (T+90) | **~78.153** | — | — |
+| Caja M12 P50 | **~40.831** | — | — |
+| Farmacias activas M12 ref. | **~159** | idem curva | idem curva |
 | ARPF placeholder | **~50** | **~50** | **~50** |
-| Waiver B2B proxy (10×2×cuota) | **~453** | — | — |
-| Caja M12 con waiver | **~41.756** | — | — |
-| Tests backend (evidencia) | **443+** passed (jun 2026) | verificar con `php artisan test` o `./vendor/bin/phpunit` | actualizar VOLCADO §1.2 |
+| Tests backend (evidencia) | **443+** passed (jun 2026) | verificar con `php artisan test` | actualizar VOLCADO §1.2 |
 
 **Regla PROYECCION:** tabla **M1–M12 mes a mes solo en Lean** §1.1. Base/Growth = delta en [PRESUPUESTO_12_MESES_REFERENCIA.md](../Lanzamiento/PRESUPUESTO_12_MESES_REFERENCIA.md) §1.1.
 
-**Cascada obligatoria** si cambia **una** ancla (solo con OK usuario): `README.md` → `BRIEF_UNA_PAGINA.md` → `MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md` → `CHECKLIST_PRE_INVERSOR.md` → `UNIT_ECONOMICS.md` → `PROYECCION_FINANCIERA_12M.md` → `PRESUPUESTO_12_MESES_REFERENCIA.md`.
+**Cascada obligatoria** si cambia **una** ancla (solo con OK usuario): `README.md` → `BRIEF_UNA_PAGINA.md` → `MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md` → `CHECKLIST_PRE_INVERSOR.md` → `UNIT_ECONOMICS.md` → `PROYECCION_FINANCIERA_12M.md` → `PRESUPUESTO_12_MESES_REFERENCIA.md` → `MODELO_FINANCIERO_ZONIX_PHARMA.md`.
+
+**Anti-regresión:** no reintroducir tiers **101/118/135k**, Fase 0 **28.057**, Day-D **72.943**, M12 **42.209** sin contexto histórico explícito.
 
 ---
 
-## §D — Inventario del pack (25 archivos en raíz)
+## §D — Inventario del pack (27 archivos `.md` en raíz)
 
-> Para auditoría forense paralela (25 workers + research web), usar [PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md](PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md) §D (tabla completa con olas).
+> Para auditoría forense paralela (27 workers + verify Excel + research web), usar [PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md](PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md) **v2.0** §D (tabla completa con olas).
 
 | # | Archivo | Prioridad mejora |
 |---|---------|------------------|
 | 0 | `README.md` | Índice, anclas, pendientes humanos |
-| — | `ANALISIS_FORENSE.md` | Registrar cada pasada; §11.4 síntesis |
-| — | `ROLES_SKILLS_ZONIX.md` | Solo si cambia equipo/skills |
 | 1 | `BRIEF_UNA_PAGINA.md` | Primera impresión inversor |
 | 2 | `CONTEXTO_PITCH_Y_DECISIONES.md` | Decisiones y diferenciación |
 | 3 | `PERFIL_MERCADO_PILOTO.md` | TAM/SAM/SOM, competencia |
 | 4 | `UNIT_ECONOMICS.md` | CAC, LTV, sensibilidad |
 | 5 | `PROYECCION_FINANCIERA_12M.md` | **Solo Lean** M1–M12; no romper §1.1 |
-| 6 | `ESTRUCTURA_LEGAL_Y_EQUITY.md` | SAFE, cap, datos |
-| 7 | `CHECKLIST_PRE_INVERSOR.md` | Pre-flight reunión + FAQ |
-| 8 | `PLAN_LANZAMIENTO_COMERCIAL.md` | Fase 0, T+30/60/90 |
-| 9 | `PROPUESTA_VALOR_CLIENTE_B2B.md` | §2 flaquezas / §3 oferta |
-| 10 | `PROPUESTA_VALOR_USUARIO_FINAL.md` | B2C, onboarding, ads |
-| 11 | `PROPUESTA_VALOR_TERCER_LADO.md` | delivery_company + agent |
-| 12 | `PRESUPUESTO_12_MESES_REFERENCIA.md` | Tiers y líneas de gasto |
-| 13 | `MONTOS_REFERENCIA_INTERNET.md` | Fuentes precios |
-| 14 | `SUPUESTO_MARKETING_OFFLINE.md` | Vallas, CPL triggers |
-| 15 | `PLAN_METODOS_PAGO.md` | PMC, Zelle, USDT |
-| 16 | `PLAN_MODULO_OPERATIVO_CLAVE.md` | Rx, seguridad §14, FV |
-| 17 | `CUESTIONARIO_EQUIPO_PILOTO.md` | Preguntas equipo |
-| 18 | `VOLCADO_RESPUESTAS_CUESTIONARIO.md` | **No inventar** `[PENDIENTE]` del founder |
-| 19 | `MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md` | Email/WhatsApp + bullets |
+| 6 | `MODELO_FINANCIERO_ZONIX_PHARMA.md` | Espejo `.xlsx` v3.8.2; coherencia FP&A |
+| 7 | `ESTRUCTURA_LEGAL_Y_EQUITY.md` | SAFE, cap, datos |
+| 8 | `CHECKLIST_PRE_INVERSOR.md` | Pre-flight reunión + FAQ |
+| 9 | `PLAN_LANZAMIENTO_COMERCIAL.md` | Fase 0, T+30/60/90 |
+| 10 | `CENSO_FARMACIAS_CARABOBO_FASE0.md` | Beachhead, densidad farmacias |
+| 11 | `PROPUESTA_VALOR_CLIENTE_B2B.md` | §2 flaquezas / §3 oferta |
+| 12 | `PROPUESTA_VALOR_USUARIO_FINAL.md` | B2C, onboarding, ads |
+| 13 | `PROPUESTA_VALOR_TERCER_LADO.md` | delivery_company + agent |
+| 14 | `PRESUPUESTO_12_MESES_REFERENCIA.md` | Tiers y líneas de gasto |
+| 15 | `MONTOS_REFERENCIA_INTERNET.md` | Fuentes precios |
+| 16 | `SUPUESTO_MARKETING_OFFLINE.md` | Vallas, CPL triggers |
+| 17 | `PLAN_METODOS_PAGO.md` | PMC, Zelle, USDT |
+| 18 | `PLAN_MODULO_OPERATIVO_CLAVE.md` | Rx, seguridad §14, FV |
+| 19 | `CUESTIONARIO_EQUIPO_PILOTO.md` | Preguntas equipo |
+| 20 | `VOLCADO_RESPUESTAS_CUESTIONARIO.md` | **No inventar** `[PENDIENTE]` del founder |
+| 21 | `MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md` | Email/WhatsApp + bullets |
+| 22 | `REGISTRO_PENDIENTES_PACK.md` | P0–P4 humanos |
+| 23 | `ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md` | Pack ↔ código |
+| 24 | `GUIA_DISCOVERY_CALLE_FASE0.md` | Mom-test calle |
+| 25 | `BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md` | Discovery B2B |
+| 26 | `RESUMEN_ALIADO_GABRIEL_BARRIOS.md` | Anexo outreach (no zip default) |
 
 **Docs hermanos** (referenciar, no duplicar): `docs/BRAND_ZONIX_PHARMA.md`, `docs/PLAN_REGULATORIO_PHARMA_VE.md`, `docs/PLAN_RX_VALIDATION.md`, `docs/REQUISITOS_OPERAR_VENEZUELA.md`, `docs/logica-pagos-por-rol.md`, `docs/FLUJO_PAGO_ORDEN.md`.
 
@@ -162,8 +167,8 @@ Prioridad:
 cd /ruta/ZonixPharma-Backend
 # Infra CorralX en pack (debe ser 0)
 grep -riE 'corralx\.com|test\.corral' docs/Lanzamiento/ || true
-# Coherencia anclas (manual): 101000|101.000, 28.057, 72.943, 42.209, 151 activas
-grep -r '101.000\|28.057\|72.943\|42.209' docs/Lanzamiento/*.md
+# Coherencia anclas (manual): 111988|111.988, 33.835, 78.153, 40.831, 159 activas
+grep -rE '101\.000|118\.000|135\.000|28\.057|72\.943|42\.209' docs/Lanzamiento/*.md
 # Tests si actualizas VOLCADO §1.2
 ./vendor/bin/phpunit
 ```
@@ -283,7 +288,7 @@ Copia desde aquí hasta el final del bloque:
 
 ---
 
-**Contexto:** Mejora del pack inversor **Zonix Pharma** en `ZonixPharma-Backend/docs/Lanzamiento/` (**25 archivos** `.md` en raíz). Sigue el prompt meta [docs/plantillas/PROMPT_MEJORAR_PACK_LANZAMIENTO.md](PROMPT_MEJORAR_PACK_LANZAMIENTO.md) — §A a §K. Para auditoría forense masiva → [PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md](PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md).
+**Contexto:** Mejora del pack inversor **Zonix Pharma** en `ZonixPharma-Backend/docs/Lanzamiento/` (**27 archivos** `.md` en raíz). Sigue el prompt meta [docs/plantillas/PROMPT_MEJORAR_PACK_LANZAMIENTO.md](PROMPT_MEJORAR_PACK_LANZAMIENTO.md) — §A a §K. Para auditoría forense masiva → [PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md](PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md) **v2.0**.
 
 **Reglas rápidas:**
 - Producto del pitch = **solo Zonix Pharma** (`zonixpharma.com`). Portfolio con **Corral X** = OK en CV/VOLCADO.
