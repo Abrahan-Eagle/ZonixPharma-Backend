@@ -357,7 +357,7 @@
 | SUPUESTO tabla marketing vs README tiers | ✅ Fase 3 |
 | Excel xlsx vs verify script | ✅ 68/68 |
 | Excel xlsx vs .fods | ✅ Fase 3 |
-| Tests 443 pack vs repo | ⚠️ Re-verificar P0-06 |
+| Tests 443 pack vs repo | ✅ P0-06 — `d7b7df4`, 23 jun 2026, 443/1822 OK |
 | ALINEACION vs PROYECCION Fase0/Day-D | ✅ Fase 3 |
 | CONTEXTO vs MODELO M1 activas | ✅ Fase 3 (~40) |
 | UNIT §6 BE vs README | ✅ Fase 3 (~160) |
@@ -372,7 +372,7 @@
 4. **Fase 1:** 27 doc-workers `explore` readonly en 7 olas + grep anti-regresión  
 5. **Fase 2:** Juez mayor — deduplicación, matriz P0–P3, scores, lotes autofix  
 6. **Gate Fase 2:** informe only  
-7. **Fase 3:** autofix lotes A→E — **aplicado 23 jun 2026** (sin commit hasta OK founder)
+7. **Fase 3:** autofix lotes A→E — **aplicado 23 jun 2026** — commit **`d7b7df4`**, push `main`
 
 **Skills:** `jarvis-core`, `zonix-lanzamiento-docs`, `zonix-startup-context`, `parallel-judge-ops`, `fan-out-synthesize-ops`  
 **Plan:** `fase_3_autofix_pack_33ca2050.plan.md` (no editado)
@@ -381,13 +381,12 @@
 
 ## Roadmap residual (founder)
 
-1. ~~**OK autofix Lote A–E**~~ — ✅ aplicado Fase 3  
-2. **P0-06:** `php artisan test --parallel` + actualizar VOLCADO §1.2  
-3. **P0-01…P0-08:** due diligence humana REGISTRO  
+1. ~~**OK autofix Lote A–E**~~ — ✅ aplicado Fase 3 — commit **`d7b7df4`**  
+2. ~~**P0-06:** tests + VOLCADO §1.2~~ — ✅ 23 jun 2026, 443/1822 OK @ `d7b7df4`  
+3. **P0-01…P0-08:** due diligence humana REGISTRO (resto P0 abierto)  
 4. **P1-12 + SMOKE_RX_E2E.md:** ejecutar y firmar  
 5. **AUD-02, AUD-04, AUD-05:** sesión FP&A pre-reunión institucional  
-6. **Commit local** tras prueba founder (reglas Jarvis — sin push sin orden)
 
 ---
 
-*Generado por JARVIS — auditoría forense v3 pack Lanzamiento Zonix Pharma. **Fase 3 autofix aplicada 23 jun 2026.** Sin commit.*
+*Generado por JARVIS — auditoría forense v3 pack Lanzamiento Zonix Pharma. **Fase 3** commit `d7b7df4` (23 jun 2026). **P0-06** actualizado mismo día.*

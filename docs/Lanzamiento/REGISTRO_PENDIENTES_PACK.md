@@ -29,7 +29,7 @@
 | P0-03 | **2–3 referencias** profesionales con permiso y contacto | Founder | CHECKLIST §2 | §1.2 tabla |
 | P0-04 | **Aprobación founder** del pack antes de enviar | Founder | README final | README |
 | P0-05 | **Demo en vivo** programada (fecha) | Founder | CHECKLIST §5–§6; VOLCADO §1.2 | §1.2 |
-| P0-06 | Re-verificar **443 tests** + commit short pre-reunión | Founder | VOLCADO §1.2; BRIEF | §1.2 — snapshot **17f208e** (1 jun 2026, obsoleto); re-ejecutar antes de cada reunión |
+| P0-06 | Re-verificar **443 tests** + commit short pre-reunión | Founder | VOLCADO §1.2; BRIEF | §1.2 — snapshot **d7b7df4** (23 jun 2026, 443/1822 OK); re-ejecutar antes de cada reunión |
 | P0-07 | Proceso **NDA** + data room cerrado (si fondo formal) | Founder + Legal | CHECKLIST §0.1 | — |
 | P0-08 | **Métricas tracción** por producto (GMV/usuarios) si se citan en pitch | Founder | CHECKLIST §2; VOLCADO §1.2 | CHECKLIST; §1.2 |
 
@@ -165,7 +165,7 @@ Completar en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARI
 | § Inversor corporativo + nota MFN SAFE ≠ MFN comercial | ESTRUCTURA §2.6, §2.4 |
 | Contingencia partner delivery (pickup-first) | PLAN_MODULO §15.5 |
 | §6 PLAN_METODOS alineado al código real (`order_payments`, `payment_proof`) | PLAN_METODOS §6 |
-| P0-06 unificado a snapshot `17f208e` (1 jun 2026) | REGISTRO + CHECKLIST + VOLCADO |
+| P0-06 snapshot `d7b7df4` (23 jun 2026, 443/1822 OK) | REGISTRO + CHECKLIST + VOLCADO |
 
 *Backlog (medios/bajos — no implementados aún):*
 
@@ -203,7 +203,7 @@ Completar en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARI
 | ID | Pendiente | Dueño |
 |----|-----------|-------|
 | AUD-v2-12 | P0 humanos **8/8** abiertos (GitHub, NDA, demo, tracción…) | Founder |
-| AUD-v2-13 | Re-run tests + commit VOLCADO §1.2 (P0-06) | Founder |
+| AUD-v2-13 | Re-run tests + commit VOLCADO §1.2 (P0-06) | **Cerrado** 23 jun 2026 — `d7b7df4`, 443/1822 |
 | AUD-v2-14 | AUD-02 BRIEF sensibilidad optimista M12 | FP&A |
 | AUD-v2-15 | AUD-04 PROYECCION §3.3 puente 480k | FP&A |
 | AUD-v2-16 | Smoke E2E manual ejecutado y firmado (P1-12) | Founder + CTO |
