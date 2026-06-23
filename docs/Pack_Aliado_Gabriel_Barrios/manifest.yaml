@@ -1,0 +1,106 @@
+# Pack Aliado Gabriel Barrios — manifest
+# Canon en docs/Lanzamiento/ (no editar desde este pack)
+version: "1.0"
+updated: "2026-06-23"
+audience: "Gabriel Barrios — Grupo Morr, Valencia"
+
+documents:
+  - id: "01"
+    md: "md/01_Resumen_Aliado.md"
+    docx: "docx/01_Resumen_Aliado.docx"
+    canon: "Lanzamiento/RESUMEN_ALIADO_GABRIEL_BARRIOS.md"
+    status: ready
+  - id: "02"
+    md: "md/02_Brief_Una_Pagina.md"
+    docx: "docx/02_Brief_Una_Pagina.docx"
+    canon: "Lanzamiento/BRIEF_UNA_PAGINA.md"
+    status: ready
+  - id: "03"
+    md: "md/03_Contexto_Pitch.md"
+    docx: "docx/03_Contexto_Pitch.docx"
+    canon: "Lanzamiento/CONTEXTO_PITCH_Y_DECISIONES.md"
+    status: ready
+  - id: "04"
+    md: "md/04_Perfil_Mercado.md"
+    docx: "docx/04_Perfil_Mercado.docx"
+    canon: "Lanzamiento/PERFIL_MERCADO_PILOTO.md"
+    status: ready
+  - id: "05"
+    md: "md/05_Unit_Economics.md"
+    docx: "docx/05_Unit_Economics.docx"
+    canon: "Lanzamiento/UNIT_ECONOMICS.md"
+    status: ready
+  - id: "06"
+    md: "md/06_Proyeccion_12M.md"
+    docx: "docx/06_Proyeccion_12M.docx"
+    canon: "Lanzamiento/PROYECCION_FINANCIERA_12M.md"
+    status: ready
+  - id: "07"
+    md: "md/07_Presupuesto_12M.md"
+    docx: "docx/07_Presupuesto_12M.docx"
+    canon: "Lanzamiento/PRESUPUESTO_12_MESES_REFERENCIA.md"
+    status: ready
+  - id: "08"
+    md: "md/08_Estructura_Legal.md"
+    docx: "docx/08_Estructura_Legal.docx"
+    canon: "Lanzamiento/ESTRUCTURA_LEGAL_Y_EQUITY.md"
+    status: ready
+  - id: "09"
+    md: "md/09_Guia_Reunion.md"
+    docx: "docx/09_Guia_Reunion.docx"
+    canon: "Lanzamiento/CHECKLIST_PRE_INVERSOR.md"
+    status: ready
+  - id: "10"
+    md: "md/10_Plan_Lanzamiento.md"
+    docx: "docx/10_Plan_Lanzamiento.docx"
+    canon: "Lanzamiento/PLAN_LANZAMIENTO_COMERCIAL.md"
+    status: ready
+  - id: "11"
+    md: "md/11_Propuesta_Farmacia.md"
+    docx: "docx/11_Propuesta_Farmacia.docx"
+    canon: "Lanzamiento/PROPUESTA_VALOR_CLIENTE_B2B.md"
+    status: ready
+  - id: "12"
+    md: "md/12_Propuesta_Paciente.md"
+    docx: "docx/12_Propuesta_Paciente.docx"
+    canon: "Lanzamiento/PROPUESTA_VALOR_USUARIO_FINAL.md"
+    status: ready
+  - id: "13"
+    md: "md/13_Propuesta_Partners.md"
+    docx: "docx/13_Propuesta_Partners.docx"
+    canon: "Lanzamiento/PROPUESTA_VALOR_TERCER_LADO.md"
+    status: ready
+  - id: "14"
+    md: "md/14_Censo_Farmacias.md"
+    docx: "docx/14_Censo_Farmacias.docx"
+    canon: "Lanzamiento/CENSO_FARMACIAS_CARABOBO_FASE0.md"
+    status: ready
+  - id: "15"
+    md: "md/15_Plan_Pagos.md"
+    docx: "docx/15_Plan_Pagos.docx"
+    canon: "Lanzamiento/PLAN_METODOS_PAGO.md"
+    status: ready
+  - id: "16"
+    md: "md/16_Plan_Operativo.md"
+    docx: "docx/16_Plan_Operativo.docx"
+    canon: "Lanzamiento/PLAN_MODULO_OPERATIVO_CLAVE.md"
+    status: ready
+  - id: "17"
+    md: "md/17_Marketing_Offline.md"
+    docx: "docx/17_Marketing_Offline.docx"
+    canon: "Lanzamiento/SUPUESTO_MARKETING_OFFLINE.md"
+    status: ready
+  - id: "18"
+    md: "md/18_Guia_Modelo_Financiero.md"
+    docx: "docx/18_Guia_Modelo_Financiero.docx"
+    canon: "Pack (migrado desde MODELO_GABRIEL)"
+    status: ready
+
+anchors:
+  capital_lean_usd: 111988
+  fase0_usd: 33835
+  caja_day_d_usd: 78153
+  caja_m12_usd: 40831
+  activas_m12: 159
+  ltv_cac: 7.2
+  arpf_placeholder: 50

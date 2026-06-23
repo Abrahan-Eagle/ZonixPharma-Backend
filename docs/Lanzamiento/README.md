@@ -1,6 +1,6 @@
 # Pack Lanzamiento Inversor — Zonix Pharma
 
-> **Última actualización:** 22 junio 2026 (anclas financieras **v3.8.2** — ESTA layout compacto + Hoja1 8 bloques).
+> **Última actualización:** 23 junio 2026 (anclas financieras **v3.9.1** — merges Pizza QLQ + piel visual; spec layout B en MD).
 > **Propósito de esta carpeta:** (1) **Plan de lanzamiento operativo** de Zonix Pharma — calendario **T+0 → Fase 0 → Day-D (T+90) → M12**, equipo, farmacias, tech y KPIs ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) es la fuente canónica). (2) **Materiales de inversor y finanzas** en mejora continua (WIP). Cruce pack ↔ código: [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) + [../ANALISIS_TECNICO_COMPLETO_2026-05.md](../ANALISIS_TECNICO_COMPLETO_2026-05.md).
 > **Estado del pack:** borrador avanzado pre-seed; textos legales y plazos de retención sujetos a **dictamen abogado + farmacéutico asesor** antes de Day-D público.
 > **Producto:** Zonix Pharma — marketplace farmacéutico digital; el pack usa **solo** esa marca para producto y plataforma (no mezclar con otros productos en narrativa, métricas ni infra — p. ej. dominio `zonixpharma.com`, repo `ZonixPharma-*`).
@@ -10,7 +10,7 @@
 
 > **Lectura externa:** pack revisado para especialistas (inversor, abogado, contador, asesor farmacéutico, equipo). Sin documentación de proceso interno de redacción automatizada.
 
-Este directorio contiene **27 archivos** en raíz: **23 documentos canónicos** `.md` + **1 modelo financiero** ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) + [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx)) + **1 anexo outreach** ([RESUMEN_ALIADO_GABRIEL_BARRIOS.md](RESUMEN_ALIADO_GABRIEL_BARRIOS.md), no incluir en zip inversor por defecto) + **1 censo calle** ([CENSO_FARMACIAS_CARABOBO_FASE0.md](CENSO_FARMACIAS_CARABOBO_FASE0.md)) + este **README**. Materiales de **inversor**, **finanzas**, **legal**, **operación comercial**, **propuestas de valor** y **plantillas internas** ([REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md), [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md), [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md), [GUIA_DISCOVERY_CALLE_FASE0.md](GUIA_DISCOVERY_CALLE_FASE0.md), [BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md](BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md)).
+Este directorio contiene **27 archivos** en raíz: **23 documentos canónicos** `.md` + **1 modelo financiero** ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) + [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx)) + **1 anexo outreach** ([RESUMEN_ALIADO_GABRIEL_BARRIOS.md](RESUMEN_ALIADO_GABRIEL_BARRIOS.md), no incluir en zip inversor por defecto) + **1 censo calle** ([CENSO_FARMACIAS_CARABOBO_FASE0.md](CENSO_FARMACIAS_CARABOBO_FASE0.md)) + este **README**. **Pack legible para aliado (Gabriel Barrios / Grupo Morr):** carpeta hermana [`../Pack_Aliado_Gabriel_Barrios/`](../Pack_Aliado_Gabriel_Barrios/) — 18 Word + Excel, desacoplado de este data room. Materiales de **inversor**, **finanzas**, **legal**, **operación comercial**, **propuestas de valor** y **plantillas internas** ([REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md), [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md), [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md), [GUIA_DISCOVERY_CALLE_FASE0.md](GUIA_DISCOVERY_CALLE_FASE0.md), [BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md](BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md)).
 
 Para **ejecutar el lanzamiento:** [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) y [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md). Para **inversor en ~30 min:** [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) y la ruta de la tabla siguiente.
 
@@ -25,7 +25,7 @@ Para **ejecutar el lanzamiento:** [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIEN
 | 5 | [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md) | TAM/SAM/SOM, competencia, beachhead |
 | 5 | [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) | CAC, LTV, payback, break-even |
 | 5 | [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 | Tabla **M1–M12 Lean** mes a mes |
-| 5 | [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) o `.xlsx` | Gastos/ingresos/egresos consolidado (12 hojas v3.8.2; ESTA compacto + Hoja1 8 bloques + Hoja3 use-of-funds) |
+| 5 | [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) o `.xlsx` | Gastos/ingresos/egresos consolidado (12 hojas v3.9.1; piel QLQ + merges + lógica Zonix/SAFE) |
 | 3 | [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) | SAFE, cap table, vehículo VE |
 | 2 | [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) | Guion reunión + FAQ |
 
