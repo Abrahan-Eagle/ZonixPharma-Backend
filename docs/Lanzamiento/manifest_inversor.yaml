@@ -1,0 +1,86 @@
+# Data room inversor Zonix Pharma — manifest
+# Canon: DOCUMENTOS_SOLO_INVERSOR.md
+version: "1.0"
+updated: "2026-07-08"
+audience: "Inversor pre-seed (SAFE)"
+
+tiers:
+  zip_minimo:
+    description: "Primera reunión ~30 min (README § export zip)"
+    paths:
+      - path: "Lanzamiento/BRIEF_UNA_PAGINA.md"
+        required: true
+      - path: "Lanzamiento/CONTEXTO_PITCH_Y_DECISIONES.md"
+        required: true
+      - path: "Lanzamiento/PERFIL_MERCADO_PILOTO.md"
+        required: true
+      - path: "Lanzamiento/UNIT_ECONOMICS.md"
+        required: true
+      - path: "Lanzamiento/PROYECCION_FINANCIERA_12M.md"
+        required: true
+        note: "Inversor: leer solo §1.1 Lean M1–M12"
+      - path: "Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.xlsx"
+        required: true
+      - path: "Lanzamiento/ESTRUCTURA_LEGAL_Y_EQUITY.md"
+        required: true
+      - path: "Lanzamiento/CHECKLIST_PRE_INVERSOR.md"
+        required: true
+    optional:
+      - path: "Lanzamiento/MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md"
+      - path: "Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.md"
+      - path: "Lanzamiento/README.md"
+      - path: "Lanzamiento/DOCUMENTOS_SOLO_INVERSOR.md"
+
+  data_room_extendido:
+    description: "Due diligence profunda (Lanzamiento)"
+    paths:
+      - path: "Lanzamiento/PLAN_LANZAMIENTO_COMERCIAL.md"
+        required: true
+      - path: "Lanzamiento/PROPUESTA_VALOR_CLIENTE_B2B.md"
+        required: true
+      - path: "Lanzamiento/PROPUESTA_VALOR_USUARIO_FINAL.md"
+        required: true
+      - path: "Lanzamiento/PROPUESTA_VALOR_TERCER_LADO.md"
+        required: true
+      - path: "Lanzamiento/PRESUPUESTO_12_MESES_REFERENCIA.md"
+        required: true
+      - path: "Lanzamiento/SUPUESTO_MARKETING_OFFLINE.md"
+        required: true
+      - path: "Lanzamiento/PLAN_METODOS_PAGO.md"
+        required: true
+      - path: "Lanzamiento/PLAN_MODULO_OPERATIVO_CLAVE.md"
+        required: true
+      - path: "Lanzamiento/CENSO_FARMACIAS_CARABOBO_FASE0.md"
+        required: true
+      - path: "Lanzamiento/MONTOS_REFERENCIA_INTERNET.md"
+        required: true
+
+  dd_tecnica:
+    description: "Due diligence técnica (opcional)"
+    paths:
+      - path: "Lanzamiento/ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md"
+        required: true
+      - path: "SMOKE_RX_E2E.md"
+        required: false
+      - path: "ANALISIS_TECNICO_COMPLETO_2026-05.md"
+        required: false
+
+  referencias_regulatorias:
+    description: "Referencias producto/regulatorio (fuera Lanzamiento)"
+    paths:
+      - path: "PLAN_REGULATORIO_PHARMA_VE.md"
+        required: false
+      - path: "PLAN_RX_VALIDATION.md"
+        required: false
+      - path: "BRAND_ZONIX_PHARMA.md"
+        required: false
+
+exclude:
+  - "Lanzamiento/RESUMEN_ALIADO_GABRIEL_BARRIOS.md"
+  - "Pack_Aliado_Gabriel_Barrios/**"
+  - "Lanzamiento/CUESTIONARIO_EQUIPO_PILOTO.md"
+  - "Lanzamiento/REGISTRO_PENDIENTES_PACK.md"
+  - "Lanzamiento/VOLCADO_RESPUESTAS_CUESTIONARIO.md"
+  - "Lanzamiento/GUIA_DISCOVERY_CALLE_FASE0.md"
+  - "Lanzamiento/BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md"
+  - "Lanzamiento/MODELO_FINANCIERO_LAYOUT_PIZZA_QLQ_ESPECIFICACION.md"

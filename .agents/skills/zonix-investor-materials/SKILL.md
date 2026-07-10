@@ -11,7 +11,8 @@ Adaptación de [data-room](https://github.com/shawnpang/startup-founder-skills/t
 ## Cuándo aplicar
 
 - Preparar o auditar envío a inversionista (pre-seed).
-- Organizar data room ligero (22 archivos `.md` en `docs/Lanzamiento/`).
+- Organizar data room ligero — **índice canónico:** [DOCUMENTOS_SOLO_INVERSOR.md](../../docs/Lanzamiento/DOCUMENTOS_SOLO_INVERSOR.md) + [manifest_inversor.yaml](../../docs/Lanzamiento/manifest_inversor.yaml).
+- Verificar archivos: `python3 docs/Lanzamiento/_tools/verify_inversor_pack.py` · zip: `build_zip_inversor.py`.
 - Gap analysis antes de reunión — cruzar con [CHECKLIST_PRE_INVERSOR.md](../../docs/Lanzamiento/CHECKLIST_PRE_INVERSOR.md).
 
 ## Skill principal por documento pack

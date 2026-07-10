@@ -2,8 +2,10 @@
 
 > **Para:** Gabriel Barrios — Gerente de Consultoría, Grupo Morr (Valencia, Venezuela)  
 > **De:** Abrahan Pulido — Founder / CEO / CTO, Zonix Pharma  
-> **Fecha:** junio 2026  
-> **Propósito:** versión **legible para humano** del plan Zonix Pharma — sin jerga técnica del data room interno.
+> **Fecha:** junio 2026 (ampliado v1.1 — informe detallado para consultoría)  
+> **Propósito:** versión **legible y profunda para humano** del plan Zonix Pharma — sin jerga técnica del data room interno.
+
+**Documento maestro:** [`md/01_Resumen_Aliado.md`](md/01_Resumen_Aliado.md) / [`docx/01_Resumen_Aliado.docx`](docx/01_Resumen_Aliado.docx) es el **informe completo** que resume los 18 entregables (~1.050 líneas). Empieza por ahí si quieres una sola lectura; los docs 02–18 son el detalle ampliado por tema. Canon en Lanzamiento: [`RESUMEN_ALIADO_GABRIEL_BARRIOS.md`](../Lanzamiento/RESUMEN_ALIADO_GABRIEL_BARRIOS.md).
 
 ---
 
@@ -29,7 +31,7 @@ Esta carpeta es **independiente** de [`../Lanzamiento/`](../Lanzamiento/). El da
 
 | Min | Documento | Qué obtienes |
 |-----|-----------|--------------|
-| 5 | [01_Resumen_Aliado](docx/01_Resumen_Aliado.docx) | Tesis, oportunidad, invitación a alianza |
+| 5 | [01_Resumen_Aliado](docx/01_Resumen_Aliado.docx) | **Informe completo de los 18 docs** (~60 min lectura) |
 | 5 | [02_Brief_Una_Pagina](docx/02_Brief_Una_Pagina.docx) | Elevator pitch + ask de referencia |
 | 5 | [04_Perfil_Mercado](docx/04_Perfil_Mercado.docx) | TAM/SAM/SOM Valencia |
 | 5 | [18_Guia_Modelo_Financiero](docx/18_Guia_Modelo_Financiero.docx) + Excel | Cómo leer el modelo (~112k Lean) |
@@ -40,22 +42,22 @@ Esta carpeta es **independiente** de [`../Lanzamiento/`](../Lanzamiento/). El da
 
 ## Orden de lectura — 90 minutos (profundizar)
 
-Lo anterior, más:
+Lo anterior, más (documentos ampliados con escenarios, sensibilidades y guías de campo):
 
-| # | Documento |
-|---|-----------|
-| 03 | [Contexto_Pitch](docx/03_Contexto_Pitch.docx) |
-| 05 | [Unit_Economics](docx/05_Unit_Economics.docx) |
-| 06 | [Proyeccion_12M](docx/06_Proyeccion_12M.docx) |
-| 07 | [Presupuesto_12M](docx/07_Presupuesto_12M.docx) |
-| 08 | [Estructura_Legal](docx/08_Estructura_Legal.docx) |
-| 10 | [Plan_Lanzamiento](docx/10_Plan_Lanzamiento.docx) |
-| 12 | [Propuesta_Paciente](docx/12_Propuesta_Paciente.docx) |
-| 13 | [Propuesta_Partners](docx/13_Propuesta_Partners.docx) |
-| 14 | [Censo_Farmacias](docx/14_Censo_Farmacias.docx) |
-| 15 | [Plan_Pagos](docx/15_Plan_Pagos.docx) |
-| 16 | [Plan_Operativo](docx/16_Plan_Operativo.docx) |
-| 17 | [Marketing_Offline](docx/17_Marketing_Offline.docx) |
+| # | Documento | Destacado en v1.1 |
+|---|-----------|-------------------|
+| 03 | [Contexto_Pitch](docx/03_Contexto_Pitch.docx) | Decisiones de capital y comparables |
+| 05 | [Unit_Economics](docx/05_Unit_Economics.docx) | Cohortes, WTP, puente de caja |
+| 06 | [Proyeccion_12M](docx/06_Proyeccion_12M.docx) | Mes a mes + sensibilidad P10/P50/P90 |
+| 07 | [Presupuesto_12M](docx/07_Presupuesto_12M.docx) | Desglose Fase 0 y nómina comercial |
+| 08 | [Estructura_Legal](docx/08_Estructura_Legal.docx) | SAFE, equity, datos de salud |
+| 10 | [Plan_Lanzamiento](docx/10_Plan_Lanzamiento.docx) | Calendario semana a semana T+0–M12 |
+| 12 | [Propuesta_Paciente](docx/12_Propuesta_Paciente.docx) | Funnel demanda y escenarios de uso |
+| 13 | [Propuesta_Partners](docx/13_Propuesta_Partners.docx) | Delivery y terceros logísticos |
+| 14 | [Censo_Farmacias](docx/14_Censo_Farmacias.docx) | **Discovery calle + 18 dolores farmacia** |
+| 15 | [Plan_Pagos](docx/15_Plan_Pagos.docx) | Métodos VE, mora, conciliación |
+| 16 | [Plan_Operativo](docx/16_Plan_Operativo.docx) | Checklist pre-Day-D, disputas, Rx |
+| 17 | [Marketing_Offline](docx/17_Marketing_Offline.docx) | Calendario M1–M12 Meta/valla/flyers |
 
 ---
 

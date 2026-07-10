@@ -16,7 +16,7 @@
 | **Plazo validación** | **60 minutos** en horario operativo (8:00–20:00) | Si vence → cancelación automática **sin cobro** |
 | **Delivery** | Zonix **no tiene motos propias**; partner logístico ejecuta; **pickup siempre disponible** | Si falla el partner, el pedido sigue vivo en retiro en farmacia |
 | **Cadena de frío** | Solo delivery con equipo adecuado o retiro en farmacia | Insulinas, vacunas, biológicos |
-| **Antes del Day-D** | Prueba manual completa + contratos revisados | Ver § “Listo para piloto” |
+| **Antes del Day-D** | Prueba manual completa + contratos revisados | Ver § «Listo para piloto» |
 
 **En una frase:** Zonix no vende medicamentos; **ordena, valida receta cuando aplica, conecta pago manual y coordina entrega** con trazabilidad de quién validó qué y cuándo.
 
@@ -48,6 +48,8 @@ El módulo operativo más sensible no es el catálogo: es **la receta médica**.
 | **Repartidor (partner)** | Entrega a domicilio o apoya retiro en sucursal |
 | **Soporte Zonix** | Media disputas y casos límite |
 
+Zonix **no opera flota propia**: la ejecución física del delivery corresponde a **empresa(s) partner** con contrato marco. La plataforma asigna, hace seguimiento y aplica reglas comerciales.
+
 ---
 
 ## Tipos de receta (resumen)
@@ -65,7 +67,7 @@ El módulo operativo más sensible no es el catálogo: es **la receta médica**.
 ## Flujo paso a paso (orden con receta)
 
 1. Paciente elige medicamento que requiere receta y sube la imagen.
-2. Pedido en **espera de validación** — notificación al farmacéutico de esa farmacia.
+2. Pedido en **espera de validación** — notificación push al farmacéutico de esa farmacia.
 3. Farmacéutico revisa: medicamento, dosis, legibilidad, vigencia, sospecha de falsificación.
 4. **Si aprueba** → paciente recibe aviso y puede **pagar** (pago móvil, Zelle, etc. — ver `15_Plan_Pagos.md`).
 5. Farmacia prepara pedido → asigna reparto o entrega en mostrador.
@@ -98,7 +100,21 @@ Si una farmacia **falla el plazo con frecuencia**, escala a la farmacia; si es c
 | Prueba con recetas de ejemplo | ~30 min |
 | Activación | Inmediata tras prueba |
 
-Compromisos: cumplir plazos, reportar recetas sospechosas, mantener MPPS vigente.
+**Verificación MPPS:** contraste con portal oficial MPPS y/o colegio farmacéutico regional; si falla consulta en línea, verificación manual en 48–72 h; cuenta en estado **pendiente** hasta aprobación.
+
+Compromisos: cumplir plazos, reportar recetas sospechosas, mantener MPPS vigente, responder ante auditoría con historial exportable.
+
+---
+
+## Trazabilidad y auditoría
+
+Cada validación queda registrada con:
+
+- Identificador de receta, farmacéutico (con número MPPS), farmacia, paciente, orden
+- Resultado (aprobada / rechazada / vencida), motivo de rechazo, timestamp
+- Evidencia de consulta MPPS archivada en audit trail
+
+**Retención:** plazos de conservación digital son **hipótesis operativas** (referencia sectorial ~10 años para trazabilidad) hasta dictamen abogado + farmacéutico asesor. Recetas **retenidas/controladas**: custodia física y libros en la **farmacia**.
 
 ---
 
@@ -106,7 +122,7 @@ Compromisos: cumplir plazos, reportar recetas sospechosas, mantener MPPS vigente
 
 - Productos marcados como cadena de frío **no salen** en moto sin equipo validado.
 - Opciones: **retiro en farmacia** con bolsa térmica, o repartidor con cadena de frío certificado por la farmacia.
-- Evidencia: foto de termómetro al recoger y al entregar; si se rompe la cadena → política de reembolso según responsabilidad.
+- Evidencia: foto de termómetro al recoger y al entregar; si se rompe la cadena → política de reembolso según responsabilidad (farmacia / partner / paciente).
 
 ---
 
@@ -115,7 +131,7 @@ Compromisos: cumplir plazos, reportar recetas sospechosas, mantener MPPS vigente
 - Zonix firma **contrato marco** con empresa(s) de delivery especializada(s).
 - La app asigna y hace seguimiento; **quien conduce y paga seguros es el partner**.
 - **Plan B:** si el partner no firma antes del lanzamiento → arrancar en modo **retiro en farmacia**; delivery se activa al firmar.
-- **Regla de oro:** pickup siempre disponible; delivery es mejora, no requisito de existencia del pedido.
+- **Regla de oro:** pickup siempre disponible; delivery es mejora, not requisito de existencia del pedido.
 
 ---
 
@@ -152,10 +168,40 @@ Antes del **Day-D** en Valencia:
 | **Prueba manual** | Registro paciente → carrito Rx → subir receta → validación de prueba → pago con comprobante → preparación |
 | **Legal** | Contrato marco farmacia + avisos de privacidad revisados por abogado |
 | **Regulatorio** | Dictamen farmacéutico asesor + abogado sobre textos al paciente |
-| **Seguridad datos salud** | Consentimiento explícito antes de subir receta; acceso limitado por rol |
+| **Seguridad datos salud** | Consentimiento explícito antes de subir receta; acceso limitado por rol; cifrado en tránsito |
 | **Partner delivery** | Contrato o plan B pickup-first documentado |
+| **Cuentas demo** | Paciente, farmacia, farmacéutico y delivery con datos de prueba listos |
 
-No prometemos “cumplimiento pleno” regulatorio hasta cerrar dictámenes escritos.
+No prometemos «cumplimiento pleno» regulatorio hasta cerrar dictámenes escritos.
+
+### Checklist operativo detallado (runbook pre-Day-D)
+
+| # | Ítem | Responsable | Estado esperado |
+|---|------|-------------|-----------------|
+| 1 | Prueba manual Rx/OTC completa (paciente → pago → despacho) | Founder + QA | Ejecutada y firmada |
+| 2 | Cuentas demo: paciente, farmacia, farmacéutico, delivery | Ops | Cargadas en staging |
+| 3 | Contrato marco farmacia — borrador abogado | Legal | Revisado, no versión final pública |
+| 4 | Aviso privacidad + T&C app | Legal | Borrador con fecha |
+| 5 | Verificación MPPS — runbook interno | CS | URL fuente documentada |
+| 6 | Partner delivery — contrato o acta Plan B pickup | Comercial | Al menos uno firmado o Plan B escrito |
+| 7 | Playbook incidencias (caída app, receta falsificada, cadena frío rota) | Ops + CS | Documento interno |
+| 8 | Capacitación farmacéutico — video + PDF | Ops | Listo para onboarding |
+| 9 | SLA validación 60 min comunicado a farmacias piloto | Sales | En carta de intención |
+| 10 | Dictamen farmacéutico asesor sobre textos al paciente | Regulatorio | **[PENDIENTE]** |
+
+---
+
+## Disputas y casos límite (resumen)
+
+| Caso | Quién decide | Plazo orientativo |
+|------|--------------|-------------------|
+| Medicamento mal entregado | Farmacia (+ mediación CS Zonix) | 24 h |
+| Receta ilegible / rechazada | Farmacéutico colegiado | Inmediato en app |
+| Receta sospechosa de falsificación | Farmacéutico reporta; CS escala | Inmediato |
+| Cadena de frío rota en ruta | Partner + farmacia; política reembolso | 48 h |
+| Paciente no retira receta retenida | Farmacia guarda según normativa local | Según contrato |
+
+Zonix **media** pero no sustituye el criterio profesional del farmacéutico ni la responsabilidad del establecimiento ante MPPS.
 
 ---
 
@@ -165,7 +211,6 @@ No prometemos “cumplimiento pleno” regulatorio hasta cerrar dictámenes escr
 2. **Farmacéutico de guardia:** ¿Cómo lo resuelven hoy las farmacias medianas cuando el titular no está?
 3. **Retenidas / controlados:** ¿Conviene **retrasar** delivery de controlados más allá del mes 3–6?
 4. **Pickup-first:** Si el partner logístico se retrasa, ¿el mercado acepta arrancar solo con **retiro en farmacia**?
-5. **Confianza B2B:** ¿La trazabilidad digital de validación es un argumento de venta creíble frente al dueño de farmacia?
 
 ---
 
@@ -173,8 +218,9 @@ No prometemos “cumplimiento pleno” regulatorio hasta cerrar dictámenes escr
 
 - Plazos de conservación de recetas (digital y física) son **hipótesis operativas** hasta validación legal y farmacéutica.
 - Farmacovigilancia (reporte de eventos adversos a INHRR): canal formal en roadmap; mientras tanto vía soporte + farmacia.
-- Este documento **no sustituye** [`PLAN_RX_VALIDATION.md`](../../PLAN_RX_VALIDATION.md) ni dictamen MPPS/INHRR — es guía legible para aliado local.
+- Este documento **no sustituye** el plan técnico de validación Rx ni dictamen MPPS/INHRR — es guía legible para aliado local.
 - Zonix **no diagnostica ni prescribe**; solo facilita el flujo entre paciente, farmacéutico y farmacia.
+- **No es solicitud de inversión.**
 
 ---
 

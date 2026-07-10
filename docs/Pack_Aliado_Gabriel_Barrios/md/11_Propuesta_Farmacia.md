@@ -29,16 +29,30 @@ Beachhead del piloto: **independientes y medianas** de Valencia metro que hoy ve
 
 ---
 
+## Un día en la vida del dueño (hipótesis a confirmar en calle)
+
+Antes de pitchear, Sales debe mapear el día real del dueño. Plantilla para entrevistas:
+
+| Momento | Qué hace hoy | Dónde duele (hipótesis) |
+|---------|--------------|-------------------------|
+| Apertura (7–9 am) | Revisa stock, recibe droguería, abre WhatsApp | Pedidos nocturnos sin responder |
+| Mediodía (12–3 pm) | Pico mostrador + WhatsApp simultáneos | Errores precio/cantidad; Rx «a ojo» |
+| Cierre (6–8 pm) | Cuadre de caja, conciliar Pago Móvil | Horas conciliando; ventas no medidas |
+| Fin de semana | Guardia reducida | Sin farmacéutico de turno → Rx rechazadas |
+
+Gabriel: el ranking real de dolores debe salir de **≥5 entrevistas en Valencia**, no solo de este documento. Tipo de propuesta dominante para el one-pager: **costo total menor** vs take-rate agregador.
+
+---
+
 ## Qué le duele hoy (hipótesis a confirmar en calle)
 
 1. **Stock incierto para el paciente** — pierde la venta y el cliente se va a la competencia.
-2. **WhatsApp sin control** — pedidos manuales, errores de precio/cantidad, sin trazabilidad.
+2. **WhatsApp sin control** — pedidos manuales, errores, sin trazabilidad.
 3. **Comisión de agregador** — PedidosYa suele retener **20–30 % del GMV**; en 5.000 USD/mes son **1.000–1.500 USD** solo en comisión.
 4. **Receta en papel** — validación «a ojo», sin registro si hay reclamo.
 5. **Pacientes fuera del radio caminable** — no captura demanda digital de la zona.
 6. **Conciliación de Pago Móvil** — horas cuadrando transferencias sin sistema único.
-
-Gabriel: el ranking real de dolores debe salir de **entrevistas en Valencia**, no solo de este documento.
+7. **Sin panel único** — órdenes, comprobantes y Rx repartidos entre chat, papel y Excel.
 
 ---
 
@@ -55,8 +69,9 @@ Gabriel: el ranking real de dolores debe salir de **entrevistas en Valencia**, n
 **Fórmula:** cuota del mes = fija del nivel + (% × GMV completado en app).
 
 - El **envío** lo paga el paciente a la empresa de delivery — **no entra** en el GMV de la farmacia.
-- Subida o bajada de nivel: tras **dos meses seguidos** en la banda superior o inferior; aviso por escrito; nueva tarifa desde el **tercer mes**.
+- Subida o bajada de nivel: tras **dos meses seguidos** en la banda superior o inferior; aviso por escrito; nueva tarifa desde el **tercer mes** (M+2).
 - Farmacia nueva a mitad de mes: solo cuota fija prorrateada el primer mes parcial; desde el segundo mes, fija + %.
+- Reclamos de cierre de GMV: **3 días hábiles** desde el reporte mensual oficial.
 
 ### Producto (sin construir app propia)
 
@@ -67,6 +82,7 @@ Gabriel: el ranking real de dolores debe salir de **entrevistas en Valencia**, n
 - Entrega vía **empresa partner** (Zonix no tiene motos propias).
 - Notificaciones al instante: nueva orden, receta validada.
 - Reporte mensual de GMV que cuadra con la factura Zonix.
+- Multi-sucursal bajo mismo RIF: un nivel, una factura, desglose por sucursal en panel.
 
 ### Marketing agregado
 
@@ -81,6 +97,7 @@ Gabriel: el ranking real de dolores debe salir de **entrevistas en Valencia**, n
 - No procesamos seguros ni IVSS.
 - No emitimos recetas médicas (teleconsulta).
 - No somos tienda general — solo farmacia (OTC, Rx, cuidado personal afín).
+- No exigimos exclusividad digital con Rappi/PedidosYa.
 
 ---
 
@@ -92,6 +109,19 @@ Gabriel: el ranking real de dolores debe salir de **entrevistas en Valencia**, n
 | Orden de magnitud | — | **~16–22× menos** costo de canal |
 
 *(Mes completo estable; mes parcial de alta prorratea solo la fija.)*
+
+---
+
+## Discovery en calle — marco SPIN (antes de la demo)
+
+Preguntar **hechos pasados**, no «¿usarías una app?»:
+
+| Fase | Preguntas ejemplo | Objetivo |
+|------|-------------------|----------|
+| **S**ituación | ¿Cuántos pedidos digitales reciben por semana? ¿Farmacéutico en turno todos los días? | Baseline |
+| **P**roblema | ¿Han perdido ventas por stock o por no aparecer en búsqueda digital? | Dolor explícito |
+| **I**mplicación | Si un competidor digital captura pacientes de su zona en 6 meses, ¿qué pasa con el mostrador? | Urgencia |
+| **N**ecesidad | Si tuvieran panel + demanda sin montar app propia, ¿qué KPI mejorarían primero? | Puente a demo |
 
 ---
 
@@ -132,6 +162,22 @@ Motor del piloto: **4× Sales** — no solo prospección: firman, capacitan y ac
 | «¿Y si no hay pedidos?» | Marketing geo desde Day-D; objetivo escalar demanda con catálogo (**~40 M1**, curva hasta **~159 M12**) |
 | «¿Es legal la Rx digital?» | Valida **tu** farmacéutico colegiado; Zonix da trazabilidad — dictamen profesional en curso |
 | «¿Exclusividad con Rappi?» | No exigimos exclusividad digital |
+| «¿Quién responde ante MPPS?» | La farmacia sigue siendo el establecimiento responsable; Zonix aporta logs exportables |
+| «¿Cuánto tarda el onboarding?» | ~30 min catálogo + 1 h capacitación + 1 día de prueba; total ~2 días desde firma |
+
+---
+
+## Contrato marco — mínimos legales-operativos
+
+Antes de órdenes reales con pacientes, cada farmacia firma documento que cubra:
+
+1. Roles: farmacia dispensadora; Zonix como plataforma y responsable de datos de usuarios.
+2. Validación Rx: farmacéutico MPPS activo; SLA acordado.
+3. Recetas retenidas/controladas: pickup, identificación, libros en farmacia.
+4. Pagos y comprobantes: conciliación y plazos de disputa.
+5. Salida: exportación de datos y baja sin perjuicio a órdenes abiertas.
+
+Plantillas: abogado + visado farmacéutico asesor en cláusulas de dispensación.
 
 ---
 
@@ -144,13 +190,12 @@ Motor del piloto: **4× Sales** — no solo prospección: firman, capacitan y ac
 
 ---
 
-## Qué revisar juntos
+## Qué nos gustaría que revises, Gabriel
 
 1. **¿25/40/55 + % GMV es creíble** frente a la mentalidad del dueño valenciano?
 2. **¿El ejemplo 5.000 USD/mes Pro** refleja farmacias reales de tu cartera Morr?
 3. **¿Qué objeción falta** en la tabla (MPPS, droguería, competencia local)?
-4. **¿Waiver 2 meses** ayuda o genera expectativa de gratis permanente?
-5. **¿Introducciones** a 3–5 farmacias piloto donde Morr tenga relación?
+4. **¿Introducciones** a 3–5 farmacias piloto donde Morr tenga relación para discovery sin compromiso?
 
 ---
 

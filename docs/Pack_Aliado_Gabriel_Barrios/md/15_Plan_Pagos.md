@@ -23,7 +23,7 @@
 
 ## Qué es este documento
 
-En Venezuela el checkout “tipo Amazon con tarjeta” no es viable para un piloto farmacéutico local. Este plan describe el **modelo manual** que usaremos: métodos que ya conocen pacientes y farmacias, con reglas simples de validación y cobro B2B a la farmacia.
+En Venezuela el checkout «tipo Amazon con tarjeta» no es viable para un piloto farmacéutico local. Este plan describe el **modelo manual** que usaremos: métodos que ya conocen pacientes y farmacias, con reglas simples de validación y cobro B2B a la farmacia.
 
 ---
 
@@ -58,6 +58,8 @@ En Venezuela el checkout “tipo Amazon con tarjeta” no es viable para un pilo
 
 Tiempo habitual hasta confirmar ambos pagos: **5–15 minutos**.
 
+**GMV Zonix (cuota plataforma):** entra solo el **subtotal medicamentos** completado en app; el **delivery fee no cuenta** para la cuota de la farmacia.
+
 ---
 
 ## Flujo con receta médica (Rx)
@@ -78,21 +80,33 @@ Detalle operativo del módulo Rx: ver documento hermano `16_Plan_Operativo.md`.
 
 Cada mes Zonix factura a la farmacia aliada:
 
-- **Parte fija** (suscripción / uso de la plataforma).
-- **Parte variable** (% sobre ventas completadas en la app del mes anterior).
+- **Parte fija** (suscripción / uso de la plataforma): **25 / 40 / 55 USD** según tier.
+- **Parte variable** (% sobre GMV completado en app del mes anterior).
 
 La farmacia paga por pago móvil, transferencia, Zelle o Binance y envía comprobante. Zonix confirma y mantiene activo el servicio.
+
+**Factura SENIAT (orientación):** puede llevar dos líneas — (1) suscripción mes X; (2) fee variable sobre GMV mes X. IVA, retenciones y moneda de facturación los cierra el contador VE.
 
 **Si hay mora (resumen):**
 
 | Días desde la factura | Qué pasa |
 |----------------------|----------|
+| Día 1 | Emisión factura |
 | Día 3 | Recordatorio |
 | Día 4 | No acepta **pedidos nuevos** (catálogo aún visible) |
 | Día 10 | Catálogo **oculto** |
 | Día 15 | Cuenta cancelada |
 
 La suspensión **no borra** lo que ya se debía; se regulariza por escrito para reactivar.
+
+### Reactivación tras mora (simplificado)
+
+| Antigüedad sin uso | Qué se reconoce al volver |
+|------------------|---------------------------|
+| **≤ 6 meses** | Deuda variable (% × GMV meses impagos) + cuotas fijas de meses sin app + fija del mes de re-alta |
+| **> 6 meses** | Solo deuda variable indexada; **contrato nuevo** |
+
+Montos en USD devengados se pueden **indexar** al tipo BCV del día de pago vs promedio del mes impago — validar redacción con contador.
 
 ---
 
@@ -101,7 +115,13 @@ La suspensión **no borra** lo que ya se debía; se regulariza por escrito para 
 - El **paciente paga el envío** directo a la **empresa de delivery** (no pasa por caja de la farmacia en el piloto).
 - La empresa valida el comprobante y asigna al repartidor.
 - La empresa paga a sus repartidores en su calendario interno (quincenal o mensual).
-- Zonix cobra a la empresa de delivery un fee mensual B2B sobre envíos completados (porcentaje + monto fijo por envío).
+- Zonix cobra a la empresa de delivery un fee mensual B2B:
+
+```
+Cobro Zonix/mes = (8% × suma delivery fees del mes) + (0,30 USD × N envíos completados)
+```
+
+**Ejemplo:** 80 envíos, fee promedio 2,50 USD → fee acumulado 200 USD → Cobro Zonix = 16 + 24 = **40 USD/mes** (+ IVA según SENIAT).
 
 Zonix **no paga sueldos de repartidores** ni opera flota propia.
 
@@ -117,6 +137,22 @@ En el piloto el dinero de la orden **no pasa por cuentas de Zonix**:
 
 Si en el futuro Zonix **recibiera** pagos del paciente y los repartiera, habría que revisar con abogado especializado en pagos VE (horizonte típico **12–18 meses**, post-crecimiento).
 
+**Triggers para revisar licencia (mes 6+):**
+
+| Trigger | Acción |
+|---------|--------|
+| Volumen agregado alto en cuentas corporativas Zonix | Evaluación con banco y abogado |
+| >30–40% transacciones cross-border sostenido | Refuerzo KYC + política AML escrita |
+| Zonix liquida directamente a farmacias como intermediario | Due diligence antes de encender |
+
+---
+
+## Conciliación y tipo de cambio
+
+- **Fuente de verdad GMV:** dashboard Zonix; export CSV/PDF debe cuadrar con factura.
+- **BCV oficial** como referencia para conversión USD↔Bs en libros — confirmar con contador.
+- **Precio congelado ~30 min** en checkout; si expira, re-cotizar ante devaluación rápida.
+
 ---
 
 ## Riesgos y mitigaciones (lenguaje simple)
@@ -127,6 +163,7 @@ Si en el futuro Zonix **recibiera** pagos del paciente y los repartiera, habría
 | Farmacia no paga cuota Zonix | Bloqueo escalonado (tabla arriba) |
 | Devaluación entre cotización y pago | Precio congelado ~30 minutos; si expira, re-cotizar |
 | Zelle bloqueado | Nunca depender solo de Zelle; pago móvil y Binance como respaldo |
+| Disputa delivery | Soporte Zonix + SLA del partner; farmacia decide reembolso según política |
 
 ---
 
@@ -142,22 +179,35 @@ Si en el futuro Zonix **recibiera** pagos del paciente y los repartiera, habría
 
 ---
 
+## Conciliación contable (orientación)
+
+| Actor | Qué concilia | Frecuencia |
+|-------|--------------|------------|
+| **Farmacia** | Comprobantes paciente vs órdenes en panel | Por orden |
+| **Farmacia** | GMV dashboard vs factura Zonix | Mensual (3 días hábiles reclamo) |
+| **Delivery partner** | Fees cobrados vs órdenes `delivered` | Mensual |
+| **Zonix (contador)** | Facturas B2B vs extractos bancarios | Mensual |
+
+El contador VE debe cerrar redacción de factura digital (IVA 16%, retenciones) antes del primer cierre mensual post-Day-D.
+
+---
+
 ## Qué nos gustaría que revises, Gabriel
 
 1. **Realismo local:** ¿Es creíble que farmacias y pacientes en Valencia usen **pago móvil + Zelle + Binance** en la mezcla del table?
 2. **Separación envío:** ¿Las farmacias independientes aceptarían que el **envío se pague aparte** a la empresa de delivery?
 3. **Validación manual:** ¿Cuánto tarda hoy una farmacia típica en confirmar un pago móvil en horario pico?
 4. **Mora B2B:** ¿El calendario de bloqueo (día 4 / 10 / 15) es razonable para el mercado local o muy agresivo?
-5. **Tipo de cambio:** ¿Recomiendas anclar operaciones a **BCV oficial** para libros y conversión USD↔Bs?
 
 ---
 
 ## Disclaimers
 
-- Zonix **no es PSP** ni sustituye al farmacéutico titular ni al criterio médico.
+- Zonix **no es procesador de pagos** ni sustituye al farmacéutico titular ni al criterio médico.
 - Facturación SENIAT, IVA y retenciones: **cerrar redacción con contador VE** antes del go-live.
 - Política FX y reactivación tras mora: detalle contractual en contrato marco farmacia — no sustituye asesoría legal.
 - Este documento describe **intención operativa** del piloto; puede ajustarse con datos reales post-Day-D.
+- **No es solicitud de inversión.**
 
 ---
 

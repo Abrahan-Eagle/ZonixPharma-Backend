@@ -10,9 +10,9 @@
 
 > **Lectura externa:** pack revisado para especialistas (inversor, abogado, contador, asesor farmacéutico, equipo). Sin documentación de proceso interno de redacción automatizada.
 
-Este directorio contiene **27 archivos** en raíz: **23 documentos canónicos** `.md` + **1 modelo financiero** ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) + [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx)) + **1 anexo outreach** ([RESUMEN_ALIADO_GABRIEL_BARRIOS.md](RESUMEN_ALIADO_GABRIEL_BARRIOS.md), no incluir en zip inversor por defecto) + **1 censo calle** ([CENSO_FARMACIAS_CARABOBO_FASE0.md](CENSO_FARMACIAS_CARABOBO_FASE0.md)) + este **README**. **Pack legible para aliado (Gabriel Barrios / Grupo Morr):** carpeta hermana [`../Pack_Aliado_Gabriel_Barrios/`](../Pack_Aliado_Gabriel_Barrios/) — 18 Word + Excel, desacoplado de este data room. Materiales de **inversor**, **finanzas**, **legal**, **operación comercial**, **propuestas de valor** y **plantillas internas** ([REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md), [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md), [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md), [GUIA_DISCOVERY_CALLE_FASE0.md](GUIA_DISCOVERY_CALLE_FASE0.md), [BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md](BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md)).
+Este directorio contiene **27 archivos** en raíz: **23 documentos canónicos** `.md` + **1 modelo financiero** ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) + [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx)) + **1 informe aliado completo** ([RESUMEN_ALIADO_GABRIEL_BARRIOS.md](RESUMEN_ALIADO_GABRIEL_BARRIOS.md) — síntesis detallada de los **18 documentos** del pack Gabriel; ~1.060 líneas; no incluir en zip inversor por defecto) + **1 censo calle** ([CENSO_FARMACIAS_CARABOBO_FASE0.md](CENSO_FARMACIAS_CARABOBO_FASE0.md)) + este **README**. **Pack legible para aliado (Gabriel Barrios / Grupo Morr):** carpeta hermana [`../Pack_Aliado_Gabriel_Barrios/`](../Pack_Aliado_Gabriel_Barrios/) — 18 Word + Excel, desacoplado de este data room. Materiales de **inversor**, **finanzas**, **legal**, **operación comercial**, **propuestas de valor** y **plantillas internas** ([REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md), [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md), [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md), [GUIA_DISCOVERY_CALLE_FASE0.md](GUIA_DISCOVERY_CALLE_FASE0.md), [BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md](BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md)).
 
-Para **ejecutar el lanzamiento:** [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) y [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md). Para **inversor en ~30 min:** [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) y la ruta de la tabla siguiente.
+Para **ejecutar el lanzamiento:** [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) y [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md). Para **inversor en ~30 min:** [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) y la ruta de la tabla siguiente. **Índice completo solo inversor (qué incluir / excluir):** [DOCUMENTOS_SOLO_INVERSOR.md](DOCUMENTOS_SOLO_INVERSOR.md).
 
 ---
 
@@ -183,9 +183,10 @@ Estos no se inventan. El pack los marca explícitamente con `[PENDIENTE]`. **Ín
 ## Exportar a especialistas (checklist founder)
 
 1. Revisar [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) (P0 antes de reunión institucional).
-2. **Zip inversor (~30 min):** BRIEF → CONTEXTO → PERFIL → UNIT → PROYECCION §1.1 → **MODELO_FINANCIERO `.xlsx`** (opcional FP&A) → ESTRUCTURA → CHECKLIST (+ MENSAJE §2 opcional).
-3. **Opcional DD técnico:** [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md).
-4. **Excluir del zip externo** (uso interno): CUESTIONARIO, REGISTRO, VOLCADO, GUIA_DISCOVERY, BANCO_PROBLEMAS — salvo que el especialista lo pida.
-5. Marcar aprobación founder en REGISTRO P0-04 antes de enviar.
+2. **Inventario inversor:** [DOCUMENTOS_SOLO_INVERSOR.md](DOCUMENTOS_SOLO_INVERSOR.md) · verificar: `python3 _tools/verify_inversor_pack.py` · zip: `python3 _tools/build_zip_inversor.py`.
+3. **Zip inversor (~30 min):** BRIEF → CONTEXTO → PERFIL → UNIT → PROYECCION §1.1 → **MODELO_FINANCIERO `.xlsx`** (opcional FP&A) → ESTRUCTURA → CHECKLIST (+ MENSAJE §2 opcional).
+4. **Opcional DD técnico:** [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md).
+5. **Excluir del zip externo** (uso interno): CUESTIONARIO, REGISTRO, VOLCADO, GUIA_DISCOVERY, BANCO_PROBLEMAS — salvo que el especialista lo pida. Ver lista completa en [DOCUMENTOS_SOLO_INVERSOR.md](DOCUMENTOS_SOLO_INVERSOR.md) § C.
+6. Marcar aprobación founder en REGISTRO P0-04 antes de enviar.
 
 **Pack revisado por:** [PENDIENTE — el founder debe leer y aprobar antes de presentar al inversor].

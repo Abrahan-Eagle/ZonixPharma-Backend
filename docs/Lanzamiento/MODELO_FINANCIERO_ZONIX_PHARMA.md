@@ -1,10 +1,33 @@
 # Modelo Financiero Zonix Pharma — gastos, ingresos y egresos
 
-> **Última actualización:** 22 junio 2026 (v3.8.2 — layout ESTA compacto; v3.8.1 fix col J; v3.8 espejo Pizza + Hoja1 v3.7).
+> **Última actualización:** 23 junio 2026 (v3.9.1 — merges Pizza QLQ en Hoja3/Hoja1/ESTA + banner Año; v3.9.0 piel base).
 > **Propósito:** consolidado único (estilo modelo Excel multi-hoja) para **inversor**, **FP&A** y aliados (p. ej. Gabriel Barrios — Grupo Morr). Espejo versionado del archivo [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx).
-> **Generador:** [`_tools/generate_modelo_financiero_v2.py`](_tools/generate_modelo_financiero_v2.py) (openpyxl). Regenerar: `docs/Lanzamiento/_tools/.venv/bin/python3 generate_modelo_financiero_v2.py` · Verificar: `docs/Lanzamiento/_tools/verify_modelo_financiero.py` (checks v3.8.2) · Copia local: `cp MODELO_FINANCIERO_ZONIX_PHARMA.xlsx ~/Descargas/`
+> **Generador:** [`_tools/generate_modelo_financiero_v2.py`](_tools/generate_modelo_financiero_v2.py) (openpyxl) + tema [`_tools/pizza_visual_theme.py`](_tools/pizza_visual_theme.py). Regenerar: `docs/Lanzamiento/_tools/.venv/bin/python3 generate_modelo_financiero_v2.py` · Verificar: `docs/Lanzamiento/_tools/verify_modelo_financiero.py` (checks v3.9.1) · Copia local: `cp MODELO_FINANCIERO_ZONIX_PHARMA.xlsx ~/Descargas/`
+> **Layout estructural Pizza (spec futura v4):** [`MODELO_FINANCIERO_LAYOUT_PIZZA_QLQ_ESPECIFICACION.md`](MODELO_FINANCIERO_LAYOUT_PIZZA_QLQ_ESPECIFICACION.md) — no implementado en el `.xlsx`.
 > **Cifras:** USD constantes; buffer inflación VE **20%** (Lean/Base) **incorporado en la fila «Material + transporte + contingencia»** por tramo (PRESUPUESTO §6) — no hay fila «Cuadre buffer» en el P&L.
 > **No sustituye:** contador SENIAT ni dictamen abogado — marcar `[Requiere FP&A/contador]` donde aplique.
+
+## S0 — Visual template Pizza QLQ (piel v3.9.1)
+
+El Excel **v3.9.1** adopta la **apariencia** del template inversor `Propuesta_Pizza QLQ.xlsx` (colores, fuentes, merges, anchos, zoom). La **lógica financiera Zonix** (SAFE, farmacias, filas resumidas en Flujo Total, IRR col J) **no cambia**.
+
+**v3.9.1 (merges):** helpers `merge_cols`, `style_block_title_merge`, `style_subtotal_yellow_row` en [`pizza_visual_theme.py`](_tools/pizza_visual_theme.py). Patrón Pizza replicado en geometría **E:F** (descripción ancha) y **E:I** (títulos de bloque) en espejos **Hoja3**, **Hoja1**, **ESTA SI VALE**; banner **AÑO n** merge **C:N** en hojas Año; subtotales espejo en amarillo `#FFFF00`. Panel lateral Hoja1 desplazado a **L–M** (libera col J para **% SAFE**). Verify: ≥30 merges Hoja3/ESTA, ≥20 Hoja1.
+
+| Elemento | Valor Pizza QLQ | Uso en Zonix v3.9 |
+|----------|-----------------|-------------------|
+| Verde banner | `#00B050` | Título Detallado, Hoja3, Hoja1, ESTA |
+| Header púrpura | `#AC75D5` | ITEMS/DATOS, headers tabulares |
+| Lavanda premisas | `#D1B2E8` | Filas alternadas premisas Flujo / Años |
+| Naranja años | `#FFC000` | Headers Año 1–5 en Flujo Total y Tasa |
+| Rojo TOTAL | `#FF0000` | Columna TOTAL Flujo Total |
+| Amarillo subtotales | `#FFFF00` | Subtotales Detallado / totales FCF |
+| Fuente Flujo/Tasa | Aptos Narrow 9pt | Métricas VAN/TIR/payback |
+| Fuente Años | Arial 8pt | Bloque premisas B:C |
+| Zoom Detallado / Hoja3 / ESTA | 64 / 60 / 70 | `finish_pizza_sheet` |
+
+**Disclaimer reunión:** la paleta verde/púrpura es **familiaridad formato QLQ**, no branding final Zonix Pharma ([`BRAND_ZONIX_PHARMA.md`](../BRAND_ZONIX_PHARMA.md) navy/teal sigue en producto). Contenido = marketplace + SAFE, **no** reparto 70/30 Pizza.
+
+Para clonar también la **geometría** de filas Pizza (desglose Flujo línea a línea, cols C:G), ver spec opción B: [`MODELO_FINANCIERO_LAYOUT_PIZZA_QLQ_ESPECIFICACION.md`](MODELO_FINANCIERO_LAYOUT_PIZZA_QLQ_ESPECIFICACION.md).
 
 ## Convenciones
 
@@ -17,16 +40,16 @@
 
 **Calendario:** **T+0** = wire capital · **Day-D = T+90** = inicio M1 comercial · **M1–M12** = primer año post-Day-D.
 
-### Índice de hojas Excel (v3.8.1 — 12 hojas)
+### Índice de hojas Excel (v3.9.1 — 12 hojas, piel QLQ + merges)
 
 | Hoja Excel | Sección MD | Contenido |
 |------------|------------|-----------|
 | **Detallado de la inversión.** | S2 | Constitución C.A. ~5.050 · intro/HQ one-shots · MO Fase 0 (incl. **Dev**) · Fase 0 bottom-up · use of funds · **resumen lateral K–M** |
-| **Hoja3** | S2.5 | **Sección A** use-of-funds (100%) · **Sección B** desglose operativo (enlace Detallado + disclaimer + puente cross) · **lateral espejo Detallado** + timeline 0a–0c |
-| **Hoja1** | S2.1c | **Vista Pizza 8 bloques** (equipos, adecuación, MO, transporte, alquiler, constitución, marketing, materia) — espejo **Detallado** + col **I % SAFE** + panel J–K |
+| **Hoja3** | S2.5 | **Sección A** use-of-funds (100%) · **Sección B** desglose operativo (enlace Detallado + disclaimer + puente cross) · **lateral espejo Detallado** + timeline 0a–0c · **merges E:F / E:I** |
+| **Hoja1** | S2.1c | **Vista Pizza 8 bloques** (equipos, adecuación, MO, transporte, alquiler, constitución, marketing, materia) — espejo **Detallado** + col **J % SAFE** + panel **L–M** · subtotales amarillos |
 | **Hoja2** | S3 | Tramos Meta / valla (referencia mensual) |
-| **ESTA SI VALE** | S1 + S4 | **Espejo Pizza v3.8.2:** layout compacto (burn + simulador misma fila ~58) · MO/transporte/legal/intro + factores Año 2 · simulador M1-M12 · panel unit economics (col M) · burn → Año 1 |
-| **Año 1** … **Año 5** | S3 + S5 | P&L mensual · costos ESTA · **cash ini/final = fórmulas** (A1) |
+| **ESTA SI VALE** | S1 + S4 | **Espejo Pizza v3.9.1:** merges bloque + col **K** ref. Año 2 · simulador M1-M12 · panel unit economics (col M) · burn → Año 1 |
+| **Año 1** … **Año 5** | S3 + S5 | P&L mensual · costos ESTA · **cash ini/final = fórmulas** (A1) · banner **AÑO n** merge C:N |
 | **Flujo Total** | S6 | Consolidado 5 años, CCF **`$C$6` equity**, TIR/payback sobre CCF acum |
 | **Tasa Crecimiento** | S7 | Drivers **enlazados** a hojas Año (activas, revenue, burn prom.) |
 

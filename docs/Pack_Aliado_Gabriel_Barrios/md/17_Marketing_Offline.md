@@ -13,18 +13,22 @@
 | Canal | Prioridad | Presupuesto referencia (Lean) |
 |-------|-----------|-------------------------------|
 | **Meta Ads (Instagram/Facebook)** | **Principal** | **USD 800/mes** meses 1–6 · **USD 500/mes** meses 7–12 |
-| **Valla publicitaria** | Complemento branding | **USD 350/mes** desde mes 3 (pequeña 3m×2m, avenida principal) |
+| **Valla publicitaria** | Complemento branding | **USD 350/mes** desde mes 3 (pequeña 3m×2m) |
 | **Flyers / brochures B2B** | Visitas comerciales | ~USD 50/mes |
 | **Radio FM** | Solo escenario Growth | USD 0 en Lean |
 | **Referido farmacia (QR mostrador)** | Costo ~0 | Incluido en material impreso |
 
-**En una frase:** **Aprendemos con digital** (CPL bajo, medible). **La valla no compite en costo por descarga** — da **legitimidad** en la ciudad y ayuda a cerrar farmacias B2B (“ya nos ven en Valencia”).
+**En una frase:** **Aprendemos con digital** (CPL bajo, medible). **La valla no compite en costo por descarga** — da **legitimidad** en la ciudad y ayuda a cerrar farmacias B2B («ya nos ven en Valencia»).
+
+**Ancla piloto:** capital Lean **~112k**; caja M6 post-Day-D **~48.311**; si marketing offline escala antes de **~28 activas** pre-Day-D, se quema caja sin conversión.
 
 ---
 
 ## Qué es este documento
 
 El pack financiero asigna la mayor parte de marketing a **anuncios digitales**. Este documento justifica el **offline limitado** (valla, material impreso, eventos pequeños) y fija reglas de comunicación en salud para no infringir normas de publicidad engañosa en Venezuela.
+
+Gabriel: aquí no pedimos que Morr pague marketing; pedimos tu criterio sobre **dónde** y **cuándo** tiene sentido gastar en Carabobo dado el calendario comercial del pack.
 
 ---
 
@@ -40,8 +44,8 @@ El pack financiero asigna la mayor parte de marketing a **anuncios digitales**. 
 **Por qué no eliminamos offline:**
 
 - Dueños de farmacia (B2B) valoran lo **tangible** (brochure, tarjeta, valla).
-- Una valla en **Av. Bolívar Norte** o corredor similar da **presencia local**.
-- Adultos mayores (hijos comprando para padres) aún escuchan radio — reservado para escenario Growth.
+- Una valla en **Av. Bolívar Norte** da **presencia local** — argumento de venta directo para Sales.
+- Adultos mayores (hijos comprando para padres) aún escuchan radio — reservado para escenario Growth (~187k).
 
 ---
 
@@ -54,20 +58,60 @@ El pack financiero asigna la mayor parte de marketing a **anuncios digitales**. 
 | Flyers + brochures | ~50/mes | ~100/mes | ~150/mes |
 | Radio 30s | 0 | 0 | ~250/mes desde M4 |
 | Eventos locales | 0 | ~50/mes desde M6 | ~100/mes desde M4 |
-| **Total offline/mes** | **~50–400** *(brochures M1+; valla M3+)* | **~350–550** | **~1.200** |
+| **Total marketing/mes (aprox.)** | **~850–1.200** *(M3–6 pico)* | **~950–1.550** | **~2.000+** |
+
+Lean concentra **~9.800 USD** en Meta año 1 + **~3.500** valla (M3–12) + **~600** material impreso — coherente con burn total **~97.290** operativo.
 
 ---
 
-## Meta Ads — tiers Lean
+## Calendario mes a mes — Lean (post-Day-D)
 
-| Tramo | USD/mes | Objetivo |
-|-------|---------|----------|
-| **Meses 1–6** | **800** | Instalaciones, primer pedido, aprendizaje creativos |
-| **Meses 7–12** | **500** | Eficiencia con base de farmacias activa |
+| Mes | Meta Ads | Valla | Flyers/B2B | Total marketing ref. | Activas oferta | Notas |
+|-----|----------|-------|------------|----------------------|----------------|-------|
+| **M1** | 800 | 0 | 50 | **850** | ~40 | Solo digital + brochures Sales |
+| **M2** | 800 | 0 | 50 | **850** | ~51 | Aprendizaje creativos |
+| **M3** | 800 | **350** | 50 | **1.200** | ~62 | Activa valla; pico spend |
+| **M4** | 800 | 350 | 50 | **1.200** | ~74 | |
+| **M5** | 800 | 350 | 50 | **1.200** | ~85 | |
+| **M6** | 800 | 350 | 50 | **1.200** | ~97 | DoD piloto |
+| **M7** | **500** | 350 | 50 | **900** | ~108 | Eficiencia digital |
+| **M8** | 500 | 350 | 50 | **900** | ~119 | |
+| **M9** | 500 | 350 | 50 | **900** | ~130 | |
+| **M10** | 500 | 350 | 50 | **900** | ~141 | |
+| **M11** | 500 | 350 | 50 | **900** | ~151 | |
+| **M12** | 500 | 350 | 50 | **900** | ~159 | Cierre año 1 |
 
-Escenarios Base y Growth mantienen **800/mes** todo el año según presupuesto de referencia.
+**Fase 0 (T+0–T+90):** Meta en modo test (gasto mínimo píxel/creativos); brochures y tarjetas **~150 USD** one-shot; valla en producción T+30–50, activación típica M3 post-Day-D.
 
-**Revisión:** semanal el primer mes; luego mensual. Si el costo por lead supera USD 1,00 → pausar Meta y reforzar TikTok + WhatsApp + referidos farmacia.
+---
+
+## Meta Ads — tiers y sensibilidad CPL
+
+| Tramo | USD/mes | Objetivo | Leads/mes @ CPL 0,40 |
+|-------|---------|----------|----------------------|
+| **M1–6** | **800** | Instalaciones, 1er pedido, aprendizaje | ~2.000 |
+| **M7–12** | **500** | Eficiencia con base ~108–159 activas | ~1.250 |
+
+### Triggers de revisión CPL
+
+| CPL real Meta | Acción |
+|---------------|--------|
+| < 0,15 | Mantener presupuesto; surplus a TikTok o orgánico |
+| **0,15 – 0,60** | Plan base — sin cambio |
+| **0,60 – 1,00** | Recortar valla 1–2 meses; subir fase digital temporal |
+| **> 1,00** | **Pausar Meta**; TikTok + WhatsApp + QR farmacia |
+
+**Revisión:** semanal M1; luego mensual.
+
+### Escenarios CPL (M6 acumulado)
+
+| Escenario | CPL promedio | Registros M1–6 | Costo adquisición paciente | Comentario |
+|-----------|--------------|----------------|----------------------------|------------|
+| Optimista | 0,25 | ~19.200 | Bajo | Sobrecumple meta 1.500 M6 |
+| Base | 0,40 | ~12.000 | Medio | Alineado hipótesis |
+| Pesimista | 0,80 | ~6.000 | Alto | Activar Plan B (TikTok, CS outbound) |
+
+El **CAC farmacia ~139 USD** y **LTV/CAC ~7,2×** son del lado B2B; el CPL paciente es métrica aparte — no mezclar en una sola ratio.
 
 ---
 
@@ -83,117 +127,167 @@ Escenarios Base y Growth mantienen **800/mes** todo el año según presupuesto d
 
 ### Cuándo activar (Lean)
 
-- **Mes 3 en adelante** — valla pequeña **USD 350**.
-- Meses 1–2: foco en digital **800/mes** + material B2B (brochures, tarjetas).
+- **Mes 3 post-Day-D** — valla pequeña **USD 350**.
+- Meses 1–2: foco digital **800/mes** + material B2B.
 
 ### Diseño (mensaje permitido)
 
-- **Principal:** “Zonix Pharma. La farmacia en tu teléfono.”
+- **Principal:** «Zonix Pharma. La farmacia en tu teléfono.»
 - Logo Z + wordmark + PHARMA (paleta navy + teal).
 - **CTA:** zonixpharma.com + íconos Play Store / App Store.
-- **Evitar:** promesas de cura, “te alivia en X horas”, automedicación, antes/después clínico.
+- **Evitar:** promesas de cura, «te alivia en X horas», automedicación, antes/después clínico.
 
 ### Ubicaciones sugeridas Valencia metro
 
-| Zona | Por qué |
-|------|---------|
-| **Av. Bolívar Norte** (tramo alto flujo) | Tráfico denso, clase media-alta |
-| **Av. Cedeño** (cerca CC Las Trinitarias) | Cruce noroeste–noreste |
-| **Av. Andrés Eloy Blanco (San Diego)** | Residencial, tráfico mañana/tarde |
+| Zona | Tráfico est./día | Por qué | Riesgo |
+|------|------------------|---------|--------|
+| **Av. Bolívar Norte** (tramo alto flujo) | 18–22k | Clase media-alta; legitimidad B2B | Permiso / cotización |
+| **Av. Cedeño** (cerca CC Las Trinitarias) | 15–18k | Cruce noroeste–noreste | Visibilidad nocturna |
+| **Av. Andrés Eloy Blanco (San Diego)** | 12–15k | Residencial Morr-adjacent | Menor reach |
 
-**Impacto estimado valla Bolívar:** ~18–22k personas/día; CPL offline ~USD 8–15 vs digital — **aceptable como branding**, no como canal principal de descargas.
+**Impacto estimado valla Bolívar:** ~660k impactos/mes; CPL offline ~USD 8–15 vs digital — **aceptable como branding**, no como canal principal de descargas.
+
+### Sensibilidad valla
+
+| Variable | Base | Si pausamos M4–M5 | Si subimos a mediana 700 |
+|----------|------|-------------------|--------------------------|
+| Spend adicional/mes | 350 | −700 ahorro | +350 |
+| Descargas atrib. offline/mes | ~40–110 | ~0 | ~80–150 |
+| Argumento B2B Sales | Fuerte | Débil | Muy fuerte |
 
 ---
 
 ## Flyers, brochures y tarjetas
 
-| Material | Uso | Costo orientativo |
-|----------|-----|-------------------|
-| Flyers paciente (A6) | Distribución zona piloto | ~USD 90–150 / tanda |
-| Brochure tríptico farmacia | Lo lleva el vendedor B2B | ~USD 50–80 / 500 uds |
-| Tarjetas vendedor | One-shot mes 1 + reposición | ~USD 25–40 |
+| Material | Uso | Costo orientativo | Frecuencia Lean |
+|----------|-----|-------------------|-----------------|
+| Flyers paciente (A6) | Zona piloto | ~USD 90–150 / tanda | Trimestral M4+ |
+| Brochure tríptico farmacia | Vendedor B2B | ~USD 50–80 / 500 uds | Reposición M3, M6 |
+| Tarjetas vendedor | One-shot + reposición | ~USD 25–40 | M1 + cada 3 meses |
 
-Corredor piloto mencionado en radio/copy: **Bella Florida**, **El Socorro**, **San Diego**, **vía Tocuyito**.
+Corredor piloto en copy offline: **Bella Florida**, **El Socorro**, **San Diego**, **vía Tocuyito**.
+
+### Contenido brochure farmacia (1 página — sugerencia)
+
+| Bloque | Mensaje |
+|--------|---------|
+| Problema | WhatsApp caótico, stock invisible, hijos en exterior que no pueden pagar remoto |
+| Solución | Panel Zonix + validación Rx + pagos trazables |
+| Pricing | Cuota 25/40/55 + % GMV (ejemplo Pro **40 USD + 0,8%** GMV ilustrativo) |
+| Prueba social | «Visible en Valencia» (valla) + farmacias piloto |
+| CTA | QR demo + teléfono Sales |
 
 ---
 
 ## Canal referido farmacia (costo ~0)
 
-- **QR en mostrador y bolsa** de cada farmacia activa (mismo impreso que flyers).
-- Incentivo opcional al paciente (descuento primer pedido) **desde presupuesto Meta existente**, no margen nuevo.
-- Medición: código por farmacia + encuesta “¿Cómo nos conociste?” → “Mi farmacia me lo recomendó”.
+- **QR en mostrador y bolsa** de cada farmacia activa.
+- Incentivo opcional (descuento 1er pedido) **desde presupuesto Meta existente**, no margen nuevo.
+- Medición: código por farmacia + «¿Cómo nos conociste?» → «Mi farmacia me lo recomendó».
 - **No forzar viralidad en pedidos Rx** (privacidad salud).
 
----
-
-## Copy en salud — Do / Don’t (Venezuela)
-
-**Sí (con revisión abogado):**
-
-- Describir **funciones**: buscar medicamento, comparar precios entre farmacias aliadas, delivery, validación por farmacéutico colegiado.
-- Mencionar **registro INHRR** y flujos de receta / retiro en controlados.
-- Testimonios de **servicio** (rapidez, claridad), sin prometer resultado clínico.
-
-**No:**
-
-- Curas, tratamientos milagrosos, comparaciones clínicas antes/después.
-- Sustituir consulta médica o fomentar automedicación.
-- Descuentos sin fecha o alcance geográfico claro si confunden.
-- Cruzadas con laboratorios sin convenio escrito.
-
-Todo creativo (digital u offline) pasa checklist legal de **1 página** antes de publicarse.
-
----
-
-## Priorización Bullseye (Traction)
+### Mecánica Bullseye (Traction)
 
 | Anillo | Canal | Cuándo escalar |
 |--------|-------|----------------|
-| **Interior** | Referido farmacia + WhatsApp | Desde primeras farmacias piloto |
-| **Medio** | Meta Ads | Desde pre-lanzamiento |
-| **Exterior** | Valla / radio | **No escalar exterior hasta Day-D** con catálogo vivo en meta de farmacias del plan comercial |
+| **Interior** | Referido farmacia + WhatsApp | Desde primeras ~28 activas |
+| **Medio** | Meta Ads | Pre-lanzamiento test → full Day-D |
+| **Exterior** | Valla / radio | **No escalar hasta Day-D** con catálogo vivo |
 
 ---
 
-## KPIs offline (metas ilustrativas)
+## Radio FM (solo Growth ~187k)
 
-| Mes | Alcance acumulado valla | Descargas atribuibles offline | % del total descargas |
-|-----|-------------------------|------------------------------|------------------------|
-| 3 (Day-D) | ~660k | ~120 | ~25% |
-| 6 | ~2,6M | ~520 | ~20% |
-| 12 | ~6,6M | ~1.500 | ~18% |
+| Concepto | Detalle |
+|----------|---------|
+| Inversión | ~USD 200–400/mes, 4×30s/día lun–sáb AM |
+| Emisoras ref. | Pegasus 89.9, Capital 95.5, Mara 91.7 |
+| Audiencia | 45+, hijos cuidando padres, conductores |
+| Mensaje tipo | «Pide medicamentos de tu mamá desde el teléfono… Bella Florida y El Socorro» |
+| **Lean** | **USD 0** — no incluido |
 
-Trackeo: URL `zonixpharma.com/valencia`, código **VALLA15** (15% primer pedido), encuesta en onboarding.
+---
+
+## Copy en salud — Do / Don't (Venezuela)
+
+**Sí (con revisión abogado):**
+
+- Describir **funciones**: buscar, comparar, delivery, validación por farmacéutico colegiado.
+- Mencionar **registro INHRR** y flujos receta / retiro controlados.
+- Testimonios de **servicio** (rapidez, claridad), sin resultado clínico.
+
+**No:**
+
+- Curas, tratamientos milagrosos, antes/después clínico.
+- Sustituir consulta médica o fomentar automedicación.
+- Descuentos sin fecha o alcance geográfico claro.
+- Cruzadas con laboratorios sin convenio escrito.
+
+Todo creativo pasa checklist legal **1 página** antes de publicarse.
+
+---
+
+## KPIs offline y digital (metas ilustrativas)
+
+| Mes post-Day-D | Reach valla acum. | Descargas atrib. offline | % total descargas | Meta registros (hipótesis) |
+|----------------|-------------------|--------------------------|-------------------|----------------------------|
+| 3 | ~660k | ~120 | ~25% | ~600 acum. |
+| 6 | ~2,6M | ~520 | ~20% | ~1.500 acum. |
+| 12 | ~6,6M | ~1.500 | ~18% | ~8.000 acum. |
+
+Trackeo: URL `zonixpharma.com/valencia`, código **VALLA15** (15% 1er pedido), encuesta onboarding.
 
 ---
 
 ## Cuándo subir presupuesto offline
 
-Subir de valla **350 → 700** (Lean → Base/Growth) si:
+Subir valla **350 → 700** (Lean → Base/Growth) si:
 
-1. Adopción supera **130%** del plan.
-2. Caja mes 6 post-Day-D ≥ **~USD 48.311** (referencia proyección Lean).
-3. CAC orgánico (boca en boca + offline) supera digital en farmacias firmadas.
+1. Adopción supera **130%** del plan (~130 activas M6 vs 97).
+2. Caja M6 post-Day-D ≥ **~48.311** (referencia proyección Lean **~112k**).
+3. CAC orgánico (boca en boca + offline) supera digital en **farmacias firmadas**.
 4. Serie A en proceso o cerrada.
+
+### Cuándo recortar (contingencia)
+
+| Trigger | Acción marketing |
+|---------|------------------|
+| Caja M6 < 45k | Pausar valla; Meta −50% |
+| < 8 firmas/mes × 2 | Priorizar brochures B2B; cero eventos |
+| CPL Meta > 1,00 | Pausar Meta; QR + WhatsApp |
+| < 70 activas M6 | No escalar exterior; interior Bullseye |
+
+---
+
+## Eventos locales (Base/Growth — referencia)
+
+| Tipo | Zona | Costo/evento | Frecuencia |
+|------|------|--------------|------------|
+| Feria salud plaza/barrio | Bella Florida, San Diego | 50–200 USD | 1–2/mes desde M6 (Base) |
+| Charla uso responsable medicamentos | Comunidad / iglesia | 50–100 USD | Ocasional |
+| Patrocinio equipo deportivo local | Logo camiseta | 100–200 USD | Growth |
+
+**Lean:** USD 0 en eventos — foco en Sales calle + Meta.
 
 ---
 
 ## Qué nos gustaría que revises, Gabriel
 
-1. **Ubicación valla 350:** ¿**Av. Bolívar Norte** sigue siendo el corredor correcto para legitimidad B2B en 2026?
+1. **Ubicación valla 350:** ¿**Av. Bolívar Norte** sigue siendo el corredor correcto para legitimidad B2B en 2026 — o Morr recomendaría Cedeño / San Diego primero?
 2. **Meta 800/500:** ¿Es suficiente presión digital para Valencia metro o el mercado farmacéutico exige más peso offline desde M1?
-3. **Copy valla:** ¿El claim “La farmacia en tu teléfono” suena creíble sin prometer tratamiento?
-4. **Brochure farmacia:** ¿Qué objeción del dueño independiente conviene responder en **una página** impresa?
-5. **Eventos barrio:** ¿Ferias de salud en **Bella Florida / San Diego** valen el esfuerzo vs solo digital en Fase 0?
+3. **Brochure farmacia:** ¿Qué objeción del dueño independiente conviene responder en **una página** impresa — pricing, Rx, o confianza en delivery?
+4. **Eventos barrio vs digital:** ¿Ferias de salud en **Bella Florida / San Diego** valen el esfuerzo en Fase 0 o distraen del objetivo **~28 activas** al Day-D?
 
 ---
 
 ## Disclaimers
 
 - Precios valla/radio son **referencias mercado VE junio 2026**; cotizar con proveedor local antes de comprometer.
-- CPL digital **0,15–0,60** es hipótesis del pack — recalibrar con datos reales semana 1 post-campaña.
+- CPL digital **0,15–0,60** es hipótesis del pack — recalibrar semana 1 post-campaña.
 - Publicidad en salud: **no sustituye** revisión abogado + criterio SUNDEE / regulatorio aplicable.
-- Escalar offline antes de tener farmacias activas en app **quema caja** sin conversión — regla Bullseye no negociable.
+- Escalar offline antes de farmacias activas en app **quema caja** sin conversión — regla Bullseye no negociable.
+- Cifras de caja (**78.153** Day-D, **48.311** M6, **40.831** M12) y **159 activas** vienen del escenario Lean — no mezclar con tiers superiores sin recalcular.
+- **No es solicitud de inversión** ni oferta de valores.
 
 ---
 

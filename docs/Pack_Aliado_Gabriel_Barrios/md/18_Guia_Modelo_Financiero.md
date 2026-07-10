@@ -23,15 +23,15 @@ Escenario **Lean** (el ask principal del piloto):
 
 | Concepto | USD (aprox.) |
 |----------|--------------|
-| **Capital total (SAFE Lean)** | **~112.000** |
+| **Capital total (SAFE Lean)** | **~112.000** *(111.988)* |
 | Gastos únicos al inicio (legal, intro mercado, PCs, oficina) | ~14.200 |
-| **Fase 0** — 90 días antes del go-live | ~33.800 |
-| **Caja al Day-D** (inicio del año 1 operativo) | ~78.150 |
+| **Fase 0** — 90 días antes del go-live | **~33.835** |
+| **Caja al Day-D** (inicio del año 1 operativo) | **~78.153** |
 | Burn operativo año 1 (12 meses) | ~97.300 |
 | Reserva imprevistos | ~490 |
 | **Ingresos año 1** | ~60.000 |
 | **Resultado operativo año 1 (FCF)** | **−37.300** |
-| **Caja al cierre mes 12** | **~40.800** |
+| **Caja al cierre mes 12** | **~40.831** |
 | **Farmacias activas al mes 12** | **~159** |
 
 **En una frase:** Zonix plantea levantar **~112k USD**, gastar **~34k** en los primeros 90 días (legal, equipo, captación inicial), operar 12 meses con un burn promedio de **~8,1k/mes**, cerrar el año con **~159 farmacias activas** y **~41k en caja** — casi equilibrio mensual en el mes 12 (ingresos ~7.950 vs costos ~7.980).
@@ -46,7 +46,7 @@ El archivo tiene **12 pestañas**. Para una primera reunión, este orden funcion
 
 | Paso | Pestaña | Para qué sirve |
 |------|---------|----------------|
-| 1 | **Hoja3** | Resumen del capital — **sección A** = use of funds oficial |
+| 1 | **Hoja3** | Resumen del capital — **sección A** = use of funds oficial (~112k, 100%) |
 | 2 | **Detallado de la inversión.** | Desglose línea por línea de gastos |
 | 3 | **Hoja1** | Vista resumida por bloques (equipos, legal, marketing, etc.) |
 | 4 | **ESTA SI VALE** | Unit economics, simulador y burn mensual de referencia |
@@ -67,24 +67,73 @@ Las pestañas **Año 2** a **Año 5**, **Hoja2** y **Tasa Crecimiento** son proy
 
 **Trampa frecuente:** si sumas Fase 0 + Burn + Reserva como porcentajes de la sección B, parece ~118% del SAFE. Eso es un artefacto del desglose informativo. El único total válido es la **sección A de Hoja3**.
 
+**En reunión, decir primero:** «El capital Lean es **~112k** según **Hoja3 sección A**» — luego, si piden detalle, abrir **Detallado** o **Hoja1**.
+
 **Nota visual:** el Excel usa colores verde/púrpura similares a una plantilla de inversor conocida (Pizza QLQ). Es solo **formato familiar** para leer rubros. El negocio es **marketplace farmacéutico + SAFE**, no reparto 70/30 de una pizzería.
 
 ---
 
-## Use of funds — en qué se va el capital
+## Hoja3 — sección A (use of funds oficial)
+
+Esta es la pestaña que cierra el **100% del SAFE Lean**:
+
+| Concepto | USD (Lean) |
+|----------|------------|
+| One-shots Fase 0 (legal, intro, HQ/equipos) | **~14.208** |
+| Burn operativo M1–M12 | **97.290** |
+| Reserva imprevistos | **490** |
+| **TOTAL capital Lean (sección A)** | **~111.988** |
+
+**Puente de caja:**
+
+```
+Wire T+0:           ~111.988
+Menos Fase 0:       ~33.835
+= Caja Day-D:       ~78.153   (inicio M1 comercial)
+```
+
+**Columnas laterales K–M en Hoja3:** espejo del Detallado con timeline **0a / 0b / 0c** (sub-fases de Fase 0) — útil para ver en qué mes cae cada gasto pre-lanzamiento.
+
+### Lectura paso a paso de Hoja3 en reunión (5 minutos)
+
+1. **Abrir Hoja3** → ir directo a **sección A** (parte superior del resumen).
+2. **Señalar el TOTAL ~111.988** — decir: «esto es el 100% del SAFE Lean».
+3. **Desglosar en voz:** one-shots **~14,2k** + burn año 1 **~97,3k** + reserva **~490**.
+4. **Puente caja:** wire **~112k** menos Fase 0 **~33,8k** = **~78k al Day-D**.
+5. **Si piden detalle:** bajar a **sección B** solo como drill-down — repetir que **no se suma al total**.
+6. **Si piden línea a línea:** abrir **Detallado de la inversión.** en paralelo.
+
+> **Error común en reunión:** empezar por Hoja1 o ESTA y sumar bloques sueltos. Siempre anclar primero **Hoja3 sección A**.
+
+### Equivalencia Hoja1 / ESTA (vistas espejo)
+
+| Bloque visual (Hoja1) | Contenido Zonix | Ancla USD |
+|-----------------------|-----------------|-----------|
+| Equipos | 4 PCs operativos | 3.700 |
+| Adecuación HQ | Depósito + amueblado | 1.650 (parte de 5.350 HQ) |
+| Mano de obra | MO Fase 0 × 3 meses | incluida en Fase 0 |
+| Constitución | C.A. + trámites VE | 5.050 |
+| Marketing intro | Web, brochures, video B2B | 3.808 + pre-lanzamiento |
+| Materia / SaaS | Hosting, SMS, herramientas | ~154/mes post-Day-D |
+
+**ESTA SI VALE** concentra unit economics (LTV/CAC **~7,2×**, CAC **139**, ARPF **~50**) y simulador M1–M12 — ideal si Gabriel quiere ver sensibilidad sin recorrer todo el Detallado.
+
+---
+
+## Use of funds — desglose legible
 
 ### Gastos únicos (one-shots) — ~14.200 USD
 
 | Rubro | USD |
 |-------|-----|
-| Constitución empresa (C.A., SENIAT, trámites HQ, banco, etc.) | 5.050 |
+| Constitución empresa (C.A., SENIAT, trámites HQ, banco, SAPI, etc.) | 5.050 |
 | Intro mercado (web, brochures, tablets, visitas, video pitch B2B) | 3.808 |
 | HQ + equipos (depósito, adecuación, 4 PCs operativos) | 5.350 |
 | **Total one-shots** | **~14.208** |
 
 > No incluye permisos sanitarios de operación farmacéutica (BPF/CPE) — eso corre por cuenta de cada farmacia aliada.
 
-### Fase 0 — T+0 a Day-D (90 días) — ~33.800 USD
+### Fase 0 — T+0 a Day-D (90 días) — ~33.835 USD
 
 Antes del go-live público: legal, nómina del equipo (founder, co-CEO, dev, **4 vendedores B2B**, CS, asesores), marketing pre-lanzamiento y visitas a farmacias.
 
@@ -95,25 +144,16 @@ Antes del go-live público: legal, nómina del equipo (founder, co-CEO, dev, **4
 | 0c | T+60–90 | ~8.011 |
 | **Total Fase 0** | | **~33.835** |
 
-**Caja al Day-D** (inicio mes 1): ~112.000 − ~33.800 ≈ **~78.150 USD**
-
-### Año 1 operativo — resumen
-
-| Concepto | USD |
-|----------|-----|
-| Burn meses 1–12 | 97.290 |
-| Reserva imprevistos | 490 |
-| **Total capital Lean (Hoja3 §A)** | **~111.988** |
-
 ### Si se sube de tier (referencia rápida)
 
-| Tier | Capital | Diferencia principal vs Lean |
-|------|---------|------------------------------|
-| **Lean** (ask principal) | ~112k | 4 vendedores, sueldos bootstrap, reserva mínima |
-| **Base** | ~157k | Sueldos closer to mercado, Google Ads, más reserva (~10,6k) |
-| **Growth** | ~187k | Dev senior, marketing pleno, reserva ~20k |
+| Tier | Capital | Cap SAFE | Equity ref. | Diferencia principal vs Lean |
+|------|---------|----------|-------------|------------------------------|
+| **Lean** (ask principal) | **~112k** | **600k** | **~18,66%** | 4 vendedores, sueldos bootstrap, reserva mínima |
+| **Base** | ~157k | ~913k | ~17,23% | Sueldos mercado, Google Ads, reserva ~10,6k |
+| **Growth** | ~187k | ~1,2M | ~15,55% | Dev senior, marketing pleno, reserva ~20k |
+| **Blitz** (stretch) | ~185k | ~1,29M | ~14,36% | **6× Sales**, curva ×1,5, ~238 activas M12 |
 
-El escenario **Blitz** (~185k, 6 vendedores, curva comercial más agresiva) es un **stretch goal** para capturar más independientes en Carabobo — no sustituye el ask Lean hasta validar censo calle.
+El escenario **Blitz** es stretch goal para capturar más independientes en Carabobo — no sustituye el ask Lean hasta validar censo calle.
 
 ---
 
@@ -145,9 +185,9 @@ El escenario **Blitz** (~185k, 6 vendedores, curva comercial más agresiva) es u
 
 **Lectura del año:**
 
-- De **40 activas** (M1) a **159** (M12).
+- De **40 activas** (M1) a **159** (M12); **185 firmas** brutas en el año.
 - El FCF acumulado empeora hasta ~M11 y **casi se equilibra en M12** (solo −30 USD ese mes).
-- La **caja** baja de ~78k (Day-D) a **~41k** al cierre M12 — queda **~36%** del capital inicial.
+- La **caja** baja de ~78k (Day-D) a **~40,8k** al cierre M12 — queda **~36%** del capital inicial.
 
 ### Principales líneas de costo mensual (referencia)
 
@@ -159,7 +199,7 @@ El escenario **Blitz** (~185k, 6 vendedores, curva comercial más agresiva) es u
 | Marketing (Meta Ads + valla + contingencia) | variable por tramo |
 | CS + herramientas + contador/abogado + HQ + hosting | ~1.989 fijo |
 
-Burn promedio: **~8.108 USD/mes**.
+Burn promedio: **~8.108 USD/mes**. Tramos M1–6: **8.011 / 8.347**; M7–12: **7.980**.
 
 ---
 
@@ -186,7 +226,13 @@ Burn promedio: **~8.108 USD/mes**.
 | **P50 — plan base** | 50% | ~159 | ~50 | **~40.831** |
 | **P90 — optimista** | 30% | ~200 | ~55 | ~52.000 |
 
-**Pregunta clave para Valencia:** ¿es creíble llegar a **~159 activas** en 12 meses con **4 vendedores** y el SAM de independientes (~80–100 en metro Valencia)?
+### Lean+ (mismo ~112k, ejecución más agresiva)
+
+| Variante | Palanca | Activas M12 | Mes BE aprox. | Caja M12 ref. |
+|----------|---------|-------------|---------------|---------------|
+| Lean+ comercial | Curva firmas **×1,15** | ~183 | ~M10 | ~49.825 |
+| Lean+ unit economics | **ARPF ~53** | ~151 | ~M11 | similar Lean |
+| Lean (base) | Curva ×1,0 | ~159 | Casi M12 | **~40.831** |
 
 ---
 
@@ -195,14 +241,14 @@ Burn promedio: **~8.108 USD/mes**.
 | Concepto | Valor | Nota |
 |----------|-------|------|
 | Instrumento | SAFE post-money | Cap **600.000 USD** (Lean) |
-| Equity de referencia al convertir | **~18,7%** | Ilustrativo — depende del cap y monto invertido |
+| Equity de referencia al convertir | **~18,66%** | Ilustrativo — 112k ÷ 600k |
 | Tasa de descuento (VAN interno) | 25% | Referencia pre-seed LatAm — no auditada |
 | VAN a 5 años (Lean) | Negativo (~−790) | Normal en pre-seed con FCF año 1 negativo |
 | TIR a 5 años | ~25% | Herramienta de sensibilidad, no promesa de retorno |
 
 **Disclaimers importantes:**
 
-1. El **SAFE no reparte caja operativa** hasta conversión — las tablas de “reparto ilustrativo” en el Excel son **solo didácticas**.
+1. El **SAFE no reparte caja operativa** hasta conversión — las tablas de «reparto ilustrativo» en el Excel son **solo didácticas**.
 2. **VAN/TIR** deben validarse con contador/FP&A antes de un pitch institucional.
 3. **ARPF ~50** es placeholder hasta tener **≥30 días de GMV real** post-Day-D.
 
@@ -214,10 +260,40 @@ Tu mirada de consultoría y tu arraigo en Valencia nos ayudan a validar lo que e
 
 1. **Densidad comercial:** ¿**159 farmacias activas** al mes 12 es realista en el metro Valencia (independientes/medianas)?
 2. **Costos locales:** ¿Los sueldos **Lean** (founder 1k, sales 350, dev 600) son defendibles en Carabobo o subestiman el mercado?
-3. **Red:** ¿Podrías orientarnos sobre **2–3 farmacias** para discovery en Fase 0 (sin compromiso comercial)?
+3. **Fase 0 ~33,8k:** ¿El calendario T+0→Day-D con **4× Sales** y **~28 activas** pre-lanzamiento encaja con tu experiencia operativa local?
 4. **Riesgos VE:** ¿El buffer 20% de inflación te parece prudente para 12 meses de operación?
 
 Para contexto de negocio (TAM, moat, riesgos, propuesta de alianza): ver `RESUMEN_ALIADO_GABRIEL_BARRIOS.md`.
+
+---
+
+## Flujo Total y VAN/TIR (solo si Gabriel quiere profundizar)
+
+La pestaña **Flujo Total** consolida años 1–5 con métricas de valoración interna:
+
+| Métrica | Valor Lean (referencia) | Cómo leerlo |
+|---------|-------------------------|-------------|
+| Inversión inicial (wire) | **−111.988** | Salida de caja en T+0 |
+| FCF acumulado año 1 | **−37.322** | Normal en pre-seed con ramp-up comercial |
+| VAN a 5 años (25% descuento) | **~−790** | Herramienta de sensibilidad, no promesa |
+| TIR ilustrativa 5 años | **~25%** | Depende de supuestos año 2–5 |
+| Caja M12 | **~40.831** | **~36%** del capital inicial sobrevive |
+
+**Importante:** el SAFE **no reparte dividendos** ni flujo operativo al inversor hasta conversión en Serie A. Las filas de «reparto ilustrativo» en el Excel son **didácticas** — no confundir con cláusula contractual.
+
+---
+
+## Comparativa rápida de tiers (para conversación estratégica)
+
+| Pregunta | Lean ~112k | Base ~157k | Growth ~187k |
+|----------|------------|------------|--------------|
+| ¿Cuántos vendedores? | **4×** | **4×** | **4×** |
+| ¿Activas M12? | **~159** | **~159** | **~159** |
+| ¿Reserva caja extra? | **~490** | **~10,6k** | **~20k** |
+| ¿Dev? | Junior 600 | Mid 1.000 | Senior 1.800 |
+| ¿Cuándo elegir? | Bootstrap Carabobo | Más colchón sin cambiar curva | Máximo colchón + dev senior |
+
+Gabriel no necesita dominar todos los tiers en la primera lectura; **Lean + Hoja3 sección A** bastan para validar viabilidad del piloto.
 
 ---
 
@@ -227,9 +303,9 @@ Para contexto de negocio (TAM, moat, riesgos, propuesta de alianza): ver `RESUME
 |---------|------------------------------|
 | **Flujo Total** | Vista consolidada 5 años + VAN/TIR |
 | **Detallado de la inversión.** | Todas las líneas de gasto, Fase 0 y resumen lateral |
-| **Hoja3** | Resumen capital — **§A = total oficial** |
+| **Hoja3** | Resumen capital — **§A = total oficial ~112k** |
 | **Hoja1** | Vista por bloques (equipos, legal, MO, marketing…) |
-| **Hoja2** | Complemento de lectura (sensibilidad) |
+| **Hoja2** | Complemento de lectura (sensibilidad marketing) |
 | **ESTA SI VALE** | Unit economics + simulador mes a mes |
 | **Año 1** … **Año 5** | Proyección anual / mensual por año |
 | **Tasa Crecimiento** | Drivers de crecimiento año 2–5 |
@@ -242,6 +318,7 @@ Para contexto de negocio (TAM, moat, riesgos, propuesta de alianza): ver `RESUME
 - **Regulatorio:** Zonix no sustituye al farmacéutico titular ni al criterio médico; dictamen legal pendiente antes de Day-D público.
 - **Inflación VE:** cifras **mayo–junio 2026**; reconfirmación trimestral recomendada.
 - **Este documento** es guía de lectura del modelo; no sustituye asesoría contable, legal ni farmacéutica.
+- **No es solicitud de inversión** salvo acuerdo aparte.
 
 ---
 

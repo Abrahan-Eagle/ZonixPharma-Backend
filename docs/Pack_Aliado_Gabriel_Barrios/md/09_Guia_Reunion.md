@@ -12,7 +12,7 @@
 
 Zonix Pharma es un marketplace farmacéutico para Valencia: el paciente pide en la app, la farmacia de barrio despacha, su farmacéutico colegiado valida la receta cuando hace falta, y un partner de delivery hace la última milla. La farmacia paga **cuota 25 / 40 / 55 USD + un % moderado sobre GMV** — muy por debajo de PedidosYa (~20–30 % del ticket).
 
-El plan comercial usa **4 vendedores B2B (4× Sales)**, **Day-D en T+90** (tres meses de preparación), **~28 farmacias activas antes del lanzamiento**, **~40 en el mes 1** y **~159 al mes 12**. Queremos tu lectura de mercado, red local y riesgos — no un cheque en esta primera mesa.
+El plan comercial usa **4 vendedores B2B (4× Sales)**, **Day-D en T+90** (tres meses de preparación), **Fase 0 ~33.835 USD**, **caja Day-D ~78.153**, **~28 farmacias activas antes del lanzamiento**, **~40 en el mes 1** y **~159 al mes 12** con **caja M12 ~40.831**. Queremos tu lectura de mercado, red local y riesgos — no un cheque en esta primera mesa.
 
 ---
 
@@ -42,7 +42,7 @@ Gabriel conoce el mercado local; la reunión debe aprovechar eso: validar hipót
 ### Temas que conviene tener claros
 
 - **Estado actual:** pre-revenue; producto en staging; tiendas públicas en Fase 0 (primeros 90 días post-capital).
-- **Capital de referencia del piloto:** ~112 k USD (escenario Lean) — solo como contexto de viabilidad, no como ask a Gabriel por defecto.
+- **Capital de referencia del piloto:** ~112 k USD (escenario Lean, SAFE cap 600k) — solo como contexto de viabilidad, no como ask a Gabriel por defecto.
 - **Regulación Rx:** cada farmacia mantiene su farmacéutico responsable; dictamen abogado + asesor farmacéutico pendiente antes de Day-D público.
 - **Compromiso founder:** track record 8+ años en marketplaces; declarar % dedicación a Zonix vs otros proyectos si surge la pregunta.
 
@@ -55,6 +55,8 @@ Gabriel conoce el mercado local; la reunión debe aprovechar eso: validar hipót
 | ¿Por qué la farmacia pagaría? | Take-rate total **25/40/55 + % GMV** vs **20–30 %** de agregadores sobre el mismo volumen. |
 | ¿Es legal vender Rx digital? | Validación la hace el **farmacéutico de la farmacia**, no Zonix; marco regulatorio en revisión con asesores. |
 | ¿Qué pasa si PedidosYa baja precio? | Su modelo exige comisión alta al farmacéutico; el nuestro es SaaS + marketplace con margen acotado. |
+| ¿Cuánto capital y para qué? | **~112k Lean**: Fase 0 **~34k**, operación 12 meses, reserva mínima; **caja M12 ~41k**, **LTV/CAC ~7,2×**. |
+| ¿El producto está listo? | Staging/VPS hoy; tiendas **T+7–12** Fase 0; suite de pruebas backend verificada (re-ejecutar antes de demo formal). |
 
 ---
 
@@ -67,7 +69,7 @@ Gabriel conoce el mercado local; la reunión debe aprovechar eso: validar hipót
 | 10–15 | Solución Zonix | Marketplace + Rx + pagos Venezuela; **cuota 25/40/55 + % GMV**; sin flota propia |
 | 15–25 | Demo en vivo (opcional) | Flujo paciente → farmacia → farmacéutico → entrega |
 | 25–35 | Plan comercial | **T+0 → T+90 → M12**; **4× Sales**; metas **~28 / ~40 / ~159** farmacias |
-| 35–45 | Números de viabilidad | Fase 0 ~34 k USD; casi equilibrio operativo hacia M12; LTV/CAC ~7,2× (ARPF ~50 USD) |
+| 35–45 | Números de viabilidad | Fase 0 ~33,8 k; casi equilibrio operativo hacia M12; LTV/CAC ~7,2× (ARPF ~50 USD) |
 | 45–55 | Alianza posible | Dónde Morr aporta: intros, validación calle, gobierno local, riesgos |
 | 55–60 | Próximos pasos | Qué documentos revisar juntos; fecha de seguimiento |
 
@@ -96,11 +98,22 @@ Sin entrar en detalle técnico: lo importante es que el flujo es creíble para u
 - Nicho piloto: independientes y medianas Valencia metro (~80–100 target sobre ~226 puntos censados).
 - Competencia digital fuerte en cadenas; agregadores genéricos con comisión alta al independiente.
 
-### Ejecución
+### Ejecución y finanzas
 
 - **4 vendedores B2B** en calle desde T+30: ~800 visitas/mes en Valencia metro.
 - **Day-D T+90:** lanzamiento público con Meta + valla en zona piloto.
 - Curva farmacias: **~28 activas pre-Day-D**, **~40 M1**, **~97 M6**, **~159 M12**.
+- Burn promedio **~8.108 USD/mes**; ingresos M12 **~7.950** vs burn **~7.980** → casi equilibrio.
+
+### Escenarios de capital (solo si pregunta por inversión)
+
+| Tier | Capital | Cap SAFE | Equity ref. |
+|------|---------|----------|-------------|
+| **Lean** | ~112k | 600k | ~18,66% |
+| Base | ~157k | ~913k | ~17,23% |
+| Growth | ~187k | ~1,2M | ~15,55% |
+
+No presentar esto como ask a Gabriel salvo que él lo abra.
 
 ---
 
@@ -111,18 +124,60 @@ Sin entrar en detalle técnico: lo importante es que el flujo es creíble para u
 3. **Sugiere ajustes al plan:** anotar feedback (precio, zonas, ritmo); actualizar notas internas — no cambiar cifras del pack sin decisión founder.
 4. **No encaja ahora:** agradecer feedback honesto; mantener relación para intros futuras.
 
+### Próximos pasos genéricos (si hay química)
+
+- Email de seguimiento en 24 h con resumen de la conversación.
+- Compartir pack completo si aún no lo tiene.
+- Segunda sesión en 7–10 días: profundizar en `11_Propuesta_Farmacia.md` y `18_Guia_Modelo_Financiero.md`.
+- Si Gabriel conoce farmacias: acordar **2–3 intros discovery** sin compromiso comercial (entrevistas mom-test de pricing).
+
 ---
 
-## Qué revisar juntos
+## Qué nos gustaría que revises, Gabriel
 
 1. **¿El segmento beachhead (independientes Valencia) te parece el correcto?** ¿Qué barrios o corredores priorizarías tú?
 2. **Pricing 25/40/55 + % GMV:** ¿reacción esperada del dueño de farmacia frente a PedidosYa? ¿Necesitamos waiver promocional más amplio?
 3. **Calendario T+0 → Day-D T+90:** ¿realista con **4× Sales** y **~28 activas** antes del go-live?
-4. **Curva ~40 M1 → ~159 M12:** ¿coherente con tu experiencia en retail o servicios locales?
-5. **Partners logísticos y farmacéuticos:** ¿conoces empresas de delivery o contactos MPPS que debamos incluir en Fase 0?
-6. **Riesgos que no estamos viendo:** regulación, competencia, adopción paciente, inflación operativa.
+4. **Curva ~40 M1 → ~159 M12:** ¿coherente con tu experiencia en retail o servicios locales en Carabobo?
 
 Documentos hermanos útiles para la segunda sesión: `10_Plan_Lanzamiento.md`, `11_Propuesta_Farmacia.md`, `18_Guia_Modelo_Financiero.md`.
+
+---
+
+## Preguntas frecuentes (si la conversación se alarga)
+
+### Sobre el modelo
+
+| Pregunta | Respuesta corta |
+|----------|-----------------|
+| ¿Por qué híbrido fija + % y no solo comisión? | Take-rate total muy inferior al 20–30% GMV de PedidosYa; la fija da piso predecible. |
+| ¿Cuánto paga la farmacia? | **25/40/55 + % GMV** según volumen; ejemplo Pro 5k GMV → **~80 USD/mes**. |
+| ¿Y el repartidor? | El paciente paga envío a la **empresa partner**; Zonix cobra fee B2B al partner, no al agente. |
+
+### Sobre finanzas y capital
+
+| Pregunta | Respuesta corta |
+|----------|-----------------|
+| ¿Por qué ~112k? | Fase 0 **~33,8k** + operación 12 meses + reserva; **4× Sales**, Co-CEO, dev junior, HQ Carabobo. |
+| ¿Equilibrio cuándo? | Casi **M12** con **~159 activas** y ARPF **~50**; burn **~7.980** vs ingresos **~7.950**. |
+| ¿LTV/CAC? | **~7,2×** con CAC **139** y LTV **1.000** — placeholder hasta GMV real. |
+
+### Sobre legal y Rx
+
+| Pregunta | Respuesta corta |
+|----------|-----------------|
+| ¿Quién valida la receta? | El **farmacéutico colegiado de la farmacia**, no Zonix. |
+| ¿SAFE enforceable? | Template YC adaptado por abogado VE; cap **600k**, **~18,66%** ref. Lean. |
+| ¿Datos de salud? | Consentimiento explícito; textos en borrador hasta abogado pre-Day-D. |
+
+---
+
+## Qué NO prometer en esta reunión
+
+- No garantizar número de pedidos a una farmacia individual.
+- No firmar exclusividad con Morr ni con ningún aliado en la primera cita.
+- No presentar T&C o SAFE como versión legal final sin sello de abogado.
+- No cambiar cifras del pack (ARPF, CAC, curva) en vivo sin decisión founder.
 
 ---
 

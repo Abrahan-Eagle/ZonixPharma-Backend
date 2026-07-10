@@ -26,6 +26,16 @@ Tres escenarios de capital para **12 meses operativos** tras el Day-D (más **Fa
 
 ---
 
+## Por qué importa este documento para Gabriel
+
+No buscamos que audites cada línea como contador. Buscamos tu **juicio de consultoría** sobre tres preguntas:
+
+1. **¿Los sueldos de 4 vendedores a USD 350/mes son realistas en Valencia** para captar dueños de farmacia independiente — o perderemos talento comercial ante la competencia?
+2. **¿El HQ tipo casa (USD 500/mes) es creíble** para operar un piloto B2B en Carabobo, o conviene local comercial desde mes 1?
+3. **¿Lean (~112k) deja colchón suficiente** ante un trimestre de devaluación fuerte, o Morr recomendaría orientar al tier Base (~157k) desde el inicio?
+
+---
+
 ## Comparativa Lean / Base / Growth
 
 | Concepto | Lean (~112k) | Base (~157k) | Growth (~187k) |
@@ -54,7 +64,7 @@ Comisiones por firma van **aparte** del burn fijo.
 |-----|------|------|--------|
 | Founder CEO/CTO | 1.000 | 1.200 | 1.500 |
 | Co-CEO (comercial y operaciones) | 1.000 | 1.200 | 1.500 |
-| Dev (Flutter + backend) | **600** junior | **1.000** mid | **1.800** senior |
+| Dev (app + backend) | **600** junior | **1.000** mid | **1.800** senior |
 | Ventas B2B (×4, base c/u) | **4 × 350** | 4 × 400 | 4 × 450 |
 | CS + community manager | 400 | 500 | 600 |
 | Diseñador / marketing B2B | — | 300 | 150 |
@@ -67,18 +77,22 @@ Comisiones por firma van **aparte** del burn fijo.
 
 **Equipo Lean en palabras:** founder técnico + co-CEO comercial + dev junior + **4 cazadores de farmacia** + soporte al cliente + stack digital (IA, hosting, contabilidad) + oficina tipo casa en Valencia.
 
+**Narrativa comercial:** cada vendedor a **350 + 40 USD por firma** tiene incentivo a cerrar ~3–4 farmacias/mes para superar sueldo base. En **El Socorro**, una semana de visitas (20 farmacias contactadas, 5 conversaciones profundas) debería generar 1–2 firmas si el dolor de PedidosYa es real — **hipótesis a validar en T+60**.
+
 ---
 
 ## Escenario Lean — desglose del ~112k
 
 ### Gastos únicos (one-shots) — ~14.208 USD
 
-| Rubro | USD |
-|-------|-----|
-| Constitución C.A. + trámites HQ | 5.050 |
-| Introducción al mercado (web, brochures, tablets, visitas, video B2B) | 3.808 |
-| Oficina + equipos (depósito, adecuación, 4 PCs) | 5.350 |
-| **Total one-shots** | **~14.208** |
+| Rubro | USD | Qué cubre en Valencia |
+|-------|-----|----------------------|
+| Constitución C.A. + trámites HQ | 5.050 | Empresa, RIF, registro mercantil |
+| Introducción al mercado | 3.808 | Web, brochures, tablets para demo en farmacia, visitas, video B2B |
+| Oficina + equipos | 5.350 | Depósito, adecuación, 4 PCs para vendedores |
+| **Total one-shots** | **~14.208** | |
+
+**Riesgo:** trámites legales en VE pueden demorar más de 30 días — el calendario T+90 asume gestión paralela desde T+0.
 
 ### Burn mensual recurrente (componentes fijos)
 
@@ -91,19 +105,18 @@ Comisiones por firma van **aparte** del burn fijo.
 | Herramientas IA | 425 |
 | Contador + abogado | 330 |
 | Oficina (casa) | 500 |
-| Hosting, SaaS, Firebase SMS | 234 |
+| Hosting, SaaS, SMS verificación | 234 |
 | Meta Ads (800 M1–6 / 500 M7–12) | variable |
 | Valla pequeña (desde mes 3) | 350 |
 | Material + transporte + contingencia | ~1.240–1.320 |
 
 ### Tramos de burn (con buffer ~20%)
 
-| Tramo | Meses | Burn/mes |
-|-------|-------|----------|
-| A — sin valla, Meta 800 | 1–2 | **8.011** |
-| B — con valla, Meta 800 | 3–6 | **8.347** |
-| C — con valla, Meta 500 | 7–12 | **7.980** |
-| **Promedio anual** | 12 | **~8.108** |
+| Tramo | Meses | Burn/mes | Qué cambia |
+|-------|-------|----------|------------|
+| A — sin valla, Meta 800 | 1–2 | **8.011** | Solo digital; rampa comercial |
+| B — con valla, Meta 800 | 3–6 | **8.347** | Valla Av. Bolívar Norte activa |
+| C — con valla, Meta 500 | 7–12 | **7.980** | Recorte publicidad si hay tracción orgánica |
 
 ### Puente al capital total
 
@@ -115,6 +128,8 @@ Comisiones por firma van **aparte** del burn fijo.
 | **Total Lean** | **~111.988** |
 
 **Fase 0 (90 días pre-Day-D):** ~33.835 → **caja al Day-D ~78.153** → **caja M12 ~40.831**.
+
+**Lectura de riesgo:** la reserva explícita (~490 USD) es **mínima** — el colchón real está en el buffer 20% embebido en contingencia mensual. Si la devaluación supera ese buffer, activamos plan de contingencia (recorte valla, pausa 1 hire).
 
 ---
 
@@ -129,6 +144,8 @@ Comisiones por firma van **aparte** del burn fijo.
 - Fase 0 ~41.145; burn anual ~130.776.
 
 **Para quién:** si se quiere más holgura de marketing B2B y talento intermedio sin saltar al tier Growth.
+
+**Cuándo Morr recomendaría Base:** si Gabriel ve que **350/mes no atrae vendedores con red farmacéutica** en Valencia, o si el costo legal/contable real supera el one-shot de 5.050 USD.
 
 ---
 
@@ -147,11 +164,13 @@ Comisiones por firma van **aparte** del burn fijo.
 | Bloque | % aprox. del ~112k | Qué cubre |
 |--------|-------------------|-----------|
 | Nómina equipo (12 meses) | ~55% | Founder, co-CEO, dev, ventas, CS, legal/contable |
-| Marketing y captación | ~15% | Meta, valla, material, transporte |
-| Infra y herramientas | ~8% | Hosting, IA, Firebase, oficina |
+| Marketing y captación | ~15% | Meta, valla, material, transporte vendedores |
+| Infra y herramientas | ~8% | Hosting, IA, SMS, oficina |
 | One-shots Fase 0 | ~13% | Legal, PCs, intro mercado |
 | Fase 0 burn parcial | incluido arriba | 90 días pre-lanzamiento |
 | Reserva | <1% | Imprevistos explícitos (~490) |
+
+**Insight para consultoría:** más de la mitad del capital va a **personas en calle y soporte** — coherente con tesis «riesgo comercial, no técnico».
 
 ---
 
@@ -159,15 +178,29 @@ Comisiones por firma van **aparte** del burn fijo.
 
 Metodología: ~30% de costos en bolívares / ~10% en USD → **~20% de contingencia** ya incorporada en la línea mensual de material, transporte y contingencia. No es una partida separada que debas sumar otra vez.
 
+**Escenario extremo:** proyecciones externas citan inflación anual muy alta en 2026. Si devaluación trimestral >100%, el plan activa: congelar contrataciones, recortar valla, renegociar HQ, revisar sueldos en USD con buffer adicional.
+
 ---
 
-## Qué revisar juntos
+## Sensibilidad rápida (qué pasa si…)
+
+| Escenario | Impacto en cash M12 (orden de magnitud) |
+|-----------|----------------------------------------|
+| Solo **120 activas** M12 (vs 159) | Cash **~USD 25–32k** — aún positivo pero justo |
+| Burn +15% por inflación no cubierta | Cash M12 cae **~USD 8–12k** |
+| +1 vendedor no presupuestado | +**~4.200/año** base + comisiones — requiere tier Base |
+| Comisiones doble de lo modelado | Variable comercial sube; payback CAC se alarga |
+
+---
+
+## Qué nos gustaría que revises, Gabriel
 
 1. **¿Lean (~112k) es suficiente para Valencia?** — ¿Falta colchón comercial vs Base (~157k)?
 2. **4 vendedores a 350/mes** — ¿Es competitivo para captar farmacias independientes en Carabobo?
-3. **Oficina tipo casa (500/mes)** — ¿Alineado con operación local real?
-4. **One-shots legales (~5.050 en constitución pack)** — ¿Coincide con costos actuales de C.A. + trámites en el estado?
+3. **Oficina tipo casa (500/mes)** — ¿Alineado con operación local real o conviene local visible en Av. Bolívar?
+4. **One-shots legales (~5.050 en constitución)** — ¿Coincide con costos actuales de C.A. + trámites en el estado?
 5. **Equity ~18,66% por cap 600k** — ¿Cómo lo vería un inversor ángel local vs el benchmark LatAm (~10–12%)?
+6. **¿El gasto en valla (350/mes desde M3)** tiene sentido en Valencia metro, o Morr recomienda otro canal offline para farmacias?
 
 ---
 
@@ -176,6 +209,6 @@ Metodología: ~30% de costos en bolívares / ~10% en USD → **~20% de contingen
 - Cifras en **USD constantes**; redondeos en miles para lectura humana.
 - Comisiones de ventas por firma **no** están en el burn fijo mensual — van como variable comercial.
 - Base y Growth son **alternativas** con más colchón; el ask principal del piloto documentado es **Lean ~112k**.
-- Stretch **Blitz** (~185k, 6 vendedores) existe en el modelo interno pero **no** es el ask principal — omitido aquí para no confundir la conversación con Gabriel.
+- Escenario stretch con 6 vendedores (~185k) existe en el modelo interno pero **no** es el ask principal — omitido aquí para no confundir la conversación con Gabriel.
 - **No sustituye** presupuesto auditado ni asesoría contable/fiscal VE.
 - **No es oferta de valores** ni solicitud de inversión salvo acuerdo aparte.

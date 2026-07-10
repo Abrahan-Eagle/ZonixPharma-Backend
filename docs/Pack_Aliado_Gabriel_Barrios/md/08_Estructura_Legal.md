@@ -16,7 +16,7 @@
 |----------|---------|
 | **Vehículo** | **ZONIX PHARMA, C.A.** — Compañía Anónima, Registro Mercantil Carabobo |
 | **Instrumento** | **SAFE post-money cap** (template Y Combinator, adaptado localmente) |
-| **Monto Lean (ask principal)** | **~USD 112.000** |
+| **Monto Lean (ask principal)** | **~USD 112.000** *(111.988 en modelo)* |
 | **Cap post-money Lean** | **USD 600.000** |
 | **Equity ref. inversor Lean** | **~18,66%** *(112.000 ÷ 600.000)* |
 | **Founder hoy** | 100% acciones pre-inversión |
@@ -56,9 +56,9 @@
 | Cuenta bancaria empresa | ~5 días | 100 |
 | Sello digital + factura SENIAT | ~3 días | 200 |
 | Marca SAPI (paralelo, 60–90 días) | paralelo | 350 |
-| **Total referencia** | **~30 días + SAPI** | **~1.450** |
+| **Total referencia pack mínimo** | **~30 días + SAPI** | **~1.450** |
 
-El presupuesto Lean agrupa **~5.050 USD** en trámites operativos prioritarios al arranque (constitución ampliada con partidas HQ). Validar montos con abogado antes de ejecutar.
+El modelo financiero agrupa **~5.050 USD** en trámites operativos prioritarios al arranque (constitución ampliada con partidas HQ, municipales, bomberos). Validar montos con abogado antes de ejecutar — la tabla mínima y el Excel pueden diferir porque el Excel refleja costos «sinceros» de local operativo.
 
 ---
 
@@ -68,7 +68,7 @@ El presupuesto Lean agrupa **~5.050 USD** en trámites operativos prioritarios a
 
 Un **SAFE** (*Simple Agreement for Future Equity*) dice, en esencia:
 
-> *“Hoy recibes ~112.000 USD. Cuando hagamos una ronda futura con valuación de mercado, tu inversión se convierte en acciones. Si esa valuación supera el **cap** acordado, conviertes como si la empresa valiera **600.000 USD** — te protege el upside del inversor temprano.”*
+> *«Hoy recibes ~112.000 USD. Cuando hagamos una ronda futura con valuación de mercado, tu inversión se convierte en acciones. Si esa valuación supera el **cap** acordado, conviertes como si la empresa valiera **600.000 USD** — te protege el upside del inversor temprano.»*
 
 **Post-money cap (YC moderno):** el inversor sabe **desde hoy** qué porcentaje compra si el cap aplica (**~18,66%** en Lean).
 
@@ -92,6 +92,7 @@ Un **SAFE** (*Simple Agreement for Future Equity*) dice, en esencia:
 | **Lean (principal)** | **~112.000** | **600.000** | **~18,66%** |
 | Base | ~157.000 | ~913.000 | ~17,23% |
 | Growth | ~187.000 | ~1.205.000 | ~15,55% |
+| Blitz (6× Sales stretch) | ~185.000 | ~1.288.000 | ~14,36% |
 
 Lean es el **mínimo viable** documentado para piloto Carabobo con **4 vendedores** y dev junior.
 
@@ -152,11 +153,23 @@ El founder mantiene **>50%** — saludable para seguir liderando. Números exact
 | **SENIAT** | IVA 16%, ISLR, factura digital desde mes 2 |
 | **Laboral** | Equipo en **honorarios profesionales / freelance** en USD — sin nómina formal en piloto; migración post-Serie A |
 | **Farmacia VE** | Zonix **no** sustituye farmacéutico colegiado de cada farmacia; validación Rx en app + cumplimiento MPPS/INHRR |
-| **Datos personales / salud** | Consentimiento explícito, minimización, DPA con proveedores (hosting, Firebase, etc.) — textos **[PENDIENTE abogado]** |
-| **Marca** | Registro SAPI “Zonix Pharma” — 60–90 días, ~250–400 USD |
-| **Pagos** | Piloto: Zonix **no** es PSP centralizado; flujo documentado farmacia–paciente |
+| **Datos personales / salud** | Consentimiento explícito, minimización, acuerdos con proveedores (hosting, notificaciones push, verificación SMS) — textos **[PENDIENTE abogado]** |
+| **Marca** | Registro SAPI «Zonix Pharma» — 60–90 días, ~250–400 USD |
+| **Pagos** | Piloto: Zonix **no** es procesador de pagos centralizado; flujo documentado farmacia–paciente |
 
-**Riesgo laboral:** relaciones “freelance” con subordinación real pueden reclasificarse — contratos por entregables + asesor laboral antes de T+30.
+### Datos de salud — roles y responsabilidades
+
+| Rol | Quién | Función |
+|-----|-------|---------|
+| **Responsable del tratamiento** | **ZONIX PHARMA, C.A.** (una vez constituida) | Decide fines y medios del tratamiento de datos de usuarios |
+| **Responsables independientes** | **Cada farmacia afiliada** | Receta retenida, libro de control, dispensación en sucursal |
+| **Encargados (subcontratistas)** | Hosting, notificaciones push, verificación SMS, email | Tratan datos por cuenta de Zonix; lista cerrada y revisión anual |
+
+**Riesgo laboral:** relaciones «freelance» con subordinación real pueden reclasificarse — contratos por entregables + asesor laboral antes de T+30. Si una persona tiene horario fijo, exclusividad y remuneración recurrente, SUNASS puede reclasificar como laboral con prestaciones retroactivas.
+
+### Contrato marco farmacia–Zonix (mínimos)
+
+Debe cubrir: (1) quién valida Rx; (2) custodia de receta física; (3) uso de marca; (4) límites de responsabilidad; (5) tratamiento de datos del paciente; (6) salida de datos al cierre. Plantilla: abogado corporativo + visado **farmacéutico asesor** en cláusulas de dispensación.
 
 ---
 
@@ -164,9 +177,53 @@ El founder mantiene **>50%** — saludable para seguir liderando. Números exact
 
 Si el interesado fuera cadena, distribuidor o agregador (no ángel pre-seed):
 
-- **Red flags en term sheet:** exclusividad territorial, nación más favorecida comercial, acceso a datos de salud como moneda, veto en M&A.
-- **Datos de salud nunca** son contraprestación de inversión.
-- Todo término corporativo → **abogado cross-border**.
+| Red flag | Por qué importa |
+|----------|-----------------|
+| **Exclusividad** territorial | Bloquea firmar otras farmacias en el piloto |
+| **Nación más favorecida** comercial | Obliga siempre el mejor trato vs terceros |
+| Acceso a **datos de salud** como contraprestación | Los datos de salud **nunca** son moneda de negociación |
+| **Veto** en M&A o Serie A | Reduce opcionalidad de salida |
+
+Todo término corporativo → **abogado cross-border**.
+
+---
+
+## Single-founder y mitigación
+
+Zonix arranca con **un founder técnico** (CEO + CTO). Mitigación documentada:
+
+- **Co-CEO** para dirección comercial y operación.
+- **4× Sales B2B** en calle desde T+30.
+- Post-Serie A: primer hire técnico senior para desacoplar producto de la persona única.
+- Advisors potenciales mes 6–12: regulatorio farmacéutico (0,5–1% equity) y comercial retail VE (0,25–0,5%).
+
+Pool reservado post-SAFE: **~10%** para empleados clave y advisors; ampliación a 15–20% post Serie A.
+
+---
+
+## Riesgos legales y mitigaciones (resumen)
+
+| Riesgo | Probabilidad | Mitigación |
+|--------|--------------|------------|
+| Cambio regulación marketplace / Rx digital | Media | Asesor regulatorio + revisión Gaceta |
+| MPPS cuestiona validación digital | Baja–media | Trazabilidad + export audit log |
+| Reclasificación laboral freelance → nómina | Media | Contratos por entregables + asesor T+30 |
+| SENIAT exige factura digital antes de mes 2 | Media | Habilitar desde mes 1 |
+| Inversor SAFE pide exit antes de Serie A | Baja | Cláusula conversión en liquidity event |
+| Disputa contractual con farmacia | Media | T&C bilaterales + mediación CS |
+
+---
+
+## Documentos que recibe el inversor al cierre (referencia)
+
+1. SAFE firmado (PDF).
+2. Acta constitutiva y estatutos C.A. (~30 días post-wire).
+3. Registro Mercantil estampado + RIF.
+4. Cap table actualizado.
+5. Carta del founder: SAFE como única deuda al firmar.
+6. Pack operativo completo (este pack Gabriel + modelo Excel).
+
+Gabriel no necesita estos documentos para una reunión de alianza; solo si Morr evoluciona hacia intro inversor formal.
 
 ---
 
@@ -178,20 +235,19 @@ Si el interesado fuera cadena, distribuidor o agregador (no ángel pre-seed):
 | 1 | Constitución C.A.; cuenta empresa; traspaso patrimonial ordenado |
 | 1–2 | RIF + factura digital |
 | 2–3 | Marca SAPI (paralelo) |
-| 3 | **Day-D** — go-live piloto (T+90 desde wire) |
+| 3 | **Day-D** — go-live piloto (T+90 desde wire); **caja Day-D ~78.153** |
 | 4–6 | Reportes mensuales al inversor |
 | 7–12 | Reportes trimestrales |
 | 18–24 | Posible Serie A → **conversión SAFE** |
 
 ---
 
-## Qué revisar juntos
+## Qué nos gustaría que revises, Gabriel
 
-1. **C.A. en Carabobo** — ¿Algún requisito local adicional que Morr vea en consultorías similares?
-2. **Cap 600k / ~18,66%** — ¿Cómo lo percibe un ángel venezolano vs ticket ~112k?
-3. **Honorarios vs nómina** — Riesgo SUNASS en equipos de ventas con horario fijo.
-4. **Contrato marco farmacia–Zonix** — Cláusulas de Rx, datos del paciente y salida de la plataforma.
-5. **SAFE enforceability en VE** — ¿Abogados que recomiendes para adaptación YC + ley aplicable?
+1. **C.A. en Carabobo** — ¿Algún requisito local adicional que Morr vea en consultorías similares (municipales, bomberos, HQ)?
+2. **Cap 600k / ~18,66%** — ¿Cómo lo percibe un ángel venezolano vs ticket ~112k? ¿Es coherente con el riesgo del piloto pharma?
+3. **Honorarios vs nómina** — Riesgo SUNASS en equipos de ventas con horario fijo; ¿recomiendas asesor laboral local antes de contratar los 4 vendedores?
+4. **SAFE enforceability en VE** — ¿Abogados o contactos que recomiendes para adaptación YC + cláusula de ley aplicable?
 
 ---
 
@@ -202,3 +258,11 @@ Si el interesado fuera cadena, distribuidor o agregador (no ángel pre-seed):
 - Cap table Serie A y exit son **ilustrativos** — no promesa de ronda ni valuación futura.
 - Regulación farmacéutica (MPPS, INHRR, recetas) evoluciona; copy comercial y T&C requieren dictamen antes de Day-D público.
 - **No es oferta de valores** ni solicitud de inversión salvo acuerdo aparte y documentación legal definitiva.
+
+---
+
+**Abrahan Pulido**  
+Founder / CEO / CTO — Zonix Pharma  
+ing.pulido.abrahan@gmail.com · +58 412 4352014
+
+*Zonix Pharma — junio 2026*
