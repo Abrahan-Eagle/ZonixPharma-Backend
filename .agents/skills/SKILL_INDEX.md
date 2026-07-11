@@ -17,7 +17,7 @@
 | `cognitive-doc-design-ops` | local | passthrough | Redactar o mejorar README, RFC, onboarding o guía; Escribir descripción de PR o notas para review… |
 | `comment-writer-ops` | local | passthrough | Redactar comentario de PR o issue; Escribir feedback de code review para humano… |
 | `context-packs-ops` | local | passthrough | Modo research; Modo produce… |
-| `context-updater` | local | passthrough | — |
+| `context-updater` | local | passthrough | Cerrar sesión |
 | `deep-interview-ops` | local | overlay | Requisitos ambiguos |
 | `docs-alignment-ops` | local | passthrough | Actualizar docs tras cambio de código; Verificar que docs igualan comportamiento actual… |
 | `documentar-avances` | local | local-only | Finalizar tarea y documentar avances; Cerrar sesión con cambios relevantes |
@@ -58,7 +58,7 @@
 | `speckit-git-remote` | local | local-only | — |
 | `speckit-git-validate` | local | local-only | — |
 | `sql-optimization-patterns` | local | passthrough | — |
-| `strategic-compact-ops` | local | passthrough | Compactar contexto; Sesión larga sugerir compactación |
+| `strategic-compact-ops` | local | passthrough | Compactar contexto; Sesión larga sugerir compactación… |
 | `stripe-integration` | local | local-only | — |
 | `structured-commits-ops` | local | overlay | Crear commit |
 | `systematic-debugging` | local | passthrough | Encontrar bug o test fallido |
@@ -68,7 +68,7 @@
 | `verification-before-completion` | local | passthrough | Terminar módulo; Crear commit |
 | `webapp-testing` | local | passthrough | — |
 | `work-unit-commits-ops` | local | passthrough | Dividir implementación en commits reviewables; Preparar commits antes de abrir PR… |
-| `writing-plans` | local | passthrough | Planificar desarrollo |
+| `writing-plans` | local | passthrough | Planificar desarrollo; Iniciar módulo |
 | `zonix-ai-landing-pipeline` | local | local-only | Landing con IA, hero video loop, Nano Banana / Veo / Claude Design |
 | `zonix-analytics` | local | local-only | Dashboards y métricas admin/commerce |
 | `zonix-api-patterns` | local | local-only | Crear/modificar controladores o rutas |
