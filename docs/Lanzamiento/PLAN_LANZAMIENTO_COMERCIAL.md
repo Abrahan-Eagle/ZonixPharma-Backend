@@ -2,7 +2,7 @@
 
 > **Última actualización:** 11 junio 2026.
 > Documento que detalla el calendario operativo desde el cierre de inversión hasta el **Day-D** (lanzamiento público del piloto) y los primeros meses post-Day-D.
-> **Convención de tiempo:** **T+0** = cierre de inversión (entra el capital). **Day-D = T+90** = **día 0 del piloto en app** (M1 del modelo financiero en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)). Los **meses 1–12** del presupuesto/proyección cuentan **desde Day-D**, no desde el wire. **Fase 0 (T+0 → T+90):** cierre legal, equipo, HQ, tecnología, onboarding de farmacias y catálogo **antes** del lanzamiento público — el gasto de esos ~3 meses está en la **Fase 0** de la proyección (**~USD 33.835** + one-shots en §0.1 — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)), no duplicado en M1.
+> **Convención de tiempo:** **T+0** = cierre de inversión (entra el capital). **Day-D = T+90** = **día 0 del piloto en app** (M1 del modelo financiero en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)). Los **meses 1–12** del presupuesto/proyección cuentan **desde Day-D**, no desde el wire. **Fase 0 (T+0 → T+90):** cierre legal, equipo, HQ, tecnología, onboarding de farmacias y catálogo **antes** del lanzamiento público — el gasto de esos ~3 meses está en la **Fase 0** (**~USD 50.260** Lean v3.9.3 — [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md)), no duplicado en M1.
 
 ## 0. Hipótesis por fase + señal de pivot (Customer Development)
 
@@ -21,7 +21,7 @@ Regla: pivot documentado en VOLCADO + nota founder; **no** pivotar por una sola 
 
 **Eventos:**
 - Firma del SAFE.
-- Transferencia **~USD 111.988** (**Lean** — mínimo viable; Base recomendado = **~157k**; Growth = **~187k**) a cuenta personal del founder (transitoria) o cuenta empresa si ya está abierta.
+- Transferencia **USD 210.760** (**Lean Excel v3.9.3**) a cuenta personal del founder (transitoria) o cuenta empresa si ya está abierta.
 - Reunión kick-off **founder + Co-CEO** con abogado y contador.
 - Comunicación al inversor: confirmación de recepción + plan de los próximos 30 días.
 

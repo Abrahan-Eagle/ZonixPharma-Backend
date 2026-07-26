@@ -1,5 +1,8 @@
 # Alineación plan de Lanzamiento vs producto (software)
 
+> **`[OBSOLETO]` parcialmente:** Fase 0 **~33.835** = legado. Canon = **50.260** / SAFE **210.760** (26 jul 2026).
+
+
 > **Fecha:** 22 junio 2026 (refresh post-auditoría forense v2).  
 > **Estado del pack:** **WIP** — documentos en mejora continua; este informe no es dictamen final ni cierre de data room.  
 > **Base técnica:** [../ANALISIS_TECNICO_COMPLETO_2026-05.md](../ANALISIS_TECNICO_COMPLETO_2026-05.md) (repos Backend + Frontend).  

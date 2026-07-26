@@ -75,7 +75,7 @@ Contar **farmacias independientes y medianas** en **todo el estado Carabobo** (n
 
 | Meta territorial | Vendedores mínimo año 1 | Tier modelo | Firmas Y1 ref. |
 |------------------|-------------------------|-------------|----------------|
-| **Carabobo conservador (~159 activas M12)** | **4× Sales** | **Lean ~112k** / **Base ~157k** / **Growth ~187k** | ~185 firmas, ~159 activas M12 |
+| **Carabobo conservador (~159 activas M12)** | **4× Sales** | **Lean ~211k (210.760 Excel)** / **Base ~157k** *(hist.)* / **Growth ~187k** *(hist.)* | ~185 firmas, ~159 activas M12 |
 | **Carabobo agresivo (>80% independientes)** | **6× Sales** | **Blitz ~185k** *(stretch)* | **~279 firmas, ~238 activas M12** |
 | **150+ activas con visita mensual presencial sostenida** | **6–8× Sales** | Blitz o post-Serie A | Validar post-censo §7 |
 

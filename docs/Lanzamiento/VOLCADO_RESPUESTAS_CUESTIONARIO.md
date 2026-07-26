@@ -61,7 +61,7 @@ Ingeniero en Informática (IUTVAL, 2013–2018) con **más de 8 años** construy
 | Tipo (ángel / fondo / family office) | [PENDIENTE] |
 | Inversiones previas en LatAm | [PENDIENTE] |
 | Inversiones en farmacéutico o salud | [PENDIENTE] |
-| Ticket esperado (USD) | [PENDIENTE — p. ej. USD 25k / 50k / **~112k** (Lean Valencia) / **~157k** (Base recom.) / **~187k** (Growth Carabobo)] |
+| Ticket esperado (USD) | [PENDIENTE — p. ej. USD 25k / 50k / **210.760** (Lean Excel) / **~157k** (Base hist.) / **~187k** (Growth hist.)] |
 | Disponibilidad para reunión | [PENDIENTE] |
 | Cómo lo conoces | [PENDIENTE — referido / contacto frío / etc.] |
 | Próximo paso confirmado | [PENDIENTE] |
@@ -201,7 +201,7 @@ Contratar **cuatro** personas en este rol (quinta columna opcional si se evalúa
 - [ ] Confirmar zona piloto inicial: Bella Florida + El Socorro O Bella Florida + San Diego.
 - [ ] Confirmar contrato **HQ casa** (USD 500/mes objetivo) desde mes 1 operativo.
 - [ ] Confirmar mes de activación de valla publicitaria (mes 3 base).
-- [x] Confirmar sueldo founder: **USD 1.000/mes** en burn **Lean ~112k** — [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.2.
+- [x] Confirmar sueldo founder: **USD 1.000/mes** en burn **Lean Excel 210.760** (~12.125/mes) — [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.2.
 - [ ] Confirmar política de equity con futuros empleados (vesting estándar 4 años / cliff 1 año).
 - [ ] Aprobar el SAFE template adaptado por el abogado.
 

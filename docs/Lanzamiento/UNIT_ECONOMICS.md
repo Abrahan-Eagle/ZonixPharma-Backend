@@ -1,6 +1,6 @@
 # Unit Economics — Zonix Pharma
 
-> **Última actualización:** 22 junio 2026 (anclas **v3.8.2**: **4× Sales** Lean, burn **8.108**, casi equilibrio M12).
+> **Última actualización:** 26 julio 2026 (UE ARPF/CAC/LTV sin cambio; burn Lean pitch = Excel **~12.125**/mes / **145.500**/Y1. Cifras **~8.108** abajo = legado / BE formula hist. — marcar contexto).
 > Documento que explica cómo gana dinero Zonix Pharma a nivel de farmacia individual.
 > Cifras base propagadas al [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md), [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) y al [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md).
 
@@ -130,11 +130,11 @@ Payback = CAC / ARPF
 Definición: mes en el que **revenue mensual ≥ burn mensual**.
 
 ```
-Burn promedio mensual (**Lean**, año 1) ≈ USD 8.108
+Burn promedio mensual (**Lean Excel**, año 1) ≈ USD **12.125** *(legado 8.108 = `[OBSOLETO]` para pitch)*
 Revenue mensual necesario (referencia) ≈ mismo orden que burn por tramo
 Farmacias activas necesarias (ARPF placeholder ~50) ≈ 7.980 / 50
                              ≈ **160** farmacias (tramo C M7–12, Lean)
-Promedio anual burn ÷ 50 ≈ 8.108 / 50 ≈ **162** farmacias (Lean)
+Promedio anual burn ÷ 50 ≈ **12.125 / 50 ≈ 243** farmacias (Lean Excel @ ARPF 50). *(Fórmula legado 8.108/50 ≈ 162 = hist.)*
 → equilibrio teórico Lean: **~160 activas** (caso central modelo **~159** M12)
 
 > **Base ~157k:** burn promedio **~USD 10.898**/mes ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S4) — equilibrio teórico **~218 activas** (~162 en sensibilidad MODELO §S4.2 con ARPF ~50).
@@ -205,7 +205,7 @@ En operación real **no** hay una sola cohort: cada mes entran **nuevas** farmac
 - LTV: USD 437.
 - LTV/CAC: 3,4x.
 - Payback CAC: 3,7 meses.
-- **Break-even mensual (fórmula explícita):** con el mismo **burn de referencia Lean** (**~USD 8.108** promedio anual; **~USD 7.980** tramo C M7–M12 — [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.2) y **ARPF 35**, hacen falta **~212** farmacias activas (**8.108 ÷ 35**), **por encima** del caso central v3.3 con **ARPF ~50** y **4× Sales** (~**159** activas M12).
+- **Break-even mensual (fórmula explícita):** con burn Lean Excel **~USD 12.125** y **ARPF 35**, hacen falta **~347** farmacias (**12.125 ÷ 35**). Con **ARPF ~50** → **~243** activas. Curva comercial ref. **~159 M12** queda **bajo** BE al burn nuevo — **`[PENDIENTE FP&A]`** / sensibilidad.
 - **Implicación:** el equilibrio mensual queda **más lejos** que en el plan central; se necesitaría **más capital**, **recorte de burn** o **mejora de ARPF**/mix para extender runway (coherente con sensibilidad pesimista en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §7.1).
 
 ### Caso optimista
@@ -216,7 +216,7 @@ En operación real **no** hay una sola cohort: cada mes entran **nuevas** farmac
 - LTV: USD 1.375.
 - LTV/CAC: 18,3x.
 - Payback CAC: 1,4 meses.
-- **Break-even mensual (fórmula explícita):** con burn **~USD 8.108** y **ARPF 55** → **~135** farmacias (**8.108 ÷ 55**); con tramo **7.980** → **~132**. Orden de magnitud **por debajo** de las **~159** del caso **ARPF ~50** + **4× Sales** (§6 arriba).
+- **Break-even mensual (fórmula explícita):** con burn Excel **~USD 12.125** y **ARPF 55** → **~221** farmacias. *(Legado 8.108÷55 ≈ 135 = hist.)*
 - **Implicación:** el equilibrio mensual podría **adelantarse** vs. el caso central **solo si** se sostienen **ARPF ~55**, CAC bajo **y** el burn no sube; validar con FP&A y **§7** [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md). Año 2 con revenue mensual USD 12-15k sigue siendo **referencia** conservadora en PROYECCION §2.
 
 ## 10. Conclusión
@@ -240,6 +240,6 @@ En operación real **no** hay una sola cohort: cada mes entran **nuevas** farmac
 - [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) + [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx): consolidado gastos/ingresos/egresos y sensibilidad.
 - [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md): cómo se traduce a flujo mes a mes.
 - [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md): desglose histórico por línea (en actualización v3).
-- [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md): burn **Lean** (~USD **8.108**/mes promedio; tramos **8.011 / 8.347 / 7.980**) y **Base** (~**9.898**/mes).
+- [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx): burn **Lean Excel** (~USD **12.125**/mes; Y1 **145.500**). Tramos legado **8.011 / 8.347 / 7.980** = `[OBSOLETO]` para ask.
 - [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md): de dónde sale el SAM extendido.
 - [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md): fuentes de churn LatAm y benchmarks Farmalisto.

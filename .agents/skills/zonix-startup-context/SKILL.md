@@ -63,23 +63,26 @@ Zonix es **two-sided**: farmacia (supply) + paciente (demand). Implicaciones:
 
 | Tier | Capital pedido | SAFE cap post-money | Equity ref. | Burn prom. |
 |------|----------------|---------------------|-------------|------------|
-| **Lean** (mínimo) | USD **101.000** | **600.000** | ~16,8% | ~7.559/mes |
-| **Base** (recomendado) | USD **118.000** | **650.000** | ~18,2% | ~8.059/mes |
-| **Growth** (acelerado) | USD **135.000** | **720.000** | ~18,8% | ~8.691/mes |
+| **Lean** (mínimo / Excel v3.9.3) | **USD 210.760** *(≈211k)* | **600.000** | **~35,13%** | **~12.125**/mes |
+| **Base** (recomendado) | ~USD **157.268** *(≈157k)* *[hist. — recalibrar]* | ~**912.814** | ~17,23% | ~**10.898**/mes |
+| **Growth** (acelerado) | ~USD **187.478** *(≈187k)* *[hist. — recalibrar]* | ~**1.205.345** | ~15,55% | ~**12.698**/mes |
 
-**Prohibido:** llamar «Base 101k» o mezclar tiers en una misma tabla sin etiquetar columna.
+**Prohibido:** llamar Lean «112k» / «174k» / equity **18,66%** / **29,02%** como vigente; tiers **101/118/135k** (mayo 2026); mezclar columnas sin etiquetar. Fuente: [BRIEF_UNA_PAGINA.md](../../docs/Lanzamiento/BRIEF_UNA_PAGINA.md), [README pack](../../docs/Lanzamiento/README.md), xlsx Detallado.
 
 ## Anclas numéricas Lean (planning central)
 
-Solo **Lean** tiene tabla M1–M12 en PROYECCION §1.1; citar [docs/Lanzamiento/PROYECCION_FINANCIERA_12M.md](../../docs/Lanzamiento/PROYECCION_FINANCIERA_12M.md).
+Canon = Excel Detallado v3.9.3. Tabla M1–M12 detallada en PROYECCION §1.1 = **legado** + `[PENDIENTE FP&A]`. Citar [docs/Lanzamiento/PROYECCION_FINANCIERA_12M.md](../../docs/Lanzamiento/PROYECCION_FINANCIERA_12M.md).
 
 | Concepto | Valor |
 |----------|-------|
-| Fase 0 outflow | ~USD **28.057** |
-| Caja al Day-D | ~USD **72.943** |
-| Cierre M12 caja | ~USD **42.209** (sin waiver) |
-| Equilibrio mensual | **M11** (~**151** farmacias activas; ARPF ~50) |
-| Burn año 1 (tabla §1.1) | **90.702** |
+| TOTAL SAFE | **USD 210.760** |
+| Fase 0 outflow | **USD 50.260** |
+| Caja al Day-D | **USD 160.500** |
+| Burn M1–M12 | **USD 145.500** (~**12.125**/mes) |
+| Reserva | **USD 15.000** |
+| Cierre M12 caja | **`[PENDIENTE FP&A]`** (40.831 = legado burn ~8.1k) |
+| Equity ref. | **~35,13%** (210.760 / 600.000) |
+| Billing / waiver | Revenue §1.1 legado = ARPF agregada; waiver primeras 10 ≈ **−453** Y1 — cash con waiver `[PENDIENTE FP&A]` |
 
 ## Unit economics (placeholder hasta GMV piloto)
 

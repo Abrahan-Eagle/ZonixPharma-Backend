@@ -7,6 +7,36 @@
 
 ## Última actualización de contexto
 
+### Sync pack Lean → Excel 210.760 — 26 julio 2026
+
+- **Sweep residual:** CENSO / CUESTIONARIO / PERFIL / PROPUESTA_USUARIO / SUPUESTO_MKT / REGISTRO / VOLCADO + plantillas `PROMPT_MEJORAR_PACK` / `PROMPT_AUDIT_FORENSE` → **210.760**.
+- **Canon:** SAFE **210.760** = Fase 0 **50.260** + burn **145.500** + reserva **15.000**; Day-D **160.500**; equity **~35,13%** @ **600k**. Asks **174k / 112k** = obsoletos/históricos.
+- **Hecho:** BRIEF/README/CONTEXTO/CHECKLIST/MENSAJE + ESTRUCTURA/PROYECCION/PRESUPUESTO/MODELO.md/UNIT + skills `zonix-startup-context` / `zonix-financial-model`; xlsx Descargas → `docs/Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`.
+- **Pendiente:** cash M12 + tabla M1–M12 **`[PENDIENTE FP&A]`**; drift interno Excel (Flujo/ESTA 112k).
+
+### VPS Namecheap Quasar (CorralX + Zonix) — 24 julio 2026
+
+- **Decisión:** **2× Quasar** separados (no Magnetar compartido): Zonix Pharma = 1 Quasar; CorralX = 1 Quasar. Self-managed.
+- **Coste a presupuestar:** **~$381/año** renew (2× ~$190.56); no usar promo ~$309. Mes a mes ~$453/año. Ver [`VPS_COSTE_ANUAL_Y_AWS_VS_NAMECHEAP.md`](VPS_COSTE_ANUAL_Y_AWS_VS_NAMECHEAP.md).
+- **vs AWS:** Namecheap ahora (precio fijo, LEMP simple); AWS más adelante (HA/compliance/escalado) — no para el primer corte cPanel.
+- **Artefactos:** [`VPS_NAMECHEAP_QUASAR_RUNBOOK.md`](VPS_NAMECHEAP_QUASAR_RUNBOOK.md) + [`scripts/vps-quasar-bootstrap.sh`](../scripts/vps-quasar-bootstrap.sh). Puntero en [`DEPLOY_PHARMA_AIBLOCK.md`](DEPLOY_PHARMA_AIBLOCK.md).
+- **Pendiente humano:** comprar Quasar, pegar IP en el runbook, ejecutar bootstrap + migrar desde `pharma.aiblockweb.com`. Sin IP SSH no hay provision live.
+
+### Conciliación Lean v3.9.3 (xlsx Descargas + pitch) — 17 julio 2026
+
+- **Hecho:** reconciliación de `/home/aipp/Descargas/MODELO_FINANCIERO_170726 v3.xlsx` (backup `.bak`): one-shots **~22.365** + operativa **~27.895** = Fase 0 **~50.260** = 0a+0b+0c; validación **0**; burn M1–M12 **~123.352**; TOTAL SAFE **~174.102**; caja Day-D **~123.842**; equity ref. **~29,02%** con cap 600k `[PENDIENTE decisión cap]`.
+- **Decisiones:** amueblado HQ **1×2.250** (one-shot); alquiler Fase 0 **3×750** dentro de HQ+CapEx (750/mes en cronograma 0a/0b/0c) + 12×750 en burn; **sin ops recurrentes Fase 0** (cubiertas por dominio+hosting intro); CEO rol real; sin duplicar sales/tablets.
+- **Pitch actualizado:** BRIEF, README cifras, MENSAJE_ENVIO, CONTEXTO_PITCH, RESUMEN_ALIADO (tabla clave), PLAN_LANZAMIENTO (wire + Fase 0).
+- **No tocado:** `MODELO_FINANCIERO_ZONIX_PHARMA.md` / `.xlsx` del repo (canon anterior); PROYECCION §1.1 runway/cash M12 = **`[PENDIENTE FP&A]`**.
+
+### Ajuste billing pack ↔ PROYECCION §1.1 — 14 julio 2026
+
+- **Significado:** alinear cobro B2B del pack (cuota + % GMV + ajustes/waiver) con la ancla Lean M1–M12 en [PROYECCION_FINANCIERA_12M.md](Lanzamiento/PROYECCION_FINANCIERA_12M.md) §1.1 — no es un módulo de software ni un archivo `billing`.
+- **Canon §1.1 (sin waiver) — histórico hasta sync FP&A:** capital Lean **~111.988**; Fase 0 **~33.835**; caja Day-D **~78.153**; cash M12 **~40.831**. **Pitch vigente:** ver bloque v3.9.3 arriba.
+- **Billing documentado al pie de §1.1:** nota ARPF agregado + fila proxy **waiver primeras 10** (~−453 revenue Y1); cash M12 con waiver = `[PENDIENTE FP&A]` (el ~41.756 de B2B §11 es proxy heredado).
+- **Fuera de alcance esta sesión:** desglose Excel layout B (cuota/GMV/ajuste línea a línea) — spec en [MODELO_FINANCIERO_LAYOUT_PIZZA_QLQ_ESPECIFICACION.md](Lanzamiento/MODELO_FINANCIERO_LAYOUT_PIZZA_QLQ_ESPECIFICACION.md).
+- **Docs alineados:** este `active_context`, skill `zonix-startup-context`, plantilla `PROMPT_MEJORAR_PACK_LANZAMIENTO` (anclas). Auditorías forenses históricas que citan **42.209** / **72.943** quedan como registro, no como canon.
+
 ### Limpieza archivo Eats — junio 2026
 
 - **`docs/_archive_eats/` eliminada** del repo (pack Lanzamiento Eats duplicado). Historial recuperable vía git (commit anterior a eliminación).
@@ -110,17 +140,16 @@
 - **Guía:** [docs/zonix/SPEC_KIT_ZONIX.md](zonix/SPEC_KIT_ZONIX.md).
 - **Tests post-install:** `php artisan test --filter=OrderTest` OK; `flutter test` 216 passed.
 
-### Pack Lanzamiento — tiers Lean 101k / Base 118k / Growth 135k (18 mayo 2026)
+### Pack Lanzamiento — tiers Lean 101k / Base 118k / Growth 135k (18 mayo 2026) *(histórico — superseded)*
 
-- **Reestructuración:** antiguo «Base 101k» → **Lean (mínimo)**. **Base = 118k recomendado**. **Growth = 135k acelerado**. SAFE **600k / 650k / 720k**. Obsoletos **60k / 90k**.
-- **PROYECCION §1.1** = **Lean**; caja M12 **~42.209**; equilibrio **M11**.
-- **PRESUPUESTO:** [PRESUPUESTO_12_MESES_REFERENCIA.md](Lanzamiento/PRESUPUESTO_12_MESES_REFERENCIA.md) §1–§5 (fuente numérica única).
+- **Histórico mayo 2026:** Lean **101k** / Base **118k** / Growth **135k**; M12 **~42.209**; equilibrio **M11**. **Canon vigente jun/jul 2026:** Lean **~112k** / Base **~157k** / Growth **~187k**; M12 **~40.831**; casi BE **M12** — ver bloque «Ajuste billing pack» arriba y [PROYECCION §1.1](Lanzamiento/PROYECCION_FINANCIERA_12M.md).
+- **PRESUPUESTO:** [PRESUPUESTO_12_MESES_REFERENCIA.md](Lanzamiento/PRESUPUESTO_12_MESES_REFERENCIA.md) §1–§5.
 - **Pack externo:** sin auditorías Jarvis en carpeta Lanzamiento (contenido absorbido en docs de negocio).
 
-### Pack Lanzamiento — modelo operativo Lean (referencia)
+### Pack Lanzamiento — modelo operativo Lean (referencia vigente)
 
-- **Day-D = T+90**; **Fase 0 ~28.057**; caja Day-D **~72.943**; burn **7.462/7.798/7.431**; M12 **~42.209**; equilibrio **M11 ~151 activas**.
-- **Equipo Lean:** **9 FTE + 2 FL** (Co-CEO, 4× Sales, CS+CM, Marketing, Coordinador Partners, founder).
+- **Day-D = T+90**; **Fase 0 ~33.835**; caja Day-D **~78.153**; burn **8.011 / 8.347 / 7.980**; M12 **~40.831**; casi equilibrio **M12 ~159 activas** (ARPF ~50).
+- **Equipo Lean:** Founder + Co-CEO + Dev junior + **4× Sales** + CS+CM (ver PRESUPUESTO §1.1).
 - **Pendientes humanos:** GitHub/NDA, referencias, HQ casa, valla, abogado/farmacéutico — [VOLCADO](Lanzamiento/VOLCADO_RESPUESTAS_CUESTIONARIO.md), [CHECKLIST](Lanzamiento/CHECKLIST_PRE_INVERSOR.md).
 
 ---

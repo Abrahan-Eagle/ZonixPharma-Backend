@@ -1,20 +1,20 @@
 # Presupuesto 12 meses — referencia
 
-> **Última actualización:** 22 junio 2026 (v3.4 — **4× Sales** tiers + **Blitz 6×** ~185k stretch).
+> **Última actualización:** 26 julio 2026 (Lean **Excel v3.9.3** — SAFE **210.760**).
 > Documento que detalla **línea por línea** los gastos durante 12 meses para los 3 escenarios.
 > Las cifras están justificadas en [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md).
 > Cifras en **USD constantes**, con buffer 20% ya aplicado al total para cubrir devaluación bolívar.
 
 ## 1. Resumen ejecutivo de los 3 escenarios
 
-| Concepto | **Lean — 4× Sales (~112k)** | **Base — mercado (~157k)** | **Growth — pleno (~187k)** | **Blitz — 6× Sales (~185k)** |
+| Concepto | **Lean — 4× Sales (Excel ~211k)** | **Base — mercado (~157k hist.)** | **Growth — pleno (~187k hist.)** | **Blitz — 6× Sales (~185k hist.)** |
 |---|---|---|---|---|
-| Capital pedido | **~111.988** *(≈112k)* | **~157.268** *(≈157k)* | **~187.478** *(≈187k)* | **~184.878** *(≈185k)* |
+| Capital pedido | **210.760** *(≈211k)* | **~157.268** *(≈157k)* | **~187.478** *(≈187k)* | **~184.878** *(≈185k)* |
 | Runway | 12 meses post-Day-D | 12 meses post-Day-D | 12 meses post-Day-D | 12 meses post-Day-D |
-| Burn promedio mensual | **~8.108** | **~10.898** | **~12.698** | **~11.998** |
+| Burn promedio mensual | **~12.125** | **~10.898** *(hist.)* | **~12.698** *(hist.)* | **~11.998** *(hist.)* |
 | Activas M12 ref. | ~159 | ~159 | ~159 | **~238** |
 | SAFE post-money cap (ref.) | **USD 600.000** | **~USD 912.814** | **~USD 1.205.345** | **~USD 1.287.681** |
-| Equity ref. (capital/cap) | **~18,66%** | **~17,23%** | **~15,55%** | **~14,36%** |
+| Equity ref. (capital/cap) | **~35,13%** | **~17,23%** | **~15,55%** | **~14,36%** |
 | Diferencias clave | **4× @ 350**, Dev junior | **4× @ 400**, diseñador + Ads | **4× @ 450**, Dev senior | **6× @ 400**, curva ×1,5, reserva **25k** |
 
 > **Filosofía v3.4:** Lean/Base/Growth = **4× Sales**, misma curva. **Blitz** = stretch territorial Carabobo. Censo: [CENSO_FARMACIAS_CARABOBO_FASE0.md](CENSO_FARMACIAS_CARABOBO_FASE0.md).
@@ -81,7 +81,7 @@
 | B — valla pequeña, Meta 800 | 3–6 | **8.347** |
 | C — valla pequeña, Meta 500 | 7–12 | **7.980** |
 
-**Promedio Lean:** **~8.108**/mes → **97.290** anual.
+**Promedio Lean Excel:** **~12.125**/mes → **145.500** anual. *(Legado ~8.108 → 97.290 = `[OBSOLETO]`.)*
 
 #### 2.3.1 Desglose hosting / SaaS (fila **234** USD/mes Lean)
 
@@ -97,11 +97,11 @@
 | Concepto | USD |
 |---|---|
 | One-shots | **~14.208** |
-| Burn 12 meses | **97.290** |
+| Burn 12 meses | **145.500** |
 | Reserva imprevistos | **490** |
-| **Total Lean** | **~111.988** |
+| **Total Lean** | **210.760** |
 
-> **Puente Fase 0:** wire **~111.988** − Fase 0 **~33.835** = caja Day-D **~78.153**. Cash M12 teórico **~40.831** (4× Sales, casi equilibrio M12).
+> **Puente Fase 0:** wire **210.760** − Fase 0 **50.260** = caja Day-D **160.500**. Cash M12 **`[PENDIENTE FP&A]`** (40.831 = legado burn ~8.1k).
 
 ## 3. Escenario Base — USD ~157.000
 
@@ -115,10 +115,10 @@
 
 ## 5. Tabla comparativa rápida
 
-| Línea | Lean (~112k) | Base (~157k) | Growth (~187k) |
+| Línea | Lean (~211k / 210.760) | Base (~157k hist.) | Growth (~187k hist.) |
 |---|---|---|---|
-| **Capital pedido** | **~111.988** | **~157.268** | **~187.478** |
-| Burn prom. | **~8.108** | **~10.898** | **~12.698** |
+| **Capital pedido** | **210.760** | **~157.268** | **~187.478** |
+| Burn prom. | **~12.125** | **~10.898** *(hist.)* | **~12.698** *(hist.)* |
 | Sales en nómina | 4× @ 350 | 4× @ 400 | 4× @ 450 |
 | Territorio ref. | Carabobo bootstrap | Carabobo + reserva | Carabobo + colchón |
 | Dev | junior 600 | mid 1.000 | senior 1.800 |

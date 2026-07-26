@@ -2,7 +2,7 @@
 
 > **Última actualización:** 11 junio 2026.
 > **Solo equipo interno / HR** — **no incluir** en zip data room inversor. Para inversor: ver nómina resumida en [README.md](README.md) §3 y [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md).
-> Documento operacional para entrevistar candidatos según la **nómina Lean ~112k** ([README.md](README.md) §3). **Plantillas:** §2 Sales (4×), §3 CS+CM, §4 Marketing, §5 Coordinador Partners, §6–§7 freelance, **§8** Asesor regulatorio (**Base ~157k / Growth ~187k**). **Total Lean = 9 FTE + 2 freelance**. **Compensaciones:** [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.
+> Documento operacional para entrevistar candidatos según la **nómina Lean Excel ~211k (SAFE 210.760)** ([README.md](README.md) §3). **Plantillas:** §2 Sales (4×), §3 CS+CM, §4 Marketing, §5 Coordinador Partners, §6–§7 freelance, **§8** Asesor regulatorio (**Base ~157k / Growth ~187k**). **Total Lean = 9 FTE + 2 freelance**. **Compensaciones:** [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.
 > Las respuestas se vuelcan en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md).  
 > **Bloqueantes inversor (P0):** [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) — GitHub, % dedicación, referencias; solo el founder completa esas celdas.
 
@@ -226,7 +226,7 @@ Criterio de selección transversal: capacidad de **escuchar y registrar hechos**
 
 ¿Aceptas?
 
-## 8. Cuestionario específico — Asesor regulatorio farmacéutico (**Base ~157k / Growth ~187k** — no Lean ~112k)
+## 8. Cuestionario específico — Asesor regulatorio farmacéutico (**Base ~157k / Growth ~187k** *(hist.)* — no Lean Excel ~211k)
 
 ### 8.1 Track record
 

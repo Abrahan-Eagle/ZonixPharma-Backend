@@ -50,15 +50,15 @@ Net_revenue_marketplace = GMV × take_rate  // % en B2B §5
 
 **Antes de M1 (post-Day-D):**
 
-| Sub-fase | Outflow ref. Lean |
+| Sub-fase | Outflow ref. Lean (Excel v3.9.3) |
 |----------|-------------------|
-| 0a T+0–30 | ~13.133 (one-shots ~9.808 + burn parcial) |
-| 0b T+30–60 | 7.462 |
-| 0c T+60–90 | 7.462 |
-| **Total Fase 0** | **~28.057** |
-| **Caja Day-D** | **101.000 − 28.057 ≈ 72.943** |
+| 0a T+0–30 | **33.010** (one-shots + MO parcial) |
+| 0b/0c T+30–90 | **8.625** |
+| **Total Fase 0** | **50.260** |
+| **Wire SAFE** | **210.760** |
+| **Caja Day-D** | **210.760 − 50.260 = 160.500** |
 
-M1 = primer mes operación comercial en app (no repetir one-shots en M1–M12).
+M1 = primer mes operación comercial en app (no repetir one-shots en M1–M12). Cifras **101k / 28.057 / 72.943** = `[OBSOLETO]`.
 
 ## Escenarios (P10 / P50 / P90)
 
@@ -89,23 +89,24 @@ Salida: tabla «si X entonces runway / M11 break-even» con cita a línea del pa
 
 ## Checklist de coherencia (ejecutar en cada edición)
 
-- [ ] Tiers nombrados: Lean **101k**, Base **118k**, Growth **135k**
-- [ ] SAFE caps: 600k / 650k / 720k alineados con ESTRUCTURA_LEGAL
-- [ ] Suma burn mensual §1.1 = total año 1 declarado (**90.702** Lean vigente)
-- [ ] Fase 0 + caja Day-D + cierre M12 consistentes con README pack
-- [ ] ARPF y farmacias activas M11 equilibrio (~151) coherentes con burn tramo C (**7.431**)
-- [ ] CAC/LTV/payback cruzados con UNIT_ECONOMICS
+- [ ] Tiers: Lean **210.760** (Excel); Base **~157k** / Growth **~187k** = hist. hasta recalibrar
+- [ ] SAFE caps: Lean **600k**; Base/Growth según ESTRUCTURA_LEGAL
+- [ ] Burn Y1 Lean = **145.500** (~**12.125**/mes); no citar **90.702** / **97.290** / **8.108** como vigente
+- [ ] Fase 0 **50.260** + Day-D **160.500** + reserva **15.000** = README / BRIEF
+- [ ] Cash M12 y tabla §1.1 mes a mes = **`[PENDIENTE FP&A]`** (no inventar 40.831 como oficial)
+- [ ] Equity Lean **~35,13%**; no **18,66%** / **29,02%** / **16,8%** como ask vigente
+- [ ] CAC/LTV/payback cruzados con UNIT_ECONOMICS (UE B2B sin cambio)
 - [ ] Waiver promocional B2B §11 documentado aparte (fila «con waiver» en PROYECCION)
 
 ## Métricas inversor (marketplace farmacia)
 
 | Métrica | Fórmula / target piloto |
 |---------|-------------------------|
-| Burn mensual | Revenue − expenses (negativo hasta M11 Lean) |
-| Runway | Caja / burn neto |
+| Burn mensual | ~**12.125** Lean Excel (revenue − opex neto en P&L) |
+| Runway | Caja Day-D **160.500** / burn neto |
 | LTV/CAC | **~7,2x** (UNIT_ECONOMICS) |
 | Payback CAC | **~2,8 meses** |
-| Farmacias activas break-even | **~151** (Lean M11) |
+| Farmacias activas break-even | **~243** @ ARPF 50 / burn 12.125 (`[PENDIENTE]` vs curva ~159) |
 
 **No priorizar** en piloto: NDR, Rule of 40 SaaS, burn multiple ARR (sin ARR).
 
@@ -115,7 +116,7 @@ Salida: tabla «si X entonces runway / M11 break-even» con cita a línea del pa
 Dilución_ref ≈ Inversión / Cap_post_money
 ```
 
-Ej. Lean: 101k / 600k ≈ 16,8% — ver ESTRUCTURA_LEGAL para redondeo y pro-rata.
+Ej. Lean: **210.760 / 600.000 ≈ 35,13%** — ver ESTRUCTURA_LEGAL para redondeo y pro-rata.
 
 **Use of funds:** desglosar según PRESUPUESTO §2 (Fase 0, nómina, marketing, reserva); no inventar % sin ancla.
 

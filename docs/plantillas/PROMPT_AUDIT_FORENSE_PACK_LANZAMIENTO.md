@@ -65,18 +65,21 @@ Leer cada `SKILL.md` antes de lanzar workers.
 
 ## §C — Anclas inmutables (no negociables)
 
-Tomar de [README.md](../Lanzamiento/README.md) § cifras y [MODELO_FINANCIERO_ZONIX_PHARMA.md](../Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.md) (modelo **v3.8.2**):
+Tomar de [README.md](../Lanzamiento/README.md) / [BRIEF](../Lanzamiento/BRIEF_UNA_PAGINA.md) / Excel **v3.9.3** [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](../Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.xlsx). Asks **~112k / ~174k** = `[OBSOLETO]`.
 
-| Concepto | Lean | Base | Growth |
-|----------|------|------|--------|
-| Capital pedido | **~USD 111.988** *(≈112k)* | **~USD 157.268** *(≈157k)* | **~USD 187.478** *(≈187k)* |
+| Concepto | Lean (Excel) | Base | Growth |
+|----------|--------------|------|--------|
+| Capital pedido (TOTAL SAFE) | **USD 210.760** *(≈211k)* | **~USD 157.268** *(≈157k hist.)* | **~USD 187.478** *(≈187k hist.)* |
 | SAFE cap post-money | **600.000** | **~912.814** | **~1.205.345** |
-| Burn prom. mensual | **~8.108** | **~10.898** | **~12.698** |
-| Fase 0 outflow | **~33.835** | (ver PRESUPUESTO) | (ver PRESUPUESTO) |
-| Caja Day-D (T+90) | **~78.153** | — | — |
-| Cash M12 P50 | **~40.831** | — | — |
+| Equity ref. | **~35,13%** | **~17,23%** | **~15,55%** |
+| Burn prom. mensual | **~12.125** | **~10.898** *(hist.)* | **~12.698** *(hist.)* |
+| Burn M1–M12 | **145.500** | — | — |
+| Reserva | **15.000** | — | — |
+| Fase 0 outflow | **50.260** | (ver PRESUPUESTO) | (ver PRESUPUESTO) |
+| Caja Day-D (T+90) | **160.500** | — | — |
+| Cash M12 P50 | **`[PENDIENTE FP&A]`** | — | — |
 | ARPF ref. | **~50 USD** | idem | idem |
-| Farmacias M12 ref. | **~159** (4× Sales) | idem curva | idem curva |
+| Farmacias M12 ref. | **~159** *(curva legado)* | idem | idem |
 | Tests backend | **443+** (jun 2026) — verificar con `php artisan test`, no inventar | | |
 
 | Regla transversal | Valor |
@@ -297,7 +300,7 @@ Eres el auditor forense **exclusivo** de `docs/Lanzamiento/{FILE}`.
    - Score por archivo (27 filas)
    - Lotes autofix (A=P0 … D=P3)
    - **Anexo Research 2026:** URL, fecha consulta, dato, acción
-   - **Anexo Migración tiers 101→112k:** docs que aún citen cifras obsoletas
+   - **Anexo Migración tiers:** docs que aún citen **101k / 112k / 174k** como vigente → flag `[OBSOLETO]` vs Excel **210.760**
 7. Descartar datos web sin URL, sin fecha o de foros anónimos (`parallel-judge-ops`: real vs ruido).
 
 ---
@@ -436,14 +439,14 @@ Ejecuta [docs/plantillas/PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md](PROMPT_AUDIT_
 **One-liner:**
 
 ```
-Auditoría forense v3 pack Lanzamiento: PROMPT_AUDIT_FORENSE v2.0 — verify Excel v3.8.2 + 4 squads web 2026 + 27 doc workers (7 olas), juez mayor, autofix full (pack + MONTOS + REGISTRO) con diff. Anclas README/modelo ~112/157/187k. Delta vs AUDIT 2026-06-22. Sin commit.
+Auditoría forense pack Lanzamiento: PROMPT_AUDIT_FORENSE — verify Excel v3.9.3 + anclas Lean **210.760** / Fase 0 **50.260** / Day-D **160.500** / burn **145.500** / equity **~35,13%**. Base/Growth hist. ~157k/~187k. Cash M12 `[PENDIENTE FP&A]`. Sin commit.
 ```
 
 **Reglas:**
 
-- Anclas §C — tiers **~112k / ~157k / ~187k**; no recalcular PROYECCION §1.1.
+- Anclas §C — Lean **210.760** / Base·Growth **hist.**; no inventar cash M12 ni regenerar §1.1 sin OK.
 - Autofix full con diff; **sin commit/push**.
-- Delta vs AUDIT 2026-06-22 + migración tiers 101→112k.
+- Delta vs AUDIT 2026-07-26 + sync Excel; asks **112k / 174k** = `[OBSOLETO]`.
 - Producto pitch = solo Zonix Pharma.
 
 **Primera acción:** Fase 0c verify, luego Fase 0b — 4 squads research en un mensaje. Luego ola 1 doc workers.
@@ -471,7 +474,7 @@ Auditoría forense v3 pack Lanzamiento: PROMPT_AUDIT_FORENSE v2.0 — verify Exc
 | Permitido | Prohibido sin OK usuario |
 |-----------|---------------------------|
 | Actualizar fila MONTOS + URL + fecha consulta | Cambiar PROYECCION §1.1 Lean/Base/Growth |
-| Nota "benchmark web 2026" en PRESUPUESTO | Cambiar tiers **112k / 157k / 187k** |
+| Nota "benchmark web 2026" en PRESUPUESTO | Cambiar tiers **210.760 / ~157k hist. / ~187k hist.** |
 | `[VERIFICAR web 2026-Q2]` en REGISTRO | Cerrar pendiente legal con texto web |
 | Nueva sección en MONTOS, CHECKLIST o CENSO | Dictamen MPPS/INHRR como verdad legal |
 | `new_topics_not_in_pack` en informe juez | Inventar K-factor o tracción piloto |

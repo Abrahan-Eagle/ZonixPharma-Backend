@@ -1,5 +1,8 @@
 # Especificación layout Pizza QLQ → Zonix Pharma (opción B)
 
+> **Nota 26 jul 2026:** anclas regresión **111.988 / 33.835 / 18,66%** = legado. Canon pitch = **210.760 / 50.260 / ~35,13%**. Layout QLQ sigue útil como spec de presentación.
+
+
 > **Última actualización:** 23 junio 2026  
 > **Estado:** Spec de referencia — **no implementada** en el `.xlsx` generado.  
 > **Implementado hoy (opción A):** piel visual QLQ en [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx) **v3.9.0** — ver [`MODELO_FINANCIERO_ZONIX_PHARMA.md`](MODELO_FINANCIERO_ZONIX_PHARMA.md) §S0.  
@@ -96,7 +99,7 @@ Zonix B propuesto (mismas **filas** Pizza, distinto **contenido**):
 | Precio menudeo | Cuota Pro + Enterprise blend |
 | Cantidad ventas mes | Farmacias activas ref. Año 4 |
 | Ratio mayor/menudeo | Mix tier 60/30/10 |
-| Participación inversor | **SAFE equity ~18,66%** (no 70%) |
+| Participación inversor | **SAFE equity ~35,13%** Lean Excel (legado layout ~18,66%) — no 70% |
 | Tasa descuento | 25% |
 | Inversión inicial | −SAFE Lean wire |
 
@@ -124,7 +127,7 @@ Zonix B propuesto (mismas **filas** Pizza, distinto **contenido**):
 2. **Payback SAFE:** fórmulas CCF acum referencian filas actuales; desglose largo mueve filas VAN/TIR.
 3. **Disclaimer inversor:** layout 70/30 visual puede confundirse con term sheet SAFE — copy obligatorio en fila premisas.
 4. **Esfuerzo:** estimado **400–600 líneas** en generador + 2–3 días QA Excel manual.
-5. **Regresión anclas:** SAFE 111.988, Fase0 33.835, Day-D 78.153 **no deben cambiar** — solo presentación.
+5. **Regresión anclas (legado UI):** SAFE 111.988 / Fase0 33.835 / Day-D 78.153 = snapshot layout; **canon pitch = 210.760 / 50.260 / 160.500**. No usar legado como ask.
 
 ---
 

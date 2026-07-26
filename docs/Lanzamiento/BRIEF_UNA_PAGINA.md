@@ -1,6 +1,6 @@
 # Zonix Pharma — Brief de una página
 
-> **Última actualización:** 22 junio 2026 (v3.5 — **Lean+** operativo + tiers **Blitz 6×** stretch).
+> **Última actualización:** 26 julio 2026 (v3.9.3 — Lean **canon Excel**: capital **USD 210.760**; Fase 0 **50.260**; burn M1–M12 **145.500**; reserva **15.000**; Day-D **160.500**; equity **~35,13%** @ cap **600k**. Fuente: [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx) (= Descargas `MODELO_FINANCIERO_170726 v3.xlsx`). PROYECCION §1.1 / cash M12: **`[PENDIENTE FP&A]`**.)
 > Documento ancla del pack. Léase primero. Todas las cifras están detalladas en los documentos hermanos del directorio [docs/Lanzamiento/](README.md).
 
 ## Qué es
@@ -48,26 +48,27 @@
 - **Validación Rx por farmacéutico colegiado de la propia farmacia** dentro de la app, ya construida en backend. Modelo alineado a regulación farmacéutica VE *[PENDIENTE dictamen abogado + farmacéutico asesor antes de Day-D]*; Zonix **no** sustituye al farmacéutico titular de la farmacia.
 - **Métodos de pago manuales VE soportados nativos:** Pago Móvil C2P, transferencia, Zelle, Binance Pay USDT — sin pasarelas internacionales caras, sin Stripe, sin necesidad de cuenta empresarial extranjera para operar.
 - **Stack en staging/VPS** (go-live público T+7–12 Fase 0): backend con **443** tests pasando (re-verificar pre-reunión); frontend Flutter sin issues en analyze; Pusher + FCM integrados en código. **Release tiendas + Firebase OTP (SMS):** hitos **T+7–12** de Fase 0 — no asumir Play/App Store el día del wire ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md), [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md)).
-- **Equipo lean:** **4× Sales** + **Dev junior** en nómina en tier **Lean ~112k** (bootstrap **Carabobo independientes**). Runway **12 meses** con **~USD 112k** (mínimo viable). **Recomendado:** **~USD 157k** (Base — sueldos mercado + reserva). **Growth:** **~USD 187k** (Dev senior + colchón). Founder técnico: **Abrahan Pulido**.
+- **Equipo lean:** **CEO** + **Founder CEO/CTO** + **Co-CEO** + **4× Sales** + **Dev** en nómina en tier **Lean ~211k** (bootstrap **Carabobo independientes**). Runway **Fase 0 + 12 meses** post-Day-D con **USD 210.760**. **Base/Growth** (tiers previos ~157k/~187k) quedan como referencia histórica hasta recalibrar. Founder técnico: **Abrahan Pulido**.
 
 ### Liquidez y defensibilidad (marketplace)
 
-- **Oferta primero:** **4× Sales** + catálogo en farmacias piloto **antes** de tráfico masivo a pacientes; **~40 activas** en M1 ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.1).
+- **Oferta primero:** **4× Sales** + catálogo en farmacias piloto **antes** de tráfico masivo a pacientes; **~40 activas** en M1 ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.1 — curva `[PENDIENTE]` vs burn v3.9.3).
 - **Moat operativo:** Rx digital por farmacéutico de **cada** farmacia + **switching cost** (catálogo, historial, contrato híbrido) + pagos VE nativos — no solo «llegamos primero» (§2.11 CONTEXTO).
 - **Flywheel + 4 lados:** más farmacias → más pacientes → más GMV → más reinversión ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §4.4); modelo marketplace de cuatro lados (farmacia, paciente, delivery, farmacéutico) en [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md). Vista Business Model Canvas: CONTEXTO §2.12.
 
-### Equipo piloto Lean (~112k — 4× Sales bootstrap) — resumen
+### Equipo piloto Lean (~211k — 4× Sales + CEO) — resumen
 
 | Rol | Tipo | Compensación ref. (USD/mes) | Notas |
 |---|---|---|---|
+| CEO | FTE | **1.000** | Dirección general (rol adicional v3.9.3) |
 | Founder / CEO / CTO | FTE | **1.000** | Abrahan Pulido — producto + tech |
-| Co-CEO / CEO operativo | FTE | **1.000** | Comercial / operación / corporate |
-| **Dev (Flutter/Laravel)** | FTE | **600** | Junior — en nómina v3 |
+| Co-CEO / Head Sales&Ops | FTE | **1.000** | Comercial / operación / corporate |
+| **Dev (Flutter/Laravel)** | FTE | **1.000** | Junior — alineado a MO Fase 0 |
 | Sales B2B (**×4**) | FTE | **350** base + **40**/firma | Comisión a rep que cierra |
-| Customer Support + Community Manager | FTE | **400** | Soporte + comunidad |
-| Contador externo | Freelance | **130** | SENIAT / honorarios |
-| Abogado externo | Freelance | **200** | SAFE, contratos, T&C |
-| Asesor regulatorio farmacéutico | Externo | **120** | Solo **Base ~157k** / **Growth ~187k** |
+| Customer Support + Community Manager | FTE | **500** | Soporte + comunidad |
+| Contador + Abogado | Freelance | **800** | SENIAT + SAFE/contratos (paquete) |
+| Herramientas IA | Opex | **425** | Stack productividad |
+| Asesor regulatorio farmacéutico | Externo | **120** | Solo **Base / Growth** (tiers previos) |
 
 > Detalle burn y equipo: [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S1.2b, S3.2.
 
@@ -78,52 +79,49 @@
 - **SAM zona piloto (Valencia metro):** 30-50 farmacias primer trimestre operativo; foco HQ **San Diego / Av. Bolívar Norte** (ver [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md)).
 - **SOM / cierre año 1 (M12 post-Day-D):** **~159 farmacias activas** en el caso central Lean ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.1). Con **4× Sales**, modelo **híbrido** y **ARPF ~50** *(placeholder)*, **casi equilibrio mensual en M12** (revenue **~7.950** vs burn **~7.980**).
 
-### Tiers (Lean / Lean+ / Base / Growth / Blitz)
+### Tiers (Lean Excel v3.9.3 / Base / Growth — históricos)
 
-| Tier | Capital ref. | Comercial | Diferenciador vs tier inferior |
-|------|--------------|-----------|--------------------------------|
-| **Lean ~112k** | **~USD 111.988** | **4× Sales @ 350** | Bootstrap Carabobo — sueldos bajo mercado |
-| **Lean+ ~112k** *(operativo)* | **~USD 111.988** *(= Lean)* | **4× Sales @ 350**, curva **×1,15** | **BE ~M10**, **~183 activas M12** — sin 6 vendedores |
-| **Base ~157k** | **~USD 157.268** | **4× Sales @ 400** | Sueldos mercado + Google Ads B2B + diseñador + reserva **~10,6k** |
-| **Growth ~187k** | **~USD 187.478** | **4× Sales @ 450** | Dev senior + colchón **~20k** |
-| **Blitz ~185k** *(stretch)* | **~USD 184.878** | **6× Sales @ 400** | **+2 vendedores**, curva **×1,5**, **~238 activas M12**, reserva **25k** |
+| Tier | Capital ref. | Comercial | Diferenciador |
+|------|--------------|-----------|---------------|
+| **Lean ~211k** *(v3.9.3 Excel)* | **USD 210.760** | **4× Sales @ 350** + **CEO** | Bootstrap Carabobo — Fase 0 **50.260**; burn M1–M12 **145.500** |
+| **Base ~157k** *(hist. pack)* | **~USD 157.268** | **4× Sales @ 400** | Referencia previa — recalibrar vs Lean nuevo |
+| **Growth ~187k** *(hist. pack)* | **~USD 187.478** | **4× Sales @ 450** | Referencia previa — recalibrar vs Lean nuevo |
 
-> **Ask principal:** **Lean ~112k**. **Lean+** = mismo ticket con ejecución comercial +15% (alternativa a **Blitz** si no se duplica nómina Sales). Censo: [CENSO_FARMACIAS_CARABOBO_FASE0.md](CENSO_FARMACIAS_CARABOBO_FASE0.md).
+> **Ask principal (v3.9.3):** **Lean ~211k (USD 210.760)**. Equity ref. con cap **600k** ≈ **~35,13%**. Censo: [CENSO_FARMACIAS_CARABOBO_FASE0.md](CENSO_FARMACIAS_CARABOBO_FASE0.md).
 
-## Modelo financiero (escenario Lean — mínimo viable ~USD 112k)
+## Modelo financiero (escenario Lean Excel — USD 210.760)
 
-**Resumen por tier** (escalera capital — ver [README.md](README.md) § Cifras clave):
+**Resumen Lean v3.9.3** ([`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx) sync 26-jul-2026 = Descargas `MODELO_FINANCIERO_170726 v3.xlsx`):
 
-> **Nota v3.3 (jun 2026):** capital = suma bottom-up; **4× Sales** en los tres tiers. Fuente: [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md).
-
-| Concepto | Lean (~112k) | Base (~157k — recomendado) | Growth (~187k) |
-|---|---|---|---|
-| Capital pedido | **~USD 111.988** | **~USD 157.268** | **~USD 187.478** |
-| SAFE cap | **600.000** | **~912.814** | **~1.205.345** |
-| Burn prom. mensual | **~8.108** | **~10.898** | **~12.698** |
-
-**Detalle escenario Lean** (tabla M1–M12 en [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.1):
-
-| Concepto | Valor (Lean — tabla M1–M12 v3.3) |
+| Concepto | Lean v3.9.3 |
 |---|---|
-| Capital pedido | **~USD 111.988** *(≈112k)* |
+| Capital pedido (TOTAL SAFE) | **USD 210.760** *(≈211k)* |
+| SAFE cap ref. | **600.000** → equity **~35,13%** |
+| One-shots (legal+intro+HQ CapEx) | **USD 22.365** |
+| Fase 0 operativa (MO+mkt+transporte) | **USD 27.895** |
+| Fase 0 total (T+0→Day-D) | **USD 50.260** (0a **33.010** / 0b **8.625** / 0c **8.625**) |
+| Caja al Day-D (inicio M1) | **USD 160.500** |
+| Burn M1–M12 | **USD 145.500** (MO **~7.825**/mes + renta **750** + opex **~4.300**; ≈**12.125**/mes) |
+| Reserva caja | **15.000** |
+| Burn prom. mensual (post-Day-D) | **~USD 12.125** |
+| Identidad categorías = timing | **0** (validación Detallado) |
+| Identidad SAFE | **50.260 + 145.500 + 15.000 = 210.760** |
+
+> **Nota:** curva revenue / cash M12 / casi-equilibrio de [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 sigue anclada al burn legado (**~8.108**/mes) — **`[PENDIENTE FP&A]`** recalcular runway con burn Excel **~12.125**/mes (**145.500**/año).
+
+**Detalle escenario Lean** (tabla M1–M12 histórica en [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.1 — no actualizada en esta conciliación):
+
+| Concepto | Valor |
+|---|---|
+| Capital pedido | **USD 210.760** *(≈211k)* |
 | Runway | **Fase 0 (~90 días)** + **12 meses** post-Day-D |
-| Burn promedio mensual | **~USD 8.108** (tramos **8.011 / 8.347 / 7.980**) |
-| One-shots (Fase 0 / pre-Day-D) | **~USD 14.208** |
-| Fase 0 (T+0→Day-D T+90) + caja inicio M1 | **~USD 33.835** outflow Fase 0; **~USD 78.153** caja al Day-D |
-| Buffer ya incluido (inflación VE) | 20% |
-| Revenue acumulado año 1 | **~USD 59.968** |
-| FCF año 1 | **−USD 37.322** |
-| ARPF (revenue por farmacia) | USD **~50**/mes *(placeholder)* |
-| CAC | USD **139** |
-| Churn mensual (mediana SMB SaaS LatAm) | 5% |
-| LTV | USD 1.000 |
+| Burn promedio mensual | **~USD 12.125** |
+| One-shots | **USD 22.365** |
+| Fase 0 + caja Day-D | **USD 50.260** outflow; **USD 160.500** caja al Day-D |
+| Buffer ya incluido (inflación VE) | 20% (en contingencia del burn) |
+| ARPF / CAC / LTV | USD **~50** / **139** / **1.000** *(placeholders pack — sin cambio)* |
 | **LTV/CAC** | **~7,2x** |
-| Payback CAC | **~2,8 meses** |
-| **Equilibrio mensual (revenue ≥ burn)** | **Casi en M12** (~159 activas, ARPF ~50) |
-| **Cash cierre año 1** (M12 post-Day-D) | **~USD 40.831** (~36% del capital inicial) |
-| Año 2 proyección revenue conservadora | USD 96k–108k anuales |
-| Año 3 revenue ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §3.3) | **Conservador:** ~USD 180k–204k/año (sin Serie A). **Éxito / cobertura nacional:** hasta ~USD 480k/año. |
+| Cash / equilibrio M12 | **`[PENDIENTE FP&A]`** vs burn Excel **12.125**/mes |
 
 Detalle completo y construcción mes a mes en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md). Detalle por línea de gasto en [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md).
 
@@ -132,7 +130,7 @@ Detalle completo y construcción mes a mes en [PROYECCION_FINANCIERA_12M.md](PRO
 | Escenario | Tasa firma/mes | Churn | ARPF* | Activas M12 (ref.) | Revenue M12 (ref.) | Equilibrio mensual (ref.) | Cash cierre año 1 |
 |---|---|---|---|---|---|---|---|
 | Pesimista (probabilidad 20%) | **~50% plan** *(~8 firmas/mes ref.)* | 7% | USD 40 | **~120** | **~USD 4.800** | Post-año 1 + bridge | **~USD 25–32k** |
-| **Base (probabilidad 50%)** | **~15**/mes post-Day-D | **5%** | **USD ~50** | **~159** | **~USD 7.950** | **Casi M12** | **~USD 40.831** |
+| **Base (probabilidad 50%)** | **~15**/mes post-Day-D | **5%** | **USD ~50** | **~159** | **~USD 7.950** | **`[PENDIENTE FP&A]`** vs burn 12.125 | **`[PENDIENTE FP&A]`** *(40.831 = legado burn ~8.1k)* |
 | Optimista (probabilidad 30%) | **130% plan** *(ref. §7.3)* | 4% | USD 55 | **~200** | **~USD 11.000** | Año 2 si escala Sales | **~USD 48–55k** |
 
 \*Misma convención que la tabla anterior: ARPF es **referencia provisional** hasta recalibrar con GMV real y modelo híbrido ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5).
@@ -141,9 +139,9 @@ Detalle de las 3 sensibilidades en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FIN
 
 ## Instrumento de inversión propuesto
 
-- **SAFE post-money** con cap según tier: **600k (Lean ~112k)** · **~912.814 (Base ~157k — recomendado)** · **~1.205.345 (Growth ~187k)**.
-- **Ticket sugerido:** USD 25.000 / 50.000 / **~111.988** (lead mínimo) / **~157.268** (recomendado) / **~187.478** (acelerado).
-- **Equity implícito Lean:** **~18,66%** (111.988 / 600k). Base **~17,23%**; Growth **~15,55%**.
+- **SAFE post-money** con cap ref. **600k (Lean ~211k)** — equity **~35,13%**. Caps Base/Growth históricos: **~912.814** / **~1.205.345** *(recalibrar)*.
+- **Ticket sugerido:** USD 25.000 / 50.000 / **210.760** (lead Lean v3.9.3 Excel).
+- **Equity implícito Lean:** **~35,13%** (210.760 / 600k). Ask legado **~174.102 / ~29%** y **~112k / ~18,66%** = `[OBSOLETO]`.
 - **Cap table:** [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md).
 
 ## Equipo
@@ -164,7 +162,7 @@ Detalle de las 3 sensibilidades en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FIN
 | 1-3 | **Fase 0:** constitución, equipo, HQ (**San Diego / Av. Bolívar Norte**), stack en **VPS Nameshared**, OTP **Firebase**; onboarding farmacias piloto — **Day-D = T+90** (ver [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md)). |
 | 4-6 | **M1–M3 post-Day-D:** rampa a **~62 activas**; revenue > **USD 3.100**/mes hacia M3 (MODELO S3.1). |
 | 7-9 | **~108–130 activas**; validación Rx en producción *(objetivo operativo)*; revenue **~USD 5.400–6.500**/mes (M7–M9). |
-| 10-12 | **~141–159 activas**; **casi equilibrio M12**; cierre M12 con **~USD 40.831** cash y revenue mensual **~USD 7.950**. |
+| 10-12 | **~141–159 activas** *(curva ref.)*; cash/equilibrio M12 **`[PENDIENTE FP&A]`** vs burn **12.125**/mes; revenue ref. **~USD 7.950** (ARPF~50). |
 
 ## Riesgos principales y mitigaciones
 
@@ -179,7 +177,7 @@ Detalle de las 3 sensibilidades en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FIN
 
 ## Pregunta al inversor
 
-> ¿Te sumas a **~USD 112k** (Lean — **4× Sales** bootstrap Carabobo) vía SAFE cap **600.000**, con opción **~157k recomendado** / **~187k Growth**, para **Fase 0 + 12 meses** post-Day-D? Objetivo modelo central: **~USD 40.831** cash M12 y **~159 activas** — casi equilibrio mensual en M12 ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3).
+> ¿Te sumas a **USD 210.760** (Lean v3.9.3 Excel — **CEO + 4× Sales** bootstrap Carabobo) vía SAFE cap **600.000** *(equity ~35,13%)*, para **Fase 0 (50.260) + 12 meses** post-Day-D (burn **145.500**)? Cash M12: **`[PENDIENTE FP&A]`** — ver BRIEF § modelo y [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx).
 
 **Por qué ahora (sin urgencia falsa):** mercado pharma VE **+17,49%** unidades (Cifar); stack **~4 años** ya en staging; ventana **early mover** en independientes Valencia 2026 — el pack detalla supuestos y sensibilidad antes de comprometer capital.
 

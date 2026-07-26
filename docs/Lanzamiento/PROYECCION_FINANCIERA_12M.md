@@ -1,69 +1,51 @@
 # Proyección financiera 12 meses (+ año 2 y 3 + plan contingencia)
 
-> **Última actualización:** 22 junio 2026 (v3.4 — tiers **4× Sales** + stretch **Blitz 6× Sales**).
-> Documento que traduce los unit economics y el presupuesto a un flujo mes a mes para los 3 escenarios.
-> Cifras en USD constantes con buffer 20% ya aplicado al burn.
+> **Última actualización:** 26 julio 2026 (v3.9.3 — anclas Lean **canon Excel**).
+> **Canon Lean:** SAFE **USD 210.760** = Fase 0 **50.260** + burn M1–M12 **145.500** + reserva **15.000**; caja Day-D **160.500**; burn prom. **~12.125**/mes; equity **~35,13%** @ cap **600k**. Fuente: [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx).
+> **Tabla §1.1 M1–M12** (burn **8.011/8.347/7.980**, cash M12 **~40.831**) = **legado burn ~8.1k** — **`[PENDIENTE FP&A]`** regenerar mes a mes vs burn Excel. No usar 40.831 / 78.153 / 111.988 como ask vigente.
+> Cifras en USD constantes con buffer 20% ya aplicado al burn (Excel).
 
 ## 0. Fase 0 (T+0 → Day-D = T+90) — antes del mes 1 del modelo
 
-**Convención:** **T+0** = wire del capital **~USD 111.988** (Lean v3.3). **Day-D** = **T+90** = inicio del piloto público en app = **M1** de la tabla §1.1.
+**Convención:** **T+0** = wire del capital **USD 210.760** (Lean Excel v3.9.3). **Day-D** = **T+90** = inicio del piloto público en app = **M1**.
 
-### 0.1 Outflow Fase 0 (ancla v3.3)
+### 0.1 Outflow Fase 0 (ancla Excel v3.9.3)
 
 | Sub-fase | Período | Outflow (USD) |
 |---|---|---|
-| **0a** | T+0 a T+30 | **~17.813** (one-shots ~14.208 + burn parcial) |
-| **0b** | T+30 a T+60 | **8.011** |
-| **0c** | T+60 a T+90 | **8.011** |
-| **Total Fase 0** | | **~33.835** |
-| **Caja al Day-D (inicio M1)** | | **~78.153** *(~111.988 − 33.835)* |
+| **0a** | T+0 a T+30 | **33.010** |
+| **0b** | T+30 a T+60 | **8.625** |
+| **0c** | T+60 a T+90 | **8.625** |
+| **Total Fase 0** | | **50.260** |
+| **One-shots** (dentro Fase 0) | | **22.365** |
+| **Caja al Day-D (inicio M1)** | | **160.500** *(210.760 − 50.260)* |
 
-### 0.2 Tiers (Lean / Lean+ / Base / Growth / Blitz)
+### 0.2 Tiers (Lean Excel / Base / Growth / Blitz hist.)
 
 | Tier | Capital ref. | Equipo comercial | Territorio / meta | Firmas Y1 ref. | Activas M12 ref. |
 |------|--------------|------------------|-------------------|----------------|------------------|
-| **Lean** | **~112k** | **4× Sales** @ **350** (bootstrap) | **Carabobo independientes** (~150–250; [CENSO_FARMACIAS_CARABOBO_FASE0.md](CENSO_FARMACIAS_CARABOBO_FASE0.md)) | ~185 | ~159 |
-| **Lean+** *(operativo)* | **~112k** *(= Lean)* | **4× Sales** @ **350** | Misma geografía; curva **×1,15** | **~212** | **~183** |
-| **Base** | **~157k** | **4× Sales** @ **400** (piso mercado) | Carabobo + reserva/marketing | ~185 | ~159 |
-| **Growth** | **~187k** | **4× Sales** @ **450** (mercado pleno) | Carabobo + Dev senior + colchón | ~185 | ~159 |
-| **Blitz** *(stretch)* | **~185k** | **6× Sales** @ **400** | **Conquista Carabobo** (curva ×1,5) | **~279** | **~238** |
+| **Lean** *(Excel)* | **210.760** | **4× Sales** @ **350** | **Carabobo independientes** | ~185 | ~159 |
+| **Lean+** *(operativo hist.)* | *[OBSOLETO ask ~112k]* | **4× Sales** @ **350** | Curva **×1,15** | **~212** | **~183** |
+| **Base** *(hist.)* | **~157.268** | **4× Sales** @ **400** | Carabobo + reserva | ~185 | ~159 |
+| **Growth** *(hist.)* | **~187.478** | **4× Sales** @ **450** | Dev senior + colchón | ~185 | ~159 |
+| **Blitz** *(stretch hist.)* | **~184.878** | **6× Sales** @ **400** | Curva ×1,5 | **~279** | **~238** |
 
-> **Lectura v3.5:** **Lean+** = mismo capital que Lean, **+15%** en curva comercial → **BE ~M10** sin 6 vendedores. **Blitz** = **+2 vendedores** + curva **×1,5** — alternativa si se prefiere headcount sobre intensidad comercial.
+> **Ask principal:** Lean Excel **210.760**. Asks **~112k / ~174k** = `[OBSOLETO]`.
 
-### 0.2b Escenario Lean+ — resumen operativo *(mismo SAFE ~112k)*
+### 0.2b Burn Lean Excel (post-Day-D)
 
-| Concepto | Lean+ |
+| Concepto | Valor |
 |----------|-------|
-| Capital pedido | **~USD 111.988** *(= Lean)* |
-| Burn prom. mensual | **~USD 8.108** *(= Lean)* |
-| Firmas Y1 | **~212** |
-| Activas M12 | **~183** |
-| Revenue Y1 | **~USD 68.962** |
-| FCF Y1 | **−28.328** |
-| Cash M12 | **~USD 49.825** |
-| Equilibrio mensual | **M10** (rev **~8.107** vs burn **~7.980**) |
+| Burn M1–M12 | **145.500** |
+| Burn prom. mensual | **~12.125** |
+| Reserva | **15.000** |
+| Cash M12 | **`[PENDIENTE FP&A]`** |
 
-> Fuente: [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) §S1.3b. Tabla M1–M12: §1.5 abajo.
+> Tabla M1–M12 detallada: §1.1 abajo = **legado** hasta recalcular.
 
-### 0.3 Escenario Blitz — resumen agresivo *(stretch, no ask principal)*
+## 1. Modelo del escenario Lean — USD 210.760 (Excel) / tabla §1.1 legado
 
-| Concepto | Blitz ~185k |
-|----------|-------------|
-| Capital pedido | **~USD 184.878** |
-| SAFE cap | **~USD 1.287.681** |
-| Burn prom. mensual | **~USD 11.998** |
-| Fase 0 | **~USD 43.840** |
-| Caja Day-D | **~USD 141.038** |
-| Revenue Y1 | **~USD 89.952** |
-| FCF Y1 | **−54.018** |
-| Cash M12 | **~USD 87.020** |
-| Equilibrio mensual | **Casi M12** (rev **~11.925** vs burn **~12.020**) con **238 activas** |
-
-> Fuente bottom-up: [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) §S4. Pitch conservador: **Lean ~112k**; Blitz solo tras censo §7 o bridge explícito.
-
-## 1. Modelo del escenario Lean — USD ~112.000 (bootstrap 4× Sales Carabobo)
-
-> **Nota v3.3:** curva comercial **4× Sales** (escala 1,0). Con **ARPF ~50**, **M12** revenue **~7.950** vs burn **~7.980** → **casi equilibrio mensual** en cierre de año 1. Base/Growth añaden colchón y capacidad de marketing/regulatorio.
+> **`[PENDIENTE FP&A]`:** la tabla §1.1 usa burn legado **~8.1k**/mes y cash M12 **~40.831**. Canon vigente: burn **145.500** (~**12.125**/mes), Day-D **160.500**. Curva activas/revenue §1.1 se conserva como **referencia comercial** hasta regenerar.
 
 **Equipo Lean:** Founder + Co-CEO **1.000/mes** c/u · **Dev junior 600** · **4× Sales 350 base** · CS+CM **400** — ver [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §1.1.
 
@@ -85,7 +67,14 @@
 | 12 | 16 | 159 | 7.950 | 7.980 | −30 | **−37.322** |
 | **Total año 1** | **185** | **159** *(M12)* | **59.968** | **97.290** | **−37.322** | — |
 
-> **Lectura:** FCF acumulado operativo **~−37.322**. Con caja Day-D **~78.153**, cash en caja M12 **~40.831**. **M12** revenue **~7.950** vs burn **~7.980** → **casi equilibrio mensual** (±30 USD/mes con ARPF ~50).
+> **Lectura (legado):** FCF acum. **~−37.322** y cash M12 **~40.831** asumen Day-D **~78.153** y burn **~8.1k**. Con Excel: Day-D **160.500** y burn **12.125** → cash M12 **`[PENDIENTE FP&A]`**.
+
+> **Billing (ajuste pack):** la columna **Revenue** es **ARPF placeholder ~50 × activas** (cuota fija + % GMV agregados — [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §2). No desglosa mes a mes cuota / fee GMV / prorrateo; eso vive en política comercial [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5 y, si se implementa layout Excel B, como línea «ajuste billing» ([MODELO_FINANCIERO_LAYOUT_PIZZA_QLQ_ESPECIFICACION.md](MODELO_FINANCIERO_LAYOUT_PIZZA_QLQ_ESPECIFICACION.md) §3.2).
+
+| Escenario billing | Revenue Y1 (ref.) | Cash M12 (ref.) | Nota |
+|---|---|---|---|
+| **Sin waiver** *(tabla arriba — planning principal)* | **59.968** | **~40.831** | Caso central pitch |
+| **Con waiver primeras 10** (cuota USD 0 × 2 meses) | **~59.515** *(−~453)* | *[PENDIENTE FP&A]* | Delta ingreso proxy [PROPUESTA B2B §11](PROPUESTA_VALOR_CLIENTE_B2B.md). No restar a ciegas del cash §1.3 hasta recalibrar FP&A al firmar waiver en contrato. |
 
 ### 1.2 Hipótesis aplicadas
 
@@ -119,7 +108,7 @@
 
 Con **burn ~7.980** (tramo C) y **ARPF ~50**, el equilibrio mensual (~**160 activas**) se **roza en M12** (**~159 activas**, revenue **~7.950**). Mitigaciones si la curva real va más lenta: (1) **Lean+** — curva **×1,15** con mismo capital (**BE ~M10**, ver §1.5); (2) subir ARPF a **~53** (**BE ~M11** sin acelerar curva); (3) tier **Base ~157k**; (4) bridge trimestral; (5) **Blitz ~185k** (6× Sales).
 
-### 1.5 Escenario Lean+ — mismo capital ~112k, curva ×1,15 *(v3.5)*
+### 1.5 Escenario Lean+ — mismo capital ~112k `[OBSOLETO]`, curva ×1,15 *(v3.5 hist.)*
 
 > **Nota:** no es un SAFE distinto — mismo burn que Lean. Escenario operativo stretch documentado en [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) §S1.3b.
 
@@ -187,4 +176,4 @@ Hipótesis **~USD 480k/año** requiere puente farmacias × ARPF — **no ancla p
 
 ---
 
-**Tiers capital v3.5:** Lean **~112k** · **Lean+ operativo (mismo $)** · Base **~157k** · Growth **~187k** · Blitz **~185k** — ver [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) §S1.3–§S1.3b.
+**Tiers capital v3.9.3:** Lean **210.760 (Excel)** · Base/Growth/Blitz **históricos** — ver [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md). Ask **~112k** = `[OBSOLETO]`.

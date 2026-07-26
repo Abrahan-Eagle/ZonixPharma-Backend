@@ -63,7 +63,7 @@
 |----|------|-------|------------|
 | P2-01 | Nombre y datos del **primer inversor** candidato | Founder | CHECKLIST §1; VOLCADO §2 |
 | P2-02 | Tipo inversor (ángel / fondo / family office) | Founder | VOLCADO §2 |
-| P2-03 | **Ticket esperado** (25k / 50k / ~112k / ~157k / mayor) | Founder | VOLCADO §2 |
+| P2-03 | **Ticket esperado** (25k / 50k / **210.760 Lean Excel** / ~157k hist. / mayor) | Founder | VOLCADO §2 |
 | P2-04 | Experiencia inversor LatAm y en salud/farma | Founder | CHECKLIST §1 |
 | P2-05 | Disponibilidad reunión + próximo paso | Founder | VOLCADO §2 |
 | P2-06 | **NDA listo** si el inversor lo pide | Legal | CHECKLIST §1 |
@@ -118,7 +118,7 @@ Completar en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARI
 |------|----------------|
 | Founder nombre, contacto, LinkedIn | Abrahan Pulido — VOLCADO §1 |
 | Párrafo «por qué soy el founder» | VOLCADO §1.1 |
-| Tiers capital **~112k / ~157k / ~187k** y SAFE caps **600k / ~912.814 / ~1.205.345** | README §C, PRESUPUESTO §1, MODELO S1.3 |
+| Tiers capital **210.760 Lean Excel** / ~157k / ~187k *(Base/Growth hist.)* y SAFE caps **600k / ~912.814 / ~1.205.345** | README §C, PRESUPUESTO §1, MODELO S1.3 |
 | PROYECCION Lean M1–M12, Fase 0, caja M12 | PROYECCION §0–§1.3 |
 | Coherencia numérica pack (cifras ancla) | README, BRIEF, PROYECCION |
 | Tests backend **443** (verificar fecha pre-reunión) | README, BRIEF, VOLCADO §1.2 |
@@ -189,7 +189,7 @@ Completar en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARI
 | AUD-v2-01 | RESUMEN_GABRIEL «24 documentos» | → 23 canónicos + anexo (README) |
 | AUD-v2-02 | SUPUESTO trigger cash M6 **48.100** | → **46.395** (PROYECCION §1.3) |
 | AUD-v2-03 | PROYECCION suma firmas **185** vs total **175** | Nota FP&A §1.1 |
-| AUD-v2-04 | CHECKLIST Ask solo Lean 101k/600k | **Cerrado** Fase 3 — guion multi-tier ~112k/600k · ~157k/~912.814 · ~187k/~1.205.345 |
+| AUD-v2-04 | CHECKLIST Ask solo Lean 101k/600k | **Cerrado** Fase 3 — guion multi-tier; **vigente** Lean **210.760**/600k · Base/Growth hist. ~157k/~912.814 · ~187k/~1.205.345 |
 | AUD-v2-05 | ALINEACION CI «Eats» obsoleto | Refresh jun 2026; `ci.yml` + `main.yml` Pharma |
 | AUD-v2-06 | Smoke Rx no enlazado | → [SMOKE_RX_E2E.md](../SMOKE_RX_E2E.md) |
 | AUD-v2-07 | MENSAJE sin bridge T+0→Fase 0→Day-D | Párrafo en §1 y variante corta |

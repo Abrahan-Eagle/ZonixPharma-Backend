@@ -35,28 +35,30 @@ Actúas como **equipo de data room pre-seed** (panel JARVIS) para **Zonix Pharma
 
 ## §C — Cifras ancla INMUTABLES (no recalcular sin OK del usuario)
 
-> **Fuente canónica (jun 2026):** [README.md](../Lanzamiento/README.md) § cifras + [MODELO_FINANCIERO_ZONIX_PHARMA.md](../Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.md) **v3.8.2**. Verificar con `docs/Lanzamiento/_tools/verify_modelo_financiero.py`. Si `zonix-startup-context` dice 101/118/135k, tratar como **stale**.
+> **Fuente canónica (26 jul 2026):** Excel Detallado **v3.9.3** → [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](../Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.xlsx) + [README.md](../Lanzamiento/README.md) + [BRIEF_UNA_PAGINA.md](../Lanzamiento/BRIEF_UNA_PAGINA.md). Skills: `zonix-startup-context`. Asks **~112k / ~174k** = `[OBSOLETO]`.
 
-Modelo vigente **jun 2026**. Si detectas divergencia, **propón** corrección con diff; **no** cambies tiers ni tabla PROYECCION §1.1 sin aprobación.
+Modelo vigente **Lean Excel**. Si detectas divergencia, **propón** corrección con diff; **no** regeneres PROYECCION §1.1 fila a fila ni cash M12 sin OK FP&A.
 
-| Concepto | Lean | Base | Growth |
-|----------|------|------|--------|
-| Capital pedido | **~111.988** *(≈112k)* | **~157.268** *(≈157k)* | **~187.478** *(≈187k)* |
+| Concepto | Lean (Excel) | Base | Growth |
+|----------|--------------|------|--------|
+| Capital pedido (TOTAL SAFE) | **210.760** *(≈211k)* | **~157.268** *(≈157k hist.)* | **~187.478** *(≈187k hist.)* |
 | SAFE cap post-money | **600.000** | **~912.814** | **~1.205.345** |
-| Equity implícita (ref.) | **~18,66%** | **~17,23%** | **~15,55%** |
-| Burn promedio mensual | **~8.108** | **~10.898** | **~12.698** |
-| Fase 0 total outflow | **~33.835** | (ver PRESUPUESTO) | (ver PRESUPUESTO) |
-| Caja al Day-D (T+90) | **~78.153** | — | — |
-| Caja M12 P50 | **~40.831** | — | — |
-| Farmacias activas M12 ref. | **~159** | idem curva | idem curva |
+| Equity implícita (ref.) | **~35,13%** | **~17,23%** | **~15,55%** |
+| Burn promedio mensual | **~12.125** | **~10.898** *(hist.)* | **~12.698** *(hist.)* |
+| Burn M1–M12 | **145.500** | — | — |
+| Reserva | **15.000** | — | — |
+| Fase 0 total outflow | **50.260** | (ver PRESUPUESTO) | (ver PRESUPUESTO) |
+| Caja al Day-D (T+90) | **160.500** | — | — |
+| Caja M12 P50 | **`[PENDIENTE FP&A]`** | — | — |
+| Farmacias activas M12 ref. | **~159** *(curva legado)* | idem | idem |
 | ARPF placeholder | **~50** | **~50** | **~50** |
 | Tests backend (evidencia) | **443+** passed (jun 2026) | verificar con `php artisan test` | actualizar VOLCADO §1.2 |
 
-**Regla PROYECCION:** tabla **M1–M12 mes a mes solo en Lean** §1.1. Base/Growth = delta en [PRESUPUESTO_12_MESES_REFERENCIA.md](../Lanzamiento/PRESUPUESTO_12_MESES_REFERENCIA.md) §1.1.
+**Regla PROYECCION:** §0 = anclas Excel. Tabla **M1–M12** §1.1 = **legado** burn ~8.1k + `[PENDIENTE FP&A]`. Base/Growth = hist. en [PRESUPUESTO_12_MESES_REFERENCIA.md](../Lanzamiento/PRESUPUESTO_12_MESES_REFERENCIA.md).
 
-**Cascada obligatoria** si cambia **una** ancla (solo con OK usuario): `README.md` → `BRIEF_UNA_PAGINA.md` → `MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md` → `CHECKLIST_PRE_INVERSOR.md` → `UNIT_ECONOMICS.md` → `PROYECCION_FINANCIERA_12M.md` → `PRESUPUESTO_12_MESES_REFERENCIA.md` → `MODELO_FINANCIERO_ZONIX_PHARMA.md`.
+**Cascada obligatoria** si cambia **una** ancla (solo con OK usuario): `README.md` → `BRIEF_UNA_PAGINA.md` → `MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md` → `CHECKLIST_PRE_INVERSOR.md` → `UNIT_ECONOMICS.md` → `PROYECCION_FINANCIERA_12M.md` → `PRESUPUESTO_12_MESES_REFERENCIA.md` → `MODELO_FINANCIERO_ZONIX_PHARMA.md` (+ plantilla §C).
 
-**Anti-regresión:** no reintroducir tiers **101/118/135k**, Fase 0 **28.057**, Day-D **72.943**, M12 **42.209** sin contexto histórico explícito.
+**Anti-regresión:** no reintroducir como vigente tiers **101/118/135k**, ask **111.988 / 174.102**, equity **18,66% / 29,02%**, Fase 0 **28.057 / 33.835**, Day-D **72.943 / 78.153**, burn **8.108 / 90.702**, M12 **42.209 / 40.831** sin etiqueta *histórico* / `[OBSOLETO]`.
 
 ---
 
@@ -167,8 +169,10 @@ Prioridad:
 cd /ruta/ZonixPharma-Backend
 # Infra CorralX en pack (debe ser 0)
 grep -riE 'corralx\.com|test\.corral' docs/Lanzamiento/ || true
-# Coherencia anclas (manual): 111988|111.988, 33.835, 78.153, 40.831, 159 activas
-grep -rE '101\.000|118\.000|135\.000|28\.057|72\.943|42\.209' docs/Lanzamiento/*.md
+# Coherencia anclas vigentes: 210.760, 50.260, 160.500, 145.500, 15.000, 35,13%
+# Residuales (solo OK si [OBSOLETO]/hist./auditoría):
+rg -n '174\.?102|111\.?988|29,?02%|18,?66%|~112k|Lean ~112' docs/Lanzamiento/ docs/plantillas/PROMPT_MEJORAR_PACK_LANZAMIENTO.md
+grep -rE '101\.000|118\.000|135\.000|28\.057|72\.943|42\.209' docs/Lanzamiento/*.md || true
 # Tests si actualizas VOLCADO §1.2
 ./vendor/bin/phpunit
 ```
@@ -292,12 +296,13 @@ Copia desde aquí hasta el final del bloque:
 
 **Reglas rápidas:**
 - Producto del pitch = **solo Zonix Pharma** (`zonixpharma.com`). Portfolio con **Corral X** = OK en CV/VOLCADO.
-- **No** recalcular PROYECCION §1.1 ni tiers **101k / 118k / 135k** sin mi OK.
+- **No** recalcular PROYECCION §1.1 ni cambiar tiers Lean/Base/Growth sin mi OK.
 - **No** commit/push sin mi orden.
 - **No** inventar `[PENDIENTE]` del founder ni métricas de piloto.
 - Flujo: auditoría → lista P0–P2 → **esperar mi OK** → editar → actualizar ANALISIS_FORENSE (pasada N) → verificar cascada de anclas.
+- **Anti-regresión:** no reintroducir como vigente **101/118/135k**, **111.988 / 174.102**, **18,66% / 29%**, Fase 0 **28.057 / 33.835**, Day-D **72.943 / 78.153**, M12 **42.209 / 40.831** sin etiqueta *histórico*.
 
-**Anclas (no cambiar):** Lean **101k**, cap **600k**, Fase 0 **~28.057**, caja Day-D **~72.943**, equilibrio **M11 ~151**, M12 **~42.209**, waiver **~453**, tests **443+** (verificar CI).
+**Anclas (no cambiar sin OK):** Lean **210.760** / cap **600k** / equity **~35,13%**; Fase 0 **50.260**; Day-D **160.500**; burn Y1 **145.500** (~**12.125**/mes); reserva **15.000**; Base/Growth **~157k / ~187k** *(hist.)*; M12 cash **`[PENDIENTE FP&A]`**; curva ~159 / ARPF ~50 legado; waiver ingreso **~−453** (cash waiver `[PENDIENTE FP&A]`); tests verificar CI.
 
 **Skills:** `zonix-startup-context`, `zonix-financial-model`, `zonix-investor-materials`, `zonix-lanzamiento-roles`.
 
