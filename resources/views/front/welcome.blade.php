@@ -4,6 +4,19 @@
     @php
         $appStoreUrl = config('services.stores.app_store_url');
         $playStoreUrl = config('services.stores.play_store_url');
+        $androidApkUrl = config('services.stores.android_apk_url');
+        if ($playStoreUrl) {
+            $androidDownloadUrl = $playStoreUrl;
+            $androidIsDirectApk = false;
+        } elseif ($androidApkUrl) {
+            $androidDownloadUrl = str_starts_with($androidApkUrl, 'http')
+                ? $androidApkUrl
+                : url($androidApkUrl);
+            $androidIsDirectApk = true;
+        } else {
+            $androidDownloadUrl = '';
+            $androidIsDirectApk = false;
+        }
         $heroVideoMp4 = 'assets/video/hero/hero-loop.mp4';
         $heroVideoWebm = 'assets/video/hero/hero-loop.webm';
         $heroVideoEnabled = file_exists(public_path($heroVideoMp4)) || file_exists(public_path($heroVideoWebm));
@@ -25,9 +38,17 @@
                 <p class="mb-0 text-xs text-slate-500">Tus medicinas a un clic</p>
             </div>
         </div>
-        <button class="btn btn-zonix-primary rounded-pill px-4 font-bold small shadow-md" onclick="document.getElementById('download').scrollIntoView({behavior:'smooth'})">
-            Descargar
-        </button>
+        @if($androidDownloadUrl)
+            <a href="{{ $androidDownloadUrl }}"
+               @if($androidIsDirectApk) download="zonix-pharma.apk" @else target="_blank" rel="noopener noreferrer" @endif
+               class="btn btn-zonix-primary rounded-pill px-4 font-bold small shadow-md text-decoration-none">
+                Descargar
+            </a>
+        @else
+            <button class="btn btn-zonix-primary rounded-pill px-4 font-bold small shadow-md" onclick="document.getElementById('download').scrollIntoView({behavior:'smooth'})">
+                Descargar
+            </button>
+        @endif
     </div>
 
     <!-- Navbar -->
@@ -132,9 +153,11 @@
                                 <img src="{{ asset('assets/img/badges/app-store.png') }}" alt="Descargar en App Store — próximamente" class="h-100">
                             </a>
                         @endif
-                        @if($playStoreUrl)
-                            <a href="{{ $playStoreUrl }}" target="_blank" rel="noopener noreferrer" class="app-badge app-badge-depth">
-                                <img src="{{ asset('assets/img/badges/google-play.png') }}" alt="Descargar en Google Play" class="h-100">
+                        @if($androidDownloadUrl)
+                            <a href="{{ $androidDownloadUrl }}"
+                               @if($androidIsDirectApk) download="zonix-pharma.apk" @else target="_blank" rel="noopener noreferrer" @endif
+                               class="app-badge app-badge-depth">
+                                <img src="{{ asset('assets/img/badges/google-play.png') }}" alt="{{ $androidIsDirectApk ? 'Descargar APK Android' : 'Descargar en Google Play' }}" class="h-100">
                             </a>
                         @else
                             <a href="#" class="app-badge app-badge-depth" data-bs-toggle="modal" data-bs-target="#comingSoonModal">
@@ -752,9 +775,11 @@
                             <img src="{{ asset('assets/img/badges/app-store.png') }}" alt="Descargar en App Store — próximamente" class="h-100">
                         </a>
                     @endif
-                    @if($playStoreUrl)
-                        <a href="{{ $playStoreUrl }}" target="_blank" rel="noopener noreferrer" class="app-badge app-badge-depth">
-                            <img src="{{ asset('assets/img/badges/google-play.png') }}" alt="Descargar en Google Play" class="h-100">
+                    @if($androidDownloadUrl)
+                        <a href="{{ $androidDownloadUrl }}"
+                           @if($androidIsDirectApk) download="zonix-pharma.apk" @else target="_blank" rel="noopener noreferrer" @endif
+                           class="app-badge app-badge-depth">
+                            <img src="{{ asset('assets/img/badges/google-play.png') }}" alt="{{ $androidIsDirectApk ? 'Descargar APK Android' : 'Descargar en Google Play' }}" class="h-100">
                         </a>
                     @else
                         <a href="#" class="app-badge app-badge-depth" data-bs-toggle="modal" data-bs-target="#comingSoonModal">
@@ -902,9 +927,17 @@
                  <a href="{{ route('login') }}" class="nav-link-mobile">
                     <span class="material-symbols-outlined">storefront</span> Panel aliados
                 </a>
+                 @if($androidDownloadUrl)
+                 <a href="{{ $androidDownloadUrl }}"
+                    @if($androidIsDirectApk) download="zonix-pharma.apk" @else target="_blank" rel="noopener noreferrer" @endif
+                    class="nav-link-mobile text-navy font-bold">
+                    <span class="material-symbols-outlined">download</span> Descargar App
+                </a>
+                 @else
                  <a href="#download" class="nav-link-mobile text-navy font-bold">
                     <span class="material-symbols-outlined">download</span> Descargar App
                 </a>
+                 @endif
             @endauth
         </div>
         
@@ -916,8 +949,11 @@
             </div>
              <p class="text-xs text-slate-500 font-bold text-uppercase mb-3">Descarga la App</p>
              <div class="d-flex gap-2">
-                 @if($playStoreUrl)
-                     <a href="{{ $playStoreUrl }}" target="_blank" rel="noopener noreferrer" class="btn bg-navy text-white flex-grow-1 py-2 rounded-lg text-decoration-none d-flex align-items-center justify-content-center" aria-label="Google Play"><span class="material-symbols-outlined">android</span></a>
+                 @if($androidDownloadUrl)
+                     <a href="{{ $androidDownloadUrl }}"
+                        @if($androidIsDirectApk) download="zonix-pharma.apk" @else target="_blank" rel="noopener noreferrer" @endif
+                        class="btn bg-navy text-white flex-grow-1 py-2 rounded-lg text-decoration-none d-flex align-items-center justify-content-center"
+                        aria-label="{{ $androidIsDirectApk ? 'Descargar APK Android' : 'Google Play' }}"><span class="material-symbols-outlined">android</span></a>
                  @else
                      <button type="button" class="btn bg-navy text-white flex-grow-1 py-2 rounded-lg" data-bs-toggle="modal" data-bs-target="#comingSoonModal" aria-label="Google Play — próximamente"><span class="material-symbols-outlined">android</span></button>
                  @endif

@@ -24,6 +24,8 @@ Homestead.json
 .phpunit.result.cache
 
 /public/build
+# APK de piloto (binario grande; copiar local / subir FTP a mano)
+/public/downloads/*.apk
 /storage/pail
 .env.backup
 .env.production

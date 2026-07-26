@@ -5,6 +5,8 @@
 **Subdominio:** `https://pharma.aiblockweb.com`  
 **Workflow:** [`.github/workflows/main.yml`](../.github/workflows/main.yml) — push a rama **`main`**
 
+> **Migración VPS (decisión 2026-07-24):** objetivo de producción/piloto = **Namecheap Quasar** dedicado (no compartir con CorralX). Runbook + bootstrap: [`VPS_NAMECHEAP_QUASAR_RUNBOOK.md`](VPS_NAMECHEAP_QUASAR_RUNBOOK.md). Este doc FTP/aiblock sigue vigente hasta el corte DNS.
+
 ---
 
 ## 1. GitHub Actions secrets (obligatorio)
@@ -95,6 +97,16 @@ push main  →  main.yml
 **CI separado:** [`.github/workflows/ci.yml`](../.github/workflows/ci.yml) corre Pint + tests en PRs y en `dev`/`main`; no despliega.
 
 **Deploy manual:** Actions → *Deploy Zonix Pharma* → **Run workflow** (requiere secrets).
+
+### 3.1 APK Android (piloto — no va en git ni en el FTP de código)
+
+Descarga pública: `https://pharma.aiblockweb.com/downloads/zonix-pharma.apk` (local: `{APP_URL}/downloads/zonix-pharma.apk`). Config: `ANDROID_APK_URL` (default `/downloads/zonix-pharma.apk`). El binario (~96 MB) está en `public/downloads/` y está en `.gitignore`; el workflow de deploy **no** lo sube. Tras cada `flutter build apk --release`:
+
+```bash
+cp ZonixPharma-Front/build/app/outputs/apk/release/app-release.apk \
+  ZonixPharma-Backend/public/downloads/zonix-pharma.apk
+# Luego subir solo ese archivo por FTP a public/downloads/ en el hosting.
+```
 
 ---
 

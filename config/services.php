@@ -39,6 +39,8 @@ return [
     'stores' => [
         'app_store_url' => env('APP_STORE_URL', ''),
         'play_store_url' => env('PLAY_STORE_URL', ''),
+        // Descarga directa APK (piloto). Relativo a APP_URL o URL absoluta.
+        'android_apk_url' => env('ANDROID_APK_URL', '/downloads/zonix-pharma.apk'),
     ],
 
 ];
