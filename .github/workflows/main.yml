@@ -168,7 +168,9 @@ jobs:
           sleep 180
 
       - name: FTP-Deploy-Action retry 2
+        id: ftp_retry2
         if: steps.ftp_deploy.outcome == 'failure' && steps.ftp_retry.outcome == 'failure'
+        continue-on-error: true
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -193,6 +195,16 @@ jobs:
             **/public/icons/svg/**
             **/_ide_helper*
             **/.cursor*
+
+      # Namecheap a menudo cierra con FIN a mitad; el state incremental avanza en cada intento/Re-run.
+      - name: FTP deploy status
+        run: |
+          echo "FTP outcomes: deploy=${{ steps.ftp_deploy.outcome }} retry=${{ steps.ftp_retry.outcome }} retry2=${{ steps.ftp_retry2.outcome }}"
+          if [ "${{ steps.ftp_deploy.outcome }}" = "success" ] || [ "${{ steps.ftp_retry.outcome }}" = "success" ] || [ "${{ steps.ftp_retry2.outcome }}" = "success" ]; then
+            echo "Al menos un intento FTP terminó sin error."
+          else
+            echo "WARN: todos los intentos FTP reportaron fallo (FIN típico). El state incremental puede estar casi completo; Re-run job si falta vendor."
+          fi
 
       - name: Set directory permissions
         run: |
