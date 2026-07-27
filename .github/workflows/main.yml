@@ -97,7 +97,7 @@ jobs:
         run: rm -f .env .env.testing
 
       # FTP alineado a CorralX-Backend: v4.4.0; vendor/ SÍ se sube (composer --no-dev en runner).
-      # Extra Zonix: tests/docs/agents/specs, icons/svg. Retry ante FIN en Namecheap.
+      # Extra Zonix: tests/docs/agents/specs, icons/svg. Retry + cooldown ante FIN/ECONNREFUSED Namecheap.
       - name: FTP-Deploy-Action
         id: ftp_deploy
         continue-on-error: true
@@ -126,8 +126,49 @@ jobs:
             **/_ide_helper*
             **/.cursor*
 
-      - name: FTP-Deploy-Action retry
+      - name: Wait before FTP retry
         if: steps.ftp_deploy.outcome == 'failure'
+        run: |
+          echo "Cooldown 3m after FIN/ECONNREFUSED..."
+          sleep 180
+
+      - name: FTP-Deploy-Action retry
+        id: ftp_retry
+        if: steps.ftp_deploy.outcome == 'failure'
+        continue-on-error: true
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          timeout: 1200000
+          state-name: zonixpharma-ftp-deploy-state
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.env
+            **/.env.*
+            **/public/storage
+            **/public/storage/**
+            **/tests/**
+            **/.agents/**
+            **/.specify/**
+            **/specs/**
+            **/docs/**
+            **/.github/**
+            **/public/icons/svg/**
+            **/_ide_helper*
+            **/.cursor*
+
+      - name: Wait before FTP retry 2
+        if: steps.ftp_deploy.outcome == 'failure' && steps.ftp_retry.outcome == 'failure'
+        run: |
+          echo "Cooldown 3m before second retry..."
+          sleep 180
+
+      - name: FTP-Deploy-Action retry 2
+        if: steps.ftp_deploy.outcome == 'failure' && steps.ftp_retry.outcome == 'failure'
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
