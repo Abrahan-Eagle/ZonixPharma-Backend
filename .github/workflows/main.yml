@@ -68,6 +68,13 @@ jobs:
       - name: Install production PHP dependencies
         run: composer install --no-dev --optimize-autoloader --no-interaction
 
+      # Namecheap FIN rompe vendor/ a medias; un solo tar.gz es más fiable que miles de archivos FTP.
+      - name: Pack vendor for FTP (tar.gz)
+        run: |
+          tar -czf vendor-bundle.tar.gz vendor
+          ls -lh vendor-bundle.tar.gz
+          echo "${{ github.sha }}" > public/.extract-token
+
       - name: Clear Laravel caches
         run: |
           php artisan config:clear || true
@@ -96,8 +103,7 @@ jobs:
       - name: Remove local env files before FTP
         run: rm -f .env .env.testing
 
-      # FTP alineado a CorralX-Backend: v4.4.0; vendor/ SÍ se sube (composer --no-dev en runner).
-      # Extra Zonix: tests/docs/agents/specs, icons/svg. Retry + cooldown ante FIN/ECONNREFUSED Namecheap.
+      # FTP: vendor/ NO (tar.gz); .env NO. Retry + cooldown ante FIN Namecheap.
       - name: FTP-Deploy-Action
         id: ftp_deploy
         continue-on-error: true
@@ -116,6 +122,7 @@ jobs:
             **/.env.*
             **/public/storage
             **/public/storage/**
+            **/vendor/**
             **/tests/**
             **/.agents/**
             **/.specify/**
@@ -151,6 +158,7 @@ jobs:
             **/.env.*
             **/public/storage
             **/public/storage/**
+            **/vendor/**
             **/tests/**
             **/.agents/**
             **/.specify/**
@@ -186,6 +194,7 @@ jobs:
             **/.env.*
             **/public/storage
             **/public/storage/**
+            **/vendor/**
             **/tests/**
             **/.agents/**
             **/.specify/**
@@ -203,7 +212,7 @@ jobs:
           if [ "${{ steps.ftp_deploy.outcome }}" = "success" ] || [ "${{ steps.ftp_retry.outcome }}" = "success" ] || [ "${{ steps.ftp_retry2.outcome }}" = "success" ]; then
             echo "Al menos un intento FTP terminó sin error."
           else
-            echo "WARN: todos los intentos FTP reportaron fallo (FIN típico). El state incremental puede estar casi completo; Re-run job si falta vendor."
+            echo "WARN: todos los intentos FTP reportaron fallo (FIN típico). Re-run job si falta vendor-bundle.tar.gz."
           fi
 
       - name: Set directory permissions
@@ -214,9 +223,13 @@ jobs:
       - name: Create storage link
         run: php artisan storage:link || echo "Storage link skipped on runner"
 
-      - name: Verify deployment
+      - name: Extract vendor on server + verify ping
         run: |
-          echo "Verifying https://zonixpharma.com ..."
-          curl -fsS --retry 3 --retry-delay 5 \
+          echo "Extracting vendor-bundle on https://zonixpharma.com ..."
+          curl -fsS --retry 5 --retry-delay 10 \
+            "https://zonixpharma.com/_vendor_extract.php?t=${{ github.sha }}" \
+            || echo "WARN: extract endpoint not ready yet (FTP incomplete?)"
+          echo "Verifying /api/ping ..."
+          curl -fsS --retry 5 --retry-delay 5 \
             https://zonixpharma.com/api/ping \
-            || echo "WARN: /api/ping not reachable yet (first deploy may need migrate + docroot + .env on server)"
+            || echo "WARN: /api/ping not reachable yet"

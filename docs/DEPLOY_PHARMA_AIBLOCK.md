@@ -91,7 +91,7 @@ push main  →  main.yml
   → curl https://zonixpharma.com/api/ping
 ```
 
-**Nota (patrón CorralX):** `vendor/` **sí** se sube por FTP tras `composer install --no-dev` en el runner. No hace falta `composer` en cPanel para el arranque habitual. `public/icons/svg/**` no se sube (la UI admin usa **sprites**). Si falta `vendor/` o hace falta `migrate`, ver §4.3 (fallback).
+**Nota (patrón Namecheap):** `vendor/` **no** se sube archivo a archivo (FIN packet). El workflow empaqueta `vendor-bundle.tar.gz` tras `composer install --no-dev` y, post-FTP, `GET /_vendor_extract.php?t=<sha>` lo extrae en el servidor. Alternativa manual: Terminal cPanel `composer.phar install --no-dev` (§4.3).
 
 **`.env` en servidor (patrón CorralX):** el workflow **ya no sube** `.env` por FTP. Coloca/edita `.env` una vez en File Manager (`~/zonixpharma.com/.env`) o Terminal. `ENV_CONTENT` en GitHub solo alimenta el runner (tests/caches); no sobrescribe el hosting.
 
@@ -232,20 +232,14 @@ Necesario para TTL recetas Rx y expiración `pending_payment`.
 
 - `storage/` y `bootstrap/cache/` escribibles (755 o 775 según hosting).
 
-### 4.6 `.htaccess` (solo si docroot = raíz Laravel)
+### 4.6 `.htaccess`
 
-Si el **document root** es la carpeta donde está `artisan` (no `public/`), crea `.htaccess` en la raíz:
+El repo incluye [`.htaccess`](../.htaccess) en la raíz (rewrite a `public/`, **sin** `Options +FollowSymLinks` — en Namecheap esa directiva provoca 500) y [`public/.htaccess`](../public/.htaccess) (front controller Laravel, sin `Options`).
 
-```apache
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteRule ^$ public/ [L]
-    RewriteCond %{REQUEST_URI} !^/public/
-    RewriteRule ^(.*)$ public/$1 [L]
-</IfModule>
-```
+- **Document Root = `…/public` (recomendado):** Apache usa solo `public/.htaccess`; el de raíz no afecta.
+- **Document Root = raíz Laravel:** el `.htaccess` raíz reenvía a `public/`.
 
-No copies el `.htaccess` de CorralX con rutas `/laravel/public`. El `.htaccess` de `public/` puede ser el [estándar Laravel](../public/.htaccess) o tu variante con HTTPS/headers.
+No uses un `.htaccess` copiado de otro proyecto con `Options +FollowSymLinks` ni rutas `sub/public`.
 
 ---
 

@@ -38,3 +38,7 @@ auth.json
 # Otro proyecto / utilidades locales (no Zonix Eats)
 venv_scraper/
 pendrive_badblocks_result.txt
+
+# Deploy artifact (CI only)
+vendor-bundle.tar.gz
+public/.extract-token
