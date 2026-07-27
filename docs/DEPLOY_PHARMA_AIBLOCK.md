@@ -93,7 +93,7 @@ push main  →  main.yml
 
 **Nota:** `vendor/` y `public/icons/svg/**` no se suben por FTP (evita timeout en hosting compartido). La UI admin usa **sprites** (`public/icons/sprites/`). Tras el primer deploy, ejecutar en cPanel Terminal: `composer install --no-dev --optimize-autoloader` (desde `~/zonixpharma.com`).
 
-**Deploy incremental:** el workflow usa `state-name: zonixpharma-ftp-deploy-state`; los pushes siguientes a `main` solo suben archivos cambiados.
+**Deploy incremental:** el workflow usa `state-name: zonixpharma-ftp-deploy-state`; los pushes siguientes a `main` solo suben archivos cambiados. Protocolo: **FTPS** (`security: loose`). Si el primer upload falla con `Server sent FIN packet unexpectedly` (corte de sesión Namecheap), el workflow **reintenta FTP una vez** automáticamente; si sigue fallando, en Actions usa **Re-run job** (el segundo run suele ser más corto por archivos ya subidos).
 
 **Document Root (cPanel):** `/home/unibicuo/zonixpharma.com/public` (no la raíz del addon).
 

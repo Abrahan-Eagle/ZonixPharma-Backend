@@ -101,11 +101,56 @@ jobs:
           rm -f webpack.mix.js package.json package-lock.json
 
       - name: FTP deploy
+        id: ftp_deploy
+        continue-on-error: true
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          security: loose
+          timeout: 1200000
+          state-name: zonixpharma-ftp-deploy-state
+          log-level: minimal
+          exclude: |
+            **/.git/**
+            **/.git*
+            **/_ide_helper*
+            **/.cursor*
+            **/.editorconfig
+            **/.env.example
+            **/phpunit.xml
+            **/phpstan*
+            **/pint.json
+            **/resources/assets/**
+            **/resources/js/**
+            **/resources/sass/**
+            **/webpack.mix.js
+            **/package.json
+            **/package-lock.json
+            **/.github/**
+            **/node_modules/**
+            vendor/**
+            **/public/icons/svg/**
+            **/storage/app/public/**
+            **/storage/logs/**
+            **/tests/**
+            **/.agents/**
+            **/.specify/**
+            **/specs/**
+            **/docs/**
+
+      # Namecheap shared often closes long FTP sessions (FIN packet). Retry finishes incremental upload.
+      - name: FTP deploy retry
+        if: steps.ftp_deploy.outcome == 'failure'
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          security: loose
           timeout: 1200000
           state-name: zonixpharma-ftp-deploy-state
           log-level: minimal
