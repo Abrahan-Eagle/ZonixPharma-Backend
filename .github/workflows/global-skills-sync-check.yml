@@ -23,10 +23,10 @@ jobs:
 
     steps:
       - name: Checkout ZonixPharma-Backend
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Checkout jarvis-skills-library
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: Abrahan-Eagle/jarvis-skills-library
           ref: main
