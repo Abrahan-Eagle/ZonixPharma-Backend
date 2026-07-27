@@ -87,8 +87,8 @@ push main  →  main.yml
   → npm run production
   → composer install --no-dev
   → php artisan test --parallel
-  → FTP upload (código + **vendor/**; sin .env ni icons/svg)
-  → curl https://zonixpharma.com/api/ping
+  → pack vendor-bundle.tar.gz + FTP (código; sin .env ni vendor/ suelto)
+  → GET /_vendor_extract.php → curl https://zonixpharma.com/api/ping
 ```
 
 **Nota (patrón Namecheap):** `vendor/` **no** se sube archivo a archivo (FIN packet). El workflow empaqueta `vendor-bundle.tar.gz` tras `composer install --no-dev` y, post-FTP, `GET /_vendor_extract.php?t=<sha>` lo extrae en el servidor. Alternativa manual: Terminal cPanel `composer.phar install --no-dev` (§4.3).
