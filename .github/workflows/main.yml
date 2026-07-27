@@ -1,4 +1,4 @@
-name: Deploy Zonix Pharma (pharma.aiblockweb.com)
+name: Deploy Zonix Pharma (zonixpharma.com)
 
 on:
   push:
@@ -12,7 +12,7 @@ concurrency:
 
 jobs:
   deploy:
-    name: FTP deploy (pharma.aiblockweb.com)
+    name: FTP deploy (zonixpharma.com)
     runs-on: ubuntu-latest
 
     steps:
@@ -24,7 +24,7 @@ jobs:
       - name: Set up Node.js 20
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
           cache: npm
 
       - name: Build frontend assets
@@ -33,7 +33,7 @@ jobs:
       - name: Setup PHP 8.3
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.3'
+          php-version: "8.3"
           extensions: mbstring, xml, ctype, json, pdo_sqlite, bcmath
           coverage: none
           tools: composer
@@ -55,7 +55,7 @@ jobs:
           echo "Setting up .env from GitHub secret ENV_CONTENT..."
           echo "${{ secrets.ENV_CONTENT }}" > .env
           sed -i 's/APP_DEBUG=.*/APP_DEBUG=false/' .env
-          sed -i 's|APP_URL=.*|APP_URL=https://pharma.aiblockweb.com|' .env
+          sed -i 's|APP_URL=.*|APP_URL=https://zonixpharma.com|' .env
           # Dotenv exige comillas si el valor tiene espacios (ej. APP_NAME=Zonix Pharma)
           if grep -qE '^APP_NAME=[^"\047].*[[:space:]]' .env; then
             sed -i 's/^APP_NAME=\(.*\)$/APP_NAME="\1"/' .env
@@ -107,7 +107,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           timeout: 1200000
-          state-name: pharma-ftp-deploy-state
+          state-name: zonixpharma-ftp-deploy-state
           log-level: minimal
           exclude: |
             **/.git/**
@@ -147,7 +147,7 @@ jobs:
 
       - name: Verify deployment
         run: |
-          echo "Verifying https://pharma.aiblockweb.com ..."
+          echo "Verifying https://zonixpharma.com ..."
           curl -fsS --retry 3 --retry-delay 5 \
-            https://pharma.aiblockweb.com/api/ping \
+            https://zonixpharma.com/api/ping \
             || echo "WARN: /api/ping not reachable yet (first deploy may need migrate + docroot)"

@@ -1,11 +1,12 @@
-# Deploy Zonix Pharma Backend → pharma.aiblockweb.com
+# Deploy Zonix Pharma Backend → zonixpharma.com
 
 **Producto:** Zonix Pharma (Laravel API)  
 **Hosting:** cPanel / FTP compartido (`ftp.aiblockweb.com`)  
-**Subdominio:** `https://pharma.aiblockweb.com`  
+**Dominio canónico:** `https://zonixpharma.com`  
+**Legacy (aún en el mismo server):** `https://pharma.aiblockweb.com`  
 **Workflow:** [`.github/workflows/main.yml`](../.github/workflows/main.yml) — push a rama **`main`**
 
-> **Migración VPS (decisión 2026-07-24):** objetivo de producción/piloto = **Namecheap Quasar** dedicado (no compartir con CorralX). Runbook + bootstrap: [`VPS_NAMECHEAP_QUASAR_RUNBOOK.md`](VPS_NAMECHEAP_QUASAR_RUNBOOK.md). Este doc FTP/aiblock sigue vigente hasta el corte DNS.
+> **Migración VPS (decisión 2026-07-24):** objetivo de producción/piloto = **Namecheap Quasar** dedicado (no compartir con CorralX). Runbook + bootstrap: [`VPS_NAMECHEAP_QUASAR_RUNBOOK.md`](VPS_NAMECHEAP_QUASAR_RUNBOOK.md).
 
 ---
 
@@ -18,7 +19,7 @@ En el repo **Abrahan-Eagle/ZonixPharma-Backend**:
 | Secret | Valor |
 |--------|--------|
 | `FTP_SERVER` | `ftp.aiblockweb.com` |
-| `FTP_USERNAME` | `pharma@pharma.aiblockweb.com` |
+| `FTP_USERNAME` | `pharma@zonixpharma.com` (directory `/home/unibicuo/zonixpharma.com`) |
 | `FTP_PASSWORD` | Contraseña FTP de cPanel (**solo en GitHub**, nunca en el repo) |
 | `ENV_CONTENT` | Contenido **multilínea completo** del `.env` del servidor (ver §2) |
 
@@ -50,7 +51,7 @@ APP_NAME="Zonix Pharma"
 APP_ENV=production
 APP_KEY=base64:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX=
 APP_DEBUG=false
-APP_URL=https://pharma.aiblockweb.com
+APP_URL=https://zonixpharma.com
 
 DB_CONNECTION=mysql
 DB_HOST=localhost
@@ -59,7 +60,7 @@ DB_DATABASE=cpaneluser_zonixpharma
 DB_USERNAME=cpaneluser_zonixuser
 DB_PASSWORD=********
 
-CORS_ALLOWED_ORIGINS=https://pharma.aiblockweb.com
+CORS_ALLOWED_ORIGINS=https://zonixpharma.com
 
 BROADCAST_DRIVER=log
 CACHE_DRIVER=file
@@ -75,7 +76,7 @@ SESSION_DRIVER=file
 ZONIX_PHARMA_BLOCK_RX_WITHOUT_PRESCRIPTION=false
 ```
 
-Pegar **todo** el bloque en el secret `ENV_CONTENT`. El workflow fuerza además `APP_DEBUG=false` y `APP_URL=https://pharma.aiblockweb.com`.
+Pegar **todo** el bloque en el secret `ENV_CONTENT`. El workflow fuerza además `APP_DEBUG=false` y `APP_URL=https://zonixpharma.com`.
 
 ---
 
@@ -87,12 +88,14 @@ push main  →  main.yml
   → composer install --no-dev
   → php artisan test --parallel
   → FTP upload (código + .env; **sin** vendor/ ni icons/svg/free)
-  → curl https://pharma.aiblockweb.com/api/ping
+  → curl https://zonixpharma.com/api/ping
 ```
 
-**Nota:** `vendor/` y `public/icons/svg/**` no se suben por FTP (evita timeout en hosting compartido). La UI admin usa **sprites** (`public/icons/sprites/`). Tras el primer deploy, ejecutar en cPanel Terminal: `composer install --no-dev --optimize-autoloader`.
+**Nota:** `vendor/` y `public/icons/svg/**` no se suben por FTP (evita timeout en hosting compartido). La UI admin usa **sprites** (`public/icons/sprites/`). Tras el primer deploy, ejecutar en cPanel Terminal: `composer install --no-dev --optimize-autoloader` (desde `~/zonixpharma.com`).
 
-**Deploy incremental:** el workflow usa `state-name: pharma-ftp-deploy-state`; los pushes siguientes a `main` solo suben archivos cambiados.
+**Deploy incremental:** el workflow usa `state-name: zonixpharma-ftp-deploy-state`; los pushes siguientes a `main` solo suben archivos cambiados.
+
+**Document Root (cPanel):** `/home/unibicuo/zonixpharma.com/public` (no la raíz del addon).
 
 **CI separado:** [`.github/workflows/ci.yml`](../.github/workflows/ci.yml) corre Pint + tests en PRs y en `dev`/`main`; no despliega.
 
