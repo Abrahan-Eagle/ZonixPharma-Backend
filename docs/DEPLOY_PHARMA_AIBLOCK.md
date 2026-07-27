@@ -291,14 +291,14 @@ El workflow anterior desplegaba **Zonix Eats** a `eats.aiblockweb.com`. Este rep
 
 ## 8. Checklist primer deploy (orden)
 
-1. [ ] Crear los 4 secrets en GitHub (§1).
-2. [ ] Merge `dev` → `main` (o push directo a `main` con este workflow).
-3. [ ] Actions → workflow verde.
-4. [ ] cPanel: Document Root = `/home/unibicuo/zonixpharma.com/public` (§4.2)
-5. [ ] cPanel (si hace falta migrate): `php artisan migrate --force` o `bash scripts/cpanel-post-ftp-boot.sh` (§4.3)
-6. [ ] `curl https://zonixpharma.com/api/ping`
+1. [x] Crear los 4 secrets en GitHub (§1).
+2. [x] Merge `dev` → `main` (o push directo a `main` con este workflow).
+3. [x] Actions → workflow verde (Deploy + CI Pint/PHPUnit).
+4. [x] cPanel: Document Root = `/home/unibicuo/zonixpharma.com/public` (§4.2)
+5. [x] BD migrada en hosting; `vendor` vía `vendor-bundle.tar.gz` + extract (§3)
+6. [x] `curl https://zonixpharma.com/api/ping` → `{"message":"API funcionando"}`
 7. [ ] Flutter: `API_URL=https://zonixpharma.com`
 
 ---
 
-**Última actualización:** julio 2026
+**Última actualización:** 27 julio 2026 (zonixpharma.com en línea; vendor por tar.gz)
