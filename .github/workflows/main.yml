@@ -108,8 +108,7 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
-          security: loose
+          protocol: ftp
           timeout: 1200000
           state-name: zonixpharma-ftp-deploy-state
           log-level: minimal
@@ -142,6 +141,7 @@ jobs:
             **/docs/**
 
       # Namecheap shared often closes long FTP sessions (FIN packet). Retry finishes incremental upload.
+      # Prefer plain FTP: FTPS from GHA often hits ETIMEDOUT on Namecheap passive data ports.
       - name: FTP deploy retry
         if: steps.ftp_deploy.outcome == 'failure'
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
@@ -149,8 +149,7 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
-          security: loose
+          protocol: ftp
           timeout: 1200000
           state-name: zonixpharma-ftp-deploy-state
           log-level: minimal
