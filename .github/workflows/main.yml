@@ -92,99 +92,71 @@ jobs:
       - name: Remove individual CoreUI SVGs before FTP
         run: rm -rf public/icons/svg
 
-      - name: Strip dev-only files before FTP
-        run: |
-          rm -rf .git
-          rm -rf resources/assets
-          rm -f _ide_helper.php _ide_helper_models.php
-          rm -f .env.example phpunit.xml phpstan.neon.dist pint.json
-          rm -f webpack.mix.js package.json package-lock.json
+      # Patrón CorralX (W41-02): no subir .env por FTP; se administra en el hosting.
+      - name: Remove local env files before FTP
+        run: rm -f .env .env.testing
 
-      - name: FTP deploy
+      # FTP alineado a CorralX-Backend: v4.4.0; vendor/ SÍ se sube (composer --no-dev en runner).
+      # Extra Zonix: tests/docs/agents/specs, icons/svg. Retry ante FIN en Namecheap.
+      - name: FTP-Deploy-Action
         id: ftp_deploy
         continue-on-error: true
-        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftp
           timeout: 1200000
           state-name: zonixpharma-ftp-deploy-state
-          log-level: minimal
           exclude: |
-            **/.git/**
             **/.git*
-            **/_ide_helper*
-            **/.cursor*
-            **/.editorconfig
-            **/.env.example
-            **/phpunit.xml
-            **/phpstan*
-            **/pint.json
-            **/resources/assets/**
-            **/resources/js/**
-            **/resources/sass/**
-            **/webpack.mix.js
-            **/package.json
-            **/package-lock.json
-            **/.github/**
+            **/.git*/**
             **/node_modules/**
-            vendor/**
-            **/public/icons/svg/**
-            **/storage/app/public/**
-            **/storage/logs/**
+            **/.env
+            **/.env.*
+            **/public/storage
+            **/public/storage/**
             **/tests/**
             **/.agents/**
             **/.specify/**
             **/specs/**
             **/docs/**
+            **/.github/**
+            **/public/icons/svg/**
+            **/_ide_helper*
+            **/.cursor*
 
-      # Namecheap shared often closes long FTP sessions (FIN packet). Retry finishes incremental upload.
-      # Prefer plain FTP: FTPS from GHA often hits ETIMEDOUT on Namecheap passive data ports.
-      - name: FTP deploy retry
+      - name: FTP-Deploy-Action retry
         if: steps.ftp_deploy.outcome == 'failure'
-        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftp
           timeout: 1200000
           state-name: zonixpharma-ftp-deploy-state
-          log-level: minimal
           exclude: |
-            **/.git/**
             **/.git*
-            **/_ide_helper*
-            **/.cursor*
-            **/.editorconfig
-            **/.env.example
-            **/phpunit.xml
-            **/phpstan*
-            **/pint.json
-            **/resources/assets/**
-            **/resources/js/**
-            **/resources/sass/**
-            **/webpack.mix.js
-            **/package.json
-            **/package-lock.json
-            **/.github/**
+            **/.git*/**
             **/node_modules/**
-            vendor/**
-            **/public/icons/svg/**
-            **/storage/app/public/**
-            **/storage/logs/**
+            **/.env
+            **/.env.*
+            **/public/storage
+            **/public/storage/**
             **/tests/**
             **/.agents/**
             **/.specify/**
             **/specs/**
             **/docs/**
+            **/.github/**
+            **/public/icons/svg/**
+            **/_ide_helper*
+            **/.cursor*
 
       - name: Set directory permissions
         run: |
+          echo "Setting up directory permissions for shared hosting..."
           chmod -R 755 storage bootstrap/cache
-          chmod 600 .env
 
       - name: Create storage link
         run: php artisan storage:link || echo "Storage link skipped on runner"
@@ -194,4 +166,4 @@ jobs:
           echo "Verifying https://zonixpharma.com ..."
           curl -fsS --retry 3 --retry-delay 5 \
             https://zonixpharma.com/api/ping \
-            || echo "WARN: /api/ping not reachable yet (first deploy may need migrate + docroot)"
+            || echo "WARN: /api/ping not reachable yet (first deploy may need migrate + docroot + .env on server)"

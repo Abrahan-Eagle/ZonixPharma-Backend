@@ -87,13 +87,15 @@ push main  →  main.yml
   → npm run production
   → composer install --no-dev
   → php artisan test --parallel
-  → FTP upload (código + .env; **sin** vendor/ ni icons/svg/free)
+  → FTP upload (código + **vendor/**; sin .env ni icons/svg)
   → curl https://zonixpharma.com/api/ping
 ```
 
-**Nota:** `vendor/` y `public/icons/svg/**` no se suben por FTP (evita timeout en hosting compartido). La UI admin usa **sprites** (`public/icons/sprites/`). Tras el primer deploy, ejecutar en cPanel Terminal: `composer install --no-dev --optimize-autoloader` (desde `~/zonixpharma.com`).
+**Nota (patrón CorralX):** `vendor/` **sí** se sube por FTP tras `composer install --no-dev` en el runner. No hace falta `composer` en cPanel para el arranque habitual. `public/icons/svg/**` no se sube (la UI admin usa **sprites**). Si falta `vendor/` o hace falta `migrate`, ver §4.3 (fallback).
 
-**Deploy incremental:** el workflow usa `state-name: zonixpharma-ftp-deploy-state`; los pushes siguientes a `main` solo suben archivos cambiados. Protocolo: **FTP** (plain). En Namecheap, **FTPS desde GitHub Actions** suele fallar con `ETIMEDOUT` en puertos pasivos; por eso no usamos FTPS en CI. Si el primer upload falla con `Server sent FIN packet unexpectedly` (corte de sesión), el workflow **reintenta FTP una vez**; si sigue fallando, en Actions usa **Re-run job**.
+**`.env` en servidor (patrón CorralX):** el workflow **ya no sube** `.env` por FTP. Coloca/edita `.env` una vez en File Manager (`~/zonixpharma.com/.env`) o Terminal. `ENV_CONTENT` en GitHub solo alimenta el runner (tests/caches); no sobrescribe el hosting.
+
+**Deploy incremental:** `SamKirkland/FTP-Deploy-Action@v4.4.0` (mismo que CorralX), `state-name: zonixpharma-ftp-deploy-state`. Si falla con `Server sent FIN packet unexpectedly`, el job **reintenta FTP una vez**; si hace falta, **Re-run job** en Actions.
 
 **Document Root (cPanel):** `/home/unibicuo/zonixpharma.com/public` (no la raíz del addon).
 
@@ -133,36 +135,33 @@ En **Domains → Subdomains** (`pharma.aiblockweb.com`):
 
 **Comprobar:** si `/api/ping` da 404, casi siempre el docroot está mal. Si da **500** sin `vendor/`, ver §4.3.
 
-### 4.3 Post-FTP: vendor + Artisan (Namecheap shared)
+### 4.3 Post-FTP: Artisan (y vendor solo si falta)
 
-El FTP **no sube** `vendor/` (evita timeout). Sin `vendor/autoload.php` verás **HTTP 500** y no existirá `storage/logs/laravel.log`.
+Por defecto el pipeline **sube `vendor/`** (como CorralX). En cPanel Terminal solo hace falta Artisan la primera vez (`migrate`, caches) o si un deploy parcial dejó sin `vendor/autoload.php` (entonces **500**).
 
-Namecheap **no incluye** `composer` en PATH (`bash: composer: command not found` es normal).
+Namecheap **no incluye** `composer` en PATH; si hay que regenerar vendor, usar `php composer.phar` (§ abajo).
 
-#### Opción A — Script automático (recomendado)
+#### Opción A — Script automático (fallback / primer migrate)
 
 Tras deploy FTP verde, en **Terminal web** cPanel:
 
 ```bash
-cd ~/pharma.aiblockweb.com
+cd ~/zonixpharma.com
 bash scripts/cpanel-post-ftp-boot.sh
 ```
 
-El script: valida PHP ≥ 8.1, instala `composer.phar`, ejecuta `composer install --no-dev`, permisos, `migrate --force`, caches.
+El script: valida PHP ≥ 8.1, instala `composer.phar` si hace falta, `composer install --no-dev`, permisos, `migrate --force`, caches.
 
 #### Opción B — Comandos manuales
 
 ```bash
-cd ~/pharma.aiblockweb.com
+cd ~/zonixpharma.com
 
-# 1) PHP (MultiPHP Manager → 8.2 o 8.3 para el subdominio)
+# 1) PHP (MultiPHP Manager → 8.2 o 8.3 para el dominio)
 php -v
 
-# 2) Composer local
+# 2–3) Solo si falta vendor/ (el FTP normalmente ya lo trae)
 curl -sS https://getcomposer.org/installer | php
-php composer.phar --version
-
-# 3) vendor/ (crítico)
 php -d memory_limit=512M composer.phar install --no-dev --optimize-autoloader --no-interaction
 ls -la vendor/autoload.php
 
@@ -170,7 +169,7 @@ ls -la vendor/autoload.php
 chmod -R 775 storage bootstrap/cache
 mkdir -p storage/logs storage/framework/{cache,sessions,views}
 
-# 5) Laravel
+# 5) Laravel (primera vez / tras cambios de esquema)
 php artisan storage:link
 php artisan migrate --force
 php artisan config:clear
@@ -219,7 +218,7 @@ php artisan optimize:clear
 | Sigue 500 con vendor OK | `tail -50 storage/logs/laravel.log` (MySQL, APP_KEY, permisos) |
 | composer install imposible en hosting | Generar `vendor/` en local con `--no-dev`, comprimir, subir y extraer en cPanel (último recurso) |
 
-**Sin estos pasos** `/api/ping` responderá **500** (sin vendor) o **404** (docroot incorrecto).
+**Sin `vendor/` o con docroot mal** `/api/ping` responderá **500** o **404**. Con FTP CorralX-style, el paso habitual post-deploy es solo Document Root + `migrate` si aplica.
 
 ### 4.4 Cron (scheduler)
 
@@ -301,11 +300,11 @@ El workflow anterior desplegaba **Zonix Eats** a `eats.aiblockweb.com`. Este rep
 1. [ ] Crear los 4 secrets en GitHub (§1).
 2. [ ] Merge `dev` → `main` (o push directo a `main` con este workflow).
 3. [ ] Actions → workflow verde.
-4. [ ] cPanel: `bash scripts/cpanel-post-ftp-boot.sh` (§4.3) — **vendor + migrate**
-5. [ ] cPanel: Document Root = `.../public` (§4.2)
-6. [ ] `curl https://pharma.aiblockweb.com/api/ping`
-7. [ ] Flutter: `API_URL=https://pharma.aiblockweb.com`
+4. [ ] cPanel: Document Root = `/home/unibicuo/zonixpharma.com/public` (§4.2)
+5. [ ] cPanel (si hace falta migrate): `php artisan migrate --force` o `bash scripts/cpanel-post-ftp-boot.sh` (§4.3)
+6. [ ] `curl https://zonixpharma.com/api/ping`
+7. [ ] Flutter: `API_URL=https://zonixpharma.com`
 
 ---
 
-**Última actualización:** junio 2026
+**Última actualización:** julio 2026
