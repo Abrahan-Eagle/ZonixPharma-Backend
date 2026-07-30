@@ -34,7 +34,7 @@
 - **Significado:** alinear cobro B2B del pack (cuota + % GMV + ajustes/waiver) con la ancla Lean M1–M12 en [PROYECCION_FINANCIERA_12M.md](Lanzamiento/PROYECCION_FINANCIERA_12M.md) §1.1 — no es un módulo de software ni un archivo `billing`.
 - **Canon §1.1 (sin waiver) — histórico hasta sync FP&A:** capital Lean **~111.988**; Fase 0 **~33.835**; caja Day-D **~78.153**; cash M12 **~40.831**. **Pitch vigente:** ver bloque v3.9.3 arriba.
 - **Billing documentado al pie de §1.1:** nota ARPF agregado + fila proxy **waiver primeras 10** (~−453 revenue Y1); cash M12 con waiver = `[PENDIENTE FP&A]` (el ~41.756 de B2B §11 es proxy heredado).
-- **Fuera de alcance esta sesión:** desglose Excel layout B (cuota/GMV/ajuste línea a línea) — spec en [MODELO_FINANCIERO_LAYOUT_PIZZA_QLQ_ESPECIFICACION.md](Lanzamiento/MODELO_FINANCIERO_LAYOUT_PIZZA_QLQ_ESPECIFICACION.md).
+- **Fuera de alcance esta sesión:** desglose Excel mes a mes cuota/GMV (vive en Excel Detallado / política B2B §5; no hay spec layout Pizza en el pack).
 - **Docs alineados:** este `active_context`, skill `zonix-startup-context`, plantilla `PROMPT_MEJORAR_PACK_LANZAMIENTO` (anclas). Auditorías forenses históricas que citan **42.209** / **72.943** quedan como registro, no como canon.
 
 ### Limpieza archivo Eats — junio 2026

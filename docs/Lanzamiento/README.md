@@ -173,8 +173,6 @@ Estos no se inventan. El pack los marca explícitamente con `[PENDIENTE]`. **Ín
 | Objetivo | Plantilla |
 |----------|-----------|
 | Mejora incremental de un doc o sección | [../plantillas/PROMPT_MEJORAR_PACK_LANZAMIENTO.md](../plantillas/PROMPT_MEJORAR_PACK_LANZAMIENTO.md) |
-| **Auditoría forense v3** (27 workers + verify Excel v3.8.2 + research web 2026 + juez mayor + autofix) | [../plantillas/PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md](../plantillas/PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md) **v2.0** |
-| Informes previos | [../AUDIT_FORENSE_PACK_LANZAMIENTO_2026-06-22.md](../AUDIT_FORENSE_PACK_LANZAMIENTO_2026-06-22.md) |
 | Citas y costos web | [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md) |
 
 ---

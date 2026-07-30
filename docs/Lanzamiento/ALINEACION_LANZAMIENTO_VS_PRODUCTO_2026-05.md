@@ -114,9 +114,9 @@ Prioridad para el founder técnico (no sustituye backlog de negocio).
 | **P0** | **Smoke E2E manual** documentado (OTC, Rx, cold chain, pago) | PLAN_MODULO §18; PLAN_LANZAMIENTO T+25–30 | ANALISIS_TECNICO §10 |
 | **P1** | **Deploy/CI Pharma** | Pipeline alineado a Pharma (`ci.yml` + `main.yml`); pendiente credenciales prod Firebase/APNs | Workflows GitHub |
 | **P1** | **`medicine_lots`:** sin API commerce, sin UI, sin FIFO en despacho | Esquema BD + seeder; **UI/despacho FIFO post-Day-D o M3+** (I-02 corregido en CONTEXTO y PLAN_MODULO) | ANALISIS_TECNICO §4.3 |
-| **P2** | Envelope API / `getMessage()` en controllers | Estabilidad prod, soporte | AUDIT_API_PATTERNS |
+| **P2** | Envelope API / `getMessage()` en controllers | Estabilidad prod, soporte | Patrones API BE |
 | **P2** | Descarga archivo receta en app buyer/pharmacist | Operación farmacia | FE `PrescriptionService` |
-| **P2** | Badges controlados uniformes en listado buyer | Copy regulatorio UX | AUDIT_UI_PHARMA |
+| **P2** | Badges controlados uniformes en listado buyer | Copy regulatorio UX | UI Pharma Front |
 | **P3** | Sunset nombres `restaurant` / `food_methods` | Confusión onboarding farmacia | MIGRACION_EATS_PHARMA |
 
 **Readiness técnico Day-D (síntesis):** **3/5** — viable piloto **OTC + Rx común** con farmacéutico real, partner logístico y smoke; **no** prometer inventario por lotes ni “producción enterprise” sin cerrar P0.
@@ -125,7 +125,7 @@ Prioridad para el founder técnico (no sustituye backlog de negocio).
 
 ## 4. Qué ajustar en los **documentos** (mientras los mejoráis)
 
-> **Estado 22 junio 2026:** correcciones **I-01 a I-15** aplicadas en pack; refresh CI Pharma + smoke Rx documentado. Tabla §4.1 = histórico de mejoras ya hechas + pendientes menores.
+> **Estado 22 junio 2026:** correcciones **I-01 a I-15** aplicadas en pack; refresh CI Pharma + smoke Rx documentado. Tabla §4.1 = mejoras ya hechas + pendientes menores.
 
 ### 4.1 Documentación adelantada (suavizar o acotar)
 

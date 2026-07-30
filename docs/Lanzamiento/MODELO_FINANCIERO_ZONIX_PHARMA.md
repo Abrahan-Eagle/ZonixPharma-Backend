@@ -25,9 +25,7 @@ El Excel **v3.9.1** adopta la **apariencia** del template inversor `Propuesta_Pi
 | Fuente Años | Arial 8pt | Bloque premisas B:C |
 | Zoom Detallado / Hoja3 / ESTA | 64 / 60 / 70 | `finish_pizza_sheet` |
 
-**Disclaimer reunión:** la paleta verde/púrpura es **familiaridad formato QLQ**, no branding final Zonix Pharma ([`BRAND_ZONIX_PHARMA.md`](../BRAND_ZONIX_PHARMA.md) navy/teal sigue en producto). Contenido = marketplace + SAFE, **no** reparto 70/30 Pizza.
-
-Para clonar también la **geometría** de filas Pizza (desglose Flujo línea a línea, cols C:G), ver spec opción B: [`MODELO_FINANCIERO_LAYOUT_PIZZA_QLQ_ESPECIFICACION.md`](MODELO_FINANCIERO_LAYOUT_PIZZA_QLQ_ESPECIFICACION.md).
+**Disclaimer reunión:** la paleta verde/púrpura es **familiaridad formato QLQ**, no branding final Zonix Pharma ([`BRAND_ZONIX_PHARMA.md`](../BRAND_ZONIX_PHARMA.md) navy/teal sigue en producto). Contenido = marketplace + SAFE, **no** reparto 70/30 Pizza. Canon pitch = Excel Detallado / Hoja3 (ask **210.760**); no hay spec layout Pizza separada en el pack.
 
 ## Convenciones
 
@@ -499,7 +497,7 @@ Recalibrar ARPF y S3 cuando existan **≥30 días** de GMV post-Day-D (UNIT_ECON
 - [x] Detallado v3.9.3: resumen lateral K–M, MO/marketing mensual desglosado, anti triple-conteo
 - [ ] Recalibrar con GMV piloto — `[PENDIENTE]`
 - [ ] Validar VAN/TIR con wire 210.760 + esc.1 cash flows — `[Requiere FP&A/contador]`
-- [ ] Recalcular Cash M12 con esc.1 (pricing 45/60/70) — `[PENDIENTE FP&A]`
+- [x] Cash M12 esc.1 (pricing 45/60/70) = **398.293** (160.500 + FCF +237.793)
 
 ---
 

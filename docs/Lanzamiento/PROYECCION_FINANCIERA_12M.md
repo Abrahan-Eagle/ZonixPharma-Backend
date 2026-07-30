@@ -65,7 +65,7 @@
 
 > **Lectura esc.1 v3.9.3:** FCF Y1 **+237.793** (positivo desde M1 — revenue 11.960 > burn 10.411). Cash M12 **398.293** (160.500 caja Day-D + 237.793 FCF Y1).
 
-> **Billing (ajuste pack):** la columna **Revenue** es **ARPF placeholder ~50 × activas** (cuota fija + % GMV agregados — [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §2). No desglosa mes a mes cuota / fee GMV / prorrateo; eso vive en política comercial [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5 y, si se implementa layout Excel B, como línea «ajuste billing» ([MODELO_FINANCIERO_LAYOUT_PIZZA_QLQ_ESPECIFICACION.md](MODELO_FINANCIERO_LAYOUT_PIZZA_QLQ_ESPECIFICACION.md) §3.2).
+> **Billing (ajuste pack):** la columna **Revenue** es **ARPF placeholder ~50 × activas** (cuota fija + % GMV agregados — [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §2). No desglosa mes a mes cuota / fee GMV / prorrateo; eso vive en política comercial [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5.
 
 | Escenario billing | Revenue Y1 (ref.) | Cash M12 (ref.) | Nota |
 |---|---|---|---|

@@ -86,7 +86,7 @@ En **Grupo Morr** combinas consultoría de negocio con arraigo en el tejido empr
 | Capital Lean | **USD 210.760** (redondeo **~211k**) — v3.9.3 |
 | Caja Day-D | **~USD 160.500** |
 | Fase 0 total | **~USD 50.260** |
-| Caja M12 | **`[PENDIENTE FP&A]`** vs burn nuevo |
+| Caja M12 | **USD 398.293** (esc.1: 160.500 + FCF +237.793) |
 | Ingreso medio farmacia | **~USD 50/mes** *(placeholder)* |
 
 ### Qué revisar con Gabriel
@@ -906,7 +906,7 @@ Rx: farmacéutico **de la farmacia** aprueba en app **≤60 min** (8–20h); ven
 
 ### En 60 segundos
 
-Excel Detallado + Hoja3. Lectura rápida: **Hoja3 sección A** = total oficial **210.760** (100% = Fase 0 + burn + reserva). Puente: wire **~211k** − Fase 0 **~50.260** = Day-D **160.500**; cash M12 **`[PENDIENTE FP&A]`**.
+Excel Detallado + Hoja3. Lectura rápida: **Hoja3 sección A** = total oficial **210.760** (100% = Fase 0 + burn + reserva). Puente: wire **~211k** − Fase 0 **~50.260** = Day-D **160.500**; cash M12 **398.293** (esc.1).
 
 ### Regla de oro (Excel)
 

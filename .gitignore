@@ -42,3 +42,8 @@ pendrive_badblocks_result.txt
 # Deploy artifact (CI only)
 vendor-bundle.tar.gz
 public/.extract-token
+
+# Pack Lanzamiento — basura local (no pitch)
+docs/Lanzamiento/.xdp-*
+docs/Lanzamiento/_exports_notebooklm/
+docs/forensic_zonix_docs/

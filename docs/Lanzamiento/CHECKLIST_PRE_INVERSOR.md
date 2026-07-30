@@ -161,7 +161,7 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 | 6 | **Año 1** | Cash M12 **398.293** (esc.1: 160.500 + FCF +237.793); pricing 45/60/70 + % GMV |
 | 7 | **Flujo Total** | VAN(5) **~+120.530** (esc.1, wire 210.760); TIR **~55%** est.; disclaimer SAFE (no 70/30 Pizza) — `[PENDIENTE FP&A recalc exacto]` |
 
-> **No decir:** «cada fila de la tabla vieja de Hoja3 suma al 100%» (layout obsoleto sumaba ~146%). **No decir:** sumar Subtotal Fase 0 (Sección B) + Burn (Sección A) — ≈ **131k / 118%** trampa reunión.
+> **No decir:** «cada fila de Hoja3 suma al 100%» (layout QLQ sumaba ~146%). **No decir:** sumar Subtotal Fase 0 (Sección B) + Burn (Sección A) — ≈ **131k / 118%** trampa reunión.
 
 ## 7. Q&A — preguntas frecuentes y respuestas
 

@@ -171,49 +171,13 @@ Completar en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARI
 
 | ID | Pendiente | Dueño |
 |----|-----------|-------|
-| AUD-01 | ALINEACION tests FE **~241** (AUDIT_360 jun 2026); BE **443** — re-run pre-reunión | Founder |
-| AUD-02 | BRIEF sensibilidad optimista: añadir activas/revenue M12 (~207 / ~11.385 según PROYECCION §7.3) | Founder + FP&A |
-| AUD-03 | Registro ART (§4.4.1 ESTRUCTURA) → formalizado como **P3-07** | Abogado + Farmacéutico |
-| AUD-04 | PROYECCION §3.3: puente 480k éxito (farmacias × ARPF) o etiqueta `[PENDIENTE FP&A]` adicional | FP&A |
-| AUD-05 | UNIT §8: margen bruto ~92% sin restar waiver/S&M — nota «margen post-waiver» | FP&A |
-| AUD-06 | PLAN_METODOS §5: fila riesgo «pharmacist ausente» (hoy solo en PLAN_MODULO §16) | Founder |
-| AUD-07 | ALINEACION §4.3: ruta `PROPUESTA_VALOR_USUARIO_FINAL.md` (corregido v2) | **Cerrado** v2 |
-| AUD-08 | PLAN_MODULO §14.4: nota 90 días código + `[PENDIENTE]` 10 años | **Parcial** — P3-07 |
-
-**Auditoría forense pack v2 (22 jun 2026 — ver [../AUDIT_FORENSE_PACK_LANZAMIENTO_2026-06-22.md](../AUDIT_FORENSE_PACK_LANZAMIENTO_2026-06-22.md)):**
-
-*Remediado en v2:*
-
-| ID | Hallazgo | Acción |
-|----|----------|--------|
-| AUD-v2-01 | RESUMEN_GABRIEL «24 documentos» | → 23 canónicos + anexo (README) |
-| AUD-v2-02 | SUPUESTO trigger cash M6 **48.100** | → **46.395** (PROYECCION §1.3) |
-| AUD-v2-03 | PROYECCION suma firmas **185** vs total **175** | Nota FP&A §1.1 |
-| AUD-v2-04 | CHECKLIST Ask solo Lean | **Cerrado** — ask único vigente Lean **210.760**/600k |
-| AUD-v2-05 | ALINEACION CI «Eats» obsoleto | Refresh jun 2026; `ci.yml` + `main.yml` Pharma |
-| AUD-v2-06 | Smoke Rx no enlazado | → [SMOKE_RX_E2E.md](../SMOKE_RX_E2E.md) |
-| AUD-v2-07 | MENSAJE sin bridge T+0→Fase 0→Day-D | Párrafo en §1 y variante corta |
-| AUD-v2-08 | GUIA sin script pricing mom-test | §2.1 añadido |
-| AUD-v2-09 | PROP_USUARIO copy «90 min» sin SLA | `[PENDIENTE SLA partner]` en ads |
-| AUD-v2-10 | PLAN_MODULO farmacovigilancia §11 | Marcado `[roadmap]` |
-| AUD-v2-11 | Retención receta doc vs código 90 días | §14.4 + **P3-07** |
-
-*Persisten (founder / externo):*
-
-| ID | Pendiente | Dueño |
-|----|-----------|-------|
-| AUD-v2-12 | P0 humanos **8/8** abiertos (GitHub, NDA, demo, tracción…) | Founder |
-| AUD-v2-13 | Re-run tests + commit VOLCADO §1.2 (P0-06) | **Cerrado** 23 jun 2026 — `d7b7df4`, 443/1822 |
-| AUD-v2-14 | AUD-02 BRIEF sensibilidad optimista M12 | FP&A |
-| AUD-v2-15 | AUD-04 PROYECCION §3.3 puente 480k | FP&A |
-| AUD-v2-16 | Smoke E2E manual ejecutado y firmado (P1-12) | Founder + CTO |
-| AUD-v3-01 | MONTOS SaaS vs PRESUPUESTO — **reconciliado** con nota §2.3.1 (sin recalcular PROYECCION) | FP&A |
-| AUD-v3-02 | P1-15 mom-test reabierto (sin evidencia VOLCADO §5.1) | Founder |
-| AUD-v3-P0-01 | Tiers/caps stale en pitch y comercial | **Cerrado** Fase 3 jun 2026 — anclas v3.8.2 |
-| AUD-v3-R3 | PERFIL: Rappi → PedidosYa VE; Faro TAM; CPM dual | Jarvis jun 2026 |
-| AUD-v3-R4 | PLAN_REGULATORIO: Ley Datos 2025 → marco disperso VE | Jarvis + [PENDIENTE abogado] |
-| AUD-v3-R4b | Brecha e-commerce farmacéutico sin norma habilitante explícita | [PENDIENTE abogado] — CHECKLIST §7 |
-| AUD-v3-olas4-7 | Rappi→PedidosYa transversal + PRESUPUESTO §2.3.1 + PLAN_MODULO §14.6 | Jarvis jun 2026 |
+| GAP-01 | ALINEACION: re-run tests FE + BE pre-reunión | Founder |
+| GAP-02 | BRIEF sensibilidad optimista: activas/revenue M12 (~207 / ~11.385 según PROYECCION §7.3) | Founder + FP&A |
+| GAP-03 | Registro ART (§4.4.1 ESTRUCTURA) → formalizado como **P3-07** | Abogado + Farmacéutico |
+| GAP-04 | PROYECCION §3.3: puente 480k éxito (farmacias × ARPF) o etiqueta `[PENDIENTE FP&A]` adicional | FP&A |
+| GAP-05 | UNIT §8: margen bruto ~92% sin restar waiver/S&M — nota «margen post-waiver» | FP&A |
+| GAP-06 | PLAN_METODOS §5: fila riesgo «pharmacist ausente» (hoy solo en PLAN_MODULO §16) | Founder |
+| GAP-07 | PLAN_MODULO §14.4: nota 90 días código + `[PENDIENTE]` 10 años | **Parcial** — P3-07 |
 
 ---
 

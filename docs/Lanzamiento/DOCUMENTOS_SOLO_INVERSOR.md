@@ -85,7 +85,6 @@ Citadas en [README.md](README.md) § documentos pre-existentes:
 | [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) | Captura founder (usar datos volcados en BRIEF/CHECKLIST) |
 | [GUIA_DISCOVERY_CALLE_FASE0.md](GUIA_DISCOVERY_CALLE_FASE0.md) | Guía mom-test calle |
 | [BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md](BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md) | Hipótesis discovery interno |
-| [MODELO_FINANCIERO_LAYOUT_PIZZA_QLQ_ESPECIFICACION.md](MODELO_FINANCIERO_LAYOUT_PIZZA_QLQ_ESPECIFICACION.md) | Spec técnica generador Excel (FP&A interno) |
 | `docs/agents/*`, auditorías Jarvis, `docs/plantillas/PROMPT_*` | Documentación de proceso IA |
 
 ---
@@ -115,12 +114,3 @@ python3 _tools/build_zip_inversor.py --tier full  # data room extendido
 Antes de enviar: cerrar P0 en [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) (aprobación founder P0-04) y marcar en [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md).
 
 > **Gate legal del wire (bloqueante):** la **PIPA (cesión de IP del founder a ZONIX PHARMA C.A.)** es **condición suspensiva del desembolso**. Ningún wire se ejecuta sin PIIA firmada + inventario de activos en data room. Ver [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §1.5 y §8 (mecanismo tranche condicional / escrow notarial).
-
----
-
-## Forense + NotebookLM (10 jul 2026)
-
-- Auditoría: [AUDIT_FORENSE_PACK_INVERSOR_ZIP_MINIMO_2026-07-10.md](AUDIT_FORENSE_PACK_INVERSOR_ZIP_MINIMO_2026-07-10.md)
-- Cierre: [CIERRE_FORENSE_NLM_INVERSOR_2026-07-10.md](CIERRE_FORENSE_NLM_INVERSOR_2026-07-10.md)
-- Exports Studio: [_exports_notebooklm/](_exports_notebooklm/)
-- Notebook: https://notebooklm.google.com/notebook/fdf0a0f4-7a79-439f-a594-bbac53317658
