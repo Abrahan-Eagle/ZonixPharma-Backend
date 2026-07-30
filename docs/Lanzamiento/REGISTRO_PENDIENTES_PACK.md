@@ -40,7 +40,7 @@
 | ID | Ítem | Dueño | Doc fuente | Celda VOLCADO |
 |----|------|-------|------------|---------------|
 | P1-01 | Cotización formal **HQ casa** (~USD 500/mes, San Diego / Av. Bolívar Norte) | Founder | README §8; CHECKLIST §4 | §3 |
-| P1-02 | Cotización formal **valla** (Lean 350 / Base-Growth 700 USD/mes) | Founder | README §8; CHECKLIST §4 | §3 valla |
+| P1-02 | Cotización formal **valla** Lean (**USD 350**/mes, 3m×2m) | Founder | README §8; CHECKLIST §4 | §3 valla |
 | P1-03 | Lista **5–8 farmacias prospecto** con contacto verificable | Sales / Founder | CHECKLIST §4; PLAN_COMERCIAL | §6 |
 | P1-04 | **3+ cartas de intención** preliminares farmacias | Sales | CHECKLIST §4 | CHECKLIST |
 | P1-05 | **2–3 abogados** VE con cotización (SAFE, T&C, marco farmacia) | Founder | README §8; CHECKLIST §4 | §8 |
@@ -53,7 +53,7 @@
 | P1-12 | **Smoke E2E** OTC + Rx documentado | Founder + CTO | PLAN_MODULO §18 | — |
 | P1-13 | Sección **liquidez / chicken-and-egg** en CONTEXTO §2.10 + BRIEF | Founder | **Cerrado** jun 2026 — ver CONTEXTO §2.10 |
 | P1-14 | Sección **moat / defensibilidad** en CONTEXTO §2.11 + BRIEF | Founder | **Cerrado** jun 2026 — ver CONTEXTO §2.11 |
-| P1-15 | **mom-test pricing** (≥3 entrevistas cuota 25/40/55) antes Day-D | Founder | PLAN §4.0 fila 5 | §5.1 notas Sales — **PENDIENTE** evidencia en VOLCADO (no marcar cerrado hasta minutas) |
+| P1-15 | **mom-test pricing** (≥3 entrevistas cuota 45/60/70) antes Day-D | Founder | PLAN §4.0 fila 5 | §5.1 notas Sales — **PENDIENTE** evidencia en VOLCADO (no marcar cerrado hasta minutas) |
 
 ---
 
@@ -63,7 +63,7 @@
 |----|------|-------|------------|
 | P2-01 | Nombre y datos del **primer inversor** candidato | Founder | CHECKLIST §1; VOLCADO §2 |
 | P2-02 | Tipo inversor (ángel / fondo / family office) | Founder | VOLCADO §2 |
-| P2-03 | **Ticket esperado** (25k / 50k / **210.760 Lean Excel** / ~157k hist. / mayor) | Founder | VOLCADO §2 |
+| P2-03 | **Ticket esperado** (25k / 50k / **210.760** Lean) | Founder | VOLCADO §2 |
 | P2-04 | Experiencia inversor LatAm y en salud/farma | Founder | CHECKLIST §1 |
 | P2-05 | Disponibilidad reunión + próximo paso | Founder | VOLCADO §2 |
 | P2-06 | **NDA listo** si el inversor lo pide | Legal | CHECKLIST §1 |
@@ -118,7 +118,7 @@ Completar en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARI
 |------|----------------|
 | Founder nombre, contacto, LinkedIn | Abrahan Pulido — VOLCADO §1 |
 | Párrafo «por qué soy el founder» | VOLCADO §1.1 |
-| Tiers capital **210.760 Lean Excel** / ~157k / ~187k *(Base/Growth hist.)* y SAFE caps **600k / ~912.814 / ~1.205.345** | README §C, PRESUPUESTO §1, MODELO S1.3 |
+| Ask capital **210.760 Lean Excel** @ SAFE cap **600k** (equity ~35,13%) | README §C, PRESUPUESTO §1, MODELO S1.3 |
 | PROYECCION Lean M1–M12, Fase 0, caja M12 | PROYECCION §0–§1.3 |
 | Coherencia numérica pack (cifras ancla) | README, BRIEF, PROYECCION |
 | Tests backend **443** (verificar fecha pre-reunión) | README, BRIEF, VOLCADO §1.2 |
@@ -189,7 +189,7 @@ Completar en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARI
 | AUD-v2-01 | RESUMEN_GABRIEL «24 documentos» | → 23 canónicos + anexo (README) |
 | AUD-v2-02 | SUPUESTO trigger cash M6 **48.100** | → **46.395** (PROYECCION §1.3) |
 | AUD-v2-03 | PROYECCION suma firmas **185** vs total **175** | Nota FP&A §1.1 |
-| AUD-v2-04 | CHECKLIST Ask solo Lean 101k/600k | **Cerrado** Fase 3 — guion multi-tier; **vigente** Lean **210.760**/600k · Base/Growth hist. ~157k/~912.814 · ~187k/~1.205.345 |
+| AUD-v2-04 | CHECKLIST Ask solo Lean | **Cerrado** — ask único vigente Lean **210.760**/600k |
 | AUD-v2-05 | ALINEACION CI «Eats» obsoleto | Refresh jun 2026; `ci.yml` + `main.yml` Pharma |
 | AUD-v2-06 | Smoke Rx no enlazado | → [SMOKE_RX_E2E.md](../SMOKE_RX_E2E.md) |
 | AUD-v2-07 | MENSAJE sin bridge T+0→Fase 0→Day-D | Párrafo en §1 y variante corta |

@@ -61,7 +61,7 @@ Regla: pivot documentado en VOLCADO + nota founder; **no** pivotar por una sola 
 |---|---|
 | Visitas a **3–5 inmuebles tipo casa o local** candidatos en **San Diego** y **Av. Bolívar Norte** (Valencia) — **HQ casa/local** | T+0 a T+5 |
 | Selección + cotización formal | T+5 a T+10 |
-| Firma contrato + depósito (**Lean/Base/Growth:** HQ tipo casa **USD 500/mes** — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2 / §6.1) | T+10 a T+15 |
+| Firma contrato + depósito (**Lean:** HQ tipo casa **USD 500/mes** — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2 / §6.1) | T+10 a T+15 |
 | Adecuación (pintura, instalación) | T+15 a T+25 |
 | Equipamiento (escritorios, sillas, internet) | T+25 a T+30 |
 
@@ -158,7 +158,7 @@ Checklist **antes** de tráfico masivo. Documentar solo entrevistas reales en VO
 | 2. Validación B2B | Contrato marco firmado + métodos de pago farmacia en panel | Farmacia activa en staging/prod |
 | 3. Creación demanda | Primer pedido real OTC o Rx | Orden ≥ `pending_payment` en BD |
 | 4. Ops | CS, disputas, partner `delivery_company` | Macros CS + SLA partner acordado |
-| **5. Pricing mom-test** | Dueño farmacia reacciona a **cuota 25/40/55 + % GMV** con **hechos pasados** (no «¿pagarías?») | **≥3** entrevistas documentadas (minuta o VOLCADO §6): comparación vs agregador/WhatsApp; reacción a ejemplo Pro **USD 40 + 0,80%** sobre GMV ilustrativo ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §3.1, §5) |
+| **5. Pricing mom-test** | Dueño farmacia reacciona a **cuota 45/60/70 + % GMV** con **hechos pasados** (no «¿pagarías?») | **≥3** entrevistas documentadas (minuta o VOLCADO §6): comparación vs agregador/WhatsApp; reacción a ejemplo Pro **USD 60 + 12%** sobre GMV ilustrativo ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §3.1, §5) |
 | **Go Day-D** | Founder firma checklist §4.0 + ALINEACION P0 cerrados | **No** tráfico masivo Meta/valla sin filas **1–5** |
 
 Coherente con [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §8.1 (SPIN), [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §2.1 (WTP) y [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md).
@@ -208,7 +208,7 @@ Más farmacias activas (+ catálogo) → más pacientes en zona piloto (Meta + r
 |------|------------------------|--------|
 | 1. Oferta | Farmacias **activas** (curva §1.1: **40** M1 → **97** M6) | [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 |
 | 2. Demanda | Pedidos completados; NPS B2C ≥ 35 en M6 | §5 DoD |
-| 3. Monetización | Revenue mensual ≥ **4.800** en M6 | §5 DoD |
+| 3. Monetización | Revenue mensual ≥ **29.000** en M6 (esc.1) | §5 DoD |
 | 4. Reinversión | Meta **800**/mes (Lean M1–6) + **4× Sales** | [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2 |
 
 **Freno del flywheel:** churn farmacia **5%**/mes ([UNIT_ECONOMICS.md](UNIT_ECONOMICS.md)); demanda B2C lenta → priorizar Bullseye **interior** (QR farmacia) antes de escalar Meta ([CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md) §2.10).
@@ -227,7 +227,7 @@ Criterios para considerar el piloto exitoso:
 | NPS B2B | ≥ 50 |
 | Tasa cancelación de orden | ≤ 8% |
 | Tasa de comprobante falso | ≤ 0,5% |
-| Revenue mensual | ≥ USD **4.800** (mismo modelo; refinar con FP&A) |
+| Revenue mensual | ≥ USD **29.000** (esc.1 M6; refinar con FP&A) |
 | Cash en banco | ≥ **~USD 46.395** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3: cash final **M6** del año calendario post-Day-D) |
 
 **Si NO se alcanzan estos criterios:** activar plan de contingencia documentado en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) sección 4.

@@ -65,7 +65,7 @@
 | GitHub Team | 5 usuarios | USD 20 | [GitHub Pricing](https://github.com/pricing) |
 | Domain + email corp Google Workspace Business Starter | **USD 7–8,40/usuario** *(promo nuevos: ~50% 3 meses)* | USD 14–42 *(2–5 usuarios)* | [Google Workspace Pricing](https://workspace.google.com/pricing) |
 
-**Total hosting + SaaS Base (jun 2026):** **~USD 280–310/mes** *(desglose arriba)*. Reconciliación con modelo financiero: [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.3.1 — fila **234/mes** (oficina + SaaS conservador; delta SMS documentado).
+**Total hosting + SaaS (jun 2026):** **~USD 280–310/mes** *(desglose arriba)*. Reconciliación con modelo financiero: [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.3.1 — fila **234/mes** (oficina + SaaS conservador; delta SMS documentado).
 
 ## 5. Inmueble en Carabobo (San Diego / Av. Bolívar Norte)
 
@@ -74,7 +74,7 @@
 | Casa / local operativo (HQ) | 2-4 ambientes | **500** (cerrado en pack) | [Tu Inmueble](https://www.tuinmueble.com.ve/) y [InmovaliaVE](https://www.inmovalia.com/) listings 2025-2026 |
 | Oficina comercial 25-50m² (referencia mercado) | 1-2 ambientes | USD 200-550 | Mismo — solo benchmark de cotización |
 
-**Cierre numérico vigente (mayo 2026):** [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2–§4: **Lean / Base / Growth** usan **HQ casa USD 500/mes**.
+**Cierre numérico vigente (mayo 2026):** [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2: **HQ casa USD 500/mes** (escenario Lean / ask único).
 
 ## 6. Servicios públicos VE 2026
 
@@ -102,9 +102,8 @@
 | CPL TikTok Ads VE | USD 0,20-0,80 | [TikTok For Business](https://www.tiktok.com/business/) regional 2025-2026 |
 | Firebase Phone Auth SMS (verificación teléfono) | Variable por país / MNO | [Firebase Auth pricing](https://firebase.google.com/pricing) |
 
-**Presupuesto Marketing digital (Meta Ads — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2–§4):**
+**Presupuesto Marketing digital (Meta Ads — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2):**
 - **Lean:** **800/mes** M1–6 · **500/mes** M7–12 (prom. **~650/mes**) → ~1.100-4.300 leads/mes.
-- **Base / Growth:** **800/mes** todo el año → ~1.330-5.300 leads/mes.
 
 ## 8. Marketing offline VE 2026
 
@@ -122,7 +121,7 @@
 
 **Decisión del pack:**
 - **Lean:** **USD 350/mes** valla pequeña 3m×2m desde M3+.
-- **Base / Growth:** **USD 700/mes** valla mediana 6m×4m desde M2+.
+- Valla mediana **700** y radio FM: fuera de alcance Lean (post-piloto / Serie A).
 
 Detalle en [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md).
 

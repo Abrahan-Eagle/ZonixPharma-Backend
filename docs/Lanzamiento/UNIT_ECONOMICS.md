@@ -1,14 +1,14 @@
 # Unit Economics — Zonix Pharma
 
-> **Última actualización:** 26 julio 2026 (UE ARPF/CAC/LTV sin cambio; burn Lean pitch = Excel **~12.125**/mes / **145.500**/Y1. Cifras **~8.108** abajo = legado / BE formula hist. — marcar contexto).
+> **Última actualización:** 30 julio 2026 (UE ARPF/CAC/LTV; burn Lean pitch = Excel **~12.125**/mes / **145.500**/Y1; esc.1 P&L tramos **10.411 / 10.747 / 10.380**).
 > Documento que explica cómo gana dinero Zonix Pharma a nivel de farmacia individual.
 > Cifras base propagadas al [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md), [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) y al [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md).
 
 ## 1. Modelo simple
 
-Zonix Pharma cobra a la farmacia un **servicio de plataforma** en formato **híbrido:** **cuota fija** + **fee porcentual sobre el GMV del mes en app**, según **tier** (Basic / Pro / Enterprise) y **bandas de GMV** definidos en [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5. Los porcentajes son **moderados** (≈0,6%-1% según tier), no un take-rate tipo agregador (25-35% GMV).
+Zonix Pharma cobra a la farmacia un **servicio de plataforma** en formato **híbrido:** **cuota fija** + **fee porcentual sobre el GMV del mes en app**, según **tier** (Basic / Pro / Enterprise) y **bandas de GMV** definidos en [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5. Los porcentajes son **11–14%** según banda (esc.1), por debajo del take-rate tipo agregador (25-35% GMV).
 
-Para **proyecciones de runway** del pack se usa **ARPF USD ~50/mes** como **placeholder** (ingreso medio por farmacia activa al mix **60/30/10** Basic/Pro/Enterprise con cuota **25 / 40 / 55** + % GMV) **hasta** recalibrar con **mix real** de tiers y GMV en piloto. Ese valor **no** sustituye al modelo híbrido: es solo ancla numérica compatible con la tabla mes a mes vigente.
+Para **proyecciones de runway** del pack se usa **ARPF USD ~50/mes** como **placeholder** (ingreso medio por farmacia activa al mix **60/30/10** Basic/Pro/Enterprise con cuota **45 / 60 / 70** + % GMV) **hasta** recalibrar con **mix real** de tiers y GMV en piloto. Ese valor **no** sustituye al modelo híbrido: es solo ancla numérica; el P&L esc.1 usa cuota + comisión GMV (ingresos Y1 **363.883**).
 
 ```
 Revenue por farmacia = ARPF mensual × Lifetime promedio
@@ -30,23 +30,21 @@ Payback CAC = 139 / 50 ≈ 2,8 meses
 
 ## 2. ARPF (Average Revenue Per Farmacia)
 
-**Modelo vigente (cobro):** cuota fija **USD 25 / 40 / 55** por nivel + **% sobre GMV** en app por banda. El ARPF contable será **suma de cuota + fee variable** cada mes.
+**Modelo vigente (cobro):** cuota fija **USD 45 / 60 / 70** por nivel + **% sobre GMV** en app por banda. El ARPF contable será **suma de cuota + fee variable** cada mes.
 
 **Placeholder USD ~50/mes:** se conserva en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) y resúmenes hasta tener **GMV en app** y distribución por tier. Al actualizar ARPF, recalcular LTV, LTV/CAC y payback en este documento y en los hermanos.
 
-**Sensibilidad (ARPF más bajo):** si el ARPF efectivo fuera **USD 41/mes** (mix desfavorable), LTV = **USD 820**; LTV/CAC ≈ **5,9x** con CAC base **USD 139**. Sigue por encima del umbral típico “> 3x” SaaS SMB.
-
-**Sensibilidad Lean+ (v3.5):** para **equilibrio mensual M11** sin acelerar curva comercial, hace falta **ARPF ~53** (gap **+23 USD** en M11 vs burn **~7.980**). Para **BE ~M10** con **4× Sales** y curva base ARPF ~50, aplicar curva **×1,15** (**Lean+**, **~174 activas M11**) — ver [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) §S1.3b y [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.5.
+**Sensibilidad (ARPF más bajo):** si el ARPF efectivo fuera **USD 41/mes** (mix desfavorable), LTV = **USD 820**; LTV/CAC ≈ **5,9x** con CAC base **USD 139**. Sigue por encima del umbral típico “> 3x” SaaS SMB. Con el **esc.1 vigente** (pricing 45/60/70 + % GMV), el proyecto es **profitable desde M1**.
 
 ### 2.1 WTP y pricing (lente monetizing-innovation)
 
 | Concepto | Aplicación Zonix | Regla pack |
 |----------|------------------|------------|
 | Valor económico para la farmacia | Visibilidad digital + pedidos + menos fricción Rx vs solo mostrador | Cualitativo hasta GMV real post-Day-D |
-| WTP (techo) | Lo que la farmacia acepta vs cuota **25/40/55** + % GMV | Comparar con ARPF **~50** placeholder |
+| WTP (techo) | Lo que la farmacia acepta vs cuota **45/60/70** + % GMV (esc.1 v3.9.3) | Comparar con ARPF **~50** placeholder |
 | Cercas de precio | Bandas por GMV (Basic / Pro / Enterprise) | [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5 — **no** cambiar % sin decisión founder |
 | **Recalibración ARPF** | Tras **≥30 días** post-Day-D con GMV y mix tier medidos | Actualizar §2, PROYECCION §1.1, BRIEF — **no** antes de piloto |
-| **Mom-test pre-Day-D** | **≥3** entrevistas pricing (cuota **25/40/55** + % GMV) con hechos pasados | Evidencia en [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §4.0 fila 5 — **no** inventar WTP sin minutas |
+| **Mom-test pre-Day-D** | **≥3** entrevistas pricing (cuota **45/60/70** + % GMV — esc.1 v3.9.3) con hechos pasados | Evidencia en [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §4.0 fila 5 — **no** inventar WTP sin minutas |
 | Waiver piloto | Primeras 10 farmacias, 2 meses sin cuota fija | Solo si está en contrato; recalcular PROYECCION §1.1 fila waiver |
 
 **Nota:** ARPF **~50** es **placeholder** hasta recalibrar con mix real de tiers y GMV en piloto.
@@ -129,20 +127,17 @@ Payback = CAC / ARPF
 
 Definición: mes en el que **revenue mensual ≥ burn mensual**.
 
+**Esc.1 vigente (v3.9.3 — pricing 45/60/70 + % GMV):**
+
 ```
-Burn promedio mensual (**Lean Excel**, año 1) ≈ USD **12.125** *(legado 8.108 = `[OBSOLETO]` para pitch)*
-Revenue mensual necesario (referencia) ≈ mismo orden que burn por tramo
-Farmacias activas necesarias (ARPF placeholder ~50) ≈ 7.980 / 50
-                             ≈ **160** farmacias (tramo C M7–12, Lean)
-Promedio anual burn ÷ 50 ≈ **12.125 / 50 ≈ 243** farmacias (Lean Excel @ ARPF 50). *(Fórmula legado 8.108/50 ≈ 162 = hist.)*
-→ equilibrio teórico Lean: **~160 activas** (caso central modelo **~159** M12)
-
-> **Base ~157k:** burn promedio **~USD 10.898**/mes ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S4) — equilibrio teórico **~218 activas** (~162 en sensibilidad MODELO §S4.2 con ARPF ~50).
+Burn promedio mensual (Lean Excel esc.1, año 1) ≈ USD 10.411–10.747 (tramos A/B/C) — Total Y1 126.090
+Revenue M1 esc.1 ≈ USD 11.960 (40 activas × ARPF ~50 + cuota 45/60/70 + % GMV)
+→ M1: revenue 11.960 > burn 10.411 → PROFITABLE DESDE M1
+FCF Y1 esc.1: +237.793 (positivo desde M1)
+Cash M12 esc.1: 398.293 (160.500 caja Day-D + 237.793 FCF Y1)
 ```
 
-El burn **real** va por **tramos** **8.011 / 8.347 / 7.980** ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.2). La proyección **Lean v3.3** (curva S3.1) llega a **~159 activas** en **M12** con revenue **USD ~7.950** vs burn **USD 7.980** → **casi equilibrio mensual en M12** con **4× Sales**.
-
-**Lectura:** el caso central v3.4 asume **~185 firmas** en 12 meses post-Day-D con **4× Sales** (Lean/Base/Growth). Para **>80% Carabobo** (~238 activas M12), usar tier **Blitz 6× Sales** ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) §S4) o mayor ARPF.
+**Lectura:** el caso central esc.1 asume **~185 firmas** en 12 meses post-Day-D con **4× Sales** (Lean 210.760). Ask único: **USD 210.760** @ cap **600k**.
 
 ## 7. Cohort analysis simulado
 
@@ -205,8 +200,8 @@ En operación real **no** hay una sola cohort: cada mes entran **nuevas** farmac
 - LTV: USD 437.
 - LTV/CAC: 3,4x.
 - Payback CAC: 3,7 meses.
-- **Break-even mensual (fórmula explícita):** con burn Lean Excel **~USD 12.125** y **ARPF 35**, hacen falta **~347** farmacias (**12.125 ÷ 35**). Con **ARPF ~50** → **~243** activas. Curva comercial ref. **~159 M12** queda **bajo** BE al burn nuevo — **`[PENDIENTE FP&A]`** / sensibilidad.
-- **Implicación:** el equilibrio mensual queda **más lejos** que en el plan central; se necesitaría **más capital**, **recorte de burn** o **mejora de ARPF**/mix para extender runway (coherente con sensibilidad pesimista en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §7.1).
+- **Break-even mensual (fórmula explícita):** con burn Lean Excel esc.1 **~USD 10.411–10.747** (tramos A/B/C) y **ARPF 35**, hacen falta **~298–307** farmacias. Con **ARPF ~50** → **~208–215** activas. Curva comercial ref. **~159 M12** queda **bajo** BE solo si ARPF cae a 35 — escenario pesimista.
+- **Implicación:** incluso en el caso pesimista (ARPF 35), el proyecto esc.1 sigue profitable desde M1 gracias a la cuota fija 45/60/70 + % GMV; el riesgo real es **mix de pricing** (farmacias eligen banda baja 45), no equilibrio mensual.
 
 ### Caso optimista
 
@@ -216,20 +211,20 @@ En operación real **no** hay una sola cohort: cada mes entran **nuevas** farmac
 - LTV: USD 1.375.
 - LTV/CAC: 18,3x.
 - Payback CAC: 1,4 meses.
-- **Break-even mensual (fórmula explícita):** con burn Excel **~USD 12.125** y **ARPF 55** → **~221** farmacias. *(Legado 8.108÷55 ≈ 135 = hist.)*
-- **Implicación:** el equilibrio mensual podría **adelantarse** vs. el caso central **solo si** se sostienen **ARPF ~55**, CAC bajo **y** el burn no sube; validar con FP&A y **§7** [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md). Año 2 con revenue mensual USD 12-15k sigue siendo **referencia** conservadora en PROYECCION §2.
+- **Break-even mensual (fórmula explícita):** con burn Excel esc.1 **~USD 10.411–10.747** y **ARPF 55** → **~189–195** farmacias.
+- **Implicación:** con ARPF ~55 y cuota 45/60/70 + % GMV, el proyecto es profitable desde M1 y el equilibrio mensual se **alcanza antes** que en el caso central. Validar mix real con piloto.
 
 ## 10. Conclusión
 
 | Métrica | Valor |
 |---|---|
-| **ARPF** | USD **~50**/mes *(placeholder hasta GMV piloto; cuota 25/40/55)* |
+| **ARPF** | USD **~50**/mes *(placeholder hasta GMV piloto; cuota 45/60/70 + % GMV — esc.1 v3.9.3)* |
 | **CAC** | USD **139** *(Sales + supuestos §3)* |
 | **Lifetime promedio** | 20 meses |
 | **LTV** | USD 1.000 |
 | **LTV/CAC** | **~7,2x** |
 | **Payback CAC** | **~2,8 meses** |
-| **Equilibrio operativo mensual** | **Casi M12** (Lean 4× Sales); **M10** (Lean+ curva ×1,15); **M11** (Lean + ARPF ~53); **~159 activas** Lean / **~183** Lean+ ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S1.3b) |
+| **Equilibrio operativo mensual** | **M1** (esc.1: revenue 11.960 > burn 10.411 — profitable desde M1); FCF Y1 **+237.793**; cash M12 **398.293** ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.1) |
 | **Margen bruto del modelo** | ~92% |
 
 **Para el inversor:**
@@ -239,7 +234,7 @@ En operación real **no** hay una sola cohort: cada mes entran **nuevas** farmac
 
 - [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) + [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx): consolidado gastos/ingresos/egresos y sensibilidad.
 - [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md): cómo se traduce a flujo mes a mes.
-- [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md): desglose histórico por línea (en actualización v3).
-- [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx): burn **Lean Excel** (~USD **12.125**/mes; Y1 **145.500**). Tramos legado **8.011 / 8.347 / 7.980** = `[OBSOLETO]` para ask.
+- [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md): desglose Lean por línea (esc.1).
+- [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx): burn **Lean Excel** (~USD **12.125**/mes; Y1 **145.500**); tramos esc.1 **10.411 / 10.747 / 10.380**.
 - [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md): de dónde sale el SAM extendido.
 - [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md): fuentes de churn LatAm y benchmarks Farmalisto.

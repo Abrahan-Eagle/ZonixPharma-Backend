@@ -180,7 +180,7 @@ Plantilla StoryBrand para copy Meta, valla y app. **Sin** promesas de cura ni re
 
 ### 7.2 Canales offline
 
-- Valla: **Lean Excel ~211k (210.760)** — pequeña 3m×2m **USD 350/mes** (desde M3). **Base ~157k / Growth ~187k** *(hist.)* — mediana 6m×4m **USD 700/mes** (desde M2). Ver [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) §2.
+- Valla: **Lean Excel ~211k (210.760)** — pequeña 3m×2m **USD 350/mes** (desde M3). Ver [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) §2.
 - Flyers en farmacias afiliadas: **USD 50/mes** (alineado [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) §2 tabla Lean).
 - Radio FM local: USD 200-400/mes por mención corta de 30s en horario AM, NO incluido en Lean ni Base. Solo Growth.
 

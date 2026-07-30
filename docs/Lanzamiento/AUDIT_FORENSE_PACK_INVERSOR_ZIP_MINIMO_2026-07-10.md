@@ -1,7 +1,6 @@
 # AUDIT FORENSE — Pack inversor ZIP MÍNIMO · Zonix Pharma
 
-> **`[OBSOLETO]` anclas 10 jul 2026:** Lean **~112k / 18,66%**. Canon vigente 26 jul = Excel **210.760 / ~35,13%**.
-
+> **Snapshot auditoría 10/07/2026:** cifras del cuerpo no son canon — ver [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) (ask **210.760** / equity **~35,13%** / cash M12 **398.293**).
 
 > **Fecha:** 10 julio 2026  
 > **Corpus:** 8 docs + Excel + 3 opcionales (`DOCUMENTOS_SOLO_INVERSOR.md` § A)  

@@ -1,8 +1,9 @@
 # Documentos solo para el inversor — Zonix Pharma
 
-> **Última actualización:** 8 julio 2026  
+> **Última actualización:** 12 julio 2026 (briefing inversores VE **profundizado forense**)  
 > **Propósito:** inventario canónico del **data room inversor** (pre-seed). No incluye pack aliado Gabriel ni plantillas internas de equipo.  
-> **Fuente operativa:** [README.md](README.md) · **Verificación:** `python3 _tools/verify_inversor_pack.py` · **Zip:** `python3 _tools/build_zip_inversor.py`
+> **Fuente operativa:** [README.md](README.md) · **Verificación:** `python3 _tools/verify_inversor_pack.py` · **Zip:** `python3 _tools/build_zip_inversor.py`  
+> **Informe CEO — inversores VE 2026 (profundizado + NotebookLM):** [BRIEFING_INVERSORES_VE_2026.md](BRIEFING_INVERSORES_VE_2026.md) · **versión Word para CEO:** [BRIEFING_INVERSORES_VE_2026.docx](BRIEFING_INVERSORES_VE_2026.docx) — no va en zip mínimo; sí en data room extendido / uso interno fundraising.
 
 ---
 
@@ -41,12 +42,19 @@ Documentos inversor adicionales en `docs/Lanzamiento/` (no van en el zip de 30 m
 | 10 | Propuesta valor farmacia B2B | [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) |
 | 11 | Propuesta valor paciente B2C | [PROPUESTA_VALOR_USUARIO_FINAL.md](PROPUESTA_VALOR_USUARIO_FINAL.md) |
 | 12 | Propuesta valor delivery + farmacéutico | [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md) |
-| 13 | Presupuesto 12M (tiers Lean / Base / Growth) | [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) |
+| 13 | Presupuesto 12M (Lean — ask único) | [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) |
 | 14 | Supuestos marketing offline | [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) |
 | 15 | Plan métodos de pago VE | [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) |
 | 16 | Plan módulo operativo (Rx, seguridad, QA) | [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) |
 | 17 | Censo farmacias Carabobo Fase 0 | [CENSO_FARMACIAS_CARABOBO_FASE0.md](CENSO_FARMACIAS_CARABOBO_FASE0.md) |
 | 18 | Montos referencia internet (fuentes precios) | [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md) |
+
+### Fundraising / mapa de capital (uso interno CEO)
+
+| Documento | Archivo |
+|-----------|---------|
+| Informe CEO inversores VE 2026 (profundizado forense + NotebookLM) | [BRIEFING_INVERSORES_VE_2026.md](BRIEFING_INVERSORES_VE_2026.md) |
+| Versión Word para CEO (adjuntar / Google Docs) | [BRIEFING_INVERSORES_VE_2026.docx](BRIEFING_INVERSORES_VE_2026.docx) |
 
 ### Due diligence técnica (opcional)
 
@@ -105,3 +113,14 @@ python3 _tools/build_zip_inversor.py --tier full  # data room extendido
 ```
 
 Antes de enviar: cerrar P0 en [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) (aprobación founder P0-04) y marcar en [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md).
+
+> **Gate legal del wire (bloqueante):** la **PIPA (cesión de IP del founder a ZONIX PHARMA C.A.)** es **condición suspensiva del desembolso**. Ningún wire se ejecuta sin PIIA firmada + inventario de activos en data room. Ver [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §1.5 y §8 (mecanismo tranche condicional / escrow notarial).
+
+---
+
+## Forense + NotebookLM (10 jul 2026)
+
+- Auditoría: [AUDIT_FORENSE_PACK_INVERSOR_ZIP_MINIMO_2026-07-10.md](AUDIT_FORENSE_PACK_INVERSOR_ZIP_MINIMO_2026-07-10.md)
+- Cierre: [CIERRE_FORENSE_NLM_INVERSOR_2026-07-10.md](CIERRE_FORENSE_NLM_INVERSOR_2026-07-10.md)
+- Exports Studio: [_exports_notebooklm/](_exports_notebooklm/)
+- Notebook: https://notebooklm.google.com/notebook/fdf0a0f4-7a79-439f-a594-bbac53317658

@@ -1,5 +1,7 @@
 # AUDIT — MODELO_FINANCIERO_170726 v3.xlsx (Lean)
 
+> **Snapshot auditoría 26/07/2026:** cifras del cuerpo son hallazgos del día; **canon vigente** = [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) / [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) (ask **210.760**, esc.1 FCF **+237.793**, cash M12 **398.293**).
+
 > **Fecha:** 2026-07-26  
 > **Fuente numérica:** `/home/aipp/Descargas/MODELO_FINANCIERO_170726 v3.xlsx` (etiqueta Detallado **v3.9.3**, 17-jul-2026)  
 > **Método:** fan-out pack (4 workers) → extracción 14 hojas → 1 agente/hoja → síntesis → jueces adversariales (sección final)  

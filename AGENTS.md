@@ -267,6 +267,7 @@ Todos los skills y sus directivas se auto-generan usando `python3 .agents/skills
 | **`zonix-financial-model`** | **Modelo financiero Zonix Pharma (marketplace farmacia VE). Coherencia PROYECCION, UNIT_ECONOMICS, PRESUPUESTO; escenarios Lean/Base/Growth; Fase 0 T+90. No sustituye contador SENIAT.** | [.agents/skills/zonix-financial-model/SKILL.md](.agents/skills/zonix-financial-model/SKILL.md) |
 | **`zonix-founder-ops-index`** | **Índice curado CEO/CTO/TPM para founder Zonix Pharma. Enlaces a kuchin awesome-ceo/cto/tpm. Cifras solo desde zonix-startup-context y pack Lanzamiento.** | [.agents/skills/zonix-founder-ops-index/SKILL.md](.agents/skills/zonix-founder-ops-index/SKILL.md) |
 | **`zonix-fundraising-narrative`** | **Narrativa fundraising Zonix Pharma — pitch bullets, email/WhatsApp inversor, Q&A SAFE pre-seed VE. Basado en MENSAJE_ENVIO y CONTEXTO_PITCH. Invocar zonix-startup-context primero.** | [.agents/skills/zonix-fundraising-narrative/SKILL.md](.agents/skills/zonix-fundraising-narrative/SKILL.md) |
+| **`zonix-inversionistas-crm`** | **CRM interno de candidatos a capital Zonix Pharma — forense URL, ficha/notas/resumen CEO+PDF, rúbrica T/S/E/V/C/R, ranking. No es data room ni pitch. No contactar ni commit sin OK.** | [.agents/skills/zonix-inversionistas-crm/SKILL.md](.agents/skills/zonix-inversionistas-crm/SKILL.md) |
 | **`zonix-investor-materials`** | **Materiales inversor Zonix Pharma — data room ligero, checklist due diligence, gaps pack Lanzamiento. Alineado a docs/Lanzamiento y CHECKLIST_PRE_INVERSOR. No sustituye abogado ni contador.** | [.agents/skills/zonix-investor-materials/SKILL.md](.agents/skills/zonix-investor-materials/SKILL.md) |
 | **`zonix-jarvis-subagents-map`** | **Mapeo tareas Zonix Pharma → subagents externos (lente VoltAgent) → skills zonix-* obligatorias. No instalar subagents de terceros en el repo.** | [.agents/skills/zonix-jarvis-subagents-map/SKILL.md](.agents/skills/zonix-jarvis-subagents-map/SKILL.md) |
 | **`zonix-lanzamiento-docs`** | **Mejorar y auditar documentos en docs/Lanzamiento con marcos founder-playbook/shawnpang adaptados a Zonix Pharma VE. Router por archivo; cifras solo desde pack. Invocar zonix-startup-context primero.** | [.agents/skills/zonix-lanzamiento-docs/SKILL.md](.agents/skills/zonix-lanzamiento-docs/SKILL.md) |
@@ -387,6 +388,7 @@ Aplicar precedencia de [`jarvis-core`](.agents/skills/jarvis-core/SKILL.md) cuan
 | Modo research | `context-packs-ops` |
 | Modo review | `context-packs-ops` |
 | Naming de branch y checklist pre-PR | `branch-pr-ops` |
+| Nueva candidata inversionista / forense fondo VE / scoring CRM Inversionistas | `zonix-inversionistas-crm` |
 | PR supera 400 líneas o presupuesto de review | `chained-pr-ops` |
 | Pedir code review | `requesting-code-review` |
 | Planificar desarrollo | `brainstorming-ops` |

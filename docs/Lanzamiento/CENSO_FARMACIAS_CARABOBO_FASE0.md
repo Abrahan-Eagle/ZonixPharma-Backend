@@ -2,7 +2,7 @@
 
 > **Última actualización:** 22 junio 2026  
 > **Estado:** estimado **150–250** puntos objetivo — **validación en campo [PENDIENTE]** antes de fijar nómina comercial definitiva.  
-> **Uso:** dimensionar **4× Sales** (Lean/Base/Growth) vs **6× Blitz** — ver [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) §S4.1.
+> **Uso:** dimensionar **4× Sales** (Lean ask único) — ver [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md).
 
 ---
 
@@ -73,11 +73,11 @@ Contar **farmacias independientes y medianas** en **todo el estado Carabobo** (n
 
 ## 6. Implicación comercial (headcount)
 
-| Meta territorial | Vendedores mínimo año 1 | Tier modelo | Firmas Y1 ref. |
-|------------------|-------------------------|-------------|----------------|
-| **Carabobo conservador (~159 activas M12)** | **4× Sales** | **Lean ~211k (210.760 Excel)** / **Base ~157k** *(hist.)* / **Growth ~187k** *(hist.)* | ~185 firmas, ~159 activas M12 |
-| **Carabobo agresivo (>80% independientes)** | **6× Sales** | **Blitz ~185k** *(stretch)* | **~279 firmas, ~238 activas M12** |
-| **150+ activas con visita mensual presencial sostenida** | **6–8× Sales** | Blitz o post-Serie A | Validar post-censo §7 |
+| Meta territorial | Vendedores mínimo año 1 | Ask / modelo | Firmas Y1 ref. |
+|------------------|-------------------------|--------------|----------------|
+| **Carabobo conservador (~159 activas M12)** | **4× Sales** | **Lean ~211k (210.760 Excel)** | ~185 firmas, ~159 activas M12 |
+
+Meta agresiva (>80% independientes / 150+ activas con visita presencial sostenida): validar headcount Sales **post-censo §7** bajo el mismo ask Lean; no introduce un segundo tier SAFE.
 
 Ver análisis Pizza → Zonix (jun 2026) y [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §0.2.
 
@@ -88,7 +88,7 @@ Ver análisis Pizza → Zonix (jun 2026) y [PROYECCION_FINANCIERA_12M.md](PROYEC
 - [ ] ≥ **150 filas** válidas en plantilla §5 con `tipo = independiente | cadena_local`
 - [ ] ≥ **2 fuentes** cruzadas (Saas + calle o gremio)
 - [ ] Mapa por municipio (conteo reconciliado)
-- [ ] Founder aprueba **N definitivo** y tier SAFE (Lean vs Base vs **Blitz** stretch)
+- [ ] Founder aprueba **N definitivo** de Sales bajo ask Lean **210.760**
 - [ ] Actualizar [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) y [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) §4 con cifra validada
 
 ---

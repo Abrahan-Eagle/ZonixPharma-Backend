@@ -81,6 +81,7 @@
 | `zonix-financial-model` | local | local-only | Auditar finanzas del pack (PROYECCION, UNIT, PRESUPUESTO) |
 | `zonix-founder-ops-index` | local | local-only | Lectura founder CEO/CTO/TPM (due diligence, 90 días) |
 | `zonix-fundraising-narrative` | local | local-only | Redactar pitch / email inversor |
+| `zonix-inversionistas-crm` | local | local-only | Nueva candidata inversionista / forense fondo VE / scoring CRM Inversionistas |
 | `zonix-investor-materials` | local | local-only | Preparar data room / gaps inversor |
 | `zonix-jarvis-subagents-map` | local | local-only | Tarea multi-rol compleja (qué subagent + qué skill) |
 | `zonix-lanzamiento-docs` | local | local-only | Mejorar o auditar un .md en docs/Lanzamiento/ |

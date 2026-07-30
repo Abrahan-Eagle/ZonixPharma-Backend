@@ -47,15 +47,15 @@ Un **anillo** a la vez; presupuestos desde [PRESUPUESTO_12_MESES_REFERENCIA.md](
 - La valla en av. Bolívar Norte da legitimidad.
 - El radio FM AM genera confianza en adultos mayores (hijos compran para mamás).
 
-## 2. Presupuesto offline por escenario
+## 2. Presupuesto offline (Lean — ask único)
 
-| Item | Lean (~211k / 210.760 Excel) | Base (~157k — hist.) | Growth (~187k — hist.) |
-|---|---|---|---|
-| Valla publicitaria | **USD 350/mes desde mes 3** (pequeña 3m×2m) | **USD 700/mes desde mes 2** (mediana 6m×4m) | USD 700/mes desde mes 2 |
-| Radio FM AM (mención 30s) | USD 0 | USD 0 | USD 250/mes desde mes 4 |
-| Flyers + brochures | USD 50/mes | USD 100/mes | USD 150/mes |
-| Eventos locales / patrocinios pequeños | USD 0 | USD 50/mes desde mes 6 | USD 100/mes desde mes 4 |
-| **Total offline mensual** | **USD 50–400/mes** *(brochures M1+; valla pequeña M3+ — §4.1)* | **USD 350-550/mes** *(brochures M1-2, valla mediana M2+, eventos M6+ — §4.1)* | **USD 1.200** |
+| Item | Lean (~211k / 210.760 Excel) |
+|---|---|
+| Valla publicitaria | **USD 350/mes desde mes 3** (pequeña 3m×2m) |
+| Radio FM AM (mención 30s) | USD 0 |
+| Flyers + brochures | USD 50/mes |
+| Eventos locales / patrocinios pequeños | USD 0 |
+| **Total offline mensual** | **USD 50–400/mes** *(brochures M1+; valla pequeña M3+ — §4.1)* |
 
 ## 3. Detalle por canal
 
@@ -67,7 +67,7 @@ Un **anillo** a la vez; presupuestos desde [PRESUPUESTO_12_MESES_REFERENCIA.md](
 |---|---|---|---|
 | Pequeña 3m×2m | Av. secundaria | 250-400 | OK para barrio. |
 | **Pequeña 3m×2m** | **Av. principal (Bolívar Norte / Cedeño)** | **350-500** | **Lean.** |
-| Mediana 6m×4m | Av. principal | 600-900 | Growth. |
+| Mediana 6m×4m | Av. principal | 600-900 | Fuera de alcance Lean (post-piloto / Serie A). |
 | LED grande 6m×4m | Av. principal con loop 8s | 1.200-2.500 | Solo con Serie A o post-PMF. |
 
 Fuentes: [PubliExterior VE](https://www.publiexterior.com/), [Imagen Publicidad Exterior](https://www.imagenpublicidad.com/), [DAR Publicidad](https://www.darpublicidad.com.ve/).
@@ -94,9 +94,7 @@ Detalle de marca en [`../BRAND_ZONIX_PHARMA.md`](../BRAND_ZONIX_PHARMA.md).
 
 | Escenario | Mes activación | Razón |
 |---|---|---|
-| Lean | Valla **pequeña 350** (M3+) | HQ casa + foco digital Meta 800/500 |
-| Base | Valla **mediana 700** (M2+) | Sincroniza con Day-D del piloto. |
-| Growth | Valla **mediana 700** (M2+) | Pre-lanzamiento + Day-D. |
+| Lean (ask único) | Valla **pequeña 350** (M3+) | HQ casa + foco digital Meta 800/500 |
 
 #### 3.1.5 Métricas
 
@@ -107,23 +105,13 @@ Detalle de marca en [`../BRAND_ZONIX_PHARMA.md`](../BRAND_ZONIX_PHARMA.md).
 
 **Justificación a pesar del CPL alto:** la valla no compite con digital en CPL; compite en **branding y legitimidad**. Para B2B (farmacias) la valla es un argumento de venta directo: "ya somos visibles en la ciudad".
 
-### 3.2 Radio FM AM (Growth solamente)
+### 3.2 Radio FM AM (fuera de alcance Lean)
 
-#### 3.2.1 Inversión
+Radio FM **no** está en el presupuesto Lean. Cotizar solo post-DoD M6 o Serie A si el founder decide branding AM.
 
-- **Plan:** mención de 30s, 4 menciones/día, días lunes a sábado, horario 6:00-9:00 (AM principal).
-- **Costo:** USD 200-400/mes según emisora.
-- **Recomendado:** Radio Pegasus 89.9 FM, Capital 95.5 FM, Mara FM 91.7 (alcance Valencia metro).
-
-#### 3.2.2 Audiencia
-
-- Hombres y mujeres 45+ años.
-- Hijos cuidando a padres ancianos.
-- Conductores en ruta al trabajo.
-
-#### 3.2.3 Mensaje
-
-> "Zonix Pharma. Pide los medicamentos de tu mamá, tu papá o tu abuela desde tu teléfono. Te llegan a domicilio en 90 minutos. Bella Florida y El Socorro. Descarga gratis Zonix Pharma en Play Store o App Store."
+- **Plan referencial:** mención 30s, 4 menciones/día, lun–sáb 6:00–9:00; costo **USD 200-400/mes**.
+- **Audiencia:** 45+ / cuidadores / conductores.
+- **Mensaje:** "Zonix Pharma. Pide los medicamentos de tu mamá, tu papá o tu abuela desde tu teléfono…"
 
 ### 3.3 Flyers y brochures
 
@@ -161,17 +149,16 @@ Detalle de marca en [`../BRAND_ZONIX_PHARMA.md`](../BRAND_ZONIX_PHARMA.md).
 #### 3.4.2 Costo
 
 - USD 50-200 por evento.
-- Frecuencia: 1-2 eventos por mes desde mes 6 (Base) o mes 4 (Growth).
+- Frecuencia: 1-2 eventos por mes desde mes 6 (Lean; opcional).
 
 #### 3.4.3 Métricas
 
 - Asistentes que descargan app: meta 5-15% del público.
 - Tickets de soporte mencionando el evento: indicador de éxito.
 
-### 3.5 Marketing digital (Meta Ads) — por tier
+### 3.5 Marketing digital (Meta Ads) — Lean
 
-- **Lean:** USD **800/mes** M1–6 · **500** M7–12.
-- **Base / Growth:** USD **800/mes** todo el año — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2–§4.
+- **Lean:** USD **800/mes** M1–6 · **500** M7–12 — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.
 
 ### 3.6 Canal referido / ciclo viral (costo ~0 — Steve Blank M5)
 
@@ -196,15 +183,15 @@ El canal de adquisición más barato del piloto no es paid: es la **farmacia ali
 
 ## 4. Asignación temporal del presupuesto offline
 
-### 4.1 Escenario Base USD 350-550/mes promedio
+### 4.1 Escenario Lean — offline USD ~50–400/mes
 
 | Mes | Items activos | USD aproximado |
 |---|---|---|
-| 1-2 | Brochures + tarjetas | USD 100-150 |
-| 3-5 | Valla + flyers + brochures | USD 450-500 |
-| 6+ | Valla + flyers + brochures + eventos pequeños | USD 500-550 |
+| 1-2 | Brochures + tarjetas | USD 50-100 |
+| 3-5 | Valla pequeña + flyers + brochures | USD 350-450 |
+| 6+ | Valla + flyers + brochures (+ eventos opcionales) | USD 350-400 |
 
-**Promedio anual:** **USD 350-550/mes** (incluye valla + material + eventos según tramo), alineado con [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.3 (Lean/Base) y §3–§4.
+**Rango Lean:** **USD 50–400/mes** según tramo (brochures M1+; valla pequeña M3+), alineado con [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.3.
 
 ## 5. KPIs de marketing offline
 
@@ -222,19 +209,19 @@ El canal de adquisición más barato del piloto no es paid: es la **farmacia ali
 | 6 | 2.6M | 520 | ~20% |
 | 12 | 6.6M | 1.500 | ~18% |
 
-## 6. Por qué NO subir más el presupuesto offline en Base
+## 6. Por qué NO subir el presupuesto offline Lean sin DoD
 
-1. **Marginalidad decreciente:** una valla pequeña ya da branding. Una mediana en Base no triplicaría conversión, solo aumenta CPL.
+1. **Marginalidad decreciente:** una valla pequeña ya da branding. Una mediana no triplicaría conversión, solo aumenta CPL.
 2. **Sustituible con digital:** USD 350 más en Meta Ads = 580-2.330 leads adicionales. La valla con USD 350 marginal genera ~40-100 descargas extra.
 3. **Liquidez:** offline no tiene urgencia. Si farmacias no firman, podemos cortar valla en 30 días sin daño operativo.
 4. **Aprendizaje vs. branding:** en piloto necesitamos APRENDER (digital nos da datos). En crecimiento post-PMF necesitamos BRANDING (offline tiene más sentido).
 
 ## 7. Cuándo escalar el presupuesto offline
 
-Triggers para subir de Lean (valla pequeña **350**) → Base/Growth (valla mediana **700**):
+Triggers para reforzar offline Lean (valla pequeña **350**) si DoD M6 falla:
 
 1. Adopción supera 130% del plan.
-2. Cash en banco al cierre del **mes 6 post-Day-D (M6)** ≥ **~USD 48.311** (caja final M6 — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3; escenario **Lean legado ~112k** — cash M6 **`[PENDIENTE FP&A]`** vs burn Excel ~12.125; cifra 48.311 = legado).
+2. Cash en banco al cierre del **mes 6 post-Day-D (M6)** ≥ **~USD 218.981** (caja final M6 esc.1 — [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1; 160.500 + FCF acum. M6 **58.481**).
 3. CAC orgánico (offline + boca en boca) supera CAC digital en farmacias firmadas.
 4. Serie A levantada o en proceso.
 
@@ -263,7 +250,7 @@ TikTok Ads es especialmente útil para captar el persona "Diego, 34 años" (jove
 
 ## 8. Documentos hermanos
 
-**Decisión del pack — presupuesto digital Meta Ads:** **Lean:** **USD 800/mes** M1–6 + **500** M7–12. **Base/Growth:** **USD 800/mes** todo el año — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2–§4 y §**3.5** de este documento.
+**Decisión del pack — presupuesto digital Meta Ads:** **Lean:** **USD 800/mes** M1–6 + **500** M7–12 — [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2 y §**3.5** de este documento.
 
 - [PROPUESTA_VALOR_USUARIO_FINAL.md](PROPUESTA_VALOR_USUARIO_FINAL.md): mensaje del marketing al paciente.
 - [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md): mensaje del marketing a la farmacia.

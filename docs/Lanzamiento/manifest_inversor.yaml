@@ -1,7 +1,7 @@
 # Data room inversor Zonix Pharma — manifest
 # Canon: DOCUMENTOS_SOLO_INVERSOR.md
 version: "1.0"
-updated: "2026-07-08"
+updated: "2026-07-12"
 audience: "Inversor pre-seed (SAFE)"
 
 tiers:
@@ -53,6 +53,12 @@ tiers:
       - path: "Lanzamiento/CENSO_FARMACIAS_CARABOBO_FASE0.md"
         required: true
       - path: "Lanzamiento/MONTOS_REFERENCIA_INTERNET.md"
+        required: true
+
+  fundraising_ceo:
+    description: "Informe CEO legible capital VE 2026 + NotebookLM (no zip mínimo)"
+    paths:
+      - path: "Lanzamiento/BRIEFING_INVERSORES_VE_2026.md"
         required: true
 
   dd_tecnica:

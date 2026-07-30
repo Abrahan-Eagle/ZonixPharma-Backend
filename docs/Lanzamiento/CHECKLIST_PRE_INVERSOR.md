@@ -29,7 +29,7 @@
 |---|-------------------|-------------------|--------|
 | 1 | ¿Por qué tú y a tiempo completo? | Track record 8+ años; fundador Zonix/Corral X; declarar **% dedicación** explícita | VOLCADO §1.1; REGISTRO P0-02 |
 | 2 | ¿Hay ventas / tracción hoy? | **Pre-revenue**; stack en **staging/VPS**; piloto **Day-D T+90**; no inflar GMV | BRIEF § Qué es; ALINEACION |
-| 3 | ¿Por qué **~211k (210.760)** y cap **600k**? | Piso creíble Fase 0 **50.260** + burn **145.500** + reserva **15.000** con **CEO + 4× Sales**; cash M12 `[PENDIENTE FP&A]` | MODELO xlsx; BRIEF |
+| 3 | ¿Por qué **~211k (210.760)** y cap **600k**? | Piso creíble Fase 0 **50.260** + burn **145.500** + reserva **15.000** con **CEO + 4× Sales**; cash M12 esc.1 **398.293** | MODELO xlsx; BRIEF |
 | 4 | ¿Es legal el modelo Rx en VE? | Farmacéutico **de cada farmacia** valida; dictamen **abogado + asesor** pre-Day-D | PLAN_MODULO §1; ESTRUCTURA |
 | 5 | ¿El producto está en producción? | **Staging** hoy; Play/App Store + Firebase OTP **T+7–12** Fase 0; **443 tests** (re-verificar) | ALINEACION; CHECKLIST §7.7 |
 
@@ -62,7 +62,7 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 ## 1. Documentos para la reunión
 
 - [ ] [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) impreso o en PDF.
-- [ ] [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) en formato spreadsheet imprimible (**Lean** mes a mes §1.1; tiers Base/Growth y año 2–3 en el mismo doc + [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §3–§4).
+- [ ] [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) en formato spreadsheet imprimible (**Lean** mes a mes §1.1; año 2–3 en el mismo doc + [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md)).
 - [ ] [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) con cap table actualizado.
 - [ ] **SAFE + contrato marco farmacia + T&C / privacidad** marcados como **borrador** hasta dictamen **abogado** (no enviar como versión final sin sello legal).
 - [ ] Demo en vivo de la app (Buyer + Pharmacy + Pharmacist + `delivery_company` + `delivery_agent`) — guion §1.2.
@@ -72,9 +72,9 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 - [ ] **Creativos publicitarios** (Meta/TikTok/valla/flyers) revisados contra [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md) §1.1 (Do/Don't salud VE) + visto bueno **abogado**.
 - [ ] **Términos de uso, política de privacidad y contrato marco farmacia** alineados con [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §4.4–4.4.5 (versión PDF fecha y hash en carpeta del inversor).
 
-### 1.1 Nota inversor — escenarios SAFE (Growth vs Base)
+### 1.1 Nota inversor — SAFE único (canon v3.9.3)
 
-> **Tiers capital (v3.9.3 jul 2026):** **Lean ~211k / USD 210.760 (Excel)** · **Base ~157k** *(hist.)* · **Growth ~187k** *(hist.)* · **Blitz ~185k** *(hist.)*. Ask principal = Lean Excel; asks **~174k / ~112k** = `[OBSOLETO]`.
+> **Ask único (v3.9.3 jul 2026):** **Lean USD 210.760** @ cap **600k** → equity **~35,13%**. Ver [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) §S1.3 y [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §2.3.
 
 ### 1.2 Guion demo en vivo (~8–12 min)
 
@@ -90,7 +90,7 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 
 - [ ] **Nombre y datos del inversor:** [PENDIENTE]. Confirmado vía teléfono / email.
 - [ ] **Tipo de inversor:** ángel individual, fondo o family office.
-- [ ] **Ticket esperado:** USD 25k / 50k / **210.760 (Lean Excel)** / **~157k (Base hist.)** / **~187k (Growth hist.)** / **~185k (Blitz hist.)**.
+- [ ] **Ticket esperado:** **USD 210.760 (Lean — ask único v3.9.3)**.
 - [ ] **Experiencia previa del inversor en LatAm o VE:** [PENDIENTE].
 - [ ] **Inversiones previas en farmacéutico o salud:** [PENDIENTE].
 - [ ] **Disponibilidad para reunión:** [PENDIENTE].
@@ -109,6 +109,7 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 - [ ] **Referencias:** 2-3 contactos con teléfono y permiso explícito. [PENDIENTE].
 - [x] **Track record cuantificado (resumen):** 8+ años stack producto; fundador de **Zonix Pharma**, Corral X, Zonix Imports y Aiblockweb; lideró equipo de 5 devs (Mekautos); 443 tests backend Zonix Pharma (verificación repo mayo 2026).
 - [ ] **Compromiso a tiempo completo:** declarar explícitamente. Hoy consta **CETIAC 2025–presente** (sábados) y roles director/proyecto en LinkedIn; el inversor preguntará. Completar: % dedicación Zonix Pharma vs. otros ingresos. [PENDIENTE declaración firmada].
+- [ ] **PIIA (Proprietary Information and Inventions Assignment) firmada:** cesión formal de código, marca, dominios y know-how pre-constitución del founder a **ZONIX PHARMA C.A.** — **bloquea wire** (condición suspensiva). Inventario de activos intangibles en data room. Ver [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §1.5. [PENDIENTE abogado].
 
 ## 4. Datos del piloto (con visitas presenciales hechas)
 
@@ -143,8 +144,8 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 | 5-10 | Pitch solución: "Zonix Pharma. Marketplace farmacéutico VE con cuota plataforma + fee sobre GMV (moderado vs agregadores). Validación Rx digital. Stack ya construido." Presentar el [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md). |
 | 10-15 | Demo en vivo: paciente busca, sube receta, paga. Pharmacist valida en tablet. Farmacia ve la orden. **Si hay tiempo:** **`delivery_company`** asigna a **`delivery_agent`** y tracking en app (sin rol autónomo `delivery`). |
 | 15-20 | Mercado: TAM USD 1.638M (Cifar/IMS-IQVIA), comparable Farmalisto (~USD 32M revenue MX; funding ~USD 22M–33M según fuente). |
-| 20-25 | Números: **USD 210.760** Lean Excel (Fase 0 **50.260** + burn **145.500** + reserva **15.000**), **Day-D = T+90** (caja **160.500**), cash M12 `[PENDIENTE FP&A]`, LTV/CAC **~7,2x** (ARPF ~50 — UNIT). |
-| 25-28 | Ask: **Lean Excel — USD 210.760** SAFE cap **600k** (~**35,13%**) · Base/Growth históricos ~157k/~187k — [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md). |
+| 20-25 | Números: **USD 210.760** Lean Excel (Fase 0 **50.260** + burn **145.500** + reserva **15.000**), **Day-D = T+90** (caja **160.500**), cash M12 **398.293** (esc.1), LTV/CAC **~7,2x** (ARPF ~50 — UNIT). |
+| 25-28 | Ask: **Lean Excel — USD 210.760** SAFE cap **600k** (~**35,13%**) — [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md). |
 | 28-30 | Q&A inicial + próximos pasos. |
 
 ### 6.1 Excel modelo — orden de pestañas (reunión FP&A)
@@ -155,10 +156,10 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 | 2 | **Hoja3** — **lateral K–M** | Espejo Detallado: one-shots → cross Fase 0 → timeline **0a/0b/0c** → Caja Day-D → burn → TOTAL SAFE |
 | 3 | **Hoja3** — Sección **B** | Desglose operativo (enlace Detallado). **En voz: empezar por MO Fase 0** aunque el Excel sea legal-first; leer banner *no sumar bloques al SAFE* |
 | 3b | **Hoja1** *(vista tipo Pizza — 8 bloques Zonix)* | CapEx HQ ref. **11.675** · espejo Detallado · panel **TOTAL SAFE 210.760** — **no sumar bloques al SAFE** |
-| 4 | **ESTA SI VALE** | Vista DD + unit economics; **no sumar bloques al SAFE**. Burn catálogo legado **~8.108/mes** puede divergir del Detallado **~12.125** — usar Hoja3 §A como ask oficial. |
+| 4 | **ESTA SI VALE** | Vista DD + unit economics; **no sumar bloques al SAFE**. Burn ask = Detallado **~12.125**/mes (Hoja3 §A). |
 | 5 | **Detallado de la inversión.** | Drill-down si piden línea a línea |
-| 6 | **Año 1** | Cash M12 **`[PENDIENTE FP&A]`** (40.831 = legado burn ~8.1k); escenarios en Excel no unificados |
-| 7 | **Flujo Total** | VAN ilustrativo (~−790); disclaimer SAFE (no 70/30 Pizza) |
+| 6 | **Año 1** | Cash M12 **398.293** (esc.1: 160.500 + FCF +237.793); pricing 45/60/70 + % GMV |
+| 7 | **Flujo Total** | VAN(5) **~+120.530** (esc.1, wire 210.760); TIR **~55%** est.; disclaimer SAFE (no 70/30 Pizza) — `[PENDIENTE FP&A recalc exacto]` |
 
 > **No decir:** «cada fila de la tabla vieja de Hoja3 suma al 100%» (layout obsoleto sumaba ~146%). **No decir:** sumar Subtotal Fase 0 (Sección B) + Burn (Sección A) — ≈ **131k / 118%** trampa reunión.
 
@@ -192,7 +193,7 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 | Q | A |
 |---|---|
 | ¿CEO + CTO la misma persona, no es riesgoso? | "En piloto sí. En Serie A se contrata CTO o CEO técnico. Escala lean." |
-| ¿Cómo manejas la regulación farmacéutica? | "Cada farmacia aporta su pharmacist colegiado; KYC + verificación MPPS. Asesor regulatorio externo USD 120/mes en **Base (~157k) y Growth (~187k)** — no en Lean ~211k." |
+| ¿Cómo manejas la regulación farmacéutica? | "Cada farmacia aporta su pharmacist colegiado; KYC + verificación MPPS. Asesor regulatorio externo USD 120/mes **incluido en burn Lean 210.760** (rubro Contador+Abogado 330)." |
 | ¿Por qué no contratas un pharmacist liaison interno? | "La ley VE obliga a que el pharmacist sea de la farmacia, no de **Zonix Pharma**. Si **Zonix Pharma** contrata uno, no puede validar recetas de farmacias afiliadas." |
 | ¿Equipo fijo o freelance? | "Freelance / honorarios profesionales en piloto. Migración a régimen formal post-Serie A." |
 
@@ -200,14 +201,10 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 
 | Q | A |
 |---|---|
-| ¿Por qué **USD 210.760** mínimo y no menos? | "**210.760 Lean Excel** = Fase 0 **50.260** + burn **145.500** + reserva **15.000** (CEO + Co-CEO + **4× Sales**, Dev, HQ). Tiers Base/Growth/Blitz = histórica." |
-| ¿Qué gano con **~157k Base** *(hist.)* vs **~211k Lean**? | "Sueldos mercado **400**, Dev mid, diseñador + Google Ads B2B, valla mediana, asesor **120/mes**, reserva mayor — **misma curva 4× Sales** *(tier hist. a recalibrar)*." |
-| ¿Qué gano con **~187k Growth** vs **~157k Base**? | "Dev **senior**, colchón **~20k** — mismo **4× Sales** y curva que Base." |
-| ¿Qué gano con **~185k Blitz** vs Growth? | "**+2 vendedores (6×)**, curva **×1,5**, **~238 activas M12** vs **~159** — conquista Carabobo; Dev mid (no senior). MODELO S4." |
-| ¿Y si no contratamos **6 vendedores** pero queremos BE antes de M12? | "Ask **~112k / Lean+** = `[OBSOLETO]` vs Lean Excel **210.760**; cash/BE M12 = `[PENDIENTE FP&A]`." |
-| ¿Por qué LTV/CAC **~7,2x** si benchmarks SaaS son 3-5x? | "1) Revenue recurrente B2B (cuota 25/40/55 + fee GMV) con take-rate total bajo vs agregadores. 2) Marketplace sticky por catálogo y rutas. 3) No operamos logística directa del medicamento (gross margin alto en software). 4) CAC **139** conservador con **4× Sales** Lean." |
+| ¿Por qué **USD 210.760** mínimo y no menos? | "**210.760** = Fase 0 **50.260** + burn **145.500** + reserva **15.000** (CEO + Co-CEO + **4× Sales**, Dev, HQ). Ask único v3.9.3." |
+| ¿Por qué LTV/CAC **~7,2x** si benchmarks SaaS son 3-5x? | "1) Revenue recurrente B2B (cuota **45/60/70** + fee GMV) con take-rate total bajo vs agregadores. 2) Marketplace sticky por catálogo y rutas. 3) No operamos logística directa del medicamento (gross margin alto en software). 4) CAC **139** conservador con **4× Sales** Lean." |
 | ¿Qué pasa si inflación VE supera 800%? | "Plan contingencia: cortar valla (USD 350), bajar Meta ~50% (~USD 400), reducir 1 hire si necesario (~USD 300–400). Burn baja a **~USD 5.500–6.300**/mes (orden de magnitud). Runway extiende **~1–2 meses**." |
-| ¿Hay sueldo del founder? | "**Lean ~211k:** **USD 1.000/mes** Founder CEO/CTO + **CEO** 1.000 en burn ([MODELO_FINANCIERO_ZONIX_PHARMA.xlsx](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx)). Igual en Base/Growth *(hist.)*." |
+| ¿Hay sueldo del founder? | "**Lean 210.760:** **USD 1.000/mes** Founder CEO/CTO + **CEO** 1.000 en burn ([MODELO_FINANCIERO_ZONIX_PHARMA.xlsx](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx))." |
 
 ### 7.5 Sobre el SAFE
 
@@ -217,6 +214,8 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 | ¿Cuándo convierte el SAFE? | "En la próxima ronda con valuación (Serie A esperada mes 18-24)." |
 | ¿Y si no hay Serie A en 24 meses? | "El SAFE no tiene fecha de vencimiento. Se mantiene hasta evento de conversión (ronda) o liquidación." |
 | ¿Qué pasa si **Zonix Pharma** se vende antes de Serie A? | "En un **liquidity event** (M&A) suele haber cláusula de **payout / conversión** según el **SAFE firmado** (no confundir con préstamo 1:1). La mecánica exacta (precio, cap, seniority) la cierra **abogado** con el texto del instrumento." |
+| ¿Cómo se recibe el wire de **USD 210.760**? | "**No** en cuenta personal del founder (exposición fiduciaria/related-party evitada). Mecanismo acordado: **tranche condicional** — **tranche 1** tras firma SAFE + constitución C.A. + apertura cuenta empresa + **PIIA firmada**; **tranche 2** tras hito verificable (ej. Day-D o primer cierre comercial). Alternativa: **escrow notarial** / cuenta bloqueada hasta acta constitutiva. Ver [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §8." |
+| ¿Qué bloquea el desembolso de la primera tranche? | "**PIIA firmada** (cesión de código, marca, dominios y know-how del founder a la C.A.) + acta constitutiva + cuenta bancaria empresa + carta de uso de fondos firmada. Sin PIIA no hay wire — el activo central del SAFE quedaría sin titularidad clara." |
 
 ### 7.6 Sobre los números
 
@@ -225,8 +224,8 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 | ¿De dónde sale TAM USD 1.638M? | "**Cifar VE** publica el mercado citando datos **IMS/IQVIA**: 389M unidades × USD 4,21 promedio. Crecimiento sector +20,66% YoY ene-ago 2025 / +17,7% proyección anual (validar PDF Cifar)." |
 | ¿De dónde sale CAC USD **139**? | "Construcción bottom-up: **4×** Sales Lean (comisión **USD 40**/firma + prorrateo fijos), marketing digital, materiales. Detalle en [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §3." |
 | ¿De dónde sale churn 5% mensual? | "Mediana SaaS B2B SMB LatAm 3-7% (ChartMogul Benchmarks 2025). Conservador." |
-| ¿Cómo está el **equilibrio mensual** en año 1? | "Burn Excel **~12.125**/mes (**145.500**/Y1). Curva activas ref. **~159 M12** (ARPF ~50) es del modelo legado; equilibrio/cash M12 = **`[PENDIENTE FP&A]`** vs burn nuevo. **Day-D = T+90**; Fase 0 **50.260**; caja Day-D **160.500** ([MODELO_FINANCIERO_ZONIX_PHARMA.xlsx](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx))." |
-| ¿Qué pasa si solo firmamos **~50 farmacias** en año 1 (vs. **~185 firmas / ~159 activas M12** ref.)? | "Menos firmas reduce revenue vs burn **12.125**/mes; cash M12 ya es **`[PENDIENTE FP&A]`**. Ver sensibilidad en [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md)." |
+| ¿Cómo está el **equilibrio mensual** en año 1? | "Esc.1: **profitable desde M1** (revenue **11.960** > burn **10.411**). FCF Y1 **+237.793**; cash M12 **398.293** (160.500 + 237.793). Burn ask Detallado **~12.125**/mes (**145.500**/Y1). Curva **~159 activas M12**. **Day-D = T+90**; Fase 0 **50.260**; caja Day-D **160.500** ([MODELO_FINANCIERO_ZONIX_PHARMA.xlsx](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx))." |
+| ¿Qué pasa si solo firmamos **~50 farmacias** en año 1 (vs. **~185 firmas / ~159 activas M12** ref.)? | "Menos firmas reduce revenue; en esc.1 el colchón de FCF es amplio, pero hay que recalcular runway con FP&A. Ver sensibilidad en [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md)." |
 | ¿Y si el plan no se cumple? | "Tabla de sensibilidad pesimista / base / optimista en [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) y detalle en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) sección 7. Plan de contingencia ante shocks documentado en sección 4." |
 
 ### 7.7 FAQ técnica (due diligence — lente CTO)

@@ -15,7 +15,7 @@
 
 ## 2.0 Día en la vida del dueño + ranking mom-test (Steve Blank M3)
 
-Antes de pitchear (§3) o demostrar (§7), Sales debe **mapear el día real** del dueño y construir el ranking de problemas/beneficios **desde entrevistas** — no desde este documento. **Guía de campo:** [GUIA_DISCOVERY_CALLE_FASE0.md](GUIA_DISCOVERY_CALLE_FASE0.md) §5–§8 (mom-test + pricing 25/40/55).
+Antes de pitchear (§3) o demostrar (§7), Sales debe **mapear el día real** del dueño y construir el ranking de problemas/beneficios **desde entrevistas** — no desde este documento. **Guía de campo:** [GUIA_DISCOVERY_CALLE_FASE0.md](GUIA_DISCOVERY_CALLE_FASE0.md) §5–§8 (mom-test + pricing 45/60/70).
 
 ### Día en la vida (plantilla discovery — llenar por farmacia en VOLCADO §6)
 
@@ -65,7 +65,7 @@ Anticipo en bullets; la profundidad está en **§3** (enlace en cada punto).
 
 #### Misma farmacia, mismo GMV mensual en Zonix Pharma (ilustrativo)
 
-Con **USD 5.000** de GMV **completado en la app** en un **mes estable** y nivel **Pro** (banda **USD 2.501–10.000** — tabla **§5**): **USD 40 + 0,80% × 5.000 = USD 40 + 40 = USD 80/mes** de cuota Zonix (antes de impuestos o ajustes contractuales). **Órden de magnitud:** ~**16–22× menos** que **USD 1.250–1.750** de comisión de agregador sobre el mismo volumen nominal de GMV. Definición operativa de GMV: **§5.5**; economía del modelo híbrido: **§3.1**. **Alta a mitad de mes:** el **primer mes calendario** sigue **§5.6** (cuota fija prorrateada; **sin** % sobre GMV en ese mes parcial) — no confundir con este ejemplo de mes completo.
+Con **USD 3.000** de GMV **completado en la app** en un **mes estable** y nivel **Pro** (banda **USD 2.001–5.000** — tabla **§5**): **USD 60 + 12% × 3.000 = USD 60 + 360 = USD 420/mes** de cuota Zonix (antes de impuestos o ajustes contractuales). **Comparativa:** ~**44% menos** que **USD 750** de comisión de agregador (25% sobre el mismo volumen nominal de GMV). Definición operativa de GMV: **§5.5**; economía del modelo híbrido: **§3.1**. **Alta a mitad de mes:** el **primer mes calendario** sigue **§5.6** (cuota fija prorrateada; **sin** % sobre GMV en ese mes parcial) — no confundir con este ejemplo de mes completo.
 
 4. **Receta médica física:** "el paciente trae receta, hay que validarla a ojo, sin trazabilidad, y si después hay un problema no hay registro".
 5. **Sin acceso a pacientes nuevos fuera de su radio caminable:** "vendemos solo a quien pasa por la cuadra".
@@ -79,8 +79,8 @@ Con **USD 5.000** de GMV **completado en la app** en un **mes estable** y nivel 
 
 ### 3.1 Costo predecible y bajo
 
-- **Modelo híbrido:** cuota fija mensual en USD + porcentaje moderado sobre GMV generado en la app (ver §5). Los porcentajes están en el orden de **fracciones de punto a ~1%**, no en el rango 25-35% de los agregadores.
-- **Comparación vs. Rappi/PedidosYa:** una farmacia con ~USD 5.000/mes de GMV en **Zonix Pharma** suele pagar **órden de magnitud menos** que una comisión típica del 25-35% sobre el mismo volumen.
+- **Modelo híbrido:** cuota fija mensual en USD + porcentaje sobre GMV generado en la app (ver §5). Los porcentajes (11–14%) están por debajo del rango 25-35% de los agregadores.
+- **Comparación vs. Rappi/PedidosYa:** una farmacia con ~USD 3.000/mes de GMV en **Zonix Pharma** suele pagar **~44% menos** que una comisión típica del 25-35% sobre el mismo volumen.
 - **Tier dinámico:** el nivel (Basic / Pro / Enterprise) sigue el GMV mensual según bandas; ascenso y descenso con reglas explícitas en §5.4.
 
 ### 3.2 App propia del marketplace (sin construirla tú)
@@ -135,7 +135,7 @@ Con **USD 5.000** de GMV **completado en la app** en un **mes estable** y nivel 
 
 ### 3.9 Marketing digital y presencia física coordinada
 
-- La farmacia entra al **canal de adquisición** de Zonix Pharma: pauta digital (Meta Ads, Google Ads según plan del pack) y material físico en zona piloto (flyers, vallas según tier Lean/Base/Growth).
+- La farmacia entra al **canal de adquisición** de Zonix Pharma: pauta digital (Meta Ads, Google Ads según plan del pack) y material físico en zona piloto (flyers, vallas según presupuesto Lean).
 - El catálogo de la farmacia queda **visible** para pacientes que buscan por zona y producto, sin que la sucursal tenga que montar su propia campaña desde cero.
 - El costo de esa capa comercial está en el **presupuesto operativo de Zonix Pharma** (ver [SUPUESTO_MARKETING_OFFLINE.md](SUPUESTO_MARKETING_OFFLINE.md)); la farmacia se beneficia del tráfico agregado del marketplace.
 
@@ -160,9 +160,9 @@ Con **USD 5.000** de GMV **completado en la app** en un **mes estable** y nivel 
 
 | Nivel | GMV/mes (USD) | Cuota fija | % sobre GMV |
 |-------|----------------|------------|-------------|
-| **Basic** | USD 0 – USD 2.500 | USD 25 | 0,60% |
-| **Pro** | USD 2.501 – USD 10.000 | USD 40 | 0,80% |
-| **Enterprise** | USD 10.001 en adelante | USD 55 | 1,00% |
+| **Basic** | USD 0 – USD 2.000 | USD 45 | 14% |
+| **Pro** | USD 2.001 – USD 5.000 | USD 60 | 12% |
+| **Enterprise** | USD 5.001 en adelante | USD 70 | 11% |
 
 Los porcentajes aplican al GMV del mes según la definición de §5.5. El nivel efectivo para facturación sigue ascensos/descensos de §5.4 (no se “salta” de banda por un solo mes salvo las reglas allí descritas).
 
@@ -170,9 +170,9 @@ Los porcentajes aplican al GMV del mes según la definición de §5.5. El nivel 
 
 **Único requisito para estar en un nivel:** el **GMV mensual agregado del RIF** (suma de sucursales en **Zonix Pharma**) según la **banda** de la tabla del encabezado de §5. **No** se condiciona el nivel por número de sucursales, tope de órdenes, cantidad de SKU ni tipo de farmacia: **toda farmacia activa** accede a la **misma app y panel** (órdenes, Rx, delivery, pagos VE, reportes y soporte según política de plataforma y contrato marco vigente).
 
-- **Basic:** aplica cuando el GMV del mes cae en **USD 0 – 2.500** → cuota **USD 25 + 0,60%** del GMV de ese mes.
-- **Pro:** aplica cuando el GMV del mes cae en **USD 2.501 – 10.000** → cuota **USD 40 + 0,80%** del GMV de ese mes.
-- **Enterprise:** aplica cuando el GMV del mes es **≥ USD 10.001** → cuota **USD 55 + 1,00%** del GMV de ese mes.
+- **Basic:** aplica cuando el GMV del mes cae en **USD 0 – 2.000** → cuota **USD 45 + 14%** del GMV de ese mes.
+- **Pro:** aplica cuando el GMV del mes cae en **USD 2.001 – 5.000** → cuota **USD 60 + 12%** del GMV de ese mes.
+- **Enterprise:** aplica cuando el GMV del mes es **≥ USD 5.001** → cuota **USD 70 + 11%** del GMV de ese mes.
 
 Las diferencias entre niveles son **solo** esa **tarifa** (fija + %). Los **cambios efectivos** de tarifa tras dos meses consecutivos en otra banda siguen **§5.4**.
 
@@ -240,7 +240,7 @@ Detalle de facturación SENIAT e impago en [PLAN_METODOS_PAGO.md](PLAN_METODOS_P
 | 0-2 | Pitch del problema: pérdida de venta por desabastecimiento, comisión Rappi alta, sin trazabilidad Rx. |
 | 2-5 | Demo app paciente: cómo el paciente busca, agrega al carrito, sube receta, paga, recibe. |
 | 5-8 | Demo dashboard farmacia: cómo entra la orden, cómo se valida la receta, cómo se asigna delivery. |
-| 8-10 | Comparativa precio: Rappi 25-35% GMV vs. **Zonix Pharma** cuota fija + % moderado (§5). Cálculo en vivo con su GMV estimado. |
+| 8-10 | Comparativa precio: Rappi 25-35% GMV vs. **Zonix Pharma** cuota fija + % sobre GMV (§5). Cálculo en vivo con su GMV estimado. |
 | 10-12 | Onboarding: 30 minutos de catálogo + 1h de capacitación. **Contrato marco anual** con Zonix Pharma (renovación y salidas según cláusulas del contrato y avisos acordados). |
 | 12-13 | Sucursal piloto: arrancar con 1 sola sucursal, ver resultado en 30 días, escalar al resto. |
 | 13-15 | Cierre: firma carta de intención (no contrato definitivo). Definir fecha de visita técnica. |
@@ -271,7 +271,7 @@ Registrar respuestas en CRM / [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPU
 
 | Objeción | Respuesta | Evidencia / siguiente paso |
 |---|---|---|
-| "Ya estoy en PedidosYa, no necesito más." | "PedidosYa te cobra USD X.XXX/mes en comisión sobre GMV (~20–30%). **Zonix Pharma** usa cuota fija + un % muy bajo sobre tu GMV en la app (§5); en volumen típico sueles pagar órden de magnitud menos. Puedes mantener PedidosYa mientras pruebas con nosotros." | Calculadora §8; §5 bandas 25/40/55 |
+| "Ya estoy en PedidosYa, no necesito más." | "PedidosYa te cobra USD X.XXX/mes en comisión sobre GMV (~20–30%). **Zonix Pharma** usa cuota fija + un % sobre tu GMV en la app (§5); en volumen típico sueles pagar bastante menos. Puedes mantener PedidosYa mientras pruebas con nosotros." | Calculadora §8; §5 bandas 45/60/70 |
 | "Mi farmacéutico no quiere validar recetas en una app." | "El backend está construido para que él vea solo las recetas pendientes. Capacitación de 30 min. Si tras los **2 primeros meses** (ventana sin penalidad acordada en contrato) no encaja el flujo, las salidas se rigen por el **contrato marco anual** y anexos." | [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md); demo Pharmacist |
 | "¿Y si la app cae?" | "Backend **Laravel** en **VPS Nameshared** + **Pusher** + FCM. SLA del proveedor según contrato del hosting. Plan B: **pickup en sucursal** si falla la entrega digital." | [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) |
 | "¿Cómo se cobra el delivery?" | "El paciente paga el **envío aparte** a la **empresa de delivery**. Tú cobras solo medicamentos (GMV §5). La empresa paga a Zonix **`8%` del fee del mes + USD 0,30 por cada envío** — [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §2.5." | PROPUESTA_TERCER_LADO |
@@ -311,7 +311,7 @@ Plantillas: abogado corporativo + revisión **farmacéutica asesora** en cláusu
 ## 11. Por qué la farmacia debería decir SÍ ahora
 
 1. **Costo de oportunidad:** cada mes sin **Zonix Pharma**, **PedidosYa** (VE) retiene **20–30%** de su GMV digital, o no vende digital. *(Rappi: referencia LatAm 25–35%, no opera en VE.)*
-2. **Tier introductorio:** primeras 10 farmacias del piloto pueden acordar **USD 0 de cuota fija los primeros 2 meses** (waiver promocional; redacción y excepciones en contrato marco — abogado). El GMV se mide igual (§5.7). Después aplica el modelo híbrido §5. **Proyección de caja inversor:** la tabla central [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1–1.3 modela el caso **sin** ese waiver (planning principal); la fila **«con waiver primeras 10»** al pie de §1.1 muestra **~−USD 453** de ingreso acumulado año 1 vs. sin waiver (**proxy** — recalibrar con FP&A) y caja M12 **~USD 41.756** (vs **~40.831** sin waiver). Cualquier promesa comercial más amplia obliga **recalcular** runway con FP&A — ver también [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §6.
+2. **Tier introductorio:** primeras 10 farmacias del piloto pueden acordar **USD 0 de cuota fija los primeros 2 meses** (waiver promocional; redacción y excepciones en contrato marco — abogado). El GMV se mide igual (§5.7). Después aplica el modelo híbrido §5. **Proyección de caja inversor (esc.1 vigente):** la tabla central [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 modela el caso **sin** ese waiver (planning principal; cash M12 **398.293**). Cualquier promesa comercial más amplia obliga **recalcular** runway con FP&A — ver también [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §6.
 3. **Riesgo acotado en los dos primeros meses:** durante los **2 primeros meses** de relación contractual de la farmacia con **Zonix Pharma**, salida **sin penalidad** según lo acordado en contrato marco (alineado al waiver / piloto comercial cuando aplique — ver §5.7). **A partir del mes 3**, **rigen** las reglas de permanencia, avisos y facturación del **contrato anual** y anexos.
 4. **Equipo presencial:** Sales B2B + Customer Support en Carabobo. No es un call-center remoto.
 
@@ -319,10 +319,10 @@ Plantillas: abogado corporativo + revisión **farmacéutica asesora** en cláusu
 
 **Ejemplo ilustrativo** (modelo híbrido §5): Farmacia "La Esperanza", Bella Florida, 1 sucursal.
 - **Antes Zonix Pharma:** GMV mensual digital USD 0 (no vendía digital). Rappi cobrando **25–35%** de las pocas ventas que entraban.
-- **Mes 1 con Zonix Pharma:** GMV USD 320 → nivel Basic; ejemplo de cuota aprox.: USD 25 + 0,60% × 320 ≈ **USD 27** (si el mes es parcial desde alta, puede aplicarse solo fija prorrateada §5.6).
+- **Mes 1 con Zonix Pharma:** GMV USD 320 → nivel Basic; ejemplo de cuota aprox.: USD 45 + 14% × 320 ≈ **USD 90** (si el mes es parcial desde alta, puede aplicarse solo fija prorrateada §5.6).
 - **Mes 3:** GMV USD 1.200 → Basic.
-- **Mes 6:** GMV USD 3.500 → Pro (40 + 0,80% × 3.500 ≈ **USD 68** ese mes).
-- **Mes 12:** GMV USD 7.200 → sigue en Pro.
+- **Mes 6:** GMV USD 3.500 → Pro (60 + 12% × 3.500 ≈ **USD 480** ese mes).
+- **Mes 12:** GMV USD 7.200 → Enterprise (70 + 11% × 7.200 ≈ **USD 862** ese mes).
 - **LTV agregado** depende del mix de meses por banda; actualizar modelos en [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) cuando se congele el mix piloto.
 
 Detalle del cálculo en [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md).

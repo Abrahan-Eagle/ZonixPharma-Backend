@@ -61,7 +61,7 @@ Ingeniero en Informática (IUTVAL, 2013–2018) con **más de 8 años** construy
 | Tipo (ángel / fondo / family office) | [PENDIENTE] |
 | Inversiones previas en LatAm | [PENDIENTE] |
 | Inversiones en farmacéutico o salud | [PENDIENTE] |
-| Ticket esperado (USD) | [PENDIENTE — p. ej. USD 25k / 50k / **210.760** (Lean Excel) / **~157k** (Base hist.) / **~187k** (Growth hist.)] |
+| Ticket esperado (USD) | [PENDIENTE — p. ej. USD 25k / 50k / **210.760** (Lean Excel)] |
 | Disponibilidad para reunión | [PENDIENTE] |
 | Cómo lo conoces | [PENDIENTE — referido / contacto frío / etc.] |
 | Próximo paso confirmado | [PENDIENTE] |
@@ -81,9 +81,9 @@ Ingeniero en Informática (IUTVAL, 2013–2018) con **más de 8 años** construy
 | Dato | Valor |
 |---|---|
 | Proveedor recomendado | [PENDIENTE — PubliExterior, Imagen Publicidad, DAR, otros] |
-| Tamaño elegido | **Lean:** 3m × 2m (pequeña, **~350/mes** M3+) · **Base/Growth:** 6m × 4m (mediana, **~700/mes** M2+) |
+| Tamaño elegido | **Lean:** 3m × 2m (pequeña, **~350/mes** M3+) |
 | Ubicación elegida | [PENDIENTE — av. Bolívar Norte / av. Cedeño] |
-| USD/mes cotizado | [PENDIENTE — Lean **350** / Base-Growth **700**] |
+| USD/mes cotizado | [PENDIENTE — Lean **350**] |
 | Costo de diseño + producción | [PENDIENTE — one-shot ~USD 200] |
 | Plazo de instalación | [PENDIENTE — 7-15 días] |
 | Mes de activación | T+90 (Day-D) / mes 3 |

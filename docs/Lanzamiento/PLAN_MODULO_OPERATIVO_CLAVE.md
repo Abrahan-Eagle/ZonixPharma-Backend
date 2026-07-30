@@ -353,7 +353,7 @@ Datos de salud son categoría especial; **marco legal VE en actualización** —
 
 - **Mes 1-3:** 1 persona Customer Support 8h/día Lun-Sáb. Founder cubre fines de semana y emergencias.
 - **Mes 4-6:** Customer Support extiende a 12h/día Lun-Sáb. Marketing Lead cubre 2-3h Domingo en horario pico.
-- **Mes 7-12:** Si volumen lo justifica, contratar 2do Customer Support part-time (USD 150-200/mes adicional, no presupuestado en Base; Growth lo absorbe).
+- **Mes 7-12:** Si volumen lo justifica, contratar 2do Customer Support part-time (USD 150-200/mes adicional; **no** en el burn Lean del ask — decidir post-piloto / con buffer de caja).
 
 ### 15.3 Plan ante picos (feriados, fines de semana, eventos)
 

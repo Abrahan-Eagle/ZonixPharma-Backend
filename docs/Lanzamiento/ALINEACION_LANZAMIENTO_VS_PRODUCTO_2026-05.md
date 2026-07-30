@@ -1,9 +1,8 @@
 # Alineación plan de Lanzamiento vs producto (software)
 
-> **`[OBSOLETO]` parcialmente:** Fase 0 **~33.835** = legado. Canon = **50.260** / SAFE **210.760** (26 jul 2026).
+> **Canon financiero (26 jul 2026 / esc.1):** Fase 0 **50.260** / SAFE **210.760** / cash M12 **398.293**. Fuente: [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) · [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md).
 
-
-> **Fecha:** 22 junio 2026 (refresh post-auditoría forense v2).  
+> **Fecha:** 22 junio 2026 (refresh post-auditoría forense v2; anclas financieras actualizadas 30 jul 2026).  
 > **Estado del pack:** **WIP** — documentos en mejora continua; este informe no es dictamen final ni cierre de data room.  
 > **Base técnica:** [../ANALISIS_TECNICO_COMPLETO_2026-05.md](../ANALISIS_TECNICO_COMPLETO_2026-05.md) (repos Backend + Frontend).  
 > **Plan operativo canónico:** [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md).  
@@ -19,10 +18,10 @@ Zonix Pharma planea un **piloto en Valencia metro (Carabobo)** como marketplace 
 
 | Hito | Significado | Gasto / modelo |
 |------|-------------|----------------|
-| **T+0** | Wire del capital (ej. **~USD 112k** tier Lean) | Inicio Fase 0 |
-| **T+0 → T+90** | **Fase 0:** legal, equipo, HQ, tech, onboarding farmacias, catálogo, partner logístico | **~USD 33.835** + one-shots **~13.408** (Lean) |
-| **Day-D = T+90** | Lanzamiento **público** en app = **M1** del modelo financiero | Caja ~**78.153** al abrir M1 *(M1 fin ~71.642)* |
-| **M1–M12** | Escala comercial, Meta Ads, soporte; **casi equilibrio M12** con 4× Sales | Caja M12 ref. **~40.831** (Lean) |
+| **T+0** | Wire del capital (**USD 210.760** Lean) | Inicio Fase 0 |
+| **T+0 → T+90** | **Fase 0:** legal, equipo, HQ, tech, onboarding farmacias, catálogo, partner logístico | **USD 50.260** (one-shots **~22.365** + operativa) |
+| **Day-D = T+90** | Lanzamiento **público** en app = **M1** del modelo financiero | Caja Day-D **160.500** |
+| **M1–M12** | Escala comercial, Meta Ads, soporte; **profitable desde M1** (esc.1) | Caja M12 **398.293** |
 
 ### 1.2 Qué hace el equipo en cada fase
 
@@ -38,7 +37,7 @@ Zonix Pharma planea un **piloto en Valencia metro (Carabobo)** como marketplace 
 
 - App en tiendas (plan: Play Store / App Store); Meta Ads + valla; primeras órdenes reales.
 - Soporte intensivo 10 días; reportes semanales/mensuales al inversor.
-- **Definition of Done piloto (M6 post-Day-D):** ≥97 farmacias activas, ≥1.500 pedidos, Rx ≤60 min, NPS, cash ≥~**48.311** (ver [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §5).
+- **Definition of Done piloto (M6 post-Day-D):** ≥97 farmacias activas, ≥1.500 pedidos, Rx ≤60 min, NPS, cash ≥~**218.981** (esc.1 — ver [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §5).
 
 ### 1.3 Decisiones de negocio que atan producto y docs
 
@@ -49,7 +48,7 @@ Fuente: [CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md), [READM
 | Piloto **completo** Buyer + Pharmacy + Pharmacist + delivery company/agent | Los 7 roles deben funcionar en producción; **no** priorizar solo OTC sin Rx |
 | **Sin** `delivery` autónomo en piloto (README) | Solo **`delivery_company`** + **`delivery_agent`** bajo partner; rol `delivery` autónomo **fuera de alcance** MVP (I-04 corregido en PLAN) |
 | Pagos **manuales VE** (pago móvil, transferencia, Zelle, Binance) | No Stripe; comprobante + validación farmacia |
-| Modelo B2B **híbrido** 25/40/55 + % GMV | Facturación/agregación RIF es **operación/comercial**; panel commerce no sustituye contabilidad |
+| Modelo B2B **híbrido** 45/60/70 + % GMV | Facturación/agregación RIF es **operación/comercial**; panel commerce no sustituye contabilidad |
 | Zona **Valencia metro** | Catálogo y zonas de entrega por farmacia/partner |
 
 ---
@@ -145,7 +144,7 @@ Prioridad para el founder técnico (no sustituye backlog de negocio).
 | Comandos scheduler Rx/pagos | PLAN_MODULO o PLAN_RX | `zonix:expire-pending-prescriptions`, expire `pending_payment`, purge datos receta |
 | Política `block_rx_without_prescription` default false | PLAN_MODULO §Rx | Comportamiento MVP: orden puede crearse sin receta previa; subida después |
 | Retención 90 días adjuntos receta | ESTRUCTURA_LEGAL §4.4 + PLAN_MODULO §14 | Ya parcial; enlazar a comando purge |
-| Readiness checklist pre-Day-D | PLAN_LANZAMIENTO §4.2 o PLAN_MODULO §18 | Tabla: smoke OTC/Rx ([SMOKE_RX_E2E.md](../SMOKE_RX_E2E.md)), Pusher, FCM, 1 orden pago real staging; caps SAFE **600k/~912.814/~1.205.345** citados en pitch |
+| Readiness checklist pre-Day-D | PLAN_LANZAMIENTO §4.2 o PLAN_MODULO §18 | Tabla: smoke OTC/Rx ([SMOKE_RX_E2E.md](../SMOKE_RX_E2E.md)), Pusher, FCM, 1 orden pago real staging; SAFE cap Lean **600k** citado en pitch |
 | Deuda nombres Eats en UI | Nota en BRIEF o CONTEXTO | “restaurants” = farmacias (legacy); no es vertical Eats |
 
 ### 4.3 Documentación coherente (reforzar, no reescribir)
@@ -166,9 +165,9 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md). El plan de lanza
 
 | # | Observación | Acción |
 |---|-------------|--------|
-| W1 | ARPF **~50** en finanzas vs modelo híbrido 25/40/55 + % GMV | Ya aclarado en PROYECCION; repetir una línea en BRIEF “hasta GMV piloto” |
+| W1 | ARPF **~50** en finanzas vs modelo híbrido 45/60/70 + % GMV | Ya aclarado en PROYECCION; repetir una línea en BRIEF “hasta GMV piloto” |
 | W2 | VOLCADO §1.2 fecha tests 20 mayo | Actualizar al cerrar P0-06 |
-| W3 | Tier **Base ~157k** recomendado vs MODELO solo Lean M1–M12 | Correcto por diseño; no mezclar caja Base en tabla Lean sin §delta MODELO S4 |
+| W3 | Ask único Lean **210.760** vs tablas M1–M12 | Correcto: no mezclar escenarios; canon = esc.1 |
 | W4 | DoD “validación Rx ≤60 min” vs TTL config 60 min | Coherente; documentar que es objetivo operativo + TTL automático |
 
 ---

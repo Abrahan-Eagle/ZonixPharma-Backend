@@ -140,9 +140,9 @@ Deuda_reconocida = Σ ((%_nivel × GMV_m) × F_m)     mes impago m con GMV cerra
 
 **Actualización por devaluación (componente variable y, si aplica, fijas de meses sin uso):** cada monto en USD devengado en el mes *m* se multiplica por **`F_m = BCV_reactivación / BCV_promedio_m`**, donde **`BCV_reactivación`** es el tipo BCV oficial del día del pago o re-alta y **`BCV_promedio_m`** el promedio BCV del mes *m* (misma fuente que §3.3). El pago en bolívares se calcula con **`BCV_reactivación`**. Si el pago es en USD (Zelle/USDT), se exige el **equivalente USD actualizado** (`monto_USD × F_m` agregado). Válido en **Fórmula A** (≤ 6 meses); en **> 6 meses** aplica solo a **`Σ (% × GMV_m)` indexado** + contrato nuevo.
 
-**Ejemplo (≤ 6 meses sin uso, ilustrativo):** impago **enero** (GMV USD 2.000, Basic 0,60% → USD 12 variable); **feb–abr** sin app (3 × USD 25 fija); reactivación **mayo** con `F_enero = 1,50`, `F_feb = F_mar = F_abr = 1,40`, `F_mayo = 1`:
+**Ejemplo (≤ 6 meses sin uso, ilustrativo):** impago **enero** (GMV USD 2.000, Basic 14% → USD 280 variable); **feb–abr** sin app (3 × USD 45 fija); reactivación **mayo** con `F_enero = 1,50`, `F_feb = F_mar = F_abr = 1,40`, `F_mayo = 1`:
 
-`Deuda ≈ (12 × 1,50) + (25 × 1,40 + 25 × 1,40 + 25 × 1,40) + (25 × 1) = 18 + 105 + 25 = 148 USD` (+ IVA/retenciones; validar BCV y GMV en dashboard).
+`Deuda ≈ (280 × 1,50) + (45 × 1,40 + 45 × 1,40 + 45 × 1,40) + (45 × 1) = 420 + 189 + 45 = 654 USD` (+ IVA/retenciones; validar BCV y GMV en dashboard).
 
 **> 6 meses sin uso:** no se suman las **fijas** de meses sin uso; solo **`Σ ((% × GMV_m) × F_m)`** de meses impagos con GMV histórico + firma de **contrato nuevo** y política de impago §2.3 desde cero. Opcional: plan de pagos escrito para el saldo variable indexado.
 

@@ -51,7 +51,7 @@ Construido bottom-up, no top-down.
 | 6 | **97** | **~43%** Valencia metro / **~54%** SAM extendido *(150–180; §1.1)* | **USD 4.850** |
 | 9 | **130** | **~57%** Valencia metro / **~72%** SAM extendido *(§1.1)* | **USD 6.500** |
 | **11** | **151** | **~67%** Valencia metro / **~84%** SAM extendido | **USD 7.550** *(revenue; burn mes 11 **7.431** — **equilibrio mensual** §1.1)* |
-| 12 | **159** | **~70%** Valencia metro / **~88%** SAM extendido *(§1.1)* | **USD 7.950** |
+| 12 | **159** | **~70%** Valencia metro / **~88%** SAM extendido *(§1.1)* | **USD 47.541** (esc.1) |
 
 ### 3.1 Sanity check — cuota limitada por capacidad del canal (Steve Blank, L6.14)
 
@@ -217,7 +217,7 @@ Estos números asumen:
 | Riesgo | Probabilidad | Mitigación |
 |---|---|---|
 | Devaluación bolívar > 100% trimestral | Media | Buffer 20%. Plan contingencia documentado. |
-| Regulación nueva sobre marketplaces | Baja-media | Asesor regulatorio externo USD 120/mes en **Base (~157k) y Growth (~187k)** — no en Lean Excel ~211k (210.760). Founder revisa Gaceta semanalmente. |
+| Regulación nueva sobre marketplaces | Baja-media | Asesor regulatorio externo opcional post-piloto; en Lean el founder revisa Gaceta semanalmente. |
 | PedidosYa agresivo en descuento / comisión | Media | Modelo Zonix (fija + % bajo sobre GMV app) estructuralmente más barato que comisión plena agregador; benchmark real = PedidosYa VE, no Rappi. |
 | Farmatodo lanza marketplace propio | Baja | Su DNA es retail propio, no marketplace. Tomarían 18-24 meses construirlo y entonces nosotros ya tenemos PMF. |
 | Adopción inicial < 50% del plan | Media | Pivote táctico: bajamos Sales B2B fijo, subimos comisión por farmacia firmada. |
