@@ -7,7 +7,15 @@
 | Fecha | Canal | Qué pasó | Siguiente |
 |-------|-------|----------|-----------|
 | 2026-07-21 | Forense web + FAQ (bundle JS) + prensa + LI | Score **71**. Ficha + resumen CEO. | Decidir 12 sem Caracas; apply ≤15 ago |
+| 2026-08-07 | Post-500: barra credibilidad Plan A | Apply/outreach **solo** si [`BARRA_CREDIBILIDAD_PLAN_A`](../../Lanzamiento/BARRA_CREDIBILIDAD_PLAN_A.md) **mínima** (+ **fuerte** si apply formal); lección [INFORME_FACIL_500…](../../Lanzamiento/INFORME_FACIL_500_COMO_STARTUP.md) | Demo + residencia 12 sem + OK founder |
 | | | | |
+
+## Gate outreach (post-500)
+
+> **No apply / no mail** sin: (1) barra **mínima** verde · (2) OK founder · (3) claridad residencia 12 sem.  
+> Preferir barra **fuerte** antes de submit.  
+> Canon: [`../../Lanzamiento/BARRA_CREDIBILIDAD_PLAN_A.md`](../../Lanzamiento/BARRA_CREDIBILIDAD_PLAN_A.md).  
+> Esto **no** es el gate de recontacto 500 (`team-mx`).
 
 ## Forense por vista / link
 

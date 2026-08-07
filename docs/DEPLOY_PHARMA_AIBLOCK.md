@@ -16,12 +16,12 @@ En el repo **Abrahan-Eagle/ZonixPharma-Backend**:
 
 **Settings → Secrets and variables → Actions → New repository secret**
 
-| Secret | Valor |
-|--------|--------|
-| `FTP_SERVER` | `ftp.aiblockweb.com` |
+| Secret         | Valor                                                                 |
+| -------------- | --------------------------------------------------------------------- |
+| `FTP_SERVER`   | `ftp.aiblockweb.com`                                                  |
 | `FTP_USERNAME` | `pharma@zonixpharma.com` (directory `/home/unibicuo/zonixpharma.com`) |
-| `FTP_PASSWORD` | Contraseña FTP de cPanel (**solo en GitHub**, nunca en el repo) |
-| `ENV_CONTENT` | Contenido **multilínea completo** del `.env` del servidor (ver §2) |
+| `FTP_PASSWORD` | Contraseña FTP de cPanel (**solo en GitHub**, nunca en el repo)       |
+| `ENV_CONTENT`  | Contenido **multilínea completo** del `.env` del servidor (ver §2)    |
 
 El workflow **no** lee otros nombres de secretos. Sin los cuatro, el deploy falla.
 
@@ -101,7 +101,7 @@ push main  →  main.yml
 
 **CI separado:** [`.github/workflows/ci.yml`](../.github/workflows/ci.yml) corre Pint + tests en PRs y en `dev`/`main`; no despliega.
 
-**Deploy manual:** Actions → *Deploy Zonix Pharma* → **Run workflow** (requiere secrets).
+**Deploy manual:** Actions → _Deploy Zonix Pharma_ → **Run workflow** (requiere secrets).
 
 ### 3.1 APK Android (piloto — no va en git ni en el FTP de código)
 
@@ -179,12 +179,12 @@ php artisan optimize:clear
 
 #### Base de datos: migrate, seed y refresh
 
-| Comando | Qué hace | Cuándo usarlo |
-| -------- | -------- | ------------- |
-| `php artisan migrate --force` | Aplica solo migraciones **nuevas** (esquema) | Cada deploy con cambios de BD |
-| `php artisan db:seed --class=ZonixDemoSeeder --force` | Inserta datos demo | Primera carga o reset manual de demo |
-| `php artisan migrate:refresh --seed --force` | **Borra todo** (rollback + migrate) y vuelve a sembrar | Solo entorno **demo** sin datos reales |
-| `php artisan migrate:fresh --seed --force` | Equivalente a wipe + migrate + seed (no usa `down()`) | Alternativa a refresh en demo |
+| Comando                                               | Qué hace                                               | Cuándo usarlo                          |
+| ----------------------------------------------------- | ------------------------------------------------------ | -------------------------------------- |
+| `php artisan migrate --force`                         | Aplica solo migraciones **nuevas** (esquema)           | Cada deploy con cambios de BD          |
+| `php artisan db:seed --class=ZonixDemoSeeder --force` | Inserta datos demo                                     | Primera carga o reset manual de demo   |
+| `php artisan migrate:refresh --seed --force`          | **Borra todo** (rollback + migrate) y vuelve a sembrar | Solo entorno **demo** sin datos reales |
+| `php artisan migrate:fresh --seed --force`            | Equivalente a wipe + migrate + seed (no usa `down()`)  | Alternativa a refresh en demo          |
 
 **Producción con datos reales:** usar **solo** `migrate --force`. No ejecutar `refresh`, `fresh` ni seeders masivos.
 
@@ -209,13 +209,13 @@ php artisan optimize:clear
 
 #### Troubleshooting
 
-| Error | Acción |
-|-------|--------|
-| `composer: command not found` | Usar `php composer.phar` (§4.3), no `composer` global |
-| `vendor/autoload.php` ausente | Ejecutar paso 3 antes de cualquier `artisan` |
-| `Allowed memory size exhausted` | `php -d memory_limit=512M composer.phar install ...` |
-| PHP 7.x / 8.0 | cPanel → **MultiPHP Manager** → **8.2+** |
-| Sigue 500 con vendor OK | `tail -50 storage/logs/laravel.log` (MySQL, APP_KEY, permisos) |
+| Error                                 | Acción                                                                                           |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| `composer: command not found`         | Usar `php composer.phar` (§4.3), no `composer` global                                            |
+| `vendor/autoload.php` ausente         | Ejecutar paso 3 antes de cualquier `artisan`                                                     |
+| `Allowed memory size exhausted`       | `php -d memory_limit=512M composer.phar install ...`                                             |
+| PHP 7.x / 8.0                         | cPanel → **MultiPHP Manager** → **8.2+**                                                         |
+| Sigue 500 con vendor OK               | `tail -50 storage/logs/laravel.log` (MySQL, APP_KEY, permisos)                                   |
 | composer install imposible en hosting | Generar `vendor/` en local con `--no-dev`, comprimir, subir y extraer en cPanel (último recurso) |
 
 **Sin `vendor/` o con docroot mal** `/api/ping` responderá **500** o **404**. Con FTP CorralX-style, el paso habitual post-deploy es solo Document Root + `migrate` si aplica.

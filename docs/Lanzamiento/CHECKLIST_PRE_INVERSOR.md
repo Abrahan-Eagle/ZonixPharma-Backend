@@ -1,8 +1,9 @@
 # Checklist pre-inversor
 
-> **Última actualización:** 22 junio 2026 (anclas financieras **v3.8.2**).
+> **Última actualización:** 7 agosto 2026 (P0 demo producto + tracción; FAQ MVP post-500).
 > Documento operacional. El founder debe poder marcarlo todo antes de la primera reunión con el inversor.
 > **Mejora continua:** tras cada revisión del pack, actualizar la cabecera `Última actualización` de los documentos tocados.
+> **Lección:** [APRENDIZAJE_500_EVIDENCIA_MERCADO.md](APRENDIZAJE_500_EVIDENCIA_MERCADO.md).
 
 ## 0. Pre-reunión (pre-flight)
 
@@ -16,26 +17,27 @@
 | P0-02 | % dedicación Zonix vs CETIAC/otros | Abierto |
 | P0-03 | 2–3 referencias con permiso | Abierto |
 | P0-04 | Aprobación founder pack antes de envío | Abierto |
-| P0-05 | Demo en vivo — fecha programada | Abierto |
+| P0-05 | Demo en vivo **o** video demo producto **3–5 min** (URL en Drive/YT) — guion [`../Inversionistas/500-latam/DEMO_PRODUCTO_RX.md`](../Inversionistas/500-latam/DEMO_PRODUCTO_RX.md) | Abierto |
 | P0-06 | Re-run **443 tests** + commit en VOLCADO §1.2 | Snapshot OK (`d7b7df4`, 23 jun 2026, 443/1822); **re-ejecutar** antes de cada reunión |
 | P0-07 | NDA + data room cerrado (si fondo formal) | Abierto |
-| P0-08 | Métricas tracción por producto (si se citan) | Abierto |
+| P0-08 | Métricas tracción: ≥1 farmacia piloto **o** N pedidos reales (tabla en [`../Inversionistas/500-latam/PILOTO_FARMACIAS_VALENCIA.md`](../Inversionistas/500-latam/PILOTO_FARMACIAS_VALENCIA.md)); si cero, decir **pre-revenue** sin inflar | Abierto |
+| P0-09 | Link demo producto pegado en MENSAJE / data room (cuando exista) | Abierto |
 
-**Ángel informal:** puede ir con P0-02 + P0-06 resueltos. **Fondo / family office:** cerrar **toda** la tabla.
+**Ángel informal:** P0-02 + P0-05 + P0-06. **Fondo / family office / tipo 500:** cerrar **toda** la tabla (sobre todo P0-05 + P0-08).
 
-### 0.2 Top 5 preguntas inversor (30 min)
+### 0.2 Top preguntas inversor (30 min)
 
 | # | Pregunta probable | Respuesta anclada | Fuente |
 |---|-------------------|-------------------|--------|
 | 1 | ¿Por qué tú y a tiempo completo? | Track record 8+ años; fundador Zonix/Corral X; declarar **% dedicación** explícita | VOLCADO §1.1; REGISTRO P0-02 |
-| 2 | ¿Hay ventas / tracción hoy? | **Pre-revenue**; stack en **staging/VPS**; piloto **Day-D T+90**; no inflar GMV | BRIEF § Qué es; ALINEACION |
-| 3 | ¿Por qué **~211k (210.760)** y cap **600k**? | Piso creíble Fase 0 **50.260** + burn **145.500** + reserva **15.000** con **CEO + 4× Sales**; cash M12 esc.1 **398.293** | MODELO xlsx; BRIEF |
+| 2 | ¿Hay ventas / tracción hoy? | **Pre-revenue** hasta pedidos reales; staging + piloto Valencia en curso; no inflar GMV | BRIEF; APRENDIZAJE_500 |
+| 3 | ¿Por qué **~211k (210.760)** y cap **600k**? | Piso Fase 0 **50.260** + burn **145.500** + reserva **15.000**; cash M12 esc.1 **398.293** | MODELO xlsx; BRIEF |
 | 4 | ¿Es legal el modelo Rx en VE? | Farmacéutico **de cada farmacia** valida; dictamen **abogado + asesor** pre-Day-D | PLAN_MODULO §1; ESTRUCTURA |
-| 5 | ¿El producto está en producción? | **Staging** hoy; Play/App Store + Firebase OTP **T+7–12** Fase 0; **443 tests** (re-verificar) | ALINEACION; CHECKLIST §7.7 |
+| 5 | ¿El producto está en producción / hay MVP? | **MVP técnico** = staging + Rx + tests. **Evidencia de mercado** = demo 3–5 min + early adopters. Play Store **T+7–12** Fase 0. No confundir ambos. | APRENDIZAJE_500; ALINEACION; P0-05 |
 
 ### 0.3 Orden data room (~30 min)
 
-Igual que [README.md](README.md) § inversor: **BRIEF → CONTEXTO → PERFIL → UNIT → PROYECCION §1.1 → ESTRUCTURA → CHECKLIST**. Email listo: [MENSAJE_ENVIO…](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) §2.
+Igual que [README.md](README.md) § inversor: **BRIEF → CONTEXTO → PERFIL → UNIT → PROYECCION §1.1 → ESTRUCTURA → CHECKLIST**. Email listo: [MENSAJE_ENVIO…](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) §2. Si hay URL demo: adjuntar al inicio.
 
 ### 0.4 Riesgos si enviamos hoy sin cerrar P0
 
@@ -44,7 +46,8 @@ Igual que [README.md](README.md) § inversor: **BRIEF → CONTEXTO → PERFIL �
 | DD técnica sin repo / commit tests fresco | Alta | P0-01, P0-06 antes de fondo |
 | Duda governance (% tiempo founder) | Alta | P0-02 por escrito |
 | Credibilidad operativa sin referencias | Media | P0-03 |
-| Expectativa «ya en Play Store» | Media | Matiz staging en BRIEF/MENSAJE (I-05) |
+| Expectativa «ya en Play Store» / «sin MVP» | Alta | P0-05 demo + matiz staging en BRIEF (aprendizaje 500) |
+| Tracción inventada | Alta | P0-08 honesto; gate CRM |
 | SAFE/T&C como versión final sin abogado | Media | Marcar **borrador** (CHECKLIST §1) |
 
 ### 0.5 Próximas 3 sesiones (founder)
@@ -52,8 +55,10 @@ Igual que [README.md](README.md) § inversor: **BRIEF → CONTEXTO → PERFIL �
 | # | Enfoque | Doc |
 |---|---------|-----|
 | 1 | Cerrar P0 founder (GitHub, % tiempo, refs, tests) | [VOLCADO](VOLCADO_RESPUESTAS_CUESTIONARIO.md) §1–§1.2 |
-| 2 | Outreach inversor + data room | [MENSAJE_ENVIO…](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) §1–§2 |
-| 3 | Demo + guion reunión | [CHECKLIST](CHECKLIST_PRE_INVERSOR.md) §5–§6 |
+| 2 | Grabar demo producto + 1 farmacia piloto | [DEMO_PRODUCTO_RX](../Inversionistas/500-latam/DEMO_PRODUCTO_RX.md) · [PILOTO](../Inversionistas/500-latam/PILOTO_FARMACIAS_VALENCIA.md) |
+| 3 | **Barra Plan A** verde → outreach Epakon / Casa212 / ALGEN | [BARRA_CREDIBILIDAD_PLAN_A.md](BARRA_CREDIBILIDAD_PLAN_A.md) · [MENSAJE_ENVIO…](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) · [CHECKLIST](CHECKLIST_PRE_INVERSOR.md) §5–§6 |
+
+> **Post-500:** no enviar a Plan A sin barra **mínima** (demo o demo en vivo + narrativa honesta). Barra **fuerte** antes de DD/apply serio. Gate `team-mx` (500) es aparte.
 
 Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 sesiones.
 

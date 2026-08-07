@@ -1,7 +1,8 @@
 # Prep grabación — video inversores (~2 min)
 
 > Pack operativo. Guion: [`GUION_VIDEO_2MIN.md`](GUION_VIDEO_2MIN.md) / [`GUION_VIDEO_2MIN.docx`](GUION_VIDEO_2MIN.docx) (**v1.6**).  
-> Bitácora: [`NOTAS.md`](NOTAS.md).
+> Bitácora: [`NOTAS.md`](NOTAS.md).  
+> **Post-rechazo 500 (prioridad):** demo de producto 3–5 min → [`DEMO_PRODUCTO_RX.md`](DEMO_PRODUCTO_RX.md) (más urgente que este video de caras para recontacto).
 
 ---
 

@@ -32,7 +32,7 @@ Para Zonix Pharma: … *(encaje / no plan A / nurture)*.
 
 | | Pack actual | Esta candidata |
 |--|-------------|----------------|
-| Plata | Lean ~**174k** | |
+| Plata | Lean **210.760** | |
 | Dilución | SAFE cap ref. 600k | |
 | Velocidad / compromiso | | |
 | Empresa / jurisdicción | | |

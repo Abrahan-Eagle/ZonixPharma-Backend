@@ -1,9 +1,11 @@
 # Inversionistas — análisis de candidatos (interno)
 
-> **Última actualización:** 22 julio 2026 (intel Sandy Gómez / Arca + 10 candidatas scoradas)  
-> **Propósito:** CRM / scoring de **candidatos a capital** para Zonix Pharma. **No** es el data room que se envía al inversionista.  
+> **Última actualización:** 7 agosto 2026 (alta **SVS** score **49**; **500** = aprendizaje interno + nurture post-rechazo)  
+> **Propósito:** CRM / scoring de **candidatos a capital** (y canales de red) para Zonix Pharma. **No** es el data room que se envía al inversionista.  
 > **Skill agente:** [`zonix-inversionistas-crm`](../.agents/skills/zonix-inversionistas-crm/SKILL.md) — forense, ficha, score, ranking.  
-> **Ask de referencia (pitch actual):** Lean ~USD **174.102** · SAFE cap ref. **USD 600.000** — ver [`../Lanzamiento/BRIEF_UNA_PAGINA.md`](../Lanzamiento/BRIEF_UNA_PAGINA.md).  
+> **Ask de referencia (pitch actual):** Lean **USD 210.760** · SAFE cap ref. **USD 600.000** · equity **~35,13%** — ver [`../Lanzamiento/BRIEF_UNA_PAGINA.md`](../Lanzamiento/BRIEF_UNA_PAGINA.md).  
+> **Nota:** las 10 fichas previas (jul 2026) aún citan ask histórico **~174k** en cuerpo; **no** rescoreadas en esta pasada salvo **500-latam**. Nuevas altas usan **210.760**.  
+> **Roles:** **500 LatAm** = informe/playbook **interno** (no Plan A de caja ahora). **SVS** = candidata CRM tipo evento (otra opción de red). Plan A caja = **Epakon / Casa212 / ALGEN**.  
 > **Disclaimer:** análisis founder; no es asesoría legal ni financiera.
 
 ## Cómo usar
@@ -23,7 +25,7 @@
 
 | Código | Criterio | Peso | Qué mide |
 |--------|----------|------|----------|
-| T | Ajuste ticket vs ask Lean (~174k) / Base | 20 | ¿Puede escribir el cheque del escenario que buscamos? |
+| T | Ajuste ticket vs ask Lean (**210.760**) / Base | 20 | ¿Puede escribir el cheque del escenario que buscamos? |
 | S | Términos / dilución / SAFE | 20 | Cap, % implícito, MFN, exclusividad, cláusulas tóxicas |
 | E | Valor estratégico | 15 | Farmacias, red, intros, distribución — más que dinero |
 | V | Velocidad de cierre | 15 | Semanas vs meses |
@@ -43,13 +45,16 @@
 | [epakon/RESUMEN_CEO.md](epakon/RESUMEN_CEO.md) | Epakon Capital |
 | [algen-aceleralatam/RESUMEN_CEO.md](algen-aceleralatam/RESUMEN_CEO.md) | ALGEN × AceleraLatam |
 | [casa212/RESUMEN_CEO.md](casa212/RESUMEN_CEO.md) | Casa212 |
-| [500-latam/RESUMEN_CEO.md](500-latam/RESUMEN_CEO.md) | 500 LatAm |
+| [500-latam/RESUMEN_CEO.md](500-latam/RESUMEN_CEO.md) | 500 LatAm (aprendizaje interno + recontacto futuro) |
+| [startup-venezuela-summit/RESUMEN_CEO.md](startup-venezuela-summit/RESUMEN_CEO.md) | Startup Venezuela Summit (evento / canal) |
 | [fi-venezuela/RESUMEN_CEO.md](fi-venezuela/RESUMEN_CEO.md) | Founder Institute VE |
 | [bid-lab/RESUMEN_CEO.md](bid-lab/RESUMEN_CEO.md) | BID Lab |
 | [impulsa-vc/RESUMEN_CEO.md](impulsa-vc/RESUMEN_CEO.md) | Impulsa VC |
 | [arqos-capital/RESUMEN_CEO.md](arqos-capital/RESUMEN_CEO.md) | Arqos Capital |
 | [plus58-ventures/RESUMEN_CEO.md](plus58-ventures/RESUMEN_CEO.md) | +58 Ventures |
 | [silicon-valley-ve/RESUMEN_CEO.md](silicon-valley-ve/RESUMEN_CEO.md) | Silicon Valley Venezuela |
+| [fondo-impacto-vela/RESUMEN_CEO.md](fondo-impacto-vela/RESUMEN_CEO.md) | Fondo de Impacto VELA (CAF) |
+| [build-with-gemini-xprize/RESUMEN_CEO.md](build-with-gemini-xprize/RESUMEN_CEO.md) | Build with Gemini XPRIZE (concurso) |
 | [`_plantilla/FICHA_INVERSIONISTA.md`](_plantilla/FICHA_INVERSIONISTA.md) | Plantilla ficha + score |
 | [`_plantilla/NOTAS.md`](_plantilla/NOTAS.md) | Plantilla bitácora |
 | [`../Lanzamiento/BRIEFING_INVERSORES_VE_2026.md`](../Lanzamiento/BRIEFING_INVERSORES_VE_2026.md) | Contexto mercado inversores VE 2026 |
@@ -64,13 +69,16 @@
 | [epakon](epakon/FICHA.md) | Epakon Capital | **73** | nurture* — [Resumen CEO](epakon/RESUMEN_CEO.md) |
 | [algen-aceleralatam](algen-aceleralatam/FICHA.md) | ALGEN × AceleraLatam | **72** | nurture* — [Resumen CEO](algen-aceleralatam/RESUMEN_CEO.md) |
 | [casa212](casa212/FICHA.md) | Casa212 | **71** | nurture* — [Resumen CEO](casa212/RESUMEN_CEO.md) |
-| [500-latam](500-latam/FICHA.md) | 500 LatAm (500 Global) | **70** | nurture — [Resumen CEO](500-latam/RESUMEN_CEO.md) |
+| [500-latam](500-latam/FICHA.md) | 500 LatAm (500 Global) | **67** | nurture* (**aprendizaje interno**; rechazado 6 ago; **no Plan A**; recontacto post-mercado) — [Resumen CEO](500-latam/RESUMEN_CEO.md) · [Fácil](500-latam/RESUMEN_FACIL.md) |
 | [fi-venezuela](fi-venezuela/FICHA.md) | Founder Institute VE | **55** | nurture (metodología) — [Resumen CEO](fi-venezuela/RESUMEN_CEO.md) |
 | [bid-lab](bid-lab/FICHA.md) | BID Lab (Grupo BID) | **54** | nurture (red) — [Resumen CEO](bid-lab/RESUMEN_CEO.md) |
 | [impulsa-vc](impulsa-vc/FICHA.md) | Impulsa VC | **52** | nurture (estructura) — [Resumen CEO](impulsa-vc/RESUMEN_CEO.md) |
 | [arqos-capital](arqos-capital/FICHA.md) | Arqos Capital | **50** | nurture (vía Casa212)* — [Resumen CEO](arqos-capital/RESUMEN_CEO.md) |
+| [startup-venezuela-summit](startup-venezuela-summit/FICHA.md) | Startup Venezuela Summit | **49** | nurture (evento/red)* — [Resumen CEO](startup-venezuela-summit/RESUMEN_CEO.md) · [Fácil](startup-venezuela-summit/RESUMEN_FACIL.md) |
 | [plus58-ventures](plus58-ventures/FICHA.md) | +58 Ventures | **43** | nurture (pipeline)* — [Resumen CEO](plus58-ventures/RESUMEN_CEO.md) |
+| [build-with-gemini-xprize](build-with-gemini-xprize/FICHA.md) | Build with Gemini XPRIZE | **43** | descartar* (raise Lean) / monitor solo AI nuevo — [Resumen CEO](build-with-gemini-xprize/RESUMEN_CEO.md) |
 | [silicon-valley-ve](silicon-valley-ve/FICHA.md) | Silicon Valley Venezuela | **42** | descartar* — [Resumen CEO](silicon-valley-ve/RESUMEN_CEO.md) |
+| [fondo-impacto-vela](fondo-impacto-vela/FICHA.md) | Fondo de Impacto VELA (CAF) | **40** | descartar* (raise Lean) / monitor Serie A — [Resumen CEO](fondo-impacto-vela/RESUMEN_CEO.md) |
 
 \*Epakon: pitch cuando deck listo; confirmar monto + términos (no anclar a $1M web).  
 \*ALGEN: apply **15 oct**; equity-free; 12–16 h/sem; no sustituye cheque.  
@@ -79,15 +87,21 @@
 \*Impulsa: solo si hace falta estructura/banca VE; DD del vehículo (BVC agro vs tech).  
 \*Arqos: no cold pitch; satélite Casa212 / Epakon.  
 \*+58: waitlist ≠ cheque; monitorear hasta ticket/equipo; no pitch Lean.  
-\*SVVE: warm Beresith Rigal; **no raise**; 3V 2026 cerrado; solo cowork Caracas pago si hace falta.
+\*Gemini XPRIZE: **concurso/premio**, no LP; Zonix existente no califica (New Projects Only); deadline **17 ago 2026**; intel PDF Gemini volcado (score **43** intacto; +bonus Circle 50k).  
+\*SVVE: warm Beresith Rigal; **no raise**; 3V 2026 cerrado; solo cowork Caracas pago si hace falta.  
+\*VELA: tickets tip. **1–3 M**, Serie A+; **no** form ahora; reabrir post-tracción.  
+\*500: rechazo **6 ago 2026** (MVP/demo); score **67**; carpeta = **informe/playbook interno** (demo/piloto/gate sirven a todo el raise); **no** Plan A de caja; **no** mail a team-mx hasta gate verde.  
+\*SVS: evento Caracas **21–23 oct**; score **49**; VIP50 **$50** ≤10 ago solo con OK founder; **no** cheque; no pausa Plan A. Ficha [`startup-venezuela-summit/`](startup-venezuela-summit/FICHA.md).
 
 ## Intel / bitácora externa
 
-> Tips de ecosistema, forwards y mapas de red **sin** cheque ni score. No sustituyen fichas CRM.
+> Tips de ecosistema, forwards y mapas de red. Si hay ficha CRM, el intel **apunta** a ella (no duplica score).
 
 | Archivo | Origen | Notas |
 |---------|--------|-------|
 | [`_intel/2026-07-22-sandy-gomez-arca-ecosistema.md`](_intel/2026-07-22-sandy-gomez-arca-ecosistema.md) | Sandy Gómez (Arca) → Gabriel → Abrahan | Eventos/programas VE + regional; mapa vs CRM (ALGEN, FI/Arca, gaps Pygma/etc.) |
+| [`_intel/2026-08-05-convocatoriasymas-vela.md`](_intel/2026-08-05-convocatoriasymas-vela.md) | IG @convocatoriasymas + fondovela.com | Señal vs ruido del post VELA; filtro canal; Bayer LEGADO skip |
+| [`_intel/2026-08-07-startup-venezuela-summit-2026.md`](_intel/2026-08-07-startup-venezuela-summit-2026.md) | Email waitlist + sitio + IG | → CRM [`startup-venezuela-summit/`](startup-venezuela-summit/FICHA.md) score **49** |
 
 ## Fuera de alcance
 

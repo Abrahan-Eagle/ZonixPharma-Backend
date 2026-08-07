@@ -2,69 +2,73 @@
 
 > Bitácora interna. No enviar al fondo.
 
-## Video inversores (link final)
+## Video inversores (pitch caras)
 
 | Campo | Valor |
 |-------|--------|
 | Prep | [`PREP_GRABACION.md`](PREP_GRABACION.md) |
 | Guion | v1.6 — [`GUION_VIDEO_2MIN.md`](GUION_VIDEO_2MIN.md) |
 | URL | **[PENDIENTE — pegar tras grabar/subir]** |
-| Hosting | Drive o YouTube no listado (ver PREP) |
+| Hosting | Drive o YouTube no listado |
+
+## Demo producto (post-rechazo 500)
+
+| Campo | Valor |
+|-------|--------|
+| Guion pantalla | [`DEMO_PRODUCTO_RX.md`](DEMO_PRODUCTO_RX.md) — **3–5 min** happy path Rx |
+| URL | **[PENDIENTE]** |
+| Staging | `https://pharma.aiblockweb.com` · landing `https://zonixpharma.com` |
+
+## Piloto / MVT / gate
+
+| Artefacto | Ruta |
+|-----------|------|
+| Piloto farmacias Valencia | [`PILOTO_FARMACIAS_VALENCIA.md`](PILOTO_FARMACIAS_VALENCIA.md) |
+| MVT concierge WhatsApp | [`MVT_CONCIERGE.md`](MVT_CONCIERGE.md) |
+| Gate recontacto 500 | [`GATE_RECONTACTO_500.md`](GATE_RECONTACTO_500.md) |
 
 ## Bitácora
 
 | Fecha | Canal | Qué pasó | Siguiente |
 |-------|-------|----------|-----------|
-| 2026-07-26 | Prep grabación video | Pack [`PREP_GRABACION.md`](PREP_GRABACION.md): defaults juntos + raw + Drive/YT; fecha **[PENDIENTE]**. Link video: **[PENDIENTE]** | Grabar → pegar URL aquí y en PREP |
-| 2026-07-26 | Guion video multi-inversor | Guion **v1.6**: Bloque D Abrahan reescrito (motivación + dúo + expansión). Word regenerado. | Grabar + link; pegar en applies / outreach |
-| 2026-07-26 | Guion video multi-inversor | Guion **v1.5**: piloto empieza en Venezuela → expandirnos a otros países. Word regenerado. | Grabar + link; pegar en applies / outreach |
-| 2026-07-26 | Guion video multi-inversor | Guion **v1.4** sin marca 500 en cámara; cierre genérico; usable en otras fichas CRM. Word regenerado. | Grabar + link; pegar en applies / outreach |
-| 2026-07-26 | Guion video 2 min (apply) | Guion v1.3 + asistente IA (pedidos/orientación) + Word [`GUION_VIDEO_2MIN.docx`](GUION_VIDEO_2MIN.docx) | Grabar + link Drive/YT; apply ≤31 jul |
-| 2026-07-21 | Forense web (fetch + términos EN; sin Opera local) | Análisis sección por sección de landing + `/en/terminos`. Score **70** → `nurture`. Ficha creada. | HITL founder: ¿aplicar ≤31 jul? Pegar FAQ Opera si hay delta |
-| | | | |
+| 2026-08-07 | CRM post-rechazo | Documentados email 6 ago, score **67**, playbooks demo/piloto/MVT/gate | Ejecutar playbooks; **no** mail a team-mx hasta gate verde |
+| 2026-08-06 | Email `aplica@500.co` → Gabriel | **Rechazo** inversión ciclo actual. Motivo: carece MVP/demo funcional. Recursos: MVT First Round, PG “Do Things That Don't Scale”, Platzi, User on board. Recontactar `team-mx@500startups.com` con producto en mercado. Perks: bit.ly/Perks500Aplica / `500aplica` | Demo + piloto Valencia; Plan A Epakon/Casa212/ALGEN |
+| 2026-07-26 | Prep grabación video | Pack PREP + guion v1.6 | Grabar → pegar URL |
+| 2026-07-21 | Forense web | Score **70** → nurture. Ficha creada | Apply ≤31 jul (cumplido / resultado = rechazo) |
+
+## Verbatim rechazo (interno — extracto)
+
+> Tras revisarla detenidamente, hemos observado que actualmente su startup **carece de un MVP o demo funcional**, lo cual es crucial para nosotros…  
+> Cuando tengan un **producto en el mercado**, nos encantaría conocerlo… `team-mx@500startups.com`.  
+> Muchas empresas… aplicaron **más de una vez**.
+
+**Interpretación CRM:** gap de **evidencia consumible** (demo + mercado), no “no hay código”. Stack Zonix existe (Laravel+Flutter, Rx, staging); falta farmacias/pedidos reales + video demo empaquetado.
+
+## Recursos citados por 500 (uso interno)
+
+| Recurso | Uso Zonix | Prioridad |
+|---------|-----------|-----------|
+| [MVT First Round](https://review.firstround.com/the-minimum-viable-testing-process-for-evaluating-startup-ideas/) | [`MVT_CONCIERGE.md`](MVT_CONCIERGE.md) | Alta |
+| [Do Things That Don't Scale](https://www.paulgraham.com/ds.html) | Recruit manual farmacias + delight | Alta |
+| Platzi / User on board / Perks | Distracción vs piloto | **Baja** — no priorizar |
 
 ## Forense (resumen por anchor)
 
 | URL / sección | Hallazgo |
 |---------------|----------|
-| [Home](https://latam.aplica.500.co) | 300k; top **5**; tesis global; AUM 2.3B¹ no verificado |
-| `#terminos-inversion` | Hash SPA no hidrata detalle en SSR → usar `/en/terminos` |
-| [en/terminos](https://latam.aplica.500.co/en/terminos) | **300k ↔ 10% KISS**; fee **15k** → neto **285k**; MFN/ROFO; vesting 4y/1; IP; Delaware/Cayman |
-| `#silicon-valley` | 3 semanas HQ SF; tramo US educativo; costo visa/tiempo |
-| `#acompanamiento` | Cohort + miembro 500; programa **12 meses** |
-| `#como-aplicar` | CTA apply; ventana 1–31 jul 2026; early ≤15 jul (ya pasó al forense) |
-| `#equipo` | Contacto vía apply / redes oficiales |
-| `#faq` | **[PENDIENTE]** SSR vacío — relectura Opera / pegar texto founder |
-| Footer | *NON-INVESTMENT PROGRAM / no guarantee* = selectividad top 5, no “todos cobran” |
-
-```text
-Apply ≤31jul → Screening → (top5) Oferta KISS 300k/10% → Flip US/Cayman
-  → Vesting+IP → Wire neto 285k + programa 12m → 3 sem SF
-                 → (resto) Sin cheque
-```
-
-## Checklist pre-apply (si founder dice sí)
-
-- [ ] Pitch: beachhead VE + path **LatAm/global** (no solo Valencia)
-- [ ] Una tesis producto: **Zonix Pharma** (Corral X = track record founder, no métricas mezcladas)
-- [ ] Path Delaware C-Corp / LLC o Cayman + counsel
-- [ ] Disposición vesting 4y / cliff 1 + cesión IP
-- [ ] Bandwidth **3 semanas SF** + ops piloto cubiertas
-- [ ] Modelar burn con **285k neto** (no 300k)
-- [ ] Zip mínimo pack: ver [`../../Lanzamiento/DOCUMENTOS_SOLO_INVERSOR.md`](../../Lanzamiento/DOCUMENTOS_SOLO_INVERSOR.md)
-- [ ] Confirmar no exclusividad vs Casa212 / Epakon / ALGEN
+| [Home](https://latam.aplica.500.co) | 300k; top **5**; tesis global |
+| [en/terminos](https://latam.aplica.500.co/en/terminos) | **300k ↔ 10% KISS**; fee **15k** → neto **285k** |
+| `#como-aplicar` | Ventana 1–31 jul 2026 (cerrada) |
 
 ## Pendientes
 
-- [ ] Releer `#faq` en Opera (visa, presencial vs remote, sectores excluidos) y ajustar V/R en FICHA si cambia el score
-- [ ] Decisión founder: apply sí/no antes del **31 jul 2026**
-- [ ] Feeling founder (1–10) en FICHA tras first reply
+- [ ] Grabar demo producto 3–5 min → pegar URL arriba
+- [ ] Grabar video caras 2 min (opcional multi-inversor) → pegar URL
+- [ ] Cerrar ≥1 farmacia piloto Valencia (ver playbook)
+- [ ] Gate recontacto en verde antes de mail a team-mx
+- [ ] Feeling founder (1–10) en FICHA tras update
 
 ## Archivos / links
 
 - Ficha: [FICHA.md](FICHA.md)
-- Landing: https://latam.aplica.500.co
-- Términos: https://latam.aplica.500.co/en/terminos
-- Anchors: `#terminos-inversion` · `#silicon-valley` · `#acompanamiento` · `#como-aplicar` · `#equipo` · `#faq`
-- Prensa: Techla (24 jun 2026) · Mexico Business News · Dealroom feed
 - Ranking: [`../RESUMEN_COMPARATIVO.md`](../RESUMEN_COMPARATIVO.md)

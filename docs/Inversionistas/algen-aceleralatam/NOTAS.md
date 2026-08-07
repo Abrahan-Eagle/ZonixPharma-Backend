@@ -7,7 +7,15 @@
 | Fecha | Qué pasó | Resultado / dato | Siguiente |
 |-------|----------|------------------|-----------|
 | 2026-07-21 | Forense aceleralatam.cl/algen + home + forms + briefing §5.1 | Score **72** nurture*. Equity-free; kickoffs 15 feb/jun/oct | Confirmar apply oct; no batch VE no oficial |
+| 2026-08-07 | Post-500: barra credibilidad Plan A | Apply **solo** si [`BARRA_CREDIBILIDAD_PLAN_A`](../../Lanzamiento/BARRA_CREDIBILIDAD_PLAN_A.md) **mínima** (preferir **fuerte** si hay claim de tracción); lección [INFORME_FACIL_500…](../../Lanzamiento/INFORME_FACIL_500_COMO_STARTUP.md) | Demo + piloto; kickoff 15 oct; OK founder |
 | | | | |
+
+## Gate outreach (post-500)
+
+> **No apply / no mail** sin: (1) barra **mínima** verde · (2) OK founder · (3) bandwidth 12–16 h/sem.  
+> ALGEN valora tracción → apuntar a barra **fuerte** si se puede.  
+> Canon: [`../../Lanzamiento/BARRA_CREDIBILIDAD_PLAN_A.md`](../../Lanzamiento/BARRA_CREDIBILIDAD_PLAN_A.md).  
+> Esto **no** es el gate de recontacto 500 (`team-mx`).
 
 ## Hechos verificados (21 jul 2026)
 

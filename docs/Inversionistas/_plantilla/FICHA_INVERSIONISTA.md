@@ -1,7 +1,7 @@
 # Ficha inversionista — plantilla
 
 > Copiar a `docs/Inversionistas/<slug>/FICHA.md`.  
-> Ask ref.: Lean ~USD 174.102 · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).
+> Ask ref.: Lean **USD 210.760** · SAFE cap ref. **USD 600.000** · equity **~35,13%** ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).
 
 ## Identificación
 

@@ -7,6 +7,40 @@
 
 ## Última actualización de contexto
 
+### Barra credibilidad Plan A (post-500) — 7 agosto 2026
+
+- **Doc:** [`Lanzamiento/BARRA_CREDIBILIDAD_PLAN_A.md`](Lanzamiento/BARRA_CREDIBILIDAD_PLAN_A.md) + PDF — mínima vs fuerte antes de outreach Epakon/Casa212/ALGEN.
+- **CRM:** gate en NOTAS de epakon, casa212, algen-aceleralatam (no confundir con gate `team-mx` 500).
+- **Humano pendiente:** cerrar P0-05 demo + P0-08 piloto para barra verde.
+
+### Informe fácil 500 → Zonix como startup — 7 agosto 2026
+
+- **Entregable:** [`Lanzamiento/INFORME_FACIL_500_COMO_STARTUP.md`](Lanzamiento/INFORME_FACIL_500_COMO_STARTUP.md) + PDF — qué dijo 500, qué hacer, objetivos corto/largo, mejorar startup (sin código) para inversores.
+- **Sin** SVS ni código; Plan A caja intacto; ask **210.760**.
+- Enlace desde [`Inversionistas/500-latam/RESUMEN_FACIL.md`](Inversionistas/500-latam/RESUMEN_FACIL.md).
+
+### Alta CRM SVS + 500 interno — 7 agosto 2026
+
+- **SVS:** carpeta [`Inversionistas/startup-venezuela-summit/`](Inversionistas/startup-venezuela-summit/FICHA.md) score **49** nurture (evento/red); VIP50 $50 ≤10 ago solo OK founder; **otra opción** de canal, no cheque.
+- **500:** etiquetado como **aprendizaje interno** (no Plan A de caja); playbooks demo/piloto siguen sirviendo al raise.
+- **Informe:** [`Lanzamiento/INFORME_CEO_500_Y_SVS_2026.md`](Lanzamiento/INFORME_CEO_500_Y_SVS_2026.md) Parte A = 500 · Parte B = SVS.
+- **Ranking:** 13 candidatas en [`RESUMEN_COMPARATIVO.md`](Inversionistas/RESUMEN_COMPARATIVO.md).
+
+### Informe CEO 500 + SVS Caracas 2026 — 7 agosto 2026
+
+- **Entregable:** [`Lanzamiento/INFORME_CEO_500_Y_SVS_2026.md`](Lanzamiento/INFORME_CEO_500_Y_SVS_2026.md) + PDF; intel [`Inversionistas/_intel/2026-08-07-startup-venezuela-summit-2026.md`](Inversionistas/_intel/2026-08-07-startup-venezuela-summit-2026.md).
+- **Veredicto SVS:** **sí condicionado** — VIP50 **$50** solo con OK founder **antes del 10 ago**; red/pitch, no caja; no sustituye Plan A ni gate 500.
+- **Método:** fan-out Grok+Composer ×4 clusters; jueces factual+decisión (fallback Grok; tope API en `gpt-5.6-sol-max`).
+- **Pendiente humano:** OK ticket SVS; demo + piloto Valencia; outreach Epakon/Casa212/ALGEN.
+
+### Aprendizaje 500 LatAm → pack docs inversores — 7 agosto 2026
+
+- **Hecho:** rechazo email 6 ago (`aplica@500.co`): “carece de MVP/demo funcional”. CRM [`Inversionistas/500-latam/`](Inversionistas/500-latam/) score **67**; playbooks demo/piloto/MVT/gate.
+- **Lección pack:** MVP **técnico** (staging + tests) ≠ evidencia de **mercado** (demo 3–5 min + farmacias/pedidos). Canon: [`Lanzamiento/APRENDIZAJE_500_EVIDENCIA_MERCADO.md`](Lanzamiento/APRENDIZAJE_500_EVIDENCIA_MERCADO.md).
+- **Plan A caja:** Epakon / Casa212 / ALGEN. 500 = radar; recontacto `team-mx@500startups.com` **solo** con [`GATE_RECONTACTO_500.md`](Inversionistas/500-latam/GATE_RECONTACTO_500.md) verde.
+- **Pendiente humano:** grabar demo ([`DEMO_PRODUCTO_RX.md`](Inversionistas/500-latam/DEMO_PRODUCTO_RX.md)); cerrar 1–2 farmacias Valencia ([`PILOTO_FARMACIAS_VALENCIA.md`](Inversionistas/500-latam/PILOTO_FARMACIAS_VALENCIA.md)).
+- **No tocado:** Excel/PROYECCION/UNIT; código producto.
+
 ### Sync pack Lean → Excel 210.760 — 26 julio 2026
 
 - **Sweep residual:** CENSO / CUESTIONARIO / PERFIL / PROPUESTA_USUARIO / SUPUESTO_MKT / REGISTRO / VOLCADO + plantillas `PROMPT_MEJORAR_PACK` / `PROMPT_AUDIT_FORENSE` → **210.760**.
@@ -140,7 +174,7 @@
 - **Guía:** [docs/zonix/SPEC_KIT_ZONIX.md](zonix/SPEC_KIT_ZONIX.md).
 - **Tests post-install:** `php artisan test --filter=OrderTest` OK; `flutter test` 216 passed.
 
-### Pack Lanzamiento — tiers Lean 101k / Base 118k / Growth 135k (18 mayo 2026) *(histórico — superseded)*
+### Pack Lanzamiento — tiers Lean 101k / Base 118k / Growth 135k (18 mayo 2026) _(histórico — superseded)_
 
 - **Histórico mayo 2026:** Lean **101k** / Base **118k** / Growth **135k**; M12 **~42.209**; equilibrio **M11**. **Canon vigente jun/jul 2026:** Lean **~112k** / Base **~157k** / Growth **~187k**; M12 **~40.831**; casi BE **M12** — ver bloque «Ajuste billing pack» arriba y [PROYECCION §1.1](Lanzamiento/PROYECCION_FINANCIERA_12M.md).
 - **PRESUPUESTO:** [PRESUPUESTO_12_MESES_REFERENCIA.md](Lanzamiento/PRESUPUESTO_12_MESES_REFERENCIA.md) §1–§5.
@@ -181,47 +215,47 @@
 
 - **Fecha:** 30 abril 2026 (segunda sesión, remediación post-migración)
 - **Resumen:** **Remediación completa post-migración Eats → Pharma** sobre la base ya migrada. Forense detectó errores reales (compilación Flutter rota por campos de Product eliminados, enum `users.role` sin `pharmacist`, checkout buyer ignorando flujo Rx, autorización Pusher excluyendo farmacéutico, TTL recetas sin schedule, migración legacy que recortaba el enum de orders, formularios de producto sin campos farmacéuticos, MainRouter sin shell pharmacist) y se corrigió todo. Detalle por bloques:
-  - **A1**: `product_detail_page.dart` reescrito con sección Pharma (badges Rx / cadena de frío / controlado, bloque "Información farmacéutica" con principio activo, presentación, INHRR, etc.). `products_page.dart` ya no usa `preparationTime`. Test legacy `client_products_page_test.dart` reescrito con productos OTC + Rx demo.
-  - **A2**: Editado `create_users_table` añadiendo `pharmacist` al enum `role`.
-  - **A3**: `Buyer/OrderController::store` ahora detecta productos `requires_prescription` y `cold_chain` en el carrito; crea la orden con estado inicial `pending_prescription_validation` (vs `pending_payment`) y persiste `requires_prescription`/`cold_chain_required`. Documentado `OrderPayment.type='food'` como alias legacy del subtotal a la farmacia.
-  - **A4**: `routes/channels.php` canal `commerce.{id}` ahora autoriza también al rol `pharmacist` cuyo `profile.id` coincide con `commerces.pharmacist_in_charge_profile_id`.
-  - **A5**: Eliminada migración `2026_01_16_092546_update_orders_status_enum_to_new_states.php` (recortaba el enum). Norma del proyecto cumple: solo `create_*`.
-  - **A6**: Comando nuevo `App\Console\Commands\ExpirePendingPrescriptionsCommand` (`zonix:expire-pending-prescriptions`). Agendado en `Kernel::schedule()` cada minuto en `local/testing` y cada 5 minutos en producción.
-  - **B1**: `bottom_nav_persistence.dart` añade `pharmacist` (level 5) y `MainRouter` añade ramas/items para el shell pharmacist (PharmacistDashboardPage / PendingValidationsPage / Historial).
-  - **B2**: `CartItem.copyWith` añadido. `CartService.addToCart/incrementQuantity/decrementQuantity/updateQuantity` ahora preservan flags Pharma; `addToCart` mergea flags si el ítem entrante trae datos más completos.
-  - **B3**: `Order.canonicalOrderStatus`, `statusText`, `statusColor` y `_progressStep`/`_progressForStatus`/`_isTrackableStatus` soportan `pending_prescription_validation`.
-  - **B4**: `cart_page.dart` y `checkout_page.dart` muestran banner "Requiere receta médica" + banner cadena de frío. Tras crear orden Rx el checkout navega a `PrescriptionUploadPage` antes de la pantalla de confirmación.
-  - **B5**: `CommerceProduct` extendido con todos los campos farmacéuticos. `commerce_product_form_page.dart` reescrito con 3 secciones (comercial, farmacéutica, regulación) y 3 switches Rx/controlled/cold_chain con tipo de receta condicional. `commerce_product_service.dart` envía/recibe los nuevos campos al backend.
-  - **B6**: `StoreProductRequest` y `UpdateProductRequest` validan los campos farmacéuticos con `Rule::in(...)` para `dosage_form`/`prescription_type` y `required_if:requires_prescription,1` para `prescription_type`.
-  - **B7**: `Buyer/OrderController::cancelOrder` y `OrderService::cancelOrder` ahora aceptan `pending_prescription_validation` en la lista de estados cancelables (TTL de 5 minutos solo aplica a `pending_payment`).
-  - **B8**: `OrderNotificationSubscriber` se suscribe a `PrescriptionUploaded/Validated/Rejected` y notifica al farmacéutico colegiado o al paciente según corresponda. Mapa de mensajes incluye `pending_prescription_validation`.
-  - **B9**: `PharmacyService::baseQuery()` filtra `Commerce` por `business_type_id` perteneciente a tipos farmacéuticos (Farmacia, Farmacia 24h, Droguería, Boticario, Tienda salud, Óptica, Ortopedia, Pañalera).
-  - **B10**: `DatabaseSeeder` invoca `RoleSeeder` antes que `BusinessTypeSeeder` y `ZonixDemoSeeder`.
-  - **C1**: `ProductFactory` reescrito con datos farmacéuticos (principio activo, dosage_form, concentración, presentación, manufacturer, INHRR) + states `rx()`, `controlled()`, `coldChain()`. `OrderFactory` con states `withRx()` y `withColdChain()`.
-  - **C2/C3**: Sweep masivo de copy "restaurante / comida / Zonix Eats" en `main_router.dart`, `buyer_shell.dart`, `restaurants_page.dart`, `restaurant_details_page.dart`, `commerce_share_qr_page.dart`, `cart_page.dart`, `checkout_page.dart`, `order_service.dart`, `app_strings.dart`, `onboarding_page3.dart`. Backend: `WebSocketController`, `Admin/ReportController`, `Web/Front/IndexController`, `LocationController`, `Buyer/SearchController`, `Analytics/AnalyticsController`, `Commerce/CommerceListController`, `routes/web.php`, `database/factories/NotificationFactory.php`, vistas legales `terms.blade.php`/`privacy.blade.php`.
-  - **C4**: `tests/Feature/SeoTest.php` y `tests/Feature/AdminOperationalHardeningTest.php` con literales Pharma.
-  - **C5**: pack `docs/Lanzamiento` Eats archivado en `docs/_archive_eats/Lanzamiento_Eats` (abr 2026); **carpeta `_archive_eats` eliminada del repo** jun 2026 — recuperable en historial git. Pack vivo: `docs/Lanzamiento/` (Pharma).
-  - **D1**: Endpoint `POST /api/pharmacist/onboarding` (con `GET` para estado actual) en `Pharmacist/OnboardingController` + `StorePharmacistProfileRequest` (MPPS, licencia, foto título). El admin debe verificar manualmente antes de habilitar al farmacéutico para validar recetas.
-  - **D2**: `create_profiles_table` ampliado con columnas opcionales sensibles: `allergies`, `medical_notes`, `emergency_contact_name`, `emergency_contact_phone`, `medical_consent_given`, `medical_consent_at`. UI buyer queda como follow-up.
-  - **D3**: `buyer_shell` añade icono "Mis recetas médicas" (Icons.receipt_long) que abre `MyPrescriptionsPage`.
-  - **D4**: Comentario obsoleto en `commerce_share_qr_page` corregido a `zonix://pharmacy/{id}`.
+    - **A1**: `product_detail_page.dart` reescrito con sección Pharma (badges Rx / cadena de frío / controlado, bloque "Información farmacéutica" con principio activo, presentación, INHRR, etc.). `products_page.dart` ya no usa `preparationTime`. Test legacy `client_products_page_test.dart` reescrito con productos OTC + Rx demo.
+    - **A2**: Editado `create_users_table` añadiendo `pharmacist` al enum `role`.
+    - **A3**: `Buyer/OrderController::store` ahora detecta productos `requires_prescription` y `cold_chain` en el carrito; crea la orden con estado inicial `pending_prescription_validation` (vs `pending_payment`) y persiste `requires_prescription`/`cold_chain_required`. Documentado `OrderPayment.type='food'` como alias legacy del subtotal a la farmacia.
+    - **A4**: `routes/channels.php` canal `commerce.{id}` ahora autoriza también al rol `pharmacist` cuyo `profile.id` coincide con `commerces.pharmacist_in_charge_profile_id`.
+    - **A5**: Eliminada migración `2026_01_16_092546_update_orders_status_enum_to_new_states.php` (recortaba el enum). Norma del proyecto cumple: solo `create_*`.
+    - **A6**: Comando nuevo `App\Console\Commands\ExpirePendingPrescriptionsCommand` (`zonix:expire-pending-prescriptions`). Agendado en `Kernel::schedule()` cada minuto en `local/testing` y cada 5 minutos en producción.
+    - **B1**: `bottom_nav_persistence.dart` añade `pharmacist` (level 5) y `MainRouter` añade ramas/items para el shell pharmacist (PharmacistDashboardPage / PendingValidationsPage / Historial).
+    - **B2**: `CartItem.copyWith` añadido. `CartService.addToCart/incrementQuantity/decrementQuantity/updateQuantity` ahora preservan flags Pharma; `addToCart` mergea flags si el ítem entrante trae datos más completos.
+    - **B3**: `Order.canonicalOrderStatus`, `statusText`, `statusColor` y `_progressStep`/`_progressForStatus`/`_isTrackableStatus` soportan `pending_prescription_validation`.
+    - **B4**: `cart_page.dart` y `checkout_page.dart` muestran banner "Requiere receta médica" + banner cadena de frío. Tras crear orden Rx el checkout navega a `PrescriptionUploadPage` antes de la pantalla de confirmación.
+    - **B5**: `CommerceProduct` extendido con todos los campos farmacéuticos. `commerce_product_form_page.dart` reescrito con 3 secciones (comercial, farmacéutica, regulación) y 3 switches Rx/controlled/cold_chain con tipo de receta condicional. `commerce_product_service.dart` envía/recibe los nuevos campos al backend.
+    - **B6**: `StoreProductRequest` y `UpdateProductRequest` validan los campos farmacéuticos con `Rule::in(...)` para `dosage_form`/`prescription_type` y `required_if:requires_prescription,1` para `prescription_type`.
+    - **B7**: `Buyer/OrderController::cancelOrder` y `OrderService::cancelOrder` ahora aceptan `pending_prescription_validation` en la lista de estados cancelables (TTL de 5 minutos solo aplica a `pending_payment`).
+    - **B8**: `OrderNotificationSubscriber` se suscribe a `PrescriptionUploaded/Validated/Rejected` y notifica al farmacéutico colegiado o al paciente según corresponda. Mapa de mensajes incluye `pending_prescription_validation`.
+    - **B9**: `PharmacyService::baseQuery()` filtra `Commerce` por `business_type_id` perteneciente a tipos farmacéuticos (Farmacia, Farmacia 24h, Droguería, Boticario, Tienda salud, Óptica, Ortopedia, Pañalera).
+    - **B10**: `DatabaseSeeder` invoca `RoleSeeder` antes que `BusinessTypeSeeder` y `ZonixDemoSeeder`.
+    - **C1**: `ProductFactory` reescrito con datos farmacéuticos (principio activo, dosage_form, concentración, presentación, manufacturer, INHRR) + states `rx()`, `controlled()`, `coldChain()`. `OrderFactory` con states `withRx()` y `withColdChain()`.
+    - **C2/C3**: Sweep masivo de copy "restaurante / comida / Zonix Eats" en `main_router.dart`, `buyer_shell.dart`, `restaurants_page.dart`, `restaurant_details_page.dart`, `commerce_share_qr_page.dart`, `cart_page.dart`, `checkout_page.dart`, `order_service.dart`, `app_strings.dart`, `onboarding_page3.dart`. Backend: `WebSocketController`, `Admin/ReportController`, `Web/Front/IndexController`, `LocationController`, `Buyer/SearchController`, `Analytics/AnalyticsController`, `Commerce/CommerceListController`, `routes/web.php`, `database/factories/NotificationFactory.php`, vistas legales `terms.blade.php`/`privacy.blade.php`.
+    - **C4**: `tests/Feature/SeoTest.php` y `tests/Feature/AdminOperationalHardeningTest.php` con literales Pharma.
+    - **C5**: pack `docs/Lanzamiento` Eats archivado en `docs/_archive_eats/Lanzamiento_Eats` (abr 2026); **carpeta `_archive_eats` eliminada del repo** jun 2026 — recuperable en historial git. Pack vivo: `docs/Lanzamiento/` (Pharma).
+    - **D1**: Endpoint `POST /api/pharmacist/onboarding` (con `GET` para estado actual) en `Pharmacist/OnboardingController` + `StorePharmacistProfileRequest` (MPPS, licencia, foto título). El admin debe verificar manualmente antes de habilitar al farmacéutico para validar recetas.
+    - **D2**: `create_profiles_table` ampliado con columnas opcionales sensibles: `allergies`, `medical_notes`, `emergency_contact_name`, `emergency_contact_phone`, `medical_consent_given`, `medical_consent_at`. UI buyer queda como follow-up.
+    - **D3**: `buyer_shell` añade icono "Mis recetas médicas" (Icons.receipt_long) que abre `MyPrescriptionsPage`.
+    - **D4**: Comentario obsoleto en `commerce_share_qr_page` corregido a `zonix://pharmacy/{id}`.
 
 - **Validación pasada:**
-  - `php -l` recursivo en `app/`, `database/`, `tests/`, `routes/`, `config/` → sin errores.
-  - `flutter analyze` (vía ReadLints) en `lib/` y `test/` → sin errores.
-  - Referencias rotas a `ProductExtra/Preference/extras()/preparationTime/allergens/...` → 0 ocurrencias en código de aplicación.
-  - Strings residuales `Zonix Eats / com.zonix.eats / ZonixEats` en código activo → 0 (solo se mantiene 1 comentario intencional en `storefront_qr_parser.dart` que documenta el alias legacy del QR para QRs antiguos).
+    - `php -l` recursivo en `app/`, `database/`, `tests/`, `routes/`, `config/` → sin errores.
+    - `flutter analyze` (vía ReadLints) en `lib/` y `test/` → sin errores.
+    - Referencias rotas a `ProductExtra/Preference/extras()/preparationTime/allergens/...` → 0 ocurrencias en código de aplicación.
+    - Strings residuales `Zonix Eats / com.zonix.eats / ZonixEats` en código activo → 0 (solo se mantiene 1 comentario intencional en `storefront_qr_parser.dart` que documenta el alias legacy del QR para QRs antiguos).
 
 - **Próximos pasos sugeridos:**
-  1. `php artisan migrate:fresh --seed` con BD destino lista (la consolidación de schema Pharma queda completa al correrlo).
-  2. `php artisan test`.
-  3. `flutter pub get` + `flutter analyze` + `flutter test`.
-  4. UI follow-up no crítico (no bloquea MVP):
-     - Pantalla `BuyerMedicalInfoPage` (paso opcional de onboarding) para llenar `allergies`, `medical_notes`, `emergency_contact_*`.
-     - Pantalla `PharmacistOnboardingPage` con form (MPPS, licencia, foto título) que llama `POST /api/pharmacist/onboarding`.
-     - `PrescriptionsHistoryPage` separado de `PendingValidationsPage` (ahora la pestaña 2 del shell pharmacist apunta a la misma).
-     - Reescribir `ZonixDemoSeeder` con dataset Pharma completo (3 farmacias, 30 productos OTC, 5 Rx, 2 farmacéuticos colegiados, lotes con vencimientos variados).
-  5. Operación: nuevo proyecto Firebase `zonix-pharma`, dominio `zonixpharma.com`, regenerar app icon con la lámina de marca, y, antes de go-live, verificación legal de farmacias y MPPS de los farmacéuticos colegiados.
+    1. `php artisan migrate:fresh --seed` con BD destino lista (la consolidación de schema Pharma queda completa al correrlo).
+    2. `php artisan test`.
+    3. `flutter pub get` + `flutter analyze` + `flutter test`.
+    4. UI follow-up no crítico (no bloquea MVP):
+        - Pantalla `BuyerMedicalInfoPage` (paso opcional de onboarding) para llenar `allergies`, `medical_notes`, `emergency_contact_*`.
+        - Pantalla `PharmacistOnboardingPage` con form (MPPS, licencia, foto título) que llama `POST /api/pharmacist/onboarding`.
+        - `PrescriptionsHistoryPage` separado de `PendingValidationsPage` (ahora la pestaña 2 del shell pharmacist apunta a la misma).
+        - Reescribir `ZonixDemoSeeder` con dataset Pharma completo (3 farmacias, 30 productos OTC, 5 Rx, 2 farmacéuticos colegiados, lotes con vencimientos variados).
+    5. Operación: nuevo proyecto Firebase `zonix-pharma`, dominio `zonixpharma.com`, regenerar app icon con la lámina de marca, y, antes de go-live, verificación legal de farmacias y MPPS de los farmacéuticos colegiados.
 
 ### Histórico de la sesión anterior (migración inicial)
 
@@ -233,41 +267,41 @@ Ver entrada del 30 abril 2026 (primera sesión) más abajo para el detalle del f
 
 - **Fecha:** 30 abril 2026 (primera sesión)
 - **Resumen:** **Transformación Zonix Eats → Zonix Pharma (fork destructivo, MVP completo Rx).** Aplicada en una sola sesión por bloques:
-  1. **Branding**: `Zonix Pharma`, `com.zonix.pharma`, `zonix://pharmacy/{id}`, canal FCM `zonix_pharma_fcm`, dominio `zonixpharma.com`. Ajustes en Android/iOS/web manifests, `pubspec.yaml`, `MaterialApp.title`, `AppConfig.appName`, mapas (`userAgentPackageName`), Blade del backend, `SeoHelper`, `PrivacyController`, `composer.json`.
-  2. **Paleta y splash**: tokens `AppColors.brand*` Pharma (#1E2A5A, #0F4C5C, #56C7B8, #A8DCCB, #F5F7FA, #C7CFD9, #142033, #F2A65A) + alias legacy temporales. Tema light/dark con Plus Jakarta Sans. Splash actualizado a colores fríos.
-  3. **Refactor dominio backend**:
-     - Editado `create_products_table` con campos farmacéuticos (active_ingredient, dosage_form, concentration, presentation, manufacturer, health_registry INHRR, barcode, atc_code, requires_prescription, prescription_type, controlled_substance, cold_chain).
-     - Editado `create_commerces_table` con `pharmacist_in_charge_profile_id`, `health_permit_number`, `health_permit_expires_at`, `night_shift_open`.
-     - Editado `create_orders_table` con estado nuevo `pending_prescription_validation`, columnas `requires_prescription`, `prescription_id`, `prescription_validated_at`, `cold_chain_required`.
-     - Eliminadas migraciones, factories, seeders y modelos `product_extras` / `product_preferences`.
-     - Añadidas migraciones nuevas: `medicine_lots`, `pharmacist_profiles`, `prescriptions`.
-     - Añadidos modelos `MedicineLot`, `Prescription`, `PharmacistProfile`. `Product`, `Order`, `Commerce` actualizados con nuevos campos y relaciones.
-     - Reescrito `RoleSeeder` (rol `pharmacist`), `BusinessTypeSeeder`, `CategorySeeder` con catálogo farmacéutico.
-  4. **Controllers y servicios backend**:
-     - `OrderStateMachineService` con estado `pending_prescription_validation` y rol `pharmacist`.
-     - `PrescriptionService` (upload, approve, reject, expirePending) y eventos broadcast `PrescriptionUploaded`, `PrescriptionValidated`, `PrescriptionRejected`.
-     - Form Requests `StorePrescriptionRequest`, `RejectPrescriptionRequest`.
-     - Controllers nuevos: `Buyer/PrescriptionController`, `Pharmacist/PrescriptionController`, `Pharmacist/DashboardController`, `Buyer/PharmacyController`.
-     - `Buyer/RestaurantController` y `App\Services\RestaurantService` quedan como shim deprecado de `PharmacyController` y `PharmacyService` (alias `/api/buyer/restaurants` sigue funcionando).
-     - `routes/api/pharmacist.php` registrado en `routes/api.php`.
-     - `CartService` expone flags Rx/cold_chain en respuesta.
-     - `config/zonix.php` con sección `pharma` (block_rx_without_prescription, prescription_validation_ttl_minutes, disallow_promotions_on_rx, require_cold_chain_handling) y `.env.example` con variables `ZONIX_PHARMA_*`.
-  5. **Refactor dominio frontend**: modelo `Product` extendido con campos farmacéuticos, modelos nuevos `Prescription` y `MedicineLot`, `CartItem` con flags Rx/cold_chain, `CartService` expone `requiresPrescription` / `prescriptionRequiredItems` / `coldChainRequired`. Modelo `Restaurant` mantenido como `typedef Pharmacy` para compatibilidad. Servicio `PrescriptionService` y registro en `MultiProvider`.
-  6. **UI frontend**: pantallas nuevas `PrescriptionUploadPage`, `MyPrescriptionsPage`, `PharmacistDashboardPage`, `PendingValidationsPage`, `ValidationDetailPage`. Parser de QR `StorefrontQrParser` actualizado a `zonix://pharmacy/{id}` con compatibilidad legacy `zonix://restaurant/{id}`.
-  7. **Documentación**: `docs/BRAND_ZONIX_PHARMA.md`, `docs/PLAN_RX_VALIDATION.md`, `docs/PLAN_REGULATORIO_PHARMA_VE.md`, `docs/MIGRACION_EATS_PHARMA.md`. AGENTS.md y .cursorrules de ambos repos reescritos. Skills nuevas `zonix-prescriptions` y `zonix-medicine-catalog`.
-  8. **Tests añadidos**:
-     - Backend: `tests/Feature/PharmacyControllerTest.php`, `tests/Feature/PrescriptionFlowTest.php`, `tests/Unit/PrescriptionModelTest.php`, `tests/Unit/MedicineLotModelTest.php`. `tests/Feature/StorefrontLinkTest.php` actualizado a `zonix://pharmacy/`.
-     - Frontend: `test/features/utils/storefront_qr_pharmacy_test.dart`, `test/models/prescription_model_test.dart`, `test/models/medicine_lot_model_test.dart`. `test/models/product_model_test.dart` y `test/models/cart_item_test.dart` actualizados con campos Pharma.
+    1. **Branding**: `Zonix Pharma`, `com.zonix.pharma`, `zonix://pharmacy/{id}`, canal FCM `zonix_pharma_fcm`, dominio `zonixpharma.com`. Ajustes en Android/iOS/web manifests, `pubspec.yaml`, `MaterialApp.title`, `AppConfig.appName`, mapas (`userAgentPackageName`), Blade del backend, `SeoHelper`, `PrivacyController`, `composer.json`.
+    2. **Paleta y splash**: tokens `AppColors.brand*` Pharma (#1E2A5A, #0F4C5C, #56C7B8, #A8DCCB, #F5F7FA, #C7CFD9, #142033, #F2A65A) + alias legacy temporales. Tema light/dark con Plus Jakarta Sans. Splash actualizado a colores fríos.
+    3. **Refactor dominio backend**:
+        - Editado `create_products_table` con campos farmacéuticos (active_ingredient, dosage_form, concentration, presentation, manufacturer, health_registry INHRR, barcode, atc_code, requires_prescription, prescription_type, controlled_substance, cold_chain).
+        - Editado `create_commerces_table` con `pharmacist_in_charge_profile_id`, `health_permit_number`, `health_permit_expires_at`, `night_shift_open`.
+        - Editado `create_orders_table` con estado nuevo `pending_prescription_validation`, columnas `requires_prescription`, `prescription_id`, `prescription_validated_at`, `cold_chain_required`.
+        - Eliminadas migraciones, factories, seeders y modelos `product_extras` / `product_preferences`.
+        - Añadidas migraciones nuevas: `medicine_lots`, `pharmacist_profiles`, `prescriptions`.
+        - Añadidos modelos `MedicineLot`, `Prescription`, `PharmacistProfile`. `Product`, `Order`, `Commerce` actualizados con nuevos campos y relaciones.
+        - Reescrito `RoleSeeder` (rol `pharmacist`), `BusinessTypeSeeder`, `CategorySeeder` con catálogo farmacéutico.
+    4. **Controllers y servicios backend**:
+        - `OrderStateMachineService` con estado `pending_prescription_validation` y rol `pharmacist`.
+        - `PrescriptionService` (upload, approve, reject, expirePending) y eventos broadcast `PrescriptionUploaded`, `PrescriptionValidated`, `PrescriptionRejected`.
+        - Form Requests `StorePrescriptionRequest`, `RejectPrescriptionRequest`.
+        - Controllers nuevos: `Buyer/PrescriptionController`, `Pharmacist/PrescriptionController`, `Pharmacist/DashboardController`, `Buyer/PharmacyController`.
+        - `Buyer/RestaurantController` y `App\Services\RestaurantService` quedan como shim deprecado de `PharmacyController` y `PharmacyService` (alias `/api/buyer/restaurants` sigue funcionando).
+        - `routes/api/pharmacist.php` registrado en `routes/api.php`.
+        - `CartService` expone flags Rx/cold_chain en respuesta.
+        - `config/zonix.php` con sección `pharma` (block*rx_without_prescription, prescription_validation_ttl_minutes, disallow_promotions_on_rx, require_cold_chain_handling) y `.env.example` con variables `ZONIX_PHARMA*\*`.
+    5. **Refactor dominio frontend**: modelo `Product` extendido con campos farmacéuticos, modelos nuevos `Prescription` y `MedicineLot`, `CartItem` con flags Rx/cold_chain, `CartService` expone `requiresPrescription` / `prescriptionRequiredItems` / `coldChainRequired`. Modelo `Restaurant` mantenido como `typedef Pharmacy` para compatibilidad. Servicio `PrescriptionService` y registro en `MultiProvider`.
+    6. **UI frontend**: pantallas nuevas `PrescriptionUploadPage`, `MyPrescriptionsPage`, `PharmacistDashboardPage`, `PendingValidationsPage`, `ValidationDetailPage`. Parser de QR `StorefrontQrParser` actualizado a `zonix://pharmacy/{id}` con compatibilidad legacy `zonix://restaurant/{id}`.
+    7. **Documentación**: `docs/BRAND_ZONIX_PHARMA.md`, `docs/PLAN_RX_VALIDATION.md`, `docs/PLAN_REGULATORIO_PHARMA_VE.md`, `docs/MIGRACION_EATS_PHARMA.md`. AGENTS.md y .cursorrules de ambos repos reescritos. Skills nuevas `zonix-prescriptions` y `zonix-medicine-catalog`.
+    8. **Tests añadidos**:
+        - Backend: `tests/Feature/PharmacyControllerTest.php`, `tests/Feature/PrescriptionFlowTest.php`, `tests/Unit/PrescriptionModelTest.php`, `tests/Unit/MedicineLotModelTest.php`. `tests/Feature/StorefrontLinkTest.php` actualizado a `zonix://pharmacy/`.
+        - Frontend: `test/features/utils/storefront_qr_pharmacy_test.dart`, `test/models/prescription_model_test.dart`, `test/models/medicine_lot_model_test.dart`. `test/models/product_model_test.dart` y `test/models/cart_item_test.dart` actualizados con campos Pharma.
 - **Áreas tocadas:** branding, paleta, modelo de datos, controllers, rutas, servicios, eventos, configuración, documentación, skills y tests. Detalle exhaustivo en [MIGRACION_EATS_PHARMA.md](MIGRACION_EATS_PHARMA.md).
 - **Próximos pasos sugeridos:**
-  1. Correr `php artisan migrate:fresh --seed` con BD destino lista (consolida schema Pharma).
-  2. Ejecutar `php artisan test` y `flutter test` + `flutter analyze` para confirmar que la suite sigue verde.
-  3. Reemplazar `android/app/google-services.json` y `ios/Runner/GoogleService-Info.plist` con un proyecto Firebase nuevo `zonix-pharma`.
-  4. Crear app Pusher dedicada Pharma y actualizar `.env`.
-  5. Generar credenciales OAuth Google + Maps para `com.zonix.pharma`.
-  6. Reemplazar logos en `assets/images/logo_login.png`, `splash_logo*.png`, `onboarding_pharma*.png` con la lámina de marca y regenerar app icon (`flutter_launcher_icons`).
-  7. Implementar banners de "Requiere receta médica" en `cart_page.dart`, `checkout_page.dart` y badge en `product_detail_page.dart` y cards de `restaurants_page.dart` (consumiendo `cartService.requiresPrescription` y `product.requiresPrescription`).
-  8. Build APK debug + smoke OTC (carrito sin Rx) y smoke Rx (carrito con Rx → bloqueo → upload → aprobación → checkout).
+    1. Correr `php artisan migrate:fresh --seed` con BD destino lista (consolida schema Pharma).
+    2. Ejecutar `php artisan test` y `flutter test` + `flutter analyze` para confirmar que la suite sigue verde.
+    3. Reemplazar `android/app/google-services.json` y `ios/Runner/GoogleService-Info.plist` con un proyecto Firebase nuevo `zonix-pharma`.
+    4. Crear app Pusher dedicada Pharma y actualizar `.env`.
+    5. Generar credenciales OAuth Google + Maps para `com.zonix.pharma`.
+    6. Reemplazar logos en `assets/images/logo_login.png`, `splash_logo*.png`, `onboarding_pharma*.png` con la lámina de marca y regenerar app icon (`flutter_launcher_icons`).
+    7. Implementar banners de "Requiere receta médica" en `cart_page.dart`, `checkout_page.dart` y badge en `product_detail_page.dart` y cards de `restaurants_page.dart` (consumiendo `cartService.requiresPrescription` y `product.requiresPrescription`).
+    8. Build APK debug + smoke OTC (carrito sin Rx) y smoke Rx (carrito con Rx → bloqueo → upload → aprobación → checkout).
 
 ### Decisiones pendientes de operación (no de código)
 

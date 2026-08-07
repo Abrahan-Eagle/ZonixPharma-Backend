@@ -1,96 +1,83 @@
 # Resumen CEO — 500 LatAm
 
 > Para decidir en 2 minutos. **No es asesoría legal ni financiera.**  
-> Fecha: 21 julio 2026 · Deadline apply: **31 julio 2026**  
-> PDF: [RESUMEN_CEO.pdf](RESUMEN_CEO.pdf)
+> Fecha: **7 agosto 2026** (update post-rechazo 6 ago) · Score **67**  
+> PDF: [RESUMEN_CEO.pdf](RESUMEN_CEO.pdf) · Fácil: [RESUMEN_FACIL.md](RESUMEN_FACIL.md)
 
 ---
 
 ## En 30 segundos
 
-**500 LatAm** (fondo 500 Global) abre una convocatoria: eligen **5 startups** de Latinoamérica y a cada una le ponen hasta **USD 300.000**, más mentoría 12 meses y **3 semanas** en su sede de San Francisco.
+**500 LatAm** (500 Global) eligió **no invertir** en Zonix en este ciclo (email 6 ago 2026). Motivo que dan: **falta MVP o demo funcional** a sus ojos.
 
-Para Zonix Pharma: es una **opción interesante y barata de intentar**, no el plan A de caja. Aplicar **no garantiza** el dinero.
+No es un “no para siempre”: invitan a avisar a `team-mx@500startups.com` cuando haya **producto en el mercado**. Reaplicar es normal en su proceso.
 
----
-
-## La oferta en números
-
-| Qué | Cuánto |
-|-----|--------|
-| Cheque bruto | USD **300.000** |
-| Lo que llega a la cuenta | USD **285.000** (restan **15.000** de fee del programa) |
-| Lo que cedes | ~**10%** de la empresa (contrato convertible tipo SAFE, llamado **KISS**) |
-| Valoración implícita | ~USD **3 millones** post (300k = 10%) |
-| Tiempo tuyo | Programa **12 meses** + **3 semanas** en San Francisco |
-| Probabilidad | Baja: solo **5** ganan en toda LatAm |
+**Uso de esta carpeta:** **aprendizaje interno** + gate de recontacto futuro. **Plan A de caja sigue siendo Epakon / Casa212 / ALGEN.** 500 no es opción de caja ahora.
 
 ---
 
-## Vs lo que pedimos hoy (pack Zonix)
+## Qué pasó
 
-| | Pack actual | Si ganas 500 |
-|--|-------------|--------------|
-| Plata | Lean ~**174k** | **285k** neto |
-| Dilución | SAFE con tope 600k (puede ser **mucho %** si el cheque es chico) | **~10%** fijo |
-| Historia que quieres | Piloto Valencia / VE | Misma playa + ruta **LatAm → mundo** |
-| Empresa | Ideal Delaware | **Obligatorio** empresa US (Delaware) o Cayman para cobrar |
-
-**En corto:** más plata y dilución más limpia, a cambio de más compromiso y un pitch más ambicioso.
-
----
-
-## Lo bueno
-
-- Cheque mayor que el ask Lean.
-- Cedes ~10% — mejor que regalar casi un tercio en un SAFE chico al tope 600k.
-- Marca fuerte (500) + red + San Francisco.
-- Puedes **aplicar sin** tener ya la empresa en EE. UU.; eso se arregla si te hacen oferta.
-
-## Lo malo
-
-- Casi nadie gana (solo 5).
-- Cierra el **31 jul 2026** (quedan pocos días).
-- 15k se van en fee; el efectivo real es 285k.
-- Te pide tiempo fuera (SF) y 12 meses de programa.
-- Si solo hablas de “farmacia en Valencia”, te ven chico: hay que vender escala regional/global.
-- Pharma/recetas en Venezuela no es el deal típico de 500 (más fintech/marketplace).
+| Qué | Detalle |
+|-----|---------|
+| Resultado | Sin oferta de inversión |
+| Motivo declarado | Carece de MVP / demo funcional |
+| Qué piden | Producto en mercado + update |
+| Canal | `team-mx@500startups.com` |
+| Oferta del ciclo (si hubieran ganado) | 300k bruto / **285k** neto · ~**10%** KISS |
 
 ---
 
-## Veredicto del análisis
+## Realidad vs percepción
 
-**Score 70/100 → nurture (opción secundaria).**
+| | Hecho |
+|--|--------|
+| Código / staging | Sí — app + API Rx (buyer / farmacia / farmacéutico) |
+| Play Store / piloto con farmacias reales | Aún no |
+| Video demo empaquetado | Pendiente — ver [DEMO_PRODUCTO_RX.md](DEMO_PRODUCTO_RX.md) |
 
-Úsala como **boleto de lotería barato** si puedes contar una historia LatAm/global y tienes (o puedes armar) camino a Delaware.  
-**No** bases sueldos ni runway solo en “nos va a entrar 500”.
+**En corto:** tenemos producto técnico; 500 no vio **evidencia de mercado**. Ese es el gap a cerrar.
 
-Sigue en paralelo Casa212 / Epakon / ALGEN (ver briefing inversores VE).
+---
+
+## Vs ask Zonix
+
+| | Pack Lean | Si un día cierras 500 |
+|--|-----------|------------------------|
+| Plata | **210.760** | **285k** neto |
+| Dilución | SAFE cap 600k | ~**10%** KISS |
+| Ahora | Raise Lean otras rutas | Solo tras demo + piloto |
+
+---
+
+## Veredicto
+
+**Score 67/100 → nurture\*** (rechazado; recontacto condicionado).
+
+1. No recontactar hasta [GATE_RECONTACTO_500.md](GATE_RECONTACTO_500.md) verde.  
+2. Prioridad: demo 3–5 min + 1–2 farmacias Valencia + pedidos reales.  
+3. No gastar foco en Platzi / perks del email.
 
 ---
 
 ## Tu decisión (marca una)
 
-- [ ] **Sí aplico** antes del 31 jul  
-- [ ] **No aplico** (prioridad otras rutas)  
-- [ ] **Aplico y sigo** Casa212 / Epakon / ALGEN en paralelo *(recomendado si aplicas)*
+- [x] **Aplicamos** (ciclo jul) → resultado: rechazo  
+- [ ] **Recontacto** solo cuando gate verde  
+- [x] **Sigo Plan A** Epakon / Casa212 / ALGEN *(recomendado)*
 
 ---
 
-## Si aplicas — checklist mínimo
+## Checklist post-rechazo
 
-1. Pitch: playa VE + camino **más allá de Venezuela**.
-2. Un solo producto en el pitch: **Zonix Pharma** (Corral X = tu historial, no mezclar números).
-3. Camino a empresa Delaware (o Cayman) + abogado.
-4. Confirmar que puedes estar **3 semanas en SF** sin tumbar el piloto.
-5. Planear gastos con **285k**, no con 300k.
-
-Apply: [latam.aplica.500.co](https://latam.aplica.500.co)
+1. [DEMO_PRODUCTO_RX.md](DEMO_PRODUCTO_RX.md) — grabar y pegar link.  
+2. [PILOTO_FARMACIAS_VALENCIA.md](PILOTO_FARMACIAS_VALENCIA.md) — ≥1 farmacia activa.  
+3. [MVT_CONCIERGE.md](MVT_CONCIERGE.md) — tests de demanda/ops.  
+4. Gate → borrador en [GATE_RECONTACTO_500.md](GATE_RECONTACTO_500.md) (**no enviar** sin OK).
 
 ---
 
-## Detalle técnico
+## Detalle
 
-- Ficha completa: [FICHA.md](FICHA.md)
-- Bitácora / forense: [NOTAS.md](NOTAS.md)
-- Ranking candidatos: [../RESUMEN_COMPARATIVO.md](../RESUMEN_COMPARATIVO.md)
+- Ficha: [FICHA.md](FICHA.md) · Bitácora: [NOTAS.md](NOTAS.md)  
+- Ranking: [../RESUMEN_COMPARATIVO.md](../RESUMEN_COMPARATIVO.md)

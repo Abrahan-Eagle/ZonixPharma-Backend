@@ -74,6 +74,8 @@ No bases runway solo en “Epakon pone $1M”.
 
 ## Tu decisión (marca una)
 
+> **Antes:** barra [BARRA_CREDIBILIDAD_PLAN_A](../../Lanzamiento/BARRA_CREDIBILIDAD_PLAN_A.md) **mínima** verde (+ OK founder). Preferir **fuerte** si DD.
+
 - [ ] **Sí pitch** (deck listo) — cold o warm  
 - [ ] **Espero** warm intro (Casa212 / Yummy)  
 - [ ] **Pitch y sigo** Casa212 / 500 / ALGEN en paralelo *(recomendado)*  

@@ -1,7 +1,8 @@
 # Contexto del pitch y decisiones tomadas
 
-> **Última actualización:** 22 junio 2026 (anclas financieras **v3.8.2**).
+> **Última actualización:** 7 agosto 2026 (decisión **2.13** evidencia de mercado post-500; anclas Lean **210.760**).
 > Documento que captura las decisiones del founder (usuario) sobre cómo se posiciona Zonix Pharma frente a un inversor, qué se dice, qué no, y por qué se eligió cada parámetro del modelo.
+> **Lección:** [APRENDIZAJE_500_EVIDENCIA_MERCADO.md](APRENDIZAJE_500_EVIDENCIA_MERCADO.md).
 
 ## 1. Tecnología base reutilizada (Zonix Pharma)
 
@@ -177,12 +178,25 @@ Vista única para data room; detalle en docs hermanos. **ARPF ~50** y tier únic
 
 > Si ≥3 entrevistas o el dato real T+60 contradicen una hipótesis, aplicar pivot por bloque según `zonix-lean-canvas` (§ pivot) **antes** de escalar Meta Ads — el paciente (B2C) se valida con repeat M2 post-Day-D.
 
+### 2.13 Evidencia de mercado antes de recontacto fondos tipo 500
+
+**Decisión (7 ago 2026):** tras el rechazo de **500 LatAm** (“carece de MVP/demo funcional”), el pack distingue **MVP técnico** (staging + Rx + tests) de **evidencia de mercado** (demo 3–5 min + early adopters en Valencia). No se recontacta a 500 ni se vende “producto en mercado” sin esa evidencia. Plan A de caja sigue **Epakon / Casa212 / ALGEN**.
+
+**Por qué:**
+- Fondos early-stage miden adopción y demo consumible, no solo suite de tests.
+- Beachhead Valencia + ops no escalables (PG) + MVT (Biyani) cierran el gap sin overbuild de features.
+- Freeze de alcance en pitch: happy path Rx/OTC, no 20 insights.
+
+**Fuente:** [APRENDIZAJE_500_EVIDENCIA_MERCADO.md](APRENDIZAJE_500_EVIDENCIA_MERCADO.md) · playbooks [`../Inversionistas/500-latam/`](../Inversionistas/500-latam/).
+
 ## 3. Lo que NO se dice en el pitch (porque puede confundir)
 
 - No se promete monetización por publicidad de laboratorios. Es un upside futuro, no parte del modelo base.
 - No se promete expansión a Colombia o México en año 1. Es upside, no commitment.
 - No se promete integración con seguros médicos / IVSS. Es un módulo que requiere convenios de 12-18 meses.
 - No se promete teleconsulta médica. Es un vertical adyacente, no MVP.
+- No se dice “ya estamos en mercado / toda Venezuela” sin farmacias y pedidos reales (aprendizaje 500).
+- No se confunde **443 tests** con “MVP validado por early adopters”.
 
 ## 4. Glosario rápido (para el founder, no para el inversor)
 
@@ -213,17 +227,17 @@ Estas se documentarán en un anexo cuando lleguen al frente. Hoy no son bloquean
 
 ## 6. Tono del pitch
 
-- **Honesto sobre lo que no se ha hecho:** "no tenemos ventas todavía, tenemos producto operativo y plan validado".
-- **Confiado sobre lo que sí está hecho:** "443 tests backend (re-verificar pre-reunión), ~4 años de desarrollo del **stack Zonix Pharma**; staging/VPS hoy, tiendas T+7–12".
+- **Honesto sobre lo que no se ha hecho:** "no tenemos ventas todavía; tenemos producto en staging y estamos cerrando early adopters en Valencia".
+- **Confiado sobre lo que sí está hecho:** "443 tests backend (re-verificar), ~4 años de stack; demo del happy path cuando P0-05 esté listo".
 - **Específico con números:** nunca decir "esperamos crecer mucho"; decir **USD 210.760** SAFE Lean, Fase 0 **50.260**, Day-D **160.500**, burn Y1 **145.500**, **~159 farmacias activas M12** *(curva ref.)*, cash M12 **398.293** (esc.1: 160.500 + FCF +237.793), cuota **45/60/70** + ARPF **~50** ([MODELO_FINANCIERO_ZONIX_PHARMA.xlsx](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx)).
 - **Realista sobre Venezuela:** mencionar la inflación de entrada, no esconder la complejidad regulatoria.
 - **Modular:** ticket parcial (USD 25k–50k) sobre SAFE Lean **210.760**.
 
 ## 7. Próximos pasos antes de la primera reunión con un inversor
 
-1. Completar los `[PENDIENTE]` restantes de [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) (§1 founder mayormente listo en mayo 2026; §2 inversor, §3–9 operativos siguen).
-2. Visitar 5-8 farmacias de Bella Florida y El Socorro y volver con sus nombres y datos de contacto.
-3. Tener cotización formal de **HQ casa** (San Diego / Av. Bolívar Norte).
-4. Tener cotización formal de la valla.
-5. Cotizar abogado venezolano para preparar el SAFE local.
-6. Repasar el [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md).
+1. Completar los `[PENDIENTE]` restantes de [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md).
+2. Grabar demo producto 3–5 min ([DEMO_PRODUCTO_RX](../Inversionistas/500-latam/DEMO_PRODUCTO_RX.md)) y cerrar ≥1 farmacia piloto Valencia.
+3. Visitar 5-8 farmacias de Bella Florida / San Diego / Av. Bolívar Norte con datos de contacto.
+4. Tener cotización formal de **HQ casa** y valla; cotizar abogado SAFE local.
+5. Repasar [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) (P0-05 + P0-08).
+6. Outreach Plan A: Epakon / Casa212 / ALGEN — 500 solo con gate verde.

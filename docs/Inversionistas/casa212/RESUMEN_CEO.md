@@ -76,6 +76,8 @@ No bases runway solo en “nos aceptan Casa212”.
 
 ## Tu decisión (marca una)
 
+> **Antes:** barra [BARRA_CREDIBILIDAD_PLAN_A](../../Lanzamiento/BARRA_CREDIBILIDAD_PLAN_A.md) **mínima** verde (+ OK founder + 12 sem Caracas). Preferir **fuerte** si apply.
+
 - [ ] **Sí aplico** (tengo 12 sem Caracas) antes del 15 ago  
 - [ ] **No aplico** (no hay bandwidth residencia)  
 - [ ] **Aplico y sigo** 500 / Epakon / ALGEN en paralelo *(recomendado si aplicas)*  

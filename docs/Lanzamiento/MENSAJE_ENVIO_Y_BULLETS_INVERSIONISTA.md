@@ -1,17 +1,18 @@
 # Mensaje de envío al inversor + bullets pitch
 
-> **Última actualización:** 30 julio 2026 (anclas financieras **v3.9.3** — esc.1 vigente: pricing 45/60/70 + % GMV; FCF Y1 +237.793; cash M12 398.293).
+> **Última actualización:** 7 agosto 2026 (bullets honestos: staging + demo; aprendizaje 500; anclas **v3.9.3**).
 > Documento operacional. Texto listo para WhatsApp / email + bullets para presentación de 5 minutos.
+> **Lección:** [APRENDIZAJE_500_EVIDENCIA_MERCADO.md](APRENDIZAJE_500_EVIDENCIA_MERCADO.md).
 
 ## 1. Mensaje WhatsApp inicial (mensaje frío)
 
 > Hola [Nombre del inversor],
 >
-> Soy **Abrahan Pulido**. Soy fundador de Zonix Pharma, un marketplace farmacéutico digital que estamos preparando para lanzar en Carabobo. **T+0** = wire del capital; **~90 días Fase 0** (legal, equipo, onboarding farmacias, Firebase/tiendas); **Day-D (T+90)** = piloto público en app = **M1** del modelo financiero. Stack en **staging/VPS** con **443 tests** backend (re-verificar pre-reunión); go-live tiendas + Firebase **T+7–12** Fase 0. Busco **USD 210.760** (Lean v3.9.3 Excel — **CEO + 4× Sales**) vía SAFE cap **600k** *(equity ~35,13%)* para **Fase 0 (50.260) + 12 meses** post-Day-D (burn **145.500**). Cash M12: **398.293** (esc.1: 160.500 + FCF +237.793).
+> Soy **Abrahan Pulido**. Soy fundador de Zonix Pharma, un marketplace farmacéutico digital para Carabobo. **T+0** = wire; **~90 días Fase 0**; **Day-D (T+90)** = piloto público = **M1** del modelo. Producto en **staging** (Rx + farmacia + paciente) con **443 tests** backend; **pre-revenue**; estamos cerrando early adopters en Valencia y empaquetamos **demo de producto** (video 3–5 min / demo en vivo). Busco **USD 210.760** vía SAFE cap **600k** *(equity ~35,13%)* para Fase 0 **50.260** + 12 meses post-Day-D. Cash M12: **398.293** (esc.1).
 >
-> Modelo: la farmacia paga **cuota fija 45/60/70 + 14%/12%/11% sobre GMV** en la app (tier dinámico por bandas — ver pack §5 B2B). En volumen típico Pro (USD 3.000 GMV) el costo es **~44% menor** que una comisión agregador al 25% (USD 420 vs ~USD 750).
+> Modelo: cuota fija **45/60/70 + 14%/12%/11% GMV** (tier dinámico). En volumen Pro típico el costo es **~44% menor** que un agregador al 25%.
 >
-> Te interesa una reunión de 30 min para revisar el modelo y los números? Tengo un pack de documentos listo si prefieres revisarlo antes.
+> ¿30 min para revisar el modelo? Pack listo; demo cuando confirmemos la reunión.
 >
 > Gracias,
 > Abrahan Pulido
@@ -19,15 +20,17 @@
 **Personalizar:**
 - Si conoces algo del inversor (otra inversión farmacéutica, LinkedIn shared connection): mencionarlo.
 - Si te lo presentó alguien: mencionar quién.
+- Cuando exista URL demo: añadir «Demo: [LINK]».
 
 ### 1.1 Variante ultra-corta (~80 palabras) — Cialdini
 
-> Hola [Nombre], soy Abrahan Pulido, fundador de **Zonix Pharma** (marketplace farmacéutico Valencia, OTC + Rx). Tras wire (**T+0**), **~90 días Fase 0** y **Day-D** piloto público. Buscamos **USD 210.760** pre-seed vía SAFE (cap **600k** Lean Excel; equity ~35,13%). Stack en **staging** (**443 tests** backend). ¿30 min esta semana? Pack: [LINK Drive / README Lanzamiento].
+> Hola [Nombre], soy Abrahan Pulido, fundador de **Zonix Pharma** (marketplace farmacéutico Valencia, OTC + Rx). Stack en **staging** (**443 tests**); **pre-revenue**; piloto Valencia en curso. Buscamos **USD 210.760** pre-seed vía SAFE (cap **600k**). ¿30 min? Pack: [LINK]. Demo producto: [LINK o “en la call”].
 
 **Ganchos (usar 1–2, sin exagerar):**
 - **Autoridad:** stack ~4 años; regulación Rx con farmacéutico de cada farmacia.
 - **Prueba social:** mercado pharma VE **+17%** unidades (Cifar); comparables LatAm (Farmalisto).
 - **Escasez suave:** ventana piloto Valencia 2026 — no urgencia falsa de «último día».
+- **Honestidad:** staging ≠ Play Store; tracción cuando haya farmacias/pedidos reales.
 
 Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 
@@ -47,9 +50,11 @@ Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 >
 > Opcional DD técnico: [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) (pack ↔ producto).
 >
+> **Demo producto** (cuando exista URL): [PEGAR LINK] — guion interno [`../Inversionistas/500-latam/DEMO_PRODUCTO_RX.md`](../Inversionistas/500-latam/DEMO_PRODUCTO_RX.md).
+>
 > Acceso al pack completo en Google Drive: [LINK]
 >
-> Reunión de **30 min** cuando puedas — incluye demo en vivo (Buyer + Pharmacy + Pharmacist + `delivery_company` + `delivery_agent`). **Última milla:** partner concesionario; Zonix **no** opera flota propia.
+> Reunión de **30 min** cuando puedas — incluye demo en vivo (Buyer + Pharmacy + Pharmacist + delivery partner). **Última milla:** partner; Zonix **no** opera flota propia. Hoy: **staging** + piloto Valencia en curso (**pre-revenue**).
 >
 > Quedo atento.
 > Abrahan Pulido

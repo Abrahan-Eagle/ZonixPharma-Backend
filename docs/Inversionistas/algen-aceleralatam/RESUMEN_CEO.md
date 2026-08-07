@@ -71,6 +71,8 @@ Si el tiempo es escaso, **ALGEN > FI**.
 
 ## Tu decisión (marca una)
 
+> **Antes:** barra [BARRA_CREDIBILIDAD_PLAN_A](../../Lanzamiento/BARRA_CREDIBILIDAD_PLAN_A.md) **mínima** verde (+ OK founder + 12–16 h/sem). Preferir **fuerte** si hay claim de tracción.
+
 - [ ] **Apply ciclo 15 oct** *(recomendado si hay bandwidth)*  
 - [ ] Solo call Seba / email para confirmar fechas  
 - [ ] Skip — solo Epakon/Casa212/500  

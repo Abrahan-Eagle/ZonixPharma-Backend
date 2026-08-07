@@ -7,7 +7,15 @@
 | Fecha | Canal | Qué pasó | Siguiente |
 |-------|-------|----------|-----------|
 | 2026-07-21 | Forense epakon.com (SPA+JS+tRPC) + AngelList + Ecosistema + SuperScout + insights.epakon.com | Score **73**. Ficha + resumen CEO. | Deck + decidir cold vs warm; pedir términos |
+| 2026-08-07 | Post-500: barra credibilidad Plan A | Outreach **solo** si [`BARRA_CREDIBILIDAD_PLAN_A`](../../Lanzamiento/BARRA_CREDIBILIDAD_PLAN_A.md) **mínima** verde (fuerte si DD); lección [INFORME_FACIL_500…](../../Lanzamiento/INFORME_FACIL_500_COMO_STARTUP.md) | Cerrar demo + piloto; OK founder antes de mail |
 | | | | |
+
+## Gate outreach (post-500)
+
+> **No pitch / no mail** sin: (1) barra **mínima** verde · (2) OK founder.  
+> Barra **fuerte** si piden tracción o DD.  
+> Canon: [`../../Lanzamiento/BARRA_CREDIBILIDAD_PLAN_A.md`](../../Lanzamiento/BARRA_CREDIBILIDAD_PLAN_A.md).  
+> Esto **no** es el gate de recontacto 500 (`team-mx`).
 
 ## Forense — arquitectura
 

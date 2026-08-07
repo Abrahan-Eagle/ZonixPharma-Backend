@@ -1,9 +1,10 @@
 # Documentos solo para el inversor — Zonix Pharma
 
-> **Última actualización:** 12 julio 2026 (briefing inversores VE **profundizado forense**)  
+> **Última actualización:** 7 agosto 2026 (artefacto demo producto; aprendizaje 500)  
 > **Propósito:** inventario canónico del **data room inversor** (pre-seed). No incluye pack aliado Gabriel ni plantillas internas de equipo.  
 > **Fuente operativa:** [README.md](README.md) · **Verificación:** `python3 _tools/verify_inversor_pack.py` · **Zip:** `python3 _tools/build_zip_inversor.py`  
-> **Informe CEO — inversores VE 2026 (profundizado + NotebookLM):** [BRIEFING_INVERSORES_VE_2026.md](BRIEFING_INVERSORES_VE_2026.md) · **versión Word para CEO:** [BRIEFING_INVERSORES_VE_2026.docx](BRIEFING_INVERSORES_VE_2026.docx) — no va en zip mínimo; sí en data room extendido / uso interno fundraising.
+> **Informe CEO — inversores VE 2026:** [BRIEFING_INVERSORES_VE_2026.md](BRIEFING_INVERSORES_VE_2026.md) · Word: [BRIEFING_INVERSORES_VE_2026.docx](BRIEFING_INVERSORES_VE_2026.docx).  
+> **Lección evidencia de mercado:** [APRENDIZAJE_500_EVIDENCIA_MERCADO.md](APRENDIZAJE_500_EVIDENCIA_MERCADO.md) (interno; no sustituye BRIEF).
 
 ---
 
@@ -29,6 +30,7 @@ Envío inicial al inversor (orden de lectura recomendado):
 | Email / bullets listos (§2) | [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) |
 | Guía del modelo (si no abren Excel) | [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) |
 | Índice con cifras ancla | [README.md](README.md) |
+| **Demo producto** (video 3–5 min) | URL Drive/YT — guion [`../Inversionistas/500-latam/DEMO_PRODUCTO_RX.md`](../Inversionistas/500-latam/DEMO_PRODUCTO_RX.md); **obligatorio** para fondos tipo 500 / P0-05 |
 
 ---
 
@@ -80,6 +82,8 @@ Citadas en [README.md](README.md) § documentos pre-existentes:
 |-------------|--------|
 | [RESUMEN_ALIADO_GABRIEL_BARRIOS.md](RESUMEN_ALIADO_GABRIEL_BARRIOS.md) | Informe aliado Gabriel / Grupo Morr — no solicitud de inversión |
 | Carpeta [../Pack_Aliado_Gabriel_Barrios/](../Pack_Aliado_Gabriel_Barrios/) | Pack humanizado para aliado comercial (18 Word), no data room inversor |
+| Carpeta [`../Inversionistas/`](../Inversionistas/) (CRM completo) | Scoring interno; **sí** enviar solo la **URL del video demo** cuando exista |
+| [APRENDIZAJE_500_EVIDENCIA_MERCADO.md](APRENDIZAJE_500_EVIDENCIA_MERCADO.md) | Lección interna post-rechazo 500; no al LP |
 | [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md) | Plantilla interna equipo |
 | [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) | Tracker P0–P4 interno |
 | [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) | Captura founder (usar datos volcados en BRIEF/CHECKLIST) |
