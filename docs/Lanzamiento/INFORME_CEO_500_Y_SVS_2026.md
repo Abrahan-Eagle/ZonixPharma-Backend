@@ -5,7 +5,7 @@
 > **PDF:** [INFORME_CEO_500_Y_SVS_2026.pdf](INFORME_CEO_500_Y_SVS_2026.pdf)  
 > **Parte A (500):** informe **interno** — [`../Inversionistas/500-latam/`](../Inversionistas/500-latam/) · [APRENDIZAJE_500…](APRENDIZAJE_500_EVIDENCIA_MERCADO.md)  
 > **Parte B (SVS):** candidata CRM (**otra opción** de canal) — [`../Inversionistas/startup-venezuela-summit/`](../Inversionistas/startup-venezuela-summit/FICHA.md) score **49** · intel [`../Inversionistas/_intel/2026-08-07-startup-venezuela-summit-2026.md`](../Inversionistas/_intel/2026-08-07-startup-venezuela-summit-2026.md)  
-> **Ask Lean (intacto):** **USD 210.760** · SAFE cap **600k** · Plan A caja: **Epakon / Casa212 / ALGEN**  
+> **Ask Lean (intacto):** **USD 237.412** · SAFE cap **600k** · Plan A caja: **Epakon / Casa212 / ALGEN**  
 > **SVS no es cheque:** es canal adicional al Plan A; no sustituye raise.
 
 ---
@@ -64,7 +64,7 @@ Playbooks: [DEMO_PRODUCTO_RX.md](../Inversionistas/500-latam/DEMO_PRODUCTO_RX.md
 
 - Producto **en mercado** con tracción repetible (farmacias + pedidos).
 - Recontacto 500 u otros fondos **con evidencia**, no con slides.
-- Narrativa beachhead Valencia estable; ask Lean **210.760** o actualización solo con hechos nuevos.
+- Narrativa beachhead Valencia estable; ask Lean **237.412** o actualización solo con hechos nuevos.
 
 ---
 
@@ -79,7 +79,7 @@ Sin tocar código de más: el producto técnico ya existe. Falta **paquete de co
 | **Demo** | Video 3–5 min que un LP entiende sin login |
 | **Equipo / ops** | Concierge MVT (WhatsApp) antes de fingir automatización |
 | **Fundraising** | Plan A = Epakon/Casa212/ALGEN; 500 = aprendizaje interno; SVS = canal CRM (otra opción) |
-| **Pitch** | Un CTA: SAFE Lean 210.760; cero claims médicos falsos |
+| **Pitch** | Un CTA: SAFE Lean 237.412; cero claims médicos falsos |
 
 ---
 

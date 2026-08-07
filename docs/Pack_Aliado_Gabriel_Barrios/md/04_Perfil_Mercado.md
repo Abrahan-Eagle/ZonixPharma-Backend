@@ -14,8 +14,8 @@
 | **Valencia metro** | **226 farmacias**; ~1,4M habitantes |
 | **Target Zonix** | Independientes y cadenas medianas (**~80–100** + **~25–35**) — NO cadenas premium en piloto |
 | **Zona piloto** | Bella Florida + El Socorro (~30–50 farmacias estimadas) |
-| **SOM M12** | **~159 farmacias activas**; revenue mensual **~USD 7.950** |
-| **Unit economics** | CAC **139**; LTV **1.000**; **LTV/CAC ~7,2x**; ingreso medio **~50** *(placeholder)* |
+| **SOM M12** | **~159 farmacias activas**; revenue mensual esc.1 **~USD 29.892** (P&L híbrido — no ARPF×N) |
+| **Unit economics** | CAC **139**; LTV **1.040**; **LTV/CAC ~7,5x**; ingreso medio **~52** *(placeholder)* |
 | **Competidor VE clave** | PedidosYa Pharmacy (20–30% ventas digitales) — Zonix compite en costo total + receta |
 
 ---
@@ -68,13 +68,15 @@
 
 ## 3. SOM (mercado capturable) — construcción bottom-up
 
-| Mes | Farmacias activas | % Valencia metro | Revenue mensual proyectado |
-|-----|-------------------|------------------|----------------------------|
-| 3 | **62** | **~27%** | **USD 3.100** |
-| 6 | **97** | **~43%** | **USD 4.850** |
-| 9 | **130** | **~57%** | **USD 6.500** |
-| 11 | **151** | **~67%** | **USD 7.550** *(equilibrio mensual)* |
-| 12 | **159** | **~70%** | **USD 7.950** |
+| Mes | Farmacias activas | % Valencia metro | Revenue mensual esc.1 (PROYECCION §1.1) |
+|-----|-------------------|------------------|------------------------------------------|
+| 3 | **62** | **~27%** | **USD 11.656** |
+| 6 | **97** | **~43%** | **USD 18.236** |
+| 9 | **130** | **~57%** | **USD 24.440** |
+| 11 | **151** | **~67%** | **USD 28.388** |
+| 12 | **159** | **~70%** | **USD 29.892** |
+
+> **BE FCF mensual = M5** (ingresos **15.980** > burn **14.346**), no M11/M12. Revenue = P&L híbrido Excel; **ARPF ~52** es placeholder UE, no `revenue ÷ activas`.
 
 ### Sanity check — capacidad del canal comercial
 
@@ -87,13 +89,13 @@ Farmacias firmadas/mes ≈ 4 vendedores × visitas efectivas/semana × tasa de c
 - **Headcount:** 4 vendedores B2B — no asumir más sin presupuesto adicional.
 - **Visitas efectivas y tasa de cierre:** dato real pendiente (T+60); hasta entonces la curva es hipótesis, no compromiso.
 - **Lectura de coherencia:** llegar a **151 activas en M11** requiere ~13–14 farmacias/mes netas de churn (~3,5/mes por vendedor). Si el dato real queda por debajo, ajustar curva **antes** de prometer M11.
-- Cruce con CAC **139** y LTV/CAC **~7,2x**: si hay que subir gasto comercial, recalcular payback.
+- Cruce con CAC **139** y LTV/CAC **~7,5x**: si hay que subir gasto comercial, recalcular payback.
 
-**Escenario pesimista:** si solo cerramos **~120 activas M12**, el cash de cierre cae a **~USD 25–32k** — aún viable, pero sin holgura para marketing agresivo.
+**Escenario pesimista:** si solo cerramos **~120 activas M12**, el cash de cierre queda **`[PENDIENTE FP&A — esc.1]`** (no usar ~25–32k legacy) — aún viable en tesis, pero sin holgura para marketing agresivo.
 
-**Año 2 (upside, no commitment piloto):** expansión a Maracay y Maracaibo. SOM proyectado 200–220 farmacias activas, revenue mensual USD 8.000–9.000.
+**Año 2 (upside, no commitment piloto):** expansión a Maracay y Maracaibo. SOM proyectado 200–220 farmacias activas; revenue mensual **no** usar 8–9k (legacy pre-híbrido). Ancla mínima: por encima del M12 esc.1 (**~29.892**); cifra cerrada **`[PENDIENTE FP&A]`**.
 
-**Año 3:** Caracas + Maracaibo + Valencia + Maracay + Barquisimeto. Revenue anual conservador ~USD 180k–204k; escenario éxito hasta ~USD 480k/año.
+**Año 3:** Caracas + Maracaibo + Valencia + Maracay + Barquisimeto. Revenue anual: tramos en [PROYECCION_FINANCIERA_12M.md](../../Lanzamiento/PROYECCION_FINANCIERA_12M.md) §3.2–§3.3; escenario éxito **hasta ~USD 480k/año** solo como techo etiquetado, no como base del pitch aliado.
 
 ---
 
@@ -259,7 +261,7 @@ Estos números asumen:
 
 ## 10. Resumen ejecutivo
 
-> Mercado farmacéutico VE: **USD 1.638M/año**. **226 farmacias** en Valencia metro. Comparable internacional (Farmalisto): ~USD 32M revenue; funding ~USD 22–33M. Diferencial Zonix: **cuota plataforma + % moderado** vs. comisión PedidosYa (~25–35%). Unit economics: CAC **139**, LTV/CAC **~7,2x**, ingreso medio **~50** *(placeholder)*. Validación de receta digital + cadena de frío + multi-sucursal — *(dictamen abogado + farmacéutico asesor pendiente)*.
+> Mercado farmacéutico VE: **USD 1.638M/año**. **226 farmacias** en Valencia metro. Comparable internacional (Farmalisto): ~USD 32M revenue; funding ~USD 22–33M. Diferencial Zonix: **cuota plataforma + % moderado** vs. comisión PedidosYa (~25–35%). Unit economics: CAC **139**, LTV/CAC **~7,5x**, ingreso medio **~52** *(placeholder)*. Validación de receta digital + cadena de frío + multi-sucursal — *(dictamen abogado + farmacéutico asesor pendiente)*.
 
 ---
 
@@ -275,7 +277,7 @@ Estos números asumen:
 
 ## Disclaimers
 
-- **Pre-seed / sin revenue:** cifras con supuestos documentados; **ingreso medio ~USD 50/mes** es placeholder hasta ventas piloto reales.
+- **Pre-seed / sin revenue:** cifras con supuestos documentados; **ingreso medio ~USD 52/mes** es placeholder hasta ventas piloto reales.
 - **Regulatorio:** Zonix no sustituye al farmacéutico titular ni al criterio médico; dictamen legal pendiente antes de Day-D público. Validación de receta digital y cadena de frío sujetas a dictamen abogado + farmacéutico asesor.
 - **Inflación VE:** cifras **mayo–junio 2026**; fuentes de mercado (Cifar, directorios) deben reconfirmarse trimestralmente.
 - **Expansión año 2–3:** upside documentado, no commitment del piloto Valencia.

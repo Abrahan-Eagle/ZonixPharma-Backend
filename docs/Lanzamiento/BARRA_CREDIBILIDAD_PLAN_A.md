@@ -5,7 +5,7 @@
 > **Fecha:** 7 agosto 2026  
 > **PDF:** [BARRA_CREDIBILIDAD_PLAN_A.pdf](BARRA_CREDIBILIDAD_PLAN_A.pdf)  
 > **Lección origen:** [INFORME_FACIL_500_COMO_STARTUP.md](INFORME_FACIL_500_COMO_STARTUP.md) · [APRENDIZAJE_500_EVIDENCIA_MERCADO.md](APRENDIZAJE_500_EVIDENCIA_MERCADO.md)  
-> **Ask Lean (intacto):** **USD 210.760** · SAFE cap **600k**  
+> **Ask Lean (intacto):** **USD 237.412** · SAFE cap **600k**  
 > **Regla CRM:** no contactar fondos sin OK founder.
 
 ---
@@ -45,7 +45,7 @@ Marca **todas**:
 | M1 | Demo **3–5 min** con URL **o** demo en vivo confirmada en la call | [DEMO_PRODUCTO_RX.md](../Inversionistas/500-latam/DEMO_PRODUCTO_RX.md) · P0-05 | [ ] |
 | M2 | Narrativa honesta: **pre-revenue** + staging (no Play Store fingido) | [BRIEF](BRIEF_UNA_PAGINA.md) · [MENSAJE_ENVIO…](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) | [ ] |
 | M3 | Estado piloto Valencia dicho sin inflar (“en cierre” OK; GMV inventado **no**) | [PILOTO…](../Inversionistas/500-latam/PILOTO_FARMACIAS_VALENCIA.md) · P0-08 | [ ] |
-| M4 | Ask **USD 210.760** / cap **600k** alineado en pack | BRIEF · MODELO | [ ] |
+| M4 | Ask **USD 237.412** / cap **600k** alineado en pack | BRIEF · MODELO | [ ] |
 | M5 | OK founder para contactar **esa** candidata | Chat / verbal | [ ] |
 
 **Barra mínima verde** = M1+M2+M3+M4+M5.

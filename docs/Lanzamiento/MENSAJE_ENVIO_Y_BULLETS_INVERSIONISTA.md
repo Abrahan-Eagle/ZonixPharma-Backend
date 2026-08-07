@@ -1,6 +1,6 @@
 # Mensaje de envío al inversor + bullets pitch
 
-> **Última actualización:** 7 agosto 2026 (bullets honestos: staging + demo; aprendizaje 500; anclas **v3.9.3**).
+> **Última actualización:** 7 agosto 2026 (bullets honestos: staging + demo; aprendizaje 500; anclas **v4**).
 > Documento operacional. Texto listo para WhatsApp / email + bullets para presentación de 5 minutos.
 > **Lección:** [APRENDIZAJE_500_EVIDENCIA_MERCADO.md](APRENDIZAJE_500_EVIDENCIA_MERCADO.md).
 
@@ -8,9 +8,9 @@
 
 > Hola [Nombre del inversor],
 >
-> Soy **Abrahan Pulido**. Soy fundador de Zonix Pharma, un marketplace farmacéutico digital para Carabobo. **T+0** = wire; **~90 días Fase 0**; **Day-D (T+90)** = piloto público = **M1** del modelo. Producto en **staging** (Rx + farmacia + paciente) con **443 tests** backend; **pre-revenue**; estamos cerrando early adopters en Valencia y empaquetamos **demo de producto** (video 3–5 min / demo en vivo). Busco **USD 210.760** vía SAFE cap **600k** *(equity ~35,13%)* para Fase 0 **50.260** + 12 meses post-Day-D. Cash M12: **398.293** (esc.1).
+> Soy **Abrahan Pulido**. Soy fundador de Zonix Pharma, un marketplace farmacéutico digital para Carabobo. **T+0** = wire; **~90 días Fase 0**; **Day-D (T+90)** = piloto público = **M1** del modelo. Producto en **staging** (Rx + farmacia + paciente) con **443 tests** backend; **pre-revenue**; estamos cerrando early adopters en Valencia y empaquetamos **demo de producto** (video 3–5 min / demo en vivo). Busco **USD 237.412** vía SAFE cap **600k** *(equity ~39,57%)* para Fase 0 **50.260** + 12 meses post-Day-D. Cash M12: **246.231** (esc.1).
 >
-> Modelo: cuota fija **45/60/70 + 14%/12%/11% GMV** (tier dinámico). En volumen Pro típico el costo es **~44% menor** que un agregador al 25%.
+> Modelo: cuota fija **45/60/70 + 8%/7%/5% GMV** (tier dinámico). En volumen Pro típico el costo es **~64% menor** que un agregador al 25%.
 >
 > ¿30 min para revisar el modelo? Pack listo; demo cuando confirmemos la reunión.
 >
@@ -24,7 +24,7 @@
 
 ### 1.1 Variante ultra-corta (~80 palabras) — Cialdini
 
-> Hola [Nombre], soy Abrahan Pulido, fundador de **Zonix Pharma** (marketplace farmacéutico Valencia, OTC + Rx). Stack en **staging** (**443 tests**); **pre-revenue**; piloto Valencia en curso. Buscamos **USD 210.760** pre-seed vía SAFE (cap **600k**). ¿30 min? Pack: [LINK]. Demo producto: [LINK o “en la call”].
+> Hola [Nombre], soy Abrahan Pulido, fundador de **Zonix Pharma** (marketplace farmacéutico Valencia, OTC + Rx). Stack en **staging** (**443 tests**); **pre-revenue**; piloto Valencia en curso. Buscamos **USD 237.412** pre-seed vía SAFE (cap **600k**). ¿30 min? Pack: [LINK]. Demo producto: [LINK o “en la call”].
 
 **Ganchos (usar 1–2, sin exagerar):**
 - **Autoridad:** stack ~4 años; regulación Rx con farmacéutico de cada farmacia.
@@ -68,7 +68,7 @@ Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 > Mientras tanto, dos puntos que quizás te interesen:
 >
 > 1. **Comparable internacional:** Farmalisto (MX + CO + PE) ~USD 32M revenue 2024 (MX); funding total reportado ~USD 22M en agregadores (hasta ~USD 33M PitchBook). El modelo marketplace farmacéutico LatAm ES financiable.
-> 2. **Diferenciador clave:** cuota fija **45/60/70** + **14%/12%/11%** GMV vs. comisión plena 25-35% de Rappi/PedidosYa Pharmacy. Ejemplo Pro USD 3.000 GMV en app: **USD 420/mes** Zonix vs **~USD 750** agregador al 25% (~**44% menos** — detalle en PROPUESTA_VALOR_CLIENTE_B2B §5).
+> 2. **Diferenciador clave:** cuota fija **45/60/70** + **8%/7%/5%** GMV vs. comisión plena 25-35% de Rappi/PedidosYa Pharmacy. Ejemplo Pro USD 3.000 GMV en app: **USD 270/mes** Zonix vs **~USD 750** agregador al 25% (~**64% menos** — detalle en PROPUESTA_VALOR_CLIENTE_B2B §5).
 >
 > Cuando estés listo, vemos.
 > Abrahan Pulido
@@ -91,7 +91,7 @@ Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 > - Farmacias medianas pierden 25-35% de su GMV digital en comisiones de Rappi y PedidosYa.
 
 > **Slide 2: Solución**
-> - Marketplace farmacéutico digital con **modelo B2B híbrido** (cuota fija **45/60/70** USD + % GMV según banda — esc.1 v3.9.3 — ver pack).
+> - Marketplace farmacéutico digital con **modelo B2B híbrido** (cuota fija **45/60/70** USD + % GMV según banda — esc.1 v4 — ver pack).
 > - Validación Rx digital por farmacéutico colegiado de la propia farmacia *[PENDIENTE dictamen abogado + farmacéutico asesor]*.
 > - Pagos manuales VE soportados nativos (Pago Móvil, Zelle, Binance Pay).
 > - Multi-sucursal con un solo onboarding.
@@ -105,20 +105,20 @@ Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 > **Slide 4: Mercado**
 > - TAM Venezuela USD 1.638M.
 > - SAM Valencia metro 226 farmacias.
-> - SOM M12: **~159** farmacias activas (caso central v3.8.2 — [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.1). *(SAM independientes ~80–100 — no confundir con activas M12.)*
+> - SOM M12: **~159** farmacias activas (caso central esc.1 v4 — [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.1). *(SAM independientes ~80–100 — no confundir con activas M12.)*
 > - Comparable Farmalisto: ~USD 32M revenue 2024; funding ~USD 22M reportado (hasta ~USD 33M PitchBook); países MX+CO+PE.
 
 > **Slide 5: Modelo**
-> - ARPF USD **~50**/mes **referencia provisional** (hasta GMV piloto; cobro híbrido cuota **45/60/70** + % GMV — UNIT_ECONOMICS — esc.1 v3.9.3).
+> - ARPF USD **~52**/mes **referencia provisional** (hasta GMV piloto; cobro híbrido cuota **45/60/70** + % GMV — UNIT_ECONOMICS — esc.1 v4).
 > - CAC USD **139** (**4×** Sales B2B Lean + marketing digital — UNIT_ECONOMICS §3).
 > - Churn 5%/mes (mediana SaaS SMB LatAm — ChartMogul 2025).
-> - LTV USD 1.000.
-> - **LTV/CAC ~7,2x.** Payback **~2,8** meses.
+> - LTV USD **1.040** (ARPF ~52 × 20).
+> - **LTV/CAC ~7,5x.** Payback **~2,7** meses.
 
 > **Slide 6: Plan**
-> - **USD 210.760** Lean v3.9.3 Excel — Fase 0 **50.260** + burn **145.500** + reserva **15.000**.
-> - Burn post-Day-D **~USD 12.125**/mes prom. (esc.1: tramo A **10.411** / B **10.747** / C **10.380**); **profitable desde M1** (revenue 11.960 > burn 10.411); FCF Y1 **+237.793**; cash M12 **398.293**.
-> - One-shots **22.365**; caja Day-D **160.500**.
+> - **USD 237.412** Lean v4 Excel — Fase 0 **50.260** + burn **172.152** + reserva **15.000**.
+> - Burn post-Day-D **~USD 14.346**/mes prom. (ask Detallado); esc.1 costos M1 **11.411** / M2 **14.846** / M3–12 **14.346**; BE FCF **M5**; FCF Y1 **+59.079**; cash M12 **246.231**.
+> - One-shots **22.365**; caja Day-D **187.152**.
 
 > **Slide 7: Equipo**
 > - **CEO** + Founder CEO/CTO + **Co-CEO** (USD **1.000**/mes c/u).
@@ -126,7 +126,7 @@ Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 > - **Dev** USD **1.000**; CS+CM **500**; contador+abogado **800**/mes; IA **425**.
 
 > **Slide 8: Ask**
-> - **USD 210.760** SAFE cap **600.000** (~**35,13%**) — ask único v3.9.3.
+> - **USD 237.412** SAFE cap **600.000** (~**39,57%**) — ask único v4.
 > - Sin valuación arbitraria. Plazo cierre: 21-30 días.
 
 ## 5. Bullets para Q&A (cobertura defensiva)
@@ -137,7 +137,7 @@ Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 
 > "¿Por qué híbrido fija + % GMV?"
 > - Take-rate total muy inferior al de agregadores; la fija da previsibilidad y el % alinea **Zonix Pharma** al volumen en app.
-> - Benchmark: agregador ~25–35% sobre GMV vs **Zonix Pharma** cuota **45/60/70** + **11–14%** GMV (PROPUESTA B2B §5; ejemplo Pro 3k → ~44% menos).
+> - Benchmark: agregador ~25–35% sobre GMV vs **Zonix Pharma** cuota **45/60/70** + **5–8%** GMV (PROPUESTA B2B §5; ejemplo Pro 3k → ~64% menos).
 
 > "¿Y si las farmacias no firman?"
 > - Plan B: **hasta** 2 meses en **cuota USD 0** a las primeras 10 farmacias (waiver comercial; ver [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §11 y [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 nota waiver). Plan C: ajuste comercial de bandas o % (política comercial, no técnica).
@@ -170,22 +170,22 @@ Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 
 | Indicador | Valor |
 |---|---|
-| Capital pedido | **USD 210.760** (Lean Excel v3.9.3) |
-| Equity implícito | **~35,13%** (210.760 / 600k) |
+| Capital pedido | **USD 237.412** (Lean Excel v4) |
+| Equity implícito | **~39,57%** (237.412 / 600k) |
 | SAFE post-money cap | **600.000** (ref.) |
-| Equilibrio mensual (revenue ≥ burn) | **M1** (esc.1: revenue 11.960 > burn 10.411) — profitable desde M1 |
-| Farmacias activas ref. | **~159** mes 12 (esc.1 v3.9.3 — [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.1) |
-| ARPF | **~USD 50/mes** *(placeholder; cobro real = híbrido cuota 45/60/70 + % GMV hasta piloto)* |
+| Equilibrio FCF mensual | **M5** (esc.1: FCF M1–M4 negativo; ingresos M1 **7.520** < costos **11.411**) |
+| Farmacias activas M12 | **~159** (esc.1 v4) |
+| ARPF | **~USD 52/mes** *(placeholder; cobro real = híbrido cuota 45/60/70 + % GMV hasta piloto)* |
 | CAC | USD **139** |
-| LTV/CAC | **~7,2x** |
+| LTV/CAC | **~7,5x** |
 | Payback CAC | **~2,8 meses** |
-| Burn mensual | **~USD 12.125** prom. (esc.1: tramo A **10.411** / B **10.747** / C **10.380**) |
+| Burn mensual | **~USD 14.346** prom. (esc.1: M1 **11.411** / M2 **14.846** / M3–12 **14.346**) |
 | Runway | 12 meses |
-| Cash al cierre año 1 (proyección) | **USD 398.293** (esc.1: 160.500 + FCF +237.793) |
+| Cash al cierre año 1 (proyección) | **USD 246.231** (esc.1: 187.152 + FCF +59.079) |
 | TAM Venezuela | USD 1.638M |
 | Comparable internacional | Farmalisto ~USD 32M revenue 2024 (MX); funding ~USD 22M–33M según fuente |
 | Stack | Laravel + Flutter + Pusher + FCM; **443 tests** backend (staging/VPS; release tiendas T+7–12 Fase 0) |
-| Equipo | **Lean 210.760:** CEO + Founder CEO/CTO + Co-CEO + 4× Sales + Dev (Carabobo). Asesor regulatorio incluido en burn (rubro Contador+Abogado 330). |
+| Equipo | **Lean 237.412:** CEO + Founder CEO/CTO + Co-CEO + 4× Sales + Dev (Carabobo). Asesor regulatorio incluido en burn (rubro Contador+Abogado 330). |
 | Founder track record | **Abrahan Pulido** — Ingeniero en Informática (IUTVAL); 8+ años full stack; fundador **Zonix Pharma** (mismo stack desde delivery B2C), **Corral X**, **Zonix Imports**, **Aiblockweb**; docente CETIAC; [LinkedIn](https://www.linkedin.com/in/abrahan-pulido-909a35b7/), [aiblockweb.com](https://aiblockweb.com), `ing.pulido.abrahan@gmail.com`, +58 412 4352014. **Pendiente:** URL GitHub pública + 2 referencias verificables para due diligence. |
 
 ## 8. Cuándo enviar este mensaje

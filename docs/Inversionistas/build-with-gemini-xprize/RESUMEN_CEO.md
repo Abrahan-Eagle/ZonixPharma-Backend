@@ -11,7 +11,7 @@
 
 **Build with Gemini XPRIZE** es un **concurso/hackathon** (XPRIZE + Google + Devpost) con purse **USD 2 M** en premios en efectivo — **no** es un inversionista ni un fondo de equity. Hay un bonus **Circle +50k** (pagos USDC agénticos) aparte.
 
-Para Zonix Pharma: **no Plan A** del ask Lean **210.760**. El producto/stack actual **no califica** (regla *New Projects Only*: negocio AI creado después del **19 may 2026**; FAQ: no basta una feature nueva). Deadline submit **17 ago 2026** (~12 días desde el corte CRM).
+Para Zonix Pharma: **no Plan A** del ask Lean **237.412**. El producto/stack actual **no califica** (regla *New Projects Only*: negocio AI creado después del **19 may 2026**; FAQ: no basta una feature nueva). Deadline submit **17 ago 2026** (~12 días desde el corte CRM).
 
 ---
 
@@ -47,7 +47,7 @@ Detalle: [NOTAS.md — Deep Research Gemini](NOTAS.md#deep-research-gemini)
 
 | | Pack actual | Esta candidata |
 |--|-------------|----------------|
-| Plata | Lean **210.760** | Solo si **ganas** un premio ≥ ask (1º–5º); no es cheque garantizado |
+| Plata | Lean **237.412** | Solo si **ganas** un premio ≥ ask (1º–5º); no es cheque garantizado |
 | Dilución | SAFE cap ref. 600k | **0%** por el premio *(impuestos aparte)* |
 | Velocidad / compromiso | Semanas de raise | Submit en ~12 días + negocio **nuevo** + revenue + evidencia |
 | Empresa / jurisdicción | VE / raise seed | Rules NY/US; OFAC/residencia VE **[NC]** |

@@ -18,7 +18,7 @@ El founder debe confirmar **en persona** que el dolor existe **antes** de escala
 | Problema | El dueño de farmacia independiente pierde ventas/horas por pedidos manuales (WhatsApp), Rx sin trazabilidad y conciliación de pagos | ≥2/3 de entrevistas sin dolor confirmado → revisar segmento o propuesta (PLAN §0) |
 | Segmento | Farmacia independiente Valencia (San Diego / Av. Bolívar Norte) es el beachhead correcto | Dolor aparece solo en cadenas o solo en otra zona |
 | Propuesta dominante | «Costo total menor vs agregador» pesa más que «modernidad» | Entrevistas priorizan otro beneficio → ajustar one-pager (PROPUESTA_B2B §2.0) |
-| Pricing | Cuota 45/60/70 + % GMV es aceptable vs lo que hoy gastan/pierden | ≥2 de 3 rechazan nivel Pro sobre GMV típico → escalar a founder (PLAN §4.0 fila 5) |
+| Pricing | Cuota **45/60/70 + %GMV 8/7/5** es aceptable vs lo que hoy gastan/pierden | ≥2 de 3 rechazan nivel Pro sobre GMV típico → escalar a founder (PLAN §4.0 fila 5) |
 
 **Etapas y duración** (punto de partida hoy, pre-wire):
 
@@ -40,14 +40,14 @@ El founder debe confirmar **en persona** que el dolor existe **antes** de escala
 5. **No vender en la primera visita.** El brochure se entrega al salir, si el dueño lo pide o si hubo interés genuino.
 6. La IA / el equipo **no inventa** respuestas de entrevistas — solo se vuelca lo que el dueño dijo.
 
-### 2.1 Script mom-test pricing (cuota 45/60/70 + waiver §11 B2B)
+### 2.1 Script mom-test pricing (cuota **45/60/70 + %GMV 8/7/5** + waiver §11 B2B)
 
 **Cuándo:** segunda visita o cierre de primera visita **solo si** hubo dolor confirmado (§3). **No** abrir con precio.
 
 | Paso | Guion (adaptar al GMV declarado) | Registrar en VOLCADO §6 |
 |------|----------------------------------|-------------------------|
 | 1 | «Con el GMV que me comentó (~USD X/mes en mostrador + digital), hoy en agregador pagaría ~25–35% — ¿cuánto fue la última factura real?» | GMV estimado + comisión actual |
-| 2 | «Nuestro modelo es **cuota fija por banda + % sobre GMV en app**: **Basic 45**, **Pro 60**, **Enterprise 70** USD/mes + **14% / 12% / 11%** según banda ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5). Con **USD 3.000** GMV en app, Pro sería **USD 420/mes** (60 + 12%) vs **~USD 750** en agregador al 25% — ~**44% menos**. ¿Le cierra?» | Reacción (acepta / duda / rechaza) |
+| 2 | «Nuestro modelo es **cuota fija por banda + % sobre GMV en app**: **Basic 45**, **Pro 60**, **Enterprise 70** USD/mes + **8% / 7% / 5%** según banda ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5 — Excel esc.1). Con **USD 3.000** GMV en app, Pro sería **USD 270/mes** (60 + 7%) vs **~USD 750** en agregador al 25% — ~**64% menos**. ¿Le cierra?» | Reacción (acepta / duda / rechaza) |
 | 3 | «Las **primeras 10 farmacias piloto** pueden tener **cuota USD 0 meses 1–2** (GMV se mide igual) — §11 B2B. ¿Eso cambia su decisión de probar?» | Sí/No + objeción |
 | 4 | «¿Qué tendría que pasar en **30 días** para que esto valga la pena vs seguir solo WhatsApp?» | Métrica de éxito del dueño |
 
@@ -133,7 +133,7 @@ Interés en seguir conversando: alto / medio / nulo
 |-------------|-----|------------|
 | **Tablet o teléfono con demo staging** | App paciente + panel farmacia en vivo | PROPUESTA_B2B §7–§8; [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §4 |
 | **Brochure B2B one-pager** | Entregable al cierre del visit | PROPUESTA_B2B §8; SUPUESTO §3.3.2 |
-| Calculadora de ahorro vs agregador | Ejemplo Pro USD 60 + 12% vs 25–35% | PROPUESTA_B2B §3.1, §8 |
+| Calculadora de ahorro vs agregador | Ejemplo Pro USD 60 + 7% vs 25–35% | PROPUESTA_B2B §3.1, §8 |
 | Carta de intención preliminar | Solo si el dueño la pide o el dolor está confirmado | PLAN §2.5 |
 
 ### 6.3 HQ / consolidación
@@ -168,6 +168,6 @@ Flyers paciente y **QR de mostrador** (canal referido — SUPUESTO §3.6) se act
 | Dolor confirmado | ≥3/5 farmacias citan al menos 1 dolor del top 3 con dato concreto |
 | Ranking 3+3 lleno | PROPUESTA_B2B §2.0 sin `[PENDIENTE]` |
 | Pipeline iniciado | VOLCADO §6 con ≥5 filas reales |
-| Pricing testeado (mom-test) | ≥3 reacciones documentadas a cuota 45/60/70 (PLAN §4.0 fila 5) |
+| Pricing testeado (mom-test) | ≥3 reacciones documentadas a cuota **45/60/70 + %GMV 8/7/5** (PLAN §4.0 fila 5) |
 
 Si se cumple → segunda visita con demo (PROPUESTA_B2B §7–§8) y camino a carta de intención. Si no → revisar hipótesis con founder antes de gastar más.

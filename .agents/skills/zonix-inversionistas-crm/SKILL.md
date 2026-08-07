@@ -10,7 +10,7 @@ CRM de **candidatos a capital** (análisis interno). Canon: [`docs/Inversionista
 
 **No sustituye:** `zonix-investor-materials` (data room), `zonix-fundraising-narrative` (mensaje/pitch), `zonix-startup-context` (cifras pack).
 
-**Ask ref. (canon pitch):** Lean **USD 210.760** · SAFE cap **600.000** · equity **~35,13%** — [`BRIEF_UNA_PAGINA.md`](../../docs/Lanzamiento/BRIEF_UNA_PAGINA.md). Mercado: [`BRIEFING_INVERSORES_VE_2026.md`](../../docs/Lanzamiento/BRIEFING_INVERSORES_VE_2026.md). Fichas jul 2026 aún citan ~174k; rescore = tarea aparte.
+**Ask ref. (canon pitch):** Lean **USD 237.412** · SAFE cap **600.000** · equity **~39,57%** — [`BRIEF_UNA_PAGINA.md`](../../docs/Lanzamiento/BRIEF_UNA_PAGINA.md). Mercado: [`BRIEFING_INVERSORES_VE_2026.md`](../../docs/Lanzamiento/BRIEFING_INVERSORES_VE_2026.md). Asks **210.760 / 174k / 112k** = históricos; rescore = tarea aparte.
 
 ## Cuándo invocar
 

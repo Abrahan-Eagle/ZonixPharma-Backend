@@ -51,7 +51,7 @@
 
 ## Fit Zonix (una línea)
 
-Ticket cerca del ask Lean (~174k); tesis VE marketplace pharma alineada; **gate** = founder full-time Caracas sep–nov + modelar dilución SAFE+programa **antes** de firmar.
+Ticket **parcial** vs ask Lean (**237.412**; 150k ≈ 63%); tesis VE marketplace pharma alineada; **gate** = founder full-time Caracas sep–nov + modelar dilución SAFE+programa **antes** de firmar.
 
 ## Pendientes
 

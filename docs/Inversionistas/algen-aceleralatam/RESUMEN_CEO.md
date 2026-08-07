@@ -35,7 +35,7 @@ Para Zonix: **mejor programa sin dilución** si ya hay tracción y puedes meter 
 
 | | Pack actual | ALGEN |
 |--|-------------|-------|
-| Plata | Lean ~**174k** | No escribe el Lean; ayuda a cerrar ronda |
+| Plata | Lean **237.412** | No escribe el Lean; ayuda a cerrar ronda |
 | Dilución | SAFE cap 600k | **0%** programa |
 | Velocidad | Semanas (Epakon) | Ciclo oct→~feb |
 | Compromiso | Pitch | 12–16 h/sem × 4 meses |

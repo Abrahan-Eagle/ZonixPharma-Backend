@@ -1,6 +1,6 @@
 # Estructura legal y equity (SAFE + cap table)
 
-> **Última actualización:** 30 julio 2026 (anclas SAFE **v3.9.3 Excel** — **USD 210.760** @ cap **600k** → **~35,13%**).
+> **Última actualización:** 30 julio 2026 (anclas SAFE **v4 Excel** — **USD 237.412** @ cap **600k** → **~39,57%**).
 > Documento que captura el vehículo legal, instrumento de inversión y cap table de Zonix Pharma.
 > Marco regulatorio **Pharma:** [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md). Pagos/Sudeban: [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §10. Archivo Eats (solo referencia): [`../REQUISITOS_OPERAR_VENEZUELA.md`](../REQUISITOS_OPERAR_VENEZUELA.md).
 
@@ -57,7 +57,7 @@
 >
 > **Lectura CFO (1.150 vs 1.450):** **constitución operativa prioritaria** (C.A. + RIF + cuenta + sello, **sin** contabilizar SAPI como caja obligatoria el mes cero) **USD ~1.100–1.150**. **Con SAPI** en la misma ventana de planificación: **~USD 1.450**. El presupuesto §2.1 usa **USD 1.150** como **one-shot prioritario** al arranque; **SAPI** puede tratarse como **gasto diferido / paralelo** según caja y dictamen contable.
 
-> **Excel v3.9.3 (Detallado de la inversión.):** el modelo financiero usa **~USD 5.050** para constitución de **Zonix Pharma C.A.** (Registro+acta **1.200**, SENIAT **600**, municipales HQ **1.500**, bomberos **1.100**, banco **100**, sello **200**, SAPI **350**). Referencia de **costos reales de trámites VE** tomada del template Pizza QLQ — **solo partidas aplicables** a startup tech con local operativo; **excluye** BPF, CPE y permisos sanitarios de operación farmacéutica. Validar con abogado **[PENDIENTE]** antes de pitch.
+> **Excel v4 (Detallado de la inversión.):** el modelo financiero usa **~USD 5.050** para constitución de **Zonix Pharma C.A.** (Registro+acta **1.200**, SENIAT **600**, municipales HQ **1.500**, bomberos **1.100**, banco **100**, sello **200**, SAPI **350**). Referencia de **costos reales de trámites VE** tomada del template Pizza QLQ — **solo partidas aplicables** a startup tech con local operativo; **excluye** BPF, CPE y permisos sanitarios de operación farmacéutica. Validar con abogado **[PENDIENTE]** antes de pitch.
 
 ### 1.5 Propiedad intelectual y cesión de derechos (PIIA) — **bloquea wire**
 
@@ -89,7 +89,7 @@
 
 **SAFE** = Simple Agreement for Future Equity. Es un contrato de Y Combinator (template público y gratuito en [`https://www.ycombinator.com/documents`](https://www.ycombinator.com/documents)) que dice:
 
-> "Yo, inversor, te doy **USD 210.760** hoy (canon Excel v3.9.3). Tú, founder, prometes que cuando levantes la próxima ronda con valuación de mercado, mi inversión convierte automáticamente en acciones, con un cap (techo de valuación) o un descuento — lo que me dé más equity."
+> "Yo, inversor, te doy **USD 237.412** hoy (canon Excel v4). Tú, founder, prometes que cuando levantes la próxima ronda con valuación de mercado, mi inversión convierte automáticamente en acciones, con un cap (techo de valuación) o un descuento — lo que me dé más equity."
 
 **Por qué post-money cap (no pre-money):**
 - Versión moderna del SAFE (YC 2018 onwards). Más clara para founder e inversor.
@@ -97,30 +97,30 @@
 
 ### 2.2 Términos propuestos
 
-| Término | Valor (canon v3.9.3) |
+| Término | Valor (canon v4) |
 |---|---|
-| Monto SAFE | **USD 210.760** |
+| Monto SAFE | **USD 237.412** |
 | Post-money valuation cap | **USD 600.000** |
-| Equity implícito si cap aplica | **~35,13%** *(210.760 / 600k)* |
+| Equity implícito si cap aplica | **~39,57%** *(237.412 / 600k)* |
 | Discount | 0% (sin descuento adicional al cap) |
 | Most Favored Nation (MFN) | Sí (cláusula estándar) |
 | Pro-rata rights | Opcional, según preferencia del inversor |
 
-**Lectura para el inversor:**
-- Si la próxima ronda valora Zonix Pharma en USD 1.000.000, el SAFE convierte como si la valuación fuera **USD 600.000** → el inversor recibe ~**35,13%** del equity post-conversión.
-- Si la próxima ronda valora < USD 600.000, el SAFE convierte a la valuación de mercado y el inversor recibe MENOS del 35,13% (caso poco probable, pero posible).
+**Lectura para el inversor (SAFE post-money YC, simplificado — counsel confirma):**
+- Si la próxima ronda valora **por encima** del cap (p. ej. USD 1.000.000), el SAFE convierte como si la valuación fuera el **cap USD 600.000** → el inversor recibe ~**39,57%** (237.412 / 600k) al convertir.
+- Si la próxima ronda valora **por debajo** del cap, el precio de conversión suele ser el de esa ronda → el inversor recibe **más** del ~39,57% (más acciones por el mismo USD 237.412). El cap **techa** el upside de valuación alta; no reduce el % cuando la ronda es más barata.
 
-### 2.3 Términos del SAFE (canon v3.9.3)
+### 2.3 Términos del SAFE (canon v4)
 
-| Término | Valor (canon v3.9.3) |
+| Término | Valor (canon v4) |
 |---|---|
-| Monto SAFE | **USD 210.760** |
+| Monto SAFE | **USD 237.412** |
 | Post-money valuation cap | **USD 600.000** |
-| Equity implícito si cap aplica | **~35,13%** *(210.760 / 600k)* |
+| Equity implícito si cap aplica | **~39,57%** *(237.412 / 600k)* |
 
 ### 2.3.1 Nota sobre el cap
 
-El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está en torno a **10-12% equity** ([fuente: LatAm VC Report 2024-2025](https://www.endeavor.org.mx/) y reportes Crunchbase — **[verificar fuente primaria 2026]**). El cap de Zonix Pharma (**USD 210.760** / cap **USD 600k**) da **~35,13%**, por encima del benchmark LatAm 10–12% — coherente con ticket mayor (Fase 0 + burn + reserva Excel), **Co-CEO**, **4× Sales**, Dev en nómina (ver [MODELO_FINANCIERO_ZONIX_PHARMA.xlsx](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx)). **El ask vigente es único: USD 210.760 @ cap 600k → ~35,13%.**
+El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está en torno a **10-12% equity** ([fuente: LatAm VC Report 2024-2025](https://www.endeavor.org.mx/) y reportes Crunchbase — **[verificar fuente primaria 2026]**). El cap de Zonix Pharma (**USD 237.412** / cap **USD 600k**) da **~39,57%**, por encima del benchmark LatAm 10–12% — coherente con ticket mayor (Fase 0 + burn + reserva Excel), **Co-CEO**, **4× Sales**, Dev en nómina (ver [MODELO_FINANCIERO_ZONIX_PHARMA.xlsx](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx)). **El ask vigente es único: USD 237.412 @ cap 600k → ~39,57%.**
 
 **Decisión consciente del founder:** este cap es **intencional como señal de confianza al primer inversor** (lead investor del SAFE). El piloto tiene mucho más riesgo que un negocio post-PMF; el inversor que entra ahora merece compensación por el riesgo asumido.
 
@@ -159,28 +159,28 @@ Este pack está diseñado para **ángel / fondo pre-seed**. Si el interesado es 
 |---|---|---|
 | Founder | 1.000.000 | 100,00% |
 
-### 3.2 Post-SAFE (canon v3.9.3, USD 210.760 @ cap USD 600k)
+### 3.2 Post-SAFE (canon v4, USD 237.412 @ cap USD 600k)
 
 > **Nota:** el SAFE NO crea acciones hoy. Sólo al momento de conversión (próxima ronda con valuación de mercado).
 
 | Stakeholder | Acciones | % equity hoy | % equity post-conversión SAFE |
 |---|---|---|---|
-| Founder | 1.000.000 | 100,00% | ~64,87% (si cap aplica) |
-| Inversor SAFE | 0 (todavía) | 0,00% | ~35,13% (al momento de conversión) |
+| Founder | 1.000.000 | 100,00% | ~60,43% (si cap aplica) |
+| Inversor SAFE | 0 (todavía) | 0,00% | ~39,57% (al momento de conversión) |
 
 ### 3.3 Cap table en próxima ronda Serie A (escenario hipotético, mes 24)
 
 > **[RETIRADO — cap table fully diluted en revisión por abogado; NO VÁLIDO PARA DD]**
 >
-> La tabla previa de % post-Serie A sumaba **116,47%** (Founder 51,34% + SAFE 35,13% + Serie A 20% + Pool 10%), lo cual es matemáticamente imposible. El error provenía de no aplicar la mecánica YC post-money cap correctamente: el SAFE mantiene **~35,13%** fijo (210.760 / 600k cap) y la dilución del pool + Serie A la absorbe principalmente el founder.
+> La tabla previa de % post-Serie A sumaba **116,47%** (Founder 51,34% + SAFE 39,57% + Serie A 20% + Pool 10%), lo cual es matemáticamente imposible. El error provenía de sumar % sin mecánicas de dilución; **no** reutilizar ese modelo.
 
 **Hipótesis Serie A:** USD 500.000 a valuación pre-money USD 2.000.000 → post-money USD 2.500.000.
 
-**Interpretación SAFE post-money cap (YC estándar):** el inversor del SAFE convierte a un **% fijo** del cap table (aquí **~35,13%** = USD 210.760 / USD 600k cap) y **no se diluye** con la Serie A por el cap; la dilución del pool y de la nueva ronda la absorbe principalmente el founder. Los **números exactos de acciones** y el orden de emisión (pool pre/post money) los cierra el **abogado** al redactar el SAFE y la Serie A.
+**Interpretación SAFE post-money cap (YC — lectura operativa, counsel confirma):** al **convertir**, el SAFE apunta a ~**39,57%** del company (237.412 / 600k) en el momento de conversión según el template. El **dinero nuevo** de la Serie A (y ampliaciones de pool) **también diluye** al holder ya convertido: el ~39,57% **no** queda “congelado” para siempre post–Serie A. Los números exactos de acciones y el orden pool pre/post money los cierra el **abogado**.
 
 **Lo que sí es válido declarar (sin tabla numérica hasta revisión counsel):**
-- SAFE post-money cap: **~35,13%** fijo post-conversión (210.760 / 600k).
-- Post Serie A + pool 10%: el founder queda **<50%** (estimación ilustrativa, recalcular con abogado).
+- SAFE post-money: ancla de conversión **~39,57%** (237.412 / 600k) **al convertir**.
+- Post Serie A + pool 10%: el founder queda **<50%** en escenarios típicos (estimación ilustrativa, recalcular con abogado).
 - Si se busca founder >50% post Serie A, hay que **subir el cap** o **reducir el ask**.
 
 **Entregable formal:** cap table fully diluted con acciones exactas, orden de emisión y pool pre/post money = producto del **abogado** al cerrar SAFE + Serie A. Hasta entonces, ningún cap table numérico circula en data room.
@@ -195,7 +195,7 @@ Este pack está diseñado para **ángel / fondo pre-seed**. Si el interesado es 
 | Inversor Serie B | ~15-20% |
 | Pool empleados (acumulado) | ~15-20% |
 
-**Lectura:** un inversor de SAFE **USD 210.760** en exit a USD 50M tendría ~USD 5,2-7,3M (ilustrativo).
+**Lectura:** un inversor SAFE con **~7–10%** final (tras dilución de rondas posteriores) en exit a USD 50M tendría ~**USD 3,5–5,0M** ilustrativo (7–10% × 50M). Cifras de exit = hipótesis, no forecast.
 
 ## 4. Marco legal venezolano (resumen)
 
@@ -342,7 +342,7 @@ Al cierre de la inversión, el inversor recibe:
 
 | Mes | Hito |
 |---|---|
-| 0 (cierre inversión) | Firma SAFE con **condición suspensiva de constitución C.A. ≤30 días** + **devolución automática** si no se constituye. El wire de **USD 210.760** se recibe en **escrow notarial** o **cuenta bloqueada** hasta acta constitutiva; alternativa: **tranche 1** tras constitución + apertura de cuenta empresa. **Carta de uso de fondos firmada** por el founder. **No se recibe el wire en cuenta personal del founder** (exposición fiduciaria/related-party evitada). |
+| 0 (cierre inversión) | Firma SAFE con **condición suspensiva de constitución C.A. ≤30 días** + **devolución automática** si no se constituye. El wire de **USD 237.412** se recibe en **escrow notarial** o **cuenta bloqueada** hasta acta constitutiva; alternativa: **tranche 1** tras constitución + apertura de cuenta empresa. **Carta de uso de fondos firmada** por el founder. **No se recibe el wire en cuenta personal del founder** (exposición fiduciaria/related-party evitada). |
 | 1 | Constitución legal C.A. completa. Apertura cuenta bancaria empresa. Transferencia interna founder → C.A. |
 | 1-2 | RIF + factura digital SENIAT habilitados. |
 | 2-3 | Marca SAPI registrada (paralelo). |

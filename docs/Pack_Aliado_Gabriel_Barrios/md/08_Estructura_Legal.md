@@ -1,268 +1,363 @@
-# Estructura legal y equity — Zonix Pharma
+> **Espejo Pack Aliado** (sync v8 7-ago-2026) desde Lanzamiento. Canon SAFE **237.412**; equity **~39,57%**. Mecánica SAFE corregida (under-cap → más %, no menos).
 
-**Para:** Gabriel Barrios — Gerente de Consultoría, Grupo Morr (Valencia, Venezuela)  
-**De:** Abrahan Pulido — Founder / CEO / CTO, Zonix Pharma  
-**Fecha:** junio 2026
+# Estructura legal y equity (SAFE + cap table)
 
-**No es una solicitud de inversión** salvo que acordemos otra cosa en reunión. Es material para alinear visión y revisar números con alguien que conoce el mercado local.
+> **Última actualización:** 30 julio 2026 (anclas SAFE **v4 Excel** — **USD 237.412** @ cap **600k** → **~39,57%**).
+> Documento que captura el vehículo legal, instrumento de inversión y cap table de Zonix Pharma.
+> Marco regulatorio **Pharma:** [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md). Pagos/Sudeban: [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §10. Archivo Eats (solo referencia): [`../REQUISITOS_OPERAR_VENEZUELA.md`](../REQUISITOS_OPERAR_VENEZUELA.md).
 
-> **Aviso legal:** este documento es **orientación para conversación**. Términos definitivos del SAFE, estatutos, contratos laborales y textos regulatorios requieren **revisión y firma de abogado** venezolano (idealmente con experiencia cross-border). **No es asesoría legal.**
+**Roles operativos vs gobernanza:** el pack usa **Co-CEO / CEO operativo** junto al **CEO+CTO (founder)** como **rótulos de trabajo** (comercial / operación vs producto-tech). El **representante legal**, **junta**, **relación laboral** y el **SAFE** siguen lo que acuerden **abogado + partes**; no se asume que “dos CEO” dupliquen obligaciones legales sin documentarlo.
 
----
+**Lectura inversor (30 min):** §2 SAFE (cap según tier) → §3 cap table post-conversión → §4 datos personales / subencargados → anexo template YC cuando abogado lo adjunte `[PENDIENTE]`.
 
-## En 60 segundos
+## 1. Vehículo legal
 
-| Concepto | Detalle |
-|----------|---------|
-| **Vehículo** | **ZONIX PHARMA, C.A.** — Compañía Anónima, Registro Mercantil Carabobo |
-| **Instrumento** | **SAFE post-money cap** (template Y Combinator, adaptado localmente) |
-| **Monto Lean (ask principal)** | **~USD 112.000** *(111.988 en modelo)* |
-| **Cap post-money Lean** | **USD 600.000** |
-| **Equity ref. inversor Lean** | **~18,66%** *(112.000 ÷ 600.000)* |
-| **Founder hoy** | 100% acciones pre-inversión |
-| **Post-conversión SAFE (ilustrativo)** | Founder **~81,34%** · Inversor **~18,66%** |
+### 1.1 Forma societaria
 
-**En una frase:** se plantea constituir una **C.A.** en Carabobo, levantar **~112k** vía **SAFE** con techo de valuación **600k**, lo que implica **~18,66%** para el primer inversor **al convertir** en la próxima ronda — sin crear acciones el día del wire.
+**Compañía Anónima (C.A.)** registrada en el Registro Mercantil del Estado Carabobo.
 
----
+**Por qué C.A.:**
+- Forma societaria estándar en Venezuela.
+- Permite varios accionistas con responsabilidad limitada.
+- Aceptada por SENIAT, bancos, contrapartes B2B.
+- Compatible con SAFE: el inversor recibe shares al momento de conversión.
 
-## Vehículo legal
+**Alternativas descartadas:**
+- **Firma personal del founder:** sin separación patrimonial. Inseguro para el inversor.
+- **C.A. en Panamá / Delaware:** complejidad regulatoria + costo > USD 5.000 + reporte cross-border. No justificado en piloto.
+- **S.A. (Sociedad Anónima):** equivalente a C.A. en VE pero con más formalidades. C.A. es más liviana para PYMES.
 
-### Forma societaria: C.A.
+### 1.2 Razón social propuesta
 
-| Aspecto | Decisión |
-|---------|----------|
-| Forma | **Compañía Anónima (C.A.)** |
-| Jurisdicción | Venezuela — Registro Mercantil **Estado Carabobo** |
-| Razón social propuesta | **ZONIX PHARMA, C.A.** o **ZONIXPHARMA, C.A.** *(según disponibilidad)* |
-| Capital social inicial | **USD 1.000** equivalente en Bs. al tipo del día |
-| Acciones | **1.000.000** acciones a USD 0,001 c/u |
-| Propiedad inicial | **100% founder** (1.000.000 acciones) |
+**ZONIX PHARMA, C.A.** o **ZONIXPHARMA, C.A.** (según disponibilidad en Registro Mercantil al momento del trámite).
 
-**Por qué C.A. y no otra figura:**
+### 1.3 Capital social propuesto
 
-- Estándar para PYMES en Venezuela; aceptada por SENIAT, bancos y contrapartes B2B.
-- Compatible con SAFE: el inversor recibe acciones **en la conversión**, no el día del cheque.
-- Alternativas descartadas: firma personal (sin separación patrimonial), offshore prematura (costo y complejidad sin justificar piloto).
+- Capital social de constitución: **USD 1.000 equivalente en bolívares al cambio del día**.
+- Acciones: **1.000.000 acciones** a USD 0,001 cada una.
+- 100% propiedad inicial del founder (1.000.000 acciones).
 
-### Constitución — tiempos y costos orientativos
+**Por qué USD 1.000:**
+- Capital mínimo simbólico para constitución.
+- Aprovecha valuación implícita de USD 0,001 por acción para dilución limpia post-SAFE.
+- Costo de constitución se mantiene bajo.
 
-| Paso | Tiempo | Costo USD (ref.) |
-|------|--------|------------------|
-| Denominación en Registro Mercantil | ~5 días | 50 |
-| Acta + estatutos (abogado) | ~7 días | 400 |
-| Registro Mercantil Carabobo | ~10 días | 350 |
-| RIF SENIAT | ~2 días | 0 |
-| Cuenta bancaria empresa | ~5 días | 100 |
-| Sello digital + factura SENIAT | ~3 días | 200 |
-| Marca SAPI (paralelo, 60–90 días) | paralelo | 350 |
-| **Total referencia pack mínimo** | **~30 días + SAPI** | **~1.450** |
+### 1.4 Trámites de constitución (~30 días, USD 1.150)
 
-El modelo financiero agrupa **~5.050 USD** en trámites operativos prioritarios al arranque (constitución ampliada con partidas HQ, municipales, bomberos). Validar montos con abogado antes de ejecutar — la tabla mínima y el Excel pueden diferir porque el Excel refleja costos «sinceros» de local operativo.
+| Paso | Tiempo | Costo USD |
+|---|---|---|
+| Solicitud de denominación en Registro Mercantil | 5 días | 50 |
+| Acta constitutiva + estatutos (con abogado) | 7 días | 400 |
+| Registro Mercantil del Estado Carabobo | 10 días | 350 |
+| RIF empresa (SENIAT) | 2 días | 0 |
+| Apertura cuenta bancaria empresa | 5 días | 100 |
+| Sello digital + factura digital SENIAT | 3 días | 200 |
+| Registro de marca SAPI (paralelo) | 60-90 días | 350 |
+| **Total** | **~30 días + 60-90 marca SAPI** | **~1.450** |
 
----
+> **Nota:** esta tabla detalla cada trámite (total **~USD 1.450** con SAPI y sello digital en la misma lista). El [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.1 agrupa los trámites operativos prioritarios en el **one-shot Lean de USD 1.150** (constitución + RIF + apertura cuenta + sello; SAPI puede correr en paralelo como gasto diferido). El delta (**~USD 300**) corresponde principalmente a **SAPI** y partidas opcionales según avance del trámite.
+>
+> **Lectura CFO (1.150 vs 1.450):** **constitución operativa prioritaria** (C.A. + RIF + cuenta + sello, **sin** contabilizar SAPI como caja obligatoria el mes cero) **USD ~1.100–1.150**. **Con SAPI** en la misma ventana de planificación: **~USD 1.450**. El presupuesto §2.1 usa **USD 1.150** como **one-shot prioritario** al arranque; **SAPI** puede tratarse como **gasto diferido / paralelo** según caja y dictamen contable.
 
-## Instrumento: SAFE post-money cap
+> **Excel v4 (Detallado de la inversión.):** el modelo financiero usa **~USD 5.050** para constitución de **Zonix Pharma C.A.** (Registro+acta **1.200**, SENIAT **600**, municipales HQ **1.500**, bomberos **1.100**, banco **100**, sello **200**, SAPI **350**). Referencia de **costos reales de trámites VE** tomada del template Pizza QLQ — **solo partidas aplicables** a startup tech con local operativo; **excluye** BPF, CPE y permisos sanitarios de operación farmacéutica. Validar con abogado **[PENDIENTE]** antes de pitch.
 
-### Qué es (en lenguaje claro)
+### 1.5 Propiedad intelectual y cesión de derechos (PIIA) — **bloquea wire**
 
-Un **SAFE** (*Simple Agreement for Future Equity*) dice, en esencia:
+> **[PENDIENTE abogado — condición suspensiva del wire]**
 
-> *«Hoy recibes ~112.000 USD. Cuando hagamos una ronda futura con valuación de mercado, tu inversión se convierte en acciones. Si esa valuación supera el **cap** acordado, conviertes como si la empresa valiera **600.000 USD** — te protege el upside del inversor temprano.»*
+**Problema:** el código (Laravel backend + Flutter frontend), la marca "Zonix Pharma", los dominios y el know-how desarrollados pre-constitución pertenecen actualmente al **founder personalmente**, no a ZONIX PHARMA C.A. Un VC invierte en la C.A., no en el founder; sin cesión formal, el activo central del SAFE queda sin titularidad clara y el cierre se bloquea.
 
-**Post-money cap (YC moderno):** el inversor sabe **desde hoy** qué porcentaje compra si el cap aplica (**~18,66%** en Lean).
+**Inventario de activos intangibles a ceder:**
 
-### Términos propuestos — escenario Lean (principal)
+| Activo | Descripción | Estado |
+|---|---|---|
+| Código backend | Repositorios ZonixPharma-Backend (Laravel 10, PHP 8.1, MySQL, Sanctum) | En GitHub, sin cesión a C.A. |
+| Código frontend | Repositorios ZonixPharma-Front (Flutter, Dart, Provider) | En GitHub, sin cesión a C.A. |
+| Marca "Zonix Pharma" | Símbolo Z geométrico + wordmark | Registro SAPI en trámite (§4.5) |
+| Dominios | zonixpharma.com y variantes | [PENDIENTE inventario] |
+| Know-how | Modelo de negocio, procesos, documentación | En repos, sin cesión |
 
-| Término | Valor |
-|---------|-------|
-| Monto SAFE | **~USD 112.000** |
+**Mecanismo de cesión (a elegir con abogado):**
+
+1. **PIIA (Proprietary Information and Inventions Assignment Agreement):** el founder cede al constituir la C.A. (o como **condición suspensiva del wire**) todos los derechos sobre código, marca, dominios y know-how desarrollados pre y post-incorporación, a favor de ZONIX PHARMA C.A.
+2. **Cesión en acta constitutiva:** cláusula explícita en estatutos de la C.A. que declara los aportes intangibles del founder como capital en especie.
+3. **Lista de licencias OSS:** inventario de dependencias open-source (composer.json, pubspec.yaml) con verificación de compatibilidad de licencias (MIT, Apache 2.0, BSD — evitar GPL contaminante en stack comercial).
+
+**Gate de cierre:** ningún wire se ejecuta sin PIIA firmada + inventario de activos en data room. Checkbox P0 en [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) §3.
+
+## 2. Instrumento de inversión: SAFE post-money cap
+
+### 2.1 Qué es un SAFE post-money cap
+
+**SAFE** = Simple Agreement for Future Equity. Es un contrato de Y Combinator (template público y gratuito en [`https://www.ycombinator.com/documents`](https://www.ycombinator.com/documents)) que dice:
+
+> "Yo, inversor, te doy **USD 237.412** hoy (canon Excel v4). Tú, founder, prometes que cuando levantes la próxima ronda con valuación de mercado, mi inversión convierte automáticamente en acciones, con un cap (techo de valuación) o un descuento — lo que me dé más equity."
+
+**Por qué post-money cap (no pre-money):**
+- Versión moderna del SAFE (YC 2018 onwards). Más clara para founder e inversor.
+- El cap es la valuación post-money (después de la inversión nueva). El inversor sabe **exactamente** qué % de equity está comprando hoy.
+
+### 2.2 Términos propuestos
+
+| Término | Valor (canon v4) |
+|---|---|
+| Monto SAFE | **USD 237.412** |
 | Post-money valuation cap | **USD 600.000** |
-| Equity implícito (si cap aplica) | **~18,66%** |
-| Discount adicional | **0%** |
-| MFN (Most Favored Nation) | Sí — estándar YC |
-| Pro-rata en siguiente ronda | Opcional, según inversor |
+| Equity implícito si cap aplica | **~39,57%** *(237.412 / 600k)* |
+| Discount | 0% (sin descuento adicional al cap) |
+| Most Favored Nation (MFN) | Sí (cláusula estándar) |
+| Pro-rata rights | Opcional, según preferencia del inversor |
 
-**Lectura práctica:** si la Serie A valora la empresa en **1.000.000 USD**, el SAFE convierte como si valiera **600.000** → el inversor mantiene **~18,66%**. Si la ronda valora **por debajo** de 600k, convierte a valuación de mercado y recibe **menos** del 18,66%.
+**Lectura para el inversor (SAFE post-money YC, simplificado — counsel confirma):**
+- Si la próxima ronda valora **por encima** del cap (p. ej. USD 1.000.000), el SAFE convierte como si la valuación fuera el **cap USD 600.000** → el inversor recibe ~**39,57%** (237.412 / 600k) al convertir.
+- Si la próxima ronda valora **por debajo** del cap, el precio de conversión suele ser el de esa ronda → el inversor recibe **más** del ~39,57% (más acciones por el mismo USD 237.412). El cap **techa** el upside de valuación alta; no reduce el % cuando la ronda es más barata.
 
-### Términos por escenario de capital
+### 2.3 Términos del SAFE (canon v4)
 
-| Escenario | Monto SAFE | Cap post-money | Equity ref. |
-|-----------|------------|----------------|-------------|
-| **Lean (principal)** | **~112.000** | **600.000** | **~18,66%** |
-| Base | ~157.000 | ~913.000 | ~17,23% |
-| Growth | ~187.000 | ~1.205.000 | ~15,55% |
-| Blitz (6× Sales stretch) | ~185.000 | ~1.288.000 | ~14,36% |
+| Término | Valor (canon v4) |
+|---|---|
+| Monto SAFE | **USD 237.412** |
+| Post-money valuation cap | **USD 600.000** |
+| Equity implícito si cap aplica | **~39,57%** *(237.412 / 600k)* |
 
-Lean es el **mínimo viable** documentado para piloto Carabobo con **4 vendedores** y dev junior.
+### 2.3.1 Nota sobre el cap
 
-### Nota sobre el cap 600k
+El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está en torno a **10-12% equity** ([fuente: LatAm VC Report 2024-2025](https://www.endeavor.org.mx/) y reportes Crunchbase — **[verificar fuente primaria 2026]**). El cap de Zonix Pharma (**USD 237.412** / cap **USD 600k**) da **~39,57%**, por encima del benchmark LatAm 10–12% — coherente con ticket mayor (Fase 0 + burn + reserva Excel), **Co-CEO**, **4× Sales**, Dev en nómina (ver [MODELO_FINANCIERO_ZONIX_PHARMA.xlsx](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx)). **El ask vigente es único: USD 237.412 @ cap 600k → ~39,57%.**
 
-Benchmark pre-seed LatAm (ticket 50–100k): equity típico **~10–12%**. Zonix propone **~18,66%** — **más alto**, de forma **consciente**: compensa riesgo temprano, ticket, co-CEO en nómina y replante operativo bootstrap. Es señal de confianza al **lead investor**, no error de cálculo.
+**Decisión consciente del founder:** este cap es **intencional como señal de confianza al primer inversor** (lead investor del SAFE). El piloto tiene mucho más riesgo que un negocio post-PMF; el inversor que entra ahora merece compensación por el riesgo asumido.
 
-### Cláusulas recomendadas (checklist para abogado)
+**Implicación práctica:** si Zonix Pharma supera el plan (escenario optimista), el primer inversor obtiene retorno desproporcionadamente alto. Eso está bien — es exactamente el deal pre-seed.
 
-1. **Vesting founder** en Serie A (4 años, cliff 1 año) — protege al inversor.
-2. **Information rights** — reportes mensuales 6 meses; trimestrales después.
-3. **Board observer** (opcional) — sin voto; solo si ticket lead ≥ umbral acordado.
-4. **Asuntos reservados** — cambio de control, dilución >10%, pivot fuera de pharma.
-5. **ROFR** — derecho a participar en siguiente ronda.
-6. **MFN** — si un SAFE futuro tiene mejores términos, el actual los recibe.
-7. **Restricción de transferencia** del SAFE sin consentimiento del founder.
+### 2.4 Cláusulas adicionales recomendadas
 
-**Template físico:** Y Combinator post-money cap SAFE → adaptación abogado VE (bilingüe recomendado). Costo adaptación orientativo: **200–400 USD**.
+1. **Vesting del founder:** cláusula de re-vesting si **Zonix Pharma** levanta Serie A (founder vesteando 4 años con cliff 1 año desde la Serie A). Protege al inversor.
+2. **Información al inversor (information rights):** reportes **mensuales** los **primeros 6 meses** pos-cierre; **trimestrales** después. Formato: email + adjuntos acordados (métricas §6 [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md)).
+3. **Derechos de observación (opcional):** **board observer** sin voto en junta — solo si el ticket ≥ umbral acordado (ej. lead USD 50k+); no administración operativa diaria.
+4. **Asuntos reservados** (requieren notificación previa al inversor por escrito si impactan valor/dilución): cambio de control; nueva emisión que diluya **> 10%** pre-money en una sola ronda; remuneración anual del founder por encima de umbral definido; pivot que abandone vertical farmacéutico.
+5. **Right of First Refusal (ROFR):** el inversor del SAFE tiene derecho a participar en la siguiente ronda hasta mantener su % proporcional.
+6. **MFN (Most Favored Nation):** si **Zonix Pharma** emite un SAFE futuro con mejores términos, el inversor actual recibe los mismos términos. Estándar. **No confundir** con la cláusula de «nación más favorecida» **corporativa** (garantizar a un socio estratégico el mejor trato comercial vs terceros) — esa es un **red flag** de inversor corporativo, ver §2.6 y [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) §7.8.
+7. **Restricciones de transferencia:** el SAFE no se puede vender a terceros sin consentimiento del founder.
 
----
+### 2.6 Inversor corporativo / estratégico (cadena, distribuidor, agregador)
 
-## Cap table simplificado
+Este pack está diseñado para **ángel / fondo pre-seed**. Si el interesado es un **corporativo** (Steve Blank, UniMOOC M7: la gran empresa invierte para que **su** negocio crezca):
 
-### Hoy (pre-SAFE)
+- **Red flags en term sheet** — no aceptar verbalmente, derivar a abogado: exclusividad (zona/categoría/tiempo), nación más favorecida comercial, acceso a tecnología/datos como condición, derecho de primera oferta o veto en M&A/Serie A. Tabla completa: [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) §7.8.
+- **Datos de salud nunca** son moneda de negociación (§4.4; [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) §14).
+- Todo término corporativo se cierra con **abogado cross-border** `[PENDIENTE abogado]` — skill de checklist: `zonix-legal-contracts-ve`.
 
-| Stakeholder | Acciones | % |
-|-------------|----------|---|
-| Founder | 1.000.000 | **100%** |
+### 2.5 Documento físico
 
-### Tras conversión SAFE Lean (ilustrativo — no es hoy)
+- **Template:** Y Combinator post-money cap SAFE (template público).
+- **Adaptación:** abogado venezolano adapta a marco legal local (gobernabilidad, jurisdicción, idioma — bilingüe español/inglés recomendado).
+- **Costo de adaptación legal:** USD 200-400 one-shot.
+- **Firma:** electrónica con DocuSign o equivalente. Notariado VE opcional pero recomendado.
 
-> El SAFE **no crea acciones al firmar**. Solo al **convertir** en la próxima ronda con valuación.
+## 3. Cap table proyectado
 
-| Stakeholder | % post-conversión *(si cap 600k aplica)* |
-|-------------|------------------------------------------|
-| Founder | **~81,34%** |
-| Inversor SAFE | **~18,66%** |
+### 3.1 Pre-SAFE (hoy)
 
-### Ejemplo Serie A (hipotético — mes ~24)
+| Stakeholder | Acciones | % equity |
+|---|---|---|
+| Founder | 1.000.000 | 100,00% |
 
-Supuesto: **500.000 USD** a pre-money **2.000.000** → post-money **2.500.000**.
+### 3.2 Post-SAFE (canon v4, USD 237.412 @ cap USD 600k)
 
-| Stakeholder | % post Serie A *(ilustrativo)* |
-|-------------|----------------------------------|
-| Founder | **~51,34%** |
-| Inversor SAFE (cap 600k) | **~18,66%** *(no diluido extra por el cap)* |
-| Inversor Serie A | **~20,00%** |
-| Pool empleados / advisors | **~10,00%** |
+> **Nota:** el SAFE NO crea acciones hoy. Sólo al momento de conversión (próxima ronda con valuación de mercado).
 
-El founder mantiene **>50%** — saludable para seguir liderando. Números exactos de acciones los cierra el abogado al redactar SAFE + Serie A.
+| Stakeholder | Acciones | % equity hoy | % equity post-conversión SAFE |
+|---|---|---|---|
+| Founder | 1.000.000 | 100,00% | ~60,43% (si cap aplica) |
+| Inversor SAFE | 0 (todavía) | 0,00% | ~39,57% (al momento de conversión) |
 
----
+### 3.3 Cap table en próxima ronda Serie A (escenario hipotético, mes 24)
 
-## Marco legal operativo (resumen)
+> **[RETIRADO — cap table fully diluted en revisión por abogado; NO VÁLIDO PARA DD]**
+>
+> La tabla previa de % post-Serie A sumaba **116,47%** (Founder 51,34% + SAFE 39,57% + Serie A 20% + Pool 10%), lo cual es matemáticamente imposible. El error provenía de sumar % sin mecánicas de dilución; **no** reutilizar ese modelo.
 
-| Área | Enfoque piloto |
-|------|----------------|
-| **SENIAT** | IVA 16%, ISLR, factura digital desde mes 2 |
-| **Laboral** | Equipo en **honorarios profesionales / freelance** en USD — sin nómina formal en piloto; migración post-Serie A |
-| **Farmacia VE** | Zonix **no** sustituye farmacéutico colegiado de cada farmacia; validación Rx en app + cumplimiento MPPS/INHRR |
-| **Datos personales / salud** | Consentimiento explícito, minimización, acuerdos con proveedores (hosting, notificaciones push, verificación SMS) — textos **[PENDIENTE abogado]** |
-| **Marca** | Registro SAPI «Zonix Pharma» — 60–90 días, ~250–400 USD |
-| **Pagos** | Piloto: Zonix **no** es procesador de pagos centralizado; flujo documentado farmacia–paciente |
+**Hipótesis Serie A:** USD 500.000 a valuación pre-money USD 2.000.000 → post-money USD 2.500.000.
 
-### Datos de salud — roles y responsabilidades
+**Interpretación SAFE post-money cap (YC — lectura operativa, counsel confirma):** al **convertir**, el SAFE apunta a ~**39,57%** del company (237.412 / 600k) en el momento de conversión según el template. El **dinero nuevo** de la Serie A (y ampliaciones de pool) **también diluye** al holder ya convertido: el ~39,57% **no** queda “congelado” para siempre post–Serie A. Los números exactos de acciones y el orden pool pre/post money los cierra el **abogado**.
+
+**Lo que sí es válido declarar (sin tabla numérica hasta revisión counsel):**
+- SAFE post-money: ancla de conversión **~39,57%** (237.412 / 600k) **al convertir**.
+- Post Serie A + pool 10%: el founder queda **<50%** en escenarios típicos (estimación ilustrativa, recalcular con abogado).
+- Si se busca founder >50% post Serie A, hay que **subir el cap** o **reducir el ask**.
+
+**Entregable formal:** cap table fully diluted con acciones exactas, orden de emisión y pool pre/post money = producto del **abogado** al cerrar SAFE + Serie A. Hasta entonces, ningún cap table numérico circula en data room.
+
+### 3.4 Cap table en escenario optimista (Serie B + IPO o exit en año 5)
+
+| Stakeholder | % final aproximado en exit |
+|---|---|
+| Founder | ~30-40% |
+| Inversor SAFE | ~7-10% (con dilución de 2 rondas posteriores) |
+| Inversor Serie A | ~12-15% |
+| Inversor Serie B | ~15-20% |
+| Pool empleados (acumulado) | ~15-20% |
+
+**Lectura:** un inversor SAFE con **~7–10%** final (tras dilución de rondas posteriores) en exit a USD 50M tendría ~**USD 3,5–5,0M** ilustrativo (7–10% × 50M). Cifras de exit = hipótesis, no forecast.
+
+## 4. Marco legal venezolano (resumen)
+
+### 4.1 Obligaciones SENIAT
+
+- IVA mensual (16%).
+- ISLR anual.
+- Factura digital habilitada desde mes 2 del piloto.
+- Detalle facturación: [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §4; marco VE: [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md) §6.
+
+### 4.2 Obligaciones laborales
+
+- Si se contrata bajo régimen laboral formal: INCES, Seguro Social, Política Habitacional, vacaciones, utilidades.
+- Si se contrata bajo régimen freelance / honorarios profesionales: solo el contrato individual con cada profesional.
+
+**Decisión del piloto:** todo el equipo bajo régimen freelance / honorarios profesionales en USD. Sin nómina formal en piloto. Migración a régimen formal post-Serie A.
+
+**Mitigación riesgo:** contrato escrito con cada freelance, factura mensual, registro contable. Asesor laboral revisa anualmente.
+
+**Riesgo laboral (revisión profesional):** en VE, si una persona **subordinada, con horario fijo y remuneración recurrente** opera como “freelance”, SUNASS / inspectoría laboral puede **reclasificar** la relación como laboral (prestaciones retroactivas). Mitigación: (1) contratos de **honorarios profesionales** con alcance por entregables / mes facturado, sin exclusividad abusiva; (2) **asesor laboral** revisa plantillas antes de T+30; (3) al escalar a nómina formal, migración planificada con contador.
+
+### 4.3 Regulación específica farmacéutica
+
+- **Ley del Ejercicio de la Farmacia (Gaceta Oficial 1971, vigente):** cada farmacia debe tener farmacéutico colegiado. Zonix Pharma NO contrata farmacéutico interno; cada farmacia afiliada aporta el suyo. *Copy comercial y T&C: [PENDIENTE dictamen abogado + farmacéutico asesor antes de Day-D].*
+- **MPPS (Ministerio del Poder Popular para la Salud):** registro de profesionales colegiados. **Zonix Pharma** verifica número MPPS de cada pharmacist en el onboarding.
+- **INHRR (Instituto Nacional de Higiene Rafael Rangel):** registro de medicamentos. Solo se venden productos con INHRR vigente.
+- **Detalle:** [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md).
+
+### 4.4 Datos personales y datos de salud (revisión profesional)
+
+- **Ley de Protección de Datos Personales (Venezuela):** existe **proyecto de ley** en discusión / tramitación en **2025-2026**; **confirmar estado de promulgación** con abogado antes de citar “vigencia”. **Mientras tanto:** aplicar **buenas prácticas** alineadas a estándares internacionales (consentimiento, minimización, seguridad, derechos titular, encargados/DPA) como ya describe el pack operativo.
+- **Textos legales** (aviso de privacidad, T&C app, contrato marco farmacia) deben ser **revisados y firmados** por abogado antes de Day-D público.
+- Datos de salud (recetas, historial de medicamentos, inferencias): **categoría sensible**; consentimiento explícito, minimización, retención acotada, medidas técnicas y **registro de tratamiento**.
+- Implementación técnica y operativa: [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) secciones **14** (seguridad), **16** (playbook incidencias), **17** (modelo de amenazas) y **18** (QA / listo para piloto).
+
+#### 4.4.1 Roles en el tratamiento (due diligence)
 
 | Rol | Quién | Función |
-|-----|-------|---------|
-| **Responsable del tratamiento** | **ZONIX PHARMA, C.A.** (una vez constituida) | Decide fines y medios del tratamiento de datos de usuarios |
-| **Responsables independientes** | **Cada farmacia afiliada** | Receta retenida, libro de control, dispensación en sucursal |
-| **Encargados (subcontratistas)** | Hosting, notificaciones push, verificación SMS, email | Tratan datos por cuenta de Zonix; lista cerrada y revisión anual |
+|---|---|---|
+| **Responsable del tratamiento** | **ZONIX PHARMA, C.A.** (una vez constituida) | Decide fines y medios del tratamiento de datos de usuarios de la plataforma. |
+| **Responsables independientes** | **Cada farmacia afiliada** | Tratamiento de datos en **sucursal física** (receta retenida, libro de control, dispensación). |
+| **Encargados del tratamiento (subencargados)** | Proveedores con contrato tipo **DPA** (Data Processing Agreement): hosting (p. ej. VPS), push/notificaciones (**Firebase** FCM), verificación teléfono (**Firebase Phone Auth** / SMS), email transaccional, soporte con acceso acotado | Tratan datos **por cuenta y orden** de Zonix Pharma; lista cerrada y revisión anual. |
 
-**Riesgo laboral:** relaciones «freelance» con subordinación real pueden reclasificarse — contratos por entregables + asesor laboral antes de T+30. Si una persona tiene horario fijo, exclusividad y remuneración recurrente, SUNASS puede reclasificar como laboral con prestaciones retroactivas.
+> **Pendiente legal:** mantener **registro de actividades de tratamiento** (ART) simple: finalidad, categorías de datos, categorías de interesados, subencargados, plazos de conservación, medidas de seguridad. Elaborar en **mes 1** con abogado (hoja única o documento interno).
 
-### Contrato marco farmacia–Zonix (mínimos)
+#### 4.4.2 Bases jurídicas (resumen para pack) — **borrador hasta dictamen** `[PENDIENTE abogado]`
 
-Debe cubrir: (1) quién valida Rx; (2) custodia de receta física; (3) uso de marca; (4) límites de responsabilidad; (5) tratamiento de datos del paciente; (6) salida de datos al cierre. Plantilla: abogado corporativo + visado **farmacéutico asesor** en cláusulas de dispensación.
+- **Ejecución de contrato / prestación del servicio:** cuenta, pedidos, pagos, entregas.
+- **Consentimiento explícito:** subida de receta, datos de salud opcionales, marketing no esencial.
+- **Obligación legal:** facturación, retenciones contables, respuesta a autoridad competente con orden fundada.
 
----
+#### 4.4.3 Derechos del titular (paciente / usuario) — **borrador hasta dictamen** `[PENDIENTE abogado]`
 
-## Inversor corporativo / estratégico
+- Acceso, rectificación, supresión (salvo excepciones legales de conservación), oposición a tratamientos opcionales, portabilidad razonable.
+- **Canal:** formulario en app + email a contacto oficial de la C.A. (definir en constitución). SLA interno de respuesta: **15 días hábiles** (ajustar a norma cuando el reglamento lo precise).
 
-Si el interesado fuera cadena, distribuidor o agregador (no ángel pre-seed):
+#### 4.4.4 Transferencias internacionales
 
-| Red flag | Por qué importa |
-|----------|-----------------|
-| **Exclusividad** territorial | Bloquea firmar otras farmacias en el piloto |
-| **Nación más favorecida** comercial | Obliga siempre el mejor trato vs terceros |
-| Acceso a **datos de salud** como contraprestación | Los datos de salud **nunca** son moneda de negociación |
-| **Veto** en M&A o Serie A | Reduce opcionalidad de salida |
+- Si un proveedor aloja datos o procesa notificaciones **fuera de VE** (p. ej. EE.UU./UE), el aviso de privacidad debe indicarlo y basarse en **cláusulas contractuales tipo**, consentimiento específico o decisión de adecuación — **validar redacción con abogado**.
 
-Todo término corporativo → **abogado cross-border**.
+#### 4.4.5 Contrato marco farmacia–Zonix (B2B)
 
----
+- Debe existir **contrato o anexo** que distribuya: (1) quién valida Rx; (2) custodia de receta física; (3) uso de marca; (4) límites de responsabilidad por desabastecimiento; (5) tratamiento de datos del paciente compartidos con la farmacia; (6) salida de datos al cierre de la relación.
+- Plantilla base: abogado corporativo + visado **farmacéutico asesor** en cláusulas de dispensación.
 
-## Single-founder y mitigación
+#### 4.4.6 SAFE e instrumentos foráneos
 
-Zonix arranca con **un founder técnico** (CEO + CTO). Mitigación documentada:
+- El **SAFE (YC)** es estándar internacional; su **vigencia y interpretación** en litigios VE puede requerir **cláusula de ley y jurisdicción** y traducción al español para registros locales. **Recomendación:** abogado con experiencia **cross-border** o al menos revisión de enforceability antes de firma.
 
-- **Co-CEO** para dirección comercial y operación.
-- **4× Sales B2B** en calle desde T+30.
-- Post-Serie A: primer hire técnico senior para desacoplar producto de la persona única.
-- Advisors potenciales mes 6–12: regulatorio farmacéutico (0,5–1% equity) y comercial retail VE (0,25–0,5%).
+### 4.5 SAPI (registro de marca)
 
-Pool reservado post-SAFE: **~10%** para empleados clave y advisors; ampliación a 15–20% post Serie A.
+- **Marca:** "Zonix Pharma" + logotipo Z geométrico.
+- **Costo:** USD 250-400 one-shot.
+- **Tiempo:** 60-90 días desde solicitud.
+- **Vigencia:** 10 años renovables.
 
----
+### 4.6 KYC / AML y rol eventual como agregador de pagos (Sudeban)
 
-## Riesgos legales y mitigaciones (resumen)
+**Piloto (mes 0-6):** **Zonix Pharma** **no** recauda del paciente en nombre de terceros de forma centralizada — flujo documentado en [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md); riesgo PSP limitado.
+
+**Triggers para plan formal mes 6+** (activar con abogado + especialista Sudeban):
+
+| Trigger | Umbral orientativo | Acción |
+|---|---|---|
+| Volumen mensual agregado de fondos que transitan por cuentas corporativas de **Zonix Pharma** | > orden **USD X** / mes (definir con contador y banco) | Evaluación licencia / figura adaptada |
+| % de transacciones **cross-border** (Zelle/USDT) sobre total | > **30-40%** sostenido 3 meses | Refuerzo KYC contrapartes + política AML escrita |
+| **Zonix Pharma** pasa a liquidar **directamente** a farmacias/repartidores como intermediario | Cualquier volumen | Due diligence Sudeban antes de encender |
+
+**Componentes del programa:** KYC de farmacias (ya previsto onboarding), lista restrictiva interna, monitoreo de tickets fraud, conservación de evidencias, designación de **responsable compliance** (part-time CFO/legal hasta hire dedicado).
+
+## 5. Equity de futuros empleados / advisors
+
+### 5.0 Single-founder y plan de mitigación
+
+Zonix Pharma arranca con **un solo founder técnico** (CEO + CTO en la misma persona). Esto es válido para pre-seed pero merece transparencia:
+
+- **Riesgo:** dependencia técnica + decisional en un único individuo.
+- **Mitigación pre-PMF:** **Co-CEO** para dirección general + **Marketing Lead** para creatividad/campañas, documentado en [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) y [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md).
+- **Mitigación post-PMF (post-Serie A):** primer hire es un **CTO o Head of Engineering** que asume el stack mientras el founder se mueve a CEO 100%.
+- **Advisors potenciales en mes 6-12:** un advisor regulatorio farmacéutico VE (0,5%-1% equity vesting 2 años) y un advisor comercial con experiencia retail VE (0,25%-0,5% equity).
+
+### 5.1 Pool reservado
+
+- **Pre Serie A:** se reserva **10% del cap table** post-conversión SAFE para empleados clave + advisors.
+- **Post Serie A:** se amplía a **15-20%** según necesidades.
+
+### 5.2 Política de stock options
+
+- **Vesting:** 4 años con cliff 1 año.
+- **Strike price:** valor justo de mercado al momento de otorgamiento.
+- **Acelerador:** 50% acelerado en cambio de control (acquisition) — estándar.
+- **No options en piloto:** los freelances tienen contrato directo, sin equity. Solo se otorgan stock options a empleados formales post-Serie A.
+
+### 5.3 Advisors
+
+- 0,25% - 1% por advisor según valor aportado.
+- Vesting 2 años con cliff 6 meses.
+- Posible en mes 6-12 si aparece advisor regulatorio o de marketing relevante.
+
+## 6. Riesgos legales y mitigaciones
 
 | Riesgo | Probabilidad | Mitigación |
-|--------|--------------|------------|
-| Cambio regulación marketplace / Rx digital | Media | Asesor regulatorio + revisión Gaceta |
-| MPPS cuestiona validación digital | Baja–media | Trazabilidad + export audit log |
-| Reclasificación laboral freelance → nómina | Media | Contratos por entregables + asesor T+30 |
-| SENIAT exige factura digital antes de mes 2 | Media | Habilitar desde mes 1 |
-| Inversor SAFE pide exit antes de Serie A | Baja | Cláusula conversión en liquidity event |
-| Disputa contractual con farmacia | Media | T&C bilaterales + mediación CS |
+|---|---|---|
+| Cambio en regulación marketplace | Media | Asesor regulatorio externo + revisión Gaceta semanal |
+| MPPS bloquea validación digital de receta | Baja-media | Trazabilidad + firma digital + auditoría on-demand |
+| SENIAT exige factura digital antes de mes 2 | Media | Habilitar desde mes 1 con proveedor autorizado |
+| Devaluación bolívar afecta capital social | Alta | Capital social simbólico USD 1.000; dilución limpia |
+| Inversor del SAFE quiere exit antes de Serie A | Baja | Cláusula explícita: SAFE solo convierte en próxima ronda |
+| Disputas contractuales con farmacias | Media | T&C bilaterales firmados al onboarding + mediación Customer Support |
 
----
+## 7. Documentos legales que se entregan al inversor
 
-## Documentos que recibe el inversor al cierre (referencia)
+Al cierre de la inversión, el inversor recibe:
 
-1. SAFE firmado (PDF).
-2. Acta constitutiva y estatutos C.A. (~30 días post-wire).
-3. Registro Mercantil estampado + RIF.
-4. Cap table actualizado.
-5. Carta del founder: SAFE como única deuda al firmar.
-6. Pack operativo completo (este pack Gabriel + modelo Excel).
+1. **SAFE firmado** (PDF + original notariado opcional).
+2. **Acta constitutiva y estatutos** de Zonix Pharma C.A. (cuando se constituya, ~30 días post-cierre).
+3. **Registro Mercantil** estampado.
+4. **RIF de la empresa.**
+5. **Cap table actualizado.**
+6. **Carta de declaración del founder:** confirma que el SAFE es la única deuda de la empresa al momento de firma.
+7. **Plan operativo de 12 meses:** este pack completo.
 
-Gabriel no necesita estos documentos para una reunión de alianza; solo si Morr evoluciona hacia intro inversor formal.
-
----
-
-## Cronograma legal post-cierre (orientativo)
+## 8. Cronograma legal post-inversión
 
 | Mes | Hito |
-|-----|------|
-| 0 | Firma SAFE; wire **~112k** |
-| 1 | Constitución C.A.; cuenta empresa; traspaso patrimonial ordenado |
-| 1–2 | RIF + factura digital |
-| 2–3 | Marca SAPI (paralelo) |
-| 3 | **Day-D** — go-live piloto (T+90 desde wire); **caja Day-D ~78.153** |
-| 4–6 | Reportes mensuales al inversor |
-| 7–12 | Reportes trimestrales |
-| 18–24 | Posible Serie A → **conversión SAFE** |
+|---|---|
+| 0 (cierre inversión) | Firma SAFE con **condición suspensiva de constitución C.A. ≤30 días** + **devolución automática** si no se constituye. El wire de **USD 237.412** se recibe en **escrow notarial** o **cuenta bloqueada** hasta acta constitutiva; alternativa: **tranche 1** tras constitución + apertura de cuenta empresa. **Carta de uso de fondos firmada** por el founder. **No se recibe el wire en cuenta personal del founder** (exposición fiduciaria/related-party evitada). |
+| 1 | Constitución legal C.A. completa. Apertura cuenta bancaria empresa. Transferencia interna founder → C.A. |
+| 1-2 | RIF + factura digital SENIAT habilitados. |
+| 2-3 | Marca SAPI registrada (paralelo). |
+| 3 | **Day-D del piloto (T+90 desde wire).** Inicio **M1** financiero post-Day-D — ver [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §0. Operación oficial de la C.A. en paralelo mes 1–3. |
+| 4-6 | Reporte mensual al inversor. |
+| 7-12 | Reporte trimestral al inversor. |
+| 18-24 | Posible Serie A. Conversión del SAFE. |
 
----
+## 9. Documentos hermanos
 
-## Qué nos gustaría que revises, Gabriel
-
-1. **C.A. en Carabobo** — ¿Algún requisito local adicional que Morr vea en consultorías similares (municipales, bomberos, HQ)?
-2. **Cap 600k / ~18,66%** — ¿Cómo lo percibe un ángel venezolano vs ticket ~112k? ¿Es coherente con el riesgo del piloto pharma?
-3. **Honorarios vs nómina** — Riesgo SUNASS en equipos de ventas con horario fijo; ¿recomiendas asesor laboral local antes de contratar los 4 vendedores?
-4. **SAFE enforceability en VE** — ¿Abogados o contactos que recomiendes para adaptación YC + cláusula de ley aplicable?
-
----
-
-## Disclaimers
-
-- **Este documento no es asesoría legal, fiscal ni regulatoria.** Términos definitivos requieren abogado; marcar **[PENDIENTE abogado]** donde aplique.
-- El SAFE es instrumento **estándar internacional**; vigencia y litigios en Venezuela pueden requerir cláusula de ley, jurisdicción y traducción certificada.
-- Cap table Serie A y exit son **ilustrativos** — no promesa de ronda ni valuación futura.
-- Regulación farmacéutica (MPPS, INHRR, recetas) evoluciona; copy comercial y T&C requieren dictamen antes de Day-D público.
-- **No es oferta de valores** ni solicitud de inversión salvo acuerdo aparte y documentación legal definitiva.
-
----
-
-**Abrahan Pulido**  
-Founder / CEO / CTO — Zonix Pharma  
-ing.pulido.abrahan@gmail.com · +58 412 4352014
-
-*Zonix Pharma — junio 2026*
+- [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md): resumen de instrumento.
+- [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md): cómo se gasta el SAFE.
+- [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md): T+30 / T+60 / T+90.
+- [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md): marco farmacéutico VE.
+- [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §10: Sudeban y no intermediación en piloto.
+- [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md): regulación farmacéutica VE.

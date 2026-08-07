@@ -1,10 +1,19 @@
 # Registro consolidado de pendientes — Pack Lanzamiento
 
-> **Última actualización:** 21 junio 2026.  
+> **Última actualización:** 7 agosto 2026 (post forense v5 / Excel v4).  
 > **Uso:** Completar celdas antes de reunión con inversor institucional o envío del data room cerrado.  
 > **Fuente:** barrido `[PENDIENTE]` en `docs/Lanzamiento/` (no inventar datos).  
 > **Plantilla detallada:** [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md).  
 > **Pre-reunión:** [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) §0.
+
+### Pendientes FP&A / artefactos (v5)
+
+| ID | Ítem | Estado |
+|----|------|--------|
+| FP&A-P10P90 | Cash P10/P90 en PROYECCION §6 / MODELO S4.2 | **`[PENDIENTE FP&A]`** — no usar ~25k/~52k legado |
+| DOC-BRIEFING-DOCX | `BRIEFING_INVERSORES_VE_2026.docx` vs md | Regenerar antes de envío formal |
+| DOC-PACK-DOCX | Pack Aliado `docx/` vs `md/` espejo | Regenerar Word si se envía zip aliado |
+| EXCEL-CACHE | Valores Esc.1 cacheados en xlsx repo | Abrir en Excel/LibreOffice y guardar si hace falta data_only |
 
 ---
 
@@ -63,7 +72,7 @@
 |----|------|-------|------------|
 | P2-01 | Nombre y datos del **primer inversor** candidato | Founder | CHECKLIST §1; VOLCADO §2 |
 | P2-02 | Tipo inversor (ángel / fondo / family office) | Founder | VOLCADO §2 |
-| P2-03 | **Ticket esperado** (25k / 50k / **210.760** Lean) | Founder | VOLCADO §2 |
+| P2-03 | **Ticket esperado** (25k / 50k / **237.412** Lean) | Founder | VOLCADO §2 |
 | P2-04 | Experiencia inversor LatAm y en salud/farma | Founder | CHECKLIST §1 |
 | P2-05 | Disponibilidad reunión + próximo paso | Founder | VOLCADO §2 |
 | P2-06 | **NDA listo** si el inversor lo pide | Legal | CHECKLIST §1 |
@@ -118,7 +127,7 @@ Completar en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARI
 |------|----------------|
 | Founder nombre, contacto, LinkedIn | Abrahan Pulido — VOLCADO §1 |
 | Párrafo «por qué soy el founder» | VOLCADO §1.1 |
-| Ask capital **210.760 Lean Excel** @ SAFE cap **600k** (equity ~35,13%) | README §C, PRESUPUESTO §1, MODELO S1.3 |
+| Ask capital **237.412 Lean Excel** @ SAFE cap **600k** (equity ~39,57%) | README §C, PRESUPUESTO §1, MODELO S1.3 |
 | PROYECCION Lean M1–M12, Fase 0, caja M12 | PROYECCION §0–§1.3 |
 | Coherencia numérica pack (cifras ancla) | README, BRIEF, PROYECCION |
 | Tests backend **443** (verificar fecha pre-reunión) | README, BRIEF, VOLCADO §1.2 |

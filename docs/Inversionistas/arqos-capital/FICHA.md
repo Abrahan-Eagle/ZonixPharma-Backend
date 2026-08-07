@@ -1,6 +1,6 @@
 # Ficha inversionista — Arqos Capital
 
-> Ask ref.: Lean ~USD 174.102 · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
+> Ask ref.: Lean **USD 237.412** · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
 > Forense ligero: 21 julio 2026 · [arqos.com](https://www.arqos.com/) · Casa212 · LinkedIn Amador · briefing §4.3.  
 > **Disclaimer:** análisis interno founder; no es asesoría legal ni financiera.
 

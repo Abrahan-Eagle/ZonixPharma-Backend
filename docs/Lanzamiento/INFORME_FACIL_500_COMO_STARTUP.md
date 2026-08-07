@@ -5,7 +5,7 @@
 > **Fecha:** 7 agosto 2026  
 > **PDF:** [INFORME_FACIL_500_COMO_STARTUP.pdf](INFORME_FACIL_500_COMO_STARTUP.pdf)  
 > **Resumen de 1 página:** [`../Inversionistas/500-latam/RESUMEN_FACIL.md`](../Inversionistas/500-latam/RESUMEN_FACIL.md)  
-> **Ask Lean (sin cambios):** **USD 210.760** · SAFE cap **600k** · Plan A de caja: **Epakon / Casa212 / ALGEN**
+> **Ask Lean (sin cambios):** **USD 237.412** · SAFE cap **600k** · Plan A de caja: **Epakon / Casa212 / ALGEN**
 
 Este informe es **solo sobre 500 y sobre Zonix como startup**. No habla de código ni de otros eventos.
 
@@ -96,7 +96,7 @@ Si falta una casilla → **no** se envía.
 |----------|---------------------|
 | Producto en el mercado | Uso repetible: más de una farmacia, pedidos que se repiten |
 | Beachhead Valencia | Historia estable: “empezamos aquí”, no “ya somos Venezuela entera” |
-| Raise Lean | Ask **USD 210.760** (o update solo con hechos nuevos) avanzando con Plan A |
+| Raise Lean | Ask **USD 237.412** (o update solo con hechos nuevos) avanzando con Plan A |
 | Recontacto 500 (u otros fondos tipo 500) | Solo **con evidencia**, no con promesas |
 | Credibilidad inversor | Deck + demo + piloto alineados; cero mentiras de tracción |
 
@@ -116,7 +116,7 @@ Aquí **no** hablamos de programar más módulos. Hablamos de lo que un inversor
 
 - Beachhead: **Valencia / Carabobo**, no “toda Venezuela” el día 1.  
 - Decir: **pre-revenue**, piloto en curso, staging hoy.  
-- Un solo mensaje de dinero: SAFE Lean **210.760**, cap **600k**.  
+- Un solo mensaje de dinero: SAFE Lean **237.412**, cap **600k**.  
 - No vender 20 pantallas: vender el **camino feliz** (paciente → farmacia → receta → pedido).
 
 ### 4.3 Demo consumible

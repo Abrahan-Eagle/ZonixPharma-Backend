@@ -1,7 +1,10 @@
+> **Espejo Pack Aliado** (sync v6 7-ago-2026) desde Lanzamiento. Canon Excel v4 SAFE **237.412**; pricing **45/60/70 + %GMV 8/7/5**.
+
 # Zonix Pharma — Informe completo para aliado estratégico
 
-> **Para:** Gabriel Barrios — Gerente de Consultoría, Grupo Morr (Valencia, Venezuela)
-> **De:** Abrahan Pulido — Founder / CEO / CTO, Zonix Pharma
+> **Para:** Gabriel Barrios — Gerente de Consultoría, Grupo Morr (Valencia, Venezuela)  
+> **Sync 7 ago 2026:** Lean SAFE **237.412** / equity **~39,57%** / Day-D **187.152** / burn **172.152**. Asks históricos **174k/112k/210.760** = no vigentes.
+> **De:** Abrahan Pulido — Founder / CEO / CTO, Zonix Pharma  
 > **Fecha:** junio 2026
 > **Propósito:** síntesis ejecutiva de los **18 documentos** del pack aliado — una sola lectura para entender tesis, números, operación y próximos pasos.
 
@@ -9,9 +12,9 @@
 
 ## Nota sobre este documento
 
-Este documento resume los 18 entregables del pack aliado; el detalle ampliado está en los archivos hermanos de esta carpeta (`02_` … `18_`) y en `docx/`.
+Este documento resume los **18 entregables** del pack aliado; el detalle ampliado está en `docs/Pack_Aliado_Gabriel_Barrios/` (md + docx + Excel).
 
-**No es solicitud de inversión por defecto.** Las cifras de capital (Lean **~USD 112k**, SAFE cap **600.000**) aparecen solo como contexto de viabilidad del piloto Valencia. Buscamos tu mirada de consultoría, red local y — si encaja — **dos sesiones de feedback** e **introducciones puntuales** a farmacias independientes en Carabobo.
+**No es solicitud de inversión por defecto.** Las cifras de capital (Lean **USD 237.412** v4, SAFE cap **600.000**) aparecen solo como contexto de viabilidad del piloto Valencia. Buscamos tu mirada de consultoría, red local y — si encaja — **dos sesiones de feedback** e **introducciones puntuales** a farmacias independientes en Carabobo.
 
 ---
 
@@ -23,13 +26,13 @@ Este documento resume los 18 entregables del pack aliado; el detalle ampliado es
 | 02 | Brief una página | Problema paciente/farmacia, timing, hitos 12M |
 | 03 | Contexto pitch | Decisiones estratégicas y por qué |
 | 04 | Perfil mercado | TAM/SAM/SOM, competencia, zona piloto |
-| 05 | Unit economics | ARPF, CAC, LTV, equilibrio ~160 activas |
-| 06 | Proyección 12M | Mes a mes, caja, sensibilidad Lean+ |
-| 07 | Presupuesto 12M | Lean/Base/Growth, equipo, buffer VE |
-| 08 | Estructura legal | C.A., SAFE cap 600k, ~18,66% ref. |
+| 05 | Unit economics | ARPF ~52, LTV 1.040, BE FCF M5 (~85 activas) |
+| 06 | Proyección 12M | Mes a mes, caja, sensibilidad esc.1 |
+| 07 | Presupuesto 12M | Lean ask único, equipo, buffer VE |
+| 08 | Estructura legal | C.A., SAFE cap 600k, ~39,57% ref. v4 |
 | 09 | Guía reunión | Guion 45–60 min, FAQ, qué no prometer |
 | 10 | Plan lanzamiento | T+0 → Day-D → M12, DoD M6 |
-| 11 | Propuesta farmacia | Pricing 25/40/55 + % GMV, objeciones |
+| 11 | Propuesta farmacia | Pricing 45/60/70 + % GMV, objeciones |
 | 12 | Propuesta paciente | Personas, funnel B2C, cuándo activar Meta |
 | 13 | Propuesta partners | Delivery 8%+0,30/envío; farmacéutico MPPS |
 | 14 | Censo farmacias | 226 metro, 18 dolores, discovery calle |
@@ -64,7 +67,7 @@ En **Grupo Morr** combinas consultoría de negocio con arraigo en el tejido empr
 |------|-----------------|------------------|
 | Estrategia | Validar beachhead independientes vs cadenas | Producto listo + plan 12M documentado |
 | Red local | Intros farmacia / delivery | Demo + materiales B2B |
-| Riesgos VE | Lectura inflación, laboral, comercial | Transparencia numérica (Lean **~112k**) |
+| Riesgos VE | Lectura inflación, laboral, comercial | Transparencia numérica (Lean **~237k**) |
 | Posicionamiento | Tono consultoría sin hype | Narrativa «canal desatendido», no océano azul |
 
 ---
@@ -73,19 +76,20 @@ En **Grupo Morr** combinas consultoría de negocio con arraigo en el tejido empr
 
 ### En 60 segundos
 
-**Zonix Pharma** es marketplace farmacéutico B2B2C: paciente pide en app; farmacia independiente despacha; farmacéutico colegiado valida recetas; partner logístico entrega — **sin flota propia** de Zonix. Mercado VE **USD 1.638M/año**; piloto Valencia metro (**226 farmacias**). Producto ~4 años construido; capital va a **lanzar y vender**. Lean **~USD 112k** / SAFE **600k** *(referencia)*. **LTV/CAC ~7,2×**; **~159 activas M12**.
+**Zonix Pharma** es marketplace farmacéutico B2B2C: paciente pide en app; farmacia independiente despacha; farmacéutico colegiado valida recetas; partner logístico entrega — **sin flota propia** de Zonix. Mercado VE **USD 1.638M/año**; piloto Valencia metro (**226 farmacias**). Producto ~4 años construido; capital va a **lanzar y vender**. Lean **USD 237.412** / SAFE **600k** *(canon Excel v4)*. **LTV/CAC ~7,5×**; **~159 activas M12**.
 
 ### Datos clave
 
 | Tema | Valor |
 |------|-------|
-| Modelo cobro farmacia | Cuota **25/40/55 USD** + **% moderado sobre ventas en app** |
+| Modelo cobro farmacia | Cuota **45/60/70 USD** + **% moderado sobre ventas en app** |
 | Competidor VE | PedidosYa Pharmacy **20–30%** GMV |
 | Plataforma | **443 pruebas automatizadas** en entorno de prueba; tiendas Fase 0 |
-| Capital Lean | **~USD 111.988** (redondeo **~112k**) |
-| Caja Day-D | **~USD 78.153** |
-| Caja M12 | **~USD 40.831** |
-| Ingreso medio farmacia | **~USD 50/mes** *(placeholder)* |
+| Capital Lean | **USD 237.412** (redondeo **~237k**) — v4 |
+| Caja Day-D | **~USD 187.152** |
+| Fase 0 total | **~USD 50.260** |
+| Caja M12 | **USD 246.231** (esc.1: 187.152 + FCF +59.079) |
+| Ingreso medio farmacia | **~USD 52/mes** *(placeholder)* |
 
 ### Qué revisar con Gabriel
 
@@ -97,7 +101,7 @@ En **Grupo Morr** combinas consultoría de negocio con arraigo en el tejido empr
 
 ## Parte 2 — Brief una página (doc 02)
 
-*Detalle ampliado: ver `02_Brief_Una_Pagina.md` en el pack aliado.*
+*Detalle ampliado: ver `docs/Pack_Aliado_Gabriel_Barrios/md/02_Brief_Una_Pagina.md`.*
 
 ### En 60 segundos
 
@@ -122,9 +126,9 @@ Brief ejecutivo: problema (paciente recorre farmacias; dueño pierde margen en a
 
 | Escenario | Activas M12 | Cash M12 |
 |-----------|-------------|----------|
-| Pesimista (20%) | **~120** | **~USD 25–32k** |
-| **Base (50%)** | **~159** | **~USD 40.831** |
-| Optimista (30%) | **~200** | **~USD 48–55k** |
+| Pesimista | **~120** | **`[PENDIENTE FP&A — esc.1]`** |
+| **Base (esc.1 vigente)** | **~159** | **~USD 246.231** |
+| Optimista | **~200** | **`[PENDIENTE FP&A — esc.1]`** |
 
 ### Qué revisar con Gabriel
 
@@ -136,19 +140,19 @@ Brief ejecutivo: problema (paciente recorre farmacias; dueño pierde margen en a
 
 ## Parte 3 — Contexto pitch / decisiones (doc 03)
 
-*Detalle ampliado: ver `03_Contexto_Pitch.md` en el pack aliado.*
+*Detalle ampliado: ver `docs/Pack_Aliado_Gabriel_Barrios/md/03_Contexto_Pitch.md`.*
 
 ### En 60 segundos
 
-Documento del **«por qué»**: plataforma reutilizada ~4 años; ingresos híbridos; piloto completo OTC+Rx+delivery desde Day-D; Lean **~112k**; zona Bella Florida + El Socorro; oferta primero (B2B antes de tráfico masivo B2C); posicionamiento **mercado existente**, no categoría inventada.
+Documento del **«por qué»**: plataforma reutilizada ~4 años; ingresos híbridos; piloto completo OTC+Rx+delivery desde Day-D; Lean **~237k**; zona Bella Florida + El Socorro; oferta primero (B2B antes de tráfico masivo B2C); posicionamiento **mercado existente**, no categoría inventada.
 
 ### Decisiones clave
 
 | Decisión | Elección | Rationale |
 |----------|----------|-----------|
-| Ingresos | Cuota **25/40/55** + **0,60% / 0,80% / 1,00%** GMV | Piso predecible + alineación volumen |
+| Ingresos | Cuota **45/60/70** + **8% / 7% / 5%** GMV | Piso predecible + alineación volumen |
 | Alcance Day-D | Flujos core completos (Rx incluida) | Diferenciador vs solo OTC |
-| Capital | **Lean ~112k** principal | Bootstrap 4× Sales Carabobo |
+| Capital | **Lean ~237k** principal | Bootstrap 4× Sales Carabobo |
 | Instrumento | SAFE cap **600.000** | Sin valuación prematura |
 | Zona | Bella Florida + El Socorro | Densidad + founder local |
 | Farmacéutico | **Por farmacia aliada**, no interno Zonix | Ley VE + MPPS |
@@ -156,7 +160,7 @@ Documento del **«por qué»**: plataforma reutilizada ~4 años; ingresos híbri
 
 ### Ejemplo pricing Pro
 
-Farmacia Pro con **USD 5.000/mes** GMV en app: **40 + (0,80% × 5.000) = USD 80/mes** vs **~USD 1.500** en PedidosYa al 30%.
+Farmacia Pro con **USD 3.000/mes** GMV en app: **60 + (7% × 3.000) = USD 270/mes** vs **~USD 750** en PedidosYa al 25%.
 
 ### Lo que NO decimos
 
@@ -174,7 +178,7 @@ Farmacia Pro con **USD 5.000/mes** GMV en app: **40 + (0,80% × 5.000) = USD 80/
 
 ## Parte 4 — Perfil mercado (doc 04)
 
-*Detalle ampliado: ver `04_Perfil_Mercado.md` en el pack aliado.*
+*Detalle ampliado: ver `docs/Pack_Aliado_Gabriel_Barrios/md/04_Perfil_Mercado.md`.*
 
 ### En 60 segundos
 
@@ -204,11 +208,11 @@ TAM **USD 1.638M/año**; Valencia metro **226 farmacias**; target **~80–100 in
 
 | Mes | Activas | % metro | Revenue/mes |
 |-----|---------|---------|-------------|
-| 3 | **62** | ~27% | **USD 3.100** |
-| 6 | **97** | ~43% | **USD 4.850** |
-| 9 | **130** | ~57% | **USD 6.500** |
-| 11 | **151** | ~67% | **USD 7.550** *(casi BE)* |
-| 12 | **159** | ~70% | **USD 7.950** |
+| 3 | **62** | ~27% | **USD 11.656** |
+| 6 | **97** | ~43% | **USD 18.236** |
+| 9 | **130** | ~57% | **USD 24.440** |
+| 5 | **85** | BE FCF | **USD 15.980** |
+| 12 | **159** | ~70% | **USD 29.892** (esc.1) |
 
 ### Competencia
 
@@ -228,7 +232,7 @@ TAM **USD 1.638M/año**; Valencia metro **226 farmacias**; target **~80–100 in
 | Activas | ≥ **97** | No abrir Naguanagua masivo |
 | Pedidos | ≥ **1.500** | Recortar publicidad exterior |
 | NPS paciente | ≥ **35** | CS + fixes producto |
-| Caja | ≥ **~48.311** | Contingencia financiera |
+| Caja | ≥ **~180.403** (cash M6 esc.1) | Contingencia financiera |
 
 ### Qué revisar con Gabriel
 
@@ -240,19 +244,19 @@ TAM **USD 1.638M/año**; Valencia metro **226 farmacias**; target **~80–100 in
 
 ## Parte 5 — Unit economics (doc 05)
 
-*Detalle ampliado: ver `05_Unit_Economics.md` en el pack aliado.*
+*Detalle ampliado: ver `docs/Pack_Aliado_Gabriel_Barrios/md/05_Unit_Economics.md`.*
 
 ### En 60 segundos
 
-Modelo híbrido: **ARPF ~USD 50/mes** *(placeholder)*, **CAC USD 139**, **LTV USD 1.000**, **LTV/CAC ~7,2×**, payback **~2,8 meses**, churn **5%**, margen bruto plataforma **~92%**.
+Modelo híbrido: **ARPF ~USD 52/mes** *(placeholder)*, **CAC USD 139**, **LTV USD 1.040**, **LTV/CAC ~7,5×**, payback **~2,7 meses**, churn **5%**, margen bruto plataforma **~92%**.
 
 ### Tiers de cobro
 
 | Nivel | Cuota fija | Fee GMV |
 |-------|------------|---------|
-| Basic | **USD 25** | ~0,6%–1% por banda |
-| Pro | **USD 40** | idem |
-| Enterprise | **USD 55** | idem |
+| Basic | **USD 45** | 8% |
+| Pro | **USD 60** | 7% |
+| Enterprise | **USD 70** | 5% |
 
 ### Construcción CAC **139**
 
@@ -264,27 +268,27 @@ Modelo híbrido: **ARPF ~USD 50/mes** *(placeholder)*, **CAC USD 139**, **LTV US
 | Material + onboarding | 15 |
 | **Headline conservador** | **139** |
 
-### Sensibilidad churn (ARPF 50)
+### Sensibilidad churn (ARPF ~52)
 
 | Churn/mes | Meses vida | LTV | LTV/CAC |
 |-----------|------------|-----|---------|
-| 3% | 33 | 1.650 | ~11,9× |
-| **5% (base)** | **20** | **1.000** | **~7,2×** |
-| 7% | 14 | 700 | ~5,0× |
-| 10% | 10 | 500 | ~3,6× |
+| 3% | 33 | **1.733** | ~11,9× |
+| **5% (base)** | **20** | **1.040** | **~7,5×** |
+| 7% | 14 | **743** | ~5,0× |
+| 10% | 10 | **520** | ~3,6× |
 
 ### Equilibrio mensual
 
 | Concepto | Valor Lean |
 |----------|------------|
-| Burn M7–M12 | **~USD 7.980/mes** |
-| Activas para BE (ARPF 50) | **~160** |
+| Burn M7–M12 | **~USD 14.346/mes** |
+| Activas para BE (ARPF 52) | **~276** *(fórmula; curva ~159)* |
 | Activas M12 | **~159** |
-| Gap M12 | **~USD −30** (casi empate) |
+| Gap M12 (fórmula ARPF×N vs burn) | **N/A al P&L Esc.1** — BE FCF operativo = **M5** (~85 activas); M12 FCF mensual **+15.546** |
 
 ### Qué revisar con Gabriel
 
-- ¿**ARPF ~50** creíble para independientes que conoces?
+- ¿**ARPF ~52** creíble para independientes que conoces?
 - ¿**CAC 139** refleja costo comercial local (visitas, comisiones)?
 - ¿Qué hace **sticky** o **frágil** a una farmacia en app vs mostrador?
 
@@ -292,23 +296,23 @@ Modelo híbrido: **ARPF ~USD 50/mes** *(placeholder)*, **CAC USD 139**, **LTV US
 
 ## Parte 6 — Proyección 12 meses (doc 06)
 
-*Detalle ampliado: ver `06_Proyeccion_12M.md` en el pack aliado.*
+*Detalle ampliado: ver `docs/Pack_Aliado_Gabriel_Barrios/md/06_Proyeccion_12M.md`.*
 
 ### En 60 segundos
 
-Lean: wire **~112k** → Fase 0 **~33.835** → caja Day-D **~78.153** → burn año 1 **~97.290** → ingresos **~59.968** → FCF **−37.322** → caja M12 **~40.831** → **~159 activas**.
+Lean v4: wire **237.412** → Fase 0 **50.260** → caja Day-D **187.152** → FCF Y1 esc.1 **+59.079** → cash M12 **246.231**.
 
 ### Fase 0 (T+0 → T+90)
 
 | Sub-fase | Período | Gasto USD |
 |----------|---------|-----------|
-| 0a | T+0–30 | **~17.813** |
-| 0b | T+30–60 | **8.011** |
-| 0c | T+60–90 | **8.011** |
-| **Total** | 90 días | **~33.835** |
-| **Caja Day-D** | | **~78.153** |
+| 0a | T+0–30 | **33.010** |
+| 0b | T+30–60 | **8.625** |
+| 0c | T+60–90 | **8.625** |
+| **Total** | 90 días | **50.260** |
+| **Caja Day-D** | | **187.152** |
 
-### One-shots Fase 0 (~14.208 USD)
+### One-shots Fase 0 (~22.365 USD)
 
 | Rubro | USD |
 |-------|-----|
@@ -316,76 +320,68 @@ Lean: wire **~112k** → Fase 0 **~33.835** → caja Day-D **~78.153** → burn 
 | Intro mercado (web, brochures, tablets) | ~3.808 |
 | Oficina + 4 PCs | ~5.350 |
 
-### Mes a mes año 1 (extracto)
+### Mes a mes año 1 (extracto — esc.1 vigente)
 
-| Mes | Activas | Ingresos | Burn | FCF mes | Caja fin |
-|-----|---------|----------|------|---------|----------|
-| 1 | 40 | 1.500 | 8.011 | −6.511 | 71.642 |
-| 3 | 62 | 3.100 | 8.347 | −5.247 | 60.552 |
-| 6 | **97** | **4.850** | 8.347 | −3.497 | **48.311** |
-| 9 | 130 | 6.500 | 7.980 | −1.480 | 42.221 |
-| 12 | **159** | **7.950** | 7.980 | **−30** | **40.831** |
+| Mes | Activas | Revenue | Burn | FCF | Cash final |
+|------|---------|---------|------|-----|------------|
+| 1 | 40 | 7.520 | 11.411 | −3.891 | **183.261** |
+| 3 | 62 | 11.656 | 14.346 | −2.690 | **175.313** |
+| 6 | **97** | **18.236** | 14.346 | +3.890 | **180.403** |
+| 9 | 130 | 24.440 | 14.346 | +10.094 | **204.481** |
+| 12 | **159** | **29.892** | 14.346 | +15.546 | **246.231** |
 
-**Punto más bajo de caja:** **~USD 48.311 en M6** — checkpoint del piloto.
-
-### Lean+ (mismo ~112k, curva ×1,15)
-
-| Concepto | Lean | Lean+ |
-|----------|------|-------|
-| Firmas Y1 | ~185 | ~212 |
-| Activas M12 | ~159 | ~183 |
-| Caja M12 | ~40.831 | ~49.825 |
-| BE mensual | Casi M12 | **Desde M10** |
+**Caja M6 (checkpoint piloto):** **~USD 180.403** (esc.1: cash final M6).
 
 ### Qué revisar con Gabriel
 
 - ¿**185 firmas / 159 activas** realistas en 12 meses?
-- ¿Colchón suficiente si Day-D se retrasa 30 días (+**~8.011** burn)?
-- ¿Preferencia plan conservador (BE M12) vs Lean+ (BE M10)?
+- ¿Colchón suficiente si Day-D se retrasa 30 días (+**~14.346** burn Detallado)?
+- ¿El pricing 45/60/70 + % GMV es creíble en calle vs agregador?
 
 ---
 
 ## Parte 7 — Presupuesto 12 meses (doc 07)
 
-*Detalle ampliado: ver `07_Presupuesto_12M.md` en el pack aliado.*
+*Detalle ampliado: ver `docs/Pack_Aliado_Gabriel_Barrios/md/07_Presupuesto_12M.md`.*
 
 ### En 60 segundos
 
-Tres tiers: **Lean ~112k** (ask principal), Base ~157k, Growth ~187k. Misma meta comercial **~159 activas M12**; diferencia = calidad equipo, marketing, reserva.
+Ask único **Lean ~237k (237.412)** — meta comercial **~159 activas M12**; equity **~39,57%** @ cap **600k**.
 
-### Comparativa tiers
+### Anclas capital Lean
 
-| Concepto | **Lean** | Base | Growth |
-|----------|----------|------|--------|
-| Capital | **~111.988** | ~157.268 | ~187.478 |
-| Burn prom./mes | **~8.108** | ~10.898 | ~12.698 |
-| 4× Sales (base) | **4 × 350** | 4 × 400 | 4 × 450 |
-| Dev | Junior **600** | Mid 1.000 | Senior 1.800 |
-| SAFE cap | **600.000** | ~913k | ~1,2M |
-| Equity ref. | **~18,66%** | ~17,23% | ~15,55% |
+| Concepto | **Lean** |
+|----------|----------|
+| Capital | **237.412** |
+| Burn prom./mes (Detallado) | **~14.346** |
+| Burn esc.1 P&L | **11.411 / 14.846 / 14.346** |
+| 4× Sales (base) | **4 × 350** |
+| Dev | **1.000** |
+| SAFE cap | **600.000** |
+| Equity ref. | **~39,57%** |
 
 ### Equipo Lean (nómina fija/mes)
 
 | Rol | USD/mes |
 |-----|---------|
-| Founder + Co-CEO | 2.000 |
+| CEO + Founder + Co-CEO | **3.000** (1.000 c/u) |
 | 4× vendedores B2B | 1.400 |
 | Dev junior | 600 |
 | CS + community | 400 |
 | Contador + abogado | 330 |
 | Herramientas IA + hosting + HQ | ~1.159 |
 
-### Tramos burn Lean
+### Tramos burn Lean (esc.1 v4)
 
 | Tramo | Meses | Burn/mes |
 |-------|-------|----------|
-| A (sin valla) | 1–2 | **8.011** |
-| B (+ valla 350) | 3–6 | **8.347** |
-| C (Meta 500) | 7–12 | **7.980** |
+| M1 | 1 | **11.411** |
+| M2 | 2 | **14.846** |
+| M3–M12 | 3–12 | **14.346** |
 
 ### Dónde va el dinero (Lean)
 
-| Bloque | % ~112k |
+| Bloque | % ~237k |
 |--------|---------|
 | Nómina 12 meses | ~55% |
 | Marketing + captación | ~15% |
@@ -399,19 +395,19 @@ Buffer **~20%** inflación VE embebido en contingencia mensual — no fila apart
 
 - ¿**350/mes** atrae vendedores con red farmacéutica en Valencia?
 - ¿HQ tipo casa (**500/mes**) creíble o conviene local visible?
-- ¿Lean suficiente vs orientar a Base **~157k** desde inicio?
+- ¿**Lean 237.412** suficiente para el piloto Valencia?
 
 ---
 
 ## Parte 8 — Estructura legal y equity (doc 08)
 
-*Detalle ampliado: ver `08_Estructura_Legal.md` en el pack aliado.*
+*Detalle ampliado: ver `docs/Pack_Aliado_Gabriel_Barrios/md/08_Estructura_Legal.md`.*
 
 > **Aviso:** orientación para conversación — no asesoría legal.
 
 ### En 60 segundos
 
-**ZONIX PHARMA, C.A.** en Carabobo; SAFE post-money cap **USD 600.000**; monto Lean **~USD 112.000**; equity ref. inversor **~18,66%** al convertir; founder hoy **100%** pre-SAFE.
+**ZONIX PHARMA, C.A.** en Carabobo; SAFE post-money cap **USD 600.000**; monto Lean **USD 237.412**; equity ref. inversor **~39,57%** al convertir; founder hoy **100%** pre-SAFE.
 
 ### Vehículo C.A.
 
@@ -427,20 +423,20 @@ Buffer **~20%** inflación VE embebido en contingencia mensual — no fila apart
 
 | Término | Valor |
 |--------|-------|
-| Monto | **~USD 112.000** |
+| Monto | **USD 237.412** |
 | Cap post-money | **USD 600.000** |
-| Equity implícito | **~18,66%** |
+| Equity implícito | **~39,57%** |
 | Discount | 0% |
 | MFN | Sí (estándar YC) |
 
-**Nota cap 600k:** benchmark pre-seed LatAm ~10–12%; **~18,66%** es consciente por riesgo temprano, ticket y bootstrap.
+**Nota cap 600k:** benchmark pre-seed LatAm ~10–12%; **~39,57%** es consciente por riesgo temprano, ticket y bootstrap.
 
 ### Cap table ilustrativo post-conversión
 
 | Stakeholder | % |
 |-------------|---|
-| Founder | **~81,34%** |
-| Inversor SAFE | **~18,66%** |
+| Founder | **~60,43%** |
+| Inversor SAFE | **~39,57%** |
 
 ### Marco operativo
 
@@ -452,14 +448,14 @@ Buffer **~20%** inflación VE embebido en contingencia mensual — no fila apart
 ### Qué revisar con Gabriel
 
 - ¿Requisitos municipales/bomberos adicionales en Carabobo?
-- ¿**~18,66%** coherente para ángel VE vs ticket **~112k**?
+- ¿**~39,57%** coherente para ángel VE vs ticket **~237k**? (canon Excel; cap 600k fijado)
 - ¿Riesgo SUNASS con vendedores en horario fijo bajo honorarios?
 
 ---
 
 ## Parte 9 — Guía de reunión (doc 09)
 
-*Detalle ampliado: ver `09_Guia_Reunion.md` en el pack aliado.*
+*Detalle ampliado: ver `docs/Pack_Aliado_Gabriel_Barrios/md/09_Guia_Reunion.md`.*
 
 ### En 60 segundos
 
@@ -480,10 +476,10 @@ Guion **45–60 min** para alianza (no pitch institucional): contexto → proble
 |-----|------|
 | 0–5 | Saludo y por qué Morr |
 | 5–10 | Problema en una frase |
-| 10–15 | Solución + pricing 25/40/55 |
+| 10–15 | Solución + pricing 45/60/70 |
 | 15–25 | Demo en vivo (opcional) |
 | 25–35 | T+0 → Day-D → **~159 M12** |
-| 35–45 | Fase 0 **~33,8k**; LTV/CAC **~7,2×** |
+| 35–45 | Fase 0 total **50.260** (0a **33.010**); LTV/CAC **~7,5×** |
 | 45–55 | Alianza: feedback + intros |
 | 55–60 | Próximos pasos |
 
@@ -494,7 +490,7 @@ Guion **45–60 min** para alianza (no pitch institucional): contexto → proble
 | ¿Ventas hoy? | No — Day-D **T+90** con ~**28 activas** |
 | ¿Por qué Valencia? | Founder local; densidad independientes |
 | ¿Legal Rx digital? | Valida **farmacéutico de la farmacia** |
-| ¿Capital? | **~112k Lean** — contexto, no ask a Gabriel |
+| ¿Capital? | **~237k Lean** — contexto, no ask a Gabriel |
 
 ### Qué revisar con Gabriel
 
@@ -506,11 +502,11 @@ Guion **45–60 min** para alianza (no pitch institucional): contexto → proble
 
 ## Parte 10 — Plan de lanzamiento (doc 10)
 
-*Detalle ampliado: ver `10_Plan_Lanzamiento.md` en el pack aliado.*
+*Detalle ampliado: ver `docs/Pack_Aliado_Gabriel_Barrios/md/10_Plan_Lanzamiento.md`.*
 
 ### En 60 segundos
 
-**T+0** = wire; **Day-D = T+90** = M1 financiero; motor **4× Sales**; meta pre-Day-D **~28 activas** con catálogo; **~40 M1**; **~97 M6**; **~159 M12**; Fase 0 **~33.835**; caja Day-D **~78.153**.
+**T+0** = wire; **Day-D = T+90** = M1 financiero; motor **4× Sales** + **CEO**; Fase 0 **~50.260**; caja Day-D **187.152**; capital Lean **237.412**.
 
 ### Mapa temporal
 
@@ -518,7 +514,7 @@ Guion **45–60 min** para alianza (no pitch institucional): contexto → proble
 T+0 ─── T+30 ─── T+60 ─── Day-D (T+90) ─── M6 ─── M12
  │       │         │           │            │       │
 Legal   4×Sales   ~20+ cat.   Go-live      DoD    ~159
-HQ      pipeline  delivery    Meta+valla   ~97    ~BE
+HQ      pipeline  delivery    Meta+valla   ~97    cash+
 ```
 
 ### Fase 0 — hitos
@@ -535,7 +531,7 @@ HQ      pipeline  delivery    Meta+valla   ~97    ~BE
 2. Contrato marco + farmacia activa con catálogo.
 3. Primer pedido real OTC o Rx completado.
 4. Soporte + partner delivery operativos.
-5. ≥3 entrevistas pricing (cuota 25/40/55 + % GMV).
+5. ≥3 entrevistas pricing (cuota 45/60/70 + % GMV).
 
 ### Definition of Done — M6
 
@@ -545,8 +541,8 @@ HQ      pipeline  delivery    Meta+valla   ~97    ~BE
 | Pedidos completados | ≥ **1.500** |
 | Rx promedio | ≤ **60 min** |
 | NPS paciente / farmacia | ≥ **35** / ≥ **50** |
-| Revenue mensual | ≥ **USD 4.800** |
-| Caja | ≥ **~48.311** |
+| Revenue mensual | ≥ **USD 18.236** *(M6 esc.1)*; aspiracional M12 **~29.892** |
+| Caja | ≥ **~180.403** (cash M6 esc.1) |
 | Churn farmacia M4–M6 | ≤ **6%** |
 
 ### Qué revisar con Gabriel
@@ -559,26 +555,26 @@ HQ      pipeline  delivery    Meta+valla   ~97    ~BE
 
 ## Parte 11 — Propuesta farmacia B2B (doc 11)
 
-*Detalle ampliado: ver `11_Propuesta_Farmacia.md` en el pack aliado.*
+*Detalle ampliado: ver `docs/Pack_Aliado_Gabriel_Barrios/md/11_Propuesta_Farmacia.md`.*
 
 ### En 60 segundos
 
-Marketplace sin app propia: **25/40/55 + % GMV** vs **20–30%** agregador. Ejemplo Pro 5k GMV → **USD 80/mes** Zonix vs **~USD 1.250–1.750** PedidosYa. Piloto: **~28 / ~40 / ~159** farmacias con **4× Sales**.
+Marketplace sin app propia: **45/60/70 + % GMV** vs **20–30%** agregador. Ejemplo Pro 3k GMV → **USD 270/mes** Zonix vs **~USD 750** PedidosYa al 25% (~64% menos). Piloto: **~28 / ~40 / ~159** farmacias con **4× Sales**.
 
 ### Tabla pricing
 
 | Nivel | GMV mensual (USD) | Cuota | % GMV |
 |-------|-------------------|-------|-------|
-| Basic | 0 – 2.500 | **25** | 0,60% |
-| Pro | 2.501 – 10.000 | **40** | 0,80% |
-| Enterprise | 10.001+ | **55** | 1,00% |
+| Basic | 0 – 2.000 | **45** | 8% |
+| Pro | 2.001 – 5.000 | **60** | 7% |
+| Enterprise | 5.001+ | **70** | 5% |
 
-### Comparativa GMV 5.000 USD/mes
+### Comparativa GMV 3.000 USD/mes
 
 | Concepto | Agregador típico | Zonix Pro |
 |----------|------------------|-----------|
-| Costo canal | **1.000–1.500 USD** | **~80 USD** |
-| Orden magnitud | — | **~16–22× menos** |
+| Costo canal | **~750 USD** (25%) | **~270 USD** (60 + 7% × 3.000) |
+| Diferencia | — | **~64% menos** |
 
 ### Funnel calle
 
@@ -600,7 +596,7 @@ Marketplace sin app propia: **25/40/55 + % GMV** vs **20–30%** agregador. Ejem
 
 ### Qué revisar con Gabriel
 
-- ¿**25/40/55 + %** creíble frente mentalidad dueño valenciano?
+- ¿**45/60/70 + %** creíble frente mentalidad dueño valenciano?
 - ¿Ejemplo **5.000 USD/mes** refleja farmacias de cartera Morr?
 - ¿Introducciones a **3–5 farmacias** para discovery?
 
@@ -608,7 +604,7 @@ Marketplace sin app propia: **25/40/55 + % GMV** vs **20–30%** agregador. Ejem
 
 ## Parte 12 — Propuesta paciente B2C (doc 12)
 
-*Detalle ampliado: ver `12_Propuesta_Paciente.md` en el pack aliado.*
+*Detalle ampliado: ver `docs/Pack_Aliado_Gabriel_Barrios/md/12_Propuesta_Paciente.md`.*
 
 ### En 60 segundos
 
@@ -660,11 +656,11 @@ App **gratis**: buscar, comparar, subir receta, pagar VE, delivery **1,50–3,50
 
 ## Parte 13 — Propuesta partners (doc 13)
 
-*Detalle ampliado: ver `13_Propuesta_Partners.md` en el pack aliado.*
+*Detalle ampliado: ver `docs/Pack_Aliado_Gabriel_Barrios/md/13_Propuesta_Partners.md`.*
 
 ### En 60 segundos
 
-Cuatro lados: farmacia paga Zonix (**25/40/55 + %**); paciente paga medicamento + envío; **empresa delivery** paga Zonix **8% × fee mensual + 0,30 USD/envío**; **farmacéutico** valida sin fee extra. **1 partner**, **5–15 repartidores**, T+60–90.
+Cuatro lados: farmacia paga Zonix (**45/60/70 + %**); paciente paga medicamento + envío; **empresa delivery** paga Zonix **8% × fee mensual + 0,30 USD/envío**; **farmacéutico** valida sin fee extra. **1 partner**, **5–15 repartidores**, T+60–90.
 
 ### Quién paga a quién
 
@@ -709,7 +705,7 @@ Cuatro lados: farmacia paga Zonix (**25/40/55 + %**); paciente paga medicamento 
 
 ## Parte 14 — Censo farmacias (doc 14)
 
-*Detalle ampliado: ver `14_Censo_Farmacias.md` en el pack aliado.*
+*Detalle ampliado: ver `docs/Pack_Aliado_Gabriel_Barrios/md/14_Censo_Farmacias.md`.*
 
 ### En 60 segundos
 
@@ -748,7 +744,7 @@ Valencia metro **226** listadas; target **~80–100 independientes**; Carabobo *
 |-----------|--------|
 | Entrevistas documentadas | ≥5 founder + ≥20–30 Sales |
 | Dolor confirmado | ≥3/5 citan top 3 con dato concreto |
-| Pricing testeado | ≥3 reacciones a 25/40/55 |
+| Pricing testeado | ≥3 reacciones a 45/60/70 |
 | Pipeline | ≥5 filas reales CRM |
 
 ### Qué revisar con Gabriel
@@ -762,11 +758,11 @@ Valencia metro **226** listadas; target **~80–100 independientes**; Carabobo *
 
 ## Parte 15 — Plan de pagos (doc 15)
 
-*Detalle ampliado: ver `15_Plan_Pagos.md` en el pack aliado.*
+*Detalle ampliado: ver `docs/Pack_Aliado_Gabriel_Barrios/md/15_Plan_Pagos.md`.*
 
 ### En 60 segundos
 
-Zonix **conecta** — no es **procesador de pagos**. Paciente paga **farmacia** (medicamento) y **delivery** (envío) por separado. Farmacia paga **cuota 25/40/55 + %** a Zonix mensual. Métodos: Pago Móvil, transferencia, Zelle, Binance, efectivo pickup.
+Zonix **conecta** — no es **procesador de pagos**. Paciente paga **farmacia** (medicamento) y **delivery** (envío) por separado. Farmacia paga **cuota 45/60/70 + %** a Zonix mensual. Métodos: Pago Móvil, transferencia, Zelle, Binance, efectivo pickup.
 
 ### Flujos
 
@@ -810,7 +806,7 @@ Dinero de orden **no pasa por cuentas Zonix** → no requiere licencia pagos en 
 
 ## Parte 16 — Plan operativo Rx/delivery (doc 16)
 
-*Detalle ampliado: ver `16_Plan_Operativo.md` en el pack aliado.*
+*Detalle ampliado: ver `docs/Pack_Aliado_Gabriel_Barrios/md/16_Plan_Operativo.md`.*
 
 ### En 60 segundos
 
@@ -861,7 +857,7 @@ Rx: farmacéutico **de la farmacia** aprueba en app **≤60 min** (8–20h); ven
 
 ## Parte 17 — Marketing offline y digital (doc 17)
 
-*Detalle ampliado: ver `17_Marketing_Offline.md` en el pack aliado.*
+*Detalle ampliado: ver `docs/Pack_Aliado_Gabriel_Barrios/md/17_Marketing_Offline.md`.*
 
 ### En 60 segundos
 
@@ -874,7 +870,7 @@ Rx: farmacéutico **de la farmacia** aprueba en app **≤60 min** (8–20h); ven
 | **Meta Ads** | 800 → 500 | Principal (CPL 0,15–0,60) |
 | **Valla 3×2m** | 350 (M3+) | Branding + argumento B2B Sales |
 | Flyers/brochures | ~50 | Visitas 4× Sales |
-| Radio FM | **0** Lean | Solo Growth ~187k |
+| Radio FM | **0** Lean | Fuera de alcance Lean |
 | QR mostrador | ~0 | Interior Bullseye |
 
 ### Calendario post-Day-D
@@ -908,11 +904,19 @@ Rx: farmacéutico **de la farmacia** aprueba en app **≤60 min** (8–20h); ven
 
 ## Parte 18 — Guía modelo financiero (doc 18)
 
-*Detalle ampliado: ver `18_Guia_Modelo_Financiero.md` en el pack aliado + Excel `MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`.*
+*Detalle ampliado: ver `docs/Pack_Aliado_Gabriel_Barrios/md/18_Guia_Modelo_Financiero.md` + Excel `MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`.*
 
 ### En 60 segundos
 
-Excel **12 pestañas**. Lectura rápida: **Hoja3 sección A** = total oficial **~111.988** (100%). Puente: wire **~112k** − Fase 0 **~33.835** = Day-D **~78.153**; cierre M12 **~40.831**; **~159 activas**; LTV/CAC **~7,2×**.
+Excel Detallado + Hoja3. Lectura rápida: **Hoja3 sección A** = total oficial **237.412** (100% = Fase 0 + burn + reserva). Puente: wire **~237k** − Fase 0 **~50.260** = Day-D **187.152**; cash M12 **246.231** (esc.1).
+
+### Regla de oro (Excel)
+
+> **No sumes Hoja1 + ESTA + Hoja3 sección B como tres inversiones.**
+>
+> - **Hoja3 sección A** = total SAFE Lean **237.412** (Fase 0 ~50.260 + burn 172.152 + reserva **15.000**).
+> - **Sección B** = drill-down informativo — **no sumar al total**.
+> - **Hoja1** y **ESTA SI VALE** = vistas espejo (formato familiar plantilla inversor).
 
 ### Orden lectura Excel (30 min)
 
@@ -929,32 +933,32 @@ Excel **12 pestañas**. Lectura rápida: **Hoja3 sección A** = total oficial **
 
 | Concepto | USD |
 |----------|-----|
-| One-shots | **~14.208** |
-| Burn M1–M12 | **97.290** |
-| Reserva | **490** |
-| **TOTAL Lean** | **~111.988** |
+| One-shots | **~22.365** |
+| Fase 0 operativa | **~27.895** |
+| Fase 0 total | **~50.260** |
+| Burn M1–M12 | **172.152** |
+| Reserva | **15.000** |
+| **TOTAL Lean** | **237.412** |
 
 ### Sensibilidad año 1
 
 | Escenario | Prob. | Activas M12 | Caja M12 |
 |-----------|-------|-------------|----------|
-| P10 pesimista | 20% | ~120 | ~25k |
-| **P50 base** | 50% | **~159** | **~40.831** |
-| P90 optimista | 30% | ~200 | ~52k |
+| P10 pesimista | 20% | ~120 | **`[PENDIENTE FP&A — esc.1]`** |
+| **P50 base (esc.1)** | 50% | **~159** | **~246.231** |
+| P90 optimista | 30% | ~200 | **`[PENDIENTE FP&A — esc.1]`** |
 
 ### SAFE referencia
 
 | Tier | Capital | Cap | Equity ref. |
 |------|---------|-----|-------------|
-| **Lean** | **~112k** | **600k** | **~18,66%** |
-| Base | ~157k | ~913k | ~17,23% |
-| Growth | ~187k | ~1,2M | ~15,55% |
+| **Lean (ask único)** | **237.412** | **600k** | **~39,57%** |
 
 ### Qué revisar con Gabriel
 
 - ¿**159 activas M12** defendible en metro Valencia?
 - ¿Sueldos Lean (sales **350**, dev **600**) subestiman mercado?
-- ¿Fase 0 **~33,8k** + **4× Sales** + **~28 activas** encaja operativamente?
+- ¿Fase 0 total **50.260** (0a **33.010** / 0b+0c **17.250**) + **4× Sales** + **~28 activas** encaja operativamente?
 - ¿Buffer **20%** inflación prudente para 12 meses?
 
 ---
@@ -963,30 +967,30 @@ Excel **12 pestañas**. Lectura rápida: **Hoja3 sección A** = total oficial **
 
 | Ancla | Valor | Uso |
 |-------|-------|-----|
-| Capital Lean (SAFE) | **~USD 111.988 / ~112k** | Ask principal piloto |
-| Fase 0 (90 días) | **~USD 33.835** | Pre-Day-D legal + equipo + captación |
-| Caja Day-D (M1 inicio) | **~USD 78.153** | Post Fase 0 |
-| Burn año 1 operativo | **~USD 97.290** | 12 meses post-Day-D |
-| Ingresos año 1 | **~USD 59.968** | ARPF **~50** × curva activas |
-| FCF año 1 | **−USD 37.322** | Normal pre-seed ramp-up |
-| **Caja cierre M12** | **~USD 40.831** | **~36%** capital inicial |
-| **Farmacias activas M12** | **~159** | Caso central Lean |
+| Capital Lean (SAFE) | **USD 237.412 / ~237k** | Ask principal piloto v4 |
+| Fase 0 (90 días) | **~USD 50.260** | Pre-Day-D legal + equipo + captación |
+| Caja Day-D (M1 inicio) | **~USD 187.152** | Post Fase 0 |
+| Burn año 1 operativo | **~USD 172.152** | 12 meses post-Day-D |
+| Ingresos año 1 (esc.1) | **~USD 228.796** | P&L Excel híbrido (cuota 45/60/70 + % GMV) — sin desglose inventado |
+| FCF año 1 (esc.1) | **+USD 59.079** | FCF+ desde M5 (esc.1 v4) |
+| **Caja cierre M12** | **~USD 246.231** | **~104%** del SAFE (187.152 + FCF +59.079) |
+| **Farmacias activas M12** | **~159** | Caso central esc.1 |
 | Firmas brutas año 1 | **~185** | 4× Sales |
 | Pre-Day-D activas | **~28** | Catálogo listo go-live |
 | Activas M1 / M6 | **~40** / **~97** | Ramp + DoD |
-| Caja mínima (M6) | **~USD 48.311** | Checkpoint piloto |
-| ARPF placeholder | **~USD 50/mes** | Recalibrar con GMV real |
+| Caja mínima (M6) | **~USD 180.403** (esc.1) | Checkpoint piloto |
+| ARPF placeholder | **~USD 52/mes** | Recalibrar con GMV real |
 | CAC headline | **USD 139** | Comercial B2B |
-| LTV | **USD 1.000** | 20 meses @ ARPF 50, churn 5% |
-| **LTV/CAC** | **~7,2×** | Umbral SaaS B2B >3× |
-| Payback CAC | **~2,8 meses** | |
-| Activas equilibrio mensual | **~160** | Burn ~7.980 vs ingresos |
+| LTV | **USD 1.040** | 20 meses @ ARPF 52, churn 5% |
+| **LTV/CAC** | **~7,5×** | Umbral SaaS B2B >3× |
+| Payback CAC | **~2,7 meses** (139/52) | |
+| Activas al BE FCF (M5) | **~85** | Costos **14.346**; revenue **15.980** |
 | SAFE cap Lean | **USD 600.000** | Post-money |
-| Equity ref. inversor | **~18,66%** | 112k ÷ 600k |
+| Equity ref. inversor | **~39,57%** | 237.412 ÷ 600k |
 | TAM Venezuela | **USD 1.638M/año** | Cifar / IMS-IQVIA |
 | Valencia metro farmacias | **226** | Directorios públicos |
 | Target independientes | **~80–100** | Beachhead |
-| Pricing farmacia | **25/40/55 + % GMV** | vs PedidosYa 20–30% |
+| Pricing farmacia | **45/60/70 + % GMV** | vs PedidosYa 20–30% |
 
 ---
 
@@ -995,15 +999,15 @@ Excel **12 pestañas**. Lectura rápida: **Hoja3 sección A** = total oficial **
 | Riesgo | Prob. | Qué veríamos | Mitigación |
 |--------|-------|--------------|------------|
 | Inflación / devaluación VE | Media-alta | Burn real > plan | Buffer **20%**; contingencia >100% trimestral |
-| Regulación Rx digital | Baja-media | Observación MPPS | Farmacéutico por farmacia; asesor Base/Growth |
+| Regulación Rx digital | Baja-media | Observación MPPS | Farmacéutico por farmacia |
 | Chicken-and-egg | Media | Pacientes sin catálogo | **Oferta primero:** ~28 pre-Day-D |
 | PedidosYa agresivo | Media | Comisión temporal 15% | Costo total + receta estructural |
-| Curva comercial lenta | Media | <8 firmas/mes ×2 | Lean+ o recorte Meta/valla |
+| Curva comercial lenta | Media | <8 firmas/mes ×2 | Recorte Meta/valla o ajuste pricing |
 | ARPF < placeholder | Media | GMV bajo en Basic | Mix tiers; waiver no modelado |
 | Churn >7% | Media | Activas M12 <145 | Retención CS; revisión onboarding |
 | Partner único delivery | Media-alta | SLA malo un polo | Partner #2 T+60; pickup fallback |
 | Reclasificación laboral | Media | SUNASS freelance | Contratos por entregables; asesor T+30 |
-| Day-D retrasado +30d | Media | Caja Day-D ~70k | Posponer valla; bridge founder |
+| Day-D retrasado +30d | Media | Caja Day-D ~**172.800** (187.152 − ~14.346) | Posponer valla; bridge founder |
 
 ---
 
@@ -1012,16 +1016,16 @@ Excel **12 pestañas**. Lectura rápida: **Hoja3 sección A** = total oficial **
 Te propongo una **reunión de 30 minutos** (Valencia presencial o videollamada) para:
 
 1. **Demo en vivo** — flujo paciente → farmacia → farmacéutico → entrega (15 min).
-2. **Validar 3 hipótesis** — segmentación independientes, pricing 25/40/55, polos Bella Florida + El Socorro.
+2. **Validar 3 hipótesis** — segmentación independientes, pricing 45/60/70, polos Bella Florida + El Socorro.
 3. **Acordar alcance alianza** — dos sesiones feedback + intros discovery (sin exclusividad ni capital por defecto).
 
-Si prefieres leer antes: este informe cubre los 18 documentos; profundiza en `02_Brief_Una_Pagina.md`, `04_Perfil_Mercado.md` y `18_Guia_Modelo_Financiero.md`.
+Si prefieres leer antes: este informe cubre los 18 documentos; profundiza en `docs/Pack_Aliado_Gabriel_Barrios/md/02_Brief_Una_Pagina.md`, `04_Perfil_Mercado.md` y `18_Guia_Modelo_Financiero.md`.
 
 Quedo atento a tu disponibilidad.
 
 **Abrahan Pulido**  
 Founder / CEO / CTO — Zonix Pharma  
-ing.pulido.abrahan@gmail.com · +58 412 4352014  
+ing.pulido.abrahan@gmail.com · +58 412 4352014
 [LinkedIn](https://www.linkedin.com/in/abrahan-pulido-909a35b7/) · [aiblockweb.com](https://aiblockweb.com)
 
 ---
@@ -1030,9 +1034,9 @@ ing.pulido.abrahan@gmail.com · +58 412 4352014
 
 1. **Segmentación:** ¿**~80–100 independientes** y exclusión cadenas premium tiene sentido en Valencia?
 2. **Geografía:** ¿**Bella Florida + El Socorro** o San Diego / Naguanagua / otro corredor?
-3. **Pricing:** ¿**25/40/55 + % GMV** creíble vs PedidosYa y WhatsApp informal?
+3. **Pricing:** ¿**45/60/70 + % GMV** creíble vs PedidosYa y WhatsApp informal?
 4. **Curva comercial:** ¿**~185 firmas / ~159 activas M12** con **4 vendedores** es realista?
-5. **Capital:** ¿**Lean ~112k** suficiente o Morr recomendaría **Base ~157k** desde inicio?
+5. **Capital:** ¿**Lean ~237k** suficiente para Valencia o hace falta bridge adicional?
 6. **Operación:** ¿**T+90 Day-D** con **~28 activas** y partner delivery es defendible?
 7. **Discovery:** ¿**2–3 intros** farmacia + contacto gremio/cámara para validar censo?
 8. **Alianza:** ¿**Dos sesiones de feedback** antes de escalar calle — qué agenda para la primera?
@@ -1043,12 +1047,12 @@ ing.pulido.abrahan@gmail.com · +58 412 4352014
 
 ## Disclaimers finales
 
-- **Pre-seed / sin revenue:** cifras con supuestos documentados; **ingreso medio ~USD 50/mes** es **placeholder** hasta GMV piloto ≥30 días post-Day-D.
+- **Pre-seed / sin revenue:** cifras con supuestos documentados; **ingreso medio ~USD 52/mes** es **placeholder** hasta GMV piloto ≥30 días post-Day-D.
 - **Regulatorio:** Zonix no sustituye al farmacéutico titular ni al criterio médico; dictamen legal y farmacéutico **pendiente** antes de Day-D público.
 - **Inflación VE:** cifras **mayo–junio 2026**; reconfirmación trimestral recomendada.
 - **Expansión año 2–3** (Maracay, Maracaibo, Caracas): upside documentado — **no commitment** del piloto Valencia.
-- **Instrumento SAFE / equity ~18,66%:** referencia para inversores; **no aplica a Gabriel** salvo acuerdo explícito distinto.
+- **Instrumento SAFE / equity ~39,57%:** referencia para inversores; **no aplica a Gabriel** salvo acuerdo explícito distinto.
 - Este documento **sintetiza** el pack aliado; no sustituye contratos, asesoría legal/contable ni dictamen MPPS/INHRR.
 - **Confidencialidad:** no compartir fuera del círculo acordado sin permiso del founder.
 
-*Pack aliado Gabriel Barrios — Zonix Pharma, junio 2026.*
+*Canon: `docs/Lanzamiento/RESUMEN_ALIADO_GABRIEL_BARRIOS.md` — fuente pack: `docs/Pack_Aliado_Gabriel_Barrios/` — Zonix Pharma, junio 2026.*

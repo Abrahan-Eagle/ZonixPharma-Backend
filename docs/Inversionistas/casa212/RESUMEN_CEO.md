@@ -10,7 +10,7 @@
 
 **Casa212** (Yummy + Epakon + Arqos) pone **USD 150.000** en tu startup el día que llegas a Caracas, te alojan **12 semanas** full-time en una residencia gestionada, te ayudan con empresa US + banca, y cierran con **Demo Day** ante inversores invitados.
 
-Para Zonix Pharma: **encaja el ticket** con el ask Lean (~174k) y la tesis “construir desde Venezuela”.  
+Para Zonix Pharma: **ticket parcial** vs ask Lean (**237.412**); tesis “construir desde Venezuela”.  
 El costo real es **dilución** (SAFE + % del programa, aún opaco) y **mudarte 12 semanas**. Solo **6** equipos; &lt;2% entran.
 
 *(No es BID Lab ni un fondo FoF: es cheque + residencia pre-seed.)*
@@ -37,7 +37,7 @@ El costo real es **dilución** (SAFE + % del programa, aún opaco) y **mudarte 1
 
 | | Pack actual | Si entras Casa212 |
 |--|-------------|-------------------|
-| Plata | Lean ~**174k** | **150k** |
+| Plata | Lean **237.412** | **150k** (~63% ask) |
 | Dilución | SAFE cap 600k | SAFE + **programa** (¿alto?) |
 | Historia | Piloto Valencia / VE | Misma playa + “desde Caracas” |
 | Empresa | Ideal Delaware | Ellos prefieren montarla **limpia** contigo |

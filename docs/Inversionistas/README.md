@@ -3,8 +3,8 @@
 > **Última actualización:** 7 agosto 2026 (alta **SVS** score **49**; **500** = aprendizaje interno + nurture post-rechazo)  
 > **Propósito:** CRM / scoring de **candidatos a capital** (y canales de red) para Zonix Pharma. **No** es el data room que se envía al inversionista.  
 > **Skill agente:** [`zonix-inversionistas-crm`](../.agents/skills/zonix-inversionistas-crm/SKILL.md) — forense, ficha, score, ranking.  
-> **Ask de referencia (pitch actual):** Lean **USD 210.760** · SAFE cap ref. **USD 600.000** · equity **~35,13%** — ver [`../Lanzamiento/BRIEF_UNA_PAGINA.md`](../Lanzamiento/BRIEF_UNA_PAGINA.md).  
-> **Nota:** las 10 fichas previas (jul 2026) aún citan ask histórico **~174k** en cuerpo; **no** rescoreadas en esta pasada salvo **500-latam**. Nuevas altas usan **210.760**.  
+> **Ask de referencia (pitch actual):** Lean **USD 237.412** · SAFE cap ref. **USD 600.000** · equity **~39,57%** — ver [`../Lanzamiento/BRIEF_UNA_PAGINA.md`](../Lanzamiento/BRIEF_UNA_PAGINA.md).  
+> **Nota:** las 10 fichas previas (jul 2026) aún citan ask histórico **~174k** en cuerpo; **no** rescoreadas en esta pasada salvo **500-latam**. Nuevas altas usan **237.412**.  
 > **Roles:** **500 LatAm** = informe/playbook **interno** (no Plan A de caja ahora). **SVS** = candidata CRM tipo evento (otra opción de red). Plan A caja = **Epakon / Casa212 / ALGEN**.  
 > **Disclaimer:** análisis founder; no es asesoría legal ni financiera.
 
@@ -25,7 +25,7 @@
 
 | Código | Criterio | Peso | Qué mide |
 |--------|----------|------|----------|
-| T | Ajuste ticket vs ask Lean (**210.760**) / Base | 20 | ¿Puede escribir el cheque del escenario que buscamos? |
+| T | Ajuste ticket vs ask Lean (**237.412**) / Base | 20 | ¿Puede escribir el cheque del escenario que buscamos? |
 | S | Términos / dilución / SAFE | 20 | Cap, % implícito, MFN, exclusividad, cláusulas tóxicas |
 | E | Valor estratégico | 15 | Farmacias, red, intros, distribución — más que dinero |
 | V | Velocidad de cierre | 15 | Semanas vs meses |

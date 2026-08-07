@@ -33,7 +33,7 @@ Rellenar en español; **sin inventar cifras** — usar `[PENDIENTE]` o enlace a 
 | 4 | **Solución** | App Flutter + panel commerce + Rx validation + partners delivery | ALINEACION producto |
 | 5 | **Canales** | Sales B2B físico; app paciente; Meta Ads post-Day-D — costear el canal (directo vs partner): § economía del canal en `zonix-financial-model` | PLAN_LANZAMIENTO, Bullseye en `zonix-lanzamiento-docs` |
 | 6 | **Relación cliente** | Self-service panel farmacia; CS paciente; farmacéutico valida Rx | — |
-| 7 | **Fuentes de ingreso** | Cuota 25/40/55 + % GMV; ARPF ~50 placeholder | PROPUESTA B2B §5, UNIT_ECONOMICS |
+| 7 | **Fuentes de ingreso** | Cuota **45/60/70 + %GMV 8/7/5**; ARPF ~52 placeholder | PROPUESTA B2B §5, UNIT_ECONOMICS |
 | 8 | **Estructura de costes** | Fase 0 ~28k; burn Lean; nómina piloto | PROYECCION, PRESUPUESTO |
 | 9 | **Métricas clave** | Farmacias activas, pedidos, Rx SLA — **no** MRR SaaS | PROYECCION §1.1 |
 | + | **Ventaja injusta** | Stack en producción; earned secret VE pagos/Rx | CONTEXTO_PITCH §1 |

@@ -10,7 +10,7 @@
 
 ## En 60 segundos
 
-Zonix conecta cuatro lados: **farmacia** paga **cuota 25/40/55 + % sobre ventas en app**; **paciente** paga medicamento + **envío (1,50–3,50 USD)** a la empresa delivery; **empresa delivery** paga a Zonix **8 % del fee mensual + 0,30 USD por envío**; **farmacéutico** valida receta **sin costo extra** (incluido en el contrato de la farmacia). Piloto: **1 partner delivery** con **5–15 repartidores**, activación **T+60–90**, alineado a **~28 farmacias pre-Day-D** y crecimiento **~40 M1 → ~159 M12** con **4 vendedores** comerciales.
+Zonix conecta cuatro lados: **farmacia** paga **cuota 45/60/70 + %GMV 8/7/5** (Excel esc.1); **paciente** paga medicamento + **envío (1,50–3,50 USD)** a la empresa delivery; **empresa delivery** paga a Zonix **8 % del fee mensual + 0,30 USD por envío**; **farmacéutico** valida receta **sin costo extra** (incluido en el contrato de la farmacia). Piloto: **1 partner delivery** con **5–15 repartidores**, activación **T+60–90**, alineado a **~28 farmacias pre-Day-D** y crecimiento **~40 M1 → ~159 M12** con **4 vendedores** comerciales.
 
 ---
 
@@ -24,7 +24,7 @@ El pitch a inversores suele centrarse en farmacia + paciente. Pero en Valencia *
 
 | Actor | Paga a | Recibe de | Ingreso Zonix |
 |-------|--------|-----------|---------------|
-| **Farmacia** | Zonix | Paciente (medicamentos) | Principal — cuota **25/40/55 + % ventas en app** |
+| **Farmacia** | Zonix | Paciente (medicamentos) | Principal — cuota **45/60/70 + %GMV 8/7/5** |
 | **Paciente** | Farmacia + empresa delivery | Medicamento + tracking | Indirecto (vía ventas farmacia) |
 | **Empresa delivery** | Zonix | Paciente (fee por orden) | Secundario — **8 % × fee mensual + 0,30/envío** |
 | **Farmacéutico** | — (empleado de la farmacia) | Salario farmacia | Habilita receta; sin fee a Zonix |
@@ -64,7 +64,7 @@ El pitch a inversores suele centrarse en farmacia + paciente. Pero en Valencia *
 
 | Concepto | Detalle |
 |----------|---------|
-| Membresía piloto | **USD 0** (post-piloto posible ~50 USD/mes si >10 agentes — fuera proyección año 1) |
+| Membresía piloto | **USD 0** (post-piloto posible ~52 USD/mes si >10 agentes — fuera proyección año 1) |
 | Fee al paciente | **1,50 – 3,50 USD** por orden (distancia) |
 | Lo que paga la empresa a Zonix | **8 % × suma de fees del mes + 0,30 USD × cada envío completado** |
 | Sueldo del repartidor | Lo define y paga **la empresa**, no Zonix |
@@ -173,7 +173,7 @@ Zonix **no** cobra comisión tipo «20 % de tu envío» al repartidor individual
 - Exportación de historial para auditoría o requerimientos de autoridad *(formato sujeto a asesor)*.
 - Posible reconocimiento en ticket: «Validado por Lic. X, MPPS …» *(copy legal pendiente)*.
 - Solo aprueba o rechaza — no procesa pago ni logística.
-- **Costo USD 0** — incluido en servicio de plataforma de la farmacia (**25/40/55 + % ventas en app**).
+- **Costo USD 0** — incluido en servicio de plataforma de la farmacia (**45/60/70 + %GMV 8/7/5**).
 
 ### Compromiso operativo
 

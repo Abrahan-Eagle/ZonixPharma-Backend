@@ -1,6 +1,6 @@
 # Ficha inversionista — Epakon Capital
 
-> Ask ref.: Lean ~USD 174.102 · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
+> Ask ref.: Lean **USD 237.412** · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
 > Forense: 21 julio 2026 · [epakon.com](https://epakon.com) (SPA + tRPC) · [AngelList](https://venture.angellist.com/epakon/syndicate) · [Ecosistema](https://ecosistemag.com/en/the-silent-architects-of-venezuelan-tech-meet-vicente-zavarce-and-diego-salas/) · SuperScout.  
 > **Disclaimer:** análisis interno founder; no es asesoría legal ni financiera.
 
@@ -32,7 +32,7 @@
 
 | Dimensión | Pack Zonix | Epakon | Gap |
 |-----------|------------|--------|-----|
-| Ticket | Lean ~174k | ~100–300k (tip. ~147–150k) | Compatible; puede cubrir Lean o parte |
+| Ticket | Lean **237.412** | ~100–300k (tip. ~147–150k) | Cheque parcial / syndicate; **no** cubre ask completo solo |
 | Dilución | SAFE cap 600k | **Opaca** | Pedir instrumento + cap/% por escrito |
 | Vehículo | Ideal Delaware | US/LatAm founders; path US habitual en portfolio | Alineado en práctica |
 | Tiempo | — | Pitch inmediato; cierre VC típico (semanas) | Sin mudanza 12 sem |
@@ -40,7 +40,7 @@
 
 ## Lo bueno
 
-- Ticket en banda que **cubre** el ask Lean (~174k) si escriben ~150–300k.
+- Ticket tip. ~150–300k = **parcial** vs ask Lean **237.412** (no asumir cobertura total con un solo cheque).
 - **Misma red VE** que Casa212 (Diego Salas + Vicente Zavarce / Yummy) **sin** exigir 12 semanas Caracas.
 - Thesis diaspora + LatAm; form incluye **HealthTech**; portfolio con Cashea, Yummy, Meru, HeroUI, Lime Therapeutics (health).
 - Canal founder claro: PitchModal + deck PDF/PPTX o link.
@@ -60,15 +60,15 @@
 
 | Código | Criterio | Peso máx. | Puntos | Notas |
 |--------|----------|-----------|--------|-------|
-| T | Ajuste ticket vs ask | 20 | **17** | ~150–300k cubre Lean; tip. ~147k cerca; no asumir $1M |
+| T | Ajuste ticket vs ask | 20 | **14** | ~150–300k = parcial vs Lean **237.412**; tip. ~147k no cubre solo; no asumir $1M |
 | S | Términos / dilución | 20 | **8** | Instrumento/cap/% opacos |
 | E | Valor estratégico | 15 | **14** | Red VE + Yummy/Cashea + HealthTech + puente US |
 | V | Velocidad de cierre | 15 | **12** | Pitch web ya; cierre desconocido pero sin gate residencia |
 | C | Alineación / control | 15 | **12** | Early check / hands-on; sin 12 sem Caracas; board no publicado |
 | R | Riesgo reputacional / regulatorio | 15 | **10** | Ops VE + OFAC mismo cuidado pack; HQ inconsistente menor |
-| | **TOTAL** | **100** | **73** | |
+| | **TOTAL** | **100** | **70** | |
 
-**% de conveniencia:** **73**  
+**% de conveniencia:** **70**  
 **Veredicto:** **nurture** (borde priorizar) — pitch cuando deck esté listo; confirmar banda de cheque + términos por escrito
 
 ## Próximos pasos

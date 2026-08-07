@@ -1,6 +1,6 @@
 # Ficha inversionista — 500 LatAm (500 Global)
 
-> Ask ref.: Lean **USD 210.760** · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
+> Ask ref.: Lean **USD 237.412** · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
 > Forense: 21 julio 2026 · **Update post-rechazo: 7 agosto 2026**.  
 > Fuentes: landing + [términos EN](https://latam.aplica.500.co/en/terminos) + email `aplica@500.co` (6 ago 2026).  
 > **Disclaimer:** análisis interno founder; no es asesoría legal ni financiera.
@@ -34,7 +34,7 @@
 
 | Dimensión | Pack Zonix | 500 LatAm | Gap |
 |-----------|------------|-----------|-----|
-| Ticket | Lean **210.760** | 300k / neto 285k | Overshoot → modelar Growth+ |
+| Ticket | Lean **237.412** | 300k / neto 285k | Overshoot → modelar Growth+ |
 | Dilución | SAFE cap 600k | **10%** KISS | 500 mejor % si aceptas ticket mayor |
 | Instrumento | SAFE | KISS + MFN/ROFO | Counsel VE/US |
 | Vehículo | Ideal Delaware (BRIEFING) | Obligatorio US/Cayman para wire | Alineado OFAC |
@@ -63,7 +63,7 @@ Puntuar **0 al peso máximo** de cada fila. Total máx. = **100**.
 
 | Código | Criterio | Peso máx. | Puntos | Notas |
 |--------|----------|-----------|--------|-------|
-| T | Ajuste ticket vs ask | 20 | **17** | 285–300k >> 210.760; overshoot útil si Growth+ |
+| T | Ajuste ticket vs ask | 20 | **17** | 285–300k >> 237.412; overshoot útil si Growth+ |
 | S | Términos / dilución / SAFE | 20 | **14** | 10% KISS fuerte; −fee, MFN, ROFO, flip |
 | E | Valor estratégico | 15 | **12** | Marca + SV + red; pharma menos core thesis |
 | V | Velocidad de cierre | 15 | **6** | Ciclo jul cerrado; recontacto solo post-mercado (−3 vs forense) |

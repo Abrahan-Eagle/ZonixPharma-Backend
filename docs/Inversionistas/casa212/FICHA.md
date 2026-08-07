@@ -1,6 +1,6 @@
 # Ficha inversionista — Casa212
 
-> Ask ref.: Lean ~USD 174.102 · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
+> Ask ref.: Lean **USD 237.412** · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
 > Forense: 21 julio 2026 · [casa212.com](https://casa212.com) + [FAQ](https://casa212.com/faq) + prensa / LI / briefing §4.2.  
 > **Disclaimer:** análisis interno founder; no es asesoría legal ni financiera.
 
@@ -32,7 +32,7 @@
 
 | Dimensión | Pack Zonix | Casa212 | Gap |
 |-----------|------------|---------|-----|
-| Ticket | Lean ~174k | **150k** | Casi al ask |
+| Ticket | Lean **237.412** | **150k** | Parcial (~63% del ask); syndicate |
 | Dilución | SAFE cap 600k | SAFE + **programa opaco** | Pedir % por escrito |
 | Vehículo | Ideal Delaware | Prefieren crear US limpio | Alineado |
 | Tiempo | — | **12 sem** Caracas | Gate founder |
@@ -60,15 +60,15 @@
 
 | Código | Criterio | Peso máx. | Puntos | Notas |
 |--------|----------|-----------|--------|-------|
-| T | Ajuste ticket vs ask | 20 | **17** | 150k ≈ Lean 174k |
+| T | Ajuste ticket vs ask | 20 | **14** | 150k ≈ **63%** de Lean **237.412** (parcial) |
 | S | Términos / dilución | 20 | **9** | YC limpio; programa % opaco |
 | E | Valor estratégico | 15 | **14** | Epakon/Arqos + Demo Day + Delaware |
 | V | Velocidad de cierre | 15 | **11** | Deadline 15 ago; interview rápida; luego lock 12 sem |
 | C | Alineación / control | 15 | **9** | Full Caracas; no board; reviews LPs |
 | R | Riesgo reputacional / regulatorio | 15 | **11** | Ops VE mitigadas; path US ayuda wire |
-| | **TOTAL** | **100** | **71** | |
+| | **TOTAL** | **100** | **68** | |
 
-**% de conveniencia:** **71**  
+**% de conveniencia:** **68**  
 **Veredicto:** **nurture** (borde priorizar) — **aplicar si** hay bandwidth residencia Caracas
 
 ## Próximos pasos

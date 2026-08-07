@@ -87,7 +87,7 @@ Emails: `info@epakon.com` · `Diego@epakon.com` (CMS review) · `investors@epako
 | AngelList syndicate | **$100K–$300K**; typical **$147k** | **Primaria** |
 | SuperScout | $50–250K; sweet ~**$150k** | Secundaria |
 
-Ask Lean ~174k: **compatible** con banda 100–300k.
+Ask Lean **237.412**: tip. ~150–300k = **parcial / syndicate** (no asumir cobertura total con un cheque).
 
 ## Portfolio público (27 URLs en bundle)
 

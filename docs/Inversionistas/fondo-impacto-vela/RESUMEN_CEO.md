@@ -11,7 +11,7 @@
 
 **VELA** es un fondo de impacto LatAm con ancla CAF anunciada de **hasta 20 M**, gestionado por **Sonen** y co-gestionado por **Fondo de Fondos**, con meta **100–150 M** (lanz. **21 jul 2026**; aún fundraising). Tickets reportados por prensa: empresas **1–3 M** · fondos **3–5 M**. Ventana directa: Serie A+/Growth e impacto sujeto a métricas estandarizadas y verificación independiente.
 
-Para Zonix Pharma: **no Plan A** del ask Lean **210.760**. Útil como **monitor** post-tracción. Founder override: paquete form listo.
+Para Zonix Pharma: **no Plan A** del ask Lean **237.412**. Útil como **monitor** post-tracción. Founder override: paquete form listo.
 
 ---
 
@@ -45,7 +45,7 @@ Para Zonix Pharma: **no Plan A** del ask Lean **210.760**. Útil como **monitor*
 
 | | Pack actual | Esta candidata |
 |--|-------------|----------------|
-| Plata | Lean **210.760** | **1–3 M** (otro mundo) |
+| Plata | Lean **237.412** | **1–3 M** (otro mundo) |
 | Dilución | SAFE cap **600k** (~35%) | Mix impacto; no SAFE tipificado |
 | Velocidad / compromiso | Raise pre-seed ahora | DD multilateral + fundraising incompleto |
 | Empresa / jurisdicción | VE piloto Valencia | Países elegibles LAC; Venezuela y alcance del ~20% requieren confirmación |
@@ -75,7 +75,7 @@ Para Zonix Pharma: **no Plan A** del ask Lean **210.760**. Útil como **monitor*
 
 ## Tu decisión (marca una)
 
-- [x] Mantener override: intentar el form con etapa **pre-seed** y ask **210.760** declarados con honestidad.
+- [x] Mantener override: intentar el form con etapa **pre-seed** y ask **237.412** declarados con honestidad.
 - [ ] Pausar contacto hasta alcanzar Serie A / métricas de impacto auditables.
 - [ ] Cerrar definitivamente la candidata.
 

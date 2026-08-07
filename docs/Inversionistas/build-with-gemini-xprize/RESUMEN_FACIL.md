@@ -25,7 +25,7 @@ Hay que presentar un **negocio de inteligencia artificial nuevo** (creado despu�
 
 ## Por qué no ahora
 
-- No sustituye el raise Lean (**210.760**).
+- No sustituye el raise Lean (**237.412**).
 - Zonix actual queda fuera de la regla de “proyecto nuevo”.
 - Pedirían evidencia fuerte (clientes reales, ingresos, video, código) en pocos días.
 

@@ -7,6 +7,69 @@
 
 ## Última actualización de contexto
 
+### Listo envío — sync docx/PDF (DoD comercial) — 7 agosto 2026
+
+- **DoD:** paquete enviable alineado Excel v4 (SAFE **237.412**, Day-D **187.152**, %GMV **8/7/5**, equity **~39,57%**). **No** = cero `[PENDIENTE]` en todo el repo.
+- **Pack Word:** regenerados **18/18** `docx/` desde `md/` vía `docs/Lanzamiento/_tools/.venv` + `_tools/batch_export.py` + `verify_pack.py` → **VERIFY OK**. Fechas **2026-08-07 14:25**.
+- **PDFs envío (Chrome headless):** `BRIEF_UNA_PAGINA.pdf` (nuevo); refresh `BARRA_*`, `INFORME_CEO_*`, `INFORME_FACIL_*`; CRM Plan A `RESUMEN_CEO.pdf` Epakon/Casa212/ALGEN (+ espejos Epakon/Casa212); `RESUMEN_COMPARATIVO.pdf` + pack `RESUMENES-CEO/00–03`. Spot-check: **237.412** presente; **210.760 / 174.102 / 25/40/55 / ARPF-50** ausentes.
+- **Gate envío:** PASS (md Lanzamiento + Pack md + CRM Plan A; PDFs listados).
+- **Fuera de DoD (etiquetado, no inventar):** `[PENDIENTE FP&A]` P10/P90 cash / escenarios esc.1; Año2; reconciliar burn 169.717 vs 172.152; dictámenes abogado/farmacéutico; censo campo.
+- **DX:** creado `docs/Lanzamiento/_tools/.venv` (python-docx) + `.gitignore` `.venv/`.
+- **HITL:** **sin commit/push** hasta OK founder.
+
+### Forense Cola C v8 (dual Grok+Composer) — 7 agosto 2026
+
+- **Método:** dual **Grok 4.5** + **Composer**; juez **grok** (v7); GLM omitido (`api_limit`). 1 archivo/ola; loops ≤3. **No** reabrir Cola A PASS.
+- **Prompt:** [`plantillas/PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md`](plantillas/PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md) **v8**.
+- **Gate Cola C:** limpio post-writer (prohibidos + Lean ~174k).
+- **Juez spot:** BARRA → **PASS** (Grok + Composer). Pack 08/12 en ola (anclas 237.412 OK en scan).
+- **P0/P1 writer:** CRM Plan A (Epakon/Casa212/ALGEN FICHA+NOTAS+RESUMEN_CEO + ranking): ask matriz **237.412**; tickets ~150k = **parcial**; scores Casa212 **68** / Epakon **70**. GUIA_DISCOVERY + Pack **14** + PROPUESTA tercer lado + Pack **18** → %GMV **8/7/5**. **ESTRUCTURA_LEGAL** SoT + Pack **08**: SAFE under-cap → **más** % (no menos); dilución Serie A aclarada; exit 7–10% × 50M = **3,5–5,0M**. Pack **12**: Day-D **~28** vs M1 **~40** separados.
+- **Banners histórico:** OK (AUDIT + zonix ANALISIS_*).
+- **Sync entregables:** ver bloque **Listo envío** arriba (docx/PDF regenerados).
+- **Edit lista:** CRM Plan A md; GUIA_DISCOVERY; Pack 08/12/14/18; ESTRUCTURA_LEGAL SoT; PROPUESTA_TERCER_LADO; prompt v8; active_context.
+
+### Cola B residual docs (post-v7) — 7 agosto 2026
+
+- **Gate:** Pack `md/` 06–08 + 12–18 + Lanzamiento fuera de top-15; P0 hallado en Pack **15** (`25/40/55` → **45/60/70 + 8/7/5**).
+- **Writer P1:** Pack **13** (%GMV explícito); Pack **06/07** headers 8/7/5; Pack **17** Base/Growth desambiguados (intensidad marketing ≠ ask); plantilla `PROMPT_MEJORAR` CRO; banners **HISTÓRICO** en `AUDIT_FORENSE_DOCS_360_*` + `zonix/ANALISIS_FORENSE_*`.
+- **Pack `docx/`:** regenerados **7 ago 2026** (ver **Listo envío**).
+- **Sin** inventar P10/P90; **sin** commit/push.
+
+### Forense docs v7 (Grok + GLM 5.2 + Composer) — 7 agosto 2026
+
+- **Método:** trío **Grok 4.5** + **GLM 5.2 Max** + **Composer** (`inherit`); piloto BRIEF → `juez_activo` = **grok** (empate ≈ Composer; **GLM = `api_limit`** en todos los intentos → fusión con ≥2 JSON válidos). Writer = sesión principal.
+- **Canon:** SAFE **237.412**; Day-D **187.152**; Esc.1 Rev **228.796** / Costos **169.717** / FCF **+59.079** / cash M12 **246.231**; BE **M5**; M12 revenue **29.892**; pricing **45/60/70 + %GMV 8/7/5**; ARPF **~52**; LTV **1.040**; LTV/CAC **~7,5x**.
+- **P0/P1 writer:** BRIEF (Contador+asesor 330; Esc.1 + %GMV; provenance v4); Pack **04** Año2 → `[PENDIENTE FP&A]`; Pack **09/11** pricing 45/60/70+8/7/5; PLAN + GUIA_DISCOVERY; PROYECCION headers %GMV; **UNIT** ARPF-50 leakage (payback 139/52, churn LTV, cohort, BE pesimista ≠ FCF M5); skill `zonix-financial-model` ARPF/LTV; re-espejo Pack **02/05/10** (+01 si sync).
+- **DoD:** gate Cola A limpio en SoT/Pack (hits residuales solo anti-patrón / histórico etiquetado); juez cero P0/P1 abiertos en UNIT/RESUMEN tras loop; prompt = **v7**.
+- **Prompt:** [`plantillas/PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md`](plantillas/PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md) **v7**.
+- **Pendiente humano:** regenerar Pack `docx/` si se envían; P10/P90 cash `[PENDIENTE FP&A]`; **sin commit/push** hasta OK.
+- **Edit/delete lista:** SoT BRIEF/UNIT/PROYECCION + Pack 04/09/11/05 + skills financieras; **sin borrados**.
+
+### Forense docs v6 (mejores LLM + fallback) — 7 agosto 2026
+
+- **Método:** plan dual GPT-5.6 Sol Max + Gemini 3.1 Pro → fusión Kimi; **API top agotada** → fallback **Grok 4.5** (narrativa) + writer orquestador; GLM también tope.
+- **Canon:** SAFE **237.412**; Day-D **187.152**; Esc.1 Rev **228.796** / FCF **+59.079** / cash M12 **246.231**; BE **M5**; M12 revenue **29.892**; pricing **45/60/70 + %GMV 8/7/5** (Excel esc.1 — no 14/12/11 ni 25/40/55).
+- **P0/P1 aplicados (writer):** Pack README (112k→237.412); Pack **04**/**09** (7.950→29.892; Fase 0/BE; pricing); Pack **11/13/14/17**; SoT **PROPUESTA/RESUMEN/UNIT/MENSAJE/CONTEXTO** (%GMV); **BRIEF** (burn sin suma falsa; Contador+asesor una fila 330; take-rate VE 20–30%; shorthand equipo); skills lean-canvas/b2b/financial-model/startup-context; re-espejo Pack **01/02/03/05**.
+- **Prompt:** [`plantillas/PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md`](plantillas/PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md) **v6** (superseded by v7 arriba).
+- **Pendiente humano:** regenerar Pack `docx/` + PDF BRIEF si se envían; P10/P90 cash `[PENDIENTE FP&A]`; **sin commit/push** hasta OK.
+- **Edit/delete lista:** editados Pack no-espejo + SoT pricing + BRIEF; **sin borrados** en este loop.
+
+### Forense Excel v4 → docs (metodología v5) — 7 agosto 2026
+
+- **Fuente:** `/home/aipp/Descargas/MODELO_FINANCIERO_040826_v4.xlsx` → [`Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.xlsx) (backup `.bak-v5-preheal-20260807` + heal Flujo ARPF **52** / wire **−237.412** / equity **39,57%** / banner v4).
+- **Anclas:** SAFE **237.412**; Day-D **187.152**; Esc.1 Rev **228.796** / costos **169.717** / FCF **+59.079** / cash M12 **246.231**; BE **M5**; ARPF **~52**; LTV **1.040**; equity **~39,57%**.
+- **Hecho:** prompt forense **v5** ([`plantillas/PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md`](plantillas/PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md)); Pack Aliado espejo SoT desde Lanzamiento; FICHAs CRM ask **237.412**; PDFs Lanzamiento + CRM regenerados (Chrome); borrados `GTM_6_MESES.docx` + `.fods` legado; skill `zonix-financial-model` (híbrido ≠ ARPF×N).
+- **Pendiente FP&A:** cash P10/P90 (no usar ~25k/~52k); regenerar `BRIEFING_INVERSORES_VE_2026.docx` si se envía; Pack `docx/` pueden ir atrasados vs `md/`.
+- **Sin commit/push** hasta OK founder.
+
+### Sync canon Lean Excel v4 (237.412) — 7 agosto 2026
+
+- **Fuente:** `/home/aipp/Descargas/MODELO_FINANCIERO_040826_v4.xlsx` → [`Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.xlsx) (backup `.bak-v3.9.3-20260807`).
+- **Anclas:** SAFE **237.412** = Fase 0 **50.260** + burn **172.152** + reserva **15.000**; Day-D **187.152**; equity **~39,57%** @ **600k**; ARPF **~52**.
+- **Esc.1:** revenue Y1 **228.796**; costos **169.717**; FCF Y1 **+59.079**; cash M12 **246.231**; BE FCF **M5** (no profitable M1).
+- **Hecho:** sweep `docs/Lanzamiento` + CRM + Pack Aliado md; skills `zonix-startup-context` / `zonix-financial-model` / `zonix-inversionistas-crm`; bugs Excel Flujo/CCF/banner; borrados AUDIT forense pack jun-2026.
+- **Obsoleto como ask vigente:** **210.760** / Day-D **160.500** / burn **145.500** / equity **35,13%** / cash **398.293**.
+
 ### Barra credibilidad Plan A (post-500) — 7 agosto 2026
 
 - **Doc:** [`Lanzamiento/BARRA_CREDIBILIDAD_PLAN_A.md`](Lanzamiento/BARRA_CREDIBILIDAD_PLAN_A.md) + PDF — mínima vs fuerte antes de outreach Epakon/Casa212/ALGEN.
@@ -16,7 +79,7 @@
 ### Informe fácil 500 → Zonix como startup — 7 agosto 2026
 
 - **Entregable:** [`Lanzamiento/INFORME_FACIL_500_COMO_STARTUP.md`](Lanzamiento/INFORME_FACIL_500_COMO_STARTUP.md) + PDF — qué dijo 500, qué hacer, objetivos corto/largo, mejorar startup (sin código) para inversores.
-- **Sin** SVS ni código; Plan A caja intacto; ask **210.760**.
+- **Sin** SVS ni código; Plan A caja intacto; ask **237.412**.
 - Enlace desde [`Inversionistas/500-latam/RESUMEN_FACIL.md`](Inversionistas/500-latam/RESUMEN_FACIL.md).
 
 ### Alta CRM SVS + 500 interno — 7 agosto 2026
@@ -39,12 +102,12 @@
 - **Lección pack:** MVP **técnico** (staging + tests) ≠ evidencia de **mercado** (demo 3–5 min + farmacias/pedidos). Canon: [`Lanzamiento/APRENDIZAJE_500_EVIDENCIA_MERCADO.md`](Lanzamiento/APRENDIZAJE_500_EVIDENCIA_MERCADO.md).
 - **Plan A caja:** Epakon / Casa212 / ALGEN. 500 = radar; recontacto `team-mx@500startups.com` **solo** con [`GATE_RECONTACTO_500.md`](Inversionistas/500-latam/GATE_RECONTACTO_500.md) verde.
 - **Pendiente humano:** grabar demo ([`DEMO_PRODUCTO_RX.md`](Inversionistas/500-latam/DEMO_PRODUCTO_RX.md)); cerrar 1–2 farmacias Valencia ([`PILOTO_FARMACIAS_VALENCIA.md`](Inversionistas/500-latam/PILOTO_FARMACIAS_VALENCIA.md)).
-- **No tocado:** Excel/PROYECCION/UNIT; código producto.
+- **Actualizado 7-ago:** Excel/PROYECCION/UNIT → canon v4 **237.412** (ver bloque sync arriba).
 
-### Sync pack Lean → Excel 210.760 — 26 julio 2026
+### Sync pack Lean → Excel 237.412 — 26 julio 2026
 
-- **Sweep residual:** CENSO / CUESTIONARIO / PERFIL / PROPUESTA_USUARIO / SUPUESTO_MKT / REGISTRO / VOLCADO + plantillas `PROMPT_MEJORAR_PACK` / `PROMPT_AUDIT_FORENSE` → **210.760**.
-- **Canon:** SAFE **210.760** = Fase 0 **50.260** + burn **145.500** + reserva **15.000**; Day-D **160.500**; equity **~35,13%** @ **600k**. Asks **174k / 112k** = obsoletos/históricos.
+- **Sweep residual:** CENSO / CUESTIONARIO / PERFIL / PROPUESTA_USUARIO / SUPUESTO_MKT / REGISTRO / VOLCADO + plantillas `PROMPT_MEJORAR_PACK` / `PROMPT_AUDIT_FORENSE` → **237.412**.
+- **Canon:** SAFE **237.412** = Fase 0 **50.260** + burn **172.152** + reserva **15.000**; Day-D **187.152**; equity **~39,57%** @ **600k**. Asks **174k / 112k** = obsoletos/históricos.
 - **Hecho:** BRIEF/README/CONTEXTO/CHECKLIST/MENSAJE + ESTRUCTURA/PROYECCION/PRESUPUESTO/MODELO.md/UNIT + skills `zonix-startup-context` / `zonix-financial-model`; xlsx Descargas → `docs/Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`.
 - **Pendiente:** cash M12 + tabla M1–M12 **`[PENDIENTE FP&A]`**; drift interno Excel (Flujo/ESTA 112k).
 
@@ -56,7 +119,7 @@
 - **Artefactos:** [`VPS_NAMECHEAP_QUASAR_RUNBOOK.md`](VPS_NAMECHEAP_QUASAR_RUNBOOK.md) + [`scripts/vps-quasar-bootstrap.sh`](../scripts/vps-quasar-bootstrap.sh). Puntero en [`DEPLOY_PHARMA_AIBLOCK.md`](DEPLOY_PHARMA_AIBLOCK.md).
 - **Pendiente humano:** comprar Quasar, pegar IP en el runbook, ejecutar bootstrap + migrar desde `pharma.aiblockweb.com`. Sin IP SSH no hay provision live.
 
-### Conciliación Lean v3.9.3 (xlsx Descargas + pitch) — 17 julio 2026
+### Conciliación Lean v4 (xlsx Descargas + pitch) — 17 julio 2026
 
 - **Hecho:** reconciliación de `/home/aipp/Descargas/MODELO_FINANCIERO_170726 v3.xlsx` (backup `.bak`): one-shots **~22.365** + operativa **~27.895** = Fase 0 **~50.260** = 0a+0b+0c; validación **0**; burn M1–M12 **~123.352**; TOTAL SAFE **~174.102**; caja Day-D **~123.842**; equity ref. **~29,02%** con cap 600k `[PENDIENTE decisión cap]`.
 - **Decisiones:** amueblado HQ **1×2.250** (one-shot); alquiler Fase 0 **3×750** dentro de HQ+CapEx (750/mes en cronograma 0a/0b/0c) + 12×750 en burn; **sin ops recurrentes Fase 0** (cubiertas por dominio+hosting intro); CEO rol real; sin duplicar sales/tablets.
@@ -66,7 +129,7 @@
 ### Ajuste billing pack ↔ PROYECCION §1.1 — 14 julio 2026
 
 - **Significado:** alinear cobro B2B del pack (cuota + % GMV + ajustes/waiver) con la ancla Lean M1–M12 en [PROYECCION_FINANCIERA_12M.md](Lanzamiento/PROYECCION_FINANCIERA_12M.md) §1.1 — no es un módulo de software ni un archivo `billing`.
-- **Canon §1.1 (sin waiver) — histórico hasta sync FP&A:** capital Lean **~111.988**; Fase 0 **~33.835**; caja Day-D **~78.153**; cash M12 **~40.831**. **Pitch vigente:** ver bloque v3.9.3 arriba.
+- **Canon §1.1 (sin waiver) — histórico hasta sync FP&A:** capital Lean **~111.988**; Fase 0 **~33.835**; caja Day-D **~78.153**; cash M12 **~40.831**. **Pitch vigente:** ver bloque v4 arriba.
 - **Billing documentado al pie de §1.1:** nota ARPF agregado + fila proxy **waiver primeras 10** (~−453 revenue Y1); cash M12 con waiver = `[PENDIENTE FP&A]` (el ~41.756 de B2B §11 es proxy heredado).
 - **Fuera de alcance esta sesión:** desglose Excel mes a mes cuota/GMV (vive en Excel Detallado / política B2B §5; no hay spec layout Pizza en el pack).
 - **Docs alineados:** este `active_context`, skill `zonix-startup-context`, plantilla `PROMPT_MEJORAR_PACK_LANZAMIENTO` (anclas). Auditorías forenses históricas que citan **42.209** / **72.943** quedan como registro, no como canon.
@@ -182,9 +245,10 @@
 
 ### Pack Lanzamiento — modelo operativo Lean (referencia vigente)
 
-- **Day-D = T+90**; **Fase 0 ~33.835**; caja Day-D **~78.153**; burn **8.011 / 8.347 / 7.980**; M12 **~40.831**; casi equilibrio **M12 ~159 activas** (ARPF ~50).
-- **Equipo Lean:** Founder + Co-CEO + Dev junior + **4× Sales** + CS+CM (ver PRESUPUESTO §1.1).
+- **Canon v4/v5:** Day-D = **T+90**; Fase 0 **50.260**; caja Day-D **187.152**; burn Esc.1 M1 **11.411** / M2 **14.346** / M3–12 **14.346**; FCF Y1 **+59.079**; cash M12 **246.231**; BE FCF **M5**; **~159 activas**; ARPF placeholder **~52**.
+- **Equipo Lean:** Founder + Co-CEO + Dev + **4× Sales** + CS+CM (ver PRESUPUESTO §1.1).
 - **Pendientes humanos:** GitHub/NDA, referencias, HQ casa, valla, abogado/farmacéutico — [VOLCADO](Lanzamiento/VOLCADO_RESPUESTAS_CUESTIONARIO.md), [CHECKLIST](Lanzamiento/CHECKLIST_PRE_INVERSOR.md).
+- **Histórico (no vigente):** Fase 0 ~33.835 / Day-D ~78.153 / burn 8.011–7.980 / M12 ~40.831 / BE M12.
 
 ---
 

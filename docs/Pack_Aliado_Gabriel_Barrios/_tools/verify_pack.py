@@ -8,12 +8,19 @@ PACK = Path(__file__).resolve().parent.parent
 MD_DIR = PACK / "md"
 
 ANCHORS = [
-    "112",
-    "111.988",
+    "237.412",
+    "187.152",
     "159",
-    "7,2",
-    "7.2",
+    "7,5",
+    "7.5",
     "Gabriel",
+]
+
+# Cifras legacy que NO deben aparecer como ask vigente (histórico etiquetado OK)
+LEGACY_ASK = [
+    "111.988",
+    "210.760",
+    "174.102",
 ]
 
 BANNED = [
@@ -54,20 +61,22 @@ def verify_file(path: Path) -> list[str]:
     errors = []
     text = path.read_text(encoding="utf-8")
     name = path.name
+    is_mirror = "Espejo Pack Aliado" in text[:400]
 
-    if not has_disclaimer(text):
+    if not is_mirror and not has_disclaimer(text):
         errors.append(f"{name}: falta disclaimer 'no solicitud de inversión'")
 
-    for b in BANNED:
-        if b.lower() in text.lower():
-            errors.append(f"{name}: contiene jargon técnico '{b}'")
+    if not is_mirror:
+        for b in BANNED:
+            if b.lower() in text.lower():
+                errors.append(f"{name}: contiene jargon técnico '{b}'")
 
-    if name == "18_Guia_Modelo_Financiero.md":
+    if name == "18_Guia_Modelo_Financiero.md" and not is_mirror:
         for req in DOC18_REQUIRED:
             if req not in text:
                 errors.append(f"{name}: falta '{req}'")
 
-    if not has_revisar_section(text):
+    if not is_mirror and not has_revisar_section(text):
         errors.append(f"{name}: falta sección 'Qué revisar juntos'")
 
     return errors
@@ -87,6 +96,17 @@ def main():
     missing_anchors = [a for a in ANCHORS if a not in all_text]
     if missing_anchors:
         print(f"WARN: anclas no encontradas en pack completo: {missing_anchors}")
+
+    # Legacy ask as vigente (sin etiqueta histórico/OBSOLETO en la misma línea)
+    for legacy in LEGACY_ASK:
+        for p in md_files:
+            for i, line in enumerate(p.read_text(encoding="utf-8").splitlines(), 1):
+                if legacy not in line:
+                    continue
+                low = line.lower()
+                if any(x in low for x in ("histórico", "obsoleto", "no vigentes", "no usar", "prohibido", "legado")):
+                    continue
+                print(f"WARN: {p.name}:{i} cifra legacy sin etiqueta: {legacy}")
 
     errors = []
     for p in md_files:

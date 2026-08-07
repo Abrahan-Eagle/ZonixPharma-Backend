@@ -4,6 +4,8 @@
 > **De:** Abrahan Pulido — Founder / CEO / CTO, Zonix Pharma  
 > **Fecha:** junio 2026 (ampliado v1.1 — informe detallado para consultoría)  
 > **Propósito:** versión **legible y profunda para humano** del plan Zonix Pharma — sin jerga técnica del data room interno.
+>
+> **Canon financiero (7 ago 2026):** ask Lean **USD 237.412** (Excel v4). Cifras en `md/` sincronizadas desde Lanzamiento; **fuente de verdad** = [`../Lanzamiento/`](../Lanzamiento/) + [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](../Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.xlsx). No usar asks **112k / 210.760** como vigentes.
 
 **Documento maestro:** [`md/01_Resumen_Aliado.md`](md/01_Resumen_Aliado.md) / [`docx/01_Resumen_Aliado.docx`](docx/01_Resumen_Aliado.docx) es el **informe completo** que resume los 18 entregables (~1.050 líneas). Empieza por ahí si quieres una sola lectura; los docs 02–18 son el detalle ampliado por tema. Canon en Lanzamiento: [`RESUMEN_ALIADO_GABRIEL_BARRIOS.md`](../Lanzamiento/RESUMEN_ALIADO_GABRIEL_BARRIOS.md).
 
@@ -34,7 +36,7 @@ Esta carpeta es **independiente** de [`../Lanzamiento/`](../Lanzamiento/). El da
 | 5 | [01_Resumen_Aliado](docx/01_Resumen_Aliado.docx) | **Informe completo de los 18 docs** (~60 min lectura) |
 | 5 | [02_Brief_Una_Pagina](docx/02_Brief_Una_Pagina.docx) | Elevator pitch + ask de referencia |
 | 5 | [04_Perfil_Mercado](docx/04_Perfil_Mercado.docx) | TAM/SAM/SOM Valencia |
-| 5 | [18_Guia_Modelo_Financiero](docx/18_Guia_Modelo_Financiero.docx) + Excel | Cómo leer el modelo (~112k Lean) |
+| 5 | [18_Guia_Modelo_Financiero](docx/18_Guia_Modelo_Financiero.docx) + Excel | Cómo leer el modelo (237.412 Lean) |
 | 5 | [11_Propuesta_Farmacia](docx/11_Propuesta_Farmacia.docx) | Pitch B2B farmacia |
 | 5 | [09_Guia_Reunion](docx/09_Guia_Reunion.docx) | Guion reunión aliado (45–60 min) |
 
@@ -65,12 +67,15 @@ Lo anterior, más (documentos ampliados con escenarios, sensibilidades y guías 
 
 | Concepto | Valor |
 |----------|-------|
-| Capital Lean (SAFE) | ~USD 112.000 |
-| Fase 0 (90 días) | ~USD 33.800 |
-| Caja al Day-D | ~USD 78.150 |
-| Farmacias activas M12 | ~159 |
-| Caja cierre M12 | ~USD 40.800 |
-| LTV / CAC | ~7,2× |
+| Capital Lean (SAFE) | **USD 237.412** |
+| Fase 0 (90 días) | **USD 50.260** |
+| Caja al Day-D | **USD 187.152** |
+| Farmacias activas M12 | **~159** |
+| Revenue M12 (esc.1) | **~USD 29.892**/mes |
+| Caja cierre M12 | **USD 246.231** |
+| BE FCF mensual | **M5** |
+| LTV / CAC | **~7,5×** (LTV 1.040 / CAC 139) |
+| Pricing B2B | **45/60/70** + %GMV **8/7/5** |
 | TAM pharma VE | USD 1.638M/año |
 
 ---
@@ -87,7 +92,7 @@ cd docs/Pack_Aliado_Gabriel_Barrios
 
 ## Disclaimers
 
-- Cifras con supuestos documentados; **ARPF ~50 USD/mes** es placeholder hasta GMV piloto.
+- Cifras con supuestos documentados; **ARPF ~52 USD/mes** es placeholder hasta GMV piloto.
 - Textos legales y regulatorios requieren **dictamen abogado + farmacéutico** antes de Day-D público.
 - Montos en USD; reconfirmación trimestral por inflación VE recomendada.
 

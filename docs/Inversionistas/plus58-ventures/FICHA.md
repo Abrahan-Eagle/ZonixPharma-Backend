@@ -1,6 +1,6 @@
 # Ficha inversionista — +58 Ventures
 
-> Ask ref.: Lean ~USD 174.102 · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
+> Ask ref.: Lean **USD 237.412** · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
 > Forense: 21 julio 2026 · [plus58ventures.com](https://plus58ventures.com/) (todas las rutas = mismo HTML) · WHOIS · form GAS · briefing §4.5.  
 > **Disclaimer:** análisis interno founder; no es asesoría legal ni financiera.
 

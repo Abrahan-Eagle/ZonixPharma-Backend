@@ -63,33 +63,33 @@ Zonix es **two-sided**: farmacia (supply) + paciente (demand). Implicaciones:
 
 | Tier | Capital pedido | SAFE cap post-money | Equity ref. | Burn prom. |
 |------|----------------|---------------------|-------------|------------|
-| **Lean** (mínimo / Excel v3.9.3) | **USD 210.760** *(≈211k)* | **600.000** | **~35,13%** | **~12.125**/mes |
+| **Lean** (mínimo / Excel v4) | **USD 237.412** *(≈237k)* | **600.000** | **~39,57%** | **~14.346**/mes |
 | **Base** (recomendado) | ~USD **157.268** *(≈157k)* *[hist. — recalibrar]* | ~**912.814** | ~17,23% | ~**10.898**/mes |
 | **Growth** (acelerado) | ~USD **187.478** *(≈187k)* *[hist. — recalibrar]* | ~**1.205.345** | ~15,55% | ~**12.698**/mes |
 
-**Prohibido:** llamar Lean «112k» / «174k» / equity **18,66%** / **29,02%** como vigente; tiers **101/118/135k** (mayo 2026); mezclar columnas sin etiquetar. Fuente: [BRIEF_UNA_PAGINA.md](../../docs/Lanzamiento/BRIEF_UNA_PAGINA.md), [README pack](../../docs/Lanzamiento/README.md), xlsx Detallado.
+**Prohibido:** llamar Lean «210.760» / «112k» / «174k» / equity **35,13%** / **18,66%** como vigente; tiers **101/118/135k** (mayo 2026); mezclar columnas sin etiquetar. Fuente: [BRIEF_UNA_PAGINA.md](../../docs/Lanzamiento/BRIEF_UNA_PAGINA.md), [README pack](../../docs/Lanzamiento/README.md), xlsx Detallado v4.
 
 ## Anclas numéricas Lean (planning central)
 
-Canon = Excel Detallado v3.9.3. Tabla M1–M12 detallada en PROYECCION §1.1 = **legado** + `[PENDIENTE FP&A]`. Citar [docs/Lanzamiento/PROYECCION_FINANCIERA_12M.md](../../docs/Lanzamiento/PROYECCION_FINANCIERA_12M.md).
+Canon = Excel Detallado **v4** (`MODELO_FINANCIERO_040826_v4` → `docs/Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`). Tabla M1–M12 = PROYECCION §1.1 = Año 1 esc.1. Citar [docs/Lanzamiento/PROYECCION_FINANCIERA_12M.md](../../docs/Lanzamiento/PROYECCION_FINANCIERA_12M.md).
 
 | Concepto | Valor |
 |----------|-------|
-| TOTAL SAFE | **USD 210.760** |
+| TOTAL SAFE | **USD 237.412** |
 | Fase 0 outflow | **USD 50.260** |
-| Caja al Day-D | **USD 160.500** |
-| Burn M1–M12 | **USD 145.500** (~**12.125**/mes) |
+| Caja al Day-D | **USD 187.152** |
+| Burn M1–M12 (Detallado) | **USD 172.152** (~**14.346**/mes) |
 | Reserva | **USD 15.000** |
-| Cierre M12 caja | **`[PENDIENTE FP&A]`** (40.831 = legado burn ~8.1k) |
-| Equity ref. | **~35,13%** (210.760 / 600.000) |
-| Billing / waiver | Revenue §1.1 legado = ARPF agregada; waiver primeras 10 ≈ **−453** Y1 — cash con waiver `[PENDIENTE FP&A]` |
+| Cierre M12 caja (esc.1) | **USD 246.231** (187.152 + FCF Y1 **+59.079**) |
+| Equity ref. | **~39,57%** (237.412 / 600.000) |
+| Esc.1 Y1 | Revenue **228.796** · costos **169.717** · BE FCF mensual **M5** |
 
 ## Unit economics (placeholder hasta GMV piloto)
 
 | Métrica | Valor | Fuente |
 |---------|-------|--------|
-| Modelo B2B | Cuota **25 / 40 / 55** USD + % GMV por banda | PROPUESTA_VALOR_CLIENTE_B2B §5 |
-| ARPF referencia | **~USD 50/mes** | UNIT_ECONOMICS, README pack |
+| Modelo B2B | Cuota **45 / 60 / 70** USD + **%GMV 8/7/5** por banda | PROPUESTA_VALOR_CLIENTE_B2B §5 (esc.1) |
+| ARPF referencia | **~USD 52/mes** | UNIT_ECONOMICS, Excel Año 1 |
 | CAC farmacia | USD **139** | UNIT_ECONOMICS |
 | LTV / LTV:CAC | USD **1.000** / **~7,2x** | UNIT_ECONOMICS |
 | Churn mensual ref. | 5% | UNIT_ECONOMICS |

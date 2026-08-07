@@ -34,7 +34,7 @@ Para Zonix Pharma: **encaja ticket y red VE** sin mudarte 12 semanas a Caracas. 
 
 | | Pack actual | Si cierra Epakon |
 |--|-------------|------------------|
-| Plata | Lean ~**174k** | ~**150–300k** (posible cubrir Lean) |
+| Plata | Lean **237.412** | ~**150–300k** (parcial / syndicate) |
 | Dilución | SAFE cap ref. 600k | **TBD** (pedir) |
 | Historia | Piloto Valencia / VE | Misma playa + red Yummy/Cashea |
 | Tiempo tuyo | — | Pitch ya; cierre semanas típicas VC |

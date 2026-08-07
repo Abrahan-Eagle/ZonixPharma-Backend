@@ -21,12 +21,14 @@ Adaptación de [startup-financial-modeling](https://github.com/sickn33/antigravi
 ### Revenue (lado farmacia — planning actual)
 
 ```
-Revenue_mes ≈ Farmacias_activas × ARPF_mes
+# Planning Esc.1 (Excel): revenue = híbrido cuota 45/60/70 + % GMV (NO ARPF×activas)
+# Unit economics placeholder:
+LTV ≈ ARPF_placeholder × (1 / churn)   # ARPF ~52; LTV ~1.040
 ```
 
-- **ARPF referencia:** USD **~50/mes** (placeholder; recalibrar con GMV piloto).
-- **Cobro vigente:** cuota fija **USD 25 / 40 / 55** + **% GMV** por banda — ver PROPUESTA_VALOR_CLIENTE_B2B §5.
-- **Futuro:** `Net_revenue = GMV × take_rate` cuando haya GMV real; hasta entonces usar ARPF documentado.
+- **ARPF referencia:** USD **~52/mes** (placeholder Excel v4 UE; **no** es Revenue÷activas del P&L Esc.1).
+- **Cobro vigente / P&L Esc.1:** cuota fija **USD 45 / 60 / 70** + **%GMV 8/7/5** por banda (Excel esc.1) — ver PROPUESTA_VALOR_CLIENTE_B2B §5.
+- **Futuro:** `Net_revenue = GMV × take_rate` cuando haya GMV real; hasta entonces citar Esc.1 Excel + ARPF solo en UNIT.
 
 ### Revenue (GMV — año 2+)
 
@@ -50,15 +52,15 @@ Net_revenue_marketplace = GMV × take_rate  // % en B2B §5
 
 **Antes de M1 (post-Day-D):**
 
-| Sub-fase | Outflow ref. Lean (Excel v3.9.3) |
+| Sub-fase | Outflow ref. Lean (Excel **v4**) |
 |----------|-------------------|
 | 0a T+0–30 | **33.010** (one-shots + MO parcial) |
 | 0b/0c T+30–90 | **8.625** |
 | **Total Fase 0** | **50.260** |
-| **Wire SAFE** | **210.760** |
-| **Caja Day-D** | **210.760 − 50.260 = 160.500** |
+| **Wire SAFE** | **237.412** |
+| **Caja Day-D** | **237.412 − 50.260 = 187.152** |
 
-M1 = primer mes operación comercial en app (no repetir one-shots en M1–M12). Cifras **101k / 28.057 / 72.943** = `[OBSOLETO]`.
+M1 = primer mes operación comercial en app (no repetir one-shots en M1–M12). Cifras **210.760 / 160.500 / 145.500** y **101k / 28.057 / 72.943** = `[OBSOLETO]`.
 
 ## Escenarios (P10 / P50 / P90)
 
@@ -78,23 +80,23 @@ Post-piloto (cuando exista GMV real), el agente puede proponer tablas what-if **
 
 | Variable | Rango sugerido (lente) | Fuente |
 |----------|------------------------|--------|
-| Farmacias activas M12 | ±10–20% vs ~151 Lean | PROYECCION §1.1 / §7 |
-| ARPF | ±15% vs ~50 USD placeholder | UNIT_ECONOMICS + GMV piloto |
+| Farmacias activas M12 | ±10–20% vs ~159 Lean | PROYECCION §1.1 / §7 |
+| ARPF | ±15% vs ~52 USD placeholder | UNIT_ECONOMICS + GMV piloto |
 | CAC farmacia | ±20% vs 139 | SUPUESTO marketing |
 | Churn mensual farmacia | 4%–6% (base 5%) | UNIT_ECONOMICS |
 
 Macro externo (FRED/World Bank): [awesome-economics](https://github.com/awesomelistsio/awesome-economics) — contexto narrativo inversor; **no** sustituye cifras de PROYECCION.
 
-Salida: tabla «si X entonces runway / M11 break-even» con cita a línea del pack; marcar `[Requiere FP&A/contador]` en ajustes fiscales.
+Salida: tabla «si X entonces runway / BE FCF M5» con cita a línea del pack; marcar `[Requiere FP&A/contador]` en ajustes fiscales.
 
 ## Checklist de coherencia (ejecutar en cada edición)
 
-- [ ] Tiers: Lean **210.760** (Excel); Base **~157k** / Growth **~187k** = hist. hasta recalibrar
+- [ ] Tiers: Lean **237.412** (Excel v4); Base **~157k** / Growth **~187k** = hist. hasta recalibrar
 - [ ] SAFE caps: Lean **600k**; Base/Growth según ESTRUCTURA_LEGAL
-- [ ] Burn Y1 Lean = **145.500** (~**12.125**/mes); no citar **90.702** / **97.290** / **8.108** como vigente
-- [ ] Fase 0 **50.260** + Day-D **160.500** + reserva **15.000** = README / BRIEF
-- [ ] Cash M12 y tabla §1.1 mes a mes = **`[PENDIENTE FP&A]`** (no inventar 40.831 como oficial)
-- [ ] Equity Lean **~35,13%**; no **18,66%** / **29,02%** / **16,8%** como ask vigente
+- [ ] Burn Y1 Lean Detallado = **172.152** (~**14.346**/mes); esc.1 costos Y1 **169.717**; no citar **145.500** / **12.125** / **210.760** como vigente
+- [ ] Fase 0 **50.260** + Day-D **187.152** + reserva **15.000** = README / BRIEF (ask = Fase0+burn+reserva)
+- [ ] Cash M12 esc.1 = **246.231**; FCF Y1 **+59.079**; BE FCF mensual **M5** (no “profitable M1”)
+- [ ] Equity Lean **~39,57%**; no **35,13%** / **18,66%** / **29,02%** como ask vigente
 - [ ] CAC/LTV/payback cruzados con UNIT_ECONOMICS (UE B2B sin cambio)
 - [ ] Waiver promocional B2B §11 documentado aparte (fila «con waiver» en PROYECCION)
 
@@ -102,11 +104,11 @@ Salida: tabla «si X entonces runway / M11 break-even» con cita a línea del pa
 
 | Métrica | Fórmula / target piloto |
 |---------|-------------------------|
-| Burn mensual | ~**12.125** Lean Excel (revenue − opex neto en P&L) |
-| Runway | Caja Day-D **160.500** / burn neto |
-| LTV/CAC | **~7,2x** (UNIT_ECONOMICS) |
-| Payback CAC | **~2,8 meses** |
-| Farmacias activas break-even | **~243** @ ARPF 50 / burn 12.125 (`[PENDIENTE]` vs curva ~159) |
+| Burn mensual ask | ~**14.346** Lean Detallado |
+| Runway | Caja Day-D **187.152** / burn neto |
+| LTV/CAC | **~7,5x** (UNIT_ECONOMICS) |
+| Payback CAC | **~2,7 meses** |
+| Cash M12 / FCF Y1 | **246.231** / **+59.079** (esc.1) |
 
 **No priorizar** en piloto: NDR, Rule of 40 SaaS, burn multiple ARR (sin ARR).
 
@@ -116,22 +118,22 @@ Salida: tabla «si X entonces runway / M11 break-even» con cita a línea del pa
 Dilución_ref ≈ Inversión / Cap_post_money
 ```
 
-Ej. Lean: **210.760 / 600.000 ≈ 35,13%** — ver ESTRUCTURA_LEGAL para redondeo y pro-rata.
+Ej. Lean: **237.412 / 600.000 ≈ 39,57%** — ver ESTRUCTURA_LEGAL para redondeo y pro-rata.
 
 **Use of funds:** desglosar según PRESUPUESTO §2 (Fase 0, nómina, marketing, reserva); no inventar % sin ancla.
 
 ## WTP y pricing (monetizing-innovation — UNIT_ECONOMICS)
 
-Al editar UNIT_ECONOMICS o PROPUESTA B2B §5; **no** cambiar bandas 25/40/55 ni % GMV sin decisión founder.
+Al editar UNIT_ECONOMICS o PROPUESTA B2B §5; **no** cambiar bandas **45/60/70** (esc.1) ni % GMV sin decisión founder. (Hist. 25/40/55 = obsoleto.)
 
 | Concepto | Aplicación Zonix | Regla pack |
 |----------|------------------|------------|
 | **Economic value** | Visibilidad digital + pedidos + menos fricción Rx | Cualitativo hasta GMV real |
-| **WTP** | Techo que farmacia acepta vs cuota+GMV | Comparar con ARPF ~50 placeholder |
+| **WTP** | Techo que farmacia acepta vs cuota+GMV | Comparar con ARPF ~52 placeholder |
 | **Price fence** | Bandas por tamaño farmacia / GMV | Ya en PROPUESTA B2B §5 |
 | **Pilot waiver** | Descuento Fase 0 | Solo si documentado en PROPUESTA; marcar temporal |
 
-Nota estándar para UNIT_ECONOMICS: «ARPF ~50 es **placeholder** hasta recalibrar con GMV piloto post-Day-D».
+Nota estándar para UNIT_ECONOMICS: «ARPF ~52 es **placeholder Excel v4** hasta recalibrar con GMV piloto post-Day-D».
 
 ## Packaging waiver — primeras 10 farmacias (100m-offers)
 
@@ -156,7 +158,7 @@ Zonix compite en **mercado existente** — precio/features vs agregadores; **no*
 | Tipo mercado | Implicación pricing Zonix | Acción agente |
 |--------------|---------------------------|---------------|
 | Existente | Comparables Farmatodo, Rappi, cuota+GMV debe ser defendible vs take-rate agregador | Citar PROPUESTA B2B §2–§5; no inventar descuento |
-| Resegmentado (nicho) | Farmacias independientes Valencia — bandas 25/40/55 | UNIT + waiver §11 |
+| Resegmentado (nicho) | Farmacias independientes Valencia — bandas **45/60/70 + %GMV 8/7/5** | UNIT + waiver §11 |
 | Nuevo | **No aplica** | No usar en pitch |
 
 **Errores frecuentes startups (M6 — evitar en pack):**
@@ -169,7 +171,7 @@ Zonix compite en **mercado existente** — precio/features vs agregadores; **no*
 
 - **Get:** CAC farmacia **139** (UNIT) — Sales físico Fase 0.
 - **Keep:** churn ref. 5%; retención panel + pedidos recurrentes.
-- **Grow:** ARPF ~50 placeholder; upsell banda GMV post-piloto — `[PENDIENTE GMV]`.
+- **Grow:** ARPF ~52 placeholder; upsell banda GMV post-piloto — `[PENDIENTE GMV]`.
 
 ## Cuota de mercado realista por capacidad de canal (M6 L6.14 + M4)
 
@@ -184,7 +186,7 @@ Farmacias_firmadas_mes ≈ Sales_headcount × visitas_semana × tasa_cierre × 4
 | Sales headcount | **4×** (PRESUPUESTO nómina) — no asumir más sin línea de gasto |
 | Visitas/semana y tasa de cierre | `[PENDIENTE Sales Lead]` hasta dato real T+60; no inventar |
 | Coherencia | Curva farmacias activas (→ ~151 M11 Lean) debe ser alcanzable con la fórmula; si no, marcar incoherencia |
-| LTV vs CAC antes de proyectar | LTV/CAC **~7,2x**, payback **~2,8 meses** (UNIT) — si un escenario lo rompe, señalar antes de aceptar la cuota |
+| LTV vs CAC antes de proyectar | LTV/CAC **~7,5x**, payback **~2,7 meses** (UNIT) — si un escenario lo rompe, señalar antes de aceptar la cuota |
 
 ### Economía del canal (M4 — directo vs indirecto)
 

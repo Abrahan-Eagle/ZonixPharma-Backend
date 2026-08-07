@@ -15,7 +15,7 @@ Escribe cheques tipicos de **1 a 3 millones de dólares** a empresas que van a *
 
 **Sí se puede llegar a VELA** — pero no con el mensaje “necesito 211 mil para arrancar”.
 
-- Los **USD 210.760** son el **mínimo** del raise (piso Lean), no el techo.
+- Los **USD 237.412** son el **mínimo** del raise (piso Lean), no el techo.
 - Lo que hace **atractivo** a Zonix frente a VELA es proyectar:  
   **con 1–3 M lanzamos Zonix en todos los estados de Venezuela**  
   (farmacias, cobertura, acceso a medicamentos a escala nacional).
@@ -30,7 +30,7 @@ Con esa historia (y tracción que la respalde), el ticket de **1–3 M** encaja 
 | Hoy | Para volvernos atractivos |
 |-----|---------------------------|
 | Estamos en etapa temprana / piloto | Mostrar camino claro: piloto → **cobertura nacional** |
-| El piso del raise es **~211k** | Declarar que el escenario VELA es **1–3 M** para escala VE |
+| El piso del raise es **~237k** | Declarar que el escenario VELA es **1–3 M** para escala VE |
 | Plan A del raise sigue siendo Epakon / Casa212 / ALGEN | VELA = **radar + form** (override), no sustituye el Plan A |
 
 ## Qué necesita el CEO recordar

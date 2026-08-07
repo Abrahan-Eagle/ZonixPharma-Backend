@@ -1,6 +1,6 @@
 # Ficha inversionista — BID Lab (Grupo BID)
 
-> Ask ref.: Lean ~USD 174.102 · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
+> Ask ref.: Lean **USD 237.412** · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
 > Forense: 21 julio 2026 · pase 1 + pase 2 + **pase 2.1** (Airtable equity campos).  
 > **Disclaimer:** análisis interno founder; no es asesoría legal ni financiera.
 

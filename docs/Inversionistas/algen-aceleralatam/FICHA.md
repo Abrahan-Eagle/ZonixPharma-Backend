@@ -1,6 +1,6 @@
 # Ficha inversionista — ALGEN × AceleraLatam
 
-> Ask ref.: Lean ~USD 174.102 · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
+> Ask ref.: Lean **USD 237.412** · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
 > Forense: 21 julio 2026 · [aceleralatam.cl/algen](https://www.aceleralatam.cl/algen) · home · forms vform · HubSpot · briefing §5.1.  
 > **Disclaimer:** análisis interno founder; no es asesoría legal ni financiera.
 
@@ -32,7 +32,7 @@
 
 | Dimensión | Pack Zonix | ALGEN | Gap |
 |-----------|------------|-------|-----|
-| Ticket | Lean ~174k | No garantiza cheque; ayuda a **cerrar** ronda ~300k tip. | Complementa Epakon/Casa212 |
+| Ticket | Lean **237.412** | No garantiza cheque; ayuda a **cerrar** ronda tip. ~300k | Complementa Epakon/Casa212 (parciales) |
 | Dilución | SAFE cap 600k | **0%** programa | Mejor que FI (warrant 2,5%) |
 | Vehículo | Ideal Delaware | Agnóstico; training term sheets | Alineable |
 | Tiempo | — | Próximo kickoff oficial útil: **15 oct 2026** | Post Casa212 deadline |

@@ -10,9 +10,9 @@
 
 ## En 60 segundos
 
-Zonix Pharma pone a la farmacia en un **marketplace digital** sin que tenga que construir su propia app: catálogo, pedidos, recetas digitales, pagos venezolanos y entrega coordinada. La farmacia paga **cuota 25 / 40 / 55 USD + un % moderado sobre GMV** según volumen — no una comisión del 20–30 % como PedidosYa.
+Zonix Pharma pone a la farmacia en un **marketplace digital** sin que tenga que construir su propia app: catálogo, pedidos, recetas digitales, pagos venezolanos y entrega coordinada. La farmacia paga **cuota 45 / 60 / 70 USD + %GMV 8 / 7 / 5** según banda — no una comisión del 20–30 % como PedidosYa.
 
-Ejemplo rápido: **5.000 USD de ventas en app al mes** (nivel Pro) → **40 + 0,80 % × 5.000 = 80 USD/mes** a Zonix vs **~1.000–1.500 USD** típico en agregador. El piloto busca **~28 farmacias activas antes del Day-D (T+90)**, **~40 en el mes 1** y **~159 al mes 12**, captadas con **4 vendedores B2B en calle**.
+Ejemplo rápido: **3.000 USD de ventas en app al mes** (nivel Pro) → **60 + 7 % × 3.000 = 270 USD/mes** a Zonix vs **~750 USD** típico en agregador al 25%. El piloto busca **~28 farmacias activas antes del Day-D (T+90)**, **~40 en el mes 1** y **~159 al mes 12**, captadas con **4 vendedores B2B en calle**.
 
 ---
 
@@ -62,9 +62,9 @@ Gabriel: el ranking real de dolores debe salir de **≥5 entrevistas en Valencia
 
 | Nivel | GMV mensual (USD, suma sucursales del RIF) | Cuota fija | % sobre GMV |
 |-------|--------------------------------------------|------------|-------------|
-| **Basic** | 0 – 2.500 | **25** | 0,60 % |
-| **Pro** | 2.501 – 10.000 | **40** | 0,80 % |
-| **Enterprise** | 10.001 en adelante | **55** | 1,00 % |
+| **Basic** | 0 – 2.000 | **45** | 8 % |
+| **Pro** | 2.001 – 5.000 | **60** | 7 % |
+| **Enterprise** | 5.001 en adelante | **70** | 5 % |
 
 **Fórmula:** cuota del mes = fija del nivel + (% × GMV completado en app).
 
@@ -101,12 +101,12 @@ Gabriel: el ranking real de dolores debe salir de **≥5 entrevistas en Valencia
 
 ---
 
-## Comparativa ilustrativa (mismo GMV 5.000 USD/mes)
+## Comparativa ilustrativa (mismo GMV 3.000 USD/mes)
 
 | Concepto | Agregador típico VE | Zonix Pro |
 |----------|---------------------|-----------|
-| Comisión / cuota | ~20–30 % → **1.000–1.500 USD** | **40 + 40 = 80 USD** |
-| Orden de magnitud | — | **~16–22× menos** costo de canal |
+| Comisión / cuota | ~25 % → **~750 USD** | **60 + 210 = 270 USD** |
+| Orden de magnitud | — | **~64 % menos** costo de canal |
 
 *(Mes completo estable; mes parcial de alta prorratea solo la fija.)*
 
@@ -157,7 +157,7 @@ Motor del piloto: **4× Sales** — no solo prospección: firman, capacitan y ac
 
 | Objeción | Respuesta |
 |----------|-----------|
-| «Ya estoy en PedidosYa» | Puedes probar Zonix en paralelo; aquí pagas **25/40/55 + %**, no 20–30 % del ticket |
+| «Ya estoy en PedidosYa» | Puedes probar Zonix en paralelo; aquí pagas **45/60/70 + %**, no 20–30 % del ticket |
 | «Mi farmacéutico no quiere app» | Solo ve recetas pendientes; capacitación 30 min; salida sin penalidad primeros 2 meses (contrato) |
 | «¿Y si no hay pedidos?» | Marketing geo desde Day-D; objetivo escalar demanda con catálogo (**~40 M1**, curva hasta **~159 M12**) |
 | «¿Es legal la Rx digital?» | Valida **tu** farmacéutico colegiado; Zonix da trazabilidad — dictamen profesional en curso |
@@ -192,7 +192,7 @@ Plantillas: abogado + visado farmacéutico asesor en cláusulas de dispensación
 
 ## Qué nos gustaría que revises, Gabriel
 
-1. **¿25/40/55 + % GMV es creíble** frente a la mentalidad del dueño valenciano?
+1. **¿45/60/70 + %GMV 8/7/5 es creíble** frente a la mentalidad del dueño valenciano?
 2. **¿El ejemplo 5.000 USD/mes Pro** refleja farmacias reales de tu cartera Morr?
 3. **¿Qué objeción falta** en la tabla (MPPS, droguería, competencia local)?
 4. **¿Introducciones** a 3–5 farmacias piloto donde Morr tenga relación para discovery sin compromiso?

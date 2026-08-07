@@ -44,7 +44,7 @@ No es un “no para siempre”: invitan a avisar a `team-mx@500startups.com` cua
 
 | | Pack Lean | Si un día cierras 500 |
 |--|-----------|------------------------|
-| Plata | **210.760** | **285k** neto |
+| Plata | **237.412** | **285k** neto |
 | Dilución | SAFE cap 600k | ~**10%** KISS |
 | Ahora | Raise Lean otras rutas | Solo tras demo + piloto |
 

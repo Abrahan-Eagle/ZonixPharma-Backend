@@ -1,6 +1,6 @@
 # Ficha inversionista — Silicon Valley Venezuela
 
-> Ask ref.: Lean ~USD 174.102 · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
+> Ask ref.: Lean **USD 237.412** · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
 > Forense: 21 julio 2026 · [siliconvalleyve.com](https://www.siliconvalleyve.com/index.html) (todas las rutas) · [3vtech](https://3vtech.siliconvalleyve.com) · prensa · briefing §5.3.  
 > **Disclaimer:** análisis interno founder; no es asesoría legal ni financiera.
 

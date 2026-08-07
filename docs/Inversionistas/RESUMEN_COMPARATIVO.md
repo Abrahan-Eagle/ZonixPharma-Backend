@@ -2,7 +2,7 @@
 
 > **Última actualización:** 7 agosto 2026 (alta **SVS** **49**; **500** = aprendizaje interno + nurture post-rechazo)  
 > **Estado:** **13** candidatas (incluye `startup-venezuela-summit`).  
-> **Ask ref.:** Lean **USD 210.760** · SAFE cap ref. **USD 600.000** (fichas jul 2026 aún citan ~174k en cuerpo; **no** rescoreadas salvo 500).  
+> **Ask ref.:** Lean **USD 237.412** · SAFE cap ref. **USD 600.000**. FICHAs Plan A alineadas ask v4 (Cola C v8).  
 > **Roles:** Plan A caja = Epakon / Casa212 / ALGEN. **500** = playbook interno (no caja ahora). **SVS** = canal evento (otra opción de red).  
 > **Disclaimer:** análisis interno; no es asesoría legal ni financiera.  
 > **Rúbrica:** ver [README.md](README.md).
@@ -14,9 +14,9 @@
 
 | Puesto | Nombre | Tipo | Ticket (USD) | Score % | Veredicto | Carpeta |
 |--------|--------|------|--------------|---------|-----------|---------|
-| 1 | Epakon Capital | VC pre-seed/seed (VE/diáspora) | **~100–300k** (tip. ~147–150k) | **73** | nurture* | [Ficha](epakon/FICHA.md) · [Resumen CEO](epakon/RESUMEN_CEO.md) |
+| 1 | Epakon Capital | VC pre-seed/seed (VE/diáspora) | **~100–300k** (tip. ~147–150k) | **70** | nurture* | [Ficha](epakon/FICHA.md) · [Resumen CEO](epakon/RESUMEN_CEO.md) |
 | 2 | ALGEN × AceleraLatam | Closing program pre-seed (equity-free) | **0** programa · ronda tip. ~300k | **72** | nurture* | [Ficha](algen-aceleralatam/FICHA.md) · [Resumen CEO](algen-aceleralatam/RESUMEN_CEO.md) |
-| 3 | Casa212 | Residencia + VC pre-seed (Caracas) | **150k** SAFE + equity programa | **71** | nurture* | [Ficha](casa212/FICHA.md) · [Resumen CEO](casa212/RESUMEN_CEO.md) |
+| 3 | Casa212 | Residencia + VC pre-seed (Caracas) | **150k** SAFE + equity programa | **68** | nurture* | [Ficha](casa212/FICHA.md) · [Resumen CEO](casa212/RESUMEN_CEO.md) |
 | 4 | 500 LatAm (500 Global) | Fondo / convocatoria regional | 300k bruto / **285k neto** | **67** | nurture* (**aprendizaje interno**; no Plan A; recontacto post-mercado) | [Ficha](500-latam/FICHA.md) · [Resumen CEO](500-latam/RESUMEN_CEO.md) |
 | 5 | Founder Institute VE | Aceleradora pre-seed (metodología) | Fee **149/169** + warrant 2,5% (sin cheque Core) | **55** | nurture (metodología) | [Ficha](fi-venezuela/FICHA.md) · [Resumen CEO](fi-venezuela/RESUMEN_CEO.md) |
 | 6 | BID Lab (Grupo BID) | Multilateral / venture + impacto | Ecosistema VE + red (seed C&D no VE) | **54** | nurture (red) | [Ficha](bid-lab/FICHA.md) · [Resumen CEO](bid-lab/RESUMEN_CEO.md) |
@@ -45,9 +45,9 @@
 
 | Candidata | Lo bueno | Lo malo |
 |-----------|----------|---------|
-| Epakon | ~150k ≈ ask; red VE sin mudanza; HealthTech en form | Términos opacos; no anclar a $1M web |
+| Epakon | ~150k = **parcial** vs ask **237.412**; red VE sin mudanza; HealthTech en form | Términos opacos; no anclar a $1M web |
 | ALGEN | Equity-free; closing LatAm; IVAM; online | Sin cheque fijo; 12–16 h/sem × 4 meses |
-| Casa212 | 150k ≈ ask; VE local; Delaware + Demo Day; red Epakon/Arqos | % programa opaco; 12 sem Caracas; 6 cupos |
+| Casa212 | 150k ≈ **63%** ask **237.412**; VE local; Delaware + Demo Day; red Epakon/Arqos | % programa opaco; 12 sem Caracas; 6 cupos |
 | 500 LatAm | Marca + lección clara (evidencia mercado); puerta recontacto | **Rechazado 6 ago**; no caja ahora; top 5; fee 15k |
 | FI Venezuela | Fee barato; 2,5% documentado; virtual; mentores VE | Sin cheque Core; tiempo oct–ene; peor dilución que ALGEN |
 | BID Lab | HealthTech + ENT; VE en 26 países (ecosistema); GET Forum | Call sept = **fondos**; seed C&D **sin VE**; lento |
@@ -65,9 +65,9 @@
 
 | Candidata | T/20 | S/20 | E/15 | V/15 | C/15 | R/15 | Total/100 |
 |-----------|------|------|------|------|------|------|-----------|
-| Epakon | 17 | 8 | 14 | 12 | 12 | 10 | **73** |
+| Epakon | 14 | 8 | 14 | 12 | 12 | 10 | **70** |
 | ALGEN | 9 | 16 | 13 | 10 | 13 | 11 | **72** |
-| Casa212 | 17 | 9 | 14 | 11 | 9 | 11 | **71** |
+| Casa212 | 14 | 9 | 14 | 11 | 9 | 11 | **68** |
 | 500 LatAm | 17 | 14 | 12 | 6 | 8 | 10 | **67** |
 | FI Venezuela | 4 | 11 | 11 | 8 | 9 | 12 | **55** |
 | BID Lab | 8 | 10 | 13 | 5 | 10 | 8 | **54** |
@@ -85,9 +85,9 @@
 
 | Orden | Acción | Candidata | Por qué |
 |-------|--------|-----------|---------|
-| 1º | Pitch cuando deck listo (cold o warm) | **Epakon** | Score 73; ticket ≈ Lean; red VE sin residencia |
+| 1º | Pitch cuando deck listo (cold o warm) | **Epakon** | Score 70; ticket parcial vs Lean **237.412**; red VE sin residencia |
 | 2º | Apply ciclo **15 oct** (si hay 12–16 h/sem) | **ALGEN** | Score 72; equity-free; cierra ronda |
-| 3º | Apply si hay Caracas 12 sem (≤15 ago) | **Casa212** | Score 71; mismo círculo; gate residencia |
+| 3º | Apply si hay Caracas 12 sem (≤15 ago) | **Casa212** | Score 68; mismo círculo; gate residencia |
 | 4º | **No** recontactar hasta gate; playbooks internos | **500 LatAm** | Score **67**; aprendizaje interno; demo+piloto |
 | 5º | Apply early ≤28 jul **solo si** falta PMF (si no → ALGEN) | **FI Venezuela** | Score 55; metodología; warrant |
 | 6º | Solo red / ecosistema partner | **BID Lab** | Score 54; no cheque seed VE |

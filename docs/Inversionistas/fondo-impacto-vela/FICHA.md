@@ -1,6 +1,6 @@
 # Ficha inversionista — Fondo de Impacto VELA (CAF)
 
-> Ask ref.: Lean **USD 210.760** · SAFE cap ref. **USD 600.000** · equity **~35,13%** ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
+> Ask ref.: Lean **USD 237.412** · SAFE cap ref. **USD 600.000** · equity **~39,57%** ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
 > Forense: 5 agosto 2026 · [fondovela.com](https://www.fondovela.com) · post IG · prensa CAF jul 2026 · PDF **Deep Research Gemini con fecha declarada 10 ago 2026** (síntesis y control de fuentes en [NOTAS.md](NOTAS.md)).  
 > **Disclaimer:** análisis interno founder; no es asesoría legal ni financiera.
 
@@ -42,7 +42,7 @@
 
 | Dimensión | Pack Zonix | VELA | Gap |
 |-----------|------------|------|-----|
-| Ticket | Lean **210.760** | **1–3 M** (directo) | **×5–14** vs ask — no cubre “cheque Lean”, pide otra ronda |
+| Ticket | Lean **237.412** | **1–3 M** (directo) | **×5–14** vs ask — no cubre “cheque Lean”, pide otra ronda |
 | Etapa | Pre-seed / piloto | **Serie A en adelante / Growth**; “ventas altas” no es requisito textual comprobado | Stage mismatch crítico |
 | Dilución | SAFE cap 600k (~35%) | Instrumento mixto / opaco | Pedir term sheet solo si hay fit stage |
 | Tesis | Marketplace pharma VE | Salud dentro de reducción de pobreza; ~**60%** clima/agro/azul según prensa secundaria | Encaje temático débil–parcial |
@@ -59,7 +59,7 @@
 
 ## Lo malo / riesgos
 
-- **No es Plan A** del raise Lean 210.760: etapa y ticket fuera de banda; pre-seed/seed no es target oficial, pero “rechazo automático” es inferencia del PDF.
+- **No es Plan A** del raise Lean 237.412: etapa y ticket fuera de banda; pre-seed/seed no es target oficial, pero “rechazo automático” es inferencia del PDF.
 - Thesis dominante clima/agro/azul (~60% prensa) — marketplace Rx/OTC no es el deal típico.
 - **20% de la comisión por desempeño ligado a impacto** + verificación independiente; marco exacto, carga y coste para la participada no están publicados.
 - Vehículo **aún fundraising**: ancla anunciada de hasta 20 M; first close, suscripción y despliegue real no confirmados.
@@ -89,8 +89,8 @@
 > One-pager: [RESUMEN_CEO.md](RESUMEN_CEO.md).  
 > **Envío:** [PAQUETE_FORM_VELA.md](PAQUETE_FORM_VELA.md) — founder pega y envía; JARVIS no envía.
 
-1. Founder envía form con paquete (ask **210.760**, etapa pre-seed honesta; **no** 5 M).
-2. Seguir Epakon / Casa212 / ALGEN como Plan A–B del raise 210.760 **en paralelo**.
+1. Founder envía form con paquete (ask **237.412**, etapa pre-seed honesta; **no** 5 M).
+2. Seguir Epakon / Casa212 / ALGEN como Plan A–B del raise 237.412 **en paralelo**.
 3. Tras envío: captura → bitácora [NOTAS.md](NOTAS.md).
 4. Revisitar score post Day-D / tracción si hay métricas de impacto.
 5. Canal [@convocatoriasymas](https://www.instagram.com/convocatoriasymas/) = radar (ver intel).

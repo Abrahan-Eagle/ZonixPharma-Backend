@@ -1,5 +1,6 @@
 # Análisis forense — URLs del doc Busqueda GitHub → pack Lanzamiento
 
+> **HISTÓRICO (may 2026) — no SoT financiero.** Mentiones de pricing **25/40/55** = obsoletas; vigente = **45/60/70 + %GMV 8/7/5**; ask **237.412**.  
 > **Fecha:** 26 mayo 2026.  
 > **Fuente auditada:** [../Búsqueda de Habilidades de Startup en GitHub.md](../Búsqueda%20de%20Habilidades%20de%20Startup%20en%20GitHub.md) (Tablas 1–4 + obras citadas).  
 > **Objetivo:** qué enlaces/skills **sirven para mejorar** [docs/Lanzamiento/](../Lanzamiento/) — sin instalar hubs en el repo ni sustituir cifras del pack.  

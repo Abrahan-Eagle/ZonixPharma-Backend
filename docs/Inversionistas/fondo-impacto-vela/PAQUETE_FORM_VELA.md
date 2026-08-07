@@ -3,7 +3,7 @@
 > **Uso:** copiar/pegar en [fondovela.com](https://www.fondovela.com) → “Envía información”.  
 > **Quién envía:** el founder (JARVIS **no** envía el form ni DMs).  
 > **Fecha paquete:** 5 agosto 2026  
-> **Ask en este envío:** Lean **USD 210.760** = **piso** (mínimo) · SAFE cap **600.000** (~**35,13%**) — [BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md).  
+> **Ask en este envío:** Lean **USD 237.412** = **piso** (mínimo) · SAFE cap **600.000** (~**39,57%**) — [BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md).  
 > **Narrativa escala:** con ticket **1–3 M** (rango VELA empresas) → lanzamiento **nacional** (todos los estados VE). No fingir que ya somos Serie A.  
 > **Reglas:** no fingir Serie A · no pedir USD 5 M (eso es techo a *fondos*) · no inventar ARR/farmacias activas reales.  
 > **Forense ampliado:** [NOTAS.md — Deep Research Gemini](NOTAS.md#deep-research-gemini-2026-08-10).
@@ -19,7 +19,7 @@ Marca antes de abrir el form:
 - [ ] Tipo: **empresa** (no fondo intermediario)
 - [ ] Sector VELA: **Reducción de pobreza → salud / acceso a servicios básicos** (no agro, no azul, no biodiversidad)
 - [ ] Etapa a declarar: **pre-seed / early** (piloto Valencia) — **no** “Serie A”
-- [ ] Ask a declarar: **USD 210.760** = piso ronda actual + escenario **1–3 M** para **cobertura nacional VE** (honestos en etapa; ambiciosos en uso de fondos)
+- [ ] Ask a declarar: **USD 237.412** = piso ronda actual + escenario **1–3 M** para **cobertura nacional VE** (honestos en etapa; ambiciosos en uso de fondos)
 - [ ] Contacto listo: Abrahan Pulido · `ing.pulido.abrahan@gmail.com` · +58 412 4352014
 - [ ] Link sitio / producto si el form lo pide: staging/VPS o [aiblockweb.com](https://aiblockweb.com) (no inventar URL Play Store si aún no hay release)
 - [ ] Adjuntos o zip a mano (si el form permite archivo) — ver §4
@@ -38,7 +38,7 @@ Problema de impacto: acceso irregular a medicamentos (stock, precio, tiempo, rec
 
 Etapa (honesta): pre-seed. Stack ~4 años en evolución; capa Pharma (Rx, roles) ya en staging. Aún no somos Serie A ni reportamos ARR de piloto en vivo; el capital cierra Fase 0 (T+90 a Day-D) + 12 meses de runway.
 
-Ask: el piso de la ronda actual es USD 210.760 vía SAFE (cap ref. USD 600.000, equity ~35,13%) — uso: Fase 0 ~50.260 + burn M1–M12 ~145.500 + reserva 15.000. Ese monto es el mínimo para cerrar validación; no es el techo de la ambición.
+Ask: el piso de la ronda actual es USD 237.412 vía SAFE (cap ref. USD 600.000, equity ~39,57%) — uso: Fase 0 ~50.260 + burn M1–M12 ~172.152 + reserva 15.000. Ese monto es el mínimo para cerrar validación; no es el techo de la ambición.
 
 Escenario VELA (1–3 M, rango típico empresa): uso de fondos = lanzar Zonix Pharma en todos los estados de Venezuela — onboarding de farmacias a escala nacional, cobertura geográfica, acceso digital a medicamentos e impacto medible (farmacias activas, órdenes, % Rx validadas). Estamos en pre-seed/early (piloto Valencia); la conversación de ticket 1–3 M es para escalar el modelo nacional cuando el fit de etapa lo permita — honestos en madurez, claros en la visión de Venezuela completa.
 

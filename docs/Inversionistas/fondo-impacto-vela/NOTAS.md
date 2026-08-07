@@ -107,7 +107,7 @@ El fondo de pensiones de empleados de Grupo Bimbo aparece como ancla de LATF en 
 | Dimensión | Conclusión |
 |-----------|------------|
 | Etapa | Mismatch crítico: Zonix está pre-seed y VELA publica Serie A+/Growth |
-| Ticket | Mismatch crítico: ask Lean **210.760** frente a ticket directo reportado **1–3 M** |
+| Ticket | Mismatch crítico: ask Lean **237.412** frente a ticket directo reportado **1–3 M** |
 | Tesis | Encaje parcial por acceso a salud; no hay tesis pharma/Rx explícita y el foco ambiental del 60% es dato secundario |
 | Velocidad | First close, capital desplegable y SLA **[NC]**; una demora es riesgo razonable, no hecho |
 | Impacto | Métricas estandarizadas y verificación independiente exigirán instrumentación; marco contractual, carga y coste exactos **[NC]** |

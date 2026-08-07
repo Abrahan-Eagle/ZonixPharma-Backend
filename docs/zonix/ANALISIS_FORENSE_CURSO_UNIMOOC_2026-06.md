@@ -1,5 +1,6 @@
 # Análisis forense — Curso UniMOOC Steve Blank → skills JARVIS Zonix
 
+> **HISTÓRICO (jun 2026) — no SoT financiero.** Pricing **25/40/55** citado abajo = obsoleto; vigente Excel v4 = **45/60/70 + %GMV 8/7/5**; ask Lean **237.412**.  
 > **Fecha:** 11 junio 2026  
 > **Fuente curso:** `/home/aipp/Downloads/STARTUP CREAR SKILLS/` — [UniMOOC «Cómo crear tu Startup»](http://unimooc.com/) (Steve Blank, Customer Development + Lean Canvas). Licencia reutilización: `http://aemprende.unimooc.com/reutiliza`.  
 > **Modo:** `auditar` + matriz de implementación P0 (sin volcar transcripciones).  

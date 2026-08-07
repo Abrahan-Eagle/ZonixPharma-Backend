@@ -171,7 +171,7 @@ Actores del marketplace, no cargos de nómina: paciente (`users`), farmacia (`co
 | **Empresa**          | Constitución C.A., SENIAT, SAFE, laboral, gobierno corporativo.           |
 | **Sistema**          | Producto, API, app, Rx, delivery, seguridad, datos de salud.              |
 | **Skill agente**     | Skill en `.agents/skills/` (Backend o Front) a invocar con JARVIS/Cursor. |
-| **Prioridad piloto** | Alta / Media / Baja para año 1 (Lean **210.760**).                        |
+| **Prioridad piloto** | Alta / Media / Baja para año 1 (Lean **237.412**).                        |
 
 Escala de impacto: **Alta** · **Media** · **Baja** · **Máxima**.
 

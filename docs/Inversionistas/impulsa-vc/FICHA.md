@@ -1,6 +1,6 @@
 # Ficha inversionista — Impulsa VC
 
-> Ask ref.: Lean ~USD 174.102 · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
+> Ask ref.: Lean **USD 237.412** · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
 > Forense: 21 julio 2026 · [impulsa.vc](https://www.impulsa.vc/) (todas las rutas nav) · LinkedIn · prensa BVC 2021 · briefing §4.4.  
 > **Disclaimer:** análisis interno founder; no es asesoría legal ni financiera.
 

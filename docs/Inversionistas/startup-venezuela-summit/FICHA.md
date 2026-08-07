@@ -1,6 +1,6 @@
 # Ficha inversionista — Startup Venezuela Summit (SVS)
 
-> Ask ref.: Lean **USD 210.760** · SAFE cap ref. **USD 600.000** ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
+> Ask ref.: Lean **USD 237.412** · SAFE cap ref. **USD 600.000** ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
 > Alta CRM: **7 agosto 2026** · Score **49** · Tipo: **evento / canal networking (no LP)**.  
 > Canon decisión: [`../../Lanzamiento/INFORME_CEO_500_Y_SVS_2026.md`](../../Lanzamiento/INFORME_CEO_500_Y_SVS_2026.md) · Intel: [`../_intel/2026-08-07-startup-venezuela-summit-2026.md`](../_intel/2026-08-07-startup-venezuela-summit-2026.md).  
 > **Disclaimer:** análisis interno founder; no es asesoría legal ni financiera. **No comprar ticket sin OK founder.**
@@ -34,7 +34,7 @@
 
 | Dimensión | Pack Zonix | SVS | Gap |
 |-----------|------------|-----|-----|
-| Ticket | Lean **210.760** | **Sin cheque** | No cubre ask |
+| Ticket | Lean **237.412** | **Sin cheque** | No cubre ask |
 | Dilución | SAFE cap 600k | N/A (fee entrada) | — |
 | Rol real | Caja Plan A | Red + pitch + intros | Canal P2 |
 | Tiempo | Raise rolling | **21–23 oct 2026** | Prep ago–oct |

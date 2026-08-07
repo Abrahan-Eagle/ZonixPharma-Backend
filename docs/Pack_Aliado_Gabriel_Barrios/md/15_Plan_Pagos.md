@@ -80,8 +80,8 @@ Detalle operativo del módulo Rx: ver documento hermano `16_Plan_Operativo.md`.
 
 Cada mes Zonix factura a la farmacia aliada:
 
-- **Parte fija** (suscripción / uso de la plataforma): **25 / 40 / 55 USD** según tier.
-- **Parte variable** (% sobre GMV completado en app del mes anterior).
+- **Parte fija** (suscripción / uso de la plataforma): **45 / 60 / 70 USD** según tier (Basic / Pro / Enterprise — Excel esc.1).
+- **Parte variable** (%GMV esc.1 **8 / 7 / 5** sobre GMV completado en app del mes anterior).
 
 La farmacia paga por pago móvil, transferencia, Zelle o Binance y envía comprobante. Zonix confirma y mantiene activo el servicio.
 

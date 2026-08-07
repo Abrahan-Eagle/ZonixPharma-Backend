@@ -14,13 +14,13 @@
 |-------|-----------|-------------------------------|
 | **Meta Ads (Instagram/Facebook)** | **Principal** | **USD 800/mes** meses 1–6 · **USD 500/mes** meses 7–12 |
 | **Valla publicitaria** | Complemento branding | **USD 350/mes** desde mes 3 (pequeña 3m×2m) |
-| **Flyers / brochures B2B** | Visitas comerciales | ~USD 50/mes |
+| **Flyers / brochures B2B** | Visitas comerciales | ~USD 52/mes |
 | **Radio FM** | Solo escenario Growth | USD 0 en Lean |
 | **Referido farmacia (QR mostrador)** | Costo ~0 | Incluido en material impreso |
 
 **En una frase:** **Aprendemos con digital** (CPL bajo, medible). **La valla no compite en costo por descarga** — da **legitimidad** en la ciudad y ayuda a cerrar farmacias B2B («ya nos ven en Valencia»).
 
-**Ancla piloto:** capital Lean **~112k**; caja M6 post-Day-D **~48.311**; si marketing offline escala antes de **~28 activas** pre-Day-D, se quema caja sin conversión.
+**Ancla piloto:** capital Lean **237.412**; caja M6 post-Day-D **~[PENDIENTE FP&A]**; si marketing offline escala antes de **~28 activas** pre-Day-D, se quema caja sin conversión.
 
 ---
 
@@ -45,14 +45,16 @@ Gabriel: aquí no pedimos que Morr pague marketing; pedimos tu criterio sobre **
 
 - Dueños de farmacia (B2B) valoran lo **tangible** (brochure, tarjeta, valla).
 - Una valla en **Av. Bolívar Norte** da **presencia local** — argumento de venta directo para Sales.
-- Adultos mayores (hijos comprando para padres) aún escuchan radio — reservado para escenario Growth (~187k).
+- Adultos mayores (hijos comprando para padres) aún escuchan radio — reservado para **intensidad alta** de marketing (escenario hist. “Growth”; ask **~187k** = no vigente).
 
 ---
 
 ## Presupuesto por escenario (referencia anual)
 
-| Rubro | Lean (~112k) | Base (~157k) | Growth (~187k) |
-|-------|--------------|--------------|----------------|
+> **Nota Cola B:** columnas **Base / Growth** = intensidad de gasto marketing (no asks de capital). Asks históricos **~157k / ~187k** = **no vigentes**; ask Lean vigente = **237.412**.
+
+| Rubro | Lean (ask **237.412**) | Intensidad media _(hist. “Base”)_ | Intensidad alta _(hist. “Growth”)_ |
+|-------|------------------------|-----------------------------------|-------------------------------------|
 | **Meta Ads** | **800/mes M1–6 · 500/mes M7–12** | **800/mes** todo el año | **800/mes** todo el año |
 | **Valla** | **350/mes desde M3** (pequeña) | **700/mes desde M2** (mediana) | **700/mes desde M2** |
 | Flyers + brochures | ~50/mes | ~100/mes | ~150/mes |
@@ -60,7 +62,7 @@ Gabriel: aquí no pedimos que Morr pague marketing; pedimos tu criterio sobre **
 | Eventos locales | 0 | ~50/mes desde M6 | ~100/mes desde M4 |
 | **Total marketing/mes (aprox.)** | **~850–1.200** *(M3–6 pico)* | **~950–1.550** | **~2.000+** |
 
-Lean concentra **~9.800 USD** en Meta año 1 + **~3.500** valla (M3–12) + **~600** material impreso — coherente con burn total **~97.290** operativo.
+Lean concentra **~9.800 USD** en Meta año 1 + **~3.500** valla (M3–12) + **~600** material impreso — coherente con burn total **~169.717** operativo.
 
 ---
 
@@ -111,7 +113,7 @@ Lean concentra **~9.800 USD** en Meta año 1 + **~3.500** valla (M3–12) + **~6
 | Base | 0,40 | ~12.000 | Medio | Alineado hipótesis |
 | Pesimista | 0,80 | ~6.000 | Alto | Activar Plan B (TikTok, CS outbound) |
 
-El **CAC farmacia ~139 USD** y **LTV/CAC ~7,2×** son del lado B2B; el CPL paciente es métrica aparte — no mezclar en una sola ratio.
+El **CAC farmacia ~139 USD** y **LTV/CAC ~7,5×** son del lado B2B; el CPL paciente es métrica aparte — no mezclar en una sola ratio.
 
 ---
 
@@ -173,7 +175,7 @@ Corredor piloto en copy offline: **Bella Florida**, **El Socorro**, **San Diego*
 |--------|---------|
 | Problema | WhatsApp caótico, stock invisible, hijos en exterior que no pueden pagar remoto |
 | Solución | Panel Zonix + validación Rx + pagos trazables |
-| Pricing | Cuota 25/40/55 + % GMV (ejemplo Pro **40 USD + 0,8%** GMV ilustrativo) |
+| Pricing | Cuota 45/60/70 + %GMV 8/7/5 (ejemplo Pro **60 USD + 7%** GMV (Excel esc.1)) |
 | Prueba social | «Visible en Valencia» (valla) + farmacias piloto |
 | CTA | QR demo + teléfono Sales |
 
@@ -244,7 +246,7 @@ Trackeo: URL `zonixpharma.com/valencia`, código **VALLA15** (15% 1er pedido), e
 Subir valla **350 → 700** (Lean → Base/Growth) si:
 
 1. Adopción supera **130%** del plan (~130 activas M6 vs 97).
-2. Caja M6 post-Day-D ≥ **~48.311** (referencia proyección Lean **~112k**).
+2. Caja M6 post-Day-D ≥ **~[PENDIENTE FP&A]** (referencia proyección Lean **237.412**).
 3. CAC orgánico (boca en boca + offline) supera digital en **farmacias firmadas**.
 4. Serie A en proceso o cerrada.
 
@@ -286,7 +288,7 @@ Subir valla **350 → 700** (Lean → Base/Growth) si:
 - CPL digital **0,15–0,60** es hipótesis del pack — recalibrar semana 1 post-campaña.
 - Publicidad en salud: **no sustituye** revisión abogado + criterio SUNDEE / regulatorio aplicable.
 - Escalar offline antes de farmacias activas en app **quema caja** sin conversión — regla Bullseye no negociable.
-- Cifras de caja (**78.153** Day-D, **48.311** M6, **40.831** M12) y **159 activas** vienen del escenario Lean — no mezclar con tiers superiores sin recalcular.
+- Cifras de caja (**187.152** Day-D, **[PENDIENTE FP&A]** M6, **246.231** M12) y **159 activas** vienen del escenario Lean — no mezclar con tiers superiores sin recalcular.
 - **No es solicitud de inversión** ni oferta de valores.
 
 ---

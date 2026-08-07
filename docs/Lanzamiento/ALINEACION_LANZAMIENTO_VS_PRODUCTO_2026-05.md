@@ -1,6 +1,6 @@
 # Alineación plan de Lanzamiento vs producto (software)
 
-> **Canon financiero (26 jul 2026 / esc.1):** Fase 0 **50.260** / SAFE **210.760** / cash M12 **398.293**. Fuente: [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) · [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md).
+> **Canon financiero (26 jul 2026 / esc.1):** Fase 0 **50.260** / SAFE **237.412** / cash M12 **246.231**. Fuente: [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) · [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md).
 
 > **Fecha:** 22 junio 2026 (refresh post-auditoría forense v2; anclas financieras actualizadas 30 jul 2026).  
 > **Estado del pack:** **WIP** — documentos en mejora continua; este informe no es dictamen final ni cierre de data room.  
@@ -18,10 +18,10 @@ Zonix Pharma planea un **piloto en Valencia metro (Carabobo)** como marketplace 
 
 | Hito | Significado | Gasto / modelo |
 |------|-------------|----------------|
-| **T+0** | Wire del capital (**USD 210.760** Lean) | Inicio Fase 0 |
+| **T+0** | Wire del capital (**USD 237.412** Lean) | Inicio Fase 0 |
 | **T+0 → T+90** | **Fase 0:** legal, equipo, HQ, tech, onboarding farmacias, catálogo, partner logístico | **USD 50.260** (one-shots **~22.365** + operativa) |
-| **Day-D = T+90** | Lanzamiento **público** en app = **M1** del modelo financiero | Caja Day-D **160.500** |
-| **M1–M12** | Escala comercial, Meta Ads, soporte; **profitable desde M1** (esc.1) | Caja M12 **398.293** |
+| **Day-D = T+90** | Lanzamiento **público** en app = **M1** del modelo financiero | Caja Day-D **187.152** |
+| **M1–M12** | Escala comercial, Meta Ads, soporte; equilibrio FCF mensual desde **M5** (FCF M1–M4 negativo; cash Day-D **187.152**) | Caja M12 **246.231** |
 
 ### 1.2 Qué hace el equipo en cada fase
 
@@ -37,7 +37,7 @@ Zonix Pharma planea un **piloto en Valencia metro (Carabobo)** como marketplace 
 
 - App en tiendas (plan: Play Store / App Store); Meta Ads + valla; primeras órdenes reales.
 - Soporte intensivo 10 días; reportes semanales/mensuales al inversor.
-- **Definition of Done piloto (M6 post-Day-D):** ≥97 farmacias activas, ≥1.500 pedidos, Rx ≤60 min, NPS, cash ≥~**218.981** (esc.1 — ver [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §5).
+- **Definition of Done piloto (M6 post-Day-D):** ≥97 farmacias activas, ≥1.500 pedidos, Rx ≤60 min, NPS, cash ≥~**180.403** (esc.1 — ver [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §5).
 
 ### 1.3 Decisiones de negocio que atan producto y docs
 
@@ -165,9 +165,9 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md). El plan de lanza
 
 | # | Observación | Acción |
 |---|-------------|--------|
-| W1 | ARPF **~50** en finanzas vs modelo híbrido 45/60/70 + % GMV | Ya aclarado en PROYECCION; repetir una línea en BRIEF “hasta GMV piloto” |
+| W1 | ARPF **~52** en finanzas vs modelo híbrido 45/60/70 + % GMV | Ya aclarado en PROYECCION; repetir una línea en BRIEF “hasta GMV piloto” |
 | W2 | VOLCADO §1.2 fecha tests 20 mayo | Actualizar al cerrar P0-06 |
-| W3 | Ask único Lean **210.760** vs tablas M1–M12 | Correcto: no mezclar escenarios; canon = esc.1 |
+| W3 | Ask único Lean **237.412** vs tablas M1–M12 | Correcto: no mezclar escenarios; canon = esc.1 |
 | W4 | DoD “validación Rx ≤60 min” vs TTL config 60 min | Coherente; documentar que es objetivo operativo + TTL automático |
 
 ---

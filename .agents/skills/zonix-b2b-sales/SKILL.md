@@ -58,7 +58,7 @@ Usar en **discovery call** y al ampliar el pack; no sustituye PROPUESTA_VALOR_CL
 
 | Objeción | Evidencia / ancla | Siguiente paso |
 |----------|-------------------|----------------|
-| Comisión | UNIT_ECONOMICS, bandas 25/40/55 + % GMV | Demo panel + waiver piloto si aplica |
+| Comisión | UNIT_ECONOMICS, bandas **45/60/70 + %GMV 8/7/5** | Demo panel + waiver piloto si aplica |
 | Rx / MPPS | PLAN_MODULO, PLAN_REGULATORIO | Intro farmacéutico responsable de la farmacia |
 | «No tengo tiempo» | Onboarding documentado PLAN §2.3 | Fecha capacitación + carga catálogo |
 

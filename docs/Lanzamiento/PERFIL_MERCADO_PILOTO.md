@@ -45,13 +45,14 @@
 
 Construido bottom-up, no top-down.
 
-| Mes | Farmacias activas | % SAM Valencia metro | Revenue mensual proyectado |
+| Mes | Farmacias activas | % SAM Valencia metro | Revenue mensual proyectado (esc.1) |
 |---|---|---|---|
-| 3 | **62** | **~27%** Valencia metro *(alineado [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1)* | **USD 3.100** |
-| 6 | **97** | **~43%** Valencia metro / **~54%** SAM extendido *(150–180; §1.1)* | **USD 4.850** |
-| 9 | **130** | **~57%** Valencia metro / **~72%** SAM extendido *(§1.1)* | **USD 6.500** |
-| **11** | **151** | **~67%** Valencia metro / **~84%** SAM extendido | **USD 7.550** *(revenue; burn mes 11 **7.431** — **equilibrio mensual** §1.1)* |
-| 12 | **159** | **~70%** Valencia metro / **~88%** SAM extendido *(§1.1)* | **USD 47.541** (esc.1) |
+| 3 | **62** | **~27%** Valencia metro *(alineado [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1)* | **USD 11.656** |
+| 6 | **97** | **~43%** Valencia metro / **~54%** SAM extendido *(150–180; §1.1)* | **USD 18.236** |
+| 9 | **130** | **~57%** Valencia metro / **~72%** SAM extendido *(§1.1)* | **USD 24.440** |
+| **5** | **85** | *(BE FCF mensual — primer mes FCF ≥ 0)* | **USD 15.980** *(costos **14.346**; FCF **+1.634**)* |
+| **11** | **151** | **~67%** Valencia metro / **~84%** SAM extendido | **USD 28.388** *(FCF+ consolidado; no es el BE)* |
+| 12 | **159** | **~70%** Valencia metro / **~88%** SAM extendido *(§1.1)* | **USD 29.892** |
 
 ### 3.1 Sanity check — cuota limitada por capacidad del canal (Steve Blank, L6.14)
 
@@ -63,8 +64,8 @@ Farmacias firmadas/mes ≈ 4 Sales × visitas efectivas/semana × tasa de cierre
 
 - **Headcount:** 4× Sales B2B (única fuente: [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) nómina) — no asumir más vendedores sin línea de gasto.
 - **Visitas efectivas/semana y tasa de cierre:** `[PENDIENTE Sales Lead — dato real T+60]`; hasta entonces la curva §3 es hipótesis, no compromiso.
-- **Cruce M3/M6 con PROYECCION §1.1:** al cierre **M3** el modelo central tiene **62 activas** / **USD 3.100** rev; al cierre **M6**, **97 activas** / **USD 4.850** — coherente con gate DoD ≥97 activas ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §5).
-- **Lectura de coherencia:** llegar a **151 activas en M11** requiere firmar ~13-14 farmacias/mes netas de churn (~3,5/mes por vendedor). Si el dato real T+60 queda por debajo, ajustar curva o headcount **antes** de prometer M11 al inversor — no estirar la tasa de cierre en el spreadsheet.
+- **Cruce M3/M6 con PROYECCION §1.1:** al cierre **M3** el modelo central tiene **62 activas** / **USD 11.656** rev; al cierre **M6**, **97 activas** / **USD 18.236** — coherente con gate DoD ≥97 activas ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §5).
+- **Lectura de coherencia:** BE FCF es **M5** (85 activas). Llegar a **151 activas en M11** requiere firmar ~13-14 farmacias/mes netas de churn (~3,5/mes por vendedor). Si el dato real T+60 queda por debajo, ajustar curva o headcount **antes** de prometer M11 al inversor — no estirar la tasa de cierre en el spreadsheet.
 - Cruce con CAC **139** y LTV/CAC **~7,2x** ([UNIT_ECONOMICS.md](UNIT_ECONOMICS.md)): si para sostener la curva hay que subir gasto S&M, recalcular payback antes de aceptar la nueva cuota.
 
 **Año 2:** expansión a Maracay y Maracaibo. SOM proyectado 200-220 farmacias activas, revenue mensual USD 8.000-9.000 (anual USD 96k-108k).
@@ -225,7 +226,7 @@ Estos números asumen:
 
 ## 10. Resumen para el inversor
 
-> Mercado farmacéutico VE: USD 1.638M/año (derivado Cifar/Faro: 389M u × ~USD 4,21). 226 farmacias en Valencia metro *(reconciliar vs ~187 ciudad / ~290 Carabobo — SmartScraper abr-2026)*. Comparable internacional (Farmalisto): ~USD 32M revenue; funding ~USD 22–33M. Diferencial: **cuota plataforma + % GMV moderado** vs. comisión **PedidosYa** (~25–35% GMV). Unit economics: [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) (CAC **139**, LTV/CAC **~7,2x**, ARPF **~50**). Validación Rx digital + cadena de frío + multi-sucursal — *[PENDIENTE dictamen abogado + farmacéutico asesor]*.
+> Mercado farmacéutico VE: USD 1.638M/año (derivado Cifar/Faro: 389M u × ~USD 4,21). 226 farmacias en Valencia metro *(reconciliar vs ~187 ciudad / ~290 Carabobo — SmartScraper abr-2026)*. Comparable internacional (Farmalisto): ~USD 32M revenue; funding ~USD 22–33M. Diferencial: **cuota plataforma + % GMV moderado** vs. comisión **PedidosYa** (~25–35% GMV). Unit economics: [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) (CAC **139**, LTV/CAC **~7,2x**, ARPF **~52**). Validación Rx digital + cadena de frío + multi-sucursal — *[PENDIENTE dictamen abogado + farmacéutico asesor]*.
 
 Documentos hermanos relevantes:
 - [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md): qué decir a la farmacia.

@@ -1,10 +1,10 @@
 # Modelo Financiero Zonix Pharma — gastos, ingresos y egresos
 
-> **Última actualización:** 26 julio 2026 (**v3.9.3 Excel** — sync desde Descargas `MODELO_FINANCIERO_170726 v3.xlsx`).
+> **Última actualización:** 7 agosto 2026 (**v4 Excel** — sync desde Descargas `MODELO_FINANCIERO_040826_v4.xlsx`).
 > **Propósito:** consolidado único para **inversor**, **FP&A** y aliados. Espejo versionado de [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx).
-> **Canon Lean:** SAFE **USD 210.760** = Fase 0 **50.260** + burn M1–M12 **145.500** + reserva **15.000**; Day-D **160.500**; equity **~35,13%** @ cap **600k**; burn prom. **~12.125**/mes.
+> **Canon Lean:** SAFE **USD 237.412** = Fase 0 **50.260** + burn M1–M12 **172.152** + reserva **15.000**; Day-D **187.152**; equity **~39,57%** @ cap **600k**; burn prom. **~14.346**/mes.
 > **Hojas:** **14** (Detallado, Hoja3, Hoja1, Hoja2, ESTA SI VALE, Año 1 esc.1/esc.2, Año 2–5, Flujo Total, Tasa Crecimiento).
-> **Generador legacy:** [`_tools/generate_modelo_financiero_v2.py`](_tools/generate_modelo_financiero_v2.py) puede no regenerar v3.9.3 — fuente operativa = xlsx sync. `.fods` puede quedar desfasado.
+> **Generador legacy:** [`_tools/generate_modelo_financiero_v2.py`](_tools/generate_modelo_financiero_v2.py) puede no regenerar v4 — fuente operativa = xlsx sync. `.fods` puede quedar desfasado.
 > **No sustituye:** contador SENIAT ni dictamen abogado.
 
 ## S0 — Visual template Pizza QLQ (piel v3.9.1)
@@ -25,7 +25,7 @@ El Excel **v3.9.1** adopta la **apariencia** del template inversor `Propuesta_Pi
 | Fuente Años | Arial 8pt | Bloque premisas B:C |
 | Zoom Detallado / Hoja3 / ESTA | 64 / 60 / 70 | `finish_pizza_sheet` |
 
-**Disclaimer reunión:** la paleta verde/púrpura es **familiaridad formato QLQ**, no branding final Zonix Pharma ([`BRAND_ZONIX_PHARMA.md`](../BRAND_ZONIX_PHARMA.md) navy/teal sigue en producto). Contenido = marketplace + SAFE, **no** reparto 70/30 Pizza. Canon pitch = Excel Detallado / Hoja3 (ask **210.760**); no hay spec layout Pizza separada en el pack.
+**Disclaimer reunión:** la paleta verde/púrpura es **familiaridad formato QLQ**, no branding final Zonix Pharma ([`BRAND_ZONIX_PHARMA.md`](../BRAND_ZONIX_PHARMA.md) navy/teal sigue en producto). Contenido = marketplace + SAFE, **no** reparto 70/30 Pizza. Canon pitch = Excel Detallado / Hoja3 (ask **237.412**); no hay spec layout Pizza separada en el pack.
 
 ## Convenciones
 
@@ -38,7 +38,7 @@ El Excel **v3.9.1** adopta la **apariencia** del template inversor `Propuesta_Pi
 
 **Calendario:** **T+0** = wire capital · **Day-D = T+90** = inicio M1 comercial · **M1–M12** = primer año post-Day-D.
 
-### Índice de hojas Excel (v3.9.3 — 14 hojas; piel QLQ en espejos)
+### Índice de hojas Excel (v4 — 14 hojas; piel QLQ en espejos)
 
 | Hoja Excel | Sección MD | Contenido |
 |------------|------------|-----------|
@@ -62,8 +62,8 @@ El Excel **v3.9.1** adopta la **apariencia** del template inversor `Propuesta_Pi
 | Concepto | Valor | Fuente |
 |----------|-------|--------|
 | Producto | Marketplace farmacéutico B2B2C (OTC + Rx), Valencia piloto | README pack |
-| Revenue B2B | Cuota fija **USD 45 / 60 / 70** + **% GMV** por banda | PROPUESTA_VALOR_CLIENTE_B2B §5 (esc.1 Excel v3.9.3) |
-| ARPF placeholder | **USD ~50/mes** por farmacia activa | UNIT_ECONOMICS |
+| Revenue B2B | Cuota fija **USD 45 / 60 / 70** + **% GMV** por banda | PROPUESTA_VALOR_CLIENTE_B2B §5 (esc.1 Excel v4) |
+| ARPF placeholder | **USD ~52/mes** por farmacia activa | UNIT_ECONOMICS / Año1 esc.1 Excel v4 |
 | Mix tier (planning) | 60% Basic / 30% Pro / 10% Enterprise | PROYECCION §1.2 |
 | Margen bruto plataforma | **~92%** (sin logística del medicamento) | UNIT_ECONOMICS §8 |
 | GMV / take-rate (año 2+) | Documentar cuando haya GMV piloto | `[PENDIENTE GMV]` |
@@ -75,13 +75,13 @@ El Excel **v3.9.1** adopta la **apariencia** del template inversor `Propuesta_Pi
 | CAC farmacia | **USD 139** |
 | Churn mensual (target) | **5%** |
 | Lifetime promedio | **20 meses** |
-| LTV | **USD 1.000** |
-| LTV / CAC | **~7,2x** |
+| LTV | **USD 1.040** |
+| LTV / CAC | **~7,5x** |
 | Payback CAC | **~2,8 meses** |
-| Farmacias activas M12 (esc.1) | **159** — con **4× Sales** v3.9.3: FCF **+237.793** Y1 (positivo desde M1 con pricing 45/60/70 + % GMV) |
-| Equilibrio mensual (esc.1) | **M1** — revenue 11.960 > burn 10.411 desde el primer mes |
+| Farmacias activas M12 (esc.1) | **159** — FCF Y1 **+59.079**; BE mensual **M5** |
+| Equilibrio mensual (esc.1) | **M5** — ingresos M1 **7.520** < costos **11.411**; FCF+ desde M5 |
 
-### S1.2b Equipo y sueldos Lean *(esc.1 v3.9.3 — USD/mes, base; comisiones Sales aparte)*
+### S1.2b Equipo y sueldos Lean *(esc.1 v4 — USD/mes, base; comisiones Sales aparte)*
 
 | Rol | Lean (esc.1) |
 |-----|------|
@@ -97,24 +97,24 @@ El Excel **v3.9.1** adopta la **apariencia** del template inversor `Propuesta_Pi
 
 > **Benchmarks VE 2026:** AVGH oct-2025 (profesional pleno ~785; gerencia media ~1.563). Dev local 600–1.000; Sales B2B base 150–1.000 + comisión. Lean documenta sueldos **bajo mercado** a cambio de ticket menor — validar contratos `[PENDIENTE]`.
 
-### S1.3 Instrumento SAFE *(canon v3.9.3 — ask único)*
+### S1.3 Instrumento SAFE *(canon v4 — ask único)*
 
 | Término | Valor |
 |----------|-------|
 | **Tier** | **Lean** (4× Sales bootstrap Carabobo) |
-| Capital SAFE | **USD 210.760** |
+| Capital SAFE | **USD 237.412** |
 | SAFE post-money cap | **USD 600.000** |
-| Equity implícito si cap aplica | **~35,13%** *(210.760 / 600k)* |
-| Burn prom. mensual | **~12.125** |
+| Equity implícito si cap aplica | **~39,57%** *(237.412 / 600k)* |
+| Burn prom. mensual | **~14.346** |
 
 ### S1.4 Premisas valoración `[SUPUESTO MODELO]`
 
 | Premisa | Valor | Nota |
 |---------|-------|------|
-| Inversión inicial (wire T+0) | **−USD 210.760** | Escenario Lean Excel v3.9.3 |
+| Inversión inicial (wire T+0) | **−USD 237.412** | Escenario Lean Excel v4 |
 | Tasa de descuento (VAN) | **25%** | Referencia pre-seed LatAm; no WACC auditado |
 | Horizonte VAN | 3 y 5 años | Post Day-D |
-| Reparto flujos ilustrativo | **~35,13%** inversor / **~64,87%** founder | **No** es cláusula SAFE; solo escenario didáctico |
+| Reparto flujos ilustrativo | **~39,57%** inversor / **~60,43%** founder | **No** es cláusula SAFE; solo escenario didáctico |
 
 ---
 
@@ -134,9 +134,9 @@ El Excel **v3.9.1** adopta la **apariencia** del template inversor `Propuesta_Pi
 | Intro 3 meses | Intro demo + marketing pre + **video B2B 800** | One-shots **~22.365** (legal+intro+HQ CapEx incl. alquiler Fase 0) |
 | Marketing mensual | Bloque desglosado en Detallado + ESTA/Año 1 | **No suma** al TOTAL SAFE (anti triple-conteo) |
 | Materia prima | N/A → Hosting/SaaS/SMS **~154/mes** | Footnote SaaS **120** + SMS **34** |
-| Total + % equity | TOTAL SAFE **210.760** + resumen lateral **~35,13%** | Cap ref. 600k |
+| Total + % equity | TOTAL SAFE **237.412** + resumen lateral **~39,57%** | Cap ref. 600k |
 
-### S2.1 One-shots Fase 0 — Lean *(ancla v3.9.3)* — ver hoja **Detallado de la inversión.**
+### S2.1 One-shots Fase 0 — Lean *(ancla v4)* — ver hoja **Detallado de la inversión.**
 
 | Rubro | Total USD |
 |-------|-----------|
@@ -165,7 +165,7 @@ Plantilla Pizza **Hoja1** lista equipos, adecuación, MO, transporte, alquiler, 
 | Elemento transversal | Detalle |
 |---------------------|---------|
 | Col **I % SAFE** | Espejo Detallado col H en cada línea |
-| Panel | CapEx HQ ref · TOTAL SAFE **210.760** · burn · reserva **15.000** · % equity **~35,13%** |
+| Panel | CapEx HQ ref · TOTAL SAFE **237.412** · burn · reserva **15.000** · % equity **~39,57%** |
 | Disclaimer | Datos ZonixPharma — **no sumar bloques al TOTAL SAFE** (one-shots en Hoja3 §A) |
 
 > **Reunión:** **Hoja1** = misma estructura visual que Pizza, rubros Zonix. Use-of-funds oficial = **Hoja3 §A**. Drill-down = **Detallado**. Unit economics = **ESTA**.
@@ -184,7 +184,7 @@ Pizza concentra en **ESTA** el desglose operativo + simulador de utilidad. Zonix
 | **B — Gastos fijos** (cols P–Q) | Bandas utilidad 70-50% / 60-40% / 50-30% | 3 escenarios margen SaaS · ref. burn÷activas — **no sumar SAFE** |
 | **C — Simulador** (cols O–W) | Grid 8 meses cantidad×precio×utilidad | **M1-M12** farmacias activas × ARPF vs burn · enlaces **Año 1** · stress **P10** ARPF 40 |
 | **D — Panel unit economics** (col M+) | — (Pizza no tiene SaaS metrics) | LTV/CAC, tiers, P10/P50/P90 (conservar v3.7) |
-| **Burn Detallado / Hoja3** | — | **~12.125/mes** → **145.500**/Y1 (canon ask). Esc.1 P&L: **10.411 / 10.747 / 10.380**. |
+| **Burn Detallado / Hoja3** | — | **~14.346/mes** → **172.152**/Y1 (canon ask). Esc.1 P&L: M1 **11.411** / M2 **14.846** / M3–12 **14.346**. |
 
 > **Reunión:** **ESTA** = single pane due diligence (como Pizza). CapEx equipos/HQ → **Hoja1**. TOTAL SAFE → **Hoja3 §A**. No sumar bloques ESTA + Hoja1 + Hoja3.
 
@@ -207,18 +207,18 @@ Pizza concentra en **ESTA** el desglose operativo + simulador de utilidad. Zonix
 | **0b** | T+30–60 | **8.625** (MO 7.125 + renta 750 + mkt pre 750) |
 | **0c** | T+60–90 | **8.625** (MO 7.125 + renta 750 + mkt pre 750) |
 | **Total Fase 0** | | **50.260** |
-| **Caja al Day-D (inicio M1)** | | **160.500** *(210.760 − 50.260)* |
+| **Caja al Day-D (inicio M1)** | | **187.152** *(237.412 − 50.260)* |
 
-### S2.3 Use of funds — Lean 12 meses *(ancla v3.9.3 — aritmética cerrada)*
+### S2.3 Use of funds — Lean 12 meses *(ancla v4 — aritmética cerrada)*
 
 | Concepto | USD |
 |----------|-----|
 | **Fase 0** (T+0→Day-D: one-shots 22.365 + operativa 27.895) | **50.260** |
-| Burn operativo M1–M12 | **145.500** |
+| Burn operativo M1–M12 | **172.152** |
 | Reserva caja | **15.000** |
-| **Total capital SAFE Lean** | **210.760** |
+| **Total capital SAFE Lean** | **237.412** |
 
-> **Validación aritmética:** 50.260 + 145.500 + 15.000 = **210.760** ✓ (canon Excel v3.9.3). Desglose Fase 0: one-shots (legal+intro+HQ CapEx **incl. alquiler Fase 0**) **22.365** + operativa (MO+mkt+transporte) **27.895** = **50.260**.
+> **Validación aritmética:** 50.260 + 172.152 + 15.000 = **237.412** ✓ (canon Excel v4). Desglose Fase 0: one-shots (legal+intro+HQ CapEx **incl. alquiler Fase 0**) **22.365** + operativa (MO+mkt+transporte) **27.895** = **50.260**.
 
 ### S2.5 Hoja3 — resumen inversión *(layout Pizza QLQ adaptado, v3.5.2)*
 
@@ -255,31 +255,31 @@ Tabla detallada de rubros (Detallado + MO post-Day-D): ver **[S2.0](#s20-mapping
 
 *(Equivalente hoja «Año 1».)*
 
-**Convención ingreso:** revenue = placeholder **ARPF ~50** × dinámica de activas (PROYECCION §1.1). **Egresos:** burn por tramo incluye todas las líneas §2.3 PRESUPUESTO.
+**Convención ingreso:** revenue = P&L Excel híbrido (cuota + % GMV), **no** ARPF×activas. **ARPF ~52** = placeholder UE. **Egresos:** costos Año 1 esc.1 / Detallado ask.
 
-### S3.1 Tabla operativa mes a mes *(ancla esc.1 Excel v3.9.3 — pricing 45/60/70 + % GMV)*
+### S3.1 Tabla operativa mes a mes *(ancla esc.1 Excel v4 — pricing 45/60/70 + % GMV)*
 
 | Mes | Firmadas (altas) | Activas (cierre) | Ingresos USD | Egresos (burn) USD | FCF mensual | FCF acumulado |
 |-----|------------------|------------------|--------------|-------------------|-------------|---------------|
-| 1 | 13 | 40 | 11.960 | 10.411 | +1.549 | 1.549 |
-| 2 | 13 | 51 | 15.249 | 10.411 | +4.838 | 6.387 |
-| 3 | 14 | 62 | 18.538 | 10.747 | +7.791 | 14.178 |
-| 4 | 15 | 74 | 22.126 | 10.747 | +11.379 | 25.557 |
-| 5 | 15 | 85 | 25.415 | 10.747 | +14.668 | 40.225 |
-| 6 | 16 | 97 | 29.003 | 10.747 | +18.256 | 58.481 |
-| 7 | 16 | 108 | 32.292 | 10.380 | +21.912 | 80.393 |
-| 8 | 16 | 119 | 35.581 | 10.380 | +25.201 | 105.594 |
-| 9 | 17 | 130 | 38.870 | 10.380 | +28.490 | 134.084 |
-| 10 | 17 | 141 | 42.159 | 10.380 | +31.779 | 165.863 |
-| 11 | 17 | 151 | 45.149 | 10.380 | +34.769 | 200.632 |
-| 12 | 16 | 159 | 47.541 | 10.380 | +37.161 | **237.793** |
-| **Total año 1** | **185** | **159** *(M12)* | **363.883** | **126.090** | **+237.793** | — |
+| 1 | 13 | 40 | 7.520 | 11.411 | −3.891 | −3.891 |
+| 2 | 13 | 51 | 9.588 | 14.846 | −5.258 | −9.149 |
+| 3 | 14 | 62 | 11.656 | 14.346 | −2.690 | −11.839 |
+| 4 | 15 | 74 | 13.912 | 14.346 | −434 | −12.273 |
+| 5 | 15 | 85 | 15.980 | 14.346 | +1.634 | −10.639 |
+| 6 | 16 | 97 | 18.236 | 14.346 | +3.890 | −6.749 |
+| 7 | 16 | 108 | 20.304 | 14.346 | +5.958 | −791 |
+| 8 | 16 | 119 | 22.372 | 14.346 | +8.026 | 7.235 |
+| 9 | 17 | 130 | 24.440 | 14.346 | +10.094 | 17.329 |
+| 10 | 17 | 141 | 26.508 | 14.346 | +12.162 | 29.491 |
+| 11 | 17 | 151 | 28.388 | 14.346 | +14.042 | 43.533 |
+| 12 | 16 | 159 | 29.892 | 14.346 | +15.546 | **59.079** |
+| **Total año 1** | **185** | **159** *(M12)* | **228.796** | **169.717** | **+59.079** | — |
 
-> **Lectura Excel esc.1:** FCF Y1 **+237.793** (positivo desde M1). Revenue Y1 **363.883** (cuota fija 45/60/70 + comisión % GMV). Cash M12 **398.293** (160.500 + 237.793).
+> **Lectura Excel esc.1:** FCF Y1 **+59.079**; BE mensual **M5**. Revenue Y1 **228.796**; costos Y1 **169.717**. Cash M12 **246.231** (187.152 + 59.079).
 
 ### S3.2 Desglose egresos recurrentes — hoja **Año 1** (filas por rubro × Mes 1–12)
 
-> Totales esc.1: burn tramo A **10.411** / B **10.747** / C **10.380** → Total Y1 **126.090**. Desglose completo por rubro: hoja **"Año 1 escenario 1"** del Excel v3.9.3. Diferencia vs burn Detallado **145.500** (12.125/mes) = comisiones Sales + items no incluidos en Año 1 esc.1 — `[PENDIENTE FP&A reconciliar]`.
+> Totales esc.1: costos M1 **11.411** / M2 **14.846** / M3–12 **14.346** → Y1 **169.717**. Desglose: hoja **"Año 1 escenario 1"**. Delta vs burn Detallado **172.152** (~14.346/mes) — `[PENDIENTE FP&A reconciliar]`.
 
 | Línea | USD/mes (referencia) | Tramo / nota |
 |-------|----------------------|--------------|
@@ -295,9 +295,9 @@ Tabla detallada de rubros (Detallado + MO post-Day-D): ver **[S2.0](#s20-mapping
 | Meta Ads | **800** M1–6 · **500** M7–12 | Variable por tramo (Año 1) |
 | Valla pequeña 3m×2m | **350** M3+ · **0** M1–2 | Variable (Año 1) |
 | Material + transporte + contingencia | **1.322** M1–2 · **1.308** M3–6 · **1.241** M7–12 | Incluye buffer VE 20% |
-| **Burn tramo A** (M1–2) | **10.411** | Total fila «Total Costos» |
-| **Burn tramo B** (M3–6) | **10.747** | |
-| **Burn tramo C** (M7–12) | **10.380** | |
+| **Total Costos M1** | **11.411** | Excel Año 1 esc.1 |
+| **Total Costos M2** | **14.846** | |
+| **Total Costos M3–M12** | **14.346**/mes | Y1 costos **169.717** |
 
 > Costos fijos enlazados a **ESTA SI VALE** col. I; Meta/valla/contingencia por tramo en Año 1. Sin fila «Cuadre buffer» visible.
 
@@ -305,36 +305,36 @@ Tabla detallada de rubros (Detallado + MO post-Day-D): ver **[S2.0](#s20-mapping
 
 **v2.2:** filas **Cash inicial mes** y **Cash final mes** en **Año 1** son **fórmulas vivas**:
 
-- **M1 cash ini** = Caja al Day-D Excel **160.500** (210.760 − 50.260).
+- **M1 cash ini** = Caja al Day-D Excel **187.152** (237.412 − 50.260).
 - **Cash final mes** = cash ini + Total Ingresos − Total Costos (por mes).
 - **M2+ cash ini** = cash final del mes anterior.
 
 | Mes | Cash inicial | Inflow | Outflow | Cash final |
 |-----|--------------|--------|---------|------------|
-| Day-D (M1) | 160.500 | 11.960 | 10.411 | 162.049 |
-| 2 | 162.049 | 15.249 | 10.411 | 166.887 |
-| 3 | 166.887 | 18.538 | 10.747 | 174.678 |
-| 4 | 174.678 | 22.126 | 10.747 | 186.057 |
-| 5 | 186.057 | 25.415 | 10.747 | 200.725 |
-| 6 | 200.725 | 29.003 | 10.747 | 218.981 |
-| 7 | 218.981 | 32.292 | 10.380 | 240.893 |
-| 8 | 240.893 | 35.581 | 10.380 | 266.094 |
-| 9 | 266.094 | 38.870 | 10.380 | 294.584 |
-| 10 | 294.584 | 42.159 | 10.380 | 326.363 |
-| 11 | 326.363 | 45.149 | 10.380 | 361.132 |
-| 12 | 361.132 | 47.541 | 10.380 | **398.293** |
+| Day-D (M1) | 187.152 | 7.520 | 11.411 | 183.261 |
+| 2 | 183.261 | 9.588 | 14.846 | 178.003 |
+| 3 | 178.003 | 11.656 | 14.346 | 175.313 |
+| 4 | 175.313 | 13.912 | 14.346 | 174.879 |
+| 5 | 174.879 | 15.980 | 14.346 | 176.513 |
+| 6 | 176.513 | 18.236 | 14.346 | 180.403 |
+| 7 | 180.403 | 20.304 | 14.346 | 186.361 |
+| 8 | 186.361 | 22.372 | 14.346 | 194.387 |
+| 9 | 194.387 | 24.440 | 14.346 | 204.481 |
+| 10 | 204.481 | 26.508 | 14.346 | 216.643 |
+| 11 | 216.643 | 28.388 | 14.346 | 230.685 |
+| 12 | 230.685 | 29.892 | 14.346 | **246.231** |
 
-> **Lectura esc.1 v3.9.3:** cash M12 **398.293** (160.500 caja Day-D + 237.793 FCF Y1).
+> **Lectura esc.1 v4:** cash M12 **246.231** (187.152 + FCF Y1 +59.079).
 
 ---
 
 ## S4 — Sensibilidad Lean y escenarios
 
-### S4.1 Escenario Lean *(canon v3.9.3 — ask único)*
+### S4.1 Escenario Lean *(canon v4 — ask único)*
 
-| Concepto | Lean 210.760 (canon) |
+| Concepto | Lean 237.412 (canon) |
 |----------|------------|
-| Burn prom. mensual | 12.125 |
+| Burn prom. mensual | 14.346 |
 | One-shots (legal+intro+HQ CapEx) | 22.365 |
 | Fase 0 total (T+0→Day-D) | 50.260 |
 | Reserva caja | 15.000 |
@@ -343,24 +343,24 @@ Tabla detallada de rubros (Detallado + MO post-Day-D): ver **[S2.0](#s20-mapping
 | Sales en nómina | 4× @ 350 |
 | Curva comercial | ×1,0 |
 | Dev en nómina | 1.000 (esc.1) |
-| Cash M12 | **398.293** |
-| FCF Y1 | **+237.793** |
+| Cash M12 | **246.231** |
+| FCF Y1 | **+59.079** |
 
 ### S4.2 Escenarios P10 / P50 / P90 *(PROYECCION §6)*
 
-| Escenario | Prob. | Activas M12 | ARPF | Revenue M12 (ord.) | Cash M12 (ord.) |
-|-----------|-------|-------------|------|-------------------|-----------------|
-| **P10 pesimista** | 20% | ~120 | 40 | ~4.800 | ~25.000 |
-| **P50 base** | 50% | ~159 | ~50 | ~47.541 | **398.293** |
-| **P90 optimista** | 30% | ~200 | 55 | ~11.000 | ~52.000 |
+| Escenario | Prob. | Activas M12 | ARPF ref. | Revenue M12 (esc.1) | Cash M12 |
+|-----------|-------|-------------|-----------|---------------------|----------|
+| **P10 pesimista** | 20% | ~120 | ~40 | híbrido Excel | **`[PENDIENTE FP&A]`** |
+| **P50 base** | 50% | ~159 | **~52** | **~29.892** (≠ 159×52) | **246.231** |
+| **P90 optimista** | 30% | ~200 | ~55 | híbrido Excel | **`[PENDIENTE FP&A]`** |
 
 ### S4.3 Sensibilidad unit economics
 
 | Variable | Base | Rango | Impacto |
 |----------|------|-------|---------|
-| ARPF | 50 | 35–55 | Equilibrio ~160 → ~232 (ARPF 35) o ~145 (ARPF 55) |
-| CAC | 139 | 90–170 | LTV/CAC 7,2x → 5,9x–11,1x |
-| Churn | 5% | 3–7% | LTV 1.000 → 650–1.650 |
+| ARPF | **52** | 35–55 | BE stock vs burn ~14.346: ~410 @35 / ~276 @52 / ~261 @55 (fórmula; curva comercial ~159) |
+| CAC | 139 | 90–170 | LTV/CAC ~7,5x (LTV 1.040) → ~6,1x–11,6x |
+| Churn | 5% | 3–7% | LTV 1.040 → ~743–1.733 |
 
 ---
 
@@ -374,7 +374,7 @@ Tabla detallada de rubros (Detallado + MO post-Day-D): ver **[S2.0](#s20-mapping
 
 | Año | Farmacias activas (cierre) | Revenue anual USD | Costos anual USD | FCF anual USD | Nota |
 |-----|----------------------------|-------------------|------------------|---------------|------|
-| **1** (M1–M12) | 159 | **363.883** | **126.090** | **+237.793** | *(esc.1 v3.9.3)* |
+| **1** (M1–M12) | 159 | **228.796** | **169.717** | **+59.079** | *(esc.1 v4)* |
 | **2** | ~220 | **~102.000** | **~96.000** | **~6.000** | PROYECCION §2.3 (mid-range) |
 | **3** | ~440 | **~192.000** | **~108.000** | **~84.000** | PROYECCION §3.2 conservador |
 | **4** | ~520 `[SUPUESTO]` | **~240.000** | **~130.000** | **~110.000** | Expansión nacional parcial |
@@ -410,8 +410,8 @@ Tabla detallada de rubros (Detallado + MO post-Day-D): ver **[S2.0](#s20-mapping
 
 | Año | FCF operativo USD | Fuente |
 |-----|-------------------|--------|
-| 0 (inversión) | **−210.760** | Wire Lean T+0 |
-| 1 | **+237.793** | S3.1 total (esc.1 — pricing 45/60/70 + % GMV) |
+| 0 (inversión) | **−237.412** | Wire Lean T+0 |
+| 1 | **+59.079** | S3.1 total (esc.1 — pricing 45/60/70 + % GMV) |
 | 2 | **+6.000** | PROYECCION §2.3 EBITDA mid |
 | 3 | **+84.000** | PROYECCION §3.2 mid |
 | 4 | **+110.000** | `[SUPUESTO MODELO]` |
@@ -422,24 +422,24 @@ Tabla detallada de rubros (Detallado + MO post-Day-D): ver **[S2.0](#s20-mapping
 | Métrica | Valor USD | Fórmula / lectura |
 |---------|-----------|-------------------|
 | VP flujos años 0–5 | **~331.290** | Hoja **Flujo Total** — celda VP Flujos(5) (esc.1 cash flows) |
-| **VAN(5)** (wire 210.760) | **~120.530** | VP Flujos(5) − wire = 331.290 − 210.760. **Positivo** en esc.1 (pricing 45/60/70) |
-| **VAN(3)** (wire 210.760) | **~26.294** | VP Flujos(3) ~237.054 − wire 210.760. Positivo en esc.1 |
-| **TIR (5 años)** | **~55%** *(estimado)* | Vector: −210.760 + FCF años 1–5 esc.1. `[PENDIENTE FP&A — recalcular exacto]` |
+| **VAN(5)** (wire 237.412) | **~120.530** | VP Flujos(5) − wire = 331.290 − 237.412. **Positivo** en esc.1 (pricing 45/60/70) |
+| **VAN(3)** (wire 237.412) | **~26.294** | VP Flujos(3) ~237.054 − wire 237.412. Positivo en esc.1 |
+| **TIR (5 años)** | **~55%** *(estimado)* | Vector: −237.412 + FCF años 1–5 esc.1. `[PENDIENTE FP&A — recalcular exacto]` |
 | **TIR (3 años)** | **~40%** *(estimado)* | Horizonte corto con FCF A1 positivo esc.1. `[PENDIENTE FP&A]` |
 | **Tasa Requerida (r)** | **25%** | `=Flujo Total!C8` — fila dedicada bajo TIR |
 | **% SAFE recuperado (CCF acum Y5)** | **~98%** ilustrativo | `CCF acum Y5 / wire` — esc.1 cubre ~98% del wire en 5 años |
-| **Payback inversor (ilustrativo)** | **~Año 2–3** en esc.1 | Año en que **CCF acumulado** ≥ USD 210.760; esc.1 con FCF Y1 +237.793 sugiere payback ~Y2. `[PENDIENTE FP&A]` |
+| **Payback inversor (ilustrativo)** | **~Año 2–3** en esc.1 | Año en que **CCF acumulado** ≥ USD 237.412; esc.1 con FCF Y1 +59.079 sugiere payback ~Y2. `[PENDIENTE FP&A]` |
 
-> **Lectura inversor pre-seed v3.9.3 (esc.1):** Con pricing 45/60/70 + comisión % GMV, el escenario base muestra **VAN(5) positivo (~120k)** y **TIR ~55%** — atractivo para pre-seed. Recalcular con FP&A antes de pitch institucional para confirmar que el % GMV del esc.1 es realista con GMV piloto.
+> **Lectura inversor pre-seed v4 (esc.1):** Con pricing 45/60/70 + comisión % GMV, el escenario base muestra **VAN(5) positivo (~120k)** y **TIR ~55%** — atractivo para pre-seed. Recalcular con FP&A antes de pitch institucional para confirmar que el % GMV del esc.1 es realista con GMV piloto.
 
 ### S6.3 Reparto de flujos **ilustrativo** (no cláusula SAFE)
 
-**Equity:** participación inversor Lean **~35,13%** (210.760/600k). Hojas Año/Flujo pueden aún mostrar **35,13%** hasta re-link — preferir Detallado/Hoja3 para ask.
+**Equity:** participación inversor Lean **~39,57%** (237.412/600k). Hojas Año/Flujo pueden aún mostrar **39,57%** hasta re-link — preferir Detallado/Hoja3 para ask.
 
 | Parte | % ilustrativo | FCF año 5 ilustrativo |
 |-------|---------------|------------------------|
-| Inversor SAFE (cap 600k) | **35,13%** | *(recalcular CCF)* |
-| Founder + equipo (pre-dilución Serie A) | **64,87%** | **~122.010** |
+| Inversor SAFE (cap 600k) | **39,57%** | *(recalcular CCF)* |
+| Founder + equipo (pre-dilución Serie A) | **60,43%** | **~122.010** |
 
 **Disclaimer:** Zonix Pharma usa **SAFE post-money cap** ([ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md)). El inversor **no** recibe reparto de caja operativa hasta conversión; esta tabla es **solo didáctica** (contraste con modelos 70/30 tipo Pizza QLQ).
 
@@ -448,7 +448,7 @@ Tabla detallada de rubros (Detallado + MO post-Day-D): ver **[S2.0](#s20-mapping
 | Evento | Founder | Inversor SAFE |
 |--------|---------|---------------|
 | Pre-SAFE | 100% | 0% |
-| Post-conversión (cap 600k aplica) | **~64,87%** | **~35,13%** |
+| Post-conversión (cap 600k aplica) | **~60,43%** | **~39,57%** |
 | Serie A hipotética (500k @ 2M pre) | Ver ESTRUCTURA_LEGAL §3.3 | Dilución adicional |
 
 ---
@@ -462,8 +462,8 @@ Tabla detallada de rubros (Detallado + MO post-Day-D): ver **[S2.0](#s20-mapping
 | Driver | M1 | M6 | M12 |
 |--------|----|----|-----|
 | Farmacias activas | 40 | 97 | 159 |
-| ARPF placeholder USD | ~50 | ~50 | ~50 |
-| Revenue mensual USD (esc.1) | ~11.960 | ~29.003 | ~47.541 |
+| ARPF placeholder USD | ~52 | ~52 | ~52 |
+| Revenue mensual USD (esc.1) | ~7.520 | ~18.236 | ~29.892 |
 | Churn mensual target | 5% | 5% | 5% |
 
 ### S7.2 Tasas de crecimiento `[LARGO PLAZO / SUPUESTO]`
@@ -487,17 +487,17 @@ Recalibrar ARPF y S3 cuando existan **≥30 días** de GMV post-Day-D (UNIT_ECON
 
 ## Checklist de coherencia (zonix-financial-model)
 
-- [x] **Ask único Lean 210.760** @ cap 600k → equity **~35,13%**
-- [x] SAFE cap **600.000**; equity Lean **~35,13%**
-- [x] Burn M1–M12 **145.500** (~12.125/mes); buffer VE 20% en contingencia Excel
-- [x] **Aritmética use-of-funds cerrada:** Fase 0 **50.260** + Burn **145.500** + Reserva **15.000** = **210.760** ✓
+- [x] **Ask único Lean 237.412** @ cap 600k → equity **~39,57%**
+- [x] SAFE cap **600.000**; equity Lean **~39,57%**
+- [x] Burn M1–M12 **172.152** (~14.346/mes); buffer VE 20% en contingencia Excel
+- [x] **Aritmética use-of-funds cerrada:** Fase 0 **50.260** + Burn **172.152** + Reserva **15.000** = **237.412** ✓
 - [x] One-shots Lean **22.365** (legal 5.050 + intro 5.640 + HQ/CapEx 11.675)
-- [x] Fase 0 **50.260**; caja Day-D **160.500**
+- [x] Fase 0 **50.260**; caja Day-D **187.152**
 - [x] Flujo Total: refs vivas, **TIR(3/5) %**, **Tasa r**, **% SAFE recuperado**, payback + lectura, resumen Y5 K/L
-- [x] Detallado v3.9.3: resumen lateral K–M, MO/marketing mensual desglosado, anti triple-conteo
+- [x] Detallado v4: resumen lateral K–M, MO/marketing mensual desglosado, anti triple-conteo
 - [ ] Recalibrar con GMV piloto — `[PENDIENTE]`
-- [ ] Validar VAN/TIR con wire 210.760 + esc.1 cash flows — `[Requiere FP&A/contador]`
-- [x] Cash M12 esc.1 (pricing 45/60/70) = **398.293** (160.500 + FCF +237.793)
+- [ ] Validar VAN/TIR con wire 237.412 + esc.1 FCF +59.079 / cash M12 246.231 — `[Requiere FP&A/contador]`
+- [x] Cash M12 esc.1 = **246.231** (187.152 + FCF Y1 +59.079); BE mensual **M5**
 
 ---
 

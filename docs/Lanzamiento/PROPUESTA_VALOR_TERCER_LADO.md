@@ -13,7 +13,7 @@ Resumen para inversor y onboarding partner; detalle de flujos en [PLAN_METODOS_P
 
 | Lado | Rol en app | Paga a | Recibe de | Ingreso Zonix |
 |------|------------|--------|-----------|---------------|
-| **Farmacia** | `commerce` | **Zonix** (cuota **45/60/70** + % GMV) | Paciente (producto OTC/Rx) | Principal — [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5 |
+| **Farmacia** | `commerce` | **Zonix** (cuota **45/60/70 + %GMV 8/7/5**) | Paciente (producto OTC/Rx) | Principal — [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5 |
 | **Paciente** | `users` | Farmacia + **fee delivery** (a `delivery_company`) | Medicamento + tracking | Indirecto vía GMV farmacia |
 | **Empresa delivery** | `delivery_company` | **Zonix** (**8% × Σ fee + USD 0,30 × envío**/mes) | Paciente (fee por orden) | Secundario — PLAN_METODOS §2.5 |
 | **Farmacéutico** | `pharmacist` | — (empleado/colegiado de la farmacia) | Salario farmacia | Habilita Rx; sin fee directo a Zonix |

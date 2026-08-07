@@ -14,7 +14,7 @@ Zonix Pharma permite **buscar medicamentos en farmacias aliadas**, comparar prec
 
 La demanda B2C se enciende en **Day-D (T+90)**, cuando ya hay catálogo en **~28 farmacias** y crece hacia **~40 en el mes 1** y **~159 al mes 12** — siempre **después** de captar oferta B2B con **4× Sales**.
 
-**Contexto financiero (lado oferta):** el piloto Lean asume **~112k** capital, **~159 activas M12** y unit economics B2B con **LTV/CAC ~7,2×** — el paciente es el segundo lado del marketplace; sin farmacias activas, no hay propuesta creíble.
+**Contexto financiero (lado oferta):** el piloto Lean asume **237.412** capital, **~159 activas M12** y unit economics B2B con **LTV/CAC ~7,5×** — el paciente es el segundo lado del marketplace; sin farmacias activas, no hay propuesta creíble.
 
 ---
 
@@ -170,8 +170,8 @@ Cédula solo si Rx retenida o sustancia controlada; email opcional.
 
 | Fase | Enfoque | Farmacias activas ref. | Marketing USD/mes ref. |
 |------|---------|------------------------|------------------------|
-| **T+0 → T+90** | B2B primero; soft launch interno T+60–70 | ~28 al Day-D | Mínimo (test píxel) |
-| **Day-D (= M1)** | Meta + valla zona piloto | **~40** | Meta **800** |
+| **T+0 → T+90** | B2B primero; soft launch interno T+60–70 | **~28** al Day-D (T+90) | Mínimo (test píxel) |
+| **M1 (post-Day-D)** | Meta + valla zona piloto | **~40** | Meta **800** |
 | **M2–M3** | Geo Bella Florida + El Socorro | ~51–62 | Meta 800 + valla 350 (M3+) |
 | **M4–M6** | Expansión corredores; DoD demanda | ~74–97 | Meta 800 |
 | **M7–M12** | Valencia metro completo | ~108–**159** | Meta **500** (M7+) |
@@ -269,7 +269,7 @@ Estas cifras de **demanda** van **después** de la curva de **oferta**. No susti
 - **Ahorro 15–25%:** estimación interna; depende de stock, marca/genérico y promociones.
 - **Tiempos de entrega y validación:** objetivos operativos; sujetos a partner y horario farmacia.
 - **Metas de usuarios:** hipótesis; métrica gate real = **repeat compra M2** post-Day-D.
-- **Oferta B2B (~159 activas M12, LTV/CAC ~7,2×)** es ancla financiera; demanda B2C se calibra con piloto.
+- **Oferta B2B (~159 activas M12, LTV/CAC ~7,5×)** es ancla financiera; demanda B2C se calibra con piloto.
 - **No es solicitud de inversión** ni oferta de valores.
 
 ---

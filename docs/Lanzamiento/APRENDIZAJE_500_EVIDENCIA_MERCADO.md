@@ -16,7 +16,7 @@ El 6 agosto 2026, **500 Global / 500 LatAm** rechazó la aplicación de Zonix Ph
 |----------|--------|-----------|
 | MVP técnico | Staging, API Rx, Flutter, cientos de tests | Lo que 500 midió en el apply |
 | Evidencia de mercado | Demo 3–5 min + early adopters (farmacias/pedidos) | Solo slides o “443 tests” |
-| Ask Lean | **USD 210.760** SAFE cap 600k | Cheque 500 (285k neto) — otro ciclo |
+| Ask Lean | **USD 237.412** SAFE cap 600k | Cheque 500 (285k neto) — otro ciclo |
 
 **Mensaje canónico:** stack/staging = capacidad. Para fondos tipo 500 (y para credibilidad general) hace falta **demo consumible + adopción temprana**.
 

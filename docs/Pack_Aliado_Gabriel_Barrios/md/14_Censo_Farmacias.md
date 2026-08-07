@@ -158,7 +158,7 @@ El founder debe confirmar **en persona** que el dolor existe **antes** de escala
 | Problema | Dueño independiente pierde ventas/horas por WhatsApp, Rx sin trazabilidad, conciliación manual | ≥2/3 entrevistas sin dolor → revisar segmento |
 | Segmento | Valencia (Bella Florida / El Socorro / San Diego) es beachhead correcto | Dolor solo en cadenas u otra zona |
 | Propuesta | «Costo total menor vs agregador» pesa más que «modernidad» | Priorizan otro beneficio → ajustar pitch |
-| Pricing | Cuota 25/40/55 + % es aceptable | ≥2/3 rechazan Pro → escalar a founder |
+| Pricing | Cuota **45/60/70 + %GMV 8/7/5** es aceptable | ≥2/3 rechazan Pro → escalar a founder |
 
 ### Reglas de entrevista (no negociables)
 
@@ -248,7 +248,7 @@ Interés en seguir conversando: alto / medio / nulo
 | Dolor confirmado | ≥3/5 farmacias citan al menos 1 dolor del top 3 con dato concreto |
 | Ranking 3+3 dolores | Lleno con citas reales (no pendiente) |
 | Pipeline | ≥5 filas reales en hoja operativa |
-| Pricing testeado | ≥3 reacciones documentadas a cuota 25/40/55 |
+| Pricing testeado | ≥3 reacciones documentadas a cuota **45/60/70 + %GMV 8/7/5** |
 
 ---
 
@@ -287,7 +287,7 @@ Cada farmacia visitada se registra: municipio, zona, tipo, Rx sí/no, contacto, 
 
 | Meta territorial | Vendedores mínimo año 1 | Escenario financiero |
 |------------------|-------------------------|----------------------|
-| Plan conservador (~**159 activas** M12) | **4 vendedores** | Lean ~112k USD |
+| Plan conservador (~**159 activas** M12) | **4 vendedores** | Lean **237.412 USD** |
 | Captura agresiva (>80% independientes censo) | **6 vendedores** | ~185k USD *(stretch — no ask principal)* |
 
 **Pregunta para Gabriel:** con **~80–100 independientes** solo en Valencia metro, ¿alcanza **4 vendedores** para el plan año 1, o conviene priorizar municipios y bajar meta M12?

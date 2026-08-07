@@ -1,6 +1,6 @@
 # Ficha — Build with Gemini XPRIZE
 
-> Ask ref.: Lean **USD 210.760** · SAFE cap ref. **USD 600.000** · equity **~35,13%** ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
+> Ask ref.: Lean **USD 237.412** · SAFE cap ref. **USD 600.000** · equity **~39,57%** ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
 > **Disclaimer:** análisis founder interno; no es asesoría legal ni financiera.  
 > Fecha CRM: **2026-08-05**.  
 > Forense: landing + Devpost Rules/FAQ + video · PDF **Deep Research Gemini** (`~/Descargas/Investigación Google Gemini XPRIZE.pdf`) — síntesis en [NOTAS.md](NOTAS.md#deep-research-gemini).
@@ -32,12 +32,12 @@
 | Condiciones especiales | Negocio AI-native post-**19 may 2026**; org. **&lt;25 empleados**; GCP + Gemini API; revenue arms-length; video ≤3 min; repo compartido; affidavits / W-8BEN etc. |
 | Fuentes | Official Rules + FAQ Devpost; página Circle; landing = marketing (Rules prevalecen); PDF Gemini = síntesis secundaria |
 
-### Matriz vs ask Lean 210.760
+### Matriz vs ask Lean 237.412
 
 | Pregunta | Respuesta |
 |----------|-----------|
 | ¿Escribe el cheque Lean como LP? | **No** |
-| ¿Puede un premio cubrir ≥210.760 si ganas? | Sí en 1º–5º (y runners-up / Circle 50k **no** cubren el ask completo) |
+| ¿Puede un premio cubrir ≥237.412 si ganas? | Sí en 1º–5º (y runners-up / Circle 50k **no** cubren el ask completo) |
 | ¿Probabilidad útil para Zonix **hoy**? | **Muy baja** — New Projects Only + deadline **17 ago 2026** + evidencia intensa |
 | ¿Plan A del raise? | **No** |
 

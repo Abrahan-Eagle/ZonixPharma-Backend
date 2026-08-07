@@ -22,7 +22,7 @@ Hay capital pre-seed **real y operable hoy** en Venezuela — no solo discursos.
 | **28 jul 2026** | Early deadline **Founder Institute** Venezuela |
 | **15 ago 2026** | Cierra apply **Casa212** Cohorte 1 (inicio 1 sep) |
 
-**Ask Zonix (pack actual):** **USD 210.760** Lean (ask único) @ cap SAFE **USD 600k** → equity **~35,13%**. Casa212 pone **USD 150k** — ticket parcial sobre el SAFE (o co-inversión); modelar dilución (SAFE + “equity del programa” Casa212) antes de firmar.
+**Ask Zonix (pack actual):** **USD 237.412** Lean (ask único) @ cap SAFE **USD 600k** → equity **~39,57%**. Casa212 pone **USD 150k** — ticket parcial sobre el SAFE (o co-inversión); modelar dilución (SAFE + “equity del programa” Casa212) antes de firmar.
 
 **Recomendación analista:** pitear **solo Zonix Pharma**; aplicar **Casa212 + Epakon en paralelo** si alguien del equipo puede estar 12 semanas en Caracas. Si no hay bandwidth de residencia, prioriza **ALGEN** (no cedes equity por el programa) y luego Epakon.
 
@@ -44,7 +44,7 @@ Hay capital pre-seed **real y operable hoy** en Venezuela — no solo discursos.
 | Ruta | En una frase | Cuándo | Marca |
 |------|--------------|--------|-------|
 | **A — Agresiva** | Casa212 (15 ago) + Epakon ya + ALGEN ~15 oct | Hay quien se muda a Caracas | [ ] |
-| **B — Sin ceder equity primero** | ALGEN → estructurar ronda ~USD 300k → luego Epakon/Casa212 | No hay residencia | [ ] |
+| **B — Sin ceder equity primero** | ALGEN → cerrar ask Lean **237.412** (benchmark programa ~300k ≠ ask Zonix) → luego Epakon/Casa212 | No hay residencia | [ ] |
 | **C — Marca global** | YC / 500 como norte; Epakon warm intro; Tech Week may 2027 | Ambición LatAm/US y runway alcanza | [ ] |
 
 ---
@@ -165,7 +165,7 @@ Cada ficha usa la misma plantilla. Bajo cada una: hechos → significado → pen
 
 **Beneficios no-cash.** Apartamento, comida, seguridad 24/7, internet triple (fibra/Starlink/LTE), generador, legal/banking US, pilotos con banca y real estate, mentores operadores, Demo Day curado / intros warm.
 
-**Fit Zonix:** **Alto** si hay founder que se muda (ask **210.760** encaja con co-cheque 150k Casa212).  
+**Fit Zonix:** **Alto** si hay founder que se muda (ask **237.412** encaja con co-cheque 150k Casa212).  
 **Riesgos.** Dilución SAFE + equity programa desconocido; compromiso físico; tasa de aceptación brutal.
 
 **Preguntar al aplicar.** ¿Post-money cap del SAFE? ¿% exacto del equity del programa? ¿Pro-rata es de Casa212, Epakon, Arqos o los tres? ¿Cuántas intros warm garantizadas vs solo “sala”?
@@ -372,7 +372,7 @@ Canónico: [DOCUMENTOS_SOLO_INVERSOR.md](DOCUMENTOS_SOLO_INVERSOR.md).
 
 **Zip mínimo (~30 min):** BRIEF_UNA_PAGINA · CONTEXTO_PITCH · PERFIL_MERCADO · UNIT_ECONOMICS · PROYECCION §1.1 · modelo Excel · ESTRUCTURA_LEGAL · CHECKLIST_PRE_INVERSOR · mensaje de envío §2.
 
-**Extras Casa212/Epakon:** modelo de dilución (150k Casa212 + ~150k Epakon base + ask Lean **210.760**) · plan Delaware o “aún no incorporados” · métricas vivas · memo OFAC 1 página · plan Rx/regulatorio · bios + vesting · smoke Rx.
+**Extras Casa212/Epakon:** ronda objetivo pack = SAFE Lean **USD 237.412** @ cap **600k**. Casa212 **150k** y Epakon tip. **~150k** son **cheques parciales / syndicate** sobre ese ask (no suman una ronda 300k automática). Modelar dilución (SAFE + equity programa Casa212 si aplica) · plan Delaware o “aún no incorporados” · métricas vivas · memo OFAC 1 página · plan Rx/regulatorio · bios + vesting · smoke Rx.
 
 ```bash
 cd docs/Lanzamiento && python3 _tools/verify_inversor_pack.py
@@ -459,7 +459,7 @@ Detalle de equity/Delaware: [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQ
 10. **Kontigo:** ByN etiqueta la pieza como **“Nota de Prensa”** — USD 21 M / &gt;USD 250 M / 1,5 M users / USD 1.000 M 2025 coherentes entre sí, origen corporativo.  
 11. **GL 56/57 (14 abr 2026)** — confirmadas en OFAC primary; lista cerrada de 4 bancos + filiales 50%; AML/FinCEN vigentes.  
 12. **Ridery BVC:** Serie IV hasta **USD 500k** @ **12 %**; emisión global del programa **USD 2 M** (SUNAVAL/Fivenca) — **deuda**, no equity VMV.  
-13. **Ask Zonix** Lean **210.760** @ cap **600k** ↔ Casa212 150k + Epakon ~150k: alinear caps antes de firmar.
+13. **Ask Zonix** Lean **237.412** @ cap **600k** ↔ Casa212 150k + Epakon ~150k: alinear caps antes de firmar.
 
 ### Preguntas prioritarias (ordenadas por impacto en dilución)
 
@@ -482,7 +482,7 @@ Detalle de equity/Delaware: [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQ
 3. Si 3V Tech aporta: inscribir **antes del 15 jul** (o confirmar extensión).  
 4. FI solo si no distrae del foco comercial (early **28 jul**).  
 5. ALGEN: confirmar Batch VE o agendar **octubre**.  
-6. Modelar dilución Casa212 150k + Epakon ~150k vs ask Lean **210.760** y cap 600k.  
+6. Modelar dilución Casa212 150k + Epakon ~150k vs ask Lean **237.412** y cap 600k.  
 7. Counsel legal/OFAC antes de recibir wire.  
 8. Opcional: waitlist +58; call Impulsa solo si quieres estructuración local/BVC.
 

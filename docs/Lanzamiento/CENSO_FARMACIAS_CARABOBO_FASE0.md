@@ -75,7 +75,7 @@ Contar **farmacias independientes y medianas** en **todo el estado Carabobo** (n
 
 | Meta territorial | Vendedores mínimo año 1 | Ask / modelo | Firmas Y1 ref. |
 |------------------|-------------------------|--------------|----------------|
-| **Carabobo conservador (~159 activas M12)** | **4× Sales** | **Lean ~211k (210.760 Excel)** | ~185 firmas, ~159 activas M12 |
+| **Carabobo conservador (~159 activas M12)** | **4× Sales** | **Lean ~237k (237.412 Excel)** | ~185 firmas, ~159 activas M12 |
 
 Meta agresiva (>80% independientes / 150+ activas con visita presencial sostenida): validar headcount Sales **post-censo §7** bajo el mismo ask Lean; no introduce un segundo tier SAFE.
 
@@ -88,7 +88,7 @@ Ver análisis Pizza → Zonix (jun 2026) y [PROYECCION_FINANCIERA_12M.md](PROYEC
 - [ ] ≥ **150 filas** válidas en plantilla §5 con `tipo = independiente | cadena_local`
 - [ ] ≥ **2 fuentes** cruzadas (Saas + calle o gremio)
 - [ ] Mapa por municipio (conteo reconciliado)
-- [ ] Founder aprueba **N definitivo** de Sales bajo ask Lean **210.760**
+- [ ] Founder aprueba **N definitivo** de Sales bajo ask Lean **237.412**
 - [ ] Actualizar [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) y [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) §4 con cifra validada
 
 ---

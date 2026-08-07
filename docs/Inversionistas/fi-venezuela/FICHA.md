@@ -1,6 +1,6 @@
 # Ficha inversionista — Founder Institute Venezuela
 
-> Ask ref.: Lean ~USD 174.102 · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
+> Ask ref.: Lean **USD 237.412** · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
 > Forense: 21 julio 2026 · [fi.co/venezuela](https://fi.co/venezuela) + programa 13045 · equity · FAQ · Founder Capital · briefing §5.2.  
 > **Disclaimer:** análisis interno founder; no es asesoría legal ni financiera.
 
