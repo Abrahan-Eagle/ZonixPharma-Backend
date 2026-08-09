@@ -35,7 +35,7 @@
 1. Informe escrito (este archivo).
 2. **TRIM P1:** anclas Pack `manifest.yaml` → Excel v4; `manifest_inversor.yaml` paths rotos + fecha; cabecera `active_context` + canon financiero + diario forense comprimido.
 3. **MOVE 500-latam:** no aplicado (queda candidato).
-4. Push commits docs: según OK del founder en la misma respuesta.
+4. Push: Backend `main` → `db42b70`; Front `dev` → `3ea2ecf` (solo commits docs; auth local Front sin tocar).
 
 ## Canon financiero (referencia)
 
