@@ -153,7 +153,7 @@ Regla: pivot documentado en VOLCADO + nota founder; **no** pivotar por una sola 
 
 ### 4.0 Validación pre-Day-D (Customer Development + mom-test)
 
-Checklist **antes** de tráfico masivo. Documentar solo entrevistas reales en VOLCADO / CRM. **Smoke técnico Rx/OTC:** [../SMOKE_RX_E2E.md](../SMOKE_RX_E2E.md) (REGISTRO P1-12) antes de fila **Go Day-D**.
+Checklist **antes** de tráfico masivo. Documentar solo entrevistas reales en VOLCADO / CRM. **Smoke técnico Rx/OTC:** [../SMOKE_RX_E2E.md](../qa/SMOKE_RX_E2E.md) (REGISTRO P1-12) antes de fila **Go Day-D**.
 
 | Paso                                         | Validación                                                                                                                                       | Evidencia mínima                                                                                                                                                                                                                    |
 | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

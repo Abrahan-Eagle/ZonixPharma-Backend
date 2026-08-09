@@ -63,8 +63,8 @@ Documentos inversor adicionales en `docs/Lanzamiento/` (no van en el zip de 30 m
 | Documento | Archivo |
 |-----------|---------|
 | Alineación pack ↔ producto en código | [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) |
-| Smoke manual Rx/OTC | [../SMOKE_RX_E2E.md](../SMOKE_RX_E2E.md) |
-| Análisis técnico completo | [../ANALISIS_TECNICO_COMPLETO_2026-05.md](../ANALISIS_TECNICO_COMPLETO_2026-05.md) |
+| Smoke manual Rx/OTC | [../SMOKE_RX_E2E.md](../qa/SMOKE_RX_E2E.md) |
+| Análisis técnico completo | [../ANALISIS_TECNICO_COMPLETO_2026-05.md](../audits/ANALISIS_TECNICO_COMPLETO_2026-05.md) |
 
 ### Referencias regulatorias / producto (fuera de Lanzamiento)
 

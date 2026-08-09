@@ -29,7 +29,7 @@ Actúas como **equipo de data room pre-seed** (panel JARVIS) para **Zonix Pharma
 | **Infra / deploy** | `zonixpharma.com`, repos `ZonixPharma-Backend` / `ZonixPharma-Front` — **nunca** `corralx.com` ni repos CorralX |
 | **Portfolio del founder** | **Permitido** citar **Corral X**, Zonix Imports, Aiblockweb en BRIEF/VOLCADO/CHECKLIST como track record — **no** es el producto financiado |
 | **Fuera de alcance** | Código Laravel/Flutter, skills nuevas, `.cursor/plans/`, commit/push sin orden explícita |
-| **No adjuntar con @** | Docs Eats históricos (`GUIA_COMPLETA_ZONIX_EATS_VENEZUELA.md`, `REQUISITOS_OPERAR_VENEZUELA.md`) — solo Pharma en `docs/Lanzamiento/` |
+| **No adjuntar con @** | Docs Eats históricos (`archive/research/GUIA_COMPLETA_ZONIX_EATS_VENEZUELA.md`, `archive/research/REQUISITOS_OPERAR_VENEZUELA.md`) — solo Pharma en `docs/Lanzamiento/` |
 
 ---
 
@@ -96,7 +96,7 @@ Actúas como **equipo de data room pre-seed** (panel JARVIS) para **Zonix Pharma
 | 25 | `BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md` | Discovery B2B |
 | 26 | `RESUMEN_ALIADO_GABRIEL_BARRIOS.md` | Anexo outreach (no zip default) |
 
-**Docs hermanos** (referenciar, no duplicar): `docs/BRAND_ZONIX_PHARMA.md`, `docs/PLAN_REGULATORIO_PHARMA_VE.md`, `docs/PLAN_RX_VALIDATION.md`, `docs/REQUISITOS_OPERAR_VENEZUELA.md`, `docs/logica-pagos-por-rol.md`, `docs/FLUJO_PAGO_ORDEN.md`.
+**Docs hermanos** (referenciar, no duplicar): `docs/BRAND_ZONIX_PHARMA.md`, `docs/PLAN_REGULATORIO_PHARMA_VE.md`, `docs/PLAN_RX_VALIDATION.md`, `docs/archive/research/REQUISITOS_OPERAR_VENEZUELA.md`, `docs/product/logica-pagos-por-rol.md`, `docs/product/FLUJO_PAGO_ORDEN.md`.
 
 ---
 

@@ -61,5 +61,5 @@
 ## Referencias
 
 - [VPS_NAMECHEAP_QUASAR_RUNBOOK.md](VPS_NAMECHEAP_QUASAR_RUNBOOK.md) (Zonix)
-- CorralX: `CorralX-Backend/docs/VPS_NAMECHEAP_QUASAR_RUNBOOK.md`
+- CorralX: `CorralX-Backend/docs/ops/VPS_NAMECHEAP_QUASAR_RUNBOOK.md`
 - Pack: [Lanzamiento/PRESUPUESTO_12_MESES_REFERENCIA.md](Lanzamiento/PRESUPUESTO_12_MESES_REFERENCIA.md)

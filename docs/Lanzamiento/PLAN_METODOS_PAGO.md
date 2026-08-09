@@ -4,7 +4,7 @@
 > Documento que detalla cómo se cobra y se paga en **Zonix Pharma** (pack inversor / piloto).
 >
 > **One-pager inversor (3 min):** resumen ejecutivo abajo · §1 métodos · §2.1–2.2 flujos A/B · §10 Sudeban. Runbook (mora §2.3, Laravel §6, KPIs §8) = anexo operativo post-wire.
-> Marco **Sudeban / no intermediación:** §10 de este documento; contexto farmacéutico amplio en [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md) §8. No usar [`../REQUISITOS_OPERAR_VENEZUELA.md`](../REQUISITOS_OPERAR_VENEZUELA.md) (archivo histórico Zonix Eats).
+> Marco **Sudeban / no intermediación:** §10 de este documento; contexto farmacéutico amplio en [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md) §8. No usar [`../REQUISITOS_OPERAR_VENEZUELA.md`](../archive/research/REQUISITOS_OPERAR_VENEZUELA.md) (archivo histórico Zonix Eats).
 
 **Resumen ejecutivo:** el **paciente** paga a la **farmacia** (medicamentos) y a la **empresa partner** (envío) por canales **manuales VE** (pago móvil, transferencia, Zelle, Binance, efectivo). **Zonix Pharma** no es PSP: cobra a la farmacia **cuota + % GMV** (B2B) y a la empresa logística **fee por envío** (§2.5). La farmacia **valida el comprobante** antes de despachar.
 
@@ -292,7 +292,7 @@ El backend Laravel ya tiene módulos implementados:
 - Eventos broadcast (`PaymentValidated`, `PaymentRejected`) con Pusher.
 - FCM push notifications a paciente y farmacia.
 
-Detalle: `[../FLUJO_PAGO_ORDEN.md](../FLUJO_PAGO_ORDEN.md)` y `[../logica-pagos-por-rol.md](../logica-pagos-por-rol.md)`.
+Detalle: `[../FLUJO_PAGO_ORDEN.md](../product/FLUJO_PAGO_ORDEN.md)` y `[../logica-pagos-por-rol.md](../product/logica-pagos-por-rol.md)`.
 
 ## 7. Política de reembolsos
 
@@ -349,7 +349,7 @@ Detalle: `[../FLUJO_PAGO_ORDEN.md](../FLUJO_PAGO_ORDEN.md)` y `[../logica-pagos-
 
 **Si aplica licencia:** horizonte típico **12–18 meses** y costo de compliance post-Serie A (tabla de riesgos §5). Hasta entonces: mantener flujo documentado en §2.1–2.5 y [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §4.6.
 
-**Referencia histórica (solo Eats):** [`../REQUISITOS_OPERAR_VENEZUELA.md`](../REQUISITOS_OPERAR_VENEZUELA.md) § Sudeban — mismo principio de no intermediación, redactado para comida rápida; **no sustituye** este §10 para Pharma.
+**Referencia histórica (solo Eats):** [`../REQUISITOS_OPERAR_VENEZUELA.md`](../archive/research/REQUISITOS_OPERAR_VENEZUELA.md) § Sudeban — mismo principio de no intermediación, redactado para comida rápida; **no sustituye** este §10 para Pharma.
 
 ## 11. Documentos hermanos
 
@@ -357,8 +357,8 @@ Detalle: `[../FLUJO_PAGO_ORDEN.md](../FLUJO_PAGO_ORDEN.md)` y `[../logica-pagos-
 - [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md): cómo la farmacia recibe.
 - [PROPUESTA_VALOR_TERCER_LADO.md](PROPUESTA_VALOR_TERCER_LADO.md): partner logístico; fórmula Zonix §2.5 (`8% + USD 0,30/envío`).
 - [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md): validación Rx antes del pago.
-- [`../FLUJO_PAGO_ORDEN.md`](../FLUJO_PAGO_ORDEN.md): implementación técnica (checkout y comprobante).
-- [`../logica-pagos-por-rol.md`](../logica-pagos-por-rol.md): roles y métodos cargados por entidad.
+- [`../FLUJO_PAGO_ORDEN.md`](../product/FLUJO_PAGO_ORDEN.md): implementación técnica (checkout y comprobante).
+- [`../logica-pagos-por-rol.md`](../product/logica-pagos-por-rol.md): roles y métodos cargados por entidad.
 - [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md): MPPS, INHRR, datos de salud, §8 no intermediación de pago.
 - [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §4.6: KYC/AML y triggers agregador.
 

@@ -138,7 +138,7 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 - [ ] Cuenta de demo delivery con orden asignada.
 - [ ] Conexión a internet de respaldo (hotspot móvil).
 - [ ] Backend de demo en **staging/VPS** (no local); verificar conectividad pre-reunión — release tiendas **T+7–12** Fase 0.
-- [ ] **Smoke manual Rx/OTC** ejecutado según [../SMOKE_RX_E2E.md](../SMOKE_RX_E2E.md) (REGISTRO P1-12) antes de demo en vivo P0-05.
+- [ ] **Smoke manual Rx/OTC** ejecutado según [../SMOKE_RX_E2E.md](../qa/SMOKE_RX_E2E.md) (REGISTRO P1-12) antes de demo en vivo P0-05.
 
 ## 6. Guion de la reunión (30 minutos)
 
@@ -238,8 +238,8 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 | Pregunta | Respuesta anclada | Fuente |
 |----------|-------------------|--------|
 | ¿Stack? | Laravel API + Flutter; Sanctum; Pusher + FCM; pagos manuales VE | [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) |
-| ¿Tests? | **443** tests backend + **~241** Flutter (re-verificar commit antes de reunión — P0-06 / AUD-01) | [../ANALISIS_TECNICO_COMPLETO_2026-05.md](../ANALISIS_TECNICO_COMPLETO_2026-05.md) |
-| ¿Smoke E2E Rx? | Checklist manual [../SMOKE_RX_E2E.md](../SMOKE_RX_E2E.md) — **P1-12** pendiente ejecución firmada | REGISTRO P1-12 |
+| ¿Tests? | **443** tests backend + **~241** Flutter (re-verificar commit antes de reunión — P0-06 / AUD-01) | [../ANALISIS_TECNICO_COMPLETO_2026-05.md](../audits/ANALISIS_TECNICO_COMPLETO_2026-05.md) |
+| ¿Smoke E2E Rx? | Checklist manual [../SMOKE_RX_E2E.md](../qa/SMOKE_RX_E2E.md) — **P1-12** pendiente ejecución firmada | REGISTRO P1-12 |
 | ¿Rx? | Validación por farmacéutico colegiado de la farmacia; estados `pending_prescription_validation` | [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md); [../PLAN_RX_VALIDATION.md](../PLAN_RX_VALIDATION.md) |
 | ¿Delivery? | Partners `delivery_company` / `delivery_agent`; **sin** flota Zonix | PLAN_LANZAMIENTO; ALINEACION |
 | ¿Repo / código? | GitHub org o acceso bajo NDA — **P0-01** | VOLCADO §1 |

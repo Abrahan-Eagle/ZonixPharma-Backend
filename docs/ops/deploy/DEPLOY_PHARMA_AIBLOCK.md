@@ -6,7 +6,7 @@
 **Legacy (aún en el mismo server):** `https://pharma.aiblockweb.com`  
 **Workflow:** [`.github/workflows/main.yml`](../.github/workflows/main.yml) — push a rama **`main`**
 
-> **Migración VPS (decisión 2026-07-24):** objetivo de producción/piloto = **Namecheap Quasar** dedicado (no compartir con CorralX). Runbook + bootstrap: [`VPS_NAMECHEAP_QUASAR_RUNBOOK.md`](VPS_NAMECHEAP_QUASAR_RUNBOOK.md).
+> **Migración VPS (decisión 2026-07-24):** objetivo de producción/piloto = **Namecheap Quasar** dedicado (no compartir con CorralX). Runbook + bootstrap: [`../VPS_NAMECHEAP_QUASAR_RUNBOOK.md`](../VPS_NAMECHEAP_QUASAR_RUNBOOK.md).
 
 ---
 

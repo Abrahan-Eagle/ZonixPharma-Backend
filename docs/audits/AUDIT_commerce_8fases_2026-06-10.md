@@ -322,11 +322,11 @@
 
 | Documento | Divergencia |
 | --------- | ----------- |
-| `AUDIT_commerce_2026-06-10.md` | Hallazgos COM-001–010 **re-verificados**; siguen vigentes; este informe amplía con 8 fases |
+| `archive/audits/AUDIT_commerce_2026-06-10.md` | Hallazgos COM-001–010 **re-verificados**; siguen vigentes; este informe amplía con 8 fases |
 | `AUDIT_UI_PHARMA.md` | Commerce NEEDS REWORK — **sin cambio** |
 | `docs/active_context.md` | **No menciona** WIP `commerce_api_errors` ni auditoría commerce jun 2026 — desactualizado |
 | `MIGRACION_EATS_PHARMA.md` | `CommerceService.getCommerces`, copy restaurante, Pizza en tests — **deuda Eats residual** |
-| `PROMPT_AUDIT_360_ZONIX.md` | Creado 10 jun — alineado con metodología usada |
+| `plantillas/PROMPT_AUDIT_360_ZONIX.md` | Creado 10 jun — alineado con metodología usada |
 
 ✅ **Fase 7 completada** — Proponer actualizar `active_context.md` (requiere OK usuario). Continúo Fase 8.
 

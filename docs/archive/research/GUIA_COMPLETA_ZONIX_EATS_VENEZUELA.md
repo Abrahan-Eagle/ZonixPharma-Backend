@@ -1,6 +1,6 @@
 # Guía completa: lanzar Zonix Eats en Venezuela (archivo histórico)
 
-> **ARCHIVO Eats — NO indexar para Zonix Pharma.** Producto vivo: [BRAND_ZONIX_PHARMA.md](BRAND_ZONIX_PHARMA.md), pack [Lanzamiento/README.md](Lanzamiento/README.md), [MIGRACION_EATS_PHARMA.md](MIGRACION_EATS_PHARMA.md).
+> **ARCHIVO Eats — NO indexar para Zonix Pharma.** Producto vivo: [BRAND_ZONIX_PHARMA.md](../../BRAND_ZONIX_PHARMA.md), pack [Lanzamiento/README.md](../../Lanzamiento/README.md), [MIGRACION_EATS_PHARMA.md](../../MIGRACION_EATS_PHARMA.md).
 >
 > Documento de referencia personal — 27 marzo 2026. Escrito para el líder del proyecto (Eats), no para decisiones Pharma.
 

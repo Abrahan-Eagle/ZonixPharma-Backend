@@ -13,7 +13,7 @@
 - **Quick win más rentable:** extender `commerceHttpErrorMessage` a todos los métodos de `commerce_*_service.dart` que aún muestran solo `statusCode` (≤2h, impacto directo en panel farmacia).
 - **Riesgo operativo P1:** endpoints Front huérfanos (`/api/commerce/products-stats`, `/upload-image`, `/promotions/stats`) no existen en `routes/api/commerce.php` — fallarán si la UI los invoca.
 - **Incoherencia de dominio P2:** `getReadyOrders()` y `getPreparingOrders()` filtran ambos por `processing` — tabs de órdenes pueden duplicar datos.
-- **Backend OrderController** ya no expone `getMessage()` al cliente en catch (solo Log) — **mejora verificada** vs `AUDIT_API_PATTERNS_2026-05-01.md`; Analytics/Dashboard mantienen respuestas `{ error: ... }` sin `success` en auth (C1 parcial).
+- **Backend OrderController** ya no expone `getMessage()` al cliente en catch (solo Log) — **mejora verificada** vs `audits/AUDIT_API_PATTERNS_2026-05-01.md`; Analytics/Dashboard mantienen respuestas `{ error: ... }` sin `success` en auth (C1 parcial).
 
 ---
 

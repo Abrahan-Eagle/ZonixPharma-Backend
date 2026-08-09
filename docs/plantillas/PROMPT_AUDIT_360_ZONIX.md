@@ -4,7 +4,7 @@
 >
 > **Complementa (no reemplaza):** [PROMPT_AUDIT_FORENSE.md](PROMPT_AUDIT_FORENSE.md) (migración Eats→Pharma), [AUDIT_API_PATTERNS_2026-05-01.md](AUDIT_API_PATTERNS_2026-05-01.md), [AUDIT_UI_PHARMA.md](../ZonixPharma-Front/docs/AUDIT_UI_PHARMA.md).
 >
-> **Ubicación:** `ZonixPharma-Backend/docs/PROMPT_AUDIT_360_ZONIX.md`
+> **Ubicación:** `ZonixPharma-Backend/docs/plantillas/PROMPT_AUDIT_360_ZONIX.md`
 
 ---
 
@@ -68,7 +68,7 @@ flowchart TD
 
 ### Principios anti-fugas
 
-1. **Checklist explícito** — derivado de skills `zonix-*` (ej. 12 criterios API en `AUDIT_API_PATTERNS_2026-05-01.md`).
+1. **Checklist explícito** — derivado de skills `zonix-*` (ej. 12 criterios API en `audits/AUDIT_API_PATTERNS_2026-05-01.md`).
 2. **Buckets acotados** — máx. ~15 archivos por pasada en `PROFUNDIDAD=completa`.
 3. **Evidencia obligatoria** — `archivo:línea`; prohibido citar sin leer.
 4. **Subagentes en paralelo** — 1 bucket = 1 subagent con scope fijo.
@@ -155,9 +155,9 @@ Subagent opcional: `.cursor/agents/security-auditor.md` cuando `MODULO=security`
 3. Skills según MODULO (tabla §5)
 4. Si `MODO=360` o `MODULO=docs`: `MIGRACION_EATS_PHARMA.md`, `PLAN_RX_VALIDATION.md`, `PLAN_REGULATORIO_PHARMA_VE.md`, `BRAND_ZONIX_PHARMA.md`
 5. Auditorías previas — **re-verificar** fixes, no duplicar ciegamente:
-   - `docs/AUDIT_API_PATTERNS_2026-05-01.md`
+   - `docs/audits/AUDIT_API_PATTERNS_2026-05-01.md`
    - `ZonixPharma-Front/docs/AUDIT_UI_PHARMA.md`
-   - `docs/PROMPT_AUDIT_FORENSE.md`
+   - `docs/plantillas/PROMPT_AUDIT_FORENSE.md`
    - Cualquier `docs/AUDIT_<MODULO>_*.md` reciente
 
 ---
@@ -346,6 +346,6 @@ Luego ejecutar sin esperar, salvo ambigüedad bloqueante en variables.
 | `docs/AUDIT_<MODULO>_<YYYY-MM-DD>.md` | Informe de sesión (Fases 0–4) |
 | `docs/AUDIT_API_PATTERNS_*.md` | Auditoría API global (referencia C1–C12) |
 | `ZonixPharma-Front/docs/AUDIT_UI_PHARMA.md` | Auditoría UI global |
-| `docs/PROMPT_AUDIT_FORENSE.md` | Migración Eats→Pharma (histórico) |
+| `docs/plantillas/PROMPT_AUDIT_FORENSE.md` | Migración Eats→Pharma (histórico) |
 
 **Última actualización:** 10 junio 2026

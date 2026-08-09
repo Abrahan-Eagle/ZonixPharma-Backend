@@ -7,6 +7,14 @@
 
 ## Última actualización de contexto
 
+### Triage docs/ raíz — 9 agosto 2026
+
+- **Problema:** ~38 `.md` sueltos en `docs/` (canon + audits + ops + histórico mezclados).
+- **Acción:** taxonomía `audits/`, `ops/`, `runbooks/`, `qa/`, `product/`, `plantillas/`, `archive/{audits,qa,research,jarvis}/` + índice [`docs/README.md`](README.md).
+- **KEEP_ROOT:** `active_context`, BRAND, PLAN_RX, PLAN_REGULATORIO, MIGRACION, ZONIX_WORKSPACE, ZONIX_JARVIS_INTEGRATION, `cursorignore.example`.
+- **Enlaces:** actualizados en `AGENTS.md`, skills, Lanzamiento, Pack, plantillas, Front (`AGENTS` / `active_context` punteros Backend).
+- **Sin** borrados duros; **sin** tocar contenido Lanzamiento/Inversionistas salvo paths.
+
 ### Listo envío — sync docx/PDF (DoD comercial) — 7 agosto 2026
 
 - **DoD:** paquete enviable alineado Excel v4 (SAFE **237.412**, Day-D **187.152**, %GMV **8/7/5**, equity **~39,57%**). **No** = cero `[PENDIENTE]` en todo el repo.
@@ -114,9 +122,9 @@
 ### VPS Namecheap Quasar (CorralX + Zonix) — 24 julio 2026
 
 - **Decisión:** **2× Quasar** separados (no Magnetar compartido): Zonix Pharma = 1 Quasar; CorralX = 1 Quasar. Self-managed.
-- **Coste a presupuestar:** **~$381/año** renew (2× ~$190.56); no usar promo ~$309. Mes a mes ~$453/año. Ver [`VPS_COSTE_ANUAL_Y_AWS_VS_NAMECHEAP.md`](VPS_COSTE_ANUAL_Y_AWS_VS_NAMECHEAP.md).
+- **Coste a presupuestar:** **~$381/año** renew (2× ~$190.56); no usar promo ~$309. Mes a mes ~$453/año. Ver [`ops/VPS_COSTE_ANUAL_Y_AWS_VS_NAMECHEAP.md`](ops/VPS_COSTE_ANUAL_Y_AWS_VS_NAMECHEAP.md).
 - **vs AWS:** Namecheap ahora (precio fijo, LEMP simple); AWS más adelante (HA/compliance/escalado) — no para el primer corte cPanel.
-- **Artefactos:** [`VPS_NAMECHEAP_QUASAR_RUNBOOK.md`](VPS_NAMECHEAP_QUASAR_RUNBOOK.md) + [`scripts/vps-quasar-bootstrap.sh`](../scripts/vps-quasar-bootstrap.sh). Puntero en [`DEPLOY_PHARMA_AIBLOCK.md`](DEPLOY_PHARMA_AIBLOCK.md).
+- **Artefactos:** [`ops/VPS_NAMECHEAP_QUASAR_RUNBOOK.md`](ops/VPS_NAMECHEAP_QUASAR_RUNBOOK.md) + [`scripts/vps-quasar-bootstrap.sh`](../scripts/vps-quasar-bootstrap.sh). Puntero en [`ops/deploy/DEPLOY_PHARMA_AIBLOCK.md`](ops/deploy/DEPLOY_PHARMA_AIBLOCK.md).
 - **Pendiente humano:** comprar Quasar, pegar IP en el runbook, ejecutar bootstrap + migrar desde `pharma.aiblockweb.com`. Sin IP SSH no hay provision live.
 
 ### Conciliación Lean v4 (xlsx Descargas + pitch) — 17 julio 2026
@@ -138,12 +146,12 @@
 
 - **`docs/_archive_eats/` eliminada** del repo (pack Lanzamiento Eats duplicado). Historial recuperable vía git (commit anterior a eliminación).
 - Referencias actualizadas en `MIGRACION_EATS_PHARMA.md`, `.cursorignore`, plantillas y docs operativos.
-- Docs Eats sueltos que permanecen (solo referencia, no producto): `GUIA_COMPLETA_ZONIX_EATS_VENEZUELA.md`, `REQUISITOS_OPERAR_VENEZUELA.md`.
+- Docs Eats sueltos que permanecen (solo referencia, no producto): `archive/research/GUIA_COMPLETA_ZONIX_EATS_VENEZUELA.md`, `archive/research/REQUISITOS_OPERAR_VENEZUELA.md`.
 
 ### Deploy FTP pharma.aiblockweb.com — junio 2026
 
 - **Workflow:** [`.github/workflows/main.yml`](../.github/workflows/main.yml) reemplaza legacy Zonix-EatsX → **Zonix Pharma**, PHP 8.3, tests pre-FTP, destino `https://pharma.aiblockweb.com`.
-- **Guía:** [`docs/DEPLOY_PHARMA_AIBLOCK.md`](DEPLOY_PHARMA_AIBLOCK.md) — secrets GitHub, `ENV_CONTENT`, primer arranque cPanel.
+- **Guía:** [`docs/ops/deploy/DEPLOY_PHARMA_AIBLOCK.md`](ops/deploy/DEPLOY_PHARMA_AIBLOCK.md) — secrets GitHub, `ENV_CONTENT`, primer arranque cPanel.
 - **Secrets requeridos (GitHub):** `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`, `ENV_CONTENT`.
 - **Pendiente operativo:** crear secrets en GitHub → merge/push a **`main`** → `migrate` en cPanel → `API_URL=https://pharma.aiblockweb.com` en Flutter.
 
@@ -151,26 +159,26 @@
 
 - **Módulos auditados y remediados (lotes 1–10):** commerce, pharmacist, orders, buyer Rx, smoke/strict checkout, buyer catalog, delivery, admin.
 - **Lote 10:** `delivery_company_api_errors.dart` + `DeliveryCompanyService.lastActionError`; `GET /admin/statistics` envelope `{ success, data }`.
-- **Docs:** `AUDIT_delivery_2026-06-10.md`, `AUDIT_admin_2026-06-10.md`, `SMOKE_RX_E2E_RESULTS_2026-06-10.md`.
+- **Docs:** `audits/AUDIT_delivery_2026-06-10.md`, `audits/AUDIT_admin_2026-06-10.md`, `archive/qa/SMOKE_RX_E2E_RESULTS_2026-06-10.md`.
 - **Helpers Front API:** `commerce_api_errors`, `pharmacist_api_errors`, `order_api_errors`, `product_api_errors`, `delivery_api_errors`, `admin_api_errors`, `delivery_company_api_errors`.
 - **Smoke Rx estricto API:** verificado 11 jun; widget `checkout_strict_rx_test` en Front.
-- **Local dispositivo (11 jun):** `.env` **strict ON**; receta libre **id=2**; runbook `SMOKE_RX_E2E.md`.
+- **Local dispositivo (11 jun):** `.env` **strict ON**; receta libre **id=2**; runbook `qa/SMOKE_RX_E2E.md`.
 - **Pendiente:** smoke UI Flutter en dispositivo; luego restaurar `.env` a permisivo.
 
 ### Buyer catalog lote 7 — 10 junio 2026
 
-- **Auditoría:** [`AUDIT_buyer_catalog_2026-06-10.md`](AUDIT_buyer_catalog_2026-06-10.md).
+- **Auditoría:** [`audits/AUDIT_buyer_catalog_2026-06-10.md`](AUDIT_buyer_catalog_2026-06-10.md).
 - **Smoke strict:** `RxStrictSmokeSeeder` + test; doc en `SMOKE_RX_E2E_RESULTS`.
 
 ### Lote 6 — smoke Rx + rating pharma + strict checkout — 10 junio 2026
 
-- **Smoke:** [`SMOKE_RX_E2E_RESULTS_2026-06-10.md`](SMOKE_RX_E2E_RESULTS_2026-06-10.md) — 22 tests backend PASS; manual dispositivo pendiente.
+- **Smoke:** [`archive/qa/SMOKE_RX_E2E_RESULTS_2026-06-10.md`](archive/qa/SMOKE_RX_E2E_RESULTS_2026-06-10.md) — 22 tests backend PASS; manual dispositivo pendiente.
 - **Strict Rx (spec 001):** `GET /api/pharma-policy`; Front `PharmaPolicyService` + checkout/cart modo estricto.
 - **Rating:** alias `ratePharmacy` / `pharmacyRated` (API `/reviews/restaurant` intacta).
 
 ### Buyer prescriptions lote 5 — 10 junio 2026
 
-- **Auditoría:** [`AUDIT_buyer_prescriptions_2026-06-10.md`](AUDIT_buyer_prescriptions_2026-06-10.md) — semáforo VERDE.
+- **Auditoría:** [`audits/AUDIT_buyer_prescriptions_2026-06-10.md`](AUDIT_buyer_prescriptions_2026-06-10.md) — semáforo VERDE.
 - **Backend:** eager `with(['order','commerce'])` en GET index; tests `BuyerPrescriptionIndexTest` (list + destroy 422).
 - **Front:** `MyPrescriptionsPage` → tap abre `OrderDetailPage`; eliminar receta pending; `prescriptionHttpErrorMessage` (+ códigos buyer Rx).
 - **Verificación:** Backend BuyerPrescription **2** OK; Front **238** tests (~1 skip), analyze OK.
@@ -184,13 +192,13 @@
 ### Cierre auditorías Rx/Orders + remediación final — 10 junio 2026
 
 - **Pharmacist lote 3–4:** audit doc, throttle onboarding, envelope buyer Rx, `verified` preservado en re-envío MPPS.
-- **Orders lote 3:** [`AUDIT_orders_2026-06-10.md`](AUDIT_orders_2026-06-10.md); Front `order_api_errors.dart` + `OrderService` success/helper.
-- **Smoke:** [`SMOKE_RX_E2E.md`](SMOKE_RX_E2E.md) checklist manual E2E Rx.
+- **Orders lote 3:** [`audits/AUDIT_orders_2026-06-10.md`](AUDIT_orders_2026-06-10.md); Front `order_api_errors.dart` + `OrderService` success/helper.
+- **Smoke:** [`qa/SMOKE_RX_E2E.md`](qa/SMOKE_RX_E2E.md) checklist manual E2E Rx.
 - **Verificación:** Backend **436** tests; Front **233** tests (~1 skip).
 
 ### Auditoría 360° pharmacist + remediación lote 3 — 10 junio 2026
 
-- **Hecho:** [`AUDIT_pharmacist_2026-06-10.md`](AUDIT_pharmacist_2026-06-10.md). Throttle `10,1` en `POST /api/pharmacist/onboarding`. Tests `PharmacistOnboardingTest` (4 escenarios).
+- **Hecho:** [`audits/AUDIT_pharmacist_2026-06-10.md`](AUDIT_pharmacist_2026-06-10.md). Throttle `10,1` en `POST /api/pharmacist/onboarding`. Tests `PharmacistOnboardingTest` (4 escenarios).
 - **Front (espejo):** `PrescriptionService` buyer exige `success == true` (upload/delete/list); onboarding parsea envelope + `pharmacistHttpErrorMessage`.
 - **Verificación:** Backend **435** tests; Front **230** tests (~1 skip), analyze OK.
 - **Pendiente P2:** tab Config pharmacist; smoke E2E Rx; auditoría orders 360°.
@@ -213,7 +221,7 @@
 
 ### Remediación módulo Commerce + multi-sede — 10 junio 2026
 
-- **Hecho:** Auditoría 360° (8 fases) documentada en [`AUDIT_commerce_8fases_2026-06-10.md`](AUDIT_commerce_8fases_2026-06-10.md) y [`PROMPT_AUDIT_360_ZONIX.md`](PROMPT_AUDIT_360_ZONIX.md). Remediación P1/P2: throttle `60,1` en rutas commerce, Pusher `commerces()` multi-sede, envelope promos, tests `EnsureCommerceApproved`, `CommerceOrderValidatePayment`, `CommerceProductRx`.
+- **Hecho:** Auditoría 360° (8 fases) documentada en [`audits/AUDIT_commerce_8fases_2026-06-10.md`](AUDIT_commerce_8fases_2026-06-10.md) y [`plantillas/PROMPT_AUDIT_360_ZONIX.md`](PROMPT_AUDIT_360_ZONIX.md). Remediación P1/P2: throttle `60,1` en rutas commerce, Pusher `commerces()` multi-sede, envelope promos, tests `EnsureCommerceApproved`, `CommerceOrderValidatePayment`, `CommerceProductRx`.
 - **Multi-sede:** trait `ResolvesCommerce` (`commerce_id` / header `X-Commerce-Id` / principal); tests `CommerceMultiSedeTest` (4 escenarios). Push `dev` → `140c486`.
 - **Verificación:** `php artisan test --parallel` → **421 passed**.
 - **Smoke manual sugerido:** perfil con 2 farmacias → `set-primary` → productos/órdenes/dashboard scoped; header ajeno → 403.
@@ -264,14 +272,14 @@
 ### Auditoría API + quick wins (1 mayo 2026)
 
 - **Fecha:** 1 mayo 2026 (auditoría API patterns + quick wins en código)
-- **Resumen breve:** Auditoría de **63 controladores** contra la skill `zonix-api-patterns` documentada en [`docs/AUDIT_API_PATTERNS_2026-05-01.md`](AUDIT_API_PATTERNS_2026-05-01.md) (15 P0 detectados, deuda sistémica en envelope JSON, paginación, Form Requests y exposición de `$e->getMessage()`). **Remediación aplicada:** `Handler::handleApiException` ahora registra `\Log::error` en excepciones no manejadas, endurece mensaje de `ValidationException` y evita filtrar detalles internos en producción salvo `HttpException` con mensaje explícito; `CommerceDataController` devuelve **403** si `commerce_id`/`X-Commerce-Id` no pertenece al perfil (sin fallback silencioso al comercio principal); `Buyer/ReviewController::reportReview` exige que la reseña esté ligada a una **orden del comprador** (`orders.profile_id`); `Authenticator/AuthController::googleUser` y `Admin/ReportController::sendSystemNotification` dejan de exponer `getMessage()` al cliente y loguean el fallo; eliminados controladores muertos/legado no enrutados: `Delivery/OrderController`, `ChatController` (raíz), `HomeController` (raíz), `WebSocket/WebSocketController`. Prompt reutilizable de auditoría forense: [`docs/PROMPT_AUDIT_FORENSE.md`](PROMPT_AUDIT_FORENSE.md). **Pendiente:** backlog P0 restante en doc (Payment idempotencia, ProfileController transacciones, sweep masivo de controllers).
+- **Resumen breve:** Auditoría de **63 controladores** contra la skill `zonix-api-patterns` documentada en [`docs/audits/AUDIT_API_PATTERNS_2026-05-01.md`](AUDIT_API_PATTERNS_2026-05-01.md) (15 P0 detectados, deuda sistémica en envelope JSON, paginación, Form Requests y exposición de `$e->getMessage()`). **Remediación aplicada:** `Handler::handleApiException` ahora registra `\Log::error` en excepciones no manejadas, endurece mensaje de `ValidationException` y evita filtrar detalles internos en producción salvo `HttpException` con mensaje explícito; `CommerceDataController` devuelve **403** si `commerce_id`/`X-Commerce-Id` no pertenece al perfil (sin fallback silencioso al comercio principal); `Buyer/ReviewController::reportReview` exige que la reseña esté ligada a una **orden del comprador** (`orders.profile_id`); `Authenticator/AuthController::googleUser` y `Admin/ReportController::sendSystemNotification` dejan de exponer `getMessage()` al cliente y loguean el fallo; eliminados controladores muertos/legado no enrutados: `Delivery/OrderController`, `ChatController` (raíz), `HomeController` (raíz), `WebSocket/WebSocketController`. Prompt reutilizable de auditoría forense: [`docs/plantillas/PROMPT_AUDIT_FORENSE.md`](PROMPT_AUDIT_FORENSE.md). **Pendiente:** backlog P0 restante en doc (Payment idempotencia, ProfileController transacciones, sweep masivo de controllers).
 
 ---
 
 ## Última actualización de contexto (continuación 30 abr)
 
 - **Fecha:** 30 abril 2026 (auditoría segunda pasada — implementación en código)
-- **Resumen breve:** Gobernanza Jarvis: marca canónica en `AGENTS.md` + `.cursorrules` remiten a `BRAND_ZONIX_PHARMA.md`; matriz API canónico/legacy en `MIGRACION_EATS_PHARMA.md`; BRAND ampliado (grid 24px, esquinas, checklist WCAG dark); auditoría datos sensibles §5.1 en `PLAN_REGULATORIO_PHARMA_VE.md`; CI documentado en `AGENTS.md` y workflow Flutter en `ZonixPharma-Front/.github/workflows/ci.yml`. Políticas Pharma en `Buyer/OrderController@store` (`block_rx_without_prescription` default false, cupón solo OTC cuando `disallow_promotions_on_rx`, bloqueo delivery + cold chain), idempotencia de subida de receta (409 si hay receta activa), `Buyer/PrescriptionController` solo en `pending_prescription_validation`, TTL≤0 documentado + warning en log/comando, evento `PaymentProofUploaded` al subir comprobante, fingerprint idempotencia órdenes con `prescription_id`, tests Order/Prescription/Search ampliados. Flutter: `OrderConfirmationPage` (rama Rx), checkout cadena de frío + chips Rx, `cart_service` legacy → `fromJson`, modelos `Restaurant` pharma, `Order` getters `commerce*`, `MedicineLot` fecha opcional, `Product.pharmaSummary` con `dosageForm`, copy onboarding/ratings/QR, mounted/Pusher en farmacéutico. Docs: `PLAN_RX_VALIDATION.md`, `TECH_DEBT.md` (Firebase/keystore).
+- **Resumen breve:** Gobernanza Jarvis: marca canónica en `AGENTS.md` + `.cursorrules` remiten a `BRAND_ZONIX_PHARMA.md`; matriz API canónico/legacy en `MIGRACION_EATS_PHARMA.md`; BRAND ampliado (grid 24px, esquinas, checklist WCAG dark); auditoría datos sensibles §5.1 en `PLAN_REGULATORIO_PHARMA_VE.md`; CI documentado en `AGENTS.md` y workflow Flutter en `ZonixPharma-Front/.github/workflows/ci.yml`. Políticas Pharma en `Buyer/OrderController@store` (`block_rx_without_prescription` default false, cupón solo OTC cuando `disallow_promotions_on_rx`, bloqueo delivery + cold chain), idempotencia de subida de receta (409 si hay receta activa), `Buyer/PrescriptionController` solo en `pending_prescription_validation`, TTL≤0 documentado + warning en log/comando, evento `PaymentProofUploaded` al subir comprobante, fingerprint idempotencia órdenes con `prescription_id`, tests Order/Prescription/Search ampliados. Flutter: `OrderConfirmationPage` (rama Rx), checkout cadena de frío + chips Rx, `cart_service` legacy → `fromJson`, modelos `Restaurant` pharma, `Order` getters `commerce*`, `MedicineLot` fecha opcional, `Product.pharmaSummary` con `dosageForm`, copy onboarding/ratings/QR, mounted/Pusher en farmacéutico. Docs: `PLAN_RX_VALIDATION.md`, `ops/TECH_DEBT.md` (Firebase/keystore).
 
 ---
 

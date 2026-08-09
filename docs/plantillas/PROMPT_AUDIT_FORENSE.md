@@ -2,7 +2,7 @@
 
 > Herramienta de **migración técnica** (código/repos), no el pack inversor. Pack vivo: [Lanzamiento/README.md](Lanzamiento/README.md). Histórico Eats: [MIGRACION_EATS_PHARMA.md](MIGRACION_EATS_PHARMA.md) — **no usar @** en chats de producto Pharma.
 >
-> Ubicación: `ZonixPharma-Backend/docs/PROMPT_AUDIT_FORENSE.md`. Pégalo cuando audites restos **Eats** en backend/frontend y el plan de cierre a **Zonix Pharma**.
+> Ubicación: `ZonixPharma-Backend/docs/plantillas/PROMPT_AUDIT_FORENSE.md`. Pégalo cuando audites restos **Eats** en backend/frontend y el plan de cierre a **Zonix Pharma**.
 
 ---
 
@@ -58,8 +58,8 @@ Roles del panel (firma cada sección con el rol que la emite):
 5. `ZonixPharma-Backend/docs/BRAND_ZONIX_PHARMA.md` (marca y tokens).
 6. `ZonixPharma-Backend/docs/PLAN_RX_VALIDATION.md` (flujo de receta).
 7. `ZonixPharma-Backend/docs/PLAN_REGULATORIO_PHARMA_VE.md` (MPPS/INHRR/datos de salud).
-8. `ZonixPharma-Backend/docs/TECH_DEBT.md`.
-9. `ZonixPharma-Backend/docs/RUNBOOK_ORDER_LIFECYCLE.md`, `docs/RUNBOOK_CHECKOUT_IDEMPOTENCY_COUPON.md`, `docs/FLUJO_PAGO_ORDEN.md`, `docs/logica-pagos-por-rol.md`.
+8. `ZonixPharma-Backend/docs/ops/TECH_DEBT.md`.
+9. `ZonixPharma-Backend/docs/runbooks/RUNBOOK_ORDER_LIFECYCLE.md`, `docs/runbooks/RUNBOOK_CHECKOUT_IDEMPOTENCY_COUPON.md`, `docs/product/FLUJO_PAGO_ORDEN.md`, `docs/product/logica-pagos-por-rol.md`.
 10. Frontend: `lib/features/utils/app_colors.dart`, `lib/features/utils/app_theme.dart`, `lib/main.dart`, `lib/config/app_config.dart`, modelos `lib/models/*.dart`.
 
 ---

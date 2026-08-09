@@ -58,7 +58,7 @@ Toolkit oficial GitHub para features de **producto** (API + Flutter). **No** usa
   - Repaso completo (cierre P2): ciclo viral M5, cuota/economía de canal M4/M6, organización Fase 0 M1, red flags inversor corporativo M7 (`zonix-investor-materials`).
   - Router: [docs/zonix/SKILLS_STARTUP_USAR_NO_USAR.md](docs/zonix/SKILLS_STARTUP_USAR_NO_USAR.md), `roles_matrix.json`.
 - **10 jun 2026 — Remediación módulo commerce (auditoría 360° + multi-sede).**
-  - Auditoría: [docs/AUDIT_commerce_8fases_2026-06-10.md](docs/AUDIT_commerce_8fases_2026-06-10.md), [docs/PROMPT_AUDIT_360_ZONIX.md](docs/PROMPT_AUDIT_360_ZONIX.md).
+  - Auditoría: [docs/audits/AUDIT_commerce_8fases_2026-06-10.md](docs/audits/AUDIT_commerce_8fases_2026-06-10.md), [docs/plantillas/PROMPT_AUDIT_360_ZONIX.md](docs/plantillas/PROMPT_AUDIT_360_ZONIX.md).
   - Backend: trait `ResolvesCommerce` + header `X-Commerce-Id`; throttle `60,1`; Pusher multi-sede; KPI dashboard alineado a cola Rx/pago/preparación; tests `CommerceMultiSedeTest`, `CommerceDashboardTest`, `EnsureCommerceApproved`, `CommerceProductRx`, `CommerceOrderValidatePayment`.
   - Verificación: `php artisan test --parallel` → **422+ passed**.
 - **10 jun 2026 — Remediación módulo pharmacist (lote 2 — historial).**
@@ -436,7 +436,7 @@ Aplicar precedencia de [`jarvis-core`](.agents/skills/jarvis-core/SKILL.md) cuan
 - **[docs/PLAN_RX_VALIDATION.md](docs/PLAN_RX_VALIDATION.md)** — flujo de validación de receta y endpoints.
 - **[docs/PLAN_REGULATORIO_PHARMA_VE.md](docs/PLAN_REGULATORIO_PHARMA_VE.md)** — regulación VE, MPPS, INHRR, datos de salud.
 - **[docs/MIGRACION_EATS_PHARMA.md](docs/MIGRACION_EATS_PHARMA.md)** — qué cambió en la transformación Eats → Pharma.
-- **[docs/DEPLOY_PHARMA_AIBLOCK.md](docs/DEPLOY_PHARMA_AIBLOCK.md)** — deploy FTP GitHub Actions → `pharma.aiblockweb.com`.
+- **[docs/ops/deploy/DEPLOY_PHARMA_AIBLOCK.md](docs/ops/deploy/DEPLOY_PHARMA_AIBLOCK.md)** — deploy FTP GitHub Actions → `pharma.aiblockweb.com`.
 - **Matriz roles → skills:** [docs/zonix/roles_matrix.json](docs/zonix/roles_matrix.json) + skill `zonix-lanzamiento-roles` (el `.md` ROLES_SKILLS_ZONIX del pack ya no está versionado).
 - **[docs/Lanzamiento/README.md](docs/Lanzamiento/README.md)** — índice pack inversor (22 documentos).
 - **[docs/zonix/ANALISIS_FORENSE_SKILLS.md](docs/zonix/ANALISIS_FORENSE_SKILLS.md)** — auditoría forense multi-rol de skills `zonix-*`.
@@ -444,14 +444,14 @@ Aplicar precedencia de [`jarvis-core`](.agents/skills/jarvis-core/SKILL.md) cuan
 - **[docs/zonix/roles_matrix.json](docs/zonix/roles_matrix.json)** — routing JARVIS por rol y tarea + `skills_inventory`.
 - **[docs/zonix/SPEC_KIT_ZONIX.md](docs/zonix/SPEC_KIT_ZONIX.md)** — Spec Kit (SDD) vs Jarvis `zonix-*`.
 - **[docs/plantillas/PROMPT_LANDING_IA_ZONIX.md](docs/plantillas/PROMPT_LANDING_IA_ZONIX.md)** — super prompt auditoría landing + plan pipeline IA (NEONFALL adaptado); invoca `zonix-ai-landing-pipeline` + web/brand/regulatorio.
-- **[docs/PROMPT_AUDIT_360_ZONIX.md](docs/PROMPT_AUDIT_360_ZONIX.md)** — super prompt auditoría exhaustiva (360° / código / por módulo); complementa `PROMPT_AUDIT_FORENSE.md` y `AUDIT_API_PATTERNS_*`.
-- **[docs/AUDIT_commerce_2026-06-10.md](docs/AUDIT_commerce_2026-06-10.md)** — piloto auditoría módulo commerce (contrato API↔Front, `commerce_api_errors`).
-- **[docs/AUDIT_pharmacist_2026-06-10.md](docs/AUDIT_pharmacist_2026-06-10.md)** — auditoría módulo pharmacist + remediación lote 3 (envelope, onboarding throttle).
-- **[docs/AUDIT_orders_2026-06-10.md](docs/AUDIT_orders_2026-06-10.md)** — auditoría módulo orders buyer + `order_api_errors`.
-- **[docs/AUDIT_buyer_catalog_2026-06-10.md](docs/AUDIT_buyer_catalog_2026-06-10.md)** — auditoría catálogo buyer + `product_api_errors`.
-- **[docs/AUDIT_delivery_2026-06-10.md](docs/AUDIT_delivery_2026-06-10.md)** — auditoría módulo delivery + `delivery_api_errors`.
-- **[docs/AUDIT_admin_2026-06-10.md](docs/AUDIT_admin_2026-06-10.md)** — auditoría panel admin + `admin_api_errors`.
-- **[docs/SMOKE_RX_E2E.md](docs/SMOKE_RX_E2E.md)** — checklist smoke manual flujo Rx E2E.
+- **[docs/plantillas/PROMPT_AUDIT_360_ZONIX.md](docs/plantillas/PROMPT_AUDIT_360_ZONIX.md)** — super prompt auditoría exhaustiva (360° / código / por módulo); complementa [`docs/plantillas/PROMPT_AUDIT_FORENSE.md`](docs/plantillas/PROMPT_AUDIT_FORENSE.md) y [`docs/audits/AUDIT_API_PATTERNS_2026-05-01.md`](docs/audits/AUDIT_API_PATTERNS_2026-05-01.md).
+- **[docs/archive/audits/AUDIT_commerce_2026-06-10.md](docs/archive/audits/AUDIT_commerce_2026-06-10.md)** — piloto auditoría módulo commerce (contrato API↔Front, `commerce_api_errors`).
+- **[docs/audits/AUDIT_pharmacist_2026-06-10.md](docs/audits/AUDIT_pharmacist_2026-06-10.md)** — auditoría módulo pharmacist + remediación lote 3 (envelope, onboarding throttle).
+- **[docs/audits/AUDIT_orders_2026-06-10.md](docs/audits/AUDIT_orders_2026-06-10.md)** — auditoría módulo orders buyer + `order_api_errors`.
+- **[docs/audits/AUDIT_buyer_catalog_2026-06-10.md](docs/audits/AUDIT_buyer_catalog_2026-06-10.md)** — auditoría catálogo buyer + `product_api_errors`.
+- **[docs/audits/AUDIT_delivery_2026-06-10.md](docs/audits/AUDIT_delivery_2026-06-10.md)** — auditoría módulo delivery + `delivery_api_errors`.
+- **[docs/audits/AUDIT_admin_2026-06-10.md](docs/audits/AUDIT_admin_2026-06-10.md)** — auditoría panel admin + `admin_api_errors`.
+- **[docs/qa/SMOKE_RX_E2E.md](docs/qa/SMOKE_RX_E2E.md)** — checklist smoke manual flujo Rx E2E.
 - **[specs/README.md](specs/README.md)** — índice features Spec Kit.
 
 ---

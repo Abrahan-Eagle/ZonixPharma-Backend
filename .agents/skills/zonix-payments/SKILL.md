@@ -93,7 +93,7 @@ $commerce->paymentMethods()        // → métodos para RECIBIR (comercio)
 $deliveryAgent->paymentMethods()   // → métodos para RECIBIR (repartidor)
 $deliveryCompany->paymentMethods() // → métodos para RECIBIR (empresa delivery)
 ```
-`PaymentMethodController::getPayableOwner()` resuelve el dueño según rol (Commerce, DeliveryAgent, DeliveryCompany, User). Flujo completo por rol: ver [docs/logica-pagos-por-rol.md](../../docs/logica-pagos-por-rol.md).
+`PaymentMethodController::getPayableOwner()` resuelve el dueño según rol (Commerce, DeliveryAgent, DeliveryCompany, User). Flujo completo por rol: ver [docs/product/logica-pagos-por-rol.md](../../docs/product/logica-pagos-por-rol.md).
 
 ### API:
 
@@ -159,4 +159,4 @@ event(new PaymentValidated($order, $isValid, $profileId));
 - **Eventos broadcast:** `zonix-realtime-events` § 3 (PaymentValidated, OrderStatusChanged)
 - **Campo `profiles.phone` deprecado** — se lee vía accessor desde tabla `phones` (ver `zonix-onboarding` § 5.7)
 - **Delivery fee en UI:** `zonix-ui-design` § 4 (Checkout layout)
-- **Flujo por rol (Commerce, Delivery, DeliveryCompany, comprador):** [docs/logica-pagos-por-rol.md](../../docs/logica-pagos-por-rol.md) — quién configura métodos, quién los usa, diagramas Mermaid.
+- **Flujo por rol (Commerce, Delivery, DeliveryCompany, comprador):** [docs/product/logica-pagos-por-rol.md](../../docs/product/logica-pagos-por-rol.md) — quién configura métodos, quién los usa, diagramas Mermaid.

@@ -263,7 +263,7 @@ Fuente: [AUDIT_API_PATTERNS_2026-05-01.md](AUDIT_API_PATTERNS_2026-05-01.md).
 | Workflow | Repo | Estado |
 |----------|------|--------|
 | `ci.yml` | BE + FE | Activo en `main`, `develop`, `dev` |
-| `main.yml` Zonix Pharma | BE | **Resuelto jun 2026** — FTP a `pharma.aiblockweb.com`, PHP 8.3, tests pre-deploy — ver [`DEPLOY_PHARMA_AIBLOCK.md`](DEPLOY_PHARMA_AIBLOCK.md) |
+| `main.yml` Zonix Pharma | BE | **Resuelto jun 2026** — FTP a `pharma.aiblockweb.com`, PHP 8.3, tests pre-deploy — ver [`ops/deploy/DEPLOY_PHARMA_AIBLOCK.md`](DEPLOY_PHARMA_AIBLOCK.md) |
 
 ---
 
@@ -355,7 +355,7 @@ Fuente: [AUDIT_API_PATTERNS_2026-05-01.md](AUDIT_API_PATTERNS_2026-05-01.md).
 2. Bloquear nuevos `getMessage()` en respuestas JSON (regla PR + grep CI).
 3. ~~Desactivar o renombrar workflow `main.yml` Eats.~~ Hecho — deploy Pharma en `main.yml`.
 4. Actualizar README Front y métricas en `active_context.md`.
-5. Ejecutar y documentar smoke manual OTC + Rx (plantilla en `TECH_DEBT.md`).
+5. Ejecutar y documentar smoke manual OTC + Rx (plantilla en `ops/TECH_DEBT.md`).
 
 ### Ola 2 — Piloto seguro (3–6 semanas)
 

@@ -457,7 +457,7 @@ Tipografía: **Plus Jakarta Sans** (ya cargada en layout Zonix).
 | Claude Design / Code | claude.ai |
 | Kapwing | Crossfade post-producción del loop |
 | Marca Zonix | `docs/BRAND_ZONIX_PHARMA.md` |
-| Deploy landing | `docs/DEPLOY_PHARMA_AIBLOCK.md` |
+| Deploy landing | `docs/ops/deploy/DEPLOY_PHARMA_AIBLOCK.md` |
 
 ---
 

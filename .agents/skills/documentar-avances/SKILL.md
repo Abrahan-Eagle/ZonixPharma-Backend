@@ -32,7 +32,7 @@ Una línea por cambio, con fecha y descripción breve, por ejemplo:
 Ejemplo:
 
 ```markdown
-- **6 Mar 2026:** Métodos de pago por rol: DeliveryCompany con paymentMethods() y getPayableOwner; front Settings "Más" muestra Métodos de pago para delivery y delivery_company. Doc docs/logica-pagos-por-rol.md.
+- **6 Mar 2026:** Métodos de pago por rol: DeliveryCompany con paymentMethods() y getPayableOwner; front Settings "Más" muestra Métodos de pago para delivery y delivery_company. Doc docs/product/logica-pagos-por-rol.md.
 ```
 
 ## Flujo

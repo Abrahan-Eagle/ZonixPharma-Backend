@@ -2,7 +2,7 @@
 
 > **Uso:** copia desde la sección [Super Prompt (pegar en chat)](#super-prompt-pegar-en-chat) y define las variables de arranque en la primera línea del mensaje.
 >
-> **Complementa (no reemplaza):** skill `zonix-ai-landing-pipeline`, `zonix-web-design`, `zonix-brand-ops`, [PROMPT_AUDIT_360_ZONIX.md](../PROMPT_AUDIT_360_ZONIX.md) (auditoría producto general).
+> **Complementa (no reemplaza):** skill `zonix-ai-landing-pipeline`, `zonix-web-design`, `zonix-brand-ops`, [PROMPT_AUDIT_360_ZONIX.md](PROMPT_AUDIT_360_ZONIX.md) (auditoría producto general).
 >
 > **Ubicación:** `ZonixPharma-Backend/docs/plantillas/PROMPT_LANDING_IA_ZONIX.md`
 
@@ -363,4 +363,4 @@ curl -sSI https://pharma.aiblockweb.com/vendor/bootstrap/bootstrap.min.css | hea
 
 ---
 
-**Plantilla relacionada:** [PROMPT_AUDIT_360_ZONIX.md](../PROMPT_AUDIT_360_ZONIX.md) · **Skill pipeline:** `.agents/skills/zonix-ai-landing-pipeline/SKILL.md`
+**Plantilla relacionada:** [PROMPT_AUDIT_360_ZONIX.md](PROMPT_AUDIT_360_ZONIX.md) · **Skill pipeline:** `.agents/skills/zonix-ai-landing-pipeline/SKILL.md`

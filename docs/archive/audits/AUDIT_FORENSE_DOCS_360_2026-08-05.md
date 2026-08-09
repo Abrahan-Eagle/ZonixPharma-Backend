@@ -46,7 +46,7 @@
 | C1 | Lanzamiento | **ÁMBAR** | Núcleo 237.412 OK; RESUMEN aliado ~175k residual; `.fods` 111.988 |
 | C2 | Inversionistas | **ÁMBAR** | CRM entero en **174k / ~29%**; PDFs/`RESUMENES-CEO/` rotos |
 | C3 | Pack Aliado | **ROJO** | Congelado **~112k / 39,57%**; pricing **25/40/55** vs **45/60/70** |
-| C4 | Producto/tech | **AMARILLO** | `FLUJO_PAGO_ORDEN.md` sin Rx; `ENV_VARIABLES` incompleto |
+| C4 | Producto/tech | **AMARILLO** | `product/FLUJO_PAGO_ORDEN.md` sin Rx; `ENV_VARIABLES` incompleto |
 | C5 | Audits históricos | **ÁMBAR–ROJO** | AUDIT 23-jun ancla **111.988** + script verify inexistente |
 | C6 | Deploy/ops | **AMARILLO** | Contradicción `.env` FTP §2 vs §6; `active_context` deploy stale |
 | C7 | Meta JARVIS | **AMARILLO** | `docs/agents/` 6 roles Eats; bloques `active_context` 33.835 “vigente” |
@@ -117,7 +117,7 @@ flowchart LR
 |----|------|-------------|-----------|-------------------|
 | **P0-01** | cifra_stale | `Pack_Aliado_Gabriel_Barrios/**` | Ask ~112k, equity ~39,57%, pricing 25/40/55, Excel anexo jun | Banner “consultoría jun-2026 — no SAFE” **o** resync a 237.412 + regenerar docx |
 | **P0-02** | cifra_stale | `Inversionistas/**` | Ask 174.102, dilución ~29%, criterio T calibrado a 174k | Actualizar README + FICHAs a 237.412 / ~39,57%; recalcular “cubre Lean” |
-| **P0-03** | contradiccion | `FLUJO_PAGO_ORDEN.md` | Orden → pending_payment; comercio revisa “ingredientes”; sin pharmacist/Rx | Bifurcar OTC vs Rx o redirigir a `PLAN_RX_VALIDATION.md` |
+| **P0-03** | contradiccion | `product/FLUJO_PAGO_ORDEN.md` | Orden → pending_payment; comercio revisa “ingredientes”; sin pharmacist/Rx | Bifurcar OTC vs Rx o redirigir a `PLAN_RX_VALIDATION.md` |
 | **P0-04** | link_roto / cifra_stale | `AUDIT_FORENSE_PACK_*` + plantillas | Citan `verify_modelo_financiero.py` (ausente); ancla 111.988 | Banner histórico; actualizar plantillas a `verify_inversor_pack.py` / xlsx |
 | **P0-05** | contradiccion | `active_context.md` ~L149 | Sección “referencia vigente” con Fase 0 33.835 / Day-D 78.153 | Marcar superseded; dejar solo cabecera 237.412 |
 | **P0-06** | contradiccion | Pitch vs memoria FP&A | BRIEF/MENSAJE cash 246.231 / FCF +59.079 vs `[PENDIENTE FP&A]` en active_context | Disclaimer uniforme esc.1 + pendiente recalc **o** cerrar FP&A |
@@ -131,11 +131,11 @@ flowchart LR
 | P1-01 | cifra_stale | `RESUMEN_ALIADO_GABRIEL_BARRIOS.md` L15/L77/L382 | Sustituir ~175k / % ~174k por 237.412 |
 | P1-02 | cifra_stale | `MODELO_FINANCIERO_ZONIX_PHARMA.fods` | Regenerar desde xlsx v4 o etiquetar legacy / no incluir en zip |
 | P1-03 | contradiccion | `PLAN_LANZAMIENTO` L25 vs `CHECKLIST` L217 | Unificar política wire (escrow/tranche vs cuenta personal) |
-| P1-04 | contradiccion | `DEPLOY_PHARMA_AIBLOCK.md` §2 vs §6 | Alinear texto `.env` con workflow (exclude + ENV_CONTENT) |
+| P1-04 | contradiccion | `ops/deploy/DEPLOY_PHARMA_AIBLOCK.md` §2 vs §6 | Alinear texto `.env` con workflow (exclude + ENV_CONTENT) |
 | P1-05 | cifra_stale | `active_context` bloque deploy jun | Actualizar: dominio comprado, secrets/checklist §8 DEPLOY |
 | P1-06 | contradiccion | `docs/agents/*` | Actualizar a 7 roles + Rx + métricas tests actuales **o** archivar |
 | P1-07 | legacy_eats | `zonix-empresa-ve` → `REQUISITOS_OPERAR_*` | Apuntar a `ESTRUCTURA_LEGAL` / `PLAN_REGULATORIO` |
-| P1-08 | huérfano | `ENV_VARIABLES.md` | Documentar bloque `ZONIX_PHARMA_*` + Redis/queue Quasar |
+| P1-08 | huérfano | `ops/ENV_VARIABLES.md` | Documentar bloque `ZONIX_PHARMA_*` + Redis/queue Quasar |
 | P1-09 | link_roto | MODELO/PRESUPUESTO → `generate_modelo_financiero_v2.py`, `pizza_visual_theme.py` | Quitar links o restaurar scripts |
 | P1-10 | link_roto | `Inversionistas/README` → `RESUMENES-CEO/`, PDFs, skill path | Generar PDFs / corregir rutas / quitar promesas |
 
@@ -146,7 +146,7 @@ flowchart LR
 | ID | Sev | Área | Nota |
 |----|-----|------|------|
 | P2-01 | suggestion | Headers v3.8.2 en CONTEXTO/MENSAJE/CHECKLIST | Cosmético; cuerpo ya 237.412 |
-| P2-02 | suggestion | `ANALISIS_TECNICO_COMPLETO_2026-05.md` | Banner SNAPSHOT; no citar como canon en README Lanzamiento |
+| P2-02 | suggestion | `audits/ANALISIS_TECNICO_COMPLETO_2026-05.md` | Banner SNAPSHOT; no citar como canon en README Lanzamiento |
 | P2-03 | suggestion | Archivar `GUIA_*EATS*` / `REQUISITOS_*` | Ya tienen banner + `.cursorignore` |
 | P2-04 | suggestion | `Búsqueda de Habilidades…md` | Marcar superseded por `zonix/ANALISIS_FORENSE_BUSQUEDA_*` |
 | P2-05 | suggestion | RUNBOOK_ORDER / CHECKOUT | Añadir `pending_prescription_validation` |
@@ -182,9 +182,9 @@ flowchart LR
 
 ### Lote B — Producto / ops docs (P0–P1)
 
-7. [ ] Reescribir o bifurcar `FLUJO_PAGO_ORDEN.md` (OTC vs Rx) → enlazar `PLAN_RX_VALIDATION.md`.
-8. [ ] Completar `ENV_VARIABLES.md` con `ZONIX_PHARMA_*`.
-9. [ ] Corregir `DEPLOY_PHARMA_AIBLOCK.md` contradicción `.env`.
+7. [ ] Reescribir o bifurcar `product/FLUJO_PAGO_ORDEN.md` (OTC vs Rx) → enlazar `PLAN_RX_VALIDATION.md`.
+8. [ ] Completar `ops/ENV_VARIABLES.md` con `ZONIX_PHARMA_*`.
+9. [ ] Corregir `ops/deploy/DEPLOY_PHARMA_AIBLOCK.md` contradicción `.env`.
 10. [ ] Extender runbooks con `pending_prescription_validation`.
 
 ### Lote C — Tooling / meta
@@ -197,7 +197,7 @@ flowchart LR
 
 ### Lote D — Hygiene / legacy (P2)
 
-16. [ ] Snapshot banner en `ANALISIS_TECNICO_COMPLETO_2026-05.md`.
+16. [ ] Snapshot banner en `audits/ANALISIS_TECNICO_COMPLETO_2026-05.md`.
 17. [ ] Archivar o README índice Eats; superseded en `Búsqueda…md`.
 18. [ ] Fix CRM: skill path, PDFs opcionales, deadlines vencidos.
 19. [ ] Unificar wire policy PLAN vs CHECKLIST (con OK legal).

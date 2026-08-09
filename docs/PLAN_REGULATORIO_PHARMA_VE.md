@@ -138,7 +138,7 @@ triggers mes 6+ y tabla de cumplimiento:
 Marco legal/contratos: [Lanzamiento/ESTRUCTURA_LEGAL_Y_EQUITY.md](Lanzamiento/ESTRUCTURA_LEGAL_Y_EQUITY.md) §4.6.
 
 > Archivo histórico comida (solo referencia del mismo principio):
-> [REQUISITOS_OPERAR_VENEZUELA.md](REQUISITOS_OPERAR_VENEZUELA.md) — no usar
+> [REQUISITOS_OPERAR_VENEZUELA.md](archive/research/REQUISITOS_OPERAR_VENEZUELA.md) — no usar
 > para due diligence Pharma.
 
 ## 9. Lo que NO somos

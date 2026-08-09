@@ -2,7 +2,7 @@
 
 > **Decisión (2026-07-24):** CorralX y Zonix Pharma van en **VPS separados**. Zonix Pharma = **1× Namecheap Quasar** (4 vCPU · 6 GB RAM · 120 GB SSD · 3 TB). Self-managed. Aislamiento por datos de salud (Rx) vs KYC CorralX.
 >
-> Sustituye a medio plazo el hosting cPanel FTP documentado en [`DEPLOY_PHARMA_AIBLOCK.md`](DEPLOY_PHARMA_AIBLOCK.md) (`pharma.aiblockweb.com`).
+> Sustituye a medio plazo el hosting cPanel FTP documentado en [`ops/deploy/DEPLOY_PHARMA_AIBLOCK.md`](deploy/DEPLOY_PHARMA_AIBLOCK.md) (`pharma.aiblockweb.com`).
 
 | Campo                          | Valor                                                                                                                     |
 | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
@@ -102,9 +102,9 @@ Plantilla worker: `/etc/supervisor/conf.d/zonix-worker.conf` (generada por boots
 
 1. Dump MySQL cPanel + `rsync` de `storage/app` (recetas en disco `local`).
 2. Importar en Quasar staging; smoke OTC + Rx (`pending_prescription_validation` → upload → `pending_payment`).
-3. Checklist: [`SMOKE_RX_E2E.md`](SMOKE_RX_E2E.md).
+3. Checklist: [`qa/SMOKE_RX_E2E.md`](SMOKE_RX_E2E.md).
 4. Actualizar Flutter `API_URL` / AppConfig al nuevo host.
-5. Sustituir workflow FTP ([`DEPLOY_PHARMA_AIBLOCK.md`](DEPLOY_PHARMA_AIBLOCK.md)) por deploy SSH/git o rsync (nuevo workflow — fuera de este runbook hasta tener IP).
+5. Sustituir workflow FTP ([`ops/deploy/DEPLOY_PHARMA_AIBLOCK.md`](deploy/DEPLOY_PHARMA_AIBLOCK.md)) por deploy SSH/git o rsync (nuevo workflow — fuera de este runbook hasta tener IP).
 6. Solo entonces decommission FTP aiblock.
 
 **Privacidad Rx:** volumen con cifrado de disco del proveedor si está disponible; backups de `prescriptions/` con acceso restringido.

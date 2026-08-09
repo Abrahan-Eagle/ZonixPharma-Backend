@@ -1,7 +1,7 @@
 # Pack Lanzamiento Inversor — Zonix Pharma
 
 > **Última actualización:** 7 agosto 2026 (aprendizaje **500 LatAm** → evidencia de mercado; ask Lean **USD 237.412** intacto).
-> **Propósito de esta carpeta:** (1) **Plan de lanzamiento operativo** de Zonix Pharma — calendario **T+0 → Fase 0 → Day-D (T+90) → M12**, equipo, farmacias, tech y KPIs ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) es la fuente canónica). (2) **Materiales de inversor y finanzas** en mejora continua (WIP). Cruce pack ↔ código: [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) + [../ANALISIS_TECNICO_COMPLETO_2026-05.md](../ANALISIS_TECNICO_COMPLETO_2026-05.md).
+> **Propósito de esta carpeta:** (1) **Plan de lanzamiento operativo** de Zonix Pharma — calendario **T+0 → Fase 0 → Day-D (T+90) → M12**, equipo, farmacias, tech y KPIs ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) es la fuente canónica). (2) **Materiales de inversor y finanzas** en mejora continua (WIP). Cruce pack ↔ código: [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) + [../ANALISIS_TECNICO_COMPLETO_2026-05.md](../audits/ANALISIS_TECNICO_COMPLETO_2026-05.md).
 > **Lección inversores (ago 2026):** MVP técnico ≠ evidencia de mercado — [APRENDIZAJE_500_EVIDENCIA_MERCADO.md](APRENDIZAJE_500_EVIDENCIA_MERCADO.md).
 > **Estado del pack:** borrador avanzado pre-seed; textos legales y plazos de retención sujetos a **dictamen abogado + farmacéutico asesor** antes de Day-D público.
 > **Producto:** Zonix Pharma — marketplace farmacéutico digital; el pack usa **solo** esa marca para producto y plataforma (no mezclar con otros productos en narrativa, métricas ni infra — p. ej. dominio `zonixpharma.com`, repo `ZonixPharma-*`).
@@ -30,7 +30,7 @@ Para **ejecutar el lanzamiento:** [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIEN
 | 3   | [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md)                     | SAFE, cap table, vehículo VE                                                      |
 | 2   | [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md)                           | Guion reunión + FAQ                                                               |
 
-**Opcional (due diligence técnico):** [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) (pack ↔ producto en código) · [../SMOKE_RX_E2E.md](../SMOKE_RX_E2E.md) (checklist smoke manual Rx/OTC pre-demo).
+**Opcional (due diligence técnico):** [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) (pack ↔ producto en código) · [../SMOKE_RX_E2E.md](../qa/SMOKE_RX_E2E.md) (checklist smoke manual Rx/OTC pre-demo).
 
 **Aprendizaje post-500 (interno, obligatorio para el equipo):** [APRENDIZAJE_500_EVIDENCIA_MERCADO.md](APRENDIZAJE_500_EVIDENCIA_MERCADO.md) — demo producto + piloto Valencia antes de recontacto fondos tipo 500. Playbooks: [`../Inversionistas/500-latam/DEMO_PRODUCTO_RX.md`](../Inversionistas/500-latam/DEMO_PRODUCTO_RX.md).
 
@@ -152,8 +152,8 @@ Lo anterior +:
 - [../PLAN_REGULATORIO_PHARMA_VE.md](../PLAN_REGULATORIO_PHARMA_VE.md) — marco farmacéutico VE; [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §10 — Sudeban/pagos piloto.
 - [../PLAN_RX_VALIDATION.md](../PLAN_RX_VALIDATION.md) — flujo de validación de receta médica.
 - [../BRAND_ZONIX_PHARMA.md](../BRAND_ZONIX_PHARMA.md) — paleta, tipografía, do/don't.
-- [../logica-pagos-por-rol.md](../logica-pagos-por-rol.md) — lógica de pagos manuales VE.
-- [../FLUJO_PAGO_ORDEN.md](../FLUJO_PAGO_ORDEN.md) — flujo de pago de orden.
+- [../logica-pagos-por-rol.md](../product/logica-pagos-por-rol.md) — lógica de pagos manuales VE.
+- [../FLUJO_PAGO_ORDEN.md](../product/FLUJO_PAGO_ORDEN.md) — flujo de pago de orden.
 - [../MIGRACION_EATS_PHARMA.md](../MIGRACION_EATS_PHARMA.md) — qué cambió en la migración Eats → Pharma.
 
 ---

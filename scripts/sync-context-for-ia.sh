@@ -39,4 +39,4 @@ else
 fi
 
 echo ""
-echo "Listo. Para más detalles: docs/CONTEXTO_IA.md"
+echo "Listo. Para más detalles: docs/archive/jarvis/CONTEXTO_IA.md"
