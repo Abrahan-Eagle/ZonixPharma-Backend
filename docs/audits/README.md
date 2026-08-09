@@ -10,5 +10,6 @@
 | [AUDIT_API_PATTERNS_2026-05-01.md](AUDIT_API_PATTERNS_2026-05-01.md) | Envelope JSON / patrones API |
 | [AUDIT_landing_ia_2026-06-17.md](AUDIT_landing_ia_2026-06-17.md) | Landing + pipeline IA |
 | [MIGRACION_EATS_PHARMA.md](MIGRACION_EATS_PHARMA.md) | Snapshot fork Eats → Pharma (histórico) |
+| [FORENSIC_DOCS_MULTI_LLM_2026-08-09.md](FORENSIC_DOCS_MULTI_LLM_2026-08-09.md) | Forense multi-LLM docs (olas 1–4 / TRIM P1) |
 
 Nuevas auditorías: `../plantillas/PROMPT_AUDIT_360_ZONIX.md`.

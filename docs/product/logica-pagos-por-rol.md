@@ -33,7 +33,7 @@ Es decir: **cada uno carga sus datos; la app rellena la información a la hora d
 
 ---
 
-### 2. Commerce (comercio / restaurante)
+### 2. Commerce (farmacia / droguería)
 
 | Qué hace | Carga métodos propios | Uso en el flujo de pago |
 |----------|------------------------|--------------------------|

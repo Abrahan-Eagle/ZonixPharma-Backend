@@ -1,8 +1,9 @@
 # Data room inversor Zonix Pharma — manifest
 # Canon: DOCUMENTOS_SOLO_INVERSOR.md
-version: "1.0"
-updated: "2026-07-12"
+version: "1.1"
+updated: "2026-08-09"
 audience: "Inversor pre-seed (SAFE)"
+# Anclas Excel v4: SAFE 237.412 · Day-D 187.152 · %GMV 8/7/5 · equity ~39,57%
 
 tiers:
   zip_minimo:
@@ -66,19 +67,24 @@ tiers:
     paths:
       - path: "Lanzamiento/ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md"
         required: true
-      - path: "SMOKE_RX_E2E.md"
+      - path: "qa/SMOKE_RX_E2E.md"
         required: false
-      - path: "ANALISIS_TECNICO_COMPLETO_2026-05.md"
-        required: false
+      # ANALISIS_TECNICO_COMPLETO eliminado ola 2 — ver audits/README.md
 
   referencias_regulatorias:
-    description: "Referencias producto/regulatorio (fuera Lanzamiento)"
+    description: "Referencias producto/regulatorio (raíz docs/)"
     paths:
       - path: "PLAN_REGULATORIO_PHARMA_VE.md"
         required: false
       - path: "PLAN_RX_VALIDATION.md"
         required: false
       - path: "BRAND_ZONIX_PHARMA.md"
+        required: false
+      - path: "audits/MIGRACION_EATS_PHARMA.md"
+        required: false
+      - path: "zonix/ZONIX_JARVIS_INTEGRATION.md"
+        required: false
+      - path: "zonix/ZONIX_WORKSPACE.md"
         required: false
 
 exclude:

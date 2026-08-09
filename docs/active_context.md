@@ -4,29 +4,23 @@
 > La skill **context-updater** indica cómo actualizar este archivo al cerrar una sesión relevante.
 
 
-## Limpieza / orden ola 3 (9 ago 2026)
+## Canon financiero (Excel v4 — vigente)
 
-Borrados: `Lanzamiento/_tools/.venv`, `plantillas/PROMPT_AUDIT_FORENSE`, `ops/CURSOR_MEJORAS_CONFIGURACION`. Movidos: JARVIS+WORKSPACE→`zonix/`, MIGRACION→`audits/`, cursorignore→`ops/`. Raíz canon: active_context, BRAND, PLAN_RX, PLAN_REGULATORIO + README.
+SAFE **237.412** · Day-D **187.152** · equity **~39,57%** · %GMV **8/7/5** · pricing **45/60/70** · ARPF **~52** · LTV/CAC **~7,5x** · Esc.1 cash M12 **246.231** · BE **M5**. Asks **111.988 / 174.102 / 210.760** = obsoletos.
 
-## Limpieza dura ola 2 (9 ago 2026)
+## Forense multi-LLM docs (9 ago 2026) + TRIM P1
 
-Eliminados: `docs/agents/` completo; snapshots audits de módulo (admin/orders/pharmacist/delivery/buyer*); `ANALISIS_TECNICO_COMPLETO`; forenses zonix (`ANALISIS_FORENSE_*`, `research_links`). Vivos: `audits/` (README + 3), `zonix/` (SPEC_KIT, SKILLS_STARTUP, roles_matrix). Pack/ops/plantillas/product/qa/runbooks intactos.
+- Informe: [`audits/FORENSIC_DOCS_MULTI_LLM_2026-08-09.md`](audits/FORENSIC_DOCS_MULTI_LLM_2026-08-09.md) (Grok + Composer; juez Grok 4/5).
+- **DELETE ola 4:** ninguno. **MOVE 500-latam:** candidato, no aplicado.
+- **TRIM P1 hecho:** Pack `manifest.yaml` anclas → 237.412; `manifest_inversor.yaml` paths; este archivo; lexicon Eats en `product/`.
 
-## Limpieza dura docs (9 ago 2026)
+## Limpieza docs olas 1–3 (9 ago 2026)
 
-Eliminado `docs/archive/` completo (7 archivos: piloto commerce, forense docs 360, smoke RESULTS, CONTEXTO_IA, research GitHub crudo, 2 Eats). Basura local `Untitled` + `*.xlsx.bak`. Referencias reescritas a canon Pharma.
+1. **archive/** eliminado + basura local. 2. **agents/** + snapshots audits + forenses zonix. 3. Raíz canon; JARVIS/WORKSPACE→`zonix/`; MIGRACION→`audits/`; sin `_tools/.venv`. Índice: [`README.md`](README.md).
 
 ---
 
 ## Última actualización de contexto
-
-### Triage docs/ raíz — 9 agosto 2026
-
-- **Problema:** ~38 `.md` sueltos en `docs/` (canon + audits + ops + histórico mezclados).
-- **Acción:** taxonomía `audits/`, `ops/`, `runbooks/`, `qa/`, `product/`, `plantillas/`, `archive/{audits,qa,research,jarvis}/` + índice [`docs/README.md`](README.md).
-- **KEEP_ROOT (ola 3):** `active_context`, BRAND, PLAN_RX, PLAN_REGULATORIO (+ README). JARVIS/WORKSPACE→`zonix/`; MIGRACION→`audits/`; cursorignore→`ops/`.
-- **Enlaces:** actualizados en `AGENTS.md`, skills, Lanzamiento, Pack, plantillas, Front (`AGENTS` / `active_context` punteros Backend).
-- **Sin** borrados duros; **sin** tocar contenido Lanzamiento/Inversionistas salvo paths.
 
 ### Listo envío — sync docx/PDF (DoD comercial) — 7 agosto 2026
 
@@ -38,50 +32,9 @@ Eliminado `docs/archive/` completo (7 archivos: piloto commerce, forense docs 36
 - **DX:** creado `docs/Lanzamiento/_tools/.venv` (python-docx) + `.gitignore` `.venv/`.
 - **HITL:** **sin commit/push** hasta OK founder.
 
-### Forense Cola C v8 (dual Grok+Composer) — 7 agosto 2026
+### HISTÓRICO — forenses pack v5–v8 / Colas B–C (7 ago 2026)
 
-- **Método:** dual **Grok 4.5** + **Composer**; juez **grok** (v7); GLM omitido (`api_limit`). 1 archivo/ola; loops ≤3. **No** reabrir Cola A PASS.
-- **Prompt:** [`plantillas/PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md`](plantillas/PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md) **v8**.
-- **Gate Cola C:** limpio post-writer (prohibidos + Lean ~174k).
-- **Juez spot:** BARRA → **PASS** (Grok + Composer). Pack 08/12 en ola (anclas 237.412 OK en scan).
-- **P0/P1 writer:** CRM Plan A (Epakon/Casa212/ALGEN FICHA+NOTAS+RESUMEN_CEO + ranking): ask matriz **237.412**; tickets ~150k = **parcial**; scores Casa212 **68** / Epakon **70**. GUIA_DISCOVERY + Pack **14** + PROPUESTA tercer lado + Pack **18** → %GMV **8/7/5**. **ESTRUCTURA_LEGAL** SoT + Pack **08**: SAFE under-cap → **más** % (no menos); dilución Serie A aclarada; exit 7–10% × 50M = **3,5–5,0M**. Pack **12**: Day-D **~28** vs M1 **~40** separados.
-- **Banners histórico:** OK (AUDIT + zonix ANALISIS_*).
-- **Sync entregables:** ver bloque **Listo envío** arriba (docx/PDF regenerados).
-- **Edit lista:** CRM Plan A md; GUIA_DISCOVERY; Pack 08/12/14/18; ESTRUCTURA_LEGAL SoT; PROPUESTA_TERCER_LADO; prompt v8; active_context.
-
-### Cola B residual docs (post-v7) — 7 agosto 2026
-
-- **Gate:** Pack `md/` 06–08 + 12–18 + Lanzamiento fuera de top-15; P0 hallado en Pack **15** (`25/40/55` → **45/60/70 + 8/7/5**).
-- **Writer P1:** Pack **13** (%GMV explícito); Pack **06/07** headers 8/7/5; Pack **17** Base/Growth desambiguados (intensidad marketing ≠ ask); plantilla `PROMPT_MEJORAR` CRO; banners HISTÓRICO en forenses zonix (eliminados ola 2).
-- **Pack `docx/`:** regenerados **7 ago 2026** (ver **Listo envío**).
-- **Sin** inventar P10/P90; **sin** commit/push.
-
-### Forense docs v7 (Grok + GLM 5.2 + Composer) — 7 agosto 2026
-
-- **Método:** trío **Grok 4.5** + **GLM 5.2 Max** + **Composer** (`inherit`); piloto BRIEF → `juez_activo` = **grok** (empate ≈ Composer; **GLM = `api_limit`** en todos los intentos → fusión con ≥2 JSON válidos). Writer = sesión principal.
-- **Canon:** SAFE **237.412**; Day-D **187.152**; Esc.1 Rev **228.796** / Costos **169.717** / FCF **+59.079** / cash M12 **246.231**; BE **M5**; M12 revenue **29.892**; pricing **45/60/70 + %GMV 8/7/5**; ARPF **~52**; LTV **1.040**; LTV/CAC **~7,5x**.
-- **P0/P1 writer:** BRIEF (Contador+asesor 330; Esc.1 + %GMV; provenance v4); Pack **04** Año2 → `[PENDIENTE FP&A]`; Pack **09/11** pricing 45/60/70+8/7/5; PLAN + GUIA_DISCOVERY; PROYECCION headers %GMV; **UNIT** ARPF-50 leakage (payback 139/52, churn LTV, cohort, BE pesimista ≠ FCF M5); skill `zonix-financial-model` ARPF/LTV; re-espejo Pack **02/05/10** (+01 si sync).
-- **DoD:** gate Cola A limpio en SoT/Pack (hits residuales solo anti-patrón / histórico etiquetado); juez cero P0/P1 abiertos en UNIT/RESUMEN tras loop; prompt = **v7**.
-- **Prompt:** [`plantillas/PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md`](plantillas/PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md) **v7**.
-- **Pendiente humano:** regenerar Pack `docx/` si se envían; P10/P90 cash `[PENDIENTE FP&A]`; **sin commit/push** hasta OK.
-- **Edit/delete lista:** SoT BRIEF/UNIT/PROYECCION + Pack 04/09/11/05 + skills financieras; **sin borrados**.
-
-### Forense docs v6 (mejores LLM + fallback) — 7 agosto 2026
-
-- **Método:** plan dual GPT-5.6 Sol Max + Gemini 3.1 Pro → fusión Kimi; **API top agotada** → fallback **Grok 4.5** (narrativa) + writer orquestador; GLM también tope.
-- **Canon:** SAFE **237.412**; Day-D **187.152**; Esc.1 Rev **228.796** / FCF **+59.079** / cash M12 **246.231**; BE **M5**; M12 revenue **29.892**; pricing **45/60/70 + %GMV 8/7/5** (Excel esc.1 — no 14/12/11 ni 25/40/55).
-- **P0/P1 aplicados (writer):** Pack README (112k→237.412); Pack **04**/**09** (7.950→29.892; Fase 0/BE; pricing); Pack **11/13/14/17**; SoT **PROPUESTA/RESUMEN/UNIT/MENSAJE/CONTEXTO** (%GMV); **BRIEF** (burn sin suma falsa; Contador+asesor una fila 330; take-rate VE 20–30%; shorthand equipo); skills lean-canvas/b2b/financial-model/startup-context; re-espejo Pack **01/02/03/05**.
-- **Prompt:** [`plantillas/PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md`](plantillas/PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md) **v6** (superseded by v7 arriba).
-- **Pendiente humano:** regenerar Pack `docx/` + PDF BRIEF si se envían; P10/P90 cash `[PENDIENTE FP&A]`; **sin commit/push** hasta OK.
-- **Edit/delete lista:** editados Pack no-espejo + SoT pricing + BRIEF; **sin borrados** en este loop.
-
-### Forense Excel v4 → docs (metodología v5) — 7 agosto 2026
-
-- **Fuente:** `/home/aipp/Descargas/MODELO_FINANCIERO_040826_v4.xlsx` → [`Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.xlsx) (backup `.bak-v5-preheal-20260807` + heal Flujo ARPF **52** / wire **−237.412** / equity **39,57%** / banner v4).
-- **Anclas:** SAFE **237.412**; Day-D **187.152**; Esc.1 Rev **228.796** / costos **169.717** / FCF **+59.079** / cash M12 **246.231**; BE **M5**; ARPF **~52**; LTV **1.040**; equity **~39,57%**.
-- **Hecho:** prompt forense **v5** ([`plantillas/PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md`](plantillas/PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md)); Pack Aliado espejo SoT desde Lanzamiento; FICHAs CRM ask **237.412**; PDFs Lanzamiento + CRM regenerados (Chrome); borrados `GTM_6_MESES.docx` + `.fods` legado; skill `zonix-financial-model` (híbrido ≠ ARPF×N).
-- **Pendiente FP&A:** cash P10/P90 (no usar ~25k/~52k); regenerar `BRIEFING_INVERSORES_VE_2026.docx` si se envía; Pack `docx/` pueden ir atrasados vs `md/`.
-- **Sin commit/push** hasta OK founder.
+Loops Grok+Composer (+GLM/API limit); prompt [`plantillas/PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md`](plantillas/PROMPT_AUDIT_FORENSE_PACK_LANZAMIENTO.md) hasta **v8**. Canon y DoD comercial: ver **Canon financiero** + **Listo envío** arriba. Detalle de olas docs: [`audits/FORENSIC_DOCS_MULTI_LLM_2026-08-09.md`](audits/FORENSIC_DOCS_MULTI_LLM_2026-08-09.md).
 
 ### Sync canon Lean Excel v4 (237.412) — 7 agosto 2026
 
