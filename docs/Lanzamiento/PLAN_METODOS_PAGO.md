@@ -4,7 +4,7 @@
 > Documento que detalla cómo se cobra y se paga en **Zonix Pharma** (pack inversor / piloto).
 >
 > **One-pager inversor (3 min):** resumen ejecutivo abajo · §1 métodos · §2.1–2.2 flujos A/B · §10 Sudeban. Runbook (mora §2.3, Laravel §6, KPIs §8) = anexo operativo post-wire.
-> Marco **Sudeban / no intermediación:** §10 de este documento; contexto farmacéutico amplio en [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md) §8. No usar [`../REQUISITOS_OPERAR_VENEZUELA.md`](../archive/research/REQUISITOS_OPERAR_VENEZUELA.md) (archivo histórico Zonix Eats).
+> Marco **Sudeban / no intermediación:** §10 de este documento; contexto farmacéutico amplio en [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md) §8. No usar docs Eats históricos (eliminados).
 
 **Resumen ejecutivo:** el **paciente** paga a la **farmacia** (medicamentos) y a la **empresa partner** (envío) por canales **manuales VE** (pago móvil, transferencia, Zelle, Binance, efectivo). **Zonix Pharma** no es PSP: cobra a la farmacia **cuota + % GMV** (B2B) y a la empresa logística **fee por envío** (§2.5). La farmacia **valida el comprobante** antes de despachar.
 
@@ -349,7 +349,7 @@ Detalle: `[../FLUJO_PAGO_ORDEN.md](../product/FLUJO_PAGO_ORDEN.md)` y `[../logic
 
 **Si aplica licencia:** horizonte típico **12–18 meses** y costo de compliance post-Serie A (tabla de riesgos §5). Hasta entonces: mantener flujo documentado en §2.1–2.5 y [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §4.6.
 
-**Referencia histórica (solo Eats):** [`../REQUISITOS_OPERAR_VENEZUELA.md`](../archive/research/REQUISITOS_OPERAR_VENEZUELA.md) § Sudeban — mismo principio de no intermediación, redactado para comida rápida; **no sustituye** este §10 para Pharma.
+**Nota:** docs Eats históricos eliminados (ago 2026); este §10 es la referencia Pharma.
 
 ## 11. Documentos hermanos
 

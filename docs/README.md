@@ -30,18 +30,15 @@
 | [`product/`](product/) | Flujos pagos, phones |
 | [`plantillas/`](plantillas/) | Prompts JARVIS (360, forense, landing, pack) |
 | [`zonix/`](zonix/) | Análisis skills / research forense |
-| [`archive/`](archive/) | HISTÓRICO / supersedido (no SoT) |
 | [`agents/`](agents/) | Notas auxiliares agentes |
 
-## `archive/` (no usar como verdad vigente)
-
-- `archive/audits/` — piloto commerce; forense docs 360 (banner HISTÓRICO)
-- `archive/qa/` — resultados smoke de una corrida
-- `archive/research/` — Eats históricos + búsqueda GitHub cruda
-- `archive/jarvis/` — `CONTEXTO_IA.md` (solapa AGENTS)
 
 ## Regla
 
 Si un documento es **canon de producto o IA diaria** → raíz.  
 Si es **evidencia / ops / prompt / histórico** → subcarpeta.  
 Cifras de raise → solo `Lanzamiento/` + Excel.
+
+## Limpieza (9 ago 2026)
+
+Se eliminó `docs/archive/` (Eats histórico, smoke snapshot, forense docs 360, CONTEXTO_IA, research crudo GitHub). Canon y `audits/`/`ops/`/`qa/` vivos permanecen.

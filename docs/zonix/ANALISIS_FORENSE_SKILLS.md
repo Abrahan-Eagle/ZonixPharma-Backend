@@ -13,7 +13,7 @@ Tabla principal para pedir tareas a JARVIS en lenguaje natural.
 
 | Meta | Orden skills JARVIS | Docs pack obligatorios | Roles humanos piloto |
 |------|---------------------|------------------------|----------------------|
-| **Empresa VE** | `zonix-startup-context` → `zonix-empresa-ve` → `zonix-lanzamiento-roles` | ESTRUCTURA_LEGAL, PLAN_LANZAMIENTO §2.1, REQUISITOS_OPERAR_VENEZUELA | Abogado, Contador, Co-CEO |
+| **Empresa VE** | `zonix-startup-context` → `zonix-empresa-ve` → `zonix-lanzamiento-roles` | ESTRUCTURA_LEGAL, PLAN_LANZAMIENTO §2.1, PLAN_REGULATORIO / PLAN_METODOS_PAGO §10 | Abogado, Contador, Co-CEO |
 | **Documentos** | `zonix-startup-context` → skill por doc (§0 ter) → `zonix-investor-materials` | README Lanzamiento (22 archivos) | CFO lens, RA, Legal, Marketing, FP&A |
 | **Inversores** | `zonix-startup-context` → `zonix-fundraising-narrative` → `zonix-investor-materials` | MENSAJE_ENVIO, CHECKLIST_PRE_INVERSOR | Founder, IR |
 | **Ejecutar lanzamiento** | `zonix-launch-piloto` → `zonix-lanzamiento-roles` | PLAN_LANZAMIENTO, PLAN_MODULO §16, BRIEF | Co-CEO, Sales, CS, Marketing |

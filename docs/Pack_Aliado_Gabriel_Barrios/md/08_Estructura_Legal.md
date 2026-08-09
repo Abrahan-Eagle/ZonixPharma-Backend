@@ -4,7 +4,7 @@
 
 > **Última actualización:** 30 julio 2026 (anclas SAFE **v4 Excel** — **USD 237.412** @ cap **600k** → **~39,57%**).
 > Documento que captura el vehículo legal, instrumento de inversión y cap table de Zonix Pharma.
-> Marco regulatorio **Pharma:** [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md). Pagos/Sudeban: [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §10. Archivo Eats (solo referencia): [`../REQUISITOS_OPERAR_VENEZUELA.md`](../archive/research/REQUISITOS_OPERAR_VENEZUELA.md).
+> Marco regulatorio **Pharma:** [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md). Pagos/Sudeban: [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §10. No usar docs Eats históricos (eliminados).
 
 **Roles operativos vs gobernanza:** el pack usa **Co-CEO / CEO operativo** junto al **CEO+CTO (founder)** como **rótulos de trabajo** (comercial / operación vs producto-tech). El **representante legal**, **junta**, **relación laboral** y el **SAFE** siguen lo que acuerden **abogado + partes**; no se asume que “dos CEO” dupliquen obligaciones legales sin documentarlo.
 

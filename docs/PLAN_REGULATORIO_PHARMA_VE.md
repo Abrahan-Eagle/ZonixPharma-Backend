@@ -138,7 +138,7 @@ triggers mes 6+ y tabla de cumplimiento:
 Marco legal/contratos: [Lanzamiento/ESTRUCTURA_LEGAL_Y_EQUITY.md](Lanzamiento/ESTRUCTURA_LEGAL_Y_EQUITY.md) §4.6.
 
 > Archivo histórico comida (solo referencia del mismo principio):
-> [REQUISITOS_OPERAR_VENEZUELA.md](archive/research/REQUISITOS_OPERAR_VENEZUELA.md) — no usar
+> Archivo Eats histórico **eliminado**. Usar este documento + [Lanzamiento/PLAN_METODOS_PAGO.md](Lanzamiento/PLAN_METODOS_PAGO.md) §10.
 > para due diligence Pharma.
 
 ## 9. Lo que NO somos

@@ -4,7 +4,7 @@
 **Parámetros:** `MODO=modulo` · `MODULO=commerce` · `PROFUNDIDAD=completa`  
 **Repos:** ZonixPharma-Backend + ZonixPharma-Front  
 **Prompt base:** [PROMPT_AUDIT_360_ZONIX.md](PROMPT_AUDIT_360_ZONIX.md)  
-**Auditoría previa re-verificada:** [AUDIT_commerce_2026-06-10.md](AUDIT_commerce_2026-06-10.md)
+**Auditoría previa:** piloto jun-2026 re-verificado e integrado aquí (archivo piloto eliminado ago 2026).
 
 ---
 
@@ -322,7 +322,7 @@
 
 | Documento | Divergencia |
 | --------- | ----------- |
-| `archive/audits/AUDIT_commerce_2026-06-10.md` | Hallazgos COM-001–010 **re-verificados**; siguen vigentes; este informe amplía con 8 fases |
+| Piloto commerce jun-2026 (eliminado) | Hallazgos COM-001–010 **re-verificados** e integrados; este informe es canónico |
 | `AUDIT_UI_PHARMA.md` | Commerce NEEDS REWORK — **sin cambio** |
 | `docs/active_context.md` | **No menciona** WIP `commerce_api_errors` ni auditoría commerce jun 2026 — desactualizado |
 | `MIGRACION_EATS_PHARMA.md` | `CommerceService.getCommerces`, copy restaurante, Pizza en tests — **deuda Eats residual** |

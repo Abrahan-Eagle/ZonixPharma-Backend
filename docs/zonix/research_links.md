@@ -175,7 +175,7 @@
 
 | Recurso | URL | Veredicto | Nota |
 |---------|-----|-----------|------|
-| Búsqueda de Habilidades de Startup en GitHub.md | [../Búsqueda de Habilidades de Startup en GitHub.md](../Búsqueda%20de%20Habilidades%20de%20Startup%20en%20GitHub.md) | **Fuente** | ~58 URLs únicas; Tablas 1–4 |
+| Búsqueda de Habilidades… (eliminado ago 2026) | — | **Superseded** | Ver `ANALISIS_FORENSE_BUSQUEDA_GITHUB_LANZAMIENTO_2026-05.md` |
 | Informe forense Busqueda → Lanzamiento | [ANALISIS_FORENSE_BUSQUEDA_GITHUB_LANZAMIENTO_2026-05.md](ANALISIS_FORENSE_BUSQUEDA_GITHUB_LANZAMIENTO_2026-05.md) | **Canon** | Matriz A/B/C/D, anexos shawnpang + founder-playbook, Top 10 |
 
 > Las filas de §A–§L arriba siguen vigentes; el informe §M consolida **solo** lo citado en el doc Busqueda (sin sustituir este catálogo).

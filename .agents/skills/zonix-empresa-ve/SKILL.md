@@ -21,7 +21,7 @@ Skill para **crear y operar la empresa** Zonix Pharma en Venezuela: vehículo le
 2. Leer [ESTRUCTURA_LEGAL_Y_EQUITY.md](../../docs/Lanzamiento/ESTRUCTURA_LEGAL_Y_EQUITY.md).
 3. Leer [PLAN_LANZAMIENTO_COMERCIAL.md](../../docs/Lanzamiento/PLAN_LANZAMIENTO_COMERCIAL.md) §2.1 (hitos legales T+0–T+30).
 
-Referencia amplia: [REQUISITOS_OPERAR_VENEZUELA.md](../../docs/archive/research/REQUISITOS_OPERAR_VENEZUELA.md).
+Referencia Pharma: [PLAN_REGULATORIO_PHARMA_VE.md](../../docs/PLAN_REGULATORIO_PHARMA_VE.md) y [PLAN_METODOS_PAGO.md](../../docs/Lanzamiento/PLAN_METODOS_PAGO.md) §10 (docs Eats eliminados).
 
 ## Checklist constitución (orden sugerido)
 

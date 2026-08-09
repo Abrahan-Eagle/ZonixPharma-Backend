@@ -13,4 +13,4 @@ Execute the Laravel test suite for **ZonixPharma-Backend**.
 
 - Use `--filter=NombreTest` for a single test class.
 - Use `php artisan test --coverage` only if the user asks for coverage.
-- Producto: **Zonix Pharma** — no confundir con docs Eats históricos (`archive/research/GUIA_COMPLETA_ZONIX_EATS_VENEZUELA.md`, `archive/research/REQUISITOS_OPERAR_VENEZUELA.md`).
+- Producto: **Zonix Pharma** — no confundir con Zonix Eats (docs históricos eliminados).

@@ -3,6 +3,11 @@
 > **Uso:** La IA debe leer este archivo al iniciar o retomar trabajo en el proyecto para recuperar el estado reciente sin depender de que el usuario lo pida.
 > La skill **context-updater** indica cómo actualizar este archivo al cerrar una sesión relevante.
 
+
+## Limpieza dura docs (9 ago 2026)
+
+Eliminado `docs/archive/` completo (7 archivos: piloto commerce, forense docs 360, smoke RESULTS, CONTEXTO_IA, research GitHub crudo, 2 Eats). Basura local `Untitled` + `*.xlsx.bak`. Referencias reescritas a canon Pharma.
+
 ---
 
 ## Última actualización de contexto
@@ -39,7 +44,7 @@
 ### Cola B residual docs (post-v7) — 7 agosto 2026
 
 - **Gate:** Pack `md/` 06–08 + 12–18 + Lanzamiento fuera de top-15; P0 hallado en Pack **15** (`25/40/55` → **45/60/70 + 8/7/5**).
-- **Writer P1:** Pack **13** (%GMV explícito); Pack **06/07** headers 8/7/5; Pack **17** Base/Growth desambiguados (intensidad marketing ≠ ask); plantilla `PROMPT_MEJORAR` CRO; banners **HISTÓRICO** en `AUDIT_FORENSE_DOCS_360_*` + `zonix/ANALISIS_FORENSE_*`.
+- **Writer P1:** Pack **13** (%GMV explícito); Pack **06/07** headers 8/7/5; Pack **17** Base/Growth desambiguados (intensidad marketing ≠ ask); plantilla `PROMPT_MEJORAR` CRO; banners **HISTÓRICO** en `zonix/ANALISIS_FORENSE_*` (AUDIT_FORENSE_DOCS_360 eliminado).
 - **Pack `docx/`:** regenerados **7 ago 2026** (ver **Listo envío**).
 - **Sin** inventar P10/P90; **sin** commit/push.
 
@@ -146,7 +151,7 @@
 
 - **`docs/_archive_eats/` eliminada** del repo (pack Lanzamiento Eats duplicado). Historial recuperable vía git (commit anterior a eliminación).
 - Referencias actualizadas en `MIGRACION_EATS_PHARMA.md`, `.cursorignore`, plantillas y docs operativos.
-- Docs Eats sueltos que permanecen (solo referencia, no producto): `archive/research/GUIA_COMPLETA_ZONIX_EATS_VENEZUELA.md`, `archive/research/REQUISITOS_OPERAR_VENEZUELA.md`.
+- Docs Eats históricos **eliminados** (limpieza dura ago 2026); usar PLAN_REGULATORIO + PLAN_METODOS_PAGO §10.
 
 ### Deploy FTP pharma.aiblockweb.com — junio 2026
 
@@ -159,7 +164,7 @@
 
 - **Módulos auditados y remediados (lotes 1–10):** commerce, pharmacist, orders, buyer Rx, smoke/strict checkout, buyer catalog, delivery, admin.
 - **Lote 10:** `delivery_company_api_errors.dart` + `DeliveryCompanyService.lastActionError`; `GET /admin/statistics` envelope `{ success, data }`.
-- **Docs:** `audits/AUDIT_delivery_2026-06-10.md`, `audits/AUDIT_admin_2026-06-10.md`, `archive/qa/SMOKE_RX_E2E_RESULTS_2026-06-10.md`.
+- **Docs:** `audits/AUDIT_delivery_2026-06-10.md`, `audits/AUDIT_admin_2026-06-10.md`; smoke checklist vivo `qa/SMOKE_RX_E2E.md` (RESULTS eliminado).
 - **Helpers Front API:** `commerce_api_errors`, `pharmacist_api_errors`, `order_api_errors`, `product_api_errors`, `delivery_api_errors`, `admin_api_errors`, `delivery_company_api_errors`.
 - **Smoke Rx estricto API:** verificado 11 jun; widget `checkout_strict_rx_test` en Front.
 - **Local dispositivo (11 jun):** `.env` **strict ON**; receta libre **id=2**; runbook `qa/SMOKE_RX_E2E.md`.
@@ -168,11 +173,11 @@
 ### Buyer catalog lote 7 — 10 junio 2026
 
 - **Auditoría:** [`audits/AUDIT_buyer_catalog_2026-06-10.md`](AUDIT_buyer_catalog_2026-06-10.md).
-- **Smoke strict:** `RxStrictSmokeSeeder` + test; doc en `SMOKE_RX_E2E_RESULTS`.
+- **Smoke strict:** `RxStrictSmokeSeeder` + test; checklist `qa/SMOKE_RX_E2E.md`.
 
 ### Lote 6 — smoke Rx + rating pharma + strict checkout — 10 junio 2026
 
-- **Smoke:** [`archive/qa/SMOKE_RX_E2E_RESULTS_2026-06-10.md`](archive/qa/SMOKE_RX_E2E_RESULTS_2026-06-10.md) — 22 tests backend PASS; manual dispositivo pendiente.
+- **Smoke:** 22 tests backend PASS (jun 2026); checklist vivo [`qa/SMOKE_RX_E2E.md`](qa/SMOKE_RX_E2E.md); manual dispositivo pendiente.
 - **Strict Rx (spec 001):** `GET /api/pharma-policy`; Front `PharmaPolicyService` + checkout/cart modo estricto.
 - **Rating:** alias `ratePharmacy` / `pharmacyRated` (API `/reviews/restaurant` intacta).
 

@@ -2,7 +2,7 @@
 
 > **HISTÓRICO (may 2026) — no SoT financiero.** Mentiones de pricing **25/40/55** = obsoletas; vigente = **45/60/70 + %GMV 8/7/5**; ask **237.412**.  
 > **Fecha:** 26 mayo 2026.  
-> **Fuente auditada:** [../Búsqueda de Habilidades de Startup en GitHub.md](../Búsqueda%20de%20Habilidades%20de%20Startup%20en%20GitHub.md) (Tablas 1–4 + obras citadas).  
+> **Fuente auditada:** documento crudo GitHub **eliminado** ago 2026; este análisis forense es la fuente vigente.  
 > **Objetivo:** qué enlaces/skills **sirven para mejorar** [docs/Lanzamiento/](../Lanzamiento/) — sin instalar hubs en el repo ni sustituir cifras del pack.  
 > **Cruces:** [research_links.md](research_links.md), [ANALISIS_FORENSE_SKILLS.md](ANALISIS_FORENSE_SKILLS.md), skills `zonix-*` en `.agents/skills/`.
 
