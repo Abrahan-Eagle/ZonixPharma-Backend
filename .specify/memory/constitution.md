@@ -121,7 +121,7 @@ Full matrix: [AGENTS.md](../../AGENTS.md) § Auto-invoke Skills.
 - [docs/BRAND_ZONIX_PHARMA.md](../../docs/BRAND_ZONIX_PHARMA.md)
 - [docs/PLAN_RX_VALIDATION.md](../../docs/PLAN_RX_VALIDATION.md)
 - [docs/PLAN_REGULATORIO_PHARMA_VE.md](../../docs/PLAN_REGULATORIO_PHARMA_VE.md)
-- [docs/MIGRACION_EATS_PHARMA.md](../../docs/MIGRACION_EATS_PHARMA.md)
+- [docs/audits/MIGRACION_EATS_PHARMA.md](../../docs/audits/MIGRACION_EATS_PHARMA.md)
 - [docs/zonix/SPEC_KIT_ZONIX.md](../../docs/zonix/SPEC_KIT_ZONIX.md) — router speckit vs Jarvis
 
 ---

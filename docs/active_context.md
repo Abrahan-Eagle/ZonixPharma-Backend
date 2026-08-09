@@ -4,6 +4,10 @@
 > La skill **context-updater** indica cómo actualizar este archivo al cerrar una sesión relevante.
 
 
+## Limpieza / orden ola 3 (9 ago 2026)
+
+Borrados: `Lanzamiento/_tools/.venv`, `plantillas/PROMPT_AUDIT_FORENSE`, `ops/CURSOR_MEJORAS_CONFIGURACION`. Movidos: JARVIS+WORKSPACE→`zonix/`, MIGRACION→`audits/`, cursorignore→`ops/`. Raíz canon: active_context, BRAND, PLAN_RX, PLAN_REGULATORIO + README.
+
 ## Limpieza dura ola 2 (9 ago 2026)
 
 Eliminados: `docs/agents/` completo; snapshots audits de módulo (admin/orders/pharmacist/delivery/buyer*); `ANALISIS_TECNICO_COMPLETO`; forenses zonix (`ANALISIS_FORENSE_*`, `research_links`). Vivos: `audits/` (README + 3), `zonix/` (SPEC_KIT, SKILLS_STARTUP, roles_matrix). Pack/ops/plantillas/product/qa/runbooks intactos.
@@ -20,7 +24,7 @@ Eliminado `docs/archive/` completo (7 archivos: piloto commerce, forense docs 36
 
 - **Problema:** ~38 `.md` sueltos en `docs/` (canon + audits + ops + histórico mezclados).
 - **Acción:** taxonomía `audits/`, `ops/`, `runbooks/`, `qa/`, `product/`, `plantillas/`, `archive/{audits,qa,research,jarvis}/` + índice [`docs/README.md`](README.md).
-- **KEEP_ROOT:** `active_context`, BRAND, PLAN_RX, PLAN_REGULATORIO, MIGRACION, ZONIX_WORKSPACE, ZONIX_JARVIS_INTEGRATION, `cursorignore.example`.
+- **KEEP_ROOT (ola 3):** `active_context`, BRAND, PLAN_RX, PLAN_REGULATORIO (+ README). JARVIS/WORKSPACE→`zonix/`; MIGRACION→`audits/`; cursorignore→`ops/`.
 - **Enlaces:** actualizados en `AGENTS.md`, skills, Lanzamiento, Pack, plantillas, Front (`AGENTS` / `active_context` punteros Backend).
 - **Sin** borrados duros; **sin** tocar contenido Lanzamiento/Inversionistas salvo paths.
 
@@ -281,7 +285,7 @@ Eliminado `docs/archive/` completo (7 archivos: piloto commerce, forense docs 36
 ### Auditoría API + quick wins (1 mayo 2026)
 
 - **Fecha:** 1 mayo 2026 (auditoría API patterns + quick wins en código)
-- **Resumen breve:** Auditoría de **63 controladores** contra la skill `zonix-api-patterns` documentada en [`docs/audits/AUDIT_API_PATTERNS_2026-05-01.md`](AUDIT_API_PATTERNS_2026-05-01.md) (15 P0 detectados, deuda sistémica en envelope JSON, paginación, Form Requests y exposición de `$e->getMessage()`). **Remediación aplicada:** `Handler::handleApiException` ahora registra `\Log::error` en excepciones no manejadas, endurece mensaje de `ValidationException` y evita filtrar detalles internos en producción salvo `HttpException` con mensaje explícito; `CommerceDataController` devuelve **403** si `commerce_id`/`X-Commerce-Id` no pertenece al perfil (sin fallback silencioso al comercio principal); `Buyer/ReviewController::reportReview` exige que la reseña esté ligada a una **orden del comprador** (`orders.profile_id`); `Authenticator/AuthController::googleUser` y `Admin/ReportController::sendSystemNotification` dejan de exponer `getMessage()` al cliente y loguean el fallo; eliminados controladores muertos/legado no enrutados: `Delivery/OrderController`, `ChatController` (raíz), `HomeController` (raíz), `WebSocket/WebSocketController`. Prompt reutilizable de auditoría forense: [`docs/plantillas/PROMPT_AUDIT_FORENSE.md`](PROMPT_AUDIT_FORENSE.md). **Pendiente:** backlog P0 restante en doc (Payment idempotencia, ProfileController transacciones, sweep masivo de controllers).
+- **Resumen breve:** Auditoría de **63 controladores** contra la skill `zonix-api-patterns` documentada en [`docs/audits/AUDIT_API_PATTERNS_2026-05-01.md`](AUDIT_API_PATTERNS_2026-05-01.md) (15 P0 detectados, deuda sistémica en envelope JSON, paginación, Form Requests y exposición de `$e->getMessage()`). **Remediación aplicada:** `Handler::handleApiException` ahora registra `\Log::error` en excepciones no manejadas, endurece mensaje de `ValidationException` y evita filtrar detalles internos en producción salvo `HttpException` con mensaje explícito; `CommerceDataController` devuelve **403** si `commerce_id`/`X-Commerce-Id` no pertenece al perfil (sin fallback silencioso al comercio principal); `Buyer/ReviewController::reportReview` exige que la reseña esté ligada a una **orden del comprador** (`orders.profile_id`); `Authenticator/AuthController::googleUser` y `Admin/ReportController::sendSystemNotification` dejan de exponer `getMessage()` al cliente y loguean el fallo; eliminados controladores muertos/legado no enrutados: `Delivery/OrderController`, `ChatController` (raíz), `HomeController` (raíz), `WebSocket/WebSocketController`. Prompt reutilizable de auditoría forense: [`docs/plantillas/PROMPT_AUDIT_360_ZONIX.md`](plantillas/PROMPT_AUDIT_360_ZONIX.md). **Pendiente:** backlog P0 restante en doc (Payment idempotencia, ProfileController transacciones, sweep masivo de controllers).
 
 ---
 
@@ -369,11 +373,11 @@ Ver entrada del 30 abril 2026 (primera sesión) más abajo para el detalle del f
         - `config/zonix.php` con sección `pharma` (block*rx_without_prescription, prescription_validation_ttl_minutes, disallow_promotions_on_rx, require_cold_chain_handling) y `.env.example` con variables `ZONIX_PHARMA*\*`.
     5. **Refactor dominio frontend**: modelo `Product` extendido con campos farmacéuticos, modelos nuevos `Prescription` y `MedicineLot`, `CartItem` con flags Rx/cold_chain, `CartService` expone `requiresPrescription` / `prescriptionRequiredItems` / `coldChainRequired`. Modelo `Restaurant` mantenido como `typedef Pharmacy` para compatibilidad. Servicio `PrescriptionService` y registro en `MultiProvider`.
     6. **UI frontend**: pantallas nuevas `PrescriptionUploadPage`, `MyPrescriptionsPage`, `PharmacistDashboardPage`, `PendingValidationsPage`, `ValidationDetailPage`. Parser de QR `StorefrontQrParser` actualizado a `zonix://pharmacy/{id}` con compatibilidad legacy `zonix://restaurant/{id}`.
-    7. **Documentación**: `docs/BRAND_ZONIX_PHARMA.md`, `docs/PLAN_RX_VALIDATION.md`, `docs/PLAN_REGULATORIO_PHARMA_VE.md`, `docs/MIGRACION_EATS_PHARMA.md`. AGENTS.md y .cursorrules de ambos repos reescritos. Skills nuevas `zonix-prescriptions` y `zonix-medicine-catalog`.
+    7. **Documentación**: `docs/BRAND_ZONIX_PHARMA.md`, `docs/PLAN_RX_VALIDATION.md`, `docs/PLAN_REGULATORIO_PHARMA_VE.md`, `docs/audits/MIGRACION_EATS_PHARMA.md`. AGENTS.md y .cursorrules de ambos repos reescritos. Skills nuevas `zonix-prescriptions` y `zonix-medicine-catalog`.
     8. **Tests añadidos**:
         - Backend: `tests/Feature/PharmacyControllerTest.php`, `tests/Feature/PrescriptionFlowTest.php`, `tests/Unit/PrescriptionModelTest.php`, `tests/Unit/MedicineLotModelTest.php`. `tests/Feature/StorefrontLinkTest.php` actualizado a `zonix://pharmacy/`.
         - Frontend: `test/features/utils/storefront_qr_pharmacy_test.dart`, `test/models/prescription_model_test.dart`, `test/models/medicine_lot_model_test.dart`. `test/models/product_model_test.dart` y `test/models/cart_item_test.dart` actualizados con campos Pharma.
-- **Áreas tocadas:** branding, paleta, modelo de datos, controllers, rutas, servicios, eventos, configuración, documentación, skills y tests. Detalle exhaustivo en [MIGRACION_EATS_PHARMA.md](MIGRACION_EATS_PHARMA.md).
+- **Áreas tocadas:** branding, paleta, modelo de datos, controllers, rutas, servicios, eventos, configuración, documentación, skills y tests. Detalle exhaustivo en [MIGRACION_EATS_PHARMA.md](audits/MIGRACION_EATS_PHARMA.md).
 - **Próximos pasos sugeridos:**
     1. Correr `php artisan migrate:fresh --seed` con BD destino lista (consolida schema Pharma).
     2. Ejecutar `php artisan test` y `flutter test` + `flutter analyze` para confirmar que la suite sigue verde.

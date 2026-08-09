@@ -15,9 +15,9 @@
 |---------|------|
 | Pack inversor (22 docs) | [docs/Lanzamiento/](Lanzamiento/README.md) |
 | Skills agente (30 `zonix-*`) | `.agents/skills/zonix-*/` |
-| Router startup | [docs/zonix/SKILLS_STARTUP_USAR_NO_USAR.md](zonix/SKILLS_STARTUP_USAR_NO_USAR.md) |
-| Routing JARVIS | [docs/zonix/roles_matrix.json](zonix/roles_matrix.json) |
-| Routing JARVIS | [docs/zonix/roles_matrix.json](zonix/roles_matrix.json) |
+| Router startup | [docs/zonix/SKILLS_STARTUP_USAR_NO_USAR.md](SKILLS_STARTUP_USAR_NO_USAR.md) |
+| Routing JARVIS | [docs/zonix/roles_matrix.json](roles_matrix.json) |
+| Routing JARVIS | [docs/zonix/roles_matrix.json](roles_matrix.json) |
 | Matriz roles humanos | [docs/Lanzamiento/ROLES_SKILLS_ZONIX.md](Lanzamiento/ROLES_SKILLS_ZONIX.md) |
 
 ## CorralX (marketplace ganadero)
@@ -38,7 +38,7 @@ Cifras (101k / 118k / 135k, SAFE caps, ARPF) y legal VE solo desde **pack Lanzam
 | Terminal | `bash …/jarvis-skills-library/scripts/init-jarvis.sh --min c` |
 | Manifest Backend | `.agents/skills/.global-sync-manifest` (48 skills Laravel/ops) |
 | Manifest Front | `../ZonixPharma-Front/.agents/skills/.global-sync-manifest` (45 skills Flutter + ui-router) |
-| Integración | [docs/ZONIX_JARVIS_INTEGRATION.md](ZONIX_JARVIS_INTEGRATION.md) |
+| Integración | [docs/zonix/ZONIX_JARVIS_INTEGRATION.md](ZONIX_JARVIS_INTEGRATION.md) |
 | Library | `jarvis-skills-library/docs/ZONIX_INTEGRATION.md` |
 
 **Roles:** `jarvis-experts` (panel global) + `zonix-jarvis-subagents-map` (routing VE/Rx/regulatorio) — coexisten; precedencia en `jarvis-core/OVERLAY.md`.

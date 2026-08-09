@@ -2,7 +2,7 @@
 
 > **Uso:** copia desde la sección [Super Prompt (pegar en chat)](#super-prompt-pegar-en-chat) y define las variables de arranque en la primera línea del mensaje.
 >
-> **Complementa (no reemplaza):** [PROMPT_AUDIT_FORENSE.md](PROMPT_AUDIT_FORENSE.md) (migración Eats→Pharma), [AUDIT_API_PATTERNS_2026-05-01.md](AUDIT_API_PATTERNS_2026-05-01.md), [AUDIT_UI_PHARMA.md](../ZonixPharma-Front/docs/AUDIT_UI_PHARMA.md).
+> **Complementa (no reemplaza):** [../audits/MIGRACION_EATS_PHARMA.md](../audits/MIGRACION_EATS_PHARMA.md) (histórico Eats→Pharma), [AUDIT_API_PATTERNS_2026-05-01.md](AUDIT_API_PATTERNS_2026-05-01.md), [AUDIT_UI_PHARMA.md](../ZonixPharma-Front/docs/AUDIT_UI_PHARMA.md).
 >
 > **Ubicación:** `ZonixPharma-Backend/docs/plantillas/PROMPT_AUDIT_360_ZONIX.md`
 
@@ -153,11 +153,11 @@ Subagent opcional: `.cursor/agents/security-auditor.md` cuando `MODULO=security`
 1. `ZonixPharma-Backend/AGENTS.md` + `ZonixPharma-Front/AGENTS.md`
 2. `ZonixPharma-Backend/docs/active_context.md`
 3. Skills según MODULO (tabla §5)
-4. Si `MODO=360` o `MODULO=docs`: `MIGRACION_EATS_PHARMA.md`, `PLAN_RX_VALIDATION.md`, `PLAN_REGULATORIO_PHARMA_VE.md`, `BRAND_ZONIX_PHARMA.md`
+4. Si `MODO=360` o `MODULO=docs`: `audits/MIGRACION_EATS_PHARMA.md`, `PLAN_RX_VALIDATION.md`, `PLAN_REGULATORIO_PHARMA_VE.md`, `BRAND_ZONIX_PHARMA.md`
 5. Auditorías previas — **re-verificar** fixes, no duplicar ciegamente:
    - `docs/audits/AUDIT_API_PATTERNS_2026-05-01.md`
    - `ZonixPharma-Front/docs/AUDIT_UI_PHARMA.md`
-   - `docs/plantillas/PROMPT_AUDIT_FORENSE.md`
+   - `docs/audits/MIGRACION_EATS_PHARMA.md`
    - Cualquier `docs/AUDIT_<MODULO>_*.md` reciente
 
 ---
@@ -346,6 +346,6 @@ Luego ejecutar sin esperar, salvo ambigüedad bloqueante en variables.
 | `docs/AUDIT_<MODULO>_<YYYY-MM-DD>.md` | Informe de sesión (Fases 0–4) |
 | `docs/AUDIT_API_PATTERNS_*.md` | Auditoría API global (referencia C1–C12) |
 | `ZonixPharma-Front/docs/AUDIT_UI_PHARMA.md` | Auditoría UI global |
-| `docs/plantillas/PROMPT_AUDIT_FORENSE.md` | Migración Eats→Pharma (histórico) |
+| `docs/audits/MIGRACION_EATS_PHARMA.md` | Snapshot Eats→Pharma (histórico) |
 
 **Última actualización:** 10 junio 2026

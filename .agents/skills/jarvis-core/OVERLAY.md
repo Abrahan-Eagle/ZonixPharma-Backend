@@ -94,4 +94,4 @@ Ignorar solo filas globales que no aplican: `kitty-router`, `openspec-router` (s
 6. Memoria — `docs/active_context.md`, `documentar-avances` si aplica.
 7. Commit — solo con orden explícita; ramas `dev` / `main`.
 
-**Canon workspace:** [docs/ZONIX_WORKSPACE.md](docs/ZONIX_WORKSPACE.md).
+**Canon workspace:** [docs/zonix/ZONIX_WORKSPACE.md](docs/zonix/ZONIX_WORKSPACE.md).

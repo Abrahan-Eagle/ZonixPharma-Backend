@@ -137,7 +137,7 @@ Plantilla StoryBrand para copy Meta, valla y app. **Sin** promesas de cura ni re
 
 | Paso | Tiempo | Qué hace |
 |---|---|---|
-| 1 | 30s | Descarga app desde Play Store o App Store (**objetivo** `com.zonix.pharma`; **Android build actual** `com.zonix.eats` compartido con Firebase Eats — parche transitorio hasta registro Pharma en consola; ver [../MIGRACION_EATS_PHARMA.md](../MIGRACION_EATS_PHARMA.md)). O entra a `web.zonixpharma.com`. |
+| 1 | 30s | Descarga app desde Play Store o App Store (**objetivo** `com.zonix.pharma`; **Android build actual** `com.zonix.eats` compartido con Firebase Eats — parche transitorio hasta registro Pharma en consola; ver [../MIGRACION_EATS_PHARMA.md](../audits/MIGRACION_EATS_PHARMA.md)). O entra a `web.zonixpharma.com`. |
 | 2 | 30s | Registro con **solo teléfono + OTP por SMS** (**Firebase Phone Auth**). Sin email, sin nombre, sin dirección todavía. |
 | 3 | Inmediato | Browse de catálogo: el paciente ya puede explorar productos. |
 | 4 | 60s al primer pedido | Cuando agrega al carrito, app pide: nombre + dirección de entrega (si elige delivery). |

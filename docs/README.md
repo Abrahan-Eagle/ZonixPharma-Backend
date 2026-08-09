@@ -1,8 +1,8 @@
 # Docs — Zonix Pharma Backend
 
-Índice de la carpeta `docs/` tras triage (ago 2026). **No** mezclar con el pack inversor (`Lanzamiento/`) ni el CRM (`Inversionistas/`).
+Mapa post-ola 3 (ago 2026). Tres zonas. Cifras de raise → solo `Lanzamiento/` + Excel.
 
-## Raíz (canon — leer primero)
+## Canon producto (raíz — leer primero)
 
 | Archivo | Uso |
 |---------|-----|
@@ -10,38 +10,36 @@
 | [`BRAND_ZONIX_PHARMA.md`](BRAND_ZONIX_PHARMA.md) | Marca y tokens |
 | [`PLAN_RX_VALIDATION.md`](PLAN_RX_VALIDATION.md) | Flujo Rx / endpoints |
 | [`PLAN_REGULATORIO_PHARMA_VE.md`](PLAN_REGULATORIO_PHARMA_VE.md) | Marco MPPS / INHRR |
-| [`MIGRACION_EATS_PHARMA.md`](MIGRACION_EATS_PHARMA.md) | Snapshot fork Eats → Pharma |
-| [`ZONIX_WORKSPACE.md`](ZONIX_WORKSPACE.md) | Mapa multi-repo |
-| [`ZONIX_JARVIS_INTEGRATION.md`](ZONIX_JARVIS_INTEGRATION.md) | Onboarding JARVIS / skills |
-| [`cursorignore.example`](cursorignore.example) | Plantilla Cursor ignore |
 
-## Subcarpetas
+## Ingeniería
+
+| Carpeta | Contenido |
+|---------|-----------|
+| [`audits/`](audits/) | Audits vivos + migración Eats→Pharma |
+| [`ops/`](ops/) | Deploy, VPS, env, tech debt, `cursorignore.example` |
+| [`ops/deploy/`](ops/deploy/) | Deploy FTP / Aiblock |
+| [`product/`](product/) | Flujos pagos, phones |
+| [`qa/`](qa/) | Smoke Rx E2E |
+| [`runbooks/`](runbooks/) | Checkout / lifecycle órdenes |
+| [`plantillas/`](plantillas/) | Prompts JARVIS (360, landing, pack) |
+| [`zonix/`](zonix/) | Spec Kit, startup router, roles_matrix, JARVIS/workspace |
+
+## Negocio
 
 | Carpeta | Contenido |
 |---------|-----------|
 | [`Lanzamiento/`](Lanzamiento/) | Pack inversor / SoT financiero (Excel v4) |
 | [`Inversionistas/`](Inversionistas/) | CRM candidatos a capital |
 | [`Pack_Aliado_Gabriel_Barrios/`](Pack_Aliado_Gabriel_Barrios/) | Pack aliado (md + docx) |
-| [`audits/`](audits/) | Índice + commerce 8fases, API patterns, landing IA |
-| [`ops/`](ops/) | Deploy, VPS, env, tech debt, DX Cursor |
-| [`ops/deploy/`](ops/deploy/) | Deploy FTP / Aiblock |
-| [`runbooks/`](runbooks/) | Incidentes checkout / lifecycle órdenes |
-| [`qa/`](qa/) | Smoke Rx E2E (checklist vivo) |
-| [`product/`](product/) | Flujos pagos, phones |
-| [`plantillas/`](plantillas/) | Prompts JARVIS (360, forense, landing, pack) |
-| [`zonix/`](zonix/) | Spec Kit, router startup, roles_matrix |
-
 
 ## Regla
 
-Si un documento es **canon de producto o IA diaria** → raíz.  
-Si es **evidencia / ops / prompt / histórico** → subcarpeta.  
-Cifras de raise → solo `Lanzamiento/` + Excel.
+- Canon de producto o lectura diaria → **raíz**
+- Evidencia / ops / prompts / JARVIS → **ingeniería**
+- Raise / CRM / aliado → **negocio**
 
-## Limpieza (9 ago 2026)
+## Limpiezas
 
-Se eliminó `docs/archive/` (Eats histórico, smoke snapshot, forense docs 360, CONTEXTO_IA, research crudo GitHub). Canon y `audits/`/`ops/`/`qa/` vivos permanecen.
-
-## Limpieza ola 2 (9 ago 2026)
-
-Eliminados `docs/agents/`, snapshots de módulo en `audits/` (excepto 3 vivos), forenses HISTÓRICO y `research_links` en `zonix/`. Pack/ops/plantillas/product/qa/runbooks intactos.
+- **Ola 1:** eliminado `archive/`
+- **Ola 2:** eliminados `agents/`, snapshots audits, forenses zonix
+- **Ola 3:** `.venv` local; prompt Eats + CURSOR_MEJORAS; JARVIS/WORKSPACE→`zonix/`; MIGRACION→`audits/`; cursorignore→`ops/`

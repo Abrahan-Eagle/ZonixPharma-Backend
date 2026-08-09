@@ -87,7 +87,7 @@ Toolkit oficial GitHub para features de **producto** (API + Flutter). **No** usa
   - Modelo de datos: `products` ampliado (principio activo, presentación, INHRR, ATC, requires_prescription, prescription_type, controlled_substance, cold_chain). `commerces` ampliado (pharmacist_in_charge, health_permit). `orders` ampliado (estado `pending_prescription_validation`, `prescription_id`, `cold_chain_required`).
   - Tablas nuevas: `medicine_lots`, `prescriptions`, `pharmacist_profiles`. Eliminadas: `product_extras`, `product_preferences`.
   - Rol nuevo: `pharmacist`. Eventos nuevos: `PrescriptionUploaded`, `PrescriptionValidated`, `PrescriptionRejected`. Servicio `PrescriptionService`. Controllers `Pharmacist/PrescriptionController`, `Pharmacist/DashboardController`, `Buyer/PrescriptionController`, `Buyer/PharmacyController` (shim `RestaurantController` deprecado).
-  - Documentación: [docs/BRAND_ZONIX_PHARMA.md](docs/BRAND_ZONIX_PHARMA.md), [docs/PLAN_RX_VALIDATION.md](docs/PLAN_RX_VALIDATION.md), [docs/PLAN_REGULATORIO_PHARMA_VE.md](docs/PLAN_REGULATORIO_PHARMA_VE.md), [docs/MIGRACION_EATS_PHARMA.md](docs/MIGRACION_EATS_PHARMA.md).
+  - Documentación: [docs/BRAND_ZONIX_PHARMA.md](docs/BRAND_ZONIX_PHARMA.md), [docs/PLAN_RX_VALIDATION.md](docs/PLAN_RX_VALIDATION.md), [docs/PLAN_REGULATORIO_PHARMA_VE.md](docs/PLAN_REGULATORIO_PHARMA_VE.md), [docs/audits/MIGRACION_EATS_PHARMA.md](docs/audits/MIGRACION_EATS_PHARMA.md).
   - Validación pendiente: `php artisan test`, `flutter test`, build APK debug, smoke OTC y Rx (bloque 7 y 8 del plan).
 
 ---
@@ -435,14 +435,14 @@ Aplicar precedencia de [`jarvis-core`](.agents/skills/jarvis-core/SKILL.md) cuan
 - **[docs/BRAND_ZONIX_PHARMA.md](docs/BRAND_ZONIX_PHARMA.md)** — paleta, tipografía, do/don't, tokens.
 - **[docs/PLAN_RX_VALIDATION.md](docs/PLAN_RX_VALIDATION.md)** — flujo de validación de receta y endpoints.
 - **[docs/PLAN_REGULATORIO_PHARMA_VE.md](docs/PLAN_REGULATORIO_PHARMA_VE.md)** — regulación VE, MPPS, INHRR, datos de salud.
-- **[docs/MIGRACION_EATS_PHARMA.md](docs/MIGRACION_EATS_PHARMA.md)** — qué cambió en la transformación Eats → Pharma.
+- **[docs/audits/MIGRACION_EATS_PHARMA.md](docs/audits/MIGRACION_EATS_PHARMA.md)** — qué cambió en la transformación Eats → Pharma.
 - **[docs/ops/deploy/DEPLOY_PHARMA_AIBLOCK.md](docs/ops/deploy/DEPLOY_PHARMA_AIBLOCK.md)** — deploy FTP GitHub Actions → `pharma.aiblockweb.com`.
 - **Matriz roles → skills:** [docs/zonix/roles_matrix.json](docs/zonix/roles_matrix.json) + skill `zonix-lanzamiento-roles` (el `.md` ROLES_SKILLS_ZONIX del pack ya no está versionado).
 - **[docs/Lanzamiento/README.md](docs/Lanzamiento/README.md)** — índice pack inversor (22 documentos).
 - **[docs/zonix/roles_matrix.json](docs/zonix/roles_matrix.json)** — routing JARVIS por rol y tarea + `skills_inventory`.
 - **[docs/zonix/SPEC_KIT_ZONIX.md](docs/zonix/SPEC_KIT_ZONIX.md)** — Spec Kit (SDD) vs Jarvis `zonix-*`.
 - **[docs/plantillas/PROMPT_LANDING_IA_ZONIX.md](docs/plantillas/PROMPT_LANDING_IA_ZONIX.md)** — super prompt auditoría landing + plan pipeline IA (NEONFALL adaptado); invoca `zonix-ai-landing-pipeline` + web/brand/regulatorio.
-- **[docs/plantillas/PROMPT_AUDIT_360_ZONIX.md](docs/plantillas/PROMPT_AUDIT_360_ZONIX.md)** — super prompt auditoría exhaustiva (360° / código / por módulo); complementa [`docs/plantillas/PROMPT_AUDIT_FORENSE.md`](docs/plantillas/PROMPT_AUDIT_FORENSE.md) y [`docs/audits/AUDIT_API_PATTERNS_2026-05-01.md`](docs/audits/AUDIT_API_PATTERNS_2026-05-01.md).
+- **[docs/plantillas/PROMPT_AUDIT_360_ZONIX.md](docs/plantillas/PROMPT_AUDIT_360_ZONIX.md)** — super prompt auditoría exhaustiva (360° / código / por módulo); complementa [`docs/audits/AUDIT_API_PATTERNS_2026-05-01.md`](docs/audits/AUDIT_API_PATTERNS_2026-05-01.md).
 - **[docs/qa/SMOKE_RX_E2E.md](docs/qa/SMOKE_RX_E2E.md)** — checklist smoke manual flujo Rx E2E.
 - **[specs/README.md](specs/README.md)** — índice features Spec Kit.
 

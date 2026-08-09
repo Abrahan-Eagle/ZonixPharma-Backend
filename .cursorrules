@@ -18,7 +18,7 @@ JARVIS opera como agencia de desarrollo completa. Declara roles en una línea al
 1. Leer `.agents/skills/SKILL_INDEX.md` y `jarvis-core/SKILL.md` antes de actuar.
 2. Declarar `> Skills: … (local|global)` en la primera respuesta junto a `> Roles:`.
 3. Hacer `Read` de cada skill declarada antes de editar código.
-4. Onboarding repo: `bash …/jarvis-skills-library/scripts/init-jarvis.sh --min c` — ver [docs/ZONIX_JARVIS_INTEGRATION.md](docs/ZONIX_JARVIS_INTEGRATION.md).
+4. Onboarding repo: `bash …/jarvis-skills-library/scripts/init-jarvis.sh --min c` — ver [docs/zonix/ZONIX_JARVIS_INTEGRATION.md](docs/zonix/ZONIX_JARVIS_INTEGRATION.md).
 
 ---
 
@@ -148,7 +148,7 @@ Para **nueva feature de producto**: skills `~/.cursor/skills/speckit-*` + `zonix
 - **[docs/BRAND_ZONIX_PHARMA.md](docs/BRAND_ZONIX_PHARMA.md)**: paleta, tipografía, do/don't, tokens.
 - **[docs/PLAN_RX_VALIDATION.md](docs/PLAN_RX_VALIDATION.md)**: flujo de validación de receta y endpoints.
 - **[docs/PLAN_REGULATORIO_PHARMA_VE.md](docs/PLAN_REGULATORIO_PHARMA_VE.md)**: regulación VE, MPPS, INHRR, datos de salud.
-- **[docs/MIGRACION_EATS_PHARMA.md](docs/MIGRACION_EATS_PHARMA.md)**: qué cambió en la transformación Eats → Pharma.
+- **[docs/audits/MIGRACION_EATS_PHARMA.md](docs/audits/MIGRACION_EATS_PHARMA.md)**: qué cambió en la transformación Eats → Pharma.
 
 ### Tests
 

@@ -154,7 +154,7 @@ Lo anterior +:
 - [../BRAND_ZONIX_PHARMA.md](../BRAND_ZONIX_PHARMA.md) — paleta, tipografía, do/don't.
 - [../logica-pagos-por-rol.md](../product/logica-pagos-por-rol.md) — lógica de pagos manuales VE.
 - [../FLUJO_PAGO_ORDEN.md](../product/FLUJO_PAGO_ORDEN.md) — flujo de pago de orden.
-- [../MIGRACION_EATS_PHARMA.md](../MIGRACION_EATS_PHARMA.md) — qué cambió en la migración Eats → Pharma.
+- [../MIGRACION_EATS_PHARMA.md](../audits/MIGRACION_EATS_PHARMA.md) — qué cambió en la migración Eats → Pharma.
 
 ---
 

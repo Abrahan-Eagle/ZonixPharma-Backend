@@ -1,5 +1,5 @@
 # Copiar a la raíz del proyecto como .cursorignore
-# cp docs/cursorignore.example .cursorignore
+# cp docs/ops/cursorignore.example .cursorignore
 #
 # Excluye de la indexación de Cursor (mínimo).
 

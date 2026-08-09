@@ -39,4 +39,4 @@ else
 fi
 
 echo ""
-echo "Listo. Ver AGENTS.md y docs/ZONIX_JARVIS_INTEGRATION.md"
+echo "Listo. Ver AGENTS.md y docs/zonix/ZONIX_JARVIS_INTEGRATION.md"

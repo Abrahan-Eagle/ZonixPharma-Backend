@@ -41,9 +41,9 @@ bash $JARVIS_SKILLS_LIBRARY/scripts/init-jarvis.sh --min c
 - **passthrough:** `SKILL.md` idéntico al canónico.
 - **overlay:** editar solo `OVERLAY.md`; no parchear a mano el cuerpo canónico en `SKILL.md`.
 - **`zonix-*`:** nunca en manifest — solo locales.
-- **Spec Kit:** skills core en `~/.cursor/skills/` (`install.sh --all`); git hooks en `.agents/skills/speckit-git-*`. `.cursor/skills/` gitignored — ver [docs/ZONIX_JARVIS_INTEGRATION.md](docs/ZONIX_JARVIS_INTEGRATION.md).
+- **Spec Kit:** skills core en `~/.cursor/skills/` (`install.sh --all`); git hooks en `.agents/skills/speckit-git-*`. `.cursor/skills/` gitignored — ver [docs/zonix/ZONIX_JARVIS_INTEGRATION.md](docs/zonix/ZONIX_JARVIS_INTEGRATION.md).
 
-Doc integración: [docs/ZONIX_JARVIS_INTEGRATION.md](docs/ZONIX_JARVIS_INTEGRATION.md) · Library: `jarvis-skills-library/docs/ZONIX_INTEGRATION.md`.
+Doc integración: [docs/zonix/ZONIX_JARVIS_INTEGRATION.md](docs/zonix/ZONIX_JARVIS_INTEGRATION.md) · Library: `jarvis-skills-library/docs/ZONIX_INTEGRATION.md`.
 
 **CI:** workflow `.github/workflows/global-skills-sync-check.yml` en PR/push que toque `.agents/skills/`.
 

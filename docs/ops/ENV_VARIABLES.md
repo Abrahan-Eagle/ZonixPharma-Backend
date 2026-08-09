@@ -1,6 +1,6 @@
 # Variables .env — Zonix Pharma Backend
 
-> Producto actual: **Zonix Pharma** (`zonixpharma.com`). Documentación histórica Eats: [MIGRACION_EATS_PHARMA.md](MIGRACION_EATS_PHARMA.md).
+> Producto actual: **Zonix Pharma** (`zonixpharma.com`). Documentación histórica Eats: [MIGRACION_EATS_PHARMA.md](audits/MIGRACION_EATS_PHARMA.md).
 
 **En producción solo deben tenerse en cuenta las variables listadas en "Variables para producción". Las de "Pruebas / demo" no deben usarse ni configurarse en producción.**
 
