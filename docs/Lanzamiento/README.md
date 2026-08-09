@@ -1,6 +1,7 @@
 # Pack Lanzamiento Inversor — Zonix Pharma
 
 > **Última actualización:** 7 agosto 2026 (aprendizaje **500 LatAm** → evidencia de mercado; ask Lean **USD 237.412** intacto).
+> **Agent / JARVIS:** al editar esta carpeta, skills `zonix-startup-context` → `zonix-lanzamiento-docs` (+ financial/fundraising según el archivo). Regla: [`.cursor/rules/zonix-docs-startup.mdc`](../.cursor/rules/zonix-docs-startup.mdc).
 > **Propósito de esta carpeta:** (1) **Plan de lanzamiento operativo** de Zonix Pharma — calendario **T+0 → Fase 0 → Day-D (T+90) → M12**, equipo, farmacias, tech y KPIs ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) es la fuente canónica). (2) **Materiales de inversor y finanzas** en mejora continua (WIP). Cruce pack ↔ código: [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) + [../audits/README.md](../audits/README.md) (índice técnico vivo).
 > **Lección inversores (ago 2026):** MVP técnico ≠ evidencia de mercado — [APRENDIZAJE_500_EVIDENCIA_MERCADO.md](APRENDIZAJE_500_EVIDENCIA_MERCADO.md).
 > **Roadmap founder (ago 2026):** pasos P0–P2 tras forense GitHub Startups — [ROADMAP_MEJORA_FUNDADOR_DESDE_FORENSE_GITHUB_2026-08.md](ROADMAP_MEJORA_FUNDADOR_DESDE_FORENSE_GITHUB_2026-08.md).

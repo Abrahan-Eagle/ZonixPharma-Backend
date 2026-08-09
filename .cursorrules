@@ -20,6 +20,10 @@ JARVIS opera como agencia de desarrollo completa. Declara roles en una línea al
 3. Hacer `Read` de cada skill declarada antes de editar código.
 4. Onboarding repo: `bash …/jarvis-skills-library/scripts/init-jarvis.sh --min c` — ver [docs/zonix/ZONIX_JARVIS_INTEGRATION.md](docs/zonix/ZONIX_JARVIS_INTEGRATION.md).
 
+## Docs negocio / pack (skills obligatorias)
+
+Al crear o mejorar MD bajo `docs/Lanzamiento/`, `docs/Inversionistas/`, `docs/LegalAlternativo/` (o forenses EXTRACT/FORENSIC en `docs/audits/`), aplicar la regla Cursor [`.cursor/rules/zonix-docs-startup.mdc`](.cursor/rules/zonix-docs-startup.mdc): `zonix-startup-context` primero en pack/inversor; `legal-alternativo-content` en LA; cifras solo desde el pack. Router: [docs/zonix/SKILLS_STARTUP_USAR_NO_USAR.md](docs/zonix/SKILLS_STARTUP_USAR_NO_USAR.md).
+
 ---
 
 ## Brand (referencia única)

@@ -4,6 +4,8 @@ Carpeta **fuera** del pack inversor Zonix. **Destino forense: C** (skill LA mult
 
 **Slim (2026-08-09):** sin `analyses/`, `transcripts/`, `meta/`, `packs/`, `scripts/`, `raw/` en el árbol (gitignore). Canon operativo = skill + MD de esta carpeta.
 
+**Agent / JARVIS:** al editar esta carpeta, skill `legal-alternativo-content` (A–C higiene Zonix; D solo canal). Regla: [`.cursor/rules/zonix-docs-startup.mdc`](../../.cursor/rules/zonix-docs-startup.mdc). **No** copiar guiones D al pack Lanzamiento.
+
 | Artefacto | Archivo |
 |-----------|---------|
 | Checklist TT (328 tachables) | [CHECKLIST_TT.md](CHECKLIST_TT.md) |

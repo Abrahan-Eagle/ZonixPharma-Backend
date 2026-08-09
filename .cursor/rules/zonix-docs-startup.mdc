@@ -1,0 +1,44 @@
+---
+description: Al editar docs de negocio/pack/LA/Inversionistas, leer skills startup correctas antes de cambiar MD
+globs:
+  - docs/Lanzamiento/**
+  - docs/Inversionistas/**
+  - docs/LegalAlternativo/**
+  - docs/audits/EXTRACT_*
+  - docs/audits/FORENSIC_PDFS_*
+  - docs/audits/FORENSIC_GITHUB_*
+  - docs/zonix/SKILLS_STARTUP*
+  - docs/zonix/roles_matrix.json
+alwaysApply: false
+---
+
+# Zonix — docs + skills startup
+
+Cuando el usuario cree, mejore o edite MD (o pida alinear) bajo estos paths, JARVIS **no** edita a ciegas: aplica skills y deja el pack/canal coherente.
+
+## Mapa path → skills (orden obligatorio)
+
+| Path | Skills (Read antes de editar) |
+|------|-------------------------------|
+| `docs/Lanzamiento/**` | `zonix-startup-context` → `zonix-lanzamiento-docs`. Si hay cifras/Excel/PROYECCION/UNIT/PRESUPUESTO → + `zonix-financial-model`. Si pitch/MENSAJE/BRIEF/deck → + `zonix-fundraising-narrative`. |
+| `docs/Inversionistas/**` | `zonix-startup-context` → `zonix-investor-materials` y/o `zonix-inversionistas-crm` según ficha/CRM. |
+| `docs/LegalAlternativo/**` | `legal-alternativo-content` (v1.3.3+). Capas **A–C** = higiene Zonix/multi-empresa; capa **D** = solo canal Hugette — **no** copiar guiones/CTA a pack Lanzamiento. |
+| `docs/audits/EXTRACT_*`, `FORENSIC_PDFS_*`, `FORENSIC_GITHUB_*` | Lectura/alineación; **no** inventar cifras. Router: `docs/zonix/SKILLS_STARTUP_USAR_NO_USAR.md`. Canon durable = EXTRACT, no PDFs externos. |
+| `docs/zonix/SKILLS_STARTUP*`, `roles_matrix.json` | Mantener sync con skills; no romper ask Lean / SAFE pack. |
+
+Rutas de skills: `.agents/skills/<nombre>/SKILL.md`.
+
+## Checklist (cada cambio MD de negocio)
+
+1. Declarar `> Roles:` + `> Skills: … (local)`.
+2. `Read` de cada skill listada **antes** de editar.
+3. Cifras solo desde pack / `zonix-startup-context` (SAFE ~237.412, Excel v4, etc.). No regenerar números sin citar fuente.
+4. Si el cambio rompe coherencia con otro doc (BRIEF ≠ PROYECCION, pitch ≠ UNIT) → proponer actualización cruzada en el mismo turno o dejar TODO explícito.
+5. Spec Kit **prohibido** para `docs/Lanzamiento/` y cifras inversor.
+6. Preguntar antes de commit/push.
+
+## Anti-patrones
+
+- No mezclar claims Legal Alternativo (canal) con narrativa pack inversor.
+- No tratar Zonix como deep tech / US NVCA por defecto (ver `zonix-startup-context` + router USAR_NO_USAR).
+- No versionar PDFs de Descargas ni bulk ASR LA (`analyses/`, `transcripts/`, etc. — gitignore).
