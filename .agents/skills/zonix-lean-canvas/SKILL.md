@@ -19,7 +19,7 @@ Destilado del curso **UniMOOC «Cómo crear tu Startup»** (Steve Blank) — blo
 
 1. **`zonix-startup-context`** — Market Type existing + bilateral; tiers capital.
 2. [BRIEF_UNA_PAGINA.md](../../docs/Lanzamiento/BRIEF_UNA_PAGINA.md) — DoD piloto.
-3. Informe curso (opcional): [ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md](../../docs/zonix/ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md).
+3. Router startup: [SKILLS_STARTUP_USAR_NO_USAR.md](../../docs/zonix/SKILLS_STARTUP_USAR_NO_USAR.md).
 
 ## Plantilla — 9 bloques (adaptado Zonix)
 
@@ -83,7 +83,7 @@ Documentar pivot en `documentar-avances` + actualizar pack solo con OK founder.
 ## Referencias
 
 - Extractos curso: [references/unimooc-modulos.md](references/unimooc-modulos.md)
-- Forense: [ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md](../../docs/zonix/ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md)
+- Router: [SKILLS_STARTUP_USAR_NO_USAR.md](../../docs/zonix/SKILLS_STARTUP_USAR_NO_USAR.md)
 
 ## Skills relacionadas
 

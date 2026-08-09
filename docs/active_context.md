@@ -4,6 +4,10 @@
 > La skill **context-updater** indica cómo actualizar este archivo al cerrar una sesión relevante.
 
 
+## Limpieza dura ola 2 (9 ago 2026)
+
+Eliminados: `docs/agents/` completo; snapshots audits de módulo (admin/orders/pharmacist/delivery/buyer*); `ANALISIS_TECNICO_COMPLETO`; forenses zonix (`ANALISIS_FORENSE_*`, `research_links`). Vivos: `audits/` (README + 3), `zonix/` (SPEC_KIT, SKILLS_STARTUP, roles_matrix). Pack/ops/plantillas/product/qa/runbooks intactos.
+
 ## Limpieza dura docs (9 ago 2026)
 
 Eliminado `docs/archive/` completo (7 archivos: piloto commerce, forense docs 360, smoke RESULTS, CONTEXTO_IA, research GitHub crudo, 2 Eats). Basura local `Untitled` + `*.xlsx.bak`. Referencias reescritas a canon Pharma.
@@ -44,7 +48,7 @@ Eliminado `docs/archive/` completo (7 archivos: piloto commerce, forense docs 36
 ### Cola B residual docs (post-v7) — 7 agosto 2026
 
 - **Gate:** Pack `md/` 06–08 + 12–18 + Lanzamiento fuera de top-15; P0 hallado en Pack **15** (`25/40/55` → **45/60/70 + 8/7/5**).
-- **Writer P1:** Pack **13** (%GMV explícito); Pack **06/07** headers 8/7/5; Pack **17** Base/Growth desambiguados (intensidad marketing ≠ ask); plantilla `PROMPT_MEJORAR` CRO; banners **HISTÓRICO** en `zonix/ANALISIS_FORENSE_*` (AUDIT_FORENSE_DOCS_360 eliminado).
+- **Writer P1:** Pack **13** (%GMV explícito); Pack **06/07** headers 8/7/5; Pack **17** Base/Growth desambiguados (intensidad marketing ≠ ask); plantilla `PROMPT_MEJORAR` CRO; banners HISTÓRICO en forenses zonix (eliminados ola 2).
 - **Pack `docx/`:** regenerados **7 ago 2026** (ver **Listo envío**).
 - **Sin** inventar P10/P90; **sin** commit/push.
 
@@ -164,7 +168,7 @@ Eliminado `docs/archive/` completo (7 archivos: piloto commerce, forense docs 36
 
 - **Módulos auditados y remediados (lotes 1–10):** commerce, pharmacist, orders, buyer Rx, smoke/strict checkout, buyer catalog, delivery, admin.
 - **Lote 10:** `delivery_company_api_errors.dart` + `DeliveryCompanyService.lastActionError`; `GET /admin/statistics` envelope `{ success, data }`.
-- **Docs:** `audits/AUDIT_delivery_2026-06-10.md`, `audits/AUDIT_admin_2026-06-10.md`; smoke checklist vivo `qa/SMOKE_RX_E2E.md` (RESULTS eliminado).
+- **Docs:** remediación en código + [`audits/README.md`](audits/README.md); smoke `qa/SMOKE_RX_E2E.md`.
 - **Helpers Front API:** `commerce_api_errors`, `pharmacist_api_errors`, `order_api_errors`, `product_api_errors`, `delivery_api_errors`, `admin_api_errors`, `delivery_company_api_errors`.
 - **Smoke Rx estricto API:** verificado 11 jun; widget `checkout_strict_rx_test` en Front.
 - **Local dispositivo (11 jun):** `.env` **strict ON**; receta libre **id=2**; runbook `qa/SMOKE_RX_E2E.md`.
@@ -172,7 +176,7 @@ Eliminado `docs/archive/` completo (7 archivos: piloto commerce, forense docs 36
 
 ### Buyer catalog lote 7 — 10 junio 2026
 
-- **Auditoría:** [`audits/AUDIT_buyer_catalog_2026-06-10.md`](AUDIT_buyer_catalog_2026-06-10.md).
+- **Auditoría:** [`audits/README.md`](audits/README.md).
 - **Smoke strict:** `RxStrictSmokeSeeder` + test; checklist `qa/SMOKE_RX_E2E.md`.
 
 ### Lote 6 — smoke Rx + rating pharma + strict checkout — 10 junio 2026
@@ -183,7 +187,7 @@ Eliminado `docs/archive/` completo (7 archivos: piloto commerce, forense docs 36
 
 ### Buyer prescriptions lote 5 — 10 junio 2026
 
-- **Auditoría:** [`audits/AUDIT_buyer_prescriptions_2026-06-10.md`](AUDIT_buyer_prescriptions_2026-06-10.md) — semáforo VERDE.
+- **Auditoría:** [`audits/README.md`](audits/README.md) — semáforo VERDE.
 - **Backend:** eager `with(['order','commerce'])` en GET index; tests `BuyerPrescriptionIndexTest` (list + destroy 422).
 - **Front:** `MyPrescriptionsPage` → tap abre `OrderDetailPage`; eliminar receta pending; `prescriptionHttpErrorMessage` (+ códigos buyer Rx).
 - **Verificación:** Backend BuyerPrescription **2** OK; Front **238** tests (~1 skip), analyze OK.
@@ -197,13 +201,13 @@ Eliminado `docs/archive/` completo (7 archivos: piloto commerce, forense docs 36
 ### Cierre auditorías Rx/Orders + remediación final — 10 junio 2026
 
 - **Pharmacist lote 3–4:** audit doc, throttle onboarding, envelope buyer Rx, `verified` preservado en re-envío MPPS.
-- **Orders lote 3:** [`audits/AUDIT_orders_2026-06-10.md`](AUDIT_orders_2026-06-10.md); Front `order_api_errors.dart` + `OrderService` success/helper.
+- **Orders lote 3:** [`audits/README.md`](audits/README.md); Front `order_api_errors.dart` + `OrderService` success/helper.
 - **Smoke:** [`qa/SMOKE_RX_E2E.md`](qa/SMOKE_RX_E2E.md) checklist manual E2E Rx.
 - **Verificación:** Backend **436** tests; Front **233** tests (~1 skip).
 
 ### Auditoría 360° pharmacist + remediación lote 3 — 10 junio 2026
 
-- **Hecho:** [`audits/AUDIT_pharmacist_2026-06-10.md`](AUDIT_pharmacist_2026-06-10.md). Throttle `10,1` en `POST /api/pharmacist/onboarding`. Tests `PharmacistOnboardingTest` (4 escenarios).
+- **Hecho:** [`audits/README.md`](audits/README.md). Throttle `10,1` en `POST /api/pharmacist/onboarding`. Tests `PharmacistOnboardingTest` (4 escenarios).
 - **Front (espejo):** `PrescriptionService` buyer exige `success == true` (upload/delete/list); onboarding parsea envelope + `pharmacistHttpErrorMessage`.
 - **Verificación:** Backend **435** tests; Front **230** tests (~1 skip), analyze OK.
 - **Pendiente P2:** tab Config pharmacist; smoke E2E Rx; auditoría orders 360°.

@@ -41,4 +41,4 @@ Referencia VoltAgent: tareas profundas (arquitectura, seguridad, lógica financi
 ## Skills relacionadas
 
 - `zonix-lanzamiento-roles`
-- [research_links.md](../../docs/zonix/research_links.md) §G
+- [roles_matrix.json](../../docs/zonix/roles_matrix.json)

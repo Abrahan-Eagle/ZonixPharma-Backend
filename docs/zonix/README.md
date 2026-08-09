@@ -1,11 +1,11 @@
-# docs/zonix — Skills inversor y research
+# docs/zonix — índice (ola 2)
 
-- **[ANALISIS_FORENSE_SKILLS.md](ANALISIS_FORENSE_SKILLS.md)** — auditoría forense v3: **30 skills** `zonix-*`, matriz 5 metas founder; **§12** apéndice 22 enlaces GitHub (mayo 2026).
-- **[research_links.md](research_links.md)** — catálogo GitHub secciones A–L (adaptar / lente / evitar).
-- **[roles_matrix.json](roles_matrix.json)** — routing JARVIS + `skills_inventory`.
+Routing y guías vivas para JARVIS / Spec Kit / startup. Forenses HISTÓRICO y `research_links` **eliminados** (ago 2026); el destilado vive en skills `zonix-*`.
 
-Pack canónico: [docs/Lanzamiento/](../Lanzamiento/).
+| Archivo | Uso |
+|---------|-----|
+| [SPEC_KIT_ZONIX.md](SPEC_KIT_ZONIX.md) | Spec-Driven Development vs Jarvis |
+| [SKILLS_STARTUP_USAR_NO_USAR.md](SKILLS_STARTUP_USAR_NO_USAR.md) | Router skills startup (usar / no usar) |
+| [roles_matrix.json](roles_matrix.json) | Matriz rol → skills + inventory |
 
-Skills agente: `ZonixPharma-Backend/.agents/skills/zonix-*` (canon); Front: stubs inversor + UI.
-
-**Workspace multi-repo:** [ZONIX_WORKSPACE.md](../ZONIX_WORKSPACE.md) — no duplicar en CorralX.
+Pack inversor: `../Lanzamiento/`. Audits técnicos: `../audits/README.md`.

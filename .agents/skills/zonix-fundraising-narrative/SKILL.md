@@ -84,7 +84,7 @@ Plantilla de 1 párrafo al auditar CONTEXTO_PITCH:
 
 ## Tipos de propuesta de valor (UniMOOC M2 — Steve Blank)
 
-Destilado curso [ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md](../../docs/zonix/ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md). Usar al editar **CONTEXTO_PITCH**, **BRIEF** o slide «Solución» — **no** inventar claims clínicos.
+Destilado UniMOOC; ver [SKILLS_STARTUP_USAR_NO_USAR.md](../../docs/zonix/SKILLS_STARTUP_USAR_NO_USAR.md). Usar al editar **CONTEXTO_PITCH**, **BRIEF** o slide «Solución» — **no** inventar claims clínicos.
 
 Blank distingue dos fuentes de valor que convergen en la propuesta:
 

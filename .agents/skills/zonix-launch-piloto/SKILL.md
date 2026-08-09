@@ -93,7 +93,7 @@ Reglas al redactar guiones en pack o VOLCADO:
 
 ### Hipótesis explícitas y pivot (UniMOOC Steve Blank — M1)
 
-Destilado curso [ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md](../../docs/zonix/ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md); usar con `zonix-lean-canvas`.
+Destilado UniMOOC; ver [SKILLS_STARTUP_USAR_NO_USAR.md](../../docs/zonix/SKILLS_STARTUP_USAR_NO_USAR.md); usar con `zonix-lean-canvas`.
 
 | Regla | Aplicación Zonix Fase 0 |
 |-------|-------------------------|

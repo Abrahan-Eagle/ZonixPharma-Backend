@@ -6,7 +6,7 @@ metadata:
 ---
 # zonix-lanzamiento-docs
 
-Skill **orquestadora** para editar el pack `docs/Lanzamiento/` con IA. Integra el informe [ANALISIS_FORENSE_BUSQUEDA_GITHUB_LANZAMIENTO_2026-05.md](../../docs/zonix/ANALISIS_FORENSE_BUSQUEDA_GITHUB_LANZAMIENTO_2026-05.md) **sin** instalar repos externos (`shawnpang`, `founder-playbook`, VoltAgent). Los marcos Tier A viven en skills `zonix-*` locales.
+Skill **orquestadora** para editar el pack `docs/Lanzamiento/` con IA. Integra marcos Tier A vía [SKILLS_STARTUP_USAR_NO_USAR.md](../../docs/zonix/SKILLS_STARTUP_USAR_NO_USAR.md) **sin** instalar repos externos (`shawnpang`, `founder-playbook`, VoltAgent). Los marcos Tier A viven en skills `zonix-*` locales.
 
 ## Cuándo aplicar
 
@@ -80,7 +80,7 @@ Regla: **no** escalar anillo exterior hasta catálogo Day-D en ≥ N farmacias (
 
 ## Get → Keep → Grow y CAC (UniMOOC M5 — Steve Blank)
 
-Destilado curso [ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md](../../docs/zonix/ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md). **Cifras solo del pack** — esta sección es **metodología** para editar SUPUESTO_MARKETING_OFFLINE y cruzar con UNIT_ECONOMICS.
+Destilado UniMOOC; ver [SKILLS_STARTUP_USAR_NO_USAR.md](../../docs/zonix/SKILLS_STARTUP_USAR_NO_USAR.md). **Cifras solo del pack** — esta sección es **metodología** para editar SUPUESTO_MARKETING_OFFLINE y cruzar con UNIT_ECONOMICS.
 
 | Fase | Objetivo | Canal Zonix piloto | Métrica | Fuente cifra |
 |------|----------|-------------------|---------|--------------|
@@ -164,5 +164,5 @@ Sección: [nombre]. Cifras solo del pack. Una sección por respuesta.
 
 ## Referencia externa (solo lectura humana o fetch puntual)
 
-- [research_links.md](../../docs/zonix/research_links.md) — URLs GitHub; **no** `npx skills add` masivo en CI del repo.
+- [roles_matrix.json](../../docs/zonix/roles_matrix.json) — routing; **no** `npx skills add` masivo en CI del repo.
 - Repos Tier A: `getagentseal/founder-playbook`, `shawnpang/startup-founder-skills` — lente ya destilada aquí y en skills hijas.

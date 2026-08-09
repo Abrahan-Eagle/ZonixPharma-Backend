@@ -354,7 +354,7 @@ Las skills de código **no** reemplazan revisión humana legal/regulatoria. Para
 
 - Contenido canónico: [README.md](README.md), [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md), [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md).
 - Lente por tarea: **`zonix-lanzamiento-roles`** + skills inversor (`zonix-startup-context`, `zonix-financial-model`, `zonix-investor-materials`, `zonix-fundraising-narrative`, `zonix-regulatory-ve`).
-- Enlaces research: [../zonix/research_links.md](../zonix/research_links.md) · routing JSON: [../zonix/roles_matrix.json](../zonix/roles_matrix.json).
+- Routing JSON: [../zonix/roles_matrix.json](../zonix/roles_matrix.json) · router: [../zonix/SKILLS_STARTUP_USAR_NO_USAR.md](../zonix/SKILLS_STARTUP_USAR_NO_USAR.md).
 
 ---
 
@@ -368,7 +368,7 @@ Las skills de código **no** reemplazan revisión humana legal/regulatoria. Para
 | **Ejecutar lanzamiento** | `zonix-launch-piloto` → `zonix-lanzamiento-roles`                                    | PLAN_LANZAMIENTO, BRIEF                 |
 | **Desarrollo producto**  | Skills módulo según sprint                                                           | PLAN_RX, PLAN_MODULO, BRAND             |
 
-Tabla skill por documento: [ANALISIS_FORENSE_SKILLS.md](../zonix/ANALISIS_FORENSE_SKILLS.md) §0 ter.
+Tabla skill por rol: [roles_matrix.json](../zonix/roles_matrix.json) + skill `zonix-lanzamiento-roles`.
 
 ---
 
@@ -409,7 +409,7 @@ Los roles de madurez (CFO, DPO, CISO a tiempo completo, etc.) son objetivo **Ser
 - [README.md](README.md) — índice del pack (decisión **Equipo** → enlace a § Organigrama).
 - [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) — equipo contratado piloto.
 - [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) — chequeo multi-rol §11 (pack inversor).
-- [../zonix/ANALISIS_FORENSE_SKILLS.md](../zonix/ANALISIS_FORENSE_SKILLS.md) — auditoría forense **skills agente** (30 `zonix-*`, v3).
+- [../zonix/roles_matrix.json](../zonix/roles_matrix.json) — routing JARVIS (forense skills eliminado ago 2026).
 - [../zonix/roles_matrix.json](../zonix/roles_matrix.json) — routing JARVIS + inventario skills.
 - [AGENTS.md](../../AGENTS.md) — skills técnicas Backend.
 - [../BRAND_ZONIX_PHARMA.md](../BRAND_ZONIX_PHARMA.md) — identidad visual.

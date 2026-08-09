@@ -8,10 +8,10 @@
       "lean": 237412
     },
     "ask_note": "Ask único Lean esc.1 (Excel v4); tiers Base/Growth retirados del pack",
-    "forense_skills": "docs/zonix/ANALISIS_FORENSE_SKILLS.md",
+    "forense_skills": "docs/zonix/roles_matrix.json",
     "skills_count": 32,
-    "forense_unimooc": "docs/zonix/ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md",
-    "forense_github_v3": "docs/zonix/ANALISIS_FORENSE_SKILLS.md#12-apéndice--auditoría-enlaces-github-mayo-2026"
+    "forense_unimooc": "docs/zonix/SKILLS_STARTUP_USAR_NO_USAR.md",
+    "forense_github_v3": "docs/zonix/roles_matrix.json"
   },
   "skills_inventory": [
     {

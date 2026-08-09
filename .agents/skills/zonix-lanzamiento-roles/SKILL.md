@@ -76,7 +76,7 @@ UX Writer salud · Technical Writer · FP&A · DevOps/SRE · QA/SDET · Product 
 
 - Matriz completa + **árboles Ahora vs +10 años**: [ROLES_SKILLS_ZONIX.md](../../docs/Lanzamiento/ROLES_SKILLS_ZONIX.md) (§ Árbol A / Árbol B)
 - Índice pack: [README.md](../../docs/Lanzamiento/README.md)
-- Research GitHub: [research_links.md](../../docs/zonix/research_links.md)
+- Routing: [roles_matrix.json](../../docs/zonix/roles_matrix.json)
 - Routing JSON: [roles_matrix.json](../../docs/zonix/roles_matrix.json)
 
 ## Skills inversor (orden típico)

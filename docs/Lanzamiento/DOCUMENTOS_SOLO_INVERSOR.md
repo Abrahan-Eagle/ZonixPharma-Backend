@@ -64,7 +64,7 @@ Documentos inversor adicionales en `docs/Lanzamiento/` (no van en el zip de 30 m
 |-----------|---------|
 | Alineación pack ↔ producto en código | [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) |
 | Smoke manual Rx/OTC | [../SMOKE_RX_E2E.md](../qa/SMOKE_RX_E2E.md) |
-| Análisis técnico completo | [../ANALISIS_TECNICO_COMPLETO_2026-05.md](../audits/ANALISIS_TECNICO_COMPLETO_2026-05.md) |
+| Audits técnicos vivos | [../audits/README.md](../audits/README.md) |
 
 ### Referencias regulatorias / producto (fuera de Lanzamiento)
 
@@ -89,7 +89,7 @@ Citadas en [README.md](README.md) § documentos pre-existentes:
 | [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) | Captura founder (usar datos volcados en BRIEF/CHECKLIST) |
 | [GUIA_DISCOVERY_CALLE_FASE0.md](GUIA_DISCOVERY_CALLE_FASE0.md) | Guía mom-test calle |
 | [BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md](BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md) | Hipótesis discovery interno |
-| `docs/agents/*`, auditorías Jarvis, `docs/plantillas/PROMPT_*` | Documentación de proceso IA |
+| `docs/plantillas/PROMPT_*`, `docs/audits/` | Documentación de proceso IA / evidencia |
 
 ---
 

@@ -144,7 +144,7 @@ Completar en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARI
 
 **Cerrados jun 2026:** P1-13 liquidez · P1-14 moat — CONTEXTO §2.10–§2.11. **P1-15 mom-test pricing:** reabierto (sin evidencia VOLCADO §5.1).
 
-**Mejoras UniMOOC (11 jun 2026 — Steve Blank, ver `docs/zonix/ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md`):**
+**Mejoras UniMOOC (11 jun 2026 — Steve Blank, ver skill `zonix-lean-canvas` / `SKILLS_STARTUP_USAR_NO_USAR.md`):**
 
 | Mejora | Documento / sección |
 |--------|---------------------|

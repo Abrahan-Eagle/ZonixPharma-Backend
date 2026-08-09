@@ -61,7 +61,7 @@ Evita usar solo `zonix-lanzamiento-roles` para todo el pack.
 | 20 | ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md | Cruce pack ↔ producto |
 | 21 | REGISTRO_PENDIENTES_PACK.md | Pendientes P0–P4 |
 
-> Históricos **no versionados** (eliminados del repo): `ANALISIS_FORENSE.md` (pack) y `ROLES_SKILLS_ZONIX.md` — la matriz de roles canónica vive en [roles_matrix.json](../../docs/zonix/roles_matrix.json) + skill `zonix-lanzamiento-roles`.
+> Históricos **eliminados**: forenses `docs/zonix/ANALISIS_*`, `research_links`, pack `ANALISIS_FORENSE.md` — la matriz de roles canónica vive en [roles_matrix.json](../../docs/zonix/roles_matrix.json) + skill `zonix-lanzamiento-roles`.
 
 Referencias técnicas fuera de Lanzamiento (due diligence profunda):
 

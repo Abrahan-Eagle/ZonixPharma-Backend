@@ -4,7 +4,7 @@
 
 > **Fecha:** 22 junio 2026 (refresh post-auditoría forense v2; anclas financieras actualizadas 30 jul 2026).  
 > **Estado del pack:** **WIP** — documentos en mejora continua; este informe no es dictamen final ni cierre de data room.  
-> **Base técnica:** [../ANALISIS_TECNICO_COMPLETO_2026-05.md](../audits/ANALISIS_TECNICO_COMPLETO_2026-05.md) (repos Backend + Frontend).  
+> **Base técnica:** [../audits/README.md](../audits/README.md) + código / AGENTS (repos Backend + Frontend).  
 > **Plan operativo canónico:** [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md).  
 > **Pendientes humanos (inversor):** [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) — capa separada.
 
@@ -111,9 +111,9 @@ Prioridad para el founder técnico (no sustituye backlog de negocio).
 | Prioridad | Gap producto | Impacto en lanzamiento | Referencia técnica |
 |-----------|--------------|------------------------|-------------------|
 | **P0** | **Release móvil:** Firebase proyecto Pharma, keystore, APNs | Day-D sin app instalable confiable | [TECH_DEBT](../ops/TECH_DEBT.md) |
-| **P0** | **Smoke E2E manual** documentado (OTC, Rx, cold chain, pago) | PLAN_MODULO §18; PLAN_LANZAMIENTO T+25–30 | ANALISIS_TECNICO §10 |
+| **P0** | **Smoke E2E manual** documentado (OTC, Rx, cold chain, pago) | PLAN_MODULO §18; PLAN_LANZAMIENTO T+25–30 | audits README / código §10 |
 | **P1** | **Deploy/CI Pharma** | Pipeline alineado a Pharma (`ci.yml` + `main.yml`); pendiente credenciales prod Firebase/APNs | Workflows GitHub |
-| **P1** | **`medicine_lots`:** sin API commerce, sin UI, sin FIFO en despacho | Esquema BD + seeder; **UI/despacho FIFO post-Day-D o M3+** (I-02 corregido en CONTEXTO y PLAN_MODULO) | ANALISIS_TECNICO §4.3 |
+| **P1** | **`medicine_lots`:** sin API commerce, sin UI, sin FIFO en despacho | Esquema BD + seeder; **UI/despacho FIFO post-Day-D o M3+** (I-02 corregido en CONTEXTO y PLAN_MODULO) | audits README / código §4.3 |
 | **P2** | Envelope API / `getMessage()` en controllers | Estabilidad prod, soporte | Patrones API BE |
 | **P2** | Descarga archivo receta en app buyer/pharmacist | Operación farmacia | FE `PrescriptionService` |
 | **P2** | Badges controlados uniformes en listado buyer | Copy regulatorio UX | UI Pharma Front |
@@ -193,7 +193,7 @@ Coherente con Fase 0 del [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERC
 | Cuánto cuesta / KPIs | [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md), [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) |
 | Pitch farmacia / paciente / delivery | PROPUESTA_VALOR_* |
 | Operación Rx y soporte | [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md) |
-| Qué hace el código | [../ANALISIS_TECNICO_COMPLETO_2026-05.md](../audits/ANALISIS_TECNICO_COMPLETO_2026-05.md) |
+| Qué hace el código | [../audits/README.md](../audits/README.md) + código / AGENTS |
 | Qué falta llenar a mano | [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) |
 | Checklist inversor | [CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md) |
 

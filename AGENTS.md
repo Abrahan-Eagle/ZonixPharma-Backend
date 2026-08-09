@@ -52,7 +52,7 @@ Toolkit oficial GitHub para features de **producto** (API + Flutter). **No** usa
 ### Cambios recientes
 
 - **11 jun 2026 — Curso UniMOOC Steve Blank → skills startup.**
-  - Forense: [docs/zonix/ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md](docs/zonix/ANALISIS_FORENSE_CURSO_UNIMOOC_2026-06.md) (115 `.srt`, 8 buckets M1–M7).
+  - Forense UniMOOC: destilado en skills `zonix-lean-canvas` / `zonix-launch-piloto` (informe HISTÓRICO eliminado ago 2026).
   - Nueva skill: `zonix-lean-canvas` (Canvas 9 bloques, bilateral, pivot).
   - Ampliadas: `zonix-launch-piloto`, `zonix-b2b-sales`, `zonix-financial-model`, `zonix-startup-context`, `zonix-fundraising-narrative` (M2), `zonix-lanzamiento-docs` (M5 CAC).
   - Repaso completo (cierre P2): ciclo viral M5, cuota/economía de canal M4/M6, organización Fase 0 M1, red flags inversor corporativo M7 (`zonix-investor-materials`).
@@ -439,17 +439,10 @@ Aplicar precedencia de [`jarvis-core`](.agents/skills/jarvis-core/SKILL.md) cuan
 - **[docs/ops/deploy/DEPLOY_PHARMA_AIBLOCK.md](docs/ops/deploy/DEPLOY_PHARMA_AIBLOCK.md)** — deploy FTP GitHub Actions → `pharma.aiblockweb.com`.
 - **Matriz roles → skills:** [docs/zonix/roles_matrix.json](docs/zonix/roles_matrix.json) + skill `zonix-lanzamiento-roles` (el `.md` ROLES_SKILLS_ZONIX del pack ya no está versionado).
 - **[docs/Lanzamiento/README.md](docs/Lanzamiento/README.md)** — índice pack inversor (22 documentos).
-- **[docs/zonix/ANALISIS_FORENSE_SKILLS.md](docs/zonix/ANALISIS_FORENSE_SKILLS.md)** — auditoría forense multi-rol de skills `zonix-*`.
-- **[docs/zonix/research_links.md](docs/zonix/research_links.md)** — enlaces GitHub skills/roles (adaptar/evitar).
 - **[docs/zonix/roles_matrix.json](docs/zonix/roles_matrix.json)** — routing JARVIS por rol y tarea + `skills_inventory`.
 - **[docs/zonix/SPEC_KIT_ZONIX.md](docs/zonix/SPEC_KIT_ZONIX.md)** — Spec Kit (SDD) vs Jarvis `zonix-*`.
 - **[docs/plantillas/PROMPT_LANDING_IA_ZONIX.md](docs/plantillas/PROMPT_LANDING_IA_ZONIX.md)** — super prompt auditoría landing + plan pipeline IA (NEONFALL adaptado); invoca `zonix-ai-landing-pipeline` + web/brand/regulatorio.
 - **[docs/plantillas/PROMPT_AUDIT_360_ZONIX.md](docs/plantillas/PROMPT_AUDIT_360_ZONIX.md)** — super prompt auditoría exhaustiva (360° / código / por módulo); complementa [`docs/plantillas/PROMPT_AUDIT_FORENSE.md`](docs/plantillas/PROMPT_AUDIT_FORENSE.md) y [`docs/audits/AUDIT_API_PATTERNS_2026-05-01.md`](docs/audits/AUDIT_API_PATTERNS_2026-05-01.md).
-- **[docs/audits/AUDIT_pharmacist_2026-06-10.md](docs/audits/AUDIT_pharmacist_2026-06-10.md)** — auditoría módulo pharmacist + remediación lote 3 (envelope, onboarding throttle).
-- **[docs/audits/AUDIT_orders_2026-06-10.md](docs/audits/AUDIT_orders_2026-06-10.md)** — auditoría módulo orders buyer + `order_api_errors`.
-- **[docs/audits/AUDIT_buyer_catalog_2026-06-10.md](docs/audits/AUDIT_buyer_catalog_2026-06-10.md)** — auditoría catálogo buyer + `product_api_errors`.
-- **[docs/audits/AUDIT_delivery_2026-06-10.md](docs/audits/AUDIT_delivery_2026-06-10.md)** — auditoría módulo delivery + `delivery_api_errors`.
-- **[docs/audits/AUDIT_admin_2026-06-10.md](docs/audits/AUDIT_admin_2026-06-10.md)** — auditoría panel admin + `admin_api_errors`.
 - **[docs/qa/SMOKE_RX_E2E.md](docs/qa/SMOKE_RX_E2E.md)** — checklist smoke manual flujo Rx E2E.
 - **[specs/README.md](specs/README.md)** — índice features Spec Kit.
 

@@ -15,8 +15,8 @@
 |---------|------|
 | Pack inversor (22 docs) | [docs/Lanzamiento/](Lanzamiento/README.md) |
 | Skills agente (30 `zonix-*`) | `.agents/skills/zonix-*/` |
-| Catálogo GitHub | [docs/zonix/research_links.md](zonix/research_links.md) |
-| Forense skills v3 | [docs/zonix/ANALISIS_FORENSE_SKILLS.md](zonix/ANALISIS_FORENSE_SKILLS.md) |
+| Router startup | [docs/zonix/SKILLS_STARTUP_USAR_NO_USAR.md](zonix/SKILLS_STARTUP_USAR_NO_USAR.md) |
+| Routing JARVIS | [docs/zonix/roles_matrix.json](zonix/roles_matrix.json) |
 | Routing JARVIS | [docs/zonix/roles_matrix.json](zonix/roles_matrix.json) |
 | Matriz roles humanos | [docs/Lanzamiento/ROLES_SKILLS_ZONIX.md](Lanzamiento/ROLES_SKILLS_ZONIX.md) |
 

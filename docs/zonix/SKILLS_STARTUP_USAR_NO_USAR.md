@@ -1,7 +1,7 @@
 # Skills startup — qué usar y qué evitar (Zonix Pharma)
 
 > **Última actualización:** 11 junio 2026 (curso UniMOOC Steve Blank → `zonix-lean-canvas`).  
-> Fuente: [ANALISIS_FORENSE_BUSQUEDA_GITHUB_LANZAMIENTO_2026-05.md](ANALISIS_FORENSE_BUSQUEDA_GITHUB_LANZAMIENTO_2026-05.md), [research_links.md](research_links.md), [getagentseal/founder-playbook](https://github.com/getagentseal/founder-playbook), [shawnpang/startup-founder-skills](https://github.com/shawnpang/startup-founder-skills).
+> Fuente: destilado en skills `zonix-*` locales (forenses GitHub/research eliminados ago 2026). Upstream de referencia: [getagentseal/founder-playbook](https://github.com/getagentseal/founder-playbook), [shawnpang/startup-founder-skills](https://github.com/shawnpang/startup-founder-skills).
 
 ## Usar siempre (Jarvis local)
 

@@ -238,7 +238,7 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 | Pregunta | Respuesta anclada | Fuente |
 |----------|-------------------|--------|
 | ¿Stack? | Laravel API + Flutter; Sanctum; Pusher + FCM; pagos manuales VE | [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) |
-| ¿Tests? | **443** tests backend + **~241** Flutter (re-verificar commit antes de reunión — P0-06 / AUD-01) | [../ANALISIS_TECNICO_COMPLETO_2026-05.md](../audits/ANALISIS_TECNICO_COMPLETO_2026-05.md) |
+| ¿Tests? | **443** tests backend + **~241** Flutter (re-verificar commit antes de reunión — P0-06 / AUD-01) | [../audits/README.md](../audits/README.md) / `php artisan test` |
 | ¿Smoke E2E Rx? | Checklist manual [../SMOKE_RX_E2E.md](../qa/SMOKE_RX_E2E.md) — **P1-12** pendiente ejecución firmada | REGISTRO P1-12 |
 | ¿Rx? | Validación por farmacéutico colegiado de la farmacia; estados `pending_prescription_validation` | [PLAN_MODULO_OPERATIVO_CLAVE.md](PLAN_MODULO_OPERATIVO_CLAVE.md); [../PLAN_RX_VALIDATION.md](../PLAN_RX_VALIDATION.md) |
 | ¿Delivery? | Partners `delivery_company` / `delivery_agent`; **sin** flota Zonix | PLAN_LANZAMIENTO; ALINEACION |

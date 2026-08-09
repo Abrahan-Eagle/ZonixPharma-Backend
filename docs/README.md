@@ -22,15 +22,14 @@
 | [`Lanzamiento/`](Lanzamiento/) | Pack inversor / SoT financiero (Excel v4) |
 | [`Inversionistas/`](Inversionistas/) | CRM candidatos a capital |
 | [`Pack_Aliado_Gabriel_Barrios/`](Pack_Aliado_Gabriel_Barrios/) | Pack aliado (md + docx) |
-| [`audits/`](audits/) | Auditorías de módulo / API (jun–may 2026) |
+| [`audits/`](audits/) | Índice + commerce 8fases, API patterns, landing IA |
 | [`ops/`](ops/) | Deploy, VPS, env, tech debt, DX Cursor |
 | [`ops/deploy/`](ops/deploy/) | Deploy FTP / Aiblock |
 | [`runbooks/`](runbooks/) | Incidentes checkout / lifecycle órdenes |
 | [`qa/`](qa/) | Smoke Rx E2E (checklist vivo) |
 | [`product/`](product/) | Flujos pagos, phones |
 | [`plantillas/`](plantillas/) | Prompts JARVIS (360, forense, landing, pack) |
-| [`zonix/`](zonix/) | Análisis skills / research forense |
-| [`agents/`](agents/) | Notas auxiliares agentes |
+| [`zonix/`](zonix/) | Spec Kit, router startup, roles_matrix |
 
 
 ## Regla
@@ -42,3 +41,7 @@ Cifras de raise → solo `Lanzamiento/` + Excel.
 ## Limpieza (9 ago 2026)
 
 Se eliminó `docs/archive/` (Eats histórico, smoke snapshot, forense docs 360, CONTEXTO_IA, research crudo GitHub). Canon y `audits/`/`ops/`/`qa/` vivos permanecen.
+
+## Limpieza ola 2 (9 ago 2026)
+
+Eliminados `docs/agents/`, snapshots de módulo en `audits/` (excepto 3 vivos), forenses HISTÓRICO y `research_links` en `zonix/`. Pack/ops/plantillas/product/qa/runbooks intactos.
