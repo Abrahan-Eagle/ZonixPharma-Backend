@@ -10,7 +10,7 @@
 
 **Silicon Valley Venezuela** (Silicon Valley Latam Zenith Hub, C.a.) es un **hub en Parque Cristal**: cowork, membresías pagadas, mentoring y un servicio de “representación” ante inversores. También organiza la gira **3V Tech** (premio = aceleración, **no cheque**).
 
-Tienes **acceso warm** a la CEO (**Beresith Rigal**) y su teléfono: eso acelera una conversación, **no** convierte a SVVE en un cheque Lean. 3V 2026 **ya cerró** (15 jul). Solo tendría sentido llamar si quieres **espacio/asesoría en Caracas** y pagas por ello.
+Tienes **acceso warm** a la CEO (**Beresith Rigal**): eso acelera una conversación, **no** convierte a SVVE en un cheque Lean. 3V 2026 **ya cerró** (15 jul). Solo tendría sentido llamar si quieres **espacio/asesoría en Caracas** y pagas por ello.
 
 *(No es Epakon ni Casa212 ni FI: aquí el founder suele pagar; allá hay cheque o metodología global tipificada.)*
 
@@ -25,7 +25,7 @@ Tienes **acceso warm** a la CEO (**Beresith Rigal**) y su teléfono: eso acelera
 | Premio 3V | Paquete aceleración — **no cash** |
 | Inscripción 3V 2026 | **Cerrada** (24 mar – 15 jul) |
 | Claims “representación” | 1.5M+$ / 80%+ éxito — **no auditar / no modelar** |
-| Canal | **Warm** CEO Beresith Rigal (tel founder) · sede +58 414 2094996 |
+| Canal | **Warm** CEO Beresith Rigal · sede +58 414 2094996 |
 
 ---
 
@@ -33,7 +33,7 @@ Tienes **acceso warm** a la CEO (**Beresith Rigal**) y su teléfono: eso acelera
 
 | | Pack actual | Si hablas con SVVE |
 |--|-------------|---------------------|
-| Plata | Lean ~**174k** | **0** (tú pagas servicios) |
+| Plata | Lean **237.412** | **0** (tú pagas servicios) |
 | Dilución | SAFE cap ref. 600k | N/A o fee opaco |
 | Historia | Raise pre-seed | Hub / visibilidad local |
 | 3V | — | Fuera de calendario 2026 |
@@ -64,7 +64,7 @@ Tienes **acceso warm** a la CEO (**Beresith Rigal**) y su teléfono: eso acelera
 
 No bases runway en SVVE ni en 3V.  
 Llama a Beresith **solo** por cowork/mentoring (pago) o intros locales — no por ask Lean.  
-Prioriza Epakon (73) / Casa212 (71) / 500 (70).
+Prioriza Epakon (**70**) / Casa212 (**68**) / 500 (**67**).
 
 ---
 
@@ -83,7 +83,7 @@ Prioriza Epakon (73) / Casa212 (71) / 500 (70).
 3. Si hub: pedir por escrito precio aceleración/representación + % o fee.
 4. Paralelo caja: **Epakon / Casa212 / 500**.
 
-Canal: tel personal Beresith (founder) · sede [siliconvalleyve.com](https://www.siliconvalleyve.com/index.html) · +58 414 2094996
+Canal: warm CEO · sede [siliconvalleyve.com](https://www.siliconvalleyve.com/index.html) · +58 414 2094996
 
 ---
 

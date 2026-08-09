@@ -32,7 +32,7 @@
 
 | Dimensión | Pack Zonix | FI Venezuela | Gap |
 |-----------|------------|--------------|-----|
-| Ticket | Lean ~174k | **Sin cheque Core**; FC $25k selectivo | No cubre ask |
+| Ticket | Lean **237.412** | **Sin cheque Core**; FC $25k selectivo | No cubre ask |
 | Dilución | SAFE cap 600k | Fee $149–169 + posible **2,5%** warrant | Peor que ALGEN 0%; conocido vs Casa212 opaco |
 | Vehículo | Ideal Delaware | FI global / warrant en la company | Revisar docs al firmar |
 | Tiempo | — | Early **28 jul**; Core **21 oct 2026 – 14 ene 2027** | Largo vs pitch VC |

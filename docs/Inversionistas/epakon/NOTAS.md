@@ -6,7 +6,7 @@
 
 | Fecha | Canal | Qué pasó | Siguiente |
 |-------|-------|----------|-----------|
-| 2026-07-21 | Forense epakon.com (SPA+JS+tRPC) + AngelList + Ecosistema + SuperScout + insights.epakon.com | Score **73**. Ficha + resumen CEO. | Deck + decidir cold vs warm; pedir términos |
+| 2026-07-21 | Forense epakon.com (SPA+JS+tRPC) + AngelList + Ecosistema + SuperScout + insights.epakon.com | Score **70** (matriz comparativa). Ficha + resumen CEO. | Deck + decidir cold vs warm; pedir términos |
 | 2026-08-07 | Post-500: barra credibilidad Plan A | Outreach **solo** si [`BARRA_CREDIBILIDAD_PLAN_A`](../../Lanzamiento/BARRA_CREDIBILIDAD_PLAN_A.md) **mínima** verde (fuerte si DD); lección [INFORME_FACIL_500…](../../Lanzamiento/INFORME_FACIL_500_COMO_STARTUP.md) | Cerrar demo + piloto; OK founder antes de mail |
 | | | | |
 
@@ -119,7 +119,7 @@ Mismo núcleo **Diego + Vicente / Yummy**. Casa212 = cheque 150k + residencia Ca
 
 ## Fit Zonix (una línea)
 
-Ticket creíble ~150k cubre Lean; red VE de primer nivel + HealthTech en form; términos opacos → pitch + pedir SAFE/cap por escrito; sin gate de residencia.
+Ticket creíble ~150k = **parcial ~63%** del ask Lean **237.412** (no “cubre” el SAFE); red VE de primer nivel + HealthTech en form; términos opacos → pitch + pedir SAFE/cap por escrito; sin gate de residencia.
 
 ## Pendientes
 

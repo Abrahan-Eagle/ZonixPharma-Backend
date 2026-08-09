@@ -2,7 +2,7 @@
 
 > Auditoría landing Zonix Pharma + plan pipeline IA (NEONFALL adaptado).  
 > **URL auditada:** `https://pharma.aiblockweb.com`  
-> **Prompt maestro:** [`docs/plantillas/PROMPT_LANDING_IA_ZONIX.md`](plantillas/PROMPT_LANDING_IA_ZONIX.md)
+> **Prompt maestro:** [`docs/../plantillas/PROMPT_LANDING_IA_ZONIX.md`](../plantillas/PROMPT_LANDING_IA_ZONIX.md)
 
 **Doctrina skills-first:** la auditoría orienta; las skills (`zonix-web-design`, `zonix-ai-landing-pipeline`, `zonix-brand-ops`, `zonix-regulatory-ve`, `ui-ux-pro-max`) ejecutan mejoras sin bloquearse en “pendiente usuario”.
 
@@ -22,7 +22,7 @@
 
 ## Fase 5 — Integración assets Gemini (hero)
 
-### Stack seleccionado (de `/home/aipp/Descargas/hero`)
+### Stack seleccionado (assets hero locales / no versionados)
 
 | Asset origen | Uso | Motivo |
 |--------------|-----|--------|

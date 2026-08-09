@@ -74,7 +74,7 @@ Además de la mínima:
 
 | Candidata | Nivel sugerido antes de outreach | Nota |
 |-----------|----------------------------------|------|
-| **Epakon** | Mínima para primer pitch; **fuerte** si piden tracción | Score 73 · CRM [`../Inversionistas/epakon/`](../Inversionistas/epakon/) |
+| **Epakon** | Mínima para primer pitch; **fuerte** si piden tracción | Score **70** · CRM [`../Inversionistas/epakon/`](../Inversionistas/epakon/) |
 | **Casa212** | Mínima + claridad residencia 12 sem; **fuerte** si apply | Deadline apply típ. ago · [`../Inversionistas/casa212/`](../Inversionistas/casa212/) |
 | **ALGEN** | Mínima; **fuerte** si ya hay tracción (ellos lo valoran) | Kickoff **15 oct** · [`../Inversionistas/algen-aceleralatam/`](../Inversionistas/algen-aceleralatam/) |
 

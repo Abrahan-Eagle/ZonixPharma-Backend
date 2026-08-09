@@ -32,7 +32,7 @@
 
 | Dimensión | Pack Zonix | Arqos | Gap |
 |-----------|------------|-------|-----|
-| Ticket | Lean ~174k | Sin apply frío / ticket opaco | No plan A solo |
+| Ticket | Lean **237.412** | Sin apply frío / ticket opaco | No plan A solo |
 | Dilución | SAFE 600k | Vía Casa212 si entras | Modelar con Casa212 |
 | Acceso | Pitch | **Casa212 / Epakon** | Sin form startup |
 | Rol | Cheque | Follow-on / PE-VC VE | Complemento círculo |

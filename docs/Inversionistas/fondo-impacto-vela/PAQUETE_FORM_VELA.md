@@ -88,7 +88,7 @@ Si pide **PDF**: exportar BRIEF (o zip mínimo del pack) desde tu máquina; no s
 **“¿Son Serie A / growth?”**  
 Estamos en pre-seed cerrando capital Lean para piloto Valencia. El producto Pharma ya está en staging; Day-D es T+90 post-wire. Buscamos alinear impacto ahora y, con tracción, una conversación de growth.
 
-**“¿Por qué 210k y no 1–3 M?”**  
+**“¿Por qué 237.412 (piso Lean) y no 1–3 M?”**  
 Porque ese es el cheque de esta etapa (SAFE). No pedimos el ticket típico VELA de empresa growth hasta tener impacto medible; preferimos honestidad a forzar fit.
 
 **“¿Impacto medible hoy?”**  

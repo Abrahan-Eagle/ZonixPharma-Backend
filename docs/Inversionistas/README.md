@@ -4,7 +4,7 @@
 > **Propósito:** CRM / scoring de **candidatos a capital** (y canales de red) para Zonix Pharma. **No** es el data room que se envía al inversionista.  
 > **Skill agente:** [`zonix-inversionistas-crm`](../.agents/skills/zonix-inversionistas-crm/SKILL.md) — forense, ficha, score, ranking.  
 > **Ask de referencia (pitch actual):** Lean **USD 237.412** · SAFE cap ref. **USD 600.000** · equity **~39,57%** — ver [`../Lanzamiento/BRIEF_UNA_PAGINA.md`](../Lanzamiento/BRIEF_UNA_PAGINA.md).  
-> **Nota:** las 10 fichas previas (jul 2026) aún citan ask histórico **~174k** en cuerpo; **no** rescoreadas en esta pasada salvo **500-latam**. Nuevas altas usan **237.412**.  
+> **Nota:** fichas alineadas a ask Lean **USD 237.412** (pasada forense ago-2026). **MD = fuente**; PDF en carpetas pueden estar desfasados hasta regeneración manual. Scores Plan A: fuente única [`RESUMEN_COMPARATIVO.md`](RESUMEN_COMPARATIVO.md) (Epakon **70**, Casa212 **68**).  
 > **Roles:** **500 LatAm** = informe/playbook **interno** (no Plan A de caja ahora). **SVS** = candidata CRM tipo evento (otra opción de red). Plan A caja = **Epakon / Casa212 / ALGEN**.  
 > **Disclaimer:** análisis founder; no es asesoría legal ni financiera.
 
@@ -66,9 +66,9 @@
 
 | Slug | Nombre | Score % | Veredicto |
 |------|--------|---------|-----------|
-| [epakon](epakon/FICHA.md) | Epakon Capital | **73** | nurture* — [Resumen CEO](epakon/RESUMEN_CEO.md) |
+| [epakon](epakon/FICHA.md) | Epakon Capital | **70** | nurture* — [Resumen CEO](epakon/RESUMEN_CEO.md) |
 | [algen-aceleralatam](algen-aceleralatam/FICHA.md) | ALGEN × AceleraLatam | **72** | nurture* — [Resumen CEO](algen-aceleralatam/RESUMEN_CEO.md) |
-| [casa212](casa212/FICHA.md) | Casa212 | **71** | nurture* — [Resumen CEO](casa212/RESUMEN_CEO.md) |
+| [casa212](casa212/FICHA.md) | Casa212 | **68** | nurture* — [Resumen CEO](casa212/RESUMEN_CEO.md) |
 | [500-latam](500-latam/FICHA.md) | 500 LatAm (500 Global) | **67** | nurture* (**aprendizaje interno**; rechazado 6 ago; **no Plan A**; recontacto post-mercado) — [Resumen CEO](500-latam/RESUMEN_CEO.md) · [Fácil](500-latam/RESUMEN_FACIL.md) |
 | [fi-venezuela](fi-venezuela/FICHA.md) | Founder Institute VE | **55** | nurture (metodología) — [Resumen CEO](fi-venezuela/RESUMEN_CEO.md) |
 | [bid-lab](bid-lab/FICHA.md) | BID Lab (Grupo BID) | **54** | nurture (red) — [Resumen CEO](bid-lab/RESUMEN_CEO.md) |

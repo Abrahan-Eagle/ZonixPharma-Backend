@@ -139,7 +139,7 @@ CTA (últimos 3–5 s)
 | Riesgo | Mitigación |
 |--------|------------|
 | “Operas fuera de la ley” sin matiz de autoridad/sanción | Urgencia + disclaimer |
-| Reforma 2025 / INAI → **SABG** (DOF 20-mar-2025): skill (v1.1→**v1.3.2+** pack MX) nombra; HITL antes de paid/ads (plazos/sanciones) | HITL legal antes de paid/ads |
+| Reforma 2025 / INAI → **SABG** (DOF 20-mar-2025): skill (v1.1→**v1.3.3** pack MX) nombra; HITL antes de paid/ads (plazos/sanciones) | HITL legal antes de paid/ads |
 | Cifras Gartner/McKinsey sin año/fuente | Citar o eliminar |
 | “Tu SaaS no vale” por uso de IA | Opinión ≠ regla legal |
 | INDAUTOR “tajante” sobre prompts | Criterio actual, área en evolución |
@@ -232,7 +232,7 @@ CTA (últimos 3–5 s)
 | **Packs 02–03 texto** | titles vía inventory en corpus | OK para taxonomía histórica |
 | **3 títulos vacíos** | IDs en informe | Fetch manual / aceptar hueco |
 | **Claims regulatorios 2025** | HITL legal | Abogada valida copy antes de paid |
-| **ROADMAP + skill file** | ✅ | `ROADMAP_CONTENIDO.md` + skill **v1.3.2+** |
+| **ROADMAP + skill file** | ✅ | `ROADMAP_CONTENIDO.md` + skill **v1.3.3** |
 
 ---
 
@@ -260,4 +260,4 @@ CTA (últimos 3–5 s)
 
 ---
 
-*Informe canónico JUEZ GROK — forense multi-LLM Legal Alternativo. JSON por video Whisper deep: `analyses/tt/<id>.judge.json`.*
+*Informe canónico JUEZ GROK — forense multi-LLM Legal Alternativo. JSON por video Whisper deep: ruta histórica pre-slim `analyses/tt/<id>.judge.json` (**no está en el repo**; ver REPASO + skill).*

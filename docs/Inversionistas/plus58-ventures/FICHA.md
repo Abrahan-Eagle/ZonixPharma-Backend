@@ -32,7 +32,7 @@
 
 | Dimensión | Pack Zonix | +58 Ventures | Gap |
 |-----------|------------|--------------|-----|
-| Ticket | Lean ~174k | **Sin cheque** tipificado | No cubre ask hoy |
+| Ticket | Lean **237.412** | **Sin cheque** tipificado | No cubre ask hoy |
 | Dilución | SAFE cap 600k | Opaca / inexistente en web | No modelar |
 | Vehículo | Ideal Delaware | Desconocido | Waitlist ≠ term sheet |
 | Tiempo | — | Rolling waitlist | Sin proceso de cierre |

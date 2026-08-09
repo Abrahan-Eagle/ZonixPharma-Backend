@@ -17,6 +17,8 @@
 | [FORENSIC_PDFS_DOCUMENTOS_V2_HOJA_2026-08-09.md](FORENSIC_PDFS_DOCUMENTOS_V2_HOJA_2026-08-09.md) | Forense Documentos V2 (Grok + Juez_Grok) |
 | [EXTRACT_PDFS_FOUNDERS_KEEP_2026-08.md](EXTRACT_PDFS_FOUNDERS_KEEP_2026-08.md) | Canon durable Descargas KEEP |
 | [EXTRACT_PDFS_DOCUMENTOS_KEEP_2026-08.md](EXTRACT_PDFS_DOCUMENTOS_KEEP_2026-08.md) | Canon durable Documentos KEEP (+ overlays §6) |
+| [FORENSIC_DOCS_360_SKILLS_JUDGE_2026-08-09.md](FORENSIC_DOCS_360_SKILLS_JUDGE_2026-08-09.md) | Forense 360° `docs/` (~160 MD) + fan-out W1–W8 + jueces A/B |
+| [FORENSIC_DOCS_360_PASS2_2026-08-09.md](FORENSIC_DOCS_360_PASS2_2026-08-09.md) | PASS2 post-remediación (score ~4.2/5); MD fuente; PDF stale documentado |
 
 Router startup: [`../zonix/SKILLS_STARTUP_USAR_NO_USAR.md`](../zonix/SKILLS_STARTUP_USAR_NO_USAR.md). Canal LA (fuera pack inversor): [`../LegalAlternativo/`](../LegalAlternativo/).
 

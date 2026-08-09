@@ -43,4 +43,4 @@
 
 ## Confianza JARVIS post-contraste
 
-Skill v1.2 fusionó Gemini donde la primaria confirma; corrige 84 y 47-IV. Canon vivo: skill **v1.3.2+** pack `[MX]`. Confianza editorial claims núcleo: **alta** (103, 47-V, 30/83, timeline 2024–2025).
+Skill v1.2 fusionó Gemini donde la primaria confirma; corrige 84 y 47-IV. Canon vivo: skill **v1.3.3** pack `[MX]`. Confianza editorial claims núcleo: **alta** (103, 47-V, 30/83, timeline 2024–2025).

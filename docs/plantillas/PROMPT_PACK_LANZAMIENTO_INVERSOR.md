@@ -1,6 +1,8 @@
 # Prompt meta — Pack Lanzamiento Inversor (pre-seed)
 
-> **Copia en repo Zonix Pharma** (sincronizar con la versión canónica en `/home/aipp/jarvis-startup/docs/PROMPT_PACK_LANZAMIENTO_INVERSOR.md` cuando se actualice el prompt).
+> **Copia en repo Zonix Pharma** (canónica aquí). Si existe copia en jarvis-skills-library / otro repo, sincronizar hacia este path — no usar rutas absolutas de máquina.
+>
+> **Canon Zonix Pharma (ago 2026):** ask único SAFE Lean **USD 237.412** @ cap **600k**. Las tablas Lean/Base/Growth abajo son **plantilla genérica / histórico pre-v4** — al generar pack Zonix, **no** reintroducir Base/Growth como ask vigente.
 
 > **Versión:** 1.0 — mayo 2026  
 > **Uso:** copiar este archivo (o la sección «Pega en Cursor» al final) en un chat de Cursor/Claude al arrancar un **proyecto nuevo**.  
@@ -70,7 +72,7 @@ Copia, rellena y adjunta al mensaje inicial:
 | **Actor 3 (tercero / partner)** | nombre + rol (ej. logística, validador) |
 | **Modelo de ingreso** | SaaS / take-rate / híbrido (cuota + %) / otro |
 | **Competidor de referencia** | (para comparar comisión o UX) |
-| **Capital pedido (escenario Base)** | USD |
+| **Capital pedido (ask único Lean — Zonix)** | USD (ej. 237.412); Base/Growth = hist. |
 | **SAFE cap post-money** (si aplica) | USD o N/A |
 | **Runway** | Fase 0 (días) + meses post-Day-D |
 | **Day-D en días desde T+0** | ej. 90 |

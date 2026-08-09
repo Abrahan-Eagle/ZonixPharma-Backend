@@ -13,7 +13,7 @@ Escribe cheques tipicos de **1 a 3 millones de dólares** a empresas que van a *
 
 ## La idea clave (para Zonix)
 
-**Sí se puede llegar a VELA** — pero no con el mensaje “necesito 211 mil para arrancar”.
+**Sí se puede llegar a VELA** — pero no con el mensaje “necesito solo el piso Lean para arrancar” sin visión de escala.
 
 - Los **USD 237.412** son el **mínimo** del raise (piso Lean), no el techo.
 - Lo que hace **atractivo** a Zonix frente a VELA es proyectar:  
@@ -25,7 +25,7 @@ Con esa historia (y tracción que la respalde), el ticket de **1–3 M** encaja 
 
 ## ¿Encaja hoy?
 
-**A medias — alcanzable, no automático.**
+**A medias — monitor / override form (score 40).** Score CRM **40/100** = no Plan A de caja; form solo con OK founder.
 
 | Hoy | Para volvernos atractivos |
 |-----|---------------------------|
@@ -35,7 +35,7 @@ Con esa historia (y tracción que la respalde), el ticket de **1–3 M** encaja 
 
 ## Qué necesita el CEO recordar
 
-1. **VELA no es el Plan A de esta semana** — pero **sí es un inversionista alcanzable** si Zonix se vende como plataforma **nacional**, no solo local.
+1. **VELA no es el Plan A de esta semana** — es **radar + form** (override). No sustituye Epakon / Casa212 / ALGEN.
 2. El cheque VELA (**1–3 M**) financia **escala a todo el país**, no el mínimo Lean.
 3. Hay que ser honestos en etapa (pre-seed / early) y ambiciosos en **visión de uso de fondos** (Venezuela completa).
 4. Formulario listo: [PAQUETE_FORM_VELA.md](PAQUETE_FORM_VELA.md).
@@ -44,12 +44,12 @@ Con esa historia (y tracción que la respalde), el ticket de **1–3 M** encaja 
 
 1. Seguir cerrando el raise mínimo (Plan A: Epakon / Casa212 / ALGEN).
 2. En paralelo: si envías el form VELA, el mensaje central es  
-   **“211k = piso actual · 1–3 M = lanzamiento nacional en Venezuela”**.
+   **“USD 237.412 = piso Lean actual · 1–3 M = lanzamiento nacional en Venezuela”**.
 3. Empujar tracción del piloto para que esa promesa nacional sea creíble.
 
 ## Puntuación CRM
 
-**40/100 · No es el cierre fácil de ahora · Sí es meta si proyectamos Venezuela completa.**
+**40/100 · Monitor / no Plan A de caja · Form solo con override founder + visión VE nacional creíble.**
 
 ---
 

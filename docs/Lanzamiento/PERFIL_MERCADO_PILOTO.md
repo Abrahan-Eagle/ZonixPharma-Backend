@@ -66,7 +66,7 @@ Farmacias firmadas/mes ≈ 4 Sales × visitas efectivas/semana × tasa de cierre
 - **Visitas efectivas/semana y tasa de cierre:** `[PENDIENTE Sales Lead — dato real T+60]`; hasta entonces la curva §3 es hipótesis, no compromiso.
 - **Cruce M3/M6 con PROYECCION §1.1:** al cierre **M3** el modelo central tiene **62 activas** / **USD 11.656** rev; al cierre **M6**, **97 activas** / **USD 18.236** — coherente con gate DoD ≥97 activas ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §5).
 - **Lectura de coherencia:** BE FCF es **M5** (85 activas). Llegar a **151 activas en M11** requiere firmar ~13-14 farmacias/mes netas de churn (~3,5/mes por vendedor). Si el dato real T+60 queda por debajo, ajustar curva o headcount **antes** de prometer M11 al inversor — no estirar la tasa de cierre en el spreadsheet.
-- Cruce con CAC **139** y LTV/CAC **~7,2x** ([UNIT_ECONOMICS.md](UNIT_ECONOMICS.md)): si para sostener la curva hay que subir gasto S&M, recalcular payback antes de aceptar la nueva cuota.
+- Cruce con CAC **139** y LTV/CAC **~7,5x** ([UNIT_ECONOMICS.md](UNIT_ECONOMICS.md)): si para sostener la curva hay que subir gasto S&M, recalcular payback antes de aceptar la nueva cuota.
 
 **Año 2:** expansión a Maracay y Maracaibo. SOM proyectado 200-220 farmacias activas, revenue mensual USD 8.000-9.000 (anual USD 96k-108k).
 
@@ -184,7 +184,7 @@ El piloto combina **dos focos geográficos** dentro de Valencia metro: **Urb. Be
 | Pedidos completados | ≥ **1.500** | Recortar Meta exterior; Bullseye interior |
 | NPS B2C | ≥ **35** | CS + fixes producto antes de expansión |
 | NPS B2B | ≥ **50** | Revisar pricing mom-test (PLAN §4.0 fila 5) |
-| Cash en banco | ≥ **~46.395** | Activar contingencia PROYECCION §4 |
+| Cash en banco | ≥ **~180.403** | Activar contingencia PROYECCION §4 |
 
 **Solo tras M6 verde:** ejecutar §6 PLAN (Naguanagua + San Diego, meta **130** activas M9) y SAM extendido **150–180** farmacias documentado en §3. **Año 2** (Maracay, Maracaibo) permanece upside — no commitment en pitch año 1 ([CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md) §3).
 
@@ -226,7 +226,7 @@ Estos números asumen:
 
 ## 10. Resumen para el inversor
 
-> Mercado farmacéutico VE: USD 1.638M/año (derivado Cifar/Faro: 389M u × ~USD 4,21). 226 farmacias en Valencia metro *(reconciliar vs ~187 ciudad / ~290 Carabobo — SmartScraper abr-2026)*. Comparable internacional (Farmalisto): ~USD 32M revenue; funding ~USD 22–33M. Diferencial: **cuota plataforma + % GMV moderado** vs. comisión **PedidosYa** (~25–35% GMV). Unit economics: [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) (CAC **139**, LTV/CAC **~7,2x**, ARPF **~52**). Validación Rx digital + cadena de frío + multi-sucursal — *[PENDIENTE dictamen abogado + farmacéutico asesor]*.
+> Mercado farmacéutico VE: USD 1.638M/año (derivado Cifar/Faro: 389M u × ~USD 4,21). 226 farmacias en Valencia metro *(reconciliar vs ~187 ciudad / ~290 Carabobo — SmartScraper abr-2026)*. Comparable internacional (Farmalisto): ~USD 32M revenue; funding ~USD 22–33M. Diferencial: **cuota plataforma + % GMV moderado** vs. comisión **PedidosYa** (~25–35% GMV). Unit economics: [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) (CAC **139**, LTV **1.040**, LTV/CAC **~7,5x**, ARPF **~52**). Validación Rx digital + cadena de frío + multi-sucursal — *[PENDIENTE dictamen abogado + farmacéutico asesor]*.
 
 Documentos hermanos relevantes:
 - [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md): qué decir a la farmacia.

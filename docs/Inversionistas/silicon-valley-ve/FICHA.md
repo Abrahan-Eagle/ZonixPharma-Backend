@@ -11,8 +11,8 @@
 | Nombre / entidad | Silicon Valley Latam Zenith Hub, C.a. (marca **Silicon Valley Venezuela**) · RIF **J-505846957** (términos 3V) |
 | Slug carpeta | `silicon-valley-ve` |
 | Tipo | Hub Caracas (cowork + servicios pagados + “representación”) · gira **3V Tech** (premio ≠ cash) |
-| Contacto | +58 414 2094996 (sede) · `siliconvalley.ve@siliconvalleyve.com` · IG @silicon.valleyvzla · **tel personal Beresith Rigal** (founder) |
-| Canal de intro | **Warm:** founder conoce a **Beresith Rigal** (CEO) y tiene su teléfono · form/WA sede · **no** apply 3V 2026 (cerró 15 jul) |
+| Contacto | +58 414 2094996 (sede) · `siliconvalley.ve@siliconvalleyve.com` · IG @silicon.valleyvzla · warm intro CEO (sin tel personal en CRM) |
+| Canal de intro | **Warm:** founder conoce a **Beresith Rigal** (CEO) · form/WA sede · **no** apply 3V 2026 (cerró 15 jul) |
 | País / jurisdicción | Caracas (Parque Cristal) · C.A. VE |
 | Estado relación | warm sin contactar (raise) |
 | Feeling founder (1–10) | — |
@@ -32,7 +32,7 @@
 
 | Dimensión | Pack Zonix | SVVE / 3V | Gap |
 |-----------|------------|-----------|-----|
-| Ticket | Lean ~174k | **Sin cheque** | No cubre ask |
+| Ticket | Lean **237.412** | **Sin cheque** | No cubre ask |
 | Dilución | SAFE cap 600k | Opaca / posible fee servicio | Pedir escrito si usas hub |
 | Vehículo | Ideal Delaware | Hub C.A. VE + servicios | No es VC |
 | Tiempo | — | 3V **cerrado**; contacto rolling | Fuera calendario raise |

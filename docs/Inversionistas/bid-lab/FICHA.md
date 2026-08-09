@@ -23,7 +23,7 @@
 |----------|--------|--------------|-----------|
 | Inversión en **fondos VC** | USD **2–10M** al fondo; fondo mín. **USD 20M** (nacientes **10M**) | Gestores de fondos | **No** (Zonix ≠ fondo) |
 | Equity **semilla C&D** | USD **0.2–0.5M**; ronda 0.5–3M; coinversor; **no lidera** | Startups en países C&D | **No** — VE **fuera** de lista C&D (PDF equity) |
-| Equity **Pre-A → B** | USD **1–3M**; ronda 3–30M; coinversor; **HealthTech** vertical | Startups con tracción (toda ALC) | **Teórico** — ask chico vs Lean ~174k |
+| Equity **Pre-A → B** | USD **1–3M**; ronda 3–30M; coinversor; **HealthTech** vertical | Startups con tracción (toda ALC) | **Teórico** — ask chico vs Lean **237.412** |
 | **Préstamos** | USD **0.5–5M**; ARR ~**USD 1M+**; 3–7 años | Post-A / EBITDA+ | **No ahora** |
 | **Ecosistema** | grants AT citados **750k–2M** (intro) / tarjeta “&lt;1M”; contraparte ~1:1 | Partners (incubadoras, academia, fundaciones…) | **VE sí** en lista **26 países**; no es cheque a startup sola |
 

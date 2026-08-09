@@ -29,7 +29,7 @@ Para Zonix: **no es un target de email Lean**. Si entras a Casa212, Arqos entra 
 
 | | Pack actual | Arqos |
 |--|-------------|-------|
-| Plata | Lean ~**174k** | Sin path frío |
+| Plata | Lean **237.412** | Sin path frío |
 | Dilución | SAFE 600k | Vía Casa212 si aplica |
 | Velocidad | Pitch Epakon | Solo si Casa212 |
 

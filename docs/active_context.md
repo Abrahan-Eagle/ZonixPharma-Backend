@@ -38,7 +38,7 @@ Loops Grok+Composer (+GLM/API limit); prompt [`plantillas/PROMPT_AUDIT_FORENSE_P
 
 ### Sync canon Lean Excel v4 (237.412) — 7 agosto 2026
 
-- **Fuente:** `/home/aipp/Descargas/MODELO_FINANCIERO_040826_v4.xlsx` → [`Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.xlsx) (backup `.bak-v3.9.3-20260807`).
+- **Fuente:** [`Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.xlsx) (v4; backup `.bak-v3.9.3-20260807` en repo si aplica).
 - **Anclas:** SAFE **237.412** = Fase 0 **50.260** + burn **172.152** + reserva **15.000**; Day-D **187.152**; equity **~39,57%** @ **600k**; ARPF **~52**.
 - **Esc.1:** revenue Y1 **228.796**; costos **169.717**; FCF Y1 **+59.079**; cash M12 **246.231**; BE FCF **M5** (no profitable M1).
 - **Hecho:** sweep `docs/Lanzamiento` + CRM + Pack Aliado md; skills `zonix-startup-context` / `zonix-financial-model` / `zonix-inversionistas-crm`; bugs Excel Flujo/CCF/banner; borrados AUDIT forense pack jun-2026.
@@ -95,7 +95,7 @@ Loops Grok+Composer (+GLM/API limit); prompt [`plantillas/PROMPT_AUDIT_FORENSE_P
 
 ### Conciliación Lean v4 (xlsx Descargas + pitch) — 17 julio 2026
 
-- **Hecho:** reconciliación de `/home/aipp/Descargas/MODELO_FINANCIERO_170726 v3.xlsx` (backup `.bak`): one-shots **~22.365** + operativa **~27.895** = Fase 0 **~50.260** = 0a+0b+0c; validación **0**; burn M1–M12 **~123.352**; TOTAL SAFE **~174.102**; caja Day-D **~123.842**; equity ref. **~29,02%** con cap 600k `[PENDIENTE decisión cap]`.
+- **Hecho:** reconciliación histórica Excel v3 (backup `.bak` en repo): one-shots **~22.365** + operativa **~27.895** = Fase 0 **~50.260** = 0a+0b+0c; validación **0**; burn M1–M12 **~123.352**; TOTAL SAFE **~174.102** (**supersedido** por Lean v4 **237.412**); caja Day-D **~123.842**; equity ref. **~29,02%** con cap 600k `[hist.]`.
 - **Decisiones:** amueblado HQ **1×2.250** (one-shot); alquiler Fase 0 **3×750** dentro de HQ+CapEx (750/mes en cronograma 0a/0b/0c) + 12×750 en burn; **sin ops recurrentes Fase 0** (cubiertas por dominio+hosting intro); CEO rol real; sin duplicar sales/tablets.
 - **Pitch actualizado:** BRIEF, README cifras, MENSAJE_ENVIO, CONTEXTO_PITCH, RESUMEN_ALIADO (tabla clave), PLAN_LANZAMIENTO (wire + Fase 0).
 - **No tocado:** `MODELO_FINANCIERO_ZONIX_PHARMA.md` / `.xlsx` del repo (canon anterior); PROYECCION §1.1 runway/cash M12 = **`[PENDIENTE FP&A]`**.

@@ -20,7 +20,7 @@
 
 **En una frase:** **Aprendemos con digital** (CPL bajo, medible). **La valla no compite en costo por descarga** — da **legitimidad** en la ciudad y ayuda a cerrar farmacias B2B («ya nos ven en Valencia»).
 
-**Ancla piloto:** capital Lean **237.412**; caja M6 post-Day-D **~[PENDIENTE FP&A]**; si marketing offline escala antes de **~28 activas** pre-Day-D, se quema caja sin conversión.
+**Ancla piloto:** capital Lean **237.412**; caja M6 post-Day-D **~180.403**; si marketing offline escala antes de **~28 activas** pre-Day-D, se quema caja sin conversión.
 
 ---
 
@@ -198,7 +198,7 @@ Corredor piloto en copy offline: **Bella Florida**, **El Socorro**, **San Diego*
 
 ---
 
-## Radio FM (solo Growth ~187k)
+## Radio FM (intensidad alta — hist. Growth ~187k; Lean = USD 0)
 
 | Concepto | Detalle |
 |----------|---------|
@@ -246,7 +246,7 @@ Trackeo: URL `zonixpharma.com/valencia`, código **VALLA15** (15% 1er pedido), e
 Subir valla **350 → 700** (Lean → Base/Growth) si:
 
 1. Adopción supera **130%** del plan (~130 activas M6 vs 97).
-2. Caja M6 post-Day-D ≥ **~[PENDIENTE FP&A]** (referencia proyección Lean **237.412**).
+2. Caja M6 post-Day-D ≥ **~180.403** (escenario Lean; ask SAFE **237.412**).
 3. CAC orgánico (boca en boca + offline) supera digital en **farmacias firmadas**.
 4. Serie A en proceso o cerrada.
 
@@ -288,7 +288,7 @@ Subir valla **350 → 700** (Lean → Base/Growth) si:
 - CPL digital **0,15–0,60** es hipótesis del pack — recalibrar semana 1 post-campaña.
 - Publicidad en salud: **no sustituye** revisión abogado + criterio SUNDEE / regulatorio aplicable.
 - Escalar offline antes de farmacias activas en app **quema caja** sin conversión — regla Bullseye no negociable.
-- Cifras de caja (**187.152** Day-D, **[PENDIENTE FP&A]** M6, **246.231** M12) y **159 activas** vienen del escenario Lean — no mezclar con tiers superiores sin recalcular.
+- Cifras de caja (**187.152** Day-D, **~180.403** M6, **246.231** M12) y **159 activas** vienen del escenario Lean — no mezclar con tiers superiores sin recalcular.
 - **No es solicitud de inversión** ni oferta de valores.
 
 ---

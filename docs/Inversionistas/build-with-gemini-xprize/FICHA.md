@@ -3,7 +3,7 @@
 > Ask ref.: Lean **USD 237.412** · SAFE cap ref. **USD 600.000** · equity **~39,57%** ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
 > **Disclaimer:** análisis founder interno; no es asesoría legal ni financiera.  
 > Fecha CRM: **2026-08-05**.  
-> Forense: landing + Devpost Rules/FAQ + video · PDF **Deep Research Gemini** (`~/Descargas/Investigación Google Gemini XPRIZE.pdf`) — síntesis en [NOTAS.md](NOTAS.md#deep-research-gemini).
+> Forense: landing + Devpost Rules/FAQ + video · PDF **Deep Research Gemini** (PDF/Word local founder (no versionado)) — síntesis en [NOTAS.md](NOTAS.md#deep-research-gemini).
 
 ## Identificación
 

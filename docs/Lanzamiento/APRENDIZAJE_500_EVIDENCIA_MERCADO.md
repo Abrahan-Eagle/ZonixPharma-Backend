@@ -20,6 +20,8 @@ El 6 agosto 2026, **500 Global / 500 LatAm** rechazó la aplicación de Zonix Ph
 
 **Mensaje canónico:** stack/staging = capacidad. Para fondos tipo 500 (y para credibilidad general) hace falta **demo consumible + adopción temprana**.
 
+**Relojes distintos:** evidencia de mercado (demo + farmacias) para **Plan A pre-raise**; hitos ~28 activas al Day-D = **post-wire** (T+0 → T+90). No exigir Day-D sin capital ni vender staging como tracción.
+
 ## Implicaciones operativas (docs)
 
 1. Checklist pre-inversor exige demo producto + métrica de tracción piloto ([CHECKLIST_PRE_INVERSOR.md](CHECKLIST_PRE_INVERSOR.md)).  

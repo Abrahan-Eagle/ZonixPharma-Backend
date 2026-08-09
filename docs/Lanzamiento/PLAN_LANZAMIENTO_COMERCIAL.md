@@ -17,12 +17,14 @@ El calendario §1–§4 ejecuta; esta tabla dice **qué hipótesis valida cada f
 
 Regla: pivot documentado en VOLCADO + nota founder; **no** pivotar por una sola entrevista ni por entusiasmo social (mom-test).
 
+**Evidencia pre-raise vs hitos post-wire:** demo 3–5 min + 1–2 farmacias Valencia (barra Plan A / lección 500) es **antes** del wire. Metas ~28 activas al Day-D son **después** de T+0 (piloto financiado). No mezclar ambos relojes ([APRENDIZAJE_500_EVIDENCIA_MERCADO.md](APRENDIZAJE_500_EVIDENCIA_MERCADO.md)).
+
 ## 1. T+0 — Cierre de inversión
 
 **Eventos:**
 
 - Firma del SAFE.
-- Transferencia **USD 237.412** (**Lean Excel v4**) a cuenta personal del founder (transitoria) o cuenta empresa si ya está abierta.
+- Transferencia **USD 237.412** (**Lean Excel v4**) a **cuenta empresa** (C.A.) o, si aún no está abierta, vía **escrow / tranche condicional** — **no** a cuenta personal del founder (ver [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §8).
 - Reunión kick-off **founder + Co-CEO** con abogado y contador.
 - Comunicación al inversor: confirmación de recepción + plan de los próximos 30 días.
 
@@ -167,7 +169,7 @@ Checklist **antes** de tráfico masivo. Documentar solo entrevistas reales en VO
 
 Coherente con [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §8.1 (SPIN), [UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §2.1 (WTP) y [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md).
 
-**Guía mom-test pricing (fila 5):** preguntar qué **gastó o dejó de ganar** la farmacia con agregador/WhatsApp el último mes; mostrar **solo después** el ejemplo híbrido (Basic **25** / Pro **40** / Enterprise **55** + % GMV). **No** cambiar bandas ni % del pack sin decisión founder documentada. Si **≥2 de 3** entrevistas muestran rechazo claro al nivel Pro sobre GMV típico local, escalar a founder antes de firmar contratos masivos — no bloquea Day-D si hay señal mixta, pero **sí** obliga nota en VOLCADO y revisión ARPF placeholder ([UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §2.1).
+**Guía mom-test pricing (fila 5):** preguntar qué **gastó o dejó de ganar** la farmacia con agregador/WhatsApp el último mes; mostrar **solo después** el ejemplo híbrido del **pack canónico** (Basic **45** / Pro **60** / Enterprise **70** + % GMV **8/7/5**). Los tiers **25/40/55** son **legado discovery** (no bandas del pack). **No** cambiar bandas ni % del pack sin decisión founder documentada. Si **≥2 de 3** entrevistas muestran rechazo claro al nivel Pro sobre GMV típico local, escalar a founder antes de firmar contratos masivos — no bloquea Day-D si hay señal mixta, pero **sí** obliga nota en VOLCADO y revisión ARPF placeholder ([UNIT_ECONOMICS.md](UNIT_ECONOMICS.md) §2.1).
 
 ### 4.1 Pre-lanzamiento (T+60 a T+85)
 
@@ -212,7 +214,7 @@ Más farmacias activas (+ catálogo) → más pacientes en zona piloto (Meta + r
 | --------------- | --------------------------------------------------------- | --------------------------------------------------------------------------- |
 | 1. Oferta       | Farmacias **activas** (curva §1.1: **40** M1 → **97** M6) | [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1           |
 | 2. Demanda      | Pedidos completados; NPS B2C ≥ 35 en M6                   | §5 DoD                                                                      |
-| 3. Monetización | Revenue mensual ≥ **29.000** en M6 (esc.1)                | §5 DoD                                                                      |
+| 3. Monetización | Revenue mensual ≥ **~18.236** en M6 (esc.1 PROYECCION) | §5 DoD |
 | 4. Reinversión  | Meta **800**/mes (Lean M1–6) + **4× Sales**               | [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §2 |
 
 **Freno del flywheel:** churn farmacia **5%**/mes ([UNIT_ECONOMICS.md](UNIT_ECONOMICS.md)); demanda B2C lenta → priorizar Bullseye **interior** (QR farmacia) antes de escalar Meta ([CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md) §2.10).
@@ -231,8 +233,8 @@ Criterios para considerar el piloto exitoso:
 | NPS B2B                   | ≥ 50                                                                                                                                   |
 | Tasa cancelación de orden | ≤ 8%                                                                                                                                   |
 | Tasa de comprobante falso | ≤ 0,5%                                                                                                                                 |
-| Revenue mensual           | ≥ USD **29.000** (esc.1 M6; refinar con FP&A)                                                                                          |
-| Cash en banco             | ≥ **~USD 46.395** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.3: cash final **M6** del año calendario post-Day-D) |
+| Revenue mensual           | ≥ USD **~18.236** (esc.1 M6 PROYECCION; M12 ~29.892)                                                                                          |
+| Cash en banco             | ≥ **~USD 180.403** ([PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §1.1 / §1.3: cash final **M6** del año calendario post-Day-D) |
 
 **Si NO se alcanzan estos criterios:** activar plan de contingencia documentado en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) sección 4.
 

@@ -3,7 +3,7 @@
 **Fecha:** 10 junio 2026  
 **Parámetros:** `MODO=modulo` · `MODULO=commerce` · `PROFUNDIDAD=completa`  
 **Repos:** ZonixPharma-Backend + ZonixPharma-Front  
-**Prompt base:** [PROMPT_AUDIT_360_ZONIX.md](PROMPT_AUDIT_360_ZONIX.md)  
+**Prompt base:** [../plantillas/PROMPT_AUDIT_360_ZONIX.md](../plantillas/PROMPT_AUDIT_360_ZONIX.md)  
 **Auditoría previa:** piloto jun-2026 re-verificado e integrado aquí (archivo piloto eliminado ago 2026).
 
 ---
@@ -326,7 +326,7 @@
 | `AUDIT_UI_PHARMA.md` | Commerce NEEDS REWORK — **sin cambio** |
 | `docs/active_context.md` | **No menciona** WIP `commerce_api_errors` ni auditoría commerce jun 2026 — desactualizado |
 | `MIGRACION_EATS_PHARMA.md` | `CommerceService.getCommerces`, copy restaurante, Pizza en tests — **deuda Eats residual** |
-| `plantillas/PROMPT_AUDIT_360_ZONIX.md` | Creado 10 jun — alineado con metodología usada |
+| `plantillas/../plantillas/PROMPT_AUDIT_360_ZONIX.md` | Creado 10 jun — alineado con metodología usada |
 
 ✅ **Fase 7 completada** — Proponer actualizar `active_context.md` (requiere OK usuario). Continúo Fase 8.
 

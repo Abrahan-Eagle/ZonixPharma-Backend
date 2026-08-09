@@ -19,7 +19,7 @@
 
 ## Fuentes secundarias [S]
 
-- Word `~/Descargas/Startup Venezuela Summit 2026.docx` — mezcla Miami abr + Caracas; Rainforest / diáspora / mesas Salud. **No** usar como agenda Caracas confirmada.
+- Word PDF/Word local founder (no versionado) — mezcla Miami abr + Caracas; Rainforest / diáspora / mesas Salud. **No** usar como agenda Caracas confirmada.
 - Ediciones 2024/2025: patrón networking + workshops + pitch; no term sheet tipificado.
 
 ## Decisiones pendientes (founder)

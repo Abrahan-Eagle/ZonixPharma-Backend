@@ -6,7 +6,7 @@
 
 | Fecha | Canal | Qué pasó | Siguiente |
 |-------|-------|----------|-----------|
-| 2026-07-21 | Forense web + FAQ (bundle JS) + prensa + LI | Score **71**. Ficha + resumen CEO. | Decidir 12 sem Caracas; apply ≤15 ago |
+| 2026-07-21 | Forense web + FAQ (bundle JS) + prensa + LI | Score **68** (matriz comparativa). Ficha + resumen CEO. | Decidir 12 sem Caracas; apply ≤15 ago |
 | 2026-08-07 | Post-500: barra credibilidad Plan A | Apply/outreach **solo** si [`BARRA_CREDIBILIDAD_PLAN_A`](../../Lanzamiento/BARRA_CREDIBILIDAD_PLAN_A.md) **mínima** (+ **fuerte** si apply formal); lección [INFORME_FACIL_500…](../../Lanzamiento/INFORME_FACIL_500_COMO_STARTUP.md) | Demo + residencia 12 sem + OK founder |
 | | | | |
 

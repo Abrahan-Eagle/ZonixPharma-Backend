@@ -440,7 +440,7 @@ Aplicar precedencia de [`jarvis-core`](.agents/skills/jarvis-core/SKILL.md) cuan
 - **[docs/PLAN_REGULATORIO_PHARMA_VE.md](docs/PLAN_REGULATORIO_PHARMA_VE.md)** — regulación VE, MPPS, INHRR, datos de salud.
 - **[docs/audits/MIGRACION_EATS_PHARMA.md](docs/audits/MIGRACION_EATS_PHARMA.md)** — qué cambió en la transformación Eats → Pharma.
 - **[docs/ops/deploy/DEPLOY_PHARMA_AIBLOCK.md](docs/ops/deploy/DEPLOY_PHARMA_AIBLOCK.md)** — deploy FTP GitHub Actions → `pharma.aiblockweb.com`.
-- **Matriz roles → skills:** [docs/zonix/roles_matrix.json](docs/zonix/roles_matrix.json) + skill `zonix-lanzamiento-roles` (el `.md` ROLES_SKILLS_ZONIX del pack ya no está versionado).
+- **Matriz roles → skills:** [docs/zonix/roles_matrix.json](docs/zonix/roles_matrix.json) + skill `zonix-lanzamiento-roles` (lectura humana: [docs/Lanzamiento/ROLES_SKILLS_ZONIX.md](docs/Lanzamiento/ROLES_SKILLS_ZONIX.md); JSON = router machine-readable).
 - **[docs/Lanzamiento/README.md](docs/Lanzamiento/README.md)** — índice pack inversor (22 documentos).
 - **[docs/zonix/roles_matrix.json](docs/zonix/roles_matrix.json)** — routing JARVIS por rol y tarea + `skills_inventory`.
 - **[docs/zonix/SPEC_KIT_ZONIX.md](docs/zonix/SPEC_KIT_ZONIX.md)** — Spec Kit (SDD) vs Jarvis `zonix-*`.

@@ -90,7 +90,7 @@
 ## HITL prioritario (calidad, no reabre 328)
 
 1. Los **16** IDs con `[CAPTION]` — subtítulos humanos o marcar DROP editorial.
-2. IDs con `asr_flags` tipo sesión→cesión / mba→NDA / limpi→IMPI / lina→INAI (lista viva en jueces).
+2. IDs con `asr_flags` tipo sesión→cesión / mba→NDA / limpi→IMPI / lina→INAI (lista histórica en jueces ASR — **fuera del árbol** post-slim; ver tablas de este REPASO + skill).
 3. Claim SCJN 2026 (`7618776417018367240`) antes de paid.
 4. Instagram: sigue bloqueado (`CHECKLIST_IG.md`).
 

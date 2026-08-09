@@ -26,7 +26,7 @@ Es decir: **cada uno carga sus datos; la app rellena la información a la hora d
 
 | Qué hace | Carga métodos propios | Uso en el flujo de pago |
 |----------|------------------------|--------------------------|
-| Paga el pedido (comida + envío) | No. No tiene pantalla para “mis cuentas” | Elige **cómo** paga (efectivo, transferencia, tarjeta, pago móvil, etc.) y, si aplica, sube comprobante. La app le **muestra los datos del comercio** (cuenta, banco, teléfono) para que sepa a dónde pagar; no escribe esos datos a mano. |
+| Paga el pedido (medicamentos OTC/Rx + envío) | No. No tiene pantalla para “mis cuentas” | Elige **cómo** paga (efectivo, transferencia, tarjeta, pago móvil, etc.) y, si aplica, sube comprobante. La app le **muestra los datos del comercio** (cuenta, banco, teléfono) para que sepa a dónde pagar; no escribe esos datos a mano. |
 
 - No configura cuentas para “recibir” en la app.
 - Los métodos que ve al pagar son los del **comercio** de la orden (precargados por el comercio).

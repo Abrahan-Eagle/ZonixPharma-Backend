@@ -6,7 +6,7 @@
 
 | Fecha | Canal | Qué pasó | Siguiente |
 |-------|-------|----------|-----------|
-| 2026-07-22 | Email Sandy Gómez (`sgomez@grupoarca.net`, Arca) → Gabriel → Abrahan | Reconfirmada Arca como nodo ecosistema; mapa eventos/programas (no term sheet). Intel: [`../_intel/2026-07-22-sandy-gomez-arca-ecosistema.md`](../_intel/2026-07-22-sandy-gomez-arca-ecosistema.md) | No contactar Sandy sin OK; FI apply solo si metodol. |
+| 2026-07-22 | Email Sandy Gómez (Arca / intro ecosistema) → Gabriel → Abrahan — **emails en `_intel` privado founder, no en CRM** | Reconfirmada Arca como nodo ecosistema; mapa eventos/programas (no term sheet). Intel: [`../_intel/2026-07-22-sandy-gomez-arca-ecosistema.md`](../_intel/2026-07-22-sandy-gomez-arca-ecosistema.md) | No contactar Sandy sin OK; FI apply solo si metodol. |
 | 2026-07-21 | Forense fi.co/venezuela + program/13045 + equity + FAQ + Founder Capital + briefing §5.2 | Score **55**. Ficha + resumen CEO. Fee post-early = **$169** (corrige briefing ~249). | Apply early ≤28 jul solo si metodol./red |
 | | | | |
 

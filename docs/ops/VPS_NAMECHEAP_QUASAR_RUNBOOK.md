@@ -9,11 +9,11 @@
 | Plan                           | Quasar                                                                                                                    |
 | Precio ref.                    | ~$12.88/mo promo · ~$15.88/mo renew                                                                                       |
 | **Coste anual (presupuestar)** | **1× ~$190.56/año** · **2× (con CorralX) ~$381/año** — no usar ~$309                                                      |
-| Techo pack                     | ~USD 80/mes hosting ([PRESUPUESTO](Lanzamiento/PRESUPUESTO_12_MESES_REFERENCIA.md)); 2× Quasar ~$32/mo renew deja holgura |
+| Techo pack                     | ~USD 80/mes hosting ([PRESUPUESTO](../Lanzamiento/PRESUPUESTO_12_MESES_REFERENCIA.md)); 2× Quasar ~$32/mo renew deja holgura |
 | Coste + vs AWS                 | [`VPS_COSTE_ANUAL_Y_AWS_VS_NAMECHEAP.md`](VPS_COSTE_ANUAL_Y_AWS_VS_NAMECHEAP.md)                                          |
 | Stack                          | Ubuntu LTS + nginx + **PHP 8.3**-FPM + MySQL 8 + Redis                                                                    |
 | Dominio objetivo               | `zonixpharma.com` / staging `pharma.` o `staging.` (definir en corte)                                                     |
-| Script bootstrap               | [`scripts/vps-quasar-bootstrap.sh`](../scripts/vps-quasar-bootstrap.sh)                                                   |
+| Script bootstrap               | [`scripts/vps-quasar-bootstrap.sh`](../../scripts/vps-quasar-bootstrap.sh)                                                   |
 
 ---
 
@@ -102,7 +102,7 @@ Plantilla worker: `/etc/supervisor/conf.d/zonix-worker.conf` (generada por boots
 
 1. Dump MySQL cPanel + `rsync` de `storage/app` (recetas en disco `local`).
 2. Importar en Quasar staging; smoke OTC + Rx (`pending_prescription_validation` → upload → `pending_payment`).
-3. Checklist: [`qa/SMOKE_RX_E2E.md`](SMOKE_RX_E2E.md).
+3. Checklist: [`qa/../qa/SMOKE_RX_E2E.md`](../qa/SMOKE_RX_E2E.md).
 4. Actualizar Flutter `API_URL` / AppConfig al nuevo host.
 5. Sustituir workflow FTP ([`ops/deploy/DEPLOY_PHARMA_AIBLOCK.md`](deploy/DEPLOY_PHARMA_AIBLOCK.md)) por deploy SSH/git o rsync (nuevo workflow — fuera de este runbook hasta tener IP).
 6. Solo entonces decommission FTP aiblock.

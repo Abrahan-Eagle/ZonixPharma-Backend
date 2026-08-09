@@ -10,7 +10,7 @@
 | 2026-08-05 | Founder → JARVIS | Compartió landing [geminixprize.com](https://www.geminixprize.com/), URLs Devpost, video YouTube y screenshots; preguntó si Devpost está relacionado | Forense + ficha CRM |
 | 2026-08-05 | Web / Rules | Confirmado: landing = marketing; [xprize.devpost.com](https://xprize.devpost.com/) = registro/submit/reglas oficiales | Alta CRM score **43** |
 | 2026-08-05 | Founder | Avisa PDF Deep Research Gemini pendiente | Slot preparado |
-| 2026-08-05 | Founder → JARVIS | Entregó PDF `~/Descargas/Investigación Google Gemini XPRIZE.pdf` (8 págs.) | Volcado forense (esta sección) |
+| 2026-08-05 | Founder → JARVIS | Entregó PDF PDF/Word local founder (no versionado) (8 págs.) | Volcado forense (esta sección) |
 
 ## Pendientes
 
@@ -109,7 +109,7 @@ Pitch: 90 días, problema con impacto ≥100k personas, AI agents + ecosistema G
 
 ## Deep Research Gemini
 
-> **Origen:** PDF local del founder `~/Descargas/Investigación Google Gemini XPRIZE.pdf` (8 páginas). No se copia el binario al repo.  
+> **Origen:** PDF local del founder PDF/Word local founder (no versionado) (8 páginas). No se copia el binario al repo.  
 > **Score CRM:** sin cambio (**43**).  
 > **Canon:** Official Rules + FAQ en **Devpost**. El PDF cita `#6` como `geminixprize.com/rules` — para CRM prevalece [xprize.devpost.com/rules](https://xprize.devpost.com/rules).
 
@@ -189,7 +189,7 @@ Pitch: 90 días, problema con impacto ≥100k personas, AI agents + ecosistema G
 | [Official Rules](https://xprize.devpost.com/rules) | Timing, elegibilidad, New Projects, premios §8, &lt;25, judging |
 | [FAQ](https://xprize.devpost.com/details/faq) | Newly created, entity vs business, Stripe no obligatorio, GCP |
 | [YouTube](https://www.youtube.com/watch?v=qtsNJFAMACE) | Pitch 1 jul 2026 |
-| PDF Gemini Deep Research | `~/Descargas/Investigación Google Gemini XPRIZE.pdf` · 8 págs. |
+| PDF Gemini Deep Research | PDF/Word local founder (no versionado) · 8 págs. |
 | Screenshots founder | Landing + Devpost (5 ago 2026) |
 
 ## Archivos / links

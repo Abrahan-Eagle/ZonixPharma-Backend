@@ -123,7 +123,7 @@ Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 > **Slide 7: Equipo**
 > - **CEO** + Founder CEO/CTO + **Co-CEO** (USD **1.000**/mes c/u).
 > - **4× Sales B2B (Lean):** USD **350** base + **40**/firma.
-> - **Dev** USD **1.000**; CS+CM **500**; contador+abogado **800**/mes; IA **425**.
+> - **Dev** USD **1.000**; CS+CM **500**; contador+abogado **330**/mes; IA **425**.
 
 > **Slide 8: Ask**
 > - **USD 237.412** SAFE cap **600.000** (~**39,57%**) — ask único v4.

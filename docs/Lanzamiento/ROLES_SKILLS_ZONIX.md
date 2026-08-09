@@ -352,7 +352,7 @@ Escala de impacto: **Alta** · **Media** · **Baja** · **Máxima**.
 
 Las skills de código **no** reemplazan revisión humana legal/regulatoria. Para **Docs**, combinar:
 
-- Contenido canónico: [README.md](README.md), [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md), [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md).
+- Contenido canónico: [README.md](README.md), [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md), forense docs [`../audits/FORENSIC_DOCS_360_SKILLS_JUDGE_2026-08-09.md`](../audits/FORENSIC_DOCS_360_SKILLS_JUDGE_2026-08-09.md).
 - Lente por tarea: **`zonix-lanzamiento-roles`** + skills inversor (`zonix-startup-context`, `zonix-financial-model`, `zonix-investor-materials`, `zonix-fundraising-narrative`, `zonix-regulatory-ve`).
 - Routing JSON: [../zonix/roles_matrix.json](../zonix/roles_matrix.json) · router: [../zonix/SKILLS_STARTUP_USAR_NO_USAR.md](../zonix/SKILLS_STARTUP_USAR_NO_USAR.md).
 
@@ -408,7 +408,7 @@ Los roles de madurez (CFO, DPO, CISO a tiempo completo, etc.) son objetivo **Ser
 
 - [README.md](README.md) — índice del pack (decisión **Equipo** → enlace a § Organigrama).
 - [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) — equipo contratado piloto.
-- [ANALISIS_FORENSE.md](ANALISIS_FORENSE.md) — chequeo multi-rol §11 (pack inversor).
+- [`../audits/FORENSIC_DOCS_360_SKILLS_JUDGE_2026-08-09.md`](../audits/FORENSIC_DOCS_360_SKILLS_JUDGE_2026-08-09.md) — forense 360° docs (reemplaza ANALISIS_FORENSE.md ausente).
 - [../zonix/roles_matrix.json](../zonix/roles_matrix.json) — routing JARVIS (forense skills eliminado ago 2026).
 - [../zonix/roles_matrix.json](../zonix/roles_matrix.json) — routing JARVIS + inventario skills.
 - [AGENTS.md](../../AGENTS.md) — skills técnicas Backend.

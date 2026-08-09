@@ -6,9 +6,9 @@
 | # | Archivo | Candidata | Score |
 |---|---------|-----------|-------|
 | 00 | [00-RESUMEN_COMPARATIVO.pdf](00-RESUMEN_COMPARATIVO.pdf) | Ranking comparativo | — |
-| 01 | [01-Epakon-RESUMEN_CEO.pdf](01-Epakon-RESUMEN_CEO.pdf) | Epakon Capital | 73 |
+| 01 | [01-Epakon-RESUMEN_CEO.pdf](01-Epakon-RESUMEN_CEO.pdf) | Epakon Capital | 70 |
 | 02 | [02-ALGEN-RESUMEN_CEO.pdf](02-ALGEN-RESUMEN_CEO.pdf) | ALGEN × AceleraLatam | 72 |
-| 03 | [03-Casa212-RESUMEN_CEO.pdf](03-Casa212-RESUMEN_CEO.pdf) | Casa212 | 71 |
+| 03 | [03-Casa212-RESUMEN_CEO.pdf](03-Casa212-RESUMEN_CEO.pdf) | Casa212 | 68 |
 | 04 | [04-500-LatAm-RESUMEN_CEO.pdf](04-500-LatAm-RESUMEN_CEO.pdf) | 500 LatAm (técnico / **interno**) | **67** |
 | 04b | [04b-500-LatAm-RESUMEN_FACIL.pdf](04b-500-LatAm-RESUMEN_FACIL.pdf) | 500 LatAm (**fácil** / interno) | **67** |
 | 05 | [05-FI-Venezuela-RESUMEN_CEO.pdf](05-FI-Venezuela-RESUMEN_CEO.pdf) | Founder Institute VE | 55 |

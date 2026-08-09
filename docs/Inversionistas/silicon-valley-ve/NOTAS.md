@@ -7,7 +7,7 @@
 | Fecha | Canal | Qué pasó | Siguiente |
 |-------|-------|----------|-----------|
 | 2026-07-21 | Forense siliconvalleyve.com (todas rutas) + 3vtech SPA + prensa + briefing §5.3 | Score **38** descartar fundraising. 3V cerrado 15 jul. | Solo hub pago si founder lo pide |
-| 2026-07-21 | Founder: conoce a **Beresith Rigal** (CEO) + tiene tel personal | Warm canal. Rescore **42** (E+2 V+2). Veredicto capital **sigue descartar**. | Call solo si hub/asesoría; no pedir cheque Lean |
+| 2026-07-21 | Founder: conoce a **Beresith Rigal** (CEO) — canal warm (sin PII tel en CRM) | Warm canal. Rescore **42** (E+2 V+2). Veredicto capital **sigue descartar**. | Call solo si hub/asesoría; no pedir cheque Lean |
 | | | | |
 
 ## Forense — qué es / qué no es

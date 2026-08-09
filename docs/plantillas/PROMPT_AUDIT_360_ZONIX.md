@@ -2,7 +2,7 @@
 
 > **Uso:** copia desde la sección [Super Prompt (pegar en chat)](#super-prompt-pegar-en-chat) y define las variables de arranque en la primera línea del mensaje.
 >
-> **Complementa (no reemplaza):** [../audits/MIGRACION_EATS_PHARMA.md](../audits/MIGRACION_EATS_PHARMA.md) (histórico Eats→Pharma), [AUDIT_API_PATTERNS_2026-05-01.md](AUDIT_API_PATTERNS_2026-05-01.md), [AUDIT_UI_PHARMA.md](../ZonixPharma-Front/docs/AUDIT_UI_PHARMA.md).
+> **Complementa (no reemplaza):** [../audits/MIGRACION_EATS_PHARMA.md](../audits/MIGRACION_EATS_PHARMA.md) (histórico Eats→Pharma), [../audits/AUDIT_API_PATTERNS_2026-05-01.md](../audits/AUDIT_API_PATTERNS_2026-05-01.md), [AUDIT_UI_PHARMA.md](../ZonixPharma-Front/docs/AUDIT_UI_PHARMA.md).
 >
 > **Ubicación:** `ZonixPharma-Backend/docs/plantillas/PROMPT_AUDIT_360_ZONIX.md`
 
@@ -68,7 +68,7 @@ flowchart TD
 
 ### Principios anti-fugas
 
-1. **Checklist explícito** — derivado de skills `zonix-*` (ej. 12 criterios API en `audits/AUDIT_API_PATTERNS_2026-05-01.md`).
+1. **Checklist explícito** — derivado de skills `zonix-*` (ej. 12 criterios API en `audits/../audits/AUDIT_API_PATTERNS_2026-05-01.md`).
 2. **Buckets acotados** — máx. ~15 archivos por pasada en `PROFUNDIDAD=completa`.
 3. **Evidencia obligatoria** — `archivo:línea`; prohibido citar sin leer.
 4. **Subagentes en paralelo** — 1 bucket = 1 subagent con scope fijo.
@@ -155,7 +155,7 @@ Subagent opcional: `.cursor/agents/security-auditor.md` cuando `MODULO=security`
 3. Skills según MODULO (tabla §5)
 4. Si `MODO=360` o `MODULO=docs`: `audits/MIGRACION_EATS_PHARMA.md`, `PLAN_RX_VALIDATION.md`, `PLAN_REGULATORIO_PHARMA_VE.md`, `BRAND_ZONIX_PHARMA.md`
 5. Auditorías previas — **re-verificar** fixes, no duplicar ciegamente:
-   - `docs/audits/AUDIT_API_PATTERNS_2026-05-01.md`
+   - `docs/audits/../audits/AUDIT_API_PATTERNS_2026-05-01.md`
    - `ZonixPharma-Front/docs/AUDIT_UI_PHARMA.md`
    - `docs/audits/MIGRACION_EATS_PHARMA.md`
    - Cualquier `docs/AUDIT_<MODULO>_*.md` reciente

@@ -46,7 +46,7 @@ Para Zonix Pharma: **no Plan A** del ask Lean **237.412**. Útil como **monitor*
 | | Pack actual | Esta candidata |
 |--|-------------|----------------|
 | Plata | Lean **237.412** | **1–3 M** (otro mundo) |
-| Dilución | SAFE cap **600k** (~35%) | Mix impacto; no SAFE tipificado |
+| Dilución | SAFE cap **600k** (~**39,57%**) | Mix impacto; no SAFE tipificado |
 | Velocidad / compromiso | Raise pre-seed ahora | DD multilateral + fundraising incompleto |
 | Empresa / jurisdicción | VE piloto Valencia | Países elegibles LAC; Venezuela y alcance del ~20% requieren confirmación |
 
@@ -101,4 +101,4 @@ El override autoriza preparar el contacto; **no** cambia el score, no convierte 
 
 ## Fuentes
 
-- Primarias: [fondovela.com](https://www.fondovela.com), CAF y registros SEC/ADV de LATF. Secundarias: Latam Green, La Nación, ImpactAlpha/LAVCA. Matriz de evidencia: [NOTAS](NOTAS.md#fuentes-clave-y-verificación-adicional). PDF local: `~/Descargas/Investigación Fondo de Impacto VELA.pdf` (no versionado).
+- Primarias: [fondovela.com](https://www.fondovela.com), CAF y registros SEC/ADV de LATF. Secundarias: Latam Green, La Nación, ImpactAlpha/LAVCA. Matriz de evidencia: [NOTAS](NOTAS.md#fuentes-clave-y-verificación-adicional). PDF local: PDF/Word local founder (no versionado) (no versionado).

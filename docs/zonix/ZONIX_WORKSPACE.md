@@ -13,12 +13,11 @@
 
 | Recurso | Ruta |
 |---------|------|
-| Pack inversor (22 docs) | [docs/Lanzamiento/](Lanzamiento/README.md) |
+| Pack inversor (22 docs) | [docs/Lanzamiento/](../Lanzamiento/README.md) |
 | Skills agente (30 `zonix-*`) | `.agents/skills/zonix-*/` |
 | Router startup | [docs/zonix/SKILLS_STARTUP_USAR_NO_USAR.md](SKILLS_STARTUP_USAR_NO_USAR.md) |
 | Routing JARVIS | [docs/zonix/roles_matrix.json](roles_matrix.json) |
-| Routing JARVIS | [docs/zonix/roles_matrix.json](roles_matrix.json) |
-| Matriz roles humanos | [docs/Lanzamiento/ROLES_SKILLS_ZONIX.md](Lanzamiento/ROLES_SKILLS_ZONIX.md) |
+| Matriz roles humanos | [docs/Lanzamiento/ROLES_SKILLS_ZONIX.md](../Lanzamiento/ROLES_SKILLS_ZONIX.md) |
 
 ## CorralX (marketplace ganadero)
 
@@ -28,7 +27,7 @@
 
 ## Regla de oro para agentes
 
-Cifras (101k / 118k / 135k, SAFE caps, ARPF) y legal VE solo desde **pack Lanzamiento** + skill `zonix-startup-context`.
+Cifras y legal VE solo desde **pack Lanzamiento** + skill `zonix-startup-context`. Ask vigente: SAFE Lean **USD 237.412** @ cap **600k** (~**39,57%**). Tiers históricos **101k / 118k / 135k** (y Base/Growth) = **no vigentes**.
 
 ## JARVIS onboarding (Capa 0 + Paso C)
 

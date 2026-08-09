@@ -114,7 +114,7 @@ Canon = Excel Detallado **v4** (`MODELO_FINANCIERO_040826_v4` → `docs/Lanzamie
 | Modelo B2B | Cuota **45 / 60 / 70** USD + **%GMV 8/7/5** por banda | PROPUESTA_VALOR_CLIENTE_B2B §5 (esc.1) |
 | ARPF referencia | **~USD 52/mes** | UNIT_ECONOMICS, Excel Año 1 |
 | CAC farmacia | USD **139** | UNIT_ECONOMICS |
-| LTV / LTV:CAC | USD **1.000** / **~7,2x** | UNIT_ECONOMICS |
+| LTV / LTV:CAC | USD **1.040** / **~7,5x** | UNIT_ECONOMICS |
 | Churn mensual ref. | 5% | UNIT_ECONOMICS |
 
 ## Equipo piloto (payroll / honorarios)

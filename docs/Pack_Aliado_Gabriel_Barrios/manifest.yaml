@@ -49,7 +49,8 @@ documents:
   - id: "09"
     md: "md/09_Guia_Reunion.md"
     docx: "docx/09_Guia_Reunion.docx"
-    canon: "Lanzamiento/CHECKLIST_PRE_INVERSOR.md"
+    canon: null  # pack-only: guía reunión aliado (no es espejo de CHECKLIST_PRE_INVERSOR)
+    note: "Contenido propio Pack Aliado; no sync 1:1 desde Lanzamiento/CHECKLIST"
     status: ready
   - id: "10"
     md: "md/10_Plan_Lanzamiento.md"

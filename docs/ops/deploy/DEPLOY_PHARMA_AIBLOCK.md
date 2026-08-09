@@ -4,7 +4,7 @@
 **Hosting:** cPanel / FTP compartido (`ftp.aiblockweb.com`)  
 **Dominio canónico:** `https://zonixpharma.com`  
 **Legacy (aún en el mismo server):** `https://pharma.aiblockweb.com`  
-**Workflow:** [`.github/workflows/main.yml`](../.github/workflows/main.yml) — push a rama **`main`**
+**Workflow:** [`.github/workflows/main.yml`](../../../.github/workflows/main.yml) — push a rama **`main`**
 
 > **Migración VPS (decisión 2026-07-24):** objetivo de producción/piloto = **Namecheap Quasar** dedicado (no compartir con CorralX). Runbook + bootstrap: [`../VPS_NAMECHEAP_QUASAR_RUNBOOK.md`](../VPS_NAMECHEAP_QUASAR_RUNBOOK.md).
 
@@ -44,7 +44,7 @@ Generar `APP_KEY` local una vez:
 php artisan key:generate --show
 ```
 
-Copiar [`.env.example`](../.env.example) y ajustar (MySQL desde cPanel → **MySQL® Databases**):
+Copiar [`.env.example`](../../../.env.example) y ajustar (MySQL desde cPanel → **MySQL® Databases**):
 
 ```dotenv
 APP_NAME="Zonix Pharma"
@@ -99,7 +99,7 @@ push main  →  main.yml
 
 **Document Root (cPanel):** `/home/unibicuo/zonixpharma.com/public` (no la raíz del addon).
 
-**CI separado:** [`.github/workflows/ci.yml`](../.github/workflows/ci.yml) corre Pint + tests en PRs y en `dev`/`main`; no despliega.
+**CI separado:** [`.github/workflows/ci.yml`](../../../.github/workflows/ci.yml) corre Pint + tests en PRs y en `dev`/`main`; no despliega.
 
 **Deploy manual:** Actions → _Deploy Zonix Pharma_ → **Run workflow** (requiere secrets).
 
@@ -234,7 +234,7 @@ Necesario para TTL recetas Rx y expiración `pending_payment`.
 
 ### 4.6 `.htaccess`
 
-El repo incluye [`.htaccess`](../.htaccess) en la raíz (rewrite a `public/`, **sin** `Options +FollowSymLinks` — en Namecheap esa directiva provoca 500) y [`public/.htaccess`](../public/.htaccess) (front controller Laravel, sin `Options`).
+El repo incluye [`.htaccess`](../../../.htaccess) en la raíz (rewrite a `public/`, **sin** `Options +FollowSymLinks` — en Namecheap esa directiva provoca 500) y [`public/.htaccess`](../../../public/.htaccess) (front controller Laravel, sin `Options`).
 
 - **Document Root = `…/public` (recomendado):** Apache usa solo `public/.htaccess`; el de raíz no afecta.
 - **Document Root = raíz Laravel:** el `.htaccess` raíz reenvía a `public/`.

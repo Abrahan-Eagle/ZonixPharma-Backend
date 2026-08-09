@@ -207,7 +207,7 @@ El piloto combina **dos focos geográficos** dentro de Valencia metro: **Urb. Be
 | Pedidos completados | ≥ **1.500** | Recortar publicidad exterior |
 | Satisfacción paciente (NPS) | ≥ **35** | CS + fixes producto |
 | Satisfacción farmacia (NPS) | ≥ **50** | Revisar pricing |
-| Cash en banco | ≥ **~46.395** | Activar contingencia |
+| Cash en banco | ≥ **~180.403** | Activar contingencia |
 
 **Solo tras M6 verde:** Naguanagua + San Diego (meta **130** activas M9) y SAM extendido **150–180** farmacias.
 
@@ -250,7 +250,7 @@ Estos números asumen:
 | Riesgo | Probabilidad | Qué veríamos en Valencia | Mitigación |
 |--------|--------------|--------------------------|------------|
 | Devaluación bolívar > 100% trimestral | Media | Costos en Bs. se disparan; farmacias suben precios diario | Buffer 20%; plan contingencia |
-| Regulación nueva sobre marketplaces | Baja-media | Circular MPPS sobre venta digital Rx | Asesor regulatorio en Base/Growth (~157k/~187k) |
+| Regulación nueva sobre marketplaces | Baja-media | Circular MPPS sobre venta digital Rx | Asesor regulatorio incluido en burn Lean **237.412** (rubro contador+abogado **330**; Base/Growth ~157k/~187k = hist.) |
 | PedidosYa agresivo en descuento | Media | 2–3 farmacias clave con comisión temporal 15% | Modelo Zonix estructuralmente más barato + receta |
 | Farmatodo lanza marketplace propio | Baja | Noticia de app abierta a terceros | DNA retail propio; 18–24 meses para construir |
 | Adopción inicial < 50% del plan | Media | Discovery muestra cierre <2 firmas/mes/vendedor | Pivot: subir comisión por firma, recortar gasto |

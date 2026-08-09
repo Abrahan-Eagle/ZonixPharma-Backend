@@ -127,7 +127,7 @@ cancelled (en cualquier punto bajo reglas)
 
 ## Privacidad y cumplimiento
 
-- La imagen/PDF se guarda cifrado en disco y bajo el disco `local`/S3 con ACL
+- La imagen/PDF se guarda en disco privado `local` (o S3 privado) con ACL restringida. **Cifrado a nivel volumen/host** según infra; cifrado app-level adicional = `[PENDIENTE]` vs [PLAN_REGULATORIO_PHARMA_VE.md](PLAN_REGULATORIO_PHARMA_VE.md) §5.1.
   privado.
 - Acceso: solo el farmacéutico de la farmacia despachadora, el paciente
   dueño y el administrador.

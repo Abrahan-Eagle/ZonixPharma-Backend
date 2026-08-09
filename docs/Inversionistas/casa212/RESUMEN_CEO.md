@@ -49,7 +49,7 @@ El costo real es **dilución** (SAFE + % del programa, aún opaco) y **mudarte 1
 
 ## Lo bueno
 
-- Cheque del tamaño que buscas, sin hitos.
+- Cheque **parcial ~63%** del ask Lean **237.412** (150k SAFE; dilución programa aparte).
 - Red Epakon / Arqos / Yummy + Demo Day (~50+ inversores).
 - Delaware + banking + casa/comida/seguridad/internet cubiertos.
 - Puedes aplicar en paralelo a 500 u otros hasta aceptar.
@@ -65,7 +65,7 @@ El costo real es **dilución** (SAFE + % del programa, aún opaco) y **mudarte 1
 
 ## Veredicto del análisis
 
-**Score 71/100 → nurture (borde priorizar si hay Caracas).**
+**Score 68/100 → nurture (borde priorizar si hay Caracas).**
 
 Si **puedes** las 12 semanas: aplica antes del **15 ago** y exige cap + % programa por escrito.  
 Si **no** puedes mudarte: no es tu plan A — prioriza Epakon / ALGEN / 500 sin residencia.

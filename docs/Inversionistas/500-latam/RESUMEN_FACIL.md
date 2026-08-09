@@ -37,7 +37,7 @@ Muchas startups de ellos aplican **más de una vez**.
 ## Números (si algún día cierran)
 
 Cheque tip. **285 mil** netos · cedes ~**10%**.  
-Nuestro piso Lean hoy: **~211 mil**.
+Nuestro piso Lean hoy: **USD 237.412**.
 
 ## Puntuación CRM
 

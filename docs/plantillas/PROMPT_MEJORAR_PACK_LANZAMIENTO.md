@@ -103,7 +103,7 @@ Actúas como **equipo de data room pre-seed** (panel JARVIS) para **Zonix Pharma
 ## §E — Punto de partida (leer antes de editar)
 
 1. [../Lanzamiento/README.md](../Lanzamiento/README.md) — orden de lectura y pendientes humanos § final  
-2. [../Lanzamiento/ANALISIS_FORENSE.md](../Lanzamiento/ANALISIS_FORENSE.md) — hallazgos CRÍTICA/ALTA/MEDIA y §11.3 próximos pasos  
+2. [../audits/FORENSIC_DOCS_360_SKILLS_JUDGE_2026-08-09.md](../audits/FORENSIC_DOCS_360_SKILLS_JUDGE_2026-08-09.md) — hallazgos CRÍTICA/ALTA/MEDIA y §11.3 próximos pasos  
 3. [../Lanzamiento/PRESUPUESTO_12_MESES_REFERENCIA.md](../Lanzamiento/PRESUPUESTO_12_MESES_REFERENCIA.md) §1 — fuente tiers  
 4. [../Lanzamiento/PROYECCION_FINANCIERA_12M.md](../Lanzamiento/PROYECCION_FINANCIERA_12M.md) §0–§1.3 — fuente flujo Lean  
 

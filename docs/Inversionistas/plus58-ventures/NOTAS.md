@@ -1,7 +1,7 @@
 # Bitácora — +58 Ventures
 
 > Slug: `plus58-ventures`  
-> Ask ref.: Lean ~USD 174k · SAFE cap 600k.
+> Ask ref.: Lean USD **237.412** · SAFE cap 600k.
 
 ## Registro (cronológico)
 

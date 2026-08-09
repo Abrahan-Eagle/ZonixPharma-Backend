@@ -46,7 +46,7 @@ Para Zonix Pharma: **encaja ticket y red VE** sin mudarte 12 semanas a Caracas. 
 
 ## Lo bueno
 
-- Ticket en banda del ask Lean.
+- Ticket **parcial ~63%** del ask Lean **237.412** (tip. ~150k; no “cubre” el SAFE).
 - Red VE de primer nivel (Yummy, Cashea, Meru, HeroUI…) + puente US.
 - Form de pitch incluye **HealthTech**.
 - Sin 12 semanas Caracas; paralelo a Casa212/500 OK.
@@ -63,7 +63,7 @@ Para Zonix Pharma: **encaja ticket y red VE** sin mudarte 12 semanas a Caracas. 
 
 ## Veredicto del análisis
 
-**Score 73/100 → nurture (borde priorizar).**
+**Score 70/100 → nurture (borde priorizar).**
 
 Prioridad alta para **pitch cuando el deck esté listo**; en la primera call exigir monto + instrumento + cap/%.  
 Si además puedes Caracas → Casa212 en paralelo. Si no → Epakon / 500 / ALGEN sin residencia.

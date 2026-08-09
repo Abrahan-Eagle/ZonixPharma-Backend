@@ -33,7 +33,7 @@ Para Zonix Pharma: **útil como estructura/banca VE**, no como plan A de cheque 
 
 | | Pack actual | Si hablas con Impulsa |
 |--|-------------|------------------------|
-| Plata | Lean ~**174k** | **TBD** (no anclar) |
+| Plata | Lean **237.412** | **TBD** (no anclar) |
 | Dilución | SAFE cap ref. 600k | **TBD** + posible C.A. VE |
 | Historia | Piloto Valencia / VE | Misma playa + banca Activo |
 | Rol | Cheque pre-seed | **Estructura + compliance** local |
@@ -64,7 +64,7 @@ Para Zonix Pharma: **útil como estructura/banca VE**, no como plan A de cheque 
 
 Úsala **si** necesitas orden corporativo/bancario en Venezuela.  
 **No** bases runway en Impulsa hasta tener monto por escrito.  
-Prioriza Epakon (73) / Casa212 (71) / 500 (70) para caja.
+Prioriza Epakon (**70**) / Casa212 (**68**) / 500 (**67**) para caja.
 
 ---
 

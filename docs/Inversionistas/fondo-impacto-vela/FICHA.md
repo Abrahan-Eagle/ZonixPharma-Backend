@@ -44,7 +44,7 @@
 |-----------|------------|------|-----|
 | Ticket | Lean **237.412** | **1–3 M** (directo) | **×5–14** vs ask — no cubre “cheque Lean”, pide otra ronda |
 | Etapa | Pre-seed / piloto | **Serie A en adelante / Growth**; “ventas altas” no es requisito textual comprobado | Stage mismatch crítico |
-| Dilución | SAFE cap 600k (~35%) | Instrumento mixto / opaco | Pedir term sheet solo si hay fit stage |
+| Dilución | SAFE cap 600k (~**39,57%**) | Instrumento mixto / opaco | Pedir term sheet solo si hay fit stage |
 | Tesis | Marketplace pharma VE | Salud dentro de reducción de pobreza; ~**60%** clima/agro/azul según prensa secundaria | Encaje temático débil–parcial |
 | Tiempo | Raise ahora | Form activo, sin deadline/SLA publicado; **fondo aún levantando capital objetivo** | Elegibilidad + velocidad de cheque incierta |
 
@@ -71,7 +71,7 @@
 
 | Código | Criterio | Peso máx. | Puntos | Notas |
 |--------|----------|-----------|--------|-------|
-| T | Ajuste ticket vs ask | 20 | **2** | 1–3 M vs 210k; no escribe el cheque Lean |
+| T | Ajuste ticket vs ask | 20 | **2** | 1–3 M vs Lean **237.412**; no escribe el cheque Lean |
 | S | Términos / dilución | 20 | **6** | Mix VC/deuda/mezz; sin SAFE tipificado; verificación de impacto |
 | E | Valor estratégico | 15 | **10** | Red CAF/Sonen LatAm; poco círculo VE local tipo Epakon |
 | V | Velocidad de cierre | 15 | **5** | Form activo, sin SLA; DD/aprobaciones; gate Serie A; capital objetivo no cerrado públicamente |

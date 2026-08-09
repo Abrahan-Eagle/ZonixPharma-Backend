@@ -24,7 +24,7 @@
 
 ## Deep Research Gemini 2026-08-10
 
-> **Origen:** PDF local del founder `~/Descargas/Investigación Fondo de Impacto VELA.pdf` (18 páginas). No se copia el binario al repo; esta sección conserva los hallazgos trazables.  
+> **Origen:** PDF local del founder PDF/Word local founder (no versionado) (18 páginas). No se copia el binario al repo; esta sección conserva los hallazgos trazables.  
 > **Control temporal:** el PDF declara fecha **10 ago 2026**, posterior a esta bitácora del **5 ago 2026**; se registra como fecha declarada por el documento, no como cronología validada.  
 > **Control bibliográfico:** la numeración de la tabla de fuentes (pp. 12–15) no coincide con la lista final (pp. 16–18). Las referencias `#` de esta sección siguen la **lista final**.  
 > **Score CRM:** sin cambio (**40**).
@@ -165,7 +165,7 @@ El fondo de pensiones de empleados de Grupo Bimbo aparece como ancla de LATF en 
 | [La Nación — CAF VELA](https://www.nacion.com/economia/caf-lanza-el-fondo-vela-la-apuesta-de-150-millones/HMUWGSI5UBAU7OEQDKCGLZFGQQ/story/) | 100–150 M; ancla anunciada hasta 20 M; 60% directo / 40% fondos; tickets 1–3 M / 3–5 M |
 | [El País México — Fondo Vela](https://elpais.com/mexico/economia/2026-07-22/caf-lanza-un-fondo-mixto-para-movilizar-hasta-150-millones-de-dolares-en-proyectos-sustentables-en-america-latina.html) | Retornos 8–15% y plazos reportados; sin TIR bruta/neta, hurdle, moneda ni respaldo contractual |
 | RiskNews / El Deber | Serie A+; co-gestión Sonen + Fondo de Fondos |
-| PDF Gemini Deep Research | `~/Descargas/Investigación Fondo de Impacto VELA.pdf` · informe 10 ago 2026 |
+| PDF Gemini Deep Research | PDF/Word local founder (no versionado) · informe 10 ago 2026 |
 
 ## Archivos / links
 

@@ -1,5 +1,7 @@
 # Forense PDFs Documentos — founders / collab / equity (9 ago 2026)
 
+> **Supersedido (fase 2):** para overlays KEEP Broughman/LM y veredictos actualizados usar [EXTRACT_PDFS_DOCUMENTOS_KEEP_2026-08.md](EXTRACT_PDFS_DOCUMENTOS_KEEP_2026-08.md) §6 + [FORENSIC_PDFS_DOCUMENTOS_V2_HOJA_2026-08-09.md](FORENSIC_PDFS_DOCUMENTOS_V2_HOJA_2026-08-09.md). Este v1 queda como snapshot de triage inicial.
+
 > Lente: **Zonix Pharma**, pre-seed VE, pack Lanzamiento (SAFE **237.412**).  
 > Método: triage lote Documentos → fan-out 8 lotes (FP×2, EQ, GV, NE×2, AZ×2) → síntesis.  
 > **Canon post-borrado:** [EXTRACT_PDFS_DOCUMENTOS_KEEP_2026-08.md](EXTRACT_PDFS_DOCUMENTOS_KEEP_2026-08.md).  

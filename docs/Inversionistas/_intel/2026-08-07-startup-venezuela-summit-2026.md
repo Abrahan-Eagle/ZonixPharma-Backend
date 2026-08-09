@@ -45,7 +45,7 @@
 
 ---
 
-## Word analítico (`~/Descargas/Startup Venezuela Summit 2026.docx`)
+## Word analítico (PDF/Word local founder (no versionado))
 
 - Informe largo: nodo **Miami abr 2026** + Caracas oct; Rainforest Capital / Torbar; mesas sectoriales (incl. Salud en narrativa).
 - **Tratar como [S] secundario / hype.** **No** citar como agenda Caracas confirmada.

@@ -71,7 +71,7 @@ Resumen: **todos los que tienen teléfono lo tienen porque tienen un perfil**, y
 ## 4. Reglas de negocio (resumen)
 
 - **Módulo único:** Un solo lugar (tabla `phones` + API de phones) para gestionar teléfonos; todos los roles que necesitan número dependen de este módulo.
-- **Dueño en BD:** Siempre `profile_id`. No se usan FKs a commerce, delivery_company ni delivery_agent en `phones`.
+- **Dueño en BD:** siempre `profile_id`. Además, según `context`, hay FKs nullable **`commerce_id`** / **`delivery_company_id`** (migración 2026_03_06) para acotar el teléfono al comercio o empresa de delivery.
 - **Un principal** por (profile + context + entidad). **Límites:** 5 personales, 4 por comercio, 4 por empresa, 1 admin.
 - **Unicidad:** `(operator_code_id, number)` único. **Propiedad:** Solo comercios/empresas cuyo `profile_id` sea el del usuario.
 - **API:** GET index acepta query `context`, `commerce_id`, `delivery_company_id`. POST store requiere `context` y, si aplica, `commerce_id` o `delivery_company_id`.

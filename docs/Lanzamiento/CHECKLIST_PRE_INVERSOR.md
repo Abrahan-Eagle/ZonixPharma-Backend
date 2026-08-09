@@ -149,7 +149,7 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 | 5-10 | Pitch solución: "Zonix Pharma. Marketplace farmacéutico VE con cuota plataforma + fee sobre GMV (moderado vs agregadores). Validación Rx digital. Stack ya construido." Presentar el [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md). |
 | 10-15 | Demo en vivo: paciente busca, sube receta, paga. Pharmacist valida en tablet. Farmacia ve la orden. **Si hay tiempo:** **`delivery_company`** asigna a **`delivery_agent`** y tracking en app (sin rol autónomo `delivery`). |
 | 15-20 | Mercado: TAM USD 1.638M (Cifar/IMS-IQVIA), comparable Farmalisto (~USD 32M revenue MX; funding ~USD 22M–33M según fuente). |
-| 20-25 | Números: **USD 237.412** Lean Excel (Fase 0 **50.260** + burn **172.152** + reserva **15.000**), **Day-D = T+90** (caja **187.152**), cash M12 **246.231** (esc.1), LTV/CAC **~7,2x** (ARPF ~52 — UNIT). |
+| 20-25 | Números: **USD 237.412** Lean Excel (Fase 0 **50.260** + burn **172.152** + reserva **15.000**), **Day-D = T+90** (caja **187.152**), cash M12 **246.231** (esc.1), LTV/CAC **~7,5x** (LTV **1.040**, ARPF ~52 — UNIT). |
 | 25-28 | Ask: **Lean Excel — USD 237.412** SAFE cap **600k** (~**39,57%**) — [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md). |
 | 28-30 | Q&A inicial + próximos pasos. |
 
@@ -207,7 +207,7 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 | Q | A |
 |---|---|
 | ¿Por qué **USD 237.412** mínimo y no menos? | "**237.412** = Fase 0 **50.260** + burn **172.152** + reserva **15.000** (CEO + Co-CEO + **4× Sales**, Dev, HQ). Ask único v4." |
-| ¿Por qué LTV/CAC **~7,2x** si benchmarks SaaS son 3-5x? | "1) Revenue recurrente B2B (cuota **45/60/70** + fee GMV) con take-rate total bajo vs agregadores. 2) Marketplace sticky por catálogo y rutas. 3) No operamos logística directa del medicamento (gross margin alto en software). 4) CAC **139** conservador con **4× Sales** Lean." |
+| ¿Por qué LTV/CAC **~7,5x** si benchmarks SaaS son 3-5x? | "1) Revenue recurrente B2B (cuota **45/60/70** + fee GMV) con take-rate total bajo vs agregadores. 2) Marketplace sticky por catálogo y rutas. 3) No operamos logística directa del medicamento (gross margin alto en software). 4) CAC **139** conservador con **4× Sales** Lean; LTV **1.040** (UNIT)." |
 | ¿Qué pasa si inflación VE supera 800%? | "Plan contingencia: cortar valla (USD 350), bajar Meta ~50% (~USD 400), reducir 1 hire si necesario (~USD 300–400). Burn baja a **~USD 5.500–6.300**/mes (orden de magnitud). Runway extiende **~1–2 meses**." |
 | ¿Hay sueldo del founder? | "**Lean 237.412:** **USD 1.000/mes** Founder CEO/CTO + **CEO** 1.000 en burn ([MODELO_FINANCIERO_ZONIX_PHARMA.xlsx](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx))." |
 

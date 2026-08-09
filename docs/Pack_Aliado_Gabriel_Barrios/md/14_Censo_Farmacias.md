@@ -218,7 +218,7 @@ Interés en seguir conversando: alto / medio / nulo
 | Paso | Guion | Registrar |
 |------|-------|-----------|
 | 1 | «Con el volumen que me comentó (~USD X/mes), hoy en agregador pagaría ~25–35% — ¿cuánto fue la última factura real?» | GMV + comisión actual |
-| 2 | «Nuestro modelo es **cuota fija + % bajo sobre ventas en app**: Basic **25**, Pro **40**, Enterprise **55** USD/mes. Con **USD 5.000** en app, Pro sería **~USD 80/mes** vs **~USD 1.250–1.750** en agregador — ¿le cierra el orden de magnitud?» | Reacción |
+| 2 | «Nuestro modelo es **cuota fija + % bajo sobre ventas en app**: Basic **45**, Pro **60**, Enterprise **70** USD/mes + %GMV. Con **USD 5.000** en app, Pro sería **~USD 60 + 7% GMV** vs comisión agregador — ¿le cierra el orden de magnitud?» | Reacción |
 | 3 | «Primeras **10 farmacias piloto**: **cuota USD 0 meses 1–2** (ventas se miden igual). ¿Cambia su decisión de probar?» | Sí/No + objeción |
 | 4 | «¿Qué tendría que pasar en **30 días** para que valga la pena vs seguir solo WhatsApp?» | Métrica de éxito del dueño |
 

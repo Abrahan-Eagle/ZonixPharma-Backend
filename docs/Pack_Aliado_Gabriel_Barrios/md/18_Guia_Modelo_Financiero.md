@@ -512,4 +512,4 @@ Recalibrar ARPF y S3 cuando existan **≥30 días** de GMV post-Day-D (UNIT_ECON
 - [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md) — benchmarks SaaS/hosting
 - [RESUMEN_ALIADO_GABRIEL_BARRIOS.md](RESUMEN_ALIADO_GABRIEL_BARRIOS.md) — outreach Grupo Morr (no incluir en zip inversor por defecto)
 
-**Archivo Excel:** [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx) — **12 hojas** (v3.1). Copia local: `/home/aipp/Descargas/MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`.
+**Archivo Excel:** [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](../../Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.xlsx) — **14 hojas** (v4). Canon en Lanzamiento.

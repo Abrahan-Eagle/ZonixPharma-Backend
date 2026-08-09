@@ -79,6 +79,6 @@ Si **ya estás dentro** de `jarvis-skills-library`, usa `bash scripts/install.sh
 
 ## Referencias
 
-- [MAINTENANCE_SKILLS.md](../MAINTENANCE_SKILLS.md)
+- [MAINTENANCE_SKILLS.md](../../MAINTENANCE_SKILLS.md)
 - [docs/zonix/ZONIX_WORKSPACE.md](ZONIX_WORKSPACE.md)
 - Library: [jarvis-skills-library/docs/ZONIX_INTEGRATION.md](file:///var/www/html/proyectos/AIPP/jarvis-skills-library/docs/ZONIX_INTEGRATION.md)

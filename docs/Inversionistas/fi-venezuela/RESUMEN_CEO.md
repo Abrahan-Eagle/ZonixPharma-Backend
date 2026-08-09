@@ -35,7 +35,7 @@ Para Zonix Pharma: **útil como disciplina/red**, **no** como plan A de cheque L
 
 | | Pack actual | Si entras a FI |
 |--|-------------|----------------|
-| Plata | Lean ~**174k** | **0** del Core (+ posible 25k FC selectivo) |
+| Plata | Lean **237.412** | **0** del Core (+ posible 25k FC selectivo) |
 | Dilución | SAFE cap ref. 600k | Fee + posible **2,5%** warrant |
 | Historia | Pack + tracción | Mejor si aún armás PMF |
 | Tiempo | — | Noches -04 · oct–ene (&lt;40% completan) |

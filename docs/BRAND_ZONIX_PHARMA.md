@@ -9,7 +9,7 @@
 | -------- | --------------- |
 | UI / copy | **Zonix Pharma** |
 | Tipográfico (lockup logo) | `Zonix` + small caps `PHARMA` con tracking amplio |
-| package id Android / bundle id iOS | `com.zonix.pharma` |
+| package id Android / bundle id iOS | Objetivo: `com.zonix.pharma`. **Android build actual:** `com.zonix.eats` (parche Firebase/OAuth compartido con Eats) hasta registro Pharma — ver [`audits/MIGRACION_EATS_PHARMA.md`](audits/MIGRACION_EATS_PHARMA.md). iOS objetivo: `com.zonix.pharma`. |
 | nombre Flutter (`pubspec.yaml`) | `zonix` |
 | dominio web | `zonixpharma.com` |
 | canal FCM | `zonix_pharma_fcm` |

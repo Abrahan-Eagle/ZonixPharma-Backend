@@ -1,7 +1,7 @@
 {
   "meta": {
     "product": "Zonix Pharma",
-    "version": "2026-07-30",
+    "version": "2026-08-09",
     "source_md": "docs/Lanzamiento/ROLES_SKILLS_ZONIX.md",
     "organigram_section": "Organigrama — jerarquía piloto vs madurez",
     "tiers_capital_usd": {
@@ -11,7 +11,8 @@
     "forense_skills": "docs/zonix/roles_matrix.json",
     "skills_count": 33,
     "forense_unimooc": "docs/zonix/SKILLS_STARTUP_USAR_NO_USAR.md",
-    "forense_github_v3": "docs/zonix/roles_matrix.json"
+    "forense_github_v3": "docs/zonix/roles_matrix.json",
+    "skills_count_note": "unique skill ids (front_stub duplicates may still appear as separate entries historically)"
   },
   "skills_inventory": [
     {
@@ -252,6 +253,41 @@
       "domain": "founder_lens",
       "prerequisite": "zonix-startup-context",
       "forense": "ok_v3"
+    },
+    {
+      "id": "zonix-ai-landing-pipeline",
+      "repo": "backend",
+      "domain": "marketing_web",
+      "prerequisite": "zonix-brand-ops",
+      "forense": "ok"
+    },
+    {
+      "id": "zonix-brand-ops",
+      "repo": "backend",
+      "domain": "brand",
+      "prerequisite": null,
+      "forense": "ok"
+    },
+    {
+      "id": "zonix-design-enforcer",
+      "repo": "front",
+      "domain": "ui",
+      "prerequisite": "zonix-ui-design",
+      "forense": "ok"
+    },
+    {
+      "id": "zonix-inversionistas-crm",
+      "repo": "backend",
+      "domain": "inversor",
+      "prerequisite": "zonix-startup-context",
+      "forense": "ok"
+    },
+    {
+      "id": "zonix-web-design",
+      "repo": "backend",
+      "domain": "marketing_web",
+      "prerequisite": "zonix-brand-ops",
+      "forense": "ok"
     }
   ],
   "piloto_payroll": [

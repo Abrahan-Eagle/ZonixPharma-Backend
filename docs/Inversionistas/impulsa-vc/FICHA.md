@@ -32,7 +32,7 @@
 
 | Dimensión | Pack Zonix | Impulsa VC | Gap |
 |-----------|------------|------------|-----|
-| Ticket | Lean ~174k | **Opaco** | Call obligatoria |
+| Ticket | Lean **237.412** | **Opaco** | Call obligatoria |
 | Dilución | SAFE cap 600k | **Opaca** + dualidad vehículo | DD jurídica |
 | Vehículo | Ideal Delaware | Sesgo **VE / mercado valores** | Confirmar holding US |
 | Tiempo | — | Rolling (form/tel) | Sin deadline |
