@@ -20,7 +20,8 @@ Capa 1 — Repo (.agents/skills/)
 init jarvis
 
 # Terminal — verificación mínima Paso C
-bash /var/www/html/proyectos/AIPP/jarvis-skills-library/scripts/init-jarvis.sh --min c
+# export JARVIS_SKILLS_LIBRARY=<ruta-clon-jarvis-skills-library>
+bash "$JARVIS_SKILLS_LIBRARY/scripts/init-jarvis.sh" --min c
 ```
 
 ## Manifest por repo
@@ -36,7 +37,8 @@ bash /var/www/html/proyectos/AIPP/jarvis-skills-library/scripts/init-jarvis.sh -
 
 ```bash
 cd ZonixPharma-Backend   # o ZonixPharma-Front
-JARVIS_SKILLS_LIBRARY=/var/www/html/proyectos/AIPP/jarvis-skills-library \
+# export JARVIS_SKILLS_LIBRARY=<ruta-clon-jarvis-skills-library>
+JARVIS_SKILLS_LIBRARY="${JARVIS_SKILLS_LIBRARY:?set path to jarvis-skills-library}" \
   ./scripts/sync-global-skills-from-library.sh
 ./scripts/check-global-skills-sync.sh
 python3 .agents/skills/sync.sh
@@ -68,17 +70,18 @@ Tras clonar el repo, onboarding máquina (funciona **desde cualquier directorio*
 
 ```bash
 # Capa 0 — skills globales (~/.cursor/skills/)
-bash /var/www/html/proyectos/AIPP/jarvis-skills-library/scripts/install.sh --all
+# export JARVIS_SKILLS_LIBRARY=<ruta-clon-jarvis-skills-library>
+bash "$JARVIS_SKILLS_LIBRARY/scripts/install.sh" --all
 
 # Opcional — integración Cursor local en .cursor/skills/ (gitignored; no versionar)
-cd /var/www/html/proyectos/AIPP/DESARROLLO/ZonixPharma/ZonixPharma-Backend
+cd /path/to/ZonixPharma-Backend
 specify init . --force --integration cursor-agent --script sh
 ```
 
-Si **ya estás dentro** de `jarvis-skills-library`, usa `bash scripts/install.sh --all` (sin prefijo `jarvis-skills-library/`).
+Si **ya estás dentro** de `jarvis-skills-library`, usa `bash scripts/install.sh --all` (sin prefijo).
 
 ## Referencias
 
 - [MAINTENANCE_SKILLS.md](../../MAINTENANCE_SKILLS.md)
 - [docs/zonix/ZONIX_WORKSPACE.md](ZONIX_WORKSPACE.md)
-- Library: [jarvis-skills-library/docs/ZONIX_INTEGRATION.md](file:///var/www/html/proyectos/AIPP/jarvis-skills-library/docs/ZONIX_INTEGRATION.md)
+- Library: `jarvis-skills-library/docs/ZONIX_INTEGRATION.md` (clon local de la library)

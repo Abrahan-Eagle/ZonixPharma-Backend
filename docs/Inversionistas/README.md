@@ -4,7 +4,7 @@
 > **Propósito:** CRM / scoring de **candidatos a capital** (y canales de red) para Zonix Pharma. **No** es el data room que se envía al inversionista.  
 > **Skill agente:** [`zonix-inversionistas-crm`](../.agents/skills/zonix-inversionistas-crm/SKILL.md) — forense, ficha, score, ranking.  
 > **Ask de referencia (pitch actual):** Lean **USD 237.412** · SAFE cap ref. **USD 600.000** · equity **~39,57%** — ver [`../Lanzamiento/BRIEF_UNA_PAGINA.md`](../Lanzamiento/BRIEF_UNA_PAGINA.md).  
-> **Nota:** fichas alineadas a ask Lean **USD 237.412** (pasada forense ago-2026). **MD = fuente**; PDF en carpetas pueden estar desfasados hasta regeneración manual. Scores Plan A: fuente única [`RESUMEN_COMPARATIVO.md`](RESUMEN_COMPARATIVO.md) (Epakon **70**, Casa212 **68**).  
+> **Nota:** fichas alineadas a ask Lean **USD 237.412** (pasada forense ago-2026). **MD = fuente**; PDFs CRM one-pager regenerados en **PASS3** (2026-08-09) desde el MD hermano. Scores Plan A: fuente única [`RESUMEN_COMPARATIVO.md`](RESUMEN_COMPARATIVO.md) (Epakon **70**, Casa212 **68**).  
 > **Roles:** **500 LatAm** = informe/playbook **interno** (no Plan A de caja ahora). **SVS** = candidata CRM tipo evento (otra opción de red). Plan A caja = **Epakon / Casa212 / ALGEN**.  
 > **Disclaimer:** análisis founder; no es asesoría legal ni financiera.
 

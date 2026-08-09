@@ -2,7 +2,7 @@
 
 # Modelo Financiero Zonix Pharma — gastos, ingresos y egresos
 
-> **Última actualización:** 7 agosto 2026 (**v4 Excel** — sync desde Descargas `MODELO_FINANCIERO_040826_v4.xlsx`).
+> **Última actualización:** 7 agosto 2026 (**v4 Excel** — sync desde `MODELO_FINANCIERO_ZONIX_PHARMA.xlsx` en repo Lanzamiento).
 > **Propósito:** consolidado único para **inversor**, **FP&A** y aliados. Espejo versionado de [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx).
 > **Canon Lean:** SAFE **USD 237.412** = Fase 0 **50.260** + burn M1–M12 **172.152** + reserva **15.000**; Day-D **187.152**; equity **~39,57%** @ cap **600k**; burn prom. **~14.346**/mes.
 > **Hojas:** **14** (Detallado, Hoja3, Hoja1, Hoja2, ESTA SI VALE, Año 1 esc.1/esc.2, Año 2–5, Flujo Total, Tasa Crecimiento).
@@ -122,7 +122,7 @@ El Excel **v3.9.1** adopta la **apariencia** del template inversor `Propuesta_Pi
 
 ## S2 — Inversión detallada y Fase 0 (use of funds)
 
-*(Equivalente «Detallado de la inversión» — v3.1 con **resumen lateral** cols K–M tipo plantilla Pizza QLQ.)*
+*(Equivalente «Detallado de la inversión» — **v4** con **resumen lateral** cols K–M tipo plantilla Pizza QLQ.)*
 
 ### S2.0 Mapping Pizza QLQ → Zonix *(solo estructura UX; rubros físicos excluidos)*
 

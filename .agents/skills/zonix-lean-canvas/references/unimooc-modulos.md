@@ -1,6 +1,6 @@
 # UniMOOC Steve Blank — extractos destilados (referencia)
 
-> Fuente: `/home/aipp/Downloads/STARTUP CREAR SKILLS/` — licencia `http://aemprende.unimooc.com/reutiliza`.  
+> Fuente: material UniMOOC Steve Blank (carpeta local founder) — licencia `http://aemprende.unimooc.com/reutiliza`.  
 > **No** pegar transcripciones completas en skills; solo procedimiento.
 
 ## Módulo 1 — Canvas y Customer Development

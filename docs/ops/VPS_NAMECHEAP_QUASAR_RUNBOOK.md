@@ -2,7 +2,7 @@
 
 > **Decisión (2026-07-24):** CorralX y Zonix Pharma van en **VPS separados**. Zonix Pharma = **1× Namecheap Quasar** (4 vCPU · 6 GB RAM · 120 GB SSD · 3 TB). Self-managed. Aislamiento por datos de salud (Rx) vs KYC CorralX.
 >
-> Sustituye a medio plazo el hosting cPanel FTP documentado en [`ops/deploy/DEPLOY_PHARMA_AIBLOCK.md`](deploy/DEPLOY_PHARMA_AIBLOCK.md) (`pharma.aiblockweb.com`).
+> Sustituye a medio plazo el hosting cPanel FTP documentado en [`deploy/DEPLOY_PHARMA_AIBLOCK.md`](deploy/DEPLOY_PHARMA_AIBLOCK.md) (`pharma.aiblockweb.com`).
 
 | Campo                          | Valor                                                                                                                     |
 | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |

@@ -2,7 +2,7 @@
 
 > **Uso:** copia desde la sección [Super Prompt (pegar en chat)](#super-prompt-pegar-en-chat) y define las variables de arranque en la primera línea del mensaje.
 >
-> **Complementa (no reemplaza):** [../audits/MIGRACION_EATS_PHARMA.md](../audits/MIGRACION_EATS_PHARMA.md) (histórico Eats→Pharma), [../audits/AUDIT_API_PATTERNS_2026-05-01.md](../audits/AUDIT_API_PATTERNS_2026-05-01.md), [AUDIT_UI_PHARMA.md](../ZonixPharma-Front/docs/AUDIT_UI_PHARMA.md).
+> **Complementa (no reemplaza):** [../audits/MIGRACION_EATS_PHARMA.md](../audits/MIGRACION_EATS_PHARMA.md) (histórico Eats→Pharma), [../audits/AUDIT_API_PATTERNS_2026-05-01.md](../audits/AUDIT_API_PATTERNS_2026-05-01.md), [`../../ZonixPharma-Front/docs/AUDIT_UI_PHARMA.md`](../../ZonixPharma-Front/docs/AUDIT_UI_PHARMA.md) (repo Front hermano).
 >
 > **Ubicación:** `ZonixPharma-Backend/docs/plantillas/PROMPT_AUDIT_360_ZONIX.md`
 

@@ -584,7 +584,22 @@
       "skills": [
         "zonix-startup-context",
         "zonix-investor-materials",
-        "zonix-fundraising-narrative"
+        "zonix-fundraising-narrative",
+        "zonix-inversionistas-crm"
+      ]
+    },
+    {
+      "task": "landing_brand_web",
+      "roles_humanos": [
+        "Marketing",
+        "Founder",
+        "Design"
+      ],
+      "skills": [
+        "zonix-brand-ops",
+        "zonix-web-design",
+        "zonix-design-enforcer",
+        "zonix-ai-landing-pipeline"
       ]
     },
     {

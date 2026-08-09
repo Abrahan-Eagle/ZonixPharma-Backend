@@ -11,12 +11,12 @@
 
 | Campo | Valor |
 |-------|-------|
-| Cadena | **Sandy Gómez** (`sgomez@grupoarca.net`, Arca) → **Gabriel Barrios** (`gabriel.barrios14@gmail.com`) → fwd a **Abrahan Pulido** (`ing.pulido.abrahan@gmail.com`) |
+| Cadena | **Sandy Gómez** (Arca, email org) → **Gabriel Barrios** (aliado) → fwd a **Abrahan Pulido** (founder) — PII de contacto fuera del CRM versionado |
 | Asunto fwd | `Fwd: Meet con Gabriel Barrios: Mié, 22 de jul de 2026 a las 10:00am – 11:00am (GMT-04)` |
 | Fecha mail Sandy | Mié **22 jul 2026** ~10:51 (hora del cliente Thunderbird) |
 | Contexto | Follow-up post-llamada / meet; opciones del ecosistema de emprendimiento tecnológico según experiencia de Sandy |
 | Organización Sandy | **Arca** (Grupo Arca) · firma con tel profesional + LinkedIn / sitio Arca |
-| Contacto profesional | `sgomez@grupoarca.net` · +58 414 5305104 (firma Arca) |
+| Contacto profesional | Email org Arca (firma) · tel profesional en firma — no versionar en CRM |
 
 **Roles (pack Zonix):** Gabriel = **aliado Grupo Morr** ([`../../Lanzamiento/RESUMEN_ALIADO_GABRIEL_BARRIOS.md`](../../Lanzamiento/RESUMEN_ALIADO_GABRIEL_BARRIOS.md)); founder tipificado = Abrahan. Este archivo **no** redefine CEO.
 

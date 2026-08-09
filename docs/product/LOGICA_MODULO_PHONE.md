@@ -19,7 +19,6 @@
 | `number`           | string(7)   | Solo 7 dígitos (número local). |
 | `is_primary`       | boolean     | Un solo principal por perfil. Default false. |
 | `status`           | boolean     | true = activo, false = “eliminado” (soft). Default true. |
-| `approved`         | boolean     | Reservado (ej. verificación futura). Default false. |
 | `created_at`, `updated_at` | timestamps | |
 
 **Regla de unicidad:** La combinación `(operator_code_id, number)` no se repite (mismo número con mismo operador = un solo registro en el sistema).
@@ -58,13 +57,13 @@ Se usa para el desplegable al crear/editar teléfono y para armar el número com
 | Rol (código BD)     | ¿Tiene teléfono? | Cómo lo obtiene |
 |---------------------|------------------|------------------|
 | **users** (Buyer)   | Sí               | User → Profile → `phones`. El usuario gestiona sus teléfonos en el módulo Phone (lista/alta/edición/eliminación). |
-| **commerce**        | Sí               | Commerce → Profile (por `profile_id`) → `phones`. Accessor `$commerce->phone` = teléfono principal del perfil. No tiene teléfonos “propios” del negocio; usa los del perfil del dueño. |
+| **commerce**        | Sí               | Teléfonos con `context=commerce` + `commerce_id` (dueño sigue siendo `profile_id` del dueño). Accessor `$commerce->phone` = principal de ese comercio/contexto. |
 | **delivery_company**| Sí               | DeliveryCompany → Profile (por `profile_id`) → `phones`. `$deliveryCompany->phone` = teléfono principal del perfil. |
 | **delivery_agent**  | Sí               | DeliveryAgent → Profile (por `profile_id`) → `phones`. `$deliveryAgent->phone` = teléfono principal del perfil. |
 | **delivery**        | Sí               | Mismo modelo que delivery_agent (repartidor con o sin empresa). Perfil → phones. |
 | **admin**           | Sí (si tiene perfil) | Mismo que users: User → Profile → phones. |
 
-Resumen: **todos los que tienen teléfono lo tienen porque tienen un perfil**, y los teléfonos viven en `phones` con ese `profile_id`. Comercio, Delivery Company y Delivery Agent no tienen filas propias en `phones`; exponen el teléfono (principal) del perfil al que están vinculados.
+Resumen: **todos los que tienen teléfono lo tienen porque tienen un perfil**; las filas viven en `phones` con `profile_id`. Comercio y delivery company además usan `context` + FK (`commerce_id` / `delivery_company_id`) para acotar el número al negocio.
 
 ---
 

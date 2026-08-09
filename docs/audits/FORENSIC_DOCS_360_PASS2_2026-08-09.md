@@ -1,8 +1,10 @@
 # Forense 360° PASS2 — post-remediación (2026-08-09)
 
+> **Cerrado → PASS3 5/5:** [`FORENSIC_DOCS_360_PASS3_2026-08-09.md`](FORENSIC_DOCS_360_PASS3_2026-08-09.md). Este archivo es el snapshot **post-fix MD pre-PDF**.
+
 > **Precedente:** [`FORENSIC_DOCS_360_SKILLS_JUDGE_2026-08-09.md`](FORENSIC_DOCS_360_SKILLS_JUDGE_2026-08-09.md) (PASS1 score ~3.8).  
 > **Modo:** remediación MD + skill aplicada → fan-out 4 lotes → jueces A/B.  
-> **PDF:** no regenerados; MD = fuente. Ver nota en `docs/Inversionistas/README.md`.
+> **PDF:** regenerados en PASS3. Ver nota en `docs/Inversionistas/README.md`.
 
 ---
 
@@ -76,8 +78,8 @@
 
 ## 6. Gate founder
 
-- Remediación MD **aplicada** (sin commit).  
-- ¿Commit local de docs + skill? ¿Regenerar PDFs en otra sesión?
+- Remediación MD aplicada; commit `2996b67` en `main`.  
+- Residuales PDF/PII → **cerrados en PASS3** ([`FORENSIC_DOCS_360_PASS3_2026-08-09.md`](FORENSIC_DOCS_360_PASS3_2026-08-09.md)).
 
 ---
 

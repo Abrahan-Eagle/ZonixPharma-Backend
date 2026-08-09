@@ -295,6 +295,6 @@ Subir valla **350 → 700** (Lean → Base/Growth) si:
 
 **Abrahan Pulido**  
 Founder / CEO / CTO — Zonix Pharma  
-ing.pulido.abrahan@gmail.com · +58 412 4352014
+[EMAIL_FOUNDER] · [TEL_FOUNDER]
 
 *Zonix Pharma — junio 2026*

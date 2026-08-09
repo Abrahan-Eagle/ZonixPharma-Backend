@@ -20,7 +20,7 @@ Marca antes de abrir el form:
 - [ ] Sector VELA: **Reducción de pobreza → salud / acceso a servicios básicos** (no agro, no azul, no biodiversidad)
 - [ ] Etapa a declarar: **pre-seed / early** (piloto Valencia) — **no** “Serie A”
 - [ ] Ask a declarar: **USD 237.412** = piso ronda actual + escenario **1–3 M** para **cobertura nacional VE** (honestos en etapa; ambiciosos en uso de fondos)
-- [ ] Contacto listo: Abrahan Pulido · `ing.pulido.abrahan@gmail.com` · +58 412 4352014
+- [ ] Contacto listo: Abrahan Pulido · `[EMAIL_FOUNDER]` · `[TEL_FOUNDER]` *(rellenar al enviar)*
 - [ ] Link sitio / producto si el form lo pide: staging/VPS o [aiblockweb.com](https://aiblockweb.com) (no inventar URL Play Store si aún no hay release)
 - [ ] Adjuntos o zip a mano (si el form permite archivo) — ver §4
 - [ ] Tras enviar: captura de pantalla + avisar a JARVIS para bitácora en [NOTAS.md](NOTAS.md)
@@ -44,7 +44,7 @@ Escenario VELA (1–3 M, rango típico empresa): uso de fondos = lanzar Zonix Ph
 
 Alineación con VELA: eje reducción de pobreza — salud y acceso a servicios. KPIs: farmacias onboarded, % Rx digital, órdenes entregadas, cobertura Valencia metro → 24 estados VE → LatAm.
 
-Contacto: Abrahan Pulido (Founder/CTO) — ing.pulido.abrahan@gmail.com / +58 412 4352014. Gladly a call de 20–30 min y data room breve.
+Contacto: Abrahan Pulido (Founder/CTO) — [EMAIL_FOUNDER] / [TEL_FOUNDER]. Gladly a call de 20–30 min y data room breve.
 ```
 
 ---
