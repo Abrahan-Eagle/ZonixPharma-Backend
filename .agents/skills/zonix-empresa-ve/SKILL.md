@@ -64,6 +64,31 @@ Roles con payroll u honorarios según [BRIEF_UNA_PAGINA.md](../../docs/Lanzamien
 
 Salida agente: lista de contratos/políticas a redactar — **sin** texto legal vinculante.
 
+## Patrones equity + gobernanza (extract Documentos — no ley VE)
+
+Canon: [EXTRACT_PDFS_DOCUMENTOS_KEEP_2026-08.md](../../docs/audits/EXTRACT_PDFS_DOCUMENTOS_KEEP_2026-08.md) §2–3 · Forense: [FORENSIC_PDFS_DOCUMENTOS…](../../docs/audits/FORENSIC_PDFS_DOCUMENTOS_FOUNDERS_2026-08-09.md).
+
+**Equity (Patel/Dakin — patrones):**
+
+- No split 50/50 por defecto; documentar contribución; acordar ownership en T+0–T+30.
+- Cap table simple (pocos SAFE/stakeholders); planificar option pool para piloto — **% = `[PENDIENTE abogado]`**.
+- Narrativa dilución: menor % de empresa más valiosa puede ser mejor outcome (alineado a caps pack).
+
+**Gobernanza (`[CH-ref]` → checklist VE):**
+
+- Separar socio / gestión / oversight; declarar conflictos (p. ej. socio↔farmacia).
+- Cadencia informe a inversor (KPIs, burn, riesgos) en piloto.
+- **Meta-regla:** gobernanza *country-specific* — no copy-paste CH/US.
+- **DROP:** artículos Código Obligaciones suizo; no citar como obligación VE.
+
+**Control founder post-capital (Broughman/Fried — 3 claims):**
+
+Canon: [EXTRACT_PDFS_DOCUMENTOS_KEEP_2026-08.md](../../docs/audits/EXTRACT_PDFS_DOCUMENTOS_KEEP_2026-08.md) §6.2.
+
+1. Control tras capital **no** garantizado.
+2. No narrativa “IPO restaura control”.
+3. Blindar pacto/roles/salida pre-seed VE — `[PENDIENTE abogado]`.
+
 ## Privacidad y datos (lente complementaria)
 
 - Invocar `security-requirement-extraction` para DPIA, bases de tratamiento, recetas — ver ESTRUCTURA §4.4 y [PLAN_MODULO_OPERATIVO_CLAVE.md](../../docs/Lanzamiento/PLAN_MODULO_OPERATIVO_CLAVE.md) §14.

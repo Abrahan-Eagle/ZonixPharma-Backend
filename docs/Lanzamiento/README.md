@@ -3,6 +3,7 @@
 > **Última actualización:** 7 agosto 2026 (aprendizaje **500 LatAm** → evidencia de mercado; ask Lean **USD 237.412** intacto).
 > **Propósito de esta carpeta:** (1) **Plan de lanzamiento operativo** de Zonix Pharma — calendario **T+0 → Fase 0 → Day-D (T+90) → M12**, equipo, farmacias, tech y KPIs ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) es la fuente canónica). (2) **Materiales de inversor y finanzas** en mejora continua (WIP). Cruce pack ↔ código: [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md) + [../audits/README.md](../audits/README.md) (índice técnico vivo).
 > **Lección inversores (ago 2026):** MVP técnico ≠ evidencia de mercado — [APRENDIZAJE_500_EVIDENCIA_MERCADO.md](APRENDIZAJE_500_EVIDENCIA_MERCADO.md).
+> **Roadmap founder (ago 2026):** pasos P0–P2 tras forense GitHub Startups — [ROADMAP_MEJORA_FUNDADOR_DESDE_FORENSE_GITHUB_2026-08.md](ROADMAP_MEJORA_FUNDADOR_DESDE_FORENSE_GITHUB_2026-08.md).
 > **Estado del pack:** borrador avanzado pre-seed; textos legales y plazos de retención sujetos a **dictamen abogado + farmacéutico asesor** antes de Day-D público.
 > **Producto:** Zonix Pharma — marketplace farmacéutico digital; el pack usa **solo** esa marca para producto y plataforma (no mezclar con otros productos en narrativa, métricas ni infra — p. ej. dominio `zonixpharma.com`, repo `ZonixPharma-*`).
 > **Portfolio del founder:** puede citar otros proyectos del mismo founder (p. ej. **Corral X**) como track record en BRIEF/VOLCADO; eso **no** es el producto que se financia ni la plataforma de este data room.
@@ -179,6 +180,7 @@ Estos no se inventan. El pack los marca explícitamente con `[PENDIENTE]`. **Ín
 | -------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | Mejora incremental de un doc o sección | [../plantillas/PROMPT_MEJORAR_PACK_LANZAMIENTO.md](../plantillas/PROMPT_MEJORAR_PACK_LANZAMIENTO.md) |
 | Citas y costos web                     | [MONTOS_REFERENCIA_INTERNET.md](MONTOS_REFERENCIA_INTERNET.md)                                       |
+| Roadmap founder post-forense GitHub    | [ROADMAP_MEJORA_FUNDADOR_DESDE_FORENSE_GITHUB_2026-08.md](ROADMAP_MEJORA_FUNDADOR_DESDE_FORENSE_GITHUB_2026-08.md) · router skills [../zonix/SKILLS_STARTUP_USAR_NO_USAR.md](../zonix/SKILLS_STARTUP_USAR_NO_USAR.md) |
 
 ---
 

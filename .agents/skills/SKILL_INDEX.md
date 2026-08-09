@@ -39,6 +39,7 @@
 | `jarvis-core` | local | overlay | Iniciar módulo; Planificar desarrollo… |
 | `jarvis-experts` | local | overlay | Cualquier tarea no trivial; Decisión cross-rol… |
 | `laravel-specialist` | local | passthrough | — |
+| `legal-alternativo-content` | local | local-only | Contratos / PI / T&C / privacidad corporativo (Zonix u otra empresa); Guiones Legal Alternativo / Hugette (TikTok/IG) |
 | `mysql-best-practices` | local | passthrough | — |
 | `notebooklm-router` | local | passthrough | Consultar NotebookLM / notebook con citas; Configurar NotebookLM MCP en Cursor… |
 | `parallel-judge-ops` | local | passthrough | Día del juicio / jueces paralelos; Verificación adversarial paralela de un artefacto… |

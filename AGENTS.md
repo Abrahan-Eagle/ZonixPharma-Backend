@@ -225,6 +225,7 @@ Todos los skills y sus directivas se auto-generan usando `python3 .agents/skills
 | **`jarvis-core`** | **Protocolo base del sistema JARVIS para cualquier proyecto. Define honestidad, foco de negocio y flujo de trabajo modular.** | [.agents/skills/jarvis-core/SKILL.md](.agents/skills/jarvis-core/SKILL.md) |
 | `jarvis-experts` | Panel de Expertos JARVIS (agencia de desarrollo virtual). Define roster de roles, criterios de activación, combinaciones recomendadas y plantilla de declaración. | [.agents/skills/jarvis-experts/SKILL.md](.agents/skills/jarvis-experts/SKILL.md) |
 | `laravel-specialist` | Use when building Laravel 10+ applications requiring Eloquent ORM, API resources, or queue systems. Invoke for Laravel models, Livewire components, Sanctum authentication, Horizon queues. | [.agents/skills/laravel-specialist/SKILL.md](.agents/skills/laravel-specialist/SKILL.md) |
+| `legal-alternativo-content` | Playbook dual: (A–C) higiene legal corporativa multi-empresa / multi-jurisdicción (Zonix Pharma y otras startups tech) con patrones internacionales + packs MX/VE; (D) contenido Legal Alternativo / Hugette (TikTok/IG, claims MX). Capas A–C para docs/contratos/PI de empresa (sí Zonix higiene); capa D solo guiones del canal (no copiar CTA/guiones Hugette a pack inversor ni UI Pharma). Salud/Rx VE → zonix-regulatory-ve. | [.agents/skills/legal-alternativo-content/SKILL.md](.agents/skills/legal-alternativo-content/SKILL.md) |
 | `mysql-best-practices` | MySQL development best practices for schema design, query optimization, and database administration | [.agents/skills/mysql-best-practices/SKILL.md](.agents/skills/mysql-best-practices/SKILL.md) |
 | `notebooklm-router` | Orquesta consulta RAG a Google NotebookLM (corpus grande/duradero con citas) vía MCP `notebooklm-mcp` vs subida directa al contexto y vs Engram (memoria cross-session). | [.agents/skills/notebooklm-router/SKILL.md](.agents/skills/notebooklm-router/SKILL.md) |
 | `parallel-judge-ops` | Patrón "día del juicio": 2+ jueces adversariales en paralelo e independientes → orquestador valida real vs ruido → subagente aplica fixes → itera hasta sin hallazgos o max iterations. | [.agents/skills/parallel-judge-ops/SKILL.md](.agents/skills/parallel-judge-ops/SKILL.md) |
@@ -328,6 +329,7 @@ Aplicar precedencia de [`jarvis-core`](.agents/skills/jarvis-core/SKILL.md) cuan
 | Constituir empresa / SAFE / laboral VE | `zonix-empresa-ve` |
 | Constituir empresa / SAFE / laboral VE | `zonix-startup-context` |
 | Consultar NotebookLM / notebook con citas | `notebooklm-router` |
+| Contratos / PI / T&C / privacidad corporativo (Zonix u otra empresa) | `legal-alternativo-content` |
 | Copy marca / ASO / revisión anti-Eats | `zonix-brand-ops` |
 | Copy regulatorio / Rx en documentos | `zonix-regulatory-ve` |
 | Corpus grande de documentos para RAG | `notebooklm-router` |
@@ -361,6 +363,7 @@ Aplicar precedencia de [`jarvis-core`](.agents/skills/jarvis-core/SKILL.md) cuan
 | Finalizar tarea y documentar avances | `documentar-avances` |
 | Gates humanos antes de acción irreversible | `human-in-the-loop-ops` |
 | Guardar decisión o bugfix en Engram | `engram-memory-protocol` |
+| Guiones Legal Alternativo / Hugette (TikTok/IG) | `legal-alternativo-content` |
 | HITL HOTL umbrales de confianza | `human-in-the-loop-ops` |
 | Hacer git push o merge | `git-guardrails-ops` |
 | Human-in-the-loop diseño de loop | `human-in-the-loop-ops` |

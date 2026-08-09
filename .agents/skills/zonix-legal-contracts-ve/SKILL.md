@@ -50,6 +50,21 @@ Roles: Co-CEO, Sales ×4, CS, Marketing, Coordinador logística (ver BRIEF).
 - Confidencialidad y datos personales empleados.
 - `[PENDIENTE abogado]` política local VE.
 
+## Gobernanza / pacto socios (checklist genérico `[CH-ref]` → VE)
+
+Canon: [EXTRACT_PDFS_DOCUMENTOS_KEEP_2026-08.md](../../docs/audits/EXTRACT_PDFS_DOCUMENTOS_KEEP_2026-08.md) §3. **No** copiar artículos suizos.
+
+| Ítem | Pregunta | Agente |
+|------|----------|--------|
+| Roles | ¿Quién firma banco/contratos farmacia vs quién es solo socio? | Marcar en pacto / acta |
+| Conflictos | ¿Socio o advisor vinculado a farmacia piloto? | Política declaración |
+| Información | ¿Cadencia informe a inversor (KPIs, burn)? | Anexo SAFE / side letter |
+| Documentos | ¿Estatutos C.A. + pacto socios + cap table actualizados? | Checklist pre-firma |
+
+**Security gate (Founder's Playbook — overlay):** review **humano** de seguridad/datos/Rx antes de usuarios reales; AI scan ≠ compliance. Mapear a marco VE — `[PENDIENTE asesor]` si aplica.
+
+Salida: `[PENDIENTE abogado]` — no redactar cláusulas vinculantes.
+
 ## Salida del agente
 
 ```markdown

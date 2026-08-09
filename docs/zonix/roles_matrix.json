@@ -9,7 +9,7 @@
     },
     "ask_note": "Ask único Lean esc.1 (Excel v4); tiers Base/Growth retirados del pack",
     "forense_skills": "docs/zonix/roles_matrix.json",
-    "skills_count": 32,
+    "skills_count": 33,
     "forense_unimooc": "docs/zonix/SKILLS_STARTUP_USAR_NO_USAR.md",
     "forense_github_v3": "docs/zonix/roles_matrix.json"
   },
@@ -239,6 +239,14 @@
       "forense": "ok_v3"
     },
     {
+      "id": "legal-alternativo-content",
+      "repo": "backend",
+      "domain": "legal_higiene_canal",
+      "prerequisite": null,
+      "forense": "ok_la_2026_08",
+      "note": "Capas A–C higiene multi-empresa/Zonix; D solo canal Hugette — no mezclar guiones con pack Lanzamiento"
+    },
+    {
       "id": "zonix-founder-ops-index",
       "repo": "backend",
       "domain": "founder_lens",
@@ -348,6 +356,7 @@
       "skills_agente": [
         "zonix-empresa-ve",
         "zonix-legal-contracts-ve",
+        "legal-alternativo-content",
         "zonix-regulatory-ve",
         "zonix-lanzamiento-roles",
         "security-requirement-extraction"
@@ -618,6 +627,7 @@
       "skills": [
         "zonix-startup-context",
         "zonix-legal-contracts-ve",
+        "legal-alternativo-content",
         "zonix-b2b-sales",
         "zonix-regulatory-ve"
       ]

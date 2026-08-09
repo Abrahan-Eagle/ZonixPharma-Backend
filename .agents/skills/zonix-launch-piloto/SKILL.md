@@ -70,6 +70,42 @@ Si el equipo real va detrás del plan, documentar desviación y sensibilidad (ve
 
 Para sprints Laravel/Flutter usar skills de código (`zonix-prescriptions`, `zonix-order-lifecycle`, `laravel-specialist`, `flutter-expert`) — ver tabla en `zonix-lanzamiento-roles`.
 
+### Evidencia de mercado > MVP técnico (500 + time-to-product)
+
+Puente pack: [APRENDIZAJE_500_EVIDENCIA_MERCADO.md](../../docs/Lanzamiento/APRENDIZAJE_500_EVIDENCIA_MERCADO.md) · [INFORME_FACIL_500_COMO_STARTUP.md](../../docs/Lanzamiento/INFORME_FACIL_500_COMO_STARTUP.md).  
+Canon académico TRIM: [EXTRACT_PDFS_FOUNDERS_KEEP_2026-08.md](../../docs/audits/EXTRACT_PDFS_FOUNDERS_KEEP_2026-08.md) §3 (Ewens/Nanda/Stanton 2023).
+
+**Modelo verbal (KEEP — sin cifras US):**
+
+1. El **tiempo esperado al primer producto** (no al exit) determina cuánto riesgo no diversificable carga el founder con buenas opciones externas.
+2. Tras hito de **product development**, sube liquidez/cash del founder-CEO y cae ese riesgo; la firma puede pasar de contrato “entrepreneur” a “manager” / ops más desacoplada.
+3. Retrasar producto excluye talento de alto costo de oportunidad (“missing entrepreneurs”); equity solo **no** atrae seniors pre-tracción.
+4. Acortar experimentación (una farmacia, flujo mínimo validable) pesa más que narrativa de escala.
+
+**Regla operativa Zonix:** staging/API/tests = capacidad técnica (pre-producto a ojos de muchos fondos). Para 500 / credibilidad general: **demo 3–5 min + early adopters (farmacias/pedidos)** = señal de producto en mercado. No más features «porque pidieron MVP».
+
+**Prohibido:** tablas salary US / ACS / VentureSource; mentir «ya en mercado» sin farmacias/pedidos.
+
+### Disciplina Idea→MVP→Launch (Founder's Playbook — TRIM AI-native)
+
+Canon: [EXTRACT_PDFS_DOCUMENTOS_KEEP_2026-08.md](../../docs/audits/EXTRACT_PDFS_DOCUMENTOS_KEEP_2026-08.md) §1 · Forense Documentos: [FORENSIC_PDFS_DOCUMENTOS…](../../docs/audits/FORENSIC_PDFS_DOCUMENTOS_FOUNDERS_2026-08-09.md).
+
+1. Medir **antes** del primer usuario (retención/activación; falsos positivos: signup sin orden).
+2. Discovery = comportamiento pasado; sintetizar evidencia a favor/contra.
+3. PMF ≠ hype de launch; Sean Ellis / push→pull como señales complementarias.
+4. Gates Launch: security/compliance Rx; ops sin cuello founder; **≥3 ciclos** sin movimiento PMF → diagnosticar antes de nueva ciudad.
+5. **DROP:** Scale IPO, AI-agentic como sustituto de Sales/farmacéutico humano.
+
+### Hiring por fase (labor markets — TRIM)
+
+Canon: [EXTRACT_PDFS_DOCUMENTOS_KEEP_2026-08.md](../../docs/audits/EXTRACT_PDFS_DOCUMENTOS_KEEP_2026-08.md) §6.1 · V2: [FORENSIC_PDFS_DOCUMENTOS_V2_HOJA…](../../docs/audits/FORENSIC_PDFS_DOCUMENTOS_V2_HOJA_2026-08-09.md).
+
+1. Fricciones: incertidumbre PMF / escasez / riesgo de fallo.
+2. Secuencia **generalista → especialista** (Sales/CS/Rx) cuando el proceso esté claro.
+3. Expandir headcount en hitos T+30/60/90 — no FOMO.
+4. Early joiners imprentan proceso → playbooks documentados.
+5. **DROP:** wages/non-competes US.
+
 ## Validación pre-Day-D (four-steps + mom-test)
 
 Añadir o auditar en PLAN_LANZAMIENTO_COMERCIAL como checklist; **no** sustituye Definition of Done del BRIEF.

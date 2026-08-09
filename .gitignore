@@ -47,3 +47,11 @@ public/.extract-token
 docs/Lanzamiento/.xdp-*
 docs/Lanzamiento/_exports_notebooklm/
 docs/forensic_zonix_docs/
+
+# Legal Alternativo — bulk ASR/jueces/pipeline (no versionar; canon = skill + MD finos)
+docs/LegalAlternativo/analyses/
+docs/LegalAlternativo/transcripts/
+docs/LegalAlternativo/meta/
+docs/LegalAlternativo/packs/
+docs/LegalAlternativo/scripts/
+docs/LegalAlternativo/raw/

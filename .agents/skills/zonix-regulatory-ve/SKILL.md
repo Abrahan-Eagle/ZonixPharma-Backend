@@ -79,3 +79,7 @@ Referencia operativa: [PLAN_MODULO_OPERATIVO_CLAVE.md](../../docs/Lanzamiento/PL
 - `zonix-lanzamiento-roles` — RA + Medical Affairs
 - `security` / `security-requirement-extraction` — datos sensibles
 - `zonix-investor-materials` — sección regulación data room
+
+## Nota forense Legal Alternativo (destino C)
+
+Skill `legal-alternativo-content` **v1.3.3+**: capas **A–C** = higiene contractual/PI multi-empresa (default ops Zonix `[VE]` + `[MX]` como referencia intl); capa **D** = solo canal Hugette/LA. **No** usar guiones/CTA Hugette en copy Pharma ni pack inversor. Anti-patrones: `docs/zonix/SKILLS_STARTUP_USAR_NO_USAR.md` § *Legal Alternativo*. **Copy salud VE** sigue siendo esta skill (`zonix-regulatory-ve`) + `zonix-brand-ops`.

@@ -24,6 +24,22 @@ Combina ideas de [pitch-deck](https://github.com/shawnpang/startup-founder-skill
 | CHECKLIST_PRE_INVERSOR | FAQ y objeciones |
 | ESTRUCTURA_LEGAL_Y_EQUITY | SAFE, cap, vehículo VE |
 
+**Ask / cifras vigentes:** solo `zonix-startup-context` + BRIEF / PROYECCION (Excel v4: SAFE **237.412**, cap **600k**, equity **~39,57%**). No usar outlines antiguos del skill si contradicen el pack.
+
+## Router externo de forma (después del canon pack)
+
+Orden: **MENSAJE_ENVIO §4 (8 slides)** + BRIEF → luego forma externa. Cifras **nunca** desde repos externos.
+
+| Recurso | Veredicto | Uso |
+|---------|-----------|-----|
+| [joelparkerhenderson/pitch-deck](https://github.com/joelparkerhenderson/pitch-deck) | **KEEP** | Router a YC / Guy Kawasaki / Sequoia — orden, una idea por slide, ritmo |
+| [Eleken — pitch deck examples](https://www.eleken.co/blog-posts/pitch-deck-examples) | **TRIM** | Solo inspiración **visual**; no estructura ni ask |
+| [rafaecheve/Awesome-Decks](https://github.com/rafaecheve/Awesome-Decks) | **TRIM** puntual | 2–3 piezas históricas máx. |
+| Gist sejaldeshpande (2018) | **SKIP** | Genérico / contradictorio |
+| [Carta × Kauffman Fellows SlideShare](https://www.slideshare.net/slideshow/vc-fundraising-deck-template-carta-x-kauffman-fellows/234635853) | **SKIP** | Deck **fondo VC → LP**, no startup → inversor |
+
+Forense: [FORENSIC_GITHUB_STARTUP_RESOURCES_2026-08-09.md](../../docs/audits/FORENSIC_GITHUB_STARTUP_RESOURCES_2026-08-09.md).
+
 ## Estructura pitch (10–12 slides outline)
 
 1. **Problema** — acceso farmacia Valencia, Rx, última milla

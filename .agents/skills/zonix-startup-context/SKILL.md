@@ -48,6 +48,29 @@ Zonix Pharma opera en **mercado existente con diferenciación por features** (no
 
 **Anti-patrón:** no aplicar `blue-ocean-strategy` al pitch — Zonix **no** inventa categoría; compite con atributos únicos (farmacéutico por farmacia, cuota+% GMV bajo, pagos manuales VE).
 
+### Deep tech ≠ Zonix (IDB Lab — extract durable)
+
+Canon: [EXTRACT_PDFS_FOUNDERS_KEEP_2026-08.md](../../docs/audits/EXTRACT_PDFS_FOUNDERS_KEEP_2026-08.md) §1. Forense: [FORENSIC_PDFS…](../../docs/audits/FORENSIC_PDFS_FOUNDERS_DEEPTECH_2026-08-09.md). **No** abrir PDF externo.
+
+**Definición (KEEP):** Deep Tech = startups sobre descubrimientos científicos o ingeniería profunda (biotech, hardware, science-hard). Digital/marketplace = innovación de **producto/modelo** (reto = PMF); Deep Tech = innovación **tecnológica** (reto = hacer funcionar la tech; R&D upfront, labs, capital y plazos largos). En LAC ~90% de startups están en capas superiores del stack (apps). Tres caminos: adoptar / construir sobre stack existente / crear tech nueva — Zonix = **construir software+ops sobre stack existente**.
+
+| Pregunta LP / copy | Respuesta canónica |
+|--------------------|--------------------|
+| «¿Son deep tech / science-hard / biotech?» | **No.** Marketplace farmacéutico digital (software + ops VE) en **existing market**. |
+| Comparables | Farmalisto, Farmatodo/Locatel, Rappi Pharmacy — **no** Bioceres, satélites, mRNA, hardware R&D. |
+| BID Lab / deep tech LAC | Ecosistema **existe** (informe informativo, no base de inversión). Ciclos de capital distintos al raise Lean. **No** citar $ ecosystem / returns / % GDP del informe en pitch. |
+
+**Prohibido:** narrativa «transform industries with IP/R&D cycles»; verticales robotics/cleantech/spacetech; country/startup profiles del appendix IDB como tracción Zonix; odds/retornos extremos de VC Deep Tech como métricas del piloto.
+
+### Anti-patrón AI-native (Founder's Playbook 2026)
+
+Canon: [EXTRACT_PDFS_DOCUMENTOS_KEEP_2026-08.md](../../docs/audits/EXTRACT_PDFS_DOCUMENTOS_KEEP_2026-08.md) §1.
+
+- **KEEP:** disciplina Idea→MVP→Launch (evidencia antes de construir; PMF = retención/repeat; no expandir beachhead prematuro).
+- **DROP:** moat “AI-native / agentic coding / founder orquestador de agentes”; Scale IPO / créditos Anthropic como narrativa raise.
+- **Respuesta:** usamos la disciplina del playbook; **no** somos startup AI-native — marketplace pharma VE; moat = farmacias + pedidos.
+- **Compliance:** AI scan ≠ review calificada; security/Rx gate humano antes de usuarios reales (ver `zonix-legal-contracts-ve`).
+
 ## Mercado bilateral (UniMOOC M3 — Steve Blank)
 
 Zonix es **two-sided**: farmacia (supply) + paciente (demand). Implicaciones:

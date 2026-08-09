@@ -97,3 +97,15 @@ Plantilla discovery **antes** SPIN; rellenar en notas de visita (no inventar res
 | Digital | WhatsApp activo; sin app propia |
 | Delivery | Propio o tercero; abierto a partner Zonix |
 | Anti-target | Cadena nacional año 1; farmacia sin titular Rx |
+
+## Colab startup–partner (Nesta → farmacias)
+
+Canon: [EXTRACT_PDFS_DOCUMENTOS_KEEP_2026-08.md](../../docs/audits/EXTRACT_PDFS_DOCUMENTOS_KEEP_2026-08.md) §4. Corporate del guía = **farmacia/cadena/delivery partner**.
+
+1. Priorizar **partnership + procurement piloto** (no CVC).
+2. Funnel **Pitch → Pilot → Partner** con go/no-go fechado (~90 días, 1 sede).
+3. Asimetría: bajo riesgo para farmacia; alto coste Zonix — pricing/KPIs deben reflejarlo.
+4. Champion con poder (titular/farmacéutico) + **punto único** (panel onboarding) + contrato/pagos simples + “quick no”.
+5. Empezar 3–5 farmacias; KPIs desde día 1; no vender “innovación CSR”.
+6. **DROP** logos Unilever/Sky y fluff UE en materiales de venta Valencia.
+7. **Payment terms cortos** + onboarding panel ágil — cruce `zonix-payments` / contrato marco (piloto muere con 90–180 días).
