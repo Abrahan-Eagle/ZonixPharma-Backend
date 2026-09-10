@@ -42,7 +42,7 @@ Gabriel conoce el mercado local; la reunión debe aprovechar eso: validar hipót
 ### Temas que conviene tener claros
 
 - **Estado actual:** pre-revenue; producto en staging; tiendas públicas en Fase 0 (primeros 90 días post-capital).
-- **Capital de referencia del piloto:** **USD 237.412** (Lean Excel v4, SAFE cap 600k, equity ~39,57%) — solo como contexto de viabilidad, no como ask a Gabriel por defecto.
+- **Capital de referencia del piloto:** **USD 237.412** (Lean Excel v4, SAFE cap 1.582.747, equity ~15%) — solo como contexto de viabilidad, no como ask a Gabriel por defecto.
 - **Regulación Rx:** cada farmacia mantiene su farmacéutico responsable; dictamen abogado + asesor farmacéutico pendiente antes de Day-D público.
 - **Compromiso founder:** track record 8+ años en marketplaces; declarar % dedicación a Zonix vs otros proyectos si surge la pregunta.
 
@@ -109,7 +109,7 @@ Sin entrar en detalle técnico: lo importante es que el flujo es creíble para u
 
 | Tier | Capital | Cap SAFE | Equity ref. |
 |------|---------|----------|-------------|
-| **Lean** | 237.412 | 600k | ~39,57% |
+| **Lean** | 237.412 | 1.582.747 | ~15% |
 | Base | ~157k | ~913k | ~17,23% |
 | Growth | ~187k | ~1,2M | ~15,55% |
 
@@ -167,7 +167,7 @@ Documentos hermanos útiles para la segunda sesión: `10_Plan_Lanzamiento.md`, `
 | Pregunta | Respuesta corta |
 |----------|-----------------|
 | ¿Quién valida la receta? | El **farmacéutico colegiado de la farmacia**, no Zonix. |
-| ¿SAFE enforceable? | Template YC adaptado por abogado VE; cap **600k**, **~39,57%** ref. Lean. |
+| ¿SAFE enforceable? | Template YC adaptado por abogado VE; cap **1.582.747**, **~15%** ref. Lean. |
 | ¿Datos de salud? | Consentimiento explícito; textos en borrador hasta abogado pre-Day-D. |
 
 ---

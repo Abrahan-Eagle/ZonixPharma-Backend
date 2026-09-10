@@ -1,6 +1,6 @@
 # Documentos solo para el inversor — Zonix Pharma
 
-> **Última actualización:** 7 agosto 2026 (artefacto demo producto; aprendizaje 500)  
+> **Última actualización:** 21 agosto 2026 (plan unificado Café + Kleo; artefacto demo y aprendizaje 500 intactos)
 > **Propósito:** inventario canónico del **data room inversor** (pre-seed). No incluye pack aliado Gabriel ni plantillas internas de equipo.  
 > **Fuente operativa:** [README.md](README.md) · **Verificación:** `python3 _tools/verify_inversor_pack.py` · **Zip:** `python3 _tools/build_zip_inversor.py`  
 > **Informe CEO — inversores VE 2026:** [BRIEFING_INVERSORES_VE_2026.md](BRIEFING_INVERSORES_VE_2026.md) · Word: [BRIEFING_INVERSORES_VE_2026.docx](BRIEFING_INVERSORES_VE_2026.docx).  
@@ -57,6 +57,7 @@ Documentos inversor adicionales en `docs/Lanzamiento/` (no van en el zip de 30 m
 |-----------|---------|
 | Informe CEO inversores VE 2026 (profundizado forense + NotebookLM) | [BRIEFING_INVERSORES_VE_2026.md](BRIEFING_INVERSORES_VE_2026.md) |
 | Versión Word para CEO (adjuntar / Google Docs) | [BRIEFING_INVERSORES_VE_2026.docx](BRIEFING_INVERSORES_VE_2026.docx) |
+| Captación multi-stakeholder (SAFE / farmacias / partners / equipo) | Carpeta [`../Captacion_Stakeholders/`](../Captacion_Stakeholders/README.md) · resumen [`00_QUE_HACER_AHORA`](../Captacion_Stakeholders/_comun/00_QUE_HACER_AHORA.md) ([PDF](../Captacion_Stakeholders/_comun/00_QUE_HACER_AHORA.pdf)) · SAFE Gabriel [`PLAN_SAFE_GABRIEL`](../Captacion_Stakeholders/metodo_safe_gabriel/PLAN_SAFE_GABRIEL.md) — **interno, no enviar por defecto** |
 
 ### Due diligence técnica (opcional)
 
@@ -86,6 +87,7 @@ Citadas en [README.md](README.md) § documentos pre-existentes:
 | [APRENDIZAJE_500_EVIDENCIA_MERCADO.md](APRENDIZAJE_500_EVIDENCIA_MERCADO.md) | Lección interna post-rechazo 500; no al LP |
 | [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md) | Plantilla interna equipo |
 | [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) | Tracker P0–P4 interno |
+| [`../Captacion_Stakeholders/`](../Captacion_Stakeholders/README.md) (partición por propósito) | Plan operativo interno + evidencia Café/Kleo + CAP-P; no es material de primera reunión |
 | [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) | Captura founder (usar datos volcados en BRIEF/CHECKLIST) |
 | [GUIA_DISCOVERY_CALLE_FASE0.md](GUIA_DISCOVERY_CALLE_FASE0.md) | Guía mom-test calle |
 | [BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md](BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md) | Hipótesis discovery interno |

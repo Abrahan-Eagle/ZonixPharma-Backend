@@ -1,6 +1,6 @@
 # Estructura legal y equity (SAFE + cap table)
 
-> **Última actualización:** 30 julio 2026 (anclas SAFE **v4 Excel** — **USD 237.412** @ cap **600k** → **~39,57%**).
+> **Última actualización:** 26 agosto 2026 (canon SAFE **USD 237.412** @ cap **1.582.747** → **~15%**; `CAP-P12`).
 > Documento que captura el vehículo legal, instrumento de inversión y cap table de Zonix Pharma.
 > Marco regulatorio **Pharma:** [`../PLAN_REGULATORIO_PHARMA_VE.md`](../PLAN_REGULATORIO_PHARMA_VE.md). Pagos/Sudeban: [PLAN_METODOS_PAGO.md](PLAN_METODOS_PAGO.md) §10. No usar docs Eats históricos (eliminados).
 
@@ -100,27 +100,27 @@
 | Término | Valor (canon v4) |
 |---|---|
 | Monto SAFE | **USD 237.412** |
-| Post-money valuation cap | **USD 600.000** |
-| Equity implícito si cap aplica | **~39,57%** *(237.412 / 600k)* |
+| Post-money valuation cap | **USD 1.582.747** |
+| Equity implícito si cap aplica | **~15%** *(237.412 / 1.582.747)* |
 | Discount | 0% (sin descuento adicional al cap) |
 | Most Favored Nation (MFN) | Sí (cláusula estándar) |
 | Pro-rata rights | Opcional, según preferencia del inversor |
 
 **Lectura para el inversor (SAFE post-money YC, simplificado — counsel confirma):**
-- Si la próxima ronda valora **por encima** del cap (p. ej. USD 1.000.000), el SAFE convierte como si la valuación fuera el **cap USD 600.000** → el inversor recibe ~**39,57%** (237.412 / 600k) al convertir.
-- Si la próxima ronda valora **por debajo** del cap, el precio de conversión suele ser el de esa ronda → el inversor recibe **más** del ~39,57% (más acciones por el mismo USD 237.412). El cap **techa** el upside de valuación alta; no reduce el % cuando la ronda es más barata.
+- Si la próxima ronda valora **por encima** del cap (p. ej. USD **3.000.000**), el SAFE convierte como si la valuación fuera el **cap USD 1.582.747** → el inversor recibe ~**15%** (237.412 / 1.582.747) al convertir.
+- Si la próxima ronda valora **por debajo** del cap, el precio de conversión suele ser el de esa ronda → el inversor recibe **más** del ~15% (más acciones por el mismo USD 237.412). El cap **techa** el upside de valuación alta; no reduce el % cuando la ronda es más barata.
 
 ### 2.3 Términos del SAFE (canon v4)
 
 | Término | Valor (canon v4) |
 |---|---|
 | Monto SAFE | **USD 237.412** |
-| Post-money valuation cap | **USD 600.000** |
-| Equity implícito si cap aplica | **~39,57%** *(237.412 / 600k)* |
+| Post-money valuation cap | **USD 1.582.747** |
+| Equity implícito si cap aplica | **~15%** *(237.412 / 1.582.747)* |
 
 ### 2.3.1 Nota sobre el cap
 
-El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está en torno a **10-12% equity** ([fuente: LatAm VC Report 2024-2025](https://www.endeavor.org.mx/) y reportes Crunchbase — **[verificar fuente primaria 2026]**). El cap de Zonix Pharma (**USD 237.412** / cap **USD 600k**) da **~39,57%**, por encima del benchmark LatAm 10–12% — coherente con ticket mayor (Fase 0 + burn + reserva Excel), **Co-CEO**, **4× Sales**, Dev en nómina (ver [MODELO_FINANCIERO_ZONIX_PHARMA.xlsx](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx)). **El ask vigente es único: USD 237.412 @ cap 600k → ~39,57%.**
+El benchmark típico de pre-seed LatAm 2025-2026 para tickets USD 50-100k está en torno a **10-12% equity** ([fuente: LatAm VC Report 2024-2025](https://www.endeavor.org.mx/) y reportes Crunchbase — **[verificar fuente primaria 2026]**). El cap de Zonix Pharma (**USD 237.412** / cap **USD 1.582.747**) da **~15%**, por encima del benchmark LatAm 10–12% — coherente con ticket mayor (Fase 0 + burn + reserva Excel), **Co-CEO**, **4× Sales**, y **Dev en honorarios** (burn Lean; **sin nómina formal** en piloto — §4.2). **El ask vigente es único: USD 237.412 @ cap 1.582.747 → ~15%.**
 
 **Decisión consciente del founder:** este cap es **intencional como señal de confianza al primer inversor** (lead investor del SAFE). El piloto tiene mucho más riesgo que un negocio post-PMF; el inversor que entra ahora merece compensación por el riesgo asumido.
 
@@ -159,27 +159,27 @@ Este pack está diseñado para **ángel / fondo pre-seed**. Si el interesado es 
 |---|---|---|
 | Founder | 1.000.000 | 100,00% |
 
-### 3.2 Post-SAFE (canon v4, USD 237.412 @ cap USD 600k)
+### 3.2 Post-SAFE (canon v4, USD 237.412 @ cap USD 1.582.747)
 
 > **Nota:** el SAFE NO crea acciones hoy. Sólo al momento de conversión (próxima ronda con valuación de mercado).
 
 | Stakeholder | Acciones | % equity hoy | % equity post-conversión SAFE |
 |---|---|---|---|
-| Founder | 1.000.000 | 100,00% | ~60,43% (si cap aplica) |
-| Inversor SAFE | 0 (todavía) | 0,00% | ~39,57% (al momento de conversión) |
+| Founder | 1.000.000 | 100,00% | ~85% (si cap aplica) |
+| Inversor SAFE | 0 (todavía) | 0,00% | ~15% (al momento de conversión) |
 
 ### 3.3 Cap table en próxima ronda Serie A (escenario hipotético, mes 24)
 
 > **[RETIRADO — cap table fully diluted en revisión por abogado; NO VÁLIDO PARA DD]**
 >
-> La tabla previa de % post-Serie A sumaba **116,47%** (Founder 51,34% + SAFE 39,57% + Serie A 20% + Pool 10%), lo cual es matemáticamente imposible. El error provenía de sumar % sin mecánicas de dilución; **no** reutilizar ese modelo.
+> La tabla previa de % post-Serie A sumaba **116,47%** (Founder 51,34% + SAFE 15% + Serie A 20% + Pool 10%), lo cual es matemáticamente imposible. El error provenía de sumar % sin mecánicas de dilución; **no** reutilizar ese modelo.
 
 **Hipótesis Serie A:** USD 500.000 a valuación pre-money USD 2.000.000 → post-money USD 2.500.000.
 
-**Interpretación SAFE post-money cap (YC — lectura operativa, counsel confirma):** al **convertir**, el SAFE apunta a ~**39,57%** del company (237.412 / 600k) en el momento de conversión según el template. El **dinero nuevo** de la Serie A (y ampliaciones de pool) **también diluye** al holder ya convertido: el ~39,57% **no** queda “congelado” para siempre post–Serie A. Los números exactos de acciones y el orden pool pre/post money los cierra el **abogado**.
+**Interpretación SAFE post-money cap (YC — lectura operativa, counsel confirma):** al **convertir**, el SAFE apunta a ~**15%** del company (237.412 / 1.582.747) en el momento de conversión según el template. El **dinero nuevo** de la Serie A (y ampliaciones de pool) **también diluye** al holder ya convertido: el ~15% **no** queda “congelado” para siempre post–Serie A. Los números exactos de acciones y el orden pool pre/post money los cierra el **abogado**.
 
 **Lo que sí es válido declarar (sin tabla numérica hasta revisión counsel):**
-- SAFE post-money: ancla de conversión **~39,57%** (237.412 / 600k) **al convertir**.
+- SAFE post-money: ancla de conversión **~15%** (237.412 / 1.582.747) **al convertir**.
 - Post Serie A + pool 10%: el founder queda **<50%** en escenarios típicos (estimación ilustrativa, recalcular con abogado).
 - Si se busca founder >50% post Serie A, hay que **subir el cap** o **reducir el ask**.
 
@@ -215,7 +215,7 @@ Este pack está diseñado para **ángel / fondo pre-seed**. Si el interesado es 
 
 **Mitigación riesgo:** contrato escrito con cada freelance, factura mensual, registro contable. Asesor laboral revisa anualmente.
 
-**Riesgo laboral (revisión profesional):** en VE, si una persona **subordinada, con horario fijo y remuneración recurrente** opera como “freelance”, SUNASS / inspectoría laboral puede **reclasificar** la relación como laboral (prestaciones retroactivas). Mitigación: (1) contratos de **honorarios profesionales** con alcance por entregables / mes facturado, sin exclusividad abusiva; (2) **asesor laboral** revisa plantillas antes de T+30; (3) al escalar a nómina formal, migración planificada con contador.
+**Riesgo laboral (revisión profesional):** en VE, si una persona **subordinada, con horario fijo y remuneración recurrente** opera como “freelance”, la **Inspectoría del Trabajo (LOTTT / IVSS)** puede **reclasificar** la relación como laboral (prestaciones retroactivas). Mitigación: (1) contratos de **honorarios profesionales** con alcance por entregables / mes facturado, sin exclusividad abusiva; (2) **asesor laboral** revisa plantillas antes de T+30; (3) al escalar a nómina formal, migración planificada con contador.
 
 ### 4.3 Regulación específica farmacéutica
 
@@ -307,13 +307,12 @@ Zonix Pharma arranca con **un solo founder técnico** (CEO + CTO en la misma per
 - **Vesting:** 4 años con cliff 1 año.
 - **Strike price:** valor justo de mercado al momento de otorgamiento.
 - **Acelerador:** 50% acelerado en cambio de control (acquisition) — estándar.
-- **No options en piloto:** los freelances tienen contrato directo, sin equity. Solo se otorgan stock options a empleados formales post-Serie A.
+- **No options en piloto (regla general):** el equipo piloto opera por **honorarios / freelance** sin equity (§4.2). Stock options a empleados formales = post-Serie A. `[PENDIENTE abogado — mecanismo VE equivalente a options US]`
 
 ### 5.3 Advisors
 
-- 0,25% - 1% por advisor según valor aportado.
-- Vesting 2 años con cliff 6 meses.
-- Posible en mes 6-12 si aparece advisor regulatorio o de marketing relevante.
+- 0,25% - 1% por advisor según valor aportado (vesting 2 años, cliff 6 meses) — **excepción posible** en M6–12 si aparece advisor regulatorio o de marketing relevante.
+- Esa excepción **no** contradice §5.2: es grant puntual bajo pool §5.1, no options a freelances del burn Lean. Instrumento y % exactos = `[PENDIENTE abogado]`.
 
 ## 6. Riesgos legales y mitigaciones
 
@@ -343,7 +342,7 @@ Al cierre de la inversión, el inversor recibe:
 | Mes | Hito |
 |---|---|
 | 0 (cierre inversión) | Firma SAFE con **condición suspensiva de constitución C.A. ≤30 días** + **devolución automática** si no se constituye. El wire de **USD 237.412** se recibe en **escrow notarial** o **cuenta bloqueada** hasta acta constitutiva; alternativa: **tranche 1** tras constitución + apertura de cuenta empresa. **Carta de uso de fondos firmada** por el founder. **No se recibe el wire en cuenta personal del founder** (exposición fiduciaria/related-party evitada). |
-| 1 | Constitución legal C.A. completa. Apertura cuenta bancaria empresa. Transferencia interna founder → C.A. |
+| 1 | Constitución legal C.A. completa. Apertura cuenta bancaria empresa. **Liberación de escrow / tranche 1 a la cuenta de la C.A.** (el wire **no** transita por cuenta personal del founder). Si hubo gastos de constitución adelantados pre-wire: reembolso al founder con tope y comprobantes, **separado** del tránsito del SAFE. `[PENDIENTE abogado]` |
 | 1-2 | RIF + factura digital SENIAT habilitados. |
 | 2-3 | Marca SAPI registrada (paralelo). |
 | 3 | **Day-D del piloto (T+90 desde wire).** Inicio **M1** financiero post-Day-D — ver [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) §0. Operación oficial de la C.A. en paralelo mes 1–3. |

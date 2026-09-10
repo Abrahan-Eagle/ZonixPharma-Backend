@@ -1,6 +1,6 @@
 # Ficha — Build with Gemini XPRIZE
 
-> Ask ref.: Lean **USD 237.412** · SAFE cap ref. **USD 600.000** · equity **~39,57%** ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
+> Ask ref.: Lean **USD 237.412** · SAFE cap ref. **USD 1.582.747** · equity **~15%** ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
 > **Disclaimer:** análisis founder interno; no es asesoría legal ni financiera.  
 > Fecha CRM: **2026-08-05**.  
 > Forense: landing + Devpost Rules/FAQ + video · PDF **Deep Research Gemini** (PDF/Word local founder (no versionado)) — síntesis en [NOTAS.md](NOTAS.md#deep-research-gemini).

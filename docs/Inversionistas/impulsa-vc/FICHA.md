@@ -1,6 +1,6 @@
 # Ficha inversionista — Impulsa VC
 
-> Ask ref.: Lean **USD 237.412** · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
+> Ask ref.: Lean **USD 237.412** · SAFE cap ref. USD 1.582.747 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
 > Forense: 21 julio 2026 · [impulsa.vc](https://www.impulsa.vc/) (todas las rutas nav) · LinkedIn · prensa BVC 2021 · briefing §4.4.  
 > **Disclaimer:** análisis interno founder; no es asesoría legal ni financiera.
 
@@ -33,7 +33,7 @@
 | Dimensión | Pack Zonix | Impulsa VC | Gap |
 |-----------|------------|------------|-----|
 | Ticket | Lean **237.412** | **Opaco** | Call obligatoria |
-| Dilución | SAFE cap 600k | **Opaca** + dualidad vehículo | DD jurídica |
+| Dilución | SAFE cap 1.582.747 | **Opaca** + dualidad vehículo | DD jurídica |
 | Vehículo | Ideal Delaware | Sesgo **VE / mercado valores** | Confirmar holding US |
 | Tiempo | — | Rolling (form/tel) | Sin deadline |
 | Rol real | Cheque pre-seed | **Estructura + banca** (más que cheque tipificado) | No sustituye Epakon |

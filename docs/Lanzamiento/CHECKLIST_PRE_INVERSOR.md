@@ -31,7 +31,7 @@
 |---|-------------------|-------------------|--------|
 | 1 | ¿Por qué tú y a tiempo completo? | Track record 8+ años; fundador Zonix/Corral X; declarar **% dedicación** explícita | VOLCADO §1.1; REGISTRO P0-02 |
 | 2 | ¿Hay ventas / tracción hoy? | **Pre-revenue** hasta pedidos reales; staging + piloto Valencia en curso; no inflar GMV | BRIEF; APRENDIZAJE_500 |
-| 3 | ¿Por qué **~237k (237.412)** y cap **600k**? | Piso Fase 0 **50.260** + burn **172.152** + reserva **15.000**; cash M12 esc.1 **246.231** | MODELO xlsx; BRIEF |
+| 3 | ¿Por qué **~237k (237.412)** y cap **1.582.747**? | Piso Fase 0 **50.260** + burn **172.152** + reserva **15.000**; cash M12 esc.1 **246.231** | MODELO xlsx; BRIEF |
 | 4 | ¿Es legal el modelo Rx en VE? | Farmacéutico **de cada farmacia** valida; dictamen **abogado + asesor** pre-Day-D | PLAN_MODULO §1; ESTRUCTURA |
 | 5 | ¿El producto está en producción / hay MVP? | **MVP técnico** = staging + Rx + tests. **Evidencia de mercado** = demo 3–5 min + early adopters. Play Store **T+7–12** Fase 0. No confundir ambos. | APRENDIZAJE_500; ALINEACION; P0-05 |
 
@@ -79,7 +79,7 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 
 ### 1.1 Nota inversor — SAFE único (canon v4)
 
-> **Ask único (v4 ago 2026):** **Lean USD 237.412** @ cap **600k** → equity **~39,57%**. Ver [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) §S1.3 y [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §2.3.
+> **Ask único (v4 ago 2026):** **Lean USD 237.412** @ cap **1.582.747** → equity **~15%**. Ver [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) §S1.3 y [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md) §2.3.
 
 ### 1.2 Guion demo en vivo (~8–12 min)
 
@@ -150,7 +150,7 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 | 10-15 | Demo en vivo: paciente busca, sube receta, paga. Pharmacist valida en tablet. Farmacia ve la orden. **Si hay tiempo:** **`delivery_company`** asigna a **`delivery_agent`** y tracking en app (sin rol autónomo `delivery`). |
 | 15-20 | Mercado: TAM USD 1.638M (Cifar/IMS-IQVIA), comparable Farmalisto (~USD 32M revenue MX; funding ~USD 22M–33M según fuente). |
 | 20-25 | Números: **USD 237.412** Lean Excel (Fase 0 **50.260** + burn **172.152** + reserva **15.000**), **Day-D = T+90** (caja **187.152**), cash M12 **246.231** (esc.1), LTV/CAC **~7,5x** (LTV **1.040**, ARPF ~52 — UNIT). |
-| 25-28 | Ask: **Lean Excel — USD 237.412** SAFE cap **600k** (~**39,57%**) — [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md). |
+| 25-28 | Ask: **Lean Excel — USD 237.412** SAFE cap **1.582.747** (~**15%**) — [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md). |
 | 28-30 | Q&A inicial + próximos pasos. |
 
 ### 6.1 Excel modelo — orden de pestañas (reunión FP&A)
@@ -231,7 +231,7 @@ Ver [REGISTRO_PENDIENTES_PACK.md](REGISTRO_PENDIENTES_PACK.md) § Próximas 3 se
 | ¿De dónde sale churn 5% mensual? | "Mediana SaaS B2B SMB LatAm 3-7% (ChartMogul Benchmarks 2025). Conservador." |
 | ¿Cómo está el **equilibrio mensual** en año 1? | "Esc.1: **BE FCF desde M5** (M1–M4 negativo). FCF Y1 **+59.079**; cash M12 **246.231**. Burn ask **~14.346**/mes (**172.152**/Y1). Curva **~159 activas M12**. Day-D caja **187.152**." |
 | ¿Qué pasa si solo firmamos **~50 farmacias** en año 1 (vs. **~185 firmas / ~159 activas M12** ref.)? | "Menos firmas reduce revenue; en esc.1 el colchón de FCF es amplio, pero hay que recalcular runway con FP&A. Ver sensibilidad en [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md)." |
-| ¿Y si el plan no se cumple? | "Tabla de sensibilidad pesimista / base / optimista en [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) y detalle en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) sección 7. Plan de contingencia ante shocks documentado en sección 4." |
+| ¿Y si el plan no se cumple? | "Tabla de sensibilidad pesimista / base / optimista en [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md) y detalle en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) **§6**. Plan de contingencia ante shocks documentado en PROYECCION **§3**." |
 
 ### 7.7 FAQ técnica (due diligence — lente CTO)
 

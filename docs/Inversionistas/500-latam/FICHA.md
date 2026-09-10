@@ -1,6 +1,6 @@
 # Ficha inversionista — 500 LatAm (500 Global)
 
-> Ask ref.: Lean **USD 237.412** · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
+> Ask ref.: Lean **USD 237.412** · SAFE cap ref. USD 1.582.747 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
 > Forense: 21 julio 2026 · **Update post-rechazo: 7 agosto 2026**.  
 > Fuentes: landing + [términos EN](https://latam.aplica.500.co/en/terminos) + email `aplica@500.co` (6 ago 2026).  
 > **Disclaimer:** análisis interno founder; no es asesoría legal ni financiera.
@@ -35,7 +35,7 @@
 | Dimensión | Pack Zonix | 500 LatAm | Gap |
 |-----------|------------|-----------|-----|
 | Ticket | Lean **237.412** | 300k / neto 285k | Overshoot → modelar Growth+ |
-| Dilución | SAFE cap 600k | **10%** KISS | 500 mejor % si aceptas ticket mayor |
+| Dilución | SAFE cap 1.582.747 | **10%** KISS | 500 mejor % si aceptas ticket mayor |
 | Instrumento | SAFE | KISS + MFN/ROFO | Counsel VE/US |
 | Vehículo | Ideal Delaware (BRIEFING) | Obligatorio US/Cayman para wire | Alineado OFAC |
 | Tiempo | — | 12m programa + 3 sem SF | Alto |
@@ -43,7 +43,7 @@
 
 ## Lo bueno
 
-- Cheque **> Lean** con dilución **10%** más limpia que ask chico sobre cap 600k.
+- Cheque **> Lean** con dilución **10%** más limpia que ask chico sobre cap 1.582.747.
 - Marca global 500 + red LatAm + señal follow-on.
 - **Puerta abierta explícita:** reaplicar / avisar cuando haya producto en mercado (email 6 ago).
 - Feedback accionable: MVP/demo + early adopters (alineado a piloto Valencia).

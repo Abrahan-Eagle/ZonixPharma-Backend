@@ -55,7 +55,7 @@ flowchart TD
 
 ### P0 — ahora (disciplina)
 
-1. Cifras solo pack: SAFE **237.412**, Day-D **187.152**, %GMV **8/7/5**, equity **~39,57%**.
+1. Cifras solo pack: SAFE **237.412**, Day-D **187.152**, %GMV **8/7/5**, equity **~15%**.
 2. Legal: C.A. VE + SAFE adaptado + abogado — **no** NVCA como cierre.
 3. No usar el Word como fuente de KPIs ni briefing inversor.
 

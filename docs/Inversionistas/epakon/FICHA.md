@@ -1,6 +1,6 @@
 # Ficha inversionista — Epakon Capital
 
-> Ask ref.: Lean **USD 237.412** · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
+> Ask ref.: Lean **USD 237.412** · SAFE cap ref. USD 1.582.747 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
 > Forense: 21 julio 2026 · [epakon.com](https://epakon.com) (SPA + tRPC) · [AngelList](https://venture.angellist.com/epakon/syndicate) · [Ecosistema](https://ecosistemag.com/en/the-silent-architects-of-venezuelan-tech-meet-vicente-zavarce-and-diego-salas/) · SuperScout.  
 > **Disclaimer:** análisis interno founder; no es asesoría legal ni financiera.
 
@@ -33,7 +33,7 @@
 | Dimensión | Pack Zonix | Epakon | Gap |
 |-----------|------------|--------|-----|
 | Ticket | Lean **237.412** | ~100–300k (tip. ~147–150k) | Cheque parcial / syndicate; **no** cubre ask completo solo |
-| Dilución | SAFE cap 600k | **Opaca** | Pedir instrumento + cap/% por escrito |
+| Dilución | SAFE cap 1.582.747 | **Opaca** | Pedir instrumento + cap/% por escrito |
 | Vehículo | Ideal Delaware | US/LatAm founders; path US habitual en portfolio | Alineado en práctica |
 | Tiempo | — | Pitch inmediato; cierre VC típico (semanas) | Sin mudanza 12 sem |
 | Probabilidad | — | Deal-by-deal (no cupos fijos públicos) | Mejor que lottery 6/5 cupos |

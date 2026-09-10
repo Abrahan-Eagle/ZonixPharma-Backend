@@ -1,6 +1,6 @@
 # Ficha inversionista — Arqos Capital
 
-> Ask ref.: Lean **USD 237.412** · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
+> Ask ref.: Lean **USD 237.412** · SAFE cap ref. USD 1.582.747 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
 > Forense ligero: 21 julio 2026 · [arqos.com](https://www.arqos.com/) · Casa212 · LinkedIn Amador · briefing §4.3.  
 > **Disclaimer:** análisis interno founder; no es asesoría legal ni financiera.
 
@@ -33,7 +33,7 @@
 | Dimensión | Pack Zonix | Arqos | Gap |
 |-----------|------------|-------|-----|
 | Ticket | Lean **237.412** | Sin apply frío / ticket opaco | No plan A solo |
-| Dilución | SAFE 600k | Vía Casa212 si entras | Modelar con Casa212 |
+| Dilución | SAFE 1.582.747 | Vía Casa212 si entras | Modelar con Casa212 |
 | Acceso | Pitch | **Casa212 / Epakon** | Sin form startup |
 | Rol | Cheque | Follow-on / PE-VC VE | Complemento círculo |
 

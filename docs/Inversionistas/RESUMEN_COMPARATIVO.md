@@ -2,7 +2,7 @@
 
 > **Última actualización:** 7 agosto 2026 (alta **SVS** **49**; **500** = aprendizaje interno + nurture post-rechazo)  
 > **Estado:** **13** candidatas (incluye `startup-venezuela-summit`).  
-> **Ask ref.:** Lean **USD 237.412** · SAFE cap ref. **USD 600.000**. FICHAs Plan A alineadas ask v4 (Cola C v8).  
+> **Ask ref.:** Lean **USD 237.412** · SAFE cap ref. **USD 1.582.747**. FICHAs Plan A alineadas ask v4 (Cola C v8).  
 > **Roles:** Plan A caja = Epakon / Casa212 / ALGEN. **500** = playbook interno (no caja ahora). **SVS** = canal evento (otra opción de red).  
 > **Disclaimer:** análisis interno; no es asesoría legal ni financiera.  
 > **Rúbrica:** ver [README.md](README.md).

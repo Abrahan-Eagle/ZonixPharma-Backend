@@ -88,7 +88,7 @@ LTV = USD 1.040
 - Marketplace farmacéutico es más sticky que SaaS general (la farmacia depende del catálogo y de la ruta de delivery ya construida con sus pacientes habituales).
 - Pero menos sticky que ERP / CRM porque la farmacia puede simplemente dejar de marketear su tienda Zonix.
 
-**5% mensual = 60% anual.** En cohortes:
+**≈46% anual compuesto** (retención M12 ≈54%); **no** 5×12=60% aditivo. En cohortes:
 - Mes 1: 100 farmacias.
 - Mes 2: 95.
 - Mes 6: 73.
@@ -138,7 +138,7 @@ Revenue M1 esc.1 = USD **7.520** (Excel Año 1; ARPF ~52 + cuota 45/60/70 + % GM
 FCF Y1 esc.1: **+59.079**; break-even mensual desde **M5**; cash M12 **246.231** (187.152 + 59.079)
 ```
 
-**Lectura:** el caso central esc.1 asume **~185 firmas** en 12 meses post-Day-D con **4× Sales** (Lean 237.412). Ask único: **USD 237.412** @ cap **600k**.
+**Lectura:** el caso central esc.1 asume **~185 firmas** en 12 meses post-Day-D con **4× Sales** (Lean 237.412). Ask único: **USD 237.412** @ cap **1.582.747**.
 
 ## 7. Cohort analysis simulado
 
@@ -167,7 +167,7 @@ Una cohort es un **grupo de farmacias que firmaron el mismo mes**. Aquí se toma
 Es cuántas de esas **10** siguen activas **mes a mes** si cada mes se van **5%** (churn) de las que quedaban el mes anterior. Los números con decimales (9,5; 9,0; …) son un **promedio** típico en modelos; en la realidad son farmacias enteras, pero la matemática del churn se expresa así.
 
 **Columna “ARPF acumulado de la cohort”**  
-Es el **dinero total** que ese grupo ha pagado a Zonix **sumando todos los meses** desde que empezó (desde el mes 4 del ejemplo). Se asume **USD ~52 por farmacia y por mes** (el **placeholder** ARPF del pack). Por ejemplo: en el mes 5 el grupo paga aproximadamente **9,5 × 52** ese mes; el acumulado **974** incluye lo del mes 4 más lo del mes 5 (con redondeos de la tabla).
+Es el **dinero total** que ese grupo ha pagado a Zonix **sumando todos los meses** desde que empezó (desde el mes 4 del ejemplo). Se asume **USD ~52 por farmacia y por mes** (el **placeholder** ARPF del pack). Por ejemplo: en el mes 5 el grupo paga aproximadamente **9,5 × 52** ese mes; el acumulado **1.014** incluye lo del mes 4 más lo del mes 5 (con redondeos de la tabla).
 
 **La frase “USD 182/mes” y “mes 28”**  
 **24 meses después** del inicio de la cohort (mes 4 + 24 = **mes 28** del calendario de la empresa), aún quedan **~3,5** farmacias activas de las 10 originales. Ese resto paga ~**3,5 × 52 ≈ 182 USD al mes**. **“Todavía no se ha extinguido”** significa que la cohort no llega a cero: con churn 5% queda un **rabo** de clientes que siguen un tiempo generando ingreso.
@@ -212,7 +212,7 @@ En operación real **no** hay una sola cohort: cada mes entran **nuevas** farmac
 - LTV: USD 1.375.
 - LTV/CAC: 18,3x.
 - Payback CAC: 1,4 meses.
-- **Break-even mensual (fórmula explícita):** con burn Excel esc.1 **~USD 11.411–14.346** y **ARPF 55** → **~189–195** farmacias.
+- **Break-even mensual (fórmula explícita):** con burn Excel esc.1 **~USD 11.411–14.346** y **ARPF 55** → **~207–261** farmacias.
 - **Implicación:** con ARPF ~55 y cuota 45/60/70 + % GMV, el proyecto tiene BE FCF desde **M5** (FCF M1–M4 negativo; cash Day-D **187.152**).
 
 ## 10. Conclusión

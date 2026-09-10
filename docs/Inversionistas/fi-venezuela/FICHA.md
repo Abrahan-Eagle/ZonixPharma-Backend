@@ -1,6 +1,6 @@
 # Ficha inversionista — Founder Institute Venezuela
 
-> Ask ref.: Lean **USD 237.412** · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
+> Ask ref.: Lean **USD 237.412** · SAFE cap ref. USD 1.582.747 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
 > Forense: 21 julio 2026 · [fi.co/venezuela](https://fi.co/venezuela) + programa 13045 · equity · FAQ · Founder Capital · briefing §5.2.  
 > **Disclaimer:** análisis interno founder; no es asesoría legal ni financiera.
 
@@ -33,7 +33,7 @@
 | Dimensión | Pack Zonix | FI Venezuela | Gap |
 |-----------|------------|--------------|-----|
 | Ticket | Lean **237.412** | **Sin cheque Core**; FC $25k selectivo | No cubre ask |
-| Dilución | SAFE cap 600k | Fee $149–169 + posible **2,5%** warrant | Peor que ALGEN 0%; conocido vs Casa212 opaco |
+| Dilución | SAFE cap 1.582.747 | Fee $149–169 + posible **2,5%** warrant | Peor que ALGEN 0%; conocido vs Casa212 opaco |
 | Vehículo | Ideal Delaware | FI global / warrant en la company | Revisar docs al firmar |
 | Tiempo | — | Early **28 jul**; Core **21 oct 2026 – 14 ene 2027** | Largo vs pitch VC |
 | Rol real | Cheque pre-seed | **Metodología + red** (+ Funding Lab) | No plan A de caja |

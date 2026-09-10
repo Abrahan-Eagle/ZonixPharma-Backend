@@ -1,6 +1,6 @@
 # Ficha inversionista — Casa212
 
-> Ask ref.: Lean **USD 237.412** · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
+> Ask ref.: Lean **USD 237.412** · SAFE cap ref. USD 1.582.747 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
 > Forense: 21 julio 2026 · [casa212.com](https://casa212.com) + [FAQ](https://casa212.com/faq) + prensa / LI / briefing §4.2.  
 > **Disclaimer:** análisis interno founder; no es asesoría legal ni financiera.
 
@@ -33,7 +33,7 @@
 | Dimensión | Pack Zonix | Casa212 | Gap |
 |-----------|------------|---------|-----|
 | Ticket | Lean **237.412** | **150k** | Parcial (~63% del ask); syndicate |
-| Dilución | SAFE cap 600k | SAFE + **programa opaco** | Pedir % por escrito |
+| Dilución | SAFE cap 1.582.747 | SAFE + **programa opaco** | Pedir % por escrito |
 | Vehículo | Ideal Delaware | Prefieren crear US limpio | Alineado |
 | Tiempo | — | **12 sem** Caracas | Gate founder |
 | Probabilidad | — | 6 cupos / &lt;2% | Baja |

@@ -144,7 +144,7 @@ Prioridad para el founder técnico (no sustituye backlog de negocio).
 | Comandos scheduler Rx/pagos | PLAN_MODULO o PLAN_RX | `zonix:expire-pending-prescriptions`, expire `pending_payment`, purge datos receta |
 | Política `block_rx_without_prescription` default false | PLAN_MODULO §Rx | Comportamiento MVP: orden puede crearse sin receta previa; subida después |
 | Retención 90 días adjuntos receta | ESTRUCTURA_LEGAL §4.4 + PLAN_MODULO §14 | Ya parcial; enlazar a comando purge |
-| Readiness checklist pre-Day-D | PLAN_LANZAMIENTO §4.2 o PLAN_MODULO §18 | Tabla: smoke OTC/Rx ([SMOKE_RX_E2E.md](../qa/SMOKE_RX_E2E.md)), Pusher, FCM, 1 orden pago real staging; SAFE cap Lean **600k** citado en pitch |
+| Readiness checklist pre-Day-D | PLAN_LANZAMIENTO §4.2 o PLAN_MODULO §18 | Tabla: smoke OTC/Rx ([SMOKE_RX_E2E.md](../qa/SMOKE_RX_E2E.md)), Pusher, FCM, 1 orden pago real staging; SAFE cap Lean **1.582.747** citado en pitch |
 | Deuda nombres Eats en UI | Nota en BRIEF o CONTEXTO | “restaurants” = farmacias (legacy); no es vertical Eats |
 
 ### 4.3 Documentación coherente (reforzar, no reescribir)

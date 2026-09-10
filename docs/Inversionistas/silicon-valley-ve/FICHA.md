@@ -1,6 +1,6 @@
 # Ficha inversionista — Silicon Valley Venezuela
 
-> Ask ref.: Lean **USD 237.412** · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
+> Ask ref.: Lean **USD 237.412** · SAFE cap ref. USD 1.582.747 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
 > Forense: 21 julio 2026 · [siliconvalleyve.com](https://www.siliconvalleyve.com/index.html) (todas las rutas) · [3vtech](https://3vtech.siliconvalleyve.com) · prensa · briefing §5.3.  
 > **Disclaimer:** análisis interno founder; no es asesoría legal ni financiera.
 
@@ -33,7 +33,7 @@
 | Dimensión | Pack Zonix | SVVE / 3V | Gap |
 |-----------|------------|-----------|-----|
 | Ticket | Lean **237.412** | **Sin cheque** | No cubre ask |
-| Dilución | SAFE cap 600k | Opaca / posible fee servicio | Pedir escrito si usas hub |
+| Dilución | SAFE cap 1.582.747 | Opaca / posible fee servicio | Pedir escrito si usas hub |
 | Vehículo | Ideal Delaware | Hub C.A. VE + servicios | No es VC |
 | Tiempo | — | 3V **cerrado**; contacto rolling | Fuera calendario raise |
 | Rol real | Cheque pre-seed | Cowork / mentoring / intros locales | Opcional operativo |

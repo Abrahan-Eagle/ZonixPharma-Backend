@@ -34,7 +34,7 @@ Full Access **$50** con código **VIP50** (vs $70) **solo si tú OK** y **antes 
 | | Pack Lean | Si vas a SVS |
 |--|-----------|--------------|
 | Plata | **237.412** | **0** del evento |
-| Dilución | SAFE cap 600k | Solo fee entrada |
+| Dilución | SAFE cap 1.582.747 | Solo fee entrada |
 | Rol | Caja Epakon/Casa212/ALGEN | Intros + práctica pitch |
 | Prep | Demo + piloto Valencia | **La misma** |
 

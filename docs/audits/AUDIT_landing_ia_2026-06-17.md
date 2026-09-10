@@ -1,5 +1,8 @@
 # AUDIT_landing_ia_2026-06-17
 
+> **Histórico.** No actualizar el cuerpo ni re-litigar hallazgos. Estado vigente de `docs/` = [`FORENSIC_DOCS_V9_2026-09-10.md`](FORENSIC_DOCS_V9_2026-09-10.md) + CANON_V4 (SAFE **237.412**). PASS1–3 quedan como antecedente.
+
+
 > Auditoría landing Zonix Pharma + plan pipeline IA (NEONFALL adaptado).  
 > **URL auditada:** `https://pharma.aiblockweb.com`  
 > **Prompt maestro:** [`docs/../plantillas/PROMPT_LANDING_IA_ZONIX.md`](../plantillas/PROMPT_LANDING_IA_ZONIX.md)

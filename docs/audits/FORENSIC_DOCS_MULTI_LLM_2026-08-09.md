@@ -1,5 +1,11 @@
 # Forense multi-LLM — `docs/` ZonixPharma-Backend (9 ago 2026)
 
+> **Histórico.** No actualizar el cuerpo ni re-litigar hallazgos. Estado vigente de `docs/` = [`FORENSIC_DOCS_V9_2026-09-10.md`](FORENSIC_DOCS_V9_2026-09-10.md) + CANON_V4 (SAFE **237.412**). PASS1–3 quedan como antecedente.
+
+
+> **Nota 26 ago 2026:** canon SAFE vigente = ask **237.412** @ cap **1.582.747** (~15%). Cifras 600k/~39,57% en este forense son **históricas**.
+
+
 > Alcance: Canon + Ingeniería + Lanzamiento + Inversionistas + Pack.  
 > Método: fan-out lotes A–F (readonly) → juez consolidado.  
 > **No inventar** P10/P90 ni cifras fuera Excel v4.

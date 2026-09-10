@@ -1,5 +1,8 @@
 # Migración Zonix Eats → Zonix Pharma
 
+> **Histórico.** No actualizar el cuerpo ni re-litigar hallazgos. Estado vigente de `docs/` = [`FORENSIC_DOCS_V9_2026-09-10.md`](FORENSIC_DOCS_V9_2026-09-10.md) + CANON_V4 (SAFE **237.412**). PASS1–3 quedan como antecedente.
+
+
 > **Estrategia:** fork destructivo. Este repo deja de ser Eats. Eats sigue
 > vivo solo en su repositorio original. MVP completo Rx desde día 1.
 

@@ -24,3 +24,11 @@
 Router startup: [`../zonix/SKILLS_STARTUP_USAR_NO_USAR.md`](../zonix/SKILLS_STARTUP_USAR_NO_USAR.md). Canal LA (fuera pack inversor): [`../LegalAlternativo/`](../LegalAlternativo/).
 
 Nuevas auditorías: `../plantillas/PROMPT_AUDIT_360_ZONIX.md`.
+
+Captación stakeholders vive en la carpeta interna
+[`../Captacion_Stakeholders/`](../Captacion_Stakeholders/README.md)
+(carpetas por método; evidencia en
+[`metodo_cafe_kleo/evidencia/`](../Captacion_Stakeholders/metodo_cafe_kleo/evidencia/),
+[`metodo_crowdpharma/evidencia/`](../Captacion_Stakeholders/metodo_crowdpharma/evidencia/) y
+[`metodo_safe_gabriel/evidencia/`](../Captacion_Stakeholders/metodo_safe_gabriel/evidencia/);
+sin forenses paralelos en `audits/`).

@@ -35,7 +35,7 @@ flowchart TD
 |-------|-------|
 | SAFE Lean | **237.412** = Fase 0 **50.260** + burn **172.152** + reserva **15.000** |
 | Caja Day-D | **187.152** |
-| Equity @ cap 600k | **~39,57%** |
+| Equity @ cap 1.582.747 | **~15%** |
 | Esc.1 Rev / Costos / FCF Y1 / cash M12 | **228.796 / 169.717 / +59.079 / 246.231** |
 | BE FCF mensual | **M5** (FCF M1–M4 negativo; **no** profitable M1) |
 | Activas M12 | **159** |

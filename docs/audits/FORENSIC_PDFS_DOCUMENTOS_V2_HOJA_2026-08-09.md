@@ -1,5 +1,8 @@
 # Forense V2 hoja-detallado — Documentos + fase 2 (9 ago 2026)
 
+> **Histórico.** No actualizar el cuerpo ni re-litigar hallazgos. Estado vigente de `docs/` = [`FORENSIC_DOCS_V9_2026-09-10.md`](FORENSIC_DOCS_V9_2026-09-10.md) + CANON_V4 (SAFE **237.412**). PASS1–3 quedan como antecedente.
+
+
 > **Método:** chunks 3p → extractores Grok (`cursor-grok-4.5-high`) → **Juez_Grok A + B** adversariales → orquestador.  
 > **Hermano v1 (síntesis corta):** [FORENSIC_PDFS_DOCUMENTOS_FOUNDERS_2026-08-09.md](FORENSIC_PDFS_DOCUMENTOS_FOUNDERS_2026-08-09.md)  
 > **Canon durable:** [EXTRACT_PDFS_DOCUMENTOS_KEEP_2026-08.md](EXTRACT_PDFS_DOCUMENTOS_KEEP_2026-08.md)  

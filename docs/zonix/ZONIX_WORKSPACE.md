@@ -27,7 +27,7 @@
 
 ## Regla de oro para agentes
 
-Cifras y legal VE solo desde **pack Lanzamiento** + skill `zonix-startup-context`. Ask vigente: SAFE Lean **USD 237.412** @ cap **600k** (~**39,57%**). Tiers históricos **101k / 118k / 135k** (y Base/Growth) = **no vigentes**.
+Cifras y legal VE solo desde **pack Lanzamiento** + skill `zonix-startup-context`. Ask vigente: SAFE Lean **USD 237.412** @ cap **1.582.747** (~**15%**). Tiers históricos **101k / 118k / 135k** (y Base/Growth) = **no vigentes**.
 
 ## JARVIS onboarding (Capa 0 + Paso C)
 

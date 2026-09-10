@@ -37,13 +37,13 @@ Actúas como **equipo de data room pre-seed** (panel JARVIS) para **Zonix Pharma
 
 > **Fuente canónica (7 ago 2026):** Excel Detallado **v4** → [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](../Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.xlsx) + [README.md](../Lanzamiento/README.md) + [BRIEF_UNA_PAGINA.md](../Lanzamiento/BRIEF_UNA_PAGINA.md). Skills: `zonix-startup-context`. Asks **210.760 / ~112k / ~174k / 111.988** = `[OBSOLETO]`.
 
-**Anclas v4:** SAFE **237.412** · Day-D **187.152** · equity **~39,57%** · Esc.1 FCF **+59.079** · cash M12 **246.231** · BE **M5** · ARPF **~52** · LTV **1.040**. Modelo vigente **Lean Excel**. Si detectas divergencia, **propón** corrección con diff; **no** inventes cash P10/P90 sin OK FP&A.
+**Anclas v4:** SAFE **237.412** · Day-D **187.152** · equity **~15%** · Esc.1 FCF **+59.079** · cash M12 **246.231** · BE **M5** · ARPF **~52** · LTV **1.040**. Modelo vigente **Lean Excel**. Si detectas divergencia, **propón** corrección con diff; **no** inventes cash P10/P90 sin OK FP&A.
 
 | Concepto | Lean (Excel) | Base | Growth |
 |----------|--------------|------|--------|
 | Capital pedido (TOTAL SAFE) | **237.412** *(≈211k)* | **~157.268** *(≈157k hist.)* | **~187.478** *(≈187k hist.)* |
-| SAFE cap post-money | **600.000** | **~912.814** | **~1.205.345** |
-| Equity implícita (ref.) | **~39,57%** | **~17,23%** | **~15,55%** |
+| SAFE cap post-money | **1.582.747** | **~912.814** | **~1.205.345** |
+| Equity implícita (ref.) | **~15%** | **~17,23%** | **~15,55%** |
 | Burn promedio mensual | **~14.346** | **~10.898** *(hist.)* | **~12.698** *(hist.)* |
 | Burn M1–M12 | **172.152** | — | — |
 | Reserva | **15.000** | — | — |
@@ -58,7 +58,7 @@ Actúas como **equipo de data room pre-seed** (panel JARVIS) para **Zonix Pharma
 
 **Cascada obligatoria** si cambia **una** ancla (solo con OK usuario): `README.md` → `BRIEF_UNA_PAGINA.md` → `MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md` → `CHECKLIST_PRE_INVERSOR.md` → `UNIT_ECONOMICS.md` → `PROYECCION_FINANCIERA_12M.md` → `PRESUPUESTO_12_MESES_REFERENCIA.md` → `MODELO_FINANCIERO_ZONIX_PHARMA.md` (+ plantilla §C).
 
-**Anti-regresión:** no reintroducir como vigente tiers **101/118/135k**, ask **111.988 / 174.102**, equity **39,57% / 29,02%**, Fase 0 **28.057 / 33.835**, Day-D **72.943 / 78.153**, burn **8.108 / 90.702**, M12 **42.209 / 40.831** sin etiqueta *histórico* / `[OBSOLETO]`.
+**Anti-regresión:** no reintroducir como vigente tiers **101/118/135k**, ask **111.988 / 174.102**, equity **15% / 29,02%**, Fase 0 **28.057 / 33.835**, Day-D **72.943 / 78.153**, burn **8.108 / 90.702**, M12 **42.209 / 40.831** sin etiqueta *histórico* / `[OBSOLETO]`.
 
 ---
 
@@ -169,7 +169,7 @@ Prioridad:
 cd /ruta/ZonixPharma-Backend
 # Infra CorralX en pack (debe ser 0)
 grep -riE 'corralx\.com|test\.corral' docs/Lanzamiento/ || true
-# Coherencia anclas vigentes: 237.412, 50.260, 187.152, 172.152, 15.000, 39,57%
+# Coherencia anclas vigentes: 237.412, 50.260, 187.152, 172.152, 15.000, 15%
 # Residuales (solo OK si [OBSOLETO]/hist./auditoría):
 rg -n '174\.?102|111\.?988|29,?02%|18,?66%|~112k|Lean ~112' docs/Lanzamiento/ docs/plantillas/PROMPT_MEJORAR_PACK_LANZAMIENTO.md
 grep -rE '101\.000|118\.000|135\.000|28\.057|72\.943|42\.209' docs/Lanzamiento/*.md || true
@@ -300,9 +300,9 @@ Copia desde aquí hasta el final del bloque:
 - **No** commit/push sin mi orden.
 - **No** inventar `[PENDIENTE]` del founder ni métricas de piloto.
 - Flujo: auditoría → lista P0–P2 → **esperar mi OK** → editar → actualizar ANALISIS_FORENSE (pasada N) → verificar cascada de anclas.
-- **Anti-regresión:** no reintroducir como vigente **101/118/135k**, **111.988 / 174.102**, **39,57% / 29%**, Fase 0 **28.057 / 33.835**, Day-D **72.943 / 78.153**, M12 **42.209 / 40.831** sin etiqueta *histórico*.
+- **Anti-regresión:** no reintroducir como vigente **101/118/135k**, **111.988 / 174.102**, **15% / 29%**, Fase 0 **28.057 / 33.835**, Day-D **72.943 / 78.153**, M12 **42.209 / 40.831** sin etiqueta *histórico*.
 
-**Anclas (no cambiar sin OK):** Lean **237.412** / cap **600k** / equity **~39,57%**; Fase 0 **50.260**; Day-D **187.152**; burn Y1 **172.152** (~**14.346**/mes); reserva **15.000**; Base/Growth **~157k / ~187k** *(hist.)*; M12 cash **`[PENDIENTE FP&A]`**; curva ~159 / ARPF ~52 legado; waiver ingreso **~−453** (cash waiver `[PENDIENTE FP&A]`); tests verificar CI.
+**Anclas (no cambiar sin OK):** Lean **237.412** / cap **1.582.747** / equity **~15%**; Fase 0 **50.260**; Day-D **187.152**; burn Y1 **172.152** (~**14.346**/mes); reserva **15.000**; Base/Growth **~157k / ~187k** *(hist.)*; M12 cash **`[PENDIENTE FP&A]`**; curva ~159 / ARPF ~52 legado; waiver ingreso **~−453** (cash waiver `[PENDIENTE FP&A]`); tests verificar CI.
 
 **Skills:** `zonix-startup-context`, `zonix-financial-model`, `zonix-investor-materials`, `zonix-lanzamiento-roles`.
 

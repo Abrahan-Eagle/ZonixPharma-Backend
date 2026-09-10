@@ -4,6 +4,7 @@
 > **Uso interno** (founder + Co-CEO + Sales) — **no incluir** en zip data room inversor.
 > **Marco:** Customer Development / mom-test (Steve Blank, UniMOOC M1–M3) — skills `zonix-launch-piloto`, `zonix-b2b-sales`, `zonix-lean-canvas`.
 > **Canon:** [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md) §0 y §4.0 · [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §2.0 · [CUESTIONARIO_EQUIPO_PILOTO.md](CUESTIONARIO_EQUIPO_PILOTO.md) §0.
+> **Marco, muestra y niveles de evidencia:** [PLAN_CAMPO_VALENCIA.md](PLAN_CAMPO_VALENCIA.md) — este archivo conserva el guion; el plan de campo define sucursal/RIF, 18–24 entrevistas y encuesta 80/120.
 > **Resultados se vuelcan en:** [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md) §6 (farmacias prospecto) + ranking 3+3 de PROPUESTA_B2B §2.0.
 > **Banco de hipótesis (mapa mental pre-visita):** [BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md](BANCO_PROBLEMAS_NECESIDADES_FARMACIA.md) — 100 problemas + 100 temores + 100 necesidades + 100 deseos con cobertura Zonix (Sí/Parcial/No). Las objeciones espontáneas del dueño son temores (T) — anotarlas, no rebatirlas en la primera visita.
 
@@ -11,12 +12,12 @@
 
 ## 1. Por qué salir a la calle (qué se valida)
 
-El founder debe confirmar **en persona** que el dolor existe **antes** de escalar Sales, Meta Ads o features. No se valida con encuestas online ni con entusiasmo de conocidos.
+El founder debe confirmar **en persona** que el dolor existe **antes** de escalar Sales, Meta Ads o features. No se valida con encuestas online ni con entusiasmo de conocidos. **Sin `CAP-P09` no hay visitas ni solicitudes**; ver [`PLAN_CAMPO_VALENCIA.md`](PLAN_CAMPO_VALENCIA.md) y [`../Captacion_Stakeholders/_comun/06_DECISIONES_ABIERTAS.md`](../Captacion_Stakeholders/_comun/06_DECISIONES_ABIERTAS.md).
 
 | Qué se valida | Hipótesis falsable | Señal de pivot |
 |---------------|--------------------|----------------|
 | Problema | El dueño de farmacia independiente pierde ventas/horas por pedidos manuales (WhatsApp), Rx sin trazabilidad y conciliación de pagos | ≥2/3 de entrevistas sin dolor confirmado → revisar segmento o propuesta (PLAN §0) |
-| Segmento | Farmacia independiente Valencia (San Diego / Av. Bolívar Norte) es el beachhead correcto | Dolor aparece solo en cadenas o solo en otra zona |
+| Segmento | Farmacia independiente del polo elegido en `PLAN_CAMPO` §2 es el beachhead correcto | Dolor aparece solo en cadenas o solo en otra zona; polo pendiente `CAMPO-T01` |
 | Propuesta dominante | «Costo total menor vs agregador» pesa más que «modernidad» | Entrevistas priorizan otro beneficio → ajustar one-pager (PROPUESTA_B2B §2.0) |
 | Pricing | Cuota **45/60/70 + %GMV 8/7/5** es aceptable vs lo que hoy gastan/pierden | ≥2 de 3 rechazan nivel Pro sobre GMV típico → escalar a founder (PLAN §4.0 fila 5) |
 
@@ -24,7 +25,7 @@ El founder debe confirmar **en persona** que el dolor existe **antes** de escala
 
 | Etapa | Cuándo | Duración | Evidencia mínima |
 |-------|--------|----------|------------------|
-| Discovery founder (esta guía) | **Pre-wire — empezar ya** | 2–4 semanas | ≥5 entrevistas documentadas |
+| Discovery founder (esta guía) | **Pre-wire — tras `CAP-P09`** | 2–4 semanas | ≥5 entrevistas documentadas |
 | Discovery escalado (4× Sales) | T+30 → T+60 | 30 días | ≥20–30 farmacias con interés (PLAN §2.5) |
 | Validación (LOI + activación) | T+30 → T+88 | — | 10–15 LOI; ~28 activas al Day-D (PLAN §2.6) |
 | Validación demanda real | M1–M2 post-Day-D | 60 días | Repeat paciente M2 (PLAN §0) |
@@ -83,17 +84,19 @@ El founder debe confirmar **en persona** que el dolor existe **antes** de escala
 > «Gracias. ¿Le puedo dejar mi tarjeta y volver con algo concreto si lo que estamos construyendo resuelve lo que me contó?»
 
 - Entregar **tarjeta** (no brochure completo salvo interés explícito).
-- Anotar **nombre, teléfono, zona, GMV estimado** → VOLCADO §6.
+- En la minuta versionable, usar **ID sucursal/RIF seudónimo, zona, rol y GMV por banda**. Nombre/teléfono reales van solo al CRM/Drive privado, nunca a Git → VOLCADO §6.
 
 ---
 
 ## 4. Plantilla de minuta (una por farmacia)
 
-Copiar por entrevista; archivar en carpeta del founder y resumir en VOLCADO §6.
+Copiar por entrevista; archivar en carpeta privada del founder y resumir sin PII en VOLCADO §6.
 
 ```text
-Farmacia: ____________  Zona: ____________  Fecha: ____________
-Entrevistado (rol): dueño / regente / encargado
+ID sucursal: ____________  ID RIF (seudónimo): ____________
+Zona: ____________  Fecha: ____________
+Entrevistado (rol): dueño / socio / administrador / regente / compras / encargado
+¿Es decisor?: sí / no / parcial
 1. Pedidos WhatsApp/tel semana pasada: ___  ¿Quién anota?: ____________
 2. Tiempo conciliación pagos ayer: ___ h    Método: ____________
 3. Última venta perdida (stock/radio): ____________
@@ -141,7 +144,7 @@ Interés en seguir conversando: alto / medio / nulo
 | Herramienta | Uso |
 |-------------|-----|
 | Pizarra + marcadores | Ranking 3+3 y mapa de zona tras cada lote de entrevistas |
-| VOLCADO §6 | Pipeline formal (nombre, contacto, GMV, tier, estado) |
+| VOLCADO §6 | Resumen versionable con `id_sucursal` / `id_rif` seudónimos; contacto real solo en CRM privado |
 | Proyector | Opcional — solo reuniones con cadena pequeña (3–8 sedes); no presupuestado |
 
 ### 6.4 Post-firma (no discovery)
@@ -164,10 +167,11 @@ Flyers paciente y **QR de mostrador** (canal referido — SUPUESTO §3.6) se act
 
 | Condición | Umbral |
 |-----------|--------|
-| Entrevistas documentadas | ≥5 (founder, pre-wire) — luego ≥20–30 con Sales (PLAN §2.5) |
-| Dolor confirmado | ≥3/5 farmacias citan al menos 1 dolor del top 3 con dato concreto |
+| Gate canónico pre-Day-D | ≥5 entrevistas documentadas (founder) + ≥3 reacciones pricing; no cambia |
+| Cierre cualitativo ampliado | 18–24 sucursales, ≥12 RIF únicos y últimas 6 sin problema P0 nuevo (PLAN_CAMPO §5–§6) |
+| Dolor confirmado | Gate inicial: ≥3/5; cierre ampliado: cada dolor top en ≥3 RIF y ≥2 zonas (PLAN_CAMPO §6) |
 | Ranking 3+3 lleno | PROPUESTA_B2B §2.0 sin `[PENDIENTE]` |
 | Pipeline iniciado | VOLCADO §6 con ≥5 filas reales |
 | Pricing testeado (mom-test) | ≥3 reacciones documentadas a cuota **45/60/70 + %GMV 8/7/5** (PLAN §4.0 fila 5) |
 
-Si se cumple → segunda visita con demo (PROPUESTA_B2B §7–§8) y camino a carta de intención. Si no → revisar hipótesis con founder antes de gastar más.
+Cumplir el **gate canónico** permite segunda visita con demo (PROPUESTA_B2B §7–§8) y camino a carta de intención. Cerrar la muestra **18–24** habilita la encuesta cuantitativa de PLAN_CAMPO; no es un gate nuevo para Day-D. Si no hay dolor → revisar hipótesis con founder antes de gastar más.

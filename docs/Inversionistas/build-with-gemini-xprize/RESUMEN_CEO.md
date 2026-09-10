@@ -48,7 +48,7 @@ Detalle: [NOTAS.md — Deep Research Gemini](NOTAS.md#deep-research-gemini)
 | | Pack actual | Esta candidata |
 |--|-------------|----------------|
 | Plata | Lean **237.412** | Solo si **ganas** un premio ≥ ask (1º–5º); no es cheque garantizado |
-| Dilución | SAFE cap ref. 600k | **0%** por el premio *(impuestos aparte)* |
+| Dilución | SAFE cap ref. 1.582.747 | **0%** por el premio *(impuestos aparte)* |
 | Velocidad / compromiso | Semanas de raise | Submit en ~12 días + negocio **nuevo** + revenue + evidencia |
 | Empresa / jurisdicción | VE / raise seed | Rules NY/US; OFAC/residencia VE **[NC]** |
 

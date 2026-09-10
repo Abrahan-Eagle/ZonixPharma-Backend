@@ -1,5 +1,8 @@
 # Extract KEEP — PDFs founders / deep tech (canon post-borrado)
 
+> **Histórico.** No actualizar el cuerpo ni re-litigar hallazgos. Estado vigente de `docs/` = [`FORENSIC_DOCS_V9_2026-09-10.md`](FORENSIC_DOCS_V9_2026-09-10.md) + CANON_V4 (SAFE **237.412**). PASS1–3 quedan como antecedente.
+
+
 > **Fecha:** 9 agosto 2026  
 > **Uso:** fuente durable en repo. Tras esto, los PDF en Descargas del founder son **descartables** (no versionados).  
 > **Método:** fan-out lotes DT-1..3, UN-1, ENS-1..3 → síntesis orquestador.  

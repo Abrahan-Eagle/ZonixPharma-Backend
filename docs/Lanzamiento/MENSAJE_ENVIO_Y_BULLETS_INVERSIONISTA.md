@@ -8,7 +8,7 @@
 
 > Hola [Nombre del inversor],
 >
-> Soy **Abrahan Pulido**. Soy fundador de Zonix Pharma, un marketplace farmacéutico digital para Carabobo. **T+0** = wire; **~90 días Fase 0**; **Day-D (T+90)** = piloto público = **M1** del modelo. Producto en **staging** (Rx + farmacia + paciente) con **443 tests** backend; **pre-revenue**; estamos cerrando early adopters en Valencia y empaquetamos **demo de producto** (video 3–5 min / demo en vivo). Busco **USD 237.412** vía SAFE cap **600k** *(equity ~39,57%)* para Fase 0 **50.260** + 12 meses post-Day-D. Cash M12: **246.231** (esc.1).
+> Soy **Abrahan Pulido**. Soy fundador de Zonix Pharma, un marketplace farmacéutico digital para Carabobo. **T+0** = wire; **~90 días Fase 0**; **Day-D (T+90)** = piloto público = **M1** del modelo. Producto en **staging** (Rx + farmacia + paciente) con **443 tests** backend; **pre-revenue**; estamos cerrando early adopters en Valencia y empaquetamos **demo de producto** (video 3–5 min / demo en vivo). Busco **USD 237.412** vía SAFE cap **1.582.747** *(equity ~15%)* para Fase 0 **50.260** + 12 meses post-Day-D. Cash M12: **246.231** (esc.1).
 >
 > Modelo: cuota fija **45/60/70 + 8%/7%/5% GMV** (tier dinámico). En volumen Pro típico el costo es **~64% menor** que un agregador al 25%.
 >
@@ -24,7 +24,7 @@
 
 ### 1.1 Variante ultra-corta (~80 palabras) — Cialdini
 
-> Hola [Nombre], soy Abrahan Pulido, fundador de **Zonix Pharma** (marketplace farmacéutico Valencia, OTC + Rx). Stack en **staging** (**443 tests**); **pre-revenue**; piloto Valencia en curso. Buscamos **USD 237.412** pre-seed vía SAFE (cap **600k**). ¿30 min? Pack: [LINK]. Demo producto: [LINK o “en la call”].
+> Hola [Nombre], soy Abrahan Pulido, fundador de **Zonix Pharma** (marketplace farmacéutico Valencia, OTC + Rx). Stack en **staging** (**443 tests**); **pre-revenue**; piloto Valencia en curso. Buscamos **USD 237.412** pre-seed vía SAFE (cap **1.582.747**). ¿30 min? Pack: [LINK]. Demo producto: [LINK o “en la call”].
 
 **Ganchos (usar 1–2, sin exagerar):**
 - **Autoridad:** stack ~4 años; regulación Rx con farmacéutico de cada farmacia.
@@ -126,7 +126,7 @@ Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 > - **Dev** USD **1.000**; CS+CM **500**; contador+abogado **330**/mes; IA **425**.
 
 > **Slide 8: Ask**
-> - **USD 237.412** SAFE cap **600.000** (~**39,57%**) — ask único v4.
+> - **USD 237.412** SAFE cap **1.582.747** (~**15%**) — ask único v4.
 > - Sin valuación arbitraria. Plazo cierre: 21-30 días.
 
 ## 5. Bullets para Q&A (cobertura defensiva)
@@ -171,14 +171,14 @@ Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 | Indicador | Valor |
 |---|---|
 | Capital pedido | **USD 237.412** (Lean Excel v4) |
-| Equity implícito | **~39,57%** (237.412 / 600k) |
-| SAFE post-money cap | **600.000** (ref.) |
+| Equity implícito | **~15%** (237.412 / 1.582.747) |
+| SAFE post-money cap | **1.582.747** (ref.) |
 | Equilibrio FCF mensual | **M5** (esc.1: FCF M1–M4 negativo; ingresos M1 **7.520** < costos **11.411**) |
 | Farmacias activas M12 | **~159** (esc.1 v4) |
 | ARPF | **~USD 52/mes** *(placeholder; cobro real = híbrido cuota 45/60/70 + % GMV hasta piloto)* |
 | CAC | USD **139** |
 | LTV/CAC | **~7,5x** |
-| Payback CAC | **~2,8 meses** |
+| Payback CAC | **~2,7 meses** |
 | Burn mensual | **~USD 14.346** prom. (esc.1: M1 **11.411** / M2 **14.846** / M3–12 **14.346**) |
 | Runway | 12 meses |
 | Cash al cierre año 1 (proyección) | **USD 246.231** (esc.1: 187.152 + FCF +59.079) |

@@ -52,7 +52,7 @@
 |---|---|---|
 | **Lean (bootstrap Carabobo) v4 Excel — ask único** | **USD 237.412** | Fase 0 **50.260** + burn **172.152** + reserva **15.000**; **CEO** + Founder + Co-CEO + **4× Sales @ 350** + Dev **1.000** |
 
-**Lean — detalle v4 Excel:** one-shots **22.365** (legal+intro+HQ CapEx); operativa Fase 0 **27.895**; caja Day-D **187.152**; equity ref. **~39,57%** con cap **600k**. Fuente: [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx) · [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md).
+**Lean — detalle v4 Excel:** one-shots **22.365** (legal+intro+HQ CapEx); operativa Fase 0 **27.895**; caja Day-D **187.152**; equity ref. **~15%** con cap **1.582.747**. Fuente: [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx) · [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md).
 
 **Awareness (Lean):** Meta pre-Day-D en mkt pre (**~2.250** / 3 meses); post-Day-D Meta **650**/mes + valla desde M3.
 
@@ -60,7 +60,7 @@
 
 ### 2.4 Instrumento: SAFE post-money con cap
 
-**Decisión:** SAFE post-money cap ref. **600k (Lean 237.412)** → equity **~39,57%**.
+**Decisión:** SAFE post-money cap ref. **1.582.747 (Lean 237.412)** → equity **~15%**.
 
 **Por qué:**
 - **Simple:** un documento de 5 páginas. No requiere abogado en NY ni fondo institucional.
@@ -210,13 +210,13 @@ Vista única para data room; detalle en docs hermanos. **ARPF ~52** y tier únic
 | **LTV/CAC** | Eficiencia del negocio. | **~7,5x** (con CAC **139** y ARPF placeholder **~52**). > 3x ya es bueno; > 5x es excelente. |
 | **Churn** | Porcentaje de clientes que se van cada mes. | 5%. Si tengo 100 farmacias, mes que viene tendré 95 (sin contar nuevas). |
 | **Burn rate** | Gasto operativo mensual post-Day-D. | **~USD 14.346**/mes (burn Y1 **172.152** — Excel Detallado). Esc.1 P&L: costos M1 **11.411** / M2 **14.846** / M3–12 **14.346**. |
-| **SAFE** | Contrato simple de inversión. El inversor da dinero hoy, recibe equity en la próxima ronda. | **USD 237.412** con cap **USD 600k** (~**39,57%**). |
-| **Cap** | Valuación máxima a la que el SAFE convierte. | Si la próxima ronda valora **Zonix Pharma** en USD 800k, el inversor convierte como si fuera **USD 600k** (**Lean**) — recibe más equity que a valuación plena. |
+| **SAFE** | Contrato simple de inversión. El inversor da dinero hoy, recibe equity en la próxima ronda. | **USD 237.412** con cap **USD 1.582.747** (~**15%**). |
+| **Cap** | Valuación máxima a la que el SAFE convierte. | Si la próxima ronda valora **por encima** del cap (p. ej. USD 3M), convierte como si fuera **USD 1.582.747** → ~**15%**. Si valora **por debajo**, suele convertir al precio de esa ronda → **más** del ~15%. |
 | **TAM / SAM / SOM** | Mercado total / accesible / capturable. | TAM Venezuela USD 1.638M. **SOM** (farmacias / penetración): [PERFIL_MERCADO_PILOTO.md](PERFIL_MERCADO_PILOTO.md) §3 y [BRIEF_UNA_PAGINA.md](BRIEF_UNA_PAGINA.md). **Ingreso B2B acumulado año 1** (esc.1, sin waiver): **~USD 228.796**; FCF Y1 **+59.079**; cash M12 **246.231**. |
 | **Runway** | Cuántos meses puedo aguantar con el dinero que tengo. | **Fase 0 + 12m** post-Day-D con **USD 237.412** (Day-D caja **187.152**) — [MODELO_FINANCIERO_ZONIX_PHARMA.xlsx](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx). |
 | **Break-even** | Mes en que el FCF mensual es ≥ 0. | **Desde M5** en esc.1 (FCF M1–M4 negativo) — [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.1. |
 | **ARPF** | Average Revenue Per Farmacia. | USD **~52**/mes **placeholder** hasta GMV piloto; cobro vigente = híbrido cuota **45/60/70** + **8%/7%/5%** GMV (§2.1). |
-| **Payback** | Meses para recuperar el CAC. | **~2,8 meses** (CAC/ARPF al placeholder). Recalibrar con ARPF híbrido real. |
+| **Payback** | Meses para recuperar el CAC. | **~2,7 meses** (139/52 — UNIT §5). Recalibrar con ARPF híbrido real post-piloto. |
 
 ## 5. Decisiones que el founder se reserva (no están en el pack)
 

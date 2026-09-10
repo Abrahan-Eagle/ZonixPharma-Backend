@@ -34,7 +34,7 @@ Tienes **acceso warm** a la CEO (**Beresith Rigal**): eso acelera una conversaci
 | | Pack actual | Si hablas con SVVE |
 |--|-------------|---------------------|
 | Plata | Lean **237.412** | **0** (tú pagas servicios) |
-| Dilución | SAFE cap ref. 600k | N/A o fee opaco |
+| Dilución | SAFE cap ref. 1.582.747 | N/A o fee opaco |
 | Historia | Raise pre-seed | Hub / visibilidad local |
 | 3V | — | Fuera de calendario 2026 |
 | Alternativa | Epakon / Casa212 / 500 | Caja real |

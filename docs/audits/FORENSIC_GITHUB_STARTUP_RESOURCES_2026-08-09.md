@@ -1,5 +1,8 @@
 # Forense multi-LLM — Recursos GitHub para Startups (9 ago 2026)
 
+> **Histórico.** No actualizar el cuerpo ni re-litigar hallazgos. Estado vigente de `docs/` = [`FORENSIC_DOCS_V9_2026-09-10.md`](FORENSIC_DOCS_V9_2026-09-10.md) + CANON_V4 (SAFE **237.412**). PASS1–3 quedan como antecedente.
+
+
 > Fuente: Word local del founder en Descargas — `Recursos GitHub para Startups.docx` (**no versionado**).  
 > Lente: **Zonix Pharma**, pre-seed VE, pack Lanzamiento (SAFE **237.412**, Excel v4).  
 > Método: fan-out lotes A–F → juez Grok. **No inventar** elegibilidad ni P10/P90.

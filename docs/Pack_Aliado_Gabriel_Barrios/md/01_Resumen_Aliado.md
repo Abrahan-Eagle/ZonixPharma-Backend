@@ -3,7 +3,7 @@
 # Zonix Pharma — Informe completo para aliado estratégico
 
 > **Para:** Gabriel Barrios — Gerente de Consultoría, Grupo Morr (Valencia, Venezuela)  
-> **Sync 7 ago 2026:** Lean SAFE **237.412** / equity **~39,57%** / Day-D **187.152** / burn **172.152**. Asks históricos **174k/112k/210.760** = no vigentes.
+> **Sync 7 ago 2026:** Lean SAFE **237.412** / equity **~15%** / Day-D **187.152** / burn **172.152**. Asks históricos **174k/112k/210.760** = no vigentes.
 > **De:** Abrahan Pulido — Founder / CEO / CTO, Zonix Pharma  
 > **Fecha:** junio 2026
 > **Propósito:** síntesis ejecutiva de los **18 documentos** del pack aliado — una sola lectura para entender tesis, números, operación y próximos pasos.
@@ -14,7 +14,7 @@
 
 Este documento resume los **18 entregables** del pack aliado; el detalle ampliado está en `docs/Pack_Aliado_Gabriel_Barrios/` (md + docx + Excel).
 
-**No es solicitud de inversión por defecto.** Las cifras de capital (Lean **USD 237.412** v4, SAFE cap **600.000**) aparecen solo como contexto de viabilidad del piloto Valencia. Buscamos tu mirada de consultoría, red local y — si encaja — **dos sesiones de feedback** e **introducciones puntuales** a farmacias independientes en Carabobo.
+**No es solicitud de inversión por defecto.** Las cifras de capital (Lean **USD 237.412** v4, SAFE cap **1.582.747**) aparecen solo como contexto de viabilidad del piloto Valencia. Buscamos tu mirada de consultoría, red local y — si encaja — **dos sesiones de feedback** e **introducciones puntuales** a farmacias independientes en Carabobo.
 
 ---
 
@@ -29,7 +29,7 @@ Este documento resume los **18 entregables** del pack aliado; el detalle ampliad
 | 05 | Unit economics | ARPF ~52, LTV 1.040, BE FCF M5 (~85 activas) |
 | 06 | Proyección 12M | Mes a mes, caja, sensibilidad esc.1 |
 | 07 | Presupuesto 12M | Lean ask único, equipo, buffer VE |
-| 08 | Estructura legal | C.A., SAFE cap 600k, ~39,57% ref. v4 |
+| 08 | Estructura legal | C.A., SAFE cap 1.582.747, ~15% ref. v4 |
 | 09 | Guía reunión | Guion 45–60 min, FAQ, qué no prometer |
 | 10 | Plan lanzamiento | T+0 → Day-D → M12, DoD M6 |
 | 11 | Propuesta farmacia | Pricing 45/60/70 + % GMV, objeciones |
@@ -76,7 +76,7 @@ En **Grupo Morr** combinas consultoría de negocio con arraigo en el tejido empr
 
 ### En 60 segundos
 
-**Zonix Pharma** es marketplace farmacéutico B2B2C: paciente pide en app; farmacia independiente despacha; farmacéutico colegiado valida recetas; partner logístico entrega — **sin flota propia** de Zonix. Mercado VE **USD 1.638M/año**; piloto Valencia metro (**226 farmacias**). Producto ~4 años construido; capital va a **lanzar y vender**. Lean **USD 237.412** / SAFE **600k** *(canon Excel v4)*. **LTV/CAC ~7,5×**; **~159 activas M12**.
+**Zonix Pharma** es marketplace farmacéutico B2B2C: paciente pide en app; farmacia independiente despacha; farmacéutico colegiado valida recetas; partner logístico entrega — **sin flota propia** de Zonix. Mercado VE **USD 1.638M/año**; piloto Valencia metro (**226 farmacias**). Producto ~4 años construido; capital va a **lanzar y vender**. Lean **USD 237.412** / SAFE **1.582.747** *(canon Excel v4)*. **LTV/CAC ~7,5×**; **~159 activas M12**.
 
 ### Datos clave
 
@@ -153,7 +153,7 @@ Documento del **«por qué»**: plataforma reutilizada ~4 años; ingresos híbri
 | Ingresos | Cuota **45/60/70** + **8% / 7% / 5%** GMV | Piso predecible + alineación volumen |
 | Alcance Day-D | Flujos core completos (Rx incluida) | Diferenciador vs solo OTC |
 | Capital | **Lean ~237k** principal | Bootstrap 4× Sales Carabobo |
-| Instrumento | SAFE cap **600.000** | Sin valuación prematura |
+| Instrumento | SAFE cap **1.582.747** | Sin valuación prematura |
 | Zona | Bella Florida + El Socorro | Densidad + founder local |
 | Farmacéutico | **Por farmacia aliada**, no interno Zonix | Ley VE + MPPS |
 | Liquidez | **Oferta primero** | ~28 activas pre-Day-D; Meta masivo después |
@@ -346,7 +346,7 @@ Lean v4: wire **237.412** → Fase 0 **50.260** → caja Day-D **187.152** → F
 
 ### En 60 segundos
 
-Ask único **Lean ~237k (237.412)** — meta comercial **~159 activas M12**; equity **~39,57%** @ cap **600k**.
+Ask único **Lean ~237k (237.412)** — meta comercial **~159 activas M12**; equity **~15%** @ cap **1.582.747**.
 
 ### Anclas capital Lean
 
@@ -357,8 +357,8 @@ Ask único **Lean ~237k (237.412)** — meta comercial **~159 activas M12**; equ
 | Burn esc.1 P&L | **11.411 / 14.846 / 14.346** |
 | 4× Sales (base) | **4 × 350** |
 | Dev | **1.000** |
-| SAFE cap | **600.000** |
-| Equity ref. | **~39,57%** |
+| SAFE cap | **1.582.747** |
+| Equity ref. | **~15%** |
 
 ### Equipo Lean (nómina fija/mes)
 
@@ -407,7 +407,7 @@ Buffer **~20%** inflación VE embebido en contingencia mensual — no fila apart
 
 ### En 60 segundos
 
-**ZONIX PHARMA, C.A.** en Carabobo; SAFE post-money cap **USD 600.000**; monto Lean **USD 237.412**; equity ref. inversor **~39,57%** al convertir; founder hoy **100%** pre-SAFE.
+**ZONIX PHARMA, C.A.** en Carabobo; SAFE post-money cap **USD 1.582.747**; monto Lean **USD 237.412**; equity ref. inversor **~15%** al convertir; founder hoy **100%** pre-SAFE.
 
 ### Vehículo C.A.
 
@@ -424,19 +424,19 @@ Buffer **~20%** inflación VE embebido en contingencia mensual — no fila apart
 | Término | Valor |
 |--------|-------|
 | Monto | **USD 237.412** |
-| Cap post-money | **USD 600.000** |
-| Equity implícito | **~39,57%** |
+| Cap post-money | **USD 1.582.747** |
+| Equity implícito | **~15%** |
 | Discount | 0% |
 | MFN | Sí (estándar YC) |
 
-**Nota cap 600k:** benchmark pre-seed LatAm ~10–12%; **~39,57%** es consciente por riesgo temprano, ticket y bootstrap.
+**Nota cap 1.582.747:** benchmark pre-seed LatAm ~10–12%; **~15%** es consciente por riesgo temprano, ticket y bootstrap.
 
 ### Cap table ilustrativo post-conversión
 
 | Stakeholder | % |
 |-------------|---|
-| Founder | **~60,43%** |
-| Inversor SAFE | **~39,57%** |
+| Founder | **~85%** |
+| Inversor SAFE | **~15%** |
 
 ### Marco operativo
 
@@ -448,7 +448,7 @@ Buffer **~20%** inflación VE embebido en contingencia mensual — no fila apart
 ### Qué revisar con Gabriel
 
 - ¿Requisitos municipales/bomberos adicionales en Carabobo?
-- ¿**~39,57%** coherente para ángel VE vs ticket **~237k**? (canon Excel; cap 600k fijado)
+- ¿**~15%** coherente para ángel VE vs ticket **~237k**? (canon Excel; cap 1.582.747 fijado)
 - ¿Riesgo SUNASS con vendedores en horario fijo bajo honorarios?
 
 ---
@@ -952,7 +952,7 @@ Excel Detallado + Hoja3. Lectura rápida: **Hoja3 sección A** = total oficial *
 
 | Tier | Capital | Cap | Equity ref. |
 |------|---------|-----|-------------|
-| **Lean (ask único)** | **237.412** | **600k** | **~39,57%** |
+| **Lean (ask único)** | **237.412** | **1.582.747** | **~15%** |
 
 ### Qué revisar con Gabriel
 
@@ -985,8 +985,8 @@ Excel Detallado + Hoja3. Lectura rápida: **Hoja3 sección A** = total oficial *
 | **LTV/CAC** | **~7,5×** | Umbral SaaS B2B >3× |
 | Payback CAC | **~2,7 meses** (139/52) | |
 | Activas al BE FCF (M5) | **~85** | Costos **14.346**; revenue **15.980** |
-| SAFE cap Lean | **USD 600.000** | Post-money |
-| Equity ref. inversor | **~39,57%** | 237.412 ÷ 600k |
+| SAFE cap Lean | **USD 1.582.747** | Post-money |
+| Equity ref. inversor | **~15%** | 237.412 ÷ 1.582.747 |
 | TAM Venezuela | **USD 1.638M/año** | Cifar / IMS-IQVIA |
 | Valencia metro farmacias | **226** | Directorios públicos |
 | Target independientes | **~80–100** | Beachhead |
@@ -1051,7 +1051,7 @@ ing.pulido.abrahan@gmail.com · +58 412 4352014
 - **Regulatorio:** Zonix no sustituye al farmacéutico titular ni al criterio médico; dictamen legal y farmacéutico **pendiente** antes de Day-D público.
 - **Inflación VE:** cifras **mayo–junio 2026**; reconfirmación trimestral recomendada.
 - **Expansión año 2–3** (Maracay, Maracaibo, Caracas): upside documentado — **no commitment** del piloto Valencia.
-- **Instrumento SAFE / equity ~39,57%:** referencia para inversores; **no aplica a Gabriel** salvo acuerdo explícito distinto.
+- **Instrumento SAFE / equity ~15%:** referencia para inversores; **no aplica a Gabriel** salvo acuerdo explícito distinto.
 - Este documento **sintetiza** el pack aliado; no sustituye contratos, asesoría legal/contable ni dictamen MPPS/INHRR.
 - **Confidencialidad:** no compartir fuera del círculo acordado sin permiso del founder.
 

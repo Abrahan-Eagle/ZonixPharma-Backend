@@ -80,7 +80,7 @@ Post-piloto (cuando exista GMV real), el agente puede proponer tablas what-if **
 
 | Variable | Rango sugerido (lente) | Fuente |
 |----------|------------------------|--------|
-| Farmacias activas M12 | ±10–20% vs ~159 Lean | PROYECCION §1.1 / §7 |
+| Farmacias activas M12 | ±10–20% vs ~159 Lean | PROYECCION §1.1 / §6 |
 | ARPF | ±15% vs ~52 USD placeholder | UNIT_ECONOMICS + GMV piloto |
 | CAC farmacia | ±20% vs 139 | SUPUESTO marketing |
 | Churn mensual farmacia | 4%–6% (base 5%) | UNIT_ECONOMICS |
@@ -91,13 +91,13 @@ Salida: tabla «si X entonces runway / BE FCF M5» con cita a línea del pack; m
 
 ## Checklist de coherencia (ejecutar en cada edición)
 
-- [ ] Tiers: Lean **237.412** (Excel v4); Base **~157k** / Growth **~187k** = hist. hasta recalibrar
-- [ ] SAFE caps: Lean **600k**; Base/Growth según ESTRUCTURA_LEGAL
+- [ ] Tiers: Lean **237.412** (Excel v4 — ask único); Base **~157k** / Growth **~187k** = hist. hasta recalibrar
+- [ ] SAFE cap Lean **1.582.747** → equity **~15%**; cap **600k / ~39,57%** = `[OBSOLETO]` (no reintroducir)
 - [ ] Burn Y1 Lean Detallado = **172.152** (~**14.346**/mes); esc.1 costos Y1 **169.717**; no citar **145.500** / **12.125** / **210.760** como vigente
 - [ ] Fase 0 **50.260** + Day-D **187.152** + reserva **15.000** = README / BRIEF (ask = Fase0+burn+reserva)
 - [ ] Cash M12 esc.1 = **246.231**; FCF Y1 **+59.079**; BE FCF mensual **M5** (no “profitable M1”)
-- [ ] Equity Lean **~39,57%**; no **35,13%** / **18,66%** / **29,02%** como ask vigente
-- [ ] CAC/LTV/payback cruzados con UNIT_ECONOMICS (UE B2B sin cambio)
+- [ ] Equity Lean **~15%**; no **~39,57%** / **35,13%** / **18,66%** / **29,02%** como ask vigente
+- [ ] CAC/LTV/payback cruzados con UNIT_ECONOMICS (payback **~2,7** meses)
 - [ ] Waiver promocional B2B §11 documentado aparte (fila «con waiver» en PROYECCION)
 
 ## Métricas inversor (marketplace farmacia)
@@ -118,7 +118,7 @@ Salida: tabla «si X entonces runway / BE FCF M5» con cita a línea del pack; m
 Dilución_ref ≈ Inversión / Cap_post_money
 ```
 
-Ej. Lean: **237.412 / 600.000 ≈ 39,57%** — ver ESTRUCTURA_LEGAL para redondeo y pro-rata.
+Ej. Lean vigente: **237.412 / 1.582.747 ≈ 15%** — ver ESTRUCTURA_LEGAL. **`[OBSOLETO]`** 237.412 / 600.000 ≈ 39,57% (cap pre-CAP-P12).
 
 **Use of funds:** desglosar según PRESUPUESTO §2 (Fase 0, nómina, marketing, reserva); no inventar % sin ancla.
 

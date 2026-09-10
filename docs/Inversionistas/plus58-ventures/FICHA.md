@@ -1,6 +1,6 @@
 # Ficha inversionista — +58 Ventures
 
-> Ask ref.: Lean **USD 237.412** · SAFE cap ref. USD 600.000 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
+> Ask ref.: Lean **USD 237.412** · SAFE cap ref. USD 1.582.747 ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
 > Forense: 21 julio 2026 · [plus58ventures.com](https://plus58ventures.com/) (todas las rutas = mismo HTML) · WHOIS · form GAS · briefing §4.5.  
 > **Disclaimer:** análisis interno founder; no es asesoría legal ni financiera.
 
@@ -33,7 +33,7 @@
 | Dimensión | Pack Zonix | +58 Ventures | Gap |
 |-----------|------------|--------------|-----|
 | Ticket | Lean **237.412** | **Sin cheque** tipificado | No cubre ask hoy |
-| Dilución | SAFE cap 600k | Opaca / inexistente en web | No modelar |
+| Dilución | SAFE cap 1.582.747 | Opaca / inexistente en web | No modelar |
 | Vehículo | Ideal Delaware | Desconocido | Waitlist ≠ term sheet |
 | Tiempo | — | Rolling waitlist | Sin proceso de cierre |
 | Rol real | Cheque pre-seed | Pipeline / red diáspora (promesa) | Nurture, no caja |

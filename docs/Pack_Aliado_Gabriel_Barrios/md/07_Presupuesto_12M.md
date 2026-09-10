@@ -15,8 +15,8 @@
 | Runway                        | 12 meses post-Day-D                                                 |
 | Burn promedio mensual (esc.1) | **~14.143**/mes (costos Y1 **169.717**/12); pico M2 **14.846** |
 | Activas M12 ref.              | ~159                                                                |
-| SAFE post-money cap (ref.)    | **USD 600.000**                                                     |
-| Equity ref. (capital/cap)     | **~39,57%**                                                         |
+| SAFE post-money cap (ref.)    | **USD 1.582.747**                                                     |
+| Equity ref. (capital/cap)     | **~15%**                                                         |
 | Diferencias clave             | **4× @ 350**, Dev junior, CEO + Co-CEO, asesor regulatorio incluido |
 | FCF Y1 / cash M12 (esc.1)     | **+59.079** (BE **M5**); cash M12 **246.231** (187.152 + 59.079) |
 
@@ -27,7 +27,7 @@
 | CEO                                               | 1.000                               |
 | Founder CEO/CTO                                   | 1.000                               |
 | Co-CEO Head Sales&Ops                             | 1.000                               |
-| Dev (Flutter/Laravel)                             | **1.000** _(esc.1: Dev x2 @ 1.000)_ |
+| Dev (Flutter/Laravel)                             | **1.000** _(1× FTE @ 1.000/mes)_ |
 | Sales B2B (base c/u)                              | **4×** 350                          |
 | CS + Community Manager                            | 500                                 |
 | Contador + Abogado (incl. asesor regulatorio 120) | 330                                 |
@@ -44,7 +44,7 @@
 - **Valla pequeña 3m×2m:** **USD 350/mes desde mes 3**.
 - **Meta Ads:** **USD 800** meses 1–6 · **USD 500** meses 7–12.
 - **4× Sales B2B** → línea **~USD 1.400/mes** base (350 c/u).
-- **Dev** **1.000/mes** (esc.1: Dev x2 @ 1.000); **CEO + Founder + Co-CEO** **1.000/mes** c/u; **IA ~425/mes**; **CapEx 4 PCs ~3.700** + **video pitch B2B 800** en one-shots.
+- **Dev** **1.000/mes** (**1× FTE**); **CEO + Founder + Co-CEO** **1.000/mes** c/u; **IA ~425/mes**; **CapEx 4 PCs ~3.700** + **video pitch B2B 800** en one-shots.
 
 ### 2.2 One-shots Lean (canon v4)
 
@@ -59,7 +59,7 @@
 
 | Concepto                                          | USD/mes (esc.1)       |
 | ------------------------------------------------- | --------------------- |
-| Dev (esc.1: Dev x2 @ 1.000)                       | **1.000**             |
+| Dev (1× @ 1.000)                                  | **1.000**             |
 | 4× Sales B2B (base)                               | **1.400**             |
 | CS + Community Manager                            | **500**               |
 | CEO + Founder + Co-CEO                            | **3.000**             |
@@ -106,6 +106,17 @@
 
 Metodología ponderada (30% costos Bs / 10% USD) — **20%** incorporado en contingencia mensual.
 
+## 6. Stack IA y herramientas (desglose burn)
+
+### 6.1 Creatividad / apoyo campañas (fila IA **~425**/mes)
+
+| Herramienta | USD/mes (proxy) | Uso |
+|-------------|-----------------|-----|
+| Cursor Ultra | **~200** | Dev + docs |
+| Claude Max | **~200** | Copy, research, soporte pitch |
+| Seedance 2.0 | **~25** | Video/creativos cortos |
+| **Total** | **~425** | Sin Gemini / Runway / Midjourney en este stack |
+
 ---
 
-**Fuente canónica numérica:** [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx) · generador [`_tools/generate_modelo_financiero_v2.py`](_tools/generate_modelo_financiero_v2.py).
+**Fuente canónica numérica:** [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](../../Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.xlsx) (v4). Ver PRESUPUESTO Lanzamiento §6.1 stack IA.

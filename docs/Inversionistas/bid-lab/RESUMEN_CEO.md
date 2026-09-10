@@ -33,7 +33,7 @@ Para Zonix Pharma: **opción de red / partner**, no plan A de caja.
 | | Pack actual | BID Lab (vías que encajan) |
 |--|-------------|----------------------------|
 | Plata | Lean **237.412** (SAFE) | Ecosistema = grant a **proyecto con partner**, no wire a tu SAFE |
-| Dilución | Cap ref. 600k | Grant ecosistema: **sin dilución** (si aplica) |
+| Dilución | Cap ref. 1.582.747 | Grant ecosistema: **sin dilución** (si aplica) |
 | Velocidad | Queremos cierre pronto | Multilateral = **meses** |
 | Uso | Runway piloto Valencia | Red + eventual programa ecosistema |
 

@@ -2,7 +2,7 @@
 
 > **Copia en repo Zonix Pharma** (canónica aquí). Si existe copia en jarvis-skills-library / otro repo, sincronizar hacia este path — no usar rutas absolutas de máquina.
 >
-> **Canon Zonix Pharma (ago 2026):** ask único SAFE Lean **USD 237.412** @ cap **600k**. Las tablas Lean/Base/Growth abajo son **plantilla genérica / histórico pre-v4** — al generar pack Zonix, **no** reintroducir Base/Growth como ask vigente.
+> **Canon Zonix Pharma (ago 2026):** ask único SAFE Lean **USD 237.412** @ cap **1.582.747**. Las tablas Lean/Base/Growth abajo son **plantilla genérica / histórico pre-v4** — al generar pack Zonix, **no** reintroducir Base/Growth como ask vigente.
 
 > **Versión:** 1.0 — mayo 2026  
 > **Uso:** copiar este archivo (o la sección «Pega en Cursor» al final) en un chat de Cursor/Claude al arrancar un **proyecto nuevo**.  

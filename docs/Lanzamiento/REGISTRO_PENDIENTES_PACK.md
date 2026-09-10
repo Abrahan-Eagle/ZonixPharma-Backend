@@ -1,6 +1,6 @@
 # Registro consolidado de pendientes — Pack Lanzamiento
 
-> **Última actualización:** 7 agosto 2026 (post forense v5 / Excel v4).  
+> **Última actualización:** 29 agosto 2026 (decisiones `CAMPO-T01`–`T05`; Excel v4 intacto).
 > **Uso:** Completar celdas antes de reunión con inversor institucional o envío del data room cerrado.  
 > **Fuente:** barrido `[PENDIENTE]` en `docs/Lanzamiento/` (no inventar datos).  
 > **Plantilla detallada:** [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARIO.md).  
@@ -14,6 +14,43 @@
 | DOC-BRIEFING-DOCX | `BRIEFING_INVERSORES_VE_2026.docx` vs md | Regenerar antes de envío formal |
 | DOC-PACK-DOCX | Pack Aliado `docx/` vs `md/` espejo | Regenerar Word si se envía zip aliado |
 | EXCEL-CACHE | Valores Esc.1 cacheados en xlsx repo | Abrir en Excel/LibreOffice y guardar si hace falta data_only |
+
+---
+
+## Pendientes del plan de captación multi-stakeholder
+
+Fuente canónica: [`../Captacion_Stakeholders/_comun/06_DECISIONES_ABIERTAS.md`](../Captacion_Stakeholders/_comun/06_DECISIONES_ABIERTAS.md) (índice [`../Captacion_Stakeholders/README.md`](../Captacion_Stakeholders/README.md); puntero local [PLAN_CAPTACION_STAKEHOLDERS.md](PLAN_CAPTACION_STAKEHOLDERS.md)). Estos ítems no cambian el ask ni el pricing mientras permanezcan abiertos.
+
+| ID | Ítem | Dueño | Estado |
+|---|---|---|---|
+| CAP-P01 | Definir expresamente en contrato/proyección si el waiver elimina solo cuota fija o también `%GMV` | Founder + FP&A + Legal | **`[PENDIENTE]`** |
+| CAP-P02 | Obtener URLs directas de las fuentes citadas como marcadores internos en el DOCX Gemini | Founder / Research | **`[PENDIENTE]`** |
+| CAP-P03 | Aprobar o descartar prepago anual B2B después de uso/WTP real | Founder | **`[PENDIENTE post-validación]`** |
+| CAP-P04 | Tratamiento contable, fiscal, reserva y refunds de un eventual prepago | Contador | **`[PENDIENTE contador]`** |
+| CAP-P05 | SAFE, contratos comerciales, SLA, DPA y eventual vesting separados | Abogado | **`[PENDIENTE abogado]`** |
+| CAP-P06 | Cargar primer pipeline real y fechado para inversión, farmacias, delivery y equipo/advisors | Founder + equipo | **`[PENDIENTE]`** |
+| CAP-P07 | Alinear umbrales de cambio de tier de B2B §5.4 con bandas 2.001/5.001 antes de contrato | Founder + FP&A | **`[PENDIENTE decisión]`** |
+| CAP-P08 | Verificar URLs de EXT-003 (Flyfish 34-101072, 10-K Starbucks, SUNAVAL/SUNDDE) antes de citarlas fuera | Founder / Research | **`[PENDIENTE]`** |
+| CAP-P09 | Autorizar la secuencia Alfa→Beta y el primer contacto real; el plan no ejecuta outreach | Founder | **`[PENDIENTE decisión]`** |
+| CAP-P10 | Revalidar URLs EXT-005 CrowdFarming; abogado revisa copy de “adopción” | Research + Abogado | **`[PENDIENTE]`** |
+| CAP-P11 | Aprobar ejecución comercial Semilla/Fundadora (CrowdPharma) tras CAP-P09 + plantillas | Founder | **`[PENDIENTE decisión]`** |
+| CAP-P12 | Canon SAFE pack = 237.412 @ cap 1.582.747 / ~15% (ex Escenario B) | Founder | **`[DECIDIDO]`** 26 ago 2026 — Excel v4 puede mostrar 600k hasta CAP FP&A |
+| CAP-P13 | Revalidar URLs EXT-006 (mecánica SAFE / benchmarks LatAm) antes de citar fuera | Research | **`[PENDIENTE]`** |
+| CAP-P14 | Revalidar URLs de research/encuestas antes de citarlas fuera | Research | **`[PENDIENTE investigación]`** — ver `Encuestas_Estadisticas/REGISTRO_EVIDENCIA_PRISMA_LITE.md` |
+
+Métodos: [`CrowdPharma`](../Captacion_Stakeholders/metodo_crowdpharma/PLAN_CROWDPHARMA.md) · [`SAFE Gabriel`](../Captacion_Stakeholders/metodo_safe_gabriel/PLAN_SAFE_GABRIEL.md).
+
+### Pendientes del plan de campo Valencia
+
+Fuente: [`PLAN_CAMPO_VALENCIA.md`](PLAN_CAMPO_VALENCIA.md) §12. No cambian gates, pricing ni proyección mientras permanezcan abiertos.
+
+| ID | Decisión | Dueño | Estado |
+|---|---|---|---|
+| CAMPO-T01 | Elegir polo principal y zona comparable | Founder | **`[PENDIENTE antes de CAP-P09]`** |
+| CAMPO-T02 | Reconciliar referencias de comisión agregador 20–30% vs 25–35% | Founder + Research | **`[PENDIENTE; preguntar factura real]`** |
+| CAMPO-T03 | Cerrar criterio cadena local ≤5 vs 6–8 sedes | Founder + Sales | **`[PENDIENTE; estratos separados]`** |
+| CAMPO-T04 | Alinear waiver comercial con contrato/proyección (cruza CAP-P01) | Founder + FP&A + Legal | **`[PENDIENTE]`** |
+| CAMPO-T05 | No explicar ascenso de bandas hasta cerrar CAP-P07 | Founder + FP&A | **`[PENDIENTE decisión]`** |
 
 ---
 
@@ -127,7 +164,7 @@ Completar en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARI
 |------|----------------|
 | Founder nombre, contacto, LinkedIn | Abrahan Pulido — VOLCADO §1 |
 | Párrafo «por qué soy el founder» | VOLCADO §1.1 |
-| Ask capital **237.412 Lean Excel** @ SAFE cap **600k** (equity ~39,57%) | README §C, PRESUPUESTO §1, MODELO S1.3 |
+| Ask capital **237.412 Lean** @ SAFE cap **1.582.747** (equity ~15%) | README §C, PRESUPUESTO §1, MODELO S1.3; Excel puede quedar en 600k hasta FP&A |
 | PROYECCION Lean M1–M12, Fase 0, caja M12 | PROYECCION §0–§1.3 |
 | Coherencia numérica pack (cifras ancla) | README, BRIEF, PROYECCION |
 | Tests backend **443** (verificar fecha pre-reunión) | README, BRIEF, VOLCADO §1.2 |
@@ -181,7 +218,7 @@ Completar en [VOLCADO_RESPUESTAS_CUESTIONARIO.md](VOLCADO_RESPUESTAS_CUESTIONARI
 | ID | Pendiente | Dueño |
 |----|-----------|-------|
 | GAP-01 | ALINEACION: re-run tests FE + BE pre-reunión | Founder |
-| GAP-02 | BRIEF sensibilidad optimista: activas/revenue M12 (~207 / ~11.385 según PROYECCION §7.3) | Founder + FP&A |
+| GAP-02 | BRIEF sensibilidad optimista: activas/revenue M12 (ref. PROYECCION **§6** P10/P50/P90 — `[PENDIENTE FP&A]`) | Founder + FP&A |
 | GAP-03 | Registro ART (§4.4.1 ESTRUCTURA) → formalizado como **P3-07** | Abogado + Farmacéutico |
 | GAP-04 | PROYECCION §3.3: puente 480k éxito (farmacias × ARPF) o etiqueta `[PENDIENTE FP&A]` adicional | FP&A |
 | GAP-05 | UNIT §8: margen bruto ~92% sin restar waiver/S&M — nota «margen post-waiver» | FP&A |

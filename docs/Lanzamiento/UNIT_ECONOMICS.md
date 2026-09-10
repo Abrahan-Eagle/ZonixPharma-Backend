@@ -8,7 +8,7 @@
 
 Zonix Pharma cobra a la farmacia un **servicio de plataforma** en formato **híbrido:** **cuota fija** + **fee porcentual sobre el GMV del mes en app**, según **tier** (Basic / Pro / Enterprise) y **bandas de GMV** definidos en [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5. Tasas esc.1 Excel: **Basic 8% / Pro 7% / Enterprise 5%** (rango **5–8%**), por debajo del take-rate tipo agregador (25-35% GMV).
 
-Para **proyecciones de runway** del pack se usa **ARPF USD ~52/mes** como **placeholder** (Excel v4) (ingreso medio por farmacia activa al mix **60/30/10** Basic/Pro/Enterprise con cuota **45 / 60 / 70** + % GMV) **hasta** recalibrar con **mix real** de tiers y GMV en piloto. Ese valor **no** sustituye al modelo híbrido: es solo ancla numérica; el P&L esc.1 usa cuota + comisión GMV (ingresos Y1 **228.796**).
+Para **proyecciones de runway** del pack se usa **ARPF USD ~52/mes** como **placeholder** (Excel v4): coincide con el mix de **cuotas** 60/30/10 × **45/60/70** (=52) **sin fee GMV**. El P&L esc.1 híbrido (cuota + %GMV 8/7/5) corre a **≈188 USD/activa/mes** (M1: 7.520/40). El placeholder **no** sustituye al híbrido; ingresos Y1 **228.796**.
 
 ```
 Revenue por farmacia = ARPF mensual × Lifetime promedio
@@ -61,12 +61,10 @@ Payback CAC = 139 / 52 ≈ 2,7 meses
 | Material impreso, brochures, demos | USD 5 |
 | Customer Support proporcional para onboarding inicial | USD 10 |
 | Pérdida en farmacias que cancelan en primer mes (10% de las firmadas) | USD 9 |
-| **Suma bottom-up explícita** | **USD ~177** |
-| **CAC headline pitch (conservador redondeado v3.3)** | **USD 139** *(no cambiar sin decisión founder; recalcular post-piloto)* |
+| **Suma bottom-up explícita** (N≈8 firmas/mes → 1.400/8≈175 + 40+25+5+10+9) | **USD ~177** |
+| **CAC headline pitch (conservador)** | **USD 139** *(decisión founder; no cambiar sin OK; el 139 es más agresivo que el bottom-up ~177 — margen de pitch, no “conservador” aritmético)* |
 
-**Sensibilidad:** si la comisión marginal sube a **USD 50** por firma para acelerar adopción, CAC sube **+USD 20** → **USD 159**; LTV/CAC ≈ **6,5x** (LTV **1.040**). Aún sólido frente a benchmarks 3-5x.
-
-**Nota dual de denominador (Steve Blank L6.14 — capacidad de canal):** el **CAC 139** usa **~8 firmas/mes** (régimen crucero, escenario **conservador** — ancla del pitch). Si el equipo sostiene mayor ritmo de firmas, el prorrateo fijo baja y el CAC implícito sería menor — el **139** incorpora margen de seguridad. **No cambiar el headline 139 sin decisión founder.** Puente con MODELO S3.2: el costo Sales base Lean **~USD 1.400/mes** (4×350) + comisiones al ritmo de firmas.
+**Puente único (P1-09):** con **N = 8 firmas/mes** (régimen crucero del pitch): fijo Sales **1.400/8 = 175** + comisión 40 + mkt 25 + material 5 + CS 10 + churn 9 ≈ **264** si se usa N=8 en la fila de fijo; la tabla histórica usaba **~16** firmas/mes (1.400/16≈88) → suma **~177**. El **headline 139** es ancla de pitch **por debajo** de ambas construcciones — documentar post-piloto cuál N es real. **No regenerar 139 ni 52 sin OK founder.**
 
 ## 4. LTV (Lifetime Value)
 
@@ -86,7 +84,7 @@ LTV = USD 1.040
 - Marketplace farmacéutico es más sticky que SaaS general (la farmacia depende del catálogo y de la ruta de delivery ya construida con sus pacientes habituales).
 - Pero menos sticky que ERP / CRM porque la farmacia puede simplemente dejar de marketear su tienda Zonix.
 
-**5% mensual = 60% anual.** En cohortes:
+**≈46% anual compuesto** (retención M12 ≈54% en la cohorte abajo); **no** 5×12=60% aditivo. Vida media esperada **20 meses** (=1/0,05) para LTV. En cohortes:
 - Mes 1: 100 farmacias.
 - Mes 2: 95.
 - Mes 6: 73.
@@ -136,7 +134,7 @@ Revenue M1 esc.1 = USD **7.520** (Excel Año 1; ARPF ~52 + cuota 45/60/70 + % GM
 FCF Y1 esc.1: **+59.079**; break-even mensual desde **M5**; cash M12 **246.231** (187.152 + 59.079)
 ```
 
-**Lectura:** el caso central esc.1 asume **~185 firmas** en 12 meses post-Day-D con **4× Sales** (Lean 237.412). Ask único: **USD 237.412** @ cap **600k**.
+**Lectura:** el caso central esc.1 asume **~185 firmas** en 12 meses post-Day-D con **4× Sales** (Lean 237.412). Ask único: **USD 237.412** @ cap **1.582.747**.
 
 ## 7. Cohort analysis simulado
 
@@ -165,7 +163,7 @@ Una cohort es un **grupo de farmacias que firmaron el mismo mes**. Aquí se toma
 Es cuántas de esas **10** siguen activas **mes a mes** si cada mes se van **5%** (churn) de las que quedaban el mes anterior. Los números con decimales (9,5; 9,0; …) son un **promedio** típico en modelos; en la realidad son farmacias enteras, pero la matemática del churn se expresa así.
 
 **Columna “ARPF acumulado de la cohort”**  
-Es el **dinero total** que ese grupo ha pagado a Zonix **sumando todos los meses** desde que empezó (desde el mes 4 del ejemplo). Se asume **USD ~52 por farmacia y por mes** (el **placeholder** ARPF del pack). Por ejemplo: en el mes 5 el grupo paga aproximadamente **9,5 × 52** ese mes; el acumulado **974** incluye lo del mes 4 más lo del mes 5 (con redondeos de la tabla).
+Es el **dinero total** que ese grupo ha pagado a Zonix **sumando todos los meses** desde que empezó (desde el mes 4 del ejemplo). Se asume **USD ~52 por farmacia y por mes** (el **placeholder** ARPF del pack). Por ejemplo: en el mes 5 el grupo paga aproximadamente **9,5 × 52** ese mes; el acumulado **1.014** de la tabla (mes 5) incluye **520** del mes 4 más **9,5×52** del mes 5 (con redondeos).
 
 **La frase “USD 182/mes” y “mes 28”**  
 **24 meses después** del inicio de la cohort (mes 4 + 24 = **mes 28** del calendario de la empresa), aún quedan **~3,5** farmacias activas de las 10 originales. Ese resto paga ~**3,5 × 52 ≈ 182 USD al mes**. **“Todavía no se ha extinguido”** significa que la cohort no llega a cero: con churn 5% queda un **rabo** de clientes que siguen un tiempo generando ingreso.
@@ -210,7 +208,7 @@ En operación real **no** hay una sola cohort: cada mes entran **nuevas** farmac
 - LTV: USD 1.375.
 - LTV/CAC: 18,3x.
 - Payback CAC: 1,4 meses.
-- **Break-even mensual (fórmula explícita):** con burn Excel esc.1 **~USD 11.411–14.346** y **ARPF 55** → **~189–195** farmacias.
+- **Break-even mensual (fórmula explícita):** con burn Excel esc.1 **~USD 11.411–14.346** y **ARPF 55** → **~207–261** farmacias (11.411/55 y 14.346/55). **No** usar 189–195 (aritmética incorrecta).
 - **Implicación:** con ARPF ~55 y cuota 45/60/70 + % GMV, el proyecto tiene BE FCF desde **M5** (FCF M1–M4 negativo; cash Day-D **187.152**).
 
 ## 10. Conclusión

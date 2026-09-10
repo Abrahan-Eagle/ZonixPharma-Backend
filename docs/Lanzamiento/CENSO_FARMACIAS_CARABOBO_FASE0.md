@@ -3,6 +3,7 @@
 > **Última actualización:** 22 junio 2026  
 > **Estado:** estimado **150–250** puntos objetivo — **validación en campo [PENDIENTE]** antes de fijar nómina comercial definitiva.  
 > **Uso:** dimensionar **4× Sales** (Lean ask único) — ver [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md).
+> **Diseño de campo:** [PLAN_CAMPO_VALENCIA.md](PLAN_CAMPO_VALENCIA.md) — sucursal = operación; RIF = decisión/pricing; no duplicar un mismo RIF en señales de pivot.
 
 ---
 
@@ -50,24 +51,28 @@ Contar **farmacias independientes y medianas** en **todo el estado Carabobo** (n
 
 ---
 
-## 5. Plantilla de registro (una fila por farmacia)
+## 5. Plantilla de registro (una fila por sucursal)
 
 | Campo | Ejemplo | Obligatorio |
 |-------|---------|-------------|
-| `id` | CAR-001 | Sí |
+| `id_sucursal` | CAR-001 | Sí |
+| `id_rif` | RIF-001 (seudónimo; RIF completo solo CRM privado) | Sí |
 | `nombre_comercial` | Farmacia El Sol | Sí |
 | `municipio` | Valencia | Sí |
 | `parroquia / zona` | San Blas | Sí |
 | `tipo` | independiente / cadena_local / cadena_nacional | Sí |
+| `numero_sedes` | 1 | Recomendado |
 | `rx` | sí / no / desconocido | Sí |
 | `telefono` | +58… | Sí |
-| `contacto_decision` | titular / gerente | Recomendado |
+| `rol_entrevistado` | dueño / administrador / regente / compras / encargado | Si entrevistada |
+| `decisor_es_entrevistado` | sí / no / parcial | Si entrevistada |
+| `contacto_decision` | titular / gerente | Recomendado (CRM privado) |
 | `fuente` | saas / calle / referido | Sí |
 | `fecha_visita` | 2026-07-15 | Si visitada |
 | `estado_pipeline` | prospecto / LOI / firmada / descartada | Sí |
 | `notas` | text | Opcional |
 
-**Archivo operativo sugerido:** hoja «Censo Carabobo» en CRM / Google Sheet (no versionar datos personales en Git).
+**Archivo operativo sugerido:** hoja «Censo Carabobo» en CRM / Google Sheet (no versionar datos personales, RIF completo ni minutas en Git). Varias sucursales del mismo `id_rif` se mantienen como filas operativas distintas, pero forman un solo cluster para pricing y señales de pivot.
 
 ---
 

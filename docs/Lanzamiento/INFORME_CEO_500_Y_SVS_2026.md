@@ -5,7 +5,7 @@
 > **PDF:** [INFORME_CEO_500_Y_SVS_2026.pdf](INFORME_CEO_500_Y_SVS_2026.pdf)  
 > **Parte A (500):** informe **interno** — [`../Inversionistas/500-latam/`](../Inversionistas/500-latam/) · [APRENDIZAJE_500…](APRENDIZAJE_500_EVIDENCIA_MERCADO.md)  
 > **Parte B (SVS):** candidata CRM (**otra opción** de canal) — [`../Inversionistas/startup-venezuela-summit/`](../Inversionistas/startup-venezuela-summit/FICHA.md) score **49** · intel [`../Inversionistas/_intel/2026-08-07-startup-venezuela-summit-2026.md`](../Inversionistas/_intel/2026-08-07-startup-venezuela-summit-2026.md)  
-> **Ask Lean (intacto):** **USD 237.412** · SAFE cap **600k** · Plan A caja: **Epakon / Casa212 / ALGEN**  
+> **Ask Lean (intacto):** **USD 237.412** · SAFE cap **1.582.747** · Plan A caja: **Epakon / Casa212 / ALGEN**  
 > **SVS no es cheque:** es canal adicional al Plan A; no sustituye raise.
 
 ---

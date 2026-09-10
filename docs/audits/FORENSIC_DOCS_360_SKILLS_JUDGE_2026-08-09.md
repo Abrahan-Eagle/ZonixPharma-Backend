@@ -1,5 +1,8 @@
 # Forense 360° `docs/` — skills + jueces (2026-08-09)
 
+> **Nota 26 ago 2026:** canon SAFE vigente = ask **237.412** @ cap **1.582.747** (~15%). Cifras 600k/~39,57% en este forense son **históricas**.
+
+
 > **Remediación aplicada → PASS2:** [`FORENSIC_DOCS_360_PASS2_2026-08-09.md`](FORENSIC_DOCS_360_PASS2_2026-08-09.md) (score ~4.2/5). Este archivo es el snapshot **pre-fix** (PASS1).
 
 > **Modo:** solo lectura + este informe. **No** editar pack / Inversionistas / LA hasta **OK founder** post-juicio.  

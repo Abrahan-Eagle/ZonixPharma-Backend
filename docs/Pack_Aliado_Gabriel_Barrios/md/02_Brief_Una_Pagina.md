@@ -9,7 +9,7 @@
 
 **Zonix Pharma** es un marketplace farmacéutico **B2B2C** en Venezuela: el paciente compra en app; la **farmacia independiente o mediana** despacha; un **farmacéutico colegiado de esa farmacia** valida Rx cuando aplica; la **última milla** la hace un **partner** (`delivery_company` + agentes) bajo contrato marco — **sin flota propia** de Zonix.
 
-**Para el inversor (una línea):** llevamos al canal que hoy paga **20–30%** a PedidosYa Pharmacy (o no tiene app propia) un stack digital con **fee bajo + Rx validado**, en un mercado pharma **existente** de USD 1,638M/año — no inventamos categoría ([CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md) §2.9). _(Rappi LatAm 25–35% = benchmark regional, no operador VE.)_
+**Para el inversor (una línea):** llevamos al canal que hoy paga **20–30%** a PedidosYa Pharmacy (o no tiene app propia) un stack digital con **fee bajo + Rx validado**, en un mercado pharma **existente** de **USD 1.638 mil millones/año** — no inventamos categoría ([CONTEXTO_PITCH_Y_DECISIONES.md](CONTEXTO_PITCH_Y_DECISIONES.md) §2.9). _(Rappi LatAm 25–35% = benchmark regional, no operador VE.)_
 
 **Estado producto:** vertical farmacia sobre stack **~4 años**; capa Pharma (Rx, roles) **~30–45 días** ya invertidos. **Hoy (MVP técnico):** staging/VPS (`zonixpharma.com` / `pharma.aiblockweb.com`), **443** tests backend (re-verificar pre-reunión); Flutter en verde. **Evidencia de mercado (en curso):** demo producto 3–5 min + early adopters Valencia — ver [APRENDIZAJE_500_EVIDENCIA_MERCADO.md](APRENDIZAJE_500_EVIDENCIA_MERCADO.md). **Aún no:** Play Store / piloto con farmacias reales a escala. **Day-D (T+90):** OTP Firebase + tiendas + smoke E2E — hitos **T+7–12** Fase 0.
 
@@ -65,7 +65,7 @@ _StoryBrand — el paciente es el héroe; Zonix es la guía. Sin promesas terap�
 | CEO                                  | FTE       | **1.000**                   | Dirección general (rol adicional v4)           |
 | Founder / CEO / CTO                  | FTE       | **1.000**                   | Abrahan Pulido — producto + tech                   |
 | Co-CEO / Head Sales&Ops              | FTE       | **1.000**                   | Comercial / operación / corporate                  |
-| **Dev (Flutter/Laravel)**            | FTE       | **1.000**                   | Celda lean **1.000**; nota esc.1 «Dev x2 @ 1.000» = mismo tope de línea (no 2k) — PRESUPUESTO §1.1 |
+| **Dev (Flutter/Laravel)**            | FTE       | **1.000**                   | **1× Dev @ 1.000/mes** en burn esc.1 (no 2.000) — PRESUPUESTO §1.1 |
 | Sales B2B (**×4**)                   | FTE       | **350** base + **40**/firma | Comisión a rep que cierra                          |
 | Customer Support + Community Manager | FTE       | **500**                     | Soporte + comunidad                                |
 | Contador + Abogado (+ asesor Rx)     | Freelance | **330**                     | Incluye asesor regulatorio farmacéutico **120** (PRESUPUESTO: una sola fila 330) |
@@ -75,7 +75,7 @@ _StoryBrand — el paciente es el héroe; Zonix es la guía. Sin promesas terap�
 
 ## Mercado y oportunidad (validados)
 
-- **TAM Venezuela:** USD 1.638M/año (389M unidades × USD 4,21 promedio, fuente **Cifar VE**, datos **IMS/IQVIA** 2025). Crecimiento +17,49% YoY en unidades. CAGR 6,1% proyectado 2026-2032.
+- **TAM Venezuela:** **USD 1.638 mil millones/año** (389M unidades × USD 4,21 promedio, fuente **Cifar VE**, datos **IMS/IQVIA** 2025). Crecimiento +17,49% YoY en unidades. CAGR 6,1% proyectado 2026-2032.
 - **TAM regional Carabobo:** ~350-450 farmacias (226 solo en Valencia metro, [Farmacias Saas](https://www.saasvenezuela.com/sucursales) y directorios públicos).
 - **SAM zona piloto (Valencia metro):** 30-50 farmacias primer trimestre operativo; foco HQ **San Diego / Av. Bolívar Norte** (ver [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md)).
 - **SOM / cierre año 1 (M12 post-Day-D):** **~159 farmacias activas** en el caso central Lean ([MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.1). Con **4× Sales**, modelo **híbrido** (pricing **45/60/70** + % GMV) y **ARPF ~52** _(placeholder)_, equilibrio FCF mensual desde **M5** (FCF M1–M4 negativo; ingresos M1 **7.520** < costos **11.411**); FCF Y1 **+59.079**; cash M12 **246.231**.
@@ -86,16 +86,16 @@ _StoryBrand — el paciente es el héroe; Zonix es la guía. Sin promesas terap�
 | --------------------------------------------- | --------------- | ---------------------------- | --------------------------------------------------------------- |
 | **Lean 237.412** _(v4 Excel — ask único)_ | **USD 237.412** | **4× Sales @ 350** + equipo tabla burn | Bootstrap Carabobo — Fase 0 **50.260**; burn M1–M12 **172.152** |
 
-> **Ask único (v4):** **Lean USD 237.412** @ cap **600k** → equity **~39,57%**. Censo: [CENSO_FARMACIAS_CARABOBO_FASE0.md](CENSO_FARMACIAS_CARABOBO_FASE0.md).
+> **Ask único (v4):** **Lean USD 237.412** @ cap **1.582.747** → equity **~15%**. Censo: [CENSO_FARMACIAS_CARABOBO_FASE0.md](CENSO_FARMACIAS_CARABOBO_FASE0.md).
 
 ## Modelo financiero (escenario Lean Excel — USD 237.412)
 
-**Resumen Lean v4** ([`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx) sync 7-ago-2026 = Descargas `MODELO_FINANCIERO_040826_v4.xlsx`):
+**Resumen Lean v4** ([`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](../../Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.xlsx) sync 7-ago-2026):
 
 | Concepto                             | Lean v4                                                                            |
 | ------------------------------------ | -------------------------------------------------------------------------------------- |
 | Capital pedido (TOTAL SAFE)          | **USD 237.412** _(≈237k)_                                                              |
-| SAFE cap ref.                        | **600.000** → equity **~39,57%**                                                       |
+| SAFE cap ref.                        | **1.582.747** → equity **~15%**                                                       |
 | One-shots (legal+intro+HQ CapEx)     | **USD 22.365**                                                                         |
 | Fase 0 operativa (MO+mkt+transporte) | **USD 27.895**                                                                         |
 | Fase 0 total (T+0→Day-D)             | **USD 50.260** (0a **33.010** / 0b **8.625** / 0c **8.625**)                           |
@@ -128,17 +128,17 @@ _StoryBrand — el paciente es el héroe; Zonix es la guía. Sin promesas terap�
 | ---------------------------- | ------------------------------------ | ------ | ----------- | ------------------ | ------------------------------ | --------------------------------------------------- | ----------------------------------------------- |
 | Pesimista (probabilidad 20%) | **~50% plan** _(~8 firmas/mes ref.)_ | 7%     | USD 40      | **~120**           | **`[PENDIENTE FP&A — esc.1]`** | Esc.1 base BE FCF M5; P10 sin modelo cerrado | **`[PENDIENTE FP&A — esc.1]`**                  |
 | **Base (probabilidad 50%)**  | **~15**/mes post-Day-D               | **5%** | **USD ~52** | **~159**           | **~USD 29.892** (M12 esc.1)        | **M5** (FCF+ desde M5)               | **USD 246.231** (187.152 + FCF +59.079) |
-| Optimista (probabilidad 30%) | **130% plan** _(ref. §7.3)_          | 4%     | USD 55      | **~200**           | **`[PENDIENTE FP&A — esc.1]`** | Escala Sales                                        | **`[PENDIENTE FP&A — esc.1]`**                  |
+| Optimista (probabilidad 30%) | **130% plan** _(ref. PROYECCION §6)_ | 4%     | USD 55      | **~200**           | **`[PENDIENTE FP&A — esc.1]`** | Escala Sales                                        | **`[PENDIENTE FP&A — esc.1]`**                  |
 
 \*Misma convención que la tabla anterior: ARPF es **referencia provisional** hasta recalibrar con GMV real y modelo híbrido ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5).
 
-Detalle de las 3 sensibilidades en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.md) sección 7.
+Detalle de las 3 sensibilidades en [PROYECCION_FINANCIERA_12M.md](../../Lanzamiento/PROYECCION_FINANCIERA_12M.md) **§6** (P10 / P50 / P90).
 
 ## Instrumento de inversión propuesto
 
-- **SAFE post-money** con cap ref. **600k (Lean 237.412)** — equity **~39,57%**.
+- **SAFE post-money** con cap ref. **1.582.747 (ask 237.412)** — equity **~15%**.
 - **Ticket sugerido:** USD 25.000 / 50.000 / **237.412** (lead Lean v4 Excel — ask único).
-- **Equity implícito Lean:** **~39,57%** (237.412 / 600k).
+- **Equity implícito Lean:** **~15%** (237.412 / 1.582.747).
 - **Cap table:** [ESTRUCTURA_LEGAL_Y_EQUITY.md](ESTRUCTURA_LEGAL_Y_EQUITY.md).
 
 ## Equipo
@@ -172,7 +172,7 @@ Detalle de las 3 sensibilidades en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FIN
 
 ## Pregunta al inversor
 
-> ¿Te sumas a **USD 237.412** (Lean v4 Excel — equipo tabla burn: CEO+Founder+Co-CEO+Dev+4×Sales+CS) vía SAFE cap **600.000** _(equity ~39,57%)_, para **Fase 0 (50.260) + 12 meses** post-Day-D (burn **172.152**)? Cash M12: **246.231** (esc.1: 187.152 + FCF +59.079) — ver BRIEF § modelo y [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx).
+> ¿Te sumas a **USD 237.412** (Lean v4 Excel — equipo tabla burn: CEO+Founder+Co-CEO+Dev+4×Sales+CS) vía SAFE cap **1.582.747** _(equity ~15%)_, para **Fase 0 (50.260) + 12 meses** post-Day-D (burn **172.152**)? Cash M12: **246.231** (esc.1: 187.152 + FCF +59.079) — ver BRIEF § modelo y [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx).
 
 **Por qué ahora (sin urgencia falsa):** mercado pharma VE **+17,49%** unidades (Cifar); stack **~4 años** ya en staging; ventana **early mover** en independientes Valencia 2026 — el pack detalla supuestos y sensibilidad antes de comprometer capital.
 

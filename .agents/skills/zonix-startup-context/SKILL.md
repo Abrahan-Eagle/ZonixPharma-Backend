@@ -86,15 +86,15 @@ Zonix es **two-sided**: farmacia (supply) + paciente (demand). Implicaciones:
 
 | Tier | Capital pedido | SAFE cap post-money | Equity ref. | Burn prom. |
 |------|----------------|---------------------|-------------|------------|
-| **Lean** (mínimo / Excel v4) | **USD 237.412** *(≈237k)* | **600.000** | **~39,57%** | **~14.346**/mes |
+| **Lean** (mínimo / Excel v4 — **ask único vigente**) | **USD 237.412** *(≈237k)* | **1.582.747** | **~15%** | **~14.346**/mes |
 | **Base** (recomendado) | ~USD **157.268** *(≈157k)* *[hist. — recalibrar]* | ~**912.814** | ~17,23% | ~**10.898**/mes |
 | **Growth** (acelerado) | ~USD **187.478** *(≈187k)* *[hist. — recalibrar]* | ~**1.205.345** | ~15,55% | ~**12.698**/mes |
 
-**Prohibido:** llamar Lean «210.760» / «112k» / «174k» / equity **35,13%** / **18,66%** como vigente; tiers **101/118/135k** (mayo 2026); mezclar columnas sin etiquetar. Fuente: [BRIEF_UNA_PAGINA.md](../../docs/Lanzamiento/BRIEF_UNA_PAGINA.md), [README pack](../../docs/Lanzamiento/README.md), xlsx Detallado v4.
+**Prohibido como vigente:** Lean «210.760» / «112k» / «174k»; equity **~39,57%** @ cap **600.000** (`[OBSOLETO]` — cap pre-CAP-P12); equity **35,13%** / **18,66%**; tiers **101/118/135k** (mayo 2026); mezclar columnas sin etiquetar. Fuente: [BRIEF_UNA_PAGINA.md](../../docs/Lanzamiento/BRIEF_UNA_PAGINA.md), [README pack](../../docs/Lanzamiento/README.md), xlsx Detallado v4, [ESTRUCTURA_LEGAL_Y_EQUITY.md](../../docs/Lanzamiento/ESTRUCTURA_LEGAL_Y_EQUITY.md).
 
 ## Anclas numéricas Lean (planning central)
 
-Canon = Excel Detallado **v4** (`MODELO_FINANCIERO_040826_v4` → `docs/Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`). Tabla M1–M12 = PROYECCION §1.1 = Año 1 esc.1. Citar [docs/Lanzamiento/PROYECCION_FINANCIERA_12M.md](../../docs/Lanzamiento/PROYECCION_FINANCIERA_12M.md).
+Canon = Excel Detallado **v4** (`docs/Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`). Tabla M1–M12 = PROYECCION §1.1 = Año 1 esc.1. Citar [docs/Lanzamiento/PROYECCION_FINANCIERA_12M.md](../../docs/Lanzamiento/PROYECCION_FINANCIERA_12M.md).
 
 | Concepto | Valor |
 |----------|-------|
@@ -104,7 +104,8 @@ Canon = Excel Detallado **v4** (`MODELO_FINANCIERO_040826_v4` → `docs/Lanzamie
 | Burn M1–M12 (Detallado) | **USD 172.152** (~**14.346**/mes) |
 | Reserva | **USD 15.000** |
 | Cierre M12 caja (esc.1) | **USD 246.231** (187.152 + FCF Y1 **+59.079**) |
-| Equity ref. | **~39,57%** (237.412 / 600.000) |
+| Equity ref. | **~15%** (237.412 / **1.582.747**) |
+| Cap post-money | **USD 1.582.747** |
 | Esc.1 Y1 | Revenue **228.796** · costos **169.717** · BE FCF mensual **M5** |
 
 ## Unit economics (placeholder hasta GMV piloto)

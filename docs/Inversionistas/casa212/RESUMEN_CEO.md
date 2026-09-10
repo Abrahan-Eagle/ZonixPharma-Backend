@@ -38,7 +38,7 @@ El costo real es **dilución** (SAFE + % del programa, aún opaco) y **mudarte 1
 | | Pack actual | Si entras Casa212 |
 |--|-------------|-------------------|
 | Plata | Lean **237.412** | **150k** (~63% ask) |
-| Dilución | SAFE cap 600k | SAFE + **programa** (¿alto?) |
+| Dilución | SAFE cap 1.582.747 | SAFE + **programa** (¿alto?) |
 | Historia | Piloto Valencia / VE | Misma playa + “desde Caracas” |
 | Empresa | Ideal Delaware | Ellos prefieren montarla **limpia** contigo |
 | Tiempo tuyo | — | **12 semanas** full-time en la casa |

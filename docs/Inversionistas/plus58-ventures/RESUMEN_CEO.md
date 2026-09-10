@@ -34,7 +34,7 @@ Para Zonix Pharma: **pipeline a monitorear**, no plan A de caja. El briefing ya 
 | | Pack actual | +58 Ventures |
 |--|-------------|--------------|
 | Plata | Lean **237.412** | **0** tipificado |
-| Dilución | SAFE cap ref. 600k | Desconocida |
+| Dilución | SAFE cap ref. 1.582.747 | Desconocida |
 | Velocidad | Semanas (Epakon/500) | Waitlist indefinida |
 | Empresa / jurisdicción | Ideal Delaware | No publicada |
 

@@ -1,6 +1,6 @@
 # Ficha inversionista — Fondo de Impacto VELA (CAF)
 
-> Ask ref.: Lean **USD 237.412** · SAFE cap ref. **USD 600.000** · equity **~39,57%** ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
+> Ask ref.: Lean **USD 237.412** · SAFE cap ref. **USD 1.582.747** · equity **~15%** ([BRIEF](../../Lanzamiento/BRIEF_UNA_PAGINA.md)).  
 > Forense: 5 agosto 2026 · [fondovela.com](https://www.fondovela.com) · post IG · prensa CAF jul 2026 · PDF **Deep Research Gemini con fecha declarada 10 ago 2026** (síntesis y control de fuentes en [NOTAS.md](NOTAS.md)).  
 > **Disclaimer:** análisis interno founder; no es asesoría legal ni financiera.
 
@@ -44,7 +44,7 @@
 |-----------|------------|------|-----|
 | Ticket | Lean **237.412** | **1–3 M** (directo) | **×5–14** vs ask — no cubre “cheque Lean”, pide otra ronda |
 | Etapa | Pre-seed / piloto | **Serie A en adelante / Growth**; “ventas altas” no es requisito textual comprobado | Stage mismatch crítico |
-| Dilución | SAFE cap 600k (~**39,57%**) | Instrumento mixto / opaco | Pedir term sheet solo si hay fit stage |
+| Dilución | SAFE cap 1.582.747 (~**15%**) | Instrumento mixto / opaco | Pedir term sheet solo si hay fit stage |
 | Tesis | Marketplace pharma VE | Salud dentro de reducción de pobreza; ~**60%** clima/agro/azul según prensa secundaria | Encaje temático débil–parcial |
 | Tiempo | Raise ahora | Form activo, sin deadline/SLA publicado; **fondo aún levantando capital objetivo** | Elegibilidad + velocidad de cheque incierta |
 

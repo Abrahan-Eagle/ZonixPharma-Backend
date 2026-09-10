@@ -152,18 +152,21 @@ Contratar **cuatro** personas en este rol (quinta columna opcional si se evalúa
 
 ## 6. Farmacias prospecto
 
-### 6.1 Bella Florida
+> **Privacidad:** esta sección versionada solo admite seudónimos y agregados. Nombre comercial, dirección exacta, teléfono, persona de contacto y RIF completo viven en CRM/Drive privado.
+> **Polo:** no llenar hasta cerrar `CAMPO-T01` en [PLAN_CAMPO_VALENCIA.md](PLAN_CAMPO_VALENCIA.md) §2.
 
-| # | Nombre farmacia | Dirección | Teléfono | Dueño / regente | GMV mensual estimado | Tier sugerido | Estado contacto |
+### 6.1 Polo principal
+
+| # | `id_sucursal` | `id_rif` (seudónimo) | Polo/zona | Rol | ¿Decisor? | GMV por banda | Estado/evidencia |
 |---|---|---|---|---|---|---|---|
 | 1 | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
 | 2 | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
 | 3 | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
 | 4 | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
 
-### 6.2 El Socorro
+### 6.2 Zona comparable
 
-| # | Nombre farmacia | Dirección | Teléfono | Dueño / regente | GMV mensual estimado | Tier sugerido | Estado contacto |
+| # | `id_sucursal` | `id_rif` (seudónimo) | Polo/zona | Rol | ¿Decisor? | GMV por banda | Estado/evidencia |
 |---|---|---|---|---|---|---|---|
 | 5 | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
 | 6 | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
@@ -198,7 +201,7 @@ Contratar **cuatro** personas en este rol (quinta columna opcional si se evalúa
 
 ## 9. Decisiones del founder pendientes
 
-- [ ] Confirmar zona piloto inicial: Bella Florida + El Socorro O Bella Florida + San Diego.
+- [ ] `CAMPO-T01`: elegir polo principal y zona comparable entre opción A (San Diego / Av. Bolívar Norte) u opción B (Bella Florida / El Socorro); ver PLAN_CAMPO §2.
 - [ ] Confirmar contrato **HQ casa** (USD 500/mes objetivo) desde mes 1 operativo.
 - [ ] Confirmar mes de activación de valla publicitaria (mes 3 base).
 - [x] Confirmar sueldo founder: **USD 1.000/mes** en burn **Lean Excel 237.412** (~14.346/mes) — [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md) S3.2.

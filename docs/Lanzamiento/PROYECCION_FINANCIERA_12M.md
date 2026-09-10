@@ -1,7 +1,7 @@
 # Proyección financiera 12 meses (+ año 2 y 3 + plan contingencia)
 
 > **Última actualización:** 30 julio 2026 (v4 — anclas Lean **canon Excel** — esc.1 vigente: pricing 45/60/70 + %GMV 8/7/5).
-> **Canon Lean:** SAFE **USD 237.412** = Fase 0 **50.260** + burn M1–M12 **172.152** + reserva **15.000**; caja Day-D **187.152**; equity **~39,57%** @ cap **600k**. Fuente: [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx).
+> **Canon Lean:** SAFE **USD 237.412** = Fase 0 **50.260** + burn M1–M12 **172.152** + reserva **15.000**; caja Day-D **187.152**; equity **~15%** @ cap **1.582.747**. Fuente: [`MODELO_FINANCIERO_ZONIX_PHARMA.xlsx`](MODELO_FINANCIERO_ZONIX_PHARMA.xlsx).
 > **Esc.1 vigente (v4):** pricing **45/60/70 + %GMV 8/7/5**; FCF Y1 **+59.079**; BE mensual **M5**; cash M12 **246.231**; revenue Y1 **228.796**; costos Y1 **169.717** (Detallado burn ask **172.152**).
 > **Tabla §1.1 M1–M12** = esc.1 vigente.
 > Cifras en USD constantes con buffer 20% ya aplicado al burn (Excel).
@@ -27,6 +27,8 @@
 |------|--------------|------------------|-------------------|----------------|------------------|
 | **Lean** *(Excel — ask único v4)* | **237.412** | **4× Sales** @ **350** + **CEO** | **Carabobo independientes** | ~185 | ~159 |
 
+> **Stock Day-D:** ≈**28** activas al cierre Fase 0 (meta PLAN). M1 = 28×0,95 + **13** firmadas ≈ **40** activas (churn 5%). Las **~185** altas brutas son solo M1–M12.
+
 ### 0.2b Burn Lean Excel esc.1 (post-Day-D)
 
 | Concepto | Valor |
@@ -42,7 +44,7 @@
 
 > **Esc.1 v4:** pricing **45/60/70 + %GMV 8/7/5**. Tabla §1.1 = Excel Año 1 esc.1 (BE FCF **M5**; cash Day-D **187.152**; FCF Y1 **+59.079**; cash M12 **246.231**; revenue Y1 **228.796**; costos Y1 **169.717**).
 
-**Equipo Lean (esc.1):** CEO + Founder + Co-CEO **1.000/mes** c/u · **Dev 1.000** (esc.1: Dev x2 @ 1.000) · **4× Sales 350 base** · CS+CM **500** — ver [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §1.1.
+**Equipo Lean (esc.1):** CEO + Founder + Co-CEO **1.000/mes** c/u · **Dev 1.000** (**1× FTE**) · **4× Sales 350 base** · CS+CM **500** — ver [PRESUPUESTO_12_MESES_REFERENCIA.md](PRESUPUESTO_12_MESES_REFERENCIA.md) §1.1.
 
 ### 1.1 Tabla mes a mes *(esc.1 v4 — pricing 45/60/70 + %GMV 8/7/5)*
 
@@ -64,19 +66,19 @@
 
 > **Lectura esc.1 v4:** FCF Y1 **+59.079**; break-even FCF mensual desde **M5**. Revenue Y1 **228.796**. Costos Y1 **169.717**. Cash M12 **246.231** (187.152 + 59.079).
 
-> **Billing (ajuste pack):** la columna **Revenue** = P&L Excel (híbrido cuota **45/60/70** + %GMV **8/7/5**). **ARPF ~52** es placeholder de UNIT_ECONOMICS — **no** el cociente Revenue÷activas (M1: 7.520/40 ≈ 188). Detalle comercial: [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5.
+> **Billing (ajuste pack):** la columna **Revenue** = P&L Excel (híbrido cuota **45/60/70** + %GMV **8/7/5**). **Blend esc.1 = 188 USD/activa/mes** (mix de bandas y take-rate GMV **constante** en la serie M1–M12; no se simula migración 45→60/70 mes a mes). **ARPF ~52** es placeholder de UNIT_ECONOMICS — **no** el cociente Revenue÷activas. Detalle comercial: [PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5.
 
 | Escenario billing | Revenue Y1 (ref.) | Cash M12 (ref.) | Nota |
 |---|---|---|---|
 | **Sin waiver** *(tabla arriba — planning principal esc.1)* | **228.796** | **246.231** | Caso central pitch (esc.1 v4 — revenue 228.796) |
-| **Con waiver primeras 10** (cuota USD 0 × 2 meses) | **~228.343** *(−~453)* | **~245.778** | Delta ingreso proxy [PROPUESTA B2B §11](PROPUESTA_VALOR_CLIENTE_B2B.md). |
+| **Con waiver primeras 10** (cuota USD 0 × 2 meses) | **~228.343** *(−~453)* | **~245.778** | Delta **−453 ≈ 10×45×1** mes en ventana M1–M12 (no ×2). Si ambos meses caen post-Day-D, delta ≈ **900** — `[PENDIENTE FP&A]` publicar puente Fase 0 vs M1–M12. Proxy [PROPUESTA B2B §11](PROPUESTA_VALOR_CLIENTE_B2B.md). |
 
 ### 1.2 Hipótesis aplicadas (esc.1 v4)
 
 - **Churn mensual:** **5%** target ([UNIT_ECONOMICS.md](UNIT_ECONOMICS.md)).
 - **Tasa de firma:** **~185** altas brutas M1–M12 con **4× Sales** (curva ×1,0).
 - **Equipo comercial:** **4× Sales** base **350/mes** c/u + comisión por firma (no modelada en burn fijo).
-- **Dev en nómina:** **1.000/mes** (esc.1: Dev x2 @ 1.000) — aparte del founder técnico.
+- **Dev en honorarios:** **1.000/mes** (**1× FTE**) — aparte del founder técnico.
 - **One-shots:** **22.365** en Fase 0 (legal 5.050 + intro 5.640 + HQ/CapEx 11.675 — canon v4).
 - **Burn esc.1:** M1 **11.411** / M2 **14.846** / M3–M12 **14.346**/mes ([PRESUPUESTO](PRESUPUESTO_12_MESES_REFERENCIA.md) §2.3). Total costos Y1 esc.1 **169.717** (Detallado ask **172.152**).
 - **Pricing:** cuota fija **45/60/70** + %GMV **8/7/5** según banda (esc.1 v4).
@@ -110,7 +112,7 @@ Con el **esc.1 vigente** (pricing **45/60/70 + %GMV 8/7/5**), el FCF mensual es 
 
 | Concepto | Referencia |
 |----------|------------|
-| Revenue anual | **USD 96k–108k** conservador ([MODELO](MODELO_FINANCIERO_ZONIX_PHARMA.md) Año 2) |
+| Revenue anual | **USD 96k–108k** `[histórico pre-esc.1]` ([MODELO](MODELO_FINANCIERO_ZONIX_PHARMA.md) Año 2 — **no** ancla pitch; recalcular híbrido `[PENDIENTE FP&A]`) |
 | Activas cierre | ~220 (MODELO Año 2) |
 | Burn | Escalar nómina/marketing solo con caja y métricas post-Day-D |
 
@@ -121,6 +123,7 @@ Con el **esc.1 vigente** (pricing **45/60/70 + %GMV 8/7/5**), el FCF mensual es 
 | Cash M6 < **180.403** | Recorte Meta 50%; pausar valla; bridge founder |
 | Firmas < 8/mes × 2 meses | Revisar script Sales; mom-test pricing (GUIA §2.1) |
 | CAC > 139 +20% | Reducir comisiones variable; foco referidos farmacia |
+| Devaluación Bs **>100%** en un trimestre | Reprecio cuota en USD; recorte burn no esencial; bridge — umbral y montos `[PENDIENTE FP&A]` |
 
 ## 4. Año 3 — referencia `[LARGO PLAZO]`
 
@@ -140,4 +143,4 @@ Hipótesis **~USD 480k/año** requiere puente farmacias × ARPF — **no ancla p
 
 ---
 
-**Tier capital v4 (ask único):** Lean **237.412 (Excel)** @ cap **600k** → equity **~39,57%**. Ver [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md).
+**Tier capital v4 (ask único):** Lean **237.412 (Excel)** @ cap **1.582.747** → equity **~15%**. Ver [MODELO_FINANCIERO_ZONIX_PHARMA.md](MODELO_FINANCIERO_ZONIX_PHARMA.md).

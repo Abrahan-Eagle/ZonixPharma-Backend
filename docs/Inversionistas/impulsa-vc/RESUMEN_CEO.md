@@ -34,7 +34,7 @@ Para Zonix Pharma: **útil como estructura/banca VE**, no como plan A de cheque 
 | | Pack actual | Si hablas con Impulsa |
 |--|-------------|------------------------|
 | Plata | Lean **237.412** | **TBD** (no anclar) |
-| Dilución | SAFE cap ref. 600k | **TBD** + posible C.A. VE |
+| Dilución | SAFE cap ref. 1.582.747 | **TBD** + posible C.A. VE |
 | Historia | Piloto Valencia / VE | Misma playa + banca Activo |
 | Rol | Cheque pre-seed | **Estructura + compliance** local |
 | Empresa | Ideal Delaware | Confirmar si aceptan holding US |

@@ -1,5 +1,8 @@
 # Extract KEEP — PDFs Documentos (canon post-borrado)
 
+> **Histórico.** No actualizar el cuerpo ni re-litigar hallazgos. Estado vigente de `docs/` = [`FORENSIC_DOCS_V9_2026-09-10.md`](FORENSIC_DOCS_V9_2026-09-10.md) + CANON_V4 (SAFE **237.412**). PASS1–3 quedan como antecedente.
+
+
 > **Fecha:** 9 agosto 2026 (ampliado V2 hoja-detallado + fase 2)  
 > **Forense v1:** [FORENSIC_PDFS_DOCUMENTOS_FOUNDERS_2026-08-09.md](FORENSIC_PDFS_DOCUMENTOS_FOUNDERS_2026-08-09.md)  
 > **Forense V2:** [FORENSIC_PDFS_DOCUMENTOS_V2_HOJA_2026-08-09.md](FORENSIC_PDFS_DOCUMENTOS_V2_HOJA_2026-08-09.md) (Juez_Grok A+B)  
