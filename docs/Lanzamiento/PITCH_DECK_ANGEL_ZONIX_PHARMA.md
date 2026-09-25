@@ -18,7 +18,7 @@ Cada bloque = una slide. El **título es la conclusión**; el cuerpo la prueba; 
 - Marketplace farmacéutico B2B2C (OTC + Rx) · Valencia, Venezuela.
 - Estado: **sistema construido** (backend + apps Android/iOS) en staging; Fase 0 → Day-D en T+90.
 - Ronda: **USD 237.412** pre-seed vía SAFE post-money.
-- Founder: Abrahan Pulido · zonixpharma.com
+- Equipo: **Gabriel Barrios**, CEO · **Abrahan Pulido**, Founder / Co-CEO y CTO · **Wistremiro Pulido**, Co-founder. Valencia, estado Carabobo.
 
 Pie: `FACT` estado producto — BRIEF_UNA_PAGINA § Estado producto. `[PENDIENTE screenshot]` app para v2 del deck.
 
@@ -167,14 +167,15 @@ Pie: PROPUESTA_VALOR_CLIENTE_B2B §5, §11 · UNIT_ECONOMICS §1–§4, §7 (mar
 
 ## Slide 10 — Equipo
 
-**Un founder técnico que ya construyó el sistema completo; la ronda paga el equipo comercial que lo pone en las farmacias.**
+**Los dos founders trajeron a Gabriel Barrios como CEO; Abrahan construyó el sistema. La ronda paga quien lo pone en las farmacias.**
 
-- **Abrahan Pulido — Founder / CEO / CTO.** Ingeniero en Informática (IUTVAL), 8+ años en producto, full stack Laravel + Flutter. Construyó backend, apps y panel de Zonix Pharma; fundador de Corral X, Zonix Imports y Aiblockweb.
-- **Equipo piloto financiado por la ronda (burn Lean):** CEO · Co-CEO / Head Sales & Ops · Dev Flutter/Laravel · **4× Sales B2B** (base + comisión por firma) · Customer Support + Community.
-- **Externos:** contador, abogado y asesor regulatorio farmacéutico (on-demand, dentro del burn).
-- **Riesgo que reconocemos:** bus factor = 1 hoy. Mitigación: segundo desarrollador con acceso y contexto desde Fase 0 + cesión de IP a la C.A. + vesting del founder en el SAFE.
+- **Gabriel Barrios — CEO.** Gerente de Consultoría, Grupo Morr (Valencia, Carabobo). Los founders lo incorporaron para dirigir la empresa. Cargo de CEO: declaración del founder, 25 sep 2026; el pack todavía lo nombra como aliado.
+- **Abrahan Pulido — Founder / Co-CEO y CTO.** Ingeniero en Informática (IUTVAL), 8+ años en producto, full stack Laravel + Flutter. Construyó backend, apps y panel de Zonix Pharma; fundador de Corral X, Zonix Imports y Aiblockweb.
+- **Wistremiro Pulido — Co-founder.** Sin biografía en el pack: no se inventa currículum.
+- **Lo que paga la ronda (burn Lean):** Dev Flutter/Laravel · **4× Sales B2B** (base + comisión por firma) · Customer Support + Community. Externos on-demand: contador, abogado, asesor regulatorio farmacéutico. CEO y Co-CEO ya están cubiertos; no son puestos por contratar.
+- **Riesgo que reconocemos:** el conocimiento técnico sigue en Abrahan. La dirección ya no es una sola persona. Mitigación: segundo desarrollador con acceso y contexto desde Fase 0 + cesión de IP a la C.A. + vesting en el SAFE.
 
-Pie: `FACT` BRIEF § Equipo · PRESUPUESTO_12_MESES_REFERENCIA §2 · ESTRUCTURA_LEGAL_Y_EQUITY §1.
+Pie: `FACT` bio de Abrahan — BRIEF § Equipo. Cargo de Gabriel y co-founder Wistremiro: declaración del founder (25 sep 2026). Grupo Morr: RESUMEN_ALIADO_GABRIEL_BARRIOS. Burn: PRESUPUESTO_12_MESES_REFERENCIA §2.
 
 ---
 
@@ -209,7 +210,11 @@ Pie: `CALC` 50.260 + 172.152 + 15.000 = 237.412 (Excel Detallado v4) · 07_QUE_C
 3. Acceso al data room: brief, proyección mes a mes, unit economics, presupuesto, estructura legal.
 4. Referencias verificables y acceso al repositorio bajo NDA si lo pides.
 
-**Abrahan Pulido** · ing.pulido.abrahan@gmail.com · +58 412 4352014 · linkedin.com/in/abrahan-pulido-909a35b7 · zonixpharma.com
+- **Gabriel Barrios** — CEO — +58 424 4229405
+- **Abrahan Pulido** — Founder / Co-CEO y CTO — ing.pulido.abrahan@gmail.com · +58 412 4352014 · linkedin.com/in/abrahan-pulido-909a35b7
+- **Wistremiro Pulido** — Co-founder — +58 412 3025728
+
+zonixpharma.com · Valencia, estado Carabobo, Venezuela.
 
 Pie: Documento informativo para conversación con inversor; no constituye oferta pública de valores. Cifras: pack Lanzamiento v4 (sep 2026).
 
@@ -251,4 +256,4 @@ Pie: ESTRUCTURA_LEGAL_Y_EQUITY §2 · `founder-cap-table-checklist`. Nada de est
 | Take-rate agregador 20–30 % · ejemplo 1.000–1.500 sobre 5.000 | 2, 8, 9 | BRIEF (20–30 %); PERFIL §5.4 (25–35 %) — se usa el rango BRIEF y ejemplo coherente |
 | Margen bruto ~92 % · waiver 10 farmacias / 2 meses | 9 | UNIT_ECONOMICS §7; PROPUESTA B2B §11 |
 
-**TODO cruzado:** `zonix-fundraising-narrative` conserva cifras obsoletas (cap 600k, ask 101k) — actualizar la skill al canon v4 en un cambio aparte.
+**TODO cruzado:** `zonix-fundraising-narrative` conserva cifras obsoletas (cap 600k, ask 101k). BRIEF y MENSAJE_ENVIO siguen llamando a Abrahan único Founder / CEO / CTO y no nombran a Gabriel ni a Wistremiro. Actualizar ambos en un cambio aparte, antes de enviar el data room.
