@@ -45,6 +45,8 @@ Para **ejecutar el lanzamiento:** [PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIEN
 
 **Mensaje listo para enviar:** [MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md](MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md) §2.
 
+**Pitch deck ángel (deck frío 12 slides + Anexo A SAFE, 25 sep 2026):** [PITCH_DECK_ANGEL_ZONIX_PHARMA.md](PITCH_DECK_ANGEL_ZONIX_PHARMA.md) · [PDF](Zonix_Pharma_Pitch_Deck_Angel.pdf) — primer contacto con ángel; método `founder-pitch-deck-builder`, rúbrica `founder-deck-review`; cifras ancladas al pack v4 (ask **237.412**, cap **1.582.747**). Enviar solo con OK del founder (`CAP-P09`). Pendiente v2: capturas reales de la app en slide 06.
+
 **Informe CEO — capital e inversores Venezuela 2026** (profundizado 12 jul 2026: anclas Cashea/Kontigo, tickets Epakon web vs AngelList, Impulsa junta, OFAC GL 56/57, Ridery BVC, Complemento NotebookLM): [BRIEFING_INVERSORES_VE_2026.md](BRIEFING_INVERSORES_VE_2026.md).
 
 **Análisis de candidatos (interno, no zip):** carpeta hermana [`../Inversionistas/`](../Inversionistas/) — fichas + [`RESUMEN_COMPARATIVO.md`](../Inversionistas/RESUMEN_COMPARATIVO.md) (ranking %); no incluir en data room al inversionista. **Plan multi-stakeholder:** [`../Captacion_Stakeholders/`](../Captacion_Stakeholders/README.md) (carpetas por método + `_comun`; empieza por [`00_QUE_HACER_AHORA`](../Captacion_Stakeholders/_comun/00_QUE_HACER_AHORA.md)) separa SAFE, farmacias cliente, partners y equipo/advisors. **500 LatAm:** rechazado 6 ago 2026 (score **67**); ver [APRENDIZAJE_500_EVIDENCIA_MERCADO.md](APRENDIZAJE_500_EVIDENCIA_MERCADO.md).

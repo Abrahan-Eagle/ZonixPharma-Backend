@@ -1,7 +1,7 @@
 # Data room inversor Zonix Pharma — manifest
 # Canon: DOCUMENTOS_SOLO_INVERSOR.md
 version: "1.1"
-updated: "2026-08-09"
+updated: "2026-09-25"
 audience: "Inversor pre-seed (SAFE)"
 # Anclas Excel v4: SAFE 237.412 · Day-D 187.152 · %GMV 8/7/5 · equity ~15%
 
@@ -28,6 +28,9 @@ tiers:
         required: true
     optional:
       - path: "Lanzamiento/MENSAJE_ENVIO_Y_BULLETS_INVERSIONISTA.md"
+      - path: "Lanzamiento/PITCH_DECK_ANGEL_ZONIX_PHARMA.md"
+      - path: "Lanzamiento/Zonix_Pharma_Pitch_Deck_Angel.pdf"
+        note: "Deck frío 12 slides + Anexo A SAFE; primer contacto ángel"
       - path: "Lanzamiento/MODELO_FINANCIERO_ZONIX_PHARMA.md"
       - path: "Lanzamiento/README.md"
       - path: "Lanzamiento/DOCUMENTOS_SOLO_INVERSOR.md"
