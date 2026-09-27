@@ -85,6 +85,18 @@
   .stack .s3 { background: #A8DCCB; color: #0F4C5C; }
   .legend { display: flex; gap: 18px; font-size: 12.5px; color: #142033; flex-wrap: wrap; }
   .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; }
+  .matrix { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+  .matrix th { font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; color: #0F4C5C; text-align: center; padding: 6px 8px; font-weight: 700; border-bottom: 2px solid #C7CFD9; }
+  .matrix th:first-child { text-align: left; }
+  .matrix td { padding: 8px; text-align: center; border-bottom: 1px solid #e3e8ef; }
+  .matrix td:first-child { text-align: left; color: #142033; }
+  .matrix tr.own td { background: #eef7f5; }
+  .matrix tr.own td:first-child { font-weight: 800; color: #0F4C5C; }
+  .matrix.tall th { padding: 10px 8px; }
+  .matrix.tall td { padding: 15px 8px; }
+  .yes { color: #0F4C5C; font-weight: 900; font-size: 16px; }
+  .no { color: #b03030; font-weight: 900; font-size: 16px; }
+  .dm { color: #9aa6b5; font-weight: 700; }
 </style>
 </head>
 <body>
@@ -276,14 +288,43 @@
     <div class="stat"><div class="num">20–30 %</div><div class="lbl">es lo que el agregador le quita a la farmacia, sin validar la receta</div></div>
   </div>
   <div class="body">
-    <table>
-      <tr><th style="width:22%">Alternativa</th><th style="width:32%">Qué es</th><th>Por qué se estanca en la farmacia independiente</th></tr>
-      <tr><td><b>Farmatodo / Locatel</b></td><td>Cadenas premium con app propia cerrada</td><td>No abren marketplace a terceros; compiten con la independiente, no la sirven</td></tr>
-      <tr><td><b>PedidosYa Pharmacy</b></td><td>Agregador generalista activo en VE</td><td>20–30 % de lo que vende la farmacia; sin validación de receta por farmacéutico; la farmacia es un comercio más entre miles</td></tr>
-      <tr><td><b>Farmalisto</b> (LatAm)</td><td>Marketplace farmacéutico MX/CO/PE</td><td>No opera en Venezuela; comisión sobre venta. Prueba que el modelo es financiable (~USD 22–33 M levantados)</td></tr>
-      <tr><td><b>WhatsApp + papel</b></td><td>Status quo, cero tecnología</td><td>Sin trazabilidad, sin receta digital, sin seguimiento</td></tr>
-    </table>
-    <div class="card" style="margin-top:14px;"><h3><svg class="ico" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/></svg>Zonix Pharma</h3>Cuota fija + % moderado de lo vendido · receta validada por el farmacéutico <b>de cada</b> farmacia · pagos venezolanos nativos · varias sucursales con un solo alta. Costo de cambiar: catálogo, historial y contrato híbrido.</div>
+    <div class="chart">
+      <div class="ttl">Qué le ofrece cada alternativa a la farmacia independiente</div>
+      <table class="matrix tall">
+        <tr>
+          <th>Alternativa</th>
+          <th>Abierta a la farmacia<br>independiente</th>
+          <th>Receta validada por<br>farmacéutico</th>
+          <th>Pagos<br>venezolanos</th>
+          <th>Cuánto le quita<br>por venta</th>
+          <th>Varias sucursales<br>con un alta</th>
+        </tr>
+        <tr>
+          <td><b>Farmatodo / Locatel</b></td>
+          <td><span class="no">✕</span></td><td><span class="dm">—</span></td><td><span class="yes">✓</span></td><td><span class="dm">n/a</span></td><td><span class="yes">✓</span></td>
+        </tr>
+        <tr>
+          <td><b>PedidosYa Pharmacy</b></td>
+          <td><span class="yes">✓</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="no">20–30 %</span></td><td><span class="no">✕</span></td>
+        </tr>
+        <tr>
+          <td><b>Farmalisto</b> <span class="dm">(LatAm)</span></td>
+          <td><span class="yes">✓</span></td><td><span class="yes">✓</span></td><td><span class="no">✕</span></td><td><span class="dm">comisión</span></td><td><span class="dm">—</span></td>
+        </tr>
+        <tr>
+          <td><b>WhatsApp + papel</b></td>
+          <td><span class="yes">✓</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="yes">0 %</span></td><td><span class="no">✕</span></td>
+        </tr>
+        <tr class="own">
+          <td><b>Zonix Pharma</b></td>
+          <td><span class="yes">✓</span></td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td><td><span class="yes">8 / 7 / 5 %</span></td><td><span class="yes">✓</span></td>
+        </tr>
+      </table>
+    </div>
+    <div class="grid2" style="margin-top:12px;gap:16px;">
+      <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/></svg>Nadie cumple las cuatro</h3><b>Farmalisto</b> prueba que el modelo es financiable (~USD 22–33 M levantados) pero no opera en Venezuela. <b>PedidosYa</b> sí opera, pero no valida receta ni permite varias sucursales.</div>
+      <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><path d="M12 3l8 4v6c0 4-3.4 7.2-8 8-4.6-.8-8-4-8-8V7z"/></svg>Por qué cuesta copiarlo</h3>Un agregador generalista no puede validar receta sin contratar farmacéuticos por farmacia, ni bajar el take-rate sin romper su economía. Ese es el foso.</div>
+    </div>
   </div>
   <div class="foot"><span>Datos de eCommerceDB / Tracxn. Rappi no opera en Venezuela.</span><span class="n">08 / 12</span></div>
 </section>
@@ -291,7 +332,7 @@
 <!-- 9 MODELO -->
 <section class="slide compact">
   <div class="kicker">Modelo de negocio</div>
-  <h1>La farmacia paga una cuota mensual más un porcentaje pequeño de lo que vende en la app: menos de la mitad de lo que hoy entrega al agregador, y de cada dólar que cobra le quedan ~92 centavos de margen.</h1>
+  <h1>La farmacia paga una cuota mensual más un porcentaje pequeño de lo que vende en la app: menos de la mitad de lo que hoy entrega al agregador.</h1>
   <div class="stats">
     <div class="stat"><div class="num xs">445 vs 1.000–1.500</div><div class="lbl">cuota Zonix vs agregador, para una farmacia de USD 5.000/mes</div></div>
     <div class="stat"><div class="num">~92 %</div><div class="lbl">de margen bruto de la plataforma</div></div>
@@ -302,10 +343,9 @@
       <div class="ttl">Lo que paga la farmacia por USD 5.000 vendidos en la app</div>
       <div class="bar"><div class="bl">Agregador</div><div class="bt"><div class="bf alt" style="width:100%"></div></div><div class="bv">1.000–1.500</div></div>
       <div class="bar"><div class="bl">Zonix Pharma</div><div class="bt"><div class="bf" style="width:32%"></div></div><div class="bv">445</div></div>
-      <p class="muted" style="margin:6px 0 0 0;font-size:13.5px;">Zonix cobra <b>menos de la mitad</b>: el agregador cobra un porcentaje alto de cada venta; Zonix cobra una cuota fija baja más un porcentaje pequeño.</p>
     </div>
     <div>
-      <table style="margin-bottom:10px;">
+      <table style="margin-bottom:8px;">
         <tr><th style="width:42%">Concepto</th><th>Valor</th></tr>
         <tr><td>Quién paga</td><td>La <b>farmacia</b> (el paciente no es la fuente principal)</td></tr>
         <tr><td>Precio</td><td>Cuota de <b>USD 45 / 60 / 70</b> + <b>8 % / 7 % / 5 %</b> según plan</td></tr>
