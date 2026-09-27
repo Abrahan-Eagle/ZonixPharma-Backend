@@ -183,13 +183,13 @@ Pie: PROPUESTA_VALOR_CLIENTE_B2B §5, §11 · UNIT_ECONOMICS §1–§4, §7 (mar
 
 La slide no lleva título (h1): el organigrama habla solo. Gabriel Barrios (socio) arriba; Abrahan y Wistremiro abajo.
 
-- **Gabriel Barrios — CEO.** Cargo de CEO: declaración del founder, 25 sep 2026; sin detalle de trayectoria en el pack.
+- **Gabriel Barrios — CEO.** Economista (Universidad de Carabobo) y MSc en Finanzas (IESA). Más de 11 años en banca patrimonial y mercados de capitales (Inexco Group, abr 2015 – hoy). Profesor de Mercado de Capitales en la Universidad de Carabobo desde 2024. Cargo de CEO: declaración del founder, 25 sep 2026.
 - **Abrahan Pulido — Founder / Co-CEO y CTO.** Ingeniero en Informática (IUTVAL), 8+ años en producto, full stack Laravel + Flutter. Construyó backend, apps y panel de Zonix Pharma; fundador de Corral X, Zonix Imports y Aiblockweb.
 - **Wistremiro Pulido — Co-founder.** Finanzas y administración.
 - **Lo que paga la ronda (burn Lean):** Dev Flutter/Laravel · **4× Sales B2B** (base + comisión por firma) · Customer Support + Community. Externos on-demand: contador, abogado, asesor regulatorio farmacéutico. CEO y Co-CEO ya están cubiertos; no son puestos por contratar.
 - **Riesgo que reconocemos:** el conocimiento técnico sigue en Abrahan. La dirección ya no es una sola persona. Mitigación: segundo desarrollador con acceso y contexto desde Fase 0 + cesión de IP a la C.A. + vesting en el SAFE.
 
-Pie: `FACT` bio de Abrahan — BRIEF § Equipo. Cargos de Gabriel y Wistremiro: declaración del founder (25 sep 2026). Burn: PRESUPUESTO_12_MESES_REFERENCIA §2.
+Pie: `FACT` bio de Abrahan — BRIEF § Equipo. Trayectoria de Gabriel: LinkedIn, revisado 27 sep 2026 (el perfil no lista Zonix Pharma). Cargo de CEO y cargo de Wistremiro: declaración del founder (25 sep 2026). Burn: PRESUPUESTO_12_MESES_REFERENCIA §2.
 
 ---
 
