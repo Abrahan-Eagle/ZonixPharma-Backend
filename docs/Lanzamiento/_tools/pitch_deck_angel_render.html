@@ -28,15 +28,14 @@
   td b, .b { color: #1E2A5A; font-weight: 700; }
   .dark td { border-color: #2a3a55; }
   .dark td b { color: #F5F7FA; }
-  .tag { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: .06em; padding: 2px 6px; border-radius: 6px; background: #A8DCCB; color: #0F4C5C; vertical-align: middle; }
-  .tag.calc { background: #dfe6f3; color: #1E2A5A; }
-  .tag.bench { background: #fde9d3; color: #8a4b0a; }
   .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
   .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
   .card { background: #fff; border: 1px solid #C7CFD9; border-radius: 14px; padding: 16px 20px; }
   .dark .card { background: #1b2a45; border-color: #2a3a55; }
-  .card h3 { margin: 0 0 8px 0; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: #0F4C5C; }
+  .card h3 { margin: 0 0 10px 0; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: #0F4C5C; display: flex; align-items: center; gap: 8px; }
   .dark .card h3 { color: #56C7B8; }
+  .ico { width: 19px; height: 19px; flex: 0 0 19px; stroke: #0F4C5C; stroke-width: 1.9; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .dark .ico { stroke: #56C7B8; }
   .big { font-size: 40px; font-weight: 800; color: #1E2A5A; line-height: 1.05; letter-spacing: -.02em; }
   .dark .big { color: #56C7B8; }
   .muted { color: #5b6878; }
@@ -52,12 +51,19 @@
   .compact table { font-size: 15px; }
   .compact td { padding: 6px 10px; }
   .compact .card { padding: 12px 16px; font-size: 15px; }
+  .compact .stats { margin-bottom: 14px; gap: 16px; }
+  .compact .stats .stat { padding: 10px 14px; }
+  .compact .stats .num { font-size: 30px; }
+  .compact .stats .num.sm { font-size: 26px; }
+  .compact .stats .num.xs { font-size: 23px; }
+  .compact .stats .lbl { font-size: 12px; margin-top: 4px; }
   .stats { display: flex; gap: 22px; margin-bottom: 20px; flex-wrap: wrap; }
   .stats .stat { flex: 1; min-width: 150px; background: #fff; border: 1px solid #C7CFD9; border-radius: 14px; padding: 16px 20px; text-align: center; }
   .stats .num { font-size: 40px; font-weight: 800; color: #1E2A5A; line-height: 1.05; letter-spacing: -.02em; white-space: nowrap; }
   .stats .num.sm { font-size: 30px; }
   .stats .num.xs { font-size: 26px; }
   .stats .lbl { font-size: 13px; color: #0F4C5C; font-weight: 600; margin-top: 6px; line-height: 1.3; }
+  .cols { font-size: 15.5px; }
 </style>
 </head>
 <body>
@@ -89,15 +95,15 @@
   </div>
   <div class="body grid2">
     <div class="card">
-      <h3>Farmacia independiente / cadena mediana</h3>
+      <h3><svg class="ico" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/></svg>Farmacia independiente / cadena mediana</h3>
       <ul>
         <li>Sin app propia frente a Farmatodo y Locatel.</li>
-        <li>En PedidosYa Pharmacy entrega <b>20–30 %</b> de lo que vende: sobre <b>USD 5.000/mes</b>, eso son <b>USD 1.000–1.500</b> de comisión.</li>
+        <li>Entrega <b>20–30 %</b> de lo que vende: sobre <b>USD 5.000/mes</b>, son <b>USD 1.000–1.500</b> de comisión.</li>
         <li>Órdenes, inventario, comprobantes y recetas en WhatsApp y papel.</li>
       </ul>
     </div>
     <div class="card">
-      <h3>Paciente</h3>
+      <h3><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/></svg>Paciente</h3>
       <ul>
         <li>Stock incierto: <b>3–5 farmacias</b> para conseguir un medicamento.</li>
         <li>Precio opaco: paga lo que cobre la primera que lo tenga.</li>
@@ -130,10 +136,10 @@
   <div class="kicker">Por qué ahora</div>
   <h1>El mercado farmacéutico volvió a crecer a doble dígito, los pagos digitales ya cubren al comprador y nadie atiende a la farmacia independiente: 2026 es la ventana.</h1>
   <div class="body grid2">
-    <div class="card"><h3>1 · Demanda en recuperación</h3><div class="big">+17,49 %</div><div>más unidades vendidas 2024–2025 (Cifar / IMS-IQVIA). Hace dos años el mercado se contraía.</div></div>
-    <div class="card"><h3>2 · Pagos digitales maduros</h3><div class="big">~95 %</div><div>de la población bancarizada cubierta por Pago Móvil + Zelle + Binance Pay. Hace cinco años no se podía operar sin pasarela internacional.</div></div>
-    <div class="card"><h3>3 · Competencia digital débil</h3><div>Farmatodo y Locatel no abren su app a terceros; PedidosYa es generalista y caro; Farmalisto y Rappi no operan en Venezuela.</div></div>
-    <div class="card"><h3>4 · El software ya existe</h3><div>~4 años de trabajo y la capa farmacéutica ya construida. La ronda no paga "construir": paga <b>vender y validar</b>.</div></div>
+    <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><path d="M4 20V6M4 20h16"/><path d="M8 20v-5M13 20v-9M18 20v-6"/></svg>1 · Demanda en recuperación</h3><div class="big">+17,49 %</div><div>más unidades vendidas 2024–2025 (Cifar / IMS-IQVIA). Hace dos años el mercado se contraía.</div></div>
+    <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg>2 · Pagos digitales maduros</h3><div class="big">~95 %</div><div>de la población bancarizada cubierta por Pago Móvil + Zelle + Binance Pay. Hace cinco años no se podía operar sin pasarela internacional.</div></div>
+    <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5"/></svg>3 · Competencia digital débil</h3><div>Farmatodo y Locatel no abren su app a terceros; PedidosYa es generalista y caro; Farmalisto y Rappi no operan en Venezuela.</div></div>
+    <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>4 · El software ya existe</h3><div>~4 años de trabajo y la capa farmacéutica ya construida. La ronda no paga "construir": paga <b>vender y validar</b>.</div></div>
   </div>
   <div class="foot"><span>Fuentes: Cifar / IMS-IQVIA 2025 · Statista / Mordor Intelligence.</span><span class="n">04 / 12</span></div>
 </section>
@@ -150,12 +156,10 @@
   <div class="body">
     <table>
       <tr><th>Capa</th><th style="width:22%">Cifra</th><th>Lectura</th></tr>
-      <tr><td>Farmacias en Valencia metro</td><td class="num"><b>226</b></td><td>Directorios públicos (Saas, Farmatodo, Locatel, Farmahorro, Nena + independientes)</td></tr>
       <tr><td>Objetivo del piloto: cadenas medianas (25–35) + independientes con movimiento (80–100)</td><td class="num"><b>~105–135</b></td><td>Segmento sin app propia. Cadenas premium fuera del piloto</td></tr>
       <tr><td>Carabobo total</td><td class="num">350–450</td><td>Puerto Cabello, Tocuyito, Mariara, Guacara</td></tr>
-      <tr><td>Activas al cierre del mes 12 (escenario base)</td><td class="num"><b>~159</b> (~70 % metro)</td><td>Ingreso de ese mes <b>~USD 29.892</b></td></tr>
+      <tr><td>Ingreso del mes 12</td><td class="num"><b>~USD 29.892</b></td><td>Con las ~159 activas del cierre del año 1 (~70 % del metro de Valencia)</td></tr>
       <tr><td>Año 2</td><td class="num">Maracay + Maracaibo</td><td>Mismo método: 4 vendedores, oferta primero</td></tr>
-      <tr><td>Contexto: mercado farmacéutico Venezuela</td><td class="num"><b>USD 1.638 M</b>/año</td><td>389 M unidades · 48 % Rx genérico. Dimensiona el sector; <b>no</b> es nuestro mercado alcanzable</td></tr>
     </table>
     <p class="muted" style="margin:12px 0 0 0;font-size:15px;">La cuota no la fija el mercado sino la capacidad del canal: 4 vendedores × visitas × cierre. La curva es hipótesis hasta el dato real del mes 2–3.</p>
   </div>
@@ -171,12 +175,12 @@
     <div class="stat"><div class="num">USD 1,3–2,4 M</div><div class="lbl">costo de reconstruirlo a precio de agencia (costo, no valoración)</div></div>
   </div>
   <div class="body grid2">
-    <div class="card"><h3>Usuarios</h3>7 perfiles listos: paciente, farmacia, farmacéutico colegiado, reparto (empresa, motorizado, autónomo) y administración.</div>
-    <div class="card"><h3>Plataforma web</h3>Cientos de funciones terminadas y probadas: catálogo, órdenes, cobro, recetas.</div>
-    <div class="card"><h3>Cumplimiento farmacéutico</h3>Receta validada por farmacéutico con vencimiento · lotes por fecha de caducidad · cadena de frío · sustancias controladas · registro sanitario.</div>
-    <div class="card"><h3>Reparto y avisos</h3>Seguimiento del pedido en tiempo real y notificaciones al cliente.</div>
-    <div class="card"><h3>Apps</h3>Android e iOS, con la identidad de la marca.</div>
-    <div class="card"><h3>Calidad y reposición</h3>Cientos de pruebas automatizadas pasando antes de cada entrega. <b>Costo de reposición</b> (costo, no valoración): agencia VE <b>~1,3 M</b> · agencia US <b>~2,4 M</b>.</div>
+    <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 11a3 3 0 1 0 0-6"/><path d="M17 14c2.2.4 4 2.4 4 6"/></svg>Usuarios</h3>7 perfiles listos: paciente, farmacia, farmacéutico colegiado, reparto (empresa, motorizado, autónomo) y administración.</div>
+    <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg>Plataforma web</h3>Cientos de funciones terminadas y probadas: catálogo, órdenes, cobro, recetas.</div>
+    <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.4-3 8.2-7 9-4-.8-7-4.6-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>Cumplimiento farmacéutico</h3>Receta validada por farmacéutico con vencimiento · lotes por fecha de caducidad · cadena de frío · sustancias controladas · registro sanitario.</div>
+    <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><path d="M3 7h10v9H3z"/><path d="M13 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>Reparto y avisos</h3>Seguimiento del pedido en tiempo real y notificaciones al cliente.</div>
+    <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>Apps</h3>Android e iOS, con la identidad de la marca.</div>
+    <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>Calidad y reposición</h3>Cientos de pruebas automatizadas pasando antes de cada entrega. <b>Costo de reposición</b> (costo, no valoración): agencia VE <b>~1,3 M</b> · agencia US <b>~2,4 M</b>.</div>
   </div>
   <div class="foot"><span>Tarifas de agencia: referencia de Clutch / GoodFirms / Cubix.</span><span class="n">06 / 12</span></div>
 </section>
@@ -190,14 +194,36 @@
     <div class="stat"><div class="num">~3 meses</div><div class="lbl">para llegar al lanzamiento público</div></div>
   </div>
   <div class="body">
-    <table>
-      <tr><th style="width:34%">Hoy</th><th style="width:30%">Todavía no</th><th>Qué compra la ronda</th></tr>
-      <tr><td>Plataforma y apps en prueba (<b>zonixpharma.com</b>)</td><td>Apps publicadas en tiendas</td><td><b>Lanzamiento en ~3 meses</b> con ≈28 farmacias con catálogo activo</td></tr>
-      <tr><td>Pruebas en verde (se re-verifican antes de cada reunión)</td><td>Ingresos / pilotos pagos</td><td>Prueba con 10 farmacias usando la app de verdad, antes de escalar</td></tr>
-      <tr><td>Demo de producto de 3–5 min</td><td>Cartas de intención firmadas</td><td>Primeras órdenes y <b>cobros reales</b> (hechos, no encuestas)</td></tr>
-      <tr><td>Conversaciones con farmacias pioneras en Valencia (en curso)</td><td>Empresa constituida (C.A.)</td><td>Métricas para el data room de la siguiente ronda</td></tr>
-    </table>
-    <div class="card" style="margin-top:14px;"><h3>Cómo vendemos</h3>Oferta primero: <b>4 vendedores presenciales</b> firman farmacias en dos focos de Valencia; el paciente llega por <b>referido de mostrador + Meta Ads geolocalizado</b>, y solo cuando ya hay catálogo activo.</div>
+    <div class="grid3">
+      <div class="card">
+        <h3><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>Hoy</h3>
+        <ul class="cols">
+          <li>Plataforma y apps en prueba (<b>zonixpharma.com</b>)</li>
+          <li>Pruebas en verde antes de cada entrega</li>
+          <li>Demo de producto de 3–5 min</li>
+          <li>Conversaciones con farmacias pioneras en Valencia</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>Todavía no</h3>
+        <ul class="cols">
+          <li>Apps publicadas en tiendas</li>
+          <li>Ingresos / pilotos pagos</li>
+          <li>Cartas de intención firmadas</li>
+          <li>Empresa constituida (C.A.)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><svg class="ico" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.4-3 8.2-7 9-4-.8-7-4.6-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>Qué compra la ronda</h3>
+        <ul class="cols">
+          <li><b>Lanzamiento en ~3 meses</b> con ≈28 farmacias con catálogo activo</li>
+          <li>Prueba con 10 farmacias usando la app de verdad</li>
+          <li>Primeras órdenes y <b>cobros reales</b></li>
+          <li>Métricas para el data room de la siguiente ronda</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card" style="margin-top:14px;"><h3><svg class="ico" viewBox="0 0 24 24"><path d="M3 7h10v9H3z"/><path d="M13 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>Cómo vendemos</h3>Oferta primero: <b>4 vendedores presenciales</b> firman farmacias en dos focos de Valencia; el paciente llega por <b>referido de mostrador + Meta Ads geolocalizado</b>, y solo cuando ya hay catálogo activo.</div>
   </div>
   <div class="foot"><span>Sin logos ni cartas no firmadas.</span><span class="n">07 / 12</span></div>
 </section>
@@ -217,7 +243,7 @@
       <tr><td><b>Farmalisto</b> (LatAm)</td><td>Marketplace farmacéutico MX/CO/PE</td><td>No opera en Venezuela; comisión sobre venta. Prueba que el modelo es financiable (~USD 22–33 M levantados)</td></tr>
       <tr><td><b>WhatsApp + papel</b></td><td>Status quo, cero tecnología</td><td>Sin trazabilidad, sin receta digital, sin seguimiento</td></tr>
     </table>
-    <div class="card" style="margin-top:14px;"><h3>Zonix Pharma</h3>Cuota fija + % moderado de lo vendido · receta validada por el farmacéutico <b>de cada</b> farmacia · pagos venezolanos nativos · varias sucursales con un solo alta. Costo de cambiar: catálogo, historial y contrato híbrido.</div>
+    <div class="card" style="margin-top:14px;"><h3><svg class="ico" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/></svg>Zonix Pharma</h3>Cuota fija + % moderado de lo vendido · receta validada por el farmacéutico <b>de cada</b> farmacia · pagos venezolanos nativos · varias sucursales con un solo alta. Costo de cambiar: catálogo, historial y contrato híbrido.</div>
   </div>
   <div class="foot"><span>Datos de eCommerceDB / Tracxn. Rappi no opera en Venezuela.</span><span class="n">08 / 12</span></div>
 </section>
@@ -235,13 +261,10 @@
     <table>
       <tr><th style="width:38%">Concepto</th><th>Valor</th></tr>
       <tr><td>Quién paga</td><td>La <b>farmacia</b>. El paciente no es la fuente principal de ingreso</td></tr>
-      <tr><td>Cuota mensual según plan</td><td><b>USD 45 / 60 / 70</b></td></tr>
-      <tr><td>Porcentaje de lo vendido en la app, según plan</td><td><b>8 % / 7 % / 5 %</b></td></tr>
-      <tr><td>Ejemplo: farmacia que vende USD 5.000/mes en la app</td><td>El agregador se lleva 1.000–1.500 · Zonix Basic: 45 + 8 % = <b>445</b></td></tr>
-      <tr><td>Margen bruto de la plataforma</td><td><b>~92 %</b> (Zonix no compra ni transporta el medicamento)</td></tr>
-      <tr><td>Qué no se descuenta</td><td>Las primeras 10 farmacias pueden empezar 2 meses sin cuota fija; el porcentaje y la medición siguen. La proyección central se calcula <b>sin</b> ese beneficio</td></tr>
-      <tr><td>Ingreso que deja cada farmacia</td><td><b>~USD 1.040</b> en su vida; recupera lo que costó conseguirla en <b>~3 meses</b> y deja <b>~7 veces</b> esa inversión</td></tr>
-      <tr><td>Ingresos año 1</td><td><b>USD 228.796</b> · la caja deja de caer a partir del <b>mes 5</b></td></tr>
+      <tr><td>Precio</td><td>Cuota de <b>USD 45 / 60 / 70</b> + <b>8 % / 7 % / 5 %</b> de lo vendido en la app, según plan</td></tr>
+      <tr><td>Ejemplo con USD 5.000/mes en la app</td><td>El agregador se lleva 1.000–1.500 · Zonix Basic: 45 + 8 % = <b>445</b></td></tr>
+      <tr><td>Qué no se descuenta</td><td>Las primeras 10 farmacias pueden empezar 2 meses sin cuota fija; la proyección central se calcula <b>sin</b> ese beneficio</td></tr>
+      <tr><td>Ingreso por farmacia</td><td>Recupera en <b>~3 meses</b> lo que costó conseguirla y deja <b>~7 veces</b> esa inversión. Ingresos del año 1: <b>USD 228.796</b>; la caja deja de caer en el <b>mes 5</b></td></tr>
     </table>
   </div>
   <div class="foot"><span>Cifras se recalibran tras 30 días de ventas reales.</span><span class="n">09 / 12</span></div>
@@ -254,17 +277,17 @@
   <div class="body">
     <div class="grid3" style="margin-bottom:14px;">
       <div class="card">
-        <h3>CEO</h3>
+        <h3><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/></svg>CEO</h3>
         <div style="font-size:21px;font-weight:800;color:#1E2A5A;margin-bottom:6px;">Gabriel Barrios</div>
         <div style="font-size:15px;">Dirección general de la empresa.</div>
       </div>
       <div class="card">
-        <h3>Founder / Co-CEO y CTO</h3>
+        <h3><svg class="ico" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>Founder / Co-CEO y CTO</h3>
         <div style="font-size:21px;font-weight:800;color:#1E2A5A;margin-bottom:6px;">Abrahan Pulido</div>
         <div style="font-size:15px;">Ingeniero (IUTVAL), 8+ años en producto. Construyó la plataforma, las apps y el panel. También fundó Corral X, Zonix Imports y Aiblockweb.</div>
       </div>
       <div class="card">
-        <h3>Co-founder</h3>
+        <h3><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5h4a1.8 1.8 0 0 1 0 3.6h-3a1.8 1.8 0 0 0 0 3.6h4"/></svg>Co-founder</h3>
         <div style="font-size:21px;font-weight:800;color:#1E2A5A;margin-bottom:6px;">Wistremiro Pulido</div>
         <div style="font-size:15px;">Finanzas y administración.</div>
       </div>
@@ -285,8 +308,8 @@
   </div>
   <div class="body">
     <div class="grid2" style="margin-bottom:10px;gap:18px;">
-      <div class="card"><h3>Instrumento</h3><b>SAFE post-money</b> · cap <b>USD 1.582.747</b> · sin descuento · cláusula de igualdad de condiciones (MFN) · sin interés ni vencimiento. El cap es un techo de precio, no la valoración.</div>
-      <div class="card"><h3>Monto y plazo</h3><b>USD 237.412</b> · tickets parciales de 25.000 / 50.000 · Puesta en marcha (~3 meses) + <b>12 meses</b> de operación.</div>
+      <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v4h4"/></svg>Instrumento</h3>SAFE post-money · sin descuento · cláusula de igualdad de condiciones (MFN) · sin interés ni vencimiento. El cap es un techo de precio, no la valoración.</div>
+      <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg>Monto y plazo</h3>Tickets parciales de 25.000 / 50.000 · Puesta en marcha (~3 meses) + <b>12 meses</b> de operación.</div>
     </div>
     <table>
       <tr><th>Uso de fondos</th><th style="width:11%">USD</th><th style="width:6%">%</th><th style="width:34%">Hito que compra</th><th style="width:10%">Cuándo</th></tr>
@@ -295,7 +318,7 @@
       <tr><td>Reserva</td><td class="num"><b>15.000</b></td><td class="num">6 %</td><td>Imprevistos y frenos si algo no escala</td><td>—</td></tr>
       <tr><td><b>Total</b></td><td class="num"><b>237.412</b></td><td class="num">100 %</td><td>Caja al mes 12 <b>USD 246.231</b> → data room de la siguiente ronda</td><td>M12–M18</td></tr>
     </table>
-    <p class="muted" style="margin:10px 0 0 0;font-size:14px;">El monto cubre la puesta en marcha (~3 meses) y 12 meses de operación; si el piloto necesita más tiempo, la siguiente ronda se levanta entre los meses 12 y 18.</p>
+    <p class="muted" style="margin:8px 0 0 0;font-size:14px;">El monto cubre la puesta en marcha (~3 meses) y 12 meses de operación; si el piloto necesita más tiempo, la siguiente ronda se levanta entre los meses 12 y 18.</p>
   </div>
   <div class="foot"><span>50.260 + 172.152 + 15.000 = 237.412.</span><span class="n">11 / 12</span></div>
 </section>
@@ -327,19 +350,19 @@
   <div class="body grid2">
     <div>
       <table>
-        <tr><th>Si inviertes</th><th style="text-align:right">Equivalente si convierte al cap (1.582.747 post)</th></tr>
+        <tr><th>Si inviertes</th><th style="text-align:right">Equivalente si convierte al cap</th></tr>
         <tr><td>USD 25.000</td><td class="num"><b>~1,6 %</b></td></tr>
         <tr><td>USD 50.000</td><td class="num"><b>~3,2 %</b></td></tr>
         <tr><td>USD 237.412 (ronda completa)</td><td class="num"><b>~15,0 %</b></td></tr>
       </table>
-      <p class="muted" style="font-size:14px;margin-top:12px;">Pre-money implícito: 1.582.747 − 237.412 = <b>1.345.335</b>. Vehículo: ZONIX PHARMA C.A. (Carabobo) en constitución; cesión de código, marca y dominios a la empresa como condición del wire.</p>
+      <p class="muted" style="font-size:14px;margin-top:12px;">Pre-money implícito: <b>1.345.335</b>. Vehículo: ZONIX PHARMA C.A. (Carabobo) en constitución.</p>
     </div>
     <div>
-      <ul style="font-size:16px;">
-        <li><b>Qué es:</b> el SAFE se convierte en acciones en la próxima ronda con precio. Convierte al <b>menor</b> entre el cap y la valoración de esa ronda: el cap te protege si la empresa vale más; si valiera menos, convertirías al precio de la ronda (más porcentaje).</li>
-        <li><b>Post-money:</b> el porcentaje al cap ya incluye tu propio dinero; sabes hoy qué compras.</li>
-        <li><b>Sin descuento, sin interés, sin vencimiento, sin board ni veto</b> antes de convertir. <b>MFN:</b> si un SAFE posterior obtiene mejores términos, puedes adoptarlos.</li>
-        <li><b>Dilución futura</b>: la siguiente ronda diluye a todos en proporción; tu porcentaje baja y el valor de tu participación sube si la valoración sube. No proyectamos múltiplos ni fecha de salida.</li>
+      <ul style="font-size:15.5px;">
+        <li><b>Qué es:</b> se convierte en acciones en la próxima ronda, al <b>menor</b> entre el cap y la valoración de esa ronda.</li>
+        <li><b>Post-money:</b> el porcentaje al cap ya incluye tu propio dinero.</li>
+        <li><b>Sin descuento, sin interés, sin vencimiento, sin board ni veto.</b> Con cláusula MFN.</li>
+        <li><b>Dilución futura:</b> la siguiente ronda diluye a todos en proporción. No proyectamos múltiplos ni fecha de salida.</li>
       </ul>
     </div>
   </div>
