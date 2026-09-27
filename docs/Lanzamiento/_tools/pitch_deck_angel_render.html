@@ -78,8 +78,10 @@
   .bar .bf { height: 100%; background: linear-gradient(90deg,#0F4C5C,#56C7B8); border-radius: 6px; }
   .bar .bf.alt { background: linear-gradient(90deg,#8a4b0a,#F2A65A); }
   .bar .bv { text-align: right; font-weight: 800; color: #1E2A5A; font-variant-numeric: tabular-nums; }
-  .stack { display: flex; height: 42px; border-radius: 8px; overflow: hidden; margin: 6px 0 8px 0; }
+  .stack { display: flex; height: 32px; border-radius: 8px; overflow: hidden; margin: 6px 0 8px 0; }
   .stack div { display: flex; align-items: center; justify-content: center; color: #fff; font-size: 13px; font-weight: 700; }
+  .fondos td { padding: 1px 10px; }
+  .fondos th { padding: 2px 10px 4px 10px; }
   .stack .s1 { background: #0F4C5C; }
   .stack .s2 { background: #56C7B8; color: #142033; }
   .stack .s3 { background: #A8DCCB; color: #0F4C5C; }
@@ -92,8 +94,8 @@
   .matrix td:first-child { text-align: left; color: #142033; }
   .matrix tr.own td { background: #eef7f5; }
   .matrix tr.own td:first-child { font-weight: 800; color: #0F4C5C; }
-  .matrix.tall th { padding: 10px 8px; }
-  .matrix.tall td { padding: 15px 8px; }
+  .matrix.tall th { padding: 8px 8px; }
+  .matrix.tall td { padding: 9px 8px; }
   .yes { color: #0F4C5C; font-weight: 900; font-size: 16px; }
   .no { color: #b03030; font-weight: 900; font-size: 16px; }
   .dm { color: #9aa6b5; font-weight: 700; }
@@ -103,7 +105,14 @@
   .flow .st h4 { margin: 0 0 5px 0; font-size: 14.5px; color: #1E2A5A; font-weight: 800; line-height: 1.25; }
   .flow .st p { margin: 0; font-size: 12.5px; line-height: 1.38; color: #142033; }
   .flow .ar { display: flex; align-items: center; justify-content: center; color: #56C7B8; font-size: 25px; font-weight: 800; }
-  .chart.tight { padding: 10px 18px; }
+  .slide.tightfoot .body { padding-bottom: 34px; }
+  .chart.tight { padding: 10px 20px; }
+  .chart-marks { display: flex; justify-content: space-between; font-size: 12.5px; color: #5b6878; font-weight: 600; margin-top: 2px; }
+  .chart-marks .hi { color: #0F4C5C; font-weight: 800; }
+  .solid { background: #fff; border: 1px solid #C7CFD9; border-radius: 14px; padding: 10px 18px; }
+  .solid table td { padding: 3px 10px; border-bottom: 1px solid #e3e8ef; font-size: 14.5px; }
+  .solid table tr:first-child td { padding-top: 0; }
+  .solid table tr:last-child td { border-bottom: none; padding-bottom: 0; }
   .chart.tight .ttl { margin-bottom: 6px; }
   .chart.tight .bar { margin-bottom: 5px; }
   .chart.tight .bar .bt { height: 16px; }
@@ -127,13 +136,13 @@
   <div style="flex:1;display:flex;flex-direction:column;justify-content:center;">
     <div class="kicker">Marketplace farmacéutico · Venezuela · Pre-seed</div>
     <h1 style="font-size:40px;max-width:1080px;">La farmacia independiente venezolana vende en digital, con receta validada, pagando una fracción de lo que le cobra el agregador.</h1>
-    <div style="display:flex;gap:14px;margin-top:10px;flex-wrap:wrap;">
+    <div style="display:flex;gap:14px;margin-top:4px;flex-wrap:wrap;">
       <span class="pill">Plataforma y apps ya construidas, en prueba</span>
       <span class="pill">Lanzamiento en ~3 meses</span>
       <span class="pill">Ronda: USD 237.412 · SAFE post-money</span>
     </div>
   </div>
-  <div style="font-size:15px;" class="muted">Gabriel Barrios, CEO · Abrahan Pulido, Founder / Co-CEO y CTO · Wistremiro Pulido, Co-founder · Valencia, Carabobo · Septiembre 2026</div>
+  <div style="font-size:15px;margin-bottom:8px;" class="muted">Gabriel Barrios, CEO · Abrahan Pulido, Founder / Co-CEO y CTO · Wistremiro Pulido, Co-founder · Valencia, Carabobo · Septiembre 2026</div>
   <div class="foot"><span>Documento informativo para conversación con inversor. No constituye oferta pública de valores.</span><span class="n">01 / 12</span></div>
 </section>
 
@@ -228,12 +237,12 @@
       <div class="bar"><div class="bl">Activas al mes 12</div><div class="bt"><div class="bf" style="width:70%"></div></div><div class="bv">~159</div></div>
       <div class="bar"><div class="bl">Carabobo total (año 2)</div><div class="bt"><div class="bf alt" style="width:88%"></div></div><div class="bv">350–450</div></div>
     </div>
-    <div class="chart" style="margin-top:12px;">
+    <div class="chart" style="margin-top:8px;">
       <div class="ttl">Contexto del sector</div>
       <div class="bar"><div class="bl">Mercado farmacéutico Venezuela</div><div class="bt"><div class="bf alt" style="width:100%"></div></div><div class="bv">USD 1.638 M</div></div>
       <p class="muted" style="margin:4px 0 0 0;font-size:14px;">389 M unidades al año · 48 % receta genérica. Dimensiona el sector; <b>no</b> es nuestro mercado alcanzable.</p>
     </div>
-    <p class="muted" style="margin:12px 0 0 0;font-size:15px;">La cuota no la fija el mercado sino la capacidad del canal: 4 vendedores × visitas × cierre. La curva es hipótesis hasta el dato real del mes 2–3.</p>
+    <p class="muted" style="margin:6px 0 0 0;font-size:15px;">La cuota no la fija el mercado sino la capacidad del canal: 4 vendedores × visitas × cierre. La curva es hipótesis hasta el dato real del mes 2–3.</p>
   </div>
   <div class="foot"><span>Directorio de farmacias de Valencia y proyección del año 1.</span><span class="n">05 / 12</span></div>
 </section>
@@ -293,22 +302,20 @@
       </div>
     </div>
     <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><path d="M3 7h10v9H3z"/><path d="M13 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>Cómo vendemos</h3>Oferta primero: <b>4 vendedores presenciales</b> firman farmacias; el paciente llega por <b>referido de mostrador + Meta Ads geolocalizado</b>.</div>
-    <div class="chart" style="margin-top:12px;">
+    <div class="chart tight" style="margin-top:10px;">
       <div class="ttl">Farmacias activas mes a mes (año 1)</div>
-      <svg viewBox="0 0 980 132" width="100%" height="112" preserveAspectRatio="none" aria-label="Farmacias activas por mes">
+      <svg viewBox="0 0 980 60" width="100%" height="50" preserveAspectRatio="none" aria-label="Farmacias activas por mes">
         <polyline fill="none" stroke="#0F4C5C" stroke-width="3"
-          points="20,90 107,83 193,76 280,69 367,62 453,55 540,48 627,41 713,34 800,27 886,20 973,13"/>
+          points="20,46 107,42 193,38 280,34 367,30 453,26 540,22 627,18 713,14 800,10 886,6 973,3"/>
         <polyline fill="rgba(86,199,184,.16)" stroke="none"
-          points="20,90 107,83 193,76 280,69 367,62 453,55 540,48 627,41 713,34 800,27 886,20 973,13 973,132 20,132"/>
+          points="20,46 107,42 193,38 280,34 367,30 453,26 540,22 627,18 713,14 800,10 886,6 973,3 973,60 20,60"/>
         <g fill="#56C7B8">
-          <circle cx="20" cy="90" r="4"/><circle cx="193" cy="76" r="4"/><circle cx="367" cy="62" r="4"/>
-          <circle cx="540" cy="48" r="4"/><circle cx="713" cy="34" r="4"/><circle cx="973" cy="13" r="5"/>
+          <circle cx="20" cy="46" r="4"/><circle cx="193" cy="38" r="4"/><circle cx="367" cy="30" r="4"/>
+          <circle cx="540" cy="22" r="4"/><circle cx="713" cy="14" r="4"/><circle cx="973" cy="3" r="5"/>
         </g>
-        <text x="20" y="110" font-size="13" fill="#5b6878" font-weight="600">M1 · 40</text>
-        <text x="330" y="110" font-size="13" fill="#5b6878" font-weight="600">M5 · 85</text>
-        <text x="900" y="110" font-size="13" fill="#0F4C5C" font-weight="800">M12 · 159</text>
       </svg>
-      <div class="legend" style="margin-top:2px;"><span><i style="background:#0F4C5C"></i>Farmacias activas</span><span><i style="background:#56C7B8"></i>Arranque del piloto: 40 activas en el mes 1</span></div>
+      <div class="chart-marks"><span>M1 · 40</span><span>M5 · 85</span><span class="hi">M12 · 159</span></div>
+      <div class="legend" style="margin-top:4px;"><span><i style="background:#0F4C5C"></i>Farmacias activas</span><span><i style="background:#56C7B8"></i>Arranque del piloto: 40 activas en el mes 1</span></div>
     </div>
   </div>
   <div class="foot"><span>Sin logos ni cartas no firmadas.</span><span class="n">07 / 12</span></div>
@@ -355,9 +362,9 @@
         </tr>
       </table>
     </div>
-    <div class="grid2" style="margin-top:12px;gap:16px;">
-      <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/></svg>Nadie cumple las cuatro</h3><b>Farmalisto</b> prueba que el modelo es financiable (~USD 22–33 M levantados) pero no opera en Venezuela. <b>PedidosYa</b> sí opera, pero no valida receta ni permite varias sucursales.</div>
-      <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><path d="M12 3l8 4v6c0 4-3.4 7.2-8 8-4.6-.8-8-4-8-8V7z"/></svg>Por qué cuesta copiarlo</h3>Un agregador generalista no puede validar receta sin contratar farmacéuticos por farmacia, ni bajar el take-rate sin romper su economía. Ese es el foso.</div>
+    <div class="grid2" style="margin-top:10px;gap:16px;">
+      <div class="card" style="padding:10px 16px;"><h3 style="margin-bottom:5px;"><svg class="ico" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/></svg>Nadie cumple las cuatro</h3><b>Farmalisto</b> (financiable, ~USD 22–33 M) no opera en VE. <b>PedidosYa</b> sí opera, pero no valida receta.</div>
+      <div class="card" style="padding:10px 16px;"><h3 style="margin-bottom:5px;"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3l8 4v6c0 4-3.4 7.2-8 8-4.6-.8-8-4-8-8V7z"/></svg>Por qué cuesta copiarlo</h3>Validar receta exige farmacéuticos por farmacia; bajar el take-rate rompe la economía del agregador. Ese es el foso.</div>
     </div>
   </div>
   <div class="foot"><span>Datos de eCommerceDB / Tracxn. Rappi no opera en Venezuela.</span><span class="n">08 / 12</span></div>
@@ -378,35 +385,32 @@
       <div class="bar"><div class="bl">Agregador</div><div class="bt"><div class="bf alt" style="width:100%"></div></div><div class="bv">1.000–1.500</div></div>
       <div class="bar"><div class="bl">Zonix Pharma</div><div class="bt"><div class="bf" style="width:32%"></div></div><div class="bv">445</div></div>
     </div>
-    <div>
-      <table style="margin-bottom:8px;">
-        <tr><th style="width:42%">Concepto</th><th>Valor</th></tr>
-        <tr><td>Quién paga</td><td>La <b>farmacia</b> (el paciente no es la fuente principal)</td></tr>
+    <div class="solid">
+      <table>
+        <tr><td style="width:44%">Quién paga</td><td>La <b>farmacia</b>; el paciente no es la fuente principal</td></tr>
         <tr><td>Precio</td><td>Cuota de <b>USD 45 / 60 / 70</b> + <b>8 % / 7 % / 5 %</b> según plan</td></tr>
-        <tr><td>Qué no se descuenta</td><td>Las primeras 10 farmacias pueden empezar 2 meses sin cuota fija; la proyección central se calcula <b>sin</b> ese beneficio</td></tr>
+        <tr><td>Qué no se descuenta</td><td>Las 10 primeras farmacias pueden empezar 2 meses sin cuota fija; la proyección central se calcula <b>sin</b> ese beneficio</td></tr>
         <tr><td>Ingreso por farmacia</td><td>Recupera en <b>~3 meses</b> lo que costó conseguirla y deja <b>~7 veces</b> esa inversión</td></tr>
       </table>
-      <div class="chart">
+      <div class="chart tight" style="margin-top:10px;">
         <div class="ttl">Ingresos del año 1 (por mes)</div>
-        <svg viewBox="0 0 980 118" width="100%" height="96" preserveAspectRatio="none" aria-label="Ingresos mensuales del año 1">
-          <line x1="12" y1="98" x2="968" y2="98" stroke="#C7CFD9" stroke-width="1.5"/>
-          <rect x="24"  y="82" width="58" height="16" rx="3" fill="#A8DCCB"/>
-          <rect x="102" y="76" width="58" height="22" rx="3" fill="#A8DCCB"/>
-          <rect x="180" y="69" width="58" height="29" rx="3" fill="#56C7B8"/>
-          <rect x="258" y="62" width="58" height="36" rx="3" fill="#56C7B8"/>
-          <rect x="336" y="56" width="58" height="42" rx="3" fill="#56C7B8"/>
-          <rect x="414" y="48" width="58" height="50" rx="3" fill="#56C7B8"/>
-          <rect x="492" y="41" width="58" height="57" rx="3" fill="#0F4C5C"/>
-          <rect x="570" y="34" width="58" height="64" rx="3" fill="#0F4C5C"/>
-          <rect x="648" y="27" width="58" height="71" rx="3" fill="#0F4C5C"/>
-          <rect x="726" y="20" width="58" height="78" rx="3" fill="#0F4C5C"/>
-          <rect x="804" y="14" width="58" height="84" rx="3" fill="#0F4C5C"/>
-          <rect x="882" y="8"  width="58" height="90" rx="3" fill="#0F4C5C"/>
-          <text x="24"  y="112" font-size="12" fill="#5b6878" font-weight="600">M1 · 7.520</text>
-          <text x="330" y="112" font-size="12" fill="#5b6878" font-weight="600">M5 · 15.980 (caja en cero)</text>
-          <text x="812" y="112" font-size="12" fill="#0F4C5C" font-weight="800">M12 · 29.892</text>
+        <svg viewBox="0 0 980 100" width="100%" height="58" preserveAspectRatio="none" aria-label="Ingresos mensuales del año 1">
+          <line x1="12" y1="88" x2="968" y2="88" stroke="#C7CFD9" stroke-width="1.5"/>
+          <rect x="24"  y="68" width="58" height="20" rx="3" fill="#A8DCCB"/>
+          <rect x="102" y="62" width="58" height="26" rx="3" fill="#A8DCCB"/>
+          <rect x="180" y="57" width="58" height="31" rx="3" fill="#A8DCCB"/>
+          <rect x="258" y="51" width="58" height="37" rx="3" fill="#56C7B8"/>
+          <rect x="336" y="45" width="58" height="43" rx="3" fill="#56C7B8"/>
+          <rect x="414" y="39" width="58" height="49" rx="3" fill="#56C7B8"/>
+          <rect x="492" y="34" width="58" height="54" rx="3" fill="#0F4C5C"/>
+          <rect x="570" y="28" width="58" height="60" rx="3" fill="#0F4C5C"/>
+          <rect x="648" y="23" width="58" height="65" rx="3" fill="#0F4C5C"/>
+          <rect x="726" y="17" width="58" height="71" rx="3" fill="#0F4C5C"/>
+          <rect x="804" y="12" width="58" height="76" rx="3" fill="#0F4C5C"/>
+          <rect x="882" y="8"  width="58" height="80" rx="3" fill="#0F4C5C"/>
         </svg>
-        <div class="legend"><span><i style="background:#A8DCCB"></i>M1–M3</span><span><i style="background:#56C7B8"></i>M4–M6</span><span><i style="background:#0F4C5C"></i>M7–M12 · total del año <b>USD 228.796</b></span></div>
+        <div class="chart-marks"><span>M1 · 7.520</span><span>M5 · 15.980 (caja en cero)</span><span class="hi">M12 · 29.892</span></div>
+        <div class="legend" style="margin-top:4px;"><span><i style="background:#A8DCCB"></i>M1–M3</span><span><i style="background:#56C7B8"></i>M4–M6</span><span><i style="background:#0F4C5C"></i>M7–M12 · total <b>USD 228.796</b></span></div>
       </div>
     </div>
   </div>
@@ -445,7 +449,7 @@
 <!-- 11 PETICIÓN -->
 <section class="slide compact">
   <div class="kicker">La petición y el uso de fondos</div>
-  <h1>Pedimos USD 237.412 en SAFE post-money con cap de USD 1.582.747 (~15 % si convierte al cap) para constituir, publicar, poner ~28 farmacias el día de lanzamiento y operar 12 meses hasta caja positiva.</h1>
+  <h1>Pedimos USD 237.412 en SAFE post-money con cap de USD 1.582.747 (~15 % al cap) para lanzar con ~28 farmacias y operar 12 meses hasta caja positiva.</h1>
   <div class="stats">
     <div class="stat"><div class="num">USD 237.412</div><div class="lbl">lo que pedimos</div></div>
     <div class="stat"><div class="num">USD 1.582.747</div><div class="lbl">cap del SAFE (techo de precio, no valoración)</div></div>
@@ -465,18 +469,17 @@
         <span><i style="background:#A8DCCB"></i>Reserva 15.000</span>
       </div>
     </div>
-    <div class="grid2" style="margin-bottom:10px;gap:18px;">
-      <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v4h4"/></svg>Instrumento</h3>SAFE post-money · sin descuento · cláusula de igualdad de condiciones (MFN) · sin interés ni vencimiento. El cap es un techo de precio, no la valoración.</div>
-      <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg>Monto y plazo</h3>Tickets parciales de 25.000 / 50.000 · Puesta en marcha (~3 meses) + <b>12 meses</b> de operación.</div>
+    <div class="grid2" style="margin-bottom:8px;gap:18px;">
+      <div class="card" style="padding:10px 16px;"><h3 style="margin-bottom:5px;"><svg class="ico" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v4h4"/></svg>Instrumento</h3>SAFE post-money · sin descuento · cláusula de igualdad de condiciones (MFN) · sin interés ni vencimiento. El cap es un techo de precio, no la valoración.</div>
+      <div class="card" style="padding:10px 16px;"><h3 style="margin-bottom:5px;"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg>Monto y plazo</h3>Tickets parciales de 25.000 / 50.000 · Puesta en marcha (~3 meses) + <b>12 meses</b> de operación.</div>
     </div>
-    <table>
+    <table class="fondos">
       <tr><th style="width:52%">Uso de fondos</th><th style="width:14%">USD</th><th style="width:34%">Hito que compra</th></tr>
       <tr><td>Puesta en marcha: constituir la empresa, equipo, sede, apps en tiendas y altas de farmacias piloto</td><td class="num"><b>50.260</b> · 21 %</td><td><b>Lanzamiento en ~3 meses</b> con ≈28 farmacias con catálogo activo</td></tr>
       <tr><td>Operación de 12 meses: 4 vendedores, desarrollo, soporte y marketing (~14.346/mes)</td><td class="num"><b>172.152</b> · 73 %</td><td><b>85 activas y caja en cero en el mes 5</b> · <b>~159 activas en el mes 12</b></td></tr>
       <tr><td>Reserva</td><td class="num"><b>15.000</b> · 6 %</td><td>Imprevistos y frenos si algo no escala</td></tr>
-      <tr><td><b>Total</b></td><td class="num"><b>237.412</b> · 100 %</td><td>Caja al mes 12 <b>USD 246.231</b> → data room de la siguiente ronda</td></tr>
+      <tr><td><b>Total</b></td><td class="num"><b>237.412</b> · 100 %</td><td>Caja al mes 12: <b>USD 246.231</b> → data room</td></tr>
     </table>
-    <p class="muted" style="margin:8px 0 0 0;font-size:13.5px;">El monto cubre la puesta en marcha (~3 meses) y 12 meses de operación; si el piloto necesita más tiempo, la siguiente ronda se levanta entre los meses 12 y 18.</p>
   </div>
   <div class="foot"><span>50.260 + 172.152 + 15.000 = 237.412.</span><span class="n">11 / 12</span></div>
 </section>
