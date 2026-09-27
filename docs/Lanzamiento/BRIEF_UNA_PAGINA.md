@@ -48,7 +48,7 @@ _StoryBrand — el paciente es el héroe; Zonix es la guía. Sin promesas terap�
 - **Validación Rx por farmacéutico colegiado de la propia farmacia** dentro de la app, ya construida en backend. Modelo alineado a regulación farmacéutica VE _[PENDIENTE dictamen abogado + farmacéutico asesor antes de Day-D]_; Zonix **no** sustituye al farmacéutico titular de la farmacia.
 - **Métodos de pago manuales VE soportados nativos:** Pago Móvil C2P, transferencia, Zelle, Binance Pay USDT — sin pasarelas internacionales caras, sin Stripe, sin necesidad de cuenta empresarial extranjera para operar.
 - **Stack en staging/VPS** (go-live público T+7–12 Fase 0): backend con **443** tests pasando (re-verificar pre-reunión); frontend Flutter sin issues en analyze; Pusher + FCM integrados en código. **Release tiendas + Firebase OTP (SMS):** hitos **T+7–12** de Fase 0 — no asumir Play/App Store el día del wire ([PLAN_LANZAMIENTO_COMERCIAL.md](PLAN_LANZAMIENTO_COMERCIAL.md), [ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md](ALINEACION_LANZAMIENTO_VS_PRODUCTO_2026-05.md)).
-- **Equipo lean:** **CEO** + **Founder CEO/CTO** + **Co-CEO** + **Dev** + **4× Sales** + **CS/CM** + externos (contador/abogado) en tier **Lean 237.412** (bootstrap **Carabobo independientes**). Runway **Fase 0 + 12 meses** post-Day-D con **USD 237.412**. Founder técnico: **Abrahan Pulido**.
+- **Equipo lean:** **CEO (Gabriel Barrios)** + **Founder / Co-CEO y CTO (Abrahan Pulido)** + **Co-founder (Wistremiro Pulido)** + **Co-CEO / Head Sales&Ops** + **Dev** + **4× Sales** + **CS/CM** + externos (contador/abogado) en tier **Lean 237.412** (bootstrap **Carabobo independientes**). Runway **Fase 0 + 12 meses** post-Day-D con **USD 237.412**.
 
 ### Liquidez y defensibilidad (marketplace)
 
@@ -60,8 +60,9 @@ _StoryBrand — el paciente es el héroe; Zonix es la guía. Sin promesas terap�
 
 | Rol                                  | Tipo      | Compensación ref. (USD/mes) | Notas                                              |
 | ------------------------------------ | --------- | --------------------------- | -------------------------------------------------- |
-| CEO                                  | FTE       | **1.000**                   | Dirección general (rol adicional v4)           |
-| Founder / CEO / CTO                  | FTE       | **1.000**                   | Abrahan Pulido — producto + tech                   |
+| CEO                                  | FTE       | **1.000**                   | Gabriel Barrios — dirección general           |
+| Founder / Co-CEO y CTO               | FTE       | **1.000**                   | Abrahan Pulido — producto + tech                   |
+| Co-founder                           | —         | —                           | Wistremiro Pulido (sin compensación en burn)      |
 | Co-CEO / Head Sales&Ops              | FTE       | **1.000**                   | Comercial / operación / corporate                  |
 | **Dev (Flutter/Laravel)**            | FTE       | **1.000**                   | **1× Dev @ 1.000/mes** en burn esc.1 (no 2.000) — PRESUPUESTO §1.1 |
 | Sales B2B (**×4**)                   | FTE       | **350** base + **40**/firma | Comisión a rep que cierra                          |
@@ -141,7 +142,7 @@ Detalle de las 3 sensibilidades en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FIN
 
 ## Equipo
 
-- **Founder / CEO / CTO:** **Abrahan Pulido** — Ingeniero en Informática (IUTVAL), full stack Laravel + Flutter + MySQL, 8+ años en producto; fundador de **Zonix Pharma** (evolución del mismo stack desde delivery B2C), **Corral X**, **Zonix Imports** y **Aiblockweb**. Contacto: `ing.pulido.abrahan@gmail.com`, +58 412 4352014, [LinkedIn](https://www.linkedin.com/in/abrahan-pulido-909a35b7/), [aiblockweb.com](https://aiblockweb.com).
+- **Equipo:** **Gabriel Barrios** — CEO (Gerente de Consultoría, Grupo Morr, Valencia). **Abrahan Pulido** — Founder / Co-CEO y CTO, Ingeniero en Informática (IUTVAL), full stack Laravel + Flutter + MySQL, 8+ años en producto; fundador de **Zonix Pharma** (evolución del mismo stack desde delivery B2C), **Corral X**, **Zonix Imports** y **Aiblockweb**. **Wistremiro Pulido** — Co-founder. Contacto: `pulido.abrahan@zonixpharma.com`, +58 412 4352014, [LinkedIn](https://www.linkedin.com/in/abrahan-pulido-909a35b7/), [aiblockweb.com](https://aiblockweb.com).
 - **Sales B2B (4 ejecutivos Lean):** USD **350** base c/u + USD **40** comisión por farmacia firmada.
 - **Customer Support + Community Manager:** USD **500**/mes (tabla Lean / burn 237.412).
 - **Marketing Lead / Coordinador Partners:** **fuera del burn Lean 237.412** (roadmap Base/Growth o post-wire) — no están en la tabla piloto Lean arriba.

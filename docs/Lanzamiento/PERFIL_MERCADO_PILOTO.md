@@ -126,6 +126,8 @@ Detalle del modelo en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.m
 - Cobertura: cadenas (p. ej. SAAS, FarmaGo) e independientes en marketplace generalista.
 - Lectura para el inversor: una farmacia que vende USD 5.000/mes en PedidosYa puede pagar **USD 1.250–1.750** en comisión típica. Con Zonix Pharma paga **cuota fija + % moderado sobre GMV en la app** ([PROPUESTA_VALOR_CLIENTE_B2B.md](PROPUESTA_VALOR_CLIENTE_B2B.md) §5); el costo total suele ser **menor** que el take-rate del agregador.
 
+> **Nota de reconciliación (sep 2026):** el BRIEF y el pitch deck usan **20–30 %** como cifra única de take-rate del agregador (rango conservador de pitch). Este §5.4 conserva el rango **25–35 %** de contrato/categoría; al citar en materiales inversor, usar **20–30 %** y remitir aquí para el detalle.
+
 > **Nota factual (jun 2026):** **Rappi no opera en Venezuela** (sin presencia comercial en país; excluido por riesgo legal según prensa sector). No usar Rappi como competidor directo VE en materiales inversor.
 
 ### 5.5 Otros agregadores / referencia LatAm
@@ -139,8 +141,7 @@ Detalle del modelo en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FINANCIERA_12M.m
 |---|---|---|---|---|
 | Tipo | Cadena propia | Marketplace generalista | Marketplace farmacéutico | **Marketplace farmacéutico VE** |
 | Target VE | Clase media-alta | Cadenas premium | No opera VE | **Farmacias independientes y cadenas pequeñas-medianas** |
-| Modelo cobro | Margen de venta | 25-35% comisión GMV | Comisión + delivery | **Cuota fija + % GMV moderado (Zonix Pharma)** |
-| Validación Rx digital | No | No | Parcial | **Sí — farmacéutico colegiado de la propia farmacia** *[PENDIENTE dictamen abogado + farmacéutico asesor]* |
+| Modelo cobro | Margen de venta | 25-35% comisión GMV | Comisión + delivery | **Cuota fija + % GMV moderado (Zonix Pharma)** || Validación Rx digital | No | No | Parcial | **Sí — farmacéutico colegiado de la propia farmacia** *[PENDIENTE dictamen abogado + farmacéutico asesor]* |
 | Cadena de frío | No | No | Parcial | **Sí — flag operativo restringe modos delivery** *[PENDIENTE dictamen abogado + farmacéutico asesor]* |
 | Multi-sucursal con un solo onboarding | N/A | No | No | **Sí — Enterprise tier** |
 | Métodos pago manuales VE (Pago Móvil, Zelle, Binance Pay) | Solo presencial | Pago Móvil parcial | No opera VE | **Sí — los 4 nativos** |
