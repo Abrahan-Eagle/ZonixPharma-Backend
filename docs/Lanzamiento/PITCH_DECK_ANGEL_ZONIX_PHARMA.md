@@ -181,7 +181,7 @@ Pie: PROPUESTA_VALOR_CLIENTE_B2B §5, §11 · UNIT_ECONOMICS §1–§4, §7 (mar
 
 ## Slide 10 — Equipo
 
-**Los dos founders trajeron a Gabriel Barrios como CEO; Abrahan construyó el sistema. La ronda paga quien lo pone en las farmacias.**
+**Gabriel Barrios es socio; Abrahan construyó el sistema. La ronda paga quien lo pone en las farmacias.**
 
 - **Gabriel Barrios — CEO.** Cargo de CEO: declaración del founder, 25 sep 2026; sin detalle de trayectoria en el pack.
 - **Abrahan Pulido — Founder / Co-CEO y CTO.** Ingeniero en Informática (IUTVAL), 8+ años en producto, full stack Laravel + Flutter. Construyó backend, apps y panel de Zonix Pharma; fundador de Corral X, Zonix Imports y Aiblockweb.
