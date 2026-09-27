@@ -57,6 +57,12 @@
   .compact .stats .num.sm { font-size: 26px; }
   .compact .stats .num.xs { font-size: 23px; }
   .compact .stats .lbl { font-size: 12px; margin-top: 4px; }
+  .grid2.fill, .grid3.fill { grid-auto-rows: 1fr; }
+  .compact .body { font-size: 15.5px; }
+  .compact ul { padding-left: 20px; }
+  .compact li { margin-bottom: 6px; }
+  .compact .card h3 { margin-bottom: 6px; }
+  .compact .foot { font-size: 10px; }
   .stats { display: flex; gap: 22px; margin-bottom: 20px; flex-wrap: wrap; }
   .stats .stat { flex: 1; min-width: 150px; background: #fff; border: 1px solid #C7CFD9; border-radius: 14px; padding: 16px 20px; text-align: center; }
   .stats .num { font-size: 40px; font-weight: 800; color: #1E2A5A; line-height: 1.05; letter-spacing: -.02em; white-space: nowrap; }
@@ -167,26 +173,26 @@
 </section>
 
 <!-- 6 PRODUCTO -->
-<section class="slide">
+<section class="slide compact">
   <div class="kicker">Producto · existe</div>
   <h1>La plataforma ya está construida: la usan los 7 perfiles del mercado, con receta digital, lotes, cadena de frío y pagos venezolanos; reconstruirla costaría 1,3–2,4 millones a precio de agencia.</h1>
   <div class="stats">
     <div class="stat"><div class="num">7 perfiles</div><div class="lbl">paciente, farmacia, farmacéutico, reparto y administración</div></div>
     <div class="stat"><div class="num">USD 1,3–2,4 M</div><div class="lbl">costo de reconstruirlo a precio de agencia (costo, no valoración)</div></div>
   </div>
-  <div class="body grid2">
-    <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 11a3 3 0 1 0 0-6"/><path d="M17 14c2.2.4 4 2.4 4 6"/></svg>Usuarios</h3>7 perfiles listos: paciente, farmacia, farmacéutico colegiado, reparto (empresa, motorizado, autónomo) y administración.</div>
+  <div class="body grid3 fill">
+    <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 11a3 3 0 1 0 0-6"/><path d="M17 14c2.2.4 4 2.4 4 6"/></svg>Usuarios</h3>7 perfiles listos: paciente, farmacia, farmacéutico colegiado, reparto y administración.</div>
     <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg>Plataforma web</h3>Cientos de funciones terminadas y probadas: catálogo, órdenes, cobro, recetas.</div>
-    <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.4-3 8.2-7 9-4-.8-7-4.6-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>Cumplimiento farmacéutico</h3>Receta validada por farmacéutico con vencimiento · lotes por fecha de caducidad · cadena de frío · sustancias controladas · registro sanitario.</div>
-    <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><path d="M3 7h10v9H3z"/><path d="M13 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>Reparto y avisos</h3>Seguimiento del pedido en tiempo real y notificaciones al cliente.</div>
+    <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.4-3 8.2-7 9-4-.8-7-4.6-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>Cumplimiento</h3>Receta validada por farmacéutico · lotes por caducidad · cadena de frío · sustancias controladas.</div>
+    <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><path d="M3 7h10v9H3z"/><path d="M13 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>Reparto</h3>Seguimiento del pedido en tiempo real y notificaciones al cliente.</div>
     <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>Apps</h3>Android e iOS, con la identidad de la marca.</div>
-    <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>Calidad y reposición</h3>Cientos de pruebas automatizadas pasando antes de cada entrega. <b>Costo de reposición</b> (costo, no valoración): agencia VE <b>~1,3 M</b> · agencia US <b>~2,4 M</b>.</div>
+    <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>Calidad</h3>Cientos de pruebas automatizadas antes de cada entrega.</div>
   </div>
   <div class="foot"><span>Tarifas de agencia: referencia de Clutch / GoodFirms / Cubix.</span><span class="n">06 / 12</span></div>
 </section>
 
 <!-- 7 ESTADO -->
-<section class="slide">
+<section class="slide compact">
   <div class="kicker">Estado y tracción</div>
   <h1>El producto está construido; la ronda compra la evidencia de mercado, no el desarrollo.</h1>
   <div class="stats">
@@ -194,12 +200,11 @@
     <div class="stat"><div class="num">~3 meses</div><div class="lbl">para llegar al lanzamiento público</div></div>
   </div>
   <div class="body">
-    <div class="grid3">
+    <div class="grid3 fill" style="margin-bottom:10px;">
       <div class="card">
         <h3><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>Hoy</h3>
         <ul class="cols">
           <li>Plataforma y apps en prueba (<b>zonixpharma.com</b>)</li>
-          <li>Pruebas en verde antes de cada entrega</li>
           <li>Demo de producto de 3–5 min</li>
           <li>Conversaciones con farmacias pioneras en Valencia</li>
         </ul>
@@ -210,20 +215,18 @@
           <li>Apps publicadas en tiendas</li>
           <li>Ingresos / pilotos pagos</li>
           <li>Cartas de intención firmadas</li>
-          <li>Empresa constituida (C.A.)</li>
         </ul>
       </div>
       <div class="card">
         <h3><svg class="ico" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.4-3 8.2-7 9-4-.8-7-4.6-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>Qué compra la ronda</h3>
         <ul class="cols">
-          <li><b>Lanzamiento en ~3 meses</b> con ≈28 farmacias con catálogo activo</li>
-          <li>Prueba con 10 farmacias usando la app de verdad</li>
+          <li><b>Lanzamiento en ~3 meses</b> con ≈28 farmacias activas</li>
+          <li>Prueba con 10 farmacias usando la app</li>
           <li>Primeras órdenes y <b>cobros reales</b></li>
-          <li>Métricas para el data room de la siguiente ronda</li>
         </ul>
       </div>
     </div>
-    <div class="card" style="margin-top:14px;"><h3><svg class="ico" viewBox="0 0 24 24"><path d="M3 7h10v9H3z"/><path d="M13 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>Cómo vendemos</h3>Oferta primero: <b>4 vendedores presenciales</b> firman farmacias en dos focos de Valencia; el paciente llega por <b>referido de mostrador + Meta Ads geolocalizado</b>, y solo cuando ya hay catálogo activo.</div>
+    <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><path d="M3 7h10v9H3z"/><path d="M13 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>Cómo vendemos</h3>Oferta primero: <b>4 vendedores presenciales</b> firman farmacias; el paciente llega por <b>referido de mostrador + Meta Ads geolocalizado</b>.</div>
   </div>
   <div class="foot"><span>Sin logos ni cartas no firmadas.</span><span class="n">07 / 12</span></div>
 </section>
