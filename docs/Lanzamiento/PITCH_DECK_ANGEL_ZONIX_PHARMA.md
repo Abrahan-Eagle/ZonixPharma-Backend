@@ -30,6 +30,8 @@ Logo (slides 1 y 12): `public/assets/img/logo.png` — el mismo que usa la landi
 
 **La farmacia independiente paga 20–30 % de su venta digital al agregador o no tiene canal; el paciente recorre 3–5 farmacias con la receta en papel.**
 
+**Números clave:** 20–30 % comisión al agregador · USD 1.000–1.500/mes lo que pierde una farmacia de USD 5.000 · 3–5 farmacias recorre el paciente.
+
 | Quién | Qué le duele hoy |
 |---|---|
 | Farmacia independiente / cadena mediana | Sin app propia frente a Farmatodo y Locatel. En PedidosYa Pharmacy entrega **20–30 %** del GMV: una farmacia que vende USD 5.000/mes en la app entrega **USD 1.000–1.500** de comisión. Órdenes, inventario, comprobantes y recetas en WhatsApp y papel. |
@@ -71,6 +73,8 @@ Pie: `[BENCHMARK]` Cifar / IMS-IQVIA 2025, Statista/Mordor (PERFIL_MERCADO §1);
 
 **La cuña son ~226 farmacias de Valencia metro; el plan cierra el año 1 con ~159 activas y después replica ciudad por ciudad.**
 
+**Números clave:** 226 farmacias Valencia metro · ~159 activas al mes 12 · USD 1.638 M mercado total (contexto).
+
 | Capa | Cifra | Lectura |
 |---|---|---|
 | Farmacias Valencia metro | **226** | Directorios públicos (Saas, Farmatodo, Locatel, Farmahorro, Nena + independientes) |
@@ -89,6 +93,8 @@ Pie: `[BENCHMARK]` PERFIL_MERCADO_PILOTO §1–§3 · `CALC` PROYECCION_FINANCIE
 ## Slide 6 — Producto (existe)
 
 **La plataforma ya está construida: la usan los 7 perfiles del mercado (paciente, farmacia, farmacéutico, reparto y administración), con receta digital, lotes, cadena de frío y pagos venezolanos; reconstruirla costaría 1,3–2,4 millones a precio de agencia.**
+
+**Números clave:** 7 perfiles de usuario · USD 1,3–2,4 M costo de reposición (costo, no valoración).
 
 | Qué ya existe | Estado |
 |---|---|
@@ -109,6 +115,8 @@ Pie: `FACT` medido en repos 21 sep 2026 · `[BENCHMARK]` 11_/12_COSTO_DEL_SISTEM
 
 **El producto está construido; la ronda compra la evidencia de mercado, no el desarrollo.**
 
+**Números clave:** ≈28 farmacias al lanzamiento · ~3 meses hasta el lanzamiento público.
+
 | Hoy (`FACT`) | Todavía no | Qué compra la ronda |
 |---|---|---|
 | Plataforma y apps en prueba (`zonixpharma.com`) | Apps publicadas en tiendas | Lanzamiento en **~3 meses** con **≈28 farmacias** con catálogo activo |
@@ -128,6 +136,8 @@ Pie: `FACT` BRIEF § Estado producto · APRENDIZAJE_500_EVIDENCIA_MERCADO · 07_
 
 **Las alternativas no pueden meter al farmacéutico en el flujo ni bajar el take-rate sin romper su modelo; ahí está la diferencia estructural.**
 
+**Números clave:** 20–30 % es lo que el agregador le quita a la farmacia, sin validar la receta.
+
 | Alternativa | Qué es | Por qué se estanca en la farmacia independiente |
 |---|---|---|
 | Farmatodo / Locatel | Cadenas premium con app propia cerrada | No abren marketplace a terceros; compiten con la independiente, no la sirven |
@@ -144,6 +154,8 @@ Pie: `[BENCHMARK]` PERFIL_MERCADO §5 (Farmalisto: eCommerceDB, Tracxn). Rappi n
 ## Slide 9 — Modelo de negocio
 
 **La farmacia paga una cuota mensual más un porcentaje pequeño de lo que vende en la app: menos de la mitad de lo que hoy entrega al agregador, y de cada dólar que cobra le quedan ~92 centavos de margen.**
+
+**Números clave:** 445 vs 1.000–1.500 (Zonix vs agregador) · ~92 % margen bruto · USD 1.040 lo que deja cada farmacia.
 
 | Concepto | Valor | Etiqueta |
 |---|---|---|
@@ -179,6 +191,8 @@ Pie: `FACT` bio de Abrahan — BRIEF § Equipo. Cargos de Gabriel y Wistremiro: 
 ## Slide 11 — La petición y el uso de fondos
 
 **Pedimos USD 237.412 en SAFE post-money con cap de USD 1.582.747 (~15 % si convierte al cap) para constituir, publicar, poner ~28 farmacias el día de lanzamiento y operar 12 meses hasta caja positiva.**
+
+**Números clave:** USD 237.412 (lo que pedimos) · USD 1.582.747 (cap) · ~15 % (si convierte al cap).
 
 | Elemento | Valor |
 |---|---|
