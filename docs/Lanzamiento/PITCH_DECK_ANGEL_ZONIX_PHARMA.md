@@ -1,6 +1,7 @@
 # Zonix Pharma — Pitch deck para inversor ángel (fuente del PDF)
 
 > **Uso:** deck frío de 12 slides + 1 anexo para **captar un inversor ángel** (se envía sin narrador; consigue la reunión, no cierra la ronda). PDF: [Zonix_Pharma_Pitch_Deck_Angel.pdf](Zonix_Pharma_Pitch_Deck_Angel.pdf).
+> **Render:** [`_tools/pitch_deck_angel_render.html`](_tools/pitch_deck_angel_render.html) es la fuente del PDF. El render **omite** las referencias internas (citas del pack, etiquetas `FACT`/`CALC`/`BENCHMARK`, nombre del escenario y banderas `[PENDIENTE]`) para que el documento del inversor no muestre el trabajo interno. Este MD sigue siendo interno.
 > **Método:** skill global `founder-pitch-deck-builder` (formato, orden, slide de petición) + `founder-deck-review` (autochequeo). Cifras **solo** desde `zonix-startup-context` y este pack.
 > **Canon:** ask **USD 237.412** · SAFE post-money cap **USD 1.582.747** · equity ref. **~15 %** · pricing farmacia **45/60/70 + 8/7/5 % GMV** · esc.1 v4. El ask **no está recaudado**.
 > **Etiquetas:** `FACT` medido en repos / pack · `CALC` derivado del modelo v4 · `[BENCHMARK]` fuente externa citada · `[SUPUESTO]` estimación propia · `[PENDIENTE]` sin dictamen.
