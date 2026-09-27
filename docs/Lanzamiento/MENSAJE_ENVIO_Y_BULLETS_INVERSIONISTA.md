@@ -186,7 +186,7 @@ Mismas cifras que §1; no mezclar tiers en una frase sin etiquetar.
 | Comparable internacional | Farmalisto ~USD 32M revenue 2024 (MX); funding ~USD 22M–33M según fuente |
 | Stack | Laravel + Flutter + Pusher + FCM; **443 tests** backend (staging/VPS; release tiendas T+7–12 Fase 0) |
 | Equipo | **Lean 237.412:** CEO (Gabriel Barrios) + Founder / Co-CEO y CTO (Abrahan Pulido) + Co-founder (Wistremiro Pulido) + Co-CEO / Head Sales&Ops + 4× Sales + Dev (Carabobo). Asesor regulatorio incluido en burn (rubro Contador+Abogado 330). |
-| Founder track record | **Abrahan Pulido** (Founder / Co-CEO y CTO) — Ingeniero en Informática (IUTVAL); 8+ años full stack; fundador **Zonix Pharma** (mismo stack desde delivery B2C), **Corral X**, **Zonix Imports**, **Aiblockweb**; docente CETIAC; [LinkedIn](https://www.linkedin.com/in/abrahan-pulido-909a35b7/), `pulido.abrahan@zonixpharma.com`, +58 412 4352014. **CEO:** Gabriel Barrios (Grupo Morr). **Co-founder:** Wistremiro Pulido. **Pendiente:** URL GitHub pública + 2 referencias verificables para due diligence. |
+| Founder track record | **Abrahan Pulido** (Founder / Co-CEO y CTO) — Ingeniero en Informática (IUTVAL); 8+ años full stack; fundador **Zonix Pharma** (mismo stack desde delivery B2C), **Corral X**, **Zonix Imports**, **Aiblockweb**; docente CETIAC; [LinkedIn](https://www.linkedin.com/in/abrahan-pulido-909a35b7/), `pulido.abrahan@zonixpharma.com`, +58 412 4352014. **CEO:** Gabriel Barrios. **Co-founder:** Wistremiro Pulido (finanzas y administración). **Pendiente:** URL GitHub pública + 2 referencias verificables para due diligence. |
 
 ## 8. Cuándo enviar este mensaje
 

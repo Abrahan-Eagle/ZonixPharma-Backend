@@ -166,13 +166,13 @@ Pie: PROPUESTA_VALOR_CLIENTE_B2B §5, §11 · UNIT_ECONOMICS §1–§4, §7 (mar
 
 **Los dos founders trajeron a Gabriel Barrios como CEO; Abrahan construyó el sistema. La ronda paga quien lo pone en las farmacias.**
 
-- **Gabriel Barrios — CEO.** Gerente de Consultoría, Grupo Morr (Valencia, Carabobo). Los founders lo incorporaron para dirigir la empresa. Cargo de CEO: declaración del founder, 25 sep 2026; el pack todavía lo nombra como aliado.
+- **Gabriel Barrios — CEO.** Cargo de CEO: declaración del founder, 25 sep 2026; sin detalle de trayectoria en el pack.
 - **Abrahan Pulido — Founder / Co-CEO y CTO.** Ingeniero en Informática (IUTVAL), 8+ años en producto, full stack Laravel + Flutter. Construyó backend, apps y panel de Zonix Pharma; fundador de Corral X, Zonix Imports y Aiblockweb.
-- **Wistremiro Pulido — Co-founder.** Sin biografía en el pack: no se inventa currículum.
+- **Wistremiro Pulido — Co-founder.** Finanzas y administración.
 - **Lo que paga la ronda (burn Lean):** Dev Flutter/Laravel · **4× Sales B2B** (base + comisión por firma) · Customer Support + Community. Externos on-demand: contador, abogado, asesor regulatorio farmacéutico. CEO y Co-CEO ya están cubiertos; no son puestos por contratar.
 - **Riesgo que reconocemos:** el conocimiento técnico sigue en Abrahan. La dirección ya no es una sola persona. Mitigación: segundo desarrollador con acceso y contexto desde Fase 0 + cesión de IP a la C.A. + vesting en el SAFE.
 
-Pie: `FACT` bio de Abrahan — BRIEF § Equipo. Cargo de Gabriel y co-founder Wistremiro: declaración del founder (25 sep 2026). Grupo Morr: RESUMEN_ALIADO_GABRIEL_BARRIOS. Burn: PRESUPUESTO_12_MESES_REFERENCIA §2.
+Pie: `FACT` bio de Abrahan — BRIEF § Equipo. Cargos de Gabriel y Wistremiro: declaración del founder (25 sep 2026). Burn: PRESUPUESTO_12_MESES_REFERENCIA §2.
 
 ---
 

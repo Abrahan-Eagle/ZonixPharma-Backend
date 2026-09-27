@@ -142,7 +142,7 @@ Detalle de las 3 sensibilidades en [PROYECCION_FINANCIERA_12M.md](PROYECCION_FIN
 
 ## Equipo
 
-- **Equipo:** **Gabriel Barrios** — CEO (Gerente de Consultoría, Grupo Morr, Valencia). **Abrahan Pulido** — Founder / Co-CEO y CTO, Ingeniero en Informática (IUTVAL), full stack Laravel + Flutter + MySQL, 8+ años en producto; fundador de **Zonix Pharma** (evolución del mismo stack desde delivery B2C), **Corral X**, **Zonix Imports** y **Aiblockweb**. **Wistremiro Pulido** — Co-founder. Contacto: `pulido.abrahan@zonixpharma.com`, +58 412 4352014, [LinkedIn](https://www.linkedin.com/in/abrahan-pulido-909a35b7/), [aiblockweb.com](https://aiblockweb.com).
+- **Equipo:** **Gabriel Barrios** — CEO. **Abrahan Pulido** — Founder / Co-CEO y CTO, Ingeniero en Informática (IUTVAL), full stack Laravel + Flutter + MySQL, 8+ años en producto; fundador de **Zonix Pharma** (evolución del mismo stack desde delivery B2C), **Corral X**, **Zonix Imports** y **Aiblockweb**. **Wistremiro Pulido** — Co-founder, finanzas y administración. Contacto: `pulido.abrahan@zonixpharma.com`, +58 412 4352014, [LinkedIn](https://www.linkedin.com/in/abrahan-pulido-909a35b7/), [aiblockweb.com](https://aiblockweb.com).
 - **Sales B2B (4 ejecutivos Lean):** USD **350** base c/u + USD **40** comisión por farmacia firmada.
 - **Customer Support + Community Manager:** USD **500**/mes (tabla Lean / burn 237.412).
 - **Marketing Lead / Coordinador Partners:** **fuera del burn Lean 237.412** (roadmap Base/Growth o post-wire) — no están en la tabla piloto Lean arriba.
