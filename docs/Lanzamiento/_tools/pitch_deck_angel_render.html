@@ -70,6 +70,21 @@
   .stats .num.xs { font-size: 26px; }
   .stats .lbl { font-size: 13px; color: #0F4C5C; font-weight: 600; margin-top: 6px; line-height: 1.3; }
   .cols { font-size: 15.5px; }
+  .chart { background: #fff; border: 1px solid #C7CFD9; border-radius: 14px; padding: 14px 20px; }
+  .chart .ttl { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: #0F4C5C; font-weight: 700; margin-bottom: 10px; }
+  .bar { display: grid; grid-template-columns: 190px 1fr 96px; align-items: center; gap: 12px; margin-bottom: 8px; font-size: 14px; }
+  .bar .bl { color: #142033; }
+  .bar .bt { background: #e6ebf2; border-radius: 6px; height: 20px; overflow: hidden; }
+  .bar .bf { height: 100%; background: linear-gradient(90deg,#0F4C5C,#56C7B8); border-radius: 6px; }
+  .bar .bf.alt { background: linear-gradient(90deg,#8a4b0a,#F2A65A); }
+  .bar .bv { text-align: right; font-weight: 800; color: #1E2A5A; font-variant-numeric: tabular-nums; }
+  .stack { display: flex; height: 42px; border-radius: 8px; overflow: hidden; margin: 6px 0 8px 0; }
+  .stack div { display: flex; align-items: center; justify-content: center; color: #fff; font-size: 13px; font-weight: 700; }
+  .stack .s1 { background: #0F4C5C; }
+  .stack .s2 { background: #56C7B8; color: #142033; }
+  .stack .s3 { background: #A8DCCB; color: #0F4C5C; }
+  .legend { display: flex; gap: 18px; font-size: 12.5px; color: #142033; flex-wrap: wrap; }
+  .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; }
 </style>
 </head>
 <body>
@@ -160,13 +175,18 @@
     <div class="stat"><div class="num">USD 1.638 M</div><div class="lbl">mercado farmacéutico de Venezuela al año (contexto)</div></div>
   </div>
   <div class="body">
-    <table>
-      <tr><th>Capa</th><th style="width:22%">Cifra</th><th>Lectura</th></tr>
-      <tr><td>Objetivo del piloto: cadenas medianas (25–35) + independientes con movimiento (80–100)</td><td class="num"><b>~105–135</b></td><td>Segmento sin app propia. Cadenas premium fuera del piloto</td></tr>
-      <tr><td>Carabobo total</td><td class="num">350–450</td><td>Puerto Cabello, Tocuyito, Mariara, Guacara</td></tr>
-      <tr><td>Ingreso del mes 12</td><td class="num"><b>~USD 29.892</b></td><td>Con las ~159 activas del cierre del año 1 (~70 % del metro de Valencia)</td></tr>
-      <tr><td>Año 2</td><td class="num">Maracay + Maracaibo</td><td>Mismo método: 4 vendedores, oferta primero</td></tr>
-    </table>
+    <div class="chart">
+      <div class="ttl">Embudo del mercado · de arriba hacia abajo</div>
+      <div class="bar"><div class="bl">Farmacias en Valencia metro</div><div class="bt"><div class="bf" style="width:100%"></div></div><div class="bv">226</div></div>
+      <div class="bar"><div class="bl">Objetivo del piloto</div><div class="bt"><div class="bf" style="width:56%"></div></div><div class="bv">~105–135</div></div>
+      <div class="bar"><div class="bl">Activas al mes 12</div><div class="bt"><div class="bf" style="width:70%"></div></div><div class="bv">~159</div></div>
+      <div class="bar"><div class="bl">Carabobo total (año 2)</div><div class="bt"><div class="bf alt" style="width:88%"></div></div><div class="bv">350–450</div></div>
+    </div>
+    <div class="chart" style="margin-top:12px;">
+      <div class="ttl">Contexto del sector</div>
+      <div class="bar"><div class="bl">Mercado farmacéutico Venezuela</div><div class="bt"><div class="bf alt" style="width:100%"></div></div><div class="bv">USD 1.638 M</div></div>
+      <p class="muted" style="margin:4px 0 0 0;font-size:14px;">389 M unidades al año · 48 % receta genérica. Dimensiona el sector; <b>no</b> es nuestro mercado alcanzable.</p>
+    </div>
     <p class="muted" style="margin:12px 0 0 0;font-size:15px;">La cuota no la fija el mercado sino la capacidad del canal: 4 vendedores × visitas × cierre. La curva es hipótesis hasta el dato real del mes 2–3.</p>
   </div>
   <div class="foot"><span>Directorio de farmacias de Valencia y proyección del año 1.</span><span class="n">05 / 12</span></div>
@@ -227,6 +247,23 @@
       </div>
     </div>
     <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><path d="M3 7h10v9H3z"/><path d="M13 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>Cómo vendemos</h3>Oferta primero: <b>4 vendedores presenciales</b> firman farmacias; el paciente llega por <b>referido de mostrador + Meta Ads geolocalizado</b>.</div>
+    <div class="chart" style="margin-top:12px;">
+      <div class="ttl">Farmacias activas mes a mes (año 1)</div>
+      <svg viewBox="0 0 980 132" width="100%" height="112" preserveAspectRatio="none" aria-label="Farmacias activas por mes">
+        <polyline fill="none" stroke="#0F4C5C" stroke-width="3"
+          points="20,90 107,83 193,76 280,69 367,62 453,55 540,48 627,41 713,34 800,27 886,20 973,13"/>
+        <polyline fill="rgba(86,199,184,.16)" stroke="none"
+          points="20,90 107,83 193,76 280,69 367,62 453,55 540,48 627,41 713,34 800,27 886,20 973,13 973,132 20,132"/>
+        <g fill="#56C7B8">
+          <circle cx="20" cy="90" r="4"/><circle cx="193" cy="76" r="4"/><circle cx="367" cy="62" r="4"/>
+          <circle cx="540" cy="48" r="4"/><circle cx="713" cy="34" r="4"/><circle cx="973" cy="13" r="5"/>
+        </g>
+        <text x="20" y="110" font-size="13" fill="#5b6878" font-weight="600">M1 · 40</text>
+        <text x="330" y="110" font-size="13" fill="#5b6878" font-weight="600">M5 · 85</text>
+        <text x="900" y="110" font-size="13" fill="#0F4C5C" font-weight="800">M12 · 159</text>
+      </svg>
+      <div class="legend" style="margin-top:2px;"><span><i style="background:#0F4C5C"></i>Farmacias activas</span><span><i style="background:#56C7B8"></i>Arranque del piloto: 40 activas en el mes 1</span></div>
+    </div>
   </div>
   <div class="foot"><span>Sin logos ni cartas no firmadas.</span><span class="n">07 / 12</span></div>
 </section>
@@ -260,15 +297,44 @@
     <div class="stat"><div class="num">~92 %</div><div class="lbl">de margen bruto de la plataforma</div></div>
     <div class="stat"><div class="num">USD 1.040</div><div class="lbl">lo que deja cada farmacia a lo largo de su vida</div></div>
   </div>
-  <div class="body">
-    <table>
-      <tr><th style="width:38%">Concepto</th><th>Valor</th></tr>
-      <tr><td>Quién paga</td><td>La <b>farmacia</b>. El paciente no es la fuente principal de ingreso</td></tr>
-      <tr><td>Precio</td><td>Cuota de <b>USD 45 / 60 / 70</b> + <b>8 % / 7 % / 5 %</b> de lo vendido en la app, según plan</td></tr>
-      <tr><td>Ejemplo con USD 5.000/mes en la app</td><td>El agregador se lleva 1.000–1.500 · Zonix Basic: 45 + 8 % = <b>445</b></td></tr>
-      <tr><td>Qué no se descuenta</td><td>Las primeras 10 farmacias pueden empezar 2 meses sin cuota fija; la proyección central se calcula <b>sin</b> ese beneficio</td></tr>
-      <tr><td>Ingreso por farmacia</td><td>Recupera en <b>~3 meses</b> lo que costó conseguirla y deja <b>~7 veces</b> esa inversión. Ingresos del año 1: <b>USD 228.796</b>; la caja deja de caer en el <b>mes 5</b></td></tr>
-    </table>
+  <div class="body grid2">
+    <div class="chart">
+      <div class="ttl">Lo que paga la farmacia por USD 5.000 vendidos en la app</div>
+      <div class="bar"><div class="bl">Agregador</div><div class="bt"><div class="bf alt" style="width:100%"></div></div><div class="bv">1.000–1.500</div></div>
+      <div class="bar"><div class="bl">Zonix Pharma</div><div class="bt"><div class="bf" style="width:32%"></div></div><div class="bv">445</div></div>
+      <p class="muted" style="margin:6px 0 0 0;font-size:13.5px;">Zonix cobra <b>menos de la mitad</b>: el agregador cobra un porcentaje alto de cada venta; Zonix cobra una cuota fija baja más un porcentaje pequeño.</p>
+    </div>
+    <div>
+      <table style="margin-bottom:10px;">
+        <tr><th style="width:42%">Concepto</th><th>Valor</th></tr>
+        <tr><td>Quién paga</td><td>La <b>farmacia</b> (el paciente no es la fuente principal)</td></tr>
+        <tr><td>Precio</td><td>Cuota de <b>USD 45 / 60 / 70</b> + <b>8 % / 7 % / 5 %</b> según plan</td></tr>
+        <tr><td>Qué no se descuenta</td><td>Las primeras 10 farmacias pueden empezar 2 meses sin cuota fija; la proyección central se calcula <b>sin</b> ese beneficio</td></tr>
+        <tr><td>Ingreso por farmacia</td><td>Recupera en <b>~3 meses</b> lo que costó conseguirla y deja <b>~7 veces</b> esa inversión</td></tr>
+      </table>
+      <div class="chart">
+        <div class="ttl">Ingresos del año 1 (por mes)</div>
+        <svg viewBox="0 0 980 118" width="100%" height="96" preserveAspectRatio="none" aria-label="Ingresos mensuales del año 1">
+          <line x1="12" y1="98" x2="968" y2="98" stroke="#C7CFD9" stroke-width="1.5"/>
+          <rect x="24"  y="82" width="58" height="16" rx="3" fill="#A8DCCB"/>
+          <rect x="102" y="76" width="58" height="22" rx="3" fill="#A8DCCB"/>
+          <rect x="180" y="69" width="58" height="29" rx="3" fill="#56C7B8"/>
+          <rect x="258" y="62" width="58" height="36" rx="3" fill="#56C7B8"/>
+          <rect x="336" y="56" width="58" height="42" rx="3" fill="#56C7B8"/>
+          <rect x="414" y="48" width="58" height="50" rx="3" fill="#56C7B8"/>
+          <rect x="492" y="41" width="58" height="57" rx="3" fill="#0F4C5C"/>
+          <rect x="570" y="34" width="58" height="64" rx="3" fill="#0F4C5C"/>
+          <rect x="648" y="27" width="58" height="71" rx="3" fill="#0F4C5C"/>
+          <rect x="726" y="20" width="58" height="78" rx="3" fill="#0F4C5C"/>
+          <rect x="804" y="14" width="58" height="84" rx="3" fill="#0F4C5C"/>
+          <rect x="882" y="8"  width="58" height="90" rx="3" fill="#0F4C5C"/>
+          <text x="24"  y="112" font-size="12" fill="#5b6878" font-weight="600">M1 · 7.520</text>
+          <text x="330" y="112" font-size="12" fill="#5b6878" font-weight="600">M5 · 15.980 (caja en cero)</text>
+          <text x="812" y="112" font-size="12" fill="#0F4C5C" font-weight="800">M12 · 29.892</text>
+        </svg>
+        <div class="legend"><span><i style="background:#A8DCCB"></i>M1–M3</span><span><i style="background:#56C7B8"></i>M4–M6</span><span><i style="background:#0F4C5C"></i>M7–M12 · total del año <b>USD 228.796</b></span></div>
+      </div>
+    </div>
   </div>
   <div class="foot"><span>Cifras se recalibran tras 30 días de ventas reales.</span><span class="n">09 / 12</span></div>
 </section>
@@ -310,18 +376,31 @@
     <div class="stat"><div class="num">~15 %</div><div class="lbl">si convierte al cap</div></div>
   </div>
   <div class="body">
+    <div class="chart" style="margin-bottom:10px;">
+      <div class="ttl">Uso de los fondos · USD 237.412</div>
+      <div class="stack">
+        <div class="s1" style="width:73%">Operación 12 meses · 172.152 (73 %)</div>
+        <div class="s2" style="width:21%">Puesta en marcha · 50.260 (21 %)</div>
+        <div class="s3" style="width:6%">6 %</div>
+      </div>
+      <div class="legend">
+        <span><i style="background:#0F4C5C"></i>Operación: 4 vendedores, desarrollo, soporte y marketing</span>
+        <span><i style="background:#56C7B8"></i>Puesta en marcha: empresa, sede, apps y altas</span>
+        <span><i style="background:#A8DCCB"></i>Reserva 15.000</span>
+      </div>
+    </div>
     <div class="grid2" style="margin-bottom:10px;gap:18px;">
       <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v4h4"/></svg>Instrumento</h3>SAFE post-money · sin descuento · cláusula de igualdad de condiciones (MFN) · sin interés ni vencimiento. El cap es un techo de precio, no la valoración.</div>
       <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg>Monto y plazo</h3>Tickets parciales de 25.000 / 50.000 · Puesta en marcha (~3 meses) + <b>12 meses</b> de operación.</div>
     </div>
     <table>
-      <tr><th>Uso de fondos</th><th style="width:11%">USD</th><th style="width:6%">%</th><th style="width:34%">Hito que compra</th><th style="width:10%">Cuándo</th></tr>
-      <tr><td>Puesta en marcha: constituir la empresa, equipo, sede, apps en tiendas y altas de farmacias piloto</td><td class="num"><b>50.260</b></td><td class="num">21 %</td><td><b>Lanzamiento</b> con ≈28 farmacias con catálogo activo</td><td>~3 meses</td></tr>
-      <tr><td>Operación de 12 meses: 4 vendedores, desarrollo, soporte y marketing (~14.346/mes)</td><td class="num"><b>172.152</b></td><td class="num">73 %</td><td><b>85 activas y caja en cero en el mes 5</b> · <b>~159 activas en el mes 12</b></td><td>M5 / M12</td></tr>
-      <tr><td>Reserva</td><td class="num"><b>15.000</b></td><td class="num">6 %</td><td>Imprevistos y frenos si algo no escala</td><td>—</td></tr>
-      <tr><td><b>Total</b></td><td class="num"><b>237.412</b></td><td class="num">100 %</td><td>Caja al mes 12 <b>USD 246.231</b> → data room de la siguiente ronda</td><td>M12–M18</td></tr>
+      <tr><th style="width:52%">Uso de fondos</th><th style="width:14%">USD</th><th style="width:34%">Hito que compra</th></tr>
+      <tr><td>Puesta en marcha: constituir la empresa, equipo, sede, apps en tiendas y altas de farmacias piloto</td><td class="num"><b>50.260</b> · 21 %</td><td><b>Lanzamiento en ~3 meses</b> con ≈28 farmacias con catálogo activo</td></tr>
+      <tr><td>Operación de 12 meses: 4 vendedores, desarrollo, soporte y marketing (~14.346/mes)</td><td class="num"><b>172.152</b> · 73 %</td><td><b>85 activas y caja en cero en el mes 5</b> · <b>~159 activas en el mes 12</b></td></tr>
+      <tr><td>Reserva</td><td class="num"><b>15.000</b> · 6 %</td><td>Imprevistos y frenos si algo no escala</td></tr>
+      <tr><td><b>Total</b></td><td class="num"><b>237.412</b> · 100 %</td><td>Caja al mes 12 <b>USD 246.231</b> → data room de la siguiente ronda</td></tr>
     </table>
-    <p class="muted" style="margin:8px 0 0 0;font-size:14px;">El monto cubre la puesta en marcha (~3 meses) y 12 meses de operación; si el piloto necesita más tiempo, la siguiente ronda se levanta entre los meses 12 y 18.</p>
+    <p class="muted" style="margin:8px 0 0 0;font-size:13.5px;">El monto cubre la puesta en marcha (~3 meses) y 12 meses de operación; si el piloto necesita más tiempo, la siguiente ronda se levanta entre los meses 12 y 18.</p>
   </div>
   <div class="foot"><span>50.260 + 172.152 + 15.000 = 237.412.</span><span class="n">11 / 12</span></div>
 </section>
