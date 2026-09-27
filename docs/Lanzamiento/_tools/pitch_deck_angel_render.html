@@ -97,6 +97,26 @@
   .yes { color: #0F4C5C; font-weight: 900; font-size: 16px; }
   .no { color: #b03030; font-weight: 900; font-size: 16px; }
   .dm { color: #9aa6b5; font-weight: 700; }
+  .flow { display: grid; grid-template-columns: 1fr 30px 1fr 30px 1fr 30px 1fr; align-items: stretch; }
+  .flow .st { background: #fff; border: 1px solid #C7CFD9; border-radius: 14px; padding: 13px 15px; }
+  .flow .st .n { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; border-radius: 50%; background: #0F4C5C; color: #fff; font-weight: 800; font-size: 13.5px; margin-bottom: 7px; }
+  .flow .st h4 { margin: 0 0 5px 0; font-size: 14.5px; color: #1E2A5A; font-weight: 800; line-height: 1.25; }
+  .flow .st p { margin: 0; font-size: 12.5px; line-height: 1.38; color: #142033; }
+  .flow .ar { display: flex; align-items: center; justify-content: center; color: #56C7B8; font-size: 25px; font-weight: 800; }
+  .chart.tight { padding: 10px 18px; }
+  .chart.tight .ttl { margin-bottom: 6px; }
+  .chart.tight .bar { margin-bottom: 5px; }
+  .chart.tight .bar .bt { height: 16px; }
+  .org { display: flex; flex-direction: column; align-items: center; }
+  .org .n2 { border: 1px solid #C7CFD9; border-radius: 14px; background: #fff; padding: 14px 22px; text-align: center; }
+  .org .n2.lead { border: 2px solid #0F4C5C; background: #eef7f5; }
+  .org .who { font-size: 19px; font-weight: 800; color: #1E2A5A; line-height: 1.2; }
+  .org .what { font-size: 13px; color: #0F4C5C; font-weight: 700; margin-top: 3px; }
+  .org .link { width: 2px; height: 18px; background: #C7CFD9; }
+  .org .row2 { display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: 1fr; gap: 24px; position: relative; padding-top: 18px; width: 100%; }
+  .org .row2::before { content: ""; position: absolute; top: 0; left: 25%; right: 25%; height: 2px; background: #C7CFD9; }
+  .org .row2 > .n2 { position: relative; text-align: left; }
+  .org .row2 > .n2::before { content: ""; position: absolute; top: -18px; left: 50%; width: 2px; height: 18px; background: #C7CFD9; }
 </style>
 </head>
 <body>
@@ -153,13 +173,19 @@
   <div class="kicker">Solución</div>
   <h1>El farmacéutico colegiado de la propia farmacia valida la receta dentro de la app antes de cobrar; Zonix no toca el medicamento ni el dinero.</h1>
   <div class="body">
-    <table>
-      <tr><th style="width:44%">Antes</th><th>Con Zonix Pharma</th></tr>
-      <tr><td>Receta en papel, validación de palabra por WhatsApp</td><td>La receta se sube a la app y queda <b>pendiente de validación</b>; el farmacéutico de esa farmacia la aprueba o la rechaza, con tiempo límite</td></tr>
-      <tr><td>Pago por transferencia sin comprobante trazable</td><td><b>Pago Móvil, transferencia, Zelle o Binance Pay</b>, con comprobante en la orden (Zonix no maneja el dinero)</td></tr>
-      <tr><td>Delivery propio o ninguno</td><td>Repartidores asociados con seguimiento en tiempo real; <b>sin flota de Zonix</b></td></tr>
-      <tr><td>Un canal por farmacia</td><td>El pedido completo sale de una sola farmacia, con su farmacéutico y su inventario</td></tr>
-    </table>
+    <div class="flow">
+      <div class="st"><span class="n">1</span><h4>Subir la receta</h4><p>El paciente la fotografía o sube el PDF desde la app. Queda <b>pendiente de validación</b>.</p></div>
+      <div class="ar">&#8594;</div>
+      <div class="st"><span class="n">2</span><h4>El farmacéutico valida</h4><p>El colegiado <b>de esa misma farmacia</b> la aprueba o la rechaza, con tiempo límite.</p></div>
+      <div class="ar">&#8594;</div>
+      <div class="st"><span class="n">3</span><h4>Paga el paciente</h4><p>Pago Móvil, transferencia, Zelle o Binance Pay, con <b>comprobante en la orden</b>. Zonix no maneja el dinero.</p></div>
+      <div class="ar">&#8594;</div>
+      <div class="st"><span class="n">4</span><h4>Reparto y seguimiento</h4><p>Repartidores asociados, con el pedido rastreado en tiempo real. <b>Sin flota propia</b>.</p></div>
+    </div>
+    <div class="grid2" style="margin-top:14px;gap:16px;">
+      <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v4h4"/></svg>Antes</h3>Receta en papel y validación de palabra por WhatsApp. Pago sin comprobante trazable. Delivery propio o ninguno. Un canal por farmacia.</div>
+      <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>Con Zonix Pharma</h3>Receta digital con validación colegiada y trazable. Comprobante dentro de la orden. Reparto con seguimiento. <b>El pedido completo sale de una sola farmacia</b>, con su inventario.</div>
+    </div>
   </div>
   <div class="foot"><span>Flujo implementado y verificado en la plataforma.</span><span class="n">03 / 12</span></div>
 </section>
@@ -168,11 +194,19 @@
 <section class="slide">
   <div class="kicker">Por qué ahora</div>
   <h1>El mercado farmacéutico volvió a crecer a doble dígito, los pagos digitales ya cubren al comprador y nadie atiende a la farmacia independiente: 2026 es la ventana.</h1>
-  <div class="body grid2">
-    <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><path d="M4 20V6M4 20h16"/><path d="M8 20v-5M13 20v-9M18 20v-6"/></svg>1 · Demanda en recuperación</h3><div class="big">+17,49 %</div><div>más unidades vendidas 2024–2025 (Cifar / IMS-IQVIA). Hace dos años el mercado se contraía.</div></div>
-    <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg>2 · Pagos digitales maduros</h3><div class="big">~95 %</div><div>de la población bancarizada cubierta por Pago Móvil + Zelle + Binance Pay. Hace cinco años no se podía operar sin pasarela internacional.</div></div>
-    <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5"/></svg>3 · Competencia digital débil</h3><div>Farmatodo y Locatel no abren su app a terceros; PedidosYa es generalista y caro; Farmalisto y Rappi no operan en Venezuela.</div></div>
-    <div class="card"><h3><svg class="ico" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>4 · El software ya existe</h3><div>~4 años de trabajo y la capa farmacéutica ya construida. La ronda no paga "construir": paga <b>vender y validar</b>.</div></div>
+  <div class="body">
+    <div class="chart tight" style="margin-bottom:10px;">
+      <div class="ttl">Unidades vendidas en el canal farmacéutico venezolano</div>
+      <div class="bar"><div class="bl">2024</div><div class="bt"><div class="bf" style="width:85%"></div></div><div class="bv">~331 M</div></div>
+      <div class="bar"><div class="bl">2025</div><div class="bt"><div class="bf" style="width:100%"></div></div><div class="bv">389 M</div></div>
+      <div class="legend" style="margin-top:2px;font-size:12px;"><span><i style="background:#56C7B8"></i>+17,49 % en unidades</span><span><i style="background:#0F4C5C"></i>USD 1.638 M al año</span></div>
+    </div>
+    <div class="grid2" style="gap:16px;">
+    <div class="card" style="padding:12px 16px;"><h3><svg class="ico" viewBox="0 0 24 24"><path d="M4 20V6M4 20h16"/><path d="M8 20v-5M13 20v-9M18 20v-6"/></svg>1 · Demanda en recuperación</h3><div class="big" style="font-size:34px;">+17,49 %</div><div style="font-size:15px;">más unidades 2024–2025 (Cifar / IMS-IQVIA). Hace dos años el mercado se contraía.</div></div>
+    <div class="card" style="padding:12px 16px;"><h3><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg>2 · Pagos digitales maduros</h3><div class="big" style="font-size:34px;">~95 %</div><div style="font-size:15px;">de la población bancarizada cubierta por Pago Móvil + Zelle + Binance Pay.</div></div>
+    <div class="card" style="padding:12px 16px;"><h3><svg class="ico" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5"/></svg>3 · Competencia digital débil</h3><div style="font-size:15px;">Farmatodo y Locatel no abren su app a terceros; PedidosYa es generalista y caro; Farmalisto y Rappi no operan en Venezuela.</div></div>
+    <div class="card" style="padding:12px 16px;"><h3><svg class="ico" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>4 · El software ya existe</h3><div style="font-size:15px;">~4 años de trabajo y la capa farmacéutica ya construida. La ronda no paga "construir": paga <b>vender y validar</b>.</div></div>
+    </div>
   </div>
   <div class="foot"><span>Fuentes: Cifar / IMS-IQVIA 2025 · Statista / Mordor Intelligence.</span><span class="n">04 / 12</span></div>
 </section>
@@ -384,21 +418,23 @@
   <div class="kicker">Equipo</div>
   <h1>Los dos founders trajeron a Gabriel Barrios como CEO; Abrahan construyó el sistema.</h1>
   <div class="body">
-    <div class="grid3" style="margin-bottom:14px;">
-      <div class="card">
-        <h3><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/></svg>CEO</h3>
-        <div style="font-size:21px;font-weight:800;color:#1E2A5A;margin-bottom:6px;">Gabriel Barrios</div>
-        <div style="font-size:15px;">Dirección general de la empresa.</div>
+    <div class="org" style="margin-bottom:18px;">
+      <div class="n2 lead">
+        <div class="who">Gabriel Barrios</div>
+        <div class="what">CEO · Dirección general de la empresa</div>
       </div>
-      <div class="card">
-        <h3><svg class="ico" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>Founder / Co-CEO y CTO</h3>
-        <div style="font-size:21px;font-weight:800;color:#1E2A5A;margin-bottom:6px;">Abrahan Pulido</div>
-        <div style="font-size:15px;">Ingeniero (IUTVAL), 8+ años en producto. Construyó la plataforma, las apps y el panel. También fundó Corral X, Zonix Imports y Aiblockweb.</div>
-      </div>
-      <div class="card">
-        <h3><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5h4a1.8 1.8 0 0 1 0 3.6h-3a1.8 1.8 0 0 0 0 3.6h4"/></svg>Co-founder</h3>
-        <div style="font-size:21px;font-weight:800;color:#1E2A5A;margin-bottom:6px;">Wistremiro Pulido</div>
-        <div style="font-size:15px;">Finanzas y administración.</div>
+      <div class="link"></div>
+      <div class="row2">
+        <div class="n2">
+          <div class="who">Abrahan Pulido</div>
+          <div class="what">Founder / Co-CEO y CTO</div>
+          <div style="font-size:14px;margin-top:7px;">Ingeniero (IUTVAL), 8+ años en producto. Construyó la plataforma, las apps y el panel. También fundó Corral X, Zonix Imports y Aiblockweb.</div>
+        </div>
+        <div class="n2">
+          <div class="who">Wistremiro Pulido</div>
+          <div class="what">Co-founder · Finanzas</div>
+          <div style="font-size:14px;margin-top:7px;">Finanzas y administración de la empresa.</div>
+        </div>
       </div>
     </div>
     <div class="card">La ronda paga un <b>desarrollador</b>, <b>4 vendedores</b> y soporte, más contador, abogado y asesor regulatorio. El conocimiento técnico sigue concentrado en Abrahan; la dirección ya no es una sola persona. Mitigación: segundo desarrollador, ceder el código y la marca a la empresa, y vesting.</div>

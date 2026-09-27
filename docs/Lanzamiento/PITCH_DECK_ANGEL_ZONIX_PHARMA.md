@@ -46,6 +46,8 @@ Pie: `[BENCHMARK]` take-rate PedidosYa VE 20–30 % (BRIEF) · `CALC` ejemplo so
 
 **El farmacéutico colegiado de la propia farmacia valida la receta dentro de la app antes de que el pedido se cobre; Zonix no toca el medicamento ni el dinero.**
 
+**Flujo del pedido (diagrama en el PDF, 4 pasos):** Subir la receta → el farmacéutico de esa farmacia la valida → el paciente paga con comprobante en la orden → reparto asociado con seguimiento.
+
 | Antes | Con Zonix Pharma |
 |---|---|
 | Receta en papel, validación de palabra por WhatsApp | La receta se sube a la app y queda **pendiente de validación**; el farmacéutico de esa farmacia la aprueba o la rechaza, con tiempo límite |
@@ -60,6 +62,8 @@ Pie: `FACT` flujo implementado en código (PLAN_RX_VALIDATION, PLAN_METODOS_PAGO
 ## Slide 4 — Por qué ahora
 
 **El mercado pharma venezolano volvió a crecer a doble dígito, los pagos digitales ya cubren al comprador y nadie está atendiendo a la farmacia independiente: 2026 es la ventana.**
+
+**Números clave (gráfico de unidades):** ~331 M unidades (2024) → **389 M** (2025) · **+17,49 % YoY** · ~95 % de población bancarizada.
 
 1. **Demanda en recuperación:** +17,49 % YoY en unidades 2024–2025 (Cifar, datos IMS/IQVIA); CAGR 6,1 % proyectado 2026–2032. Hace dos años el mercado se contraía.
 2. **Pagos manuales maduros:** Pago Móvil C2P + Zelle + Binance Pay cubren ~95 % de la población bancarizada; hace cinco años no era posible operar sin pasarela internacional.
@@ -263,7 +267,7 @@ Pie: ESTRUCTURA_LEGAL_Y_EQUITY §2 · `founder-cap-table-checklist`. Nada de est
 | 45/60/70 + 8/7/5 % | 9 | PROPUESTA_VALOR_CLIENTE_B2B §5 |
 | ARPF 52 · CAC 139 · LTV 1.040 · 7,5x | 9 | UNIT_ECONOMICS |
 | 226 farmacias · 159 activas M12 · 29.892 | 5 | PERFIL_MERCADO §2–§3, PROYECCION §1.1 |
-| 1.638 M · +17,49 % · 6,1 % | 4, 5 | PERFIL_MERCADO §1 (Cifar / IMS-IQVIA) |
+| 1.638 M · +17,49 % · 6,1 % · 389 M u (2025) · ~331 M u (2024) | 4, 5 | PERFIL_MERCADO §1 (Cifar / IMS-IQVIA). El valor 2024 (~331 M) es derivado: 389 ÷ 1,1749 |
 | 7 roles · 363 endpoints · 92 pantallas · 322 tests | 6 | 11_COSTO §1 (medido 21 sep 2026) |
 | 1,3 M VE · 2,4 M US | 6 | 12_ / 11_COSTO_DEL_SISTEMA |
 | FCF ≥ 0 M5 · caja M12 246.231 · ingresos Y1 228.796 | 9, 11 | PROYECCION §1.1 esc.1 |
